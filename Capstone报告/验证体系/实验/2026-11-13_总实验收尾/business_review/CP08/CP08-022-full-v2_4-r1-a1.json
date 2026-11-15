@@ -1,0 +1,144 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-022-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ae07f73fb3e5e976",
+  "role": "supplier",
+  "annotated_action": "design_service_lead_instead_of_assigned_supplier",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-022-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "11e7a92fc0bd269880564d3227bd35e5da8e0df6abfdc4ec0e6b7aad8c413831",
+  "call_id": "attempt_002_call_000624",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "本公司以单一公司身份提交本包设计服务投标",
+    "reason": "固定任务为supplier，正文却统筹设计生产。设计项目标题与EPC背景有输入范围张力，主分析按固定任务评，四答案均进入来源张力敏感性分层。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 0,
+      "end": 20,
+      "quote": "本公司以单一公司身份提交本包设计服务投标"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "拟由本公司牵头组织设计管理团队",
+      "reason": "将指定供应职责换为设计主导，外部设计支持也不使其成为产品供应方案。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 38,
+        "end": 53,
+        "quote": "拟由本公司牵头组织设计管理团队"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "missing",
+      "quote": null,
+      "reason": "全部实施阶段为设计深化、校审、报建及施工设计支持，没有供应商意义的产品采购配送、随货文档或产品交付方案。",
+      "evidence": null,
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "partial",
+      "quote": "相关支持资源为拟议安排，尚未取得对方承诺",
+      "reason": "外部支持及人员未落实明确，但讨论主要为设计资源，产品库存、本地供应团队与供货交期未知处理不足。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 334,
+        "end": 354,
+        "quote": "相关支持资源为拟议安排，尚未取得对方承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "保修与质量文档要求需外部支持接受，已列为待确认事项",
+      "reason": "两项ID保持未决，质量文档保修有提及，但接口被设计支持替代，供应渠道审核的业务处理未展开。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 131,
+        "end": 156,
+        "quote": "保修与质量文档要求需外部支持接受，已列为待确认事项"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "本包规模较大（238800平方米）且为EPC交付模式",
+      "reason": "真实面积EPC进入设计接口和全周期考虑，但不是指定供应角色内项目针对性，且来源设计标题张力保留。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 222,
+        "end": 248,
+        "quote": "本包规模较大（238800平方米）且为EPC交付模式"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 8,450,000",
+      "reason": "七项合计8450000正确，实际未获外部报价及暂估清楚；报价服务种类错误另记S1/行动。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 21,
+        "end": 37,
+        "quote": "报价 MOP 8,450,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.16666666666666666,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_022_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "0489c117960eca7dde718696b76321365c2d32e89e5a2c00a2628670275c15f7",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "v2_baseline",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包与公司道路、隧道、管线综合及交通导改设计能力匹配度高，公司可作为单一责任设计主导方，通过分专业支持、内部审查和文档纪律控制 MEP、结构与交通接口协调，无需组合体分担投标人身份。但条件登记显示指定岗位人员档期核实结果为 rejected，团队可用性摘要与角色计划是业主明确要求的交付内容，故本次为有条件投标意向：以人员档期核实为提交前前提，落实后按固定费用和设计范围编制报价基础、进度视图与风险应对；若无法落实，则按程序不提交。",
+    "content": "管理层决定：对设计包作出有条件投标意向，由公司作为单一责任设计主导方参与，不组建组合体。理由是本包详细设计范围与公司在道路、隧道、共同管道及交通导改方面的代表项目经验直接对应，公司具备设计协调与业主审查提交能力，MEP、结构与交通接口协调可通过受控的专业支持和内部审查机制在单一责任框架下完成。投标文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对组织，报价按固定费用并基于设计范围和交付物编制。需明确的是，条件登记中指定岗位人员档期核实未获通过，该事项为提交前必须解决的前提；在人员档期得到确认前，本意向不构成提交承诺。若该前提无法满足，公司将按程序退出本次投标，不以组合体或临时安排掩盖人员可用性缺口。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "公司作为单一责任设计主导方投标，MEP、结构与交通接口专业支持以受控分包或内部专业组方式纳入统一设计责任",
+      "报价为固定费用，基于本包设计范围与交付物清单编制",
+      "指定岗位人员档期经核实可用后，团队可用性摘要与角色计划方可定稿",
+      "若提交前人员档期前提无法满足，公司按程序不提交投标"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-11-v2_baseline-r2\\final-attempt-1.json",
+  "source_sha256": "afbef4d083a82b78502a8368db17c8893633ef956f7abe67654b670b35ce4ec3",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "v2_baseline",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

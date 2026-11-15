@@ -1,0 +1,63 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "v2_1",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于公司核心业务范围内的详细设计工作，管线综合、结构设计、交通导改、施工图纸及规范编制与公司既有代表项目和设计协调能力匹配，公司可作为单一责任设计主体承担，MEP及污水厂运行保障等专业内容以常规专业支持和内部质量把关方式纳入，不需要组合体共享投标人身份。当前唯一实质障碍是指定岗位人员档期经复核为不可分配，该条件为提交前必须解决的前提。管理层决定按有条件投标推进，先完成人员档期与角色计划的核实，再据实编制团队可用性摘要、交付方法、质量方法、价格基础和进度视图；若前提无法满足，则转为不投标，不以未落实的资源承诺对外提交。",
+    "content": "管理层决定：就设计包采取有条件投标，由本公司作为单一责任设计主体提交，不组建组合体。理由是本包详细设计内容与公司在道路、桥梁、隧道及交通基础设施设计方面的代表项目经验、设计协调和业主审查提交能力相符，管线综合、结构设计、交通导改方案及施工图纸规范编制可由公司主导完成；MEP协调与污水厂运行保障方案按常规专业支持安排，纳入公司统一的质量审查与文件控制流程，责任链条保持清晰。投标文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图组织，价格按固定费用并基于设计范围和交付物编制，风险应对重点说明接口协调、审查节点和文档纪律。需要明确的是，指定岗位人员档期经复核为不可分配，该条件尚未解决，属于提交前必须落实的前提；在人员档期与角色计划核实完成前不对外提交，若无法落实则退出本次投标。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "公司以单一责任设计主体投标，不组建组合体",
+      "MEP协调及污水厂运行保障方案以常规专业支持方式纳入，由公司统一审查并承担设计责任",
+      "报价为固定费用，基于设计范围与交付物编制",
+      "指定岗位人员档期与角色计划须在提交前核实落实，未落实则不提交",
+      "进度视图按业主要求的审查节点和文档提交节奏编排"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-11-v2_1-r3\\final-attempt-1.json",
+  "source_sha256": "0dbc6d7e1ab69eb3114a3a30a7d31e4e7031956b7d28f5f9ed40a380e1b32759",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "v2_1",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

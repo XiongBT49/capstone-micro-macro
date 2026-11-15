@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-12-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 2,
+  "project_group": "9dbbe5361e2db633",
+  "role": "contractor",
+  "annotated_action": "port_bid_with_unsupported_existing_transport_business_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-12-missing_core-v2_5-r1/attempt-2.json",
+  "response_sha256": "893f035c7643cd7ea7207fa2b58e0e967d35236be327d18a980050db71115942",
+  "call_id": "attempt_003_call_000074",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "不能据此宣称既有能力或既有业务方向",
+    "reason": "唯一原有交通施工主营匹配已移除，未变正文也是有限码头施工计划及两核查，当前意向适当。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 84,
+      "end": 101,
+      "quote": "不能据此宣称既有能力或既有业务方向"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "不能据此宣称既有能力或既有业务方向",
+      "reason": "不再从名称和任务角色补实际企业主营。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 84,
+        "end": 101,
+        "quote": "不能据此宣称既有能力或既有业务方向"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "以团队可用性摘要、角色计划、施工方案、质量方案、价格基础、进度观点与风险应对等提议性文件呈现",
+      "reason": "一般职责、海事专业支持及待编文件，缺具体现场或交接措施。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 196,
+        "end": 242,
+        "quote": "以团队可用性摘要、角色计划、施工方案、质量方案、价格基础、进度观点与风险应对等提议性文件呈现"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "当前公司档案对本包的经验、认证、人员设备与历史成本依据均无可用记录",
+      "reason": "不冒充实际团队，但岗位组织及落实办法仍待编。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 143,
+        "end": 176,
+        "quote": "当前公司档案对本包的经验、认证、人员设备与历史成本依据均无可用记录"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "二者在提交前必须完成核实，未落实前不递交标书",
+      "reason": "两原必要核查和状态保持，支持无报价承诺。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 284,
+        "end": 306,
+        "quote": "二者在提交前必须完成核实，未落实前不递交标书"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本包属澳门海事交通基础设施，规模大、业主为海事及水务局",
+      "reason": "给定地域类型规模与海事专业分工、机会取舍联系；公司范围无据问题独立保留。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 27,
+        "quote": "本包属澳门海事交通基础设施，规模大、业主为海事及水务局"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_repair_delta_batch02_001_expanded_labels.json",
+  "authored_labels_sha256": "84e3d18a06bb86ef13fe4821166ea31c1f9cea04d9a33c76f0bf5a19ef3e7e6e",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

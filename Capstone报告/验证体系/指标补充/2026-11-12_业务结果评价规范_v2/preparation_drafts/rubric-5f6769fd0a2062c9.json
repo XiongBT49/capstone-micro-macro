@@ -1,0 +1,54 @@
+{
+  "version": "business-result-rubric.v2",
+  "reviewer": "current_conversation_assistant",
+  "independent_human_expert": false,
+  "ratings_completed": 0,
+  "D1": {
+    "values": [
+      "appropriate",
+      "inappropriate",
+      "not_judgable"
+    ],
+    "rule": "根据行动边界、任务职责、现有事实与必要条件整体判读；不从accepted、decision枚举或引用字段通过直接推断。"
+  },
+  "D2": {
+    "values": [
+      "correct",
+      "partial",
+      "missing",
+      "contradicted",
+      "not_judgable"
+    ],
+    "rule": "充分且正确地处理任务卡事项记correct，其他分类分开；不重复计同一事项。"
+  },
+  "D3": {
+    "0": "安排与关键约束矛盾，或用无来源的已落实承诺支撑可实施性。",
+    "1": "部分安排有依据，但缺关键执行逻辑、责任接口或未决事项处理。",
+    "2": "在角色和资料边界内给出连贯可实施的方案或有据的等待/拒绝及下一步；条件性方案允许2分。",
+    "not_judgable": "无可判正文或资料确实不能支持该判断，说明原因。"
+  },
+  "D4": {
+    "0": "未处理相关取舍，或依据无关/捏造的优劣作决定。",
+    "1": "识别相关取舍，但与最终行动或条件安排的联系不充分。",
+    "2": "把任务支持的关键取舍与行动、备选或承诺边界明确联系；不要求捏造数量化效用。",
+    "not_judgable": "无可判取舍材料，说明原因。"
+  },
+  "pair_preference": {
+    "values": [
+      "A",
+      "B",
+      "tie",
+      "not_judgable"
+    ],
+    "rule": "先逐份评分；严重业务违规优先解释，其余逐维比较。存在相反取舍且无预定目标权重时记tie并说明，不临时加权。"
+  },
+  "evidence_fields": [
+    "response_quote",
+    "input_source_or_condition_locator",
+    "criterion_id",
+    "reason"
+  ],
+  "recheck": "同一助手一次证据复核，保存原评、订正与理由；不是第二位专家，不计算评阅者间kappa。",
+  "numeric_rule": "供应报价的MOP分项合计沿原目标容差1；无市场价格oracle。",
+  "difference_from_old_rubric": "有边界且可实施的条件性方案不因核查尚未完成自动降为1分。旧分数与旧协议保持原样；新评分另存v2。"
+}

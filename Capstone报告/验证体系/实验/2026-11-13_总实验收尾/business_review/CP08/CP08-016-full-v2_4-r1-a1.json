@@ -1,0 +1,172 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-016-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ba8bc889872103c2",
+  "role": "supplier",
+  "annotated_action": "supplier_named_but_whole_construction_installation_delivery",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-016-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "ecf6b4368532a1015624e9fc3e631ece12c119a6f26fb9a2d35f1c1f53b20aab",
+  "call_id": "attempt_002_call_000639",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "承担大良街道碧桂路以东、逢沙河以北地块项目（居住建筑，约7.8万平方米）的施工与安装交付",
+    "reason": "实际范围支持建筑施工方向，但指定供应商角色不因此扩展为主体施工交付；后文角色声明不能消除实质工作冲突。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 133,
+      "end": 177,
+      "quote": "承担大良街道碧桂路以东、逢沙河以北地块项目（居住建筑，约7.8万平方米）的施工与安装交付"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "主体结构与粗装修按分区流水组织",
+      "reason": "以供应与安装命名同时纳入主体及粗装修施工，超出指定供货职责。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 265,
+        "end": 280,
+        "quote": "主体结构与粗装修按分区流水组织"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "partial",
+      "quote": "编制设备与材料进场计划，按施工节点分批到场",
+      "reason": "有进场、文档和质量安排，但嵌入整包施工实施，供应方案边界不完整。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 89,
+        "end": 110,
+        "quote": "编制设备与材料进场计划，按施工节点分批到场"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "产品目录、库存、本地团队、历史采购成本等均属未知",
+      "reason": "资源未知和外部支持未承诺均明确，无虚构现成供货记录。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 221,
+        "end": 245,
+        "quote": "产品目录、库存、本地团队、历史采购成本等均属未知"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "渠道审核与外部支持保修/质量文档接受两项条件仍待确认",
+      "reason": "两项保持未决，拟议外部支持纳入质量保修文档接口；没有明确将原请求设为硬性提交前置。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 218,
+        "end": 244,
+        "quote": "渠道审核与外部支持保修/质量文档接受两项条件仍待确认"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "主体、装饰与机电安装穿插推进",
+      "reason": "居住建筑及面积进入组织和暂估，但针对性主要落在越过供应角色的施工组织。",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 20,
+        "end": 34,
+        "quote": "主体、装饰与机电安装穿插推进"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额为基于建筑面积与常规含量的暂估，非已收到的供应商报价",
+      "reason": "七项合计55300000，与总额一致，MOP及暂估来源清楚；角色超限另在S1及总体行动评价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 168,
+        "end": 198,
+        "quote": "上述金额为基于建筑面积与常规含量的暂估，非已收到的供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.5,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "对需外部支持的产品线，拟以受我方统一管理的分包/供货支持方式补齐",
+      "reason": "有实际施工安装范围支持和未承诺外部支持路径，但将供应任务变为主体施工，角色内可行路径仅部分成立。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 374,
+        "end": 406,
+        "quote": "对需外部支持的产品线，拟以受我方统一管理的分包/供货支持方式补齐"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "主要风险为产品目录与供应商报价未知、外部支持尚未承诺、本地资源情况未知",
+      "reason": "将资源和价格不确定性联系到预留及核查，但未解决供应职责与主体施工的关键取舍。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 35,
+        "quote": "主要风险为产品目录与供应商报价未知、外部支持尚未承诺、本地资源情况未知"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_016_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "29c5df3f898faf98db53ad3ffa54a29880efb73ad263fc0abfbaf3c869eb2ed1",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "gba-module-host-config.v1",
+  "host_id": "CP03-CASE-0010-r1-S4",
+  "version": "1",
+  "settings": {
+    "run_id": "CP03-CASE-0010-r1-S4",
+    "query_saved_tender_on_error": false,
+    "native_proposals": [
+      {
+        "role": "Contractor",
+        "operation": "decide_monthly_operation"
+      },
+      {
+        "role": "Owner",
+        "operation": "decide_monthly_operation"
+      },
+      {
+        "role": "QS",
+        "operation": "decide_monthly_operation"
+      },
+      {
+        "role": "Owner",
+        "operation": "select_preferred_bid"
+      },
+      {
+        "role": "Supplier",
+        "operation": "decide_monthly_operation"
+      }
+    ],
+    "native_decisions": [
+      {
+        "role": "Contractor",
+        "decision_type": "monthly_enterprise_operation"
+      },
+      {
+        "role": "Owner",
+        "decision_type": "monthly_enterprise_operation"
+      },
+      {
+        "role": "QS",
+        "decision_type": "monthly_enterprise_operation"
+      },
+      {
+        "role": "Owner",
+        "decision_type": "owner_preferred_bidder_selection"
+      },
+      {
+        "role": "Supplier",
+        "decision_type": "monthly_enterprise_operation"
+      }
+    ],
+    "micro_qs_evaluation_scope": true,
+    "mixed_qs_learning_scope": false,
+    "query_saved_qs_learning_on_error": false,
+    "direct_native_proposals": [
+      {
+        "role": "Owner",
+        "operation": "select_preferred_bid"
+      }
+    ],
+    "micro_contractor_formation_scope": true,
+    "micro_owner_award_scope": true,
+    "micro_supplier_order_scope": true,
+    "micro_contractor_supply_scope": true
+  }
+}

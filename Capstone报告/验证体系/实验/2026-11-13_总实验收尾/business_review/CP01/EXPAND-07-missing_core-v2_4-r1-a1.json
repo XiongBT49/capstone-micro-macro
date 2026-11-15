@@ -1,0 +1,172 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-07-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "fd0321e0f0f7c6ea",
+  "role": "supplier",
+  "annotated_action": "proposed_office_material_supply_with_uncommitted_local_logistics",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-07-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "07304bfd1dc29e3a05f1baab6df2d1447297677aa83d6f2dbc7dfe817fe8289b",
+  "call_id": "attempt_002_call_000161",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本意向不构成对具体产品供应能力或价格的确认",
+    "reason": "缺经营范围时提出有限拟议产品类别，目录与资源未知不被改成自有业务事实，物流外部支持与报价均明确暂定。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 275,
+      "end": 296,
+      "quote": "本意向不构成对具体产品供应能力或价格的确认"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "拟议供应范围包括：办公及商业建筑常规机电与装修辅材的供货",
+      "reason": "明确是未来拟议范围，品牌型号数量仍待清单规格确认，没有从公司名称推断实际产品库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 112,
+        "end": 140,
+        "quote": "拟议供应范围包括：办公及商业建筑常规机电与装修辅材的供货"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "按品类划分供应批次，拟定交付顺序与现场接收窗口",
+      "reason": "另有来源样品技术对照、到货外观核对、文档归档及保修通道，形成多项有界交付办法。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 12,
+        "end": 35,
+        "quote": "按品类划分供应批次，拟定交付顺序与现场接收窗口"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本地物流合作方负责仓储与配送（尚未签约，属计划性安排）",
+      "reason": "目录库存实际可投入人员与本地物流未核实，拟议外部资源没有写成承诺；已给企业参保人数并非本包人员证明。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 75,
+        "end": 102,
+        "quote": "本地物流合作方负责仓储与配送（尚未签约，属计划性安排）"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "将外部物流与保修支持作为明确投标假设，并在合同中约定其接受质量文档要求的条件",
+      "reason": "保留渠道及外部质量保修请求未决，拟通过合同和文档处理，没有将可选请求声明为原有硬提交条件。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 62,
+        "end": 100,
+        "quote": "将外部物流与保修支持作为明确投标假设，并在合同中约定其接受质量文档要求的条件"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "办公及商业建筑常规机电与装修辅材",
+      "reason": "商业办公类型用于选择拟议机电装修辅材，同时对澳门本地配送仓储提出支持方向，不需要虚构具体自有目录。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 121,
+        "end": 137,
+        "quote": "办公及商业建筑常规机电与装修辅材"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价暂定为 MOP 2,468,000",
+      "reason": "1850000+165000+78000+92000+135000+148000=2468000；各项是假设而非报价，管理利润148000约占前五项2320000的6.38%，与约6.5%的概数小差异不改变可复算总额。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 50,
+        "end": 69,
+        "quote": "报价暂定为 MOP 2,468,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "到货后按内部质量程序执行数量核对、外观检查与文档归档",
+      "reason": "来源与样品、分批配送接收、本地未签约支持、检验文档及保修形成连贯拟议路径，未过度承诺固定工期。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 106,
+        "end": 132,
+        "quote": "到货后按内部质量程序执行数量核对、外观检查与文档归档"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若招标包要求固定价，须在清单明确后重新核定",
+      "reason": "产品和成本未知、外部支持未确认联系到暂定报价、风险缓冲、规格复核与固定价前重算，承诺与不确定性匹配。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 127,
+        "end": 148,
+        "quote": "若招标包要求固定价，须在清单明确后重新核定"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND07_both_conditions.json",
+  "authored_labels_sha256": "2fd43c3c7c2ac9f7832e117d5325ff61639845c7d495e3614a960c6bb729b8da",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

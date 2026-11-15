@@ -1,0 +1,39 @@
+{
+  "at_UTC": "2026-11-13T01:15:31.586246+00:00",
+  "user_goal_status": "paused",
+  "global_gate_sha256": "68fbd42444afbe540b49a64bf84c6d78308d9e9a93c904417f89b4dee364e530",
+  "CP03_gate_sha256": "68fbd42444afbe540b49a64bf84c6d78308d9e9a93c904417f89b4dee364e530",
+  "verified_chains": [
+    "CASE-0010-r1-R",
+    "CASE-0010-r1-S",
+    "CASE-0010-r1-D3",
+    "CASE-0010-r1-S4",
+    "CASE-0010-r3-D3",
+    "CASE-0001-r3-R",
+    "CASE-0006-r2-S",
+    "CASE-0012-r1-R"
+  ],
+  "current_started_chain": "CASE-0010-r2-R",
+  "current_chain_arm": "R",
+  "current_chain_assigned_max_provider_calls": 0,
+  "provider_status_counts": {
+    "returned": 28
+  },
+  "retained_grade_record_counts_including_repairs": {
+    "CP00": 236,
+    "CP01": 237,
+    "CP08": 176,
+    "CP07": 0
+  },
+  "latest_sealed_progress_record": "paid_resume_progress_024.json",
+  "new_CP08_grades_since_last_checkpoint": 16,
+  "newest_fully_rechecked_CP08_group": "CP08-044",
+  "CP08_045_state": "full card and both full responses read only; no authored grades; missing_core responses not read",
+  "resume_requirements": [
+    "User must resume the goal before any task work or new provider calls.",
+    "Read actual process/exit/outcome state, not marker alone. User-pause gates are intentional control stops; preserve and archive their history on authorized resume.",
+    "If the zero-call R chain finishes after pause, verify retained terminal outputs offline and reconcile its outcome without re-running it. Do not interpret generic runner verification-stop caused by this pause gate as a provider unknown or silently replay.",
+    "Keep all independent caps and prior no-replay rules; no other paid batches."
+  ],
+  "new_provider_calls": 0
+}

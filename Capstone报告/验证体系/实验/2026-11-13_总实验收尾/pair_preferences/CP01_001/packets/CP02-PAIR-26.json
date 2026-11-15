@@ -1,0 +1,132 @@
+{
+  "pair_id": "CP02-PAIR-26",
+  "window_id": "EXPAND-13-full",
+  "project_group": "6c460fa4010f6619",
+  "role": "supervisor",
+  "variant": "full",
+  "input_card_path": "Capstone报告\\验证体系\\指标补充\\2026-11-12_业务结果评价规范_v2\\task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "input": {
+    "role": "supervisor",
+    "project_facts": {
+      "case_id": "CASE-0021",
+      "project_name": "澳门关闸边检大楼建造及扩建工程",
+      "project_type": "公共服务建筑",
+      "location": "澳门",
+      "scale": "34600平方米",
+      "delivery_mode": "DBB",
+      "owner_name": "澳门特别行政区政府"
+    },
+    "scope_basis": {
+      "state": "provided_dossier_not_verified_eligibility",
+      "text": "工程设计、规划、工程管理及监理顾问服务",
+      "projection_sha256": "48ed3c78bfd8c7c1929b35e16683b8d73fc8b8f966bb88d4c403be20861ea037"
+    },
+    "provided_company_fields": {
+      "company_id": "COMP-0455",
+      "company_name": "Pengest 設計工程顧問有限公司",
+      "business_scope": "工程设计、规划、工程管理及监理顾问服务",
+      "industry": "工程咨询/专业技术服务业",
+      "office_location": "澳门",
+      "enterprise_type": "私营",
+      "talent_structure": "工程设计、监理、项目管理人员",
+      "website": "https://pengestinternacional.wordpress.com/"
+    },
+    "conditions": [
+      {
+        "condition_id": "condition_319005801164376af77e",
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "requested",
+        "required_before_formal_submission": true,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      }
+    ],
+    "case_specific_attention": [
+      {
+        "input_pointer": "/facts/real_input_dossier/project/scale",
+        "provided_value": "34600平方米",
+        "handling": "规模有值时可用于拟议安排；空白时不要求虚构数量、实际工期或工程量。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/project/delivery_mode",
+        "provided_value": "DBB",
+        "handling": "交付模式描述项目背景，不自动使本方成为整包设计采购施工主体。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/company",
+        "provided_values": {
+          "talent_structure": "工程设计、监理、项目管理人员"
+        },
+        "handling": "保留给定的总体人员资料，但不得把它升级为本包实际派驻/档期已确认。"
+      }
+    ]
+  },
+  "answers_in_frozen_order": [
+    {
+      "label": "A",
+      "source_arm": "v2_5",
+      "read_state": "evidence_rechecked",
+      "outward": {
+        "decision": "bid",
+        "reason": "作为监理角色，本包落在公司档案所载的业务范围内（工程设计、规划、工程管理及监理顾问服务，属档案文字，非已核实资格）。我们能够以单一责任主体身份担任独立监督、检查、进度与质量审查及记录工作，无需组合体，也不承担施工总包或整包设计施工责任。当前唯一实质障碍是本包指定岗位人员档期是否可用这一前置条件尚未核实，因此本次仅为有条件投标意向，在该条件核实前不提交。费用与人员配置均为暂定提案，待档期与报价基础确认后再定。",
+        "content": "管理层决定：就澳门关闸边检大楼建造及扩建工程的监管/监理角色，表达有条件投标意向。定位为独立监督与检查、进度与质量审查、文件与记录管理，不承担施工总包或整包设计施工责任，故不采用组合体形式。投标方案将包含：监理组织与岗位计划（提案，待人员档期核实）、独立检查与质量审查流程、进度审查与报告机制、文件与记录纪律、风险应对与沟通机制。报价以MOP列示，属暂定费用基础，非已取得的分包报价。提交前须完成本包指定岗位人员档期可用性的核实；该条件未核实前不提交。",
+        "task_role": "supervisor",
+        "unresolved_condition_ids": [
+          "condition_319005801164376af77e"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本包指定岗位人员档期可用性尚待核实，核实前不提交。",
+          "监理组织与岗位计划为提案，非已落实人员配置。",
+          "报价为暂定MOP费用基础，非已取得的分包或供应商报价。",
+          "公司过往监理经验与认证资料未提供，不作能力主张。",
+          "以单一责任主体担任监理，不采用组合体，不承担施工总包或整包设计施工责任。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      },
+      "response_path": "Capstone报告\\验证体系\\实验\\2026-11-12_CP零调用准备\\CP01\\continuation-001\\run\\jobs\\EXPAND-13-full-v2_5-r1\\attempt-1.json",
+      "response_sha256": "957efa83fc98a440e6a3e6878ef6ecfdf2c067aedc02037bd1b987305068586b",
+      "grade_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_review\\CP01\\EXPAND-13-full-v2_5-r1-a1.json",
+      "grade_sha256": "55817f90d321f857c74e8bdb973ca74f14b9c7d72875e8b7f4d7753b11eab722",
+      "recheck_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_recheck\\CP01\\EXPAND-13-full-v2_5-r1-a1.json",
+      "recheck_sha256": "e44c3dc7c9315ffe728af6a3c0e3961285e5f170441e02ffba44c6d7ee1c2c38"
+    },
+    {
+      "label": "B",
+      "source_arm": "v2_4",
+      "read_state": "evidence_rechecked",
+      "outward": {
+        "decision": "bid",
+        "reason": "本包为公共服务建筑的监管服务角色，与我方登记业务范围中的工程管理及监理顾问服务方向一致，我方可以作为单一责任主体承担监管服务并提交方案，无需组合体。当前唯一实质约束是招标包指定岗位人员的档期尚未核实，该事项已列为提交前必须完成的前置核实项；在核实完成前，我方仅表达投标意向并准备方案，不视为已提交。方案中的人员配置、服务流程、质量与文件管理安排均按建议方案列示，报价按MOP暂定口径编制，待人员档期与内部资源安排确认后再定稿。",
+        "content": "管理层决定：就澳门关闸边检大楼建造及扩建工程的监管服务角色，以单一投标人身份表达投标意向并推进方案准备。依据我方登记业务范围（工程设计、规划、工程管理及监理顾问服务），监管服务属于我方经营方向内的顾问角色，我方将作为单一责任主体承担监管服务，不采用组合体形式。方案将围绕监管服务组织、现场巡查与验收见证流程、质量与文件管理纪律、进度与支付审核配合、风险应对与独立复核安排展开，人员配置按建议方案列示，报价按MOP暂定口径编制并保持分项合计一致。需明确：本包指定岗位人员档期尚未核实，该事项为提交前必须完成的前置核实项，在核实完成前本决定仅为投标意向与方案准备，不构成提交；我方不将任何建议方案中的支持安排表述为已落实的承诺。",
+        "unresolved_condition_ids": [
+          "condition_319005801164376af77e"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一投标人身份提交监管服务方案，不采用组合体。",
+          "本包指定岗位人员档期尚未核实，核实完成前仅为投标意向与方案准备，不构成提交。",
+          "人员配置与服务流程按建议方案列示，非已落实承诺。",
+          "报价按MOP暂定口径编制，分项合计保持一致，待内部资源与档期确认后定稿。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      },
+      "response_path": "Capstone报告\\验证体系\\实验\\2026-11-12_CP零调用准备\\CP01\\continuation-001\\run\\jobs\\EXPAND-13-full-v2_4-r1\\attempt-1.json",
+      "response_sha256": "70227a5cb2779193ddf62473b0298a056bc0f260bed5c883abd1b0baff3f2e22",
+      "grade_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_review\\CP01\\EXPAND-13-full-v2_4-r1-a1.json",
+      "grade_sha256": "4e8d5a539adb2e93e19c3296da96f1bbfe9d8b467b281a5b63fcdab3f6532c21",
+      "recheck_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_recheck\\CP01\\EXPAND-13-full-v2_4-r1-a1.json",
+      "recheck_sha256": "51afcb8e3762fa25b4bdc30e3b4ee2b45ff595089c186cd91e01322317eb7284"
+    }
+  ]
+}

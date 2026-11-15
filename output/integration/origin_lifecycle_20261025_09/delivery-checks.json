@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "business_chain": "chain-checks.json",
+  "native_initial_projects": [],
+  "macro_unchanged_from_before_and_frozen_baseline": true,
+  "macro_files": 174,
+  "macro_python_sources": 120,
+  "syntax_modules": [
+    "integration/front_to_closeout_case.py",
+    "integration/origin_lifecycle_case.py",
+    "integration/origin_lifecycle_sources.py",
+    "integration/origin_lifecycle_report.py",
+    "integration/owner_opportunity_observation.py",
+    "tests/test_origin_lifecycle_sources.py"
+  ],
+  "input_bytes_verified": true,
+  "technical_tasks": 1349,
+  "focused_checks": [
+    {
+      "command": ".venv-integration/Scripts/python.exe -m pytest tests/test_owner_opportunity_observation_native.py tests/test_owner_opportunity_proposal_native.py -q --basetemp output/pytest-front-owner-01 --tb=short --disable-warnings",
+      "result": "4 passed",
+      "seconds": 262.26,
+      "warnings": 1055
+    },
+    {
+      "command": ".venv-integration/Scripts/python.exe -m pytest tests/test_origin_lifecycle_sources.py tests/test_goal4_read_horizon.py -q --basetemp output/pytest-origin-read-horizon-02 --tb=short --disable-warnings",
+      "result": "6 passed",
+      "seconds": 3.28
+    },
+    {
+      "evidence": "output/integration/origin_tender_interface_04/interface-checks.json",
+      "result": "passed; native signature and procurement with original signed-contract consumers"
+    }
+  ],
+  "live_api_calls": 0,
+  "prior_failed_or_stopped_runs": "Preserved separately; not counted as passing",
+  "scope": "One synthetic normal origin-to-aggregate-settlement case, 40 actual micro action types across 8 roles. No all-106-action, full-detail-business or new live-model claim."
+}

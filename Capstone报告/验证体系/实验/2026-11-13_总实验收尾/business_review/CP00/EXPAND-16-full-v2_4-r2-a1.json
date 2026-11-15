@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-16-full",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "2faf812a76c1dbb9",
+  "role": "supervisor",
+  "annotated_action": "conditional_hotel_supervision_with_review_nodes",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-16-full-v2_4-r2/attempt-1.json",
+  "response_sha256": "578bf8f43af5f1109b65b0c83c0146d4d00be05963b943879a07c081c32e3c72",
+  "call_id": "attempt_002_call_000088",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "不构成对酒店EPC监理业绩、认证或人员储备的已验证结论",
+    "reason": "真实监理范围与具体能力分开，人员未确认不提交，外部支持只是计划。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 89,
+      "end": 116,
+      "quote": "不构成对酒店EPC监理业绩、认证或人员储备的已验证结论"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "此为档案原文",
+      "reason": "实际范围含咨询监理，未将施工登记变本方施工责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 82,
+        "end": 88,
+        "quote": "此为档案原文"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "围绕质量目标、工期监督、付款审核、文档纪律和独立复核建立审查节点",
+      "reason": "质量工期及支付审查、独立复核与记录节点有相关安排，不称已审查完成。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 141,
+        "end": 173,
+        "quote": "围绕质量目标、工期监督、付款审核、文档纪律和独立复核建立审查节点"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "所有人员配置、外部支持与费用均为拟议方案",
+      "reason": "实际档期未确认保留，但无本方岗位或具体人员落实组织。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 280,
+        "end": 300,
+        "quote": "所有人员配置、外部支持与费用均为拟议方案"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "若无法确认，我方将不提交",
+      "reason": "原必要档期及不利分支保持，普通支持无承诺。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 272,
+        "end": 284,
+        "quote": "若无法确认，我方将不提交"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "规模791间客房，监理角色属于我方档案所列业务范围内的监管服务",
+      "reason": "真实酒店规模类型用于服务参与判断，不从客房数推未经给定规范。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 24,
+        "end": 55,
+        "quote": "规模791间客房，监理角色属于我方档案所列业务范围内的监管服务"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_EXPAND16_first_001.json",
+  "authored_labels_sha256": "1de104ce294a7fffb4b345ead1af3cede8cebdc9366c5dbd6995c94beadc5887",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

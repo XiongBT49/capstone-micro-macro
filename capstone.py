@@ -7,13 +7,19 @@ def read(p):return json.loads((ROOT/p).read_text(encoding='utf-8-sig'))
 def doctor():
  macro=ROOT/'vendor/gba'
  import pydantic,langchain_openai,numpy
- paths=['src','integration','prompts','skills','zwtnew','vendor/gba/data/processed/agent_database.sqlite','data/test_sources/casebank_enterprise_matched/simulation_input_projects.csv']
- missing=[p for p in paths if not (ROOT/p).exists()]
+ asset_errors=[]
  if (macro/'gba_construction_sim').is_dir():
   from integration.bootstrap import enable_gba_imports
-  macro=enable_gba_imports()
- show(dict(root=str(ROOT),python=sys.version.split()[0],macro=str(macro),missing=missing,independent_root=macro.exists() and macro.is_relative_to(ROOT),network_used=False,resource_note='Original data and third-party macro resources are retained locally and excluded from the public repository.'))
- return int(bool(missing))
+  try:macro=enable_gba_imports()
+  except (RuntimeError,OSError,ValueError,KeyError) as exc:asset_errors.append(str(exc))
+ paths=['src','integration','prompts','skills','zwtnew','vendor/gba/data/processed/agent_database.sqlite','data/test_sources/casebank_enterprise_matched/simulation_input_projects.csv']
+ missing=[p for p in paths if not (ROOT/p).exists()]
+ database=ROOT/'vendor/gba/data/processed/agent_database.sqlite'
+ if database.is_file():
+  with database.open('rb') as f:header=f.read(16)
+  if header!=b'SQLite format 3\x00':asset_errors.append('Macro database is not a SQLite file. Run git lfs install and git lfs pull.')
+ show(dict(root=str(ROOT),python=sys.version.split()[0],macro=str(macro),missing=missing,asset_errors=asset_errors,independent_root=macro.exists() and macro.is_relative_to(ROOT),network_used=False,resource_note='Complete collaboration checkout requires Git LFS objects; credentials and temporary runs remain local.'))
+ return int(bool(missing or asset_errors))
 def data():
  result={}
  for p in (ROOT/'data/test_sources/casebank_enterprise_matched').glob('*.csv'):

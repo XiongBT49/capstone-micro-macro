@@ -1,0 +1,13 @@
+{
+ "identity":"posthoc_author_input_name_screen_not_business_scoring_or_tender_verification",
+ "literal_screen_terms":["顾问","咨询","监理"],
+ "selection_rule":"Search all232 full task-card project names for any of the three literal terms, regardless of assigned role. Missing counterparts are the same source project and are retained together. This screen does not read or classify future answers.",
+ "timing":"After all CP08 model outputs existed; first160 answers graded, with groups100 and103 still ungraded. Posthoc input-quality supplement, not preregistered.",
+ "rows":[
+  {"window_id":"CP08-040-full","classification":"named_consultancy_contract_with_contractor_task","potential_source_task_scope_tension":true,"possible_source_entity_unit_tension":false,"reason":"标题明确供电顾问合约、交付元数据EPC，而任务角色施工承建；不能据合成任务证明真实顾问合约另有已验施工采购包。全部四答案保留，项目整体做范围分层及剔除敏感性。"},
+  {"window_id":"CP08-100-full","classification":"named_design_consultancy_with_contractor_task","potential_source_task_scope_tension":true,"possible_source_entity_unit_tension":false,"reason":"标题与交付模式均指机电设计顾问服务，任务却为承建商。此前设计词筛选已纳入同一项目，合并时不可重复计算。尚未读取其回答评分。"},
+  {"window_id":"CP08-103-full","classification":"company_like_source_name_with_supervisor_project_task","potential_source_task_scope_tension":false,"possible_source_entity_unit_tension":true,"reason":"项目名为前海基础设施咨询公司，听起来是组织名称；类型为市政基础设施、业主另有公司，但规模和交付为空，现有任务卡不足以独立确认真实项目采购单位。只标来源单位歧义，不直接认定无项目、不擅自改名或剔除，全部答案保留并作整项目来源质量敏感性。尚未读取其回答评分。"}
+ ],
+ "primary_inclusion_inputs_or_scores_changed":false,
+ "limits":"Literal name screens are not exhaustive procurement-scope or entity-resolution audits. A possible scope tension does not prove a real package is impossible; controlled-role grades do not prove such a real package exists. Do not use these posthoc strata to select favorable primary cases."
+}

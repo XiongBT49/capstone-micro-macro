@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-10-missing_core",
+  "arm": "v2_5",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "42b413cfeadbb4a5",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_with_unsupported_existing_consultancy_identity",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-10-missing_core-v2_5-r2/attempt-1.json",
+  "response_sha256": "ed0ec34663e5ba894407e090796e0cbdee9cb511998dc1ecd50ea0a433c2acd5",
+  "call_id": "attempt_001_call_000013",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "本公司作为工程顾问机构，以监管/监理角色单独投标在业务定位上是成立的",
+    "reason": "实际顾问业务身份和定位未提供，不能从名称或分配角色补出后据以匹配；后段本包经验未知不消除此断言。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 0,
+      "end": 34,
+      "quote": "本公司作为工程顾问机构，以监管/监理角色单独投标在业务定位上是成立的"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "本公司作为工程顾问机构",
+      "reason": "实际范围行业未知，企业名称不证明现有主营，虽保持独立监督不接施工。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 11,
+        "quote": "本公司作为工程顾问机构"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "方案将围绕监理组织架构、现场检查与验收流程、进度与质量审查机制",
+      "reason": "未来方案清单，未实际展开两项监督检查或记录方法。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 103,
+        "end": 134,
+        "quote": "方案将围绕监理组织架构、现场检查与验收流程、进度与质量审查机制"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "人员配置与专项外部协助均作为拟议安排而非已落实事实",
+      "reason": "状态区分正确，未实际给岗位或组织方案。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 170,
+        "end": 195,
+        "quote": "人员配置与专项外部协助均作为拟议安排而非已落实事实"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "在该条件确认前不提交投标",
+      "reason": "原人员必要前提未决，外部支持尚无承诺，没有强制共享身份或新核查硬门槛。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 279,
+        "end": 291,
+        "quote": "在该条件确认前不提交投标"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "partial",
+      "quote": "青茂口岸联检大楼及连接通道-基础工程",
+      "reason": "给定项目被识别，但服务与行动仍通用，缺基础工程或地域条件对具体监督重点的联系。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 20,
+        "end": 38,
+        "quote": "青茂口岸联检大楼及连接通道-基础工程"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.2,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_EXPAND10_first_001.json",
+  "authored_labels_sha256": "42f0a636f2f396d12265d0a3722cd37893de259ef58b211b745014375057ab25",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

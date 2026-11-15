@@ -1,0 +1,23 @@
+[
+  "D:\\hkura\\codedemo_v2\\.venv-integration\\Scripts\\python.exe",
+  "-m",
+  "integration.run",
+  "--input",
+  "D:\\hkura\\codedemo_v2\\output\\integration\\origin_model_lifecycle_20261025_03\\input\\macro-request.json",
+  "--output",
+  "D:\\hkura\\codedemo_v2\\output\\integration\\origin_model_lifecycle_20261025_03\\runtime",
+  "--llm",
+  "--input-format",
+  "gba_request",
+  "--macro-mode",
+  "gba_v1_module",
+  "--allow-native-project-generation",
+  "--agent-client-factory",
+  "integration.model_tender_native:build_agent_client",
+  "--agent-client-config",
+  "D:\\hkura\\codedemo_v2\\output\\integration\\origin_model_lifecycle_20261025_03\\input\\native-host.json",
+  "--module-assembly-hook",
+  "integration.origin_model_lifecycle:configure_assembly",
+  "--module-assembly-config",
+  "D:\\hkura\\codedemo_v2\\output\\integration\\origin_model_lifecycle_20261025_03\\input\\assembly-host.json"
+]

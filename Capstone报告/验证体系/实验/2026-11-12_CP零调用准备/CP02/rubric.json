@@ -1,0 +1,68 @@
+{
+  "version": "CP02-author-assisted-review.v1",
+  "reviewer": "current_conversation_assistant",
+  "independent_expert": false,
+  "true_blinding_claimed": false,
+  "paid_judge_client": false,
+  "provider_requests": 0,
+  "dimensions": {
+    "evidence_support": [
+      "Key assertion unsupported or contradicted",
+      "Partially supported with material gaps",
+      "Key judgments supported by supplied facts"
+    ],
+    "business_feasibility": [
+      "Violates hard authority/condition/resource constraints",
+      "Requires unresolved material checks",
+      "Feasible within declared bounds or justified wait/refusal"
+    ],
+    "tradeoff_reasonableness": [
+      "Ignores decisive tradeoff or irrelevant rationale",
+      "Addresses only some relevant tradeoffs",
+      "Tradeoffs consistent with objectives and constraints"
+    ],
+    "uncertainty_handling": [
+      "Fabricates or treats unknown as certain",
+      "Acknowledges unknown but incomplete handling",
+      "Appropriate clarification/wait/scoped proposal"
+    ]
+  },
+  "scores": [
+    0,
+    1,
+    2,
+    "not_judgable"
+  ],
+  "preference": [
+    "A",
+    "B",
+    "tie",
+    "not_judgable"
+  ],
+  "required_evidence": [
+    "response_quote_locator",
+    "decision_time_source_locator",
+    "applicable_rule",
+    "reason"
+  ],
+  "critical_flags": [
+    "unsupported_capability",
+    "unauthorized_action",
+    "premature_condition_release",
+    "arithmetic_or_unit_error"
+  ],
+  "do_not_reward": [
+    "verbosity",
+    "more refusals",
+    "more comments",
+    "model_reported_decision_impact"
+  ],
+  "procedure": [
+    "score_each_answer",
+    "form_pair_preference",
+    "one_same_assistant_evidence_recheck",
+    "retain_initial_and_revised_ratings"
+  ],
+  "missing": "Unavailable answers retain their slots and receive not_judgable, never invented text or a semantic zero.",
+  "scope": "Diagnostic assistant labels alongside reproducible checks and execution evidence; not independent professional validation."
+}

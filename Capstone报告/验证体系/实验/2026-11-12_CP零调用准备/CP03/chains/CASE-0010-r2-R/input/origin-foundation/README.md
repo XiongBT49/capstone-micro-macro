@@ -1,0 +1,1 @@
+No initial project. Original Owner/Bank/professional actions precede existing tender, contract, supply and settlement handlers. Fixed initial synthetic declarations; no runtime state edits. Only Contractor A02 pricing selection calls the declared model, within its separate four-attempt cap. No automatic retries or offline fallback.

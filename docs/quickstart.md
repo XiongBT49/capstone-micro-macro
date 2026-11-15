@@ -1,21 +1,24 @@
 # 安装与运行
 
-使用Python 3.12，在仓库根目录执行：
+在本仓库根目录使用Python 3.12。无需旧工作区的虚拟环境。首次克隆后先执行 `git lfs install` 和 `git lfs pull`，确保数据库等大文件已下载。
 
 ```powershell
-uv sync --locked
-uv run pytest tests
+uv sync
+uv run python capstone.py doctor
+uv run python capstone.py data
 uv run python capstone.py results
+uv run python capstone.py micro-demo
+uv run python capstone.py macro-demo
 ```
 
-公开测试限定为纯方法、组织授权和领域契约三个测试文件，使用合成输入，不调用模型或宏观数据库。原完整工作区的512项核验覆盖更多本地资源依赖测试，不能等同于公开克隆的测试范围。
+本地已有独立 `.venv`，也可直接调用 `.venv/Scripts/python.exe capstone.py doctor`。两个demo均禁止外网，允许Windows事件循环需要的本机连接，输出使用 `runs/` 下的新目录。微观采用确定性替身，宏观采用规则模式；这是运行检查，不新增研究效果证据。
 
-## 完整本地工作区
+`macro-demo` 默认只运行1步，确认场景装配、宏观引擎与微观处理器能够连接。完整生命周期入口为 `uv run python capstone.py macro-demo --full`，运行48步且涉及大型数据库，可能明显耗时；完整运行也使用独立的新输出目录。默认示例不宣称完成投标或结算。
 
-完整工作区可执行 `capstone.py doctor`、`data`、`micro-demo` 和 `macro-demo`。运行资源包括：授权宏观包及数据库 `vendor/gba/`、契约规范 `zwtnew/`、完整 `config/`、原始 `data/`，以及当前运行代码明确读取的本地冻结基线。它们未随公开仓库发布。
+宏观示例保留48步完整输入，通过已有检查点接口在第1步停止，并在输出目录复制独立的可写数据库。`vendor/gba/` 下保留的数据库不作为新示例的写入目标。每次宏观示例约额外占2GB磁盘，`runs/` 已忽略。
 
-已有 `D:/hkura/codedemo_v2/new_sum` 中的资源继续保留；在其他机器上使用前，应通过项目授权渠道取得资源，放到对应目录，再运行 `doctor`。不要为绕过缺失检查伪造数据或替换冻结事实。
+可用 `uv run pytest tests` 检查本项目回归；宏观供应包自带测试保留在 `vendor/gba/`，不混入默认测试收集。此次迁移的实际检查范围见[验收记录](verification.md)。
 
-宏观默认示例保留48步输入，通过原生检查点在第1步停止；`capstone.py macro-demo --full` 运行48步，耗时明显更长。宏观示例在 `runs/` 中复制独立可写数据库，约额外占2GB；示例禁止外网，允许Windows事件循环需要的本机连接。
+真实模型凭据只放本地 `.env`，参考 `.env.example`。已有冻结实验的恢复不属于demo；需先核对当前研究问题、停止状态、预算、未知请求和迁移后的冻结路径，不能直接重跑旧批次入口。
 
-真实模型凭据只放本地 `.env`，参考 `.env.example`。已有实验的停止状态保留，公开上传不恢复任何模型任务。
+?????????????????doctor???????????SHA256?????????????????LFS??????????

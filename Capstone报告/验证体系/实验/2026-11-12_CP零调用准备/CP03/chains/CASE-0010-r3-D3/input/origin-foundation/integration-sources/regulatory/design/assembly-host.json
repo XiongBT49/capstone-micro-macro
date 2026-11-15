@@ -1,0 +1,732 @@
+{
+  "schema_version": "gba-module-host-config.v1",
+  "host_id": "CP03-CASE-0010-r3-D3",
+  "version": "1",
+  "settings": {
+    "version": "1",
+    "policy_version": "explicit-regulatory-intake-v1",
+    "authority": {
+      "runtime_id": "CP03-CASE-0010-r3-D3",
+      "version": "1",
+      "organization_snapshot": {
+        "schema_version": "organization.v2",
+        "run_id": "CP03-CASE-0010-r3-D3",
+        "organizations": [
+          {
+            "organization_id": "finance-owner-a",
+            "actor_id": "finance-owner-a",
+            "source_ids": [
+              "synthetic:finance-owner-a"
+            ],
+            "public_description": "Explicit synthetic regulatory sources; no real authority, case filing or legal validity.",
+            "public_location": {
+              "state": "known",
+              "value": "Hong Kong"
+            },
+            "assignments": [
+              {
+                "role": "Owner",
+                "function_ref": {
+                  "kind": "FunctionAssignment",
+                  "id": "origin-design-applicant-function",
+                  "version": "1"
+                },
+                "configuration_version": "1",
+                "basis_refs": [
+                  {
+                    "kind": "Evidence",
+                    "id": "finance-owner-a-independent-assumptions",
+                    "version": "1"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-owner-a-independent-assumptions",
+                "version": "1"
+              }
+            ]
+          },
+          {
+            "organization_id": "finance-government",
+            "actor_id": "finance-government",
+            "source_ids": [
+              "synthetic:finance-government"
+            ],
+            "public_description": "Explicit synthetic regulatory sources; no real authority, case filing or legal validity.",
+            "public_location": {
+              "state": "known",
+              "value": "Hong Kong"
+            },
+            "assignments": [
+              {
+                "role": "Government",
+                "function_ref": {
+                  "kind": "FunctionAssignment",
+                  "id": "finance-government-function",
+                  "version": "1"
+                },
+                "configuration_version": "1",
+                "basis_refs": [
+                  {
+                    "kind": "Evidence",
+                    "id": "finance-government-independent-assumptions",
+                    "version": "1"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              }
+            ]
+          }
+        ],
+        "authorizations": [
+          {
+            "ref": {
+              "kind": "Authorization",
+              "id": "finance-government-PGEN0001-t9-intake-grant",
+              "version": "1"
+            },
+            "organization_id": "finance-government",
+            "actor_id": "finance-government",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "finance-government-function",
+              "version": "1"
+            },
+            "action_ids": [
+              "GOV-A02"
+            ],
+            "scopes": [
+              {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "PGEN0001",
+                  "version": "1"
+                },
+                "coverage_refs": []
+              }
+            ],
+            "readable_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-actual-native-request",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "PGEN0001-initial-source",
+                "version": "1"
+              },
+              {
+                "kind": "Project",
+                "id": "PGEN0001",
+                "version": "1"
+              },
+              {
+                "kind": "Submission",
+                "id": "finance-government-PGEN0001-t9-received",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryMatter",
+                "id": "finance-government-PGEN0001-t9-matter",
+                "version": "1"
+              },
+              {
+                "kind": "Jurisdiction",
+                "id": "finance-government-PGEN0001-t9-jurisdiction",
+                "version": "1"
+              },
+              {
+                "kind": "Procedure",
+                "id": "finance-government-PGEN0001-t9-procedure",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-correction",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-outside",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-ineligible",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-withdrawn",
+                "version": "1"
+              },
+              {
+                "kind": "EvidenceTarget",
+                "id": "finance-government-PGEN0001-t9-material",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryRecipient",
+                "id": "finance-government-PGEN0001-t9-applicant",
+                "version": "1"
+              },
+              {
+                "kind": "ResponseRequirement",
+                "id": "finance-government-PGEN0001-t9-correction",
+                "version": "1"
+              },
+              {
+                "kind": "InformationRequirement",
+                "id": "finance-government-PGEN0001-t9-signature",
+                "version": "1"
+              },
+              {
+                "kind": "InformationRequirement",
+                "id": "finance-government-PGEN0001-t9-eligibility",
+                "version": "1"
+              },
+              {
+                "kind": "InformationRequirement",
+                "id": "finance-government-PGEN0001-t9-document",
+                "version": "1"
+              },
+              {
+                "kind": "FunctionAssignment",
+                "id": "finance-government-function",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "finance-government-PGEN0001-t9-intake-grant",
+                "version": "1"
+              },
+              {
+                "kind": "CandidateSet",
+                "id": "finance-government-PGEN0001-t9-intake",
+                "version": "1"
+              }
+            ],
+            "tool_ids": [],
+            "validity": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 99
+              },
+              "bounds": "closed_open"
+            },
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              }
+            ]
+          },
+          {
+            "ref": {
+              "kind": "Authorization",
+              "id": "finance-government-PGEN0001-t9-approval-review",
+              "version": "1"
+            },
+            "organization_id": "finance-government",
+            "actor_id": "finance-government",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "finance-government-function",
+              "version": "1"
+            },
+            "action_ids": [
+              "GOV-A04"
+            ],
+            "scopes": [
+              {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "PGEN0001",
+                  "version": "1"
+                },
+                "coverage_refs": []
+              }
+            ],
+            "readable_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "FunctionAssignment",
+                "id": "finance-government-function",
+                "version": "1"
+              },
+              {
+                "kind": "Project",
+                "id": "PGEN0001",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryMatter",
+                "id": "finance-government-PGEN0001-t9-matter",
+                "version": "1"
+              },
+              {
+                "kind": "Jurisdiction",
+                "id": "finance-government-PGEN0001-t9-jurisdiction",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-actual-native-request",
+                "version": "1"
+              },
+              {
+                "kind": "Submission",
+                "id": "finance-government-PGEN0001-t9-received",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-received-design-document",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-independent-review-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryCase",
+                "id": "finance-government-PGEN0001-t9-approval-independent-initial-case",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-actual-review-request",
+                "version": "1"
+              },
+              {
+                "kind": "Task",
+                "id": "finance-government-PGEN0001-t9-approval-review",
+                "version": "1"
+              },
+              {
+                "kind": "ReviewAssignment",
+                "id": "finance-government-PGEN0001-t9-approval-initial-reviewer",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-approval-document-type",
+                "version": "1"
+              },
+              {
+                "kind": "ApplicabilityBasis",
+                "id": "finance-government-PGEN0001-t9-approval-document-type",
+                "version": "1"
+              },
+              {
+                "kind": "VerifiedFact",
+                "id": "finance-government-PGEN0001-t9-approval-document-type",
+                "version": "1"
+              },
+              {
+                "kind": "MethodDescriptor",
+                "id": "finance-government-PGEN0001-t9-approval-rule-executor",
+                "version": "1"
+              },
+              {
+                "kind": "MethodResult",
+                "id": "finance-government-PGEN0001-t9-approval-original-independent-check",
+                "version": "1"
+              },
+              {
+                "kind": "CandidateSet",
+                "id": "finance-government-PGEN0001-t9-approval-GOV-A04",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "finance-government-PGEN0001-t9-approval-review",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-actual-a04-handoff",
+                "version": "1"
+              }
+            ],
+            "tool_ids": [],
+            "validity": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 99
+              },
+              "bounds": "closed_open"
+            },
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-independent-review-assumptions",
+                "version": "1"
+              }
+            ]
+          },
+          {
+            "ref": {
+              "kind": "Authorization",
+              "id": "finance-government-PGEN0001-t9-approval-decision",
+              "version": "1"
+            },
+            "organization_id": "finance-government",
+            "actor_id": "finance-government",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "finance-government-function",
+              "version": "1"
+            },
+            "action_ids": [
+              "GOV-A07"
+            ],
+            "scopes": [
+              {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "PGEN0001",
+                  "version": "1"
+                },
+                "coverage_refs": []
+              }
+            ],
+            "readable_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "FunctionAssignment",
+                "id": "finance-government-function",
+                "version": "1"
+              },
+              {
+                "kind": "Project",
+                "id": "PGEN0001",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryMatter",
+                "id": "finance-government-PGEN0001-t9-matter",
+                "version": "1"
+              },
+              {
+                "kind": "Jurisdiction",
+                "id": "finance-government-PGEN0001-t9-jurisdiction",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-actual-native-request",
+                "version": "1"
+              },
+              {
+                "kind": "Submission",
+                "id": "finance-government-PGEN0001-t9-received",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-received-design-document",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-independent-review-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-actual-decision-request",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-actual-a04-handoff",
+                "version": "1"
+              },
+              {
+                "kind": "MethodDescriptor",
+                "id": "finance-government-PGEN0001-t9-approval-rule-executor",
+                "version": "1"
+              },
+              {
+                "kind": "RegulatoryCase",
+                "id": "finance-government-PGEN0001-t9-approval-independent-initial-case",
+                "version": "1"
+              },
+              {
+                "kind": "Assessment",
+                "id": "finance-government-PGEN0001-t9-approval-actual-a04-private-review",
+                "version": "1"
+              },
+              {
+                "kind": "MethodResult",
+                "id": "finance-government-PGEN0001-t9-approval-actual-a04-finding",
+                "version": "1"
+              },
+              {
+                "kind": "DecisionCheck",
+                "id": "finance-government-PGEN0001-t9-approval-document-type",
+                "version": "1"
+              },
+              {
+                "kind": "Procedure",
+                "id": "finance-government-PGEN0001-t9-approval-case-decision-checklist",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-approval-approve",
+                "version": "1"
+              },
+              {
+                "kind": "EffectRule",
+                "id": "finance-government-PGEN0001-t9-approval-native-approval",
+                "version": "1"
+              },
+              {
+                "kind": "Rule",
+                "id": "finance-government-PGEN0001-t9-approval-require-design-revision",
+                "version": "1"
+              },
+              {
+                "kind": "EffectRule",
+                "id": "finance-government-PGEN0001-t9-approval-revision-without-permission",
+                "version": "1"
+              },
+              {
+                "kind": "Authority",
+                "id": "finance-government-PGEN0001-t9-approval-decision-outcome",
+                "version": "1"
+              },
+              {
+                "kind": "DecisionBasis",
+                "id": "finance-government-PGEN0001-t9-approval-authorized-draft",
+                "version": "1"
+              },
+              {
+                "kind": "DecisionCommand",
+                "id": "finance-government-PGEN0001-t9-approval-draft-only",
+                "version": "1"
+              },
+              {
+                "kind": "CandidateSet",
+                "id": "finance-government-PGEN0001-t9-approval-GOV-A07",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "finance-government-PGEN0001-t9-approval-decision",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "finance-government-PGEN0001-t9-approval-review",
+                "version": "1"
+              }
+            ],
+            "tool_ids": [],
+            "validity": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 99
+              },
+              "bounds": "closed_open"
+            },
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-independent-review-assumptions",
+                "version": "1"
+              }
+            ]
+          },
+          {
+            "ref": {
+              "kind": "Authorization",
+              "id": "finance-government-PGEN0001-t9-approval-feedback-record",
+              "version": "1"
+            },
+            "organization_id": "finance-government",
+            "actor_id": "finance-government",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "finance-government-function",
+              "version": "1"
+            },
+            "action_ids": [
+              "GOV-A12"
+            ],
+            "scopes": [
+              {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "PGEN0001",
+                  "version": "1"
+                },
+                "coverage_refs": []
+              }
+            ],
+            "readable_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "FunctionAssignment",
+                "id": "finance-government-function",
+                "version": "1"
+              },
+              {
+                "kind": "Project",
+                "id": "PGEN0001",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-actual-native-request",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-actual-own-history-query",
+                "version": "1"
+              },
+              {
+                "kind": "Feedback",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-query-result",
+                "version": "1"
+              },
+              {
+                "kind": "ObservationProfile",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-own-history",
+                "version": "1"
+              },
+              {
+                "kind": "Authority",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-private-record-only",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-record",
+                "version": "1"
+              },
+              {
+                "kind": "CandidateSet",
+                "id": "finance-government-PGEN0001-t9-approval-feedback-record",
+                "version": "1"
+              }
+            ],
+            "tool_ids": [],
+            "validity": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "CP03-CASE-0010-r3-D3-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 99
+              },
+              "bounds": "closed_open"
+            },
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "finance-government-independent-assumptions",
+                "version": "1"
+              }
+            ]
+          }
+        ],
+        "inactive_authorization_refs": []
+      }
+    },
+    "file_path": "D:\\hkura\\codedemo_v2\\Capstone报告\\验证体系\\实验\\2026-11-12_CP零调用准备\\CP03\\chains\\CASE-0010-r3-D3\\input\\origin-foundation\\integration-sources\\regulatory\\design\\government-intake-input.json",
+    "file_sha256": "e8c6254d5843202efc282370822e77b9282ff2961051fe5f0244f7b29091a26a",
+    "approval": {
+      "version": "1",
+      "file_path": "D:\\hkura\\codedemo_v2\\Capstone报告\\验证体系\\实验\\2026-11-12_CP零调用准备\\CP03\\chains\\CASE-0010-r3-D3\\input\\origin-foundation\\integration-sources\\regulatory\\design\\government-approval-input.json",
+      "file_sha256": "2f1c71f43694e86549fc86875fe033d9476038bf9421a25975fca81308bacee3",
+      "allow_saved_recovery": false,
+      "continue_unstarted_actions_on_error": false
+    },
+    "monthly": null,
+    "allow_saved_recovery": false
+  }
+}

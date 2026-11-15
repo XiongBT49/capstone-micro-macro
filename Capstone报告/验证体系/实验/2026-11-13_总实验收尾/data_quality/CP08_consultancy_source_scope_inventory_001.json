@@ -1,0 +1,98 @@
+{
+  "identity": "posthoc_author_input_name_screen_not_business_scoring_or_tender_verification",
+  "all_CP08_project_groups": 232,
+  "literal_screen_terms": [
+    "顾问",
+    "咨询",
+    "监理"
+  ],
+  "literal_screened_groups": 3,
+  "authored_readings_sha256": "9777a43345a07c568e0664addd077558faa036877e3e6caac4e4fa28bc106256",
+  "task_cards_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "rows": [
+    {
+      "window_id": "CP08-040-full",
+      "classification": "named_consultancy_contract_with_contractor_task",
+      "potential_source_task_scope_tension": true,
+      "possible_source_entity_unit_tension": false,
+      "reason": "标题明确供电顾问合约、交付元数据EPC，而任务角色施工承建；不能据合成任务证明真实顾问合约另有已验施工采购包。全部四答案保留，项目整体做范围分层及剔除敏感性。",
+      "project_group": "1e92bc95a81d43b5",
+      "assigned_role": "contractor",
+      "project_facts": {
+        "case_id": "CASE-0081",
+        "project_name": "南沙雍尚湾养老院供电顾问合约",
+        "project_type": "公共服务建筑",
+        "location": "广州",
+        "scale": "",
+        "delivery_mode": "EPC",
+        "owner_name": "广州南沙供电局"
+      },
+      "counterpart_missing_window": "CP08-040-missing_core"
+    },
+    {
+      "window_id": "CP08-100-full",
+      "classification": "named_design_consultancy_with_contractor_task",
+      "potential_source_task_scope_tension": true,
+      "possible_source_entity_unit_tension": false,
+      "reason": "标题与交付模式均指机电设计顾问服务，任务却为承建商。此前设计词筛选已纳入同一项目，合并时不可重复计算。尚未读取其回答评分。",
+      "project_group": "c5a7e269592853f4",
+      "assigned_role": "contractor",
+      "project_facts": {
+        "case_id": "CASE-0166",
+        "project_name": "公明车辆段综合开发等三个项目机电设计顾问服务",
+        "project_type": "综合开发与复合功能项目",
+        "location": "深圳",
+        "scale": "",
+        "delivery_mode": "设计顾问",
+        "owner_name": "深圳市地铁集团有限公司"
+      },
+      "counterpart_missing_window": "CP08-100-missing_core"
+    },
+    {
+      "window_id": "CP08-103-full",
+      "classification": "company_like_source_name_with_supervisor_project_task",
+      "potential_source_task_scope_tension": false,
+      "possible_source_entity_unit_tension": true,
+      "reason": "项目名为前海基础设施咨询公司，听起来是组织名称；类型为市政基础设施、业主另有公司，但规模和交付为空，现有任务卡不足以独立确认真实项目采购单位。只标来源单位歧义，不直接认定无项目、不擅自改名或剔除，全部答案保留并作整项目来源质量敏感性。尚未读取其回答评分。",
+      "project_group": "2837e50dc8f2abea",
+      "assigned_role": "supervisor",
+      "project_facts": {
+        "case_id": "CASE-0171",
+        "project_name": "前海基础设施咨询公司",
+        "project_type": "市政与公共基础设施",
+        "location": "深圳",
+        "scale": "",
+        "delivery_mode": "",
+        "owner_name": "深圳前海基础设施投资基金管理有限公司"
+      },
+      "counterpart_missing_window": "CP08-103-missing_core"
+    }
+  ],
+  "earlier_design_inventory_sha256": "3118a89e5372d03cc4cfdba00cd8247d57066fcc232c9d71b3fa55ac01f39355",
+  "earlier_scope_tension_group_count": 14,
+  "combined_named_professional_service_scope_tension_group_count": 15,
+  "combined_posthoc_scope_stratum_project_ids": [
+    "1e92bc95a81d43b5",
+    "56c7f7f641b25dde",
+    "7cc6fd4e2af6cf3b",
+    "81f6c8f06c936a68",
+    "a695519f4f3fb43e",
+    "ae07f73fb3e5e976",
+    "b72b2080d908fd7c",
+    "c425bdcc446614d6",
+    "c5a7e269592853f4",
+    "e2bbe8f21275854e",
+    "e5dcf6485067c997",
+    "ea36af4ed7bf7540",
+    "ee7e5a0d266f132d",
+    "f47ce523e77d17fa",
+    "fb2d8ea0de611647"
+  ],
+  "additional_possible_source_entity_unit_group_ids": [
+    "2837e50dc8f2abea"
+  ],
+  "timing": "After all CP08 model outputs existed; first160 answers graded, with groups100 and103 still ungraded. Posthoc input-quality supplement, not preregistered.",
+  "limits": "Literal name screens are not exhaustive procurement-scope or entity-resolution audits. A possible scope tension does not prove a real package is impossible; controlled-role grades do not prove such a real package exists. Do not use these posthoc strata to select favorable primary cases.",
+  "primary_inclusion_inputs_or_scores_changed": false,
+  "new_provider_calls": 0
+}

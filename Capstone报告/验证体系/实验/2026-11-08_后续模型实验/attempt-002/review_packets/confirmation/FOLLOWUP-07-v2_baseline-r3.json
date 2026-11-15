@@ -1,0 +1,94 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-07",
+    "arm": "v2_baseline",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-07",
+    "expected_business_property": "Keep package-specific staff availability unresolved unless a visible reviewed source establishes it. Aggregate headcount, past work and internal consensus do not settle the open checks.",
+    "core_question_register": [
+      {
+        "question": "下一步，请市场部核实我们的团队可用性摘要，并评估潜在合作伙伴，以便在截止前形成可行方案",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请项目经理提供团队可用性摘要，以便我们评估成本与风险",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议单独投标，但需先确认团队可用性，确保满足监管服务的独立监督和报告要求",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队核实并补充公开数据，确保投标文件无遗漏",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0001",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "监管服务包与本公司工料测量、项目管理、质量记录与业主报告的核心能力高度契合，代表项目经验可直接支撑质量审查、报告纪律与业主升级要求。内部讨论中提出的驻场人力与公开数据缺口，属于可通过人员配置计划、按人月计费的价格基础、明确的外聘支持边界与文档纪律来管理的正常投标风险，不构成必须共享投标人身份与包级责任的问责缺口。监管服务的独立性要求我们作为单一问责主体主导现场监督判断与向业主升级，若以组合体共同承担监督责任，反而削弱独立性与可信度。因此决定以单一投标人身份投标，同时把团队可用性摘要核实、公开数据补充列为提交前必须完成的内部条件，未核实前不作最终报价与工期承诺。",
+    "content": "管理层决定：就监管服务包以单一投标人身份提交投标意向。定位为独立监管方，主导现场监督判断、质量审查、安全标准跟踪、样本处理与业主升级，保持监督独立性与单一问责。投标文件按业主要求组织团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图与风险应对；价格采用固定费用或按人月计费，并在价格基础中说明驻场人力投入假设。驻场人力如存在缺口，以明确的外聘支持或分包边界处理，不作为组合体安排，监督判断与报告责任仍由本公司承担。公开数据缺口以可核实的角色计划、过往项目质量记录与文档管理纪律补强，不虚构未取得的认证或人员承诺。提交前须完成团队可用性核实与公开数据补充，未核实前不锁定最终报价与工期承诺。",
+    "verification_requests": [
+      {
+        "question": "请项目经理提供并核实团队可用性摘要，明确可用于本监管服务包的驻场监督人员、角色与投入时段",
+        "required_before_submission": true
+      },
+      {
+        "question": "请商务团队核实并补充公司公开数据（人员规模、认证等），确保投标文件资格信息完整无遗漏",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部评估驻场人力补充方案（外聘支持或分包）的可行性与边界，明确监督判断与报告责任仍由本公司承担",
+        "required_before_submission": false
+      }
+    ],
+    "unresolved_condition_ids": [
+      "condition_b7f0084a6f4ade11881b",
+      "condition_18fdc14d73181ef97965",
+      "condition_b1fa5fe4368aa71da6c5",
+      "condition_f32aeaea8dfdad2b5d7f"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "以单一投标人身份提交，不组建组合体",
+      "驻场人力缺口通过明确的外聘支持或分包边界处理，监督判断与报告责任由本公司承担",
+      "价格按固定费用或按人月计费，并在价格基础中说明驻场人力投入假设",
+      "团队可用性摘要与公开数据在提交前完成内部核实，未核实前不锁定最终报价与工期承诺"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-07-v2_baseline-r3\\final-attempt-1.json",
+  "source_sha256": "aba04cfc5e108bbe0b5dfc72b4a33a04a293947837b2db5decb9f90affd2eaf1",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-07",
+      "arm": "v2_baseline",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

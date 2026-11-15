@@ -1,0 +1,1 @@
+No initial project. Original Owner/Bank/professional actions precede existing tender, contract, supply and settlement handlers. Fixed initial synthetic declarations; no live API calls or runtime state edits.

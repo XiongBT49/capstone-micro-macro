@@ -1,0 +1,69 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-10",
+    "arm": "v2_baseline",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-10",
+    "expected_business_property": "Staffing is verified only in this fictional scope; qualification remains unverified and prevents unconditional submission. Do not reopen staffing or clear qualification.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      },
+      {
+        "question": "本包资格证明是否满足提交要求",
+        "status": "requested",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0005",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于我司核心业务范围内的详细设计服务，桥梁、道路及交通基础设施经验与业主审查提交能力可直接支撑；MEP、交通接口、管线迁改和BIM协调可在单一责任设计方框架下通过专业配合与内部审查控制，不构成需要共享投标人身份的组合体情形。管理上同意投标，但须以资格证明核查通过为提交前提，并在建议书中以团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图说明资源与责任边界。",
+    "content": "管理层决定：就设计服务包提交投标意向，由我司作为单一责任设计方牵头。技术路线以道路、桥梁详细设计为主线，MEP、交通接口、管线迁改与BIM协调纳入统一设计管理与审查流程，明确接口责任与提交节点。建议书按业主要求提供团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图与风险应对；报价采用固定价格，基于设计范围和交付成果编制。资格证明核查为提交前硬前提，未通过则不提交。",
+    "unresolved_condition_ids": [
+      "condition_ff1d7d062cd013d26275"
+    ],
+    "verified_condition_ids": [
+      "condition_a8ed4c43e7504e484c02"
+    ],
+    "bid_assumptions": [
+      "本包资格证明将在提交前完成核查并满足要求",
+      "指定岗位人员档期按已核查结果可用，其他专业配合人员按角色计划配置",
+      "MEP、交通接口、管线迁改与BIM协调以专业配合方式纳入我司统一设计管理，不作为组合体安排",
+      "报价为固定价格，基于设计范围与交付成果，不含范围外变更"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-10-v2_baseline-r3\\final-attempt-1.json",
+  "source_sha256": "117278cba04b6f495caaab682009c1a3592e8fea77845834fc45df3623d5ce9c",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-10",
+      "arm": "v2_baseline",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

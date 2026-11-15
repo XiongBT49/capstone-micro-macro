@@ -1,0 +1,1 @@
+Original opportunity generation starts with no projects. Front micro actions use existing processors. Later native background is explicitly labelled, not counted as micro or model coverage.

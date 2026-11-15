@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-11-04T18:38:42.320124+00:00",
+  "design": "exploratory post-pilot probe",
+  "intervention": "reverse only the two already host-validated options; retain IDs, facts and wording",
+  "windows": [
+    {
+      "window_id": "WINDOW-01",
+      "source_request": "arms\\WINDOW-01\\single_agent\\CALL-001-request.json",
+      "baseline_choice": "original-input",
+      "source_prompt_sha256": "0c6259453cac5efa414fcca5c218e5ebdadc16b0fb50ba287d846719e37a5ff3",
+      "probe_prompt_sha256": "70b1a68b112675fc7cf90356ddfa79e4973cbd363411cf64d19d48541eb73e2b"
+    },
+    {
+      "window_id": "WINDOW-02",
+      "source_request": "arms\\WINDOW-02\\single_agent\\CALL-010-request.json",
+      "baseline_choice": "original-input",
+      "source_prompt_sha256": "e5c104fd77b126c1c31a651330c95d5231d1a2b76feaaa8a642da1a8618d1ff0",
+      "probe_prompt_sha256": "16312d870541e45771815494521c813ef30fcb52ddb3ab57235295e793587797"
+    },
+    {
+      "window_id": "WINDOW-03",
+      "source_request": "arms\\WINDOW-03\\single_agent\\CALL-011-request.json",
+      "baseline_choice": "original-input",
+      "source_prompt_sha256": "3bc99601b30c62fef655b5124a288de549c3e772279e017b29507c29f2a1aeb9",
+      "probe_prompt_sha256": "d02c3d56bb29be6136c023f7de2633fe02bdfb33ea0ccd42cc634e9b910eb4e7"
+    },
+    {
+      "window_id": "WINDOW-04",
+      "source_request": "arms\\WINDOW-04\\single_agent\\CALL-020-request.json",
+      "baseline_choice": "original-input",
+      "source_prompt_sha256": "312cd5e4f80a8b47acd1004b41a29c43e11ec6f668c090403dbc3de259b4b565",
+      "probe_prompt_sha256": "0503bee22f4e31558b2cec6638332761b89b764b18493cf5509dd3f656758ce5"
+    }
+  ],
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "temperature": 0,
+  "additional_requests": 4,
+  "global_cap": 24,
+  "runner_sha256": "7caee06a33fe5b440e9a3fbc9e47b5e5a7adf77b23b024c4ad945ea252363e19",
+  "boundary": "model option-selection probe; no new macro submission, independent project or optimal-choice ground truth"
+}

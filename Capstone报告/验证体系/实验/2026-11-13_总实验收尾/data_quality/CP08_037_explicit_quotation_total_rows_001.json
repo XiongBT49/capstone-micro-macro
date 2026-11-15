@@ -1,0 +1,106 @@
+{
+  "purpose": "Two explicitly labeled final total rows are nonadditive summaries. Original arrays, program states and all-row mechanical traces remain unchanged. Business arithmetic uses the six cost components; same criterion as prior CP00 explicit total rows.",
+  "primary_grades_changed": false,
+  "rows": [
+    {
+      "window_id": "CP08-037-full",
+      "arm": "v2_5",
+      "response_sha256": "86ac2862cb79ba38b48bef02518bd4b1b2d5de600485b93e77c4543562030054",
+      "grade_sha256": "6be930de160c53328ac036e90da591b768d51a344d3069958c1dc6624988c76b",
+      "recheck_sha256": "62951a7a6c32ad1df5a82c2fdbaab05ff645f43c42dee56c4375873a21a68faf",
+      "retained_S6": {
+        "id": "S6",
+        "rating": "correct",
+        "quote": "上述各项暂定估算合计，作为本意向草案的报价",
+        "reason": "前六项合计1800000正确，第七行明确合计是摘要行，不再加算一次；MOP及暂估来源清楚。",
+        "evidence": {
+          "json_pointer": "/quotation_breakdown/6/basis",
+          "start": 0,
+          "end": 21,
+          "quote": "上述各项暂定估算合计，作为本意向草案的报价"
+        },
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ]
+      },
+      "authored_numeric_reading": {
+        "independent_cost_row_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "independent_cost_sum": "1800000",
+        "explicit_nonadditive_summary_row_index": 6,
+        "source_total_row": {
+          "item": "合计",
+          "amount": 1800000,
+          "basis": "上述各项暂定估算合计，作为本意向草案的报价"
+        },
+        "reported_quotation": "1800000",
+        "mechanical_all_rows_sum": "3600000"
+      },
+      "retained_mechanical_recalculation": {
+        "parts_sum": "3600000",
+        "reported_total": "1800000",
+        "difference_parts_minus_reported": "1800000",
+        "original_tolerance": "1 MOP"
+      }
+    },
+    {
+      "window_id": "CP08-037-missing_core",
+      "arm": "v2_5",
+      "response_sha256": "c064853b2b404110decb545a7cd1cf000aaff2811c38d87b3da76b4a5be382f9",
+      "grade_sha256": "0c7a756d4325778a4049406fc3f4215e2df3fde6690e0d5beaac50da2e6026ae",
+      "recheck_sha256": "9891f033a3b4469dc1cd689228bcfc0ec98d884c210cbb572a8550c643e13b5a",
+      "retained_S6": {
+        "id": "S6",
+        "rating": "correct",
+        "quote": "以上各项之和，作为本意向草案的报价总额",
+        "reason": "前六项11800000正确，末行合计为摘要不重复当成本；暂估与未获报价清楚。",
+        "evidence": {
+          "json_pointer": "/quotation_breakdown/6/basis",
+          "start": 0,
+          "end": 19,
+          "quote": "以上各项之和，作为本意向草案的报价总额"
+        },
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ]
+      },
+      "authored_numeric_reading": {
+        "independent_cost_row_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "independent_cost_sum": "11800000",
+        "explicit_nonadditive_summary_row_index": 6,
+        "source_total_row": {
+          "item": "合计",
+          "amount": 11800000,
+          "basis": "以上各项之和，作为本意向草案的报价总额"
+        },
+        "reported_quotation": "11800000",
+        "mechanical_all_rows_sum": "23600000"
+      },
+      "retained_mechanical_recalculation": {
+        "parts_sum": "23600000",
+        "reported_total": "11800000",
+        "difference_parts_minus_reported": "11800000",
+        "original_tolerance": "1 MOP"
+      }
+    }
+  ]
+}

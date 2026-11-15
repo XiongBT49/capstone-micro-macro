@@ -1,0 +1,63 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "v2_baseline",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于设计服务，与我方建筑设计主业和设计协调、业主审查提交能力直接契合。虽然包内涵盖岩土、结构、MEP及公共通道布局等专项协调，但这些属于设计主导下的正常专业配合，可通过受控的专项顾问、内部审查关口和文件责任流传来管理，不需要另一家公司共享投标人身份或全包设计责任。人员档期这一提交前必备条件已通过虚构核查确认可用，构成可投标的基础。企业规模与财务数据缺口属于信息不完整，我会在投标中以团队可用性摘要、角色计划、交付方法、质量方法、价格基础和风险应对明确责任边界，不虚构未落实的资源。综合判断，以单一责任主体投标符合公司业务方向和风险承受度。",
+    "content": "管理层决定：就设计服务包以单一责任主体提交投标意向。投标文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对组织，明确我方作为设计主导方对施工图设计、地质勘察报告解读、支护方案设计、邻近建筑物保护设计、公共通道临时设计及施工期现场设计支持承担单一责任。结构、岩土、MEP及公共通道布局等专项协调，以受控专项顾问配合加内部审查关口和文件责任流传来落实，不作为共享投标人身份的组合体安排。价格采用固定总价并按里程碑支付。人员档期已通过虚构核查确认，作为投标基础；企业规模与财务数据缺口在投标中以角色计划和交付方法说明，不虚构未落实资源。",
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "结构、岩土、MEP及公共通道布局等专项协调以受控专项顾问配合方式落实，由我方作为设计主导方统一审查和承担责任",
+      "人员档期按虚构核查结果视为本包及本包期间可用",
+      "企业规模与财务数据缺口不影响本次投标意向，相关能力以团队可用性摘要和角色计划说明",
+      "价格按固定总价、按里程碑支付编制，具体金额在报价文件中确定",
+      "施工期现场设计支持按进度视图和风险应对安排，不视为已落实的额外资源承诺"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-09-v2_baseline-r1\\final-attempt-1.json",
+  "source_sha256": "7dec695c34e765b18ea3c61301ab4082aa709395dc33375c0fc667c8efa2c2d1",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "v2_baseline",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

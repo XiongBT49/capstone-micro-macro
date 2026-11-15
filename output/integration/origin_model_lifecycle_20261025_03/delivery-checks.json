@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "chain_report": "chain-checks.json",
+  "runtime_exit_code": 0,
+  "checks": {
+    "no_initial_projects": true,
+    "actual_model_calls_bound_to_native_bids": true,
+    "actual_signature_and_supply_consumers": true,
+    "actual_settlement_consumed_in_later_judgments": true,
+    "original_journal_read_only_check": true,
+    "total_attempts_within_four": true,
+    "macro_equal_to_pre_run_and_frozen_baseline": true,
+    "integration_and_micro_python_files_unchanged_during_run": 1626
+  },
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "command": ".venv-integration/Scripts/python.exe -m pytest tests/test_origin_model_lifecycle.py tests/test_origin_lifecycle_sources.py tests/test_goal4_read_horizon.py -q --basetemp output/pytest-origin-model-04 --tb=short --disable-warnings"
+  },
+  "business_boundaries": "One fixed synthetic normal scenario. Original native design, construction and aggregate settlement; no cash clearance, detailed design or all-106-action coverage. Only Contractor A02 pricing selection uses the live model. Other micro actions and later feedback policy are rules. The earlier offline origin case has one pricing policy, so it is an engineering reference, not a matched-input strategy comparison."
+}

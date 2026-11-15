@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "single_agent",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于公司核心业务范围，详细设计、管线综合、结构协调、交通导改与文档编制均有对应经验，公司可作为单一责任设计方承担，无需组合体。但条件登记显示本包指定岗位人员档期审查结果为不可用，且该条件为提交前必须满足的前置条件，目前仍未解决。管理层决定以附条件投标意向推进：由技术负责人与商务负责人按团队可用性摘要和角色计划重新核对岗位人选与档期，落实替代人员或调整角色安排，并在报价基础与进度视图中体现。若提交前该前置条件仍无法满足，则撤回投标意向，不作无把握的承诺。",
+    "content": "管理层决定：对设计包表达投标意向，但为附条件意向。公司具备排放管改道及周边平整详细设计的业务契合度，涵盖管线综合、结构设计、交通导改方案、污水厂运行保障方案及施工图纸与规范编制，并具备设计协调与业主审查提交能力，可作为单一责任设计方提交，不采用组合体。当前唯一实质障碍是指定岗位人员档期经审查为不可用，该条件为提交前必须满足的前置条件。技术负责人须在提交前完成岗位人选与档期的重新核对，形成团队可用性摘要与角色计划；商务负责人据此确定固定费用报价基础与进度视图；质量方法按既有质量体系与独立复核安排编制；风险应对重点说明人员到位与接口协调的保障措施。若前置条件在提交前仍未解决，则本意向自动失效，不提交投标。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "本包指定岗位人员档期尚未落实，投标以提交前完成人员安排为条件",
+      "MEP、结构与交通接口专业支持按受控分项管理，公司保持单一责任与设计主导",
+      "报价为基于设计范围与交付物的固定费用，待人员方案确定后最终核定",
+      "若前置条件未解决，公司撤回投标意向"
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-11-single_agent-r1\\final-attempt-1.json",
+  "source_sha256": "9fdd3a46b8eec36164a16c99d5ef1d49b959fd8a42a22b1e7780811c2b8db44f",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "single_agent",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

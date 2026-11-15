@@ -1,0 +1,124 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "role_discussion",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "no_bid",
+    "reason": "本包设计范围与公司道路、桥梁、隧道及设计连建造技术服务的业务方向契合，公司具备单一责任设计方的协调与业主审查提交能力，本不需要组合体。但指定岗位人员档期已被审核为拒绝，属于本包目前不具备提交条件的实质障碍，而非待补证明。团队可用性摘要、固定费用价格基础、进度视图与风险应对均依赖真实可用的岗位人员，若以未落实人员应标，开标后将被判不实陈述，损害公司声誉与后续业主审查信用。故本轮不投标，仅保留条件性意向，待技术负责人另提可核实岗位人选后再议。",
+    "content": "管理层决定：本设计包本轮不投标。理由是本包指定岗位人员档期经审核为拒绝，构成提交条件不成立，而非材料待补。公司在新城填海A区连接桥、氹仔北安行人隧道、A区共同管道及道路设计连建造、大潭山隧道北连接线等项目积累的设计协调与业主审查提交能力真实可用，但公司能力不等于本包人员档期。若在团队可用性摘要中写入被拒人员，固定费用报价、进度视图、质量方法与风险应对将失去事实基础，开标后一旦被追问即构成不实陈述，影响公司声誉及后续业主审查信用。本轮保留条件性意向：由技术负责人核实能否另提可核实的岗位人选，确认前不作团队可用性承诺、不锁定价格基础；专业分包支持仅作为交付计划假设，不视为已取得承诺。若岗位人选无法落实，本包按放弃处理。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "若后续继续，将以另行核实并获确认的岗位人选替换被拒人员，未确认前不作团队可用性承诺",
+      "专业分包支持仅作为交付计划假设，不视为已取得承诺",
+      "固定费用报价以设计范围和交付物为基准，人员落实前不锁定价格基础"
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-11-role_discussion-r1\\final-attempt-1.json",
+  "source_sha256": "60054194e986658806cc4af455045ee6520a697277d836342718253a3fd5b6ad",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [
+    {
+      "role_index": 1,
+      "status": "accepted",
+      "output": {
+        "content": "指定岗位人员档期这条已被审核为拒绝，不是待补证明，所以本包目前不具备提交条件。技术上，排放管改道涉及管线综合、MEP与结构协调、交通导改及污水厂运行保障，缺了核心岗位，质量方法和进度视图都只是纸面承诺，业主审查也过不去。我倾向先按条件性意向处理，不把未落实的人员写进团队可用性摘要。请经理明确是由公司另提可核实的岗位人选，还是本轮不投标。",
+        "recommendation": "本轮按条件性意向处理，不提交；由经理决定另提可核实岗位人选或放弃本包。",
+        "decision_impact": "避免以未落实人员承诺工期与质量，防止开标后被判不实陈述。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [
+          "condition_3093c531b394f6d8ffeb"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "若继续，将以另行核实并获确认的岗位人选替换被拒人员，未确认前不作团队可用性承诺",
+          "专业分包支持仅作为交付计划假设，不视为已取得承诺"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-11-role_discussion-r1\\role-1-attempt-1.json",
+      "source_sha256": "9131d01c7f1a1b7c6987ce014569784ac6115ccb819af1e290ce36ee937d5b06"
+    },
+    {
+      "role_index": 2,
+      "status": "accepted",
+      "output": {
+        "content": "我同意技术负责人的判断。指定岗位档期已被审核为拒绝，这不是待补材料，而是本包目前不具备提交条件。商务上，固定费用报价若建立在未落实人员之上，价格基础、进度视图和风险应对都会变成不实陈述，开标后一旦被追问，公司声誉和后续业主审查都会受损。我建议本轮只保留条件性意向，团队可用性摘要不写被拒人员，专业分包只作交付计划假设。请经理明确：是另提可核实岗位人选，还是本轮不投标。",
+        "recommendation": "本轮按条件性意向处理，不提交；由经理决定另提可核实岗位人选或放弃本包。",
+        "decision_impact": "避免以未落实人员承诺固定费用与工期，防止开标后被判不实陈述并影响后续业主审查。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [
+          "condition_3093c531b394f6d8ffeb"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "若继续，将以另行核实并获确认的岗位人选替换被拒人员，未确认前不作团队可用性承诺",
+          "专业分包支持仅作为交付计划假设，不视为已取得承诺",
+          "固定费用报价以设计范围和交付物为基准，人员落实前不锁定价格基础"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-11-role_discussion-r1\\role-2-attempt-1.json",
+      "source_sha256": "b14264db99ef71cbb2f87596faeca3dd8ea62c7df664bcde959b1808fb96df30"
+    },
+    {
+      "role_index": 3,
+      "status": "accepted",
+      "output": {
+        "content": "技术负责人和商务负责人的意见我接受。指定岗位档期已被审核为拒绝，这不是待补材料，而是本包目前不具备提交条件；团队可用性摘要若写被拒人员，固定费用报价和进度视图都会变成不实陈述，开标后被追问会伤及公司声誉和后续业主审查。公司在新城A区、北安隧道、大潭山隧道等项目的设计协调与业主审查提交能力是真实的，但那是公司能力，不等于本包人员档期。本轮按条件性意向处理，不提交。请技术负责人明确能否另提可核实岗位人选，否则本轮放弃。",
+        "recommendation": "本轮按条件性意向处理，不提交；由技术负责人确认能否另提可核实岗位人选，否则放弃本包。",
+        "decision_impact": "避免以未落实人员承诺固定费用与工期，防止开标后被判不实陈述并影响后续业主审查。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [
+          "condition_3093c531b394f6d8ffeb"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "若继续，将以另行核实并获确认的岗位人选替换被拒人员，未确认前不作团队可用性承诺",
+          "专业分包支持仅作为交付计划假设，不视为已取得承诺",
+          "固定费用报价以设计范围和交付物为基准，人员落实前不锁定价格基础"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-11-role_discussion-r1\\role-3-attempt-1.json",
+      "source_sha256": "8cad27896b349978012e69a2e01594e29ed6809ff229f67e8012d1f4f4c5891d"
+    }
+  ],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "role_discussion",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 3,
+    "accepted_comments": 3
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

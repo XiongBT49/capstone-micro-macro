@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-18-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 2,
+  "project_group": "9f36fbb638eb8959",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_proposal_with_unsupported_existing_business_scope",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-18-missing_core-v2_4-r1/attempt-2.json",
+  "response_sha256": "d051c88f0f1bdbc26f217326cf46342e5877ff24b2d394b0497ecb0dabf4f380",
+  "call_id": "attempt_003_call_000057",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "属于公司主营业务范围内的监理服务类型",
+    "reason": "本题已移除经营范围，企业名称和监理任务分配不能证明实际主营业务；回答先作肯定判断，随后又承认范围未知，后面的未知说明不能取消这个无来源断言。参与意向及后续人员边界可另作正确事项记录，格式失败本身不决定本评分。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 24,
+      "end": 42,
+      "quote": "属于公司主营业务范围内的监理服务类型"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "公司具备作为单一责任主体承担监理角色的基本定位",
+      "reason": "职责始终为监理而未接管EPC施工，但将未给定的主营业务定位当作实际企业事实，超出本题档案边界。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 43,
+        "end": 66,
+        "quote": "公司具备作为单一责任主体承担监理角色的基本定位"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "负责质量控制、进度监督、文件与记录管理、现场协调及业主审查配合",
+      "reason": "提出质量、进度、文件记录与复核等多项拟议监督安排，没有把它们说成已完成检查或已合格结论。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 104,
+        "end": 135,
+        "quote": "负责质量控制、进度监督、文件与记录管理、现场协调及业主审查配合"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "拟按本包要求配置总监理工程师及专业监理岗位，具体人员档期正在核实",
+      "reason": "有具体拟议岗位组织，96名参保人员只作档案事实，不升级为实际可派驻或档期已确认。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 261,
+        "end": 293,
+        "quote": "拟按本包要求配置总监理工程师及专业监理岗位，具体人员档期正在核实"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "属计划性安排，尚未取得对方承诺，不构成组合体",
+      "reason": "本地顾问、检测和专业旁站为未接受的普通支持；原指定人员必要核查仍未决，未满足不正式提交，责任和状态清楚。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 371,
+        "end": 393,
+        "quote": "属计划性安排，尚未取得对方承诺，不构成组合体"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本地合规风险通过顾问核查与内部复核把关",
+      "reason": "澳门项目与武汉企业这一已给地域条件进入本地法规及流程核查安排，未声称已通过澳门资格或审批；不强制同时回应所有规模字段。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 527,
+        "end": 546,
+        "quote": "本地合规风险通过顾问核查与内部复核把关"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_repair_delta_batch04_001_expanded_labels.json",
+  "authored_labels_sha256": "76d7291b97c94dae43d01dbd4543134b74d4b7fb811ef983390217c768f02df0",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

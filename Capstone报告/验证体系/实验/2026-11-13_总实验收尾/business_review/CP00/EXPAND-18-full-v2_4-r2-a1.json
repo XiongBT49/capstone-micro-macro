@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-18-full",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "9f36fbb638eb8959",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_pending_plan_details",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-18-full-v2_4-r2/attempt-1.json",
+  "response_sha256": "5838d560bad2ef1878f2e7c9d478a49707a40eea1de9c8e52329ed922961b2b8",
+  "call_id": "attempt_001_call_000003",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "以有条件投标意向推进",
+    "reason": "档案方向与资格接受区分，人员前置保留，有限监理意向可行。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 178,
+      "end": 188,
+      "quote": "以有条件投标意向推进"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "该文字只是档案摘录",
+      "reason": "范围依据有限，不据此确认本包资格，责任仍是监理。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 99,
+        "end": 108,
+        "quote": "该文字只是档案摘录"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "方案编制以岗位角色计划、交付方法、质量方法与风险应对为主线",
+      "reason": "主要未来方案目录，没有展开两项实际检查或记录安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 81,
+        "end": 110,
+        "quote": "方案编制以岗位角色计划、交付方法、质量方法与风险应对为主线"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "先完成人员档期与本地合规核实",
+      "reason": "未知状态正确，但未给具体拟派岗位及组织安排。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 189,
+        "end": 203,
+        "quote": "先完成人员档期与本地合规核实"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "若人员档期无法落实，则撤回本意向",
+      "reason": "原必要条件和有限外部协助接口明确。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 214,
+        "end": 230,
+        "quote": "若人员档期无法落实，则撤回本意向"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "EPC模式下监理工作需要清晰的岗位配置、质量与文件管理纪律以及业主审查接口",
+      "reason": "交付模式联系监理组织和审查重点，未杜撰现场事实。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 22,
+        "end": 59,
+        "quote": "EPC模式下监理工作需要清晰的岗位配置、质量与文件管理纪律以及业主审查接口"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_EXPAND18_remaining_first_001.json",
+  "authored_labels_sha256": "1153b0bd02deb5fa09405d1e927a05eff40d20acf90b8e92e364bfc7cd56f4cc",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

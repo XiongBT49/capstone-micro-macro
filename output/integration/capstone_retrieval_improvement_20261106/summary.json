@@ -1,0 +1,211 @@
+{
+  "status": "completed",
+  "finished_at": "2026-11-05T18:08:02.493451+00:00",
+  "projects": 352,
+  "companies": 904,
+  "role_units": 433,
+  "project_groups": 331,
+  "multi_project_groups": 8,
+  "methods": [
+    {
+      "method": "old_role_first",
+      "units": 433,
+      "projects": 352,
+      "hits1": 8,
+      "hit1": 0.018475750577367205,
+      "recall1": 0.01578137028483449,
+      "project_any1": 8,
+      "hits3": 12,
+      "hit3": 0.02771362586605081,
+      "recall3": 0.025019245573518093,
+      "project_any3": 12,
+      "hits5": 24,
+      "hit5": 0.05542725173210162,
+      "recall5": 0.051193225558121634,
+      "project_any5": 21,
+      "hits12": 34,
+      "hit12": 0.07852193995381063,
+      "recall12": 0.07178598922247882,
+      "project_any12": 29
+    },
+    {
+      "method": "role_history",
+      "units": 433,
+      "projects": 352,
+      "hits1": 64,
+      "hit1": 0.14780600461893764,
+      "recall1": 0.13269822940723633,
+      "project_any1": 61,
+      "hits3": 205,
+      "hit3": 0.47344110854503463,
+      "recall3": 0.45833333333333337,
+      "project_any3": 195,
+      "hits5": 243,
+      "hit5": 0.5612009237875288,
+      "recall5": 0.5484026173979984,
+      "project_any5": 231,
+      "hits12": 284,
+      "hit12": 0.6558891454965358,
+      "recall12": 0.6430908391070054,
+      "project_any12": 264
+    },
+    {
+      "method": "region_history",
+      "units": 433,
+      "projects": 352,
+      "hits1": 157,
+      "hit1": 0.3625866050808314,
+      "recall1": 0.34632409545804466,
+      "project_any1": 154,
+      "hits3": 234,
+      "hit3": 0.5404157043879908,
+      "recall3": 0.5241531947652041,
+      "project_any3": 215,
+      "hits5": 268,
+      "hit5": 0.6189376443418014,
+      "recall5": 0.6049846035411854,
+      "project_any5": 248,
+      "hits12": 298,
+      "hit12": 0.6882217090069284,
+      "recall12": 0.6765781370284834,
+      "project_any12": 272
+    },
+    {
+      "method": "owner_history",
+      "units": 433,
+      "projects": 352,
+      "hits1": 170,
+      "hit1": 0.39260969976905313,
+      "recall1": 0.37519245573518095,
+      "project_any1": 167,
+      "hits3": 236,
+      "hit3": 0.5450346420323325,
+      "recall3": 0.5287721324095458,
+      "project_any3": 218,
+      "hits5": 270,
+      "hit5": 0.6235565819861432,
+      "recall5": 0.6107582755966128,
+      "project_any5": 247,
+      "hits12": 298,
+      "hit12": 0.6882217090069284,
+      "recall12": 0.6765781370284834,
+      "project_any12": 272
+    },
+    {
+      "method": "analogy_history",
+      "units": 433,
+      "projects": 352,
+      "hits1": 175,
+      "hit1": 0.40415704387990764,
+      "recall1": 0.38673979984603546,
+      "project_any1": 171,
+      "hits3": 248,
+      "hit3": 0.5727482678983834,
+      "recall3": 0.557640492686682,
+      "project_any3": 228,
+      "hits5": 277,
+      "hit5": 0.6397228637413395,
+      "recall5": 0.6269245573518091,
+      "project_any5": 254,
+      "hits12": 311,
+      "hit12": 0.7182448036951501,
+      "recall12": 0.7054464973056197,
+      "project_any12": 282
+    },
+    {
+      "method": "nested_hybrid",
+      "units": 433,
+      "projects": 352,
+      "hits1": 191,
+      "hit1": 0.44110854503464203,
+      "recall1": 0.4248460354118553,
+      "project_any1": 182,
+      "hits3": 252,
+      "hit3": 0.581986143187067,
+      "recall3": 0.5668783679753657,
+      "project_any3": 232,
+      "hits5": 286,
+      "hit5": 0.6605080831408776,
+      "recall5": 0.6465550423402617,
+      "project_any5": 262,
+      "hits12": 311,
+      "hit12": 0.7182448036951501,
+      "recall12": 0.7054464973056197,
+      "project_any12": 282
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "nested_hybrid minus old_role_first",
+      "estimate": 0.605080831408776,
+      "group_cluster_percentile_95": [
+        0.5422216538789429,
+        0.6674585743672504
+      ],
+      "draws": 4000
+    },
+    {
+      "contrast": "nested_hybrid minus role_history",
+      "estimate": 0.09930715935334873,
+      "group_cluster_percentile_95": [
+        0.0666629711751663,
+        0.1333371040723982
+      ],
+      "draws": 4000
+    },
+    {
+      "contrast": "nested_hybrid minus region_history",
+      "estimate": 0.04157043879907621,
+      "group_cluster_percentile_95": [
+        0.016948256709786075,
+        0.0683386072549104
+      ],
+      "draws": 4000
+    }
+  ],
+  "diagnosis_counts": {
+    "missed_role_units": 409,
+    "missed_positive_role_profile": 184,
+    "missed_positive_nonlocal_or_unknown": 259,
+    "missed_positive_unique_role_firm": 112,
+    "missed_positive_role_unknown": 214,
+    "missed_positive_local": 186,
+    "missed_positive_repeated_role_firm": 333,
+    "missed_positive_role_name_only": 47
+  },
+  "outer_fold_selections": [
+    {
+      "outer_fold": 0,
+      "selected_family": "title_analogy_history",
+      "text_blend": 0.0,
+      "inner_hit5": 0.615606936416185
+    },
+    {
+      "outer_fold": 1,
+      "selected_family": "title_analogy_history",
+      "text_blend": 0.0,
+      "inner_hit5": 0.6308139534883721
+    },
+    {
+      "outer_fold": 2,
+      "selected_family": "title_analogy_history",
+      "text_blend": 0.0,
+      "inner_hit5": 0.6217765042979942
+    },
+    {
+      "outer_fold": 3,
+      "selected_family": "title_analogy_history",
+      "text_blend": 0.0,
+      "inner_hit5": 0.5775862068965517
+    },
+    {
+      "outer_fold": 4,
+      "selected_family": "title_analogy_history",
+      "text_blend": 0.0,
+      "inner_hit5": 0.6
+    }
+  ],
+  "candidate_pool_unchanged": true,
+  "new_api_requests": 0,
+  "inputs_unchanged": true
+}

@@ -1,48 +1,63 @@
-# Capstone: Micro Decisions and Macro Validation
+# Capstone：企业业务判断与微宏观传导
 
-本仓库公开Capstone的微观业务代码、宏观衔接代码、研究设计和汇总结果。**第三方宏观引擎、原始企业/项目数据、原始模型回答、实验数据库及汇报模板未公开上传。** 完整本地工作区仍保留这些资源。
+这里是后续 Capstone 开发与研究的独立工作仓库。代码、数据和选定证据从原工作区复制，原文件不移动、不改写。研究材料从本页导航进入，停止以日期或软件版本寻找“最新入口”。
 
-研究问题是：相同业务事实下，个体判断、同角色复核和多岗位审议如何影响决策质量，这些决定能否传导到模拟项目后果和后轮反馈。
+## 从这里开始
 
-## 阅读入口
-
-| 内容 | 入口 |
+| 需要做什么 | 阅读位置 |
 |---|---|
-| 研究目的、比较设计与指标 | [研究主线](research/PLAN.md) |
-| 后续研究任务 | [后续计划](research/NEXT_STEPS.md) |
-| 系统结构与实现边界 | [架构说明](docs/architecture.md) |
-| 已有结果及完成度 | [结果汇总](results/README.md) |
-| 数据边界 | [数据说明](data/README.md) |
-| 安装与公开代码验证 | [运行指南](docs/quickstart.md) |
-| 独立副本的实际检查范围 | [公开代码验证](docs/public_validation.md) |
-| 公开范围与本地完整资源 | [发布说明](docs/repository.md) |
+| 理解研究目的、问题与实验设计 | [研究主线](research/PLAN.md) |
+| 理解系统怎样运行、哪些功能已有实现 | [架构与实现](docs/architecture.md) |
+| 安装并运行离线示例 | [运行指南](docs/quickstart.md) |
+| 查看数据及其用途 | [数据说明](data/README.md) |
+| 查看已有结果、哪些还没完成 | [结果导航](results/README.md) |
+| 继续后续工作 | [下一步](research/NEXT_STEPS.md) |
+| 核对迁移选择及来源 | [迁移说明](docs/migration.md) |
+| 准备后续GitHub上传 | [仓库与大文件](docs/repository.md) |
 
-## 公开目录
+## 目录
 
 ```text
-src/          微观动作、纯方法、组织机制、来源约束及模型客户端
-integration/  宏观接口、业务宿主、场景构建和结果分析代码
-config/roles/ 通用岗位配置
-prompts/      业务提示模板
-skills/       角色动作技能资源
-scripts/      实验准备与分析工具源码
-tests/        不依赖原始数据或宏观包的合成测试
-research/     当前研究主线和后续计划
-results/      汇总说明与本地证据路径索引
+src/             微观动作、方法、组织与模型客户端
+integration/     宏观适配、业务宿主、场景与验证逻辑
+vendor/gba/      实际使用的宏观代码、通知与数据库
+config/          当前配置、动作注册与场景参数
+prompts/         当前业务提示
+skills/          微观方法使用的角色技能资源
+data/            原始Excel与项目、企业、历史关系CSV
+research/        唯一研究主线、后续任务及必要规范
+results/         已有结果索引，避免重新运行付费实验
+reports/current/ 当前汇报PPT、Taxonomy、讲稿及PDF
+tests/           与当前代码相关的离线回归检查
+runs/            从本仓库新生成的运行结果
 ```
 
-## 安装与验证
+`Capstone报告/验证体系/`、`output/integration/` 和 `validation/` 是选定证据的兼容保存区，保留现有分析代码依赖的相对路径。它们不是多套当前方案。不要把其中的旧GOAL、预算或已完成命令当作新的执行指令。
 
-需要Python 3.12及uv：
+## 克隆与安装
+
+```powershell
+git lfs install
+git -c core.longpaths=true clone https://github.com/XiongBT49/capstone-micro-macro.git
+cd capstone-micro-macro
+git lfs pull
+```
+
+必须先取得LFS大文件；网页下载ZIP不能作为完整交接的验收方式。首次安装需要网络，下面两个示例不调用真实模型。
+
+## 最短运行路径
 
 ```powershell
 uv sync --locked
-uv run pytest tests
+uv run python capstone.py doctor
+uv run python capstone.py data
 uv run python capstone.py results
+uv run python capstone.py micro-demo
+uv run python capstone.py macro-demo
 ```
 
-以上公开测试使用合成输入，不请求真实模型，不需要原始数据库。`capstone.py doctor` 可检查完整运行资源是否已在本地提供；公开克隆缺少这些资源时会报告缺失。
+`micro-demo` 使用本地确定性替身检查微观工作流；`macro-demo` 默认运行1步规则模式的微宏观装配检查，加 `--full` 可运行48步连续案例。二者都不调用真实模型API，不能用作模型效果结果。后续真实模型运行应明确任务、模型、费用范围和新输出目录；迁移不恢复此前暂停的实验。
 
-完整微观数据工作流和宏观连续链需要另行取得合法授权的本地资源。不能仅凭公开代码宣称完整端到端运行已复现。已有完整工作区可继续使用，公开排除没有删除其中的资料。
+本仓库用于组内完整项目交接，包含授权提供的宏观包、数据及选定实验记录。凭据、临时运行与课程个人行政资料不提交。第三方包的原NOTICE继续适用。
 
-本仓库未为第三方宏观包授予或转授开源许可。公开代码也未在本次上传中新增许可证。
+???????????????? `doctor` ???????????2GB??????????SHA256?????????????????

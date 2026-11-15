@@ -1,0 +1,4507 @@
+{
+  "schema_version": "owner-payment-settlement-reconciler.v1",
+  "source_identity": {
+    "run_id": "case0005-model-lifecycle-20261026",
+    "organization_id": "OWNER-4048bdd520aa7f",
+    "role": "Owner",
+    "action_id": "OWN-A06",
+    "request_id": "supplemental:owner-pay",
+    "purpose": "action",
+    "input_sha256": "5bbf9d2f9cf9a3acde1a63f0b8583dc4ea2027cea4d65c74523f1b84e3523c88",
+    "context_sha256": "021cc4e9c8104122c8d7dba51242cf15c5e2ab806661f20dfaf107d10ca17f13",
+    "versions": {
+      "client": "case0005-supplemental-payment.v1",
+      "skill": "d4b1eaee11b4e2df4de3ae44c4a9bdcbf50947e2be248b7cbb583784602c9488",
+      "prompt": "bdd771a2040826e9182529bbba91383adbad73511d76cad7716f93817043a9ea",
+      "contract": "6ad74b8e0ec736cbdbb1a3a718b30ac05def2a18b0c32d925dcdf0c691100251",
+      "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+      "model": "rules-no-model",
+      "strategy": "9d943c1229efc0a33c4906e08084e9e846059348b441f96733c21d1b5a3faa76"
+    }
+  },
+  "source_record_sha256": "4599c00a975a35d31c1ff3e523a143ba12faf2ea03105b4c2eaa4e465dc6a684",
+  "source_result_sha256": "e0caf1649b654b2ebcfda2e94b943ed8996151b2c3608ae5e69325ae7c4f0587",
+  "source_reading_sha256": "3f4034f4f167f1c482e57cb9416fbb20bad43359551d753b21bc7970f399c1c3",
+  "issued_reception_sha256": "64f7a3fa6c4484eb5778a9e25ff592cf3b631fec4d1625d3981b011125edf6e3",
+  "native_settlement_sha256": "69340308090f7373b26a560837bd31f67d11efffa5d8e93657e2f7f1bf61a7ca",
+  "observation": {
+    "schema_version": "owner-payment-native-settlement-observation.v1",
+    "observed_at": {
+      "clock_ref": {
+        "kind": "ClockProfile",
+        "id": "case0005-model-lifecycle-20261026-monthly-clock",
+        "version": "1"
+      },
+      "offset": 49
+    },
+    "coverage": "complete",
+    "balances": [
+      {
+        "before": {
+          "actual_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "50000000"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "coverage": "complete",
+          "currency": "HKD",
+          "debt_refs": [],
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "execution_coverage": "complete",
+          "obligation_refs": [
+            {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "1"
+            },
+            {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "1"
+            }
+          ],
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "pending_execution_refs": [],
+          "permitted_project_region_ids": {
+            "missing_refs": [],
+            "reason_code": "project_region_permission_not_supplied",
+            "state": "unknown"
+          },
+          "ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "1"
+          },
+          "region_id": "Macau",
+          "reservation_refs": [],
+          "reserved_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "restricted_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          }
+        },
+        "after": {
+          "actual_cash": {
+            "state": "known",
+            "value": {
+              "value": "6000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "coverage": "complete",
+          "currency": "HKD",
+          "debt_refs": [],
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "execution_coverage": "complete",
+          "obligation_refs": [
+            {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "2"
+            },
+            {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "2"
+            }
+          ],
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "pending_execution_refs": [],
+          "permitted_project_region_ids": {
+            "missing_refs": [],
+            "reason_code": "project_region_permission_not_supplied",
+            "state": "unknown"
+          },
+          "ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "2"
+          },
+          "region_id": "Macau",
+          "reservation_refs": [],
+          "reserved_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "restricted_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          }
+        }
+      },
+      {
+        "before": {
+          "account_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "1"
+          },
+          "actual_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "50000000"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "coverage": "complete",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          },
+          "restricted_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          }
+        },
+        "after": {
+          "account_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "2"
+          },
+          "actual_cash": {
+            "state": "known",
+            "value": {
+              "value": "6000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "coverage": "complete",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          },
+          "restricted_cash": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          }
+        }
+      },
+      {
+        "before": {
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_paid": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "component_refs": [
+            {
+              "id": "case0005-payment:EVT000370",
+              "kind": "SettlementComponent",
+              "version": "1"
+            }
+          ],
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "due_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "kind": "works",
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "payable": {
+            "state": "known",
+            "value": true
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "Obligation",
+            "version": "1"
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          },
+          "status": "effective",
+          "verification_evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ]
+        },
+        "after": {
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_paid": {
+            "state": "known",
+            "value": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "component_refs": [
+            {
+              "id": "case0005-payment:EVT000370",
+              "kind": "SettlementComponent",
+              "version": "2"
+            }
+          ],
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "due_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "kind": "works",
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "payable": {
+            "state": "known",
+            "value": true
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "Obligation",
+            "version": "2"
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          },
+          "status": "effective",
+          "verification_evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ]
+        }
+      },
+      {
+        "before": {
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_paid": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "component_refs": [
+            {
+              "id": "case0005-payment:EVT000591",
+              "kind": "SettlementComponent",
+              "version": "1"
+            }
+          ],
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "due_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "kind": "works",
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "payable": {
+            "state": "known",
+            "value": true
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "Obligation",
+            "version": "1"
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          },
+          "status": "effective",
+          "verification_evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ]
+        },
+        "after": {
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_paid": {
+            "state": "known",
+            "value": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "component_refs": [
+            {
+              "id": "case0005-payment:EVT000591",
+              "kind": "SettlementComponent",
+              "version": "2"
+            }
+          ],
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "due_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "kind": "works",
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "payable": {
+            "state": "known",
+            "value": true
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "Obligation",
+            "version": "2"
+          },
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          },
+          "status": "effective",
+          "verification_evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ]
+        }
+      },
+      {
+        "before": {
+          "actual_cash_paid": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "category": "works",
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "obligation_ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "Obligation",
+            "version": "1"
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "SettlementComponent",
+            "version": "1"
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "settlement_mode": "cash",
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          }
+        },
+        "after": {
+          "actual_cash_paid": {
+            "state": "known",
+            "value": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "category": "works",
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "obligation_ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "Obligation",
+            "version": "2"
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000370",
+            "kind": "SettlementComponent",
+            "version": "2"
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "settlement_mode": "cash",
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          }
+        }
+      },
+      {
+        "before": {
+          "actual_cash_paid": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "category": "works",
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            }
+          ],
+          "obligation_ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "Obligation",
+            "version": "1"
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "SettlementComponent",
+            "version": "1"
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "settlement_mode": "cash",
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "1"
+          }
+        },
+        "after": {
+          "actual_cash_paid": {
+            "state": "known",
+            "value": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "actual_due": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "22000000"
+            }
+          },
+          "actual_offset": {
+            "state": "known",
+            "value": {
+              "basis_ref": {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              },
+              "currency": "HKD",
+              "value": "0"
+            }
+          },
+          "as_of": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "available_at": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "category": "works",
+          "debt_ref": null,
+          "debtor_id": "OWNER-4048bdd520aa7f",
+          "effective_window": {
+            "bounds": "closed_open",
+            "end": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 56
+            },
+            "start": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            }
+          },
+          "evidence_refs": [
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+              "version": "1"
+            }
+          ],
+          "obligation_ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "Obligation",
+            "version": "2"
+          },
+          "payee_id": "COMP-0191",
+          "ref": {
+            "id": "case0005-payment:EVT000591",
+            "kind": "SettlementComponent",
+            "version": "2"
+          },
+          "scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "settlement_mode": "cash",
+          "source_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "FundingSource",
+            "version": "2"
+          }
+        }
+      }
+    ],
+    "postings": [
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash:Account",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "Account",
+          "id": "case0005-payment:owner",
+          "version": "1"
+        },
+        "field": "actual_cash",
+        "delta": {
+          "value": "-22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash:FundingSource",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "FundingSource",
+          "id": "case0005-payment:owner",
+          "version": "1"
+        },
+        "field": "actual_cash",
+        "delta": {
+          "value": "-22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_paid:Obligation",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "Obligation",
+          "id": "case0005-payment:EVT000370",
+          "version": "1"
+        },
+        "field": "actual_paid",
+        "delta": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash_paid:SettlementComponent",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "SettlementComponent",
+          "id": "case0005-payment:EVT000370",
+          "version": "1"
+        },
+        "field": "actual_cash_paid",
+        "delta": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash:Account",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "Account",
+          "id": "case0005-payment:owner",
+          "version": "1"
+        },
+        "field": "actual_cash",
+        "delta": {
+          "value": "-22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash:FundingSource",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "FundingSource",
+          "id": "case0005-payment:owner",
+          "version": "1"
+        },
+        "field": "actual_cash",
+        "delta": {
+          "value": "-22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_paid:Obligation",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "Obligation",
+          "id": "case0005-payment:EVT000591",
+          "version": "1"
+        },
+        "field": "actual_paid",
+        "delta": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      },
+      {
+        "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash_paid:SettlementComponent",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+          "version": "1"
+        },
+        "target_ref": {
+          "kind": "SettlementComponent",
+          "id": "case0005-payment:EVT000591",
+          "version": "1"
+        },
+        "field": "actual_cash_paid",
+        "delta": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        }
+      }
+    ],
+    "native_payload": {
+      "schema_version": "owner-payment-native-settlement.v1",
+      "issued_reception_sha256": "64f7a3fa6c4484eb5778a9e25ff592cf3b631fec4d1625d3981b011125edf6e3",
+      "source_identity": {
+        "run_id": "case0005-model-lifecycle-20261026",
+        "organization_id": "OWNER-4048bdd520aa7f",
+        "role": "Owner",
+        "action_id": "OWN-A06",
+        "request_id": "supplemental:owner-pay",
+        "purpose": "action",
+        "input_sha256": "5bbf9d2f9cf9a3acde1a63f0b8583dc4ea2027cea4d65c74523f1b84e3523c88",
+        "context_sha256": "021cc4e9c8104122c8d7dba51242cf15c5e2ab806661f20dfaf107d10ca17f13",
+        "versions": {
+          "client": "case0005-supplemental-payment.v1",
+          "skill": "d4b1eaee11b4e2df4de3ae44c4a9bdcbf50947e2be248b7cbb583784602c9488",
+          "prompt": "bdd771a2040826e9182529bbba91383adbad73511d76cad7716f93817043a9ea",
+          "contract": "6ad74b8e0ec736cbdbb1a3a718b30ac05def2a18b0c32d925dcdf0c691100251",
+          "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+          "model": "rules-no-model",
+          "strategy": "9d943c1229efc0a33c4906e08084e9e846059348b441f96733c21d1b5a3faa76"
+        }
+      },
+      "source_record_sha256": "4599c00a975a35d31c1ff3e523a143ba12faf2ea03105b4c2eaa4e465dc6a684",
+      "source_reading_sha256": "3f4034f4f167f1c482e57cb9416fbb20bad43359551d753b21bc7970f399c1c3",
+      "interval_start": {
+        "clock_ref": {
+          "id": "case0005-model-lifecycle-20261026-monthly-clock",
+          "kind": "ClockProfile",
+          "version": "1"
+        },
+        "offset": 49
+      },
+      "observed_at": {
+        "clock_ref": {
+          "id": "case0005-model-lifecycle-20261026-monthly-clock",
+          "kind": "ClockProfile",
+          "version": "1"
+        },
+        "offset": 49
+      },
+      "balances": [
+        {
+          "before": {
+            "actual_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "50000000"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "coverage": "complete",
+            "currency": "HKD",
+            "debt_refs": [],
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "execution_coverage": "complete",
+            "obligation_refs": [
+              {
+                "id": "case0005-payment:EVT000370",
+                "kind": "Obligation",
+                "version": "1"
+              },
+              {
+                "id": "case0005-payment:EVT000591",
+                "kind": "Obligation",
+                "version": "1"
+              }
+            ],
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "pending_execution_refs": [],
+            "permitted_project_region_ids": {
+              "missing_refs": [],
+              "reason_code": "project_region_permission_not_supplied",
+              "state": "unknown"
+            },
+            "ref": {
+              "id": "case0005-payment:owner",
+              "kind": "Account",
+              "version": "1"
+            },
+            "region_id": "Macau",
+            "reservation_refs": [],
+            "reserved_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "restricted_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            }
+          },
+          "after": {
+            "actual_cash": {
+              "state": "known",
+              "value": {
+                "value": "6000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "coverage": "complete",
+            "currency": "HKD",
+            "debt_refs": [],
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "execution_coverage": "complete",
+            "obligation_refs": [
+              {
+                "id": "case0005-payment:EVT000370",
+                "kind": "Obligation",
+                "version": "2"
+              },
+              {
+                "id": "case0005-payment:EVT000591",
+                "kind": "Obligation",
+                "version": "2"
+              }
+            ],
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "pending_execution_refs": [],
+            "permitted_project_region_ids": {
+              "missing_refs": [],
+              "reason_code": "project_region_permission_not_supplied",
+              "state": "unknown"
+            },
+            "ref": {
+              "id": "case0005-payment:owner",
+              "kind": "Account",
+              "version": "2"
+            },
+            "region_id": "Macau",
+            "reservation_refs": [],
+            "reserved_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "restricted_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            }
+          }
+        },
+        {
+          "before": {
+            "account_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "Account",
+              "version": "1"
+            },
+            "actual_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "50000000"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "coverage": "complete",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            },
+            "restricted_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            }
+          },
+          "after": {
+            "account_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "Account",
+              "version": "2"
+            },
+            "actual_cash": {
+              "state": "known",
+              "value": {
+                "value": "6000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "coverage": "complete",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            },
+            "restricted_cash": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            }
+          }
+        },
+        {
+          "before": {
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_paid": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "component_refs": [
+              {
+                "id": "case0005-payment:EVT000370",
+                "kind": "SettlementComponent",
+                "version": "1"
+              }
+            ],
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "due_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "kind": "works",
+            "origin_scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "payable": {
+              "state": "known",
+              "value": true
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "1"
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            },
+            "status": "effective",
+            "verification_evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ]
+          },
+          "after": {
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_paid": {
+              "state": "known",
+              "value": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "component_refs": [
+              {
+                "id": "case0005-payment:EVT000370",
+                "kind": "SettlementComponent",
+                "version": "2"
+              }
+            ],
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "due_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "kind": "works",
+            "origin_scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "payable": {
+              "state": "known",
+              "value": true
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "2"
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            },
+            "status": "effective",
+            "verification_evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ]
+          }
+        },
+        {
+          "before": {
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_paid": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "component_refs": [
+              {
+                "id": "case0005-payment:EVT000591",
+                "kind": "SettlementComponent",
+                "version": "1"
+              }
+            ],
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "due_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "kind": "works",
+            "origin_scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "payable": {
+              "state": "known",
+              "value": true
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "1"
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            },
+            "status": "effective",
+            "verification_evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ]
+          },
+          "after": {
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_paid": {
+              "state": "known",
+              "value": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "component_refs": [
+              {
+                "id": "case0005-payment:EVT000591",
+                "kind": "SettlementComponent",
+                "version": "2"
+              }
+            ],
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "due_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "kind": "works",
+            "origin_scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "payable": {
+              "state": "known",
+              "value": true
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "2"
+            },
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            },
+            "status": "effective",
+            "verification_evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ]
+          }
+        },
+        {
+          "before": {
+            "actual_cash_paid": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "category": "works",
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "obligation_ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "1"
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "SettlementComponent",
+              "version": "1"
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "settlement_mode": "cash",
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            }
+          },
+          "after": {
+            "actual_cash_paid": {
+              "state": "known",
+              "value": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "category": "works",
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "obligation_ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "Obligation",
+              "version": "2"
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000370",
+              "kind": "SettlementComponent",
+              "version": "2"
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "settlement_mode": "cash",
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            }
+          }
+        },
+        {
+          "before": {
+            "actual_cash_paid": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "category": "works",
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "kind": "Evidence",
+                "version": "1"
+              }
+            ],
+            "obligation_ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "1"
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "SettlementComponent",
+              "version": "1"
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "settlement_mode": "cash",
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "1"
+            }
+          },
+          "after": {
+            "actual_cash_paid": {
+              "state": "known",
+              "value": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "actual_due": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "22000000"
+              }
+            },
+            "actual_offset": {
+              "state": "known",
+              "value": {
+                "basis_ref": {
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "kind": "Evidence",
+                  "version": "1"
+                },
+                "currency": "HKD",
+                "value": "0"
+              }
+            },
+            "as_of": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "available_at": {
+              "clock_ref": {
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "kind": "ClockProfile",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "category": "works",
+            "debt_ref": null,
+            "debtor_id": "OWNER-4048bdd520aa7f",
+            "effective_window": {
+              "bounds": "closed_open",
+              "end": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "start": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              }
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "obligation_ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "Obligation",
+              "version": "2"
+            },
+            "payee_id": "COMP-0191",
+            "ref": {
+              "id": "case0005-payment:EVT000591",
+              "kind": "SettlementComponent",
+              "version": "2"
+            },
+            "scope": {
+              "coverage_refs": [
+                {
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "kind": "WorkScope",
+                  "version": "1"
+                }
+              ],
+              "kind": "project",
+              "ref": {
+                "id": "CASE-0005",
+                "kind": "Project",
+                "version": "1"
+              }
+            },
+            "settlement_mode": "cash",
+            "source_ref": {
+              "id": "case0005-payment:owner",
+              "kind": "FundingSource",
+              "version": "2"
+            }
+          }
+        }
+      ],
+      "postings": [
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash:Account",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "1"
+          },
+          "field": "actual_cash",
+          "delta": {
+            "value": "-22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash:FundingSource",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "FundingSource",
+            "id": "case0005-payment:owner",
+            "version": "1"
+          },
+          "field": "actual_cash",
+          "delta": {
+            "value": "-22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_paid:Obligation",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          },
+          "field": "actual_paid",
+          "delta": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:actual_cash_paid:SettlementComponent",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "SettlementComponent",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          },
+          "field": "actual_cash_paid",
+          "delta": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash:Account",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "1"
+          },
+          "field": "actual_cash",
+          "delta": {
+            "value": "-22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash:FundingSource",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "FundingSource",
+            "id": "case0005-payment:owner",
+            "version": "1"
+          },
+          "field": "actual_cash",
+          "delta": {
+            "value": "-22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_paid:Obligation",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000591",
+            "version": "1"
+          },
+          "field": "actual_paid",
+          "delta": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        {
+          "effect_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:actual_cash_paid:SettlementComponent",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+          "receipt_ref": {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+            "version": "1"
+          },
+          "target_ref": {
+            "kind": "SettlementComponent",
+            "id": "case0005-payment:EVT000591",
+            "version": "1"
+          },
+          "field": "actual_cash_paid",
+          "delta": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        }
+      ],
+      "coverage": "complete"
+    },
+    "native_evidence": {
+      "ref": {
+        "kind": "Evidence",
+        "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "version": "1"
+      },
+      "source_kind": "real_user",
+      "basis_kind": "observed",
+      "locator": "D:\\hkura\\codedemo_v2\\output\\integration\\case0005_payment_continuation_20261026_02\\native-payments.sqlite#settlement/4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+      "content_hash": "69340308090f7373b26a560837bd31f67d11efffa5d8e93657e2f7f1bf61a7ca",
+      "effective_window": {
+        "start": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "end": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "version": "1"
+          },
+          "offset": 56
+        },
+        "bounds": "closed_open"
+      }
+    }
+  },
+  "issued_reception": {
+    "schema_version": "owner-payment-issued-reception.v1",
+    "source_identity": {
+      "run_id": "case0005-model-lifecycle-20261026",
+      "organization_id": "OWNER-4048bdd520aa7f",
+      "role": "Owner",
+      "action_id": "OWN-A06",
+      "request_id": "supplemental:owner-pay",
+      "purpose": "action",
+      "input_sha256": "5bbf9d2f9cf9a3acde1a63f0b8583dc4ea2027cea4d65c74523f1b84e3523c88",
+      "context_sha256": "021cc4e9c8104122c8d7dba51242cf15c5e2ab806661f20dfaf107d10ca17f13",
+      "versions": {
+        "client": "case0005-supplemental-payment.v1",
+        "skill": "d4b1eaee11b4e2df4de3ae44c4a9bdcbf50947e2be248b7cbb583784602c9488",
+        "prompt": "bdd771a2040826e9182529bbba91383adbad73511d76cad7716f93817043a9ea",
+        "contract": "6ad74b8e0ec736cbdbb1a3a718b30ac05def2a18b0c32d925dcdf0c691100251",
+        "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+        "model": "rules-no-model",
+        "strategy": "9d943c1229efc0a33c4906e08084e9e846059348b441f96733c21d1b5a3faa76"
+      }
+    },
+    "source_record_sha256": "4599c00a975a35d31c1ff3e523a143ba12faf2ea03105b4c2eaa4e465dc6a684",
+    "source_result_sha256": "e0caf1649b654b2ebcfda2e94b943ed8996151b2c3608ae5e69325ae7c4f0587",
+    "source_reading_sha256": "3f4034f4f167f1c482e57cb9416fbb20bad43359551d753b21bc7970f399c1c3",
+    "submission_receipt": {
+      "run_id": "case0005-model-lifecycle-20261026",
+      "organization_id": "OWNER-4048bdd520aa7f",
+      "request_id": "supplemental:owner-pay",
+      "task_sha256": "a7fc4c25f866a4d119778527ef7dd7117e5b41bc8c5b8f7e0baae2d3507dc66b",
+      "output_sha256": "e0caf1649b654b2ebcfda2e94b943ed8996151b2c3608ae5e69325ae7c4f0587",
+      "binding_id": "case0005-native-payment",
+      "macro_version": "case0005-supplemental-payment.v1",
+      "receipt_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+      "disposition": "accepted",
+      "original_receipt": {
+        "after": {
+          "COMP-0191": "44000000",
+          "OWNER-4048bdd520aa7f": "6000000"
+        },
+        "before": {
+          "COMP-0191": "0",
+          "OWNER-4048bdd520aa7f": "50000000"
+        },
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "command_sha256": "ee1816d12ed5ae77e4541c39dc9ccfd0f976e8405ea3aaf83bc2f797ebd71754",
+        "execution_kind": "local_scenario_no_external_bank",
+        "initial_sha256": "045e963bb0529c91f77b12652d9448902c43a28b114664da3fc4317e7f5c39c5",
+        "phase_tick": 49,
+        "reason": null,
+        "schema_version": "scenario-payment-ledger.v1",
+        "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "status": "succeeded",
+        "transfers": [
+          {
+            "amount": "22000000",
+            "beneficiary_account_ref": {
+              "id": "case0005-payment:contractor",
+              "kind": "Account",
+              "version": "1"
+            },
+            "beneficiary_id": "COMP-0191",
+            "currency": "HKD",
+            "execution_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "line_index": 0,
+            "obligation_identity": [
+              "Obligation",
+              "case0005-payment:EVT000370"
+            ],
+            "payer_id": "OWNER-4048bdd520aa7f",
+            "receipt_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt"
+          },
+          {
+            "amount": "22000000",
+            "beneficiary_account_ref": {
+              "id": "case0005-payment:contractor",
+              "kind": "Account",
+              "version": "1"
+            },
+            "beneficiary_id": "COMP-0191",
+            "currency": "HKD",
+            "execution_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+            "line_index": 1,
+            "obligation_identity": [
+              "Obligation",
+              "case0005-payment:EVT000591"
+            ],
+            "payer_id": "OWNER-4048bdd520aa7f",
+            "receipt_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt"
+          }
+        ]
+      }
+    },
+    "payment_plan": {
+      "schema_version": "owner-payment-original-plan.v1",
+      "choice": "pay",
+      "authorization_ref": {
+        "kind": "PaymentAuthorization",
+        "id": "case0005-payment:pay-two-requests",
+        "version": "1"
+      },
+      "account_ref": {
+        "id": "case0005-payment:owner",
+        "kind": "Account",
+        "version": "1"
+      },
+      "lines": [
+        {
+          "obligation_ref": {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          },
+          "payee_id": "COMP-0191",
+          "amount": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          },
+          "component_refs": [
+            {
+              "kind": "SettlementComponent",
+              "id": "case0005-payment:EVT000370",
+              "version": "1"
+            }
+          ],
+          "component_amounts": [
+            {
+              "component_ref": {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000370",
+                "version": "1"
+              },
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            }
+          ],
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "debt_ref": null,
+          "arrangement_ref": null
+        },
+        {
+          "obligation_ref": {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000591",
+            "version": "1"
+          },
+          "payee_id": "COMP-0191",
+          "amount": {
+            "value": "22000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          },
+          "component_refs": [
+            {
+              "kind": "SettlementComponent",
+              "id": "case0005-payment:EVT000591",
+              "version": "1"
+            }
+          ],
+          "component_amounts": [
+            {
+              "component_ref": {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000591",
+                "version": "1"
+              },
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            }
+          ],
+          "origin_scope": {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          },
+          "debt_ref": null,
+          "arrangement_ref": null
+        }
+      ]
+    },
+    "observation": {
+      "schema_version": "owner-payment-execution-observation.v1",
+      "lines": [
+        {
+          "line_index": 0,
+          "execution": {
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0005",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "bounds": "closed_open"
+            },
+            "ref": {
+              "kind": "PaymentExecution",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "version": "1"
+            },
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "authorization_ref": {
+              "kind": "PaymentAuthorization",
+              "id": "case0005-payment:pay-two-requests",
+              "version": "1"
+            },
+            "operation": "pay",
+            "account_ref": {
+              "kind": "Account",
+              "id": "case0005-payment:owner",
+              "version": "1"
+            },
+            "arrangement_ref": null,
+            "obligation_refs": [
+              {
+                "kind": "Obligation",
+                "id": "case0005-payment:EVT000370",
+                "version": "1"
+              }
+            ],
+            "component_refs": [
+              {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000370",
+                "version": "1"
+              }
+            ],
+            "beneficiary_id": "COMP-0191",
+            "amount": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            },
+            "status": "succeeded",
+            "receipt_ref": {
+              "kind": "PaymentReceipt",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+              "version": "1"
+            }
+          },
+          "receipt": {
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0005",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "bounds": "closed_open"
+            },
+            "ref": {
+              "kind": "PaymentReceipt",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+              "version": "1"
+            },
+            "execution_ref": {
+              "kind": "PaymentExecution",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "version": "1"
+            },
+            "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "amount": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            },
+            "beneficiary_id": "COMP-0191",
+            "status": "succeeded"
+          },
+          "component_amounts": [
+            {
+              "component_ref": {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000370",
+                "version": "1"
+              },
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "line_index": 1,
+          "execution": {
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0005",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "bounds": "closed_open"
+            },
+            "ref": {
+              "kind": "PaymentExecution",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "version": "1"
+            },
+            "organization_id": "OWNER-4048bdd520aa7f",
+            "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+            "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+            "authorization_ref": {
+              "kind": "PaymentAuthorization",
+              "id": "case0005-payment:pay-two-requests",
+              "version": "1"
+            },
+            "operation": "pay",
+            "account_ref": {
+              "kind": "Account",
+              "id": "case0005-payment:owner",
+              "version": "1"
+            },
+            "arrangement_ref": null,
+            "obligation_refs": [
+              {
+                "kind": "Obligation",
+                "id": "case0005-payment:EVT000591",
+                "version": "1"
+              }
+            ],
+            "component_refs": [
+              {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000591",
+                "version": "1"
+              }
+            ],
+            "beneficiary_id": "COMP-0191",
+            "amount": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            },
+            "status": "succeeded",
+            "receipt_ref": {
+              "kind": "PaymentReceipt",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+              "version": "1"
+            }
+          },
+          "receipt": {
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                "version": "1"
+              }
+            ],
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0005",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "progress-payment:t14:COMP-0191:funded-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                "version": "1"
+              },
+              "offset": 49
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "version": "1"
+                },
+                "offset": 56
+              },
+              "bounds": "closed_open"
+            },
+            "ref": {
+              "kind": "PaymentReceipt",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+              "version": "1"
+            },
+            "execution_ref": {
+              "kind": "PaymentExecution",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "version": "1"
+            },
+            "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+            "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+            "amount": {
+              "value": "22000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "case0005-payment:explicit-opening-assumptions",
+                "version": "1"
+              }
+            },
+            "beneficiary_id": "COMP-0191",
+            "status": "succeeded"
+          },
+          "component_amounts": [
+            {
+              "component_ref": {
+                "kind": "SettlementComponent",
+                "id": "case0005-payment:EVT000591",
+                "version": "1"
+              },
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": "complete",
+      "native_payload": {
+        "schema_version": "owner-payment-native-execution.v1",
+        "receipt_identity": {
+          "run_id": "case0005-model-lifecycle-20261026",
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "request_id": "supplemental:owner-pay",
+          "task_sha256": "a7fc4c25f866a4d119778527ef7dd7117e5b41bc8c5b8f7e0baae2d3507dc66b",
+          "output_sha256": "e0caf1649b654b2ebcfda2e94b943ed8996151b2c3608ae5e69325ae7c4f0587",
+          "binding_id": "case0005-native-payment",
+          "macro_version": "case0005-supplemental-payment.v1"
+        },
+        "original_receipt": {
+          "after": {
+            "COMP-0191": "44000000",
+            "OWNER-4048bdd520aa7f": "6000000"
+          },
+          "before": {
+            "COMP-0191": "0",
+            "OWNER-4048bdd520aa7f": "50000000"
+          },
+          "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "command_sha256": "ee1816d12ed5ae77e4541c39dc9ccfd0f976e8405ea3aaf83bc2f797ebd71754",
+          "execution_kind": "local_scenario_no_external_bank",
+          "initial_sha256": "045e963bb0529c91f77b12652d9448902c43a28b114664da3fc4317e7f5c39c5",
+          "phase_tick": 49,
+          "reason": null,
+          "schema_version": "scenario-payment-ledger.v1",
+          "source_task_sha256": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "status": "succeeded",
+          "transfers": [
+            {
+              "amount": "22000000",
+              "beneficiary_account_ref": {
+                "id": "case0005-payment:contractor",
+                "kind": "Account",
+                "version": "1"
+              },
+              "beneficiary_id": "COMP-0191",
+              "currency": "HKD",
+              "execution_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "line_index": 0,
+              "obligation_identity": [
+                "Obligation",
+                "case0005-payment:EVT000370"
+              ],
+              "payer_id": "OWNER-4048bdd520aa7f",
+              "receipt_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt"
+            },
+            {
+              "amount": "22000000",
+              "beneficiary_account_ref": {
+                "id": "case0005-payment:contractor",
+                "kind": "Account",
+                "version": "1"
+              },
+              "beneficiary_id": "COMP-0191",
+              "currency": "HKD",
+              "execution_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "line_index": 1,
+              "obligation_identity": [
+                "Obligation",
+                "case0005-payment:EVT000591"
+              ],
+              "payer_id": "OWNER-4048bdd520aa7f",
+              "receipt_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt"
+            }
+          ]
+        },
+        "source_identity": {
+          "run_id": "case0005-model-lifecycle-20261026",
+          "organization_id": "OWNER-4048bdd520aa7f",
+          "role": "Owner",
+          "action_id": "OWN-A06",
+          "request_id": "supplemental:owner-pay",
+          "purpose": "action",
+          "input_sha256": "5bbf9d2f9cf9a3acde1a63f0b8583dc4ea2027cea4d65c74523f1b84e3523c88",
+          "context_sha256": "021cc4e9c8104122c8d7dba51242cf15c5e2ab806661f20dfaf107d10ca17f13",
+          "versions": {
+            "client": "case0005-supplemental-payment.v1",
+            "skill": "d4b1eaee11b4e2df4de3ae44c4a9bdcbf50947e2be248b7cbb583784602c9488",
+            "prompt": "bdd771a2040826e9182529bbba91383adbad73511d76cad7716f93817043a9ea",
+            "contract": "6ad74b8e0ec736cbdbb1a3a718b30ac05def2a18b0c32d925dcdf0c691100251",
+            "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+            "model": "rules-no-model",
+            "strategy": "9d943c1229efc0a33c4906e08084e9e846059348b441f96733c21d1b5a3faa76"
+          }
+        },
+        "source_record_sha256": "4599c00a975a35d31c1ff3e523a143ba12faf2ea03105b4c2eaa4e465dc6a684",
+        "source_reading_sha256": "3f4034f4f167f1c482e57cb9416fbb20bad43359551d753b21bc7970f399c1c3",
+        "payment_plan": {
+          "schema_version": "owner-payment-original-plan.v1",
+          "choice": "pay",
+          "authorization_ref": {
+            "kind": "PaymentAuthorization",
+            "id": "case0005-payment:pay-two-requests",
+            "version": "1"
+          },
+          "account_ref": {
+            "id": "case0005-payment:owner",
+            "kind": "Account",
+            "version": "1"
+          },
+          "lines": [
+            {
+              "obligation_ref": {
+                "kind": "Obligation",
+                "id": "case0005-payment:EVT000370",
+                "version": "1"
+              },
+              "payee_id": "COMP-0191",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "component_refs": [
+                {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000370",
+                  "version": "1"
+                }
+              ],
+              "component_amounts": [
+                {
+                  "component_ref": {
+                    "kind": "SettlementComponent",
+                    "id": "case0005-payment:EVT000370",
+                    "version": "1"
+                  },
+                  "amount": {
+                    "value": "22000000",
+                    "currency": "HKD",
+                    "basis_ref": {
+                      "kind": "Evidence",
+                      "id": "case0005-payment:explicit-opening-assumptions",
+                      "version": "1"
+                    }
+                  }
+                }
+              ],
+              "origin_scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "debt_ref": null,
+              "arrangement_ref": null
+            },
+            {
+              "obligation_ref": {
+                "kind": "Obligation",
+                "id": "case0005-payment:EVT000591",
+                "version": "1"
+              },
+              "payee_id": "COMP-0191",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "component_refs": [
+                {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000591",
+                  "version": "1"
+                }
+              ],
+              "component_amounts": [
+                {
+                  "component_ref": {
+                    "kind": "SettlementComponent",
+                    "id": "case0005-payment:EVT000591",
+                    "version": "1"
+                  },
+                  "amount": {
+                    "value": "22000000",
+                    "currency": "HKD",
+                    "basis_ref": {
+                      "kind": "Evidence",
+                      "id": "case0005-payment:explicit-opening-assumptions",
+                      "version": "1"
+                    }
+                  }
+                }
+              ],
+              "origin_scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "debt_ref": null,
+              "arrangement_ref": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "line_index": 0,
+            "execution": {
+              "ref": {
+                "kind": "PaymentExecution",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+                "version": "1"
+              },
+              "scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "available_at": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 49
+                },
+                "end": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 56
+                },
+                "bounds": "closed_open"
+              },
+              "evidence_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                  "version": "1"
+                }
+              ],
+              "organization_id": "OWNER-4048bdd520aa7f",
+              "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "authorization_ref": {
+                "kind": "PaymentAuthorization",
+                "id": "case0005-payment:pay-two-requests",
+                "version": "1"
+              },
+              "operation": "pay",
+              "account_ref": {
+                "id": "case0005-payment:owner",
+                "kind": "Account",
+                "version": "1"
+              },
+              "arrangement_ref": null,
+              "obligation_refs": [
+                {
+                  "kind": "Obligation",
+                  "id": "case0005-payment:EVT000370",
+                  "version": "1"
+                }
+              ],
+              "component_refs": [
+                {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000370",
+                  "version": "1"
+                }
+              ],
+              "beneficiary_id": "COMP-0191",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "status": "succeeded",
+              "receipt_ref": {
+                "kind": "PaymentReceipt",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+                "version": "1"
+              }
+            },
+            "receipt": {
+              "ref": {
+                "kind": "PaymentReceipt",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+                "version": "1"
+              },
+              "scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "available_at": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 49
+                },
+                "end": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 56
+                },
+                "bounds": "closed_open"
+              },
+              "evidence_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                  "version": "1"
+                }
+              ],
+              "execution_ref": {
+                "kind": "PaymentExecution",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+                "version": "1"
+              },
+              "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "beneficiary_id": "COMP-0191",
+              "status": "succeeded"
+            },
+            "component_amounts": [
+              {
+                "component_ref": {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000370",
+                  "version": "1"
+                },
+                "amount": {
+                  "value": "22000000",
+                  "currency": "HKD",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "case0005-payment:explicit-opening-assumptions",
+                    "version": "1"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "line_index": 1,
+            "execution": {
+              "ref": {
+                "kind": "PaymentExecution",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+                "version": "1"
+              },
+              "scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "available_at": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 49
+                },
+                "end": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 56
+                },
+                "bounds": "closed_open"
+              },
+              "evidence_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                  "version": "1"
+                }
+              ],
+              "organization_id": "OWNER-4048bdd520aa7f",
+              "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "authorization_ref": {
+                "kind": "PaymentAuthorization",
+                "id": "case0005-payment:pay-two-requests",
+                "version": "1"
+              },
+              "operation": "pay",
+              "account_ref": {
+                "id": "case0005-payment:owner",
+                "kind": "Account",
+                "version": "1"
+              },
+              "arrangement_ref": null,
+              "obligation_refs": [
+                {
+                  "kind": "Obligation",
+                  "id": "case0005-payment:EVT000591",
+                  "version": "1"
+                }
+              ],
+              "component_refs": [
+                {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000591",
+                  "version": "1"
+                }
+              ],
+              "beneficiary_id": "COMP-0191",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "status": "succeeded",
+              "receipt_ref": {
+                "kind": "PaymentReceipt",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+                "version": "1"
+              }
+            },
+            "receipt": {
+              "ref": {
+                "kind": "PaymentReceipt",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1:receipt",
+                "version": "1"
+              },
+              "scope": {
+                "coverage_refs": [
+                  {
+                    "id": "progress-payment:t14:COMP-0191:funded-work",
+                    "kind": "WorkScope",
+                    "version": "1"
+                  }
+                ],
+                "kind": "project",
+                "ref": {
+                  "id": "CASE-0005",
+                  "kind": "Project",
+                  "version": "1"
+                }
+              },
+              "available_at": {
+                "clock_ref": {
+                  "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                  "kind": "ClockProfile",
+                  "version": "1"
+                },
+                "offset": 49
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 49
+                },
+                "end": {
+                  "clock_ref": {
+                    "id": "case0005-model-lifecycle-20261026-monthly-clock",
+                    "kind": "ClockProfile",
+                    "version": "1"
+                  },
+                  "offset": 56
+                },
+                "bounds": "closed_open"
+              },
+              "evidence_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+                  "version": "1"
+                }
+              ],
+              "execution_ref": {
+                "kind": "PaymentExecution",
+                "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+                "version": "1"
+              },
+              "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+              "amount": {
+                "value": "22000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "case0005-payment:explicit-opening-assumptions",
+                  "version": "1"
+                }
+              },
+              "beneficiary_id": "COMP-0191",
+              "status": "succeeded"
+            },
+            "component_amounts": [
+              {
+                "component_ref": {
+                  "kind": "SettlementComponent",
+                  "id": "case0005-payment:EVT000591",
+                  "version": "1"
+                },
+                "amount": {
+                  "value": "22000000",
+                  "currency": "HKD",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "case0005-payment:explicit-opening-assumptions",
+                    "version": "1"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "coverage": "complete"
+      },
+      "native_evidence": {
+        "ref": {
+          "kind": "Evidence",
+          "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "version": "1"
+        },
+        "source_kind": "real_user",
+        "basis_kind": "observed",
+        "locator": "D:\\hkura\\codedemo_v2\\output\\integration\\case0005_payment_continuation_20261026_02\\native-payments.sqlite#commands/4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "content_hash": "945fd405d30f00c6e23cdc2cfbfdda1aa7998e00a8af4f1480929036657ca797",
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+      "target_ref": {
+        "kind": "Account",
+        "id": "case0005-payment:owner",
+        "version": "1"
+      },
+      "field": "actual_cash",
+      "delta": "-22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+      "target_ref": {
+        "kind": "FundingSource",
+        "id": "case0005-payment:owner",
+        "version": "1"
+      },
+      "field": "actual_cash",
+      "delta": "-22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+      "target_ref": {
+        "kind": "Obligation",
+        "id": "case0005-payment:EVT000370",
+        "version": "1"
+      },
+      "field": "actual_paid",
+      "delta": "22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+      "target_ref": {
+        "kind": "SettlementComponent",
+        "id": "case0005-payment:EVT000370",
+        "version": "1"
+      },
+      "field": "actual_cash_paid",
+      "delta": "22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+      "target_ref": {
+        "kind": "Account",
+        "id": "case0005-payment:owner",
+        "version": "1"
+      },
+      "field": "actual_cash",
+      "delta": "-22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+      "target_ref": {
+        "kind": "FundingSource",
+        "id": "case0005-payment:owner",
+        "version": "1"
+      },
+      "field": "actual_cash",
+      "delta": "-22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+      "target_ref": {
+        "kind": "Obligation",
+        "id": "case0005-payment:EVT000591",
+        "version": "1"
+      },
+      "field": "actual_paid",
+      "delta": "22000000",
+      "currency": "HKD"
+    },
+    {
+      "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:1",
+      "target_ref": {
+        "kind": "SettlementComponent",
+        "id": "case0005-payment:EVT000591",
+        "version": "1"
+      },
+      "field": "actual_cash_paid",
+      "delta": "22000000",
+      "currency": "HKD"
+    }
+  ]
+}

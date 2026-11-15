@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "mode": "model",
+  "simulation_id": "SIMFEA02802",
+  "project_id": "PGEN0001",
+  "ticks": 48,
+  "final_stage": "closed",
+  "initial_budget": 164929333.8390046,
+  "estimated_cost": 162950181.83293656,
+  "contract_sum": 110000000.0,
+  "actual_micro_roles": [
+    "Architect",
+    "Bank",
+    "Contractor",
+    "Engineer",
+    "Government",
+    "Owner",
+    "QS",
+    "Supplier"
+  ],
+  "distinct_micro_actions": 40,
+  "technical_tasks": 1349,
+  "macro_unchanged": {
+    "files": 174,
+    "python_sources": 120,
+    "snapshot_sha256": "e7cceadeb56b1df6b7d08ae1e3277b904680ae8d43e241cba5f4ba465ffe8cbd"
+  },
+  "live_api_calls": 2,
+  "usage_metadata": {
+    "input_tokens": 41904,
+    "output_tokens": 14,
+    "total_tokens": 41918
+  },
+  "call_budget": {
+    "run_id": "origin-model-lifecycle-20261025",
+    "budget_id": "origin-model-lifecycle-20261025-model-budget",
+    "max_calls": 3,
+    "charged_or_reserved_calls": 2,
+    "remaining_calls": 1
+  },
+  "total_case_api_attempts": 3,
+  "previous_api_batches": [
+    {
+      "journal_path": "output/integration/origin_model_lifecycle_20261025_02/runtime/tasks.sqlite",
+      "journal_sha256": "8f73aeece734420cd124804b543bf4cdb75addd88fd67c19dbc45cec2dc4a84b",
+      "attempted_calls": 1,
+      "status": "failed-no-decision",
+      "reason": "OpenAIConnectionError; independent socket probe confirmed sandbox WinError 10013; no automatic retry",
+      "verified_attempted_calls": 1
+    }
+  ],
+  "model_calls": [
+    {
+      "micro_task_key": "5bb2e03f975055780b4d75929bb4a3b7488e7f0865ebb24cf7ac5d1516202d0d",
+      "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+      "organization_id": "finance-contractor",
+      "price_HKD": "110000000",
+      "native_event_id": "EVT000188",
+      "native_event_sha256": "915958edcd3f554e6f6acf86b231c254e403e533f582a1a0874aa09bab07d765",
+      "execution": {
+        "call_budget": {
+          "budget_id": "origin-model-lifecycle-20261025-model-budget",
+          "configuration_sha256": "0cd51750e4a2e379e55d1a97a4d5937525a56029b7b5b47b54b989a421f6faae",
+          "reservation_id": "29612607ab5a12ca91619fbbbd35ed80ed358ed6585eeda619b3d38c95102461"
+        },
+        "model_calls": 1,
+        "option_count": 2,
+        "options_sha256": "7b3dbc1810611813bfa6324e734d7cc420ca433a5719d78c8972d9d8d45ca08f",
+        "prompt_sha256": "536eed6573c3ed7770d337c4f0c94a6d03c57dcfe05919c037cfd197e8d82d56",
+        "response_sha256": "b5a510174e67ffde19a4689ab80f272e4f66307ee370fc33a761cbe8ea349ede",
+        "run_id": "origin-model-lifecycle-20261025",
+        "selected_option_id": "original-input",
+        "status": "selected",
+        "usage_metadata": {
+          "input_tokens": 20797,
+          "output_tokens": 7,
+          "total_tokens": 20804
+        }
+      }
+    },
+    {
+      "micro_task_key": "6600ec8a14663557b9100403b68293797ec47862cb4647960a621a6014599d1f",
+      "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+      "organization_id": "origin-contractor-b",
+      "price_HKD": "110000000",
+      "native_event_id": "EVT000190",
+      "native_event_sha256": "a5301e1bd85b998a1117620dfdf5d826b316de16665713465eab6ee7ff0cccac",
+      "execution": {
+        "call_budget": {
+          "budget_id": "origin-model-lifecycle-20261025-model-budget",
+          "configuration_sha256": "0cd51750e4a2e379e55d1a97a4d5937525a56029b7b5b47b54b989a421f6faae",
+          "reservation_id": "70c7bae0584285e80f134afd6a6d4dd174da12549e3014f6e81a35879d9fb4e1"
+        },
+        "model_calls": 1,
+        "option_count": 2,
+        "options_sha256": "fab7ddb28f15316e2e5354e6cc778fec33010bdaaa8e736a27f92c4ee56df2c3",
+        "prompt_sha256": "b75024c872424aab27e4a4036b2257fca9eff13e6068115550d35e2095c87cec",
+        "response_sha256": "b5a510174e67ffde19a4689ab80f272e4f66307ee370fc33a761cbe8ea349ede",
+        "run_id": "origin-model-lifecycle-20261025",
+        "selected_option_id": "original-input",
+        "status": "selected",
+        "usage_metadata": {
+          "input_tokens": 21107,
+          "output_tokens": 7,
+          "total_tokens": 21114
+        }
+      }
+    }
+  ],
+  "amount_boundary": "Macro budget/contract/settlement amounts have no currency field. Private inputs declare HKD and use explicit numeric correspondence; this is a scenario assumption, not an observed macro currency or an FX conversion.",
+  "boundary": "One fixed synthetic normal scenario. Original native design, construction and aggregate settlement; no cash clearance, detailed design or all-106-action coverage. Only Contractor A02 pricing selection uses the live model. Other micro actions and later feedback policy are rules. The earlier offline origin case has one pricing policy, so it is an engineering reference, not a matched-input strategy comparison.",
+  "schema_version": "origin-model-lifecycle-summary.v1",
+  "initial_projects": [],
+  "micro_action_invocations": 116,
+  "selected_bank_id": "finance-bank-a",
+  "selected_contractor_id": "origin-contractor-b",
+  "selected_supplier_id": "finance-supplier",
+  "actual_signed_contract_event": {
+    "event_id": "EVT000284",
+    "tick": 19,
+    "project_id": "PGEN0001",
+    "agent_id": "origin-contractor-b",
+    "event_type": "contract_awarded",
+    "stage": "contract_award",
+    "description": "Owner and preferred contractor signed the construction contract",
+    "data": {
+      "owner_id": "finance-owner-a",
+      "owner_name": "finance-owner-a",
+      "contractor_id": "origin-contractor-b",
+      "contractor_name": "origin-contractor-b",
+      "qs_id": "finance-qs",
+      "contract_sum": 110000000.0,
+      "contract_duration": 24
+    }
+  },
+  "actual_settlement_event": {
+    "event_id": "EVT000670",
+    "tick": 45,
+    "project_id": "PGEN0001",
+    "agent_id": "finance-qs",
+    "event_type": "final_account_settled",
+    "stage": "final_account",
+    "description": "Owner, contractor, and QS settled final account and payment obligations",
+    "data": {
+      "owner_id": "finance-owner-a",
+      "owner_name": "finance-owner-a",
+      "contractor_id": "origin-contractor-b",
+      "contractor_name": "origin-contractor-b",
+      "qs_id": "finance-qs",
+      "qs_name": "finance-qs",
+      "contract_sum": 110000000.0,
+      "final_account_amount": 141130362.3368358,
+      "cost_overrun_ratio": 0.283,
+      "delay_days": 7,
+      "claim_risk": 0.109,
+      "dispute_risk": 0.201
+    }
+  },
+  "later_owner_consumer_count": 12,
+  "later_owner_consumer_ticks": {
+    "46": 4,
+    "47": 4,
+    "48": 4
+  },
+  "actual_later_decline_event_ids": [
+    "EVT000688",
+    "EVT000701",
+    "EVT000714"
+  ],
+  "actual_model_transport_policy": {
+    "endpoint_sha256": "12b8deaccc34b32757dbb1497e029da0c2e7b26ffa86b9c926c08cb4692f4508",
+    "internal_retries": 0,
+    "max_requests_per_call": 1,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "schema_version": "model-request-policy.v1",
+    "transport_code_sha256": "4de412da8ccec5d7867dcc9c3c1bd7d6d4e26add69ba38aa09724e669f582c4c"
+  },
+  "elapsed_seconds": 7008.245845079422,
+  "completed_at_utc": "2026-10-25T16:47:15.468062+00:00"
+}

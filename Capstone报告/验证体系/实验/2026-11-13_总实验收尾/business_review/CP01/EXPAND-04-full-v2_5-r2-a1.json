@@ -1,0 +1,132 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-04-full",
+  "arm": "v2_5",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "743ebb56468ee7ca",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_intention_with_local_airport_strategy",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-04-full-v2_5-r2/attempt-1.json",
+  "response_sha256": "99c319008fac22da2e1d70c93a715fb488bd08a73c4a7f8fa9171855046133ae",
+  "call_id": "attempt_002_call_000108",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "该条件未核实前不提交",
+    "reason": "依据实际监督业务方向和有限职责提出条件性参与，未将人员经验资源未知补成事实，战略价值和风险承受是管理判断。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 228,
+      "end": 238,
+      "quote": "该条件未核实前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "属档案文字，非已审定的资格认定",
+      "reason": "业务方向按来源使用，监督与施工总责分开，不把档案文字当已验资格。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 127,
+        "end": 142,
+        "quote": "属档案文字，非已审定的资格认定"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "进度与质量审查节点、记录与文档纪律、内部复核与独立核查安排",
+      "reason": "给出审查节点、核查和记录等两项以上拟议服务安排，没有已完成检查结论。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 188,
+        "end": 217,
+        "quote": "进度与质量审查节点、记录与文档纪律、内部复核与独立核查安排"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "人员配置以角色计划与团队可用性摘要形式提出，属提案而非已确认安排",
+      "reason": "清楚不是已落实，但没有具体监督岗位、派驻组织或核实责任分工，仍主要为将来形成的人员文件。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 252,
+        "end": 284,
+        "quote": "人员配置以角色计划与团队可用性摘要形式提出，属提案而非已确认安排"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "个别专业核查拟按普通外部支持安排处理",
+      "reason": "原人员前提保持必要未决，外部支持是普通拟议安排，不改变投标人身份或扩大为施工责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 336,
+        "end": 354,
+        "quote": "个别专业核查拟按普通外部支持安排处理"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "机场类业绩对本地咨询机构有战略价值，值得争取",
+      "reason": "机场这一真实业务类型与公司澳门办公的已给本地背景进入市场定位及行动理由；这是未来战略价值判断，不是声称已经取得机场业绩。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 116,
+        "end": 138,
+        "quote": "机场类业绩对本地咨询机构有战略价值，值得争取"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND04_both_conditions.json",
+  "authored_labels_sha256": "4b8ebdd9f1fa57d7f58bc96ef94e066733d8c629c6363d1f3c4ff655cf040aa1",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

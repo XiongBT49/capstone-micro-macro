@@ -1,0 +1,119 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-02",
+    "arm": "v2_1",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-02",
+    "expected_business_property": "Preserve the visible open qualification/experience checks. Business scope alone is not proof of accepted package eligibility. A justified refusal or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "请市场部核实并补充资质证明，以增强投标可信度",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队核实联合体伙伴的资质和过往业绩，确保其能补充我们的短板，同时不削弱我们的独立性",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队确认我们能否在报价中体现包干价的竞争力，同时保证现场人员到位",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议先核实团队可用性和资质文件，若能力充足可独立投标，否则考虑组合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务部门确认价格基础是否覆盖包干风险，并准备风险应对",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议先内部核实能力，若满足则独立投标，否则考虑组合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我倾向独立投标，但前提是商务团队必须核实并补充资质证明，并在投标文件中用团队可用性摘要和角色计划明确关键人员配置",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队本周内确认资质文件能否补齐，这直接影响我们能否独立投标",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0160",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "经管理层研判，本监理服务招标包属于公司可信的业务范围，我们在独立现场监控、质量审查、报告纪律和业主升级方面具备直接对应的能力，118人团队规模可支撑现场角色配置，公司可作为单一责任主体独立承担监理责任。内部提出的公开数据缺口属于投标文件补强问题，可通过团队可用性摘要、角色计划、质量方法和风险应对加以说明，不构成必须引入组合体共享投标人身份的理由。组合体会削弱业主对我们独立监控的信任并复杂化责任界面，不符合本包的核心价值。因此决定独立投标，同时将资质证明补齐、团队可用性核实、包干价价格基础与阶段支付风险覆盖列为投标前内部落实事项，由商务与市场团队按周跟踪，未落实则回到管理层重新评估。",
+    "content": "管理层决定：对监理服务招标包采取独立投标（bid），由公司作为单一责任主体提交。投标文件重点包括团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对，突出第三方监察、质量记录与业主报告的既有能力，明确关键人员配置与现场到位安排。报价按监理服务费包干、按阶段支付编制，价格基础须覆盖包干风险与阶段支付现金流影响。投标前由市场部核实并补充资质证明，由商务团队核实团队可用性并确认价格基础，相关核实结果作为投标文件支撑材料；上述事项未落实前不对外承诺提交。本决定为投标意向与文件准备指令，不构成任何已完成的资源分配或对外提交。",
+    "unresolved_condition_ids": [
+      "condition_a87f7a048751e043149d",
+      "condition_e877c24a517c433186d8",
+      "condition_5c2ffc9c121acbdc698b",
+      "condition_29fe03563f52365f1d55",
+      "condition_fd8fd8a5fca7008d120d",
+      "condition_b28e81bfef4b97d2e058",
+      "condition_da068dba5e7fe96ca183",
+      "condition_006118c9c39915a13064"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "公司以单一投标人身份独立提交，不设组合体",
+      "118人团队规模可支撑本监理包的现场角色配置，具体人员到位以团队可用性核实为准",
+      "资质证明与过往质量记录将在投标文件中补充，作为能力佐证",
+      "报价按监理服务费包干、按阶段支付编制，价格基础覆盖包干风险",
+      "现场监控、质量审查、报告纪律与业主升级由公司主导并承担全部监理责任"
+    ],
+    "verification_requests": [
+      {
+        "question": "请市场部核实并补充公司监理资质证明文件，确认可用于本包投标",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队核实本包所需关键岗位人员的当前可用性与到位安排",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队确认包干价价格基础是否覆盖阶段支付与包干风险，并形成风险应对说明",
+        "required_before_submission": false
+      }
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-02-v2_1-r2\\final-attempt-1.json",
+  "source_sha256": "982f787f584a74a0ef9c00753e2afc23831ed4869ca0bdc8ce359853a41bfb9a",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-02",
+      "arm": "v2_1",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

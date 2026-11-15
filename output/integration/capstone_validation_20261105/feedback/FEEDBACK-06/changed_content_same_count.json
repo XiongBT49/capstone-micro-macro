@@ -1,0 +1,83 @@
+{
+  "window_id": "FEEDBACK-06",
+  "source_tick": 48,
+  "region_variant": "permitted_region_counterfactual",
+  "condition": "changed_content_same_count",
+  "source_metadata_key": "owner_opportunity_native_request:465418e8d3871e4f59d6b6ea39256e8cceac16d8212535e3e9e5995674ded130",
+  "settlement_count": 1,
+  "review_threshold": 1,
+  "region_block": false,
+  "settlement_block": true,
+  "registration_policy": [
+    {
+      "state": "known",
+      "value": "reject"
+    }
+  ],
+  "result": {
+    "kind": "completed",
+    "payload": {
+      "note": "No new investment is authorized; existing fees and obligations remain unchanged",
+      "choice": "reject"
+    }
+  },
+  "financial_resource_inputs_sha256": "d1a5760342123d2b495fc92ff66db5fd341c33c7b4b2a9eb9d31e9d81e049621",
+  "source_objects_sha256": "276477d9c802ac6a8277a3958330775c566f5fdc9bf38bd4008ac8e395cb045b",
+  "audit": {
+    "schema_version": "action-audit.v1",
+    "run_id": "capstone-feedback-feedback-06",
+    "action_id": "OWN-A03",
+    "operation_id": "OWNER-4048bdd520aa7f-6a4f1a1d7a5356c4dff3f519066fd8d2a3a7891d44c89b459bcd77cc5a3bd9a3-OWN-A03",
+    "input_schema_id": "role-contract.v1:OWN-A03:input",
+    "input_version": "1",
+    "input_sha256": "6ec725a69621e3844243762d683e89c4fcfca0181a6550e01101046d21d753a9",
+    "execution_path": "deterministic",
+    "strategy": "organization_discussion",
+    "skill": {
+      "id": "OWN-A03.investment_decision",
+      "version": "1",
+      "sha256": "ba6c69ad19336e735cd20d548383790f05903416724b8e81ddb29ca590a43174"
+    },
+    "processor_id": "owner.investment_decision.v1",
+    "method_version": null,
+    "method_registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+    "method_calls": [],
+    "decision": {
+      "strategy": "deterministic",
+      "component_id": "owner.investment_decision.v1",
+      "version": null,
+      "model_version": null,
+      "status": "returned"
+    },
+    "policy_version": "controlled-hypothetical-feedback.v1",
+    "model_version": null,
+    "authorization_refs": [
+      [
+        "Authorization",
+        "OWNER-4048bdd520aa7f-6a4f1a1d7a5356c4dff3f519066fd8d2a3a7891d44c89b459bcd77cc5a3bd9a3-owner-grant",
+        "1"
+      ]
+    ],
+    "granted_authorization_refs": [
+      [
+        "Authorization",
+        "OWNER-4048bdd520aa7f-6a4f1a1d7a5356c4dff3f519066fd8d2a3a7891d44c89b459bcd77cc5a3bd9a3-owner-grant",
+        "1"
+      ]
+    ],
+    "stages": {
+      "input_validation": "accepted",
+      "authorization": "accepted",
+      "processor": "bound"
+    },
+    "result_kind": "completed",
+    "result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+    "error_code": null,
+    "reading": {
+      "status": "accepted",
+      "sha256": "f3db3d267a6c35e15fce44afbc2736e0fde118827c08317ccfe2ce7e1e743a1b",
+      "read_token": "OWNER-4048bdd520aa7f-6a4f1a1d7a5356c4dff3f519066fd8d2a3a7891d44c89b459bcd77cc5a3bd9a3-read",
+      "source_mode": "formal"
+    }
+  }
+}

@@ -1,0 +1,2706 @@
+{
+  "status": "passed",
+  "mode": "model",
+  "initial_projects": [],
+  "simulation_id": "SIMFEA02802",
+  "project_id": "PGEN0001",
+  "ticks": 48,
+  "final_stage": "closed",
+  "initial_budget": 164929333.8390046,
+  "estimated_cost": 162950181.83293656,
+  "contract_sum": 110000000.0,
+  "milestones": [
+    {
+      "event_id": "EVT000004",
+      "tick": 1,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-owner-a",
+      "event_type": "project_opportunity_initiated",
+      "stage": "initiation",
+      "description": "Owner finance-owner-a initiated project PGEN0001 after evaluating market opportunity",
+      "data": {
+        "owner_id": "finance-owner-a",
+        "owner_name": "finance-owner-a",
+        "region": "Hong Kong",
+        "project_type": "industrial",
+        "project_scale": "small",
+        "budget": 164929333.8390046,
+        "planned_duration": 24,
+        "candidate_opportunity_count": 4,
+        "decision_score": 0.7,
+        "initiation_probability": 1.0,
+        "decision_factors": {
+          "micro_action_id": "OWN-A03",
+          "micro_task_key": "6f00f3dbdf511945159b650106b7c86524375d06fb7482d15db125f115294dad",
+          "micro_result_sha256": "cc64baf70d414b5ad022a47ce6ff61f28e6671955ed6992ab177ef20b5b25a42",
+          "native_owner_opportunity_scope": {
+            "tick": 1,
+            "owner_id": "finance-owner-a",
+            "candidate_project_id": "OPPORTUNITY-1-finance-owner-a-Hong Kong-industrial-164929333",
+            "opportunity_sha256": "8edd1ba780503a8c15c6399287d207a0f1eac0d239d7ca95f500477914fede50"
+          },
+          "decision_source": "llm_agent",
+          "decision_type": "owner_project_opportunity",
+          "agent_identity": {
+            "agent_id": "finance-owner-a",
+            "role": "Owner",
+            "region": "Hong Kong",
+            "enterprise_type": "explicit_synthetic"
+          },
+          "local_evidence_utility": 0.7,
+          "local_evidence_probability": 1.0,
+          "llm_action_type": "initiate_project",
+          "llm_decision": true,
+          "llm_reason": "Select one exact compared option with bounded authority; forecast scores and contractual future cash do not create received money, a project, blanket construction permission or payment",
+          "individual_action": "initiate_project",
+          "individual_accepted": true,
+          "individual_reason": "Select one exact compared option with bounded authority; forecast scores and contractual future cash do not create received money, a project, blanket construction permission or payment"
+        },
+        "decision_advisor": {
+          "available": true,
+          "action_type": "initiate_project",
+          "decision": true,
+          "reason": "Select one exact compared option with bounded authority; forecast scores and contractual future cash do not create received money, a project, blanket construction permission or payment",
+          "data": {
+            "decision_score": 0.7,
+            "initiation_probability": 1.0
+          }
+        },
+        "financing_decision": {
+          "requested_ratio": 0.3,
+          "requested_amount": 49478800.15,
+          "project_risk": 0.3837,
+          "action_type": "select_project_finance",
+          "accepted": true,
+          "utility": 0.7,
+          "probability": 1.0,
+          "reason": "Accept only this exact conditional offer version; independent Bank A05 confirmation and formal execution remain required",
+          "decision_factors": {
+            "micro_action_id": "OWN-A05",
+            "micro_task_key": "2ea29abbe756673005b11bd9ee4dbdb623f7fcf15969ef7f36cb42bc210c254a",
+            "micro_result_sha256": "799617fbc909477281f8ced7350b9e3dcc5a2a2af359ef32f3658cd84ece2e2f",
+            "native_financing_scope": {
+              "project_id": "PGEN0001",
+              "owner_id": "finance-owner-a",
+              "tick": 1
+            },
+            "decision_source": "llm_agent",
+            "decision_type": "owner_financing_selection",
+            "agent_identity": {
+              "agent_id": "finance-owner-a",
+              "role": "Owner",
+              "region": "Hong Kong",
+              "enterprise_type": "explicit_synthetic"
+            },
+            "local_evidence_utility": 0.7,
+            "local_evidence_probability": 1.0,
+            "llm_action_type": "select_project_finance",
+            "llm_decision": true,
+            "llm_reason": "Accept only this exact conditional offer version; independent Bank A05 confirmation and formal execution remain required"
+          },
+          "financing_mode": "bank_finance",
+          "selected_bank_id": "finance-bank-a",
+          "accepted_bank_ids": [
+            "finance-bank-a",
+            "finance-bank-b"
+          ],
+          "selected_offer": {
+            "action_type": "approve_financing",
+            "accepted": true,
+            "utility": 0.7,
+            "probability": 1.0,
+            "reason": "Versioned quotation decision only; capacity and reservation require formal submission",
+            "decision_factors": {
+              "micro_action_id": "BANK-A04",
+              "micro_result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd",
+              "micro_task_key": "f74d7f0aab9892ab0beb350535b648c339b7440613111cf12e52827d8d507465",
+              "micro_pipeline": {
+                "BANK-A01": {
+                  "identity": {
+                    "run_id": "origin-model-lifecycle-20261025",
+                    "organization_id": "finance-bank-a",
+                    "role": "Bank",
+                    "action_id": "BANK-A01",
+                    "request_id": "bank_financing_native_request:bc68a549d58436cbe8fc0c0eb1aacbe3be47b934bb032cc7dc16db7b75e5c67f:BANK-A01",
+                    "purpose": "action",
+                    "input_sha256": "a26d77960cf708fe6d87da6e4724bc422d91affe63fe7b2a141b9c59a604d2a6",
+                    "context_sha256": "a88cdc8b223137a0d689ba6a1cbecc81a6cb409e1db526a03143361cb5e0a55c",
+                    "versions": {
+                      "client": "gba-v1-bank-financing.v13",
+                      "skill": "5b6394f3527ea191989512971ceb0db3f7c1126f2ab5ab7213b4f27771ed38ca",
+                      "prompt": "16c40a05167faa762790875e9f2efb8740936176b37b830baaba6c72dbcb1744",
+                      "contract": "b27e12fdfc840f2d20577e34e7d4276841036885e47ff99a67a39ebbf0232238",
+                      "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+                      "model": "tender-model:07d449b16f730aea790fe0c93603c6b05c7218beb51411a5fe1fd307d7ca8346",
+                      "strategy": "746f9cb80b9465b53ae664a12cd56284de2fae120650c9f66ff11c3d0fb88e7f"
+                    }
+                  },
+                  "result_sha256": "66d37d12f40b0ae14166d2995aa40b10d4a82d4080ea4dd81366bfffa5a36129",
+                  "record_sha256": "63f97b901c6ca7b628b539fd81cc91fbc951cb754d973b17a8a62c47b502a08b",
+                  "source_reading_sha256": "6203b51387ad2b6e6f7de7a8283d36f8d35f9f52a9d186ddbe3bcc00d50b3912"
+                },
+                "BANK-A02": {
+                  "identity": {
+                    "run_id": "origin-model-lifecycle-20261025",
+                    "organization_id": "finance-bank-a",
+                    "role": "Bank",
+                    "action_id": "BANK-A02",
+                    "request_id": "bank_financing_native_request:bc68a549d58436cbe8fc0c0eb1aacbe3be47b934bb032cc7dc16db7b75e5c67f:BANK-A02",
+                    "purpose": "action",
+                    "input_sha256": "6483a9e6990a1b52f15ef64fb56182faf6b65535b3c3d34a03df13c1379033a5",
+                    "context_sha256": "acdcb363ff9d517e56d6eab3942db88b183a821a97e5c3cd5544ba32322e2f1f",
+                    "versions": {
+                      "client": "gba-v1-bank-financing.v13",
+                      "skill": "a647d373a6ae4d4b7ac8b67a3e8a0fcbdf5c09ba7d28e72804f6c76f3d90ce81",
+                      "prompt": "f0b87b952ad7d323b022ee41886b94d12c00eeacb329f2b1c4f9d9f710cf9219",
+                      "contract": "69f8c77af968ca93944ca333f2110518d8272e919c78a76f92175a4c04aa8144",
+                      "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+                      "model": "tender-model:07d449b16f730aea790fe0c93603c6b05c7218beb51411a5fe1fd307d7ca8346",
+                      "strategy": "29c700be2afcee6f08236dbc63220a4f4b35447b52f037177f1e35200b159ccd"
+                    }
+                  },
+                  "result_sha256": "fb0dd8ec4b61e779c91c73aeb7985024f8075ef233d4fb520b2e147898ac30f5",
+                  "record_sha256": "90baf4ad1080af6cb15ae6520d2f42a24a81508b39e512065861c2281dee37fe",
+                  "source_reading_sha256": "2ef868eeb3af99e2929fbd6747ae4c571ee0b47ac889aaf4a30fbae9bd30dc55"
+                },
+                "BANK-A03": {
+                  "identity": {
+                    "run_id": "origin-model-lifecycle-20261025",
+                    "organization_id": "finance-bank-a",
+                    "role": "Bank",
+                    "action_id": "BANK-A03",
+                    "request_id": "bank_financing_native_request:bc68a549d58436cbe8fc0c0eb1aacbe3be47b934bb032cc7dc16db7b75e5c67f:BANK-A03",
+                    "purpose": "action",
+                    "input_sha256": "7efc3d68825b7273e81d9e2107ca87a3e03f5a8e2c97e55474ea4ed9453fdc42",
+                    "context_sha256": "3affe93a0fe1521f804b90c1a10b58f03c376e5f71b9469ebf62a801a7b4a201",
+                    "versions": {
+                      "client": "gba-v1-bank-financing.v13",
+                      "skill": "2d2c720c61bd93f82d42e8abcc9fcf3899aaee973c32257ea4fedd437996c530",
+                      "prompt": "0b36e06181af139a04e9b57c6b3a8a076b6e4e3b5ce6c34fdd6e387ec245e913",
+                      "contract": "5a8a4303cff0e8e40f53b849beb1eaf483fe7116fe8002ff8b8bfe25edffe44b",
+                      "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+                      "model": "tender-model:07d449b16f730aea790fe0c93603c6b05c7218beb51411a5fe1fd307d7ca8346",
+                      "strategy": "7e9d5fe76b94aa01f374c362c74afe36376658b487f4ef051c7f32ed669e7c33"
+                    }
+                  },
+                  "result_sha256": "78811c71d860de694066657ba55f113a49ae1cf94903d5cb4435bad87c05cdea",
+                  "record_sha256": "b0ef9328750e776dc55878c8cddc3b4102e1cdc1c754931ad3308bd356bbda4a",
+                  "source_reading_sha256": "6e6624e62b961aa72269aad353df168477600465b6052d89b9547b4c8dad9d2e"
+                },
+                "BANK-A04": {
+                  "identity": {
+                    "run_id": "origin-model-lifecycle-20261025",
+                    "organization_id": "finance-bank-a",
+                    "role": "Bank",
+                    "action_id": "BANK-A04",
+                    "request_id": "bank_financing_native_request:bc68a549d58436cbe8fc0c0eb1aacbe3be47b934bb032cc7dc16db7b75e5c67f:BANK-A04",
+                    "purpose": "action",
+                    "input_sha256": "68377f13b68772ac63e377e951a958aa629c38b8504e5132441abaa6fda4c081",
+                    "context_sha256": "e429eca4f5bd0aa483f78eb05b2c6c37a1fba2d898883e0ce26d771ff7bcebaf",
+                    "versions": {
+                      "client": "gba-v1-bank-financing.v13",
+                      "skill": "c0c11a74b2441526bdc702f51a0812b24263e6ffe9f6205efa57a1511feadb9e",
+                      "prompt": "f8c462c40c6461d8a3083d6ad66a545139f7df5bcc239efcc12fb0f3082bfb97",
+                      "contract": "8a4096a3ca12772bf7863d274cdad0e17bf4f9653240a28361d62d81be777a34",
+                      "method": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+                      "model": "tender-model:07d449b16f730aea790fe0c93603c6b05c7218beb51411a5fe1fd307d7ca8346",
+                      "strategy": "aa31e7ffba80f7b9e764b186aa33090ef86861ec3d6c044b45dc702e0edd0351"
+                    }
+                  },
+                  "result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd",
+                  "record_sha256": "f92d97fecfd4a68e699df3fda62110016bc71033f9a340c596252440562012fa",
+                  "source_reading_sha256": "7eb362bc6f72313f1e950f3b683f112dd389478321212d4255cc4edbb451a8f1"
+                }
+              },
+              "native_financing_scope": {
+                "project_id": "PGEN0001",
+                "owner_id": "finance-owner-a",
+                "tick": 1
+              },
+              "decision_source": "llm_agent",
+              "decision_type": "bank_project_financing",
+              "agent_identity": {
+                "agent_id": "finance-bank-a",
+                "role": "Bank",
+                "region": "Hong Kong",
+                "enterprise_type": "explicit_synthetic"
+              },
+              "local_evidence_utility": 0.7,
+              "local_evidence_probability": 1.0,
+              "llm_action_type": "approve_financing",
+              "llm_decision": true,
+              "llm_reason": "Versioned quotation decision only; capacity and reservation require formal submission"
+            },
+            "approved_amount": 49478800.15,
+            "interest_rate": 0.3,
+            "conditions": [
+              "Requirement finance-bank-a-finance-owner-a-PGEN0001-review-condition"
+            ],
+            "requested_amount": 49478800.15170139,
+            "micro_action_id": "BANK-A04",
+            "micro_result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd",
+            "micro_task_key": "f74d7f0aab9892ab0beb350535b648c339b7440613111cf12e52827d8d507465",
+            "native_financing_scope": {
+              "project_id": "PGEN0001",
+              "owner_id": "finance-owner-a",
+              "tick": 1
+            },
+            "proposal_response_sha256": "9b7c2fdd327b83796a696e5dce742e62964e2c62f9d9da5ec40f9f4d99607d39"
+          },
+          "micro_action_id": "OWN-A05",
+          "micro_result_sha256": "799617fbc909477281f8ced7350b9e3dcc5a2a2af359ef32f3658cd84ece2e2f",
+          "micro_task_key": "2ea29abbe756673005b11bd9ee4dbdb623f7fcf15969ef7f36cb42bc210c254a",
+          "native_financing_scope": {
+            "owner_id": "finance-owner-a",
+            "project_id": "PGEN0001",
+            "tick": 1
+          },
+          "proposal_response_sha256": "98c3223e7fb2215ccf3d745e6af6bbac49834764837b9d44a2b17dc6e5c95ba8",
+          "choice_source": "llm_agent"
+        }
+      }
+    },
+    {
+      "event_id": "EVT000027",
+      "tick": 2,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-owner-a",
+      "event_type": "consultant_team_appointed",
+      "stage": "initiation",
+      "description": "Owner appointed design and cost consultants for the project",
+      "data": {
+        "owner_id": "finance-owner-a",
+        "owner_name": "finance-owner-a",
+        "architect_id": "finance-architect",
+        "architect_name": "finance-architect",
+        "qs_id": "finance-qs",
+        "qs_name": "finance-qs",
+        "engineer_id": "finance-engineer",
+        "engineer_name": "finance-engineer",
+        "owner_selections": {
+          "architect": {
+            "action_type": "select_architect",
+            "accepted": true,
+            "utility": 0.7,
+            "probability": 1.0,
+            "reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit",
+            "decision_factors": {
+              "micro_action_id": "OWN-A04",
+              "micro_task_key": "4bcca1e7d193e29dc389cf8d7d873446246e3975e38ebabc4ed395f8aa8f6ff6",
+              "micro_result_sha256": "db6bdd999379d6a82a4049d83820ad44e37a12e41ef3173ccfb201e34e81cd49",
+              "native_professional_scope": {
+                "project_id": "PGEN0001",
+                "tick": 2,
+                "role": "Architect"
+              },
+              "decision_source": "llm_agent",
+              "decision_type": "owner_select_architect",
+              "agent_identity": {
+                "agent_id": "finance-owner-a",
+                "role": "Owner",
+                "region": "Hong Kong",
+                "enterprise_type": "explicit_synthetic"
+              },
+              "local_evidence_utility": 0.7,
+              "local_evidence_probability": 1.0,
+              "llm_action_type": "select_architect",
+              "llm_decision": true,
+              "llm_reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit"
+            },
+            "selected_agent_id": "finance-architect",
+            "accepted_agent_ids": [
+              "finance-architect",
+              "finance-architect-b"
+            ],
+            "micro_action_id": "OWN-A04",
+            "micro_result_sha256": "db6bdd999379d6a82a4049d83820ad44e37a12e41ef3173ccfb201e34e81cd49",
+            "micro_task_key": "4bcca1e7d193e29dc389cf8d7d873446246e3975e38ebabc4ed395f8aa8f6ff6",
+            "native_professional_scope": {
+              "project_id": "PGEN0001",
+              "role": "Architect",
+              "tick": 2
+            },
+            "proposal_response_sha256": "2b5ba9a78b7ab5a95a177f0f9be5c3e31b2988fb17c890e2194b7cadf1b07eff",
+            "choice_source": "llm_agent"
+          },
+          "qs": {
+            "action_type": "select_qs",
+            "accepted": true,
+            "utility": 0.7,
+            "probability": 1.0,
+            "reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit",
+            "decision_factors": {
+              "micro_action_id": "OWN-A04",
+              "micro_task_key": "46242415bc18b684468386ab3601d220d8ffc3f9847c8bd59edf41973fe31b9d",
+              "micro_result_sha256": "f3a0b47fec56d09683ee83f8434938e8fa0f4d167e5ac752a3a851736a4e4af0",
+              "native_professional_scope": {
+                "project_id": "PGEN0001",
+                "tick": 2,
+                "role": "QS"
+              },
+              "decision_source": "llm_agent",
+              "decision_type": "owner_select_qs",
+              "agent_identity": {
+                "agent_id": "finance-owner-a",
+                "role": "Owner",
+                "region": "Hong Kong",
+                "enterprise_type": "explicit_synthetic"
+              },
+              "local_evidence_utility": 0.7,
+              "local_evidence_probability": 1.0,
+              "llm_action_type": "select_qs",
+              "llm_decision": true,
+              "llm_reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit"
+            },
+            "selected_agent_id": "finance-qs",
+            "accepted_agent_ids": [
+              "finance-qs"
+            ],
+            "micro_action_id": "OWN-A04",
+            "micro_result_sha256": "f3a0b47fec56d09683ee83f8434938e8fa0f4d167e5ac752a3a851736a4e4af0",
+            "micro_task_key": "46242415bc18b684468386ab3601d220d8ffc3f9847c8bd59edf41973fe31b9d",
+            "native_professional_scope": {
+              "project_id": "PGEN0001",
+              "role": "QS",
+              "tick": 2
+            },
+            "proposal_response_sha256": "a01d474c9b37d6af447567fe279f6bbd4d321c62f96ef91e946f91b65c9a34bd",
+            "choice_source": "llm_agent"
+          },
+          "engineer": {
+            "action_type": "select_engineer",
+            "accepted": true,
+            "utility": 0.7,
+            "probability": 1.0,
+            "reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit",
+            "decision_factors": {
+              "micro_action_id": "OWN-A04",
+              "micro_task_key": "d0566f3209aa271c827cc3f31fa15f00ffac2355516978dbe2554cbbb9a73c00",
+              "micro_result_sha256": "dfbdec9073a2fbf4fae93fa66c24582a73b33105918123412eb4070c20b6e1e7",
+              "native_professional_scope": {
+                "project_id": "PGEN0001",
+                "tick": 2,
+                "role": "Engineer"
+              },
+              "decision_source": "llm_agent",
+              "decision_type": "owner_select_engineer",
+              "agent_identity": {
+                "agent_id": "finance-owner-a",
+                "role": "Owner",
+                "region": "Hong Kong",
+                "enterprise_type": "explicit_synthetic"
+              },
+              "local_evidence_utility": 0.7,
+              "local_evidence_probability": 1.0,
+              "llm_action_type": "select_engineer",
+              "llm_decision": true,
+              "llm_reason": "Accept only the owner side of this exact offer and terms; independent parties and the formal core must still accept and commit"
+            },
+            "selected_agent_id": "finance-engineer",
+            "accepted_agent_ids": [
+              "finance-engineer"
+            ],
+            "micro_action_id": "OWN-A04",
+            "micro_result_sha256": "dfbdec9073a2fbf4fae93fa66c24582a73b33105918123412eb4070c20b6e1e7",
+            "micro_task_key": "d0566f3209aa271c827cc3f31fa15f00ffac2355516978dbe2554cbbb9a73c00",
+            "native_professional_scope": {
+              "project_id": "PGEN0001",
+              "role": "Engineer",
+              "tick": 2
+            },
+            "proposal_response_sha256": "84f44d62e0af567b41e1d1aebd41b07dc84c00e08ca7eeb124ceff710c06ea50",
+            "choice_source": "llm_agent"
+          }
+        },
+        "selection_basis": [
+          "candidate eligibility and market visibility",
+          "consultant independent acceptance",
+          "role-specific capability and workload",
+          "regional and collaboration fit",
+          "owner selection among accepting candidates"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT000153",
+      "tick": 11,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-qs",
+      "event_type": "tender_documents_prepared",
+      "stage": "tender_preparation",
+      "description": "QS prepared tender documents, bill of quantities, and contractor evaluation criteria",
+      "data": {
+        "qs_id": "finance-qs",
+        "information_quality": 0.716,
+        "planned_cost": 162950181.83293656,
+        "evaluation_criteria": [
+          "bid price",
+          "technical capability",
+          "construction capability",
+          "quality management",
+          "safety management",
+          "financial capacity",
+          "collaboration history"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT000168",
+      "tick": 12,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-owner-a",
+      "event_type": "tender_opened",
+      "stage": "tendering",
+      "description": "Tender opened and qualified contractors were invited to decide whether to bid",
+      "data": {
+        "invited_count": 2,
+        "invited_contractors": [
+          {
+            "contractor_id": "finance-contractor",
+            "contractor_name": "finance-contractor",
+            "region": "Hong Kong",
+            "available_resource": 1.0
+          },
+          {
+            "contractor_id": "origin-contractor-b",
+            "contractor_name": "origin-contractor-b",
+            "region": "Hong Kong",
+            "available_resource": 1.0
+          }
+        ],
+        "attractiveness": 0.796,
+        "budget": 164929333.8390046,
+        "camel_tender_advisor_limit": 3,
+        "owner_shortlist_decision": {
+          "action_type": "invite_contractors",
+          "accepted": true,
+          "utility": 0.5,
+          "probability": 1.0,
+          "reason": "Original authorized invitations only; no bidder acceptance or contract",
+          "decision_factors": {
+            "micro_action_id": "OWN-A09",
+            "micro_result_sha256": "0df0643068a18bbb3a1648a1013b8f8e2c0e1e57d4e8a4b14e23b950c0932bf8",
+            "micro_task_key": "924696e8edcc7540cced0edb5b840f259ebc55e8244f36c7826690a7203c6ced",
+            "source_file_sha256": "91d138fdc8f6cf36562baa83a50dcee04e6b385c848c0b73dbe96b5f46ad3173",
+            "decision_source": "llm_agent",
+            "decision_type": "owner_tender_shortlist",
+            "agent_identity": {
+              "agent_id": "finance-owner-a",
+              "role": "Owner",
+              "region": "Hong Kong",
+              "enterprise_type": "explicit_synthetic"
+            },
+            "local_evidence_utility": 0.5,
+            "local_evidence_probability": 1.0,
+            "llm_action_type": "invite_contractors",
+            "llm_decision": true,
+            "llm_reason": "Original authorized invitations only; no bidder acceptance or contract"
+          },
+          "selected_agent_ids": [
+            "finance-contractor",
+            "origin-contractor-b"
+          ],
+          "ranked_candidates": [],
+          "micro_action_id": "OWN-A09",
+          "micro_result_sha256": "0df0643068a18bbb3a1648a1013b8f8e2c0e1e57d4e8a4b14e23b950c0932bf8",
+          "proposal_request_id": "proposal-tick12-PGEN0001-finance-owner-a-select_tender_invitees",
+          "choice_source": "llm_agent"
+        }
+      }
+    },
+    {
+      "event_id": "EVT000221",
+      "tick": 15,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "bid_evaluation_completed",
+      "stage": "bid_evaluation",
+      "description": "Preferred bidder origin-contractor-b selected after bid evaluation",
+      "data": {
+        "contract_sum": 110000000.0,
+        "selected_contractor_id": "origin-contractor-b",
+        "selected_contractor_name": "origin-contractor-b",
+        "valid_bid_count": 2,
+        "ranked_bids": [
+          {
+            "contractor_id": "origin-contractor-b",
+            "contractor_name": "origin-contractor-b",
+            "bid_price": 110000000.0,
+            "expected_profit": 0.1,
+            "risk_level": 0.2,
+            "bid_probability": 0.96,
+            "technical_score": 1.0,
+            "safety_score": 1.0,
+            "quality_score": 1.0,
+            "decision_factors": {
+              "micro_action_id": "CONTRACTOR-A02",
+              "regional_friction": 0.0,
+              "project_id": "PGEN0001",
+              "proposal_tick": 13,
+              "proposal_request_sha256": "15123d60ef1c566db74b2788c1e4a2fb2afb9ae8a229b8b656217000a8dfe9b6",
+              "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+              "micro_input_sha256": "ed7be1eeed2aa4ba272c734a888f37a81e4383c98cf84ce666f1f2f6a190c979",
+              "indicator_mapping_sha256": "a7960a57ec20a7ec8b5773511d785ffbdcd23bd05ba20db153b16b6adbfe0a5f",
+              "original_audit_sha256": "99669c95c5993b9a4fc58cd7aab846de72e501834e3f20434b97b7522e5e70a0"
+            },
+            "individual_decision": {
+              "action_type": "submit_bid",
+              "accepted": true,
+              "utility": 0.5,
+              "probability": 1.0,
+              "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+              "decision_factors": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "regional_friction": 0.0,
+                "project_id": "PGEN0001",
+                "proposal_tick": 13,
+                "proposal_request_sha256": "15123d60ef1c566db74b2788c1e4a2fb2afb9ae8a229b8b656217000a8dfe9b6",
+                "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+                "micro_input_sha256": "ed7be1eeed2aa4ba272c734a888f37a81e4383c98cf84ce666f1f2f6a190c979",
+                "indicator_mapping_sha256": "a7960a57ec20a7ec8b5773511d785ffbdcd23bd05ba20db153b16b6adbfe0a5f",
+                "original_audit_sha256": "99669c95c5993b9a4fc58cd7aab846de72e501834e3f20434b97b7522e5e70a0"
+              },
+              "bid_probability": 1.0,
+              "bid_price": 110000000.0,
+              "expected_profit": 0.1,
+              "risk_level": 0.2,
+              "decline_reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work"
+            },
+            "decision_advisor": {
+              "available": true,
+              "action_type": "submit_bid",
+              "decision": true,
+              "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+              "data": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+                "final_request_id": "tick13-PGEN0001-origin-contractor-b-tender_decision",
+                "proposal_request_id": "proposal-tick13-PGEN0001-origin-contractor-b-consider_tender",
+                "proposal_response_sha256": "6b4b809d92b1c1acb4434ca8753afa524fa7952410cb27358a49f50f164d998b"
+              }
+            },
+            "submitted_tick": 13,
+            "evaluation_score": 0.7,
+            "contractor_region": "Hong Kong",
+            "qs_decision": {
+              "action_type": "evaluate_bid",
+              "accepted": true,
+              "utility": 0.7,
+              "probability": 1.0,
+              "reason": "Known eligible original price uses the declared exact comparison basis",
+              "decision_factors": {
+                "micro_action_id": "QS-A06",
+                "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                "native_evaluation_scope": {
+                  "tick": 15,
+                  "project_id": "PGEN0001",
+                  "contractor_id": "origin-contractor-b"
+                },
+                "source_sha256": "d2d250fd55d06da59905f1a53c241cbdcdc02fc77ab6412326857f493783d4b8",
+                "score_basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-finance-qs-assumptions",
+                  "version": "1"
+                },
+                "decision_source": "llm_agent",
+                "decision_type": "qs_bid_evaluation",
+                "agent_identity": {
+                  "agent_id": "finance-qs",
+                  "role": "QS",
+                  "region": "Hong Kong",
+                  "enterprise_type": "explicit_synthetic"
+                },
+                "local_evidence_utility": 0.7,
+                "local_evidence_probability": 1.0,
+                "llm_action_type": "evaluate_bid",
+                "llm_decision": true,
+                "llm_reason": "Known eligible original price uses the declared exact comparison basis"
+              },
+              "evaluation_score": 0.7,
+              "micro_action_id": "QS-A06",
+              "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+              "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+              "native_evaluation_scope": {
+                "tick": 15,
+                "project_id": "PGEN0001",
+                "contractor_id": "origin-contractor-b"
+              }
+            },
+            "owner_selection_score": 0.7419999999999999
+          },
+          {
+            "contractor_id": "finance-contractor",
+            "contractor_name": "finance-contractor",
+            "bid_price": 110000000.0,
+            "expected_profit": 0.1,
+            "risk_level": 0.2,
+            "bid_probability": 0.96,
+            "technical_score": 1.0,
+            "safety_score": 1.0,
+            "quality_score": 1.0,
+            "decision_factors": {
+              "micro_action_id": "CONTRACTOR-A02",
+              "regional_friction": 0.0,
+              "project_id": "PGEN0001",
+              "proposal_tick": 13,
+              "proposal_request_sha256": "2f883e7f44707f43d8d4c187eff79b3192f44e90d60a3f18e418d064df6bc58e",
+              "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+              "micro_input_sha256": "2d6380d5301f2dedfca1d055cbe57584ff56850abca7194535b92acf7b91d6a2",
+              "indicator_mapping_sha256": "42334e78c720fec8217389958495d0885e00a64974c62c7632b2809cb61d3d34",
+              "original_audit_sha256": "f1242094ed30273085dfe27a5b2f3895a62b1f99115e07a21dd498bb6eda9712"
+            },
+            "individual_decision": {
+              "action_type": "submit_bid",
+              "accepted": true,
+              "utility": 0.5,
+              "probability": 1.0,
+              "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+              "decision_factors": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "regional_friction": 0.0,
+                "project_id": "PGEN0001",
+                "proposal_tick": 13,
+                "proposal_request_sha256": "2f883e7f44707f43d8d4c187eff79b3192f44e90d60a3f18e418d064df6bc58e",
+                "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+                "micro_input_sha256": "2d6380d5301f2dedfca1d055cbe57584ff56850abca7194535b92acf7b91d6a2",
+                "indicator_mapping_sha256": "42334e78c720fec8217389958495d0885e00a64974c62c7632b2809cb61d3d34",
+                "original_audit_sha256": "f1242094ed30273085dfe27a5b2f3895a62b1f99115e07a21dd498bb6eda9712"
+              },
+              "bid_probability": 1.0,
+              "bid_price": 110000000.0,
+              "expected_profit": 0.1,
+              "risk_level": 0.2,
+              "decline_reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work"
+            },
+            "decision_advisor": {
+              "available": true,
+              "action_type": "submit_bid",
+              "decision": true,
+              "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+              "data": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+                "final_request_id": "tick13-PGEN0001-finance-contractor-tender_decision",
+                "proposal_request_id": "proposal-tick13-PGEN0001-finance-contractor-consider_tender",
+                "proposal_response_sha256": "2ff3c75059bc10f1d1956c0c747e20e59d5e1273ddea699f6cdbadfcfb60dea6"
+              }
+            },
+            "submitted_tick": 13,
+            "evaluation_score": 0.7,
+            "contractor_region": "Hong Kong",
+            "qs_decision": {
+              "action_type": "evaluate_bid",
+              "accepted": true,
+              "utility": 0.7,
+              "probability": 1.0,
+              "reason": "Known eligible original price uses the declared exact comparison basis",
+              "decision_factors": {
+                "micro_action_id": "QS-A06",
+                "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                "native_evaluation_scope": {
+                  "tick": 15,
+                  "project_id": "PGEN0001",
+                  "contractor_id": "finance-contractor"
+                },
+                "source_sha256": "d2d250fd55d06da59905f1a53c241cbdcdc02fc77ab6412326857f493783d4b8",
+                "score_basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-finance-qs-assumptions",
+                  "version": "1"
+                },
+                "decision_source": "llm_agent",
+                "decision_type": "qs_bid_evaluation",
+                "agent_identity": {
+                  "agent_id": "finance-qs",
+                  "role": "QS",
+                  "region": "Hong Kong",
+                  "enterprise_type": "explicit_synthetic"
+                },
+                "local_evidence_utility": 0.7,
+                "local_evidence_probability": 1.0,
+                "llm_action_type": "evaluate_bid",
+                "llm_decision": true,
+                "llm_reason": "Known eligible original price uses the declared exact comparison basis"
+              },
+              "evaluation_score": 0.7,
+              "micro_action_id": "QS-A06",
+              "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+              "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+              "native_evaluation_scope": {
+                "tick": 15,
+                "project_id": "PGEN0001",
+                "contractor_id": "finance-contractor"
+              }
+            },
+            "owner_selection_score": 0.7419999999999999
+          }
+        ],
+        "evaluation_committee": {
+          "owner_id": "finance-owner-a",
+          "qs_id": "finance-qs"
+        },
+        "owner_decision": {
+          "action_type": "select_preferred_bidder",
+          "accepted": true,
+          "utility": 0.742,
+          "probability": 1.0,
+          "reason": "Owner has sufficient capital, resource capacity, and market support to initiate the project",
+          "decision_factors": {
+            "decision_process": "OwnerAgent.select_preferred_bid",
+            "valid_bid_count": 2
+          },
+          "selected_contractor_id": "origin-contractor-b",
+          "ranked_bids": [
+            {
+              "contractor_id": "origin-contractor-b",
+              "contractor_name": "origin-contractor-b",
+              "bid_price": 110000000.0,
+              "expected_profit": 0.1,
+              "risk_level": 0.2,
+              "bid_probability": 0.96,
+              "technical_score": 1.0,
+              "safety_score": 1.0,
+              "quality_score": 1.0,
+              "decision_factors": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "regional_friction": 0.0,
+                "project_id": "PGEN0001",
+                "proposal_tick": 13,
+                "proposal_request_sha256": "15123d60ef1c566db74b2788c1e4a2fb2afb9ae8a229b8b656217000a8dfe9b6",
+                "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+                "micro_input_sha256": "ed7be1eeed2aa4ba272c734a888f37a81e4383c98cf84ce666f1f2f6a190c979",
+                "indicator_mapping_sha256": "a7960a57ec20a7ec8b5773511d785ffbdcd23bd05ba20db153b16b6adbfe0a5f",
+                "original_audit_sha256": "99669c95c5993b9a4fc58cd7aab846de72e501834e3f20434b97b7522e5e70a0"
+              },
+              "individual_decision": {
+                "action_type": "submit_bid",
+                "accepted": true,
+                "utility": 0.5,
+                "probability": 1.0,
+                "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+                "decision_factors": {
+                  "micro_action_id": "CONTRACTOR-A02",
+                  "regional_friction": 0.0,
+                  "project_id": "PGEN0001",
+                  "proposal_tick": 13,
+                  "proposal_request_sha256": "15123d60ef1c566db74b2788c1e4a2fb2afb9ae8a229b8b656217000a8dfe9b6",
+                  "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+                  "micro_input_sha256": "ed7be1eeed2aa4ba272c734a888f37a81e4383c98cf84ce666f1f2f6a190c979",
+                  "indicator_mapping_sha256": "a7960a57ec20a7ec8b5773511d785ffbdcd23bd05ba20db153b16b6adbfe0a5f",
+                  "original_audit_sha256": "99669c95c5993b9a4fc58cd7aab846de72e501834e3f20434b97b7522e5e70a0"
+                },
+                "bid_probability": 1.0,
+                "bid_price": 110000000.0,
+                "expected_profit": 0.1,
+                "risk_level": 0.2,
+                "decline_reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work"
+              },
+              "decision_advisor": {
+                "available": true,
+                "action_type": "submit_bid",
+                "decision": true,
+                "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+                "data": {
+                  "micro_action_id": "CONTRACTOR-A02",
+                  "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+                  "final_request_id": "tick13-PGEN0001-origin-contractor-b-tender_decision",
+                  "proposal_request_id": "proposal-tick13-PGEN0001-origin-contractor-b-consider_tender",
+                  "proposal_response_sha256": "6b4b809d92b1c1acb4434ca8753afa524fa7952410cb27358a49f50f164d998b"
+                }
+              },
+              "submitted_tick": 13,
+              "evaluation_score": 0.7,
+              "contractor_region": "Hong Kong",
+              "qs_decision": {
+                "action_type": "evaluate_bid",
+                "accepted": true,
+                "utility": 0.7,
+                "probability": 1.0,
+                "reason": "Known eligible original price uses the declared exact comparison basis",
+                "decision_factors": {
+                  "micro_action_id": "QS-A06",
+                  "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                  "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                  "native_evaluation_scope": {
+                    "tick": 15,
+                    "project_id": "PGEN0001",
+                    "contractor_id": "origin-contractor-b"
+                  },
+                  "source_sha256": "d2d250fd55d06da59905f1a53c241cbdcdc02fc77ab6412326857f493783d4b8",
+                  "score_basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-finance-qs-assumptions",
+                    "version": "1"
+                  },
+                  "decision_source": "llm_agent",
+                  "decision_type": "qs_bid_evaluation",
+                  "agent_identity": {
+                    "agent_id": "finance-qs",
+                    "role": "QS",
+                    "region": "Hong Kong",
+                    "enterprise_type": "explicit_synthetic"
+                  },
+                  "local_evidence_utility": 0.7,
+                  "local_evidence_probability": 1.0,
+                  "llm_action_type": "evaluate_bid",
+                  "llm_decision": true,
+                  "llm_reason": "Known eligible original price uses the declared exact comparison basis"
+                },
+                "evaluation_score": 0.7,
+                "micro_action_id": "QS-A06",
+                "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                "native_evaluation_scope": {
+                  "tick": 15,
+                  "project_id": "PGEN0001",
+                  "contractor_id": "origin-contractor-b"
+                }
+              },
+              "owner_selection_score": 0.7419999999999999
+            },
+            {
+              "contractor_id": "finance-contractor",
+              "contractor_name": "finance-contractor",
+              "bid_price": 110000000.0,
+              "expected_profit": 0.1,
+              "risk_level": 0.2,
+              "bid_probability": 0.96,
+              "technical_score": 1.0,
+              "safety_score": 1.0,
+              "quality_score": 1.0,
+              "decision_factors": {
+                "micro_action_id": "CONTRACTOR-A02",
+                "regional_friction": 0.0,
+                "project_id": "PGEN0001",
+                "proposal_tick": 13,
+                "proposal_request_sha256": "2f883e7f44707f43d8d4c187eff79b3192f44e90d60a3f18e418d064df6bc58e",
+                "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+                "micro_input_sha256": "2d6380d5301f2dedfca1d055cbe57584ff56850abca7194535b92acf7b91d6a2",
+                "indicator_mapping_sha256": "42334e78c720fec8217389958495d0885e00a64974c62c7632b2809cb61d3d34",
+                "original_audit_sha256": "f1242094ed30273085dfe27a5b2f3895a62b1f99115e07a21dd498bb6eda9712"
+              },
+              "individual_decision": {
+                "action_type": "submit_bid",
+                "accepted": true,
+                "utility": 0.5,
+                "probability": 1.0,
+                "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+                "decision_factors": {
+                  "micro_action_id": "CONTRACTOR-A02",
+                  "regional_friction": 0.0,
+                  "project_id": "PGEN0001",
+                  "proposal_tick": 13,
+                  "proposal_request_sha256": "2f883e7f44707f43d8d4c187eff79b3192f44e90d60a3f18e418d064df6bc58e",
+                  "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+                  "micro_input_sha256": "2d6380d5301f2dedfca1d055cbe57584ff56850abca7194535b92acf7b91d6a2",
+                  "indicator_mapping_sha256": "42334e78c720fec8217389958495d0885e00a64974c62c7632b2809cb61d3d34",
+                  "original_audit_sha256": "f1242094ed30273085dfe27a5b2f3895a62b1f99115e07a21dd498bb6eda9712"
+                },
+                "bid_probability": 1.0,
+                "bid_price": 110000000.0,
+                "expected_profit": 0.1,
+                "risk_level": 0.2,
+                "decline_reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work"
+              },
+              "decision_advisor": {
+                "available": true,
+                "action_type": "submit_bid",
+                "decision": true,
+                "reason": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+                "data": {
+                  "micro_action_id": "CONTRACTOR-A02",
+                  "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+                  "final_request_id": "tick13-PGEN0001-finance-contractor-tender_decision",
+                  "proposal_request_id": "proposal-tick13-PGEN0001-finance-contractor-consider_tender",
+                  "proposal_response_sha256": "2ff3c75059bc10f1d1956c0c747e20e59d5e1273ddea699f6cdbadfcfb60dea6"
+                }
+              },
+              "submitted_tick": 13,
+              "evaluation_score": 0.7,
+              "contractor_region": "Hong Kong",
+              "qs_decision": {
+                "action_type": "evaluate_bid",
+                "accepted": true,
+                "utility": 0.7,
+                "probability": 1.0,
+                "reason": "Known eligible original price uses the declared exact comparison basis",
+                "decision_factors": {
+                  "micro_action_id": "QS-A06",
+                  "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                  "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                  "native_evaluation_scope": {
+                    "tick": 15,
+                    "project_id": "PGEN0001",
+                    "contractor_id": "finance-contractor"
+                  },
+                  "source_sha256": "d2d250fd55d06da59905f1a53c241cbdcdc02fc77ab6412326857f493783d4b8",
+                  "score_basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-finance-qs-assumptions",
+                    "version": "1"
+                  },
+                  "decision_source": "llm_agent",
+                  "decision_type": "qs_bid_evaluation",
+                  "agent_identity": {
+                    "agent_id": "finance-qs",
+                    "role": "QS",
+                    "region": "Hong Kong",
+                    "enterprise_type": "explicit_synthetic"
+                  },
+                  "local_evidence_utility": 0.7,
+                  "local_evidence_probability": 1.0,
+                  "llm_action_type": "evaluate_bid",
+                  "llm_decision": true,
+                  "llm_reason": "Known eligible original price uses the declared exact comparison basis"
+                },
+                "evaluation_score": 0.7,
+                "micro_action_id": "QS-A06",
+                "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515",
+                "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+                "native_evaluation_scope": {
+                  "tick": 15,
+                  "project_id": "PGEN0001",
+                  "contractor_id": "finance-contractor"
+                }
+              },
+              "owner_selection_score": 0.7419999999999999
+            }
+          ],
+          "owner_decision_score": 0.5,
+          "initiation_probability": 0.5,
+          "available_resource": 9.75,
+          "decision_source": "native_macro",
+          "choice_source": "bounded_evidence_default"
+        },
+        "qs_decision_process": "QSAgent.evaluate_bid"
+      }
+    },
+    {
+      "event_id": "EVT000253",
+      "tick": 17,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "contract_negotiation_recommendation",
+      "stage": "contract_award",
+      "description": "CAMEL produced a bounded contract negotiation recommendation",
+      "data": {
+        "session_id": "PGEN0001:contract_negotiation",
+        "session_type": "contract_negotiation",
+        "session_participants": [
+          "finance-owner-a",
+          "origin-contractor-b",
+          "finance-qs"
+        ],
+        "owner_id": "finance-owner-a",
+        "owner_name": "finance-owner-a",
+        "contractor_id": "origin-contractor-b",
+        "contractor_name": "origin-contractor-b",
+        "qs_id": "finance-qs",
+        "qs_name": "finance-qs",
+        "allowed_recommendations": [
+          "accept_terms",
+          "request_revision",
+          "escalate_dispute",
+          "defer_negotiation"
+        ],
+        "selected_action": "accept_terms",
+        "decision_reason": "Synthetic independent acceptance proposal; allocation and payment remain unexecuted.",
+        "individual_decision": {
+          "action_type": "accept_terms",
+          "accepted": true,
+          "utility": 0.7,
+          "probability": 1.0,
+          "reason": "Synthetic independent acceptance proposal; allocation and payment remain unexecuted.",
+          "decision_factors": {
+            "micro_action_id": "CONTRACTOR-A04",
+            "micro_task_key": "de8b23ae812ecc17dd1acf8f4d91ae921be9db75e45cfc3a9bea7045b336a49b",
+            "micro_result_sha256": "ef202d527c58abb2bbad6ad2d413f6a7c84ad808d464b320a196640eac7b5ce3",
+            "native_formation_scope": {
+              "project_id": "PGEN0001",
+              "owner_id": "finance-owner-a",
+              "contractor_id": "origin-contractor-b",
+              "tick": 17
+            }
+          },
+          "stage_state_mutated": false
+        },
+        "error": null,
+        "skipped_reason": null,
+        "contract_sum": 110000000.0,
+        "stage_state_mutated": false
+      }
+    },
+    {
+      "event_id": "EVT000268",
+      "tick": 18,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-owner-a",
+      "event_type": "owner_contract_award_decision",
+      "stage": "contract_award",
+      "description": "Owner independently decided whether to accept the final contract award terms",
+      "data": {
+        "action_type": "accept_contract",
+        "accepted": true,
+        "utility": 0.7,
+        "probability": 1.0,
+        "reason": "Owner acceptance only; exact party decisions, conditions, signatures and unchanged current commitments must be atomically rechecked by contract core",
+        "decision_factors": {
+          "micro_action_id": "OWN-A10",
+          "micro_task_key": "b355953e14c321e97d9830f286d203ae5e94af0557b82119a4523345b5511b6f",
+          "micro_result_sha256": "85ddb92566d23597b345ccc81b1de4d554cc35e27caaeda21cc7b00b219eba3d",
+          "native_award_scope": {
+            "project_id": "PGEN0001",
+            "owner_id": "finance-owner-a",
+            "contractor_id": "origin-contractor-b",
+            "tick": 18
+          },
+          "decision_source": "llm_agent",
+          "decision_type": "owner_contract_award",
+          "agent_identity": {
+            "agent_id": "finance-owner-a",
+            "role": "Owner",
+            "region": "Hong Kong",
+            "enterprise_type": "explicit_synthetic"
+          },
+          "local_evidence_utility": 0.7,
+          "local_evidence_probability": 1.0,
+          "llm_action_type": "accept_contract",
+          "llm_decision": true,
+          "llm_reason": "Owner acceptance only; exact party decisions, conditions, signatures and unchanged current commitments must be atomically rechecked by contract core"
+        },
+        "stage_state_mutated": false,
+        "micro_action_id": "OWN-A10",
+        "micro_result_sha256": "85ddb92566d23597b345ccc81b1de4d554cc35e27caaeda21cc7b00b219eba3d",
+        "micro_task_key": "b355953e14c321e97d9830f286d203ae5e94af0557b82119a4523345b5511b6f",
+        "native_award_scope": {
+          "contractor_id": "origin-contractor-b",
+          "owner_id": "finance-owner-a",
+          "project_id": "PGEN0001",
+          "tick": 18
+        },
+        "proposal_response_sha256": "7c8aa60be481169b36ac9abc3771b9b626ccfadcef7268b4542a4ccf09e9ae1b"
+      }
+    },
+    {
+      "event_id": "EVT000284",
+      "tick": 19,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "contract_awarded",
+      "stage": "contract_award",
+      "description": "Owner and preferred contractor signed the construction contract",
+      "data": {
+        "owner_id": "finance-owner-a",
+        "owner_name": "finance-owner-a",
+        "contractor_id": "origin-contractor-b",
+        "contractor_name": "origin-contractor-b",
+        "qs_id": "finance-qs",
+        "contract_sum": 110000000.0,
+        "contract_duration": 24
+      }
+    },
+    {
+      "event_id": "EVT000301",
+      "tick": 20,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-supplier",
+      "event_type": "supplier_selected",
+      "stage": "contract_award",
+      "description": "Selected contractor appointed a supplier for construction delivery",
+      "data": {
+        "contractor_id": "origin-contractor-b",
+        "contractor_name": "origin-contractor-b",
+        "supplier_id": "finance-supplier",
+        "supplier_name": "finance-supplier",
+        "material_quality": 0.5,
+        "supply_reliability": 0.54,
+        "supplier_selection_score": 0.8,
+        "candidate_count": 2,
+        "shortlisted_suppliers": [
+          {
+            "supplier_id": "finance-supplier",
+            "supplier_name": "finance-supplier",
+            "region": "Hong Kong",
+            "selection_score": 0.8,
+            "accepted_order": true,
+            "supply_reliability": 0.54,
+            "material_quality": 0.5,
+            "available_resource": 0.65
+          },
+          {
+            "supplier_id": "origin-supplier-b",
+            "supplier_name": "origin-supplier-b",
+            "region": "Hong Kong",
+            "selection_score": 0.6,
+            "accepted_order": true,
+            "supply_reliability": 0.54,
+            "material_quality": 0.5,
+            "available_resource": 1.0
+          }
+        ],
+        "contractor_decision": {
+          "action_type": "select_supplier",
+          "accepted": true,
+          "utility": 0.8,
+          "probability": 1.0,
+          "reason": "Apply explicit current-accepted supplier preference, then verify exact independent terms and procurement authority. Prepared scope only: formal services own plan/resource conversion and matched supplier orders. No site release, supplier acceptance, stock or actual work is created.",
+          "decision_factors": {
+            "micro_action_id": "CONTRACTOR-A05",
+            "micro_task_key": "5969d39eb6ab0c4c7111d13cf09f5a9d29b1c1317d65f522901b41d108ea9ead",
+            "micro_result_sha256": "2d918578c2d0528ecbc20a40cbf76b57ac621c5a1d84d9ee24e8351e75a9088b",
+            "native_supply_scope": {
+              "project_id": "PGEN0001",
+              "contractor_id": "origin-contractor-b",
+              "tick": 20
+            },
+            "decision_source": "llm_agent",
+            "decision_type": "contractor_supplier_selection",
+            "agent_identity": {
+              "agent_id": "origin-contractor-b",
+              "role": "Contractor",
+              "region": "Hong Kong",
+              "enterprise_type": "synthetic_development"
+            },
+            "local_evidence_utility": 0.8,
+            "local_evidence_probability": 1.0,
+            "llm_action_type": "select_supplier",
+            "llm_decision": true,
+            "llm_reason": "Apply explicit current-accepted supplier preference, then verify exact independent terms and procurement authority. Prepared scope only: formal services own plan/resource conversion and matched supplier orders. No site release, supplier acceptance, stock or actual work is created."
+          },
+          "selected_supplier_id": "finance-supplier",
+          "accepted_supplier_ids": [
+            "finance-supplier",
+            "origin-supplier-b"
+          ],
+          "micro_action_id": "CONTRACTOR-A05",
+          "micro_result_sha256": "2d918578c2d0528ecbc20a40cbf76b57ac621c5a1d84d9ee24e8351e75a9088b",
+          "micro_task_key": "5969d39eb6ab0c4c7111d13cf09f5a9d29b1c1317d65f522901b41d108ea9ead",
+          "native_supply_scope": {
+            "contractor_id": "origin-contractor-b",
+            "project_id": "PGEN0001",
+            "tick": 20
+          },
+          "proposal_response_sha256": "b5b2de032f2555f7c386ab8137f825f497b588b19be19ff56e8d72c9611e1d79",
+          "choice_source": "llm_agent"
+        },
+        "selection_basis": [
+          "supply reliability",
+          "material quality",
+          "contractor collaboration prior",
+          "local delivery fit",
+          "available resource"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT000638",
+      "tick": 43,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_completed",
+      "stage": "completion",
+      "description": "Completion approved",
+      "data": {}
+    },
+    {
+      "event_id": "EVT000656",
+      "tick": 44,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-qs",
+      "event_type": "final_account_review_started",
+      "stage": "final_account",
+      "description": "QS started final account review before settlement",
+      "data": {
+        "owner_id": "finance-owner-a",
+        "contractor_id": "origin-contractor-b",
+        "qs_id": "finance-qs",
+        "contract_sum": 110000000.0,
+        "actual_cost": 141130362.3368358,
+        "claim_risk": 0.109
+      }
+    },
+    {
+      "event_id": "EVT000670",
+      "tick": 45,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-qs",
+      "event_type": "final_account_settled",
+      "stage": "final_account",
+      "description": "Owner, contractor, and QS settled final account and payment obligations",
+      "data": {
+        "owner_id": "finance-owner-a",
+        "owner_name": "finance-owner-a",
+        "contractor_id": "origin-contractor-b",
+        "contractor_name": "origin-contractor-b",
+        "qs_id": "finance-qs",
+        "qs_name": "finance-qs",
+        "contract_sum": 110000000.0,
+        "final_account_amount": 141130362.3368358,
+        "cost_overrun_ratio": 0.283,
+        "delay_days": 7,
+        "claim_risk": 0.109,
+        "dispute_risk": 0.201
+      }
+    }
+  ],
+  "amount_boundary": "Macro budget/contract/settlement amounts have no currency field. Private inputs declare HKD and use explicit numeric correspondence; this is a scenario assumption, not an observed macro currency or an FX conversion.",
+  "stage_transitions": [
+    {
+      "event_id": "EVT000028",
+      "tick": 2,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "design",
+      "description": "Owner initiated project and appointed consultant team",
+      "data": {
+        "from_stage": "initiation",
+        "to_stage": "design"
+      }
+    },
+    {
+      "event_id": "EVT000107",
+      "tick": 8,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "approval",
+      "description": "Design quality threshold reached",
+      "data": {
+        "from_stage": "design",
+        "to_stage": "approval"
+      }
+    },
+    {
+      "event_id": "EVT000126",
+      "tick": 9,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "tender_preparation",
+      "description": "Approval approved",
+      "data": {
+        "from_stage": "approval",
+        "to_stage": "tender_preparation"
+      }
+    },
+    {
+      "event_id": "EVT000154",
+      "tick": 11,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "tendering",
+      "description": "Tender documents ready",
+      "data": {
+        "from_stage": "tender_preparation",
+        "to_stage": "tendering"
+      }
+    },
+    {
+      "event_id": "EVT000191",
+      "tick": 13,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "bid_evaluation",
+      "description": "Minimum valid bids received",
+      "data": {
+        "from_stage": "tendering",
+        "to_stage": "bid_evaluation"
+      }
+    },
+    {
+      "event_id": "EVT000222",
+      "tick": 15,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "contract_award",
+      "description": "Bid evaluation completed",
+      "data": {
+        "from_stage": "bid_evaluation",
+        "to_stage": "contract_award"
+      }
+    },
+    {
+      "event_id": "EVT000316",
+      "tick": 21,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "construction",
+      "description": "Contract signed and supplier mobilized",
+      "data": {
+        "from_stage": "contract_award",
+        "to_stage": "construction"
+      }
+    },
+    {
+      "event_id": "EVT000610",
+      "tick": 41,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "completion",
+      "description": "Construction complete",
+      "data": {
+        "from_stage": "construction",
+        "to_stage": "completion"
+      }
+    },
+    {
+      "event_id": "EVT000641",
+      "tick": 43,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "final_account",
+      "description": "Completion approved",
+      "data": {
+        "from_stage": "completion",
+        "to_stage": "final_account"
+      }
+    },
+    {
+      "event_id": "EVT000675",
+      "tick": 45,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "stage_transition",
+      "stage": "closed",
+      "description": "Final account settled",
+      "data": {
+        "from_stage": "final_account",
+        "to_stage": "closed"
+      }
+    }
+  ],
+  "native_design_results": [
+    {
+      "event_id": "EVT000029",
+      "tick": 2,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.11792000000000001,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 164599475.1713266,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.35075200000000006,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.88208,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    },
+    {
+      "event_id": "EVT000042",
+      "tick": 3,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.23716000000000004,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 164269616.50364858,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.422296,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.76284,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    },
+    {
+      "event_id": "EVT000055",
+      "tick": 4,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.35772000000000004,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 163939757.83597058,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.49463200000000007,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.64228,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    },
+    {
+      "event_id": "EVT000068",
+      "tick": 5,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.4796,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 163609899.16829258,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.56776,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.5204,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    },
+    {
+      "event_id": "EVT000081",
+      "tick": 6,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.6028,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 163280040.50061455,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.64168,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.3972,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    },
+    {
+      "event_id": "EVT000094",
+      "tick": 7,
+      "project_id": "PGEN0001",
+      "agent_id": null,
+      "event_type": "project_state_updated",
+      "stage": "design",
+      "description": "Project state updated at design",
+      "data": {
+        "planned_progress": 0.0,
+        "actual_progress": 0.0,
+        "progress_deviation": 0.0,
+        "design_quality": 0.72732,
+        "material_quality": 1.0,
+        "construction_quality": 1.0,
+        "overall_quality": 1.0,
+        "defect_rate": 0.0,
+        "detected_defect_rate": 0.0,
+        "planned_cost": 162950181.83293656,
+        "actual_cost": 0.0,
+        "cost_overrun_ratio": 0.0,
+        "planned_duration": 24,
+        "elapsed_time": 0,
+        "delay_days": 0,
+        "safety_risk": 0.0,
+        "compliance_risk": 0.0,
+        "inspection_pass_probability": 1.0,
+        "coordination_efficiency": 0.7000000000000001,
+        "information_quality": 0.7163919999999999,
+        "decision_delay_risk": 0.0,
+        "material_availability": 1.0,
+        "supply_delay_risk": 0.0,
+        "variation_risk": 0.27268000000000003,
+        "claim_risk": 0.0,
+        "dispute_risk": 0.0,
+        "project_failure_risk": 0.0
+      }
+    }
+  ],
+  "front_parameter_and_handoff_links": [
+    {
+      "candidate_project_id": "OPPORTUNITY-1-finance-owner-a-Dongguan-public_facility-200662749",
+      "macro_parameter": "market_demand_index",
+      "value": "1.008365607907473",
+      "comparison": "at_least",
+      "threshold": "0",
+      "observation_task_key": "7d53b5eb6ab99be97406a4ec294331642b4be166a2fb0c5286c511ebfce97c6d",
+      "observation_choice": "follow",
+      "proposal_task_key": "ff81e176278f00303c9818dd3b8c5b565f540a4b1a50fe4f2fd1d94e16eb5efb",
+      "investment_task_key": "0bb5a2fee2bb10883d051ee58031d7703b6c10dc28923ffdf2c7bac37e439390",
+      "investment_choice": "reject"
+    },
+    {
+      "candidate_project_id": "OPPORTUNITY-1-finance-owner-a-Guangzhou-building-169204988",
+      "macro_parameter": "market_demand_index",
+      "value": "1.008365607907473",
+      "comparison": "at_least",
+      "threshold": "0",
+      "observation_task_key": "be038551bff65f01d477b11b3ea65ca136d4fb20517c35776e9908ac54e74e56",
+      "observation_choice": "follow",
+      "proposal_task_key": "48ca06245dad790bcfdcd7289be72ba19f52d494627616bba1b08d86af470d6b",
+      "investment_task_key": "c3368447d2c249a0077102e160741c377f9052d6e4bd0ea858fb60650413ce72",
+      "investment_choice": "reject"
+    },
+    {
+      "candidate_project_id": "OPPORTUNITY-1-finance-owner-a-Foshan-building-223375392",
+      "macro_parameter": "market_demand_index",
+      "value": "1.008365607907473",
+      "comparison": "at_least",
+      "threshold": "0",
+      "observation_task_key": "d8007e84fd16d0a88bb43f43d997d49292eaf13359a1bc2b1071d4ae0b91d443",
+      "observation_choice": "follow",
+      "proposal_task_key": "86f107a3bebb9f7787c36f709ac9a50250d376f5b145e976b47621aace5d569f",
+      "investment_task_key": "ca7cad213ece24e6eefb6003180c2fd45a626aac3d57be46434d597c1470b55a",
+      "investment_choice": "reject"
+    },
+    {
+      "candidate_project_id": "OPPORTUNITY-1-finance-owner-a-Hong Kong-industrial-164929333",
+      "macro_parameter": "market_demand_index",
+      "value": "1.008365607907473",
+      "comparison": "at_least",
+      "threshold": "0",
+      "observation_task_key": "2394c527e8e9c77d363090755ffd24e8c2dc27d2acd38e8ec1814c184212b5bd",
+      "observation_choice": "follow",
+      "proposal_task_key": "cd1a7cef5d6dc8ddffab92acad8bb770080e25563256ee550627a022a4a4f8d0",
+      "investment_task_key": "6f00f3dbdf511945159b650106b7c86524375d06fb7482d15db125f115294dad",
+      "investment_choice": "invest"
+    }
+  ],
+  "government_approval_links": [
+    {
+      "scope": {
+        "project_id": "PGEN0001",
+        "purpose": "design_approval",
+        "tick": 9
+      },
+      "assignment_event_id": "EVT000121",
+      "micro_stages": [
+        {
+          "action_id": "GOV-A12",
+          "task_key": "7d78abb899ff35c3dbf60ccb9edb3af10f23f5b4fcd5233dc082534767d62ba0",
+          "result_sha256": "7829f5ce62b3840b6834e8a03bcc8d354e7376b6dee9bed9e99bd983d446fb88"
+        },
+        {
+          "action_id": "GOV-A04",
+          "task_key": "5ee55b101578866a1148929d7d4f96ebb2dca3d83ec2445c799fedfb1220add0",
+          "result_sha256": "9fd1126ead33e92e6199bd0df7ad93efe6bddcf1b37e1e91810deaa7475d1799"
+        },
+        {
+          "action_id": "GOV-A07",
+          "task_key": "f604448dae0fa94b049ed7201c64543be719f8f7cedb1b7d285c5f587eb09680",
+          "result_sha256": "375149deb4bf0a90945bc2144918b78f00fc17de224041c5070dd7889bb6a1de"
+        }
+      ],
+      "actual_native_effect_event_id": "EVT000123"
+    },
+    {
+      "scope": {
+        "project_id": "PGEN0001",
+        "purpose": "completion_approval",
+        "tick": 43
+      },
+      "assignment_event_id": "EVT000608",
+      "micro_stages": [
+        {
+          "action_id": "GOV-A12",
+          "task_key": "6129193f3f1d008211e0d9c4c4b7975760f337c2024bea192dbfab7d1e3c5994",
+          "result_sha256": "59eff28ccb8582c838a10b5d0f5d7f759106e3943bf06dbd675db9e70536b1ad"
+        },
+        {
+          "action_id": "GOV-A04",
+          "task_key": "0d6d936ec2136836b7f832c175b69a4fabde58ecc24d7324fa48b0578c3cbcd1",
+          "result_sha256": "4704859a014dddc3b03fecab0229056f1899d78f28181a2ac00bbc617585ba6a"
+        },
+        {
+          "action_id": "GOV-A07",
+          "task_key": "95e6f0218ed12766dc8ac47b387d410ae7e3c170e988b7419616be6fd9c1f036",
+          "result_sha256": "ffe7903cc2d875af5b9da8d815c0a8fbe8867139a8f89396863b2cdaf09ad2f2"
+        }
+      ],
+      "actual_native_effect_event_id": "EVT000638"
+    }
+  ],
+  "actual_macro_micro_links": [
+    {
+      "event_id": "EVT000001",
+      "tick": 1,
+      "event_type": "bank_financing_decision",
+      "event_sha256": "343c50b9ef01fb3212cc02f48d4d73d66c4bd1a2aeb6f516e7cbf18cc630e3ae",
+      "micro_task_key": "f74d7f0aab9892ab0beb350535b648c339b7440613111cf12e52827d8d507465",
+      "micro_action_id": "BANK-A04",
+      "micro_organization_id": "finance-bank-a",
+      "micro_result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd"
+    },
+    {
+      "event_id": "EVT000002",
+      "tick": 1,
+      "event_type": "bank_financing_decision",
+      "event_sha256": "68cb4b52399f62957d2a39d37eddfde2c995e9b466629adbf98c541e30e3125e",
+      "micro_task_key": "8fd739b7ad754dc236db6bcfc7224b0f6762a4edac5a5ce41e376a3bd15f4818",
+      "micro_action_id": "BANK-A04",
+      "micro_organization_id": "finance-bank-b",
+      "micro_result_sha256": "d972c59d4c8d574e3b5c1318e233fb1bb9049dc30d2bfcc8b4a4ea48198bbb37"
+    },
+    {
+      "event_id": "EVT000003",
+      "tick": 1,
+      "event_type": "project_financing_selected",
+      "event_sha256": "d38e913fc78bb408d368a0a6a6e58f87f0baad0ab700883a7f2ab57bd3928ecb",
+      "micro_task_key": "2ea29abbe756673005b11bd9ee4dbdb623f7fcf15969ef7f36cb42bc210c254a",
+      "micro_action_id": "OWN-A05",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "799617fbc909477281f8ced7350b9e3dcc5a2a2af359ef32f3658cd84ece2e2f"
+    },
+    {
+      "event_id": "EVT000003",
+      "tick": 1,
+      "event_type": "project_financing_selected",
+      "event_sha256": "d38e913fc78bb408d368a0a6a6e58f87f0baad0ab700883a7f2ab57bd3928ecb",
+      "micro_task_key": "f74d7f0aab9892ab0beb350535b648c339b7440613111cf12e52827d8d507465",
+      "micro_action_id": "BANK-A04",
+      "micro_organization_id": "finance-bank-a",
+      "micro_result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd"
+    },
+    {
+      "event_id": "EVT000004",
+      "tick": 1,
+      "event_type": "project_opportunity_initiated",
+      "event_sha256": "b2cae4b4f4800fc3dd487779a0c2c9465526412195bac102857277b758df1c98",
+      "micro_task_key": "6f00f3dbdf511945159b650106b7c86524375d06fb7482d15db125f115294dad",
+      "micro_action_id": "OWN-A03",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "cc64baf70d414b5ad022a47ce6ff61f28e6671955ed6992ab177ef20b5b25a42"
+    },
+    {
+      "event_id": "EVT000004",
+      "tick": 1,
+      "event_type": "project_opportunity_initiated",
+      "event_sha256": "b2cae4b4f4800fc3dd487779a0c2c9465526412195bac102857277b758df1c98",
+      "micro_task_key": "2ea29abbe756673005b11bd9ee4dbdb623f7fcf15969ef7f36cb42bc210c254a",
+      "micro_action_id": "OWN-A05",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "799617fbc909477281f8ced7350b9e3dcc5a2a2af359ef32f3658cd84ece2e2f"
+    },
+    {
+      "event_id": "EVT000004",
+      "tick": 1,
+      "event_type": "project_opportunity_initiated",
+      "event_sha256": "b2cae4b4f4800fc3dd487779a0c2c9465526412195bac102857277b758df1c98",
+      "micro_task_key": "f74d7f0aab9892ab0beb350535b648c339b7440613111cf12e52827d8d507465",
+      "micro_action_id": "BANK-A04",
+      "micro_organization_id": "finance-bank-a",
+      "micro_result_sha256": "01e01efffc29fed50423df99caf1af9d984e9a53abe84325b8010f5f94c638bd"
+    },
+    {
+      "event_id": "EVT000020",
+      "tick": 2,
+      "event_type": "appointment_decision",
+      "event_sha256": "687edf9962182ae33a219aa3630ff14ecbe34f72deb16994fd6c58cabc646ca9",
+      "micro_task_key": "565135664769af7713fa416be77720b3cf5476f9087e966d3c8e2a5d0de53fdc",
+      "micro_action_id": "ARCHITECT-A02",
+      "micro_organization_id": "finance-architect",
+      "micro_result_sha256": "de5d8d361ec70c30dde1877dd86b0b09ff5de9197a610dc685043d96214ae352"
+    },
+    {
+      "event_id": "EVT000021",
+      "tick": 2,
+      "event_type": "appointment_decision",
+      "event_sha256": "9940f2287666e925dcc71d2b079ece5c7e04c6f8fa5eff1d0cec45f73b58824e",
+      "micro_task_key": "be230ff773b7215ef92de3c042b16ed6e7605bea3a4cd4eedb126bbfd3c1268c",
+      "micro_action_id": "ARCHITECT-A02",
+      "micro_organization_id": "finance-architect-b",
+      "micro_result_sha256": "688c245749b0858e385a4d731a939f08939a5dd4aedb76bfcbe666001ca5c690"
+    },
+    {
+      "event_id": "EVT000022",
+      "tick": 2,
+      "event_type": "appointment_decision",
+      "event_sha256": "69c2e8b590488886feb14b5c49be6aa3d826451e8aaa4556e40a94df308dfe13",
+      "micro_task_key": "b58ef6a1c169992d91b94bc2f5b264bf527d4d343cad8f5fc361a82a868669ae",
+      "micro_action_id": "QS-A02",
+      "micro_organization_id": "finance-qs",
+      "micro_result_sha256": "0c16a212b0226e8bb9a13ff96ddc279a58d9790ee2a7b3c1c099858e6b8a7216"
+    },
+    {
+      "event_id": "EVT000023",
+      "tick": 2,
+      "event_type": "appointment_decision",
+      "event_sha256": "5923d738ea90447a58669bf1dbc3dd337d902ce0ed9a97a143994b5595c55dcd",
+      "micro_task_key": "93fd8eff40265d8a542ef420b0ff9bbb7ea39967d82c62543cc9940de3ed1eda",
+      "micro_action_id": "ENGINEER-A02",
+      "micro_organization_id": "finance-engineer",
+      "micro_result_sha256": "db93ffccb33874b731999a034e37a19990d6bceca538ffc3db021bcf3cf40d3a"
+    },
+    {
+      "event_id": "EVT000027",
+      "tick": 2,
+      "event_type": "consultant_team_appointed",
+      "event_sha256": "d4d062cf2ab1ea3be1be0ddc9245e30f7293ef80e4df09e41a010880708471d4",
+      "micro_task_key": "4bcca1e7d193e29dc389cf8d7d873446246e3975e38ebabc4ed395f8aa8f6ff6",
+      "micro_action_id": "OWN-A04",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "db6bdd999379d6a82a4049d83820ad44e37a12e41ef3173ccfb201e34e81cd49"
+    },
+    {
+      "event_id": "EVT000027",
+      "tick": 2,
+      "event_type": "consultant_team_appointed",
+      "event_sha256": "d4d062cf2ab1ea3be1be0ddc9245e30f7293ef80e4df09e41a010880708471d4",
+      "micro_task_key": "46242415bc18b684468386ab3601d220d8ffc3f9847c8bd59edf41973fe31b9d",
+      "micro_action_id": "OWN-A04",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "f3a0b47fec56d09683ee83f8434938e8fa0f4d167e5ac752a3a851736a4e4af0"
+    },
+    {
+      "event_id": "EVT000027",
+      "tick": 2,
+      "event_type": "consultant_team_appointed",
+      "event_sha256": "d4d062cf2ab1ea3be1be0ddc9245e30f7293ef80e4df09e41a010880708471d4",
+      "micro_task_key": "d0566f3209aa271c827cc3f31fa15f00ffac2355516978dbe2554cbbb9a73c00",
+      "micro_action_id": "OWN-A04",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "dfbdec9073a2fbf4fae93fa66c24582a73b33105918123412eb4070c20b6e1e7"
+    },
+    {
+      "event_id": "EVT000121",
+      "tick": 9,
+      "event_type": "regulatory_review_decision",
+      "event_sha256": "48db9672a9b50582792c6fb922c62bc338a70987306a5df4c3db229a03a0834d",
+      "micro_task_key": "42e83b60796f37e8e8b7f88bd870adeb55974af37e5884e59b027370e2900e82",
+      "micro_action_id": "GOV-A02",
+      "micro_organization_id": "finance-government",
+      "micro_result_sha256": "666c72af30c7235855648a8b1a1e20e63e745f0845ef8c984091166eb0582b15"
+    },
+    {
+      "event_id": "EVT000123",
+      "tick": 9,
+      "event_type": "approval_approved",
+      "event_sha256": "09dba600dd55f2a8aba4b09ca8667b188d18342c56a156824c4334e2374b37f2",
+      "micro_task_key": "42e83b60796f37e8e8b7f88bd870adeb55974af37e5884e59b027370e2900e82",
+      "micro_action_id": "GOV-A02",
+      "micro_organization_id": "finance-government",
+      "micro_result_sha256": "666c72af30c7235855648a8b1a1e20e63e745f0845ef8c984091166eb0582b15"
+    },
+    {
+      "event_id": "EVT000123",
+      "tick": 9,
+      "event_type": "approval_approved",
+      "event_sha256": "09dba600dd55f2a8aba4b09ca8667b188d18342c56a156824c4334e2374b37f2",
+      "micro_task_key": "f604448dae0fa94b049ed7201c64543be719f8f7cedb1b7d285c5f587eb09680",
+      "micro_action_id": "GOV-A07",
+      "micro_organization_id": "finance-government",
+      "micro_result_sha256": "375149deb4bf0a90945bc2144918b78f00fc17de224041c5070dd7889bb6a1de"
+    },
+    {
+      "event_id": "EVT000168",
+      "tick": 12,
+      "event_type": "tender_opened",
+      "event_sha256": "4fef4dea5320b097c2c15faa0defd790e69f0c43272f8d2b4dc321c7c70ac740",
+      "micro_task_key": "924696e8edcc7540cced0edb5b840f259ebc55e8244f36c7826690a7203c6ced",
+      "micro_action_id": "OWN-A09",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "0df0643068a18bbb3a1648a1013b8f8e2c0e1e57d4e8a4b14e23b950c0932bf8"
+    },
+    {
+      "event_id": "EVT000187",
+      "tick": 13,
+      "event_type": "contractor_tender_decision",
+      "event_sha256": "8997a3c9d151f465b5389fe29f8066d119d275aca83e0db0b63c612e4e099a3b",
+      "micro_task_key": "5bb2e03f975055780b4d75929bb4a3b7488e7f0865ebb24cf7ac5d1516202d0d",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "finance-contractor",
+      "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766"
+    },
+    {
+      "event_id": "EVT000188",
+      "tick": 13,
+      "event_type": "bid_submitted",
+      "event_sha256": "915958edcd3f554e6f6acf86b231c254e403e533f582a1a0874aa09bab07d765",
+      "micro_task_key": "5bb2e03f975055780b4d75929bb4a3b7488e7f0865ebb24cf7ac5d1516202d0d",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "finance-contractor",
+      "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766"
+    },
+    {
+      "event_id": "EVT000189",
+      "tick": 13,
+      "event_type": "contractor_tender_decision",
+      "event_sha256": "26946c0d8ff9fe8726fe45751edf961c3b5ec7e95707248be8b6c1e383cd05bf",
+      "micro_task_key": "6600ec8a14663557b9100403b68293797ec47862cb4647960a621a6014599d1f",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "origin-contractor-b",
+      "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d"
+    },
+    {
+      "event_id": "EVT000190",
+      "tick": 13,
+      "event_type": "bid_submitted",
+      "event_sha256": "a5301e1bd85b998a1117620dfdf5d826b316de16665713465eab6ee7ff0cccac",
+      "micro_task_key": "6600ec8a14663557b9100403b68293797ec47862cb4647960a621a6014599d1f",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "origin-contractor-b",
+      "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d"
+    },
+    {
+      "event_id": "EVT000221",
+      "tick": 15,
+      "event_type": "bid_evaluation_completed",
+      "event_sha256": "3a3291c70c9ee62351a9691c934abc2ab7d788f9e7a643dd35046cf3e1835a83",
+      "micro_task_key": "6600ec8a14663557b9100403b68293797ec47862cb4647960a621a6014599d1f",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "origin-contractor-b",
+      "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d"
+    },
+    {
+      "event_id": "EVT000221",
+      "tick": 15,
+      "event_type": "bid_evaluation_completed",
+      "event_sha256": "3a3291c70c9ee62351a9691c934abc2ab7d788f9e7a643dd35046cf3e1835a83",
+      "micro_task_key": "9d86bbde1fbd540842aa40f345145090c82cd5033a649cc4bdd9e9d824befa72",
+      "micro_action_id": "QS-A06",
+      "micro_organization_id": "finance-qs",
+      "micro_result_sha256": "03da66c58f52006a5904031f2954e1dda8a2b569ae2dc0eca85d10748a838515"
+    },
+    {
+      "event_id": "EVT000221",
+      "tick": 15,
+      "event_type": "bid_evaluation_completed",
+      "event_sha256": "3a3291c70c9ee62351a9691c934abc2ab7d788f9e7a643dd35046cf3e1835a83",
+      "micro_task_key": "5bb2e03f975055780b4d75929bb4a3b7488e7f0865ebb24cf7ac5d1516202d0d",
+      "micro_action_id": "CONTRACTOR-A02",
+      "micro_organization_id": "finance-contractor",
+      "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766"
+    },
+    {
+      "event_id": "EVT000253",
+      "tick": 17,
+      "event_type": "contract_negotiation_recommendation",
+      "event_sha256": "cc0a62408c4260f217011d6e317ce76abdff457864a8f5e148506537352d1cf2",
+      "micro_task_key": "de8b23ae812ecc17dd1acf8f4d91ae921be9db75e45cfc3a9bea7045b336a49b",
+      "micro_action_id": "CONTRACTOR-A04",
+      "micro_organization_id": "origin-contractor-b",
+      "micro_result_sha256": "ef202d527c58abb2bbad6ad2d413f6a7c84ad808d464b320a196640eac7b5ce3"
+    },
+    {
+      "event_id": "EVT000268",
+      "tick": 18,
+      "event_type": "owner_contract_award_decision",
+      "event_sha256": "6309a0feb50968f4bcc7e27eb907f97ce2a957f0e206190b131943317802227e",
+      "micro_task_key": "b355953e14c321e97d9830f286d203ae5e94af0557b82119a4523345b5511b6f",
+      "micro_action_id": "OWN-A10",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "85ddb92566d23597b345ccc81b1de4d554cc35e27caaeda21cc7b00b219eba3d"
+    },
+    {
+      "event_id": "EVT000298",
+      "tick": 20,
+      "event_type": "supplier_order_decision",
+      "event_sha256": "e77a43ad67c1d0aefae0abb4c4fac232d1720e3b9e8f1a19311f3b428cd2dc0d",
+      "micro_task_key": "495e10d3da2e14ebe3ab6e66b7ab04631efe882db2501b7fb95f21d7cdfc4c70",
+      "micro_action_id": "SUPPLIER-A04",
+      "micro_organization_id": "finance-supplier",
+      "micro_result_sha256": "91fd653c7f66c9aafedc9207b41648656d23f957705f169816c37cbb26d7c325"
+    },
+    {
+      "event_id": "EVT000299",
+      "tick": 20,
+      "event_type": "supplier_order_decision",
+      "event_sha256": "108ef62fe292cfd0a342e08d4969d61af76d5249a3b284a7c014dcb5b2289fda",
+      "micro_task_key": "566d37f73ffc761b0d8b9ac2604b6a6bb164fb4fa0ecb8bc688417f1834fc5e5",
+      "micro_action_id": "SUPPLIER-A04",
+      "micro_organization_id": "origin-supplier-b",
+      "micro_result_sha256": "369710c90cd944d962bf5462ba700f521a718552918d17aa843c653beec72e44"
+    },
+    {
+      "event_id": "EVT000301",
+      "tick": 20,
+      "event_type": "supplier_selected",
+      "event_sha256": "c6d053a6f8cfbd24ef376ab297dd994f7042ff3040869f5a86c2e7f10839dea4",
+      "micro_task_key": "5969d39eb6ab0c4c7111d13cf09f5a9d29b1c1317d65f522901b41d108ea9ead",
+      "micro_action_id": "CONTRACTOR-A05",
+      "micro_organization_id": "origin-contractor-b",
+      "micro_result_sha256": "2d918578c2d0528ecbc20a40cbf76b57ac621c5a1d84d9ee24e8351e75a9088b"
+    },
+    {
+      "event_id": "EVT000608",
+      "tick": 41,
+      "event_type": "regulatory_review_decision",
+      "event_sha256": "dc6ae20333518a5de836a3db84f2c98c889a0030cf99550f9679e0df78a345a2",
+      "micro_task_key": "9e251e02e49d8013d2c84a0df0d84baa3fd855299d1c8c62742a37a2116d6680",
+      "micro_action_id": "GOV-A02",
+      "micro_organization_id": "finance-government",
+      "micro_result_sha256": "83bbb4ac18e5b3f11e3b46e0e705fc7ca528f4d3aa905ffa0cb512834e4adef9"
+    },
+    {
+      "event_id": "EVT000688",
+      "tick": 46,
+      "event_type": "project_opportunity_declined",
+      "event_sha256": "953315f49acb093a0259d49894e9766fb4a7a6889ee7298fa7372c8dd81b4109",
+      "micro_task_key": "ba007b202c62be1f21025bb27ca0881c1b1ec2616a6d7b719cc0ab9a58783226",
+      "micro_action_id": "OWN-A03",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a"
+    },
+    {
+      "event_id": "EVT000701",
+      "tick": 47,
+      "event_type": "project_opportunity_declined",
+      "event_sha256": "73b2d2415fc723329f663589d65cbfb2a08d0ae4f21333dc952646b10dc3ae07",
+      "micro_task_key": "ead02bc764e5bd0328959da7b6a75dc509e71b594add09017cf11c09042ff356",
+      "micro_action_id": "OWN-A03",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a"
+    },
+    {
+      "event_id": "EVT000714",
+      "tick": 48,
+      "event_type": "project_opportunity_declined",
+      "event_sha256": "dac20d444b9838082f0250d92af76722bdc38a26ba80993a4c4fefcea173063f",
+      "micro_task_key": "ec406b625212b4def309379dcefde210f75bdeadf2ea5c1b4aba3d019895636b",
+      "micro_action_id": "OWN-A03",
+      "micro_organization_id": "finance-owner-a",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a"
+    }
+  ],
+  "lifecycle_consumers": [
+    {
+      "event_id": "EVT000375",
+      "micro_task_key": "9880395c5c3d9837be91d5aa5350422c0c5b1bf0de445586a273e24daa70ff82",
+      "action_id": "OWN-A06",
+      "result_sha256": "4bb66caafe13a41b55cae9a3b786975b57d88852e5c6d7e7b1e94b106ca4387c"
+    },
+    {
+      "event_id": "EVT000433",
+      "micro_task_key": "60542064675c6f4820a2c69a8abd814895481fe0bf493d26e40dee37a78251ba",
+      "action_id": "OWN-A06",
+      "result_sha256": "c335d5766b4f9695d8412bbf2b9f5c55c3f59cae50c7936224709fe74070b231"
+    },
+    {
+      "event_id": "EVT000491",
+      "micro_task_key": "f2a8a82f1a24673cb498bca35c41dc61336065d30aad9864f2b54c968ac8387e",
+      "action_id": "OWN-A06",
+      "result_sha256": "3ca96d3b33403a51ea8123f25d9e7e1ae6b0d40a4ea334040c9f9451501e02f7"
+    },
+    {
+      "event_id": "EVT000535",
+      "micro_task_key": "7de8359518f9d5632952532c146ebf3688871f7dc65ad3d2f571ce7f18d38b2e",
+      "action_id": "OWN-A06",
+      "result_sha256": "d4949313caa302a7621e89a0cdcf9ce8aa8184130bfae3f8c51f66c1310217b0"
+    },
+    {
+      "event_id": "EVT000594",
+      "micro_task_key": "9f2a18989197082b8fa162b72d81bb4eb07056b32c7c9efdb9cf1084766fc6f5",
+      "action_id": "OWN-A06",
+      "result_sha256": "d69fb86387fe9ec69bb96a09c4c07742f7810974ef56a0920122e7e44e4700e5"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "0b7d66702aeff785f4ab1298981a78a401b53014e5928c73a5bd88bdbe6c1845",
+      "action_id": "OWN-A06",
+      "result_sha256": "e144abf3f8fd4c81d1271528b80d5f380dde030ce918a77081b464c04be1422f"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "2b7ddc5ed6d073ea7327599ee4c486ff6e4535d6b297fbd8a450e546e966263d",
+      "action_id": "OWN-A06",
+      "result_sha256": "e144abf3f8fd4c81d1271528b80d5f380dde030ce918a77081b464c04be1422f"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "c86cca23df35462393014f35501b44f8ab89390a63c620ef63038a9d5111504a",
+      "action_id": "CONTRACTOR-A11",
+      "result_sha256": "cc896e929fad00f11ebbef5c0e1dca7d59a29fcde9d70e5ea948503f530ba57f"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "b06fb0bb54609c912295dd0fca5b46db6d4e33ff90ba19d76fb57f2d7d025881",
+      "action_id": "QS-A09",
+      "result_sha256": "9811ef03d84bcadff0d6d7c929814339e6c5927ab6655fd67d3f83906dd2c7e0"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "967d72d97de5cf12ea8ae23e548f17fdfb46d9b2440b4f751b0dd6ccf47d8941",
+      "action_id": "OWN-A06",
+      "result_sha256": "6cbbed98066e660711e27aab5b880708b1caba80ce7066f6a9f5c785e5f6b8b2"
+    },
+    {
+      "event_id": "EVT000656",
+      "micro_task_key": "d8b5b23ca43343262727584dd2acc41937dd5a18595c068847448dbc7ee5b03a",
+      "action_id": "CONTRACTOR-A11",
+      "result_sha256": "369e616946f59373ec051d7e3c9f6384c34957e6cf6fdfea9e8a2672be057f91"
+    },
+    {
+      "event_id": "EVT000670",
+      "micro_task_key": "30ab44efd7b224b33400759e73546828c55efa789ae0ef6040f311881e7bdb30",
+      "action_id": "QS-A12",
+      "result_sha256": "3451689edc3ce4b61cbbaaded0f31e6d8c85b4004891d20743609eadcb83fce9"
+    }
+  ],
+  "signed_contract_consumers": [
+    {
+      "event_id": "EVT000284",
+      "task_key": "495e10d3da2e14ebe3ab6e66b7ab04631efe882db2501b7fb95f21d7cdfc4c70",
+      "action_id": "SUPPLIER-A04",
+      "result_sha256": "91fd653c7f66c9aafedc9207b41648656d23f957705f169816c37cbb26d7c325"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "e2b04f426c95e57b505b740d5b5ded64584c4e51fb993273ebb764a6a7430b15",
+      "action_id": "SUPPLIER-A01",
+      "result_sha256": "899e736664883c57f8f56e2a293808c512a85ecdb28ae69b3b6d6ea985d5b55f"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "0d3565bee262b701acd38cd69655a1b8b172d50455ea8728a3e49397b99fbe28",
+      "action_id": "SUPPLIER-A02",
+      "result_sha256": "ec4314abce40f51c23f915a8ad86a2fef6943b807a583ad170f3f451928a67d7"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "4e1a56b3951bf88184332c760ab93990546bce0331f815fc278543bcce7365e4",
+      "action_id": "SUPPLIER-A03",
+      "result_sha256": "0714f07a69209dd6f566e473f94f4e7cc999be64e4dd8e084a5aa0778f9a94c1"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "566d37f73ffc761b0d8b9ac2604b6a6bb164fb4fa0ecb8bc688417f1834fc5e5",
+      "action_id": "SUPPLIER-A04",
+      "result_sha256": "369710c90cd944d962bf5462ba700f521a718552918d17aa843c653beec72e44"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "1542a86684bab3dc812fb4a794f7fe0dbd4fbca83822e9c6781d0c86a2c23fb9",
+      "action_id": "SUPPLIER-A01",
+      "result_sha256": "380e06d966c2963836781b3a4ae196742c74a32ac23f4687d34bc27d2511c51a"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "567290fe543408e5f7ff3f61a173eea9d1df5b3b5f321c98a238e59c3a859c26",
+      "action_id": "SUPPLIER-A02",
+      "result_sha256": "144f41b794b0ba9d7f169c3a4177b993902fa2a2731a75dd786edd0a9b96ccd1"
+    },
+    {
+      "event_id": "EVT000284",
+      "task_key": "0d7bcc9912155ecd5eb7390bea873bbb08f5852c9ed2b1514a83ae593ac1012c",
+      "action_id": "SUPPLIER-A03",
+      "result_sha256": "09d25057270c61850f578f1d1cda60a718c3f95b5a4fbdab04efc312c5c80319"
+    }
+  ],
+  "formation_handoff": {
+    "evaluation_event_id": "EVT000221",
+    "contractor_task_key": "de8b23ae812ecc17dd1acf8f4d91ae921be9db75e45cfc3a9bea7045b336a49b",
+    "owner_task_key": "b355953e14c321e97d9830f286d203ae5e94af0557b82119a4523345b5511b6f",
+    "actual_award_decision_event_id": "EVT000268",
+    "signed_event_id": "EVT000284"
+  },
+  "later_owner_consumers": [
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "ba007b202c62be1f21025bb27ca0881c1b1ec2616a6d7b719cc0ab9a58783226",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 46,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000688"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "382e5a702e7aee413ee987d1d4707b42b29a4ef313ed4bb1548eede95b128327",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 46,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000688"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "b795679b800da45e69f16aa4a7e24ef55a03f181b73c40e6845f2494508b8229",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 46,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000688"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "4a845dbaec3318d6eaaad7f7052915741387702f630b239a9b4ad6b95f4085c9",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 46,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000688"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "ead02bc764e5bd0328959da7b6a75dc509e71b594add09017cf11c09042ff356",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 47,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000701"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "4d3eaf3ee3170db31a00d3b7417d94a2cf084c5a861cb67f1b6724d10f99b243",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 47,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000701"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "33ef9948131797ace451c57135e2c22afdf260f498c146b947f769dcc30f5ca2",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 47,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000701"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "75a78678a4c4bc27dbf0287f998a06c9ac5a9a0a696e7decedbe070b38ae050e",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 47,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000701"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "ec406b625212b4def309379dcefde210f75bdeadf2ea5c1b4aba3d019895636b",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 48,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000714"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "d01fb890c8120ad52c4416f62110e12dc69fa5effa8735a4676f68c861aff3fe",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 48,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000714"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "a6b855ca230edf8e8204d498109cff2c2b546ff4590cf5772a3a9413f4006c22",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 48,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000714"
+    },
+    {
+      "settlement_event_id": "EVT000670",
+      "settlement_sha256": "c144be31b8bf966a1826356d7075fd8333252abab9679ca11a2a720c75832355",
+      "micro_task_key": "402089d1aa2736701bff044436802da5621f27f99e22922302d1b5673b1d5e69",
+      "micro_result_sha256": "b9ff154dcbe2af92d11f83b94256a3f5f221a04ded7cbf56b7e697f356eb479a",
+      "tick": 48,
+      "private_cash_unchanged": true,
+      "observed_settlement_count": 1,
+      "declared_review_threshold": 1,
+      "private_assessment_case_status": "active",
+      "applied_registration_policy": [
+        {
+          "state": "known",
+          "value": "reject"
+        }
+      ],
+      "actual_decline_event_id": "EVT000714"
+    }
+  ],
+  "technical_tasks": 1349,
+  "micro_actions": {
+    "ARCHITECT-A01": 2,
+    "ARCHITECT-A02": 2,
+    "ARCHITECT-A03": 1,
+    "ARCHITECT-A12": 3,
+    "BANK-A01": 2,
+    "BANK-A02": 2,
+    "BANK-A03": 2,
+    "BANK-A04": 2,
+    "BANK-A05": 1,
+    "CONTRACTOR-A01": 2,
+    "CONTRACTOR-A02": 2,
+    "CONTRACTOR-A04": 1,
+    "CONTRACTOR-A05": 1,
+    "CONTRACTOR-A11": 2,
+    "ENGINEER-A01": 1,
+    "ENGINEER-A02": 1,
+    "ENGINEER-A03": 1,
+    "ENGINEER-A12": 2,
+    "GOV-A02": 2,
+    "GOV-A04": 2,
+    "GOV-A07": 2,
+    "GOV-A12": 2,
+    "OWN-A01": 16,
+    "OWN-A03": 16,
+    "OWN-A04": 3,
+    "OWN-A05": 1,
+    "OWN-A06": 8,
+    "OWN-A09": 1,
+    "OWN-A10": 1,
+    "OWN-A16": 16,
+    "QS-A01": 1,
+    "QS-A02": 1,
+    "QS-A03": 1,
+    "QS-A06": 1,
+    "QS-A09": 1,
+    "QS-A12": 3,
+    "SUPPLIER-A01": 2,
+    "SUPPLIER-A02": 2,
+    "SUPPLIER-A03": 2,
+    "SUPPLIER-A04": 2
+  },
+  "distinct_micro_actions": 40,
+  "actual_micro_roles": [
+    "Architect",
+    "Bank",
+    "Contractor",
+    "Engineer",
+    "Government",
+    "Owner",
+    "QS",
+    "Supplier"
+  ],
+  "live_api_calls": 2,
+  "preferred_bid_selection": "Original native ranking rule in this case; not counted as a micro selection action.",
+  "journal_sha256": "5b6ba931a1244db38d4e499a41a75a384672e65a72afc6f095606216fa895224",
+  "native_pre_signature_diagnostics": [
+    {
+      "event_id": "EVT000205",
+      "tick": 14,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-contractor",
+      "event_type": "invalid_action",
+      "stage": "bid_evaluation",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "provide_clarification",
+          "project_id": "PGEN0001",
+          "agent_id": "finance-contractor",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    },
+    {
+      "event_id": "EVT000219",
+      "tick": 15,
+      "project_id": "PGEN0001",
+      "agent_id": "finance-contractor",
+      "event_type": "invalid_action",
+      "stage": "bid_evaluation",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "provide_clarification",
+          "project_id": "PGEN0001",
+          "agent_id": "finance-contractor",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    },
+    {
+      "event_id": "EVT000236",
+      "tick": 16,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "invalid_action",
+      "stage": "contract_award",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "accept_contract",
+          "project_id": "PGEN0001",
+          "agent_id": "origin-contractor-b",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    },
+    {
+      "event_id": "EVT000252",
+      "tick": 17,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "invalid_action",
+      "stage": "contract_award",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "accept_contract",
+          "project_id": "PGEN0001",
+          "agent_id": "origin-contractor-b",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    },
+    {
+      "event_id": "EVT000267",
+      "tick": 18,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "invalid_action",
+      "stage": "contract_award",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "accept_contract",
+          "project_id": "PGEN0001",
+          "agent_id": "origin-contractor-b",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    },
+    {
+      "event_id": "EVT000282",
+      "tick": 19,
+      "project_id": "PGEN0001",
+      "agent_id": "origin-contractor-b",
+      "event_type": "invalid_action",
+      "stage": "contract_award",
+      "description": "engagement status cannot execute action",
+      "data": {
+        "action": {
+          "action_type": "accept_contract",
+          "project_id": "PGEN0001",
+          "agent_id": "origin-contractor-b",
+          "decision": true,
+          "data": {
+            "validation_only": true,
+            "available_resource": 0.85,
+            "regional_friction": 0.0,
+            "previous_collaboration": 0.5
+          },
+          "reason": "Local guardrail validation for the current lifecycle role. CAMEL is reserved for explicit enterprise decision points."
+        },
+        "reason": "engagement status cannot execute action"
+      }
+    }
+  ],
+  "original_native_state_capture": "runtime/native-run-state.json",
+  "mutable_native_session_views_excluded_from_execution_links": [
+    "EVT000237"
+  ],
+  "macro_unchanged": {
+    "files": 174,
+    "python_sources": 120,
+    "snapshot_sha256": "e7cceadeb56b1df6b7d08ae1e3277b904680ae8d43e241cba5f4ba465ffe8cbd"
+  },
+  "boundary": "One fixed synthetic normal scenario. Original native design, construction and aggregate settlement; no cash clearance, detailed design or all-106-action coverage. Only Contractor A02 pricing selection uses the live model. Other micro actions and later feedback policy are rules. The earlier offline origin case has one pricing policy, so it is an engineering reference, not a matched-input strategy comparison.",
+  "model_calls": [
+    {
+      "micro_task_key": "5bb2e03f975055780b4d75929bb4a3b7488e7f0865ebb24cf7ac5d1516202d0d",
+      "micro_result_sha256": "28c3f40a544e2fd66427e29bb85ab2053d20eccef738472b8f2f327db29a6766",
+      "organization_id": "finance-contractor",
+      "price_HKD": "110000000",
+      "native_event_id": "EVT000188",
+      "native_event_sha256": "915958edcd3f554e6f6acf86b231c254e403e533f582a1a0874aa09bab07d765",
+      "execution": {
+        "call_budget": {
+          "budget_id": "origin-model-lifecycle-20261025-model-budget",
+          "configuration_sha256": "0cd51750e4a2e379e55d1a97a4d5937525a56029b7b5b47b54b989a421f6faae",
+          "reservation_id": "29612607ab5a12ca91619fbbbd35ed80ed358ed6585eeda619b3d38c95102461"
+        },
+        "model_calls": 1,
+        "option_count": 2,
+        "options_sha256": "7b3dbc1810611813bfa6324e734d7cc420ca433a5719d78c8972d9d8d45ca08f",
+        "prompt_sha256": "536eed6573c3ed7770d337c4f0c94a6d03c57dcfe05919c037cfd197e8d82d56",
+        "response_sha256": "b5a510174e67ffde19a4689ab80f272e4f66307ee370fc33a761cbe8ea349ede",
+        "run_id": "origin-model-lifecycle-20261025",
+        "selected_option_id": "original-input",
+        "status": "selected",
+        "usage_metadata": {
+          "input_tokens": 20797,
+          "output_tokens": 7,
+          "total_tokens": 20804
+        }
+      }
+    },
+    {
+      "micro_task_key": "6600ec8a14663557b9100403b68293797ec47862cb4647960a621a6014599d1f",
+      "micro_result_sha256": "288c829b3808f0bfbc5eba15f7d7af3bc6f4fc21a068361acc7a9ac055c3f76d",
+      "organization_id": "origin-contractor-b",
+      "price_HKD": "110000000",
+      "native_event_id": "EVT000190",
+      "native_event_sha256": "a5301e1bd85b998a1117620dfdf5d826b316de16665713465eab6ee7ff0cccac",
+      "execution": {
+        "call_budget": {
+          "budget_id": "origin-model-lifecycle-20261025-model-budget",
+          "configuration_sha256": "0cd51750e4a2e379e55d1a97a4d5937525a56029b7b5b47b54b989a421f6faae",
+          "reservation_id": "70c7bae0584285e80f134afd6a6d4dd174da12549e3014f6e81a35879d9fb4e1"
+        },
+        "model_calls": 1,
+        "option_count": 2,
+        "options_sha256": "fab7ddb28f15316e2e5354e6cc778fec33010bdaaa8e736a27f92c4ee56df2c3",
+        "prompt_sha256": "b75024c872424aab27e4a4036b2257fca9eff13e6068115550d35e2095c87cec",
+        "response_sha256": "b5a510174e67ffde19a4689ab80f272e4f66307ee370fc33a761cbe8ea349ede",
+        "run_id": "origin-model-lifecycle-20261025",
+        "selected_option_id": "original-input",
+        "status": "selected",
+        "usage_metadata": {
+          "input_tokens": 21107,
+          "output_tokens": 7,
+          "total_tokens": 21114
+        }
+      }
+    }
+  ],
+  "call_budget": {
+    "run_id": "origin-model-lifecycle-20261025",
+    "budget_id": "origin-model-lifecycle-20261025-model-budget",
+    "max_calls": 3,
+    "charged_or_reserved_calls": 2,
+    "remaining_calls": 1
+  },
+  "previous_api_batches": [
+    {
+      "journal_path": "output/integration/origin_model_lifecycle_20261025_02/runtime/tasks.sqlite",
+      "journal_sha256": "8f73aeece734420cd124804b543bf4cdb75addd88fd67c19dbc45cec2dc4a84b",
+      "attempted_calls": 1,
+      "status": "failed-no-decision",
+      "reason": "OpenAIConnectionError; independent socket probe confirmed sandbox WinError 10013; no automatic retry",
+      "verified_attempted_calls": 1
+    }
+  ],
+  "total_case_api_attempts": 3,
+  "usage_metadata": {
+    "input_tokens": 41904,
+    "output_tokens": 14,
+    "total_tokens": 41918
+  }
+}

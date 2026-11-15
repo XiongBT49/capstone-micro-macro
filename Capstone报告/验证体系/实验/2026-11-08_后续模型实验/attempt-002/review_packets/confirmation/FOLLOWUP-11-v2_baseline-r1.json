@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "v2_baseline",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于公司核心业务范围内的市政与交通基础设施详细设计，管线综合、结构、交通导改、运行保障方案与我们的代表项目经验直接对应，公司有能力作为单一责任设计方牵头，通过内部专业组和常规专业支持完成MEP、结构与交通接口协调，并以既有的设计协调和业主审查提交能力控制文档质量。但条件登记显示本包指定岗位人员档期经复核为不可调配，这是提交前必须解决的前置条件。管理层决定以附条件投标意向推进：在提交前完成指定岗位人员档期落实并形成可核实的团队可用性摘要与角色计划，否则撤回投标；不采用组合体，因为不存在需要共享投标人身份或设计责任的实质缺口。",
+    "content": "管理层决定：对设计包采取附条件投标意向（bid），由本公司作为单一责任设计方牵头，不组建组合体。\n\n一、机会判断。本包为排放管改道及周边平整的详细设计，涵盖管线综合、结构设计、交通导改、污水厂运行保障方案及施工图纸与规范编制，与本公司道路、桥梁、隧道及市政基础设施设计主业一致，也与新城填海区共同管道及道路设计连建造、隧道连接线等代表项目经验相衔接。业主所要求的团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图与风险应对，均在我方常规投标文件能力范围内。\n\n二、能力与责任安排。本公司作为单一责任设计方，对全部设计交付物、专业接口与业主审查提交负总责。MEP、结构、交通接口等专业协调通过内部专业组与常规专业支持落实，明确接口责任、审查节点与文档标准，不改变投标人身份与设计责任归属。\n\n三、前置条件。条件登记中本包指定岗位人员档期经复核为不可调配（rejected），该条件为提交前必须满足项。在提交前须完成指定岗位人员档期落实，并据此形成可核实的团队可用性摘要与角色计划；未落实前不提交投标文件，若届时仍无法解决则按不投标处理。\n\n四、商务与风险。报价采用固定费用，严格基于设计范围与交付物编制价格基础；进度视图按设计阶段与业主审查周期编排，风险应对中列明人员到位、专业接口协调与审查反馈周期等关键假设。\n\n五、投标假设。指定岗位人员档期在提交前落实；专业支持按常规分包或内部调配安排，不构成共享投标人身份；设计范围以招标文件界定为准。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "本包指定岗位人员档期将在提交前落实，并形成可核实的团队可用性摘要与角色计划",
+      "MEP、结构与交通接口协调通过内部专业组及常规专业支持完成，不改变单一投标人身份与设计责任",
+      "报价为固定费用，价格基础严格对应招标文件界定的设计范围与交付物",
+      "设计范围、审查周期与提交要求以招标文件及业主审查安排为准"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-11-v2_baseline-r1\\final-attempt-1.json",
+  "source_sha256": "34d633d59e39eeec6d5920cddcc8ca25ee8bd67dd1355ac18e3dee61cf4902fa",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "v2_baseline",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

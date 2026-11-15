@@ -1,0 +1,222 @@
+{
+  "pair_id": "PAIR-05",
+  "round": 1,
+  "input": {
+    "role": "designer",
+    "assessment_stage": "draft_or_intention_only_not_formal_submission",
+    "business_objective": "形成角色内的设计服务意向、交付与接口安排",
+    "project_facts": {
+      "case_id": "CASE-0221",
+      "project_name": "水舞间剧院",
+      "project_type": "公共服务建筑",
+      "location": "澳门",
+      "scale": "约26000平方米（204514平方呎）",
+      "delivery_mode": "EPC",
+      "owner_name": "新濠博亚娱乐有限公司"
+    },
+    "scope_basis": {
+      "state": "unknown",
+      "text": "",
+      "projection_sha256": "9255dd57d731fa42d104a6fdac42cb3750e835bd97365f7a686fa91b1834b9ba"
+    },
+    "provided_company_fields": {
+      "company_id": "COMP-0450",
+      "company_name": "Luis Sá Machado, Conceição Perry & Isabel Bragança – Arquitectos Lda.",
+      "office_location": "澳门",
+      "enterprise_type": "私营",
+      "established_time": "1993年在澳门成立",
+      "website": "https://www.mpb.pt"
+    },
+    "not_supplied": [
+      "actual staff allocation",
+      "supplier quotation",
+      "specific product catalogue",
+      "inventory/local-team records",
+      "historical procurement costs"
+    ],
+    "ordinary_support": "Proposed plan only; no accepted counterparty commitment.",
+    "conditions": [
+      {
+        "condition_id": "condition_0480b3b193e9b293886a",
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "requested",
+        "required_before_formal_submission": true,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      }
+    ],
+    "case_specific_attention": [
+      {
+        "input_pointer": "/facts/real_input_dossier/project/scale",
+        "provided_value": "约26000平方米（204514平方呎）",
+        "handling": "规模有值时可用于拟议安排；空白时不要求虚构数量、实际工期或工程量。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/project/delivery_mode",
+        "provided_value": "EPC",
+        "handling": "交付模式描述项目背景，不自动使本方成为整包设计采购施工主体。"
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "D1",
+        "label": "设计服务范围与边界",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+        "handling_for_supported_defer_or_decline": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D2",
+        "label": "设计交付与专业接口",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+        "handling_for_supported_defer_or_decline": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D3",
+        "label": "人员档期与履行安排",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+        "handling_for_supported_defer_or_decline": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D4",
+        "label": "前提和外部协作处理",
+        "applicable": true,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+        "handling_for_supported_defer_or_decline": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D5",
+        "label": "项目针对性与方案取舍",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+        "handling_for_supported_defer_or_decline": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      }
+    ],
+    "common_scoring_rules": [
+      "无资料不自动要求拒绝，明确可行的条件性方案可以得高分。",
+      "不要求新JSON字段，不因V2.4缺task_role字段扣共同业务内容分。",
+      "项目名称复述不构成项目针对性，需说明至少一项条件怎样影响安排。",
+      "未提供工期、规格、市场价格等不要求补造，合理方案假设与事实断言分别判。",
+      "拒绝/等待使用各事项事先列好的相应处理分支，不强迫编造实施方案或报价，也不因此删除事项分母。",
+      "事项遗漏记missing，矛盾记contradicted，不得改记不可判断以排除低分；只有输入确实不可判或无可读回答时记不可判断并保留缺失说明。"
+    ]
+  },
+  "answers_in_display_order": [
+    {
+      "label": "A",
+      "outward": {
+        "decision": "bid_with_consortium",
+        "reason": "管理判断如下：水舞间剧院为EPC公共服务建筑，约26000平方米，业主为新濠博亚娱乐有限公司，设计牵头与整体交付责任并重。本公司为1993年在澳门成立的私营建筑设计事务所，本地存在与设计主导身份可作为投标基础，但公司档案未提供经验、认证、人员配置及历史成本依据，相关能力均属未知，不能对外宣称。EPC包要求单一主体承担设计、施工与整体交付责任，本公司在施工与工程总承包交付责任上存在真实的问责缺口，普通分包或外部支持不足以弥补，故以组合体方式投标是诚实的安排：由本公司担任设计牵头方，合作方承担施工与工程交付责任，双方共享投标主体身份与包级责任。组合体成员的具体身份、资质与承诺尚未落实，属拟议安排，不作已确认事实陈述。指定岗位人员档期尚未核实，为提交前必须完成的前提条件，未落实前仅形成有条件投标意向，不提交。报价以MOP计，未取得供应商报价的部分仅列暂定 allowances，并标明为估算而非已收报价。",
+        "content": "本公司拟以组合体方式参与水舞间剧院EPC招标包的投标意向。角色安排：本公司担任设计牵头方，负责建筑设计主导、设计协调、文件纪律与设计阶段的质量控制；拟议合作方承担施工与工程交付责任，包括现场管理、工期控制、安全与质量记录。组合体成员身份、资质与承诺尚待落实，现为拟议安排，不视为已确认。能力说明：本公司1993年在澳门成立，本地存在与设计主导身份可作为参与基础；公司档案未提供经验、认证、人员配置及历史成本依据，相关能力属未知，不作能力宣称。人员与档期：本包指定岗位人员档期尚未核实，为提交前必须完成的前提条件，未落实前不提交。报价基础：以MOP计价，未取得供应商报价的部分仅列暂定 allowances，并标明为估算而非已收报价；组合体分工下的价格与责任边界将在提交前以书面分工协议明确。质量与文件：设置内部审核与独立复核节点，明确设计接口与文件交付标准。风险应对：就设计接口、工期衔接、施工界面与付款协调制定风险应对方案，并在组合体协议中明确责任流挂。以上为有条件投标意向，不构成提交。",
+        "unresolved_condition_ids": [
+          "condition_0480b3b193e9b293886a"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "拟以组合体方式投标，本公司担任设计牵头方，合作方承担施工与工程交付责任，成员身份与承诺尚待落实。",
+          "本包指定岗位人员档期须在提交前核实，未落实前不提交。",
+          "报价以MOP计，未取得供应商报价的部分仅列暂定 allowances，属估算而非已收报价。",
+          "组合体分工、责任边界与付款协调将在提交前以书面协议明确。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "B",
+      "outward": {
+        "decision": "bid",
+        "reason": "管理层判断：本项目作为公共服务建筑设计机会，与公司作为设计方的角色定位相符，值得争取，且我们能够以单一责任设计主体身份统筹顾问接口与复核，不需要以组合体形式共享投标人身份。但公司档案中范围、经验、认证、交付资源与成本依据均为未知，唯一明确的未决条件是本包指定岗位人员档期是否可用，该条件仍为requested且属于提交前必须满足的前置条件。因此本次为有条件投标意向：先完成人员档期核实，再据实编制设计统筹方案、顾问接口计划、复核与文件管理安排及暂定报价基础；在核实完成前不提交。",
+        "content": "关于水舞间剧院设计角色的投标意向说明。本项目位于澳门，属公共服务建筑，规模约26000平方米，业主为新濠博亚娱乐有限公司。公司拟以设计方身份参与，承担设计统筹、设计成果、顾问接口和复核，不承担整包EPC的设计采购施工责任。拟议工作安排包括：由公司担任单一责任设计主体，建立设计统筹与复核关口，明确各专业顾问的接口界面、提交标准与文件纪律，并以暂定MOP报价基础编制费用框架，所有金额均为暂定，待核实后调整。需说明的是，公司档案中关于本包范围、相关经验、认证、交付资源及历史成本依据均无已核实来源，上述内容均为拟议方案而非既有事实。当前存在一项未决条件：本包指定岗位人员档期是否可用，该条件为提交前必须满足的前置条件，目前尚未取得证据。因此本说明为有条件投标意向，人员档期核实完成前不提交投标。",
+        "task_role": "designer",
+        "unresolved_condition_ids": [
+          "condition_0480b3b193e9b293886a"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以设计方身份投标，仅承担设计统筹、设计成果、顾问接口和复核，不承担整包EPC责任",
+          "专业顾问以受控分包方式纳入，由公司掌握复核关口与文件标准，不构成组合体",
+          "报价为暂定MOP基础，待人员档期与顾问安排核实后调整",
+          "本包指定岗位人员档期核实完成前不提交投标"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    }
+  ]
+}

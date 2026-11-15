@@ -1,0 +1,63 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "v2_1",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本设计包属于公司道路、桥梁、隧道及设计连建造技术服务的核心业务范围，澳门本地项目经验和业主审查提交能力可支撑详细设计、管线综合、结构、交通导改与文档编制。但条件登记显示本包指定岗位人员档期可用性已被运营审查判定为 rejected，这是提交前必须解决的前提，不能以讨论共识或自我确认替代。管理层决定以条件性投标意向推进：在提交前完成指定岗位人员档期的重新核实与落实，并据此形成团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图；若该前提无法满足，则撤回不提交。本包不需要组合体，缺口属于人员调配而非投标人身份或包级责任分担。",
+    "content": "管理层决定：对设计包采取条件性投标意向（bid），由本公司作为单一责任投标人推进。业务契合度高，范围涵盖排放管改道及周边平整详细设计、管线综合、结构设计、交通导改、污水厂运行保障方案及施工图纸规范编制，与公司核心设计能力一致。当前唯一阻断项为本包指定岗位人员档期可用性，运营审查已判定为 rejected，须在提交前重新核实并落实。提交文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对组织，明确设计协调、MEP与结构协调、交通接口及文档编制的责任边界与审查节点。若指定岗位人员档期无法在提交前落实，则不提交。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "以本公司作为单一责任投标人提交，不采用组合体",
+      "指定岗位人员档期须在提交前重新核实并落实，否则撤回不提交",
+      "价格采用基于设计范围和交付物的固定费用基础",
+      "MEP、结构及交通接口协调由本公司主导，必要时使用普通专业支持但不改变单一责任",
+      "提交文件中的团队可用性摘要与角色计划以实际落实的人员安排为准"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-11-v2_1-r1\\final-attempt-1.json",
+  "source_sha256": "71bd2d06130e706b8e20e16943078337be0200afe81e36999065ed042681362b",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "v2_1",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

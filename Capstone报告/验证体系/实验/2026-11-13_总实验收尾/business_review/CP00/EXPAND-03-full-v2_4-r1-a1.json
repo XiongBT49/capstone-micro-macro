@@ -1,0 +1,132 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-03-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "01703e80e49902f3",
+  "role": "supervisor",
+  "annotated_action": "supervision_intention_with_supplier_installation_responsibility_blur",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-03-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "976c380175033f46a5ba1fbf2b6c6876f5458093a129702802468c8b666f473b",
+  "call_id": "attempt_002_call_000102",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "卷闸产品供货、安装及专项检测拟通过常规外部支持与分包安排解决，由本公司作为唯一责任主体统一管理接口与文件流",
+    "reason": "给定角色为独立监理，正文把产品供货与安装作为由本公司统一负责的分包支持来解决，没有区分施工承包方的交付责任，超出本次监督职责。不是因为普通检测顾问不可使用，也不是因单一身份本身扣分。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 109,
+      "end": 162,
+      "quote": "卷闸产品供货、安装及专项检测拟通过常规外部支持与分包安排解决，由本公司作为唯一责任主体统一管理接口与文件流"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "卷闸产品供货、安装及专项检测属于常规外部支持与分包安排",
+      "reason": "实际范围有监理依据，但将产品供货安装纳入本公司负责的支持安排而非施工方职责，扩大监理责任。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 119,
+        "end": 146,
+        "quote": "卷闸产品供货、安装及专项检测属于常规外部支持与分包安排"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "设置内部复核与独立检查节点",
+      "reason": "施工阶段质量进度、文件验收记录、内部复核与独立检查均为拟议，未作已检查结论。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 377,
+        "end": 390,
+        "quote": "设置内部复核与独立检查节点"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "人员配置与报价均为暂定口径",
+      "reason": "本包人员档期未知保留，未以40多位工程师当可派驻；但只有待配置概述，未给本方监督岗位组织。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 254,
+        "end": 267,
+        "quote": "人员配置与报价均为暂定口径"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "核实完成前不递交标书",
+      "reason": "原人员前提正确，但产品安装与本方监理责任混在一起，未清楚区分施工承包方和普通监督支持。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 343,
+        "end": 353,
+        "quote": "核实完成前不递交标书"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "防火卷闸更换工程的监理角色",
+      "reason": "卷闸更换类型进入服务参与及公司监理方向判断，未新增具体消防规范或以人数推实际团队。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 10,
+        "end": 23,
+        "quote": "防火卷闸更换工程的监理角色"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_EXPAND03_first_001.json",
+  "authored_labels_sha256": "ad4f5a14f0969f8850085b9c818d8d144c7aa878476bf179c9549eaaa18d76d6",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

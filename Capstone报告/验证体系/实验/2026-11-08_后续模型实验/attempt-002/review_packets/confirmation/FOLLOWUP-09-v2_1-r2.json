@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "v2_1",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于设计服务范畴，与我方建筑设计及设计协调、业主审查提交的核心能力相符。结构、岩土、MEP及公共通道布局等专业需求可通过受控的设计分包与顾问安排纳入统一设计管理，我方仍作为单一责任主体承担整包设计协调与提交责任，无需组建组合体。指定岗位人员档期已核实可用，关键条件不构成障碍。主要风险在于公开数据缺口导致规模与业绩证据不足，需在投标文件中以团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对补强，并以固定总价按里程碑支付的报价结构控制商业风险。综合判断，该机会值得以单一投标人身份争取。",
+    "content": "管理决策：就设计服务包以单一投标人身份提交投标意向。我方将作为设计主导方承担施工图设计、地质勘察报告解读、支护方案设计、邻近建筑物保护设计、公共通道临时设计及施工期现场设计支持的整体协调与提交责任。结构、岩土、MEP及公共通道布局等专业能力以明确的设计分包与顾问安排纳入统一设计管理与质量审查流程，责任链条由我方统一对外承担。投标文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对组织，采用固定总价按里程碑支付的报价结构。需注意企业规模、认证与代表项目等公开信息缺口，将在内部复核后以可核实的能力说明补强，避免过度承诺。",
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "结构、岩土、MEP及公共通道布局专业支持以设计分包与顾问安排纳入我方统一设计管理，我方保持单一责任主体身份",
+      "指定岗位人员在本包及包期内可用，已通过审核确认",
+      "报价采用固定总价并按里程碑支付",
+      "企业规模与代表项目信息缺口将在投标文件中以能力说明和团队可用性摘要补强，不作超出可核实范围的承诺"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-09-v2_1-r2\\final-attempt-1.json",
+  "source_sha256": "be7abcbf70632b846a652539ca9b91293dbb5f874c5ee13c4c4ba2990042f028",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "v2_1",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

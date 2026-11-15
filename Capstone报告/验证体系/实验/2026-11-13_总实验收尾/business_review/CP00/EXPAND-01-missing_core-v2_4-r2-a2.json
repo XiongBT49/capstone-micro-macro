@@ -1,0 +1,149 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-01-missing_core",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 2,
+  "project_group": "5b47b1e2abeeb5a2",
+  "role": "supplier",
+  "annotated_action": "proposed_system_supply_with_unsupported_external_business_claim",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-01-missing_core-v2_4-r2/attempt-2.json",
+  "response_sha256": "4f722e3752dcebe5a702bfb6d9caa4507d24d64687ca9bba94db73c1ab80c985",
+  "call_id": "attempt_003_call_000044",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "公开资料显示其业务集中于澳门综合度假城营运",
+    "reason": "本次可用档案无实际主营范围或该公开资料，博彩控股企业类型和旗舰地址不能证明业务集中于度假城营运；把外部资料结论当成现有事实越过来源边界。拟议系统设备供货本身不因此禁止。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 80,
+      "end": 101,
+      "quote": "公开资料显示其业务集中于澳门综合度假城营运"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "公开资料显示其业务集中于澳门综合度假城营运",
+      "reason": "未提供该公开资料或主营集中程度，不能自行补充外部验证结论；候选设备品类仍可作为提案。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 80,
+        "end": 101,
+        "quote": "公开资料显示其业务集中于澳门综合度假城营运"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "产品选型、工厂验收测试计划与物流方案",
+      "reason": "规格澄清、外部筛选、工厂验收、分批交付和保修文档形成具体流程，均为拟议。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 49,
+        "end": 67,
+        "quote": "产品选型、工厂验收测试计划与物流方案"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "不能据此推断具备或不具备相关供应能力",
+      "reason": "实际产品、仓储、人员和外部承诺均未知，未把香港上市身份替代本包能力。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 165,
+        "end": 183,
+        "quote": "不能据此推断具备或不具备相关供应能力"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "正式投标前须完成技术规格澄清与外部支持方确认",
+      "reason": "两项状态保留未决且意向不阻断，但正式投标前须完成支持确认的额外强制叙述超出原非前置性质。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/4",
+        "start": 0,
+        "end": 22,
+        "quote": "正式投标前须完成技术规格澄清与外部支持方确认"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "通信与信号接口、供电配套、备件供应与维护文档编制",
+      "reason": "交通类型与系统供货接口相连，但企业监管背景未形成针对性合规风险或核查安排。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 334,
+        "end": 358,
+        "quote": "通信与信号接口、供电配套、备件供应与维护文档编制"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "**合计：MOP 26,120,000**",
+      "reason": "总价和摘要改为2612万，与1850+320+145+98+76+123万元六项一致，均为暂定无实收报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 262,
+        "end": 283,
+        "quote": "**合计：MOP 26,120,000**"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.5,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_repair_delta_batch01_001_expanded_labels.json",
+  "authored_labels_sha256": "563982f5d27dfe4a56b8a616648763b75eb1516553cc41f1ebf29699189ffd3e",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

@@ -1,0 +1,126 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "role_discussion",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包屬於設計服務範疇，與公司建築設計及業主審查提交能力直接契合，且檔期條件已驗證，具備以單一問責投標人提交的基礎。岩土、結構、機電及公共通道協調屬可透過分包顧問補足的專業學科，公司仍可擔任設計總負責，設定審查關口、獨立檢查分包成果並向業主承擔整體設計責任，因此不需要組合體。管理上的顧慮是公司規模、認證與代表項目資料空白，故投標文件不作相關陳述，專業支持一律寫成分包計劃與投標假設，不寫成已具備。價格採固定總價、按里程碑支付，以角色計劃與交付方法推算價格基礎，並在質量方法與風險應對中講清責任流向，以維持評標可信度與公司聲譽。",
+    "content": "管理層決定：就設計服務包以單一問責投標人身份投標。投標文件按業主要求提交團隊可用性摘要、角色計劃、交付方法、質量方法、價格基礎、進度視圖及風險應對。交付方法明確由本公司擔任設計總負責，負責施工圖設計整體協調、地質勘察報告解讀的設計整合、支護與鄰近建築物保護設計的設計審查、公共通道臨時設計協調及施工期現場設計支持；岩土、結構、機電及公共通道等專業學科以分包顧問計劃納入，各分包成果須經我方獨立檢查，並在業主審查提交前完成內部質量審核，責任流向在質量方法中逐層寫明。價格採固定總價、按里程碑支付，價格基礎以角色計劃與交付方法推算。進度視圖按里程碑排列設計提交與審查關口。風險應對集中處理專業協調接口、審查回覆時效及施工期現場支持安排。公司規模、認證及代表項目資料空白，投標文件不作相關陳述；分包商尚未落實，僅作為投標假設列明，不描述為已 secured 的支持。",
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "岩土、結構、機電及公共通道協調以分包計劃形式納入，具體分包商尚未落實",
+      "固定總價按里程碑支付，價格基礎以角色計劃與交付方法推算",
+      "公司規模、認證及代表項目資料空白，投標文件不作相關陳述",
+      "各專業分包成果由本公司獨立檢查並完成內部質量審核後，方提交業主審查"
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-09-role_discussion-r2\\final-attempt-1.json",
+  "source_sha256": "158d09ba10f3295367ba6a3c90ee96c2bc6b2c91aae38fd552ef340b254c1c3f",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [
+    {
+      "role_index": 1,
+      "status": "accepted",
+      "output": {
+        "content": "檔期條件已驗證，不再列為提交前提，但公司資料只顯示建築設計與業主審查提交能力，規模、認證及代表項目均空白，而本包明確需要岩土、結構、機電與公共通道協調。我傾向以固定總價、按里程碑支付投標，把專業支持寫成分包計劃與投標假設，並在角色計劃、質量方法與風險應對中說明審查關口和責任如何層層傳遞，不把未落實的支持寫成已具備。",
+        "recommendation": "請設計部同事先核對角色計劃與分包範圍，確認岩土、結構、機電各專業的審查關口與責任傳遞寫法是否站得住。",
+        "decision_impact": "決定投標文件能否以分包計劃支撐能力缺口，避免誇大能力而影響評標可信度。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [
+          "condition_a0058f33cd61c4963861"
+        ],
+        "bid_assumptions": [
+          "岩土、結構、機電及公共通道協調以分包計劃形式納入，尚未落實具體分包商",
+          "固定總價按里程碑支付，價格基礎以角色計劃與交付方法推算",
+          "公司規模、認證及代表項目資料空白，投標文件不作相關陳述"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-09-role_discussion-r2\\role-1-attempt-1.json",
+      "source_sha256": "0aaee7f8fc975313f68c31b0521f736f113232607358ba6cbbc32239b16717e2"
+    },
+    {
+      "role_index": 2,
+      "status": "accepted",
+      "output": {
+        "content": "檔期條件已驗證，不再列為提交前提。公司資料只顯示建築設計與業主審查提交能力，規模、認證、代表項目空白，而本包需要岩土、結構、機電及公共通道協調，這是我們要正面處理的能力缺口。我傾向以固定總價、按里程碑支付投標，把專業支持寫成分包計劃與投標假設，並在角色計劃、質量方法、風險應對中講清審查關口與責任如何層層傳遞，不把未落實的支持寫成已具備。",
+        "recommendation": "請設計部先核對角色計劃與分包範圍，確認各專業審查關口與責任傳遞的寫法是否站得住。",
+        "decision_impact": "決定投標文件能否以分包計劃支撐能力缺口，避免誇大能力而影響評標可信度。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [
+          "condition_a0058f33cd61c4963861"
+        ],
+        "bid_assumptions": [
+          "岩土、結構、機電及公共通道協調以分包計劃形式納入，尚未落實具體分包商",
+          "固定總價按里程碑支付，價格基礎以角色計劃與交付方法推算",
+          "公司規模、認證及代表項目資料空白，投標文件不作相關陳述"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-09-role_discussion-r2\\role-2-attempt-1.json",
+      "source_sha256": "3f0b300338450d4d2ae52a28d242956f0ff5bf7ca706bb3656611fbc8e546da0"
+    },
+    {
+      "role_index": 3,
+      "status": "accepted",
+      "output": {
+        "content": "檔期條件已驗證，不再列為提交前提。我同意以固定總價、按里程碑支付投標，把岩土、結構、機電及公共通道協調寫成分包計劃與投標假設。質量上我關注的是審查關口能否層層傳遞：每個專業分包成果須經我方獨立檢查、業主審查提交前完成內部質量審核，並在質量方法與風險應對中寫清責任流向，不把未落實的支持寫成已具備。",
+        "recommendation": "請設計部同事先核對角色計劃與分包範圍，確認各專業審查關口與獨立檢查寫法是否站得住。",
+        "decision_impact": "決定質量方法能否支撐能力缺口，避免誇大能力而影響評標可信度。",
+        "verification_requests": [],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [
+          "condition_a0058f33cd61c4963861"
+        ],
+        "bid_assumptions": [
+          "岩土、結構、機電及公共通道協調以分包計劃形式納入，尚未落實具體分包商",
+          "固定總價按里程碑支付，價格基礎以角色計劃與交付方法推算",
+          "公司規模、認證及代表項目資料空白，投標文件不作相關陳述"
+        ]
+      },
+      "source_path": "organization\\jobs\\FOLLOWUP-09-role_discussion-r2\\role-3-attempt-1.json",
+      "source_sha256": "61140ab4ca4362670dbcf31aca961323381fb54ef998df8a548eb3cb4c8e9ef8"
+    }
+  ],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "role_discussion",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 3,
+    "accepted_comments": 3
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

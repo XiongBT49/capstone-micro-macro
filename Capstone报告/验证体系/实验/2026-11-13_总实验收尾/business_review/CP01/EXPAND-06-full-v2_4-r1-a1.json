@@ -1,0 +1,155 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-06-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ed8c08f1d79077f2",
+  "role": "supervisor",
+  "annotated_action": "decline_pending_verifiable_supervision_staff_and_local_resources",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-06-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "f92de97f04532a7dffd2df328b2644125bf4fff9826ff12e20a2433338921f36",
+  "call_id": "attempt_002_call_000189",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "未知既不等于具备也不等于不具备",
+    "reason": "根据实际人员未核实及澳门现场履约的管理风险选择暂不参与，未把未知当无能力，并给出资源可核实后重审；不要求所有合理回答必须出价。额外同类业绩需求未获输入支持，在V5保留。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 152,
+      "end": 167,
+      "quote": "未知既不等于具备也不等于不具备"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "该文本为档案记载，不构成本包监管资格、业绩或人员可用性的证明",
+      "reason": "真实范围包括工程监理，回答保持监督角色和资格未知，没有接管施工或虚构已经核验。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 99,
+        "end": 129,
+        "quote": "该文本为档案记载，不构成本包监管资格、业绩或人员可用性的证明"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "后续如人员档期与本地监管资源可核实，可重新评估是否参与",
+      "reason": "按有据暂不参与分支，明确不推进正式投标及人员、本地资源核实后的重审触发，不另要求编造实施检查或报价。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 330,
+        "end": 357,
+        "quote": "后续如人员档期与本地监管资源可核实，可重新评估是否参与"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "无法确认常驻人员与本地交付能力",
+      "reason": "区分未提供资源与实际无能力，说明人员状态如何限制承诺并待核实重审；公司1355名参保人数未被当作本包可用人员。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 203,
+        "end": 218,
+        "quote": "无法确认常驻人员与本地交付能力"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "内部讨论中的本地资源与合作安排均为提议，尚无已接受的对价方承诺",
+      "reason": "原人员必要前提保持未决，未将潜在支持写成承诺或用组合体包装已经解决的人员问题。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 281,
+        "end": 312,
+        "quote": "内部讨论中的本地资源与合作安排均为提议，尚无已接受的对价方承诺"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "partial",
+      "quote": "需要可核实的本地常驻监管团队与同类业绩",
+      "reason": "澳门现场服务与本地资源不确定性联系到声誉和履约取舍有内容，但本包必须具有同类业绩并非已给要求，不能把这一附加要求当已知条件。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 58,
+        "end": 77,
+        "quote": "需要可核实的本地常驻监管团队与同类业绩"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "待人员档期与本地监管资源可核实后再行评估",
+      "reason": "当前不投标、必要人员尚未确认与明确重审触发形成可执行的有限行动；不因拒绝未给完整检查计划而自动扣到1。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 300,
+        "end": 320,
+        "quote": "待人员档期与本地监管资源可核实后再行评估"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "判给后履约失控的声誉与合规风险高于本包商业价值",
+      "reason": "风险收益比较属于管理判断，联系到暂不参与和核实后重审，而非宣称真实收益测算或未知等于无能力；额外同类业绩要求的问题独立记录。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 219,
+        "end": 242,
+        "quote": "判给后履约失控的声誉与合规风险高于本包商业价值"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND06_both_conditions.json",
+  "authored_labels_sha256": "6122a2f49cac2683481bb9f5aa5c93f23c4224be06b5449f74640f99fd4a2b61",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

@@ -1,0 +1,2762 @@
+{
+  "window_id": "WINDOW-02",
+  "company_id": "COMP-0466",
+  "mode": "single_agent",
+  "result": {
+    "kind": "completed",
+    "payload": {
+      "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+      "bid": {
+        "package_ref": {
+          "kind": "ProcurementPackage",
+          "id": "origin-late-COMP-0466-package",
+          "version": "1"
+        },
+        "scope_ref": {
+          "kind": "project",
+          "ref": {
+            "kind": "Project",
+            "id": "CASE-0014",
+            "version": "1"
+          },
+          "coverage_refs": [
+            {
+              "kind": "WorkScope",
+              "id": "CASE-0014-work",
+              "version": "1"
+            }
+          ]
+        },
+        "price": {
+          "value": "110000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "origin-late-COMP-0466-assumptions",
+            "version": "1"
+          }
+        },
+        "cost_basis_refs": [
+          {
+            "kind": "CostBasis",
+            "id": "origin-late-COMP-0466-cost",
+            "version": "1"
+          }
+        ],
+        "programme_ref": {
+          "kind": "ProgrammeProposal",
+          "id": "origin-late-COMP-0466-programme",
+          "version": "1"
+        },
+        "terms_ref": {
+          "kind": "ContractTerms",
+          "id": "origin-late-COMP-0466-terms",
+          "version": "1"
+        },
+        "exclusion_refs": [],
+        "validity_ref": {
+          "kind": "TimeWindow",
+          "id": "origin-late-COMP-0466-validity",
+          "version": "1"
+        },
+        "proposed_resources": [
+          {
+            "resource_ref": {
+              "kind": "ResourcePool",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            "task_scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            },
+            "quantity": {
+              "value": "0.2",
+              "unit": "normalized_enterprise_capacity",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-calendar",
+                "version": "1"
+              }
+            }
+          }
+        ]
+      },
+      "planned_tasks": [
+        {
+          "local_key": "work",
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "work_method_ref": {
+            "kind": "WorkMethod",
+            "id": "origin-late-COMP-0466-method",
+            "version": "1"
+          },
+          "target_quantities": [
+            {
+              "value": "1",
+              "unit": "normalized_work_item",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0453-assumptions",
+                "version": "1"
+              }
+            }
+          ],
+          "dependency_refs": [],
+          "allocations": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ],
+          "window_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0466-work",
+            "version": "1"
+          }
+        }
+      ],
+      "choice": "submit_bid"
+    }
+  },
+  "audit": {
+    "schema_version": "action-audit.v1",
+    "run_id": "capstone-20261105-window-02-single_agent",
+    "action_id": "CONTRACTOR-A02",
+    "operation_id": "COMP-0466-bid",
+    "input_schema_id": "role-contract.v1:CONTRACTOR-A02:input",
+    "input_version": "1",
+    "input_sha256": "841b091bd3af56d61c677b15686da7d7d550d584884fea6b6d4292b2371b2f5b",
+    "execution_path": "single_agent",
+    "strategy": "single_agent",
+    "skill": {
+      "id": "CONTRACTOR-A02.priced-bid-plan",
+      "version": "1",
+      "sha256": "77c6a88d783938130554fa21259cd9b3ce7f7d5fa9d211822f973dd51f7d7a07"
+    },
+    "processor_id": "contractor.priced_bid_plan.v1",
+    "method_version": null,
+    "method_registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+    "method_calls": [
+      {
+        "method_ref": {
+          "kind": "Method",
+          "id": "micro.capacity.fixed_location",
+          "version": "1"
+        },
+        "registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+        "input": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+            "version": "1"
+          },
+          "demands": [
+            {
+              "resource_kind": "normalized_enterprise_capacity",
+              "region_id": "Macau",
+              "unit": "normalized_enterprise_capacity",
+              "amount": {
+                "numerator": 1,
+                "denominator": 5
+              },
+              "window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 21
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 31
+                },
+                "bounds": "closed_open"
+              },
+              "basis_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "resource_kind": "normalized_enterprise_capacity",
+              "region_id": "Macau",
+              "total": {
+                "value": "1",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-native-resource",
+                  "version": "1"
+                }
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 0
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 111
+                },
+                "bounds": "closed_open"
+              }
+            }
+          ],
+          "commitments": [
+            {
+              "commitment_ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              },
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.1",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              },
+              "window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 0
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 14
+                },
+                "bounds": "closed_open"
+              }
+            }
+          ],
+          "source_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ProcurementPackage",
+              "id": "origin-late-COMP-0466-package",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorPricingProfile",
+              "id": "origin-late-COMP-0466-pricing",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorCapacity",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0466-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0466-function",
+              "version": "1"
+            },
+            {
+              "kind": "TenderRound",
+              "id": "origin-late-COMP-0466-round",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-submission",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ReleasedDeliverable",
+              "id": "origin-late-COMP-0466-design",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0453-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0453-function",
+              "version": "1"
+            },
+            {
+              "kind": "Qualification",
+              "id": "origin-late-COMP-0466-qualification",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "QuantityBasis",
+              "id": "origin-late-COMP-0466-quantity",
+              "version": "1"
+            },
+            {
+              "kind": "MeasurementRule",
+              "id": "origin-late-COMP-0466-measurement",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            },
+            {
+              "kind": "Method",
+              "id": "COMP-0466-declared-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "ProgrammeProposal",
+              "id": "origin-late-COMP-0466-programme",
+              "version": "1"
+            },
+            {
+              "kind": "ResourcePool",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "ResourceCommitment",
+              "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+              "version": "1"
+            },
+            {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            }
+          ]
+        },
+        "result": {
+          "kind": "ok",
+          "value": {
+            "feasible": true,
+            "segments": [
+              {
+                "resource_kind": "normalized_enterprise_capacity",
+                "region_id": "Macau",
+                "unit": "normalized_enterprise_capacity",
+                "window": {
+                  "start": {
+                    "clock_ref": {
+                      "kind": "ClockProfile",
+                      "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                      "version": "1"
+                    },
+                    "offset": 21
+                  },
+                  "end": {
+                    "clock_ref": {
+                      "kind": "ClockProfile",
+                      "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                      "version": "1"
+                    },
+                    "offset": 31
+                  },
+                  "bounds": "closed_open"
+                },
+                "needed": {
+                  "numerator": 1,
+                  "denominator": 5
+                },
+                "available": {
+                  "numerator": 1,
+                  "denominator": 1
+                }
+              }
+            ]
+          },
+          "method_ref": {
+            "kind": "Method",
+            "id": "micro.capacity.fixed_location",
+            "version": "1"
+          },
+          "input_digest": "44dbea9f576c96c3260bae030320d9c370368968c8e664ff874e7b7d0dfb2209",
+          "input_refs": [
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProcurementPackage",
+                "id": "origin-late-COMP-0466-package",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorPricingProfile",
+                "id": "origin-late-COMP-0466-pricing",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-native-resource",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-calendar",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorCapacity",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0466-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0466-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TenderRound",
+                "id": "origin-late-COMP-0466-round",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-submission",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0453-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ReleasedDeliverable",
+                "id": "origin-late-COMP-0466-design",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0453-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0453-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Qualification",
+                "id": "origin-late-COMP-0466-qualification",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-quantity-relation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "QuantityBasis",
+                "id": "origin-late-COMP-0466-quantity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "MeasurementRule",
+                "id": "origin-late-COMP-0466-measurement",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "CostBasis",
+                "id": "origin-late-COMP-0466-cost",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Method",
+                "id": "COMP-0466-declared-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProgrammeProposal",
+                "id": "origin-late-COMP-0466-programme",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "WorkMethod",
+                "id": "origin-late-COMP-0466-method",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              }
+            }
+          ],
+          "basis_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            }
+          ]
+        }
+      },
+      {
+        "method_ref": {
+          "kind": "Method",
+          "id": "micro.contractor.declared_bid_price",
+          "version": "1"
+        },
+        "registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+        "input": {
+          "lines": [
+            {
+              "coverage_keys": [
+                "work"
+              ],
+              "quantity": {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              },
+              "unit_rate": {
+                "value": "100000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              },
+              "quantity_unit": "normalized_work_item"
+            }
+          ],
+          "markup_fraction": "0.1",
+          "markup_basis_ref": {
+            "kind": "Evidence",
+            "id": "origin-late-COMP-0466-assumptions",
+            "version": "1"
+          },
+          "allowance": {
+            "value": "0",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            }
+          },
+          "source_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ProcurementPackage",
+              "id": "origin-late-COMP-0466-package",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorPricingProfile",
+              "id": "origin-late-COMP-0466-pricing",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorCapacity",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0466-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0466-function",
+              "version": "1"
+            },
+            {
+              "kind": "TenderRound",
+              "id": "origin-late-COMP-0466-round",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-submission",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ReleasedDeliverable",
+              "id": "origin-late-COMP-0466-design",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0453-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0453-function",
+              "version": "1"
+            },
+            {
+              "kind": "Qualification",
+              "id": "origin-late-COMP-0466-qualification",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "QuantityBasis",
+              "id": "origin-late-COMP-0466-quantity",
+              "version": "1"
+            },
+            {
+              "kind": "MeasurementRule",
+              "id": "origin-late-COMP-0466-measurement",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            },
+            {
+              "kind": "Method",
+              "id": "COMP-0466-declared-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "ProgrammeProposal",
+              "id": "origin-late-COMP-0466-programme",
+              "version": "1"
+            },
+            {
+              "kind": "ResourcePool",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "ResourceCommitment",
+              "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+              "version": "1"
+            },
+            {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            },
+            {
+              "kind": "ContractTerms",
+              "id": "origin-late-COMP-0466-terms",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-validity",
+              "version": "1"
+            }
+          ]
+        },
+        "result": {
+          "kind": "ok",
+          "value": {
+            "internal_cost_subtotal": {
+              "value": "100000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            "offered_price": {
+              "value": "110000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "method_ref": {
+            "kind": "Method",
+            "id": "micro.contractor.declared_bid_price",
+            "version": "1"
+          },
+          "input_digest": "42d4cb6136d30cce71bcc36827526f4cab0ea043c8c9e2191a2ef65bc0b4ed0d",
+          "input_refs": [
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProcurementPackage",
+                "id": "origin-late-COMP-0466-package",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorPricingProfile",
+                "id": "origin-late-COMP-0466-pricing",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-native-resource",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-calendar",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorCapacity",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0466-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0466-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TenderRound",
+                "id": "origin-late-COMP-0466-round",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-submission",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0453-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ReleasedDeliverable",
+                "id": "origin-late-COMP-0466-design",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0453-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0453-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Qualification",
+                "id": "origin-late-COMP-0466-qualification",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-quantity-relation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "QuantityBasis",
+                "id": "origin-late-COMP-0466-quantity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "MeasurementRule",
+                "id": "origin-late-COMP-0466-measurement",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "CostBasis",
+                "id": "origin-late-COMP-0466-cost",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Method",
+                "id": "COMP-0466-declared-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProgrammeProposal",
+                "id": "origin-late-COMP-0466-programme",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "WorkMethod",
+                "id": "origin-late-COMP-0466-method",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractTerms",
+                "id": "origin-late-COMP-0466-terms",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-validity",
+                "version": "1"
+              }
+            }
+          ],
+          "basis_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            }
+          ]
+        }
+      },
+      {
+        "method_ref": {
+          "kind": "Method",
+          "id": "micro.capacity.fixed_location",
+          "version": "1"
+        },
+        "registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+        "input": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+            "version": "1"
+          },
+          "demands": [
+            {
+              "resource_kind": "normalized_enterprise_capacity",
+              "region_id": "Macau",
+              "unit": "normalized_enterprise_capacity",
+              "amount": {
+                "numerator": 1,
+                "denominator": 5
+              },
+              "window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 21
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 31
+                },
+                "bounds": "closed_open"
+              },
+              "basis_refs": [
+                {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "resource_kind": "normalized_enterprise_capacity",
+              "region_id": "Macau",
+              "total": {
+                "value": "1",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-native-resource",
+                  "version": "1"
+                }
+              },
+              "effective_window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 0
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 111
+                },
+                "bounds": "closed_open"
+              }
+            }
+          ],
+          "commitments": [
+            {
+              "commitment_ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              },
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.1",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              },
+              "window": {
+                "start": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 0
+                },
+                "end": {
+                  "clock_ref": {
+                    "kind": "ClockProfile",
+                    "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                    "version": "1"
+                  },
+                  "offset": 14
+                },
+                "bounds": "closed_open"
+              }
+            }
+          ],
+          "source_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ProcurementPackage",
+              "id": "origin-late-COMP-0466-package",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorPricingProfile",
+              "id": "origin-late-COMP-0466-pricing-model-alternative",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorCapacity",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0466-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0466-function",
+              "version": "1"
+            },
+            {
+              "kind": "TenderRound",
+              "id": "origin-late-COMP-0466-round",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-submission",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ReleasedDeliverable",
+              "id": "origin-late-COMP-0466-design",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0453-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0453-function",
+              "version": "1"
+            },
+            {
+              "kind": "Qualification",
+              "id": "origin-late-COMP-0466-qualification",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "QuantityBasis",
+              "id": "origin-late-COMP-0466-quantity",
+              "version": "1"
+            },
+            {
+              "kind": "MeasurementRule",
+              "id": "origin-late-COMP-0466-measurement",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            },
+            {
+              "kind": "Method",
+              "id": "COMP-0466-declared-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "ProgrammeProposal",
+              "id": "origin-late-COMP-0466-programme",
+              "version": "1"
+            },
+            {
+              "kind": "ResourcePool",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "ResourceCommitment",
+              "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+              "version": "1"
+            },
+            {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            }
+          ]
+        },
+        "result": {
+          "kind": "ok",
+          "value": {
+            "feasible": true,
+            "segments": [
+              {
+                "resource_kind": "normalized_enterprise_capacity",
+                "region_id": "Macau",
+                "unit": "normalized_enterprise_capacity",
+                "window": {
+                  "start": {
+                    "clock_ref": {
+                      "kind": "ClockProfile",
+                      "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                      "version": "1"
+                    },
+                    "offset": 21
+                  },
+                  "end": {
+                    "clock_ref": {
+                      "kind": "ClockProfile",
+                      "id": "linked-topk-CASE-0014-20261102-monthly-clock",
+                      "version": "1"
+                    },
+                    "offset": 31
+                  },
+                  "bounds": "closed_open"
+                },
+                "needed": {
+                  "numerator": 1,
+                  "denominator": 5
+                },
+                "available": {
+                  "numerator": 1,
+                  "denominator": 1
+                }
+              }
+            ]
+          },
+          "method_ref": {
+            "kind": "Method",
+            "id": "micro.capacity.fixed_location",
+            "version": "1"
+          },
+          "input_digest": "24865775045a1adb4957ecf29462b2b43f022f2fb7820a9d8a227166f20dbb7e",
+          "input_refs": [
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProcurementPackage",
+                "id": "origin-late-COMP-0466-package",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorPricingProfile",
+                "id": "origin-late-COMP-0466-pricing-model-alternative",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-native-resource",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-calendar",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorCapacity",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0466-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0466-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TenderRound",
+                "id": "origin-late-COMP-0466-round",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-submission",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0453-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ReleasedDeliverable",
+                "id": "origin-late-COMP-0466-design",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0453-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0453-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Qualification",
+                "id": "origin-late-COMP-0466-qualification",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-quantity-relation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "QuantityBasis",
+                "id": "origin-late-COMP-0466-quantity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "MeasurementRule",
+                "id": "origin-late-COMP-0466-measurement",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "CostBasis",
+                "id": "origin-late-COMP-0466-cost",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Method",
+                "id": "COMP-0466-declared-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProgrammeProposal",
+                "id": "origin-late-COMP-0466-programme",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "WorkMethod",
+                "id": "origin-late-COMP-0466-method",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              }
+            }
+          ],
+          "basis_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            }
+          ]
+        }
+      },
+      {
+        "method_ref": {
+          "kind": "Method",
+          "id": "micro.contractor.declared_bid_price",
+          "version": "1"
+        },
+        "registry_digest": "7453ebb4082622906163af4be0187c4d530f6aba27622ca763d1ed502126d60a",
+        "input": {
+          "lines": [
+            {
+              "coverage_keys": [
+                "work"
+              ],
+              "quantity": {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              },
+              "unit_rate": {
+                "value": "100000000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              },
+              "quantity_unit": "normalized_work_item"
+            }
+          ],
+          "markup_fraction": "0.2",
+          "markup_basis_ref": {
+            "kind": "Evidence",
+            "id": "origin-late-COMP-0466-assumptions",
+            "version": "1"
+          },
+          "allowance": {
+            "value": "0",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            }
+          },
+          "source_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ProcurementPackage",
+              "id": "origin-late-COMP-0466-package",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorPricingProfile",
+              "id": "origin-late-COMP-0466-pricing-model-alternative",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "ContractorCapacity",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0466-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0466-function",
+              "version": "1"
+            },
+            {
+              "kind": "TenderRound",
+              "id": "origin-late-COMP-0466-round",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-submission",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "ReleasedDeliverable",
+              "id": "origin-late-COMP-0466-design",
+              "version": "1"
+            },
+            {
+              "kind": "Authorization",
+              "id": "origin-late-COMP-0453-grant",
+              "version": "1"
+            },
+            {
+              "kind": "FunctionAssignment",
+              "id": "origin-late-COMP-0453-function",
+              "version": "1"
+            },
+            {
+              "kind": "Qualification",
+              "id": "origin-late-COMP-0466-qualification",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "QuantityBasis",
+              "id": "origin-late-COMP-0466-quantity",
+              "version": "1"
+            },
+            {
+              "kind": "MeasurementRule",
+              "id": "origin-late-COMP-0466-measurement",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            },
+            {
+              "kind": "Method",
+              "id": "COMP-0466-declared-cost-adoption",
+              "version": "1"
+            },
+            {
+              "kind": "ProgrammeProposal",
+              "id": "origin-late-COMP-0466-programme",
+              "version": "1"
+            },
+            {
+              "kind": "ResourcePool",
+              "id": "origin-late-COMP-0466-capacity",
+              "version": "1"
+            },
+            {
+              "kind": "ResourceCommitment",
+              "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+              "version": "1"
+            },
+            {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            },
+            {
+              "kind": "ContractTerms",
+              "id": "origin-late-COMP-0466-terms",
+              "version": "1"
+            },
+            {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-validity",
+              "version": "1"
+            }
+          ]
+        },
+        "result": {
+          "kind": "ok",
+          "value": {
+            "internal_cost_subtotal": {
+              "value": "100000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            "offered_price": {
+              "value": "120000000",
+              "currency": "HKD",
+              "basis_ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            }
+          },
+          "method_ref": {
+            "kind": "Method",
+            "id": "micro.contractor.declared_bid_price",
+            "version": "1"
+          },
+          "input_digest": "9a64b82faceb6cfd026536312da9f5ee81a77f963470c1395afa46b7bfb9a0fd",
+          "input_refs": [
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProcurementPackage",
+                "id": "origin-late-COMP-0466-package",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorPricingProfile",
+                "id": "origin-late-COMP-0466-pricing-model-alternative",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-native-resource",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-calendar",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractorCapacity",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0466-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0466-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TenderRound",
+                "id": "origin-late-COMP-0466-round",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-submission",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0453-assumptions",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ReleasedDeliverable",
+                "id": "origin-late-COMP-0466-design",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Authorization",
+                "id": "origin-late-COMP-0453-grant",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "FunctionAssignment",
+                "id": "origin-late-COMP-0453-function",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Qualification",
+                "id": "origin-late-COMP-0466-qualification",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-quantity-relation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "QuantityBasis",
+                "id": "origin-late-COMP-0466-quantity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "MeasurementRule",
+                "id": "origin-late-COMP-0466-measurement",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Evidence",
+                "id": "origin-late-COMP-0466-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "CostBasis",
+                "id": "origin-late-COMP-0466-cost",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "Method",
+                "id": "COMP-0466-declared-cost-adoption",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ProgrammeProposal",
+                "id": "origin-late-COMP-0466-programme",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ResourceCommitment",
+                "id": "origin-late-COMP-0466-CONTRACTOR-A02-invitation",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "WorkMethod",
+                "id": "origin-late-COMP-0466-method",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "ContractTerms",
+                "id": "origin-late-COMP-0466-terms",
+                "version": "1"
+              }
+            },
+            {
+              "data_space": {
+                "kind": "run",
+                "id": "capstone-20261105-window-02-single_agent"
+              },
+              "ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-validity",
+                "version": "1"
+              }
+            }
+          ],
+          "basis_refs": [
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0453-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-OWNER-4048bdd520aa7f-assumptions",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-native-resource",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-calendar",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-quantity-relation",
+              "version": "1"
+            },
+            {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-cost-adoption",
+              "version": "1"
+            }
+          ]
+        }
+      }
+    ],
+    "decision": {
+      "strategy": "single_agent",
+      "component_id": "actions.single_agent.validated_options",
+      "version": "2",
+      "model_version": "tender-model:46368a53d66f36479dee8654228ba9b821aef6506f4bed3a45fe76aef29cc3be",
+      "status": "returned",
+      "configuration_sha256": "dfa23f73f1d56b5d3943b3ed8331c99220bcde4f158d64750c65897fe6882b14",
+      "invocation_preparation": "configured",
+      "execution": {
+        "option_count": 2,
+        "model_calls": 1,
+        "run_id": "capstone-20261105-window-02-single_agent",
+        "options_sha256": "f75bec2c222dfd3082154146c9bc9ce8cda0a37ce5627c2dbffdf8909cda70e3",
+        "prompt_sha256": "e5c104fd77b126c1c31a651330c95d5231d1a2b76feaaa8a642da1a8618d1ff0",
+        "call_budget": {
+          "budget_id": "arm-budget",
+          "configuration_sha256": "22ee93803f5437940bd0dcf528c0d49fae749679b85e9752668b113a09678fac",
+          "reservation_id": "07cd10a5db2c00aa2734bdbad733203c9472ed1008c52684772b80bd05fd7d61"
+        },
+        "usage_metadata": {
+          "input_tokens": 22468,
+          "output_tokens": 7,
+          "total_tokens": 22475
+        },
+        "response_sha256": "b5a510174e67ffde19a4689ab80f272e4f66307ee370fc33a761cbe8ea349ede",
+        "status": "selected",
+        "selected_option_id": "original-input"
+      }
+    },
+    "policy_version": "captured-scenario-replay.v1",
+    "model_version": "tender-model:46368a53d66f36479dee8654228ba9b821aef6506f4bed3a45fe76aef29cc3be",
+    "authorization_refs": [
+      [
+        "Authorization",
+        "origin-late-COMP-0466-grant",
+        "1"
+      ]
+    ],
+    "granted_authorization_refs": [
+      [
+        "Authorization",
+        "origin-late-COMP-0466-grant",
+        "1"
+      ]
+    ],
+    "stages": {
+      "input_validation": "accepted",
+      "authorization": "accepted",
+      "processor": "bound"
+    },
+    "result_kind": "completed",
+    "result_sha256": "11095b98d22d844a978636d418365afbd3f3dd649da958a751aae107c4f3e6cc",
+    "error_code": null,
+    "reading": {
+      "status": "accepted",
+      "sha256": "47857fef133faee7a0427979638c65c53ce214865c7139d39ed35c2bd44abf50",
+      "read_token": "COMP-0466-bid",
+      "source_mode": "formal"
+    }
+  },
+  "seconds": 3.255110300029628,
+  "host_evidence": {
+    "configuration_sha256": "ce3315586ae4d846128f0b5980c77d72f8200a045086a9fd1dbb32d40b4409be",
+    "host_id": "host",
+    "bindings": [
+      {
+        "strategy": "single_agent",
+        "component_id": "actions.single_agent.validated_options",
+        "version": "2",
+        "model_version": "tender-model:46368a53d66f36479dee8654228ba9b821aef6506f4bed3a45fe76aef29cc3be",
+        "status": "configured",
+        "configuration_sha256": "dfa23f73f1d56b5d3943b3ed8331c99220bcde4f158d64750c65897fe6882b14",
+        "invocation_preparation": "configured"
+      }
+    ],
+    "call_budget": {
+      "run_id": "capstone-20261105-window-02-single_agent",
+      "budget_id": "arm-budget",
+      "max_calls": 6,
+      "charged_or_reserved_calls": 1,
+      "remaining_calls": 5
+    }
+  },
+  "recording_recovered_from_original_response": false
+}

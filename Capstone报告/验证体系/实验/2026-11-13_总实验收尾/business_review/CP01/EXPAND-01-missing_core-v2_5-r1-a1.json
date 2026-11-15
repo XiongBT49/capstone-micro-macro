@@ -1,0 +1,169 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-01-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "6a0c277221695c82",
+  "role": "supplier",
+  "annotated_action": "conditional_role_bounded_supply_proposal",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-01-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "5d0ab356f763f330ff5b6bc874f0986a056698eb5449f38fa1a8e66e92e5fbe8",
+  "call_id": "attempt_002_call_000091",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标为供应商角色意向草案，不承担整包施工责任",
+    "reason": "产品方向为拟议供货方案，范围、目录和资源未知均明确；保持供应商责任及原两项可选核查状态，没有凭企业名称声称既有产品能力。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 23,
+      "quote": "本投标为供应商角色意向草案，不承担整包施工责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "具体产品目录、规格参数与检测报告尚未取得，均列为待核实假设，不作为已具备能力陈述",
+      "reason": "无范围档案时仍可提出有边界的模块供货方案，未将其描述为已知自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 120,
+        "end": 160,
+        "quote": "具体产品目录、规格参数与检测报告尚未取得，均列为待核实假设，不作为已具备能力陈述"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "阶段四：到场交付、交接验收与文档移交。阶段五：保修响应接口与备件支持安排。",
+      "reason": "需求接口、排期建议、跨境协调、交接文档与保修形成多项具体拟议交付措施。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 109,
+        "end": 146,
+        "quote": "阶段四：到场交付、交接验收与文档移交。阶段五：保修响应接口与备件支持安排。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "所有外部支持（物流、安装配合、检测）均为拟议安排，尚未取得对方承诺",
+      "reason": "明确本地团队、库存、历史成本与承运报价未提供，没有把支持协议计划写成实际接受。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 146,
+        "end": 179,
+        "quote": "所有外部支持（物流、安装配合、检测）均为拟议安排，尚未取得对方承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "均待确认，不构成提交前置阻断",
+      "reason": "两项状态保留，质量文档和保修的拟议书面接口有处理，未将原可选请求升级为硬性提交门槛。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 173,
+        "end": 187,
+        "quote": "均待确认，不构成提交前置阻断"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "运输与清关协调（跨境物流方案为提议，未取得承运方承诺）",
+      "reason": "项目澳门位置实际进入跨境物流安排，供应职责边界明确；但没有处理本题保留的少量过往行政处罚记载所需的有限合规考虑，因此不算充分覆盖。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 81,
+        "end": 108,
+        "quote": "运输与清关协调（跨境物流方案为提议，未取得承运方承诺）"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价MOP 11,647,000为条件性暂定报价",
+      "reason": "七项8,600,000+620,000+980,000+430,000+360,000+610,000+47,000=11,647,000 MOP；有各项暂估依据及未取得报价说明。商业调整项不证明真实成本，也不单因调平总额扣算术分。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 26,
+        "end": 50,
+        "quote": "报价MOP 11,647,000为条件性暂定报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "阶段一：需求与接口澄清，确认模块规格、数量、交付批次与现场接收条件",
+      "reason": "从需求确认到生产建议、物流、交接与保修有连贯路径；人员、目录、承运与外部接受未被假定落实，条件性供货方案在角色边界内成立。合规事项覆盖不全另在S5记录，不把它直接当作实际无法履行。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 33,
+        "quote": "阶段一：需求与接口澄清，确认模块规格、数量、交付批次与现场接收条件"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "报价为条件性报价而非固定总价",
+      "reason": "目录与运价未知、物流及价格风险直接影响价格调整和非固定承诺；以书面接口安排应对支持方接受未确认，关键风险与承诺边界有清楚联系。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 69,
+        "end": 83,
+        "quote": "报价为条件性报价而非固定总价"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND01_missing_core.json",
+  "authored_labels_sha256": "a90589d3dc9a06f27a4ba545c7f16bbf4991af55611400214503ca33cf1d891b",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

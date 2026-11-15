@@ -1,0 +1,122 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-02",
+    "arm": "v2_baseline",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-02",
+    "expected_business_property": "Preserve the visible open qualification/experience checks. Business scope alone is not proof of accepted package eligibility. A justified refusal or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "请市场部核实并补充资质证明，以增强投标可信度",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队核实联合体伙伴的资质和过往业绩，确保其能补充我们的短板，同时不削弱我们的独立性",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队确认我们能否在报价中体现包干价的竞争力，同时保证现场人员到位",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议先核实团队可用性和资质文件，若能力充足可独立投标，否则考虑组合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务部门确认价格基础是否覆盖包干风险，并准备风险应对",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议先内部核实能力，若满足则独立投标，否则考虑组合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我倾向独立投标，但前提是商务团队必须核实并补充资质证明，并在投标文件中用团队可用性摘要和角色计划明确关键人员配置",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务团队本周内确认资质文件能否补齐，这直接影响我们能否独立投标",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0160",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "经管理层研判，监理服务招标包与本公司的第三方监察、质量记录和业主报告能力高度契合，属于核心业务范围，应以单一责任主体独立投标。内部对公开数据缺口的担忧成立，但监理服务评标更看重独立性、责任清晰和关键人员到位，组合体会削弱业主对我们独立监控的信任并模糊责任边界，因此不采用组合体。投标文件将以团队可用性摘要、角色计划、交付方法、质量方法、价格基础和风险应对补强数据缺口，明确关键人员配置与阶段支付下的包干风险覆盖。资质证明、业绩材料和人员可用性目前仅为内部核查要求，尚未取得凭证，作为投标假设与提交前核查事项处理，不作为已落实事实。",
+    "content": "管理层决定：对监理服务招标包独立投标。理由是本包要求的独立现场监控、质量审查、安全期望跟踪、报告纪律、样品处理、业主升级和接口观察，正是本公司第三方监察与业主报告能力的核心所在，公司可作为单一责任主体承担全部监理责任，无需以组合体形式共享投标身份与责任。投标策略上，以团队可用性摘要和角色计划明确关键人员配置，以交付方法和质量方法体现独立监控与审查纪律，以价格基础覆盖包干价与阶段支付下的费用风险，以风险应对说明现场人员到位与业主升级路径。需说明的是，公司118人规模为整体数据，不代表本项目人员已到位；资质证明与过往业绩材料尚待商务与市场核实补充，均作为投标假设和提交前核查事项处理，不视为已取得凭证。若提交前核查发现关键资质无法满足招标要求，将回到管理层重新评估。",
+    "verification_requests": [
+      {
+        "question": "请市场部核实并补充公司监理资质证明文件，确认满足本招标包的资格要求",
+        "required_before_submission": true
+      },
+      {
+        "question": "请商务团队核实本项目关键人员的可用性，形成团队可用性摘要与角色计划",
+        "required_before_submission": true
+      },
+      {
+        "question": "请商务部门确认包干价价格基础是否覆盖阶段支付下的费用风险，并准备风险应对",
+        "required_before_submission": false
+      },
+      {
+        "question": "请核实可用于本包投标的类似监理项目质量记录与业绩材料",
+        "required_before_submission": false
+      }
+    ],
+    "unresolved_condition_ids": [
+      "condition_a87f7a048751e043149d",
+      "condition_e877c24a517c433186d8",
+      "condition_5c2ffc9c121acbdc698b",
+      "condition_29fe03563f52365f1d55",
+      "condition_fd8fd8a5fca7008d120d",
+      "condition_b28e81bfef4b97d2e058",
+      "condition_da068dba5e7fe96ca183",
+      "condition_006118c9c39915a13064"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "公司监理资质证明与业绩材料将在提交前由市场与商务核实补充，目前尚未取得凭证",
+      "本项目关键人员配置以团队可用性摘要和角色计划呈现，公司整体118人规模不代表本项目人员已到位",
+      "包干价价格基础将覆盖阶段支付下的费用风险，现场人员到位为报价前提",
+      "以单一责任主体独立投标，不引入共享投标身份与责任分担的组合体"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-02-v2_baseline-r1\\final-attempt-1.json",
+  "source_sha256": "8ccd435ae8650f4550e81ecc88ff5c69fc7f5a18f988c8c38e387321266705c2",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-02",
+      "arm": "v2_baseline",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

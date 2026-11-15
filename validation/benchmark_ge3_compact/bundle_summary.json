@@ -1,0 +1,453 @@
+{
+  "generated_at": "2026-08-17T02:08:02",
+  "selection_rule": "benchmark_count >= 3",
+  "case_count": 30,
+  "benchmark_row_count": 155,
+  "enterprise_row_count": 210,
+  "candidate_pool": {
+    "max_companies": 20,
+    "role_targets": {
+      "designer": 3,
+      "supplier": 3,
+      "contractor": 4,
+      "supervisor": 3
+    },
+    "include_benchmark_companies": true,
+    "selection_strategy": "diversified_assignments_v1",
+    "assignment_file": "candidate_pool_assignments.csv",
+    "min_role_keyword_matches": 2,
+    "distractor_top_n": 30,
+    "max_distractor_case_share": 0.2,
+    "distractor_exposure_penalty": 8.0,
+    "selection_seed": "codedemo-v2-candidate-pool-v2"
+  },
+  "candidate_overlap": {
+    "generated_at": "2026-08-17T02:08:02",
+    "case_count": 30,
+    "thresholds": {
+      "max_median_distractor_jaccard": 0.25,
+      "max_distractor_case_exposure": 6
+    },
+    "all_candidates_excluding_owner": {
+      "pair_count": 435,
+      "average_intersection": 0.736,
+      "average_jaccard": 0.0301,
+      "median_jaccard": 0.0333,
+      "max_jaccard": 0.2381,
+      "average_smaller_pool_overlap": 0.0566
+    },
+    "benchmark_candidates": {
+      "pair_count": 435,
+      "average_intersection": 0.172,
+      "average_jaccard": 0.0252,
+      "median_jaccard": 0.0,
+      "max_jaccard": 0.3333,
+      "average_smaller_pool_overlap": 0.0549
+    },
+    "distractor_candidates": {
+      "pair_count": 435,
+      "average_intersection": 0.366,
+      "average_jaccard": 0.0222,
+      "median_jaccard": 0.0,
+      "max_jaccard": 0.2143,
+      "average_smaller_pool_overlap": 0.0451
+    },
+    "distractor_by_role": {
+      "designer": {
+        "pair_count": 435,
+        "average_intersection": 0.039,
+        "average_jaccard": 0.0113,
+        "median_jaccard": 0.0,
+        "max_jaccard": 0.5,
+        "average_smaller_pool_overlap": 0.0195
+      },
+      "supplier": {
+        "pair_count": 435,
+        "average_intersection": 0.189,
+        "average_jaccard": 0.0394,
+        "median_jaccard": 0.0,
+        "max_jaccard": 0.5,
+        "average_smaller_pool_overlap": 0.0663
+      },
+      "contractor": {
+        "pair_count": 435,
+        "average_intersection": 0.092,
+        "average_jaccard": 0.0196,
+        "median_jaccard": 0.0,
+        "max_jaccard": 0.3333,
+        "average_smaller_pool_overlap": 0.0397
+      },
+      "supervisor": {
+        "pair_count": 435,
+        "average_intersection": 0.046,
+        "average_jaccard": 0.0143,
+        "median_jaccard": 0.0,
+        "max_jaccard": 0.5,
+        "average_smaller_pool_overlap": 0.0314
+      }
+    },
+    "distractor_exposure": {
+      "placement_count": 269,
+      "unique_company_count": 148,
+      "max_case_count": 5,
+      "configured_cap": 6,
+      "most_reused": [
+        {
+          "company_id": "COMP-0259",
+          "case_count": 5
+        },
+        {
+          "company_id": "COMP-0328",
+          "case_count": 4
+        },
+        {
+          "company_id": "COMP-0321",
+          "case_count": 4
+        },
+        {
+          "company_id": "COMP-0263",
+          "case_count": 4
+        },
+        {
+          "company_id": "COMP-0412",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0025",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0467",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0178",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0493",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0292",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0453",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0298",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0426",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0494",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0201",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0459",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0375",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0414",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0468",
+          "case_count": 3
+        },
+        {
+          "company_id": "COMP-0461",
+          "case_count": 3
+        }
+      ]
+    },
+    "acceptance": {
+      "median_distractor_jaccard_pass": true,
+      "distractor_exposure_cap_pass": true,
+      "passed": true
+    }
+  },
+  "candidate_size_includes_owner": true,
+  "original_candidate_size": {
+    "min": 29,
+    "average": 29.0,
+    "max": 29,
+    "total_company_runs": 870
+  },
+  "compact_candidate_size": {
+    "min": 14,
+    "average": 14.17,
+    "max": 18,
+    "total_company_runs": 425
+  },
+  "estimated_company_run_reduction_percent": 51.1,
+  "enterprise_coverage": {
+    "source_unique_enterprises": 904,
+    "bundle_unique_enterprises": 210,
+    "selected_unique_enterprises": 210,
+    "benchmark_unique_enterprises": 92,
+    "selected_benchmark_unique_enterprises": 92,
+    "selected_nonbenchmark_unique_enterprises": 118,
+    "repeated_benchmark_relationships": 63,
+    "candidate_placements_excluding_owner": 395,
+    "owner_placements": 30,
+    "total_company_runs": 425
+  },
+  "case_candidate_sizes": {
+    "CASE-0001": 14,
+    "CASE-0002": 14,
+    "CASE-0003": 14,
+    "CASE-0004": 14,
+    "CASE-0005": 15,
+    "CASE-0006": 14,
+    "CASE-0007": 14,
+    "CASE-0008": 14,
+    "CASE-0011": 14,
+    "CASE-0014": 14,
+    "CASE-0015": 14,
+    "CASE-0020": 14,
+    "CASE-0026": 14,
+    "CASE-0032": 18,
+    "CASE-0140": 14,
+    "CASE-0144": 14,
+    "CASE-0145": 14,
+    "CASE-0150": 14,
+    "CASE-0156": 14,
+    "CASE-0157": 14,
+    "CASE-0160": 14,
+    "CASE-0164": 14,
+    "CASE-0167": 14,
+    "CASE-0170": 14,
+    "CASE-0186": 14,
+    "CASE-0195": 14,
+    "CASE-0196": 14,
+    "CASE-0198": 14,
+    "CASE-0202": 14,
+    "CASE-0279": 14
+  },
+  "case_candidate_role_counts": {
+    "CASE-0001": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0002": {
+      "owner": 1,
+      "supervisor": 3,
+      "supplier": 3,
+      "contractor": 4,
+      "designer": 3
+    },
+    "CASE-0003": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0004": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0005": {
+      "owner": 1,
+      "designer": 3,
+      "supervisor": 4,
+      "contractor": 4,
+      "supplier": 3
+    },
+    "CASE-0006": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0007": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0008": {
+      "owner": 1,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3,
+      "designer": 3
+    },
+    "CASE-0011": {
+      "owner": 1,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3,
+      "designer": 3
+    },
+    "CASE-0014": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0015": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0020": {
+      "owner": 1,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3,
+      "contractor": 4
+    },
+    "CASE-0026": {
+      "owner": 1,
+      "designer": 3,
+      "supervisor": 3,
+      "contractor": 4,
+      "supplier": 3
+    },
+    "CASE-0032": {
+      "owner": 1,
+      "supervisor": 3,
+      "contractor": 8,
+      "supplier": 3,
+      "designer": 3
+    },
+    "CASE-0140": {
+      "owner": 1,
+      "supervisor": 3,
+      "designer": 3,
+      "supplier": 3,
+      "contractor": 4
+    },
+    "CASE-0144": {
+      "owner": 1,
+      "designer": 3,
+      "supervisor": 3,
+      "contractor": 4,
+      "supplier": 3
+    },
+    "CASE-0145": {
+      "owner": 1,
+      "designer": 3,
+      "contractor": 4,
+      "supplier": 3,
+      "supervisor": 3
+    },
+    "CASE-0150": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0156": {
+      "owner": 1,
+      "contractor": 4,
+      "supervisor": 3,
+      "designer": 3,
+      "supplier": 3
+    },
+    "CASE-0157": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0160": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supplier": 3,
+      "supervisor": 3
+    },
+    "CASE-0164": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supplier": 3,
+      "supervisor": 3
+    },
+    "CASE-0167": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supplier": 3,
+      "supervisor": 3
+    },
+    "CASE-0170": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supplier": 3,
+      "supervisor": 3
+    },
+    "CASE-0186": {
+      "owner": 1,
+      "contractor": 4,
+      "supervisor": 3,
+      "supplier": 3,
+      "designer": 3
+    },
+    "CASE-0195": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0196": {
+      "owner": 1,
+      "designer": 3,
+      "supervisor": 3,
+      "contractor": 4,
+      "supplier": 3
+    },
+    "CASE-0198": {
+      "owner": 1,
+      "contractor": 4,
+      "designer": 3,
+      "supervisor": 3,
+      "supplier": 3
+    },
+    "CASE-0202": {
+      "owner": 1,
+      "contractor": 4,
+      "supplier": 3,
+      "designer": 3,
+      "supervisor": 3
+    },
+    "CASE-0279": {
+      "owner": 1,
+      "supervisor": 3,
+      "contractor": 4,
+      "supplier": 3,
+      "designer": 3
+    }
+  }
+}

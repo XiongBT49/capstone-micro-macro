@@ -1,0 +1,131 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-09-missing_core",
+  "arm": "v2_5",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "da15f02f7b8cd6a8",
+  "role": "designer",
+  "annotated_action": "conditional_design_role_with_future_GBA_brand_value_and_EPC_risk_boundary",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-09-missing_core-v2_5-r2/attempt-1.json",
+  "response_sha256": "907a7229020c74545c3489f1466336e4b2a83d78b29c12f91fffb0060b00c27a",
+  "call_id": "attempt_002_call_000185",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本次为有条件投标意向，报价中的任何资源投入均为暂定假设",
+    "reason": "作为建筑设计事务所的定位结合指定设计角色与全文未知限定是参与身份，并未补出具体既有核心业务、经验或资格；口岸品牌价值为未来管理判断，人员确认前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 265,
+      "end": 292,
+      "quote": "本次为有条件投标意向，报价中的任何资源投入均为暂定假设"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "不承担整包EPC的设计采购施工责任",
+      "reason": "指定设计身份保持设计服务边界，实际本项目范围和经验资源未知，没有据名称声称具体既有专长。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 64,
+        "end": 81,
+        "quote": "不承担整包EPC的设计采购施工责任"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "分顾问接口管理、内部复核与独立校核、文档纪律和付款审查",
+      "reason": "接口、两类校核、文档和支付审查等明确拟议服务安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 81,
+        "end": 108,
+        "quote": "分顾问接口管理、内部复核与独立校核、文档纪律和付款审查"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "partial",
+      "quote": "待人员档期核实后确认",
+      "reason": "人员和资源仍未知，但无实际岗位或具名专业组织分工，不能用一般设计统筹架构替代。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 148,
+        "end": 158,
+        "quote": "待人员档期核实后确认"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "在该前置条件核实通过前不提交投标",
+      "reason": "原必要人员条件保持未决，顾问安排只是未落实计划，不新增硬性共享身份要求。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 195,
+        "end": 211,
+        "quote": "在该前置条件核实通过前不提交投标"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "correct",
+      "quote": "整包施工与采购风险由总承包主体承担，风险敞口相对可控",
+      "reason": "真实EPC模式进入设计与总包采购施工风险分担的参与取舍，另有真实粤澳口岸的未来区域品牌理由，而非只复述名称。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 157,
+        "end": 183,
+        "quote": "整包施工与采购风险由总承包主体承担，风险敞口相对可控"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND09_both_conditions.json",
+  "authored_labels_sha256": "f355c1410eec2bd7e542ae42ad71c172bafd188fc7701a8a0d4d9eb1db84ee2a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

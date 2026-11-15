@@ -1,0 +1,224 @@
+{
+  "pair_id": "PAIR-06",
+  "round": 2,
+  "input": {
+    "role": "designer",
+    "assessment_stage": "draft_or_intention_only_not_formal_submission",
+    "business_objective": "形成角色内的设计服务意向、交付与接口安排",
+    "project_facts": {
+      "case_id": "CASE-0203",
+      "project_name": "澳门新濠影汇",
+      "project_type": "文旅与酒店娱乐项目",
+      "location": "澳门",
+      "scale": "27.8万平方米",
+      "delivery_mode": "DBO",
+      "owner_name": "新濠博亚娱乐"
+    },
+    "scope_basis": {
+      "state": "unknown",
+      "text": "",
+      "projection_sha256": "f66c21ca502cb99d792b81b9ea9a417f803bb57f36e6ea1304b3f6f7fd6e2f6c"
+    },
+    "provided_company_fields": {
+      "company_id": "COMP-0520",
+      "company_name": "盧梁建築工程設計顧問有限公司",
+      "office_location": "澳门",
+      "office_location_detail": "澳门东望洋街13至15号友联大厦3楼G",
+      "enterprise_type": "私营",
+      "established_time": "1990年",
+      "website": "http://www.glpdc.com.mo/"
+    },
+    "not_supplied": [
+      "actual staff allocation",
+      "supplier quotation",
+      "specific product catalogue",
+      "inventory/local-team records",
+      "historical procurement costs"
+    ],
+    "ordinary_support": "Proposed plan only; no accepted counterparty commitment.",
+    "conditions": [
+      {
+        "condition_id": "condition_f56554dde374d0ce8ffe",
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "requested",
+        "required_before_formal_submission": true,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      }
+    ],
+    "case_specific_attention": [
+      {
+        "input_pointer": "/facts/real_input_dossier/project/scale",
+        "provided_value": "27.8万平方米",
+        "handling": "规模有值时可用于拟议安排；空白时不要求虚构数量、实际工期或工程量。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/project/delivery_mode",
+        "provided_value": "DBO",
+        "handling": "交付模式描述项目背景，不自动使本方成为整包设计采购施工主体。"
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "D1",
+        "label": "设计服务范围与边界",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+        "handling_for_supported_defer_or_decline": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D2",
+        "label": "设计交付与专业接口",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+        "handling_for_supported_defer_or_decline": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D3",
+        "label": "人员档期与履行安排",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+        "handling_for_supported_defer_or_decline": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D4",
+        "label": "前提和外部协作处理",
+        "applicable": true,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+        "handling_for_supported_defer_or_decline": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "D5",
+        "label": "项目针对性与方案取舍",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+        "handling_for_supported_defer_or_decline": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      }
+    ],
+    "common_scoring_rules": [
+      "无资料不自动要求拒绝，明确可行的条件性方案可以得高分。",
+      "不要求新JSON字段，不因V2.4缺task_role字段扣共同业务内容分。",
+      "项目名称复述不构成项目针对性，需说明至少一项条件怎样影响安排。",
+      "未提供工期、规格、市场价格等不要求补造，合理方案假设与事实断言分别判。",
+      "拒绝/等待使用各事项事先列好的相应处理分支，不强迫编造实施方案或报价，也不因此删除事项分母。",
+      "事项遗漏记missing，矛盾记contradicted，不得改记不可判断以排除低分；只有输入确实不可判或无可读回答时记不可判断并保留缺失说明。"
+    ]
+  },
+  "answers_in_display_order": [
+    {
+      "label": "A",
+      "outward": {
+        "decision": "bid",
+        "reason": "本项目为澳门大型文旅酒店DBO项目，设计统筹与顾问接口管理是核心工作，与本公司的设计顾问定位相符，且本地根基有利于与业主沟通和报批协调。当前公司证据投影中经验、认证、交付资产与历史成本基础均为未知，因此本次仅表达投标意向，所有能力表述以拟议方案和假设形式呈现，不作为既有事实。条件登记中“本包指定岗位人员档期是否可用”仍为未解决且属于提交前置条件，在核实完成前不提交投标文件。本决策为有条件投标意向：以本公司作为单一责任设计牵头方，专项工程顾问按普通分包管理，设计复核与接口责任由本公司控制，不引入组合体。",
+        "content": "管理层决定：就澳门新濠影汇项目以设计顾问身份表达投标意向，角色限于设计统筹、设计成果、顾问接口与复核，不承担整包EPC的设计采购施工责任。拟议方案包括：由本公司担任单一责任设计牵头方，建立设计统筹与复核关口，明确各专项工程顾问的接口分工与文件交付标准，并以普通分包方式管理专项顾问，责任流与质量复核由本公司控制。报价以MOP计，现阶段仅为基于假设的暂定成本框架，未取得任何供应商报价，待人员档期与顾问配置明确后细化。风险应对方面，针对大型文旅酒店的设计协调复杂度，拟设置阶段性设计评审与文件一致性检查。需说明：公司证据投影中经验、认证、交付资产及历史成本基础均为未知，上述内容为拟议方案而非既有能力陈述。提交前须完成“本包指定岗位人员档期是否可用”的核实，该条件未解决前不提交投标文件。",
+        "task_role": "designer",
+        "unresolved_condition_ids": [
+          "condition_f56554dde374d0ce8ffe"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本公司作为单一责任设计牵头方，专项工程顾问以普通分包方式管理，不构成组合体",
+          "设计范围限于设计统筹、设计成果、顾问接口与复核，不含整包EPC的设计采购施工责任",
+          "报价为基于假设的暂定MOP成本框架，未取得供应商报价",
+          "公司经验、认证、交付资产与历史成本基础为未知，相关表述均为拟议方案",
+          "提交前须完成指定岗位人员档期核实"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "B",
+      "outward": {
+        "decision": "bid",
+        "reason": "本项目为澳门大型文旅酒店DBO，设计牵头责任重、界面多，但属于我们本地设计顾问应当争取的战略性机会。公司档案仅能证明我们是澳门注册的私营设计顾问公司，具体范围、同类经验、认证与交付资源均未提供，不能当作既有能力使用。当前唯一明确的前置条件是本包指定岗位人员档期是否可用，尚未取得回执，因此本次为有条件投标意向，不构成提交。管理层的判断是：以我们作为单一责任设计牵头方推进，专项工程与技术支持按常规分包处理，通过角色计划、交付方法、质量方法、审查节点和文件纪律控制风险；待岗位档期核实后再确认正式投标与报价基础。",
+        "content": "管理层决定：对本包采取有条件投标意向，由本公司作为单一责任设计牵头方，不组建组合体。依据现有资料，本公司为澳门本地私营建筑设计顾问公司，成立於1990年，办公地址为澳门东望洋街13至15号友联大厦3楼G，此为档案文字，并非对本包能力的评审确认。本包范围、同类项目经验、认证、产品与交付资源、历史成本基础在现有资料中均属未知，因此投标文件中的能力陈述将严格限于可核实内容，其余以拟议角色与工作计划表述。交付上拟由本公司承担设计牵头、界面协调、审查节点设置与文件纪律，专项工程与技术支持按常规分包安排，并在建议书中说明责任传递与质量复核流程。报价以MOP编制，未取得供应商报价的部分列为暂定成本允许额，明确标注为假设而非已获报价。风险应对集中于岗位档期、团队可用性、工期节点与业主审查配合。当前存在一项未决前置条件：本包指定岗位人员档期是否可用，尚未取得回执，在该条件核实前不进行正式提交；本决定为意向，不执行任何提交或对外行动。",
+        "unresolved_condition_ids": [
+          "condition_f56554dde374d0ce8ffe"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本公司作为单一责任设计牵头方投标，专项工程与技术支持按常规分包处理，不构成组合体。",
+          "本包指定岗位人员档期在正式提交前完成核实并取得回执。",
+          "未取得供应商报价的专项成本以MOP暂定允许额列示，标注为假设。",
+          "能力与经验陈述仅限可核实内容，未知项以拟议角色与工作计划表述。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    }
+  ]
+}

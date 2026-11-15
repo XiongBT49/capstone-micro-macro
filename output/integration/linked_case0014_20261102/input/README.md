@@ -1,0 +1,1 @@
+Native initiation entry for CASE-0014. Only A02 pricing uses the bounded model host. No automatic retries, fallback or prefilled decisions.

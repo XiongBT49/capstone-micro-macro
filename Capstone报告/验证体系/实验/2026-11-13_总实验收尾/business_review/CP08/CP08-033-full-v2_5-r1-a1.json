@@ -1,0 +1,127 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-033-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "b60cc273616300fc",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_with_named_posts_but_generic_checks",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-033-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "2fefd5749b3e3dca3fb9063f096fae69b30c1e9be81666276284fd8f1177af06",
+  "call_id": "attempt_002_call_000166",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "公司档案仅载明业务范围包含相关工程建设监理",
+    "reason": "实际监理方向支持有限角色，经验资格资源未知，必要档期核查前不提交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 231,
+      "end": 252,
+      "quote": "公司档案仅载明业务范围包含相关工程建设监理"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "工作范围限于独立监督、检查、进度与质量审查及记录",
+      "reason": "监督边界准确，未承担整包施工设计。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 26,
+        "end": 50,
+        "quote": "工作范围限于独立监督、检查、进度与质量审查及记录"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "建立质量与进度审查流程、文件记录与独立复核机制",
+      "reason": "拟建流程机制但没有具体巡查旁站、偏差报告或整改闭环安排，按框架给部分。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 129,
+        "end": 152,
+        "quote": "建立质量与进度审查流程、文件记录与独立复核机制"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "明确总监理工程师及专业监理人员的岗位职责与审查节点",
+      "reason": "总监及专业岗位构成拟议组织，实际档期仍未知。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 89,
+        "end": 114,
+        "quote": "明确总监理工程师及专业监理人员的岗位职责与审查节点"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "未落实前不提交正式投标",
+      "reason": "原必要人员前提和未承诺状态保留。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 299,
+        "end": 310,
+        "quote": "未落实前不提交正式投标"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "missing",
+      "quote": null,
+      "reason": "全部公开正文只称本包、监理角色及公司范围，没有联系商业办公用途、项目名称、已给地区或业主条件的具体监督安排或行动理由。",
+      "evidence": null,
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_033_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "051d27fad89ea155d8bf8ae1927cb2c614fc57e6e5a83d00a93345041fa8aef0",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

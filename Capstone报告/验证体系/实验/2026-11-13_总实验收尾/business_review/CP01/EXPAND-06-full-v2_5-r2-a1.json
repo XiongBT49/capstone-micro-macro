@@ -1,0 +1,126 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-06-full",
+  "arm": "v2_5",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "ed8c08f1d79077f2",
+  "role": "supervisor",
+  "annotated_action": "decline_pending_supervision_staff_and_service_plan",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-06-full-v2_5-r2/attempt-1.json",
+  "response_sha256": "a6fcd1b43f5f28c67424c0b90bf80f65b1faacc16bec1f8e7b40a8640b7cca8a",
+  "call_id": "attempt_002_call_000101",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "若后续能核实指定岗位人员档期并形成可信的单一责任监理方案，可再行评估",
+    "reason": "真实人员未核实和服务组织证据不足支持暂不参与，明确重审触发，没有把资料空白判为实际无能力；单一身份的必然性表述在V4单列。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 328,
+      "end": 362,
+      "quote": "若后续能核实指定岗位人员档期并形成可信的单一责任监理方案，可再行评估"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "属档案原文而非本包已获接纳的资格",
+      "reason": "实际工程监理范围保持来源性质，不宣称已取得项目资格、驻地团队或施工总包责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 99,
+        "end": 115,
+        "quote": "属档案原文而非本包已获接纳的资格"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "后续如能核实人员档期并形成单一责任的监理方案，可重新评估",
+      "reason": "不参与分支明确了不推进步骤、实质人员和监督组织缺口及可重审触发，不要求拒绝者虚构实施检查。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 209,
+        "end": 237,
+        "quote": "后续如能核实人员档期并形成单一责任的监理方案，可重新评估"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "亦无驻地团队可用性的证据",
+      "reason": "描述证据与人员档期未确认，而非实际无团队；说明未确认如何限制承诺，核实及方案形成后可重审。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 116,
+        "end": 128,
+        "quote": "亦无驻地团队可用性的证据"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "以组合体拆分监理责任会损害独立性与单一问责",
+      "reason": "保留原必要人员条件且未虚构支持，但输入未证明联合投标必然损害独立性；不考虑组合体可以是选择，不能把单一身份当唯一满足责任的途径。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 182,
+        "end": 203,
+        "quote": "以组合体拆分监理责任会损害独立性与单一问责"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "missing",
+      "reason": "理由为通用监管职责、人员未知和声誉风险，没有实际居住建筑、澳门或业主特征怎样影响本题服务重点或取舍的具体联系。",
+      "evidence": null,
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND06_both_conditions.json",
+  "authored_labels_sha256": "6122a2f49cac2683481bb9f5aa5c93f23c4224be06b5449f74640f99fd4a2b61",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

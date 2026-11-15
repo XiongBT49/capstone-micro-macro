@@ -1,0 +1,149 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-14-missing_core",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "edcf76f07af87e84",
+  "role": "supplier",
+  "annotated_action": "integrated_hotel_design_construction_plan_outside_supplier_role",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-14-missing_core-v2_4-r2/attempt-1.json",
+  "response_sha256": "86966ffea95e2c16e19adbcf6f84de5b996483c13f10d6cf061fe17f418019b0",
+  "call_id": "attempt_002_call_000145",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "拟采用设计—采购—施工一体化管理",
+    "reason": "明确组织设计报批、精装机电施工、夜间作业和整包联调，受控供应角色未授权这些职责；设想方案不等于可以扩大任务。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 72,
+      "end": 88,
+      "quote": "拟采用设计—采购—施工一体化管理"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "由我方项目团队统筹精装、机电、消防、声学与会议视听系统的接口设计",
+      "reason": "不是材料资料或安装配合，方案及大部分报价实际承担设计施工整包，违反供应职责边界。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 89,
+        "end": 121,
+        "quote": "由我方项目团队统筹精装、机电、消防、声学与会议视听系统的接口设计"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "partial",
+      "quote": "按建议的分包与供货安排组织，具体供应商待选定后另行确认",
+      "reason": "有采购、材料报审及质量文档方向，但详细步骤主要为设计、施工和联调，供应配送、随货文档流程未充分展开。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 44,
+        "end": 71,
+        "quote": "按建议的分包与供货安排组织，具体供应商待选定后另行确认"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "产品选型、分包安排与资源投入均为投标建议与假设，非已落实事实",
+      "reason": "人员本地仓储和成本未知保留，未取得供应商或外部支持承诺，未用注册人数当派驻记录。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 194,
+        "end": 224,
+        "quote": "产品选型、分包安排与资源投入均为投标建议与假设，非已落实事实"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "上述条件不影响本次讨论性投标意向",
+      "reason": "两请求保持false和未决，拟以后审核渠道及合同列文档保修责任，不以未知阻断当前意向。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 243,
+        "end": 259,
+        "quote": "上述条件不影响本次讨论性投标意向"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "contradicted",
+      "quote": "针对海湾酒店会议中心二楼12000平方米EPC交付，拟采用设计—采购—施工一体化管理",
+      "reason": "直接把EPC项目背景转成本方全链设计施工管理，虽有面积估算仍违反本事项角色限制；既有运营、厨房流线和夜间要求也不是输入已知事实。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 46,
+        "end": 88,
+        "quote": "针对海湾酒店会议中心二楼12000平方米EPC交付，拟采用设计—采购—施工一体化管理"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 24,850,000",
+      "reason": "1850000+9800000+8600000+1250000+780000+1420000+1150000=24850000，七项暂定费用可复算，非已获报价历史成本；不因此认可整包报价范围。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 13,
+        "end": 30,
+        "quote": "报价 MOP 24,850,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.5,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND14_both_conditions.json",
+  "authored_labels_sha256": "b069467c8582358c88ec3798c746f642b4500c641a1fb60ee0cb5cd7b036dd2e",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

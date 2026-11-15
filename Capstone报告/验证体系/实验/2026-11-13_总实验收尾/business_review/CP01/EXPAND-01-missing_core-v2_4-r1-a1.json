@@ -1,0 +1,169 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-01-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "6a0c277221695c82",
+  "role": "supplier",
+  "annotated_action": "conditional_supply_proposal_with_unsupported_existing_business_direction",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-01-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "bfa7de459685546c3d87fe514c168fbad71d3f7efa85135c2e913499410a510c",
+  "call_id": "attempt_002_call_000158",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "基于常熟雅致模块化建筑有限公司的模块化建筑业务定位",
+    "reason": "经营范围和行业均已移除，企业名称及所分配供应商角色不能证明其实际业务定位；回答用这一未提供的现有定位支持产品方向，虽其后保留具体资源未知，仍越过本题来源边界。不是因程序校验失败而扣分。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 42,
+      "end": 67,
+      "quote": "基于常熟雅致模块化建筑有限公司的模块化建筑业务定位"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "基于常熟雅致模块化建筑有限公司的模块化建筑业务定位",
+      "reason": "缺范围情景可提出模块产品方案，但不能据公司名称宣称已知的模块化建筑业务定位。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 42,
+        "end": 67,
+        "quote": "基于常熟雅致模块化建筑有限公司的模块化建筑业务定位"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "编制产品供应与交付计划，明确工厂预制、包装、海运/陆运至澳门、现场交接界面",
+      "reason": "提出预制、包装运输、交接及文档流程，且整体明确为拟议路径；不要求提供不存在的实物目录。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 44,
+        "end": 81,
+        "quote": "编制产品供应与交付计划，明确工厂预制、包装、海运/陆运至澳门、现场交接界面"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "公司资料库未提供具体产品目录、库存记录、本地团队记录及历史采购成本",
+      "reason": "保留目录、库存、本地资源和历史成本未知，外部支持尚未取得承诺，未把拟议人员或物流写成已落实。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 142,
+        "end": 175,
+        "quote": "公司资料库未提供具体产品目录、库存记录、本地团队记录及历史采购成本"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "外部支持（运输、现场安装指导、保修响应）为拟议安排，尚未取得对方承诺。",
+      "reason": "保修与文档接口有拟议处理，两项原请求仍在未决列表，核查请求保留可选性质；投标前拟沟通不等于硬性要求收到接受回执。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/2",
+        "start": 0,
+        "end": 35,
+        "quote": "外部支持（运输、现场安装指导、保修响应）为拟议安排，尚未取得对方承诺。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "按EPC总承包方的现场进度要求编排供货节点",
+      "reason": "项目EPC背景实际用于供货节点和总包接口，没有承担整包施工；另将已给过往行政处罚记录对应到合规投入，未预断实际不合格。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 153,
+        "end": 174,
+        "quote": "按EPC总承包方的现场进度要求编排供货节点"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为暂定假设，非已收到供应商报价",
+      "reason": "五项18,500,000+2,100,000+1,350,000+780,000+1,620,000=24,350,000 MOP，与总额一致，明确无报价和历史成本依据，并说明取得技术文件与数量后重算。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 197,
+        "end": 217,
+        "quote": "上述金额均为暂定假设，非已收到供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "上述计划为投标意向层面的方案框架，具体资源分配、产能排期、供应商报价均待补充核实。",
+      "reason": "供应、物流、现场交接和保修文档形成连贯的条件性履行路径，未依赖已经到岗或已接受的资源承诺；企业业务定位的来源错误在行动和范围维度记录，不将其直接等同于整个条件性流程无法实施。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 175,
+        "end": 216,
+        "quote": "上述计划为投标意向层面的方案框架，具体资源分配、产能排期、供应商报价均待补充核实。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "跨境物流与价格波动风险，已在报价中列入风险预备费",
+      "reason": "把跨境与价格风险落实到暂定预留和待技术文件、数量及外部方案明确后重算的承诺边界；未将低价当优越，不要求虚构比较方案。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 121,
+        "end": 145,
+        "quote": "跨境物流与价格波动风险，已在报价中列入风险预备费"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND01_missing_core.json",
+  "authored_labels_sha256": "a90589d3dc9a06f27a4ba545c7f16bbf4991af55611400214503ca33cf1d891b",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

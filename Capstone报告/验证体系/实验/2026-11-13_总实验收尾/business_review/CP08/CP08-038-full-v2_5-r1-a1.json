@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-038-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "3f4415e049b1e356",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_with_generic_review_and_role_plan",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-038-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "5ecfd00cefbb99ed5bac97448e288ec7af5db7d26e61e33efc4e02bc098b926a",
+  "call_id": "attempt_002_call_000162",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "与我方档案文字所列工程监理、项目管理业务方向一致",
+    "reason": "实际范围支持有限监督角色，档期未验前不提交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 73,
+      "end": 97,
+      "quote": "与我方档案文字所列工程监理、项目管理业务方向一致"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "不涉及施工总包或整包设计施工责任",
+      "reason": "角色限定监督，真实范围不转为本包资格团队已核实。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 56,
+        "end": 72,
+        "quote": "不涉及施工总包或整包设计施工责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "按角色计划、交付方法、质量方法与文件纪律编制监管方案",
+      "reason": "仍是拟编领域而非具体检查记录流程。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 150,
+        "end": 176,
+        "quote": "按角色计划、交付方法、质量方法与文件纪律编制监管方案"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "人员档期确认可用后",
+      "reason": "人员状态未落实且拟核查，没有具体岗位配置。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 170,
+        "end": 179,
+        "quote": "人员档期确认可用后"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "这是提交前的硬性前提",
+      "reason": "原必要档期前提保持，普通支持未强制共享身份。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 134,
+        "end": 144,
+        "quote": "这是提交前的硬性前提"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "partial",
+      "quote": "广州五月花影城",
+      "reason": "提到真实项目地区名称，但具体安排仍通用监督职责与文档，未进一步联系影院或3000平方米等实际条件。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 4,
+        "end": 11,
+        "quote": "广州五月花影城"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_038_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "23b7ea1a9e82635243270b2492d76014b590c9b58b9c1ac1a46eea91fe531762",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

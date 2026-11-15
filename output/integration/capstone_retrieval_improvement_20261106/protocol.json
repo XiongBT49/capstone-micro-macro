@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-11-05T18:07:43.725605+00:00",
+  "runner_sha256": "154319be2e05fb0f3a037e285861a8b1af865ce257241c96af554cd84156941f",
+  "study": "retrospective method development with nested project-group cross-fitting",
+  "prior_labels_inspected": true,
+  "new_api_requests": 0,
+  "source_sha256": {
+    "hidden_benchmark_project_enterprises.csv": "a3c89fe3239686fd3a9f4ed2a677e82a633addad5a4603e936c9e3f0fcff4b91",
+    "match_report.csv": "773ba7b4445e69f9f29a050e6956091ff95a85d57ee7bc82560c280f3d03ad36",
+    "simulation_input_enterprises.csv": "adda7da9a8c5a41face0ae80da6e42135fdf4c56c9790c5769d767041c74318c",
+    "simulation_input_projects.csv": "c582892343cbadaff2dac39106a974508bc9f596e0e7a5ef9a40b404fb7e551b"
+  },
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "fold_seed": "20261106",
+  "near_duplicate_title_jaccard": 0.8,
+  "numeric_precision": "float64",
+  "grouping": "connected components; same recognized city; exact normalized title, phase/digit-stripped stem, or title-bigram Jaccard >= .80",
+  "families": {
+    "role_history": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "region_history": [
+      1.0,
+      8.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "owner_history": [
+      1.0,
+      4.0,
+      12.0,
+      0.0,
+      0.0
+    ],
+    "analogy_history": [
+      0.25,
+      2.0,
+      4.0,
+      4.0,
+      0.5
+    ],
+    "title_analogy_history": [
+      0.1,
+      1.0,
+      2.0,
+      12.0,
+      1.0
+    ]
+  },
+  "text_blends": [
+    0.0,
+    0.15,
+    0.35,
+    0.6
+  ],
+  "hyperparameters": 20,
+  "selection_metric": "inner validation pooled project-role Hit@5; ties prefer candidate declaration order",
+  "score": "(1-b)*log1p(weighted other-project role history)/row_max + b*(11/(10+old_public_rank))",
+  "history_features": [
+    "other training-project role-company links",
+    "project city",
+    "normalized owner exact match",
+    "project-title binary cosine",
+    "project type"
+  ],
+  "excluded_profile_fields": [
+    "past_project_experience",
+    "partners_or_clients",
+    "notes",
+    "historical results"
+  ],
+  "same_candidate_pool_as_old": true,
+  "identity_merging": false,
+  "formal_live_policy_changed": false,
+  "boundaries": [
+    "different task from input-only retrieval: historical role links are now explicitly training data",
+    "no temporal pre-award availability verified; retrospective interpolation, not prospective deployment accuracy",
+    "no independent external dataset; all outer results retained even if negative"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-03",
+    "arm": "single_agent",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-03",
+    "expected_business_property": "Keep proposed partner ability/acceptance/resource checks distinct from verified commitments. Proposed allocation is allowed; do not state another company has agreed without a source.",
+    "core_question_register": [
+      {
+        "question": "各位同事，此设计包涵盖多专业及专项设计，我们虽有设计协调和业主审查优势，但大型会议中心经验、声学与智能化专项能力尚需确认",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部提供潜在合作方名单，并确认其合作意向",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部确认是否有具备声学或智能化设计资质的合作方，并评估其合作意愿，这直接决定我们能否组建联合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计负责人确认能力缺口，我们再决定是否联合及如何划分责任",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我建议先核实我们是否有类似项目经验，如果没有，考虑与具备专项能力的单位组成联合体，但必须明确设计总负责和质量责任划分",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部先提供团队可用性和类似项目清单，我们再决定投标策略",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部确认是否有具备声学或智能化设计资质的机构愿意合作，并评估其合作意向和资质，这直接决定我们能否以组合体形式投标",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议市场部优先确认声学或智能化设计合作方意向，再决定组合体投标",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0145",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid_with_consortium",
+    "reason": "经管理层审议，设计服务包在大型会议中心经验、声学与智能化专项设计能力上存在明确缺口，公司单独投标在资格评审和评标竞争力上均不充分。公司核心优势在于设计协调和业主审查提交，适合担任设计总负责角色，但专项设计责任需要由具备相应能力的合作方共同承担，且必须是真正的组合体而非普通分包。当前市场部尚未确认任何声学或智能化合作方的资质与意向，团队可用性和类似项目清单也未提供，因此本决策为组合体投标意向，组合体成立及合作方资质确认是提交投标的前置条件。在条件满足前不提交投标。",
+    "content": "管理层决定：以组合体形式参与设计服务包投标，公司担任设计总负责与协调方，合作方承担声学与智能化专项设计责任并共享组合体投标主体身份。投标文件将按业主要求组织设计团队架构、类似项目业绩、设计进度计划、质量控制措施、BIM应用方案、绿色建筑认证策略、设计变更管理流程和风险应对方案。设计费按总建筑面积单价报价，并明确设计变更计费方式。组合体成立的前提是市场部确认具备声学或智能化设计资质的合作方及其合作意向，并核实团队可用性和类似项目清单；上述条件未满足前不提交投标。",
+    "unresolved_condition_ids": [
+      "condition_29371506e42c10cf205c",
+      "condition_6e93d52a5c0597207391",
+      "condition_eefc2d121a97cb4de1e9",
+      "condition_4be37deaf5de90cb07f0",
+      "condition_8fe625e98828b4ad597c",
+      "condition_a9a550583ed1e0ca001b",
+      "condition_cf66d466e6da111b252f",
+      "condition_a080ebe5c529967b7a47"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "组合体合作方需具备声学或智能化专项设计资质，并愿意以组合体成员身份共享投标主体和设计责任。",
+      "合作方资质和合作意向须在投标提交前由市场部确认，未确认前不提交。",
+      "公司担任设计总负责与协调方，合作方承担声学与智能化专项设计责任，责任划分在组合体协议中明确。",
+      "设计团队可用性和类似项目业绩清单须在提交前核实并纳入投标文件。",
+      "设计费按总建筑面积单价报价，设计变更计费方式在投标文件中明确。"
+    ],
+    "verification_requests": [
+      {
+        "question": "市场部是否已确认具备声学或智能化设计资质的合作方名单及其合作意向？",
+        "required_before_submission": true
+      },
+      {
+        "question": "公司是否已核实设计团队可用性及类似项目业绩清单？",
+        "required_before_submission": true
+      }
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-03-single_agent-r2\\final-attempt-1.json",
+  "source_sha256": "813af337384c482487e75bf34233d751d34c55bc6246249f2cadde8cb53335e9",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-03",
+      "arm": "single_agent",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

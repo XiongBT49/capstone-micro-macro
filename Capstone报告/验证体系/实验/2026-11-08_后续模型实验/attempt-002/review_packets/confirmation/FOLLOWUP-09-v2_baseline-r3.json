@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "v2_baseline",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本设计服务包属于本公司可信的业务范围，公司可作为单一责任设计方主导施工图设计、地质勘察报告解读、支护与邻近建筑物保护设计、公共通道临时设计及施工期现场设计支持。结构、岩土、MEP等专业协调需求可通过受控专业支持纳入我们的设计管理与审查流程，由公司保留设计主导权与业主审查提交责任，无需以组合体形式共享投标人身份和全包设计责任。指定岗位人员档期已核验可用，满足提交前提。公司规模与代表项目信息存在缺口，因此投标文件须以团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对如实呈现能力边界，固定总价按里程碑支付编制，专业支持接口与责任流在方案中明确。",
+    "content": "管理决定：就设计服务包提交投标，以本公司作为单一责任设计方。投标文件将围绕团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对组织，明确施工图设计、地质勘察报告解读、支护方案设计、邻近建筑物保护设计、公共通道临时设计及施工期现场设计支持的工作界面。结构、岩土与MEP协调以受控专业支持方式纳入公司设计管理与内部审查流程，由公司统一对业主负责并保留设计主导权。报价采用固定总价、按里程碑支付。鉴于公司规模与代表项目公开信息不足，投标陈述将严格限于已核实的人员档期与已列明能力，不夸大资源或业绩。",
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "指定岗位人员在本包期间可用，已通过核验。",
+      "结构、岩土与MEP协调以受控专业支持方式纳入公司设计管理与审查流程，公司保留单一责任与设计主导权。",
+      "报价为固定总价，按里程碑支付。",
+      "公司规模与代表项目信息缺口将在投标文件中以能力边界说明方式如实呈现，不作未经核实的陈述。"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-09-v2_baseline-r3\\final-attempt-1.json",
+  "source_sha256": "9b1632cb3f08cc219262fb48f1f2f8d0bef20ec24755dc746599e355a6d35e7c",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "v2_baseline",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

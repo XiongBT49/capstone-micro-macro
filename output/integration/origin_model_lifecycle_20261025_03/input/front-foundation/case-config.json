@@ -1,0 +1,48 @@
+{
+  "schema_version": "origin-lifecycle-case.v1",
+  "run_id": "origin-model-lifecycle-20261025",
+  "ticks": 48,
+  "mode": "model",
+  "tender_open_tick": 12,
+  "design_approval_tick": 9,
+  "contract_duration": 24,
+  "late_money_scale": "1000000",
+  "completion_earliest_tick": 40,
+  "completion_latest_tick": 44,
+  "review_ticks": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "contractor_profile": {
+    "qualification_level": 1,
+    "technical_capability": 1,
+    "construction_capability": 1,
+    "safety_management_capability": 1,
+    "quality_management_capability": 1
+  },
+  "model_options": {
+    "strategy": "single_agent",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "alternate_markup_fraction": "0.2",
+    "max_calls": 3,
+    "max_prompt_chars": 300000
+  },
+  "api_budget": "At most four total attempts across retained origin batches. Prior failed sandbox batch charged one; this fresh network-enabled batch permits at most three. No automatic retries or offline fallback.",
+  "scope": "Empty initial projects. Original opportunity through aggregate settlement and rule-based later Owner judgment. Only Contractor A02 pricing calls the model. Two initial own markup policies and matching agreements are declared before execution; no bid, winner or receipt is prefilled. Prior offline origin case is an engineering reference, not a matched-input strategy benchmark.",
+  "api_total_attempt_cap": 4,
+  "api_previous_batches": [
+    {
+      "journal_path": "output/integration/origin_model_lifecycle_20261025_02/runtime/tasks.sqlite",
+      "journal_sha256": "8f73aeece734420cd124804b543bf4cdb75addd88fd67c19dbc45cec2dc4a84b",
+      "attempted_calls": 1,
+      "status": "failed-no-decision",
+      "reason": "OpenAIConnectionError; independent socket probe confirmed sandbox WinError 10013; no automatic retry"
+    }
+  ]
+}

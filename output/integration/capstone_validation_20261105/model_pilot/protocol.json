@@ -1,0 +1,35 @@
+{
+  "prepared_at": "2026-11-04T18:03:32.357616+00:00",
+  "runner_sha256": "b1962d01e860c6424601d6cf0a879a2002c652717d6f55f54ab281951986c237",
+  "window_file_sha256": "6501e87e98d1ba3b82af51602af6450b9d79e4f96ddd60b806cc20292da664b8",
+  "core_sha256": {
+    "integration/contractor_bid_actions.py": "f1cefd2d6c28a4ff5e72ebff7c0e3fe21aedf128c73071df247722416145907c",
+    "integration/contractor_tender_model_options.py": "ce1622c02077309b81ec9570295882fc6ce1bc3f1291557237daa694af9015c3",
+    "integration/action_model_host.py": "adfc20805deebabbc9421f80f0cd14e21c6b1110edcc9ee28b7640d2cfb03d65",
+    "src/actions/model_strategy.py": "ddcd1267ff2753fbb25b035fc5a60c0598461e2f9a0a31926c2e506785fecf68",
+    "src/actions/organization_strategy.py": "5994a1106ac66c10c5c208a74a98c3ce9091b181ba931f7acde5ef1064f4417d",
+    "src/actions/runner.py": "9452c42352b54ec10f57a9bb8595e8e87e07c0fb5a84ecd1366158747bad7278",
+    "src/actions/processors.py": "7cb2e2dd389594d1d800bab5306d3f1aae70891ded350194f3c42e5757a11fc8",
+    "src/llm_client.py": "4de412da8ccec5d7867dcc9c3c1bd7d6d4e26add69ba38aa09724e669f582c4c"
+  },
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "temperature": 0,
+  "modes": [
+    "single_agent",
+    "organization_discussion"
+  ],
+  "selected_windows": [
+    "WINDOW-01",
+    "WINDOW-02",
+    "WINDOW-03",
+    "WINDOW-04"
+  ],
+  "selection_rule": "every other contractor in the frozen initial source order; no label-based selection",
+  "total_request_cap": 24,
+  "expected_requests": 20,
+  "preflight_checks": "preflight-02\\checks.json",
+  "scope": "one project, four captured quotation decision windows, one replicate per mode; no macro submission",
+  "independence": "separate arm journals, fresh calls, no cached response reuse; not an independent new-project test",
+  "quality_oracle": "formal business checks; expert judgment pending; no claim that cheaper bids are better"
+}

@@ -1,0 +1,1538 @@
+[
+  {
+    "window_id": "WINDOW-01",
+    "company_id": "COMP-0472",
+    "mode": "single_agent",
+    "options_sha256": "cc67a85ba9a018eb9deddffcfcd05f033dcdd54afa5feedcc911c31ddabcab87",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:d0b225ad4b166f9c845dd38d7d17eae97d08b82ccf40458f69081ca319e88786"
+    ],
+    "original_input_sha256": "dc490c71bafc79a62c7c807d1a4319763a8a4990fbe8fcee7e436243ff87fea0",
+    "members": 3,
+    "expected_paid_requests": 1,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0472-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0472-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0472-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0472-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0472-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0472-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0472-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0472-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0472-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0472-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0472-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0472-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0472-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0472-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-01",
+    "company_id": "COMP-0472",
+    "mode": "organization_discussion",
+    "options_sha256": "cc67a85ba9a018eb9deddffcfcd05f033dcdd54afa5feedcc911c31ddabcab87",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:d0b225ad4b166f9c845dd38d7d17eae97d08b82ccf40458f69081ca319e88786"
+    ],
+    "original_input_sha256": "dc490c71bafc79a62c7c807d1a4319763a8a4990fbe8fcee7e436243ff87fea0",
+    "members": 3,
+    "expected_paid_requests": 4,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0472-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0472-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0472-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0472-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0472-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0472-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0472-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0472-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0472-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0472-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0472-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0472-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0472-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0472-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-02",
+    "company_id": "COMP-0466",
+    "mode": "single_agent",
+    "options_sha256": "f75bec2c222dfd3082154146c9bc9ce8cda0a37ce5627c2dbffdf8909cda70e3",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:e17b15031b543c7b9bc09d545452f3ed90289c99eb6e33c461864b14816a050f"
+    ],
+    "original_input_sha256": "841b091bd3af56d61c677b15686da7d7d550d584884fea6b6d4292b2371b2f5b",
+    "members": 3,
+    "expected_paid_requests": 1,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0466-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0466-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0466-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0466-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0466-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0466-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0466-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-02",
+    "company_id": "COMP-0466",
+    "mode": "organization_discussion",
+    "options_sha256": "f75bec2c222dfd3082154146c9bc9ce8cda0a37ce5627c2dbffdf8909cda70e3",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:e17b15031b543c7b9bc09d545452f3ed90289c99eb6e33c461864b14816a050f"
+    ],
+    "original_input_sha256": "841b091bd3af56d61c677b15686da7d7d550d584884fea6b6d4292b2371b2f5b",
+    "members": 3,
+    "expected_paid_requests": 4,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0466-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0466-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0466-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0466-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0466-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0466-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0466-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0466-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0466-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0466-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0466-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0466-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0466-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0466-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-03",
+    "company_id": "COMP-0025",
+    "mode": "single_agent",
+    "options_sha256": "2d4611cfc7bdac7ded53c959e9820611293b0596ea2608b5f55ba07893a1ceda",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:84d234edffba0f62b3f002102ec83cdaa51bd6e7a3aeb0895ac12fc656450329"
+    ],
+    "original_input_sha256": "242e44bfe050beb2baa75c470806bc46fcd946fb1e3dbc51d195f0d99104d4af",
+    "members": 3,
+    "expected_paid_requests": 1,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0025-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0025-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0025-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0025-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0025-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0025-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0025-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0025-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0025-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0025-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0025-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0025-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0025-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0025-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-03",
+    "company_id": "COMP-0025",
+    "mode": "organization_discussion",
+    "options_sha256": "2d4611cfc7bdac7ded53c959e9820611293b0596ea2608b5f55ba07893a1ceda",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:84d234edffba0f62b3f002102ec83cdaa51bd6e7a3aeb0895ac12fc656450329"
+    ],
+    "original_input_sha256": "242e44bfe050beb2baa75c470806bc46fcd946fb1e3dbc51d195f0d99104d4af",
+    "members": 3,
+    "expected_paid_requests": 4,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0025-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0025-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0025-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0025-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0025-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0025-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0025-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0025-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0025-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0025-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0025-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0025-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0025-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0025-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-04",
+    "company_id": "COMP-0493",
+    "mode": "single_agent",
+    "options_sha256": "bf2471c3b7ea145ed3db75c98b0dc561b2fe410f647b82b2df2224d12fd37f81",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:0de7e9da27dbd8ce3ed47f566268bd8e65eaf2a0c3240360ec54fc51426297a3"
+    ],
+    "original_input_sha256": "af7062262cf2d0282512c8d984171e9a8b229998e0dab0d78f929244d98acc07",
+    "members": 3,
+    "expected_paid_requests": 1,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0493-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0493-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0493-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0493-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0493-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0493-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0493-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0493-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0493-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0493-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0493-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0493-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0493-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0493-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  },
+  {
+    "window_id": "WINDOW-04",
+    "company_id": "COMP-0493",
+    "mode": "organization_discussion",
+    "options_sha256": "bf2471c3b7ea145ed3db75c98b0dc561b2fe410f647b82b2df2224d12fd37f81",
+    "option_ids": [
+      "original-input",
+      "pricing-profile:0de7e9da27dbd8ce3ed47f566268bd8e65eaf2a0c3240360ec54fc51426297a3"
+    ],
+    "original_input_sha256": "af7062262cf2d0282512c8d984171e9a8b229998e0dab0d78f929244d98acc07",
+    "members": 3,
+    "expected_paid_requests": 4,
+    "rule_result": {
+      "kind": "completed",
+      "payload": {
+        "note": "Original-version priced proposal and planned tasks only; internal cost differs from commercial price; crews unreserved, no construction release or actual work",
+        "bid": {
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "origin-late-COMP-0493-package",
+            "version": "1"
+          },
+          "scope_ref": {
+            "kind": "project",
+            "ref": {
+              "kind": "Project",
+              "id": "CASE-0014",
+              "version": "1"
+            },
+            "coverage_refs": [
+              {
+                "kind": "WorkScope",
+                "id": "CASE-0014-work",
+                "version": "1"
+              }
+            ]
+          },
+          "price": {
+            "value": "110000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "origin-late-COMP-0493-assumptions",
+              "version": "1"
+            }
+          },
+          "cost_basis_refs": [
+            {
+              "kind": "CostBasis",
+              "id": "origin-late-COMP-0493-cost",
+              "version": "1"
+            }
+          ],
+          "programme_ref": {
+            "kind": "ProgrammeProposal",
+            "id": "origin-late-COMP-0493-programme",
+            "version": "1"
+          },
+          "terms_ref": {
+            "kind": "ContractTerms",
+            "id": "origin-late-COMP-0493-terms",
+            "version": "1"
+          },
+          "exclusion_refs": [],
+          "validity_ref": {
+            "kind": "TimeWindow",
+            "id": "origin-late-COMP-0493-validity",
+            "version": "1"
+          },
+          "proposed_resources": [
+            {
+              "resource_ref": {
+                "kind": "ResourcePool",
+                "id": "origin-late-COMP-0493-capacity",
+                "version": "1"
+              },
+              "task_scope_ref": {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "CASE-0014",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "CASE-0014-work",
+                    "version": "1"
+                  }
+                ]
+              },
+              "window_ref": {
+                "kind": "TimeWindow",
+                "id": "origin-late-COMP-0493-work",
+                "version": "1"
+              },
+              "quantity": {
+                "value": "0.2",
+                "unit": "normalized_enterprise_capacity",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0493-calendar",
+                  "version": "1"
+                }
+              }
+            }
+          ]
+        },
+        "planned_tasks": [
+          {
+            "local_key": "work",
+            "scope_ref": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "CASE-0014",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "CASE-0014-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "work_method_ref": {
+              "kind": "WorkMethod",
+              "id": "origin-late-COMP-0493-method",
+              "version": "1"
+            },
+            "target_quantities": [
+              {
+                "value": "1",
+                "unit": "normalized_work_item",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "origin-late-COMP-0453-assumptions",
+                  "version": "1"
+                }
+              }
+            ],
+            "dependency_refs": [],
+            "allocations": [
+              {
+                "resource_ref": {
+                  "kind": "ResourcePool",
+                  "id": "origin-late-COMP-0493-capacity",
+                  "version": "1"
+                },
+                "task_scope_ref": {
+                  "kind": "project",
+                  "ref": {
+                    "kind": "Project",
+                    "id": "CASE-0014",
+                    "version": "1"
+                  },
+                  "coverage_refs": [
+                    {
+                      "kind": "WorkScope",
+                      "id": "CASE-0014-work",
+                      "version": "1"
+                    }
+                  ]
+                },
+                "window_ref": {
+                  "kind": "TimeWindow",
+                  "id": "origin-late-COMP-0493-work",
+                  "version": "1"
+                },
+                "quantity": {
+                  "value": "0.2",
+                  "unit": "normalized_enterprise_capacity",
+                  "basis_ref": {
+                    "kind": "Evidence",
+                    "id": "origin-late-COMP-0493-calendar",
+                    "version": "1"
+                  }
+                }
+              }
+            ],
+            "window_ref": {
+              "kind": "TimeWindow",
+              "id": "origin-late-COMP-0493-work",
+              "version": "1"
+            }
+          }
+        ],
+        "choice": "submit_bid"
+      }
+    }
+  }
+]

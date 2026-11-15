@@ -1,0 +1,101 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-01",
+    "arm": "single_agent",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-01",
+    "expected_business_property": "Preserve the visible open qualification/experience checks. Business scope alone is not proof of accepted package eligibility. A justified refusal or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "我建议先做一次内部能力评估，确认哪些环节需要外部支持",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我需要造价或合约同事确认地质勘察审查的具体工作量和支付里程碑，以评估成本风险",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请合约部提供支付条款的初步分析，以便我们决定是否单独投标或考虑联合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计总监确认我们是否有足够的地质和交通专业人才，这直接影响投标决策",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我们需要市场部评估潜在伙伴，确认其资质和合作意愿，并明确责任划分和接口管理",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0026",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid_with_consortium",
+    "reason": "本设计包要求覆盖方案至施工图并审查地质勘察报告、协调交通接口，能力清单中的大型基础设施设计、地质勘察审查和交通接口设计超出公司可单独承担的技术权威范围。若以单方投标加普通分包处理，公司将承担无法真正控制的全包设计责任，业主审查通过率和声誉风险不可接受。公司优势在于设计协调和业主审查提交，适合在组合体中担任设计主导方，由具备地质勘察和交通设计资质、愿意共担责任的伙伴补足核心缺口并共享投标身份。因此决定以组合体方式表达投标意向，但须先落实伙伴资质与合作意愿、明确责任划分和接口管理，并完成内部能力评估和支付条款分析后再形成正式提交。",
+    "content": "管理层决定：本设计包以组合体方式推进投标意向，不由公司单方投标。组合体中华建集团华东建筑设计研究总院担任设计主导与协调方，负责方案至施工图的整体设计组织、业主审查提交、文档与接口管理；地质勘察报告审查和交通接口设计由具备相应资质并愿意共担责任的伙伴承担，双方在投标前以书面方式明确工作划分、技术权威边界、质量责任和接口管理流程。投标文件按业主要求组织团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对，价格采用固定费用加里程碑激励的框架，支付节点与设计里程碑对应。当前为有条件投标意向：伙伴资质与合作意愿、内部能力评估、地质勘察审查工作量与支付条款分析尚未完成，未完成前不形成正式提交。",
+    "unresolved_condition_ids": [
+      "condition_ef2550cd9e28ad261187",
+      "condition_a4a655f2cd6350dae2b2",
+      "condition_7fa68db5f33b7f7ae6e8",
+      "condition_4a347a4e5cc3188ced8e",
+      "condition_cf0671adba419d862a51"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "组合体伙伴须具备地质勘察报告审查和交通接口设计资质并接受共担责任，伙伴未落实则不提交",
+      "公司以设计主导和协调方身份参与，不单独承担地质勘察审查和交通接口设计的技术权威",
+      "投标报价按固定费用加设计里程碑激励编制，支付节点与里程碑对应",
+      "团队可用性以实际调配结果为准，讨论中的资源诉求不视为已落实",
+      "组合体内部责任划分和接口管理在提交前以书面协议明确"
+    ],
+    "verification_requests": [
+      {
+        "question": "请市场部确认至少一家具备地质勘察或交通设计资质、且有明确合作意愿的潜在组合体伙伴，并说明其可承担的具体范围",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计总监确认公司现有人员中可投入本包的地质与交通专业支持程度，以及需要伙伴补足的具体环节",
+        "required_before_submission": false
+      },
+      {
+        "question": "请造价合约部提供地质勘察审查工作量估算和固定费用加里程碑支付的初步条款分析",
+        "required_before_submission": false
+      }
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-01-single_agent-r2\\final-attempt-1.json",
+  "source_sha256": "8f5a4584a1c5d95603e1afd09a911027fe4505523566b04d7631bf79113d3830",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-01",
+      "arm": "single_agent",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

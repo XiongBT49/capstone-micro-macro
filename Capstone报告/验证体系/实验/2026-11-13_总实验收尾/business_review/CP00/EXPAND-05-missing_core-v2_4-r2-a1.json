@@ -1,0 +1,149 @@
+{
+  "cohort": "CP00",
+  "window_id": "EXPAND-05-missing_core",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "bd98c21ccd2c4c7b",
+  "role": "supplier",
+  "annotated_action": "bounded_supply_with_overstrong_formal_bid_condition",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP00/run/jobs/EXPAND-05-missing_core-v2_4-r2/attempt-1.json",
+  "response_sha256": "8f56cfd3386c944deb11c53259d5369f7d73c453c0dca64a566e65a20be5df62",
+  "call_id": "attempt_002_call_000048",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本意向不主张已具备特定供应能力",
+    "reason": "有限材料供应、拟议资源与未知范围相容，没有实际能力或施工责任断言；条件叙述偏强单列S4，不用其自动抹掉参与草稿判断。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 293,
+      "end": 308,
+      "quote": "本意向不主张已具备特定供应能力"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "均为拟议计划，不构成已落实的供应承诺",
+      "reason": "产品渠道仅为拟议，非自产品类的说法不单独证明存在自产品线，全文没有具体已有产品主张。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 177,
+        "end": 195,
+        "quote": "均为拟议计划，不构成已落实的供应承诺"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "形成供货矩阵",
+      "reason": "规格需求、供货矩阵、渠道、批次验收、不合格品和保修文档路径明确。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 43,
+        "end": 49,
+        "quote": "形成供货矩阵"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "具体人数与驻场时间待需求确认后细化",
+      "reason": "商务质量牵头和现场配合均为计划，产品库存成本和人员未知未冒充到位。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 201,
+        "end": 218,
+        "quote": "具体人数与驻场时间待需求确认后细化"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "未获确认前，本意向不构成正式投标",
+      "reason": "两项仍未决且请求false，但正文把其确认联系正式投标，过强改变原非前置性质。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 336,
+        "end": 352,
+        "quote": "未获确认前，本意向不构成正式投标"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "桩管、钢筋笼连接件、注浆材料等品类的采购组织",
+      "reason": "桩基类型进入供货品类和总包进度接口，不虚构具体桩数。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 76,
+        "end": 98,
+        "quote": "桩管、钢筋笼连接件、注浆材料等品类的采购组织"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 11,300,000 为暂定估算",
+      "reason": "六项合计11,300,000一致，材料、物流及支持成本均暂列而非已收报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 30,
+        "end": 53,
+        "quote": "报价 MOP 11,300,000 为暂定估算"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_第一阶段微观启动准备/CP00_task_cards.json",
+  "input_card_sha256": "cab025e7b4e01d0313dc912e324954a5b8b0a6386027da4aed1264b78332103d",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP00_EXPAND05_first_001.json",
+  "authored_labels_sha256": "0f84c45e99d76e3f1e0e023bdf50663e470b81d3e1a04dbd34fbe925d6a765c8",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "exploratory_old_material"
+}

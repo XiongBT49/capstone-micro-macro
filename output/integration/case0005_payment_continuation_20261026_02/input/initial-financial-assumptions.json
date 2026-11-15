@@ -1,0 +1,69 @@
+{
+  "schema_version": "case0005-supplemental-payment.v1",
+  "run_id": "case0005-model-lifecycle-20261026",
+  "project_id": "CASE-0005",
+  "source_declaration": "explicit_scenario_assumptions_not_historic_cash",
+  "parent_journal_sha256": "124c7087c26c731bb923c8df2c87f832ed845622bc83b8f5050638acc71ac02c",
+  "start_tick": 49,
+  "currency": "HKD",
+  "payment_basis": "Scenario supplemental agreement: only the two archived delayed requests are payable at tick 49; no certification issuance or historical transfer is asserted.",
+  "history_coverage": "Complete from this supplemental ledger inception for exactly these two selected obligations; excludes other requests, final-account payment and all real-world cash history.",
+  "accounts": [
+    {
+      "ref": {
+        "kind": "Account",
+        "id": "case0005-payment:owner",
+        "version": "1"
+      },
+      "organization_id": "OWNER-4048bdd520aa7f",
+      "cash": "50000000"
+    },
+    {
+      "ref": {
+        "kind": "Account",
+        "id": "case0005-payment:contractor",
+        "version": "1"
+      },
+      "organization_id": "COMP-0191",
+      "cash": "0"
+    }
+  ],
+  "obligations": [
+    {
+      "ref": {
+        "kind": "Obligation",
+        "id": "case0005-payment:EVT000370",
+        "version": "1"
+      },
+      "component_ref": {
+        "kind": "SettlementComponent",
+        "id": "case0005-payment:EVT000370",
+        "version": "1"
+      },
+      "amount": "22000000",
+      "debtor_id": "OWNER-4048bdd520aa7f",
+      "payee_id": "COMP-0191",
+      "original_request_event_id": "EVT000370",
+      "original_wait_task_key": "2697db6f4deac4b6da80a5896129d24b28904c32ee8e4c1afa114d85e74c993f",
+      "original_delay_event_sha256": "cb69f00a677ed51e74c8031d3d8b61df49e57280e25021e8c567bcd7009d699e"
+    },
+    {
+      "ref": {
+        "kind": "Obligation",
+        "id": "case0005-payment:EVT000591",
+        "version": "1"
+      },
+      "component_ref": {
+        "kind": "SettlementComponent",
+        "id": "case0005-payment:EVT000591",
+        "version": "1"
+      },
+      "amount": "22000000",
+      "debtor_id": "OWNER-4048bdd520aa7f",
+      "payee_id": "COMP-0191",
+      "original_request_event_id": "EVT000591",
+      "original_wait_task_key": "94b3d04726f2ccd5d211944a2d9448e70a2fb4a4d7130d569d30f82c1b71d22f",
+      "original_delay_event_sha256": "56ce7d81ce24457bf633ae0e5c31c754fd05c35e5e628698a791928213d63c44"
+    }
+  ]
+}

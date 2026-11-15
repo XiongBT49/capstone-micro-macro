@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-038-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "3f4415e049b1e356",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_with_name_based_professional_identity",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-038-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "eb9c2ab4905081d57aed2e7811fc72c126030dacec44743c189e871d61a693cf",
+  "call_id": "attempt_002_call_000213",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "与我方勘察设计院在广州的地域和央企背景存在基本匹配",
+    "reason": "广州及央企背景已给，但按现实专业身份读勘察设计院由名称补全，实际范围缺失；若仅作企业名简称可有较宽适当读法，留敏感性。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 35,
+      "end": 60,
+      "quote": "与我方勘察设计院在广州的地域和央企背景存在基本匹配"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "我方勘察设计院",
+      "reason": "主分析按实际专业背景作为参与依据读，不能从名称证明主营或监督范围；监督职责本身未越界。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 36,
+        "end": 43,
+        "quote": "我方勘察设计院"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "明确独立检查与质量复核流程、文件与记录纪律、进度与支付审核接口",
+      "reason": "列出拟编流程领域，缺具体检查记录执行。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 121,
+        "end": 152,
+        "quote": "明确独立检查与质量复核流程、文件与记录纪律、进度与支付审核接口"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "编制岗位与职责计划",
+      "reason": "实际人员未知且有核查，尚无具体岗位组织。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 111,
+        "end": 120,
+        "quote": "编制岗位与职责计划"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "若届时仍无法确认，我方将撤回本意向",
+      "reason": "原必要人员前提保持，普通支持仅拟议。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 281,
+        "end": 298,
+        "quote": "若届时仍无法确认，我方将撤回本意向"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "广州的地域和央企背景存在基本匹配",
+      "reason": "真实同城及给定企业性质进入有限机会理由，不将其视为已验监督能力；专业身份来源错误另评。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 44,
+        "end": 60,
+        "quote": "广州的地域和央企背景存在基本匹配"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_038_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "23b7ea1a9e82635243270b2492d76014b590c9b58b9c1ac1a46eea91fe531762",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

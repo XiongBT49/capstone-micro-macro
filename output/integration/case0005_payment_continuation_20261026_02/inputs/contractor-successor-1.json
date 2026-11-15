@@ -1,0 +1,1320 @@
+{
+  "context": {
+    "run_id": "case0005-model-lifecycle-20261026",
+    "actor_id": "COMP-0191",
+    "function_ref": {
+      "kind": "FunctionAssignment",
+      "id": "case0005-payment:Contractor",
+      "version": "1"
+    },
+    "authorization_refs": [
+      {
+        "kind": "Authorization",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      }
+    ],
+    "operation_id": "supplemental:contractor-successor-1",
+    "contract_ref": {
+      "kind": "ActionContract",
+      "id": "CONTRACTOR-A10",
+      "version": "1"
+    },
+    "task_ref": {
+      "kind": "DecisionTask",
+      "id": "case0005-payment:contractor-successor-1",
+      "version": "1"
+    },
+    "scope": {
+      "coverage_refs": [
+        {
+          "id": "progress-payment:t14:COMP-0191:funded-work",
+          "kind": "WorkScope",
+          "version": "1"
+        }
+      ],
+      "kind": "project",
+      "ref": {
+        "id": "CASE-0005",
+        "kind": "Project",
+        "version": "1"
+      }
+    },
+    "business_time": {
+      "clock_ref": {
+        "id": "case0005-model-lifecycle-20261026-monthly-clock",
+        "kind": "ClockProfile",
+        "version": "1"
+      },
+      "offset": 50
+    },
+    "read_token": "supplemental:contractor-successor-1:read",
+    "visible_refs": [
+      {
+        "kind": "Evidence",
+        "id": "case0005-payment:explicit-opening-assumptions",
+        "version": "1"
+      },
+      {
+        "kind": "Evidence",
+        "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "version": "1"
+      },
+      {
+        "kind": "Evidence",
+        "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "version": "1"
+      },
+      {
+        "id": "case0005-payment:EVT000370",
+        "kind": "Obligation",
+        "version": "1"
+      },
+      {
+        "id": "case0005-payment:EVT000370",
+        "kind": "SettlementComponent",
+        "version": "1"
+      },
+      {
+        "kind": "Contract",
+        "id": "case0005-payment:supplemental-EVT000370",
+        "version": "50"
+      },
+      {
+        "kind": "SettlementRule",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      {
+        "kind": "SettlementProcedure",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      {
+        "kind": "PaymentExecution",
+        "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "version": "1"
+      },
+      {
+        "kind": "PaymentReceipt",
+        "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+        "version": "1"
+      },
+      {
+        "kind": "Account",
+        "id": "case0005-payment:contractor",
+        "version": "50"
+      },
+      {
+        "kind": "FunctionAssignment",
+        "id": "case0005-payment:Contractor",
+        "version": "1"
+      },
+      {
+        "kind": "CandidateSet",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      {
+        "kind": "Authorization",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      }
+    ],
+    "candidate_set_ref": {
+      "kind": "CandidateSet",
+      "id": "case0005-payment:contractor-successor-1",
+      "version": "1"
+    },
+    "execution_mode": "rule"
+  },
+  "action_input": {
+    "contract_ref": {
+      "kind": "Contract",
+      "id": "case0005-payment:supplemental-EVT000370",
+      "version": "50"
+    },
+    "work_record_refs": [],
+    "certificate_refs": [],
+    "obligation_refs": [
+      {
+        "kind": "Obligation",
+        "id": "case0005-payment:EVT000370",
+        "version": "1"
+      }
+    ],
+    "account_refs": [
+      {
+        "kind": "Account",
+        "id": "case0005-payment:contractor",
+        "version": "50"
+      }
+    ],
+    "execution_refs": [
+      {
+        "kind": "PaymentExecution",
+        "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "version": "1"
+      }
+    ],
+    "settlement_rule_ref": {
+      "kind": "SettlementRule",
+      "id": "case0005-payment:contractor-successor-1",
+      "version": "1"
+    }
+  },
+  "objects": [
+    {
+      "ref": {
+        "kind": "Evidence",
+        "id": "case0005-payment:explicit-opening-assumptions",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "Evidence",
+          "id": "case0005-payment:explicit-opening-assumptions",
+          "version": "1"
+        },
+        "source_kind": "synthetic",
+        "basis_kind": "assumed",
+        "locator": "D:\\hkura\\codedemo_v2\\output\\integration\\case0005_payment_continuation_20261026_02\\input\\initial-financial-assumptions.json",
+        "content_hash": "045e963bb0529c91f77b12652d9448902c43a28b114664da3fc4317e7f5c39c5",
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "Evidence",
+        "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "Evidence",
+          "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "version": "1"
+        },
+        "source_kind": "real_user",
+        "basis_kind": "observed",
+        "locator": "D:\\hkura\\codedemo_v2\\output\\integration\\case0005_payment_continuation_20261026_02\\native-payments.sqlite#commands/4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "content_hash": "945fd405d30f00c6e23cdc2cfbfdda1aa7998e00a8af4f1480929036657ca797",
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "Evidence",
+        "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "Evidence",
+          "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+          "version": "1"
+        },
+        "source_kind": "real_user",
+        "basis_kind": "observed",
+        "locator": "D:\\hkura\\codedemo_v2\\output\\integration\\case0005_payment_continuation_20261026_02\\native-payments.sqlite#settlement/4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+        "content_hash": "69340308090f7373b26a560837bd31f67d11efffa5d8e93657e2f7f1bf61a7ca",
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        }
+      }
+    },
+    {
+      "ref": {
+        "id": "case0005-payment:EVT000370",
+        "kind": "Obligation",
+        "version": "1"
+      },
+      "value": {
+        "actual_due": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "22000000"
+          }
+        },
+        "actual_offset": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "0"
+          }
+        },
+        "actual_paid": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "0"
+          }
+        },
+        "as_of": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "component_refs": [
+          {
+            "id": "case0005-payment:EVT000370",
+            "kind": "SettlementComponent",
+            "version": "1"
+          }
+        ],
+        "debt_ref": null,
+        "debtor_id": "OWNER-4048bdd520aa7f",
+        "due_at": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "evidence_refs": [
+          {
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "kind": "Evidence",
+            "version": "1"
+          }
+        ],
+        "kind": "works",
+        "origin_scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "payable": {
+          "state": "known",
+          "value": true
+        },
+        "payee_id": "COMP-0191",
+        "ref": {
+          "id": "case0005-payment:EVT000370",
+          "kind": "Obligation",
+          "version": "1"
+        },
+        "source_ref": {
+          "id": "case0005-payment:owner",
+          "kind": "FundingSource",
+          "version": "1"
+        },
+        "status": "effective",
+        "verification_evidence_refs": [
+          {
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "kind": "Evidence",
+            "version": "1"
+          }
+        ]
+      }
+    },
+    {
+      "ref": {
+        "id": "case0005-payment:EVT000370",
+        "kind": "SettlementComponent",
+        "version": "1"
+      },
+      "value": {
+        "actual_cash_paid": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "0"
+          }
+        },
+        "actual_due": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "22000000"
+          }
+        },
+        "actual_offset": {
+          "state": "known",
+          "value": {
+            "basis_ref": {
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "kind": "Evidence",
+              "version": "1"
+            },
+            "currency": "HKD",
+            "value": "0"
+          }
+        },
+        "as_of": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "available_at": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "category": "works",
+        "debt_ref": null,
+        "debtor_id": "OWNER-4048bdd520aa7f",
+        "effective_window": {
+          "bounds": "closed_open",
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          }
+        },
+        "evidence_refs": [
+          {
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "kind": "Evidence",
+            "version": "1"
+          }
+        ],
+        "obligation_ref": {
+          "id": "case0005-payment:EVT000370",
+          "kind": "Obligation",
+          "version": "1"
+        },
+        "payee_id": "COMP-0191",
+        "ref": {
+          "id": "case0005-payment:EVT000370",
+          "kind": "SettlementComponent",
+          "version": "1"
+        },
+        "scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "settlement_mode": "cash",
+        "source_ref": {
+          "id": "case0005-payment:owner",
+          "kind": "FundingSource",
+          "version": "1"
+        },
+        "contract_ref": {
+          "kind": "Contract",
+          "id": "case0005-payment:supplemental-EVT000370",
+          "version": "50"
+        },
+        "certificate_ref": null,
+        "requestable": {
+          "state": "known",
+          "value": false
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "Contract",
+        "id": "case0005-payment:supplemental-EVT000370",
+        "version": "50"
+      },
+      "value": {
+        "ref": {
+          "kind": "Contract",
+          "id": "case0005-payment:supplemental-EVT000370",
+          "version": "50"
+        },
+        "scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "available_at": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        },
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        ],
+        "contractor_id": "COMP-0191",
+        "client_id": "OWNER-4048bdd520aa7f",
+        "currency": "HKD",
+        "effective": {
+          "state": "known",
+          "value": true
+        },
+        "settlement_rule_ref": {
+          "kind": "SettlementRule",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "measurement_application_refs": [],
+        "measurement_history_complete": false,
+        "certificate_refs": [],
+        "obligation_refs": [
+          {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          }
+        ],
+        "execution_refs": [
+          {
+            "kind": "PaymentExecution",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "version": "1"
+          }
+        ],
+        "payment_history_complete": true,
+        "as_of": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "SettlementRule",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "SettlementRule",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "available_at": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        },
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        ],
+        "contract_ref": {
+          "kind": "Contract",
+          "id": "case0005-payment:supplemental-EVT000370",
+          "version": "50"
+        },
+        "organization_id": "COMP-0191",
+        "actor_id": "COMP-0191",
+        "function_ref": {
+          "kind": "FunctionAssignment",
+          "id": "case0005-payment:Contractor",
+          "version": "1"
+        },
+        "authority_ref": {
+          "kind": "Authorization",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "procedure_ref": {
+          "kind": "SettlementProcedure",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "choice": "reconcile",
+        "business_key": "supplemental:contractor-successor-1",
+        "measurement": null,
+        "component_refs": [],
+        "account_ref": null,
+        "lines": [],
+        "allow_partial": false,
+        "financing": null,
+        "execution_refs": [
+          {
+            "kind": "PaymentExecution",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "version": "1"
+          }
+        ],
+        "obligation_refs": [
+          {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          }
+        ],
+        "issue_refs": [],
+        "basis_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          },
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          }
+        ],
+        "note": "Reconcile actual commands and receipts in the two-request supplemental ledger; do not request the paid amount again."
+      }
+    },
+    {
+      "ref": {
+        "kind": "SettlementProcedure",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "SettlementProcedure",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "available_at": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        },
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        ],
+        "contract_ref": {
+          "kind": "Contract",
+          "id": "case0005-payment:supplemental-EVT000370",
+          "version": "50"
+        },
+        "permitted_choices": [
+          "reconcile"
+        ],
+        "permitted": {
+          "state": "known",
+          "value": true
+        },
+        "recipient_ids": [
+          "OWNER-4048bdd520aa7f"
+        ],
+        "valuation_basis_refs": []
+      }
+    },
+    {
+      "ref": {
+        "kind": "PaymentExecution",
+        "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "version": "1"
+      },
+      "value": {
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          }
+        ],
+        "scope": {
+          "kind": "project",
+          "ref": {
+            "kind": "Project",
+            "id": "CASE-0005",
+            "version": "1"
+          },
+          "coverage_refs": [
+            {
+              "kind": "WorkScope",
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "version": "1"
+            }
+          ]
+        },
+        "available_at": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "ref": {
+          "kind": "PaymentExecution",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "version": "1"
+        },
+        "organization_id": "OWNER-4048bdd520aa7f",
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "authorization_ref": {
+          "kind": "PaymentAuthorization",
+          "id": "case0005-payment:pay-two-requests",
+          "version": "1"
+        },
+        "operation": "pay",
+        "account_ref": {
+          "kind": "Account",
+          "id": "case0005-payment:owner",
+          "version": "1"
+        },
+        "arrangement_ref": null,
+        "obligation_refs": [
+          {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          }
+        ],
+        "component_refs": [
+          {
+            "kind": "SettlementComponent",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          }
+        ],
+        "beneficiary_id": "COMP-0191",
+        "amount": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        },
+        "status": "succeeded",
+        "receipt_ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "PaymentReceipt",
+        "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+        "version": "1"
+      },
+      "value": {
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          }
+        ],
+        "scope": {
+          "kind": "project",
+          "ref": {
+            "kind": "Project",
+            "id": "CASE-0005",
+            "version": "1"
+          },
+          "coverage_refs": [
+            {
+              "kind": "WorkScope",
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "version": "1"
+            }
+          ]
+        },
+        "available_at": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "version": "1"
+          },
+          "offset": 49
+        },
+        "effective_window": {
+          "start": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "kind": "ClockProfile",
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "ref": {
+          "kind": "PaymentReceipt",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+          "version": "1"
+        },
+        "execution_ref": {
+          "kind": "PaymentExecution",
+          "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+          "version": "1"
+        },
+        "command_id": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "business_key": "4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+        "amount": {
+          "value": "22000000",
+          "currency": "HKD",
+          "basis_ref": {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        },
+        "beneficiary_id": "COMP-0191",
+        "status": "succeeded"
+      }
+    },
+    {
+      "ref": {
+        "kind": "Account",
+        "id": "case0005-payment:contractor",
+        "version": "50"
+      },
+      "value": {
+        "ref": {
+          "kind": "Account",
+          "id": "case0005-payment:contractor",
+          "version": "50"
+        },
+        "evidence_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          },
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          }
+        ],
+        "organization_id": "COMP-0191",
+        "source_ref": {
+          "kind": "FundingSource",
+          "id": "case0005-payment:contractor",
+          "version": "50"
+        },
+        "currency": "HKD",
+        "region_id": "Macau",
+        "actual_cash": {
+          "state": "known",
+          "value": {
+            "value": "44000000",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        "restricted_cash": {
+          "state": "known",
+          "value": {
+            "value": "0",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        "reserved_cash": {
+          "state": "known",
+          "value": {
+            "value": "0",
+            "currency": "HKD",
+            "basis_ref": {
+              "kind": "Evidence",
+              "id": "case0005-payment:explicit-opening-assumptions",
+              "version": "1"
+            }
+          }
+        },
+        "debt_refs": [],
+        "obligation_refs": [
+          {
+            "kind": "Obligation",
+            "id": "case0005-payment:EVT000370",
+            "version": "1"
+          }
+        ],
+        "as_of": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        },
+        "coverage": "complete",
+        "pending_execution_refs": [],
+        "execution_coverage": "complete",
+        "reservation_refs": []
+      }
+    },
+    {
+      "ref": {
+        "kind": "FunctionAssignment",
+        "id": "case0005-payment:Contractor",
+        "version": "1"
+      },
+      "value": {
+        "role": "Contractor",
+        "function_ref": {
+          "kind": "FunctionAssignment",
+          "id": "case0005-payment:Contractor",
+          "version": "1"
+        },
+        "configuration_version": "1",
+        "basis_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        ]
+      }
+    },
+    {
+      "ref": {
+        "kind": "CandidateSet",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      "value": {
+        "operation_id": "supplemental:contractor-successor-1",
+        "scope": {
+          "coverage_refs": [
+            {
+              "id": "progress-payment:t14:COMP-0191:funded-work",
+              "kind": "WorkScope",
+              "version": "1"
+            }
+          ],
+          "kind": "project",
+          "ref": {
+            "id": "CASE-0005",
+            "kind": "Project",
+            "version": "1"
+          }
+        },
+        "as_of": {
+          "clock_ref": {
+            "id": "case0005-model-lifecycle-20261026-monthly-clock",
+            "kind": "ClockProfile",
+            "version": "1"
+          },
+          "offset": 50
+        },
+        "candidates": [
+          {
+            "ref": {
+              "kind": "PaymentExecution",
+              "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+              "version": "1"
+            },
+            "permitted_choices": [
+              "reconcile"
+            ]
+          }
+        ],
+        "search_profile_ref": {
+          "kind": "Profile",
+          "id": "case0005-payment:payment-phase",
+          "version": "1"
+        }
+      }
+    },
+    {
+      "ref": {
+        "kind": "Authorization",
+        "id": "case0005-payment:contractor-successor-1",
+        "version": "1"
+      },
+      "value": {
+        "ref": {
+          "kind": "Authorization",
+          "id": "case0005-payment:contractor-successor-1",
+          "version": "1"
+        },
+        "organization_id": "COMP-0191",
+        "actor_id": "COMP-0191",
+        "function_ref": {
+          "kind": "FunctionAssignment",
+          "id": "case0005-payment:Contractor",
+          "version": "1"
+        },
+        "action_ids": [
+          "CONTRACTOR-A10"
+        ],
+        "scopes": [
+          {
+            "coverage_refs": [
+              {
+                "id": "progress-payment:t14:COMP-0191:funded-work",
+                "kind": "WorkScope",
+                "version": "1"
+              }
+            ],
+            "kind": "project",
+            "ref": {
+              "id": "CASE-0005",
+              "kind": "Project",
+              "version": "1"
+            }
+          }
+        ],
+        "readable_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          },
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:execution-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          },
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:settlement-4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98",
+            "version": "1"
+          },
+          {
+            "id": "case0005-payment:EVT000370",
+            "kind": "Obligation",
+            "version": "1"
+          },
+          {
+            "id": "case0005-payment:EVT000370",
+            "kind": "SettlementComponent",
+            "version": "1"
+          },
+          {
+            "kind": "Contract",
+            "id": "case0005-payment:supplemental-EVT000370",
+            "version": "50"
+          },
+          {
+            "kind": "SettlementRule",
+            "id": "case0005-payment:contractor-successor-1",
+            "version": "1"
+          },
+          {
+            "kind": "SettlementProcedure",
+            "id": "case0005-payment:contractor-successor-1",
+            "version": "1"
+          },
+          {
+            "kind": "PaymentExecution",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0",
+            "version": "1"
+          },
+          {
+            "kind": "PaymentReceipt",
+            "id": "case0005-payment:4efa85fb7c060cb53cedfdcad3e581912f36f79ca38107cb3a8dda324f98fa98:0:receipt",
+            "version": "1"
+          },
+          {
+            "kind": "Account",
+            "id": "case0005-payment:contractor",
+            "version": "50"
+          },
+          {
+            "kind": "FunctionAssignment",
+            "id": "case0005-payment:Contractor",
+            "version": "1"
+          },
+          {
+            "kind": "CandidateSet",
+            "id": "case0005-payment:contractor-successor-1",
+            "version": "1"
+          },
+          {
+            "kind": "Authorization",
+            "id": "case0005-payment:contractor-successor-1",
+            "version": "1"
+          }
+        ],
+        "tool_ids": [],
+        "validity": {
+          "start": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 49
+          },
+          "end": {
+            "clock_ref": {
+              "id": "case0005-model-lifecycle-20261026-monthly-clock",
+              "kind": "ClockProfile",
+              "version": "1"
+            },
+            "offset": 56
+          },
+          "bounds": "closed_open"
+        },
+        "basis_refs": [
+          {
+            "kind": "Evidence",
+            "id": "case0005-payment:explicit-opening-assumptions",
+            "version": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-06-missing_core",
+  "arm": "v2_5",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "ed8c08f1d79077f2",
+  "role": "supervisor",
+  "annotated_action": "decline_based_on_name_inferred_design_identity_and_capability_mismatch",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-06-missing_core-v2_5-r2/attempt-1.json",
+  "response_sha256": "53080bdb849aefe3ca547e36e419d1ac07ece9896fded00f8bea57d959d88a33",
+  "call_id": "attempt_002_call_000132",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "以设计企业身份单独承担监理责任，将造成责任与能力错配",
+    "reason": "仅凭名称把公司定为设计主业并推断监管能力责任错配，实际范围和行业未给。人员未决可支持谨慎，但不能证明这一核心不匹配结论。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 144,
+      "end": 170,
+      "quote": "以设计企业身份单独承担监理责任，将造成责任与能力错配"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "与公司以设计为主业的业务定位和责任线不一致",
+      "reason": "无来源的设计主业被作为实际业务边界，未知监管资料不能证明责任能力不一致。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 67,
+        "end": 88,
+        "quote": "与公司以设计为主业的业务定位和责任线不一致"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "现有资料未能提供公司在监理范围、同类经验、相关资质及交付资产方面的可核实依据",
+      "reason": "说明不推进及监督证据缺口，但没有证据改善后重审触发，直接转向无来源设计主营机会；不要求另造完整检查方案。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 89,
+        "end": 127,
+        "quote": "现有资料未能提供公司在监理范围、同类经验、相关资质及交付资产方面的可核实依据"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期尚未确认，属于提交前必须落实的前置条件",
+      "reason": "人员尚未确认及其正式承诺后果保留，未把企业总人数当实际可派驻，拒绝分支无需编造班组。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 186,
+        "end": 215,
+        "quote": "本包指定岗位人员档期尚未确认，属于提交前必须落实的前置条件"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "监理的独立性与责任归属难以在组合体框架下合理切分",
+      "reason": "原必要人员条件仍未解决，但独立监督与联合投标难以相容的排除性判断没有本题事实支持，不据此把唯一投标身份当必然要求。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 244,
+        "end": 268,
+        "quote": "监理的独立性与责任归属难以在组合体框架下合理切分"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "missing",
+      "reason": "核心为无来源设计主业错配和通用监督风险，没有实际居住建筑、澳门或业主条件怎样改变监督重点或行动理由的联系。",
+      "evidence": null,
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.2,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND06_both_conditions.json",
+  "authored_labels_sha256": "6122a2f49cac2683481bb9f5aa5c93f23c4224be06b5449f74640f99fd4a2b61",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

@@ -1,0 +1,114 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-08",
+    "arm": "v2_baseline",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-08",
+    "expected_business_property": "Keep package-specific staff availability unresolved unless a visible reviewed source establishes it. Aggregate headcount, past work and internal consensus do not settle the open checks.",
+    "core_question_register": [
+      {
+        "question": "请商务团队先核实工程量清单的完整性，评估潜在变更风险，再决定是否单独投标",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务同事先确认联合体伙伴的资质和过往业绩，这决定我们能不能投",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议优先考虑联合体投标，需先核实伙伴能力",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "倾向联合体投标，但需先核实伙伴质量能力",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请商务组核实联合体伙伴的资质和文档管理能力，确保满足招标要求",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "倾向联合体投标，需先核实伙伴能力",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我建议先让资源部给一份团队可用性摘要，确认项目经理和MEP协调员能否抽调",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0150",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "管理层认为施工总承包包与建利工程的业务方向和代表项目经验匹配，土建、装修、公共设施及交通民生设施施工的组织、安全与进度控制是我们的核心能力。内部同事倾向组合体，主要担忧是公开数据缺口、MEP协调和总价包干风险；但这些属于投标文件呈现、分包管理、定价基础和风险应对层面，可由我们作为单一责任主体通过项目经理、MEP协调员和常规专业分包管控，不需要另一家企业共享投标人身份和包级交付责任。当前真正的约束是团队可用性尚未证实、工程量清单完整性未核实、总价包干变更风险未评估。因此决定以单一投标人身份推进投标，把上述三项作为投标前内部落实条件，若资源确实无法抽调则退出，而不是以组合体掩盖资源缺口。",
+    "content": "管理层决定：就施工总承包包以建利工程有限公司单一投标人身份推进投标。理由是本包土建、安装、装饰装修、室外及临时设施的施工管理、质量控制、安全管理和进度控制，与我方运动场地、公共设施装修、公共房屋及交通民生设施的代表项目经验对口，施工组织、安全和进度控制是我们的既有能力。MEP协调、城市施工物流和供应商安装接口按施工总承包常规管理处理，通过明确的分包范围、接口责任矩阵、协调会议和文档记录加以控制，不作为组合体理由。投标文件将按业主要求提交团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图，并针对总价包干下的变更与接口风险给出风险应对。投标前须完成三项内部落实：资源部出具团队可用性摘要，确认项目经理和MEP协调员可抽调；商务团队核实工程量清单完整性并评估变更风险；据此形成价格基础和风险准备。若团队可用性无法满足，则退出本次投标，不以组合体替代资源缺口。",
+    "verification_requests": [
+      {
+        "question": "请资源部出具团队可用性摘要，确认项目经理和MEP协调员能否为本包抽调，并说明关键岗位的可用时段",
+        "required_before_submission": true
+      },
+      {
+        "question": "请商务团队核实工程量清单的完整性，识别缺项、漏项和潜在变更点，形成总价包干报价的风险清单",
+        "required_before_submission": true
+      },
+      {
+        "question": "请确认本包对投标人资质、施工注册及业绩证明的具体要求，核对我方现有文件是否满足",
+        "required_before_submission": true
+      }
+    ],
+    "unresolved_condition_ids": [
+      "condition_3a6de127e3b5296f11e8",
+      "condition_fb078e9a4eeb6b001dca",
+      "condition_e17dfd0ab9ec1bd9ba91",
+      "condition_5ab7be337d605c453cd8",
+      "condition_8c9220fc0be2beaf601f",
+      "condition_d02b7b610bd25b5b1c4d",
+      "condition_a4d2dbc5e8881b440ecb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "以建利工程有限公司作为单一投标人和单一责任主体提交投标，不组建组合体",
+      "MEP协调、专项安装和室外工程按常规专业分包管理，分包范围、接口责任和验收标准在投标文件中明确",
+      "项目经理和MEP协调员从现有团队抽调，具体人选以资源部团队可用性摘要为准",
+      "报价按工程量清单总价包干编制，包含施工费、管理费及接口协调费用，变更风险在价格基础中预留",
+      "质量文档、安全记录、进度报告和接口协调记录由我方统一建立和归档",
+      "若团队可用性摘要显示关键岗位无法抽调，则退出本次投标"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-08-v2_baseline-r3\\final-attempt-1.json",
+  "source_sha256": "186b8d4522e3a0132744a153c7bfbda08aa5225ec38c4af23fa25e4aa4227097",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-08",
+      "arm": "v2_baseline",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

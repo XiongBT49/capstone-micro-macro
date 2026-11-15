@@ -1,0 +1,56 @@
+{
+  "schema_version": "case-library-lifecycle.v1",
+  "entry_kind": "case_library_initial_project",
+  "case_id": "CASE-0021",
+  "run_id": "CP03X-CASE-0021-r1-S",
+  "base_config": "config/origin_model_lifecycle_case.json",
+  "mode": "model",
+  "ticks": 48,
+  "tender_open_tick": 12,
+  "contract_duration": 24,
+  "scenario_budget": 150000000,
+  "scenario_currency": "HKD",
+  "technical_complexity": 0.6,
+  "random_seed": 42,
+  "model_options": {
+    "strategy": "single_agent",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "alternate_markup_fraction": "0.2",
+    "max_calls": 2,
+    "max_prompt_chars": 300000
+  },
+  "api_total_attempt_cap": 2,
+  "scope": "CASE-0005 public background via original initiation entry. Only A02 pricing calls the model. Initial investment choice and initial bank selection are outside this imported-project entry. All costs, duration and numerical capabilities are explicit scenario assumptions; no historical winner is imported.",
+  "research_arm": "S",
+  "domain_region": {
+    "region": "Macau",
+    "native_project_type": "building",
+    "source_project_type": "公共服务建筑",
+    "source_location": "澳门",
+    "domain": "border_building_construction_and_extension",
+    "scope_title": "边检大楼建造及扩建命名范围",
+    "work_type_code": "controlled-border_building_construction_and_extension",
+    "design_scope": "拟议边检建筑及既有设施连接接口设计",
+    "construction_scope": "边检大楼建筑及扩建接口施工",
+    "supply_scope": "建筑结构与配套设施材料",
+    "scope_class": "scope_unclear_from_input",
+    "macro_family_id": "family-border-gate-building",
+    "scope_note": "建造及扩建可能包含多期，现有输入不足以断定单次完整合同或各阶段边界。",
+    "stage_mapping": [
+      "命名范围的启动与融资",
+      "拟议边检建筑及既有设施连接接口设计",
+      "该范围的造价咨询与独立合成文件审查",
+      "两家情景承包方对同一命名作业范围各选一个合法定价选项",
+      "边检大楼建筑及扩建接口施工",
+      "该范围的供应交接、执行记录、完工与结算",
+      "实际本业主结算进入后轮机会判断"
+    ],
+    "boundary": "Complete controlled lifecycle within the named source scope. Work-package/unclear rows are not full-parent-asset validation and are excluded from the whole-project stratum. No extra A02 windows. Domain text and methods are proposed scenario inputs, not observed technical specifications or calibrated physical behavior."
+  },
+  "cp03_control": {
+    "arm": "S",
+    "chain_id": "CASE-0021-r1-S",
+    "batch_directory": "D:\\hkura\\codedemo_v2\\Capstone报告\\验证体系\\实验\\2026-11-13_CP03X宏观扩样"
+  }
+}

@@ -1,0 +1,1149 @@
+{
+  "schema_version": "owner-invitation-input.v1",
+  "run_id": "CP03-CASE-0010-r1-D3",
+  "plans": [
+    {
+      "organization_id": "dev-owner",
+      "project_id": "dev-tender-project",
+      "tick": 1,
+      "context": {
+        "run_id": "CP03-CASE-0010-r1-D3",
+        "actor_id": "dev-owner",
+        "function_ref": {
+          "kind": "FunctionAssignment",
+          "id": "dev-owner-function",
+          "version": "1"
+        },
+        "authorization_refs": [
+          {
+            "kind": "Authorization",
+            "id": "dev-owner-grant",
+            "version": "1"
+          }
+        ],
+        "operation_id": "dev-owner-native-invitation",
+        "contract_ref": {
+          "kind": "ActionContract",
+          "id": "OWN-A09",
+          "version": "1"
+        },
+        "task_ref": {
+          "kind": "DecisionTask",
+          "id": "dev-owner-native-invitation",
+          "version": "1"
+        },
+        "scope": {
+          "kind": "project",
+          "ref": {
+            "kind": "Project",
+            "id": "dev-tender-project",
+            "version": "1"
+          },
+          "coverage_refs": [
+            {
+              "kind": "WorkScope",
+              "id": "dev-work",
+              "version": "1"
+            }
+          ]
+        },
+        "business_time": {
+          "clock_ref": {
+            "kind": "ClockProfile",
+            "id": "dev-clock",
+            "version": "1"
+          },
+          "offset": 1
+        },
+        "read_token": "dev-owner-native-invitation-read",
+        "visible_refs": [
+          {
+            "kind": "Evidence",
+            "id": "dev-owner-assumptions",
+            "version": "1"
+          },
+          {
+            "kind": "FunctionAssignment",
+            "id": "dev-owner-function",
+            "version": "1"
+          },
+          {
+            "kind": "Authorization",
+            "id": "dev-owner-grant",
+            "version": "1"
+          },
+          {
+            "kind": "Evidence",
+            "id": "dev-owner-invitation-native-request",
+            "version": "1"
+          },
+          {
+            "kind": "ProcurementPackage",
+            "id": "dev-owner-invitation-package",
+            "version": "1"
+          },
+          {
+            "kind": "ProcurementProcedure",
+            "id": "dev-owner-invitation-procedure",
+            "version": "1"
+          },
+          {
+            "kind": "TenderEvaluationProfile",
+            "id": "dev-owner-invitation-profile",
+            "version": "1"
+          },
+          {
+            "kind": "TenderRound",
+            "id": "dev-owner-invitation-round",
+            "version": "1"
+          },
+          {
+            "kind": "FundingPosition",
+            "id": "dev-owner-invitation-funding",
+            "version": "1"
+          },
+          {
+            "kind": "TimeWindow",
+            "id": "dev-owner-invitation-window",
+            "version": "1"
+          },
+          {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-a",
+            "version": "1"
+          },
+          {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-b",
+            "version": "1"
+          },
+          {
+            "kind": "CandidateSet",
+            "id": "dev-owner-invitation-candidates",
+            "version": "1"
+          }
+        ],
+        "candidate_set_ref": {
+          "kind": "CandidateSet",
+          "id": "dev-owner-invitation-candidates",
+          "version": "1"
+        },
+        "execution_mode": "rule"
+      },
+      "action_input": {
+        "package_context": {
+          "kind": "published",
+          "package_ref": {
+            "kind": "ProcurementPackage",
+            "id": "dev-owner-invitation-package",
+            "version": "1"
+          }
+        },
+        "round_refs": [
+          {
+            "kind": "TenderRound",
+            "id": "dev-owner-invitation-round",
+            "version": "1"
+          }
+        ],
+        "bidder_refs": [
+          {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-a",
+            "version": "1"
+          },
+          {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-b",
+            "version": "1"
+          }
+        ],
+        "bid_refs": [],
+        "evaluation_profile_ref": {
+          "kind": "TenderEvaluationProfile",
+          "id": "dev-owner-invitation-profile",
+          "version": "1"
+        },
+        "funding_ref": {
+          "kind": "FundingPosition",
+          "id": "dev-owner-invitation-funding",
+          "version": "1"
+        }
+      },
+      "objects": [
+        {
+          "ref": {
+            "kind": "Evidence",
+            "id": "dev-owner-assumptions",
+            "version": "1"
+          },
+          "value": {
+            "ref": {
+              "kind": "Evidence",
+              "id": "dev-owner-assumptions",
+              "version": "1"
+            },
+            "source_kind": "synthetic",
+            "basis_kind": "assumed",
+            "locator": "development:dev-owner",
+            "content_hash": "35640bac309a3a4ef16941dfb52b1a4c7233dea141e330d67206da6ac9fe2578",
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            }
+          }
+        },
+        {
+          "ref": {
+            "kind": "FunctionAssignment",
+            "id": "dev-owner-function",
+            "version": "1"
+          },
+          "value": {
+            "role": "Owner",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "dev-owner-function",
+              "version": "1"
+            },
+            "configuration_version": "1",
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ]
+          }
+        },
+        {
+          "ref": {
+            "kind": "Authorization",
+            "id": "dev-owner-grant",
+            "version": "1"
+          },
+          "value": {
+            "ref": {
+              "kind": "Authorization",
+              "id": "dev-owner-grant",
+              "version": "1"
+            },
+            "organization_id": "dev-owner",
+            "actor_id": "dev-owner",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "dev-owner-function",
+              "version": "1"
+            },
+            "action_ids": [
+              "OWN-A09"
+            ],
+            "scopes": [
+              {
+                "kind": "project",
+                "ref": {
+                  "kind": "Project",
+                  "id": "dev-tender-project",
+                  "version": "1"
+                },
+                "coverage_refs": [
+                  {
+                    "kind": "WorkScope",
+                    "id": "dev-work",
+                    "version": "1"
+                  }
+                ]
+              }
+            ],
+            "readable_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              },
+              {
+                "kind": "FunctionAssignment",
+                "id": "dev-owner-function",
+                "version": "1"
+              },
+              {
+                "kind": "Authorization",
+                "id": "dev-owner-grant",
+                "version": "1"
+              },
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-invitation-native-request",
+                "version": "1"
+              },
+              {
+                "kind": "ProcurementPackage",
+                "id": "dev-owner-invitation-package",
+                "version": "1"
+              },
+              {
+                "kind": "ProcurementProcedure",
+                "id": "dev-owner-invitation-procedure",
+                "version": "1"
+              },
+              {
+                "kind": "TenderEvaluationProfile",
+                "id": "dev-owner-invitation-profile",
+                "version": "1"
+              },
+              {
+                "kind": "TenderRound",
+                "id": "dev-owner-invitation-round",
+                "version": "1"
+              },
+              {
+                "kind": "FundingPosition",
+                "id": "dev-owner-invitation-funding",
+                "version": "1"
+              },
+              {
+                "kind": "TimeWindow",
+                "id": "dev-owner-invitation-window",
+                "version": "1"
+              },
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-a",
+                "version": "1"
+              },
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-b",
+                "version": "1"
+              },
+              {
+                "kind": "CandidateSet",
+                "id": "dev-owner-invitation-candidates",
+                "version": "1"
+              }
+            ],
+            "tool_ids": [],
+            "basis_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "validity": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            }
+          }
+        },
+        {
+          "ref": {
+            "kind": "Evidence",
+            "id": "dev-owner-invitation-native-request",
+            "version": "1"
+          },
+          "value": {
+            "ref": {
+              "kind": "Evidence",
+              "id": "dev-owner-invitation-native-request",
+              "version": "1"
+            },
+            "source_kind": "synthetic",
+            "basis_kind": "observed",
+            "locator": "native-owner-invitation:current-request",
+            "content_hash": null,
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            }
+          }
+        },
+        {
+          "ref": {
+            "kind": "ProcurementPackage",
+            "id": "dev-owner-invitation-package",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "ProcurementPackage",
+              "id": "dev-owner-invitation-package",
+              "version": "1"
+            },
+            "owner_organization_id": "dev-owner",
+            "owner_actor_id": "dev-owner",
+            "authority_ref": {
+              "kind": "Authorization",
+              "id": "dev-owner-grant",
+              "version": "1"
+            },
+            "procedure_ref": {
+              "kind": "ProcurementProcedure",
+              "id": "dev-owner-invitation-procedure",
+              "version": "1"
+            },
+            "evaluation_profile_ref": {
+              "kind": "TenderEvaluationProfile",
+              "id": "dev-owner-invitation-profile",
+              "version": "1"
+            },
+            "requirement_refs": [],
+            "round_refs": [
+              {
+                "kind": "TenderRound",
+                "id": "dev-owner-invitation-round",
+                "version": "1"
+              }
+            ],
+            "bidder_refs": [
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-a",
+                "version": "1"
+              },
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-b",
+                "version": "1"
+              }
+            ],
+            "status": "published"
+          }
+        },
+        {
+          "ref": {
+            "kind": "ProcurementProcedure",
+            "id": "dev-owner-invitation-procedure",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "ProcurementProcedure",
+              "id": "dev-owner-invitation-procedure",
+              "version": "1"
+            },
+            "owner_organization_id": "dev-owner",
+            "authority_ref": {
+              "kind": "Authorization",
+              "id": "dev-owner-grant",
+              "version": "1"
+            },
+            "required_technical_submission_refs": [],
+            "requirement_refs": [],
+            "quantity_required": false,
+            "quantity_basis_ref": null,
+            "evaluation_profile_ref": {
+              "kind": "TenderEvaluationProfile",
+              "id": "dev-owner-invitation-profile",
+              "version": "1"
+            },
+            "submission_window_ref": {
+              "kind": "TimeWindow",
+              "id": "dev-owner-invitation-window",
+              "version": "1"
+            },
+            "publication_permission": {
+              "state": "known",
+              "value": true
+            },
+            "publication_mode": "invitation",
+            "minimum_authorized_budget": {
+              "state": "known",
+              "value": {
+                "value": "0",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "dev-owner-assumptions",
+                  "version": "1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ref": {
+            "kind": "TenderEvaluationProfile",
+            "id": "dev-owner-invitation-profile",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "TenderEvaluationProfile",
+              "id": "dev-owner-invitation-profile",
+              "version": "1"
+            },
+            "owner_organization_id": "dev-owner",
+            "author_actor_id": "dev-owner",
+            "author_function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "dev-owner-function",
+              "version": "1"
+            },
+            "author_authority_ref": {
+              "kind": "Authorization",
+              "id": "dev-owner-grant",
+              "version": "1"
+            },
+            "package_ref": {
+              "kind": "ProcurementPackage",
+              "id": "dev-owner-invitation-package",
+              "version": "1"
+            },
+            "procedure_ref": {
+              "kind": "ProcurementProcedure",
+              "id": "dev-owner-invitation-procedure",
+              "version": "1"
+            },
+            "choice_order": [
+              "invite"
+            ],
+            "criteria": [],
+            "invitation_bidder_refs": [
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-a",
+                "version": "1"
+              },
+              {
+                "kind": "EligibleBidder",
+                "id": "dev-owner-invitation-dev-contractor-b",
+                "version": "1"
+              }
+            ],
+            "selected_round_ref": null,
+            "clarification_ref": null,
+            "negotiation_bid_ref": null,
+            "negotiation_questions": [],
+            "transition_ref": null,
+            "tie_policy": "retain_equal_groups_require_explicit_award_choice"
+          }
+        },
+        {
+          "ref": {
+            "kind": "TenderRound",
+            "id": "dev-owner-invitation-round",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "TenderRound",
+              "id": "dev-owner-invitation-round",
+              "version": "1"
+            },
+            "package_ref": {
+              "kind": "ProcurementPackage",
+              "id": "dev-owner-invitation-package",
+              "version": "1"
+            },
+            "owner_organization_id": "dev-owner",
+            "evaluation_profile_ref": {
+              "kind": "TenderEvaluationProfile",
+              "id": "dev-owner-invitation-profile",
+              "version": "1"
+            },
+            "bid_refs": [],
+            "status": "open",
+            "accepts_new_bids": true,
+            "accepts_awards": false,
+            "pending_selection_refs": [],
+            "reservation_refs": [],
+            "established_contract_refs": []
+          }
+        },
+        {
+          "ref": {
+            "kind": "FundingPosition",
+            "id": "dev-owner-invitation-funding",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "FundingPosition",
+              "id": "dev-owner-invitation-funding",
+              "version": "1"
+            },
+            "owner_organization_id": "dev-owner",
+            "authority_ref": {
+              "kind": "Authorization",
+              "id": "dev-owner-grant",
+              "version": "1"
+            },
+            "as_of": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "authorized_limit": {
+              "state": "known",
+              "value": {
+                "value": "1000",
+                "currency": "HKD",
+                "basis_ref": {
+                  "kind": "Evidence",
+                  "id": "dev-owner-assumptions",
+                  "version": "1"
+                }
+              }
+            },
+            "kind": "authorized_procurement_budget",
+            "coverage": "complete",
+            "prior_commitments": []
+          }
+        },
+        {
+          "ref": {
+            "kind": "TimeWindow",
+            "id": "dev-owner-invitation-window",
+            "version": "1"
+          },
+          "value": {
+            "start": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 0
+            },
+            "end": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 5
+            },
+            "bounds": "closed_open"
+          }
+        },
+        {
+          "ref": {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-a",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "EligibleBidder",
+              "id": "dev-owner-invitation-dev-contractor-a",
+              "version": "1"
+            },
+            "organization_id": "dev-contractor-a",
+            "actor_id": "dev-contractor-a",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "dev-contractor-a-function",
+              "version": "1"
+            },
+            "invitation_permission": {
+              "state": "known",
+              "value": true
+            },
+            "eligibility": {
+              "state": "known",
+              "value": true
+            },
+            "eligibility_rule_refs": [],
+            "status": "active"
+          }
+        },
+        {
+          "ref": {
+            "kind": "EligibleBidder",
+            "id": "dev-owner-invitation-dev-contractor-b",
+            "version": "1"
+          },
+          "value": {
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "available_at": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "effective_window": {
+              "start": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 0
+              },
+              "end": {
+                "clock_ref": {
+                  "kind": "ClockProfile",
+                  "id": "dev-clock",
+                  "version": "1"
+                },
+                "offset": 100
+              },
+              "bounds": "closed_open"
+            },
+            "evidence_refs": [
+              {
+                "kind": "Evidence",
+                "id": "dev-owner-assumptions",
+                "version": "1"
+              }
+            ],
+            "ref": {
+              "kind": "EligibleBidder",
+              "id": "dev-owner-invitation-dev-contractor-b",
+              "version": "1"
+            },
+            "organization_id": "dev-contractor-b",
+            "actor_id": "dev-contractor-b",
+            "function_ref": {
+              "kind": "FunctionAssignment",
+              "id": "dev-contractor-b-function",
+              "version": "1"
+            },
+            "invitation_permission": {
+              "state": "known",
+              "value": true
+            },
+            "eligibility": {
+              "state": "known",
+              "value": true
+            },
+            "eligibility_rule_refs": [],
+            "status": "active"
+          }
+        },
+        {
+          "ref": {
+            "kind": "CandidateSet",
+            "id": "dev-owner-invitation-candidates",
+            "version": "1"
+          },
+          "value": {
+            "operation_id": "dev-owner-native-invitation",
+            "scope": {
+              "kind": "project",
+              "ref": {
+                "kind": "Project",
+                "id": "dev-tender-project",
+                "version": "1"
+              },
+              "coverage_refs": [
+                {
+                  "kind": "WorkScope",
+                  "id": "dev-work",
+                  "version": "1"
+                }
+              ]
+            },
+            "as_of": {
+              "clock_ref": {
+                "kind": "ClockProfile",
+                "id": "dev-clock",
+                "version": "1"
+              },
+              "offset": 1
+            },
+            "candidates": [
+              {
+                "ref": {
+                  "kind": "ProcurementPackage",
+                  "id": "dev-owner-invitation-package",
+                  "version": "1"
+                },
+                "permitted_choices": [
+                  "invite"
+                ]
+              }
+            ],
+            "search_profile_ref": {
+              "kind": "Profile",
+              "id": "dev-owner-invitation-explicit-exposure",
+              "version": "1"
+            }
+          }
+        }
+      ],
+      "native_evidence_ref": {
+        "kind": "Evidence",
+        "id": "dev-owner-invitation-native-request",
+        "version": "1"
+      },
+      "utility": {
+        "value": "0.5",
+        "unit": "score",
+        "basis_ref": {
+          "kind": "Evidence",
+          "id": "dev-owner-assumptions",
+          "version": "1"
+        }
+      },
+      "probability": {
+        "value": "1",
+        "unit": "probability",
+        "basis_ref": {
+          "kind": "Evidence",
+          "id": "dev-owner-assumptions",
+          "version": "1"
+        }
+      }
+    }
+  ]
+}

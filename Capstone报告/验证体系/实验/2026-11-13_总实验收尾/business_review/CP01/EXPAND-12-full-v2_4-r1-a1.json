@@ -1,0 +1,155 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-12-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "bf78172ef4455cd2",
+  "role": "supervisor",
+  "annotated_action": "consortium_intention_after_expanding_monitor_role_to_whole_EPC",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-12-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "ae4d81f3063eae1f2f97c9556308362b91d118c6cccb6dfc6305dae12b14da69",
+  "call_id": "attempt_002_call_000184",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "要求投标人承担设计、施工与整体交付责任",
+    "reason": "当前任务是独立监理，项目EPC背景不使本方承担整包设计施工；据此认定单独监理不匹配并要求加入EPC联合投标，改变了职责。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 20,
+      "end": 39,
+      "quote": "要求投标人承担设计、施工与整体交付责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "共享投标人身份与包级责任",
+      "reason": "实际监理业务范围引用正确，却把监理角色扩为承担EPC包级责任的联合体成员，监督与施工职责边界错误。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 171,
+        "end": 183,
+        "quote": "共享投标人身份与包级责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "本公司在组合体内承担监理、质量控制与项目协调角色",
+      "reason": "提到监理质量协调，但没有展开两项独立检查、记录或审查安排，主要讨论联合体身份。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 184,
+        "end": 208,
+        "quote": "本公司在组合体内承担监理、质量控制与项目协调角色"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "报价与工期安排将在伙伴与人员档期确认后另行拟定",
+      "reason": "未冒称人员已落实，但没有本方监督岗位组织或人员落实责任安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 261,
+        "end": 284,
+        "quote": "报价与工期安排将在伙伴与人员档期确认后另行拟定"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "由具备EPC交付能力的主体牵头",
+      "reason": "原人员必要前提和伙伴未确认保持，但新增EPC牵头共享身份建立在错误扩大的责任上。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 155,
+        "end": 170,
+        "quote": "由具备EPC交付能力的主体牵头"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "contradicted",
+      "quote": "本包为EPC交付模式，要求投标人承担设计、施工与整体交付责任",
+      "reason": "唯一实质模式考虑被错误应用为当前监理投标人的整包义务，不能算正确使用项目条件。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 31,
+        "end": 61,
+        "quote": "本包为EPC交付模式，要求投标人承担设计、施工与整体交付责任"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.0,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "具体分工与伙伴身份尚待落实",
+      "reason": "有人员与伙伴未落实边界，但当前监理工作几乎未展开且身份路线改变为EPC成员，行动路径仅部分有据。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 211,
+        "end": 224,
+        "quote": "具体分工与伙伴身份尚待落实"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "单独投标将造成责任与能力不匹配",
+      "reason": "主要合作取舍依赖当前监理需承担整包的错误前提，人员核实虽保留，不能证明必须共享EPC责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 135,
+        "end": 150,
+        "quote": "单独投标将造成责任与能力不匹配"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND12_both_conditions.json",
+  "authored_labels_sha256": "59f2aae42dd9fd4af28cb63867124431e8abcaa0c6de013770bfa47f5b9c2944",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

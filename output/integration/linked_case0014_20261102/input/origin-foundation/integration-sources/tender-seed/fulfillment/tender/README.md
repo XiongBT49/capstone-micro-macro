@@ -1,0 +1,1 @@
+Actual native tender, QS evaluation and Owner preferred-bid selection feed original Contractor A04; the actual accepted winner then feeds original Owner A10 and native signing. Initial commercial sources are synthetic declarations.

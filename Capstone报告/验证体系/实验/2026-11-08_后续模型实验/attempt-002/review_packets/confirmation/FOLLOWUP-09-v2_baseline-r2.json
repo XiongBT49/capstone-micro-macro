@@ -1,0 +1,77 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "v2_baseline",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包與公司核心業務高度契合，設計協調與業主審查提交正是我們的強項，且指定崗位人員檔期已核實可用，具備作為單一責任設計主體投標的基礎。結構協調、岩土設計與機電協調屬於可透過受控專業支持與內部審查關卡管理的範疇，不構成必須共享投標人身份與套件級設計責任的組合體理由。真正的風險在於企業規模、認證與代表項目資料缺失，以及支護與鄰近建築物保護設計的技術深度，因此以有條件投標處理：由我們擔任設計總負責並掌握技術審查與簽署權，專業支持按明確範圍與責任傳遞納入，並在提交前補齊規模與資質證據。若提交前仍無法證明具備相應技術權威與資源，則不應勉強提交。",
+    "content": "管理層決定：就設計服務包以單一責任設計方身份投標，不組建組合體。\n\n定位與責任：陳浩軍建築師作為設計總負責，對施工圖設計、地質勘察報告解讀、支護方案、鄰近建築物保護設計、公共通道臨時設計及施工期現場設計支持承擔整體協調與提交責任。結構、岩土與機電專業以受控專業支持方式納入，範圍、交付物、審查節點與責任傳遞在投標文件中明確界定，不改變單一投標人身份。\n\n交付方法：按基礎與地庫工程分區建立設計協調矩陣，先完成地質勘察報告解讀與支護及鄰近建築物保護的設計基準，再推進施工圖與公共通道臨時設計，施工期現場支持按里程碑設置回應時限。\n\n質量方法：設置內部獨立審查關卡，專業支持成果須經我方技術審查與簽署方可提交；建立文件版本與提交紀律，確保業主審查意見閉環。\n\n進度與價格：按固定總價、里程碑支付編制價格基礎，進度視圖與業主審查週期掛鉤，並在風險應對中列明地質條件變化與審批週期對工期的影響。\n\n團隊與核實：指定崗位人員檔期已核實可用；企業規模、認證與代表項目資料仍屬缺口，須於提交前補齊並確認具備支護與岩土設計的技術權威。若提交前無法完成上述核實，則撤回投標意向。",
+    "verification_requests": [
+      {
+        "question": "企業信息表中缺失的 staff_scale、certifications、revenue、profit 資料能否於提交前補齊並支持本包規模與資質要求",
+        "required_before_submission": true
+      },
+      {
+        "question": "公司能否提供支護方案設計與鄰近建築物保護設計的技術權威證明或過往同類設計經驗",
+        "required_before_submission": true
+      },
+      {
+        "question": "結構與岩土專業支持的範圍、審查節點與責任傳遞安排能否在投標文件中以受控方式明確界定",
+        "required_before_submission": false
+      }
+    ],
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "以陳浩軍建築師為單一責任設計方投標，不組建組合體",
+      "結構、岩土與機電專業以受控專業支持方式納入，由我方審查與簽署",
+      "指定崗位人員檔期按已核實狀態計入團隊可用性摘要",
+      "價格按固定總價、里程碑支付編制",
+      "企業規模、認證與代表項目資料於提交前補齊，否則撤回投標意向"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-09-v2_baseline-r2\\final-attempt-1.json",
+  "source_sha256": "915be1a7dc8b38824878dce0fd172dfdfc66e0b3fe171b4edd0764d8c205df70",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "v2_baseline",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

@@ -1,0 +1,76 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-10",
+    "arm": "v2_1",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-10",
+    "expected_business_property": "Staffing is verified only in this fictional scope; qualification remains unverified and prevents unconditional submission. Do not reopen staffing or clear qualification.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      },
+      {
+        "question": "本包资格证明是否满足提交要求",
+        "status": "requested",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0005",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "管理判断：本包属于公司核心业务范围内的详细设计服务，桥梁、道路及交通接口设计与公司代表项目经验匹配，公司有能力作为单一责任设计方牵头，通过受控的专业分包和接口管理覆盖MEP、管线迁改与BIM协调，不需要引入共享投标身份的组合体。当前指定岗位人员档期已通过核验，可作为团队可用性摘要的支撑；但本包资格证明仍未收到或核查，属于提交前硬前提，因此本次为有条件投标意向，资格核查未通过则不提交。价格采用固定价格并基于设计范围和交付成果编制，进度视图和风险应对需明确接口协调与审批周期假设。",
+    "content": "管理层同意就设计服务包作出投标意向，前提是本包资格证明在提交前完成核查并满足要求。公司以单一责任设计方身份参与，交付方法覆盖道路、桥梁、管线迁改、交通疏导及机电系统设计的详细设计协调，质量方法采用内部复核与独立检查、文档纪律和业主审查提交节点控制。MEP、BIM及专项接口以受控专业支持方式纳入统一设计管理，责任与审查链条由公司统一承担。价格基础为固定价格，按设计范围和交付成果分解。团队可用性摘要依据已核验的指定岗位档期记录编制，其余角色按角色计划配置。资格证明核查为提交前硬前提，未通过则不提交。",
+    "unresolved_condition_ids": [
+      "condition_ff1d7d062cd013d26275"
+    ],
+    "verified_condition_ids": [
+      "condition_a8ed4c43e7504e484c02"
+    ],
+    "bid_assumptions": [
+      "本包资格证明在提交前完成核查并满足要求，否则不提交",
+      "指定岗位人员档期按已核验记录可用，其余角色按角色计划配置并在提交前确认",
+      "MEP、BIM及管线迁改等专项设计以受控专业支持方式纳入公司统一设计管理与审查",
+      "固定价格基于当前设计范围和交付成果编制，范围变更按合同机制处理",
+      "进度视图基于业主审查和相关部门接口审批周期的合理假设"
+    ],
+    "verification_requests": [
+      {
+        "question": "本包资格证明是否已收到并核查满足提交要求",
+        "required_before_submission": true
+      }
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-10-v2_1-r1\\final-attempt-1.json",
+  "source_sha256": "21fcae72d6caf428d662bf8d2fe655a82d4c2897db82217d718d611947d090a5",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-10",
+      "arm": "v2_1",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

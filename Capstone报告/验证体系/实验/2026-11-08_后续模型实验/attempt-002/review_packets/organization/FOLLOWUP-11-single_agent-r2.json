@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-11",
+    "arm": "single_agent",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-11",
+    "expected_business_property": "Personnel review is rejected. Preserve that failed check and do not present the team as secured. A justified refusal, alternative resource plan or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "rejected",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0014",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "本包属于公司道路、桥梁、隧道及交通基础设施设计的核心能力范围，管线综合、结构协调、交通导改、公共通道和文档编制均可由公司作为单一责任设计主导方组织，MEP与结构专业协调可通过受控分包和内部审查关口管理，不构成必须组建组合体的责任缺口。但条件登记显示本包指定岗位人员档期经复核为不可用，且该条件为提交前先决条件，尚未满足。管理层决定以有条件投标意向推进：完成团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图的准备，同时把关键岗位档期核实作为提交前提；若提交前仍无法落实合格人员，则转为不投，不以未确认的资源承诺参与投标。",
+    "content": "管理层决定：对设计包采取有条件投标意向。公司具备道路、桥梁、隧道及交通基础设施设计的既有经验，包括共同管道及道路设计连建造、隧道连接线及行人隧道设计，能够作为单一责任设计主导方承担排放管改道及周边平整的详细设计，涵盖管线综合、结构设计、交通导改方案、污水厂运行保障方案以及施工图纸和规范编制。MEP协调、结构协调、交通接口与公共通道设计纳入公司设计管理与内部审查体系，通过角色计划、交付方法、质量方法和文档编制纪律控制接口风险，不组建组合体。当前唯一实质性障碍是关键岗位人员档期：条件登记记录该岗位档期复核为不可用，属提交前先决条件。因此本次为有条件意向，提交前须完成人员档期核实并形成团队可用性摘要；若无法落实，则撤回投标。价格按固定费用基于设计范围和交付物编制，进度视图与风险应对同步准备。",
+    "unresolved_condition_ids": [
+      "condition_3093c531b394f6d8ffeb"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "本包指定岗位人员档期须在提交前完成核实并确认可用，否则撤回投标",
+      "MEP与结构专业协调以受控分包和内部审查关口方式组织，公司保持单一责任设计主导方身份",
+      "价格按固定费用基于设计范围和交付物编制，最终报价以人员配置和交付计划落实为前提",
+      "污水厂运行保障方案与交通导改方案按业主审查节点分阶段提交"
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-11-single_agent-r2\\final-attempt-1.json",
+  "source_sha256": "5e64e293bc9e9860df2aff5ce213a04082d02e9e73897f37b3bd0b8c1efd57f0",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-11",
+      "arm": "single_agent",
+      "repeat": 2
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

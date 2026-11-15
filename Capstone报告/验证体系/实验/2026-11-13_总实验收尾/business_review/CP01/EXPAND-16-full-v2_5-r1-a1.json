@@ -1,0 +1,155 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-16-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f4f252982531e61d",
+  "role": "contractor",
+  "annotated_action": "conditional_hotel_contractor_intention_with_generic_subcontract_management",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-16-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "e2e2665eb9fe6fc96f018f861cf4a24c64466ccac9e2249789c7f1e3b47d9f19",
+  "call_id": "attempt_002_call_000107",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "两项均为提交前置条件，任一未满足即不提交",
+    "reason": "实际总承包范围下保持施工角色、原人员资格前提和暂定报价分包边界，不把宽泛范围当本包能力证明。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 346,
+      "end": 366,
+      "quote": "两项均为提交前置条件，任一未满足即不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "不构成对本包具体专业能力、同类经验或成本的证明",
+      "reason": "所给建筑总承包范围准确，经验认证资源和成本未知保持，未由品牌或承建角色补实际能力。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 180,
+        "end": 203,
+        "quote": "不构成对本包具体专业能力、同类经验或成本的证明"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "由我方统一承担界面协调与总体交付责任",
+      "reason": "酒店专业分包类别及总体责任明确，但尚无具体施工顺序、现场组织或两个专业接口执行办法，主要为职责名单。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 110,
+        "end": 128,
+        "quote": "由我方统一承担界面协调与总体交付责任"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "本包指定岗位人员档期",
+      "reason": "实际人员未知与不提交边界保留，未给具体本方岗位配置或落实责任。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 119,
+        "end": 129,
+        "quote": "本包指定岗位人员档期"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "分包商尚未确定，无已确认报价或承诺",
+      "reason": "原人员资格两必要条件均待核实，普通分包未接受不当成解决条件或强制联合体。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/1",
+        "start": 32,
+        "end": 49,
+        "quote": "分包商尚未确定，无已确认报价或承诺"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "酒店精装、机电、消防、娱乐设备安装等专业工程按常规专业分包方式组织",
+      "reason": "真实酒店娱乐用途进入拟议专业安排，澳门文旅机会为未来判断，未填空白规模或工期为事实。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 76,
+        "end": 109,
+        "quote": "酒店精装、机电、消防、娱乐设备安装等专业工程按常规专业分包方式组织"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "负责施工组织、工地管理、安全管理、工期与质量管理、分包协调及竣工资料",
+      "reason": "承接和提交边界合理，但实施仍为责任栏目和专业名称，缺具体现场组织及人员落实逻辑，不能因字段完整算充分可实施。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 41,
+        "end": 75,
+        "quote": "负责施工组织、工地管理、安全管理、工期与质量管理、分包协调及竣工资料"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若任一无法满足，则按不投处理",
+      "reason": "机会、宽泛业务契合与人员资格未知联系到附条件推进、暂定报价和核查不利退出；常规支持维持单一施工责任。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 264,
+        "end": 278,
+        "quote": "若任一无法满足，则按不投处理"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND16_both_conditions.json",
+  "authored_labels_sha256": "f591f19bde5558beb1164ba874c238ffa47d796ccaef2f9d100fc0ba33b09b90",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

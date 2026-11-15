@@ -1,0 +1,155 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-05-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c60067d15e5bde2a",
+  "role": "contractor",
+  "annotated_action": "conditional_construction_proposal_with_quality_and_subcontract_acceptance_controls",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-05-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "f97eae6dfc3da98e91a8ca41ddf833a6ddd729deef7f07215261da3c5f24a5de",
+  "call_id": "attempt_002_call_000133",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "两项未落实前不提交标书，核实不利则撤回意向",
+    "reason": "真实业务范围支持承建方向，施工、检查及分包均为计划，原人员资格前提不冒称已核实。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 345,
+      "end": 366,
+      "quote": "两项未落实前不提交标书，核实不利则撤回意向"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "本公司档案载明的业务范围为土木工程、建筑工程及公共工程施工",
+      "reason": "实际提供的范围进入承接判断，未把范围当已通过本包资格或包级设计责任。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 29,
+        "quote": "本公司档案载明的业务范围为土木工程、建筑工程及公共工程施工"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "建立质量目标与独立检查、文件归档纪律；对专项作业采用常规专业分包并纳入统一工地管理与验收流程",
+      "reason": "独立质量检查归档与专业分包统一现场验收是两项具体控制，另有分阶段工期计划，保持本方管理责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 116,
+        "end": 162,
+        "quote": "建立质量目标与独立检查、文件归档纪律；对专项作业采用常规专业分包并纳入统一工地管理与验收流程"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "本意向不主张已具备相应资格或已落实人员",
+      "reason": "人员未落实边界正确，但未实际提出岗位分配或人员落实责任组织，施工流程充分不替代人员组织。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 284,
+        "end": 303,
+        "quote": "本意向不主张已具备相应资格或已落实人员"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求",
+      "reason": "原两项必要前提都保留，未决限制提交，专项普通分包不强制共享身份。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 304,
+        "end": 344,
+        "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "与本案公共服务建筑承建商角色方向一致，属于可审慎争取的机会",
+      "reason": "已知公共建筑类别与真实施工业务范围相匹配，形成争取机会的理由，公共服务特征还进入工期及施工组织提案。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 30,
+        "end": 59,
+        "quote": "与本案公共服务建筑承建商角色方向一致，属于可审慎争取的机会"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "对专项作业采用常规专业分包并纳入统一工地管理与验收流程",
+      "reason": "分阶段工期、质量独立检查归档、专业分包统一管理验收形成连贯条件性施工路径，未确认人员明确限制提交；未细分岗位不使整个计划失去可实施性。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 135,
+        "end": 162,
+        "quote": "对专项作业采用常规专业分包并纳入统一工地管理与验收流程"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "上述两项前置条件落实前不提交标书；若核实结果不利，则转为不投标",
+      "reason": "业务匹配、有限承包责任、人员资格及成本未知均与条件性参与、暂定估算和退出相联系，无须虚构其他方案收益。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 241,
+        "end": 272,
+        "quote": "上述两项前置条件落实前不提交标书；若核实结果不利，则转为不投标"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND05_both_conditions.json",
+  "authored_labels_sha256": "2026e1c2757ec51812437133b85bdf0779ce35b2068f10ff290616464b6c39ee",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

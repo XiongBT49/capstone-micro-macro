@@ -1,0 +1,166 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-10-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "bd5a987d5fd38fc4",
+  "role": "supplier",
+  "annotated_action": "proposed_supply_with_unjustified_formal_submission_gates",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-10-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "5c26bd8c1045e2cd05ecdc167921849e34ff02d2376005a27e6ae714c69c0a7c",
+  "call_id": "attempt_002_call_000009",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本方案中的产品范围与本地支持均为拟议安排",
+    "reason": "当前仍提供角色内供应意向，未编造实际产品范围资源或已获支持；额外正式提交门槛属于S4不足，未把本次草案本身撤销。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 263,
+      "end": 283,
+      "quote": "本方案中的产品范围与本地支持均为拟议安排"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "产品范围、供货能力与本地支持均属拟议安排",
+      "reason": "缺范围情景只提出未来产品供货和配套计划，没有凭名称补造现有材料业务或自有库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 268,
+        "end": 288,
+        "quote": "产品范围、供货能力与本地支持均属拟议安排"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "到场验收、资料移交由本公司统一负责",
+      "reason": "供货批次、到货检验、文档移交、受控外部配合与保修备件多项安排明确。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 102,
+        "end": 119,
+        "quote": "到场验收、资料移交由本公司统一负责"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "未取得外部支持确认前不作为已落实承诺",
+      "reason": "目录库存本地资源和成本未知，没有将普通支持、人员或采购报价写成事实。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 281,
+        "end": 299,
+        "quote": "未取得外部支持确认前不作为已落实承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "两项未决条件（供货渠道审核、外部支持接受保修与质量文档要求）须在投标前完成确认，未确认前不提交",
+      "reason": "两原请求均false，却把它们改为true并强加正式提交门槛；质量保修和渠道仍有拟议处理且未决未被假称解决，因此部分而非缺失。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 284,
+        "end": 331,
+        "quote": "两项未决条件（供货渠道审核、外部支持接受保修与质量文档要求）须在投标前完成确认，未确认前不提交"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "missing",
+      "reason": "全文仅用EXPAND-10包号与通用供货职责，没有实际学校扩建、面积19325平方米、澳门或EPC背景如何影响安排的联系；报关费用本身未说明具体项目条件。",
+      "evidence": null,
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 6,500,000",
+      "reason": "4180000+620000+780000+310000+265000+345000=6500000，六项假设依据和非实际报价性质明确。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 40,
+        "end": 56,
+        "quote": "报价 MOP 6,500,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6666666666666666,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "形成到货检验记录、质量文档与保修文件",
+      "reason": "供货核对、分批到货、验收文档及保修路径连贯，外部支持明确未接受；额外正式门槛单独保留，不抹去已有条件性供应计划。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 179,
+        "end": 197,
+        "quote": "形成到货检验记录、质量文档与保修文件"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "供货渠道未审核、外部支持未确认、产品目录与库存未知所带来的风险预备与管理费",
+      "reason": "未知来源资源成本联系到暂列费用、风险准备、确认后成本调整和支持责任，承诺取舍有内容；两可选门槛被升级的问题不被此分抵消。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/5/basis",
+        "start": 0,
+        "end": 37,
+        "quote": "供货渠道未审核、外部支持未确认、产品目录与库存未知所带来的风险预备与管理费"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND10_readable_firsts.json",
+  "authored_labels_sha256": "bbd18759968d060bf01e41838f848805e309cd447ecee9f0bd99c5ec8c1528b4",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

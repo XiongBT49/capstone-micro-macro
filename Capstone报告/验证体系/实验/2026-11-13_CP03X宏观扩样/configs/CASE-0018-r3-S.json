@@ -1,0 +1,56 @@
+{
+  "schema_version": "case-library-lifecycle.v1",
+  "entry_kind": "case_library_initial_project",
+  "case_id": "CASE-0018",
+  "run_id": "CP03X-CASE-0018-r3-S",
+  "base_config": "config/origin_model_lifecycle_case.json",
+  "mode": "model",
+  "ticks": 48,
+  "tender_open_tick": 12,
+  "contract_duration": 24,
+  "scenario_budget": 180000000,
+  "scenario_currency": "HKD",
+  "technical_complexity": 0.85,
+  "random_seed": 202,
+  "model_options": {
+    "strategy": "single_agent",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "alternate_markup_fraction": "0.2",
+    "max_calls": 2,
+    "max_prompt_chars": 300000
+  },
+  "api_total_attempt_cap": 2,
+  "scope": "CASE-0005 public background via original initiation entry. Only A02 pricing calls the model. Initial investment choice and initial bank selection are outside this imported-project entry. All costs, duration and numerical capabilities are explicit scenario assumptions; no historical winner is imported.",
+  "research_arm": "S",
+  "domain_region": {
+    "region": "Macau",
+    "native_project_type": "building",
+    "source_project_type": "公共服务建筑",
+    "source_location": "澳门",
+    "domain": "building_foundation",
+    "scope_title": "大楼与连接设施基础包",
+    "work_type_code": "controlled-building_foundation",
+    "design_scope": "拟议基础方案、施工接口与结构复核",
+    "construction_scope": "建筑及连接设施基础施工",
+    "supply_scope": "基础结构材料与质量文档",
+    "scope_class": "work_package_or_phase",
+    "macro_family_id": "family-guangdong-macau-new-channel-qingmao",
+    "scope_note": "青茂口岸联检大楼与连接通道基础包，与同名地下连续墙包不算独立整项目。",
+    "stage_mapping": [
+      "命名范围的启动与融资",
+      "拟议基础方案、施工接口与结构复核",
+      "该范围的造价咨询与独立合成文件审查",
+      "两家情景承包方对同一命名作业范围各选一个合法定价选项",
+      "建筑及连接设施基础施工",
+      "该范围的供应交接、执行记录、完工与结算",
+      "实际本业主结算进入后轮机会判断"
+    ],
+    "boundary": "Complete controlled lifecycle within the named source scope. Work-package/unclear rows are not full-parent-asset validation and are excluded from the whole-project stratum. No extra A02 windows. Domain text and methods are proposed scenario inputs, not observed technical specifications or calibrated physical behavior."
+  },
+  "cp03_control": {
+    "arm": "S",
+    "chain_id": "CASE-0018-r3-S",
+    "batch_directory": "D:\\hkura\\codedemo_v2\\Capstone报告\\验证体系\\实验\\2026-11-13_CP03X宏观扩样"
+  }
+}

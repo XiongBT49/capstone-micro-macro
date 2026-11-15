@@ -1,0 +1,149 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-06-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ed8c08f1d79077f2",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_proposal_with_overstated_single_identity_necessity",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-06-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "80ed127ad908017629ec3d6151f95014984405b1906b424f738594579eaf6097",
+  "call_id": "attempt_002_call_000040",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "在人员档期确认前不提交",
+    "reason": "实际范围支持监理方向，独立监督与施工责任分开，人员未决限制提交；将独立性说成必须单一投标身份的局部理由缺依据，在V4单列，不把单独参与本身判错。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 138,
+      "end": 149,
+      "quote": "在人员档期确认前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "监理为独立监督角色，不承担施工总包或整包设计施工责任",
+      "reason": "保持监督职责边界，真实监理和项目管理范围未被当本包已获接受资格。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 112,
+        "end": 138,
+        "quote": "监理为独立监督角色，不承担施工总包或整包设计施工责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "进度与质量审查机制、检查记录与文档纪律、支付审查配合、以及面向业主的定期报告",
+      "reason": "进度质量审查、检查记录、支付配合及业主报告具体，均为拟议服务而非已完成检查。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 218,
+        "end": 256,
+        "quote": "进度与质量审查机制、检查记录与文档纪律、支付审查配合、以及面向业主的定期报告"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "待人员档期与本地常驻安排明确后再定稿",
+      "reason": "人员和本地团队仍未知的边界正确，但没有实际岗位组织或谁负责落实的安排。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 224,
+        "end": 242,
+        "quote": "待人员档期与本地常驻安排明确后再定稿"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "监理独立性要求单一投标人身份与单一责任",
+      "reason": "原人员前提和外部支持未接受边界正确，但输入没有规定独立性必然禁止联合投标或要求唯一投标身份；单独参与是可选管理方式，不能补成必然规则。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 348,
+        "end": 367,
+        "quote": "监理独立性要求单一投标人身份与单一责任"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "missing",
+      "reason": "提及澳门居住建筑与项目名称，具体安排仍为通用监理服务；没有说明该类型、地区或业主怎样改变监督重点或形成项目特定取舍。",
+      "evidence": null,
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "拟议方案包括：独立监督与检查安排、进度与质量审查机制、检查记录与文档纪律、支付审查配合、以及面向业主的定期报告",
+      "reason": "多个服务环节、报告及有限提交边界构成连贯的条件性服务路径，未细分岗位不等同整体不可实施；独立性与身份的过强理由另列。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 201,
+        "end": 256,
+        "quote": "拟议方案包括：独立监督与检查安排、进度与质量审查机制、检查记录与文档纪律、支付审查配合、以及面向业主的定期报告"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "以条件性投标意图推进",
+      "reason": "实际角色匹配与人员、驻地及成本未知联系到有限参与、暂定估算和确认前不提交，主要承诺取舍明确，单一身份理由过强不抹去此联系。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 156,
+        "end": 166,
+        "quote": "以条件性投标意图推进"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND06_both_conditions.json",
+  "authored_labels_sha256": "6122a2f49cac2683481bb9f5aa5c93f23c4224be06b5449f74640f99fd4a2b61",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

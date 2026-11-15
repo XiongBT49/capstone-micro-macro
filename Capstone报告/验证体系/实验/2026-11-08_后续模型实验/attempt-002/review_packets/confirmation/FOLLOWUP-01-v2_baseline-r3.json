@@ -1,0 +1,109 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-01",
+    "arm": "v2_baseline",
+    "repeat": 3
+  },
+  "target": {
+    "window_id": "FOLLOWUP-01",
+    "expected_business_property": "Preserve the visible open qualification/experience checks. Business scope alone is not proof of accepted package eligibility. A justified refusal or conditional intention is allowed.",
+    "core_question_register": [
+      {
+        "question": "我建议先做一次内部能力评估，确认哪些环节需要外部支持",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我需要造价或合约同事确认地质勘察审查的具体工作量和支付里程碑，以评估成本风险",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请合约部提供支付条款的初步分析，以便我们决定是否单独投标或考虑联合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计总监确认我们是否有足够的地质和交通专业人才，这直接影响投标决策",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我们需要市场部评估潜在伙伴，确认其资质和合作意愿，并明确责任划分和接口管理",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0026",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid_with_consortium",
+    "reason": "本设计包要求整体设计总负责，涵盖方案、初步设计、施工图，并包含地质勘察报告审查深化以及交通接口、公共设施接口协调。我司的核心优势是设计协调与业主审查提交，具备担任设计总牵头人的条件；但地质勘察审查和交通接口设计属于包级技术权威，现有团队可用性未获确认，若单独投标将形成技术完整性和责任承担上的实质缺口，评标与履约风险偏高。因此管理层决定以联合体方式投标：由我司承担设计总牵头、业主接口、质量与文档控制，引入具备地质勘察审查和交通接口设计能力的专业单位共同承担包级设计责任，明确责任划分与接口管理。该决定为有条件意向，联合体伙伴资质与合作意愿、内部能力评估、勘察审查工作量与支付里程碑分析均未落实前不提交投标。",
+    "content": "管理层决定：本设计包采取联合体投标意向，由华建集团华东建筑设计研究总院担任设计总牵头方，负责方案至施工图整体设计协调、业主审查提交、质量与文档控制、进度视图与风险应对；引入具备地质勘察报告审查深化和交通接口设计能力的专业单位作为联合体成员，共同承担包级设计责任，并在联合体协议中明确责任划分、设计接口管理和交付界面。投标文件将按业主要求提交团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对，价格按固定费用加里程碑激励编制。当前该意向为有条件推进：内部能力评估、地质勘察审查工作量与支付里程碑分析、合约支付条款初步分析、地质与交通专业人才确认、潜在伙伴资质与合作意愿评估均尚未完成，未落实前不提交投标。",
+    "verification_requests": [
+      {
+        "question": "内部能力评估：确认方案、初步设计、施工图各阶段以及BIM、MEP、公共设施接口协调中哪些环节需要外部支持",
+        "required_before_submission": false
+      },
+      {
+        "question": "请造价或合约同事确认地质勘察报告审查深化的具体工作量及固定费用加里程碑激励下的支付节点",
+        "required_before_submission": false
+      },
+      {
+        "question": "请合约部提供支付条款初步分析，评估里程碑支付与激励条款的成本与现金流风险",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计总监确认现有团队中地质与交通专业人才的可用性，明确无法内部覆盖的专业范围",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部评估至少一家具备地质勘察审查或交通接口设计资质的潜在联合体伙伴，确认其资质、合作意愿、责任划分与接口管理安排",
+        "required_before_submission": true
+      }
+    ],
+    "unresolved_condition_ids": [
+      "condition_ef2550cd9e28ad261187",
+      "condition_a4a655f2cd6350dae2b2",
+      "condition_7fa68db5f33b7f7ae6e8",
+      "condition_4a347a4e5cc3188ced8e",
+      "condition_cf0671adba419d862a51"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "我司担任设计总牵头方，对整体设计协调、业主审查提交、质量与文档控制负责",
+      "联合体成员承担地质勘察报告审查深化和交通接口设计的包级专业责任，具体单位与责任划分待确认",
+      "报价按固定费用加里程碑激励编制，支付节点以业主设计里程碑为准",
+      "BIM与MEP协调由我司主导，专业接口按联合体协议分工",
+      "团队可用性摘要与角色计划以内部能力评估结果为基础，未确认前不视为已落实资源"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-01-v2_baseline-r3\\final-attempt-1.json",
+  "source_sha256": "76007838fa6e3fdc54d32d7d0aa643dc4a9d1bca6b7dd3fc48b31e58583cb5de",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-01",
+      "arm": "v2_baseline",
+      "repeat": 3
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

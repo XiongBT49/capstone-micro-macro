@@ -1,0 +1,68 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-12",
+    "arm": "v2_baseline",
+    "repeat": 2
+  },
+  "target": {
+    "window_id": "FOLLOWUP-12",
+    "expected_business_property": "Ordinary specialist support is a proposed plan, not a secured partner and not by itself a mandatory confirmation gate. Other dossier-grounded risks may be raised.",
+    "core_question_register": [],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0008",
+  "origin": "derived_synthetic_task",
+  "first_status": "validation_failed",
+  "first_output": {
+    "decision": "bid",
+    "reason": "这个招标包与我们的核心业务高度吻合：停车场项目的方案、初步、施工图设计，本质上是交通设施与市政配套的综合设计协调，我们在轻轨、车站配套和公共建设局规划项目上有可引用的经验，具备作为设计总负责方统筹建筑、结构、机电、交通组织和BIM的能力。机电、结构、BIM属于正常专项设计协调，可由我们在统一角色计划、质量方法和审查节点下管理，不需要引入共享投标人身份和责任的外部主体，因此不选择组合体。主要管理风险是公司信息表未提供明确规模，团队可用性目前只是计划，不是已确认的资源承诺；固定总价又覆盖全部设计阶段和施工配合，工作量与人员投入必须先在内部核清。我的决定是投标，前提是提交前完成人员可用性核对、专项协调团队配置和设计费固定总价的工作量分解，并在投标文件中以团队可用性摘要、角色计划、交付方法、质量方法、进度视图和风险应对把这些安排讲清楚。",
+    "content": "管理层决定：就设计招标包提交投标，由本公司作为单一责任设计方，不组织组合体。理由是本包属于停车场项目的全阶段设计及施工配合，涵盖建筑、结构、机电、交通组织、公共空间和BIM协调，与本公司铁路、城市轨道交通、市政交通及综合交通枢纽的勘察设计主业一致，并有澳门公共建设局规划项目、轻轨及车站配套设计服务的可引用经验。机电、结构、BIM和交通界面属于正常专项设计协调，本公司以设计总负责身份统一角色计划、审查节点、文件标准和责任传递，不引入共享投标人身份的外部主体。投标文件按业主要求组织团队可用性摘要、角色计划、交付方法、质量方法、价格基础、进度视图和风险应对；价格按固定总价覆盖全部设计阶段与施工配合服务，报价前完成设计工作量分解和人员投入测算。内部管理前提有三项：一是核对各专业人员的实际可用性，团队可用性摘要只能写已核实的人员安排；二是明确机电、结构、BIM专项协调团队的配置和接口责任，写入角色计划和交付方法；三是固定总价的价格基础须与设计阶段、图纸深度、工程量清单和施工配合工作量对应。上述为投标组织与报价管理事项，不构成组合体安排，也不改变本公司单一责任投标人身份。",
+    "verification_requests": [
+      {
+        "question": "核对建筑、结构、机电、交通组织和BIM各专业拟投入人员的实际可用性，确认团队可用性摘要可据实填写",
+        "required_before_submission": false
+      },
+      {
+        "question": "确认机电、结构、BIM专项协调团队的配置方案和接口责任划分，纳入角色计划与交付方法",
+        "required_before_submission": false
+      },
+      {
+        "question": "完成固定总价设计费的工作量分解，覆盖方案、初步、施工图及施工配合各阶段",
+        "required_before_submission": false
+      }
+    ],
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "本公司作为单一责任设计方投标，不组织组合体",
+      "机电、结构、BIM等专项设计协调由本公司在统一角色计划、审查节点和文件标准下管理",
+      "团队可用性摘要按提交前核实的人员安排填写，不把计划表述当作已落实资源",
+      "设计费按固定总价报价，覆盖全部设计阶段和施工配合服务，价格基础对应设计工作量分解"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-12-v2_baseline-r2\\final-attempt-1.json",
+  "source_sha256": "0f4ae4aca63ad3fc702439118bc9581102e8dbc16408e81a1e924cf1e1c2d8bd",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-12",
+      "arm": "v2_baseline",
+      "repeat": 2
+    },
+    "first_status": "validation_failed",
+    "final_status": "validation_failed",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

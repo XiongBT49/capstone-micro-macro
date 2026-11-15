@@ -1,0 +1,96 @@
+{
+  "source_files_sha256": {
+    "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\analysis\\CP01_first_review_complete_001\\CP01\\D1_slot_values.json": "54711fb163fc8f4e7304bb1f1d153bca2b271e0a03b3491f96226654ba60f756",
+    "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\analysis\\CP01_first_review_complete_001\\CP01\\D2_slot_values.json": "fd7f27ce605b481e3974a079ed6fa87641759f26f932bcffe96326a5d5409291",
+    "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\analysis\\CP01_first_review_complete_001\\CP01\\D3_slot_values.json": "855a88f27901dd0de4a7f0124e0ebaad786e6e7c9be74ccc649fd6114663ae4d",
+    "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\analysis\\CP01_first_review_complete_001\\CP01\\D4_slot_values.json": "a44874188fdc49468bf541001da6670a1ed9779d3afd9e54e99ca1c3cf5cbd6e"
+  },
+  "analysis_code_sha256": {
+    "scripts\\analyze_capstone_cp01_conditions_20261113.py": "0c50b797339f6614bb9ac916f044e5e31eff5939bd549abc6fd89f749cbc2729",
+    "scripts\\capstone_project_analysis_20261113.py": "9bbe29ab7d030c4d4e7db5a2ffcc220e3d6df12586d4cb7855910279112da616"
+  },
+  "contrast_definitions": {
+    "version_full": [
+      {
+        "arm": "v2_5",
+        "variant": "full",
+        "coefficient": 1
+      },
+      {
+        "arm": "v2_4",
+        "variant": "full",
+        "coefficient": -1
+      }
+    ],
+    "version_missing": [
+      {
+        "arm": "v2_5",
+        "variant": "missing_core",
+        "coefficient": 1
+      },
+      {
+        "arm": "v2_4",
+        "variant": "missing_core",
+        "coefficient": -1
+      }
+    ],
+    "information_v2_4": [
+      {
+        "arm": "v2_4",
+        "variant": "missing_core",
+        "coefficient": 1
+      },
+      {
+        "arm": "v2_4",
+        "variant": "full",
+        "coefficient": -1
+      }
+    ],
+    "information_v2_5": [
+      {
+        "arm": "v2_5",
+        "variant": "missing_core",
+        "coefficient": 1
+      },
+      {
+        "arm": "v2_5",
+        "variant": "full",
+        "coefficient": -1
+      }
+    ],
+    "interaction": [
+      {
+        "arm": "v2_5",
+        "variant": "missing_core",
+        "coefficient": 1
+      },
+      {
+        "arm": "v2_4",
+        "variant": "missing_core",
+        "coefficient": -1
+      },
+      {
+        "arm": "v2_5",
+        "variant": "full",
+        "coefficient": -1
+      },
+      {
+        "arm": "v2_4",
+        "variant": "full",
+        "coefficient": 1
+      }
+    ]
+  },
+  "interpretation": [
+    "Exploratory, fixed same-project information contrasts; no new grading or output-based selection.",
+    "Within-arm information contrast is missing_core minus full; negative means lower graded content under reduced information.",
+    "Interaction is (v2_5-v2_4) under missing_core minus the same contrast under full.",
+    "All planned missing bounds and observed-pair intervals can refer to different project sets.",
+    "D3/D4 are ordinal 0-2 rubric scores, not utility or financial benefit.",
+    "Same design-participating assistant grades; not independent expert evidence. Multiple exploratory comparisons, no confirmatory claim."
+  ],
+  "new_model_calls": 0,
+  "new_semantic_labels_inferred": 0,
+  "network_attempts": 0,
+  "paid_client_constructions": 0
+}

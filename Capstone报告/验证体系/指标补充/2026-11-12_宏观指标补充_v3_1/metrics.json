@@ -1,0 +1,87 @@
+{
+  "version": "macro-business-outcomes.v3.1",
+  "status": "prepared_unmeasured",
+  "parent_scope_sha256": "e320492cb9f159a7612a867fad16dc6ab46a133afc1afc3fffe6e957d7431952",
+  "parent_plan_sha256": "03848a8510d747ea4b85812c479dddd79fe39d0938d2857494467acc6d380e42",
+  "existing_metric_count": 14,
+  "additional_metric_count": 4,
+  "combined_metric_count": 18,
+  "RQ4_primary_unchanged": "T2",
+  "definitions": [
+    {
+      "id": "T5",
+      "name": "项目质量状态",
+      "priority": "secondary",
+      "unit": "model index [0,1]",
+      "fields": [
+        "overall_quality",
+        "design_quality",
+        "construction_quality",
+        "material_quality"
+      ],
+      "primary_summary": "overall_quality at matched observed completion; fixed-horizon state separately",
+      "validity": "Require an actual construction update. Initial defaults are not outcomes. defect_rate is 1-overall_quality, not independent evidence."
+    },
+    {
+      "id": "T6",
+      "name": "施工风险暴露",
+      "priority": "secondary",
+      "unit": "model indices, separate fields",
+      "fields": [
+        "supply_delay_risk",
+        "safety_risk",
+        "claim_risk",
+        "dispute_risk"
+      ],
+      "summaries": [
+        "valid construction peak",
+        "first peak tick",
+        "valid construction observation mean",
+        "fixed-horizon state"
+      ],
+      "validity": "Construction-stage state events after the first real progress update, preserving event order. No construction means N/A, not zero. Not calibrated probabilities."
+    },
+    {
+      "id": "T7",
+      "name": "完工与结算状态",
+      "priority": "secondary",
+      "unit": "binary per complete chain, project-aggregated rates",
+      "event_types": [
+        "contract_awarded",
+        "project_completed",
+        "final_account_settled"
+      ],
+      "denominator": "3 planned replicate blocks per project per arm, unknown chain endpoints separately disclosed",
+      "validity": "Complete fixed observation horizon required for false; technical interruption means unknown. No extension of observation horizon per arm."
+    },
+    {
+      "id": "T8",
+      "name": "业务扰动事件",
+      "priority": "secondary",
+      "unit": "events and inspection-failure fraction",
+      "event_types": [
+        "inspection_passed",
+        "inspection_failed",
+        "supply_delay",
+        "safety_issue"
+      ],
+      "inspection_fraction": "inspection_failed/(inspection_failed+inspection_passed); zero denominator N/A",
+      "exposure": "construction_progress_updated count and valid construction window alongside counts",
+      "validity": "Use project event_log only, filtered by project_id and deduplicated by event_id. Missing log is not zero; no construction is not comparative improvement."
+    }
+  ],
+  "analysis_unit": "project_group",
+  "macro_projects": 9,
+  "chains": 108,
+  "budget_delta": 0,
+  "future_attempt_ceiling_unchanged": 2599,
+  "source_files_sha256": {
+    "gba_multi_agent_integration_public_v1.0_2026-08-21(1)/gba_multi_agent_integration_public_v1.0_2026-08-21/gba_construction_sim/backend/simulation/project_state_update_engine.py": "f4e7b36a269fd604b36dbd6ae3a779b24a32ba3bba304954e7924109d5a44e58",
+    "gba_multi_agent_integration_public_v1.0_2026-08-21(1)/gba_multi_agent_integration_public_v1.0_2026-08-21/gba_construction_sim/backend/simulation/project_lifecycle_engine.py": "1dba47fcbac0b472106e2ab2da601ab6467d7a4989e1529fe318367721906e9f",
+    "gba_multi_agent_integration_public_v1.0_2026-08-21(1)/gba_multi_agent_integration_public_v1.0_2026-08-21/gba_construction_sim/backend/models/project_performance.py": "2efde0b1175a6b90793e1cc50dcc88b229b7159a52e14d1c2204a681bbbc7cc6"
+  },
+  "note_sha256": "198d4233b969afbf1e16ae298ffd13141d0e96f8a7e03f8069360c8a6ca07ed7",
+  "new_model_calls": 0,
+  "new_simulations": 0,
+  "ratings_completed": 0
+}

@@ -1,0 +1,169 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-01-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "6a0c277221695c82",
+  "role": "supplier",
+  "annotated_action": "conditional_role_bounded_supply_proposal",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-01-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "d53b0cd5aa139c9c392c2fa5f6256db970f6dfbf81c48d39a322e6ce1337fd26",
+  "call_id": "attempt_002_call_000171",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标为单一公司投标（常熟雅致模块化建筑有限公司），角色为供应商",
+    "reason": "拟供模块化钢结构房屋与档案方向相符，认证只按档案文字处理；人员、物流及具体目录未知且不作正式提交，未扩大为EPC施工总包。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 32,
+      "quote": "本投标为单一公司投标（常熟雅致模块化建筑有限公司），角色为供应商"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司档案文本载明业务范围为模块化钢结构房屋、船舶舱室的设计制造等",
+      "reason": "供货方向有档案依据，具体产品配置仍为建议，没有从认证推成已接受资格或自有库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 73,
+        "end": 105,
+        "quote": "公司档案文本载明业务范围为模块化钢结构房屋、船舶舱室的设计制造等"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "出厂前完成尺寸复核、接口预拼装检查与质量文档归集",
+      "reason": "模块分批供货、预拼装检查、文档、安装指导和保修构成多项具体拟议交付安排。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 186,
+        "end": 210,
+        "quote": "出厂前完成尺寸复核、接口预拼装检查与质量文档归集"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "未取得实际产能与物流资源记录",
+      "reason": "产能、排期、发运与现场支持都未当作落实，目录和仓储也保留未知；支持费用为暂列。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 134,
+        "end": 148,
+        "quote": "未取得实际产能与物流资源记录"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应商渠道审核与外部支持保修及质量文档接受情况尚待确认",
+      "reason": "文档保修有计划、原两项请求仍未解决，核查请求保持可选；未将草稿当正式提交或外部承诺。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 330,
+        "end": 357,
+        "quote": "供应商渠道审核与外部支持保修及质量文档接受情况尚待确认"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "按EPC总承包方的设计深化节奏分批交付",
+      "reason": "EPC设计节奏与供货节点相连，没有承担整包责任；但只泛写合规费用与认证维护，未处理档案明确的过往行政处罚记录，因此任务卡要求的合规考虑不充分。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 166,
+        "end": 185,
+        "quote": "按EPC总承包方的设计深化节奏分批交付"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为基于未知产品目录、产能与物流资源的暂定假设，非已收到的供应商报价",
+      "reason": "七项8,600,000+420,000+680,000+350,000+260,000+430,000+60,000=10,800,000 MOP，内部合计一致，暂估与无历史成本依据说明清楚。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 216,
+        "end": 254,
+        "quote": "上述金额均为基于未知产品目录、产能与物流资源的暂定假设，非已收到的供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "生产排期、发运批次与现场支持人天均为拟议安排",
+      "reason": "从规格接口到生产发运、技术支持和保修文档形成连贯路径；资源尚未核实不妨碍有边界的条件性安排达到2分。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 111,
+        "end": 133,
+        "quote": "生产排期、发运批次与现场支持人天均为拟议安排"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "在合同谈判阶段确认规格与交付条件后固化价格与排期",
+      "reason": "将目录、资源与成本未知直接联系到价格和排期暂定及后续调整边界，而非作无依据固定承诺；无需捏造市场最优价或多方案效用。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 75,
+        "end": 99,
+        "quote": "在合同谈判阶段确认规格与交付条件后固化价格与排期"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND01_full.json",
+  "authored_labels_sha256": "da7c4a0ec0bb8addc72eac5f535c2d81ba09ed13c81e80a009d8bbfcecc562c6",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

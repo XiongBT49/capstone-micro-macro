@@ -1,0 +1,149 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-10-full",
+  "arm": "v2_4",
+  "repeat": 2,
+  "attempt": 1,
+  "project_group": "bd5a987d5fd38fc4",
+  "role": "supplier",
+  "annotated_action": "proposed_school_supply_support_under_EPC_project_schedule",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-10-full-v2_4-r2/attempt-1.json",
+  "response_sha256": "8a870c00d8267fa2bc28130f0da05408a8d85543d47e7617d3027fa64bb0844e",
+  "call_id": "attempt_002_call_000065",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "以单一公司身份提交本包供应商投标意向",
+    "reason": "虽提EPC思路，全文实际范围是材料设备供货仓储和安装配合，未接管设计施工整包；真实销售范围支持方向，资源和报价暂定。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 10,
+      "end": 28,
+      "quote": "以单一公司身份提交本包供应商投标意向"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "建筑材料销售、仓储及配套设备材料的生产经营销售安装",
+      "reason": "引用真实范围，具体目录库存未知，限供货及安装配合而非已通过资格。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 178,
+        "end": 203,
+        "quote": "建筑材料销售、仓储及配套设备材料的生产经营销售安装"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "按施工进度分批供货，配合现场安装、接口检查与材料复验",
+      "reason": "分批到货、检验接口、质量文件和保修资料为多项明确拟议交付措施。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 204,
+        "end": 230,
+        "quote": "按施工进度分批供货，配合现场安装、接口检查与材料复验"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本包具体产品目录、库存、本地团队与历史采购成本均属未知",
+      "reason": "公司总人数不是本包团队证明，资源批次未确认，不冒称现货、报价或支持承诺。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 221,
+        "end": 248,
+        "quote": "本包具体产品目录、库存、本地团队与历史采购成本均属未知"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "不构成本次投标意向的提交前置条件",
+      "reason": "两原请求保持可选未决，渠道与外部质量保修接受待核实，有内部复验和文档安排。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 345,
+        "end": 361,
+        "quote": "不构成本次投标意向的提交前置条件"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "按19325平方米扩建规模与招标包供应范围估算",
+      "reason": "真实扩建面积进入假设估算，实际EPC总包进度用于分批供货配合，不改成本方整包责任。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/0/basis",
+        "start": 0,
+        "end": 23,
+        "quote": "按19325平方米扩建规模与招标包供应范围估算"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价MOP 9,000,000",
+      "reason": "4180000+2960000+640000+385000+265000+520000+50000=9000000，暂定依据和取整项明确，非实际供应报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 29,
+        "end": 44,
+        "quote": "报价MOP 9,000,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND10_readable_firsts.json",
+  "authored_labels_sha256": "bbd18759968d060bf01e41838f848805e309cd447ecee9f0bd99c5ec8c1528b4",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

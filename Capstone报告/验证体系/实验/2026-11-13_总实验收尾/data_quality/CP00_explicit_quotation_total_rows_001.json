@@ -1,0 +1,88 @@
+{
+  "purpose": "Two explicitly labeled total rows are non-additive summaries for business explainability; original arrays, protocol states and mechanical sums remain retained.",
+  "authored_note_sha256": "6a4ea71b75cacc57df94f1ebf7630756c24d289fbdaaad8602e97cb368d69dd1",
+  "rows": [
+    {
+      "grade_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_review\\CP00\\EXPAND-14-full-v2_4-r1-a1.json",
+      "grade_sha256": "64d5d7174d4c890a3c9dadf729e584811f3dbe2f1badac094403dc9d414bea90",
+      "recheck_sha256": "7401e255b64ff9b21e07deaee40b9d11b09ecb184cc01cff79dfd91a7176b16d",
+      "response_sha256": "e2722252621444443a7c7c75c508b994648d64614058606b25a7f7d8ca99d117",
+      "retained_program_status": "validation_failed",
+      "authored_numeric_reading": {
+        "independent_cost_rows": 6,
+        "independent_cost_sum": "1800000",
+        "explicit_nonadditive_total_row_amount": "1800000",
+        "reported_quotation": "1800000",
+        "mechanical_all_rows_sum": "3600000",
+        "source_total_row_item": "合计",
+        "rating_basis": "Distinct cost components plus explicitly labeled non-additive total, not mechanical double count."
+      },
+      "retained_mechanical_recalculation": {
+        "parts_sum": "3600000",
+        "reported_total": "1800000",
+        "difference_parts_minus_reported": "1800000",
+        "original_tolerance": "1 MOP"
+      },
+      "retained_S6": {
+        "id": "S6",
+        "rating": "correct",
+        "quote": "报价 MOP 1,800,000 为暂定估算",
+        "reason": "六项实际费用185000+1180000+96000+148000+72000+119000=1800000。第七行明示合计，是汇总行不是新增成本，不能再加一次误判为360万。各费用暂定且非已获报价，原格式与程序状态不改。",
+        "evidence": {
+          "json_pointer": "/submission_summary",
+          "start": 15,
+          "end": 37,
+          "quote": "报价 MOP 1,800,000 为暂定估算"
+        },
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ]
+      }
+    },
+    {
+      "grade_path": "Capstone报告\\验证体系\\实验\\2026-11-13_总实验收尾\\business_review\\CP00\\EXPAND-14-full-v2_4-r2-a1.json",
+      "grade_sha256": "785f7ae55460a325e2c042c9dd00401c41034019f10794d948630b1fb29d5968",
+      "recheck_sha256": "e2d56ff4c31fae1f71593c158c2dd7056edd142502fe023df887399e1bedd9bc",
+      "response_sha256": "a5dfa0686c3010dd0be6db1075289f097b9ad8d774d57cc648fa6034b77872f9",
+      "retained_program_status": "validation_failed",
+      "authored_numeric_reading": {
+        "independent_cost_rows": 6,
+        "independent_cost_sum": "2600000",
+        "explicit_nonadditive_total_row_amount": "2600000",
+        "reported_quotation": "2600000",
+        "mechanical_all_rows_sum": "5200000",
+        "source_total_row_item": "合计",
+        "rating_basis": "Explicit total row is a summary, not another expense."
+      },
+      "retained_mechanical_recalculation": {
+        "parts_sum": "5200000",
+        "reported_total": "2600000",
+        "difference_parts_minus_reported": "2600000",
+        "original_tolerance": "1 MOP"
+      },
+      "retained_S6": {
+        "id": "S6",
+        "rating": "correct",
+        "quote": "报价 MOP 2,600,000 为基于招标包范围的暂列估算合计",
+        "reason": "六项费用1850000+165000+210000+135000+95000+145000=2600000。第七行明确合计，不是独立费用；机械逐行加成520万不代表正文报价不可解释。原格式记录保留。",
+        "evidence": {
+          "json_pointer": "/submission_summary",
+          "start": 29,
+          "end": 61,
+          "quote": "报价 MOP 2,600,000 为基于招标包范围的暂列估算合计"
+        },
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ]
+      }
+    }
+  ],
+  "new_model_calls": 0,
+  "not_an_automatic_total_row_detection_rule": true
+}

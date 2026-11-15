@@ -1,0 +1,62 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-09",
+    "arm": "single_agent",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-09",
+    "expected_business_property": "Use the one operator-verified staffing condition as satisfied within the fictional task. Do not reopen it, infer other clearances, or assert real company availability. A separate grounded business refusal is allowed.",
+    "core_question_register": [
+      {
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "verified",
+        "required_before_submission": true
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0004",
+  "origin": "derived_synthetic_task",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid",
+    "reason": "管理层认为本包与公司设计协调和业主审查提交的核心能力相符，公司可以作为单一责任的设计牵头方提交投标。岩土设计和结构协调属于可通过受控专业顾问分包解决的技术缺口，不构成必须共享投标人身份和包级责任的组合体情形。指定岗位人员档期已核实可用，无未决前置条件。我们将以固定总价、按里程碑支付的报价基础，在投标文件中明确角色计划、交付方法、质量方法和风险应对，并对分包顾问设定审查节点和文件纪律，确保设计质量和工期可控。",
+    "content": "陈浩军建筑师决定就设计服务包提交投标，以单一责任设计牵头方身份参与。投标文件将包含团队可用性摘要、角色计划、交付方法、质量方法、价格基础和进度视图。岩土设计与结构协调将通过受控专业顾问分包完成，公司保留设计牵头和业主审查提交的单一责任，并在质量方法中设置内部审查节点和文件版本纪律。报价采用固定总价、按里程碑支付。风险应对重点包括地质资料解读的复核机制、支护和邻近建筑物保护设计的专项审查、施工期现场设计支持的响应安排。",
+    "unresolved_condition_ids": [],
+    "verified_condition_ids": [
+      "condition_a0058f33cd61c4963861"
+    ],
+    "bid_assumptions": [
+      "岩土设计和结构协调通过受控专业顾问分包完成，公司保留单一设计责任",
+      "指定岗位人员档期按已核实记录可用",
+      "报价为固定总价并按里程碑支付",
+      "施工期现场设计支持按投标文件所列响应安排执行"
+    ]
+  },
+  "source_path": "organization\\jobs\\FOLLOWUP-09-single_agent-r1\\final-attempt-1.json",
+  "source_sha256": "14df107906cdc0435442bacdc1857f5f7558f67ea1bb73c3a2866c2d490aa2ef",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-09",
+      "arm": "single_agent",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

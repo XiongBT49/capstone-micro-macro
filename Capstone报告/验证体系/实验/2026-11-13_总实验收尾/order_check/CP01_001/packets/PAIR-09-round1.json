@@ -1,0 +1,234 @@
+{
+  "pair_id": "PAIR-09",
+  "round": 1,
+  "input": {
+    "role": "supervisor",
+    "assessment_stage": "draft_or_intention_only_not_formal_submission",
+    "business_objective": "形成角色内的监督服务意向、检查与记录安排",
+    "project_facts": {
+      "case_id": "CASE-0205",
+      "project_name": "澳门国际机场",
+      "project_type": "交通基础设施",
+      "location": "澳门",
+      "scale": "1.14平方公里",
+      "delivery_mode": "EPC",
+      "owner_name": "澳门国际机场专营股份有限公司"
+    },
+    "scope_basis": {
+      "state": "provided_dossier_not_verified_eligibility",
+      "text": "施工管理、土木工程设计与监理/监督、项目管理",
+      "projection_sha256": "6fffa1037a1c64fa76e4577b88063dd49dba300d92c88af2028b0f03d5114b45"
+    },
+    "provided_company_fields": {
+      "company_id": "COMP-0454",
+      "company_name": "PENGEST INTERNACIONAL - PLANEAMENTO ENGENHARIAE GESTÃO, LIMITADA",
+      "business_scope": "施工管理、土木工程设计与监理/监督、项目管理",
+      "industry": "工程咨询/专业技术服务业",
+      "office_location": "澳门",
+      "office_location_detail": "Alameda Dr. Carlos d'Assumpção, Edifício China Civil Plaza, 5 Andar G, Macau",
+      "enterprise_type": "私营",
+      "established_time": "1984年",
+      "talent_structure": "施工管理、设计、监理/监督和项目管理技术人员",
+      "website": "https://pengestinternacional.wordpress.com/"
+    },
+    "not_supplied": [
+      "actual staff allocation",
+      "supplier quotation",
+      "specific product catalogue",
+      "inventory/local-team records",
+      "historical procurement costs"
+    ],
+    "ordinary_support": "Proposed plan only; no accepted counterparty commitment.",
+    "conditions": [
+      {
+        "condition_id": "condition_e6e2b3f13497969a1c68",
+        "question": "本包指定岗位人员档期是否可用",
+        "status": "requested",
+        "required_before_formal_submission": true,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      }
+    ],
+    "case_specific_attention": [
+      {
+        "input_pointer": "/facts/real_input_dossier/project/scale",
+        "provided_value": "1.14平方公里",
+        "handling": "规模有值时可用于拟议安排；空白时不要求虚构数量、实际工期或工程量。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/project/delivery_mode",
+        "provided_value": "EPC",
+        "handling": "交付模式描述项目背景，不自动使本方成为整包设计采购施工主体。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/company",
+        "provided_values": {
+          "talent_structure": "施工管理、设计、监理/监督和项目管理技术人员"
+        },
+        "handling": "保留给定的总体人员资料，但不得把它升级为本包实际派驻/档期已确认。"
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "V1",
+        "label": "监督职责与权限边界",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+        "handling_for_supported_defer_or_decline": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "V2",
+        "label": "检查与记录方案",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+        "handling_for_supported_defer_or_decline": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "V3",
+        "label": "监督人员与服务可实施性",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+        "handling_for_supported_defer_or_decline": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "V4",
+        "label": "未决条件与责任接口",
+        "applicable": true,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+        "handling_for_supported_defer_or_decline": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "V5",
+        "label": "项目针对性与风险考虑",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+        "handling_for_supported_defer_or_decline": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      }
+    ],
+    "common_scoring_rules": [
+      "无资料不自动要求拒绝，明确可行的条件性方案可以得高分。",
+      "不要求新JSON字段，不因V2.4缺task_role字段扣共同业务内容分。",
+      "项目名称复述不构成项目针对性，需说明至少一项条件怎样影响安排。",
+      "未提供工期、规格、市场价格等不要求补造，合理方案假设与事实断言分别判。",
+      "拒绝/等待使用各事项事先列好的相应处理分支，不强迫编造实施方案或报价，也不因此删除事项分母。",
+      "事项遗漏记missing，矛盾记contradicted，不得改记不可判断以排除低分；只有输入确实不可判或无可读回答时记不可判断并保留缺失说明。"
+    ]
+  },
+  "answers_in_display_order": [
+    {
+      "label": "A",
+      "outward": {
+        "decision": "bid",
+        "reason": "本包为机场扩建的监管服务角色，与公司档案所载业务范围（施工管理、土木工程设计与监理/监督、项目管理）方向一致，属于我们可作为单一责任主体承担的咨询监管类工作，不需要以组合体形式共享投标人身份或技术权威。当前唯一实质障碍是包内指定岗位人员的档期可用性尚未核实，该条件在条件登记中仍为未解决且被列为提交前必须满足的前置条件。管理层的决定是保留投标意向并推进准备，但在该岗位人员档期获得确认之前不提交投标。人员配置、同类项目经验、认证等档案信息目前为未知，不能当作已具备能力来对外表述，相关安排只能作为拟议方案呈现。",
+        "content": "管理层决定：对澳门国际机场监管服务包保留投标意向，按条件推进。公司档案所载业务范围为施工管理、土木工程设计与监理/监督、项目管理（档案原文），与本包监管角色方向相符，我们拟以单一投标人身份承担监管责任，不设组合体。需要说明的是，公司在同类项目经验、人员认证、具体人员配置等方面的档案信息目前未知，本决定不据此宣称已具备相应能力；投标文件中的岗位安排、监管流程、质量与文件管理做法均作为拟议方案提出，待内部确认后固化。当前关键前置事项为本包指定岗位人员的档期可用性，该条件尚未核实，在获得确认前不提交投标。报价与费用口径将在人员方案确定后按MOP编制，未取得的外部报价一律作为暂定 allowances 处理，不与已收报价混同。后续由交付与资源条线完成岗位人员档期核实并回报，商务条线同步准备投标框架，风险条线就监管责任边界与审查节点提出意见。",
+        "unresolved_condition_ids": [
+          "condition_e6e2b3f13497969a1c68"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "拟以单一投标人身份承担监管服务，不设组合体。",
+          "包内指定岗位人员档期在提交前完成内部核实并确认可用。",
+          "岗位安排、监管流程、质量与文件管理做法作为拟议方案，待内部确认后固化。",
+          "报价按MOP编制，未取得的外部报价作为暂定 allowances，不与已收报价混同。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "B",
+      "outward": {
+        "decision": "bid",
+        "reason": "本包为澳门国际机场的监管/监理服务角色，要求独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任。公司档案所载业务范围为施工管理、土木工程设计与监理/监督、项目管理，与监管服务性质相符，属于可争取的业务方向。但档案仅提供业务范围，经验、认证、人员配置与历史成本依据均未知，因此本次仅作有条件投标意向，不作能力已获证实的表述。当前唯一未决事项为本包指定岗位人员档期是否可用，该条件为提交前必须满足的前置条件，尚未取得证据，故在核实完成前不提交。监管角色可由本公司作为单一问责投标人承担，无需组合体；外部支持仅按普通支持安排处理，不改变投标人身份。报价采用暂定MOP计列，条目合计保持一致，待人员档期与工作范围明确后再行核定。",
+        "content": "管理层决定：就澳门国际机场监管/监理服务包提交有条件投标意向，角色为监管方，承担独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任。公司档案所载业务范围为施工管理、土木工程设计与监理/监督、项目管理，与监管服务方向一致，故列为可争取机会。需说明的是，档案仅提供业务范围文本，经验、认证、人员配置、交付资产与历史成本依据均属未知，本决定不将其视为已核实能力。投标方案拟按以下方向编制：一是独立监督与检查流程，明确现场巡查、工序验收、材料与工艺核查的记录与归档要求；二是进度与质量审查机制，设定审查节点、整改跟踪与报告制度；三是文档与记录纪律，确保监督记录可追溯、可交付业主审阅；四是报价以暂定MOP计列，条目合计保持一致，待工作范围与人员安排明确后核定。当前存在一项提交前必须满足的前置条件：本包指定岗位人员档期是否可用，尚未取得证据，在该条件核实前不正式提交。组合体并非必要，本公司可作为单一问责投标人承担监管服务，外部支持仅按普通支持安排处理，不改变投标人身份与责任归属。",
+        "task_role": "supervisor",
+        "unresolved_condition_ids": [
+          "condition_e6e2b3f13497969a1c68"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本包指定岗位人员档期在提交前完成核实并可用。",
+          "监管服务范围以独立监督、检查、进度与质量审查及记录为限，不含施工总包或整包设计施工责任。",
+          "报价为暂定MOP计列，条目合计保持一致，待工作范围与人员安排明确后核定。",
+          "外部支持按普通支持安排处理，不改变本公司单一问责投标人身份。"
+        ],
+        "verification_requests": [
+          {
+            "question": "本包指定岗位人员档期是否可用",
+            "required_before_submission": true
+          }
+        ]
+      }
+    }
+  ]
+}

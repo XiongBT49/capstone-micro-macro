@@ -1,0 +1,130 @@
+{
+  "job": {
+    "window_id": "FOLLOWUP-03",
+    "arm": "v2_baseline",
+    "repeat": 1
+  },
+  "target": {
+    "window_id": "FOLLOWUP-03",
+    "expected_business_property": "Keep proposed partner ability/acceptance/resource checks distinct from verified commitments. Proposed allocation is allowed; do not state another company has agreed without a source.",
+    "core_question_register": [
+      {
+        "question": "各位同事，此设计包涵盖多专业及专项设计，我们虽有设计协调和业主审查优势，但大型会议中心经验、声学与智能化专项能力尚需确认",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部提供潜在合作方名单，并确认其合作意向",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部确认是否有具备声学或智能化设计资质的合作方，并评估其合作意愿，这直接决定我们能否组建联合体",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请设计负责人确认能力缺口，我们再决定是否联合及如何划分责任",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "我建议先核实我们是否有类似项目经验，如果没有，考虑与具备专项能力的单位组成联合体，但必须明确设计总负责和质量责任划分",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部先提供团队可用性和类似项目清单，我们再决定投标策略",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "请市场部确认是否有具备声学或智能化设计资质的机构愿意合作，并评估其合作意向和资质，这直接决定我们能否以组合体形式投标",
+        "status": "requested",
+        "required_before_submission": false
+      },
+      {
+        "question": "建议市场部优先确认声学或智能化设计合作方意向，再决定组合体投标",
+        "status": "requested",
+        "required_before_submission": false
+      }
+    ],
+    "oracle": "Declared input/source states and business boundaries, established by the author-assisting AI before model execution; not an independent professional adjudication",
+    "dimensions": [
+      "grounding",
+      "condition_retention",
+      "decision_boundaries",
+      "usefulness"
+    ],
+    "numeric_oracle": "Decimal sum of generated amounts, tolerance 1 currency unit; no market-price oracle",
+    "acceptable_decisions": "Any stage-valid decision justified by the shared facts; no forced historical winner or uniform strategy"
+  },
+  "source_case": "CASE-0145",
+  "origin": "archived_decision_input",
+  "first_status": "accepted",
+  "first_output": {
+    "decision": "bid_with_consortium",
+    "reason": "本设计服务包要求整体设计总负责，并明确需要大型会议中心经验、BIM协调、声学与智能化专项设计、绿色建筑和设计进度管理能力。公司现有可核实优势集中在设计协调和业主审查提交，人员规模、资质、类似业绩均为公开数据缺口，团队可用性尚未核实，单独投标在资格评审和评标竞争力上明显不足。声学与智能化专项设计属于本包的核心设计责任，无法用普通分包掩盖设计总负责和专项技术权威的缺口，因此以组合体形式投标是诚实的经营选择。组合体必须明确设计总负责、质量责任和专项责任划分，合作方须真实承担相应设计责任。当前合作方意向、资质、团队可用性和类似业绩均未取得来源凭证，故本决策为有条件意向：合作方确认前不提交，若无法落实则转为不投标。",
+    "content": "管理层决定：就设计服务包采取组合体投标意向，但设定提交前条件。组合体定位为共同承担设计责任，而非把专项能力包装成分包；我方承担设计协调、业主审查提交和整体设计管理，合作方须在声学或智能化专项设计上承担明确的设计责任与质量责任。投标文件将围绕业主关注点组织：设计团队组织架构及关键人员简历、类似项目设计业绩、设计进度计划及关键节点、设计质量控制措施、BIM应用方案、绿色建筑认证策略、设计变更管理流程、风险应对方案。报价按总建筑面积单价计，涵盖各专业及深化设计费用，并明确设计变更计费方式。当前所有合作方意向、资质、团队可用性和类似业绩均为待核实事项，未取得来源凭证；在合作方确认并完成责任划分前不提交投标。若合作方无法落实，则放弃本包，不单独硬投。",
+    "verification_requests": [
+      {
+        "question": "核实公司自身是否具备大型会议中心或同类大型公共建筑的设计业绩与可提交的业绩证明",
+        "required_before_submission": false
+      },
+      {
+        "question": "核实设计团队实际可用人员规模、关键人员简历及本包所需专业配置是否到位",
+        "required_before_submission": false
+      },
+      {
+        "question": "确认具备声学专项设计能力的合作机构意向、资质及其愿意承担的设计责任范围",
+        "required_before_submission": true
+      },
+      {
+        "question": "确认具备智能化专项设计能力的合作机构意向、资质及其愿意承担的设计责任范围",
+        "required_before_submission": true
+      },
+      {
+        "question": "明确组合体内部设计总负责、质量责任和专项责任划分，并形成书面责任分工",
+        "required_before_submission": true
+      },
+      {
+        "question": "核实BIM设计协调能力和绿色建筑认证策略的可交付方案",
+        "required_before_submission": false
+      }
+    ],
+    "unresolved_condition_ids": [
+      "condition_29371506e42c10cf205c",
+      "condition_6e93d52a5c0597207391",
+      "condition_eefc2d121a97cb4de1e9",
+      "condition_4be37deaf5de90cb07f0",
+      "condition_8fe625e98828b4ad597c",
+      "condition_a9a550583ed1e0ca001b",
+      "condition_cf66d466e6da111b252f",
+      "condition_a080ebe5c529967b7a47"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "组合体成员将共同承担设计责任，而非普通分包关系",
+      "我方担任设计协调与业主审查提交的主导方，合作方承担声学或智能化专项设计责任",
+      "设计费按总建筑面积单价报价，包含所有专业及深化设计费用，并明确设计变更计费方式",
+      "合作方意向、资质和团队可用性在提交前完成核实，未落实则不提交"
+    ]
+  },
+  "source_path": "confirmation\\jobs\\FOLLOWUP-03-v2_baseline-r1\\final-attempt-1.json",
+  "source_sha256": "65cf4233c94bab7acd1294f6475a06e0e25085cb59a474c1152413e2b27fc462",
+  "raw_content_if_unparsed": null,
+  "organization_comments": [],
+  "outcome": {
+    "job": {
+      "window_id": "FOLLOWUP-03",
+      "arm": "v2_baseline",
+      "repeat": 1
+    },
+    "first_status": "accepted",
+    "final_status": "accepted",
+    "organization_complete": true,
+    "planned_comments": 0,
+    "accepted_comments": 0
+  },
+  "scope": "Author-assisting AI targeted review of all first outward fields and D3 comments; thoughts excluded. Not independent expert evaluation; comment opinions do not establish facts."
+}

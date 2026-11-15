@@ -1,0 +1,149 @@
+{
+  "cohort": "CP01",
+  "window_id": "EXPAND-06-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ed8c08f1d79077f2",
+  "role": "supervisor",
+  "annotated_action": "decline_based_on_unsupported_design_main_business_mismatch",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-06-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "47e7e2495dc00d086541820402e35e350adb64614df30668b1337fdba8e69f6d",
+  "call_id": "attempt_002_call_000015",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "与公司以设计为主的业务方向匹配度有限",
+    "reason": "公司实际范围和行业未知，却以名称推断设计主业及监管不匹配，再据此放弃；合理的人员未核实风险不能抵消这一核心拒绝理由的来源错误。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 42,
+      "end": 60,
+      "quote": "与公司以设计为主的业务方向匹配度有限"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "contradicted",
+      "quote": "公司应集中资源于设计主业及与自身能力匹配的机会",
+      "reason": "现有设计主业和监管责任匹配度不足没有实际资料支持，未知被用于实质业务错配推断。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 302,
+        "end": 325,
+        "quote": "公司应集中资源于设计主业及与自身能力匹配的机会"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "在人员与合规安排无法确认的情况下投标，将构成对业主不可兑现的承诺",
+      "reason": "拒绝分支指出了人员和监督证据缺口及不推进步骤，但主要转向无来源设计主业，没有明确相关证据改善后的重审触发；不强求拒绝者编完整检查计划。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 124,
+        "end": 156,
+        "quote": "在人员与合规安排无法确认的情况下投标，将构成对业主不可兑现的承诺"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "指定岗位人员档期亦未落实，属提交前必须解决的前置条件",
+      "reason": "对人员维度确实保留未知及其限制正式承诺的后果，没有将公司参保人数当已派驻团队，拒绝分支不要求另造排班。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 97,
+        "end": 123,
+        "quote": "指定岗位人员档期亦未落实，属提交前必须解决的前置条件"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "partial",
+      "quote": "引入组合体共享投标人身份只会模糊责任链",
+      "reason": "原人员前提及外部未获承诺状态保留，但没有依据证明组合体必然模糊独立监督责任，也不能靠无来源主业判断排除支持选择。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 257,
+        "end": 276,
+        "quote": "引入组合体共享投标人身份只会模糊责任链"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "missing",
+      "reason": "只有名称和一般监理责任风险，未将实际澳门、居住建筑或业主条件联系到项目特定监督重点或可靠的取舍依据。",
+      "evidence": null,
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.2,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "公司将以设计主业为重，保留与业主在其他类型项目上的合作空间",
+      "reason": "当前不作承诺可执行，但后续资源方向建立在未提供主营事实，未给人员或服务证据改善后的重审办法，整体行动路径仅部分有依据。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 157,
+        "end": 186,
+        "quote": "公司将以设计主业为重，保留与业主在其他类型项目上的合作空间"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "并不能弥补主业匹配度问题",
+      "reason": "有人员未核实与声誉风险的联系，但主要资源取舍依赖未证实设计主业和监管不匹配，并把监理独立性与排除合作相等同，重要取舍依据不足。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 277,
+        "end": 289,
+        "quote": "并不能弥补主业匹配度问题"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/指标补充/2026-11-12_业务结果评价规范_v2/task_cards.json",
+  "input_card_sha256": "9dccbcf40a82726e8ca41162a7bb58afc44f7c201a0601a077525b03fb4676bd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP01_EXPAND06_both_conditions.json",
+  "authored_labels_sha256": "6122a2f49cac2683481bb9f5aa5c93f23c4224be06b5449f74640f99fd4a2b61",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

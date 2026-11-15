@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T17:21:13.460830+00:00",
+  "runner_sha256": "b9bf047e5dee18c8859a364dbbf03d101e68dff2a6c511624faa3985797b3bf1",
+  "analysis": "post-hoc date-availability sensitivity, not a prospective test",
+  "date_rule": "only strict year-month[-day] dates; reference completion month strictly earlier than earliest known target project start month",
+  "training_rule": "same original outer training fold, all target near-duplicate groups excluded, plus reference relation finish date before target start",
+  "weights": "fixed predeclared analogy_history formula; no new hyperparameter tuning",
+  "families": [
+    "old_role_first",
+    "dated_role_history",
+    "dated_analogy_history"
+  ],
+  "date_not_ranking_feature": true,
+  "limits": [
+    "actual_start is a construction-start proxy, not verified pre-award query time",
+    "record completion does not prove historical document publication time",
+    "date-missing targets retained as not evaluable, not silently removed from main 433"
+  ],
+  "new_api_requests": 0
+}

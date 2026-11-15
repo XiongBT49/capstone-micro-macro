@@ -1,0 +1,246 @@
+{
+  "version": "narrative-repair.v2.4.1",
+  "model": "deepseek-v4-flash",
+  "temperature": 0.2,
+  "concurrency": 2,
+  "max_output_tokens": 4096,
+  "first_requests": 32,
+  "max_calls_proposed": 40,
+  "max_final_retries": 8,
+  "provider_calls_authorized": 0,
+  "jobs": [
+    {
+      "window_id": "SOURCE-03-full",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-03-full",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-full",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-03-full",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-02-full",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-03-missing_core",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-03-missing_core",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-03-missing_core",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-01-full",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-02-missing_core",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-full",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-02-missing_core",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-02-missing_core",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-04-missing_core",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-missing_core",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-02-full",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-missing_core",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-full",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-full",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-03-missing_core",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-missing_core",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-full",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-02-full",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-01-missing_core",
+      "arm": "v2_3",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-02-full",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-full",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-01-missing_core",
+      "arm": "v2_3",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-04-missing_core",
+      "arm": "v2_4",
+      "repeat": 1
+    },
+    {
+      "window_id": "SOURCE-03-full",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-missing_core",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-04-full",
+      "arm": "v2_4",
+      "repeat": 2
+    },
+    {
+      "window_id": "SOURCE-02-missing_core",
+      "arm": "v2_3",
+      "repeat": 2
+    }
+  ],
+  "windows_sha256": "bad4c1d1b2cd17b48ae4cf624afd8db491dee33ee2761978d2fac23ad36abfdb",
+  "targets_sha256": "e308adfa380ef213256406ecb355d19a8dee550e67d3aefce818b481871de1ba",
+  "manifest_sha256": "21e7ad6aed133a78723589b684e418666e39127abc1b4c8a5ea1a17230d03c6c",
+  "code_sha256": {
+    "src/verification.py": "71777ffdf361f20c9d36df6f94a79c234ac8be0e1cf52d1fdb9d55ae57c11601",
+    "src/company_grounding.py": "6d0d43b6a39827feeb6ce82d8b3f91a20b676cf5df2a5785675e9902331695ae",
+    "src/company_narrative.py": "2cb030591875fb252f5e2abce0e2af548baaaa0981b959ab1511a57032a23779",
+    "src/response_repair.py": "f183db74b64ebb61b2c170b245a5da6b2d1d1b9b6a7b3a85ec51dbd58e5de76b",
+    "src/agent_runtime.py": "0efc680968d445eafd167932df34d4533b0580b9b816e19d1d9950228177e8be",
+    "src/models.py": "8895a541eeeaab192f4d5a5139aa3a6270bf846628cbc1f61257751746c7984a",
+    "src/stages/participation.py": "5fb5130144570941880b52798b1a7dd5c0bc5a49823a51e47f2e7da0808101e4",
+    "src/stages/reconsideration.py": "dd945b0255e10af9830c3ae69a345e2075e21b5a2a6597d5988cf81d7e26e3a2",
+    "src/stages/bid_documents.py": "03835e03ae7a09aa59550be210f45f87c2874965e640ca45a887278bd676a08f",
+    "src/prompt_contracts.py": "f813d4792d56e2edda1e0f8ad79475e801338b4ab299bb7c8dcf8191e8eccf5f",
+    "src/llm_client.py": "4de412da8ccec5d7867dcc9c3c1bd7d6d4e26add69ba38aa09724e669f582c4c",
+    "src/coordination/model_budget.py": "2dcb7f673afc010fbe78f6d3d7ff6b61a1a528896cf0dcf4ab1b69b4007c8a14",
+    "src/coordination/tasks.py": "99150b5d2c959de115083f0a4492080d37aaaaf61f09e801e83f8b9a75766d69",
+    "src/run_audit.py": "fd8e4c54372f2e3dc3c580b66cc03d2f8a476c7f03baf751a8c94f56a062f49c",
+    "scripts/run_capstone_v2_4_20261109.py": "da057ae39a46e9d9e582d10256f1da7a1550e53ab49bafbc788d6c69fa5be801",
+    "scripts/prepare_capstone_v2_4_20261109.py": "43884011818851a3dae4e341e2be4ab16be8c2411de708b19215f740bf64985a"
+  },
+  "baseline_verification_sha256": "8d84ef51c444a8ab3947f59fbb75fca443784a06b5a597b24bfbc5e73f6f2f28",
+  "excluded_process_groups": [
+    "043ecd3cf83dce9d",
+    "064327b7f65ea1b9",
+    "0adb61f8abecaeb2",
+    "159b35594e85655e",
+    "1937922ad548104e",
+    "197b9f8357b249bd",
+    "19edc7b83aeaabb6",
+    "1e817a0b5d2af3d5",
+    "230819b814c1c770",
+    "2d58fd8d9c1cdd2a",
+    "3f3ee74d8e81231c",
+    "40435efcc11773c0",
+    "4991672739478ace",
+    "51de6b79f717aad8",
+    "63a668597a708073",
+    "74c5d63a82723e4b",
+    "78d68a4255f41aa5",
+    "7a49a698e0f3fc7d",
+    "7f22c039d03f7bab",
+    "839e9b8e494e275a",
+    "840828b08e413ae2",
+    "8983f353d44d0af2",
+    "8ab371a7e3bdee02",
+    "8c75a77c2ca56442",
+    "8e1ba4b2ac99a7f4",
+    "926f9c0d31fd7334",
+    "a92fe72912c69c2e",
+    "b1448de47ce6684e",
+    "c0a76424542b2550",
+    "c14e491a7a195fc8",
+    "ca8bb8cf509f9831",
+    "e1e9635d2ad2c310",
+    "eff89f3cc90143f0",
+    "f65bb610f15307b9",
+    "f69037c5b93125dc",
+    "fe882492eb822683"
+  ],
+  "group_file_sha256": "c8292fba6a7c6e8556f606515c99d00f905c4df61db412f8ab4176be3ede93d9",
+  "source_sha256": {
+    "data\\test_sources\\casebank_enterprise_matched\\simulation_input_projects.csv": "c582892343cbadaff2dac39106a974508bc9f596e0e7a5ef9a40b404fb7e551b",
+    "data\\test_sources\\casebank_enterprise_matched\\simulation_input_enterprises.csv": "adda7da9a8c5a41face0ae80da6e42135fdf4c56c9790c5769d767041c74318c"
+  },
+  "selection": "Existing input-only retrieval and explicit role-scope checks, stable project hash, no model score/winner labels. Excludes28 process-case groups,4 V2.2 robustness groups and4 V2.3 source-binding groups.",
+  "comparison": "Captured V2.3 versus V2.4 bounded narrative gate, context rules and targeted-repair package. Both arms have the same supplied dossier/source facts. Not a pure prompt ablation; old retry remains baseline, candidate changes outside error paths require review. Limited checks are not semantic truth.",
+  "primary_unit": "4 source groups,8 controlled full/missing scenarios,2 repeats per arm; shared dataset, not external blind validation.",
+  "retry": "All first responses before at most one retry per eligible invalid JSON/contract final; semantic-review-needed cases and provider failures not retried. Candidate retry receives original raw answer and exact error; unexpected content/strategy drift is held for review, not accepted or retried again.",
+  "stop": "New independent budget, cap/unknown attempt/fatal provider/input mismatch stop; no automatic resume. No historical budget (including prior unused6) inherited; explicit independent new authorization required.",
+  "macro_execution": false,
+  "paid_judge": false,
+  "paper_and_figures": false
+}

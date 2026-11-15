@@ -1,0 +1,155 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-013-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c34e3f61c0b6c361",
+  "role": "contractor",
+  "annotated_action": "conditional_school_main_works_construction",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-013-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "4b623c90c86f5a0975c8fc1adc867d0c58398ccd565239de233998f551665be5",
+  "call_id": "attempt_001_call_000047",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "非已审阅的资格接受",
+    "reason": "实际建筑总包范围支持有限施工意向，正文仍施工管理而非明确整体设计采购责任，两原核查保留。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 103,
+      "end": 112,
+      "quote": "非已审阅的资格接受"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "业务范围据公司档案文本为建筑总承包",
+      "reason": "范围及商会描述确在给定资料，但不当本包资格接受。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 66,
+        "end": 83,
+        "quote": "业务范围据公司档案文本为建筑总承包"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "设计与专项工程通过常规分包及外部技术支持衔接",
+      "reason": "一般职责和专业支持类别，未展开两项具体施工或交接办法。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 149,
+        "end": 171,
+        "quote": "设计与专项工程通过常规分包及外部技术支持衔接"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "由投标团队按角色计划、交付方案、质量方案、价格基础、进度视图与风险应对编制草案",
+      "reason": "人员未决保持，具体本方岗位和落实组织未给。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 193,
+        "end": 232,
+        "quote": "由投标团队按角色计划、交付方案、质量方案、价格基础、进度视图与风险应对编制草案"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "核实不通过则撤回意向",
+      "reason": "原人员资格两必要核查保持，无已接受外部承诺。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 282,
+        "end": 292,
+        "quote": "核实不通过则撤回意向"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "partial",
+      "quote": "业主具澳门背景",
+      "reason": "项目中学性质和范围匹配有依据，但公司名称含澳门不直接证明业主控股或经营背景，未提供背景资料，不作为已核实事实。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 24,
+        "end": 31,
+        "quote": "业主具澳门背景"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "报价与资源安排均按暂定处理",
+      "reason": "有限施工责任和提交边界可成立，但具体施工方法岗位及资源落实仍为未来目录，执行安排不充分。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 233,
+        "end": 246,
+        "quote": "报价与资源安排均按暂定处理"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若核实不通过，则撤回投标意向",
+      "reason": "真实施工方向的机会与人员资格资源未知联系到有条件准备、暂定报价和失败退出，未把普通支持强制联合。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 265,
+        "end": 279,
+        "quote": "若核实不通过，则撤回投标意向"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/CP08_013_first_001.json",
+  "authored_labels_sha256": "d41bfcb1d176f035d5336447eb80c28cab33e45354fe61955ddca98d85aa2707",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
