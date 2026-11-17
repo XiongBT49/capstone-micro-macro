@@ -1,0 +1,299 @@
+{
+  "schema_version": "score-sheet.v1",
+  "state": "awaiting_draft",
+  "response_ref": {
+    "response_path": "Capstone报告/验证体系/实验/2026-11-12_CP零调用准备/CP01/continuation-001/run/jobs/EXPAND-01-full-v2_5-r1/attempt-1.json",
+    "window_id": "EXPAND-01-full",
+    "cohort": "CP01"
+  },
+  "task_card_ref": {
+    "window_id": "EXPAND-01-full",
+    "project_group": "6a0c277221695c82",
+    "role": "supplier",
+    "variant": "full",
+    "case_id": "CASE-0025"
+  },
+  "mechanical_gates": {
+    "schema_version": "mechanical-gates.v1",
+    "assigns_business_grades": false,
+    "program_status_retained": "accepted",
+    "content_review_read_view": {
+      "mode": "original_parsed_public_fields"
+    },
+    "readable": true,
+    "role": "supplier",
+    "section_presence": {
+      "role": "supplier",
+      "required_fields": [
+        "technical_proposal",
+        "implementation_plan",
+        "quotation",
+        "schedule_commitment",
+        "risk_response",
+        "submission_summary",
+        "task_role"
+      ],
+      "present": [
+        "technical_proposal",
+        "implementation_plan",
+        "quotation",
+        "schedule_commitment",
+        "risk_response",
+        "submission_summary",
+        "task_role"
+      ],
+      "missing": [],
+      "empty": [],
+      "all_required_nonempty": true
+    },
+    "pattern_flags": [
+      {
+        "code": "scope_overrun",
+        "pattern": "承担整包(施工|设计采购施工|EPC)责任",
+        "span": "承担整包施工责任",
+        "start": 15,
+        "end": 23
+      }
+    ],
+    "invented_fact_flags": [],
+    "blocking_codes": [],
+    "soft_codes": [
+      "d1_taxonomy_pattern_hits"
+    ],
+    "passed_mechanical_gates": true,
+    "eligible_for_business_scoring": true,
+    "notes": [
+      "Gate failures are structured codes for triage.",
+      "Soft pattern hits never auto-set D1 inappropriate/appropriate.",
+      "Business D1–D4 remain author-assisted judgments with citations."
+    ],
+    "result_sha256": "2b80659d1b1c7bfc9ceaa6ab5c8605777ba945edc9ac2534a3fcf78644481d9e"
+  },
+  "draft": {
+    "reviewer_model_family": null,
+    "reviewer_note": "Second-model draft only; never official. Adjudicator decides.",
+    "action": null,
+    "D1": {
+      "label": null,
+      "quote": null,
+      "reason": null,
+      "reason_codes": []
+    },
+    "factors": [
+      {
+        "id": "S1",
+        "label": "供货范围与产品依据",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+        "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "evidence": null
+      },
+      {
+        "id": "S2",
+        "label": "具体供货交付方案",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+        "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "evidence": null
+      },
+      {
+        "id": "S3",
+        "label": "交付资源和承诺状态",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+        "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "evidence": null
+      },
+      {
+        "id": "S4",
+        "label": "质量保修与外部接口",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+        "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "evidence": null
+      },
+      {
+        "id": "S5",
+        "label": "项目针对性",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+        "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "evidence": null
+      },
+      {
+        "id": "S6",
+        "label": "报价可解释性",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ],
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "evidence": null
+      }
+    ],
+    "D3": {
+      "score": null,
+      "quote": null,
+      "reason": null
+    },
+    "D4": {
+      "score": null,
+      "quote": null,
+      "reason": null
+    },
+    "completed": false
+  },
+  "adjudication": {
+    "reviewer": "author_assisted_adjudicator",
+    "independent_expert": false,
+    "blinded_presentation": false,
+    "action": null,
+    "D1": {
+      "label": null,
+      "quote": null,
+      "reason": null,
+      "reason_codes": []
+    },
+    "factors": [
+      {
+        "id": "S1",
+        "label": "供货范围与产品依据",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+        "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "evidence": null
+      },
+      {
+        "id": "S2",
+        "label": "具体供货交付方案",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+        "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "evidence": null
+      },
+      {
+        "id": "S3",
+        "label": "交付资源和承诺状态",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+        "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "evidence": null
+      },
+      {
+        "id": "S4",
+        "label": "质量保修与外部接口",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+        "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "evidence": null
+      },
+      {
+        "id": "S5",
+        "label": "项目针对性",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+        "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "evidence": null
+      },
+      {
+        "id": "S6",
+        "label": "报价可解释性",
+        "rating": null,
+        "quote": null,
+        "reason": null,
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ],
+        "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "evidence": null
+      }
+    ],
+    "D3": {
+      "score": null,
+      "quote": null,
+      "reason": null
+    },
+    "D4": {
+      "score": null,
+      "quote": null,
+      "reason": null
+    },
+    "completed": false,
+    "disagreements_with_draft": []
+  },
+  "official_grade_path": null,
+  "limitations": [
+    "Draft–adjudicator agreement is not inter-rater reliability.",
+    "Do not overwrite frozen business_review grades; append revisions only.",
+    "Mechanical gates do not set D1–D4."
+  ],
+  "sheet_sha256": "4027845420218199307e4a850c647630c83e9da7c5b2b5e889c0fae67c5d78d7"
+}

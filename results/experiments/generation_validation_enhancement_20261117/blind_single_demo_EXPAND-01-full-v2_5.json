@@ -1,0 +1,289 @@
+{
+  "schema_version": "blind-single-answer.v1",
+  "answer_id": "EXPAND-01-full-demo",
+  "presentation": "single_answer_before_pairwise",
+  "input": {
+    "role": "supplier",
+    "assessment_stage": "draft_or_intention_only_not_formal_submission",
+    "business_objective": "形成有依据的供货、交付及暂定报价方案",
+    "project_facts": {
+      "case_id": "CASE-0025",
+      "project_name": "新城A区B9地段公共房屋",
+      "project_type": "居住建筑",
+      "location": "澳门",
+      "scale": "",
+      "delivery_mode": "EPC",
+      "owner_name": "澳门特别行政区政府建设发展办公室"
+    },
+    "scope_basis": {
+      "state": "provided_dossier_not_verified_eligibility",
+      "text": "模块化钢结构房屋、船舶舱室的设计制造等",
+      "projection_sha256": "08c39e74769a52eecd608ea5dbaeb203f23fde443aae622dca0c36640f83ada1"
+    },
+    "provided_company_fields": {
+      "company_id": "COMP-0022",
+      "company_name": "常熟雅致模块化建筑有限公司",
+      "business_scope": "模块化钢结构房屋、船舶舱室的设计制造等",
+      "certifications": "ISO9001, ISO14001",
+      "office_location": "常熟",
+      "office_location_detail": "江苏省常熟市",
+      "enterprise_type": "国有",
+      "established_time": "2009",
+      "registered_capital": "20,000万人民币",
+      "compliance": "存在少量过往行政处罚记录",
+      "website": "www.archispace.cn"
+    },
+    "not_supplied": [
+      "actual staff allocation",
+      "supplier quotation",
+      "specific product catalogue",
+      "inventory/local-team records",
+      "historical procurement costs"
+    ],
+    "ordinary_support": "Proposed plan only; no accepted counterparty commitment.",
+    "conditions": [
+      {
+        "condition_id": "condition_b8e9a90be3317172d6e3",
+        "question": "本包供应商渠道审核是否通过",
+        "status": "requested",
+        "required_before_formal_submission": false,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      },
+      {
+        "condition_id": "condition_efec1e41010be50995d9",
+        "question": "外部支持是否接受保修与质量文档要求",
+        "status": "requested",
+        "required_before_formal_submission": false,
+        "expectation": "Preserve actual unresolved state; drafting remains allowed; never describe an unreceived reply as verified."
+      }
+    ],
+    "case_specific_attention": [
+      {
+        "input_pointer": "/facts/real_input_dossier/project/scale",
+        "provided_value": "",
+        "handling": "规模有值时可用于拟议安排；空白时不要求虚构数量、实际工期或工程量。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/project/delivery_mode",
+        "provided_value": "EPC",
+        "handling": "交付模式描述项目背景，不自动使本方成为整包设计采购施工主体。"
+      },
+      {
+        "input_pointer": "/facts/real_input_dossier/company/compliance",
+        "provided_value": "存在少量过往行政处罚记录",
+        "related_factor_id": "S5",
+        "handling": "项目针对性/风险因素中考虑档案所记合规信息及核查需要；不将过去记载直接判为当前禁止参与或已获全面认可。"
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "S1",
+        "label": "供货范围与产品依据",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company/business_scope",
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+        "handling_for_supported_defer_or_decline": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "S2",
+        "label": "具体供货交付方案",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/synthetic_task_contract/role",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+        "handling_for_supported_defer_or_decline": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "S3",
+        "label": "交付资源和承诺状态",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/company",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+        "handling_for_supported_defer_or_decline": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "S4",
+        "label": "质量保修与外部接口",
+        "applicable": true,
+        "input_pointers": [
+          "/conditions",
+          "/facts/synthetic_task_contract"
+        ],
+        "adequate_handling": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+        "handling_for_supported_defer_or_decline": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "S5",
+        "label": "项目针对性",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/real_input_dossier/project",
+          "/facts/synthetic_task_contract/role"
+        ],
+        "adequate_handling": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+        "handling_for_supported_defer_or_decline": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      },
+      {
+        "factor_id": "S6",
+        "label": "报价可解释性",
+        "applicable": true,
+        "input_pointers": [
+          "/facts/synthetic_task_contract",
+          "parent_targets/numeric"
+        ],
+        "adequate_handling": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+        "handling_for_supported_defer_or_decline": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+        "states": [
+          "correct",
+          "partial",
+          "missing",
+          "contradicted",
+          "not_judgable"
+        ],
+        "correct_denominator_weight": 1,
+        "is_new_submission_condition": false
+      }
+    ],
+    "common_scoring_rules": [
+      "无资料不自动要求拒绝，明确可行的条件性方案可以得高分。",
+      "不要求新JSON字段，不因V2.4缺task_role字段扣共同业务内容分。",
+      "项目名称复述不构成项目针对性，需说明至少一项条件怎样影响安排。",
+      "未提供工期、规格、市场价格等不要求补造，合理方案假设与事实断言分别判。",
+      "拒绝/等待使用各事项事先列好的相应处理分支，不强迫编造实施方案或报价，也不因此删除事项分母。",
+      "事项遗漏记missing，矛盾记contradicted，不得改记不可判断以排除低分；只有输入确实不可判或无可读回答时记不可判断并保留缺失说明。"
+    ]
+  },
+  "outward": {
+    "technical_proposal": "本投标为供应商角色意向草案，不承担整包施工责任。拟供应模块化钢结构房屋单元及其配套围护、连接件与舱室类内装组件，供货范围以招标包最终技术规格书为准。产品技术方案、具体产品目录、库存与本地团队记录尚未提供，均列为待核实事项，不作既有能力陈述。质量方面，公司档案载明持有 ISO9001、ISO14001（档案原文，未经本包审核确认），拟按内部质量程序执行出厂检验、独立复核与材料复核，并随货提交质量文档。保修与文档接口拟由本公司统一对接，外部支持方的保修与质量文档接受情况尚待确认。",
+    "implementation_plan": "拟按以下阶段推进：一、规格确认与深化设计接口协调；二、生产排产与出厂检验；三、包装、运输及澳门现场交付；四、现场安装技术指导与接口交接（安装施工由总承包方或其他方负责，本公司仅提供供应与技术接口支持）；五、竣工文档移交与保修响应。具体排产、产能与运输安排须在获得产品目录、库存及本地支持记录后细化，现阶段均为建议性计划。",
+    "quotation_breakdown": [
+      {
+        "item": "模块化单元及配套组件供货暂列",
+        "amount": 8600000,
+        "basis": "按招标包规模所作的暂列估算，缺产品目录与实际数量，属暂定假设，非已收到供应商报价"
+      },
+      {
+        "item": "包装、运输及澳门现场交付",
+        "amount": 720000,
+        "basis": "跨境运输与现场交付的暂定估算，未取得承运报价"
+      },
+      {
+        "item": "出厂检验、独立复核与质量文档",
+        "amount": 310000,
+        "basis": "按内部质量程序与文档提交工作量的暂定估算"
+      },
+      {
+        "item": "现场安装技术指导与接口交接支持",
+        "amount": 380000,
+        "basis": "供应方技术接口支持暂定人工估算，不含安装施工"
+      },
+      {
+        "item": "保修期响应与备件支持",
+        "amount": 260000,
+        "basis": "保修响应与备件支持的暂定计提，外部支持方接受情况待确认"
+      },
+      {
+        "item": "项目管理、保险与风险准备",
+        "amount": 470000,
+        "basis": "供应方项目管理、保险及价格风险准备的暂定计提"
+      }
+    ],
+    "quotation": 10740000,
+    "schedule_commitment": "拟在合同生效并完成规格确认后按双方商定节点分批交付，具体生产周期与运输窗口须待产品目录、产能与物流安排核实后确认，现不作确定工期承诺。",
+    "owner_control_response": "接受业主及总承包方的质量目标、可持续发展目标与文档纪律要求；拟配合业主审查、进度审查与付款审查流程，按约定提交质量记录与竣工文档。",
+    "risk_response": "主要风险包括：产品目录与数量未明（暂列估算）、外部支持方保修与质量文档接受情况未确认、跨境运输与现场接口协调、以及公司档案载有少量过往行政处罚记录。拟通过分批交付、出厂前独立复核、明确接口责任矩阵与保修响应机制加以控制；价格风险以暂定估算与风险准备反映，不声称固定总价。",
+    "submission_summary": "本公司以供应商身份提交意向草案，报价 MOP 10,740,000 为暂定估算，由供货暂列、运输交付、质量文档、技术接口支持、保修响应及项目管理与风险准备六项构成，合计与报价一致。该金额基于缺失产品目录与实际数量的暂定假设，非已收到供应商报价，亦不构成整包施工报价。供应商渠道审核与外部支持保修文档接受两项条件尚未核实，本文件为讨论性意向，不构成正式投标。",
+    "unresolved_condition_ids": [
+      "condition_b8e9a90be3317172d6e3",
+      "condition_efec1e41010be50995d9"
+    ],
+    "verified_condition_ids": [],
+    "bid_assumptions": [
+      "本文件为供应商角色意向草案，不构成正式投标，不承担整包施工责任。",
+      "报价为基于缺失产品目录与实际数量的暂定估算，非已收到供应商报价。",
+      "外部支持方的保修与质量文档接受情况尚待确认。",
+      "供应商渠道审核结果尚待确认。",
+      "安装施工由总承包方或其他方负责，本公司仅提供供应与技术接口支持。"
+    ],
+    "verification_requests": [
+      {
+        "question": "本包供应商渠道审核是否通过",
+        "required_before_submission": false
+      },
+      {
+        "question": "外部支持是否接受保修与质量文档要求",
+        "required_before_submission": false
+      }
+    ],
+    "task_role": "supplier"
+  },
+  "display_text": "technical_proposal: 本投标为供应商角色意向草案，不承担整包施工责任。拟供应模块化钢结构房屋单元及其配套围护、连接件与舱室类内装组件，供货范围以招标包最终技术规格书为准。产品技术方案、具体产品目录、库存与本地团队记录尚未提供，均列为待核实事项，不作既有能力陈述。质量方面，公司档案载明持有 ISO9001、ISO14001（档案原文，未经本包审核确认），拟按内部质量程序执行出厂检验、独立复核与材料复核，并随货提交质量文档。保修与文档接口拟由本公司统一对接，外部支持方的保修与质量文档接受情况尚待确认。\nimplementation_plan: 拟按以下阶段推进：一、规格确认与深化设计接口协调；二、生产排产与出厂检验；三、包装、运输及澳门现场交付；四、现场安装技术指导与接口交接（安装施工由总承包方或其他方负责，本公司仅提供供应与技术接口支持）；五、竣工文档移交与保修响应。具体排产、产能与运输安排须在获得产品目录、库存及本地支持记录后细化，现阶段均为建议性计划。\nquotation_breakdown: [{'item': '模块化单元及配套组件供货暂列', 'amount': 8600000, 'basis': '按招标包规模所作的暂列估算，缺产品目录与实际数量，属暂定假设，非已收到供应商报价'}, {'item': '包装、运输及澳门现场交付', 'amount': 720000, 'basis': '跨境运输与现场交付的暂定估算，未取得承运报价'}, {'item': '出厂检验、独立复核与质量文档', 'amount': 310000, 'basis': '按内部质量程序与文档提交工作量的暂定估算'}, {'item': '现场安装技术指导与接口交接支持', 'amount': 380000, 'basis': '供应方技术接口支持暂定人工估算，不含安装施工'}, {'item': '保修期响应与备件支持', 'amount': 260000, 'basis': '保修响应与备件支持的暂定计提，外部支持方接受情况待确认'}, {'item': '项目管理、保险与风险准备', 'amount': 470000, 'basis': '供应方项目管理、保险及价格风险准备的暂定计提'}]\nquotation: 10740000\nschedule_commitment: 拟在合同生效并完成规格确认后按双方商定节点分批交付，具体生产周期与运输窗口须待产品目录、产能与物流安排核实后确认，现不作确定工期承诺。\nowner_control_response: 接受业主及总承包方的质量目标、可持续发展目标与文档纪律要求；拟配合业主审查、进度审查与付款审查流程，按约定提交质量记录与竣工文档。\nrisk_response: 主要风险包括：产品目录与数量未明（暂列估算）、外部支持方保修与质量文档接受情况未确认、跨境运输与现场接口协调、以及公司档案载有少量过往行政处罚记录。拟通过分批交付、出厂前独立复核、明确接口责任矩阵与保修响应机制加以控制；价格风险以暂定估算与风险准备反映，不声称固定总价。\nsubmission_summary: 本公司以供应商身份提交意向草案，报价 MOP 10,740,000 为暂定估算，由供货暂列、运输交付、质量文档、技术接口支持、保修响应及项目管理与风险准备六项构成，合计与报价一致。该金额基于缺失产品目录与实际数量的暂定假设，非已收到供应商报价，亦不构成整包施工报价。供应商渠道审核与外部支持保修文档接受两项条件尚未核实，本文件为讨论性意向，不构成正式投标。\nunresolved_condition_ids: ['condition_b8e9a90be3317172d6e3', 'condition_efec1e41010be50995d9']\nverified_condition_ids: []\nbid_assumptions: ['本文件为供应商角色意向草案，不构成正式投标，不承担整包施工责任。', '报价为基于缺失产品目录与实际数量的暂定估算，非已收到供应商报价。', '外部支持方的保修与质量文档接受情况尚待确认。', '供应商渠道审核结果尚待确认。', '安装施工由总承包方或其他方负责，本公司仅提供供应与技术接口支持。']\nverification_requests: [{'question': '本包供应商渠道审核是否通过', 'required_before_submission': False}, {'question': '外部支持是否接受保修与质量文档要求', 'required_before_submission': False}]\ntask_role: supplier",
+  "length": {
+    "chars": 1990,
+    "approx_tokens_chars_div4": 498,
+    "truncated": false,
+    "budget": null
+  },
+  "suspected_identity_leak_flags": [
+    "机制"
+  ],
+  "limitations": [
+    "Stripping labels reduces cueing but cannot create true blind or independent review.",
+    "Style and prompt habits may still leak mechanism identity."
+  ],
+  "packet_sha256": "595eaf090f69a2055837ccc136e00220785f9a26acd0256ac900e1ad816e3ee8"
+}

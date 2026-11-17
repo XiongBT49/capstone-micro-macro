@@ -1,0 +1,56 @@
+{
+  "schema_version": "mechanical-gates.v1",
+  "assigns_business_grades": false,
+  "program_status_retained": "accepted",
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "readable": true,
+  "role": "supplier",
+  "section_presence": {
+    "role": "supplier",
+    "required_fields": [
+      "technical_proposal",
+      "implementation_plan",
+      "quotation",
+      "schedule_commitment",
+      "risk_response",
+      "submission_summary",
+      "task_role"
+    ],
+    "present": [
+      "technical_proposal",
+      "implementation_plan",
+      "quotation",
+      "schedule_commitment",
+      "risk_response",
+      "submission_summary",
+      "task_role"
+    ],
+    "missing": [],
+    "empty": [],
+    "all_required_nonempty": true
+  },
+  "pattern_flags": [
+    {
+      "code": "scope_overrun",
+      "pattern": "承担整包(施工|设计采购施工|EPC)责任",
+      "span": "承担整包施工责任",
+      "start": 15,
+      "end": 23
+    }
+  ],
+  "invented_fact_flags": [],
+  "blocking_codes": [],
+  "soft_codes": [
+    "d1_taxonomy_pattern_hits"
+  ],
+  "passed_mechanical_gates": true,
+  "eligible_for_business_scoring": true,
+  "notes": [
+    "Gate failures are structured codes for triage.",
+    "Soft pattern hits never auto-set D1 inappropriate/appropriate.",
+    "Business D1–D4 remain author-assisted judgments with citations."
+  ],
+  "result_sha256": "2b80659d1b1c7bfc9ceaa6ab5c8605777ba945edc9ac2534a3fcf78644481d9e"
+}

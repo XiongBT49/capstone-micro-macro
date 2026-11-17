@@ -9,6 +9,7 @@
 - [可读与已评数量](../Capstone报告/验证体系/实验/2026-11-13_总实验收尾/business_readiness_CP08_review_progress_005.json)：区分已返回、可读与已复核，避免把请求提交当作实验完成。
 - [停止状态记录](../Capstone报告/验证体系/实验/2026-11-13_总实验收尾/serial_pipeline_003/state.json)：历史流水线已停止，本记录不构成重新启动指令。
 - [确定性反馈对照](../output/integration/capstone_validation_20261105/feedback/summary.json)：6个窗口、18次条件运行；说明规则应变，不表述为模型学会盈利。
+- [生成校验增强（门禁／评分表／锚点／去标识／覆盖／专家切片）](experiments/generation_validation_enhancement_20261117/index.json)：前向评阅流程与离线演示产物；0次新模型调用；不改写冻结业务评分。
 
 ## 当前完成度
 

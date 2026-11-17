@@ -1,0 +1,42 @@
+{
+  "experiment_id": "generation_validation_enhancement_20261117",
+  "implements": [
+    "1_mechanical_gates",
+    "2_structured_score_sheets_and_draft_adjudication",
+    "3_discrimination_anchors",
+    "4_blinding_and_order_swap",
+    "5_coverage_matrix",
+    "6_expert_slice"
+  ],
+  "new_model_calls": 0,
+  "does_not": [
+    "overwrite_frozen_business_review_grades",
+    "auto_assign_D1_D4",
+    "claim_independent_blind_or_inter_rater_reliability"
+  ],
+  "artifacts": {
+    "protocol": "research/generation_validation/README.md",
+    "anchors": "research/generation_validation/anchors/discrimination_set_v1.json",
+    "coverage_matrix": "results/experiments/generation_validation_enhancement_20261117/coverage_matrix.json",
+    "expert_slice_demo": "results/experiments/generation_validation_enhancement_20261117/expert_slice_selection_demo.json",
+    "order_swap_demo": "results/experiments/generation_validation_enhancement_20261117/order_swap_selection_enhanced_demo.json",
+    "demo_response_artifacts": [
+      "mechanical_gates_demo_EXPAND-01-full-v2_5.json",
+      "score_sheet_blank_demo_EXPAND-01-full-v2_5.json",
+      "blind_single_demo_EXPAND-01-full-v2_5.json"
+    ]
+  },
+  "coverage_acceptance_gate": {
+    "pass": true,
+    "missing_role_variant_slots": [],
+    "uncovered_challenge_classes": []
+  },
+  "demo": {
+    "new_model_calls": 0,
+    "artifacts": [
+      "mechanical_gates_demo_EXPAND-01-full-v2_5.json",
+      "score_sheet_blank_demo_EXPAND-01-full-v2_5.json",
+      "blind_single_demo_EXPAND-01-full-v2_5.json"
+    ]
+  }
+}
