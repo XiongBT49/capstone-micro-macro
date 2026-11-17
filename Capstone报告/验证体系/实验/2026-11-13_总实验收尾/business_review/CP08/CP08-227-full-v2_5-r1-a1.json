@@ -1,0 +1,149 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-227-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "76bdb367866ae894",
+  "role": "supplier",
+  "annotated_action": "provisional_building_materials_supply_exclude_whole_construction",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-227-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "bd738f8b60e0b353bf12e499bbc108a6c74a073d82b71a11d19ae7520cca6e17",
+  "call_id": "attempt_002_call_000031",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标以供应商身份参与葵涌荔景山项目（CASE-0347）居住建筑产品/材料供应包，不承担整包施工责任。",
+    "reason": "档案经营范围支持有边界暂定建材供货；明确不接整包施工，渠道/保修未决不作已通过。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 52,
+      "quote": "本投标以供应商身份参与葵涌荔景山项目（CASE-0347）居住建筑产品/材料供应包，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司资料仅载明经营范围含建筑工程施工总承包特级、装饰装潢、机电安装、电梯制造销售安装维保、楼宇智能科技等（档案原文），未提供具体产品目录、库存记录或本地团队资料，故本投标将产品品类、品牌与规格列为待招标清单确认后的供应方案，不声称已有对应产品线或现货。",
+      "reason": "供货方向限定到档案经营范围支持的产品/材料方案，标明目录未知，不凭身份声称库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 153,
+        "end": 279,
+        "quote": "公司资料仅载明经营范围含建筑工程施工总承包特级、装饰装潢、机电安装、电梯制造销售安装维保、楼宇智能科技等（档案原文），未提供具体产品目录、库存记录或本地团队资料，故本投标将产品品类、品牌与规格列为待招标清单确认后的供应方案，不声称已有对应产品线或现货。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "1) 招标清单确认后，按品类编制供应计划与交付批次；2) 产品文档包（规格书、检验记录、符合性文件）随批次提交；3) 物流与到港配送拟委托受控物流支持，交付前进行数量与外观交接检查",
+      "reason": "供应批次、文档包与到港配送交接构成多项拟议供应/配送/文档安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 90,
+        "quote": "1) 招标清单确认后，按品类编制供应计划与交付批次；2) 产品文档包（规格书、检验记录、符合性文件）随批次提交；3) 物流与到港配送拟委托受控物流支持，交付前进行数量与外观交接检查"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "以上均为拟议安排，未取得任何供应商报价或对方承诺。",
+      "reason": "明确目录/库存/本地团队未提供，区分拟议安排与已落实供应承诺。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 184,
+        "end": 209,
+        "quote": "以上均为拟议安排，未取得任何供应商报价或对方承诺。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "上述确认尚在进行，不构成已落实的承诺。",
+      "reason": "渠道审核与外部保修文档接受保持未决且非硬门槛；软门“已落实”在否定句。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 94,
+        "end": 113,
+        "quote": "上述确认尚在进行，不构成已落实的承诺。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "本投标以供应商身份参与葵涌荔景山项目（CASE-0347）居住建筑产品/材料供应包，不承担整包施工责任。",
+      "reason": "葵涌荔景山居住建筑进入供货安排；明确不承担整包施工责任。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 52,
+        "quote": "本投标以供应商身份参与葵涌荔景山项目（CASE-0347）居住建筑产品/材料供应包，不承担整包施工责任。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "南通四建集團有限公司以供应商身份就葵涌荔景山项目供应包提交意向报价 MOP 2,285,000。报价由产品供应暂列 MOP 1,850,000、物流配送 MOP 165,000、文档 MOP 48,000、保修接口 MOP 72,000、外部支持管理 MOP 55,000、风险预留 MOP 95,000 及调整项 MOP 5,000 构成。",
+      "reason": "七项可复算至MOP 2,285,000，明确暂定依据并承认未取得任何供应商或物流报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 0,
+        "end": 171,
+        "quote": "南通四建集團有限公司以供应商身份就葵涌荔景山项目供应包提交意向报价 MOP 2,285,000。报价由产品供应暂列 MOP 1,850,000、物流配送 MOP 165,000、文档 MOP 48,000、保修接口 MOP 72,000、外部支持管理 MOP 55,000、风险预留 MOP 95,000 及调整项 MOP 5,000 构成。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-54_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "8284f215475910f2d61ae86cdcfba4f7dfc4e362cfa21bbf9a0c05d27d144d59",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mechanical-gates.v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "assigns_business_grades",
+    "readable",
+    "blocking_codes",
+    "eligible_for_business_scoring"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "mechanical-gates.v1"
+    },
+    "assigns_business_grades": {
+      "const": false
+    },
+    "readable": {
+      "type": "boolean"
+    },
+    "blocking_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eligible_for_business_scoring": {
+      "type": "boolean"
+    }
+  }
+}

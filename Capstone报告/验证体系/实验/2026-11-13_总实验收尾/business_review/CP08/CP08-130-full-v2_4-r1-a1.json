@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-130-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c7acf16d4969c1d9",
+  "role": "supervisor",
+  "annotated_action": "conditional_hotel_supervision_bid_with_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-130-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "3a68124b4f365bbe4232c83e9f13e525f4a86d0f9e13282defe510528fe9be50",
+  "call_id": "attempt_002_call_000425",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "在获得确认前只能形成有条件投标意向，不能视为可提交",
+    "reason": "档案监理及工程咨询方向支持有条件单一监理意向；人员档期确认前不构成提交，机构人员规模不升为本包可用性。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 132,
+      "end": 157,
+      "quote": "在获得确认前只能形成有条件投标意向，不能视为可提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "本包属于我方档案所载监理及工程咨询服务范围内的顾问角色，可由我方作为唯一责任主体承担，无需另一机构共享投标人身份或包级责任",
+      "reason": "保持监理顾问职责与单一问责；档案业务范围不作已审定本包资格。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 38,
+        "end": 99,
+        "quote": "本包属于我方档案所载监理及工程咨询服务范围内的顾问角色，可由我方作为唯一责任主体承担，无需另一机构共享投标人身份或包级责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "人员配置、现场监督安排、独立复核与文档纪律均为拟议方案，不是已落实承诺",
+      "reason": "现场监督、独立复核与文档纪律构成至少两项拟议监督安排，非已完成核查结论。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 307,
+        "end": 342,
+        "quote": "人员配置、现场监督安排、独立复核与文档纪律均为拟议方案，不是已落实承诺"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "规模描述中的40多位认可工程师及监督员仅为机构资料，不构成对本包人员可用性的证明",
+      "reason": "区分企业人才描述与本包派驻/档期，条件性组织安排且档期未决限制提交。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 158,
+        "end": 198,
+        "quote": "规模描述中的40多位认可工程师及监督员仅为机构资料，不构成对本包人员可用性的证明"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用为已登记的提交前必须落实事项，目前状态为requested、尚无证据，因此在获得确认前本决策仅为有条件投标意向，不构成提交",
+      "reason": "原必要人员条件保持未决；无法落实则撤回；常规外部支持不改变单一责任主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 214,
+        "end": 289,
+        "quote": "本包指定岗位人员档期是否可用为已登记的提交前必须落实事项，目前状态为requested、尚无证据，因此在获得确认前本决策仅为有条件投标意向，不构成提交"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本包为酒店娱乐文旅项目的监理角色",
+      "reason": "酒店娱乐文旅条件进入监理争取理由；未把机构人员规模写成已确认驻场。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 16,
+        "quote": "本包为酒店娱乐文旅项目的监理角色"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-19_compact_first_002_expanded_labels.json",
+  "authored_labels_sha256": "1c1fadd194d683792daa59be5ac3ab5e2209dcc9f2b9a3c53e66afaf69214d29",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

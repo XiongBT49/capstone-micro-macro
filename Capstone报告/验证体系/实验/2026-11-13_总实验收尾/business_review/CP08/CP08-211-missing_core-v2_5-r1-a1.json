@@ -1,0 +1,155 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-211-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "5510591719fe6c80",
+  "role": "supervisor",
+  "annotated_action": "grounded_no_bid_unknown_capability_and_staffing",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-211-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "77a56e78b21501ceb839e0155bc53507c51330d98f2f6982e00294c0d70b743d",
+  "call_id": "attempt_002_call_000345",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "因此本包不在当前可信业务范围与风险承受范围内，决定不投。此为针对本包的判断，不代表永久放弃监管业务方向；若未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系。",
+    "reason": "missing_core下以档案未知与人员档期未决作有据不投标，并保留进入路径后重评；未知未写成永久无能力。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 434,
+      "end": 522,
+      "quote": "因此本包不在当前可信业务范围与风险承受范围内，决定不投。此为针对本包的判断，不代表永久放弃监管业务方向；若未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "公司档案仅显示为设计类上市企业及其注册信息，六个能力主题（范围、经验、资质、产品范围、交付资产、历史成本依据）在证据投影中全部为 unknown，没有任何可引用的监理资质、监管业绩、香港本地监管经验或现场团队记录。",
+      "reason": "保持监管/监理角色边界，以证据不足解释不投标，不凭名称补已核监理能力或整包施工。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 45,
+        "end": 152,
+        "quote": "公司档案仅显示为设计类上市企业及其注册信息，六个能力主题（范围、经验、资质、产品范围、交付资产、历史成本依据）在证据投影中全部为 unknown，没有任何可引用的监理资质、监管业绩、香港本地监管经验或现场团队记录。"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "本决定仅针对本包，不构成对监管业务方向的永久否定；如未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系，再评估具体项目。",
+      "reason": "有据拒绝：说明本轮不参与，并给出可核实监理团队与本地合规路径建立后的具体重审触发。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 449,
+        "end": 518,
+        "quote": "本决定仅针对本包，不构成对监管业务方向的永久否定；如未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系，再评估具体项目。"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "条件登记中“本包指定岗位人员档期是否可用”仍为 requested，属于 active submission prerequisite，在人员档期未落实前不具备提交条件。",
+      "reason": "人员档期未决限制承诺；不虚构实际缺员或不要求编造排班。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 218,
+        "end": 303,
+        "quote": "条件登记中“本包指定岗位人员档期是否可用”仍为 requested，属于 active submission prerequisite，在人员档期未落实前不具备提交条件。"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "条件登记中“本包指定岗位人员档期是否可用”状态为 requested，属有效提交前置条件，在人员档期落实前不具备提交基础。",
+      "reason": "原必要人员条件保持未决；拒绝不使其变为已解决，并说明不以组合体规避监管立足点缺口。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 239,
+        "end": 300,
+        "quote": "条件登记中“本包指定岗位人员档期是否可用”状态为 requested，属有效提交前置条件，在人员档期落实前不具备提交基础。"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "就启德6603项目本包（监管/监理角色）不参与投标。",
+      "reason": "启德6603监管/监理进入不投标与后续重评理由；空白经营范围未虚构工程量。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 6,
+        "end": 32,
+        "quote": "就启德6603项目本包（监管/监理角色）不参与投标。"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "如未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系，再评估具体项目。",
+      "reason": "有据不投标并给出团队/合规路径建立后的下一步，边界内可执行。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 474,
+        "end": 518,
+        "quote": "如未来进入该领域，应先建立可核实的监理团队、本地合规路径与独立检查体系，再评估具体项目。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "也不宜以组合体方式处理：此处缺口不是可由普通分包补足的专业工种，而是我们自身在监管角色上缺乏可核实立足点，引入本地监理方会使我们沦为挂名门面，不符合经营原则。因此本包不在当前可信业务范围与风险承受范围内，决定不投。",
+      "reason": "证据缺口、档期前置与不设组合体取舍明确连到不投标及条件齐备后重评。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 355,
+        "end": 462,
+        "quote": "也不宜以组合体方式处理：此处缺口不是可由普通分包补足的专业工种，而是我们自身在监管角色上缺乏可核实立足点，引入本地监理方会使我们沦为挂名门面，不符合经营原则。因此本包不在当前可信业务范围与风险承受范围内，决定不投。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-44_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "e7084ed81f9e3fb0233ec28f074b322b7454df47d79eeb72c897f569daea10b7",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

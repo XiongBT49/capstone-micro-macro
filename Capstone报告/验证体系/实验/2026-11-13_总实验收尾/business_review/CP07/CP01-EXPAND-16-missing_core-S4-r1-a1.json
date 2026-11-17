@@ -1,0 +1,155 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-16-missing_core",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f4f252982531e61d",
+  "role": "contractor",
+  "annotated_action": "conditional_single_contractor_unknown_scope_preserving_gates",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-16-missing_core-S4-r1/step-4.json",
+  "response_sha256": "aa13279f6172905030813d9433978b9bbb264a51cf425f19efaadf3da0c8116d",
+  "call_id": "attempt_003_call_000310",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "两项待决条件即本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，继续作为提交前置，未核实前不提交，也不预设核实结果。",
+    "reason": "经营范围缺失时按承建角色作有条件意向，未知≠无能，必要核查前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 308,
+      "end": 371,
+      "quote": "两项待决条件即本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，继续作为提交前置，未核实前不提交，也不预设核实结果。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "公司范围、认证、人员档期、本地资源与历史成本均属未知，未知不等于不具备能力，因此不选择放弃。",
+      "reason": "不凭任务角色补出经营范围或已核资格；未知不作无能。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 130,
+        "end": 176,
+        "quote": "公司范围、认证、人员档期、本地资源与历史成本均属未知，未知不等于不具备能力，因此不选择放弃。"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "拟投入安排限于施工组织、工地管理、常规专业分包与施工责任，本公司作为单一责任主体，其他参与方仅作外部方提及，不承担总承包或设计协调职责。",
+      "reason": "施工组织、工地管理、常规专业分包与施工责任多项安排，并区分外部方。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 47,
+        "end": 115,
+        "quote": "拟投入安排限于施工组织、工地管理、常规专业分包与施工责任，本公司作为单一责任主体，其他参与方仅作外部方提及，不承担总承包或设计协调职责。"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "现阶段无任何已获报价或已接受的分包承诺，人员与分包安排以假设清单形式列出并注明核实责任人与时间点。",
+      "reason": "人员按假设清单限制承诺，档期作门槛，仍无具体到岗落实。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 157,
+        "end": 206,
+        "quote": "现阶段无任何已获报价或已接受的分包承诺，人员与分包安排以假设清单形式列出并注明核实责任人与时间点。"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项待决条件即本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，继续作为提交前置，未核实前不提交，也不预设核实结果。",
+      "reason": "两项原必要前提保持未决；核实不利可转组合体或放弃但不预设。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 308,
+        "end": 371,
+        "quote": "两项待决条件即本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，继续作为提交前置，未核实前不提交，也不预设核实结果。"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "葛洲壩澳門就以承建商身份参与原威斯汀酒店文旅酒店项目作出有条件投标意向，现阶段不作出提交决定。",
+      "reason": "原威斯汀酒店文旅项目进入有条件意向；空白规模未虚构。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 0,
+        "end": 47,
+        "quote": "葛洲壩澳門就以承建商身份参与原威斯汀酒店文旅酒店项目作出有条件投标意向，现阶段不作出提交决定。"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "拟投入安排限于施工组织、工地管理、常规专业分包与施工责任，本公司作为单一责任主体，其他参与方仅作外部方提及，不承担总承包或设计协调职责。",
+      "reason": "角色内施工/分包边界与暂定报价、提交前门槛连贯，属可实施条件性方案。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 47,
+        "end": 115,
+        "quote": "拟投入安排限于施工组织、工地管理、常规专业分包与施工责任，本公司作为单一责任主体，其他参与方仅作外部方提及，不承担总承包或设计协调职责。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "公司范围、认证、人员档期、本地资源与历史成本均属未知，未知不等于不具备能力",
+      "reason": "将未知证据、必要核查与拟议/暂定边界明确连到有条件意向及不提交。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 130,
+        "end": 167,
+        "quote": "公司范围、认证、人员档期、本地资源与历史成本均属未知，未知不等于不具备能力"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp07-09_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "867e96bc3da34447eba52780a11027c7687bf632fafb5026a7bd35c68be30696",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

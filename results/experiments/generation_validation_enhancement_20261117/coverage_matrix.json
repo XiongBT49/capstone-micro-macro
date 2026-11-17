@@ -1,0 +1,142 @@
+{
+  "schema_version": "coverage-matrix.v1",
+  "n_task_cards": 464,
+  "cells": [
+    {
+      "role": "contractor",
+      "variant": "full",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-002-full",
+        "CP08-005-full",
+        "CP08-009-full"
+      ]
+    },
+    {
+      "role": "contractor",
+      "variant": "missing_core",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-002-missing_core",
+        "CP08-005-missing_core",
+        "CP08-009-missing_core"
+      ]
+    },
+    {
+      "role": "designer",
+      "variant": "full",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-004-full",
+        "CP08-008-full",
+        "CP08-012-full"
+      ]
+    },
+    {
+      "role": "designer",
+      "variant": "missing_core",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-004-missing_core",
+        "CP08-008-missing_core",
+        "CP08-012-missing_core"
+      ]
+    },
+    {
+      "role": "supervisor",
+      "variant": "full",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-003-full",
+        "CP08-007-full",
+        "CP08-010-full"
+      ]
+    },
+    {
+      "role": "supervisor",
+      "variant": "missing_core",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-003-missing_core",
+        "CP08-007-missing_core",
+        "CP08-010-missing_core"
+      ]
+    },
+    {
+      "role": "supplier",
+      "variant": "full",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-001-full",
+        "CP08-006-full",
+        "CP08-011-full"
+      ]
+    },
+    {
+      "role": "supplier",
+      "variant": "missing_core",
+      "condition_bucket": "has_unresolved_conditions",
+      "tradeoff_signal": "tradeoff_prompted_in_card",
+      "count": 58,
+      "example_window_ids": [
+        "CP08-001-missing_core",
+        "CP08-006-missing_core",
+        "CP08-011-missing_core"
+      ]
+    }
+  ],
+  "role_variant_counts": {
+    "contractor|full": 58,
+    "contractor|missing_core": 58,
+    "designer|full": 58,
+    "designer|missing_core": 58,
+    "supervisor|full": 58,
+    "supervisor|missing_core": 58,
+    "supplier|full": 58,
+    "supplier|missing_core": 58
+  },
+  "missing_role_variant_slots": [],
+  "challenge_class_input_coverage_counts": {
+    "condition_discrimination_slot": 464,
+    "empty_wait_or_laundry_list": 464,
+    "grounded_conditional_plan": 464,
+    "grounded_deferral": 464,
+    "grounded_refuse_with_boundary": 464,
+    "materials_discrimination_slot": 464,
+    "partial_d2_with_contradiction": 464,
+    "tradeoff_discrimination_possible": 464,
+    "ungrounded_commitment": 464
+  },
+  "claim_gate": {
+    "may_claim_challenge_class": [
+      "empty_wait_or_laundry_list",
+      "grounded_conditional_plan",
+      "grounded_deferral",
+      "grounded_refuse_with_boundary",
+      "partial_d2_with_contradiction",
+      "ungrounded_commitment"
+    ],
+    "must_narrow_or_not_claim": [],
+    "rule": "If a challenge class has zero covered tasks, narrow the paper claim; do not hunt discriminating items after seeing outcomes."
+  },
+  "acceptance_gate": {
+    "pass": true,
+    "missing_role_variant_slots": [],
+    "uncovered_challenge_classes": []
+  },
+  "matrix_sha256": "2739acf55e8116c8b513ccfd0f4ffe9b198a805f5d6dd50373f1088970d92b99"
+}

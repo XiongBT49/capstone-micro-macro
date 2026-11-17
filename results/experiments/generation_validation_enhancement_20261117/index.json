@@ -1,0 +1,182 @@
+{
+  "experiment_id": "generation_validation_enhancement_20261117",
+  "implements": [
+    "1_mechanical_gates",
+    "2_structured_score_sheets_and_draft_adjudication",
+    "3_discrimination_anchors",
+    "4_blinding_and_order_swap",
+    "5_coverage_matrix",
+    "6_expert_slice"
+  ],
+  "new_model_calls": 0,
+  "does_not": [
+    "overwrite_frozen_business_review_grades",
+    "auto_assign_D1_D4",
+    "claim_independent_blind_or_inter_rater_reliability"
+  ],
+  "artifacts": {
+    "protocol": "research/generation_validation/README.md",
+    "anchors": "research/generation_validation/anchors/discrimination_set_v1.json",
+    "coverage_matrix": "results/experiments/generation_validation_enhancement_20261117/coverage_matrix.json",
+    "expert_slice_demo": "results/experiments/generation_validation_enhancement_20261117/expert_slice_selection_demo.json",
+    "order_swap_demo": "results/experiments/generation_validation_enhancement_20261117/order_swap_selection_enhanced_demo.json",
+    "demo_response_artifacts": [
+      "mechanical_gates_demo_EXPAND-01-full-v2_5.json",
+      "score_sheet_blank_demo_EXPAND-01-full-v2_5.json",
+      "blind_single_demo_EXPAND-01-full-v2_5.json"
+    ]
+  },
+  "coverage_acceptance_gate": {
+    "pass": true,
+    "missing_role_variant_slots": [],
+    "uncovered_challenge_classes": []
+  },
+  "demo": {
+    "new_model_calls": 0,
+    "artifacts": [
+      "mechanical_gates_demo_EXPAND-01-full-v2_5.json",
+      "score_sheet_blank_demo_EXPAND-01-full-v2_5.json",
+      "blind_single_demo_EXPAND-01-full-v2_5.json"
+    ]
+  },
+  "adjudication_batch_20261117": {
+    "at_UTC": "2026-11-17T10:32:47.125221+00:00",
+    "state": "partial_adjudication_batch_20261117",
+    "new_model_calls": 0,
+    "this_batch": {
+      "expert_slice_scored": 36,
+      "additional_pending_CP08_scored": 48,
+      "total_new_business_reviews": 84,
+      "identity": "author_assisted_adjudicator_same_design_participating_assistant"
+    },
+    "business_review_counts_after": {
+      "CP08": 246,
+      "CP07": 14
+    },
+    "remaining_readable_pending_approx": {
+      "CP08": 680,
+      "CP07": 272
+    },
+    "notes": [
+      "Alternate-schema answers remain business-scorable via soft gate path.",
+      "Expert-slice reviews mirror official grades under honest non-independent identity.",
+      "Backlog not fully cleared; remaining pending retained."
+    ]
+  },
+  "expert_slice_reviews": "results/experiments/generation_validation_enhancement_20261117/expert_slice_reviews/summary.json",
+  "adjudication_batch_20261117_wave2": {
+    "at_UTC": "2026-11-17T10:41:13.236783+00:00",
+    "state": "partial_adjudication_batch_20261117_wave2",
+    "new_model_calls": 0,
+    "this_batch": {
+      "wave": 2,
+      "CP08_scored": 72,
+      "CP07_scored": 48,
+      "total_new_business_reviews": 120,
+      "identity": "author_assisted_adjudicator_same_design_participating_assistant"
+    },
+    "cumulative_since_enhancement": {
+      "wave1_new_reviews": 84,
+      "wave2_new_reviews": 120,
+      "total_new_reviews": 204
+    },
+    "business_review_counts_after": {
+      "CP08": 318,
+      "CP07": 62
+    },
+    "remaining_readable_eligible_pending_approx": {
+      "CP08": 608,
+      "CP07": 224
+    },
+    "notes": [
+      "Wave 2 stratified: 18/role CP08 and 12/role CP07.",
+      "Quotes validated exact before ingest; no overwrite of prior grades.",
+      "Backlog still incomplete."
+    ]
+  },
+  "adjudication_batch_20261117_wave3": {
+    "at_UTC": "2026-11-17T10:54:39.630790+00:00",
+    "state": "partial_adjudication_batch_20261117_wave3",
+    "new_model_calls": 0,
+    "this_batch": {
+      "wave": 3,
+      "CP08_scored": 96,
+      "CP07_scored": 56,
+      "total_new_business_reviews": 152,
+      "identity": "author_assisted_adjudicator_same_design_participating_assistant"
+    },
+    "cumulative_since_enhancement": {
+      "wave1": 84,
+      "wave2": 120,
+      "wave3": 152,
+      "total_new_reviews": 356
+    },
+    "business_review_counts_after": {
+      "CP08": 414,
+      "CP07": 118
+    },
+    "remaining_readable_eligible_pending_approx": {
+      "CP08": 512,
+      "CP07": 168
+    }
+  },
+  "latest_adjudication_progress": "adjudication_progress_20261117_wave5.json",
+  "cumulative_new_reviews_since_enhancement": 1036,
+  "adjudication_batch_20261117_wave4": {
+    "at_UTC": "2026-11-17T11:30:18.150822+00:00",
+    "state": "partial_adjudication_batch_20261117_wave4",
+    "new_model_calls": 0,
+    "this_batch": {
+      "wave": 4,
+      "CP08_scored": 168,
+      "CP07_scored": 72,
+      "total_new_business_reviews": 240,
+      "identity": "author_assisted_adjudicator_same_design_participating_assistant",
+      "note": "14 CP08 bundles required compact_first_002 after adding D3/D4 for detailed_score_groups windows; failed first-pass expanded artifacts left frozen."
+    },
+    "cumulative_since_enhancement": {
+      "wave1": 84,
+      "wave2": 120,
+      "wave3": 152,
+      "wave4": 240,
+      "total_new_reviews": 596
+    },
+    "business_review_counts_after": {
+      "CP08": 582,
+      "CP07": 190
+    },
+    "remaining_readable_eligible_pending_approx": {
+      "CP08": 344,
+      "CP07": 96
+    }
+  },
+  "adjudication_batch_20261117_wave5": {
+    "at_UTC": "2026-11-17T12:10:26.494972+00:00",
+    "state": "adjudication_batch_20261117_wave5_eligible_backlog_cleared",
+    "new_model_calls": 0,
+    "this_batch": {
+      "wave": 5,
+      "CP08_scored": 344,
+      "CP07_scored": 96,
+      "total_new_business_reviews": 440,
+      "identity": "author_assisted_adjudicator_same_design_participating_assistant",
+      "note": "Wave 5 scored the full remaining eligible-for-business-scoring backlog; detailed_required from needs_detailed enforced up front."
+    },
+    "cumulative_since_enhancement": {
+      "wave1": 84,
+      "wave2": 120,
+      "wave3": 152,
+      "wave4": 240,
+      "wave5": 440,
+      "total_new_reviews": 1036
+    },
+    "business_review_counts_after": {
+      "CP08": 926,
+      "CP07": 286
+    },
+    "remaining_readable_eligible_pending_approx": {
+      "CP08": 0,
+      "CP07": 0
+    }
+  }
+}

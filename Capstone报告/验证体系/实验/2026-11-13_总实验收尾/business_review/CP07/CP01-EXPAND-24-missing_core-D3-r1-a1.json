@@ -1,0 +1,155 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-24-missing_core",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "fb2f9662d705448c",
+  "role": "contractor",
+  "annotated_action": "conditional_bid_claiming_unprovided_volume_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-24-missing_core-D3-r1/step-4.json",
+  "response_sha256": "5d08e916a17d6860440dd9d5a4f7808b92670322c0868d43d6fdd40cd2f68dc5",
+  "call_id": "attempt_003_call_000617",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "综合机会价值、体量匹配与风险可控性，管理决定为按承建商身份推进投标准备，待两项前置核实取得书面依据后再正式提交。",
+    "reason": "missing_core未给经营范围/交付资源，不能以体量匹配与风险可控性支撑有条件投标。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 261,
+      "end": 317,
+      "quote": "综合机会价值、体量匹配与风险可控性，管理决定为按承建商身份推进投标准备，待两项前置核实取得书面依据后再正式提交。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "综合机会价值、体量匹配与风险可控性，管理决定为按承建商身份推进投标准备",
+      "reason": "范围与交付资源unknown时把未给体量匹配/风险可控写成决策依据，超出条件性未知边界。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 261,
+        "end": 296,
+        "quote": "综合机会价值、体量匹配与风险可控性，管理决定为按承建商身份推进投标准备"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "我司作为承建商承担施工组织、工地管理、安全与常规专业分包接口，机电、幕墙、精装等专项按普通分包处理并明确责任边界，不主张总承包或其他方职责，不采用组合体形式。",
+      "reason": "施工组织、工地管理、安全与常规专业分包接口及专项分包构成多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 51,
+        "end": 130,
+        "quote": "我司作为承建商承担施工组织、工地管理、安全与常规专业分包接口，机电、幕墙、精装等专项按普通分包处理并明确责任边界，不主张总承包或其他方职责，不采用组合体形式。"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "公司档案对本包施工经验、认证、人员档期与资格证明均未提供可核证据，属未知，不据此断言有能力或无能力；所有施工组织、质量复核与独立检查节点、验收记录与文件纪律均为拟议方案，非已落实资源。",
+      "reason": "人员未知保留且档期作门槛，不虚构到岗，亦无具体岗位落实安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 138,
+        "end": 230,
+        "quote": "公司档案对本包施工经验、认证、人员档期与资格证明均未提供可核证据，属未知，不据此断言有能力或无能力；所有施工组织、质量复核与独立检查节点、验收记录与文件纪律均为拟议方案，非已落实资源。"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，两项未核实前不提交，须取得书面依据。",
+      "reason": "两项原必要前提保持未决；软门「已落实」仅在否定句。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 237,
+        "end": 285,
+        "quote": "本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求，两项未核实前不提交，须取得书面依据。"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本包属于文旅酒店EPC项目中的施工角色，我司拟以承建商身份牵头施工组织、工地管理、安全与常规专业分包接口",
+      "reason": "已给文旅酒店EPC进入承建角色安排；体量匹配缺陷在C1单独计。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 52,
+        "quote": "本包属于文旅酒店EPC项目中的施工角色，我司拟以承建商身份牵头施工组织、工地管理、安全与常规专业分包接口"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "我司作为承建商承担施工组织、工地管理、安全与常规专业分包接口，机电、幕墙、精装等专项按普通分包处理并明确责任边界",
+      "reason": "组织与复核安排可读，但行动前提依赖未给体量匹配，详细可行性降为1。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 51,
+        "end": 107,
+        "quote": "我司作为承建商承担施工组织、工地管理、安全与常规专业分包接口，机电、幕墙、精装等专项按普通分包处理并明确责任边界"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "公司档案未提供本包施工经验、认证、人员档期与资格证明的可核证据，这些属于未知而非无能力",
+      "reason": "未知处理与提交门槛清楚，但与「体量匹配/风险可控」主理由冲突，权衡仅部分成立。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 107,
+        "end": 150,
+        "quote": "公司档案未提供本包施工经验、认证、人员档期与资格证明的可核证据，这些属于未知而非无能力"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp07-16_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "76614e9dd81c4e53c86529b5d4f646dd7907f6d656da40241d0dcf1682e9b72f",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

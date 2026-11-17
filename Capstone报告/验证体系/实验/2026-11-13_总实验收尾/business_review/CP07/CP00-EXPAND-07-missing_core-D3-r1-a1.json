@@ -1,0 +1,155 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-07-missing_core",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c46819f32abf77ee",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_bid_with_name_derived_institute_aside",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-07-missing_core-D3-r1/step-4.json",
+  "response_sha256": "454c87c268094520056b372cc6a655ec7ab1cc97598a67fbb1b8cd4ce8f74487",
+  "call_id": "attempt_003_call_000332",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "公司资料库对同类监督经验、认证、人员配置与历史成本均为未知，不能据此推断能力或缺失，只能列为待核实事项",
+    "reason": "监督角色条件性意向与档期门闩成立；名称性“设计院背景”旁支在V1保留，不单独使整体决策不适当。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 89,
+      "end": 140,
+      "quote": "公司资料库对同类监督经验、认证、人员配置与历史成本均为未知，不能据此推断能力或缺失，只能列为待核实事项"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "partial",
+      "quote": "与我方作为设计院背景公司的业务方向不冲突",
+      "reason": "监督不扩施工正确且经验未知保留，但缺业务范围输入时以设计院背景证成方向契合属名称升级。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 51,
+        "end": 71,
+        "quote": "与我方作为设计院背景公司的业务方向不冲突"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "拟议方案包括：监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础",
+      "reason": "栏目级拟议检查/记录制度，缺少可操作的检查点或记录闭环细节。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 136,
+        "end": 179,
+        "quote": "拟议方案包括：监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "拟设监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础，全部标注为拟议方案而非已落实事实",
+      "reason": "档期未知与拟议组织有触点，但本包岗位/派驻条件性安排仍不具体。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 283,
+        "end": 338,
+        "quote": "拟设监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础，全部标注为拟议方案而非已落实事实"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "已登记的未决条件 condition_e7ac70a0c78ec834c399（本包指定岗位人员档期是否可用）属提交前必须满足的前置条件，在取得可核实的档期确认前不提交投标",
+      "reason": "必要前提未决保持，并切分监督与施工/设计责任接口。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 249,
+        "end": 335,
+        "quote": "已登记的未决条件 condition_e7ac70a0c78ec834c399（本包指定岗位人员档期是否可用）属提交前必须满足的前置条件，在取得可核实的档期确认前不提交投标"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "partial",
+      "quote": "我方拟以监管/监理角色参与新城填海区A区至澳门半岛之间连接通道改善工程（行人隧道）的投标意向",
+      "reason": "点名行人隧道工程，但未把给定项目条件落到具体监督重点。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 0,
+        "end": 46,
+        "quote": "我方拟以监管/监理角色参与新城填海区A区至澳门半岛之间连接通道改善工程（行人隧道）的投标意向"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.2,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "拟议方案包括：监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础，以上均为拟议方案，尚未落实为既有事实",
+      "reason": "拟议框架与门闩在边界内，但安排不够连贯充分，D3=1；软门“已落实”为否定句。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 136,
+        "end": 198,
+        "quote": "拟议方案包括：监督组织架构、检查与复核流程、质量与进度记录制度、独立复核安排及报价基础，以上均为拟议方案，尚未落实为既有事实"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若该条件无法在提交前落实，将转为不投标或延后决定",
+      "reason": "条件性投标与档期失败退出、责任切分明确联系到承诺边界。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 336,
+        "end": 360,
+        "quote": "若该条件无法在提交前落实，将转为不投标或延后决定"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp07-06_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "bb0c41e74a9c40b2384b4123d37f8b16aebb3e1df81a8b1407c49d75e8eeb1ba",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

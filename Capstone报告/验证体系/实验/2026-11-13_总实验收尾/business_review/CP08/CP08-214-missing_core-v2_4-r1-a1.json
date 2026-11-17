@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-214-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "3ee7be3c00fd0c89",
+  "role": "contractor",
+  "annotated_action": "conditional_contractor_bid_claiming_unprovided_main_contractor_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-214-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "9f3149fd7bdb4e6a396dd0db6574a25453b3afc3a5c3e4eba44b450e4979d7bc",
+  "call_id": "attempt_002_call_000643",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "规模与类型落在我们作为总承建商可承担的业务方向内，值得争取",
+    "reason": "missing_core未给业务范围，不能以总承建商可承担业务方向内支撑有条件单一投标。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 25,
+      "end": 54,
+      "quote": "规模与类型落在我们作为总承建商可承担的业务方向内，值得争取"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "规模与类型落在我们作为总承建商可承担的业务方向内，值得争取",
+      "reason": "范围unknown时把规模/类型写成总承建商可承担业务方向契合，超出档案能力判断。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 25,
+        "end": 54,
+        "quote": "规模与类型落在我们作为总承建商可承担的业务方向内，值得争取"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "现场管理、安全、工期控制、质量记录与分包协调可由本公司牵头承担，专业工种、材料供应与测试安排按常规分包与采购处理",
+      "reason": "现场管理、安全、工期、质量记录与分包协调构成多项拟议安排，并区分常规分包。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 73,
+        "end": 129,
+        "quote": "现场管理、安全、工期控制、质量记录与分包协调可由本公司牵头承担，专业工种、材料供应与测试安排按常规分包与采购处理"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "公司档案中关于本包的经验、认证、人员配置与历史成本基础均无已核实来源，本意向中的角色计划、交付方法、质量方法与风险应对均为拟议安排，不代表既有能力或已落实资源",
+      "reason": "区分档案未知与拟议安排，未捏造现成团队，但无具体岗位落实安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 158,
+        "end": 237,
+        "quote": "公司档案中关于本包的经验、认证、人员配置与历史成本基础均无已核实来源，本意向中的角色计划、交付方法、质量方法与风险应对均为拟议安排，不代表既有能力或已落实资源"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "当前两项前置条件尚未核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在核实完成前不进行正式提交",
+      "reason": "人员与资格两项必要前提保持未决；常规分包不升为组合体硬门槛。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 271,
+        "end": 329,
+        "quote": "当前两项前置条件尚未核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在核实完成前不进行正式提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "partial",
+      "quote": "就启德6574住宅发展项目（招标包CP08-214）以单一责任投标人身份表达投标意向",
+      "reason": "启德6574住宅进入理由，但绑在无据总承建商业务方向契合叙事上。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 6,
+        "end": 48,
+        "quote": "就启德6574住宅发展项目（招标包CP08-214）以单一责任投标人身份表达投标意向"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.4,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-46_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "3ad377310ebdf4aff9c47acf6e6464140f0d94a0b5af9046043f2408711a6594",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

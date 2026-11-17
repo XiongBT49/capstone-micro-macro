@@ -1,0 +1,172 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-079-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "7678f401cd619147",
+  "role": "supplier",
+  "annotated_action": "provisional_intelligent_supply_unknown_scope",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-079-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "37a303f97544ae2a88aafdd4ad71adcfc3365c988433f1c8991fad06edaf67fd",
+  "call_id": "attempt_002_call_000620",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "产品目录、品牌型号与库存情况在任务合同中未提供，属未知事项，本方案仅提出拟供货的系统构成与配合流程，具体型号与产地以中标后经业主确认的技术规格书为准。",
+    "reason": "缺失核心范围下给出有边界的智能化系统供货意向与附条件暂定报价，未知能力不作断言。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 229,
+      "end": 304,
+      "quote": "产品目录、品牌型号与库存情况在任务合同中未提供，属未知事项，本方案仅提出拟供货的系统构成与配合流程，具体型号与产地以中标后经业主确认的技术规格书为准。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "因公司证据投影显示产品范围、交付资产与历史成本依据均为未知，本方案不主张既有产品线、既有仓储或既有本地团队，相关安排均列为拟议计划。",
+      "reason": "无范围资料时提出有边界的智能化系统供货构成，不声称自有产品线或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 348,
+        "end": 414,
+        "quote": "因公司证据投影显示产品范围、交付资产与历史成本依据均为未知，本方案不主张既有产品线、既有仓储或既有本地团队，相关安排均列为拟议计划。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "第一阶段（深化配合）：依据业主与EPC总包的界面划分，提交系统架构图、点位表与设备清单建议，参与业主审查会，形成可采购的技术规格。第二阶段（供货与到货管理）：按施工进度分批供货，执行到货检验、序列号登记与不合格品隔离流程",
+      "reason": "深化配合、分批供货、调试与保修等多阶段拟议安排，并标待落实资源。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 9,
+        "end": 119,
+        "quote": "第一阶段（深化配合）：依据业主与EPC总包的界面划分，提交系统架构图、点位表与设备清单建议，参与业主审查会，形成可采购的技术规格。第二阶段（供货与到货管理）：按施工进度分批供货，执行到货检验、序列号登记与不合格品隔离流程"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "外部支持（如集成调试分包或本地物流合作）为拟议安排，尚未取得对方承诺，其保修与质量文档接受情况属待核实事项。",
+      "reason": "目录/库存/本地团队未知且外部支持未承诺，区分拟议与已落实。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 248,
+        "end": 302,
+        "quote": "外部支持（如集成调试分包或本地物流合作）为拟议安排，尚未取得对方承诺，其保修与质量文档接受情况属待核实事项。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应商渠道审核与外部支持保修文档接受情况为待核实事项，不阻断本讨论稿。",
+      "reason": "两项原请求保持待核实且未升硬门槛，并以拟议背靠背条款处理。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/5",
+        "start": 0,
+        "end": 35,
+        "quote": "供应商渠道审核与外部支持保修文档接受情况为待核实事项，不阻断本讨论稿。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "深圳通和工程发展有限公司拟以单一供应商身份参与深铁熙府白地D地块智能化工程（EPC模式）的智能化系统供货与配套服务。",
+      "reason": "用项目名称、EPC背景与居住智能化构成联系供货安排，未把EPC写成整包主体。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 58,
+        "quote": "深圳通和工程发展有限公司拟以单一供应商身份参与深铁熙府白地D地块智能化工程（EPC模式）的智能化系统供货与配套服务。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "该报价为附条件估算：产品型号、供应商报价、库存与本地团队记录在任务合同中均未提供，属未知事项，本文件不主张已获供应商报价或既有供货渠道。",
+      "reason": "七项可复算至MOP 6,020,000，明确附条件估算而非固定总价/已获报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 166,
+        "end": 234,
+        "quote": "该报价为附条件估算：产品型号、供应商报价、库存与本地团队记录在任务合同中均未提供，属未知事项，本文件不主张已获供应商报价或既有供货渠道。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "本文件为受控角色意向与报价草案，不构成正式投标或已执行动作。",
+      "reason": "未知范围下仍有连贯的条件性供货草案，承诺与未决边界清楚。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/0",
+        "start": 0,
+        "end": 30,
+        "quote": "本文件为受控角色意向与报价草案，不构成正式投标或已执行动作。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "报价为附条件估算，含价格波动预备金，不称固定总价。",
+      "reason": "价格波动、外部支持未确认与证据未知等取舍连到附条件报价与拟议资源边界。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/3",
+        "start": 0,
+        "end": 25,
+        "quote": "报价为附条件估算，含价格波动预备金，不称固定总价。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-13_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "6bfa9dcb8e257510a6ffa7f71c1f8a26162dcbebfe9cd9d7e3189cee3f4c5986",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

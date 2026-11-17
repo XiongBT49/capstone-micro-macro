@@ -1,0 +1,172 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-090-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c425bdcc446614d6",
+  "role": "supplier",
+  "annotated_action": "provisional_school_materials_supply_unknown_scope",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-090-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "e23b0098fe4c4bf2dc2d70961184e06328024f8cfedac897b7614b2f1b6a3426",
+  "call_id": "attempt_001_call_000013",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "供应范围限于产品与材料供应、配送、交付文档与保修接口，不承担整包施工或设计责任",
+    "reason": "missing_core下按学校公共建筑给出有边界拟议品类供货草案；v2_4越界设计服务未再现。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 32,
+      "end": 71,
+      "quote": "供应范围限于产品与材料供应、配送、交付文档与保修接口，不承担整包施工或设计责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "所有具体产品目录、品牌型号与库存情况在投标人档案中未提供，本文件所列品类为拟议供应范围，非已确认的产品清单",
+      "reason": "无范围资料时提出有边界拟议品类，不声称自有目录或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 131,
+        "end": 184,
+        "quote": "所有具体产品目录、品牌型号与库存情况在投标人档案中未提供，本文件所列品类为拟议供应范围，非已确认的产品清单"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "交付方式拟采用分批配送至深圳项目现场，由总承包单位负责卸货、安装与现场施工管理；我方提供装箱清单、材质证明、合格证明文件与保修条款接口",
+      "reason": "分批配送、交付文档与保修接口等拟议安排，安装留给总包。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 185,
+        "end": 252,
+        "quote": "交付方式拟采用分批配送至深圳项目现场，由总承包单位负责卸货、安装与现场施工管理；我方提供装箱清单、材质证明、合格证明文件与保修条款接口"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "因公司档案未提供产品目录、库存与本地团队记录，上述能力均为拟议安排，需在正式投标前以实际供应商报价与产品资料补充",
+      "reason": "明确目录、库存与本地团队未提供，区分拟议与承诺。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 295,
+        "end": 351,
+        "quote": "因公司档案未提供产品目录、库存与本地团队记录，上述能力均为拟议安排，需在正式投标前以实际供应商报价与产品资料补充"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "拟通过外部物流与部分品类供应商支持配送与备件，其保修与质量文档接受情况尚待确认（对应未决条件 condition_0cc73614f92b660d9a05），供应商渠道审核状态亦待确认（condition_210d19bbcff25b9bd0ad）",
+      "reason": "两项原请求保持未决且非硬门槛，并给出保修文档拟议处理。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 200,
+        "end": 324,
+        "quote": "拟通过外部物流与部分品类供应商支持配送与备件，其保修与质量文档接受情况尚待确认（对应未决条件 condition_0cc73614f92b660d9a05），供应商渠道审核状态亦待确认（condition_210d19bbcff25b9bd0ad）"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "本投标为深圳市第三十七高级中学（设计）项目的供应商角色意向草案，供应范围限于产品与材料供应、配送、交付文档与保修接口，不承担整包施工或设计责任",
+      "reason": "点名学校设计项目并限定供货接口，不把D&B升为整包主体。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 71,
+        "quote": "本投标为深圳市第三十七高级中学（设计）项目的供应商角色意向草案，供应范围限于产品与材料供应、配送、交付文档与保修接口，不承担整包施工或设计责任"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为基于拟议品类范围的暂定估算，未取得任何供应商报价，产品目录、库存与本地团队记录在公司档案中未提供",
+      "reason": "MOP分项可复算，明确暂定并承认无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 225,
+        "end": 279,
+        "quote": "上述金额均为基于拟议品类范围的暂定估算，未取得任何供应商报价，产品目录、库存与本地团队记录在公司档案中未提供"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "上述均为拟议安排，未取得对方承诺",
+      "reason": "未知范围下连贯的条件性学校材料供货草案，承诺边界清楚。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 325,
+        "end": 341,
+        "quote": "上述均为拟议安排，未取得对方承诺"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险为：产品目录与供应商报价未确认导致价格不确定性，已设风险与价格波动预留；外部物流与备件支持的保修与质量文档接受情况未确认，列为未决条件；供应商渠道审核状态未确认，列为未决条件",
+      "reason": "价格与渠道不确定性取舍连到风险预留、未决条件与正式投标前替换暂定估算。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 91,
+        "quote": "主要风险为：产品目录与供应商报价未确认导致价格不确定性，已设风险与价格波动预留；外部物流与备件支持的保修与质量文档接受情况未确认，列为未决条件；供应商渠道审核状态未确认，列为未决条件"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-15_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "0ba934018494b78d85b21917760f283099f74ae1c60a1cead5f95c16fee2c7ab",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

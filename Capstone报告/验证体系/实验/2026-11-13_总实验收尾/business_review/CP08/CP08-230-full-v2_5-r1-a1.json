@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-230-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "73fd51fe05537f95",
+  "role": "contractor",
+  "annotated_action": "conditional_single_contractor_bid",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-230-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "6e649e7e7737fd6a9bab4a329e1cb49a3cc72d364087c24fb27d47d8f284cf27",
+  "call_id": "attempt_002_call_000313",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "人员配置与岗位档期、本包资格证明为提交前必须落实的前提，在核实前不进行正式提交。",
+    "reason": "档案建筑总承包范围支持有条件单一承建；人员档期与资格证明核实前不正式提交，未知不作已核实能力。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 293,
+      "end": 333,
+      "quote": "人员配置与岗位档期、本包资格证明为提交前必须落实的前提，在核实前不进行正式提交。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "公司档案显示业务范围涵盖建筑总承包、土木工程、地基、机电、外墙幕墙，并持有ISO 9001、14001、45001认证，与本包施工组织与工地管理需求方向一致；上述为档案文本，不构成本包资格或经验的已核实接受。",
+      "reason": "用档案经营范围限定承接并标明非已核实资格接受，资格核查未决保留。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 36,
+        "end": 140,
+        "quote": "公司档案显示业务范围涵盖建筑总承包、土木工程、地基、机电、外墙幕墙，并持有ISO 9001、14001、45001认证，与本包施工组织与工地管理需求方向一致；上述为档案文本，不构成本包资格或经验的已核实接受。"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "由公司担任唯一投标人与包级交付责任主体，负责施工组织、工地管理、安全、工期控制、质量记录与分包协调；机电、幕墙等专业工作拟按常规专业分包安排，属投标假设而非已落实承诺。",
+      "reason": "施工组织、工地管理、安全、工期、质量记录与分包协调构成多项拟议安排，并区分常规专业分包。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 154,
+        "end": 238,
+        "quote": "由公司担任唯一投标人与包级交付责任主体，负责施工组织、工地管理、安全、工期控制、质量记录与分包协调；机电、幕墙等专业工作拟按常规专业分包安排，属投标假设而非已落实承诺。"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "人员配置与岗位档期、本包资格证明为提交前必须落实的前提，在核实前不进行正式提交。",
+      "reason": "区分档案文本与本包档期/资格门槛，未捏造现成团队，但无具体岗位落实安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 293,
+        "end": 333,
+        "quote": "人员配置与岗位档期、本包资格证明为提交前必须落实的前提，在核实前不进行正式提交。"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "当前有两项提交前条件尚未解决：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在落实前不进行正式提交，但继续推进投标准备。",
+      "reason": "人员与资格两项必要前提保持未决；常规专业分包不升为组合体硬门槛。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 207,
+        "end": 276,
+        "quote": "当前有两项提交前条件尚未解决：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在落实前不进行正式提交，但继续推进投标准备。"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "partial",
+      "quote": "本包为香港居住建筑总承包，规模约43100平方米，与金门建筑作为总承建商的业务方向一致",
+      "reason": "43100平方米香港居住建筑进入承建取舍，但档案合规记载未作有限风险或核查说明。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 43,
+        "quote": "本包为香港居住建筑总承包，规模约43100平方米，与金门建筑作为总承建商的业务方向一致"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-56_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "c3c5561b45f9b07f6c34cd6449f282a3b7a227d5d10e6d8930d0ec6ba75ffaaf",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
