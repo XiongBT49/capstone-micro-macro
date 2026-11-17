@@ -1,0 +1,172 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-01-missing_core",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "6a0c277221695c82",
+  "role": "supplier",
+  "annotated_action": "conditional_modular_supply_intention_missing_core",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-01-missing_core-S4-r1/step-4.json",
+  "response_sha256": "5d25e54210ac77f52145e932465b5c17b20c6cadc953bb3fad15d46e8c0f04a2",
+  "call_id": "attempt_002_call_000031",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "拟供应范围限于模块化建筑单元及配套材料，包括出厂质量控制、包装、运输至澳门工地交货、供货文档与保修接口支持；不承担整包施工、现场安装总责或EPC设计责任",
+    "reason": "缺核心范围下有边界条件性模块化供货意向；未决条件非硬门槛，无法落实则保留不投。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 49,
+      "end": 125,
+      "quote": "拟供应范围限于模块化建筑单元及配套材料，包括出厂质量控制、包装、运输至澳门工地交货、供货文档与保修接口支持；不承担整包施工、现场安装总责或EPC设计责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司资料库未提供本包具体产品目录、产能与人员配置、本地仓储或物流安排、历史采购成本，故本方案所述产品范围、质量流程、运输安排均为建议性计划，待核实后细化",
+      "reason": "无范围资料时提出有边界模块化单元方案，不凭身份声称自有目录或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 126,
+        "end": 202,
+        "quote": "公司资料库未提供本包具体产品目录、产能与人员配置、本地仓储或物流安排、历史采购成本，故本方案所述产品范围、质量流程、运输安排均为建议性计划，待核实后细化"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "第一阶段（意向确认后）：核实本包产品目录与技术要求，明确模块化单元规格与配套材料清单；同步跟进两项未决条件（EXPAND-01供应商渠道审核、外部支持是否接受保修与质量文档要求）。第二阶段（条件落实后）：编制供货计划与出厂检验计划，确定包装运输方案与澳门交货界面，准备供货文档清单。第三阶段（合同签订后）：按计划生产与出厂检验，组织包装运输至澳门工地交货，提交供货文档，启动保修接口",
+      "reason": "目录核实、出厂检验/澳门交货与文档保修等多阶段拟议安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 191,
+        "quote": "第一阶段（意向确认后）：核实本包产品目录与技术要求，明确模块化单元规格与配套材料清单；同步跟进两项未决条件（EXPAND-01供应商渠道审核、外部支持是否接受保修与质量文档要求）。第二阶段（条件落实后）：编制供货计划与出厂检验计划，确定包装运输方案与澳门交货界面，准备供货文档清单。第三阶段（合同签订后）：按计划生产与出厂检验，组织包装运输至澳门工地交货，提交供货文档，启动保修接口"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本地物流安排未核实，属暂定估算",
+      "reason": "目录/产能/人员/本地仓储未提供，安排为建议性计划；时间安排不构成已承诺工期。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/1/basis",
+        "start": 21,
+        "end": 36,
+        "quote": "本地物流安排未核实，属暂定估算"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "两项未决条件（EXPAND-01供应商渠道审核、外部支持是否接受保修与质量文档要求）尚未核实，均非提交前强制门槛，但会影响最终报价与保修承诺范围",
+      "reason": "两项未决保持非硬门槛，渠道未过前不声称已具备资格，无法落实则保留不投。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 269,
+        "end": 341,
+        "quote": "两项未决条件（EXPAND-01供应商渠道审核、外部支持是否接受保修与质量文档要求）尚未核实，均非提交前强制门槛，但会影响最终报价与保修承诺范围"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "新城A区B9地段公共房屋（CASE-0025）",
+      "reason": "联系项目名称/澳门交货并拒绝整包EPC，但未按有限证据处理行政处罚合规记载。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 21,
+        "end": 44,
+        "quote": "新城A区B9地段公共房屋（CASE-0025）"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价为暂定估算MOP 23,100,000",
+      "reason": "分项可复算与总额一致，上述金额均属暂定估算、非已获供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 123,
+        "end": 144,
+        "quote": "报价为暂定估算MOP 23,100,000"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "本时间安排为建议性，不构成已承诺工期",
+      "reason": "条件性意向在角色边界内连贯，不锁定未核实工期或渠道资格。",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 65,
+        "end": 83,
+        "quote": "本时间安排为建议性，不构成已承诺工期"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若条件无法在合理范围内落实，保留不投标权利",
+      "reason": "目录/物流未核实与渠道/保修未决取舍明确连到有条件意向与不投触发。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 342,
+        "end": 363,
+        "quote": "若条件无法在合理范围内落实，保留不投标权利"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp07-11_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "65a263c30f2d6ed79a8e6ce233a232867b84f1adb75bec62f246973cbb8fc264",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

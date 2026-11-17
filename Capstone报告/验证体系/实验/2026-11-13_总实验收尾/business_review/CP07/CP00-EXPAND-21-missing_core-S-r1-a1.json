@@ -1,0 +1,154 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-21-missing_core",
+  "arm": "S",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "3b5093ab64f6eeb7",
+  "role": "designer",
+  "annotated_action": "conditional_design_lead_unknown_scope_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-21-missing_core-S-r1/step-4.json",
+  "response_sha256": "b8d49fd39450effacb31b15a31b27d0189d9793c156239baf79d78eb4c188898",
+  "call_id": "attempt_003_call_000492",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "公司设计业绩、认证、人员配置和历史成本依据在案卷中均为未知，不能据此断言能力或缺失，因此以有条件投标意向推进",
+    "reason": "missing_core下按任务角色限定设计服务并保留未知；档期未决前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 87,
+      "end": 141,
+      "quote": "公司设计业绩、认证、人员配置和历史成本依据在案卷中均为未知，不能据此断言能力或缺失，因此以有条件投标意向推进"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "工作范围限定为设计统筹、设计成果、顾问接口和复核，不承担整包EPC设计采购施工责任",
+      "reason": "未知证据下限定设计角色边界，不补主营或自称整包EPC主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 37,
+        "end": 78,
+        "quote": "工作范围限定为设计统筹、设计成果、顾问接口和复核，不承担整包EPC设计采购施工责任"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "方案将明确设计主导责任、内部复核与独立检查安排、顾问接口管理流程、文件交付纪律及责任限制条款",
+      "reason": "设计主导、内部复核/独立检查、顾问接口与文件纪律构成多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 79,
+        "end": 125,
+        "quote": "方案将明确设计主导责任、内部复核与独立检查安排、顾问接口管理流程、文件交付纪律及责任限制条款"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "投标前须核实本包指定岗位人员档期是否可用；该条件未解决前不提交正式投标",
+      "reason": "档期未决限制提交；人员配置未知不作到岗或不足断言。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 172,
+        "end": 207,
+        "quote": "投标前须核实本包指定岗位人员档期是否可用；该条件未解决前不提交正式投标"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "专项顾问与外部支持按常规分包安排处理，不作为组合体",
+      "reason": "人员前置保持；常规专项支持仅计划，明确不构成组合体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 208,
+        "end": 233,
+        "quote": "专项顾问与外部支持按常规分包安排处理，不作为组合体"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "correct",
+      "quote": "本项目为高知名度文旅酒店项目，以设计方身份参与可提升公司在澳门市场的品牌与业绩记录",
+      "reason": "文旅酒店项目条件进入争取理由；EPC背景进入责任边界取舍。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 41,
+        "quote": "本项目为高知名度文旅酒店项目，以设计方身份参与可提升公司在澳门市场的品牌与业绩记录"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "方案将明确设计主导责任、内部复核与独立检查安排、顾问接口管理流程、文件交付纪律及责任限制条款",
+      "reason": "未知范围下设计主导、受控顾问与档期门禁构成连贯可执行路径。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 79,
+        "end": 125,
+        "quote": "方案将明确设计主导责任、内部复核与独立检查安排、顾问接口管理流程、文件交付纪律及责任限制条款"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "先核实本包指定岗位人员档期这一提交前条件，再以设计主导方身份组织专项顾问支持，明确复核机制、接口管理和责任限制",
+      "reason": "证据未知、单独设计责任相对组合体与档期前提明确连到条件性意向。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 142,
+        "end": 197,
+        "quote": "先核实本包指定岗位人员档期这一提交前条件，再以设计主导方身份组织专项顾问支持，明确复核机制、接口管理和责任限制"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp07-04_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "05cd6e09d8bea56857e20655717f68db005fd875688f9884b776d3c14e65a77a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
