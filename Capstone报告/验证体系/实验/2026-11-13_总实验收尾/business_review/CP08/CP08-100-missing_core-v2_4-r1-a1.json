@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-100-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c5a7e269592853f4",
+  "role": "contractor",
+  "annotated_action": "no_bid_inventing_construction_mainstay_vs_design",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-100-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "019471ba59430f4860fba262e52b363ae73e7ffafb467a7b0ab718901f16e27f",
+  "call_id": "attempt_002_call_000355",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "我公司定位为施工总承包企业",
+    "reason": "missing_core未提供经营范围，却以施工总承包主业定位制造与机电设计顾问的错配并硬拒，把未知写成方向性缺乏。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 55,
+      "end": 68,
+      "quote": "我公司定位为施工总承包企业"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "我公司为施工总承包企业",
+      "reason": "缺经营范围时应保留未知边界，却补出施工总承包主业并排除设计顾问方向。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 108,
+        "end": 119,
+        "quote": "我公司为施工总承包企业"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "将投标资源集中于公司具备真实竞争力的施工类招标包",
+      "reason": "说明不推进并给出转向施工类包的取舍，满足有据拒绝分支的组织说明。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 367,
+        "end": 391,
+        "quote": "将投标资源集中于公司具备真实竞争力的施工类招标包"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "correct",
+      "quote": "本包两项提交前置条件，即指定岗位人员档期可用性与资格证明满足提交要求，目前均未完成核实，不满足提交条件",
+      "reason": "档期与资格未决保留，不虚构实际缺员。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 184,
+        "end": 235,
+        "quote": "本包两项提交前置条件，即指定岗位人员档期可用性与资格证明满足提交要求，目前均未完成核实，不满足提交条件"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项提交前置条件（指定岗位人员档期、资格证明）仍待核实，未获证据前不满足提交要求",
+      "reason": "原必要前提保持未决；拒绝不使其变为已解决。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/2",
+        "start": 0,
+        "end": 40,
+        "quote": "两项提交前置条件（指定岗位人员档期、资格证明）仍待核实，未获证据前不满足提交要求"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "partial",
+      "quote": "本包交付模式为设计顾问",
+      "reason": "设计顾问交付进入理由，但服务于发明的施工主业错配，且未处理行政处罚合规有限证据。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 53,
+        "end": 64,
+        "quote": "本包交付模式为设计顾问"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-04_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "fd4dc32595e9e8b3d365b5d6cd28eb4afe2caa1961f7a7ba6bb0cc65ccff82df",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
