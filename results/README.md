@@ -10,11 +10,11 @@
 - [停止状态记录](../Capstone报告/验证体系/实验/2026-11-13_总实验收尾/serial_pipeline_003/state.json)：历史流水线已停止，本记录不构成重新启动指令。
 - [确定性反馈对照](../output/integration/capstone_validation_20261105/feedback/summary.json)：6个窗口、18次条件运行；说明规则应变，不表述为模型学会盈利。
 - [生成校验增强（门禁／评分表／锚点／去标识／覆盖／专家切片）](experiments/generation_validation_enhancement_20261117/index.json)：前向评阅流程与离线演示产物；0次新模型调用；不改写既有冻结评分。
-- [2026-11-17裁决批次](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117.json)／[wave2](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave2.json)／[wave3](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave3.json)／[wave4](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave4.json)：累计新增596份有引文业务评阅；[专家切片镜像](experiments/generation_validation_enhancement_20261117/expert_slice_reviews/summary.json)为同一助手填槽，非独立外部专家。
+- [2026-11-17裁决批次](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117.json)／[wave2](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave2.json)／[wave3](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave3.json)／[wave4](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave4.json)／[wave5](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave5.json)：累计新增1036份有引文业务评阅；可读且门禁通过的待评积压已清零；[专家切片镜像](experiments/generation_validation_enhancement_20261117/expert_slice_reviews/summary.json)为同一助手填槽，非独立外部专家。
 
 ## 当前完成度
 
-先期两批可读首轮188+190均已逐项评分复核；当前模型其中162/189行动适当，85.7%不是全量成功率。CP08业务评阅现约582份，可读待评约344；组织CP07已评190、可读待评约96。定向修正95对单列。
+先期两批可读首轮188+190均已逐项评分复核；当前模型其中162/189行动适当，85.7%不是全量成功率。CP08业务评阅现约926份，可读且门禁通过待评约0；组织CP07已评286、可读且门禁通过待评约0。定向修正95对单列。
 
 宏观保留已启动链的实际输入与运行目录，未执行链仅保留配置和生成工具。首固定四机制块已提取八类指标，轨迹相同；历史连续案例与付款子链是补充证据，不拼接为同一因果实验。
 

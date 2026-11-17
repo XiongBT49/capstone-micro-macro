@@ -1,0 +1,149 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-154-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f509dea1b930ee2f",
+  "role": "supplier",
+  "annotated_action": "provisional_bridge_supply_unknown_scope_non_epc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-154-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "a02a78e95355ecd1bb2eebddeb6023cfbbe2aeff217a8236b0b5cccf2f13d410",
+  "call_id": "attempt_002_call_000414",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "供应范围限于行人天桥项目的产品与材料供应、配送、文档与保修接口，不承担整包施工责任。",
+    "reason": "missing_core下有边界行人天桥供货草案成立；拒绝整包施工，渠道/保修未决保持拟议核实。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 50,
+      "end": 92,
+      "quote": "供应范围限于行人天桥项目的产品与材料供应、配送、文档与保修接口，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司档案仅载明为香港上市控股公司、受澳门博彩监察协调局监管、未见重大违规，未提供任何与本包相关的产品目录、库存、本地团队或历史采购成本资料；因此本技术方案中的产品范围、供货渠道与本地支持安排均为拟议安排，属未核实假设，不构成既有能力陈述。",
+      "reason": "无范围资料时提出有边界产品/材料方案，不凭身份声称自有目录或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 92,
+        "end": 211,
+        "quote": "公司档案仅载明为香港上市控股公司、受澳门博彩监察协调局监管、未见重大违规，未提供任何与本包相关的产品目录、库存、本地团队或历史采购成本资料；因此本技术方案中的产品范围、供货渠道与本地支持安排均为拟议安排，属未核实假设，不构成既有能力陈述。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟议实施分四阶段：一、核实阶段——取得正式招标文件、工程量清单与图纸后，确认产品规格、数量与交付批次，形成供货矩阵；二、渠道阶段——对拟议供应渠道进行审核（对应未决条件 condition_9e102ebdeeb3b5570a91，状态为已提出、未核实），并确认外部支持方是否接受保修与质量文档要求（对应未决条件 condition_13c83c28efd7c5d8fc4d，状态为已提出、未核实）；三、交付阶段——按施工进度分批配送至香港指定收货点，随货提交装箱清单、材质证明与检验记录，配合总承包方到货验收；四、保修阶段——设立统一保修受理接口，按约定响应时限处理质量事项并维护文档台账。",
+      "reason": "核实、渠道、分批配送文档与保修接口等多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 296,
+        "quote": "拟议实施分四阶段：一、核实阶段——取得正式招标文件、工程量清单与图纸后，确认产品规格、数量与交付批次，形成供货矩阵；二、渠道阶段——对拟议供应渠道进行审核（对应未决条件 condition_9e102ebdeeb3b5570a91，状态为已提出、未核实），并确认外部支持方是否接受保修与质量文档要求（对应未决条件 condition_13c83c28efd7c5d8fc4d，状态为已提出、未核实）；三、交付阶段——按施工进度分批配送至香港指定收货点，随货提交装箱清单、材质证明与检验记录，配合总承包方到货验收；四、保修阶段——设立统一保修受理接口，按约定响应时限处理质量事项并维护文档台账。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "上述渠道与外部支持均为拟议安排，尚未取得对方承诺，不作为已落实事实。",
+      "reason": "明确渠道/外部支持拟议且未获承诺；软门“已落实”在否定句。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 296,
+        "end": 330,
+        "quote": "上述渠道与外部支持均为拟议安排，尚未取得对方承诺，不作为已落实事实。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应渠道审核（condition_9e102ebdeeb3b5570a91）与外部支持保修文档接受度（condition_13c83c28efd7c5d8fc4d）两项条件仍为已提出未核实，本意向不构成正式投标。",
+      "reason": "两项原请求保持已提出未核实且未升硬门槛，并给出拟议核实路径。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 306,
+        "end": 412,
+        "quote": "供应渠道审核（condition_9e102ebdeeb3b5570a91）与外部支持保修文档接受度（condition_13c83c28efd7c5d8fc4d）两项条件仍为已提出未核实，本意向不构成正式投标。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "理解业主（香港特别行政区政府土木工程拓展署）对质量文档、到货验收与保修响应的监管要求。",
+      "reason": "业主与行人天桥供货/文档接口进入安排且拒绝整包施工，但合规记载仅作档案罗列，未说明有限证据下的风险或核查安排。",
+      "evidence": {
+        "json_pointer": "/owner_control_response",
+        "start": 0,
+        "end": 43,
+        "quote": "理解业主（香港特别行政区政府土木工程拓展署）对质量文档、到货验收与保修响应的监管要求。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为基于未核实规格与数量的临时假设，非已收到供应商报价。",
+      "reason": "六项可复算至MOP 4,316,000，明确临时假设并承认无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 235,
+        "end": 267,
+        "quote": "上述金额均为基于未核实规格与数量的临时假设，非已收到供应商报价。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-07_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "a1102592b4e459f49b23f3e79bfe4d7272d73447614454c658d7e43a20f5a1ce",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

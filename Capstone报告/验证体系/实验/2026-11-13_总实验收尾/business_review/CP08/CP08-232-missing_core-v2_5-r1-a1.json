@@ -1,0 +1,149 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-232-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "e302ac765b45a15f",
+  "role": "supplier",
+  "annotated_action": "provisional_residential_material_supply_exclude_whole_construction",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-232-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "5c96bdba947e51153aba635c8ebea04c11cdb87d35958eb4911aa2047c762f65",
+  "call_id": "attempt_002_call_000669",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "产品目录、品牌清单、库存与本地团队记录均属未提供资料，本文件所列产品线、配送安排与保修响应均为拟议方案，非既有事实或已获承诺。",
+    "reason": "missing_core下有边界居住材料供货暂定草案成立；明确不接整包，渠道/保修未决不作已通过。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 154,
+      "end": 217,
+      "quote": "产品目录、品牌清单、库存与本地团队记录均属未提供资料，本文件所列产品线、配送安排与保修响应均为拟议方案，非既有事实或已获承诺。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "供应范围拟按居住建筑常用材料与设备包划分：结构及装修类基础材料、机电配套材料、门窗及围护配件、洁具与五金。产品目录、品牌清单、库存与本地团队记录均属未提供资料，本文件所列产品线、配送安排与保修响应均为拟议方案，非既有事实或已获承诺。",
+      "reason": "无范围资料时提出有边界材料/设备包方案，不凭身份声称自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 101,
+        "end": 217,
+        "quote": "供应范围拟按居住建筑常用材料与设备包划分：结构及装修类基础材料、机电配套材料、门窗及围护配件、洁具与五金。产品目录、品牌清单、库存与本地团队记录均属未提供资料，本文件所列产品线、配送安排与保修响应均为拟议方案，非既有事实或已获承诺。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟分四阶段：一、启动与确认，与总承包方确认材料规格、交付批次与到货节点，形成供货计划草案；二、采购与备货，按确认清单组织货源，本公司自有库存与本地仓储情况属未提供资料，暂按外部仓储与物流支持作为拟议安排；三、配送与到货验收，按施工进度分批配送，随货提交材质与检测文件，配合现场验收与不合格品处理；四、保修与售后接口，设立保修联络窗口，按约定响应时限处理质量申诉，保修期与响应时限待与总承包方及业主确认。",
+      "reason": "确认规格、分批配送/随货文档与保修接口构成多项拟议供应/配送/文档安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 201,
+        "quote": "拟分四阶段：一、启动与确认，与总承包方确认材料规格、交付批次与到货节点，形成供货计划草案；二、采购与备货，按确认清单组织货源，本公司自有库存与本地仓储情况属未提供资料，暂按外部仓储与物流支持作为拟议安排；三、配送与到货验收，按施工进度分批配送，随货提交材质与检测文件，配合现场验收与不合格品处理；四、保修与售后接口，设立保修联络窗口，按约定响应时限处理质量申诉，保修期与响应时限待与总承包方及业主确认。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "上述均为拟议应对，非已落实措施。",
+      "reason": "明确库存/本地团队未提供；外部物流与保修安排标明拟议且非已落实。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 114,
+        "end": 130,
+        "quote": "上述均为拟议应对，非已落实措施。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "本公司不主张已通过本包供应商渠道审核，亦不主张外部支持方已接受保修与质量文档要求，此两项为待核实事项。",
+      "reason": "渠道审核与外部保修文档接受保持未决且未作提交前置；拟议质量/保修处理给出。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 319,
+        "end": 370,
+        "quote": "本公司不主张已通过本包供应商渠道审核，亦不主张外部支持方已接受保修与质量文档要求，此两项为待核实事项。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "就屯门管翠路500居住建筑项目（115588平方米）拟以材料与设备供应、配送、文档交付及保修接口方式参与，不承担整包施工责任。",
+      "reason": "屯门管翠路500/115588平方米进入材料设备供应安排；明确排除整包施工。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 38,
+        "end": 101,
+        "quote": "就屯门管翠路500居住建筑项目（115588平方米）拟以材料与设备供应、配送、文档交付及保修接口方式参与，不承担整包施工责任。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "拟议报价 MOP 17,300,000，由六项暂定估算构成：基础材料与装修类供货 8,600,000；机电配套与门窗围护配件 5,400,000；配送仓储物流 1,250,000；文档检测与保修接口 680,000；质量复核预留 420,000；风险与价格波动缓冲 950,000。产品目录、供应商报价、库存与本地团队记录均未提供，全部金额为暂定假设，非已获供应商报价。",
+      "reason": "六项可复算至MOP 17,300,000，明确暂定依据并承认无实际供应报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 19,
+        "end": 204,
+        "quote": "拟议报价 MOP 17,300,000，由六项暂定估算构成：基础材料与装修类供货 8,600,000；机电配套与门窗围护配件 5,400,000；配送仓储物流 1,250,000；文档检测与保修接口 680,000；质量复核预留 420,000；风险与价格波动缓冲 950,000。产品目录、供应商报价、库存与本地团队记录均未提供，全部金额为暂定假设，非已获供应商报价。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-58_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "16338e4e4f22248b5ad315e96f0e3c105f950ab958e503563e4b33689d8e842d",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

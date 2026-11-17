@@ -1,0 +1,155 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-20-missing_core",
+  "arm": "S",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "d2adfd32487a631f",
+  "role": "contractor",
+  "annotated_action": "conditional_bid_claiming_unprovided_business_direction_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-20-missing_core-S-r1/step-4.json",
+  "response_sha256": "e762ea003f5a14637706f6f0ce82dc44c451b411431829f550ae2fc33beb231e",
+  "call_id": "attempt_003_call_000287",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "与我方承建商角色在业务方向上相符，具备作为单一责任承建商统筹施工组织、工地管理、安全、工期与常规专业分包的合理基础",
+    "reason": "missing_core未给经营范围，不能主张业务方向相符并具备单一责任统筹合理基础。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 50,
+      "end": 107,
+      "quote": "与我方承建商角色在业务方向上相符，具备作为单一责任承建商统筹施工组织、工地管理、安全、工期与常规专业分包的合理基础"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "与我方承建商角色在业务方向上相符，具备作为单一责任承建商统筹施工组织、工地管理、安全、工期与常规专业分包的合理基础",
+      "reason": "范围unknown时把未给业务方向写成相符并具备统筹合理基础，任务角色被写成能力契合。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 50,
+        "end": 107,
+        "quote": "与我方承建商角色在业务方向上相符，具备作为单一责任承建商统筹施工组织、工地管理、安全、工期与常规专业分包的合理基础"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "可由我方作为单一责任承建商统筹施工组织、工地管理、安全与工期控制，专业分包与材料供应按常规分包安排处理，不构成需要共享投标人身份的情形。",
+      "reason": "施工组织、工地管理、安全与工期控制及常规专业分包构成多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 72,
+        "end": 140,
+        "quote": "可由我方作为单一责任承建商统筹施工组织、工地管理、安全与工期控制，专业分包与材料供应按常规分包安排处理，不构成需要共享投标人身份的情形。"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均为提交前置条件，未落实前不提交，核实不通过则撤回本意向。",
+      "reason": "档期未核限制提交且不虚构到岗，但无具体岗位落实安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 213,
+        "end": 287,
+        "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均为提交前置条件，未落实前不提交，核实不通过则撤回本意向。"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均为提交前置条件，未落实前不提交，核实不通过则撤回本意向。",
+      "reason": "两项原必要前提保持未决；软门「已落实」仅在否定句。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 213,
+        "end": 287,
+        "quote": "提交前须完成两项核实：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均为提交前置条件，未落实前不提交，核实不通过则撤回本意向。"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "就澳门四季酒店DFS免税店扩建及精装修工程按承建商角色推进投标意向，方向为bid，不采用组合体。",
+      "reason": "已给澳门酒店免税店扩建精装修进入有条件意向；能力缺陷在C1单独计。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 6,
+        "end": 54,
+        "quote": "就澳门四季酒店DFS免税店扩建及精装修工程按承建商角色推进投标意向，方向为bid，不采用组合体。"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "可由我方作为单一责任承建商统筹施工组织、工地管理、安全与工期控制，专业分包与材料供应按常规分包安排处理",
+      "reason": "组织框架可读，但承接前提依赖未给业务方向契合，详细可行性降为1。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 72,
+        "end": 123,
+        "quote": "可由我方作为单一责任承建商统筹施工组织、工地管理、安全与工期控制，专业分包与材料供应按常规分包安排处理"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "现阶段公司档案中的业务范围、认证、人员规模、项目经验与历史成本基础均未提供，属未知而非不具备，故本意向不宣称任何既有能力、既有资源或既有报价依据。",
+      "reason": "未知处理与提交门槛清楚，但与「业务方向相符/合理基础」主理由冲突，权衡仅部分成立。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 140,
+        "end": 213,
+        "quote": "现阶段公司档案中的业务范围、认证、人员规模、项目经验与历史成本基础均未提供，属未知而非不具备，故本意向不宣称任何既有能力、既有资源或既有报价依据。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp07-12_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "0ef41091ebd3d83b2f6db4ef1a00d2387d1793abaab6a9f01e121c8a075f3543",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

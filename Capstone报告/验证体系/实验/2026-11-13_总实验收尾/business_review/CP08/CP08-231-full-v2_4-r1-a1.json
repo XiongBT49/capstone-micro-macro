@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-231-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "908a4929415b1b06",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_bid_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-231-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "7e7a35ba1c87105aadc6c71d1dfbe9afaaa3aa45cb8c598f34019c78ce18e0fb",
+  "call_id": "attempt_002_call_000042",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "提交前须落实本包指定岗位人员档期这一前提条件，未确认前不提交；其余未知事项按待核实处理，不写成既有事实。",
+    "reason": "档案工程监理/项目管理范围支持有条件单一监管；档期未决前不正式提交，香港经验/本地团队不作已核实能力。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 323,
+      "end": 375,
+      "quote": "提交前须落实本包指定岗位人员档期这一前提条件，未确认前不提交；其余未知事项按待核实处理，不写成既有事实。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "公司档案显示我方业务范围包含工程设计及咨询、工程监理、项目管理（档案原文，非已审阅的资格接受），与本包监管服务方向相符；但公司档案未提供香港项目经验、当地资质或本地团队记录，相关能力属未知，不作能力或无能推断。",
+      "reason": "保持监管服务职责与档案监理范围一致，标明非已审阅资格，未知不作无能推断，未写成施工总包。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 41,
+        "end": 146,
+        "quote": "公司档案显示我方业务范围包含工程设计及咨询、工程监理、项目管理（档案原文，非已审阅的资格接受），与本包监管服务方向相符；但公司档案未提供香港项目经验、当地资质或本地团队记录，相关能力属未知，不作能力或无能推断。"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "提出驻场监管团队角色计划、独立复核与文件纪律安排、与业主的定期汇报和支付审核流程、质量与可持续目标的检查节点，以及针对工期压力的风险应对。",
+      "reason": "独立复核、定期汇报/支付审核与质量检查节点构成多项拟议检查与记录安排，未写成已完成核查结论。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 162,
+        "end": 231,
+        "quote": "提出驻场监管团队角色计划、独立复核与文件纪律安排、与业主的定期汇报和支付审核流程、质量与可持续目标的检查节点，以及针对工期压力的风险应对。"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "驻场监管团队人员配置为拟议角色计划，非已确认人员安排",
+      "reason": "档期未知与拟议角色计划区分正确，未把档案总体人员升为本包已确认派驻，但岗位组织仍偏框架层。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/3",
+        "start": 0,
+        "end": 26,
+        "quote": "驻场监管团队人员配置为拟议角色计划，非已确认人员安排"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期须在提交前确认，未确认前不提交",
+      "reason": "原必要人员条件保持未决硬门槛；窄口径外部支持不改变单一投标人身份。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/4",
+        "start": 0,
+        "end": 25,
+        "quote": "本包指定岗位人员档期须在提交前确认，未确认前不提交"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "管理层决定：就将军澳日出康城7期A&B项目监管服务包以单一投标人身份推进投标意向。",
+      "reason": "将军澳日出康城居住建筑监管服务进入有条件参与理由；空白交付模式未升整包主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 0,
+        "end": 41,
+        "quote": "管理层决定：就将军澳日出康城7期A&B项目监管服务包以单一投标人身份推进投标意向。"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-57_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "b58ac75d6cb774e7de5578125962d90be869741b8ea1c961226a5cc4dcbf8801",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}

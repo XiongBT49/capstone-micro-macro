@@ -1,0 +1,131 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-167-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f9408b163ab87ed2",
+  "role": "designer",
+  "annotated_action": "conditional_design_bid_claiming_unprovided_architect_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-167-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "9d4be76e47b6ef802bd542218c5c881b396561e576df1b3ff5edc0d0a30b8e50",
+  "call_id": "attempt_002_call_000514",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "与我方作为建筑设计事务所的业务定位一致，且不涉及整包设计采购施工责任，属于我们可作为单一责任主体承担的范围",
+    "reason": "missing_core未给业务范围，不能以建筑设计事务所业务定位一致与可单一承担支撑有条件投标。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 41,
+      "end": 94,
+      "quote": "与我方作为建筑设计事务所的业务定位一致，且不涉及整包设计采购施工责任，属于我们可作为单一责任主体承担的范围"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "contradicted",
+      "quote": "与我方作为建筑设计事务所的业务定位一致，且不涉及整包设计采购施工责任，属于我们可作为单一责任主体承担的范围",
+      "reason": "范围unknown时把建筑设计事务所定位与可单一承担写成既有边界，超出条件性未知。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 41,
+        "end": 94,
+        "quote": "与我方作为建筑设计事务所的业务定位一致，且不涉及整包设计采购施工责任，属于我们可作为单一责任主体承担的范围"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "本包要求的是设计统筹、设计成果、顾问接口与复核，属于我方可以作为单一责任主体承担的设计角色，不涉及整包设计采购施工责任；MEP、结构、可持续等专业接口按分顾问管理并纳入我方复核与文件纪律",
+      "reason": "设计统筹/成果、顾问接口、复核与分顾问文件纪律构成多项拟议交付安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 48,
+        "end": 141,
+        "quote": "本包要求的是设计统筹、设计成果、顾问接口与复核，属于我方可以作为单一责任主体承担的设计角色，不涉及整包设计采购施工责任；MEP、结构、可持续等专业接口按分顾问管理并纳入我方复核与文件纪律"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "当前唯一未解决的条件是本包指定岗位人员档期是否可用，该条件仍处于requested状态并被列为提交前必须解决，因此在取得档期确认前不进行正式提交",
+      "reason": "档案人员未知不作已到岗；档期核查保留并限制正式提交。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 235,
+        "end": 307,
+        "quote": "当前唯一未解决的条件是本包指定岗位人员档期是否可用，该条件仍处于requested状态并被列为提交前必须解决，因此在取得档期确认前不进行正式提交"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "分顾问安排目前仅为拟议计划，尚无已接受的对方承诺",
+      "reason": "人员前置保持未决；分顾问仅为计划，明确不组成组合体。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/2",
+        "start": 0,
+        "end": 24,
+        "quote": "分顾问安排目前仅为拟议计划，尚无已接受的对方承诺"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "correct",
+      "quote": "本项目为过渡性房屋的设计角色招标包，工作内容为设计统筹、设计成果、顾问接口和复核",
+      "reason": "过渡性房屋设计角色进入边界取舍；排除整包设计采购施工，未编未给业绩。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 40,
+        "quote": "本项目为过渡性房屋的设计角色招标包，工作内容为设计统筹、设计成果、顾问接口和复核"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-16_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "d3356f3edf85e316226ff754d833e85651b8edb584ae49dfe433bff9779cd4ab",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
