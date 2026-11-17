@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-074-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "2de9ffa8ac6abbad",
+  "role": "contractor",
+  "annotated_action": "conditional_single_bidder_residential_gc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-074-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "0ca9e61f736529cf45112517dcb4bf1b8d6c3d4156531221937824c7f0d4c1b1",
+  "call_id": "attempt_002_call_000064",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "当前存在两项提交前必须落实的条件：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在两项核验完成前不提交",
+    "reason": "许可经营含房屋建筑总承包，支持有条件单一责任意向；局部专业走常规分包，两项核验前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 134,
+      "end": 194,
+      "quote": "当前存在两项提交前必须落实的条件：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；在两项核验完成前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "我司营业执照许可经营项目载明房屋建筑和市政基础设施项目工程总承包，与本包居住建筑总承包角色方向一致",
+      "reason": "用实际许可经营范围限定方向，资格核查未决保留，不以公司名证明已审资格。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 51,
+        "end": 100,
+        "quote": "我司营业执照许可经营项目载明房屋建筑和市政基础设施项目工程总承包，与本包居住建筑总承包角色方向一致"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "我司具备作为总承包方主导现场管理、安全管理、工期控制、质量记录和分包协调的责任能力，局部专业工作以常规专业分包和外部支持方式安排",
+      "reason": "有本方职责与常规分包区分，但施工组织与接口仍为职责清单框架。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 101,
+        "end": 165,
+        "quote": "我司具备作为总承包方主导现场管理、安全管理、工期控制、质量记录和分包协调的责任能力，局部专业工作以常规专业分包和外部支持方式安排"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "提交前须完成两项核验：一是本包指定岗位人员档期是否可用，二是本包资格证明是否满足提交要求；两项未落实前不提交",
+      "reason": "档期未决限制提交且未捏造现成团队，但无具体岗位或资源落实安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 180,
+        "end": 234,
+        "quote": "提交前须完成两项核验：一是本包指定岗位人员档期是否可用，二是本包资格证明是否满足提交要求；两项未落实前不提交"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项未落实前不提交",
+      "reason": "人员档期与资格证明两项必要前提保持未决；普通专业分包不升为组合体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 225,
+        "end": 234,
+        "quote": "两项未落实前不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本项目为深圳前海居住建筑总承包，与我司房屋建筑及市政基础设施工程总承包的许可经营方向一致",
+      "reason": "深圳前海居住建筑类型进入争取理由；空白规模与交付模式未扩权。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 44,
+        "quote": "本项目为深圳前海居住建筑总承包，与我司房屋建筑及市政基础设施工程总承包的许可经营方向一致"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp08-03_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "02c53424937644c9365b117fe12f751a636752f5ae091d9c01c332cf5b04226a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "作者辅助AI评阅；参与设计，同一助手，非独立专业评阅，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review"
+}
