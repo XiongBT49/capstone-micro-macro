@@ -12,3 +12,7 @@ Implements validation process items 1–6 as offline tooling and frozen assets.
 `new_model_calls: 0`. Does not overwrite frozen `business_review` grades.
 
 CLI: `uv run python scripts/enhance_generation_validation_20261117.py --help`
+
+## Adjudication batch 2026-11-17
+
+Added 84 citation-backed business reviews (36 expert-slice + 48 additional CP08). Expert-slice mirrors are same-assistant, not independent experts. See `adjudication_progress_20261117.json`.

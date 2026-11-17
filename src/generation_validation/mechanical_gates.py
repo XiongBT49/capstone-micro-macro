@@ -170,12 +170,23 @@ def run_mechanical_gates(
     text = public_text(payload) if readable else ""
     pattern_flags = _match_codes(text, PATTERN_SPECS) if readable else []
     invented_flags = _invented_fact_flags(payload, task_card) if readable else []
+    alternate_readable = False
+    if readable and isinstance(payload, dict):
+        # Compact business objects may use decision/reason/content instead of the
+        # long-form field set; those remain business-scorable.
+        alternate_readable = any(
+            isinstance(payload.get(key), str) and payload.get(key).strip()
+            for key in ("content", "reason", "decision", "submission_summary", "technical_proposal")
+        )
     blocking = []
+    soft = []
     if not readable:
         blocking.append("unreadable_or_ambiguous")
-    if readable and not sections["all_required_nonempty"]:
-        blocking.append("required_sections_incomplete")
-    soft = []
+    elif not sections["all_required_nonempty"]:
+        if alternate_readable:
+            soft.append("required_sections_incomplete_alternate_schema")
+        else:
+            blocking.append("required_sections_incomplete")
     if pattern_flags:
         soft.append("d1_taxonomy_pattern_hits")
     if invented_flags:
@@ -188,6 +199,7 @@ def run_mechanical_gates(
         "readable": readable,
         "role": role,
         "section_presence": sections,
+        "alternate_readable_schema": alternate_readable,
         "pattern_flags": pattern_flags,
         "invented_fact_flags": invented_flags,
         "blocking_codes": blocking,

@@ -92,6 +92,20 @@ def test_mechanical_gates_block_unreadable_and_flag_patterns():
     assert blocked["passed_mechanical_gates"] is False
     assert "unreadable_or_ambiguous" in blocked["blocking_codes"]
 
+    compact = {
+        "status": "accepted",
+        "parsed": {
+            "decision": "bid",
+            "reason": "拟议条件性供货方案，目录未知。",
+            "content": "保留未决条件，不作已核实能力陈述。",
+            "task_role": "supplier",
+            "verified_condition_ids": [],
+        },
+    }
+    alt = run_mechanical_gates(compact, task_card=_card())
+    assert alt["eligible_for_business_scoring"] is True
+    assert "required_sections_incomplete_alternate_schema" in alt["soft_codes"]
+
     promise = {
         "status": "accepted",
         "parsed": {
