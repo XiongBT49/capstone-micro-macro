@@ -1,5 +1,7 @@
 # Generation validation enhancement (2026-11-17)
 
+Audience-facing overview: [`THREAD_SUMMARY.md`](THREAD_SUMMARY.md).
+
 Implements validation process items 1–6 as offline tooling and frozen assets.
 
 - Mechanical gates triage readable/schema/section/pattern issues without assigning D1–D4.
