@@ -60,8 +60,15 @@ async def plan_dataset(dataset, client, directory, profile="smoke"):
                             budget=round(total * item["share"], 2) if index < len(items) - 1 else round(total - assigned, 2))
         assigned += construction["budget"]
         supply = deepcopy(templates["supply"])
+        # The supply scope must read as a supply contract. Appending a short suffix to the
+        # full construction scope made suppliers read it as a second construction package
+        # (and its "sole pricing package" wording as theirs), so every supplier declined.
+        supply_scope = (f"仅为施工包「{item['name']}」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。"
+                        "不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。"
+                        "材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。"
+                        f"该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：{item['scope']}")
         supply.update(package_id=f"{project['project_id']}/supply-{index+1}", name=item["name"] + "材料采购",
-                      scope=item["scope"] + "所需材料供应，费用已包含在所属施工包内。", budget=round(construction["budget"] * .28, 2),
+                      scope=supply_scope, budget=round(construction["budget"] * .28, 2),
                       depends_on=[construction["package_id"]], parent_package_id=construction["package_id"])
         payload["packages"] += [construction, supply]
     payload["assumptions"]["procurement_plan"] = {"source": "owner_organization_model_proposal", "reason": decision.get("reason", ""),

@@ -51,6 +51,15 @@ Synthetic fixture evidence can satisfy a condition ONLY inside its declared fict
 That never asserts availability, qualifications, finances or commitments of an actual company.
 """.strip()
 
+_DESK_STATUSES = {"assumed", "unavailable"}
+_DESK_NOTE = (
+    "\nInternal review desk results for this bid window are final. The simulation record holds no further "
+    "documents. status 'assumed' means the record is silent and management decided to bid with that unknown "
+    "as a disclosed assumption: it is NOT verified, it stays in unresolved_condition_ids, it MUST be written "
+    "into bid_assumptions with its pricing or risk boundary, and it is no longer a submission prerequisite. "
+    "Do not raise the same question again as a new required_before_submission request; raise a prerequisite "
+    "only for a genuinely different question. status 'unavailable' or 'rejected' still blocks submission.")
+
 _REQUEST = re.compile(
     r"(?:请.{0,45}(?:确认|核实|提交|提供)|(?:必须|需要|须|先|待|尚待|尚需|尚未|未能|有待).{0,25}(?:确认|核实|核验)|"
     r"(?:若|如果).{0,55}(?:确认|可行|计入)|"
@@ -206,6 +215,12 @@ def conditions(state: SimulationState, company_id: str, package_id: str,
             _require_review(review, record)
             record["status"] = review["status"]
             record["evidence"] = dict(review)
+            if review["status"] == "assumed":
+                # Internal review desk: the scenario record is silent and management
+                # chose to bid with a disclosed assumption. Still unresolved and never
+                # verified, but no longer an active submission gate.
+                record["required_before_submission"] = False
+                record["prerequisite_disposition"] = "proceed_as_disclosed_assumption"
     return list(found.values())
 
 
@@ -230,7 +245,7 @@ def record_review(state: SimulationState, company_id: str, package_id: str, cond
 def _require_review(review: dict, record: dict) -> None:
     if any(review.get(key) != record[key] for key in ("company_id", "package_id")):
         raise ValueError("Evidence review scope mismatch")
-    if review.get("status") not in {"received", "verified", "rejected"}:
+    if review.get("status") not in {"received", "verified", "rejected", "assumed", "unavailable"}:
         raise ValueError("Evidence review has invalid status")
     if any(not isinstance(review.get(key), str) or not review[key].strip()
            for key in ("source_ref", "source_text", "reviewer")):
@@ -253,6 +268,7 @@ def evidence_context(records: list[dict[str, Any]], *, company_sources: dict | N
                           "active_submission_prerequisite_ids": blockers}, ensure_ascii=False)
             + "\nThe original required_before_submission flag is historical importance; "
             "only ACTIVE unresolved prerequisites block submission. Verified records are not waiting for another receipt."
+            + (_DESK_NOTE if any(r["status"] in _DESK_STATUSES for r in records) else "")
             + "\nComplete condition register (not truncated):\n"
             + json.dumps(records, ensure_ascii=False) + "\n"
             "Final JSON must include unresolved_condition_ids for ALL non-verified conditions, "

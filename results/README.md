@@ -35,3 +35,16 @@
 | `validation/` | 现有结论需要的历史采样与来源追溯 |
 
 内部日期用于区分证据来源，日常工作从本页进入。补充案例不与不同实验设置下的结果直接合并计算总准确率。
+
+## 2026-11-19 实验结果
+
+- [单智能体与多智能体微观评分](experiments/micro-org-1118/REPORT.md)
+- [真实模型端到端跑通](experiments/e2e-case0014-1119/README.md)
+- [真实模型端到端跑通（第二案例）](experiments/e2e-case0001-1119/README.md)
+- [单 agent 与多 agent 宏微观衔接对照](experiments/paired-full-case0014-20261119/COMPARISON.md)
+- [352-case ground-truth evaluation](experiments/full352-groundtruth-20261119/REPORT.md)
+- [CASE-0049 paired real-model lifecycle cost](experiments/paired-full-case0049-20261119/cost.json)
+- [精选六例微宏观衔接结果](experiments/selected-six-20261119/REPORT.md)
+- [微观采购评分独立扩样与九例汇总](experiments/micro-org-replication-20261119/比较结果.md)
+- [十二例微观采购评分对照](experiments/micro-org-extension12-20261119/十二例评分汇总_核定.md)
+- [352-case DBB 初始输入清单](experiments/full352-dbb-inputs-20261119/manifest.csv)

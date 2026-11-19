@@ -14,10 +14,18 @@ from src.stage_memory import company_package_memory
 from src.state_ops import company_by_id, log_event, package_by_id, final_agent
 from src.verification import conditions, evidence_context, guarded_validator, disposition_fields, DecisionOutputError, output_verification_requests
 from src.company_grounding import company_evidence
+from src.condition_review import enabled as condition_review_enabled, review_blocking_conditions
 from src.task_role_contract import role_context
 
 
 async def generate_bid_documents(state: SimulationState, runtime: AgentRuntime) -> None:
+    if condition_review_enabled(runtime):
+        # Opt-in internal desk: answer explicit prerequisites from the scenario
+        # record before deciding which bidders may draft a submission.
+        await asyncio.gather(*[
+            review_blocking_conditions(state, runtime, company_by_id(state, member_id), package_by_id(state, decision.package_id))
+            for decision in state.participation_decisions if decision.decision != "no_bid"
+            for member_id in _bidder_member_ids(state, decision)])
     candidates = []
     for decision in state.participation_decisions:
         lead_consortium = _lead_consortium(state, decision.company_id, decision.package_id)
@@ -66,15 +74,15 @@ async def generate_bid_documents(state: SimulationState, runtime: AgentRuntime) 
             continue
         if isinstance(result, BaseException):
             raise result
-        results.append(result)
+        results.append((decision, result))
     counters: dict[str, int] = {}
-    for index, (messages, bid) in enumerate(results, start=1):
+    for index, (decision, (messages, bid)) in enumerate(results, start=1):
         runtime.import_messages(state, messages)
         if bid is None:
             # New prerequisites raised during drafting are retained, not lost as
             # a technical failure or silently converted to a no_bid decision.
             log_event(state, "bid_submission_pending_verification", {
-                "company_id": messages[0].company_id, "package_id": messages[0].package_id,
+                "company_id": decision.company_id, "package_id": decision.package_id,
             })
             continue
         counters[bid.package_id] = counters.get(bid.package_id, 0) + 1
@@ -116,6 +124,7 @@ async def _bid_task(
             {"bid_participation_decision", "consortium_formation", "consortium_failure_reconsideration"},
         ),
     )
+    await review_blocking_conditions(state, runtime, company, package, local_state.agent_discussion_history)
     records = conditions(state, company.company_id, package.package_id, local_state.agent_discussion_history)
     if any(r["required_before_submission"] and r["status"] != "verified" for r in records):
         return local_state.agent_discussion_history, None
@@ -139,6 +148,7 @@ async def _bid_task(
             company, package.package_id, final_agent(state.company_agent_rosters[company.company_id]),
             'decision', '', '\n'.join(final_requests[i]['question'] for i in range(len(final_requests))),
             ['final_bid_draft'], [], '', 'pending checks', '', verification_requests=final_requests)
+        await review_blocking_conditions(state, runtime, company, package, local_state.agent_discussion_history)
         records = conditions(state, company.company_id, package.package_id, local_state.agent_discussion_history)
         if any(r['required_before_submission'] and r['status'] != 'verified' for r in records):
             return local_state.agent_discussion_history, None
@@ -166,6 +176,11 @@ def _require_bid_response(data: dict) -> None:
     # Validate inside ask_json_async so its bounded, audited retry can request a
     # correction. Never absorb a discrepancy into an arbitrary cost bucket.
     require_bid_document_shape(data)
+
+
+def _bidder_member_ids(state: SimulationState, decision: ParticipationDecision) -> list[str]:
+    consortium = _lead_consortium(state, decision.company_id, decision.package_id)
+    return list(consortium.member_company_ids) if consortium else [decision.company_id]
 
 
 def _is_non_lead_consortium_member(state: SimulationState, company_id: str, package_id: str) -> bool:
