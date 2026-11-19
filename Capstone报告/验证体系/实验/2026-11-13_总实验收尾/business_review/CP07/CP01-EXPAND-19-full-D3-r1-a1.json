@@ -1,0 +1,150 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-19-full",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "b86f7b67de1f316f",
+  "role": "designer",
+  "annotated_action": "conditional_design_bid_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-19-full-D3-r1/step-4.json",
+  "response_sha256": "426d7f2bee4fbe9504a43fa532caddb6de11d103766800956e139a1f8b88d6b8",
+  "call_id": "attempt_003_call_000633",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "管理层决定以 bid 方式参与本包，按 designer 角色承担设计统筹、设计成果、顾问接口与复核责任，作为单一责任主体投标，不组建联合体。",
+    "reason": "档案建筑设计等方向支持有条件单一设计意向；档期核实前不构成提交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 0,
+      "end": 71,
+      "quote": "管理层决定以 bid 方式参与本包，按 designer 角色承担设计统筹、设计成果、顾问接口与复核责任，作为单一责任主体投标，不组建联合体。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "公司档案仅载明业务范围涵盖建筑设计、改建审批及牌照申请、室内设计、城市规划、土木及环境工程设计、机电及管道工程设计、现场咨询及监督、项目管理、楼宇维修及评估、BIM咨询，此为档案文本，非已核验的资格或业绩",
+      "reason": "用已给建筑设计等档案方向限定边界，标明非已核验资格，不自称整包EPC主体。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 75,
+        "end": 177,
+        "quote": "公司档案仅载明业务范围涵盖建筑设计、改建审批及牌照申请、室内设计、城市规划、土木及环境工程设计、机电及管道工程设计、现场咨询及监督、项目管理、楼宇维修及评估、BIM咨询，此为档案文本，非已核验的资格或业绩"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "投标文本中的团队组织、专业顾问接口协调、设计复核与独立检查机制、BIM与机电接口责任划分、设计成果交付与审阅节点，均标注为拟议安排而非既有承诺",
+      "reason": "设计统筹/成果、顾问接口、复核与BIM机电接口构成多项拟议交付安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 240,
+        "end": 311,
+        "quote": "投标文本中的团队组织、专业顾问接口协调、设计复核与独立检查机制、BIM与机电接口责任划分、设计成果交付与审阅节点，均标注为拟议安排而非既有承诺"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "提交前须落实 condition_f56554dde374d0ce8ffe（本包指定岗位人员档期是否可用），取得指定岗位档期证据及替代人选安排后方可提交；该条件未解决前仅维持投标意向，不构成提交。",
+      "reason": "整体员工资料不升本包到岗；档期核查保留并限制正式提交。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 373,
+        "end": 471,
+        "quote": "提交前须落实 condition_f56554dde374d0ce8ffe（本包指定岗位人员档期是否可用），取得指定岗位档期证据及替代人选安排后方可提交；该条件未解决前仅维持投标意向，不构成提交。"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "普通专业顾问支持按分包与接口管理处理，不因此转为联合体。",
+      "reason": "人员前置保持未决；普通顾问支持仅为计划，明确不升联合体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 345,
+        "end": 373,
+        "quote": "普通专业顾问支持按分包与接口管理处理，不因此转为联合体。"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "missing",
+      "quote": "",
+      "reason": "outward未将规模、地点或DBO等已给项目条件写入设计安排或行动理由；项目针对性缺失。",
+      "evidence": null,
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "团队组织、专业顾问接口协调、设计复核与独立检查机制、BIM与机电接口责任划分、设计成果交付与审阅节点，均标注为拟议安排而非既有承诺",
+      "reason": "角色内条件性设计路径、接口/复核安排与档期门禁连贯，属可实施条件性方案。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 246,
+        "end": 311,
+        "quote": "团队组织、专业顾问接口协调、设计复核与独立检查机制、BIM与机电接口责任划分、设计成果交付与审阅节点，均标注为拟议安排而非既有承诺"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "condition_f56554dde374d0ce8ffe（本包指定岗位人员档期是否可用）为提交前必备条件，未取得指定岗位档期证据及替代人选安排前不提交。",
+      "reason": "将档案设计范围、单一责任相对联合体与档期门槛连到有条件意向。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/5",
+        "start": 0,
+        "end": 78,
+        "quote": "condition_f56554dde374d0ce8ffe（本包指定岗位人员档期是否可用）为提交前必备条件，未取得指定岗位档期证据及替代人选安排前不提交。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp07-11_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "1ee04c37f2283d893782e7a848c46e855e1c9a90568863318c1b8ace7e92c16a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

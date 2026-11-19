@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-122-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "b77cc1080e09b887",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_bid_with_inspection_loop",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-122-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "b73974b0db88c1eda2cf0854e2536086a2be6176ba8a1424d080cdb3ab77c967",
+  "call_id": "attempt_002_call_000780",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "拟以单一主体身份就本包监管服务提交投标意向，但为有条件意向",
+    "reason": "经营范围仅作档案文字的有条件监管意向；检查清单/记录台账与档期门闩清楚，不作能力断言。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 0,
+      "end": 29,
+      "quote": "拟以单一主体身份就本包监管服务提交投标意向，但为有条件意向"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "工作定位为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任",
+      "reason": "监督职责边界清楚；档案含建设工程监理仅作文字，不作资格审查通过。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 30,
+        "end": 70,
+        "quote": "工作定位为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "一是按本包要求编制岗位角色计划，明确总监理岗位与各专业监管人员的职责分工和独立复核安排；二是建立质量审查与进度核查的检查清单和记录台账，确保文档纪律可追溯",
+      "reason": "至少两项独立复核、质量/进度核查清单与记录台账安排，并标明拟议性质。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 76,
+        "end": 153,
+        "quote": "一是按本包要求编制岗位角色计划，明确总监理岗位与各专业监管人员的职责分工和独立复核安排；二是建立质量审查与进度核查的检查清单和记录台账，确保文档纪律可追溯"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "提交前必须核实本包指定岗位人员档期是否可用，该条件未落实前不提交",
+      "reason": "保留档期未知，岗位计划为拟议安排而非已派驻事实。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 299,
+        "end": 331,
+        "quote": "提交前必须核实本包指定岗位人员档期是否可用，该条件未落实前不提交"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "当前唯一未解决条件是本包指定岗位人员档期是否可用，已列为提交前必须落实的前提；在该条件核实前不提交",
+      "reason": "原必要人员条件保持未决，并限制正式提交。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 111,
+        "end": 160,
+        "quote": "当前唯一未解决条件是本包指定岗位人员档期是否可用，已列为提交前必须落实的前提；在该条件核实前不提交"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本项目为深圳宝安机场卫星厅，规模大、接口多，监管服务需要独立检查、进度与质量审查和完整记录",
+      "reason": "将规模与接口条件联系到独立检查与记录重点；EPC背景未升为本方整包。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 45,
+        "quote": "本项目为深圳宝安机场卫星厅，规模大、接口多，监管服务需要独立检查、进度与质量审查和完整记录"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-18_compact_first_002_expanded_labels.json",
+  "authored_labels_sha256": "8fbbe357aa765a511af7096b653e8219bd93b0044189b9961d0e16db00e1f70e",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

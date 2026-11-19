@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-121-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "cdcfbea137a4f3cd",
+  "role": "designer",
+  "annotated_action": "conditional_design_bid_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-121-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "c1971a1c57c5d66fd01339db5f468ae04cdc9f43b6215faf39ebc34b3e430723",
+  "call_id": "attempt_002_call_000304",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本次为有条件投标意向：方向为投标，报价与资源配置均按暂定方案处理，待人员档期确认后再定稿。",
+    "reason": "已给建筑设计/室内设计范围支持角色内有条件设计方意向；排除整包EPC组合体，档期未决前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 282,
+      "end": 327,
+      "quote": "本次为有条件投标意向：方向为投标，报价与资源配置均按暂定方案处理，待人员档期确认后再定稿。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "设计角色与我司档案所载业务范围（建筑设计、室内设计、城市规划等，属档案原文，非已审验的资质认定）方向一致",
+      "reason": "用已给建筑设计/室内设计文本限定方向，不自称整包EPC主体或凭角色补资质。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 27,
+        "end": 79,
+        "quote": "设计角色与我司档案所载业务范围（建筑设计、室内设计、城市规划等，属档案原文，非已审验的资质认定）方向一致"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "通过角色计划、质量审核流程、文件管理纪律与责任传递安排管理专业分包与EPC接口",
+      "reason": "角色计划、质量审核、文件管理与EPC责任传递构成多项拟议交付/接口安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 118,
+        "end": 157,
+        "quote": "通过角色计划、质量审核流程、文件管理纪律与责任传递安排管理专业分包与EPC接口"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用为未解决的前置条件，在该条件核实前不提交投标文件",
+      "reason": "参保等整体资料不升为本包到岗；档期核查保留并限制正式提交。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 214,
+        "end": 252,
+        "quote": "本包指定岗位人员档期是否可用为未解决的前置条件，在该条件核实前不提交投标文件"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "对专业分包与外部支持仅作为拟议安排，不表述为已落实的承诺",
+      "reason": "人员前置保持未决；专业分包/外部支持仅为计划，不强制组合体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 353,
+        "end": 381,
+        "quote": "对专业分包与外部支持仅作为拟议安排，不表述为已落实的承诺"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "partial",
+      "quote": "本项目为深圳河套深港科技创新合作区东翼-1产业与工业物流建筑，EPC交付",
+      "reason": "河套产业物流/EPC进入设计方取舍，但档案合规记载未作有限风险或核查说明。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 36,
+        "quote": "本项目为深圳河套深港科技创新合作区东翼-1产业与工业物流建筑，EPC交付"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-11_compact_first_002_expanded_labels.json",
+  "authored_labels_sha256": "9a1309333a4d25a7c55c95a802eeeb55d65f1d06eacac60825f7d3b49eb5b063",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

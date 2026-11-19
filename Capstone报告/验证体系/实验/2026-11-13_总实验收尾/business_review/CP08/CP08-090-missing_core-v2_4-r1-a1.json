@@ -1,0 +1,168 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-090-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "c425bdcc446614d6",
+  "role": "supplier",
+  "annotated_action": "role_overrun_design_service_as_supplier",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-090-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "4974a5af911961c702e1a944a8493e449da6b16216dd3b144880bd23f181e397",
+  "call_id": "attempt_002_call_000062",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "本投标为设计服务投标，非施工或货物供应",
+    "reason": "供应商任务改投设计服务，无业务范围支撑的角色越界，属不适当。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 19,
+      "quote": "本投标为设计服务投标，非施工或货物供应"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "本投标为设计服务投标，非施工或货物供应",
+      "reason": "缺范围资料时应给有边界材料方案，却断言设计服务并排除供货。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 19,
+        "quote": "本投标为设计服务投标，非施工或货物供应"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "missing",
+      "quote": "",
+      "reason": "无供应/配送/供货文档交付安排，只有设计四阶段计划。",
+      "evidence": null,
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "partial",
+      "quote": "本公司资料未提供设计资质、同类学校项目业绩、设计团队人员配置及外部顾问已承诺函，上述均为拟议安排，尚未取得对方承诺",
+      "reason": "承认资源未落实，但对象是设计团队/顾问而非供货库存渠道。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 182,
+        "end": 239,
+        "quote": "本公司资料未提供设计资质、同类学校项目业绩、设计团队人员配置及外部顾问已承诺函，上述均为拟议安排，尚未取得对方承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "本包供应商渠道审核是否通过",
+      "reason": "未决条件仍列且未升硬门槛，但正文未给供货渠道审核与保修文档的拟议处理，改谈设计顾问。",
+      "evidence": {
+        "json_pointer": "/verification_requests/0/question",
+        "start": 0,
+        "end": 13,
+        "quote": "本包供应商渠道审核是否通过"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "拟以单一公司身份承接深圳市第三十七高级中学设计包",
+      "reason": "点名学校项目，但联系的是设计包而非供货安排；未把D&B写成施工总包。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 44,
+        "end": 68,
+        "quote": "拟以单一公司身份承接深圳市第三十七高级中学设计包"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "partial",
+      "quote": "尚未取得顾问报价，属暂定假设",
+      "reason": "有MOP分项与暂定声明且可加总，但标的是设计服务费而非供货报价。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/1/basis",
+        "start": 18,
+        "end": 32,
+        "quote": "尚未取得顾问报价，属暂定假设"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.0,
+  "detailed": {
+    "D3": {
+      "score": 0,
+      "quote": "本投标为设计服务投标，非施工或货物供应",
+      "reason": "安排与供应商角色约束直接矛盾。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 19,
+        "quote": "本投标为设计服务投标，非施工或货物供应"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "主要风险：设计资质与同类学校业绩未核实；设计团队人员可用性未确认；外部专业顾问尚未承诺，顾问报价未取得",
+      "reason": "识别部分不确定风险，但取舍服务于越界的设计投标行动。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 51,
+        "quote": "主要风险：设计资质与同类学校业绩未核实；设计团队人员可用性未确认；外部专业顾问尚未承诺，顾问报价未取得"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_expert-05_CP08_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "280cdb7a3351595ae526c278bbba985b9560d271c4e37dd33962bd270eddbacf",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

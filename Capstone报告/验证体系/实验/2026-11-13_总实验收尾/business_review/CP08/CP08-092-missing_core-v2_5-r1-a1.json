@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-092-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f881bd9c724ce462",
+  "role": "contractor",
+  "annotated_action": "conditional_single_responsibility_construction_bid",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-092-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "ed65a27f90b244225da0f5f84125f22da33f47a396cd2b5073d9aa11876077be",
+  "call_id": "attempt_002_call_000035",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "两项提交前置条件——本包指定岗位人员档期可用性、本包资格证明满足提交要求——目前均为待核实状态，关闭前不提交",
+    "reason": "范围与经验未知保留，按承建商角色作有条件单一意向；必要核查关闭前不提交；软门“已落实”仅在“而非已落实承诺”否定语境。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 238,
+      "end": 292,
+      "quote": "两项提交前置条件——本包指定岗位人员档期可用性、本包资格证明满足提交要求——目前均为待核实状态，关闭前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "公司档案中业务范围、资质、同类经验、人员规模与历史成本基础在现有资料中均未提供，属未知，不作为已具备能力的表述",
+      "reason": "未知范围不作能力断言，资格边界保留，不以公司名称证明能力。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 148,
+        "end": 203,
+        "quote": "公司档案中业务范围、资质、同类经验、人员规模与历史成本基础在现有资料中均未提供，属未知，不作为已具备能力的表述"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "拟议工作范围包括施工组织设计、工地管理与安全文明施工、常规专业分包协调、质量记录与文档管理、工期计划与风险应对",
+      "reason": "有多项职能与拟议分包区分，但现场/接口安排仍偏框架。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 28,
+        "end": 83,
+        "quote": "拟议工作范围包括施工组织设计、工地管理与安全文明施工、常规专业分包协调、质量记录与文档管理、工期计划与风险应对"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "correct",
+      "quote": "报价以MOP为受控核算单位、按分项汇总保持一致性，未取得供应商报价的部分以暂定 allowances 列示并明确标注为草案假设",
+      "reason": "企业资料与本包档期/报价落实分开，不捏造现成团队或已落实报价。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 84,
+        "end": 147,
+        "quote": "报价以MOP为受控核算单位、按分项汇总保持一致性，未取得供应商报价的部分以暂定 allowances 列示并明确标注为草案假设"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项提交前置条件——本包指定岗位人员档期可用性、本包资格证明满足提交要求——目前均为待核实状态，关闭前不提交；若无法关闭则退出",
+      "reason": "两项必要提交前提保持未决，关闭/退出路径清楚；常规分包不升为组合体门槛。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 238,
+        "end": 301,
+        "quote": "两项提交前置条件——本包指定岗位人员档期可用性、本包资格证明满足提交要求——目前均为待核实状态，关闭前不提交；若无法关闭则退出"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本项目为深圳清水河综合交通枢纽，承建商角色要求施工组织、工地管理、常规专业分包与施工责任，属于大型交通基础设施施工范畴",
+      "reason": "已给交通枢纽类型与深圳区位进入争取理由；规模与交付模式空白未虚构。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 59,
+        "quote": "本项目为深圳清水河综合交通枢纽，承建商角色要求施工组织、工地管理、常规专业分包与施工责任，属于大型交通基础设施施工范畴"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-03_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "64f06813c788792d72e0d8047a57ab71f2605bf8beaa977bd0844a596dcc54a0",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

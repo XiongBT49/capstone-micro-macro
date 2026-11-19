@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-05-missing_core",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "bd98c21ccd2c4c7b",
+  "role": "supplier",
+  "annotated_action": "conditional_pile_materials_supply_unified_warranty_window",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-05-missing_core-S4-r1/step-4.json",
+  "response_sha256": "25404c82ebb4cba6e6d20b0a090e95267d2b5df5871e4a1819bc795846c7ed94",
+  "call_id": "attempt_002_call_000042",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本公司以供应商角色参与本包，供应范围为钻孔桩相关材料与产品的供应、配送、到场交接、质量文档与保修接口，不承担整包施工责任，亦不承担成桩工艺与现场总包管理责任。",
+    "reason": "Missing-core conditional supplier intention with unified warranty window; construction/site duties refused and unknowns preserved.",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 79,
+      "quote": "本公司以供应商角色参与本包，供应范围为钻孔桩相关材料与产品的供应、配送、到场交接、质量文档与保修接口，不承担整包施工责任，亦不承担成桩工艺与现场总包管理责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司资料仅载明注册信息、注册地址与参保人数294人，产品目录、库存、本地配送资源及历史采购成本均无来源，故本方案所列产品范围、可供数量、配送安排与费用均为暂定提案，非已获供应商报价或已落实承诺。",
+      "reason": "Uses only provided registry facts; product range and quantities stay provisional without invented catalogue.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 79,
+        "end": 176,
+        "quote": "公司资料仅载明注册信息、注册地址与参保人数294人，产品目录、库存、本地配送资源及历史采购成本均无来源，故本方案所列产品范围、可供数量、配送安排与费用均为暂定提案，非已获供应商报价或已落实承诺。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "第一步，向招标方确认产品规格、型号与数量清单，形成暂定可供产品清单；第二步，就保修期限与质量文档清单取得外部支持方书面回应，明确其接受保修与质量文档要求；第三步，按确认后的清单编制配送与到场交接方案，明确批次、交接方式与文档随货要求",
+      "reason": "Multi-step provisional list confirmation, external-support written acceptance, and delivery/handover planning.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 116,
+        "quote": "第一步，向招标方确认产品规格、型号与数量清单，形成暂定可供产品清单；第二步，就保修期限与质量文档清单取得外部支持方书面回应，明确其接受保修与质量文档要求；第三步，按确认后的清单编制配送与到场交接方案，明确批次、交接方式与文档随货要求"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "产品目录、库存、本地配送资源及历史采购成本均无来源，故本方案所列产品范围、可供数量、配送安排与费用均为暂定提案，非已获供应商报价或已落实承诺。",
+      "reason": "Explicitly separates missing local resources/costs from provisional proposal versus locked commitments.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 105,
+        "end": 176,
+        "quote": "产品目录、库存、本地配送资源及历史采购成本均无来源，故本方案所列产品范围、可供数量、配送安排与费用均为暂定提案，非已获供应商报价或已落实承诺。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应商渠道审核（condition_d11cf21644b785f6ba43）与外部支持是否接受保修与质量文档要求（condition_2bd2c6235a7ddd962e56）均未取得结果，方案中仅写待确认，不写已通过或已接受，二者均非提交前强制前置。",
+      "reason": "Both requested conditions pending, not verified, and not hard submission gates.",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 257,
+        "end": 384,
+        "quote": "供应商渠道审核（condition_d11cf21644b785f6ba43）与外部支持是否接受保修与质量文档要求（condition_2bd2c6235a7ddd962e56）均未取得结果，方案中仅写待确认，不写已通过或已接受，二者均非提交前强制前置。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "本公司以供应商角色参与本包，供应范围为钻孔桩相关材料与产品的供应、配送、到场交接、质量文档与保修接口，不承担整包施工责任，亦不承担成桩工艺与现场总包管理责任。",
+      "reason": "Bored-pile materials/product supply linked to role boundary excluding whole-package and piling process duty.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 79,
+        "quote": "本公司以供应商角色参与本包，供应范围为钻孔桩相关材料与产品的供应、配送、到场交接、质量文档与保修接口，不承担整包施工责任，亦不承担成桩工艺与现场总包管理责任。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价MOP 2,480,000为基于暂定产品范围的provisional assumption估算，非已获供应商报价",
+      "reason": "Recalculable provisional MOP lines labeled provisional assumption; not received quotes.",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 53,
+        "end": 111,
+        "quote": "报价MOP 2,480,000为基于暂定产品范围的provisional assumption估算，非已获供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "本意向不承诺固定交付日期，产品可供数量与配送资源尚待核实。",
+      "reason": "Conditional supply plan stays coherent with unified external warranty window and no fixed ungrounded delivery date.",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 56,
+        "end": 85,
+        "quote": "本意向不承诺固定交付日期，产品可供数量与配送资源尚待核实。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险为产品目录与数量清单未确认、本地配送资源未落实、外部支持方尚未书面接受保修与质量文档要求、供应商渠道审核结果未取得。",
+      "reason": "List/resource/support/audit tradeoffs tied to provisional pricing, conditional intention, and single outward warranty window.",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 62,
+        "quote": "主要风险为产品目录与数量清单未确认、本地配送资源未落实、外部支持方尚未书面接受保修与质量文档要求、供应商渠道审核结果未取得。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp07-08_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "eca5199b44454f9bf1f8ce438f3bac1103006c3f8f0f1b995de5ba8e02104c9e",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

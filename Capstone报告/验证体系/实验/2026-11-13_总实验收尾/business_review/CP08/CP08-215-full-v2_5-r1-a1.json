@@ -1,0 +1,156 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-215-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "3c36a93b60aac958",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_bid_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-215-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "08da9f7b849234195265f06acfd6d09efc8334cc4f1d27e90860435b54712fc9",
+  "call_id": "attempt_002_call_000460",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本项目为香港房屋署大型居住建筑，监管服务需求与公司登记业务范围中的工程监理、项目管理方向相符，具备以独立监管角色参与的合理商业价值。但公司档案未提供同类项目经验、认证及本地团队证据，且存在一项提交前必须核实的条件，即本包指定岗位人员档期是否可用。管理判断为：以单一责任主体身份表达投标意向，定位为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任；在人员档期确认前不提交正式投标。",
+    "reason": "档案工程监理/项目管理范围支持有条件单一监管；档期未决前不正式提交，拟议检查/记录不作既有能力。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 0,
+      "end": 200,
+      "quote": "本项目为香港房屋署大型居住建筑，监管服务需求与公司登记业务范围中的工程监理、项目管理方向相符，具备以独立监管角色参与的合理商业价值。但公司档案未提供同类项目经验、认证及本地团队证据，且存在一项提交前必须核实的条件，即本包指定岗位人员档期是否可用。管理判断为：以单一责任主体身份表达投标意向，定位为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任；在人员档期确认前不提交正式投标。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "服务定位为独立监督、检查、进度与质量审查及记录，明确不承担施工总包或整包设计施工责任",
+      "reason": "保持监督/审查/记录职责与档案监理范围一致，工商登记文本不作已验证资质，未写成施工总包。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 28,
+        "end": 70,
+        "quote": "服务定位为独立监督、检查、进度与质量审查及记录，明确不承担施工总包或整包设计施工责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "拟议方案包括：建立独立检查与复核机制、质量目标与进度审查节点、文档与记录纪律、付款审查流程及风险应对安排",
+      "reason": "独立检查与复核、进度审查节点、文档纪律与付款审查构成多项拟议检查/记录安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 128,
+        "end": 180,
+        "quote": "拟议方案包括：建立独立检查与复核机制、质量目标与进度审查节点、文档与记录纪律、付款审查流程及风险应对安排"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "partial",
+      "quote": "相关岗位人员配置以角色计划形式提出。本包指定岗位人员档期是否可用为提交前必须核实的条件，未确认前不提交正式投标。",
+      "reason": "档期未知与角色计划区分正确，未捏造现成派驻，但岗位组织仍偏计划标题层。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 181,
+        "end": 237,
+        "quote": "相关岗位人员配置以角色计划形式提出。本包指定岗位人员档期是否可用为提交前必须核实的条件，未确认前不提交正式投标。"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用为提交前必须核实的条件，未确认前不提交正式投标。",
+      "reason": "原必要人员条件保持未决硬门槛；单一责任主体且现阶段不采用组合体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 199,
+        "end": 237,
+        "quote": "本包指定岗位人员档期是否可用为提交前必须核实的条件，未确认前不提交正式投标。"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本公司拟以监管/监理角色参与大埔第9区居住建筑项目投标",
+      "reason": "香港房屋署大埔第9区大型居住建筑进入有条件监管理由；空白交付模式未升整包主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 0,
+        "end": 27,
+        "quote": "本公司拟以监管/监理角色参与大埔第9区居住建筑项目投标"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "拟议方案包括：建立独立检查与复核机制、质量目标与进度审查节点、文档与记录纪律、付款审查流程及风险应对安排",
+      "reason": "角色内条件性监管路径、档期门禁与检查/复核安排连贯，属可实施条件性方案。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 128,
+        "end": 180,
+        "quote": "拟议方案包括：建立独立检查与复核机制、质量目标与进度审查节点、文档与记录纪律、付款审查流程及风险应对安排"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "在人员档期确认前不提交正式投标。质量与独立检查安排、文档纪律、付款审查与风险应对均作为拟议方案提出，不作为既有能力陈述。",
+      "reason": "档案监理方向、单一主体与档期门槛取舍明确连到有条件意向/不提交。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 184,
+        "end": 244,
+        "quote": "在人员档期确认前不提交正式投标。质量与独立检查安排、文档纪律、付款审查与风险应对均作为拟议方案提出，不作为既有能力陈述。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-47_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "146f61848a8a09ad9d1e2b6ea63275f76b3dcb6823d516698e1fe5dba5a495ab",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

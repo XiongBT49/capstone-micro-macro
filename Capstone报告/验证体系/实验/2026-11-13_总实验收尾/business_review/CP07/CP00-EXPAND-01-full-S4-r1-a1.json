@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-01-full",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "5b47b1e2abeeb5a2",
+  "role": "supplier",
+  "annotated_action": "provisional_building_materials_supply_not_epc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-01-full-S4-r1/step-4.json",
+  "response_sha256": "7cb77e4bfa13551b6b09c5226c37a77423f1d3723d6963432fc4f02cc4d2fab2",
+  "call_id": "attempt_003_call_000373",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本司以供应商角色参与本包，仅承担产品/材料供应、配送、文档与保修接口，不承担整包施工、安装总责或EPC交付。",
+    "reason": "Bounded building-materials supplier draft using provided scope text; EPC mode not converted into own package duty.",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 54,
+      "quote": "本司以供应商角色参与本包，仅承担产品/材料供应、配送、文档与保修接口，不承担整包施工、安装总责或EPC交付。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "资料原文业务范围载明「澳门博彩、综合度假村、酒店、零售、餐饮;建筑材料生产销售分销」，此为业务范围描述，不构成具体产品目录、库存、本地配送资源、认证或历史采购成本的证明。",
+      "reason": "Limits to provided 建筑材料生产销售分销 direction without claiming catalogue/inventory proof.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 54,
+        "end": 139,
+        "quote": "资料原文业务范围载明「澳门博彩、综合度假村、酒店、零售、餐饮;建筑材料生产销售分销」，此为业务范围描述，不构成具体产品目录、库存、本地配送资源、认证或历史采购成本的证明。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "三、供应与配送：按批次组织材料供应，配送时效与品类覆盖范围作为暂定假设列明，待确认后细化；四、文档与质量：建立批次追溯、质量目标检查与文档纪律，保修接口由本司统一对外",
+      "reason": "Multiple provisional supply/delivery/document/warranty arrangements with confirmation needs.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 79,
+        "end": 162,
+        "quote": "三、供应与配送：按批次组织材料供应，配送时效与品类覆盖范围作为暂定假设列明，待确认后细化；四、文档与质量：建立批次追溯、质量目标检查与文档纪律，保修接口由本司统一对外"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本计划为拟议安排，不构成已落实的外部支持或已获供应商报价。",
+      "reason": "Separates proposed external-support/delivery resources from confirmed commitments or received quotes.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 197,
+        "end": 226,
+        "quote": "本计划为拟议安排，不构成已落实的外部支持或已获供应商报价。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应商渠道审核结果待定（条件condition_c8c311dc406a4e6e4908，待确认），未确认前报价仅作暂定估算。",
+      "reason": "Channel audit and warranty/doc acceptance kept unresolved; verification_requests not hard gates.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 296,
+        "end": 359,
+        "quote": "供应商渠道审核结果待定（条件condition_c8c311dc406a4e6e4908，待确认），未确认前报价仅作暂定估算。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "不承担整包施工、安装总责或EPC交付。",
+      "reason": "Handles EPC boundary and materials-supply role, but omits required limited-evidence handling of gaming-regulator compliance note.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 35,
+        "end": 54,
+        "quote": "不承担整包施工、安装总责或EPC交付。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "本司以供应商角色提交暂定意向报价 MOP 2,420,000，仅涵盖产品/材料供应、配送、文档与保修接口，不含施工安装或EPC总包。",
+      "reason": "Recalculable provisional MOP breakdown; explicitly not received supplier quotations.",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 0,
+        "end": 66,
+        "quote": "本司以供应商角色提交暂定意向报价 MOP 2,420,000，仅涵盖产品/材料供应、配送、文档与保修接口，不含施工安装或EPC总包。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "外部支持须书面接受保修与质量文档要求（条件condition_6eb3a4713763b2ec4652，待确认）后方纳入供应范围。",
+      "reason": "Coherent conditional supplier plan with inclusion gates for external support and provisional pricing inside role bounds.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 184,
+        "end": 249,
+        "quote": "外部支持须书面接受保修与质量文档要求（条件condition_6eb3a4713763b2ec4652，待确认）后方纳入供应范围。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险：产品目录与数量未明确、渠道审核待确认、外部支持保修与质量文档要求待书面接受、配送时效与品类覆盖为暂定假设。",
+      "reason": "Catalogue/audit/support/delivery tradeoffs linked to provisional quote adjustments and written-acceptance gate.",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 58,
+        "quote": "主要风险：产品目录与数量未明确、渠道审核待确认、外部支持保修与质量文档要求待书面接受、配送时效与品类覆盖为暂定假设。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_expert-06_CP07_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "0527d4e43401b687e0658331dc920e479bce77a7c3f2d874602423d351ff6887",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

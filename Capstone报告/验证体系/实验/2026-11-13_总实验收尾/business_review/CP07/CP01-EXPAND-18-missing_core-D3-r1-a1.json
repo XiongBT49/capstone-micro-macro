@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-18-missing_core",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "9fbc95d750189f15",
+  "role": "supplier",
+  "annotated_action": "conditional_provisional_materials_supply_missing_core",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-18-missing_core-D3-r1/step-4.json",
+  "response_sha256": "dc0afbf76ac0244dfe3df4d0b369d8ede489232cd1e310b124334f37fa50c8b9",
+  "call_id": "attempt_003_call_000555",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标为供应商角色投标意向，仅承担产品/材料供应、配送、文档与保修接口，不承担整包施工责任。",
+    "reason": "缺核心范围下条件性暂定材料供货；未知不作无能，两项未决不写成已通过。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 46,
+      "quote": "本投标为供应商角色投标意向，仅承担产品/材料供应、配送、文档与保修接口，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "因公司档案中产品目录、库存、本地团队及历史采购成本均为未知，具体产品线覆盖范围、规格与数量须待招标包材料清单明确后确认。",
+      "reason": "无核心范围下按景观材料方向给有边界暂定方案，不凭身份声称自有产品库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 83,
+        "end": 143,
+        "quote": "因公司档案中产品目录、库存、本地团队及历史采购成本均为未知，具体产品线覆盖范围、规格与数量须待招标包材料清单明确后确认。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "第二阶段（货源组织）：以东莞为货源组织点，按暂定方案经珠海/横琴口岸进入澳门，由本地物流伙伴负责末端配送与卸货协调（物流伙伴尚未选定，属拟议安排）。第三阶段（文档与保修接口）：编制质量文档目录，明确保修登记与响应流程，与总承包方确认接口交接点。",
+      "reason": "货源组织、跨境配送、文档保修接口与分批供货等多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 41,
+        "end": 163,
+        "quote": "第二阶段（货源组织）：以东莞为货源组织点，按暂定方案经珠海/横琴口岸进入澳门，由本地物流伙伴负责末端配送与卸货协调（物流伙伴尚未选定，属拟议安排）。第三阶段（文档与保修接口）：编制质量文档目录，明确保修登记与响应流程，与总承包方确认接口交接点。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "以上各阶段资源与时间安排均为暂定方案，不构成已落实承诺。",
+      "reason": "明确目录/本地团队未知，并声明各阶段不构成已落实承诺。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 195,
+        "end": 223,
+        "quote": "以上各阶段资源与时间安排均为暂定方案，不构成已落实承诺。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "外部支持方是否接受保修与质量文档要求尚待确认（condition_df9d9046a76c8897ac23），供应商渠道审核亦待确认（condition_7949f4d274cf2501e60c），两项均不阻断本次投标意向，但须在正式投标前落实书面意向。",
+      "reason": "两项原请求保持未决且明确非硬门槛，并给出拟议文档/保修处理。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 229,
+        "end": 356,
+        "quote": "外部支持方是否接受保修与质量文档要求尚待确认（condition_df9d9046a76c8897ac23），供应商渠道审核亦待确认（condition_7949f4d274cf2501e60c），两项均不阻断本次投标意向，但须在正式投标前落实书面意向。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "拟议供货方向为景观美化材料、水景设施配件及特色构件配套件的供应与配送协调。",
+      "reason": "将景观美化/水景/特色构件与供货安排联系；经珠海/横琴入澳配送。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 46,
+        "end": 83,
+        "quote": "拟议供货方向为景观美化材料、水景设施配件及特色构件配套件的供应与配送协调。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "以上金额均为暂定估算，因公司档案中产品目录、库存、本地团队及历史采购成本均为未知，且缺少招标包材料清单与数量，任何金额不得视为已收到供应商报价或已锁定渠道价格。",
+      "reason": "六项暂定可复算至MOP 2,700,000，明确非已收到供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 209,
+        "end": 289,
+        "quote": "以上金额均为暂定估算，因公司档案中产品目录、库存、本地团队及历史采购成本均为未知，且缺少招标包材料清单与数量，任何金额不得视为已收到供应商报价或已锁定渠道价格。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "以上各阶段资源与时间安排均为暂定方案，不构成已落实承诺。",
+      "reason": "角色内条件性供货路径与未决条件边界连贯，属可实施草案。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 195,
+        "end": 223,
+        "quote": "以上各阶段资源与时间安排均为暂定方案，不构成已落实承诺。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "供应商渠道审核（condition_7949f4d274cf2501e60c）与外部支持是否接受保修与质量文档要求（condition_df9d9046a76c8897ac23）均处于 requested 状态，须在正式投标前取得书面意向，但不阻断本次投标意向。",
+      "reason": "将未知目录与两项requested条件连到投标意向及正式前书面意向门槛。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 289,
+        "end": 420,
+        "quote": "供应商渠道审核（condition_7949f4d274cf2501e60c）与外部支持是否接受保修与质量文档要求（condition_df9d9046a76c8897ac23）均处于 requested 状态，须在正式投标前取得书面意向，但不阻断本次投标意向。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp07-11_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "1ee04c37f2283d893782e7a848c46e855e1c9a90568863318c1b8ace7e92c16a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

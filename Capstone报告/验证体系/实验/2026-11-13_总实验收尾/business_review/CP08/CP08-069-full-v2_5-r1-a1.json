@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-069-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "4646213725b6c38d",
+  "role": "contractor",
+  "annotated_action": "conditional_single_contractor_school_bid",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-069-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "5f3df01f50d9ff11b9fb91051caebcf06da92a150bbe474fa0c995e7c7903e87",
+  "call_id": "attempt_002_call_000758",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "现阶段须先落实两项提交前条件：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均未取得回执前不提交",
+    "reason": "档案建筑总承包方向支持有条件单独投标；专业分包常规安排，必要核查未回执前不提交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 172,
+      "end": 231,
+      "quote": "现阶段须先落实两项提交前条件：本包指定岗位人员档期是否可用，以及本包资格证明是否满足提交要求；两项均未取得回执前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "公司档案仅载明业务范围，未提供项目经验、认证、人员配置、设备资产与成本历史",
+      "reason": "用档案业务范围限定方向并声明非已核能力，资格未决保留。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 128,
+        "end": 165,
+        "quote": "公司档案仅载明业务范围，未提供项目经验、认证、人员配置、设备资产与成本历史"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "我方可在施工组织、工地管理、安全与质量记录、进度控制、付款协调及常规专业分包控制上承担单一责任，专业分包与外部支持按正常投标安排处理",
+      "reason": "职责与常规分包框架清楚，缺具体现场组织或接口执行细节。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 105,
+        "end": 171,
+        "quote": "我方可在施工组织、工地管理、安全与质量记录、进度控制、付款协调及常规专业分包控制上承担单一责任，专业分包与外部支持按正常投标安排处理"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "本包指定岗位人员档期可用性尚未取得回执，人员配置按拟议角色计划表述，不作为已落实事实",
+      "reason": "档期未决限制提交且资源为拟议，未虚构现成团队，但无具体岗位配置。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/1",
+        "start": 0,
+        "end": 42,
+        "quote": "本包指定岗位人员档期可用性尚未取得回执，人员配置按拟议角色计划表述，不作为已落实事实"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项均未取得回执前不提交",
+      "reason": "两项原必要提交前提保持未决；普通专业分包不共享投标人身份。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 219,
+        "end": 231,
+        "quote": "两项均未取得回执前不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本包为横琴幼、小学校总承包，属房建总承包范畴，与我方档案所载建筑总承包业务方向一致",
+      "reason": "幼小学校/房建总承包进入意向；跨境接口与设计协调以假设处理，EPC不升格整包主体。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 41,
+        "quote": "本包为横琴幼、小学校总承包，属房建总承包范畴，与我方档案所载建筑总承包业务方向一致"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp08-03_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "02c53424937644c9365b117fe12f751a636752f5ae091d9c01c332cf5b04226a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

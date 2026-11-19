@@ -1,0 +1,132 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-102-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "53c42fcbe29a692a",
+  "role": "designer",
+  "annotated_action": "conditional_designer_bid_unknown_scope_hedged",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-102-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "f0cac5814eab1880e4fe88c0f7385b67f2e520cf828a0ae1f8e4fd6024091245",
+  "call_id": "attempt_002_call_000323",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "公司档案中的业务范围、资质、经验、人员结构与历史成本依据均为未知，不能据此宣称已具备深圳本地加固设计与BIM全过程交付能力",
+    "reason": "范围unknown下按设计角色作有条件意向；未知不作能力主张，排除整包EPC，档期确认前不正式提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 79,
+      "end": 140,
+      "quote": "公司档案中的业务范围、资质、经验、人员结构与历史成本依据均为未知，不能据此宣称已具备深圳本地加固设计与BIM全过程交付能力"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "本公司拟以设计主导方身份参与本包投标，承担设计统筹、设计成果、顾问接口协调与内部复核，不承担整包EPC的设计采购施工责任",
+      "reason": "未知范围下给出条件性设计边界，不凭角色补资质或升格整包主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 0,
+        "end": 60,
+        "quote": "本公司拟以设计主导方身份参与本包投标，承担设计统筹、设计成果、顾问接口协调与内部复核，不承担整包EPC的设计采购施工责任"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "设置内部校审与独立复核节点，确保方案、施工图与BIM成果的一致性和文档纪律",
+      "reason": "校审/独立复核与BIM成果一致性、分顾问接口构成多项拟议交付安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 86,
+        "end": 123,
+        "quote": "设置内部校审与独立复核节点，确保方案、施工图与BIM成果的一致性和文档纪律"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用为提交前必须落实的条件，目前尚无回执，在该条件确认前不构成正式提交",
+      "reason": "无回执档期不作已到岗；核查保留并挡正式提交。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 314,
+        "end": 361,
+        "quote": "本包指定岗位人员档期是否可用为提交前必须落实的条件，目前尚无回执，在该条件确认前不构成正式提交"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "对BIM建模、加固设计等专业接口，按拟议的分顾问安排与接口管理计划处理，相关安排目前为计划而非已落实承诺",
+      "reason": "人员前置保持未决；分顾问仅计划，软门“已落实”在否定句。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 126,
+        "end": 178,
+        "quote": "对BIM建模、加固设计等专业接口，按拟议的分顾问安排与接口管理计划处理，相关安排目前为计划而非已落实承诺"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "correct",
+      "quote": "对BIM建模、加固设计等专业接口，按拟议的分顾问安排与接口管理计划处理，相关安排目前为计划而非已落实承诺",
+      "reason": "BIM/加固进入拟议接口安排；EPC背景未升为本方整包责任。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 126,
+        "end": 178,
+        "quote": "对BIM建模、加固设计等专业接口，按拟议的分顾问安排与接口管理计划处理，相关安排目前为计划而非已落实承诺"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-08_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "b4e9a04af394371588404b8a288a8d0d79a11cec54bed649cf1803dd1d23436c",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

@@ -1,0 +1,156 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-13-missing_core",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "a03ecd760c287fd5",
+  "role": "contractor",
+  "annotated_action": "conditional_contractor_bid_asserting_unprovided_single_party_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-13-missing_core-D3-r1/step-4.json",
+  "response_sha256": "e5b71366c3b2b81e6fd8a671b05602631d1c363e3ab77ee9e8b7a8694ba99195",
+  "call_id": "attempt_003_call_000316",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "本包施工组织、工地管理、质量与安全记录、工期安排及常规专业分包接口，均可由我方作为单一责任主体承担",
+    "reason": "missing_core未给经营范围，不能把本包写成我方已可单一责任主体承担的承接范围。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 91,
+      "end": 140,
+      "quote": "本包施工组织、工地管理、质量与安全记录、工期安排及常规专业分包接口，均可由我方作为单一责任主体承担"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "本包施工组织、工地管理、质量与安全记录、工期安排及常规专业分包接口，均可由我方作为单一责任主体承担",
+      "reason": "虽承认施工范围未知，仍先行断言均可由我方单一承担，任务角色被写成能力。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 91,
+        "end": 140,
+        "quote": "本包施工组织、工地管理、质量与安全记录、工期安排及常规专业分包接口，均可由我方作为单一责任主体承担"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "施工组织、质量复核节点、独立检查流程、文档纪律与合同责任划分均为拟议安排",
+      "reason": "施工组织/专业分包与质量复核独立检查构成多项拟议安排，外部支持标为未获报价。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 286,
+        "end": 322,
+        "quote": "施工组织、质量复核节点、独立检查流程、文档纪律与合同责任划分均为拟议安排"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "correct",
+      "quote": "总体人员规模与办公地址不构成本包岗位档期或资格证明已落实的证明",
+      "reason": "档期未核限制提交；组织与报价为拟议/暂定，不冒充已具备人员档期。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 137,
+        "end": 168,
+        "quote": "总体人员规模与办公地址不构成本包岗位档期或资格证明已落实的证明"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求两项为提交前必须完成的先决条件，未核实前不提交",
+      "reason": "两项必要前提保持未决；无法核实则撤回意向。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 169,
+        "end": 221,
+        "quote": "本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求两项为提交前必须完成的先决条件，未核实前不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "项目属澳门商业办公建筑，业主为屈臣氏集团，具备品牌与战略价值",
+      "reason": "澳门商业办公与业主品牌条件进入争取理由。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 43,
+        "end": 73,
+        "quote": "项目属澳门商业办公建筑，业主为屈臣氏集团，具备品牌与战略价值"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "施工组织、质量复核节点、独立检查流程、文档纪律与合同责任划分均为拟议安排",
+      "reason": "质控与分包安排可读，但承接前提依赖未给范围下的可承担断言，详细可行性降为1。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 286,
+        "end": 322,
+        "quote": "施工组织、质量复核节点、独立检查流程、文档纪律与合同责任划分均为拟议安排"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "公司档案未提供本包范围、经验、认证与历史成本的可引用依据，总体人员规模与办公地址不能证明本包岗位档期或资格证明已满足要求",
+      "reason": "未知处理与提交门槛清楚，但与“均可由我方承担”主理由冲突，权衡仅部分成立。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 181,
+        "end": 241,
+        "quote": "公司档案未提供本包范围、经验、认证与历史成本的可引用依据，总体人员规模与办公地址不能证明本包岗位档期或资格证明已满足要求"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp07-02_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "a6fdd434cca9ce0de5938512a65db8e66bba446e9209416778513dcd12fc6e7f",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

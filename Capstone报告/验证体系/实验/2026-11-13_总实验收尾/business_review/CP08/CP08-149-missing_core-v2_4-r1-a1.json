@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-149-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "542c1998bf8aca7e",
+  "role": "contractor",
+  "annotated_action": "conditional_contractor_bid_claiming_unprovided_marine_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-149-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "94ed25a431da48fef80f78649db593b19b2c3d832d8d321b96d0b16880f4dd91",
+  "call_id": "attempt_002_call_000399",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "与我方在香港的常设机构和土木海事工程方向相符，具备作为单一责任投标人主导施工管理、安全、工期、质量记录与分包协调的基本定位",
+    "reason": "missing_core未给业务范围，不能以土木海事工程方向相符并主张具备单一责任主导定位支撑有条件投标。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 41,
+      "end": 102,
+      "quote": "与我方在香港的常设机构和土木海事工程方向相符，具备作为单一责任投标人主导施工管理、安全、工期、质量记录与分包协调的基本定位"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "与我方在香港的常设机构和土木海事工程方向相符，具备作为单一责任投标人主导施工管理、安全、工期、质量记录与分包协调的基本定位",
+      "reason": "范围unknown时把路桥名称/香港办公写成土木海事工程方向与主导定位，超出档案能力判断。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 41,
+        "end": 102,
+        "quote": "与我方在香港的常设机构和土木海事工程方向相符，具备作为单一责任投标人主导施工管理、安全、工期、质量记录与分包协调的基本定位"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "定位上，我方以 EPC 总承包角色承担施工管理、安全、工期控制、质量记录、付款审核协调与分包管理，海堤与航道维修的专业作业按常规分包及外部支持安排，由我方保持单一责任与包级交付主导，不组建组合体。",
+      "reason": "有施工管理与分包接口框架，但嵌在无据业务方向与EPC总承包升格前提中。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 53,
+        "end": 151,
+        "quote": "定位上，我方以 EPC 总承包角色承担施工管理、安全、工期控制、质量记录、付款审核协调与分包管理，海堤与航道维修的专业作业按常规分包及外部支持安排，由我方保持单一责任与包级交付主导，不组建组合体。"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "公司资料中本包范围经验、认证、交付资源与历史成本依据目前均为未知，投标文件不得将公司名称或母公司背景表述为本包已具备的经验或资源；相关角色、流程与资源安排一律标注为拟议方案。",
+      "reason": "资源未知与拟议安排保留正确，未捏造现成团队，但无具体岗位配置。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 157,
+        "end": 244,
+        "quote": "公司资料中本包范围经验、认证、交付资源与历史成本依据目前均为未知，投标文件不得将公司名称或母公司背景表述为本包已具备的经验或资源；相关角色、流程与资源安排一律标注为拟议方案。"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "前置条件方面，本包指定岗位人员档期与本包资格证明两项条件尚未取得回执，属提交前必须落实的事项，未落实前不提交",
+      "reason": "人员与资格两项必要前提保持未决；未确认则不提交。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 313,
+        "end": 367,
+        "quote": "前置条件方面，本包指定岗位人员档期与本包资格证明两项条件尚未取得回执，属提交前必须落实的事项，未落实前不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "partial",
+      "quote": "就土木工程拓展署海堤及航道维修保养招标包，按单一投标人方向推进投标准备工作，但不构成提交承诺。",
+      "reason": "海堤及航道进入理由，但同时绑在无据土木海事方向与EPC总承包叙事上。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 6,
+        "end": 53,
+        "quote": "就土木工程拓展署海堤及航道维修保养招标包，按单一投标人方向推进投标准备工作，但不构成提交承诺。"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.2,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-04_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "8dce7c14c64d7310b54f7fa1ba942310e7aa17ee7e17e93156c5d6fcec94e35d",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

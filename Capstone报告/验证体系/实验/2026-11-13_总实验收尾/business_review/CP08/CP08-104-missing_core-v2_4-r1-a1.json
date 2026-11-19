@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-104-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f7c9f94102bb3bbf",
+  "role": "supplier",
+  "annotated_action": "provisional_supplier_draft_claiming_own_production_without_scope",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-104-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "4e9cc6b78e148d8f699ced41b9fea1ccbf6530ee157e8df3ac5cbe3ef5861afc",
+  "call_id": "attempt_002_call_000715",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "对自产或可控品类确定供货节奏",
+    "reason": "missing_core未给业务范围，不能把自产/可控品类写成供应组织前提；后续未知声明不能消除该补全。",
+    "evidence": {
+      "json_pointer": "/implementation_plan",
+      "start": 55,
+      "end": 69,
+      "quote": "对自产或可控品类确定供货节奏"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "contradicted",
+      "quote": "对自产或可控品类确定供货节奏，对需外购品类以受控分包安排纳入统一交付责任",
+      "reason": "范围unknown时把未给自产品类写成供货节奏前提，超出有边界拟议方案允许。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 55,
+        "end": 91,
+        "quote": "对自产或可控品类确定供货节奏，对需外购品类以受控分包安排纳入统一交付责任"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "阶段三（物流与到货）：按项目进度分批到货，配合现场验收与抽检，建立到货记录与不合格品处理流程。阶段四（保修与售后）：按招标包要求提供保修响应与备件支持",
+      "reason": "分批到货、验收抽检与保修文档等多项拟议安排，并标明拟议性质。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 109,
+        "end": 184,
+        "quote": "阶段三（物流与到货）：按项目进度分批到货，配合现场验收与抽检，建立到货记录与不合格品处理流程。阶段四（保修与售后）：按招标包要求提供保修响应与备件支持"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本公司对具体产品目录、库存、本地团队及历史采购成本均无已核实来源，故本方案将产品范围、交付资产与成本基础均列为暂定假设",
+      "reason": "明确目录/库存/本地团队与历史成本未知，区分暂定假设与已落实承诺。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 101,
+        "end": 160,
+        "quote": "本公司对具体产品目录、库存、本地团队及历史采购成本均无已核实来源，故本方案将产品范围、交付资产与成本基础均列为暂定假设"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "上述安排均为拟议方案，未取得任何外部支持方的已接受承诺；相关外部支持对保修与质量文档要求的接受情况尚待确认",
+      "reason": "外部保修文档接受保持未决；渠道条件列于未决清单且未升硬门槛。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 203,
+        "end": 256,
+        "quote": "上述安排均为拟议方案，未取得任何外部支持方的已接受承诺；相关外部支持对保修与质量文档要求的接受情况尚待确认"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "为荟同学校（深圳）校区项目（58000平方米公共服务建筑）提供供应与配套服务",
+      "reason": "荟同深圳校区与58000平方米进入供应安排理由。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 55,
+        "end": 93,
+        "quote": "为荟同学校（深圳）校区项目（58000平方米公共服务建筑）提供供应与配套服务"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均基于项目规模与常规品类推算，产品目录、库存、本地团队与历史采购成本均未核实，待招标包规格书与清单下发后重算",
+      "reason": "MOP 7,940,000分项可复算，明确暂定并承认无已核实成本/报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 184,
+        "end": 242,
+        "quote": "上述金额均基于项目规模与常规品类推算，产品目录、库存、本地团队与历史采购成本均未核实，待招标包规格书与清单下发后重算"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-22_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "ec7c86178924fcb14e17af73faee04c1bd90eebe5606d4426ce27b0f3776044a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

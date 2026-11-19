@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-162-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "6652013a5f569f4a",
+  "role": "supplier",
+  "annotated_action": "provisional_elevator_escalator_supply_nec",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-162-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "5352c20bd6a1b632db944a7fec73de3542989d732f59f1f67d05e8296b317fcb",
+  "call_id": "attempt_002_call_000651",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本意向为供应商角色的投标意向草案，不构成正式投标或已落实的承诺。",
+    "reason": "档案升降机/扶手电梯/人行步道范围支持有边界暂定供货；目录库存未知保持拟议，条件未决但被升为正式投标前提。",
+    "evidence": {
+      "json_pointer": "/bid_assumptions/0",
+      "start": 0,
+      "end": 32,
+      "quote": "本意向为供应商角色的投标意向草案，不构成正式投标或已落实的承诺。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "根据公司档案文本，本公司业务范围为升降机、扶手电梯、人行步道的制造、安装及维护（档案原文，非已审阅的资格确认）",
+      "reason": "用档案升降机/扶手电梯/人行步道文字限定供货方向，不声称已审资格或自有目录。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 49,
+        "end": 104,
+        "quote": "根据公司档案文本，本公司业务范围为升降机、扶手电梯、人行步道的制造、安装及维护（档案原文，非已审阅的资格确认）"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "提交设备选型及技术规格书供业主审阅，编制制造与运输计划；三、现场阶段：配合总承建商的工地平整及基础设施进度，进行设备安装督导、接口检查及调试；四、移交阶段：提交竣工文档、操作维护手册及培训",
+      "reason": "选型规格、制造运输、安装督导调试与竣工文档移交等多条拟议交付安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 128,
+        "end": 222,
+        "quote": "提交设备选型及技术规格书供业主审阅，编制制造与运输计划；三、现场阶段：配合总承建商的工地平整及基础设施进度，进行设备安装督导、接口检查及调试；四、移交阶段：提交竣工文档、操作维护手册及培训"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "产品目录、具体型号、库存及本地团队配置在档案中未提供，属未知事项；本意向中的产品范围、交付资源及服务安排均为拟议方案，并非已落实的承诺",
+      "reason": "明确目录/库存/本地团队未提供，区分拟议安排与已落实供应承诺；未把全球人员升为本包到岗。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 155,
+        "end": 222,
+        "quote": "产品目录、具体型号、库存及本地团队配置在档案中未提供，属未知事项；本意向中的产品范围、交付资源及服务安排均为拟议方案，并非已落实的承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "本意向不构成正式投标，须待供应渠道审核（condition_6a7e148a2a2476437134）及外部支持方保修与质量文档确认（condition_c8ad5c7eb7d2570f553c）完成后，方可形成正式投标文件",
+      "reason": "两项未决均有回应，但把非硬门槛的渠道审核与保修接受升级为正式投标阻断，属无据升级。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 316,
+        "end": 428,
+        "quote": "本意向不构成正式投标，须待供应渠道审核（condition_6a7e148a2a2476437134）及外部支持方保修与质量文档确认（condition_c8ad5c7eb7d2570f553c）完成后，方可形成正式投标文件"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "本投标意向以供应商身份参与洪水桥／厦村新发展区第一阶段工程 — 工地平整和基础设施的机电设备供应。根据公司档案文本，本公司业务范围为升降机、扶手电梯、人行步道的制造、安装及维护（档案原文，非已审阅的资格确认）。本意向拟供应工地基础设施所需的垂直运输设备，包括升降机及扶手电梯的供货、安装督导、调试及保修期维护",
+      "reason": "洪水桥／厦村工地平整基础设施进入供货安排，并按NEC框架编制规格与接口计划；未把NEC升为本方整包施工。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 154,
+        "quote": "本投标意向以供应商身份参与洪水桥／厦村新发展区第一阶段工程 — 工地平整和基础设施的机电设备供应。根据公司档案文本，本公司业务范围为升降机、扶手电梯、人行步道的制造、安装及维护（档案原文，非已审阅的资格确认）。本意向拟供应工地基础设施所需的垂直运输设备，包括升降机及扶手电梯的供货、安装督导、调试及保修期维护"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "本意向报价 MOP 6,650,000 为暂定估算，基于以下拟议成本构成：设备供货 MOP 4,200,000、安装督导及调试 MOP 850,000、保修期维护 MOP 620,000、项目管理及文档 MOP 380,000、渠道审核及物流 MOP 260,000、风险准备金 MOP 340,000。上述金额均为暂定假设，产品目录、供应商报价、库存及本地团队记录未提供，属未知事项",
+      "reason": "六项可复算至MOP 6,650,000，明确暂定依据并承认无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 123,
+        "end": 315,
+        "quote": "本意向报价 MOP 6,650,000 为暂定估算，基于以下拟议成本构成：设备供货 MOP 4,200,000、安装督导及调试 MOP 850,000、保修期维护 MOP 620,000、项目管理及文档 MOP 380,000、渠道审核及物流 MOP 260,000、风险准备金 MOP 340,000。上述金额均为暂定假设，产品目录、供应商报价、库存及本地团队记录未提供，属未知事项"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-12_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "b5d0701a6aee243e0639b1438e34d6c03d15e7f146c1ba270fff30b2fa1cec7b",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

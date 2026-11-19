@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-14-missing_core",
+  "arm": "S",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "610ad2ec025e870f",
+  "role": "supplier",
+  "annotated_action": "provisional_mep_finishing_materials_missing_core",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-14-missing_core-S-r1/step-4.json",
+  "response_sha256": "af06c4903ca7b02a914422e486d7c9991a4d4de907c2f2cea7b9574f2a2f42fa",
+  "call_id": "attempt_003_call_000365",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标以供应商角色提交，供应范围限于居住建筑项目的产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。",
+    "reason": "Missing-core bounded MEP/finishing materials draft without claiming owned catalogue; unknowns and requested conditions preserved.",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 56,
+      "quote": "本投标以供应商角色提交，供应范围限于居住建筑项目的产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "拟供应品类包括给排水管材与管件、电气线管与桥架、卫浴洁具、门窗五金及基础装修辅材，具体型号与数量待招标文件工程量清单及技术规格书明确后确认。",
+      "reason": "No business-scope text; still offers bounded proposed product classes without inventing owned catalogue or inventory.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 56,
+        "end": 126,
+        "quote": "拟供应品类包括给排水管材与管件、电气线管与桥架、卫浴洁具、门窗五金及基础装修辅材，具体型号与数量待招标文件工程量清单及技术规格书明确后确认。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "第三阶段（分批配送）：按施工进度分批次配送至指定地点，配送由本地物流服务商执行，具体服务商尚未选定。第四阶段（文档交付）：随每批货物提交装箱单、合格证、检验报告及保修条款文件。第五阶段（保修期支持）：设立保修接口联系人，按产品类别响应更换与技术支持请求。",
+      "reason": "Multiple provisional batch-delivery, documentation, and warranty-interface arrangements with confirmation needs.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 105,
+        "end": 232,
+        "quote": "第三阶段（分批配送）：按施工进度分批次配送至指定地点，配送由本地物流服务商执行，具体服务商尚未选定。第四阶段（文档交付）：随每批货物提交装箱单、合格证、检验报告及保修条款文件。第五阶段（保修期支持）：设立保修接口联系人，按产品类别响应更换与技术支持请求。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "因公司产品目录、库存记录及历史采购成本均未提供，本方案中所有产品范围与交付安排均为建议性计划，不构成已落实的供应承诺。",
+      "reason": "Explicitly separates missing catalogue/inventory/costs from proposed plan versus locked supply commitments.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 272,
+        "end": 331,
+        "quote": "因公司产品目录、库存记录及历史采购成本均未提供，本方案中所有产品范围与交付安排均为建议性计划，不构成已落实的供应承诺。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "外部支持方对保修与质量文档要求的接受程度尚未确认。",
+      "reason": "Warranty/doc acceptance kept unresolved; channel-audit listed in unresolved/verification with required_before_submission false; not upgraded to hard gates.",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 57,
+        "end": 82,
+        "quote": "外部支持方对保修与质量文档要求的接受程度尚未确认。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "供应范围限于居住建筑项目的产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。",
+      "reason": "Links residential-building context to materials supply and refuses whole-package construction.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 12,
+        "end": 56,
+        "quote": "供应范围限于居住建筑项目的产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 5,000,000 为基于暂定供应品类与数量的建议性估算，非已取得供应商报价或库存记录。",
+      "reason": "Recalculable provisional MOP total with line bases; admits no received supplier quotations.",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 12,
+        "end": 63,
+        "quote": "报价 MOP 5,000,000 为基于暂定供应品类与数量的建议性估算，非已取得供应商报价或库存记录。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "因具体供货数量、品类及交付地点尚未明确，本投标不承诺固定交货日期，待合同签订后按施工进度计划编制分批配送时间表。",
+      "reason": "Conditional missing-core supply plan is coherent and role-bounded without fixed unconfirmed calendar promises.",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 20,
+        "end": 76,
+        "quote": "因具体供货数量、品类及交付地点尚未明确，本投标不承诺固定交货日期，待合同签订后按施工进度计划编制分批配送时间表。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险包括：产品目录与库存未确认导致供应品类与数量存在不确定性；本地物流服务商未选定导致配送成本与时效存在波动；外部支持方对保修与质量文档要求的接受程度尚未确认。",
+      "reason": "Catalogue/logistics/support uncertainties tied to provisional allowances and written-confirmation-before-execution framing.",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 82,
+        "quote": "主要风险包括：产品目录与库存未确认导致供应品类与数量存在不确定性；本地物流服务商未选定导致配送成本与时效存在波动；外部支持方对保修与质量文档要求的接受程度尚未确认。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp07-09_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "8f75b5186b18c3679ed86aae38382d98068e2c85c76035d13d389906945672d7",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

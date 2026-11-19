@@ -1,0 +1,173 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-176-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "7c68cb19f2eac2de",
+  "role": "supplier",
+  "annotated_action": "provisional_site_formation_supply_unknown_scope_non_epc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-176-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "02a2433ff2dddc938a5ebee660e8c340f017aafb4f0d2d83321bdea35ea8219c",
+  "call_id": "attempt_002_call_000175",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "供应范围拟定为工地平整与基础工程所需的通用建材、土工合成材料、排水管件及配套五金件的产品供应、分批配送、交付文档与保修接口管理。",
+    "reason": "missing_core下有边界暂定供货草案成立；拒绝整包施工，渠道/保修未决保持requested且非硬门槛。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 84,
+      "end": 148,
+      "quote": "供应范围拟定为工地平整与基础工程所需的通用建材、土工合成材料、排水管件及配套五金件的产品供应、分批配送、交付文档与保修接口管理。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "未提供任何与本包相关的产品目录、库存记录、本地供应团队、历史采购成本或供应商渠道审核结果。因此本方案中的产品范围、配送安排与保修服务均为拟议安排，属投标假设，不构成已具备的既有能力陈述。",
+      "reason": "无范围资料时提出有边界通用建材/管件方案，不凭身份声称自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 217,
+        "end": 310,
+        "quote": "未提供任何与本包相关的产品目录、库存记录、本地供应团队、历史采购成本或供应商渠道审核结果。因此本方案中的产品范围、配送安排与保修服务均为拟议安排，属投标假设，不构成已具备的既有能力陈述。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟建立交付文档清单，包括产品合格证明、材质说明、装箱单与保修条款文本",
+      "reason": "产品范围澄清、分批配送、交付文档与保修接口等多项拟议安排。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 463,
+        "end": 497,
+        "quote": "拟建立交付文档清单，包括产品合格证明、材质说明、装箱单与保修条款文本"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "公司档案未提供本地仓储、配送车队或驻场人员配置信息，上述配送与驻场安排均为拟议方案，实际执行需在合同谈判阶段落实具体资源。",
+      "reason": "明确本地仓储/车队/驻场未提供，区分拟议安排与已落实供应承诺。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 291,
+        "end": 352,
+        "quote": "公司档案未提供本地仓储、配送车队或驻场人员配置信息，上述配送与驻场安排均为拟议方案，实际执行需在合同谈判阶段落实具体资源。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "供应商渠道审核（condition_2a2f2740c597201e7f86）与外部支持保修文档接受度（condition_3971435817677f7482cf）均处于 requested 状态，未完成前本投标为条件性意向，不构成正式提交。",
+      "reason": "两项原请求保持requested并给出拟议核实路径，未升硬门槛。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 350,
+        "end": 472,
+        "quote": "供应商渠道审核（condition_2a2f2740c597201e7f86）与外部支持保修文档接受度（condition_3971435817677f7482cf）均处于 requested 状态，未完成前本投标为条件性意向，不构成正式提交。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "本投标不承担整包施工责任。",
+      "reason": "将军澳工地平整/基础进入供货安排且拒绝整包施工，但档案博彩监管合规记载仅作原文罗列，未说明有限证据下的风险或核查安排。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 472,
+        "end": 485,
+        "quote": "本投标不承担整包施工责任。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为基于招标包范围的暂定估算，非已收到的供应商报价",
+      "reason": "六项可复算至MOP 4,020,000，明确暂定依据并承认无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 248,
+        "end": 277,
+        "quote": "上述金额均为基于招标包范围的暂定估算，非已收到的供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "供应范围拟定为工地平整与基础工程所需的通用建材、土工合成材料、排水管件及配套五金件的产品供应、分批配送、交付文档与保修接口管理。",
+      "reason": "未知范围下有边界供货、文档/保修与条件性意向连贯，属角色内可实施草案。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 84,
+        "end": 148,
+        "quote": "供应范围拟定为工地平整与基础工程所需的通用建材、土工合成材料、排水管件及配套五金件的产品供应、分批配送、交付文档与保修接口管理。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "本投标不承担整包施工责任。",
+      "reason": "供应商相对整包施工、暂定相对已获报价、条件性意向相对正式提交的取舍与承诺边界清楚。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 472,
+        "end": 485,
+        "quote": "本投标不承担整包施工责任。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-22_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "1241174d1da21fddf2ea35d9763bd9aae8994293cd6b42eca5254839f5b55a9f",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

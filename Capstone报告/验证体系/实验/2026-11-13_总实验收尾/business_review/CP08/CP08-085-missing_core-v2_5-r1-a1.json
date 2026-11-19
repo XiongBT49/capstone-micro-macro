@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-085-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f47ce523e77d17fa",
+  "role": "supplier",
+  "annotated_action": "provisional_supply_unknown_scope_non_epc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-085-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "fe437b3200013c182feed9b752a97ecd111db20652bd5de30e35bd78636f3c50",
+  "call_id": "attempt_001_call_000031",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "拟供应范围限于中轴云廊改造项目（代建+设计）所需的产品与材料供应、配送、交付文档与保修接口协调，不承担整包施工责任",
+    "reason": "missing_core下给出有边界供货意向与暂定报价，未知能力不作断言，条件保持未决且非硬门槛。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 25,
+      "end": 82,
+      "quote": "拟供应范围限于中轴云廊改造项目（代建+设计）所需的产品与材料供应、配送、交付文档与保修接口协调，不承担整包施工责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "具体产品目录、型号与库存情况目前未知，须在获得设计确认清单后另行核实",
+      "reason": "无范围资料时提出有边界产品/材料供应方案，不声称自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 124,
+        "end": 158,
+        "quote": "具体产品目录、型号与库存情况目前未知，须在获得设计确认清单后另行核实"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "一是按设计方确认的技术规格与材料清单进行产品选型与供货，具体产品目录、型号与库存情况目前未知，须在获得设计确认清单后另行核实；二是配送与现场交接，拟由我方作为单一供货接口统一协调物流与到场交接，具体物流安排为拟议方案，尚未取得任何承运方或外部支持方的承诺；三是文档交付，拟随货提供产品合格证明、技术资料与保修条款文件，文档深度以实际取得的产品资料为准；四是保修接口，拟设立单一保修联络窗口，处理保修期内的产品问题反馈与更换协调",
+      "reason": "选型供货、配送交接、文档与保修接口等多项拟议安排，并标明未取得承诺。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 96,
+        "end": 309,
+        "quote": "一是按设计方确认的技术规格与材料清单进行产品选型与供货，具体产品目录、型号与库存情况目前未知，须在获得设计确认清单后另行核实；二是配送与现场交接，拟由我方作为单一供货接口统一协调物流与到场交接，具体物流安排为拟议方案，尚未取得任何承运方或外部支持方的承诺；三是文档交付，拟随货提供产品合格证明、技术资料与保修条款文件，文档深度以实际取得的产品资料为准；四是保修接口，拟设立单一保修联络窗口，处理保修期内的产品问题反馈与更换协调"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本公司档案中未提供产品目录、库存记录、本地团队记录及历史采购成本资料，上述能力状态均为未知，本方案不据此主张任何既有供货能力或既有资源",
+      "reason": "明确目录、库存、本地团队与历史成本未提供，区分拟议与已落实承诺。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 314,
+        "end": 381,
+        "quote": "本公司档案中未提供产品目录、库存记录、本地团队记录及历史采购成本资料，上述能力状态均为未知，本方案不据此主张任何既有供货能力或既有资源"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "文档内容以实际取得的产品资料为准，不主张已通过任何渠道审核或质量审核",
+      "reason": "渠道审核与质量审核均不主张已通过；保修接口拟议处理且条件非硬门槛。",
+      "evidence": {
+        "json_pointer": "/owner_control_response",
+        "start": 44,
+        "end": 78,
+        "quote": "文档内容以实际取得的产品资料为准，不主张已通过任何渠道审核或质量审核"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "拟供应范围限于中轴云廊改造项目（代建+设计）所需的产品与材料供应、配送、交付文档与保修接口协调，不承担整包施工责任",
+      "reason": "用代建+设计项目背景限定供货接口，明确不把交付模式升为本方整包施工。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 25,
+        "end": 82,
+        "quote": "拟供应范围限于中轴云廊改造项目（代建+设计）所需的产品与材料供应、配送、交付文档与保修接口协调，不承担整包施工责任"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为暂定估算，产品目录、库存、物流与外部支持承诺均未取得，不构成已收到的供应商报价",
+      "reason": "MOP分项可复算，明确暂定依据并承认无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 194,
+        "end": 239,
+        "quote": "上述金额均为暂定估算，产品目录、库存、物流与外部支持承诺均未取得，不构成已收到的供应商报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-15_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "0ba934018494b78d85b21917760f283099f74ae1c60a1cead5f95c16fee2c7ab",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

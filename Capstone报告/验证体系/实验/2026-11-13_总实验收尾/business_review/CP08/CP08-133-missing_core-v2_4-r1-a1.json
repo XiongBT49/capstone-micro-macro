@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-133-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "8eb7670466b4ec00",
+  "role": "supplier",
+  "annotated_action": "provisional_supply_unknown_scope_kai_tak",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-133-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "a7864126991d8fb64f5cd25cddf32f206af7b556f65442f52bbcdf2aa1c7d924",
+  "call_id": "attempt_002_call_000055",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "公司档案仅载明注册地香港中环、上市公众公司身份及受澳门博彩监察协调局监管等事实，未提供本包所需的产品目录、库存记录、本地团队编制或历史采购成本，故本方案中所有产品范围、交付资源与支持安排均为拟议安排，不构成既有能力陈述。",
+    "reason": "missing_core下给出有边界供应暂定草案，未知不作能力断言，不以公司名补全业务范围。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 70,
+      "end": 180,
+      "quote": "公司档案仅载明注册地香港中环、上市公众公司身份及受澳门博彩监察协调局监管等事实，未提供本包所需的产品目录、库存记录、本地团队编制或历史采购成本，故本方案中所有产品范围、交付资源与支持安排均为拟议安排，不构成既有能力陈述。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "故本方案中所有产品范围、交付资源与支持安排均为拟议安排，不构成既有能力陈述",
+      "reason": "无范围资料时提出有边界拟议供货，不凭身份声称自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 142,
+        "end": 179,
+        "quote": "故本方案中所有产品范围、交付资源与支持安排均为拟议安排，不构成既有能力陈述"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟议分四阶段推进：一、招标包澄清与规格确认阶段，核对产品清单、技术参数、交付地点与验收标准，形成受控的供应范围基线；二、采购与备货组织阶段，按确认清单向拟议产品来源询价并锁定交期，所有价格与交期在收到正式报价前均按暂定处理；三、交付与检验阶段，按批次组织到货、文件移交、抽样检验与整改闭环；四、保修与售后阶段，建立保修台账、响应时限与质量文档归档。",
+      "reason": "至少两项拟议澄清供货、到货检验与保修文档安排，并标明拟议与暂定部分。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 174,
+        "quote": "拟议分四阶段推进：一、招标包澄清与规格确认阶段，核对产品清单、技术参数、交付地点与验收标准，形成受控的供应范围基线；二、采购与备货组织阶段，按确认清单向拟议产品来源询价并锁定交期，所有价格与交期在收到正式报价前均按暂定处理；三、交付与检验阶段，按批次组织到货、文件移交、抽样检验与整改闭环；四、保修与售后阶段，建立保修台账、响应时限与质量文档归档。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本方案不声称已取得任何供应商报价或已落实任何外部承诺",
+      "reason": "明确目录/库存/本地团队未提供，区分拟议安排与已落实外部承诺；软门为否定语境。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 362,
+        "end": 388,
+        "quote": "本方案不声称已取得任何供应商报价或已落实任何外部承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "两项未决条件（供应商渠道审核、外部支持保修与质量文档接受）仍在跟踪中，本文件不构成正式投标提交",
+      "reason": "两项原请求保持未决跟踪且非正式提交硬门槛，并给出保修文档拟议处理。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 323,
+        "end": 370,
+        "quote": "两项未决条件（供应商渠道审核、外部支持保修与质量文档接受）仍在跟踪中，本文件不构成正式投标提交"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "就香港启德项目（CASE-0251）供应类招标包提交的意向性技术方案草案",
+      "reason": "启德项目进入供应安排，但合规记载仅作档案罗列，未说明有限证据下的风险或核查安排。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 33,
+        "end": 69,
+        "quote": "就香港启德项目（CASE-0251）供应类招标包提交的意向性技术方案草案"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。 本题另有合规记载，需按其有限证据说明风险或核查安排，不预断实际资格。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均为未取得供应商正式报价前的暂定估算，非已收报价",
+      "reason": "MOP分项可复算合计4,610,000，明确暂定依据并承认无正式供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 233,
+        "end": 261,
+        "quote": "上述金额均为未取得供应商正式报价前的暂定估算，非已收报价"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp08-27_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "e39b53eedf0955c0ac8cdf2d96a00f1675b61835b7578905b213df20eb934873",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

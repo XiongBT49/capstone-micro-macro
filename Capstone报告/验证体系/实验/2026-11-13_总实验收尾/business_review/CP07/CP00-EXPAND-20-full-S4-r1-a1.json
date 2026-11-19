@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-20-full",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "ed9e538c0a68d8f4",
+  "role": "supplier",
+  "annotated_action": "conditional_elderly_center_renovation_materials_supply",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-20-full-S4-r1/step-4.json",
+  "response_sha256": "a472a36b6689db7122f840c313987c2c1422db7b3c40e83e762b31f1af8f0347",
+  "call_id": "attempt_003_call_000708",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本公司以供应商角色参与本包，仅承担装修材料与设备的供应、配送、交付文档及保修接口，不承担整包施工责任",
+    "reason": "档案装修装饰范围支持有边界供应商暂定方案；软门“已落实/整包”均为否定语境；两项请求未核实且非硬门槛。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 50,
+      "quote": "本公司以供应商角色参与本包，仅承担装修材料与设备的供应、配送、交付文档及保修接口，不承担整包施工责任"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司档案仅载明经营范围含建筑装修装饰、机械及机电设备生产安装租赁等（档案原文，非已审能力认定）；产品目录、本地库存与配送资源、历史采购成本、认证及同类项目经验均为未知",
+      "reason": "用档案装修装饰方向限定供货，不凭身份声称自有目录或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 63,
+        "end": 146,
+        "quote": "公司档案仅载明经营范围含建筑装修装饰、机械及机电设备生产安装租赁等（档案原文，非已审能力认定）；产品目录、本地库存与配送资源、历史采购成本、认证及同类项目经验均为未知"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟议按施工总承包方进度分批配送至指定地点，具体批次与时间待施工总承包方确认",
+      "reason": "分批配送、随批文档与保修接口等多项拟议安排，待确认处标明。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 48,
+        "end": 85,
+        "quote": "拟议按施工总承包方进度分批配送至指定地点，具体批次与时间待施工总承包方确认"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "外部支持方（如物流、仓储）的参与为暂定假设，尚未取得承诺",
+      "reason": "本地库存/配送与外部支持标未知或未承诺，区分暂定假设与已落实供应。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 118,
+        "end": 146,
+        "quote": "外部支持方（如物流、仓储）的参与为暂定假设，尚未取得承诺"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "上述两项均不构成提交前置条件，但结果将影响最终报价与保修承诺范围",
+      "reason": "渠道审核与外部保修文档接受保持未核实且非硬门槛，并给拟议接口处理。",
+      "evidence": {
+        "json_pointer": "/owner_control_response",
+        "start": 207,
+        "end": 239,
+        "quote": "上述两项均不构成提交前置条件，但结果将影响最终报价与保修承诺范围"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "按两层约900平方米装修面积及常见面材与五金配置估算",
+      "reason": "已给约900㎡规模进入暂定供货与报价；拒绝把DBB写成整包施工责任。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/0/basis",
+        "start": 0,
+        "end": 26,
+        "quote": "按两层约900平方米装修面积及常见面材与五金配置估算"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价总额 MOP 1,450,000 为暂定成本假设，非已获供应商报价或已落实承诺，分项之和与总额一致",
+      "reason": "MOP分项可复算与总额一致，并声明非已获供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 56,
+        "end": 107,
+        "quote": "报价总额 MOP 1,450,000 为暂定成本假设，非已获供应商报价或已落实承诺，分项之和与总额一致"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "当前不作出确定性的工期承诺",
+      "reason": "角色内条件性装修材料供货、暂定报价与未决渠道/保修处理连贯可实施。",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 73,
+        "end": 86,
+        "quote": "当前不作出确定性的工期承诺"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险包括：产品清单与数量未明确导致报价偏差；本地配送资源未知导致物流成本不确定；保修年限与文档格式未明确导致保修承诺范围不确定；供应商渠道审核与外部支持保修文档要求未核实",
+      "reason": "清单/配送/保修与两项未决取舍连到风险准备、核实后调价与承诺边界。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 87,
+        "quote": "主要风险包括：产品清单与数量未明确导致报价偏差；本地配送资源未知导致物流成本不确定；保修年限与文档格式未明确导致保修承诺范围不确定；供应商渠道审核与外部支持保修文档要求未核实"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp07-10_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "d4118a6ecafbff474af5ad1b5626e5ae013e40f3e3884576f5684b8a77ec05e4",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

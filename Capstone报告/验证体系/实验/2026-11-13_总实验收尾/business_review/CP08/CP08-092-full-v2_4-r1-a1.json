@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-092-full",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "f881bd9c724ce462",
+  "role": "contractor",
+  "annotated_action": "conditional_single_bidder_traffic_hub_gc",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-092-full-v2_4-r1/attempt-1.json",
+  "response_sha256": "87dc8e4d0a590f67474af8c55793266e3d3c0db54ba4cf8ea78f92933e451e64",
+  "call_id": "attempt_001_call_000072",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "现阶段为投标意向而非正式提交：本包指定岗位人员档期、本包资格证明两项前置条件尚待核实，核实完成前不提交",
+    "reason": "档案交通枢纽施工范围支持有条件单一责任意向；专业接口走常规分包，两项提交前核查未决前不正式提交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 161,
+      "end": 212,
+      "quote": "现阶段为投标意向而非正式提交：本包指定岗位人员档期、本包资格证明两项前置条件尚待核实，核实完成前不提交"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "与我方合作经营体已载明的业务范围（大型公共房屋、交通枢纽和公共建筑施工，属档案文本，非已审验的资格接受）方向相符",
+      "reason": "用实际经营范围限定方向并标明非已审资格，资格核查未决保留。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 14,
+        "end": 70,
+        "quote": "与我方合作经营体已载明的业务范围（大型公共房屋、交通枢纽和公共建筑施工，属档案文本，非已审验的资格接受）方向相符"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "由我方统一负责现场管理、安全、工期控制、质量记录、付款审核协调与分包管理，专业工序以常规分包及外部支持方式衔接，不改变投标人身份与包级交付责任",
+      "reason": "有本方职责与常规分包区分，施工组织与接口仍为职责清单框架。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 89,
+        "end": 160,
+        "quote": "由我方统一负责现场管理、安全、工期控制、质量记录、付款审核协调与分包管理，专业工序以常规分包及外部支持方式衔接，不改变投标人身份与包级交付责任"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "工期与资源配置为暂定方案，随人员档期与资格证明核实结果调整",
+      "reason": "企业总体人员资料不升为本包已派驻；档期未决限制提交，未捏造现成团队，但无具体岗位配置。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 264,
+        "end": 293,
+        "quote": "工期与资源配置为暂定方案，随人员档期与资格证明核实结果调整"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期、本包资格证明两项前置条件尚待核实，核实完成前不提交",
+      "reason": "两项原必要前提保持未决；常规专业分包不升为组合体硬门槛。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 176,
+        "end": 212,
+        "quote": "本包指定岗位人员档期、本包资格证明两项前置条件尚待核实，核实完成前不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本包为大型交通基础设施施工，与我方合作经营体已载明的业务范围（大型公共房屋、交通枢纽和公共建筑施工，属档案文本，非已审验的资格接受）方向相符，具备作为单一责任投标人牵头的合理基础，值得争取",
+      "reason": "交通基础设施类型与档案枢纽施工范围进入争取理由；空白规模/交付模式未虚构。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 94,
+        "quote": "本包为大型交通基础设施施工，与我方合作经营体已载明的业务范围（大型公共房屋、交通枢纽和公共建筑施工，属档案文本，非已审验的资格接受）方向相符，具备作为单一责任投标人牵头的合理基础，值得争取"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-03_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "64f06813c788792d72e0d8047a57ab71f2605bf8beaa977bd0844a596dcc54a0",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

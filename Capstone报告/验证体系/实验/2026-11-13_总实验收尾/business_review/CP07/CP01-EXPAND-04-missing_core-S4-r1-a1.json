@@ -1,0 +1,156 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP01-EXPAND-04-missing_core",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "743ebb56468ee7ca",
+  "role": "supervisor",
+  "annotated_action": "conditional_airport_supervision_intention_staffing_gate",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP01-EXPAND-04-missing_core-S4-r1/step-4.json",
+  "response_sha256": "22918c59e952027ca85bacad787cc7b2b51c2dd76e8feaad06585a54872bd975",
+  "call_id": "attempt_002_call_000027",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "提交前须核实本包指定岗位人员档期是否可用，该条件未解决前不构成可提交状态；核实结果返回后再决定是否转为正式投标意向。",
+    "reason": "缺核心范围下仍保持监督边界与未知披露，档期核实前不提交，条件性意向适当。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 241,
+      "end": 299,
+      "quote": "提交前须核实本包指定岗位人员档期是否可用，该条件未解决前不构成可提交状态；核实结果返回后再决定是否转为正式投标意向。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "角色边界明确为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任。",
+      "reason": "保持独立监督审查记录职责，未扩成施工总包或整包设计施工主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 54,
+        "end": 97,
+        "quote": "角色边界明确为独立监督、检查、进度与质量审查及记录，不承担施工总包或整包设计施工责任。"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "partial",
+      "quote": "拟议方案包括角色计划、交付方式、质量方法与文件记录纪律的草案框架，均标注为拟议安排而非既有能力或既有资源。",
+      "reason": "有质量方法与文件记录纪律等拟议栏目，但仅为草案框架，缺可操作检查点。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 97,
+        "end": 150,
+        "quote": "拟议方案包括角色计划、交付方式、质量方法与文件记录纪律的草案框架，均标注为拟议安排而非既有能力或既有资源。"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "公司资料中本包范围、同类监管经验、认证、交付资源与历史成本基础均属未知，方案只能以拟议的角色计划、交付方式、质量方法与文件记录纪律呈现，不得表述为既有能力或既有资源。",
+      "reason": "人员与资源未知保留，拟议安排不升格为已落实派驻。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 100,
+        "end": 183,
+        "quote": "公司资料中本包范围、同类监管经验、认证、交付资源与历史成本基础均属未知，方案只能以拟议的角色计划、交付方式、质量方法与文件记录纪律呈现，不得表述为既有能力或既有资源。"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "提交前须核实本包指定岗位人员档期是否可用，该条件未解决前不构成可提交状态",
+      "reason": "原必要档期前提保持未决；外部支持仅拟议且无对方承诺。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 241,
+        "end": 277,
+        "quote": "提交前须核实本包指定岗位人员档期是否可用，该条件未解决前不构成可提交状态"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本包为机场交通基础设施的监管服务",
+      "reason": "机场交通基础设施条件进入监管服务方向；未虚构未给规模工程量。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 16,
+        "quote": "本包为机场交通基础设施的监管服务"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "拟议方案包括角色计划、交付方式、质量方法与文件记录纪律的草案框架，均标注为拟议安排而非既有能力或既有资源。",
+      "reason": "条件性框架与档期门闩成立，但检查记录安排偏草案标题层，D3=1。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 97,
+        "end": 150,
+        "quote": "拟议方案包括角色计划、交付方式、质量方法与文件记录纪律的草案框架，均标注为拟议安排而非既有能力或既有资源。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "核实结果返回后再决定是否转为正式投标意向。",
+      "reason": "未知能力、拟议资源与档期核实门槛明确连到不提交/再决边界。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 278,
+        "end": 299,
+        "quote": "核实结果返回后再决定是否转为正式投标意向。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp07-09_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "3266b3eb64100ba43afb133d45cb8b9748cdb569789df18fe8123d71e9b274b5",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

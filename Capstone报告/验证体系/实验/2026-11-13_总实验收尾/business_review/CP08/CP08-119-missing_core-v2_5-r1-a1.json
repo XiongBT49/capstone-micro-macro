@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-119-missing_core",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "bd57ad618b864604",
+  "role": "supplier",
+  "annotated_action": "provisional_industrial_park_materials_draft",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-119-missing_core-v2_5-r1/attempt-1.json",
+  "response_sha256": "4c733205e54dff4f477abd57d478df83f9b2fa6cf0fbaaf49b4c2dda8068dede",
+  "call_id": "attempt_002_call_000432",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标意向以供应商角色提交，仅覆盖产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。",
+    "reason": "Bounded materials-supply draft with provisional cost assumptions; missing core data and requested conditions not treated as verified.",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 48,
+      "quote": "本投标意向以供应商角色提交，仅覆盖产品与材料供应、配送、文档交付及保修接口，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "未提供产品目录、库存、本地团队或历史采购成本资料，故本方案中的产品线覆盖、仓储与配送安排均为拟议安排",
+      "reason": "Bounded generic materials/MEP-accessory proposal without inventing catalogue from CIMC identity.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 143,
+        "end": 193,
+        "quote": "未提供产品目录、库存、本地团队或历史采购成本资料，故本方案中的产品线覆盖、仓储与配送安排均为拟议安排"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "按施工进度编制分批配送计划，设置到货验收与不合格品处理流程，质量文档随批次提交。",
+      "reason": "Multiple provisional supply, batch-delivery, documentation, and warranty-interface arrangements.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 88,
+        "end": 128,
+        "quote": "按施工进度编制分批配送计划，设置到货验收与不合格品处理流程，质量文档随批次提交。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "上述阶段安排为拟议计划，未取得任何外部支持方的已接受承诺，相关成本为暂定估算而非已收到报价。",
+      "reason": "States resources/quotes unconfirmed; separates proposed plan from accepted commitments.",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 165,
+        "end": 211,
+        "quote": "上述阶段安排为拟议计划，未取得任何外部支持方的已接受承诺，相关成本为暂定估算而非已收到报价。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "渠道审核与外部支持方保修及质量文档接受情况目前为待确认状态，本意向不主张已通过审核。",
+      "reason": "Both requested conditions preserved as pending with proposed handling; not hard gates.",
+      "evidence": {
+        "json_pointer": "/owner_control_response",
+        "start": 38,
+        "end": 80,
+        "quote": "渠道审核与外部支持方保修及质量文档接受情况目前为待确认状态，本意向不主张已通过审核。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "拟供范围包括产业园更新所需的通用建筑材料与机电配套件的供应组织、分批配送、到货验收配合、质量文件汇编与保修期响应。",
+      "reason": "Links industrial-park renewal context to materials supply, but given scale 375700㎡/owner specifics are unused beyond name-adjacent framing.",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 48,
+        "end": 105,
+        "quote": "拟供范围包括产业园更新所需的通用建筑材料与机电配套件的供应组织、分批配送、到货验收配合、质量文件汇编与保修期响应。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价 MOP 5,900,000 为暂定估算合计",
+      "reason": "Recalculable provisional MOP lines; explicitly not received supplier quotations.",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 12,
+        "end": 36,
+        "quote": "报价 MOP 5,900,000 为暂定估算合计"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_expert-06_CP08_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "abef23614e9ad7c3e8ef159fac492e05ca2096ea00376d6d5c874933da844716",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

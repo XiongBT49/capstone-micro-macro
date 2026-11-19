@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-067-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "fd7a0f6b21fb3c94",
+  "role": "supplier",
+  "annotated_action": "provisional_customs_equipment_unknown_scope",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-067-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "e3b270c9b4936300b561211dcc5a9738158efb3afbfbc6d323b3d7f38cb80bbb",
+  "call_id": "attempt_002_call_000279",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本公司现有资料仅载明注册信息、办公地址及参保人数160人，未提供产品目录、库存记录、本地团队配置或历史采购成本，故本技术方案中的产品范围、供货渠道、服务深度均为拟议安排，不构成既有能力陈述",
+    "reason": "缺失核心范围下给出查验通道设备供货意向与暂列报价，未把未知写成无能或已落实。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 100,
+      "end": 194,
+      "quote": "本公司现有资料仅载明注册信息、办公地址及参保人数160人，未提供产品目录、库存记录、本地团队配置或历史采购成本，故本技术方案中的产品范围、供货渠道、服务深度均为拟议安排，不构成既有能力陈述"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "本公司现有资料仅载明注册信息、办公地址及参保人数160人，未提供产品目录、库存记录、本地团队配置或历史采购成本，故本技术方案中的产品范围、供货渠道、服务深度均为拟议安排，不构成既有能力陈述",
+      "reason": "无经营范围资料时提出有边界的查验设备拟议范围，不编造自有产品或库存。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 100,
+        "end": 194,
+        "quote": "本公司现有资料仅载明注册信息、办公地址及参保人数160人，未提供产品目录、库存记录、本地团队配置或历史采购成本，故本技术方案中的产品范围、供货渠道、服务深度均为拟议安排，不构成既有能力陈述"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟议实施分四阶段：一、接口确认阶段，与EPC总包方核对技术规格、交付界面、验收标准及保修条款",
+      "reason": "接口确认、采购、交付安装配合与保修文档四阶段，并标明外部支持待确认。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 46,
+        "quote": "拟议实施分四阶段：一、接口确认阶段，与EPC总包方核对技术规格、交付界面、验收标准及保修条款"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "本承诺为拟议安排，不构成已落实的供货排期",
+      "reason": "目录/库存/团队未提供，排期与外部支持均标拟议；软门“已落实”为否定句。",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 95,
+        "end": 115,
+        "quote": "本承诺为拟议安排，不构成已落实的供货排期"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "外部支持（如物流、安装配合队伍）拟以本公司管理下的受控支持方式安排，其保修与质量文档接受情况尚待确认",
+      "reason": "渠道审核与外部保修/文档条件保持未决且非硬门槛，并说明确认前不承诺品牌交期。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 182,
+        "end": 232,
+        "quote": "外部支持（如物流、安装配合队伍）拟以本公司管理下的受控支持方式安排，其保修与质量文档接受情况尚待确认"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "partial",
+      "quote": "按EPC总包方接口要求，供应查验通道闸机、旅检设备配套、标识与引导系统、弱电配套材料等",
+      "reason": "用查验场与EPC总包接口联系供货，但未使用已给规模24000平方米塑造安排。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 202,
+        "end": 245,
+        "quote": "按EPC总包方接口要求，供应查验通道闸机、旅检设备配套、标识与引导系统、弱电配套材料等"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "上述金额均基于拟议品类与拟议服务安排估算，未取得任何供应商报价或历史采购成本依据，属暂列估算而非固定价承诺",
+      "reason": "六项暂列可复算至MOP 4,550,000，明确无供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 183,
+        "end": 236,
+        "quote": "上述金额均基于拟议品类与拟议服务安排估算，未取得任何供应商报价或历史采购成本依据，属暂列估算而非固定价承诺"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp08-11_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "c5c2f7f584ce02909db84e67f9dd275a8747bb2733fee31a2cd4c740e0478f51",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

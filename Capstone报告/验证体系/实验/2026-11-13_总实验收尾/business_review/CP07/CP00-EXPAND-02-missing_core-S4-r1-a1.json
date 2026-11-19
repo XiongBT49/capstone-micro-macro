@@ -1,0 +1,155 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-02-missing_core",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "02d1dda334a153e7",
+  "role": "designer",
+  "annotated_action": "conditional_facade_design_coordination_bid_pending_staffing",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-02-missing_core-S4-r1/step-4.json",
+  "response_sha256": "e6ba5ca6798d6b534cee32f2b2c5fa82514504d2515507685a886e52c109b1c8",
+  "call_id": "attempt_003_call_000284",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本决策为附条件投标意向，非提交动作。拟以设计统筹角色单独参与中国银行大厦外墙更换工程，不组建组合体",
+    "reason": "missing_core下以任务角色限定设计统筹并保留未知；档期未决前不递交。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 0,
+      "end": 49,
+      "quote": "本决策为附条件投标意向，非提交动作。拟以设计统筹角色单独参与中国银行大厦外墙更换工程，不组建组合体"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "D1",
+      "rating": "correct",
+      "quote": "我司在本包中的责任范围限于设计统筹、设计成果、顾问接口与复核，不承担整包设计采购施工责任",
+      "reason": "未知范围下给出条件性设计统筹边界，不补主营或整包主体。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 50,
+        "end": 94,
+        "quote": "我司在本包中的责任范围限于设计统筹、设计成果、顾问接口与复核，不承担整包设计采购施工责任"
+      },
+      "criterion": "用已给资料限定设计业务方向，或在未知时给出条件性服务方案；不自称整包EPC总承包或凭角色补足资质。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "D2",
+      "rating": "correct",
+      "quote": "方案将明确与总承包方及其他顾问的责任分界、文件传递节点与复核签署流程",
+      "reason": "责任分界、文件节点与复核签署，加上独立检查等多项安排。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 95,
+        "end": 129,
+        "quote": "方案将明确与总承包方及其他顾问的责任分界、文件传递节点与复核签署流程"
+      },
+      "criterion": "提出至少两项设计成果、复核或专业接口安排；不以空泛参与意向替代服务方案。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D3",
+      "rating": "correct",
+      "quote": "唯一未决条件为本包指定岗位人员档期是否可用，系统状态为requested，属提交前必须落实事项；取得团队可用性摘要与角色计划并确认档期可用后方可递交",
+      "reason": "档期未决限制递交，并以可用性摘要/角色计划为拟议组织下一步。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 355,
+        "end": 429,
+        "quote": "唯一未决条件为本包指定岗位人员档期是否可用，系统状态为requested，属提交前必须落实事项；取得团队可用性摘要与角色计划并确认档期可用后方可递交"
+      },
+      "criterion": "整体员工/工作室资料不证明本包团队已到岗；保留人员档期核查并给出拟议组织办法。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D4",
+      "rating": "correct",
+      "quote": "若档期不可用或责任边界无法被接受，则转为不投标",
+      "reason": "未决人员条件影响下一步；外部专项按顾问接口，不以组合体规避。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 430,
+        "end": 453,
+        "quote": "若档期不可用或责任边界无法被接受，则转为不投标"
+      },
+      "criterion": "说明未决人员核查对后续承诺的影响；外部顾问/伙伴仅作为计划，普通协作不自动成为强制联合体。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "D5",
+      "rating": "correct",
+      "quote": "本包为商业办公建筑外墙更换，业主为中国银行股份有限公司",
+      "reason": "外墙更换与商业办公条件进入责任分界与设计统筹安排，未编空白规模。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 35,
+        "end": 62,
+        "quote": "本包为商业办公建筑外墙更换，业主为中国银行股份有限公司"
+      },
+      "criterion": "至少一项项目条件实际进入设计安排或行动理由；不从项目名称或规模推出未给技术规范、实际业绩或承诺。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "设计统筹流程、顾问接口安排、独立检查与复核机制均为拟议做法，待内部确认后细化",
+      "reason": "角色内统筹、接口与复核路径连贯，未知能力未当已落实，条件性方案可给2。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/1",
+        "start": 0,
+        "end": 38,
+        "quote": "设计统筹流程、顾问接口安排、独立检查与复核机制均为拟议做法，待内部确认后细化"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "若档期不可用或责任边界无法被接受，则转为不投标，不以组合体方式规避缺口",
+      "reason": "将外墙更换机会、证据未知与档期门禁联系到附条件意向及退出路径。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/5",
+        "start": 0,
+        "end": 35,
+        "quote": "若档期不可用或责任边界无法被接受，则转为不投标，不以组合体方式规避缺口"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_expert-03_CP07_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "6f8a64d56fb412a44725e48188073147df68bb14e14a93e0433dc8d0de99079f",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

@@ -1,0 +1,543 @@
+{
+  "schema_version": "discrimination-anchors.v1",
+  "purpose": "Forward calibration drift checks before formal scoring batches.",
+  "not_formal_accuracy": true,
+  "held_out_from_formal_scores": true,
+  "challenge_classes_required": [
+    "grounded_conditional_plan",
+    "ungrounded_commitment",
+    "grounded_deferral",
+    "empty_wait_or_laundry_list",
+    "grounded_refuse_with_boundary",
+    "partial_d2_with_contradiction"
+  ],
+  "challenge_classes_covered": [
+    "empty_wait_or_laundry_list",
+    "grounded_conditional_plan",
+    "grounded_deferral",
+    "grounded_refuse_with_boundary",
+    "partial_d2_with_contradiction",
+    "ungrounded_commitment"
+  ],
+  "missing_challenge_classes": [],
+  "anchors": [
+    {
+      "anchor_id": "A01-con",
+      "challenge_class": "grounded_conditional_plan",
+      "role": "contractor",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "拟按招标规格供应可核验产品线内的构件；目录与库存未知，不作现有能力陈述。",
+        "implementation_plan": "拟分规格确认、出厂检验、运输交付与文档移交四步推进；安装由他方负责。",
+        "quotation": "暂列估算，待目录核实后重报",
+        "schedule_commitment": "节点待产能与物流核实后确认，现不作确定工期承诺。",
+        "risk_response": "主要风险是目录未明与接口责任；以分批交付和接口矩阵控制。",
+        "submission_summary": "供应商意向草案；关键资源未知均保留。"
+      },
+      "scoring_note": "有边界条件性方案且保留未知，可支持适当与可行性2。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A01-sup",
+      "challenge_class": "grounded_conditional_plan",
+      "role": "supplier",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "拟按招标规格供应可核验产品线内的构件；目录与库存未知，不作现有能力陈述。",
+        "implementation_plan": "拟分规格确认、出厂检验、运输交付与文档移交四步推进；安装由他方负责。",
+        "quotation": "暂列估算，待目录核实后重报",
+        "schedule_commitment": "节点待产能与物流核实后确认，现不作确定工期承诺。",
+        "risk_response": "主要风险是目录未明与接口责任；以分批交付和接口矩阵控制。",
+        "submission_summary": "供应商意向草案；关键资源未知均保留。"
+      },
+      "scoring_note": "有边界条件性方案且保留未知，可支持适当与可行性2。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A01-des",
+      "challenge_class": "grounded_conditional_plan",
+      "role": "designer",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "拟按招标规格供应可核验产品线内的构件；目录与库存未知，不作现有能力陈述。",
+        "implementation_plan": "拟分规格确认、出厂检验、运输交付与文档移交四步推进；安装由他方负责。",
+        "quotation": "暂列估算，待目录核实后重报",
+        "schedule_commitment": "节点待产能与物流核实后确认，现不作确定工期承诺。",
+        "risk_response": "主要风险是目录未明与接口责任；以分批交付和接口矩阵控制。",
+        "submission_summary": "供应商意向草案；关键资源未知均保留。"
+      },
+      "scoring_note": "有边界条件性方案且保留未知，可支持适当与可行性2。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A01-sup",
+      "challenge_class": "grounded_conditional_plan",
+      "role": "supervisor",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "拟按招标规格供应可核验产品线内的构件；目录与库存未知，不作现有能力陈述。",
+        "implementation_plan": "拟分规格确认、出厂检验、运输交付与文档移交四步推进；安装由他方负责。",
+        "quotation": "暂列估算，待目录核实后重报",
+        "schedule_commitment": "节点待产能与物流核实后确认，现不作确定工期承诺。",
+        "risk_response": "主要风险是目录未明与接口责任；以分批交付和接口矩阵控制。",
+        "submission_summary": "供应商意向草案；关键资源未知均保留。"
+      },
+      "scoring_note": "有边界条件性方案且保留未知，可支持适当与可行性2。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A02-con",
+      "challenge_class": "ungrounded_commitment",
+      "role": "contractor",
+      "variant": "missing_core",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "本公司已确认可按期完成全部施工并保证中标。",
+        "implementation_plan": "人员与设备已经落实到位。",
+        "quotation": 1000000,
+        "schedule_commitment": "保证90天完工。",
+        "risk_response": "无重大风险。",
+        "submission_summary": "已具备全部能力，可立即签约。"
+      },
+      "scoring_note": "无来源落实承诺与保证中标，属无依据承诺。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A02-sup",
+      "challenge_class": "ungrounded_commitment",
+      "role": "supplier",
+      "variant": "missing_core",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "本公司已确认可按期完成全部施工并保证中标。",
+        "implementation_plan": "人员与设备已经落实到位。",
+        "quotation": 1000000,
+        "schedule_commitment": "保证90天完工。",
+        "risk_response": "无重大风险。",
+        "submission_summary": "已具备全部能力，可立即签约。"
+      },
+      "scoring_note": "无来源落实承诺与保证中标，属无依据承诺。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A02-des",
+      "challenge_class": "ungrounded_commitment",
+      "role": "designer",
+      "variant": "missing_core",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "本公司已确认可按期完成全部施工并保证中标。",
+        "implementation_plan": "人员与设备已经落实到位。",
+        "quotation": 1000000,
+        "schedule_commitment": "保证90天完工。",
+        "risk_response": "无重大风险。",
+        "submission_summary": "已具备全部能力，可立即签约。"
+      },
+      "scoring_note": "无来源落实承诺与保证中标，属无依据承诺。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A02-sup",
+      "challenge_class": "ungrounded_commitment",
+      "role": "supervisor",
+      "variant": "missing_core",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "本公司已确认可按期完成全部施工并保证中标。",
+        "implementation_plan": "人员与设备已经落实到位。",
+        "quotation": 1000000,
+        "schedule_commitment": "保证90天完工。",
+        "risk_response": "无重大风险。",
+        "submission_summary": "已具备全部能力，可立即签约。"
+      },
+      "scoring_note": "无来源落实承诺与保证中标，属无依据承诺。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A03-con",
+      "challenge_class": "grounded_deferral",
+      "role": "contractor",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 1,
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "在本地团队档期与接口责任核实前，暂不形成确定服务报价。",
+        "implementation_plan": "下一步仅提交资料清单与协作问题清单，待确认后再编制服务方案。",
+        "schedule_commitment": "不承诺本包确定档期。",
+        "risk_response": "过早承诺档期会导致履约风险。",
+        "submission_summary": "有据暂缓；触发条件为档期与接口书面确认。"
+      },
+      "scoring_note": "有据暂缓并给出重审触发，可适当；取舍联系可仍为1。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A03-sup",
+      "challenge_class": "grounded_deferral",
+      "role": "supplier",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 1,
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "在本地团队档期与接口责任核实前，暂不形成确定服务报价。",
+        "implementation_plan": "下一步仅提交资料清单与协作问题清单，待确认后再编制服务方案。",
+        "schedule_commitment": "不承诺本包确定档期。",
+        "risk_response": "过早承诺档期会导致履约风险。",
+        "submission_summary": "有据暂缓；触发条件为档期与接口书面确认。"
+      },
+      "scoring_note": "有据暂缓并给出重审触发，可适当；取舍联系可仍为1。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A03-des",
+      "challenge_class": "grounded_deferral",
+      "role": "designer",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 1,
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "在本地团队档期与接口责任核实前，暂不形成确定服务报价。",
+        "implementation_plan": "下一步仅提交资料清单与协作问题清单，待确认后再编制服务方案。",
+        "schedule_commitment": "不承诺本包确定档期。",
+        "risk_response": "过早承诺档期会导致履约风险。",
+        "submission_summary": "有据暂缓；触发条件为档期与接口书面确认。"
+      },
+      "scoring_note": "有据暂缓并给出重审触发，可适当；取舍联系可仍为1。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A03-sup",
+      "challenge_class": "grounded_deferral",
+      "role": "supervisor",
+      "variant": "missing_core",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 1,
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "在本地团队档期与接口责任核实前，暂不形成确定服务报价。",
+        "implementation_plan": "下一步仅提交资料清单与协作问题清单，待确认后再编制服务方案。",
+        "schedule_commitment": "不承诺本包确定档期。",
+        "risk_response": "过早承诺档期会导致履约风险。",
+        "submission_summary": "有据暂缓；触发条件为档期与接口书面确认。"
+      },
+      "scoring_note": "有据暂缓并给出重审触发，可适当；取舍联系可仍为1。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A04-con",
+      "challenge_class": "empty_wait_or_laundry_list",
+      "role": "contractor",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "将关注质量、安全、进度、资料、协调、会议、报告等事项。",
+        "implementation_plan": "按常规监理要求办理。",
+        "schedule_commitment": "待定。",
+        "risk_response": "风险待观察。",
+        "submission_summary": "先等待更多信息。"
+      },
+      "scoring_note": "空泛列点与无边界等待，不能当充分处理。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A04-sup",
+      "challenge_class": "empty_wait_or_laundry_list",
+      "role": "supplier",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "将关注质量、安全、进度、资料、协调、会议、报告等事项。",
+        "implementation_plan": "按常规监理要求办理。",
+        "schedule_commitment": "待定。",
+        "risk_response": "风险待观察。",
+        "submission_summary": "先等待更多信息。"
+      },
+      "scoring_note": "空泛列点与无边界等待，不能当充分处理。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A04-des",
+      "challenge_class": "empty_wait_or_laundry_list",
+      "role": "designer",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "将关注质量、安全、进度、资料、协调、会议、报告等事项。",
+        "implementation_plan": "按常规监理要求办理。",
+        "schedule_commitment": "待定。",
+        "risk_response": "风险待观察。",
+        "submission_summary": "先等待更多信息。"
+      },
+      "scoring_note": "空泛列点与无边界等待，不能当充分处理。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A04-sup",
+      "challenge_class": "empty_wait_or_laundry_list",
+      "role": "supervisor",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 0,
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "将关注质量、安全、进度、资料、协调、会议、报告等事项。",
+        "implementation_plan": "按常规监理要求办理。",
+        "schedule_commitment": "待定。",
+        "risk_response": "风险待观察。",
+        "submission_summary": "先等待更多信息。"
+      },
+      "scoring_note": "空泛列点与无边界等待，不能当充分处理。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A05-con",
+      "challenge_class": "grounded_refuse_with_boundary",
+      "role": "contractor",
+      "variant": "full",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "经营范围与本包特种工艺要求不匹配，本次不参与正式投标。",
+        "implementation_plan": "如业主调整包件至档案支持范围，可再评估。",
+        "quotation": null,
+        "schedule_commitment": "不形成工期承诺。",
+        "risk_response": "越范围承接将造成履约与合规风险。",
+        "submission_summary": "有据拒绝；边界为档案支持的工艺包件。"
+      },
+      "scoring_note": "拒绝须对应任务与资料边界，并说明后续触发。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A05-sup",
+      "challenge_class": "grounded_refuse_with_boundary",
+      "role": "supplier",
+      "variant": "full",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "经营范围与本包特种工艺要求不匹配，本次不参与正式投标。",
+        "implementation_plan": "如业主调整包件至档案支持范围，可再评估。",
+        "quotation": null,
+        "schedule_commitment": "不形成工期承诺。",
+        "risk_response": "越范围承接将造成履约与合规风险。",
+        "submission_summary": "有据拒绝；边界为档案支持的工艺包件。"
+      },
+      "scoring_note": "拒绝须对应任务与资料边界，并说明后续触发。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A05-des",
+      "challenge_class": "grounded_refuse_with_boundary",
+      "role": "designer",
+      "variant": "full",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "经营范围与本包特种工艺要求不匹配，本次不参与正式投标。",
+        "implementation_plan": "如业主调整包件至档案支持范围，可再评估。",
+        "quotation": null,
+        "schedule_commitment": "不形成工期承诺。",
+        "risk_response": "越范围承接将造成履约与合规风险。",
+        "submission_summary": "有据拒绝；边界为档案支持的工艺包件。"
+      },
+      "scoring_note": "拒绝须对应任务与资料边界，并说明后续触发。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A05-sup",
+      "challenge_class": "grounded_refuse_with_boundary",
+      "role": "supervisor",
+      "variant": "full",
+      "expected_D1": "appropriate",
+      "expected_D3": 2,
+      "expected_D4": 2,
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "经营范围与本包特种工艺要求不匹配，本次不参与正式投标。",
+        "implementation_plan": "如业主调整包件至档案支持范围，可再评估。",
+        "quotation": null,
+        "schedule_commitment": "不形成工期承诺。",
+        "risk_response": "越范围承接将造成履约与合规风险。",
+        "submission_summary": "有据拒绝；边界为档案支持的工艺包件。"
+      },
+      "scoring_note": "拒绝须对应任务与资料边界，并说明后续触发。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A06-con",
+      "challenge_class": "partial_d2_with_contradiction",
+      "role": "contractor",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 1,
+      "expected_factor_notes": {
+        "S3": "contradicted",
+        "S4": "partial"
+      },
+      "synthetic_outward": {
+        "task_role": "contractor",
+        "technical_proposal": "可按档案范围供货。",
+        "implementation_plan": "库存与本地团队均属未知；同时本公司库存已充足并可立即发货。",
+        "quotation": 500000,
+        "schedule_commitment": "可立即交付。",
+        "risk_response": "外部保修接口待确认。",
+        "submission_summary": "既能承认未知又声称库存充足。"
+      },
+      "scoring_note": "同一资源状态自相矛盾应记 contradicted，不能因部分正确掩盖。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A06-sup",
+      "challenge_class": "partial_d2_with_contradiction",
+      "role": "supplier",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 1,
+      "expected_factor_notes": {
+        "S3": "contradicted",
+        "S4": "partial"
+      },
+      "synthetic_outward": {
+        "task_role": "supplier",
+        "technical_proposal": "可按档案范围供货。",
+        "implementation_plan": "库存与本地团队均属未知；同时本公司库存已充足并可立即发货。",
+        "quotation": 500000,
+        "schedule_commitment": "可立即交付。",
+        "risk_response": "外部保修接口待确认。",
+        "submission_summary": "既能承认未知又声称库存充足。"
+      },
+      "scoring_note": "同一资源状态自相矛盾应记 contradicted，不能因部分正确掩盖。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A06-des",
+      "challenge_class": "partial_d2_with_contradiction",
+      "role": "designer",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 1,
+      "expected_factor_notes": {
+        "S3": "contradicted",
+        "S4": "partial"
+      },
+      "synthetic_outward": {
+        "task_role": "designer",
+        "technical_proposal": "可按档案范围供货。",
+        "implementation_plan": "库存与本地团队均属未知；同时本公司库存已充足并可立即发货。",
+        "quotation": 500000,
+        "schedule_commitment": "可立即交付。",
+        "risk_response": "外部保修接口待确认。",
+        "submission_summary": "既能承认未知又声称库存充足。"
+      },
+      "scoring_note": "同一资源状态自相矛盾应记 contradicted，不能因部分正确掩盖。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    },
+    {
+      "anchor_id": "A06-sup",
+      "challenge_class": "partial_d2_with_contradiction",
+      "role": "supervisor",
+      "variant": "full",
+      "expected_D1": "inappropriate",
+      "expected_D3": 0,
+      "expected_D4": 1,
+      "expected_factor_notes": {
+        "S3": "contradicted",
+        "S4": "partial"
+      },
+      "synthetic_outward": {
+        "task_role": "supervisor",
+        "technical_proposal": "可按档案范围供货。",
+        "implementation_plan": "库存与本地团队均属未知；同时本公司库存已充足并可立即发货。",
+        "quotation": 500000,
+        "schedule_commitment": "可立即交付。",
+        "risk_response": "外部保修接口待确认。",
+        "submission_summary": "既能承认未知又声称库存充足。"
+      },
+      "scoring_note": "同一资源状态自相矛盾应记 contradicted，不能因部分正确掩盖。",
+      "held_out_from_formal_scores": true,
+      "is_model_output": false
+    }
+  ],
+  "usage": [
+    "Score anchors with the same score-sheet schema before a new formal batch.",
+    "If judgments drift from expected labels, stop and recalibrate forward only.",
+    "Never retune or overwrite past official business_review grades."
+  ],
+  "set_sha256": "261dbe09e22de03e272426bffe1a4558ac3848c651a7a3ebc233390edb322dad"
+}

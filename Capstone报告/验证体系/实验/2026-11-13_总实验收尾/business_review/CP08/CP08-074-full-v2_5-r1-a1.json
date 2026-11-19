@@ -1,0 +1,133 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-074-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "2de9ffa8ac6abbad",
+  "role": "contractor",
+  "annotated_action": "conditional_independent_residential_contractor_bid",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-074-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "f5ceccd1b364ef14fa54a02c3c86a35e1d1e9353092ef1359589b70ae48f3d4a",
+  "call_id": "attempt_002_call_000224",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "两项前置未落实前不提交，若届时仍无法闭合则撤回意向转为不投",
+    "reason": "经营范围含房屋建筑总承包，支持条件性独立投标；档案未给业绩/档期不作已落实，必要核查前不提交。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 237,
+      "end": 266,
+      "quote": "两项前置未落实前不提交，若届时仍无法闭合则撤回意向转为不投"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "correct",
+      "quote": "公司营业执照经营范围载明含房屋建筑和市政基础设施项目工程总承包，业务方向可对接；但公司档案未提供同类项目业绩、资质证书清单、团队档期与历史成本基础，现阶段只能提出计划，不能对外声称已具备相应业绩或已落实资源",
+      "reason": "用实际经营范围限定方向，并声明业绩/资质/档期未提供，资格未决保留。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 76,
+        "end": 179,
+        "quote": "公司营业执照经营范围载明含房屋建筑和市政基础设施项目工程总承包，业务方向可对接；但公司档案未提供同类项目业绩、资质证书清单、团队档期与历史成本基础，现阶段只能提出计划，不能对外声称已具备相应业绩或已落实资源"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "partial",
+      "quote": "由公司作为单一责任主体负责施工组织、工地管理、安全管理、质量管理与竣工资料，常规专业分包、检测与设备供应按投标假设纳入分包统筹与接口管理",
+      "reason": "职责与拟议分包接口框架清楚，缺更具体的现场组织执行细节。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 186,
+        "end": 254,
+        "quote": "由公司作为单一责任主体负责施工组织、工地管理、安全管理、质量管理与竣工资料，常规专业分包、检测与设备供应按投标假设纳入分包统筹与接口管理"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "partial",
+      "quote": "一是人员档期，按团队可用性汇总与岗位计划逐岗核对，缺口以内部调配或计划性外部支持填补，均标注为拟议安排",
+      "reason": "区分拟议岗位计划与未核实档期，未捏造现成派驻，但仍无具名岗位配置。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 323,
+        "end": 374,
+        "quote": "一是人员档期，按团队可用性汇总与岗位计划逐岗核对，缺口以内部调配或计划性外部支持填补，均标注为拟议安排"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "两项前置条件——本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求——在提交前必须闭合，未闭合则不提交",
+      "reason": "两项原必要提交前提保持未决；常规专业分包按假设处理不共享投标人身份。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 459,
+        "end": 514,
+        "quote": "两项前置条件——本包指定岗位人员档期是否可用、本包资格证明是否满足提交要求——在提交前必须闭合，未闭合则不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "correct",
+      "quote": "本包为深圳居住建筑整体施工，公司经营范围载明含房屋建筑和市政基础设施项目工程总承包，角色与业务方向不冲突，值得保留投标意向",
+      "reason": "深圳居住建筑类型与许可总承包方向相连；空白规模与交付模式未扩权。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 61,
+        "quote": "本包为深圳居住建筑整体施工，公司经营范围载明含房屋建筑和市政基础设施项目工程总承包，角色与业务方向不冲突，值得保留投标意向"
+      },
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp08-03_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "02c53424937644c9365b117fe12f751a636752f5ae091d9c01c332cf5b04226a",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

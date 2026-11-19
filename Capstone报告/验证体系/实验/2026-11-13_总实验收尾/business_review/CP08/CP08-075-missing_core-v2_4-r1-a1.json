@@ -1,0 +1,156 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-075-missing_core",
+  "arm": "v2_4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "306753d28e90b4f8",
+  "role": "supervisor",
+  "annotated_action": "grounded_no_bid_unknown_capability_and_staffing",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-075-missing_core-v2_4-r1/attempt-1.json",
+  "response_sha256": "5ec9d1a3f6dcac92091156817c65b9ecc47db458eac6f6b669b5a542b87406ed",
+  "call_id": "attempt_002_call_000090",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "appropriate",
+    "quote": "管理层决定本轮不提交，保留条件性投标意图：待指定岗位档期经核实可用、并形成可执行的岗位计划与质量复核安排后，再评估正式投标",
+    "reason": "missing_core下以档案未知与人员档期未决作有据不投标，并给出核实后重评触发；未知未写成已证实无能。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 264,
+      "end": 325,
+      "quote": "管理层决定本轮不提交，保留条件性投标意图：待指定岗位档期经核实可用、并形成可执行的岗位计划与质量复核安排后，再评估正式投标"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "公司证据投影中范围、经验、资质、交付资源与成本基础均为未知，没有任何可引用的实证支撑能力陈述",
+      "reason": "保持监理/监督职责边界，以档案未知而非名称推断解释不投标，未写成施工总包。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 33,
+        "end": 79,
+        "quote": "公司证据投影中范围、经验、资质、交付资源与成本基础均为未知，没有任何可引用的实证支撑能力陈述"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "先核实指定岗位人员档期与可用性，形成岗位计划、质量复核安排与报价基础草案；上述条件落实并经内部评审通过后，再决定是否转为正式投标",
+      "reason": "有据拒绝：说明本轮不提交，并给出档期核实与岗位/质量复核安排后的重审触发。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 183,
+        "end": 247,
+        "quote": "先核实指定岗位人员档期与可用性，形成岗位计划、质量复核安排与报价基础草案；上述条件落实并经内部评审通过后，再决定是否转为正式投标"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用被列为提交前必须落实的条件，目前仍为requested、无回执",
+      "reason": "人员可用性未决限制承诺，不虚构实际缺员或不要求编造排班。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 91,
+        "end": 136,
+        "quote": "本包指定岗位人员档期是否可用被列为提交前必须落实的条件，目前仍为requested、无回执"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "该缺口是人员可用性确认，不需要通过组合体分担投标人身份或技术权威，因此不选择组合体路径",
+      "reason": "原必要人员条件保持未决；拒绝不使其变为已解决，并区分监督责任与组合体取舍。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 220,
+        "end": 263,
+        "quote": "该缺口是人员可用性确认，不需要通过组合体分担投标人身份或技术权威，因此不选择组合体路径"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "本包为商业办公建筑的监理角色",
+      "reason": "商业办公建筑类型进入监理可信度与人员到位风险理由；规模空白未虚构工程量。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 14,
+        "quote": "本包为商业办公建筑的监理角色"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "待指定岗位档期经核实可用、并形成可执行的岗位计划与质量复核安排后，再评估正式投标",
+      "reason": "有据不投标并给出档期核实与方案草案后的下一步，边界内可执行。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 285,
+        "end": 325,
+        "quote": "待指定岗位档期经核实可用、并形成可执行的岗位计划与质量复核安排后，再评估正式投标"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "该缺口是人员可用性确认，不需要通过组合体分担投标人身份或技术权威，因此不选择组合体路径",
+      "reason": "不投标相对条件性重评、以及不设组合体相对人员缺口的取舍连到承诺边界。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 220,
+        "end": 263,
+        "quote": "该缺口是人员可用性确认，不需要通过组合体分担投标人身份或技术权威，因此不选择组合体路径"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r3-cp08-09_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "921b07427e69242907147d327c1ff3cf2b58ad74ea92a70abe639e56f931ed76",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

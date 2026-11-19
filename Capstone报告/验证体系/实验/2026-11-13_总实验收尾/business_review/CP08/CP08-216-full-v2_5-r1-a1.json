@@ -1,0 +1,150 @@
+{
+  "cohort": "CP08",
+  "window_id": "CP08-216-full",
+  "arm": "v2_5",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "306e4cab446555bd",
+  "role": "supplier",
+  "annotated_action": "provisional_building_materials_supply_exclude_whole_construction",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/continuation-001/run/jobs/CP08-216-full-v2_5-r1/attempt-1.json",
+  "response_sha256": "82a47ab56d014aaa385998a26ec4fc98ed5a7ce31c5d05a21df557ea3ff2c9be",
+  "call_id": "attempt_002_call_000697",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本投标为供应商角色意向草案，非正式投标文件。拟供应范围限于居住建筑项目所需建筑产品与材料的供应、配送、文档交付及保修接口协调，不承担整包施工责任。",
+    "reason": "有边界暂定供货成立；明确不接整包施工，目录/物流未决保留，软门命中均在否定语境。",
+    "evidence": {
+      "json_pointer": "/technical_proposal",
+      "start": 0,
+      "end": 73,
+      "quote": "本投标为供应商角色意向草案，非正式投标文件。拟供应范围限于居住建筑项目所需建筑产品与材料的供应、配送、文档交付及保修接口协调，不承担整包施工责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "拟供应范围限于居住建筑项目所需建筑产品与材料的供应、配送、文档交付及保修接口协调，不承担整包施工责任。",
+      "reason": "有边界产品/材料供货方案，不凭身份声称自有目录或库存，并排除整包施工。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 22,
+        "end": 73,
+        "quote": "拟供应范围限于居住建筑项目所需建筑产品与材料的供应、配送、文档交付及保修接口协调，不承担整包施工责任。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "拟分四阶段推进：一、接获中标通知后与总承包方及招标方确认物料清单、技术规格与交付批次；二、按确认清单组织货源，安排出厂检验与文档准备；三、按施工进度分批配送至香港项目现场指定收货点，配合现场验收；四、交付后进入保修期，提供保修接口与质量文档支持。",
+      "reason": "清单确认、出厂检验文档、分批配送验收与保修接口构成多项拟议供应/配送/文档安排。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 0,
+        "end": 123,
+        "quote": "拟分四阶段推进：一、接获中标通知后与总承包方及招标方确认物料清单、技术规格与交付批次；二、按确认清单组织货源，安排出厂检验与文档准备；三、按施工进度分批配送至香港项目现场指定收货点，配合现场验收；四、交付后进入保修期，提供保修接口与质量文档支持。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "所有产品与货源安排均为拟议方案，未取得任何供应商或制造商承诺。",
+      "reason": "明确货源/物流未获承诺，区分拟议安排与已落实供应承诺；软门“已落实”在否定句。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 221,
+        "end": 252,
+        "quote": "所有产品与货源安排均为拟议方案，未取得任何供应商或制造商承诺。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "partial",
+      "quote": "外部支持对保修与质量文档要求的接受情况待确认（condition_8432d12f28aeb621f7db）。",
+      "reason": "保修/质量文档未决有回应且未升硬门槛，但正文未处理供应商渠道审核未决状态。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/4",
+        "start": 0,
+        "end": 55,
+        "quote": "外部支持对保修与质量文档要求的接受情况待确认（condition_8432d12f28aeb621f7db）。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "按50000平方米居住建筑项目规模及供应商角色估算的物料供应暂列额；因缺乏项目物料清单、设计规格及数量，本项为暂定估算，非供应商报价",
+      "reason": "50000平方米居住建筑与香港现场配送进入供货安排；明确不承担整包施工责任。",
+      "evidence": {
+        "json_pointer": "/quotation_breakdown/0/basis",
+        "start": 0,
+        "end": 66,
+        "quote": "按50000平方米居住建筑项目规模及供应商角色估算的物料供应暂列额；因缺乏项目物料清单、设计规格及数量，本项为暂定估算，非供应商报价"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价MOP 23,290,000为条件性暂定估算",
+      "reason": "六项可复算至MOP 23,290,000，明确暂定依据并承认无实际供应报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 58,
+        "end": 82,
+        "quote": "报价MOP 23,290,000为条件性暂定估算"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.8333333333333334,
+  "detailed": {},
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP08全量微观扩样/task_cards.json",
+  "input_card_sha256": "c3b097a840ef986dbe83f73ade124ee925a6660441e93cdf6af2e326ea6dbe9a",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r5-cp08-47_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "146f61848a8a09ad9d1e2b6ea63275f76b3dcb6823d516698e1fe5dba5a495ab",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

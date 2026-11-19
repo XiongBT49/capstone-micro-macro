@@ -1,0 +1,173 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-23-full",
+  "arm": "S4",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "7c7795cf1fd9f0c4",
+  "role": "supplier",
+  "annotated_action": "conditional_prefab_supply_intention_with_verify_before_quote",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-23-full-S4-r1/step-4.json",
+  "response_sha256": "261a3711dbca6a2a745d3b105066c22b101993caf32411cc4d33bcc0f4d6d5ba",
+  "call_id": "attempt_003_call_000386",
+  "program_status_retained": "content_review_required",
+  "D1": {
+    "label": "appropriate",
+    "quote": "本公司以供应商角色提交有条件投标意向，拟供预制混凝土构件、钢模具、办公间隔墙及建筑材料贸易类产品，并承担配送、产品文档与保修接口，不承担整包施工或EPC总包责任。",
+    "reason": "档案预制件范围支持有条件意向；档案不作已核能力；两项请求未核实且非硬门槛。",
+    "evidence": {
+      "json_pointer": "/submission_summary",
+      "start": 0,
+      "end": 81,
+      "quote": "本公司以供应商角色提交有条件投标意向，拟供预制混凝土构件、钢模具、办公间隔墙及建筑材料贸易类产品，并承担配送、产品文档与保修接口，不承担整包施工或EPC总包责任。"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "S1",
+      "rating": "correct",
+      "quote": "公司档案文本载明业务范围包括建筑预制件生产、预制混凝土构件、钢模具、办公间隔墙、建筑材料贸易，以及41条预制构件生产线与3套自动化混凝土搅拌系统；该文本为档案资料，并非经审核的供货能力、认证或产能承诺。",
+      "reason": "用档案业务范围限定供货方向，标明非经审核能力或产能。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 81,
+        "end": 182,
+        "quote": "公司档案文本载明业务范围包括建筑预制件生产、预制混凝土构件、钢模具、办公间隔墙、建筑材料贸易，以及41条预制构件生产线与3套自动化混凝土搅拌系统；该文本为档案资料，并非经审核的供货能力、认证或产能承诺。"
+      },
+      "criterion": "有范围资料时限定到资料支持的业务方向；无资料时提出有边界的产品/材料方案，不凭身份声称自有产品或库存。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S2",
+      "rating": "correct",
+      "quote": "三、配送安排：拟由惠州生产基地经陆路运输至澳门，关务与物流安排为暂定提案，须核实。四、文档与保修接口：拟建立产品文档清单（合格证明、质量记录、批次追溯）、保修响应流程与质量记录移交程序；外部支持是否接受尚待确认。",
+      "reason": "配送、文档清单与保修响应等多项拟议安排，核实需求标明。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 132,
+        "end": 238,
+        "quote": "三、配送安排：拟由惠州生产基地经陆路运输至澳门，关务与物流安排为暂定提案，须核实。四、文档与保修接口：拟建立产品文档清单（合格证明、质量记录、批次追溯）、保修响应流程与质量记录移交程序；外部支持是否接受尚待确认。"
+      },
+      "criterion": "提出至少两项供应/配送/文档交付安排，说明拟议性质及需确认部分；不因未给实际目录而要求虚构具体自产品。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S3",
+      "rating": "correct",
+      "quote": "产品目录、库存、本地团队、历史成本与认证文件均为未知，故本方案中的产品清单、规格、交付批次与配送安排均为暂定提案，须在正式报价前核实。",
+      "reason": "目录/库存/本地团队/成本未知，安排标暂定提案而非已落实。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 182,
+        "end": 249,
+        "quote": "产品目录、库存、本地团队、历史成本与认证文件均为未知，故本方案中的产品清单、规格、交付批次与配送安排均为暂定提案，须在正式报价前核实。"
+      },
+      "criterion": "明确本地团队、库存、渠道报价等未被提供，区分拟议安排与已经落实的供应承诺。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S4",
+      "rating": "correct",
+      "quote": "两项未决条件（供应商渠道审核、外部支持对保修与质量文档要求的接受）状态为requested，非提交前强制门槛，但须在正式报价前澄清；在此之前仅保留有条件投标意向。",
+      "reason": "两项请求保持requested且明确非硬门槛，并给拟议保修/文档接口。",
+      "evidence": {
+        "json_pointer": "/implementation_plan",
+        "start": 302,
+        "end": 383,
+        "quote": "两项未决条件（供应商渠道审核、外部支持对保修与质量文档要求的接受）状态为requested，非提交前强制门槛，但须在正式报价前澄清；在此之前仅保留有条件投标意向。"
+      },
+      "criterion": "回应渠道审核、质量文档和保修责任的未决状态，给出拟议处理；两项原请求不是硬提交门槛，不无据升级。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "S5",
+      "rating": "correct",
+      "quote": "本公司拟以供应商角色参与澳门拱廊广场项目，供应与公司档案业务范围相符的预制混凝土构件、钢模具、办公间隔墙及建筑材料贸易类产品，并承担产品配送、产品文档与保修接口。",
+      "reason": "拱廊广场进入供货角色安排；拒绝整包/EPC总包责任另有表述。",
+      "evidence": {
+        "json_pointer": "/technical_proposal",
+        "start": 0,
+        "end": 81,
+        "quote": "本公司拟以供应商角色参与澳门拱廊广场项目，供应与公司档案业务范围相符的预制混凝土构件、钢模具、办公间隔墙及建筑材料贸易类产品，并承担产品配送、产品文档与保修接口。"
+      },
+      "criterion": "将至少一项已给项目条件与供货安排联系；不把项目EPC标签当本方承担整包施工的依据。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "S6",
+      "rating": "correct",
+      "quote": "报价为分项暂定估算合计MOP 29,700,000，未获供应商报价，非最终报价，保留调整余量。分项：预制混凝土构件MOP 18,500,000；钢模具MOP 3,200,000；办公间隔墙MOP 2,600,000；建筑材料贸易类MOP 1,500,000；配送与关务MOP 1,800,000；产品文档与保修接口MOP 900,000；调整余量MOP 1,200,000。",
+      "reason": "MOP分项可复算与总额一致，并声明未获供应商报价。",
+      "evidence": {
+        "json_pointer": "/submission_summary",
+        "start": 81,
+        "end": 268,
+        "quote": "报价为分项暂定估算合计MOP 29,700,000，未获供应商报价，非最终报价，保留调整余量。分项：预制混凝土构件MOP 18,500,000；钢模具MOP 3,200,000；办公间隔墙MOP 2,600,000；建筑材料贸易类MOP 1,500,000；配送与关务MOP 1,800,000；产品文档与保修接口MOP 900,000；调整余量MOP 1,200,000。"
+      },
+      "criterion": "在MOP下给出可复算的分项/总额及明确暂定依据，承认未取得实际供应报价/历史采购成本；不要求市场最优价。",
+      "defer_decline_criterion": "有据不报价/暂缓报价时，明确价格未形成或非约束性，指出所缺依据和形成报价所需资料；不为满足量表强迫编造分项金额。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract",
+        "parent_targets/numeric"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "当前不承诺具体交付日期或批次，待正式报价阶段提交。",
+      "reason": "有条件预制件意向、核实后再报价与角色边界连贯可实施。",
+      "evidence": {
+        "json_pointer": "/schedule_commitment",
+        "start": 84,
+        "end": 109,
+        "quote": "当前不承诺具体交付日期或批次，待正式报价阶段提交。"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "主要风险包括：产品目录与规格未知、产能可用性未知、惠州至澳门配送与关务安排未落实、认证文件未知、外部支持对保修与质量文档要求的接受未确认。应对措施：将上述事项列为正式报价前核实项；在报价中保留调整余量；若核实显示产品范围或文档保修接口无法满足招标包要求，将转为有据等待或不投标。两项未决条件非提交前强制门槛，但须在正式报价前澄清。",
+      "reason": "目录/产能/配送/保修未决取舍连到调整余量、等待或不投标路径。",
+      "evidence": {
+        "json_pointer": "/risk_response",
+        "start": 0,
+        "end": 165,
+        "quote": "主要风险包括：产品目录与规格未知、产能可用性未知、惠州至澳门配送与关务安排未落实、认证文件未知、外部支持对保修与质量文档要求的接受未确认。应对措施：将上述事项列为正式报价前核实项；在报价中保留调整余量；若核实显示产品范围或文档保修接口无法满足招标包要求，将转为有据等待或不投标。两项未决条件非提交前强制门槛，但须在正式报价前澄清。"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r4-cp07-10_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "25b1a82243d99409a040cf371becc7af01c40f50214303de923f30eaee6a8ce1",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

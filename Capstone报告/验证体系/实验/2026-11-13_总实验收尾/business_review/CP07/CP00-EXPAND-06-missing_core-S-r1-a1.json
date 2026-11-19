@@ -1,0 +1,151 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-06-missing_core",
+  "arm": "S",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "51f04cae3a69d7d6",
+  "role": "contractor",
+  "annotated_action": "conditional_contractor_bid_claiming_unprovided_scope_fit",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-06-missing_core-S-r1/step-4.json",
+  "response_sha256": "b6ed7dd3aa94566915bfd69b366248d10112b701eee6eee93fc8ed70bb2f72a5",
+  "call_id": "attempt_002_call_000046",
+  "program_status_retained": "validation_failed",
+  "D1": {
+    "label": "inappropriate",
+    "quote": "本包與公司作為承建商的業務方向一致",
+    "reason": "missing_core未给经营范围，不能主张与承建商业务方向一致或已可单一责任统筹。",
+    "evidence": {
+      "json_pointer": "/reason",
+      "start": 0,
+      "end": 17,
+      "quote": "本包與公司作為承建商的業務方向一致"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "C1",
+      "rating": "contradicted",
+      "quote": "本包與公司作為承建商的業務方向一致，施工組織、工地管理及常規專業分包屬我方可以單一責任身份統籌的範圍",
+      "reason": "范围unknown时把任务角色写成已可承担的业务契合与单一责任能力。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 0,
+        "end": 50,
+        "quote": "本包與公司作為承建商的業務方向一致，施工組織、工地管理及常規專業分包屬我方可以單一責任身份統籌的範圍"
+      },
+      "criterion": "用实际提供的经营范围限定承接判断；任务分配和公司名称不证明能力。资格核查未决时保留边界。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C2",
+      "rating": "correct",
+      "quote": "工作範圍按承建商角色承擔施工組織、工地管理、常規專業分包協調、質量記錄、安全與進度控制，並就機電、裝修等專業界面以分包方式統籌",
+      "reason": "施工组织、分包界面与质量/安全控制构成多项拟议安排，并区分单一责任与分包。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 39,
+        "end": 102,
+        "quote": "工作範圍按承建商角色承擔施工組織、工地管理、常規專業分包協調、質量記錄、安全與進度控制，並就機電、裝修等專業界面以分包方式統籌"
+      },
+      "criterion": "提出至少两项相关施工/现场组织/分包接口安排，并区分本方责任与拟议外部支持；一般空泛承诺仅算部分。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C3",
+      "rating": "correct",
+      "quote": "人員檔期、資格證明及分包安排均屬待核實或計劃事項，非已落實承諾",
+      "reason": "档期未决限制提交；人员/分包为待核实或计划，不冒充已落实。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 239,
+        "end": 270,
+        "quote": "人員檔期、資格證明及分包安排均屬待核實或計劃事項，非已落實承諾"
+      },
+      "criterion": "区分企业总体资料与本包实际人员档期/资源落实；给出有边界的落实安排，不捏造现成团队。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/facts/synthetic_task_contract",
+        "/conditions"
+      ]
+    },
+    {
+      "id": "C4",
+      "rating": "correct",
+      "quote": "指定崗位人員檔期及資格證明須於提交前核實，未核實則不提交",
+      "reason": "两项必要前提保持未决；若无法核实则撤回不提交。",
+      "evidence": {
+        "json_pointer": "/bid_assumptions/3",
+        "start": 0,
+        "end": 28,
+        "quote": "指定崗位人員檔期及資格證明須於提交前核實，未核實則不提交"
+      },
+      "criterion": "处理本题人员与资格核查的业务后果，保留必要提交前提；不把普通支持计划自动升级为硬门槛。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "C5",
+      "rating": "missing",
+      "quote": "",
+      "reason": "正文未把已给的新濠天地DFS/文旅酒店娱乐/业主等项目条件连到具体安排或行动理由。",
+      "evidence": null,
+      "criterion": "把至少一项已给的项目条件与具体安排或行动理由联系起来；项目背景交付模式不自动改变当前承建角色。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 0.6,
+  "detailed": {
+    "D3": {
+      "score": 1,
+      "quote": "以獨立復核及文件紀律控制質量與界面；對工期與專業分包設定備用資源方案",
+      "reason": "交付与界面框架可读，但行动前提依赖未给业务方向契合，角色内可行性仅部分。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 301,
+        "end": 335,
+        "quote": "以獨立復核及文件紀律控制質量與界面；對工期與專業分包設定備用資源方案"
+      }
+    },
+    "D4": {
+      "score": 1,
+      "quote": "若兩項提交前條件未能核實，本意向自動失效，不作提交",
+      "reason": "有档期/资格门禁与退出路径，但核心契合理由无范围依据，权衡仅部分成立。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 336,
+        "end": 361,
+        "quote": "若兩項提交前條件未能核實，本意向自動失效，不作提交"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp07-02_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "764f808bb59896aad1cc9ee68d453ea2e6cd95bcc6c0aaef9b852ed0f6a085d9",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}

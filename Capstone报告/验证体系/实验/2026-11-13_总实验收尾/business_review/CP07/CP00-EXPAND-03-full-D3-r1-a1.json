@@ -1,0 +1,156 @@
+{
+  "cohort": "CP07",
+  "window_id": "CP00-EXPAND-03-full",
+  "arm": "D3",
+  "repeat": 1,
+  "attempt": 1,
+  "project_group": "01703e80e49902f3",
+  "role": "supervisor",
+  "annotated_action": "conditional_supervision_bid_archive_vs_verified_boundary",
+  "response_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/continuation-002/run/jobs/CP00-EXPAND-03-full-D3-r1/step-4.json",
+  "response_sha256": "e78ca7a2003507228545cc985a6ccc6982c76609685188ef2dc12c11f82380cf",
+  "call_id": "attempt_003_call_000749",
+  "program_status_retained": "accepted",
+  "D1": {
+    "label": "appropriate",
+    "quote": "按监管/监理角色提交条件性投标意向",
+    "reason": "监督边界清晰，档案不等于已核资格，档期未决前不构成可提交状态。",
+    "evidence": {
+      "json_pointer": "/content",
+      "start": 35,
+      "end": 52,
+      "quote": "按监管/监理角色提交条件性投标意向"
+    }
+  },
+  "factor_ratings": [
+    {
+      "id": "V1",
+      "rating": "correct",
+      "quote": "不承担施工总包或整包设计施工责任",
+      "reason": "监督职责与承建方责任分开，能力判断限于档案文字。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 38,
+        "end": 54,
+        "quote": "不承担施工总包或整包设计施工责任"
+      },
+      "criterion": "保持监督、审查与记录职责；不得把监理/监督角色写成施工总包或整包设计施工主体，能力判断限于档案。",
+      "defer_decline_criterion": "无论提出方案、等待或拒绝，均需保持职责与来源边界；以有据的范围/资格问题解释行动，不把未知写成缺乏。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company/business_scope",
+        "/facts/synthetic_task_contract/role"
+      ]
+    },
+    {
+      "id": "V2",
+      "rating": "correct",
+      "quote": "独立检查、见证、抽样复核、缺陷记录与整改跟踪的计划性流程",
+      "reason": "多项拟议检查与记录安排，明确为计划性流程非已完成核查。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 129,
+        "end": 157,
+        "quote": "独立检查、见证、抽样复核、缺陷记录与整改跟踪的计划性流程"
+      },
+      "criterion": "提出至少两项进度/质量监督、检查、复核或记录安排；计划不能写成已完成核查/合格结论。",
+      "defer_decline_criterion": "有据等待/拒绝时，不强求两项拟实施工作；说明为何不推进、哪个业务步骤暂不承诺及具体重审/补证触发条件，可满足本事项。",
+      "input_pointers": [
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V3",
+      "rating": "correct",
+      "quote": "尚无实际档期或现场情况支撑",
+      "reason": "企业档案与本包实际派驻分离，档期未知保留。",
+      "evidence": {
+        "json_pointer": "/reason",
+        "start": 320,
+        "end": 333,
+        "quote": "尚无实际档期或现场情况支撑"
+      },
+      "criterion": "保留本包人员档期未知，区分企业人才描述与实际派驻，提出条件性服务组织安排。",
+      "defer_decline_criterion": "等待/拒绝时说明人员或资源状态怎样限制承诺及需核实什么，不虚构实际不足；不要求编造资源排班。",
+      "input_pointers": [
+        "/facts/real_input_dossier/company",
+        "/conditions",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V4",
+      "rating": "correct",
+      "quote": "本包指定岗位人员档期是否可用，须在提交前核实，未核实前不构成可提交状态",
+      "reason": "未决必要前提保留，并区分监督与承建方责任接口。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 442,
+        "end": 477,
+        "quote": "本包指定岗位人员档期是否可用，须在提交前核实，未核实前不构成可提交状态"
+      },
+      "criterion": "说明人员核查未决状态及必要后续步骤，区分本方监督责任、施工方责任与未接受的外部支持。",
+      "defer_decline_criterion": "说明原未决事项怎样影响下一步，保持实际状态和必要/可选性质；拒绝不会使条件自动变为已解决。",
+      "input_pointers": [
+        "/conditions",
+        "/facts/synthetic_task_contract/role",
+        "/facts/synthetic_task_contract"
+      ]
+    },
+    {
+      "id": "V5",
+      "rating": "correct",
+      "quote": "防火卷闸的产品合规、安装质量与整包交付责任由承建方承担",
+      "reason": "将防火卷闸更换条件联系到监督侧检查见证与承建方交付责任边界。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 96,
+        "end": 123,
+        "quote": "防火卷闸的产品合规、安装质量与整包交付责任由承建方承担"
+      },
+      "criterion": "将至少一项给定项目条件与监督重点或行动理由联系；未知现场条件只可作为待确认事项或明确假设。",
+      "defer_decline_criterion": "行动理由仍应联系本题的已给条件或明确资料缺口；有据等待/拒绝不要求虚构一个完整实施方案。",
+      "input_pointers": [
+        "/facts/real_input_dossier/project",
+        "/facts/synthetic_task_contract/role"
+      ]
+    }
+  ],
+  "content_review_read_view": {
+    "mode": "original_parsed_public_fields"
+  },
+  "D2_correct_coverage": 1.0,
+  "detailed": {
+    "D3": {
+      "score": 2,
+      "quote": "独立检查、见证、抽样复核、缺陷记录与整改跟踪的计划性流程",
+      "reason": "条件性监督方案在角色资料边界内连贯可实施。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 129,
+        "end": 157,
+        "quote": "独立检查、见证、抽样复核、缺陷记录与整改跟踪的计划性流程"
+      }
+    },
+    "D4": {
+      "score": 2,
+      "quote": "此为档案文字，不构成已获认可的监管资格",
+      "reason": "档案契合、未知能力与档期门槛明确连到条件性意向与不提交边界。",
+      "evidence": {
+        "json_pointer": "/content",
+        "start": 213,
+        "end": 232,
+        "quote": "此为档案文字，不构成已获认可的监管资格"
+      }
+    }
+  },
+  "input_card_path": "Capstone报告/验证体系/实验/2026-11-13_CP07组织质量对照/task_cards.json",
+  "input_card_sha256": "e39390f0174fccb3cb7114802958672b277ec0ba22c6f4bdab5380297dc274cd",
+  "authored_labels_path": "Capstone报告/验证体系/实验/2026-11-13_总实验收尾/manual_labels/GV20261117_r2-cp07-05_compact_first_001_expanded_labels.json",
+  "authored_labels_sha256": "46be96f36b80285808a069dba889f92bba786435d1195d0a64f82fe21de916ca",
+  "initial_review_complete": true,
+  "evidence_recheck": null,
+  "reviewer": "独立第二LLM提供方评阅；非原管线设计参与者，非人类外部专家，非盲评",
+  "evaluation_identity": "fixed_cohort_content_review",
+  "reviewer_identity_note": "Label correction 2026-11-18: adjudicator is an independent second LLM provider (Cursor); original pipeline was not developed with Cursor. Grades unchanged."
+}
