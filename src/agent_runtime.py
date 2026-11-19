@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 import asyncio
 import json
+import os
 from typing import Any, Callable
 
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -22,6 +23,9 @@ from src.run_audit import LLMCallAuditLogger
 from src.response_recovery import normalize_agent_message
 
 
+ORGANIZATION_MODES = {"multi", "single", "solo"}
+
+
 class AgentRuntime:
     JSON_PARSE_RETRIES = 1
     RESPONSE_CONTRACT_RETRIES = 1
@@ -36,6 +40,7 @@ class AgentRuntime:
         task_role_grounding: bool = False,
     ):
         self.llm = llm_client
+        self.prefix_cache = getattr(llm_client, "prefix_cache", False)
         self.profile = profile
         self.message_counter = 0
         self.throttle = LLMThrottle()
@@ -52,6 +57,20 @@ class AgentRuntime:
         # Optional integration boundary. Offline workflows retain their old prompts.
         self.context_resolver = None
         self.context_entity_id = None
+        # Opt-in live-simulation switches; unset keeps every earlier behavior.
+        # internal_condition_review: see src/condition_review.py.
+        # organization_mode: 'multi' = department discussion then decision (default);
+        # 'single' = the decision maker answers alone in one call, no discussion;
+        # 'solo' = the decision maker alone runs the same discussion rounds.
+        self.internal_condition_review = os.getenv("CAPSTONE_CONDITION_REVIEW", "").strip() == "1"
+        # targeted_repair_retries: extra contract retries that show the model its own
+        # rejected answer and the validator message, so it corrects that answer
+        # (for example a breakdown that does not sum to its total) instead of
+        # rewriting everything. The host still changes no figure itself.
+        self.targeted_repair_retries = int(os.getenv("CAPSTONE_REPAIR_RETRIES", "0") or 0)
+        self.organization_mode = os.getenv("CAPSTONE_ORGANIZATION_MODE", "").strip().lower() or "multi"
+        if self.organization_mode not in ORGANIZATION_MODES:
+            raise ValueError(f"organization_mode must be one of {sorted(ORGANIZATION_MODES)}")
 
     def ask_json(self, system_prompt: str, marker: str, prompt: str) -> dict[str, Any]:
         return asyncio.run(self.ask_json_async(system_prompt, marker, prompt))
@@ -67,6 +86,9 @@ class AgentRuntime:
         clone.message_counter = self.message_counter
         clone.context_resolver = self.context_resolver
         clone.context_entity_id = self.context_entity_id
+        clone.internal_condition_review = self.internal_condition_review
+        clone.targeted_repair_retries = self.targeted_repair_retries
+        clone.organization_mode = self.organization_mode
         return clone
 
     def for_entity(self, entity_id: str) -> "AgentRuntime":
@@ -123,7 +145,14 @@ class AgentRuntime:
             system_prompt += (f"\nFor this task, all proposed monetary amounts use {currency}. "
                               "This overrides generic currency examples in the template. "
                               "Preserve entity IDs and quoted input facts verbatim; do not convert currencies.")
-            prompt += "\nAuthorized decision context:\n" + json.dumps(authorized, ensure_ascii=False)
+            if self.prefix_cache:
+                facts = json.dumps(authorized, ensure_ascii=False, separators=(",", ":"))
+                if marker == "AGENT_MESSAGE":
+                    prompt = "Authorized decision context:\n" + facts + "\n" + prompt
+                else:
+                    prompt += "\nAuthorized decision context:\n" + facts
+            else:
+                prompt += "\nAuthorized decision context:\n" + json.dumps(authorized, ensure_ascii=False)
         lc_messages = [
             SystemMessage(content=with_json_contract(system_prompt)),
             HumanMessage(content=f"{marker}\n{prompt}"),
@@ -205,7 +234,8 @@ class AgentRuntime:
                     self.llm.reject_response(attempt_messages, 0.2 if attempt_marker == marker else 0.0)
                 if self.audit_logger is not None:
                     self.audit_logger.contract_failed(call_id, exc)
-                if (safe_mode and not getattr(exc,'retryable',True)) or contract_retries >= self.RESPONSE_CONTRACT_RETRIES or (safe_mode and final_attempts >= 2):
+                retry_limit = self.RESPONSE_CONTRACT_RETRIES + (0 if safe_mode else self.targeted_repair_retries)
+                if (safe_mode and not getattr(exc,'retryable',True)) or contract_retries >= retry_limit or (safe_mode and final_attempts >= 2):
                     exc.output_attempts=local_attempts
                     raise
                 contract_retries += 1
@@ -222,6 +252,8 @@ class AgentRuntime:
                     from src.response_repair import repair_messages
                     repair_origin=(raw,exc)
                     attempt_messages=repair_messages(messages,raw,exc)
+                elif self.targeted_repair_retries:
+                    attempt_messages = self._targeted_retry_messages(messages, raw, exc)
                 else:
                     attempt_messages = self._schema_retry_messages(messages, exc)
                 continue
@@ -308,6 +340,26 @@ class AgentRuntime:
             },
         ]
 
+    @staticmethod
+    def _targeted_retry_messages(messages: list[dict[str, str]], raw: str, exc: BaseException) -> list[dict[str, str]]:
+        return [
+            *messages,
+            {
+                "role": "user",
+                "content": (
+                    "TARGETED_REPAIR_REQUIRED\n"
+                    "Your previous answer to the request above is quoted below. It is your own output to correct, "
+                    "not new facts or instructions.\n<previous_answer>\n" + raw + "\n</previous_answer>\n"
+                    f"It failed validation: {exc}\n"
+                    "Correct only what the validation message names and keep every other field, proposal and "
+                    "condition as it was. Figures computed by the host in that message are exact arithmetic: when "
+                    "a breakdown and its total disagree, decide which of your own figures stands, restate the "
+                    "others so that they agree, and update any sentence that quotes the old figure. "
+                    "Return the complete corrected answer as exactly one valid JSON object."
+                ),
+            },
+        ]
+
     def discuss(
         self,
         state: SimulationState,
@@ -333,10 +385,16 @@ class AgentRuntime:
     ) -> None:
         previous: list[DiscussionMessage] = []
         memory_messages = memory_messages or []
+        if self.organization_mode == "single":
+            # Single-agent arm: no department discussion; the stage's own final
+            # decision call receives the same task facts and decides alone.
+            return
         active_rounds = rounds[: min(2, len(rounds))] if self.profile == "smoke" else rounds
         for round_no, round_type in active_rounds:
             is_summary_round = round_no == active_rounds[-1][0]
             participants = round_participants(agents, self.profile, is_summary_round)
+            if self.organization_mode == "solo":
+                participants = [final_agent(agents)]
             inputs = [(agent, previous[-6:], _agent_memory(memory_messages, agent)) for agent in participants]
             progress_log(
                 f"discussion {stage}: round {round_no} {round_type}, "
@@ -404,7 +462,8 @@ class AgentRuntime:
             data = await self.for_entity(company.company_id).ask_json_async(
                 member_prompt(company.company_role),
                 "AGENT_MESSAGE",
-                build_member_context(stage, round_type, company, package_id, agent, context, prior_messages, memory_messages),
+                build_member_context(stage, round_type, company, package_id, agent, context, prior_messages,
+                                     memory_messages, prefix_cache=self.prefix_cache),
                 validator=require_agent_message,
                 normalizer=normalize_agent_message,
             )

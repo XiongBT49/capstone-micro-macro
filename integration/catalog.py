@@ -92,14 +92,14 @@ class SharedCatalog:
                        (dataset.version, next(iter(dataset.projects)), json.dumps(dataset.payload, ensure_ascii=False)))
 
     def scenario(self, case_id="CASE-0005", budget=150_000_000, duration=24, seed=42,
-                 candidate_policy=None):
+                 candidate_policy=None, *, unified_dbb=False):
         with self.connect() as db:
             row = db.execute("SELECT payload FROM projects WHERE id=?", (case_id,)).fetchone()
             if not row:
                 raise ValueError("Unknown project ID")
             project = json.loads(row[0])
             enterprises = [json.loads(x[0]) for x in db.execute("SELECT payload FROM companies ORDER BY id")]
-        if project["delivery_mode"].strip().upper() != "DBB":
+        if not unified_dbb and project["delivery_mode"].strip().upper() != "DBB":
             raise ValueError("Select a DBB project for the currently supported procurement lifecycle")
         owner_name = project["owner_name"] or f"Scenario owner for {case_id}"
         owner_id = stable_id("OWNER-", owner_name)
@@ -145,10 +145,16 @@ class SharedCatalog:
                     f"本地企业资料：{enterprise['business_scope'] or enterprise['company_name']}。本次为情景试运行，不复现历史中标结果。",
                     [], [], [enterprise["certifications"]] if enterprise["certifications"] else [], [], "以授权情景资源为准", [], [])))
         location = region(project["location"])
+        native_type = "infrastructure"
+        if unified_dbb:
+            cities = {"澳门": "Macau", "香港": "Hong Kong", "深圳": "Shenzhen", "广州": "Guangzhou",
+                      "珠海": "Zhuhai", "佛山": "Foshan", "东莞": "Dongguan", "江门": "Jiangmen", "惠州": "Huizhou"}
+            location = cities.get(project["location"].split("-")[0], "Macau")
+            native_type = "infrastructure" if project["project_type"] in {"市政与公共基础设施", "交通基础设施"} else "building"
         currency = "MOP" if location == "Macau" else "HKD" if location == "Hong Kong" else "CNY"
         payload = {"schema_version": "1.0", "companies": companies,
             "projects": [{"project_id": case_id, "name": project["project_name"], "owner_id": owner_id,
-                "region": location, "project_type": "infrastructure", "scope": f"{project['project_type']}；{project['scale']}；{project['project_name']}",
+                "region": location, "project_type": native_type, "scope": f"{project['project_type']}；{project['scale']}；{project['project_name']}",
                 "budget": budget, "currency": currency, "duration_months": duration, "delivery_mode": "DBB"}],
             "packages": [], "environment": {}, "policy": {},
             "assumptions": {"version": "shared-dbb-scenario-20260920-v2", "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
@@ -159,6 +165,13 @@ class SharedCatalog:
                 "support_agents": [{"agent_id": f"REGULATOR-{location}", "name": "Scenario regulator", "role": "Government", "enterprise_type": "scenario_support", "region": location,
                                     "total_resource_capacity": 3, "policy_adaptability": .9}],
                 "budget_origin": "scenario_assumption_not_observed_cost", "duration_origin": "scenario_assumption_not_observed_duration"}}
+        if unified_dbb:
+            payload["assumptions"]["unified_dbb"] = {
+                "source_delivery_mode": project["delivery_mode"], "source_project_type": project["project_type"],
+                "source_location": project["location"], "scenario_delivery_mode": "DBB",
+                "region_rule": "Use the first named city; use Macau for an unspecified location.",
+            }
+            payload["assumptions"]["source_note"] += " 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。"
         for c in companies:
             payload["assumptions"]["enterprise_parameters"][c["company_id"]] = {
                 "total_resource_capacity": 2.0, "qualification_level": .85, "financial_capacity": .8,
@@ -174,7 +187,11 @@ class SharedCatalog:
                 "depends_on": list(dependencies), "cost_inclusion": "included_in_parent" if parent else "owner_additional",
                 "parent_package_id": parent, "candidate_ids": [c["company_id"] for c in companies if c["company_role"] == role]}
         payload["packages"] = [package("design", "design", .03, "总体及施工图设计与现场设计配合"), package("cost", "cost_consulting", .015, "造价咨询与合同成本管理")]
-        for suffix, scope in (("A", "道路及场地土建施工"), ("B", "排水、交通附属及配套设施施工")):
+        scopes = (("A", "道路及场地土建施工"), ("B", "排水、交通附属及配套设施施工"))
+        if unified_dbb:
+            scopes = (("A", project["project_name"] + "主体工程（待业主拆包）"),
+                      ("B", project["project_name"] + "配套工程（待业主拆包）"))
+        for suffix, scope in scopes:
             parent = f"{case_id}/construction-{suffix}"
             payload["packages"] += [package(f"construction-{suffix}", "construction", .425, scope, [f"{case_id}/design", f"{case_id}/cost"]),
                 package(f"supply-{suffix}", "supply", .12, f"{scope}所需材料采购（包含在所属施工合同价内）", [parent], parent)]

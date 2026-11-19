@@ -25,6 +25,7 @@ from src.coordination.tasks import TaskIdentity, task_digest
 
 STAGES = ("requirements", "participation", "consortiums", "reconsideration", "bids", "opening", "evaluation", "award", "signatures")
 SAFE_RECOVERY = {"json_parse_retry", "response_contract_retry", "response_normalized"}
+FINAL_CONTRACT_REVISION = 2
 
 
 def atomic_json(path, value):
@@ -38,7 +39,8 @@ def require_choice(data):
     if (not isinstance(data, dict) or set(data) != {"action", "reason"}
             or data["action"] not in {"accept", "reject", "revise"}
             or not isinstance(data["reason"], str) or not data["reason"].strip()):
-        raise ValueError("Expected action accept/reject/revise and a reason")
+        raise ValueError("Expected action accept/reject/revise and a reason: return exactly the two keys "
+                         "action and reason, with any requested clause wording written inside the reason string")
 
 
 class OrganizationRegistry:
@@ -166,7 +168,7 @@ class ProcurementSession:
     async def _participation(self):
         await run_bid_participation(self.state, self.runtime)
 
-    async def choice(self, company_id, marker, terms):
+    async def choice(self, company_id, marker, terms, revision=None):
         company = next(c for c in self.state.companies if c.company_id == company_id)
         text = json.dumps(terms, ensure_ascii=False)
         if marker == "CONTRACT_ACCEPTANCE":
@@ -177,6 +179,24 @@ class ProcurementSession:
                      "simulation obligations, not a claim that future engineering deliverables or statutory approvals "
                      "have already occurred. Evaluate future deliverables as obligations with review/acceptance conditions. "
                      "Do not invent missing external evidence. Reject or request revision for material unresolved risks.")
+            if revision is not None:
+                # The buyer used to request its own missing position three times and
+                # exhaust every draft. State who decides what, and that drafts are bounded.
+                text += (f"\nNEGOTIATION ROUND: this is draft revision {revision}; revision {FINAL_CONTRACT_REVISION} is the last. "
+                         "An open question about a party's OWN position (for the buyer: whether an item is inside the "
+                         "fixed price, its measurement or payment basis, its review periods) is that party's to decide: "
+                         "state your decision in the reason so it can be written into the next draft. "
+                         "Do not wait for a document from your own organization. Disclosed bid assumptions are proposed "
+                         "risk allocations, not missing evidence: accept them, or name the exact clause you need instead.")
+                if revision >= FINAL_CONTRACT_REVISION:
+                    text += (" This is the FINAL draft. No further revision is possible: 'revise' now has the same effect "
+                             "as 'reject' (no contract; the package is re-tendered with schedule delay). Choose accept when "
+                             "the remaining open items are ordinary execution risks that the stated obligations, assumptions "
+                             "and review or payment conditions allocate. Choose reject only for a material risk that these "
+                             "terms leave unallocated.")
+                else:
+                    text += (" If you choose revise, write the exact clause wording or decision you require inside the "
+                             "reason string; the answer has only the two keys action and reason.")
         await self.runtime.discuss_async(self.state, marker.lower(), company, self.spec.package_id,
                                          self.state.company_agent_rosters[company_id], [(1, "review"), (2, "authorization")], text)
         discussion = [asdict(message) for message in self.state.agent_discussion_history
@@ -416,7 +436,8 @@ class ProcurementSession:
                 raise IntegrationError("Party choice was withdrawn or requires a new authorization context")
             return {"action": saved["action"], "reason": saved["reason"]}
         before = len(self.runtime.recovery_events)
-        choice = await self.choice(party, marker, row["terms"])
+        choice = await self.choice(party, marker, row["terms"],
+                                   revision=row["revision"] if marker == "CONTRACT_ACCEPTANCE" else None)
         if any(event["kind"] not in SAFE_RECOVERY for event in self.runtime.recovery_events[before:]):
             raise IntegrationError("Degraded party choice cannot be saved as acceptance")
         def revalidate(draft, decision):
@@ -511,7 +532,7 @@ class ProcurementSession:
         await self._review_contract_versions(journal, proposal, 0)
 
     async def _review_contract_versions(self, journal, proposal, starting_revision):
-        for revision in range(starting_revision, 3):
+        for revision in range(starting_revision, FINAL_CONTRACT_REVISION + 1):
             proposal.signatures = {}
             proposal.signed_terms_hash = proposal.terms_hash()
             terms = asdict(proposal)
@@ -533,7 +554,7 @@ class ProcurementSession:
                 self.proposal = proposal
                 self.state.validation_context["contract_acceptance_schema"] = "legacy-journal.v1"
                 return
-            if revision == 2 or any(choice["action"] == "reject" for choice in decisions.values()):
+            if revision == FINAL_CONTRACT_REVISION or any(choice["action"] == "reject" for choice in decisions.values()):
                 return
             await self._revise_contract(proposal, decisions, revision + 1)
 
@@ -549,6 +570,11 @@ class ProcurementSession:
             "Return JSON with exactly scope_and_interfaces, price_and_change_control, payment_terms, "
             "delivery_and_review, response_to_feedback; each value is a concise string of executable obligations. "
             "Resolve material ambiguities with clear responsibilities, deadlines and acceptance/payment conditions. "
+            "You are the buyer: where feedback asks for the buyer's or owner's own position, decision or written "
+            "confirmation, DECIDE it now and write it as a binding clause (for example: the item is included in the "
+            "fixed price and is paid against stated milestones). Never answer that the buyer's position has not yet "
+            "been obtained. Treat each bid assumption disclosed by the bidder either as an accepted, stated risk "
+            "allocation or replace it with an explicit obligation and its acceptance condition. "
             "Do not claim external documents have been reviewed or real-world approvals obtained. "
             "Represent future engineering deliverables as binding obligations, not as already completed facts. "
             "Do not change price, currency, scope boundaries, parties, work shares or resource commitments; "

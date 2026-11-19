@@ -21,7 +21,8 @@ from integration.sessions import atomic_json
 class CaseRunner:
     def __init__(self, directory, case_id="CASE-0005", mode="llm", profile="smoke", seed=42,
                  ticks=120, budget=150_000_000, duration=24, database=DEFAULT_DATABASE, plan=True,
-                 procurement_mode="codedemo_micro", client=None, environment=None, policy=None, workflow=None, restore_initial=False, input_path=None):
+                 procurement_mode="codedemo_micro", client=None, environment=None, policy=None, workflow=None, restore_initial=False, input_path=None,
+                 plan_from_input=False):
         if mode not in {"llm", "offline"} or profile not in {"smoke", "full"} or procurement_mode not in {"codedemo_micro", "gba_native"}:
             raise ValueError("Unsupported model mode, profile or procurement engine")
         self.directory = Path(directory)
@@ -39,6 +40,7 @@ class CaseRunner:
                              budget=budget, duration=duration, plan=plan, procurement_mode=procurement_mode)
         self.client = client
         self.input_path = Path(input_path) if input_path else None
+        self.plan_from_input = plan_from_input
         self.environment, self.policy, self.workflow = environment or {}, policy or {}, workflow or {}
         self.engine = None
         self.macro_binding = None
@@ -104,7 +106,7 @@ class CaseRunner:
             if set(dataset.projects) != {s["case_id"]}:
                 raise ValueError("Explicit shared input must contain exactly the selected case")
             project = dataset.projects[s["case_id"]]
-            s.update(budget=project["budget"], duration=project["duration_months"], plan=False,
+            s.update(budget=project["budget"], duration=project["duration_months"], plan=self.plan_from_input and s["plan"],
                      approved_input=str(self.input_path), input_provenance=dataset.payload["assumptions"]["source_note"])
         else:
             dataset = self.catalog.scenario(s["case_id"], s["budget"], s["duration"], s["seed"])

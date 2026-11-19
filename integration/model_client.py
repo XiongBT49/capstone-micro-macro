@@ -11,14 +11,16 @@ from integration.sessions import atomic_json
 
 
 class CachedModelClient:
-    def __init__(self, client, directory, on_call=None):
+    def __init__(self, client, directory, on_call=None, *, prefix_cache=False):
         self.client, self.config = client, client.config
+        self.prefix_cache = prefix_cache and self.config.provider == "deepseek"
         self.directory = Path(directory)
         self.directory.mkdir(parents=True, exist_ok=True)
         self.on_call = on_call
         self.lock = threading.RLock()
         self._inflight = {}
         self.calls, self.cached_calls, self.input_tokens, self.output_tokens = 0, 0, 0, 0
+        self.provider_hit_tokens = self.provider_miss_tokens = 0
 
     def _path(self, messages, temperature):
         return self.directory / (digest({"provider": self.config.provider, "model": self.config.model,
@@ -78,11 +80,14 @@ class CachedModelClient:
         usage = record['metadata'].get('usage_metadata') or {}
         input_tokens = int(usage.get('input_tokens', 0))
         output_tokens = int(usage.get('output_tokens', 0))
+        provider_usage = (record['metadata'].get('response_metadata') or {}).get('token_usage') or {}
         with self.lock:
             atomic_json(path, record)
             self.calls += 1
             self.input_tokens += input_tokens
             self.output_tokens += output_tokens
+            self.provider_hit_tokens += int(provider_usage.get("prompt_cache_hit_tokens") or 0)
+            self.provider_miss_tokens += int(provider_usage.get("prompt_cache_miss_tokens") or 0)
         return result
 
     def chat_with_metadata(self, messages, temperature=.2):
@@ -110,8 +115,12 @@ class CachedModelClient:
 
     def usage(self):
         with self.lock:
-            return {"model": self.config.model, "provider": self.config.provider, "requests": self.calls,
+            result = {"model": self.config.model, "provider": self.config.provider, "requests": self.calls,
                     "cache_hits": self.cached_calls, "input_tokens": self.input_tokens, "output_tokens": self.output_tokens}
+            if self.prefix_cache:
+                result.update(prompt_cache_hit_tokens=self.provider_hit_tokens,
+                              prompt_cache_miss_tokens=self.provider_miss_tokens)
+            return result
 
     def reject_response(self, messages, temperature):
         path = self._path(deepcopy(messages), temperature)
