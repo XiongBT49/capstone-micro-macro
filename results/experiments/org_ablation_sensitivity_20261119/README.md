@@ -2,7 +2,7 @@
 
 **Audience:** model / experiment PIC who will authorize and run paid calls.  
 **Experiment id:** `org_ablation_sensitivity_20261119`  
-**Status:** prepared for launch; **does not auto-start**. Historical CP07 `authorization.json` is **not** a credential for this run.
+**Status:** PIC live run accepted (v2, 72 calls including 16 identity controls). Summary frozen under `accepted_20261120/`. Historical CP07 `authorization.json` is **not** a credential for re-runs.
 
 ## What this is
 
