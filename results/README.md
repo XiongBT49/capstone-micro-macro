@@ -11,6 +11,8 @@
 - [确定性反馈对照](../output/integration/capstone_validation_20261105/feedback/summary.json)：6个窗口、18次条件运行；说明规则应变，不表述为模型学会盈利。
 - [生成校验增强（门禁／评分表／锚点／去标识／覆盖／专家切片）](experiments/generation_validation_enhancement_20261117/index.json)：前向评阅流程与离线演示产物；0次新模型调用；不改写既有冻结评分。
 - [2026-11-17线程摘要](experiments/generation_validation_enhancement_20261117/THREAD_SUMMARY.md)；[裁决批次](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117.json)／[wave2](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave2.json)／[wave3](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave3.json)／[wave4](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave4.json)／[wave5](experiments/generation_validation_enhancement_20261117/adjudication_progress_20261117_wave5.json)：累计新增1036份有引文业务评阅；可读且门禁通过的待评积压已清零；评阅身份为独立第二LLM提供方（[身份更正记录](experiments/generation_validation_enhancement_20261117/reviewer_identity_correction_20261118.json)）；[专家切片](experiments/generation_validation_enhancement_20261117/expert_slice_reviews/summary.json)同身份填槽，非人类外部专家。
+- [组织审议对照指标（D3 vs S/S4）](experiments/org_deliberation_metrics_20261119/index.json)：冻结CP07与宏观首块的离线指标电池（配对质量、缺资料敏感性、过程代理、12窗LLM评阅）；0次新模型调用；不改写既有业务评分。见[SUMMARY](experiments/org_deliberation_metrics_20261119/SUMMARY.md)。
+- [组织消融／输入敏感性（已验收）](experiments/org_ablation_sensitivity_20261119/index.json)：PIC v2正式运行72次；摘要见[accepted REPORT](experiments/org_ablation_sensitivity_20261119/accepted_20261120/REPORT.md)。论文落稿见[research/paper](../research/paper/CAPSTONE_validation_methodology_revision.docx)。
 
 ## 当前完成度
 
@@ -37,6 +39,8 @@
 内部日期用于区分证据来源，日常工作从本页进入。补充案例不与不同实验设置下的结果直接合并计算总准确率。
 
 ## 2026-11-19 实验结果
+
+组织机制有两条并行证据线，**分数不可合并**：上方索引中的 CP07 `org_deliberation_metrics_20261119`／`org_ablation_sensitivity_20261119`（冻结业务卡 S/D3/S4），与下方 `micro-org-*`（招标管线 single/solo/multi + rubric v2）。臂名仅可作叙述类比（S≈single，S4≈solo，D3≈multi）。
 
 - [单智能体与多智能体微观评分](experiments/micro-org-1118/REPORT.md)
 - [真实模型端到端跑通](experiments/e2e-case0014-1119/README.md)
