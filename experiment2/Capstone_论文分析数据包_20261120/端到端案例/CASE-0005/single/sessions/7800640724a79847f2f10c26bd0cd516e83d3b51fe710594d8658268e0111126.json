@@ -1,0 +1,1995 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMF22A34E2/CASE-0005/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIMF22A34E2",
+    "project_id": "CASE-0005",
+    "package_id": "CASE-0005/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 82875000.0,
+      "project": {
+        "project_id": "CASE-0005",
+        "name": "澳氹第四条跨海大桥起止点周边路网建造工程 - 口岸人工岛连接线",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；约18,500平方米；澳氹第四条跨海大桥起止点周边路网建造工程 - 口岸人工岛连接线",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0005/construction-1",
+        "project_id": "CASE-0005",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "口岸人工岛连接线道路及桥梁土建工程",
+        "scope": "口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+        "budget": 82875000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0005/design",
+          "CASE-0005/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0191",
+          "COMP-0493"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0005",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMF22A34E2/CASE-0005/cost/round-1/contract",
+              "project_id": "CASE-0005",
+              "package_id": "CASE-0005/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 2000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMF22A34E2/CASE-0005/design/round-1/contract",
+              "project_id": "CASE-0005",
+              "package_id": "CASE-0005/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4180000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMF22A34E2/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0005",
+            "package_id": "CASE-0005/design",
+            "contract_id": "SIMF22A34E2/CASE-0005/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 4180000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMF22A34E2/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0005",
+            "package_id": "CASE-0005/cost",
+            "contract_id": "SIMF22A34E2/CASE-0005/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0208"
+            ],
+            "price": 2000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMF22A34E2/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0005",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIMF22A34E2/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0005",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "63fc6bef35d80a65d7f65179e63c8b2fa3ab4fb2c84a392dce9f90a935597973"
+  },
+  "spec": {
+    "package_id": "CASE-0005/construction-1",
+    "project_id": "CASE-0005",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "口岸人工岛连接线道路及桥梁土建工程",
+    "scope": "口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+    "budget": 82875000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0005/design",
+      "CASE-0005/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0191",
+      "COMP-0493"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0005",
+      "project_name": "澳氹第四条跨海大桥起止点周边路网建造工程 - 口岸人工岛连接线",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；约18,500平方米；澳氹第四条跨海大桥起止点周边路网建造工程 - 口岸人工岛连接线",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0005",
+      "project_scope": "本项目为澳门交通基础设施工程，位于口岸人工岛侧，为澳氹第四条跨海大桥起止点周边路网建造工程之连接线。工程范围包括约18,500平方米的路网建造，涵盖路基、路面、桥梁下部与上部结构、挡土及附属土建施工，并含施工期临时交通组织。采用DBB交付模式，业主为澳门特别行政区政府公共建设局。本模拟包简报仅针对已授权的施工招标包（CASE-0005/construction-1），该包预算为MOP 82,875,000，工期目标为24个月。",
+      "functional_requirements": [
+        "提供口岸人工岛侧连接线道路及桥梁土建工程，满足交通基础设施功能要求。",
+        "实现与澳氹第四条跨海大桥起止点周边路网的顺畅衔接。",
+        "施工期间维持临时交通组织，确保口岸人工岛区域交通基本通行。",
+        "桥梁下部与上部结构满足设计荷载及耐久性要求。",
+        "路基、路面及挡土结构满足稳定性与排水功能。",
+        "附属土建工程配合后续机电、照明及景观绿化接口。"
+      ],
+      "technical_requirements": [
+        "BIM协调：施工阶段需与设计方BIM模型对接，进行施工深化与冲突检测。",
+        "MEP协调：预留机电管线接口，配合后续机电包施工。",
+        "结构协调：桥梁下部与上部结构施工需与设计及临时交通组织协调。",
+        "交通接口布局：施工期临时交通组织需与口岸人工岛现有交通流线协调。",
+        "公共通道布局：施工期间维持行人及车辆安全通行。",
+        "耐久性目标：桥梁及道路结构满足澳门环境条件下的耐久性要求。",
+        "可维护性目标：施工方案考虑后期养护便利性。",
+        "业主验收路径：分阶段验收，包括隐蔽工程验收、结构验收及最终验收。",
+        "能耗使用目标：施工设备及临时设施考虑节能措施。"
+      ],
+      "budget_policy": "本包预算为MOP 82,875,000，由业主提供。投标报价须基于招标文件工程量清单及技术规范，采用综合单价及总价结合方式。业主将定性比较报价合理性，考虑市场材料及人工价格指数波动风险。合同采用DBB模式，范围及预算变更须经宏观审批。",
+      "schedule_policy": "目标工期为24个月，自开工令起计。里程碑设置须考虑设计深化、施工准备、路基路面、桥梁结构、临时交通组织等关键节点。业主审查时间须纳入进度计划，包括设计接口确认、材料审批及阶段验收。包接口时间须与设计包及成本咨询包协调。公共通道协调时间须与口岸人工岛管理方协商。",
+      "compliance_requirements": [
+        "业主审查节奏：每月进度会议，关键节点专项审查。",
+        "问题升级路径：承包商→监理→业主项目组→业主高层。",
+        "文档纪律：施工记录、检验报告、变更指令等须完整归档。",
+        "接口签认：与设计、机电、交通管理等接口须书面签认。",
+        "公共通道协调：施工期间临时交通组织须经业主及相关部门批准。",
+        "质量目标跟踪：定期检查质量目标达成情况。",
+        "安全期望跟踪：定期审查安全措施及事故记录。",
+        "变更控制纪律：任何范围或预算变更须经业主审批，重大变更须宏观审批。"
+      ],
+      "risk_priorities": [
+        "施工期临时交通组织对口岸人工岛交通的影响风险。",
+        "桥梁结构施工与设计接口协调风险。",
+        "材料及人工价格波动风险。",
+        "工期延误风险，特别是与设计及机电接口相关的延误。",
+        "地质条件不确定性对基础施工的影响。",
+        "安全风险，包括高空作业及临水作业。",
+        "公共通道协调风险，涉及多方利益相关者。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0005/construction-1",
+          "package_type": "contractor",
+          "package_name": "口岸人工岛连接线道路及桥梁土建工程",
+          "scope": "Authorized scope: 口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。\nBuyer refinement: 口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "道路及桥梁土建施工能力",
+            "城市施工物流组织能力",
+            "临时交通组织管理能力",
+            "结构施工协调能力",
+            "质量文档管理能力",
+            "安全期望管理能力",
+            "接口信息协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划及团队可用性摘要",
+            "施工方法及交付方式说明",
+            "质量保证方案",
+            "安全及环境管理方案",
+            "价格基础及报价明细",
+            "进度计划视图",
+            "风险应对方案"
+          ],
+          "pricing_requirements": "基于工程量清单的综合单价及总价，考虑市场材料及人工价格指数，报价须包含所有施工、临时交通组织及附属工作。\nBinding currency: MOP; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格、风险及交付信心。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0005/construction-1",
+        "package_type": "contractor",
+        "package_name": "口岸人工岛连接线道路及桥梁土建工程",
+        "scope": "Authorized scope: 口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。\nBuyer refinement: 口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "道路及桥梁土建施工能力",
+          "城市施工物流组织能力",
+          "临时交通组织管理能力",
+          "结构施工协调能力",
+          "质量文档管理能力",
+          "安全期望管理能力",
+          "接口信息协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划及团队可用性摘要",
+          "施工方法及交付方式说明",
+          "质量保证方案",
+          "安全及环境管理方案",
+          "价格基础及报价明细",
+          "进度计划视图",
+          "风险应对方案"
+        ],
+        "pricing_requirements": "基于工程量清单的综合单价及总价，考虑市场材料及人工价格指数，报价须包含所有施工、临时交通组织及附属工作。\nBinding currency: MOP; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格、风险及交付信心。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志明",
+          "agent_name": "陈志明",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约管理部",
+          "position": "首席采购统筹",
+          "personal_profile": "在压力下优先审视程序合规与招标包划分的合理性，最先注意到投标人资格与组合体结构是否匹配项目需求。讨论中常带来程序严谨性与进度效率之间的张力，倾向以分阶段招标降低风险。",
+          "responsibilities": [
+            "统筹招标包划分与采购策略",
+            "组织评标与判给建议",
+            "协调组合体与独立投标的资格审核",
+            "监控采购进度与合规性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，善用程序性语言，强调依据与记录，在争议中倾向以书面规则定调。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_黄丽华",
+          "agent_name": "黄丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "工程管理部",
+          "position": "项目总协调",
+          "personal_profile": "面对工期压力时首先关注现场可行性与资源调配，尤其注意口岸人工岛连接线的接口协调与施工顺序。讨论中常带来工期紧迫性与质量目标之间的张力，主张以里程碑控制风险。",
+          "responsibilities": [
+            "协调设计、施工与监管服务接口",
+            "审核工期计划与资源计划",
+            "监督现场报告与质量目标跟踪",
+            "组织风险应对与进度纠偏"
+          ],
+          "decision_authority": "final",
+          "communication_style": "务实直接，偏好以时间线和责任矩阵沟通，对模糊承诺会追问具体措施。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制部",
+          "position": "成本与支付评审主管",
+          "personal_profile": "在预算约束下首先审视报价基础与支付评审逻辑，对成本超支信号高度敏感。讨论中常带来成本控制与质量投入之间的张力，倾向以价值工程和支付节点控制风险。",
+          "responsibilities": [
+            "评审报价基础与成本合理性",
+            "审核支付申请与支付评审流程",
+            "监控成本偏差与变更影响",
+            "提供成本控制建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "数据导向，习惯用对比与敏感性分析表达观点，对未量化风险会要求补充依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "质量与安全监督部",
+          "position": "质量与安全评审主管",
+          "personal_profile": "在质量目标与安全要求面前首先关注独立检查与质量复核机制是否到位，对文档纪律和验收标准尤为敏感。讨论中常带来质量严谨性与成本效率之间的张力，坚持关键工序独立验证。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "审核质量方法与独立检查安排",
+            "监督安全与可持续发展目标落实",
+            "组织质量复核与文档审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨细致，以检查清单和证据链沟通，对模糊的质量承诺会要求明确验收标准。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "在设计协调中首先关注设计输入完整性与施工可行性，对接口矛盾和设计变更的连锁影响保持警觉。讨论中常带来设计优化与工期成本之间的张力，主张早期解决设计冲突。",
+          "responsibilities": [
+            "协调设计输入与设计审查",
+            "管理设计变更与接口问题",
+            "审核设计对施工与成本的影响",
+            "支持招标文件的技术完整性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "分析型，善用图纸与接口矩阵说明问题，对设计假设会追问验证情况。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈启航",
+          "agent_name": "陈启航",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策与业主界面",
+          "position": "项目总监",
+          "personal_profile": "在压力下先锁定工期与判给条件的底线，习惯把业主接口和监管要求放在最前面。他最先注意到的是报价依据是否站得住、资源是否真实可用，容易在讨论中把技术乐观情绪拉回到合同与工期现实，带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹口岸人工岛连接线土建招标包的投标决策",
+            "业主接口与监管沟通",
+            "工期与资源计划最终把关",
+            "判给后合同承诺与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列依据，遇到分歧会要求回到工期与报价事实"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉衡",
+          "agent_name": "林嘉衡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "施工与技术",
+          "position": "施工技术负责人",
+          "personal_profile": "思考方式偏工程可行性，先看桥梁上下部结构与临时交通组织的施工顺序。压力下倾向用施工方案解决问题，会主动提出替代工序，但可能低估成本与审批时间，讨论中常带来技术可行性与工期之间的张力。",
+          "responsibilities": [
+            "桥梁与道路土建施工方案编制",
+            "临时交通组织与现场布置",
+            "施工期质量目标跟踪",
+            "技术风险识别与应对建议"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "以工序和图纸说话，喜欢用施工步骤解释判断，语气务实"
+        },
+        {
+          "agent_id": "COMP-0153_03_何咏仪",
+          "agent_name": "何咏仪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，先核对报价基础与付款条件，再判断能力匹配。压力下会收紧成本假设并追问价格依据，容易与施工端在资源投入上产生张力，但能守住成本控制与付款评审的纪律。",
+          "responsibilities": [
+            "投标报价与价格依据复核",
+            "成本控制与付款评审",
+            "分包与采购条件协调",
+            "商务文件与文档纪律"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "条理清晰，习惯用清单和数字表达，对模糊表述会当场追问"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏文博",
+          "agent_name": "苏文博",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与安全",
+          "position": "质量安全经理",
+          "personal_profile": "第一眼关注质量目标与独立检查安排，思考方式偏预防而非补救。压力下坚持检查程序不压缩，可能被视为拖慢进度，讨论中带来质量纪律与工期弹性之间的张力。",
+          "responsibilities": [
+            "质量目标跟踪与独立检查安排",
+            "施工安全与监管合规审查",
+            "现场质量报告与整改闭环",
+            "质量评审与文档纪律"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "谨慎稳健，用检查记录和标准条款支撑观点，不轻易让步"
+        },
+        {
+          "agent_id": "COMP-0153_05_罗子谦",
+          "agent_name": "罗子谦",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "资源与供应链",
+          "position": "资源计划经理",
+          "personal_profile": "先看团队可用性与设备材料供应节奏，思考方式偏资源平衡。压力下倾向保守承诺资源，会提醒不要超出可用能力，讨论中带来资源现实与投标雄心之间的张力。",
+          "responsibilities": [
+            "团队可用性汇总与角色计划",
+            "机械设备与材料供应安排",
+            "资源计划与调度协调",
+            "供应链风险应对"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "平实务实，用资源数字和排程说话，倾向留有余量"
+        },
+        {
+          "agent_id": "COMP-0153_06_郑思远",
+          "agent_name": "郑思远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "设计与接口协调",
+          "position": "设计协调经理",
+          "personal_profile": "习惯从设计与施工接口找问题，先看设计包与成本包的依赖关系是否闭合。压力下会要求澄清设计条件再推进，讨论中带来设计协调严谨性与施工推进速度之间的张力。",
+          "responsibilities": [
+            "设计与施工接口协调",
+            "设计包与成本包依赖条件核对",
+            "技术文件与图纸评审",
+            "业主评审意见跟踪"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "分析型，喜欢先厘清前提条件，表达克制但会坚持接口闭合"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体交付风险与业主满意度，习惯先确认工期与质量目标的平衡点，常提醒团队不要为短期成本牺牲长期信誉。讨论中倾向于推动快速形成可执行方案，但会因过度聚焦节点而忽略细节复核。",
+          "responsibilities": [
+            "统筹项目整体交付策略与资源规划",
+            "业主接口与高层 stakeholder 协调",
+            "审批关键采购与分包安排",
+            "监控工期、成本与质量目标达成"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善用结构化汇报，强调行动项与责任人，在争议中倾向拍板推进。"
+        },
+        {
+          "agent_id": "COMP-0191_02_林敏仪",
+          "agent_name": "林敏仪",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，先看报价依据与支付条款，习惯在合同文本中寻找风险敞口。压力下会反复核对成本构成与现金流，容易在商务条款上坚持保守立场，与进度导向的成员产生张力。",
+          "responsibilities": [
+            "编制投标报价与成本计划",
+            "分包与采购合同谈判",
+            "支付评审与成本控制",
+            "变更索赔与结算管理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨细致，善用数据与条款说话，对模糊表述会追问到底，书面沟通条理清晰。"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，第一时间关注施工可行性与工序衔接，习惯用进度计划倒推资源需求。压力下容易对纸上方案提出质疑，强调现场实际条件，有时被认为过于保守或固执。",
+          "responsibilities": [
+            "编制施工组织设计与进度计划",
+            "现场施工协调与分包管理",
+            "临时交通组织与场地布置",
+            "施工日志与进度报告"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实直白，多用现场实例说明问题，偏好面对面沟通，对不切实际的指令会直接反驳。"
+        },
+        {
+          "agent_id": "COMP-0191_04_苏雅雯",
+          "agent_name": "苏雅雯",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量经理",
+          "personal_profile": "对质量目标与合规要求高度敏感，先检查程序文件与检查记录是否闭环。压力下坚持独立检查与复核，不愿为进度妥协质量底线，常与施工团队就整改时限发生争论。",
+          "responsibilities": [
+            "建立项目质量计划与检查制度",
+            "组织材料与工序质量验收",
+            "监督安全文明施工措施落实",
+            "跟踪质量目标与整改闭环"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理分明，善用检查表与证据说话，对不符合项会明确要求限期整改，沟通中保持专业冷静。"
+        },
+        {
+          "agent_id": "COMP-0191_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调负责人",
+          "personal_profile": "擅长在设计意图与施工可行性之间寻找平衡，先看图纸可施工性与接口一致性。压力下倾向于组织多方会审，但有时因过度协调而延迟决策，与追求效率的成员形成张力。",
+          "responsibilities": [
+            "设计协调与图纸会审",
+            "施工深化设计管理",
+            "设计与施工接口问题处理",
+            "技术方案比选与优化建议"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和理性，善于倾听并整合不同意见，常用图示与模型辅助沟通，决策前倾向充分讨论。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹与业主接口",
+          "position": "项目总监",
+          "personal_profile": "压力下先稳住外部关系与承诺边界，习惯把业主期望、工期节点和付款条件放在同一张桌上核对。最先注意到的是业主接口是否清晰、变更指令是否书面化，以及团队是否在未确认前对外承诺。讨论中常带来业主压力与内部交付能力之间的张力，倾向要求先锁定验收标准和付款节奏再谈资源投入。",
+          "responsibilities": [
+            "统筹口岸人工岛连接线土建包的投标与实施策略",
+            "业主接口与监管服务沟通",
+            "主持包件协调会与关键节点评审",
+            "监督工期、质量目标与付款审查的联动"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先讲结论再列条件，对模糊承诺会当场要求澄清"
+        },
+        {
+          "agent_id": "COMP-0493_02_黄嘉敏",
+          "agent_name": "黄嘉敏",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务合约经理",
+          "personal_profile": "对数字敏感，压力下会回到报价基础与风险准备金逐项复核，不接受用乐观假设填补缺口。最先注意到的是工程量清单口径、临时交通组织的隐含成本与材料价格指数波动。讨论中常带来成本纪律与进度诉求之间的张力，倾向以分项报价和支付节点换取可控风险。",
+          "responsibilities": [
+            "编制报价基础与分项成本结构",
+            "付款审查与付款评估支持",
+            "合约条款与变更计价管理",
+            "成本控制与风险准备金测算"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "条理清晰，用数字和条件说话，对未经测算的让价会明确反对"
+        },
+        {
+          "agent_id": "COMP-0493_03_李伟豪",
+          "agent_name": "李伟豪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "施工技术与现场管理",
+          "position": "施工经理",
+          "personal_profile": "现场思维强，压力下先看施工顺序、临时交通组织与桥梁上下部结构的衔接可行性。最先注意到的是场地条件、资源可用性与工序冲突，而不是文件措辞。讨论中常带来现场现实与合同承诺之间的张力，倾向要求给出可执行的施工方案与合理工期，而非压缩到纸面可行。",
+          "responsibilities": [
+            "施工方案与工序安排",
+            "现场资源规划与团队可用性核对",
+            "临时交通组织与安全管理",
+            "现场进度报告与质量目标跟踪"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "务实简短，偏好用现场图和工序表说明问题，对不落地的计划直言风险"
+        },
+        {
+          "agent_id": "COMP-0493_04_苏咏仪",
+          "agent_name": "苏咏仪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量与设计协调",
+          "position": "质量与设计协调主管",
+          "personal_profile": "以独立核查为习惯，压力下先确认检查点、验收依据与文件闭环是否成立。最先注意到的是设计协调接口、隐蔽工程记录与质量目标的可测量性。讨论中常带来质量审查与进度压力之间的张力，倾向要求保留独立检查与整改时间，不接受以赶工替代验证。",
+          "responsibilities": [
+            "质量审查与独立检查安排",
+            "设计协调与施工图接口核对",
+            "文档纪律与验收记录管理",
+            "质量目标跟踪与整改闭环"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨细致，以检查清单和证据说话，对跳过验证的做法会坚持保留意见"
+        },
+        {
+          "agent_id": "COMP-0493_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "风险与交付策划",
+          "position": "风险与交付策划经理",
+          "personal_profile": "前瞻性强，压力下先扫描风险应对与情景假设的薄弱环节，习惯把工期、资源与外部条件放在同一情景中推演。最先注意到的是依赖包件状态、监管审批节奏与团队可用性摘要是否一致。讨论中常带来谨慎推演与进取投标之间的张力，倾向以分阶段承诺和明确触发条件管理不确定性。",
+          "responsibilities": [
+            "风险应对与情景推演",
+            "交付方式与团队可用性摘要评估",
+            "包件依赖与监管服务节奏跟踪",
+            "投标策略与组合体选项分析"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "分析型表达，用情景和触发条件组织观点，对单一乐观假设会提出替代路径"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0005/construction-1",
+        "agent_id": "COMP-0153_01_陈启航",
+        "agent_name": "陈启航",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个与我们核心业务高度吻合的土木工程招标包：道路、桥梁上下部结构、挡土及附属土建，含临时交通组织，不含机电照明绿化。我们作为承包商，施工能力、结构协调、质量与安全体系都能覆盖，且当前资源占用为零、可用资源2.0，远高于该包要求的0.7，团队可用性没有硬约束。预算8287.5万MOP，工期24个月，规模适中，材料与人工价格指数偏高需要在报价中体现，但属于正常定价风险。内部讨论没有提出任何需要外部伙伴共享投标人身份或交付责任的硬缺口，临时交通组织、结构施工协调、质量文档管理都是我们作为单一责任投标人可以自行组织并通过分包与内部管控解决的问题，不构成组合体理由。因此我倾向独立投标，把重点放在报价基础、进度视图、质量与安全方案、风险应对上，并在投标文件中明确分包边界与接口管理，保持单一责任主体。",
+        "content": "管理层决定：对口岸人工岛连接线道路及桥梁土建工程（CASE-0005/construction-1）以单一责任投标人身份参与投标。理由是本包的路基、路面、桥梁上下部结构、挡土及附属土建与施工期临时交通组织均落在公司可承担的施工能力范围内，当前资源占用为零、可用资源满足包要求，具备独立组织与交付条件。投标策略上，报价按工程量清单综合单价与总价编制，充分考虑材料与人工价格指数上行并保留合理风险准备；进度计划按24个月工期编排关键线路与临时交通组织节点；质量与安全方案按公司质量目标与安全期望管理要求设置检查点与文档纪律；对临时交通组织、附属土建及专业作业采用常规分包与内部接口协调，明确分包边界、责任划分与信息协调机制，保持单一责任主体。投标前由内部复核角色计划与团队可用性摘要、施工方法与交付方式、价格基础及报价明细、进度视图与风险应对方案的一致性，确保提交内容与公司实际能力相符。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:15",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0005/construction-1",
+        "agent_id": "COMP-0191_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为承包商，这个口岸人工岛连接线道路及桥梁土建包在业务方向上高度契合：路基、路面、桥梁上下部结构、挡土及附属土建正是我们的施工主业，临时交通组织也是城市施工的常规能力。资源账面上可用资源2.0、占用0，包需求0.7，容量上完全能独立承担，不需要靠联合体来撑门面。预算8287.5万MOP、工期24个月，规模适中，材料与人工价格指数偏高需要在报价中留出价格调整余地。真正的风险不在能力缺口，而在报价纪律和交付控制：桥梁结构施工、临时交通组织、质量文档与安全期望管理都需要在方法说明和风险应对里讲清楚，接口信息协调要跟设计、造价包对齐。这些都属于我们作为单一责任投标人可以靠自身团队、常规专业分包和外部检测支持解决的问题，不构成共享投标人身份的理由。我倾向独立投标，把角色计划、施工方法、质量与安全方案、价格基础和进度视图做实，同时对关键岗位到位、桥梁专业班组和临时交通组织方案设定内部复核门槛。",
+        "content": "中建八局第二建设有限公司就口岸人工岛连接线道路及桥梁土建工程（CASE-0005/construction-1）决定独立投标。我们具备路基、路面、桥梁下部与上部结构、挡土及附属土建的施工能力，并有城市施工物流组织与临时交通组织管理经验，可作为单一责任投标人承担本包全部施工责任。投标文件将提交角色计划及团队可用性摘要、施工方法及交付方式说明、质量保证方案、安全及环境管理方案、价格基础及报价明细、进度计划视图和风险应对方案。报价以工程量清单综合单价及总价为基础，考虑当前材料价格指数1.0545与人工价格指数1.0980，并在价格基础中说明价格调整与风险预留逻辑，总价控制在8287.5万MOP包上限内。施工组织上，我们将明确桥梁结构施工协调、临时交通组织、质量文档管理与接口信息协调的责任人及复核节点，对常规专业分包和外部检测支持实行统一的分包控制与质量记录管理。投标前我们将完成关键岗位到位确认、桥梁专业班组安排和临时交通组织方案的内部复核，作为提交前的内部管理动作。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:16",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0005/construction-1",
+        "agent_id": "COMP-0493_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目统筹与业主接口",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这次招标包是口岸人工岛连接线的道路及桥梁土建工程，预算约8287.5万MOP，工期24个月，属于我们公司核心业务范围内的基础设施/土木、道路桥梁、地基土方类工程。公司具备总承包、设计与建造、施工管理能力，并有ISO三体系认证，资源占用为零，可用资源2.0，完全能独立承担这个包。内部讨论没有提出任何必须依赖外部伙伴才能投标的硬性缺口，临时交通组织、结构施工协调、质量文档管理这些都是我们作为总承包可以自行组织、通过分包和内部管理控制的事项，不构成需要共享投标人身份和责任的组合体理由。市场材料价格指数和人工价格指数都在上行，报价需要留出合理风险余量，但这是定价问题，不是放弃投标的理由。综合来看，这是一个值得争取、且我们能以单一责任主体身份可信提交的机会，应选择独立投标。",
+        "content": "管理层决定：对口岸人工岛连接线道路及桥梁土建工程（CASE-0005/construction-1）以独立投标人身份参与投标。理由如下：该包属于公司道路桥梁及土木施工核心业务，预算约8287.5万MOP，与公司资源能力匹配，当前可用资源充足，无占用冲突，具备单一责任主体独立履约的管理与施工能力。招标包要求的临时交通组织、结构施工协调、质量文档管理、安全及环境管理，均纳入公司既有ISO 9001、ISO 14001、ISO 45001管理体系与项目管理制度执行，专业作业按常规分包管理，不改变公司作为唯一责任投标人的地位。报价将基于工程量清单综合单价及总价，结合当前材料价格指数与人工价格指数设置合理风险余量，并在价格基础及报价明细中说明。投标文件将完整覆盖角色计划及团队可用性摘要、施工方法及交付方式说明、质量保证方案、安全及环境管理方案、价格基础及报价明细、进度计划视图和风险应对方案。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:15",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0005/construction-1",
+        "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+        "agent_name": "何家俊",
+        "department": "设计协调部",
+        "position": "设计协调主管",
+        "message_type": "decision",
+        "thoughts": "作为业主方最终决策人，我需要为口岸人工岛连接线土建工程的交付结果负责。评标推荐中交第一航务工程局，我认同这一方向：其预制梁集中生产方案直接回应人工岛场地狭小的现实约束，风险准备覆盖价格、场地、交通、吊装及分包接口，单一责任主体和文档纪律清晰，报价MOP 73,990,000低于包预算上限MOP 82,875,000，在可负担范围内且留有合理风险缓冲。中建八局第二建设有限公司报价MOP 82,875,000达到预算上限，价格竞争力弱，且上部结构方案仍待设计文件确认，接口不确定性偏高。得宝建筑集团有限公司报价MOP 72,750,000虽最低，但桥梁工程报价及风险余量偏低，技术深度和临时交通协调机制不足，后续索赔风险对业主不利。综合交付信心、能力匹配和问责清晰度，判给中交第一航务工程局是稳妥且可接受的选择。合同前需把预制场建设时间、临时交通分阶段导改与口岸运营单位的协调机制、以及价格调整机制的具体口径谈清楚，纳入合同文件，确保业主审查和支付审查有据可依。",
+        "content": "经评标及业主审查，口岸人工岛连接线道路及桥梁土建工程判给中交第一航务工程局有限公司，投标报价MOP 73,990,000。该投标以单一责任主体承接口岸人工岛连接线道路及桥梁土建工程全部授权范围，预制梁集中生产方案有效应对人工岛场地狭小约束，风险准备和业主控制响应清晰，团队配置与24个月工期匹配，报价低于包预算上限且费用构成完整。合同前澄清重点为预制场建设及投产时间安排、临时交通分阶段导改与口岸运营单位的协调机制、价格调整机制的具体口径，以及分包边界与接口记录的统一管理，上述内容纳入合同文件并配合业主审查和支付审查程序。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:36:41",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0005/construction-1",
+        "decision": "bid",
+        "reason": "经管理层判断，本招标包属于公司可独立承担的道路及桥梁土建施工范围，施工能力、结构协调、质量与安全管控均能覆盖，当前资源占用为零、可用资源充足，具备作为单一责任投标人提交可信投标的条件。预算与工期在可接受区间，材料与人工价格指数上行将通过综合单价与风险准备在报价中反映。临时交通组织、附属土建及部分专业作业可按常规分包与内部接口管理处理，不需要另一家企业共享投标人身份或包级交付责任，故不采用组合体。决定独立投标，并在投标文件中明确角色计划、施工方法与交付方式、质量保证、安全环境管理、价格基础、进度视图及风险应对，同时设定分包边界与接口协调机制。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0005/construction-1",
+        "decision": "bid",
+        "reason": "管理判断：该包属于公司核心施工业务范围，资源账显示可用资源2.0、占用0，包需求0.7，容量足以独立承担，无需引入共享责任的组合体。预算8287.5万MOP在可接受商业规模内，工期24个月与我们的施工组织能力匹配。主要风险是材料与人工价格指数上行、桥梁结构施工协调、临时交通组织及质量文档管理，这些应通过报价价格基础、施工方法说明、质量保证方案、安全环境管理方案和风险应对方案来管理，而不是通过联合体转移责任。我们应以单一责任投标人身份提交，保持对工期、安全、质量记录和分包控制的完整交付权威。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任投标人身份提交，不设组合体",
+          "关键岗位人员按角色计划到位，提交前完成内部可用性确认",
+          "桥梁专业施工班组与常规专业分包按公司分包控制程序管理",
+          "临时交通组织方案按口岸人工岛侧现场条件编制并内部复核",
+          "报价包含施工、临时交通组织及附属工作，并考虑材料与人工价格指数波动",
+          "质量文档与接口信息协调按公司质量保证程序执行"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0005/construction-1",
+        "decision": "bid",
+        "reason": "经管理层审议，口岸人工岛连接线道路及桥梁土建工程属于公司核心的道路桥梁与土木施工业务范围，预算规模与公司资源能力匹配，当前可用资源充足且无占用，具备以单一总承包责任主体独立投标的条件。招标包要求的临时交通组织、结构施工协调、质量文档与安全环境管理，均可通过公司既有管理体系、角色计划和常规专业分包安排落实，不需要引入共享投标人身份与责任的组合体。材料与人工价格指数上行带来的成本压力，将通过价格基础和风险应对方案在报价中体现。因此决定独立投标，并按招标要求提交角色计划及团队可用性摘要、施工方法及交付方式说明、质量保证方案、安全及环境管理方案、价格基础及报价明细、进度计划视图和风险应对方案。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一总承包责任主体独立投标，不组建组合体",
+          "专业作业及临时交通组织按常规分包与内部管理安排落实，不作为共享投标人身份的条件",
+          "报价基于工程量清单综合单价及总价，并考虑材料与人工价格指数上行的风险余量",
+          "投标文件按招标要求提交角色计划、施工方法、质量保证、安全环境管理、价格基础、进度计划及风险应对方案"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0005/construction-1_001",
+        "package_id": "CASE-0005/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本公司以单一责任投标人身份承担口岸人工岛连接线道路及桥梁土建工程全部授权范围，包括路基、路面、桥梁下部与上部结构、挡土及附属土建施工，以及施工期临时交通组织。项目团队按24个月工期配置，设项目总监1名、项目经理1名、技术负责人1名、安全总监1名，下设路基路面、桥梁结构、临时交通、质量文档、商务合同等职能组。桥梁上部结构采用预制梁方案，由公司砼结构构件制造能力支撑，现场设预制场集中生产，减少口岸人工岛狭小场地占用；下部结构及挡土工程按分段流水组织，路基路面与附属土建穿插施工。临时交通组织编制专项方案，分阶段导改，设置临时标志、围挡、警示及协管人员，并与口岸运营单位建立信息协调机制。质量保证执行公司内部质量程序，设置材料进场检验、隐蔽工程验收、结构实体检测、首件认可等检查点，文档按分项工程同步归档。安全及环境管理按公司安全期望管理要求设置风险分级管控与隐患排查双控机制，重点管控高处作业、起重吊装、临时用电及交通导改风险。机电、照明与景观绿化不在本次范围，接口信息由项目技术负责人统一协调。",
+        "implementation_plan": "总体按24个月编排：第1至3个月完成施工准备、临时设施、预制场建设、临时交通组织方案报批及路基清表；第4至10个月完成路基填筑、软基处理及挡土结构施工，同步启动桥梁下部结构；第8至16个月完成桥梁墩台及上部预制梁生产与架设；第14至20个月完成桥面系及路面基层、面层施工；第18至22个月完成附属土建、交通导改恢复及收尾；第23至24个月完成竣工验收、资料移交及缺陷责任期准备。关键线路为桥梁下部结构至上部梁架设，预制梁生产与架设按周计划匹配。临时交通组织分三期导改，每期转换前完成标志标线、围挡及协管人员部署，并与口岸管理单位联合检查。分包边界明确：临时交通设施安装与维护、部分附属土建专业作业采用常规分包，由公司统一管理并承担单一责任；分包不改变投标人身份与包级交付责任。",
+        "quotation": 73990000.0,
+        "schedule_commitment": "本公司承诺按24个月工期完成全部授权范围施工，自开工令发出之日起计。关键节点：第3个月完成施工准备及临时交通组织方案报批；第10个月完成路基及挡土结构；第16个月完成桥梁下部及上部结构架设；第20个月完成路面工程；第22个月完成附属土建及交通恢复；第24个月完成竣工验收及资料移交。因不可抗力或业主原因导致的延误按合同约定处理，本公司将通过增加资源或调整工序压缩后续工期。",
+        "compliance_statement": "本公司接受业主按合同及监管要求对施工进度、质量、安全、环境及文档进行全过程监督。质量方面，执行材料进场检验、隐蔽工程验收、结构实体检测及首件认可制度，检查记录同步报业主备案；安全方面，提交安全及环境管理方案，接受业主及监管单位检查，隐患整改闭环管理；进度方面，按月提交进度报告及下周计划，关键线路偏差超过5%时提交纠偏措施；文档方面，按分项工程同步归档，竣工资料在验收前完成整理。临时交通组织方案报业主及口岸管理单位审批后实施，导改转换前联合检查。",
+        "risk_response": "主要风险及应对：1）材料及人工价格指数上行风险，报价中已计入风险准备及价格调整缓冲，合同按综合单价及总价编制，材料价格波动按合同约定调整机制处理；2）口岸人工岛场地狭小及物流组织风险，采用预制场集中生产、分时段运输及临时堆场管理，减少现场占用；3）临时交通组织协调风险，编制专项方案并与口岸运营单位建立周协调会机制，设置备用导改路线；4）桥梁上部结构架设安全风险，编制吊装专项方案，执行起重设备检验及作业许可制度；5）分包接口风险，明确分包边界与责任划分，由项目技术负责人统一协调接口信息，分包不改变单一责任主体；6）工期风险，关键线路设置缓冲，预制梁生产提前启动，必要时增加班次。",
+        "submission_summary": "本公司以单一责任投标人身份提交口岸人工岛连接线道路及桥梁土建工程投标，报价MOP 73,990,000，低于包预算上限MOP 82,875,000。报价基于工程量清单综合单价及总价编制，已考虑材料价格指数1.0545及人工价格指数1.0980的上行影响，并设置风险准备及价格调整缓冲。费用构成：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 31,250,000；临时交通组织MOP 4,850,000；施工管理、质量安全及文档MOP 6,350,000；临时设施、机械及物流MOP 5,480,000；分包及专业作业管理MOP 3,260,000；风险准备MOP 4,180,000。合计MOP 73,990,000。工期24个月，质量、安全及环境管理按公司程序执行，临时交通组织及附属土建采用常规分包并由本公司统一管理，保持单一责任主体。本报价为投标估算，工程量以招标文件清单为准。",
+        "quotation_breakdown": [
+          {
+            "item": "路基、路面及附属土建工程",
+            "amount": 18620000,
+            "basis": "按工程量清单综合单价估算，含路基填筑、软基处理、路面基层与面层、挡土墙及附属土建，考虑材料价格指数1.0545及人工价格指数1.0980，工程量以招标文件清单为准，属投标估算"
+          },
+          {
+            "item": "桥梁下部与上部结构工程",
+            "amount": 31250000,
+            "basis": "含墩台基础、墩柱、盖梁、预制梁生产与架设、桥面系，按公司预制场集中生产方案估算，含预应力混凝土梁生产及架设设备摊销，属投标估算"
+          },
+          {
+            "item": "施工期临时交通组织",
+            "amount": 4850000,
+            "basis": "含三期导改的临时标志标线、围挡、警示设施、协管人员及交通设施维护，按24个月工期分摊，属投标估算"
+          },
+          {
+            "item": "施工管理、质量安全及文档管理",
+            "amount": 6350000,
+            "basis": "含项目总监、项目经理、技术负责人、安全总监及现场管理人员薪酬、办公及检测费用，质量检查点与文档归档费用，按24个月工期估算"
+          },
+          {
+            "item": "临时设施、施工机械及物流组织",
+            "amount": 5480000,
+            "basis": "含预制场建设、临时道路、施工机械租赁与进出场、材料运输及城市施工物流组织，属投标估算"
+          },
+          {
+            "item": "分包及专业作业管理",
+            "amount": 3260000,
+            "basis": "含临时交通设施安装维护、附属土建专业作业等常规分包成本及管理费，分包边界在投标文件中明确，属投标估算"
+          },
+          {
+            "item": "风险准备及价格调整缓冲",
+            "amount": 4180000,
+            "basis": "针对材料与人工价格指数上行、口岸人工岛场地约束及临时交通协调风险设置的风险准备，属投标估算"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "工程量以招标文件工程量清单为准，报价按综合单价及总价编制",
+          "材料及人工价格指数按投标时点水平计入，合同价格调整按合同约定机制处理",
+          "临时交通组织方案需经业主及口岸管理单位审批后实施",
+          "分包仅为常规专业作业，不改变投标人单一责任主体身份"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0005/construction-1_002",
+        "package_id": "CASE-0005/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "中建八局第二建设有限公司以单一责任投标人身份承接口岸人工岛连接线道路及桥梁土建工程全部授权范围，包括路基、路面、桥梁下部与上部结构、挡土及附属土建施工，并含施工期临时交通组织；机电、照明与景观绿化不在本包范围，相关接口按设计文件与业主协调程序处理。\n\n施工方法：路基采用分段开挖、分层填筑与压实度过程检测；路面按基层、面层分序施工并控制平整度与接缝质量；桥梁下部结构以钻孔灌注桩、承台、墩柱顺序组织，上部结构按设计形式采用支架现浇或预制吊装方案（以设计文件最终确认为准），预应力张拉与压浆实行旁站与记录双控；挡土及附属土建与主体工序穿插。临时交通组织按口岸人工岛侧现场条件编制专项方案，设置围挡、导向、限速与夜间警示，并报内部复核后实施。\n\n交付方式：公司自行组织核心土建与结构作业，常规专业分包（如桩基辅助、路面专业作业、预应力专业班组）及外部检测支持按公司分包控制程序统一管理，分包不转移本公司对工期、安全、质量记录与接口协调的完整责任。\n\n质量保证：执行公司内部质量程序，设独立检查与工序验收节点，材料进场复检、混凝土试块与结构实体检测按规范留痕，质量文档按分部分项建立台账，竣工资料与施工同步形成。\n\n安全及环境：设专职安全管理人员，落实临边临水防护、起重吊装许可、临时用电与交通导改安全交底；控制扬尘、噪声与施工废水，落实口岸区域文明施工要求。\n\n团队与接口：按角色计划配置项目经理、技术负责人、桥梁与道路专业工程师、安全、质量、测量、文档控制及交通组织协调岗位，关键岗位提交前完成内部可用性确认；与设计、造价及后续机电标段的接口信息由专职接口协调人统一收发与复核。",
+        "implementation_plan": "总工期按24个月组织，分四阶段推进：\n\n第一阶段（第1至3月）施工准备：现场移交接收、测量控制网复测、临时设施与围挡、临时交通组织方案报审与实施、桩基设备与材料进场、关键岗位到位确认。\n\n第二阶段（第4至12月）路基与桥梁下部结构：分段路基开挖填筑与检测，钻孔灌注桩、承台、墩柱流水施工，挡土结构同步跟进；此阶段为资源峰值期，配置桥梁专业班组与土方、路面预备班组。\n\n第三阶段（第10至19月）桥梁上部结构与路面：上部结构支架或吊装、预应力张拉压浆、桥面系施工；路面基层与面层在路基验收段移交后分幅推进，与结构作业错峰组织，减少相互干扰。\n\n第四阶段（第20至24月）附属土建、收尾与验收：附属工程完善、交通组织恢复、缺陷整改、竣工资料整理与分项验收，配合业主完成移交。\n\n资源组织：以公司自有管理与核心作业力量为主，常规专业分包按分包控制程序管理；临时交通组织设专职协调人，按阶段调整导改方案。进度控制采用月度计划与周滚动对比，关键线路为桩基与上部结构，设赶工预案（增加班组与作业面）应对雨季与接口延误。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺自开工令起24个月内完成本包全部施工内容并达到验收条件。关键节点：第3月末完成施工准备与临时交通组织就位；第12月末完成桥梁下部结构与路基主体；第19月末完成上部结构与路面；第24月末完成附属工程、缺陷整改与竣工资料移交。接受业主按合同约定的里程碑考核；如遇设计变更、场地移交延误或不可抗力，按合同程序申请工期调整，不擅自压缩关键线路。",
+        "compliance_statement": "理解并接受业主对进度、质量、安全与文档的过程监管。本公司以单一责任投标人身份对全包交付负责，不设组合体，不转移责任。\n\n- 进度监管：按月提交进度报告与周滚动计划，关键线路偏差及时说明并提交纠偏措施。\n- 质量监管：执行内部质量程序与独立检查，工序验收与材料复检记录可随时供业主查阅，隐蔽工程验收前通知业主代表。\n- 安全监管：专职安全人员日常巡查，重大危险作业（吊装、临水临边、临时用电）实行许可与交底制度，接受业主安全检查与整改要求。\n- 文档与接口：设文档控制岗，质量记录、检测报告与接口信息统一编号归档；与设计、造价及后续机电标段接口由专职协调人对接，变更与澄清按业主程序办理。\n- 支付与计量：按合同计量支付程序提交计量资料，配合业主支付审核。",
+        "risk_response": "主要风险及应对：\n\n1. 材料与人工价格指数上行：报价已按当前材料指数1.0545与人工指数1.0980计入价格基础，并设价格风险预留；如合同允许，按合同约定的价格调整机制处理超出部分，不将无上限风险转嫁业主。\n2. 桥梁结构施工协调：关键线路为桩基与上部结构，设桥梁专业负责人统一协调班组、设备与工序交接，预应力张拉压浆实行旁站双控，预留赶工班组应对延误。\n3. 临时交通组织：口岸人工岛侧交通条件复杂，编制专项方案并内部复核，设专职交通协调人，按阶段调整导改，夜间与高峰时段加强警示与疏导。\n4. 质量文档管理：文档控制岗与分部分项台账同步建立，避免竣工资料滞后；内部检查发现的问题闭环整改后归档。\n5. 分包与检测支持控制：常规专业分包与外部检测支持按公司分包控制程序选择与管理，明确质量与安全责任，本公司承担最终交付责任。\n6. 场地移交与接口延误：开工前完成现场条件核查，接口信息由专职协调人跟踪，延误按合同程序申报，不擅自变更方案。\n7. 雨季与台风影响：编制季节性施工措施，土方与混凝土作业设排水与防护预案，关键工序避开高风险时段。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份就口岸人工岛连接线道路及桥梁土建工程（CASE-0005/construction-1）提交投标，不设组合体，对工期、安全、质量记录与分包控制承担完整交付责任。\n\n报价基础（MOP）：\n- 路基、路面及附属土建：18,620,000\n- 桥梁下部结构：16,850,000\n- 桥梁上部结构：21,380,000\n- 施工期临时交通组织：3,860,000\n- 现场管理、安全环境与质量文档：7,420,000\n- 常规专业分包与外部检测支持管理：4,980,000\n- 价格风险预留、保险保函及公司管理费与利润：9,765,000\n- 投标总价：82,875,000 MOP（在包上限82,875,000 MOP以内）\n\n报价按工程量清单综合单价及总价编制，已计入当前材料价格指数1.0545与人工价格指数1.0980，并包含全部施工、临时交通组织及附属工作。价格风险预留用于覆盖指数上行与工序协调不确定性；如合同设价格调整机制，按合同约定执行。\n\n工期承诺24个月，关键岗位按角色计划配置并在提交前完成内部可用性确认；常规专业分包与外部检测支持按公司分包控制程序管理，不改变本公司单一责任。质量文档与接口信息协调由专职岗位统一管理。",
+        "quotation_breakdown": [
+          {
+            "item": "路基、路面及附属土建工程",
+            "amount": 18620000,
+            "basis": "按工程量清单综合单价估算，含土方、基层面层材料、挡土及附属土建，已计入材料价格指数1.0545与人工价格指数1.0980"
+          },
+          {
+            "item": "桥梁下部结构工程",
+            "amount": 16850000,
+            "basis": "钻孔灌注桩、承台、墩柱的成桩、钢筋、混凝土、模板及检测配合，按清单量与公司同类工序成本估算"
+          },
+          {
+            "item": "桥梁上部结构工程",
+            "amount": 21380000,
+            "basis": "上部结构支架或吊装、预应力张拉压浆、桥面系及结构协调，含预应力专业班组分包成本与管理费"
+          },
+          {
+            "item": "施工期临时交通组织",
+            "amount": 3860000,
+            "basis": "围挡、导向标志、限速与夜间警示、导改调整及专职交通协调人员，按24个月分期投入估算"
+          },
+          {
+            "item": "现场管理、安全环境与质量文档",
+            "amount": 7420000,
+            "basis": "项目管理与技术人员、安全专职、测量、试验检测配合、文档控制及文明施工措施，按24个月现场管理投入估算"
+          },
+          {
+            "item": "常规专业分包与外部检测支持管理",
+            "amount": 4980000,
+            "basis": "路面专业作业、桩基辅助及外部检测支持的分包成本与管理加成，按公司分包控制程序估算"
+          },
+          {
+            "item": "价格风险预留、保险保函及公司管理费与利润",
+            "amount": 9765000,
+            "basis": "材料与人工价格指数上行风险预留、工程保险与履约保函、公司管理费及合理利润，按包上限内控制"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任投标人身份提交，不设组合体",
+          "关键岗位人员按角色计划到位，提交前完成内部可用性确认",
+          "桥梁专业施工班组与常规专业分包按公司分包控制程序管理",
+          "临时交通组织方案按口岸人工岛侧现场条件编制并内部复核",
+          "报价包含施工、临时交通组织及附属工作，并考虑材料与人工价格指数波动",
+          "质量文档与接口信息协调按公司质量保证程序执行"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0005/construction-1_003",
+        "package_id": "CASE-0005/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一总承包责任主体独立投标口岸人工岛连接线道路及桥梁土建工程。施工范围包括路基、路面、桥梁下部与上部结构、挡土及附属土建，并含施工期临时交通组织；机电、照明与景观绿化不在本次报价内。\n\n技术路线：路基采用分层填筑与压实度过程控制，路面按基层与面层分序施工并设置试验段确认配合比；桥梁下部结构以钻孔灌注桩与承台、墩柱顺序推进，上部结构按现场条件采用支架现浇或预制吊装方案，由结构施工协调小组统一模板、钢筋、混凝土供应与浇筑窗口。挡土及附属土建与主线工序穿插，减少交叉干扰。\n\n临时交通组织：编制分阶段交通改道与围封方案，设置临时标志、护栏、照明替代与行人通道，按施工阶段动态调整，并与口岸人工岛侧通行需求协调。\n\n质量与安全：依托公司ISO 9001、ISO 14001、ISO 45001管理体系，实行三级检查、独立复核与材料进场审查；安全环境管理覆盖临水临边、吊装、深基坑与高温作业。\n\n专业作业按常规分包管理，由公司统一承担总承包责任、接口协调与验收责任，不改变单一责任投标人身份。",
+        "implementation_plan": "总体按24个月项目工期组织，土建施工段划分为路基路面段、桥梁段与挡土附属段三个作业面平行推进。\n\n第1至第3月：施工准备、临时设施、交通改道方案报批、测量控制网复测、材料与分包策划。\n第4至第10月：路基填筑与压实、桩基与承台施工，桥梁墩柱跟进。\n第11至第17月：桥梁上部结构施工、挡土结构及附属土建，路面基层施工。\n第18至第21月：路面面层、附属收尾、交通组织恢复与系统检查。\n第22至第24月：竣工资料整理、缺陷整改、验收移交。\n\n资源安排：设项目经理、技术负责人、结构协调工程师、质量与安全专员、测量与试验人员、文档控制员；现场按作业面配置施工员与班组长。主要材料按月度需求计划分批进场，混凝土与钢筋供应设置备选来源。临时交通组织由专职交通协调员负责，按阶段更新围封与改道图。\n\n交付方式：以公司自营管理团队为核心，专业作业按常规分包安排，由公司统一进行进度、质量、安全与接口管理，并按月提交进度与质量文档。",
+        "quotation": 72750000.0,
+        "schedule_commitment": "承诺按项目24个月工期完成本包土建施工，自开工令起算。关键节点：第3月完成施工准备与交通改道方案；第10月完成路基与桩基承台；第17月完成桥梁上部结构与挡土结构；第21月完成路面与附属收尾；第24月完成验收移交。进度计划按月度更新，遇材料供应或天气影响时通过作业面调整与资源增补保持关键线路。",
+        "compliance_statement": "接受业主对施工进度、质量文档与安全环境的监督。公司按ISO 9001、ISO 14001、ISO 45001体系提交质量计划、检验批记录、材料审查记录与安全巡查记录；关键工序设置业主见证点与隐蔽工程验收点。临时交通组织方案报业主及相关管理方审阅后实施，变更按程序报批。付款按合同里程碑申请，配合业主进度与支付审查。接口信息由项目文档控制员统一收发与归档，确保设计、造价与施工界面信息一致。",
+        "risk_response": "主要风险及应对：材料与人工价格指数上行，报价中已设置风险余量，并在价格基础中说明指数依据；桥梁上部结构施工受天气与吊装条件影响，安排备用浇筑窗口与支架方案复核；临时交通组织与口岸通行冲突，设专职交通协调员并分阶段报批改道方案；专业分包接口风险，由公司统一管理分包进度、质量与验收，不分摊总承包责任；质量文档与验收风险，实行三级检查与独立复核，资料随工序同步整理。若出现超出报价假设的重大工程量或政策变化，按合同约定程序提出调整，不单方面主张固定总价外补偿。",
+        "submission_summary": "得宝建筑集团有限公司以单一总承包责任主体独立投标口岸人工岛连接线道路及桥梁土建工程，报价MOP 72,750,000，低于包预算上限MOP 82,875,000。\n\n报价基础：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 27,350,000；挡土结构及临时交通组织MOP 7,480,000；现场管理测量试验与文档控制MOP 6,350,000；专业分包管理与接口协调MOP 4,120,000；安全环境措施及保险保函MOP 3,480,000；材料人工价格风险余量及公司管理费与利润MOP 5,350,000。合计MOP 72,750,000。\n\n价格考虑当前材料价格指数1.0545与人工价格指数1.0980设置风险余量；专业作业按常规分包管理，由公司统一承担总承包责任与接口协调，不组建组合体。工期按项目24个月安排。付款按合同里程碑申请，配合业主进度与支付审查。",
+        "quotation_breakdown": [
+          {
+            "item": "路基、路面及附属土建工程",
+            "amount": 18620000,
+            "basis": "按工程量清单综合单价估算，含土方、基层面层材料、压实与试验检测，已计入材料价格指数上行余量"
+          },
+          {
+            "item": "桥梁下部与上部结构工程",
+            "amount": 27350000,
+            "basis": "含桩基、承台、墩柱、上部结构模板钢筋混凝土及吊装支架，按结构工程量与当前材料人工指数估算"
+          },
+          {
+            "item": "挡土结构及临时交通组织",
+            "amount": 7480000,
+            "basis": "含挡土墙、临时标志护栏、改道围封、交通协调人员及阶段性调整"
+          },
+          {
+            "item": "现场管理、测量试验与文档控制",
+            "amount": 6350000,
+            "basis": "项目管理团队、测量与试验人员、质量安全专员、文档控制及临时设施，按24个月工期分摊"
+          },
+          {
+            "item": "专业分包管理与接口协调",
+            "amount": 4120000,
+            "basis": "常规专业分包的管理费、接口协调与验收配合，由公司统一承担总承包责任"
+          },
+          {
+            "item": "安全环境措施及保险保函",
+            "amount": 3480000,
+            "basis": "临水临边防护、吊装安全措施、环境控制、工程保险与履约保函费用"
+          },
+          {
+            "item": "材料人工价格风险余量及公司管理费与利润",
+            "amount": 5350000,
+            "basis": "按材料指数1.0545与人工指数1.0980设置风险余量，加公司管理费与合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一总承包责任主体独立投标，不组建组合体",
+          "专业作业及临时交通组织按常规分包与内部管理安排落实，不作为共享投标人身份的条件",
+          "报价基于工程量清单综合单价及总价，并考虑材料与人工价格指数上行的风险余量",
+          "投标文件按招标要求提交角色计划、施工方法、质量保证、安全环境管理、价格基础、进度计划及风险应对方案"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0005/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0005/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 73990000.0,
+            "quotation_breakdown": [
+              {
+                "item": "路基、路面及附属土建工程",
+                "amount": 18620000,
+                "basis": "按工程量清单综合单价估算，含路基填筑、软基处理、路面基层与面层、挡土墙及附属土建，考虑材料价格指数1.0545及人工价格指数1.0980，工程量以招标文件清单为准，属投标估算"
+              },
+              {
+                "item": "桥梁下部与上部结构工程",
+                "amount": 31250000,
+                "basis": "含墩台基础、墩柱、盖梁、预制梁生产与架设、桥面系，按公司预制场集中生产方案估算，含预应力混凝土梁生产及架设设备摊销，属投标估算"
+              },
+              {
+                "item": "施工期临时交通组织",
+                "amount": 4850000,
+                "basis": "含三期导改的临时标志标线、围挡、警示设施、协管人员及交通设施维护，按24个月工期分摊，属投标估算"
+              },
+              {
+                "item": "施工管理、质量安全及文档管理",
+                "amount": 6350000,
+                "basis": "含项目总监、项目经理、技术负责人、安全总监及现场管理人员薪酬、办公及检测费用，质量检查点与文档归档费用，按24个月工期估算"
+              },
+              {
+                "item": "临时设施、施工机械及物流组织",
+                "amount": 5480000,
+                "basis": "含预制场建设、临时道路、施工机械租赁与进出场、材料运输及城市施工物流组织，属投标估算"
+              },
+              {
+                "item": "分包及专业作业管理",
+                "amount": 3260000,
+                "basis": "含临时交通设施安装维护、附属土建专业作业等常规分包成本及管理费，分包边界在投标文件中明确，属投标估算"
+              },
+              {
+                "item": "风险准备及价格调整缓冲",
+                "amount": 4180000,
+                "basis": "针对材料与人工价格指数上行、口岸人工岛场地约束及临时交通协调风险设置的风险准备，属投标估算"
+              }
+            ],
+            "submission_summary": "本公司以单一责任投标人身份提交口岸人工岛连接线道路及桥梁土建工程投标，报价MOP 73,990,000，低于包预算上限MOP 82,875,000。报价基于工程量清单综合单价及总价编制，已考虑材料价格指数1.0545及人工价格指数1.0980的上行影响，并设置风险准备及价格调整缓冲。费用构成：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 31,250,000；临时交通组织MOP 4,850,000；施工管理、质量安全及文档MOP 6,350,000；临时设施、机械及物流MOP 5,480,000；分包及专业作业管理MOP 3,260,000；风险准备MOP 4,180,000。合计MOP 73,990,000。工期24个月，质量、安全及环境管理按公司程序执行，临时交通组织及附属土建采用常规分包并由本公司统一管理，保持单一责任主体。本报价为投标估算，工程量以招标文件清单为准。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "工程量以招标文件工程量清单为准，报价按综合单价及总价编制",
+              "材料及人工价格指数按投标时点水平计入，合同价格调整按合同约定机制处理",
+              "临时交通组织方案需经业主及口岸管理单位审批后实施",
+              "分包仅为常规专业作业，不改变投标人单一责任主体身份"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0005/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "路基、路面及附属土建工程",
+                "amount": 18620000,
+                "basis": "按工程量清单综合单价估算，含土方、基层面层材料、挡土及附属土建，已计入材料价格指数1.0545与人工价格指数1.0980"
+              },
+              {
+                "item": "桥梁下部结构工程",
+                "amount": 16850000,
+                "basis": "钻孔灌注桩、承台、墩柱的成桩、钢筋、混凝土、模板及检测配合，按清单量与公司同类工序成本估算"
+              },
+              {
+                "item": "桥梁上部结构工程",
+                "amount": 21380000,
+                "basis": "上部结构支架或吊装、预应力张拉压浆、桥面系及结构协调，含预应力专业班组分包成本与管理费"
+              },
+              {
+                "item": "施工期临时交通组织",
+                "amount": 3860000,
+                "basis": "围挡、导向标志、限速与夜间警示、导改调整及专职交通协调人员，按24个月分期投入估算"
+              },
+              {
+                "item": "现场管理、安全环境与质量文档",
+                "amount": 7420000,
+                "basis": "项目管理与技术人员、安全专职、测量、试验检测配合、文档控制及文明施工措施，按24个月现场管理投入估算"
+              },
+              {
+                "item": "常规专业分包与外部检测支持管理",
+                "amount": 4980000,
+                "basis": "路面专业作业、桩基辅助及外部检测支持的分包成本与管理加成，按公司分包控制程序估算"
+              },
+              {
+                "item": "价格风险预留、保险保函及公司管理费与利润",
+                "amount": 9765000,
+                "basis": "材料与人工价格指数上行风险预留、工程保险与履约保函、公司管理费及合理利润，按包上限内控制"
+              }
+            ],
+            "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份就口岸人工岛连接线道路及桥梁土建工程（CASE-0005/construction-1）提交投标，不设组合体，对工期、安全、质量记录与分包控制承担完整交付责任。\n\n报价基础（MOP）：\n- 路基、路面及附属土建：18,620,000\n- 桥梁下部结构：16,850,000\n- 桥梁上部结构：21,380,000\n- 施工期临时交通组织：3,860,000\n- 现场管理、安全环境与质量文档：7,420,000\n- 常规专业分包与外部检测支持管理：4,980,000\n- 价格风险预留、保险保函及公司管理费与利润：9,765,000\n- 投标总价：82,875,000 MOP（在包上限82,875,000 MOP以内）\n\n报价按工程量清单综合单价及总价编制，已计入当前材料价格指数1.0545与人工价格指数1.0980，并包含全部施工、临时交通组织及附属工作。价格风险预留用于覆盖指数上行与工序协调不确定性；如合同设价格调整机制，按合同约定执行。\n\n工期承诺24个月，关键岗位按角色计划配置并在提交前完成内部可用性确认；常规专业分包与外部检测支持按公司分包控制程序管理，不改变本公司单一责任。质量文档与接口信息协调由专职岗位统一管理。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "以单一责任投标人身份提交，不设组合体",
+              "关键岗位人员按角色计划到位，提交前完成内部可用性确认",
+              "桥梁专业施工班组与常规专业分包按公司分包控制程序管理",
+              "临时交通组织方案按口岸人工岛侧现场条件编制并内部复核",
+              "报价包含施工、临时交通组织及附属工作，并考虑材料与人工价格指数波动",
+              "质量文档与接口信息协调按公司质量保证程序执行"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0005/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 72750000.0,
+            "quotation_breakdown": [
+              {
+                "item": "路基、路面及附属土建工程",
+                "amount": 18620000,
+                "basis": "按工程量清单综合单价估算，含土方、基层面层材料、压实与试验检测，已计入材料价格指数上行余量"
+              },
+              {
+                "item": "桥梁下部与上部结构工程",
+                "amount": 27350000,
+                "basis": "含桩基、承台、墩柱、上部结构模板钢筋混凝土及吊装支架，按结构工程量与当前材料人工指数估算"
+              },
+              {
+                "item": "挡土结构及临时交通组织",
+                "amount": 7480000,
+                "basis": "含挡土墙、临时标志护栏、改道围封、交通协调人员及阶段性调整"
+              },
+              {
+                "item": "现场管理、测量试验与文档控制",
+                "amount": 6350000,
+                "basis": "项目管理团队、测量与试验人员、质量安全专员、文档控制及临时设施，按24个月工期分摊"
+              },
+              {
+                "item": "专业分包管理与接口协调",
+                "amount": 4120000,
+                "basis": "常规专业分包的管理费、接口协调与验收配合，由公司统一承担总承包责任"
+              },
+              {
+                "item": "安全环境措施及保险保函",
+                "amount": 3480000,
+                "basis": "临水临边防护、吊装安全措施、环境控制、工程保险与履约保函费用"
+              },
+              {
+                "item": "材料人工价格风险余量及公司管理费与利润",
+                "amount": 5350000,
+                "basis": "按材料指数1.0545与人工指数1.0980设置风险余量，加公司管理费与合理利润"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一总承包责任主体独立投标口岸人工岛连接线道路及桥梁土建工程，报价MOP 72,750,000，低于包预算上限MOP 82,875,000。\n\n报价基础：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 27,350,000；挡土结构及临时交通组织MOP 7,480,000；现场管理测量试验与文档控制MOP 6,350,000；专业分包管理与接口协调MOP 4,120,000；安全环境措施及保险保函MOP 3,480,000；材料人工价格风险余量及公司管理费与利润MOP 5,350,000。合计MOP 72,750,000。\n\n价格考虑当前材料价格指数1.0545与人工价格指数1.0980设置风险余量；专业作业按常规分包管理，由公司统一承担总承包责任与接口协调，不组建组合体。工期按项目24个月安排。付款按合同里程碑申请，配合业主进度与支付审查。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司以单一总承包责任主体独立投标，不组建组合体",
+              "专业作业及临时交通组织按常规分包与内部管理安排落实，不作为共享投标人身份的条件",
+              "报价基于工程量清单综合单价及总价，并考虑材料与人工价格指数上行的风险余量",
+              "投标文件按招标要求提交角色计划、施工方法、质量保证、安全环境管理、价格基础、进度计划及风险应对方案"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 口岸人工岛连接线道路及桥梁土建工程.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0005/construction-1",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志明",
+          "OWNER-4048bdd520aa7f_02_黄丽华",
+          "OWNER-4048bdd520aa7f_03_李国豪",
+          "OWNER-4048bdd520aa7f_04_张美玲",
+          "OWNER-4048bdd520aa7f_05_何家俊"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0005/construction-1_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "投标方案完整覆盖道路、桥梁及临时交通组织，采用预制梁集中生产以应对场地狭小，施工方法及交付方式说明清晰，团队配置与24个月工期匹配。",
+            "cost_view": "报价MOP 73,990,000低于预算上限，价格基础详细，已计入材料及人工价格指数上行影响并设置风险准备，费用构成合理，未见明显缺项。",
+            "owner_control_view": "明确接受业主全过程监督，质量、安全、进度及文档管理均有具体控制点，临时交通组织方案报批及联合检查机制清晰，业主审查透明度高。",
+            "strengths": [
+              "预制梁方案有效减少口岸人工岛场地占用，体现城市施工物流组织能力",
+              "风险应对全面，涵盖价格、场地、交通、吊装及分包接口",
+              "单一责任主体，分包边界明确，文档纪律良好"
+            ],
+            "concerns": [
+              "预制场建设及运营需额外资源投入，可能影响前期进度",
+              "临时交通组织分三期导改，与口岸运营单位协调难度较高"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0005/construction-1_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "技术方案覆盖全部授权范围，桥梁上部结构采用支架现浇或预制吊装（以设计文件最终确认为准），施工方法及交付方式说明较完整，团队角色计划清晰。",
+            "cost_view": "报价MOP 82,875,000等于预算上限，价格基础中风险预留及管理费利润占比较高，整体报价偏高，但费用构成完整，未见明显缺项。",
+            "owner_control_view": "接受业主监管，进度、质量、安全及文档控制均有具体措施，支付与计量配合业主审查，接口协调由专职人员负责，业主审查清晰度良好。",
+            "strengths": [
+              "桥梁施工经验丰富，结构协调能力较强",
+              "质量文档管理及接口协调岗位设置明确",
+              "风险应对涵盖价格、交通、分包及季节性影响"
+            ],
+            "concerns": [
+              "报价接近预算上限，价格竞争力较弱",
+              "上部结构方案尚未最终确定，存在设计接口不确定性"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0005/construction-1_003",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "技术方案覆盖全部授权范围，施工方法常规可行，但桥梁上部结构方案描述较简略，结构施工协调小组的设置及运作细节不足，团队配置基本满足要求。",
+            "cost_view": "报价MOP 72,750,000为最低价，价格基础中桥梁工程及风险余量相对较低，可能反映对结构施工难度或风险估计不足，需关注后续 claim 风险。",
+            "owner_control_view": "接受业主监督，依托ISO体系提交质量及安全记录，设置见证点及隐蔽验收点，但接口协调及文档控制的具體措施描述较简略，业主审查清晰度一般。",
+            "strengths": [
+              "报价最低，价格优势明显",
+              "管理体系认证齐全，质量安全框架完整",
+              "接受业主监督的态度明确"
+            ],
+            "concerns": [
+              "桥梁工程报价相对较低，可能低估结构施工复杂性",
+              "风险应对措施较笼统，缺乏针对性",
+              "临时交通组织方案深度不足，协调机制不够具体"
+            ]
+          }
+        ],
+        "comparison_summary": "中交第一航务工程局报价MOP 73,990,000，技术方案针对性强，风险控制及业主审查清晰度较高；中建八局第二建设有限公司报价MOP 82,875,000，能力匹配但价格偏高；得宝建筑集团有限公司报价MOP 72,750,000最低，但技术深度及风险应对稍弱。综合交付信心、能力匹配及价格合理性，中交第一航务工程局为较优选择。",
+        "recommended_winner": "COMP-0153",
+        "owner_review_notes": "建议判给中交第一航务工程局有限公司，其预制梁方案有效应对场地约束，风险准备充分，业主控制响应清晰；但需在合同阶段明确预制场建设时间及临时交通协调机制。得宝建筑集团有限公司报价虽低，但桥梁工程报价及风险余量偏低，存在后续 claim 风险，不建议以最低价判给。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0005",
+      "package_awards": [
+        {
+          "package_id": "CASE-0005/construction-1",
+          "selected_bidder_id": "COMP-0153",
+          "selected_bidder_name": "中交第一航务工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第一航务工程局以单一责任投标人身份提交的方案对口岸人工岛场地约束回应最直接，预制梁集中生产减少现场占用，风险应对覆盖价格、场地、交通、吊装及分包接口，团队配置与24个月工期匹配，报价MOP 73,990,000低于包预算上限MOP 82,875,000且费用构成完整，业主控制响应和文档纪律清晰。相较之下，中建八局第二建设有限公司报价MOP 82,875,000达到预算上限且上部结构方案存在设计接口不确定性，得宝建筑集团有限公司报价MOP 72,750,000虽最低但桥梁报价及风险余量偏低、临时交通协调深度不足，后续索赔风险不利于业主。判给中交第一航务工程局在交付信心、能力匹配和问责清晰度上最为稳妥。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "工程量以招标文件工程量清单为准，报价按综合单价及总价编制",
+            "材料及人工价格指数按投标时点水平计入，合同价格调整按合同约定机制处理",
+            "临时交通组织方案需经业主及口岸管理单位审批后实施",
+            "分包仅为常规专业作业，不改变投标人单一责任主体身份"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0153"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:35:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0005/construction-1",
+          "decision": "bid",
+          "reason": "经管理层判断，本招标包属于公司可独立承担的道路及桥梁土建施工范围，施工能力、结构协调、质量与安全管控均能覆盖，当前资源占用为零、可用资源充足，具备作为单一责任投标人提交可信投标的条件。预算与工期在可接受区间，材料与人工价格指数上行将通过综合单价与风险准备在报价中反映。临时交通组织、附属土建及部分专业作业可按常规分包与内部接口管理处理，不需要另一家企业共享投标人身份或包级交付责任，故不采用组合体。决定独立投标，并在投标文件中明确角色计划、施工方法与交付方式、质量保证、安全环境管理、价格基础、进度视图及风险应对，同时设定分包边界与接口协调机制。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0005/construction-1",
+          "decision": "bid",
+          "reason": "管理判断：该包属于公司核心施工业务范围，资源账显示可用资源2.0、占用0，包需求0.7，容量足以独立承担，无需引入共享责任的组合体。预算8287.5万MOP在可接受商业规模内，工期24个月与我们的施工组织能力匹配。主要风险是材料与人工价格指数上行、桥梁结构施工协调、临时交通组织及质量文档管理，这些应通过报价价格基础、施工方法说明、质量保证方案、安全环境管理方案和风险应对方案来管理，而不是通过联合体转移责任。我们应以单一责任投标人身份提交，保持对工期、安全、质量记录和分包控制的完整交付权威。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一责任投标人身份提交，不设组合体",
+            "关键岗位人员按角色计划到位，提交前完成内部可用性确认",
+            "桥梁专业施工班组与常规专业分包按公司分包控制程序管理",
+            "临时交通组织方案按口岸人工岛侧现场条件编制并内部复核",
+            "报价包含施工、临时交通组织及附属工作，并考虑材料与人工价格指数波动",
+            "质量文档与接口信息协调按公司质量保证程序执行"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0005/construction-1",
+          "decision": "bid",
+          "reason": "经管理层审议，口岸人工岛连接线道路及桥梁土建工程属于公司核心的道路桥梁与土木施工业务范围，预算规模与公司资源能力匹配，当前可用资源充足且无占用，具备以单一总承包责任主体独立投标的条件。招标包要求的临时交通组织、结构施工协调、质量文档与安全环境管理，均可通过公司既有管理体系、角色计划和常规专业分包安排落实，不需要引入共享投标人身份与责任的组合体。材料与人工价格指数上行带来的成本压力，将通过价格基础和风险应对方案在报价中体现。因此决定独立投标，并按招标要求提交角色计划及团队可用性摘要、施工方法及交付方式说明、质量保证方案、安全及环境管理方案、价格基础及报价明细、进度计划视图和风险应对方案。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一总承包责任主体独立投标，不组建组合体",
+            "专业作业及临时交通组织按常规分包与内部管理安排落实，不作为共享投标人身份的条件",
+            "报价基于工程量清单综合单价及总价，并考虑材料与人工价格指数上行的风险余量",
+            "投标文件按招标要求提交角色计划、施工方法、质量保证、安全环境管理、价格基础、进度计划及风险应对方案"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:47",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:47",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:47",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:28",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:36",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "recommended_winner": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:41",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0005/construction-1",
+          "selected_bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "The owner accepts the exact supplied terms for package CASE-0005/construction-1 with bidder COMP-0153 at MOP 73,990,000, within the package budget of MOP 82,875,000, with a 24-month schedule and resource commitment of 0.7. The scope matches the package scope (roadbed, pavement, bridge substructure and superstructure, retaining and ancillary civil works, plus temporary traffic organization during construction; excluding mechanical/electrical, lighting and landscaping). The disclosed bid assumptions are accepted as proposed risk allocations: quantities per the tender bill of quantities, price adjustment per contract mechanism, temporary traffic organization subject to owner and port management approval, and subcontracting that does not change the single responsible party. As the buyer's own position, the owner decides that the fixed price covers the stated scope and cost inclusions, that measurement and payment follow the tender bill of quantities on a comprehensive-unit-rate plus lump-sum basis, and that review periods for submittals (temporary traffic organization plan, safety and environmental plan, monthly progress reports) are 14 days from receipt, with key-node deviation beyond 5% requiring a corrective plan. These decisions are to be written into the next draft. This acceptance authorizes executable simulation obligations only and does not assert that future engineering deliverables or statutory approvals have already occurred."
+          },
+          "COMP-0153": {
+            "action": "accept",
+            "reason": "作为投标人 COMP-0153，本组织确认接受本轮合同草案的全部条款。报价 MOP 73,990,000 在包预算 MOP 82,875,000 以内，资源承诺 0.7 与包要求一致，工作份额 1.0 由本组织单一责任承担。范围与包定义一致：路基、路面、桥梁下部与上部结构、挡土及附属土建施工，含施工期临时交通组织，不含机电、照明与景观绿化。24 个月工期及关键节点、质量安全环境监督、文档归档等义务均在自身能力范围内。已披露的投标假设（工程量以招标文件清单为准、价格指数按投标时点计入并按合同调整机制处理、临时交通组织方案须经业主及口岸管理单位审批后实施、分包不改变单一责任主体）作为风险分配接受，不视为缺失证据。本组织对自身立场作出如下决定，供写入下一稿：临时交通组织方案的审批与联合检查安排按业主及口岸管理单位程序执行，本组织负责编制并配合；工程量计量以招标文件清单及合同约定计量规则为准；价格调整按合同约定机制处理。上述均为本组织自身可决定事项，无需等待外部文件。本接受仅授权可执行的模拟义务，不表示未来工程交付或法定审批已经完成。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMF22A34E2/CASE-0005/construction-1/round-1/contract",
+          "simulation_id": "SIMF22A34E2",
+          "project_id": "CASE-0005",
+          "package_id": "CASE-0005/construction-1",
+          "session_id": "SIMF22A34E2/CASE-0005/construction-1/round-1",
+          "snapshot_version": "41794f522dcfb39fe79045c45b69e82fc01936a2612392c61e975e044dea003d",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0005/construction-1_001",
+          "bidder_id": "COMP-0153",
+          "lead_id": "COMP-0153",
+          "members": [
+            "COMP-0153"
+          ],
+          "price": 73990000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0153": 0.7
+          },
+          "work_shares": {
+            "COMP-0153": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "4b28eb06d50f8725ac25a3ba9ef30f08e91fd9b6ae387a8d81fb1e904dce94f5",
+          "terms": {
+            "schedule_commitment": "本公司承诺按24个月工期完成全部授权范围施工，自开工令发出之日起计。关键节点：第3个月完成施工准备及临时交通组织方案报批；第10个月完成路基及挡土结构；第16个月完成桥梁下部及上部结构架设；第20个月完成路面工程；第22个月完成附属土建及交通恢复；第24个月完成竣工验收及资料移交。因不可抗力或业主原因导致的延误按合同约定处理，本公司将通过增加资源或调整工序压缩后续工期。",
+            "risk_response": "主要风险及应对：1）材料及人工价格指数上行风险，报价中已计入风险准备及价格调整缓冲，合同按综合单价及总价编制，材料价格波动按合同约定调整机制处理；2）口岸人工岛场地狭小及物流组织风险，采用预制场集中生产、分时段运输及临时堆场管理，减少现场占用；3）临时交通组织协调风险，编制专项方案并与口岸运营单位建立周协调会机制，设置备用导改路线；4）桥梁上部结构架设安全风险，编制吊装专项方案，执行起重设备检验及作业许可制度；5）分包接口风险，明确分包边界与责任划分，由项目技术负责人统一协调接口信息，分包不改变单一责任主体；6）工期风险，关键线路设置缓冲，预制梁生产提前启动，必要时增加班次。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0005/construction-1_001",
+              "package_id": "CASE-0005/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0153",
+              "bidder_name": "中交第一航务工程局有限公司",
+              "technical_proposal": "本公司以单一责任投标人身份承担口岸人工岛连接线道路及桥梁土建工程全部授权范围，包括路基、路面、桥梁下部与上部结构、挡土及附属土建施工，以及施工期临时交通组织。项目团队按24个月工期配置，设项目总监1名、项目经理1名、技术负责人1名、安全总监1名，下设路基路面、桥梁结构、临时交通、质量文档、商务合同等职能组。桥梁上部结构采用预制梁方案，由公司砼结构构件制造能力支撑，现场设预制场集中生产，减少口岸人工岛狭小场地占用；下部结构及挡土工程按分段流水组织，路基路面与附属土建穿插施工。临时交通组织编制专项方案，分阶段导改，设置临时标志、围挡、警示及协管人员，并与口岸运营单位建立信息协调机制。质量保证执行公司内部质量程序，设置材料进场检验、隐蔽工程验收、结构实体检测、首件认可等检查点，文档按分项工程同步归档。安全及环境管理按公司安全期望管理要求设置风险分级管控与隐患排查双控机制，重点管控高处作业、起重吊装、临时用电及交通导改风险。机电、照明与景观绿化不在本次范围，接口信息由项目技术负责人统一协调。",
+              "implementation_plan": "总体按24个月编排：第1至3个月完成施工准备、临时设施、预制场建设、临时交通组织方案报批及路基清表；第4至10个月完成路基填筑、软基处理及挡土结构施工，同步启动桥梁下部结构；第8至16个月完成桥梁墩台及上部预制梁生产与架设；第14至20个月完成桥面系及路面基层、面层施工；第18至22个月完成附属土建、交通导改恢复及收尾；第23至24个月完成竣工验收、资料移交及缺陷责任期准备。关键线路为桥梁下部结构至上部梁架设，预制梁生产与架设按周计划匹配。临时交通组织分三期导改，每期转换前完成标志标线、围挡及协管人员部署，并与口岸管理单位联合检查。分包边界明确：临时交通设施安装与维护、部分附属土建专业作业采用常规分包，由公司统一管理并承担单一责任；分包不改变投标人身份与包级交付责任。",
+              "quotation": 73990000.0,
+              "schedule_commitment": "本公司承诺按24个月工期完成全部授权范围施工，自开工令发出之日起计。关键节点：第3个月完成施工准备及临时交通组织方案报批；第10个月完成路基及挡土结构；第16个月完成桥梁下部及上部结构架设；第20个月完成路面工程；第22个月完成附属土建及交通恢复；第24个月完成竣工验收及资料移交。因不可抗力或业主原因导致的延误按合同约定处理，本公司将通过增加资源或调整工序压缩后续工期。",
+              "compliance_statement": "本公司接受业主按合同及监管要求对施工进度、质量、安全、环境及文档进行全过程监督。质量方面，执行材料进场检验、隐蔽工程验收、结构实体检测及首件认可制度，检查记录同步报业主备案；安全方面，提交安全及环境管理方案，接受业主及监管单位检查，隐患整改闭环管理；进度方面，按月提交进度报告及下周计划，关键线路偏差超过5%时提交纠偏措施；文档方面，按分项工程同步归档，竣工资料在验收前完成整理。临时交通组织方案报业主及口岸管理单位审批后实施，导改转换前联合检查。",
+              "risk_response": "主要风险及应对：1）材料及人工价格指数上行风险，报价中已计入风险准备及价格调整缓冲，合同按综合单价及总价编制，材料价格波动按合同约定调整机制处理；2）口岸人工岛场地狭小及物流组织风险，采用预制场集中生产、分时段运输及临时堆场管理，减少现场占用；3）临时交通组织协调风险，编制专项方案并与口岸运营单位建立周协调会机制，设置备用导改路线；4）桥梁上部结构架设安全风险，编制吊装专项方案，执行起重设备检验及作业许可制度；5）分包接口风险，明确分包边界与责任划分，由项目技术负责人统一协调接口信息，分包不改变单一责任主体；6）工期风险，关键线路设置缓冲，预制梁生产提前启动，必要时增加班次。",
+              "submission_summary": "本公司以单一责任投标人身份提交口岸人工岛连接线道路及桥梁土建工程投标，报价MOP 73,990,000，低于包预算上限MOP 82,875,000。报价基于工程量清单综合单价及总价编制，已考虑材料价格指数1.0545及人工价格指数1.0980的上行影响，并设置风险准备及价格调整缓冲。费用构成：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 31,250,000；临时交通组织MOP 4,850,000；施工管理、质量安全及文档MOP 6,350,000；临时设施、机械及物流MOP 5,480,000；分包及专业作业管理MOP 3,260,000；风险准备MOP 4,180,000。合计MOP 73,990,000。工期24个月，质量、安全及环境管理按公司程序执行，临时交通组织及附属土建采用常规分包并由本公司统一管理，保持单一责任主体。本报价为投标估算，工程量以招标文件清单为准。",
+              "quotation_breakdown": [
+                {
+                  "item": "路基、路面及附属土建工程",
+                  "amount": 18620000,
+                  "basis": "按工程量清单综合单价估算，含路基填筑、软基处理、路面基层与面层、挡土墙及附属土建，考虑材料价格指数1.0545及人工价格指数1.0980，工程量以招标文件清单为准，属投标估算"
+                },
+                {
+                  "item": "桥梁下部与上部结构工程",
+                  "amount": 31250000,
+                  "basis": "含墩台基础、墩柱、盖梁、预制梁生产与架设、桥面系，按公司预制场集中生产方案估算，含预应力混凝土梁生产及架设设备摊销，属投标估算"
+                },
+                {
+                  "item": "施工期临时交通组织",
+                  "amount": 4850000,
+                  "basis": "含三期导改的临时标志标线、围挡、警示设施、协管人员及交通设施维护，按24个月工期分摊，属投标估算"
+                },
+                {
+                  "item": "施工管理、质量安全及文档管理",
+                  "amount": 6350000,
+                  "basis": "含项目总监、项目经理、技术负责人、安全总监及现场管理人员薪酬、办公及检测费用，质量检查点与文档归档费用，按24个月工期估算"
+                },
+                {
+                  "item": "临时设施、施工机械及物流组织",
+                  "amount": 5480000,
+                  "basis": "含预制场建设、临时道路、施工机械租赁与进出场、材料运输及城市施工物流组织，属投标估算"
+                },
+                {
+                  "item": "分包及专业作业管理",
+                  "amount": 3260000,
+                  "basis": "含临时交通设施安装维护、附属土建专业作业等常规分包成本及管理费，分包边界在投标文件中明确，属投标估算"
+                },
+                {
+                  "item": "风险准备及价格调整缓冲",
+                  "amount": 4180000,
+                  "basis": "针对材料与人工价格指数上行、口岸人工岛场地约束及临时交通协调风险设置的风险准备，属投标估算"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "工程量以招标文件工程量清单为准，报价按综合单价及总价编制",
+                "材料及人工价格指数按投标时点水平计入，合同价格调整按合同约定机制处理",
+                "临时交通组织方案需经业主及口岸管理单位审批后实施",
+                "分包仅为常规专业作业，不改变投标人单一责任主体身份"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "4b28eb06d50f8725ac25a3ba9ef30f08e91fd9b6ae387a8d81fb1e904dce94f5"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0005/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+          "budget": 82875000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMF22A34E2/CASE-0005/construction-1/round-1/contract",
+    "simulation_id": "SIMF22A34E2",
+    "project_id": "CASE-0005",
+    "package_id": "CASE-0005/construction-1",
+    "session_id": "SIMF22A34E2/CASE-0005/construction-1/round-1",
+    "snapshot_version": "41794f522dcfb39fe79045c45b69e82fc01936a2612392c61e975e044dea003d",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0005/construction-1_001",
+    "bidder_id": "COMP-0153",
+    "lead_id": "COMP-0153",
+    "members": [
+      "COMP-0153"
+    ],
+    "price": 73990000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0153": 0.7
+    },
+    "work_shares": {
+      "COMP-0153": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0153": true
+    },
+    "signed_terms_hash": "4b28eb06d50f8725ac25a3ba9ef30f08e91fd9b6ae387a8d81fb1e904dce94f5",
+    "terms": {
+      "schedule_commitment": "本公司承诺按24个月工期完成全部授权范围施工，自开工令发出之日起计。关键节点：第3个月完成施工准备及临时交通组织方案报批；第10个月完成路基及挡土结构；第16个月完成桥梁下部及上部结构架设；第20个月完成路面工程；第22个月完成附属土建及交通恢复；第24个月完成竣工验收及资料移交。因不可抗力或业主原因导致的延误按合同约定处理，本公司将通过增加资源或调整工序压缩后续工期。",
+      "risk_response": "主要风险及应对：1）材料及人工价格指数上行风险，报价中已计入风险准备及价格调整缓冲，合同按综合单价及总价编制，材料价格波动按合同约定调整机制处理；2）口岸人工岛场地狭小及物流组织风险，采用预制场集中生产、分时段运输及临时堆场管理，减少现场占用；3）临时交通组织协调风险，编制专项方案并与口岸运营单位建立周协调会机制，设置备用导改路线；4）桥梁上部结构架设安全风险，编制吊装专项方案，执行起重设备检验及作业许可制度；5）分包接口风险，明确分包边界与责任划分，由项目技术负责人统一协调接口信息，分包不改变单一责任主体；6）工期风险，关键线路设置缓冲，预制梁生产提前启动，必要时增加班次。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0005/construction-1_001",
+        "package_id": "CASE-0005/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本公司以单一责任投标人身份承担口岸人工岛连接线道路及桥梁土建工程全部授权范围，包括路基、路面、桥梁下部与上部结构、挡土及附属土建施工，以及施工期临时交通组织。项目团队按24个月工期配置，设项目总监1名、项目经理1名、技术负责人1名、安全总监1名，下设路基路面、桥梁结构、临时交通、质量文档、商务合同等职能组。桥梁上部结构采用预制梁方案，由公司砼结构构件制造能力支撑，现场设预制场集中生产，减少口岸人工岛狭小场地占用；下部结构及挡土工程按分段流水组织，路基路面与附属土建穿插施工。临时交通组织编制专项方案，分阶段导改，设置临时标志、围挡、警示及协管人员，并与口岸运营单位建立信息协调机制。质量保证执行公司内部质量程序，设置材料进场检验、隐蔽工程验收、结构实体检测、首件认可等检查点，文档按分项工程同步归档。安全及环境管理按公司安全期望管理要求设置风险分级管控与隐患排查双控机制，重点管控高处作业、起重吊装、临时用电及交通导改风险。机电、照明与景观绿化不在本次范围，接口信息由项目技术负责人统一协调。",
+        "implementation_plan": "总体按24个月编排：第1至3个月完成施工准备、临时设施、预制场建设、临时交通组织方案报批及路基清表；第4至10个月完成路基填筑、软基处理及挡土结构施工，同步启动桥梁下部结构；第8至16个月完成桥梁墩台及上部预制梁生产与架设；第14至20个月完成桥面系及路面基层、面层施工；第18至22个月完成附属土建、交通导改恢复及收尾；第23至24个月完成竣工验收、资料移交及缺陷责任期准备。关键线路为桥梁下部结构至上部梁架设，预制梁生产与架设按周计划匹配。临时交通组织分三期导改，每期转换前完成标志标线、围挡及协管人员部署，并与口岸管理单位联合检查。分包边界明确：临时交通设施安装与维护、部分附属土建专业作业采用常规分包，由公司统一管理并承担单一责任；分包不改变投标人身份与包级交付责任。",
+        "quotation": 73990000.0,
+        "schedule_commitment": "本公司承诺按24个月工期完成全部授权范围施工，自开工令发出之日起计。关键节点：第3个月完成施工准备及临时交通组织方案报批；第10个月完成路基及挡土结构；第16个月完成桥梁下部及上部结构架设；第20个月完成路面工程；第22个月完成附属土建及交通恢复；第24个月完成竣工验收及资料移交。因不可抗力或业主原因导致的延误按合同约定处理，本公司将通过增加资源或调整工序压缩后续工期。",
+        "compliance_statement": "本公司接受业主按合同及监管要求对施工进度、质量、安全、环境及文档进行全过程监督。质量方面，执行材料进场检验、隐蔽工程验收、结构实体检测及首件认可制度，检查记录同步报业主备案；安全方面，提交安全及环境管理方案，接受业主及监管单位检查，隐患整改闭环管理；进度方面，按月提交进度报告及下周计划，关键线路偏差超过5%时提交纠偏措施；文档方面，按分项工程同步归档，竣工资料在验收前完成整理。临时交通组织方案报业主及口岸管理单位审批后实施，导改转换前联合检查。",
+        "risk_response": "主要风险及应对：1）材料及人工价格指数上行风险，报价中已计入风险准备及价格调整缓冲，合同按综合单价及总价编制，材料价格波动按合同约定调整机制处理；2）口岸人工岛场地狭小及物流组织风险，采用预制场集中生产、分时段运输及临时堆场管理，减少现场占用；3）临时交通组织协调风险，编制专项方案并与口岸运营单位建立周协调会机制，设置备用导改路线；4）桥梁上部结构架设安全风险，编制吊装专项方案，执行起重设备检验及作业许可制度；5）分包接口风险，明确分包边界与责任划分，由项目技术负责人统一协调接口信息，分包不改变单一责任主体；6）工期风险，关键线路设置缓冲，预制梁生产提前启动，必要时增加班次。",
+        "submission_summary": "本公司以单一责任投标人身份提交口岸人工岛连接线道路及桥梁土建工程投标，报价MOP 73,990,000，低于包预算上限MOP 82,875,000。报价基于工程量清单综合单价及总价编制，已考虑材料价格指数1.0545及人工价格指数1.0980的上行影响，并设置风险准备及价格调整缓冲。费用构成：路基路面及附属土建MOP 18,620,000；桥梁下部与上部结构MOP 31,250,000；临时交通组织MOP 4,850,000；施工管理、质量安全及文档MOP 6,350,000；临时设施、机械及物流MOP 5,480,000；分包及专业作业管理MOP 3,260,000；风险准备MOP 4,180,000。合计MOP 73,990,000。工期24个月，质量、安全及环境管理按公司程序执行，临时交通组织及附属土建采用常规分包并由本公司统一管理，保持单一责任主体。本报价为投标估算，工程量以招标文件清单为准。",
+        "quotation_breakdown": [
+          {
+            "item": "路基、路面及附属土建工程",
+            "amount": 18620000,
+            "basis": "按工程量清单综合单价估算，含路基填筑、软基处理、路面基层与面层、挡土墙及附属土建，考虑材料价格指数1.0545及人工价格指数1.0980，工程量以招标文件清单为准，属投标估算"
+          },
+          {
+            "item": "桥梁下部与上部结构工程",
+            "amount": 31250000,
+            "basis": "含墩台基础、墩柱、盖梁、预制梁生产与架设、桥面系，按公司预制场集中生产方案估算，含预应力混凝土梁生产及架设设备摊销，属投标估算"
+          },
+          {
+            "item": "施工期临时交通组织",
+            "amount": 4850000,
+            "basis": "含三期导改的临时标志标线、围挡、警示设施、协管人员及交通设施维护，按24个月工期分摊，属投标估算"
+          },
+          {
+            "item": "施工管理、质量安全及文档管理",
+            "amount": 6350000,
+            "basis": "含项目总监、项目经理、技术负责人、安全总监及现场管理人员薪酬、办公及检测费用，质量检查点与文档归档费用，按24个月工期估算"
+          },
+          {
+            "item": "临时设施、施工机械及物流组织",
+            "amount": 5480000,
+            "basis": "含预制场建设、临时道路、施工机械租赁与进出场、材料运输及城市施工物流组织，属投标估算"
+          },
+          {
+            "item": "分包及专业作业管理",
+            "amount": 3260000,
+            "basis": "含临时交通设施安装维护、附属土建专业作业等常规分包成本及管理费，分包边界在投标文件中明确，属投标估算"
+          },
+          {
+            "item": "风险准备及价格调整缓冲",
+            "amount": 4180000,
+            "basis": "针对材料与人工价格指数上行、口岸人工岛场地约束及临时交通协调风险设置的风险准备，属投标估算"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "工程量以招标文件工程量清单为准，报价按综合单价及总价编制",
+          "材料及人工价格指数按投标时点水平计入，合同价格调整按合同约定机制处理",
+          "临时交通组织方案需经业主及口岸管理单位审批后实施",
+          "分包仅为常规专业作业，不改变投标人单一责任主体身份"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "口岸人工岛侧连接线范围内的路基、路面、桥梁下部与上部结构、挡土及附属土建的施工，含施工期临时交通组织；不含机电、照明与景观绿化。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

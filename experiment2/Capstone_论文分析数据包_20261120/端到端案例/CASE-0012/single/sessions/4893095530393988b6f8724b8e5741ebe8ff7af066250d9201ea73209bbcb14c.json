@@ -1,0 +1,2122 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM849BD599/CASE-0012/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 44625000.0,
+      "project": {
+        "project_id": "CASE-0012",
+        "name": "粤澳新通道项目-南粤批发市场清拆工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0012/construction-2",
+        "project_id": "CASE-0012",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "交通疏解、围护与临时道路包",
+        "scope": "施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+        "budget": 44625000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0012/design",
+          "CASE-0012/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0295",
+          "COMP-0153",
+          "COMP-0493"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0012",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+              "project_id": "CASE-0012",
+              "package_id": "CASE-0012/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1850000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIM849BD599/CASE-0012/design/round-1/contract",
+              "project_id": "CASE-0012",
+              "package_id": "CASE-0012/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 3995000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM849BD599/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "package_id": "CASE-0012/design",
+            "contract_id": "SIM849BD599/CASE-0012/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 3995000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "package_id": "CASE-0012/cost",
+            "contract_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0185"
+            ],
+            "price": 1850000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0012",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0295": {
+        "entity_id": "COMP-0295",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0295",
+          "company_name": "江苏乾堪建设工程有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0295",
+          "name": "江苏乾堪建设工程有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "1f1ab1a168642b1c50273849dcd1f1b64d5f0c2e24e1dfec3bf8925ecde67361"
+  },
+  "spec": {
+    "package_id": "CASE-0012/construction-2",
+    "project_id": "CASE-0012",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "交通疏解、围护与临时道路包",
+    "scope": "施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+    "budget": 44625000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0012/design",
+      "CASE-0012/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0295",
+      "COMP-0153",
+      "COMP-0493"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0012",
+      "project_name": "粤澳新通道项目-南粤批发市场清拆工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0012",
+      "project_scope": "粤澳新通道项目-南粤批发市场清拆工程位于澳门，地块面积约7,400平方米，属交通基础设施前期清拆工程。业主为澳门特别行政区政府公共建设局，采用DBB交付模式，总预算MOP 150,000,000，总工期24个月。本次招标包为CASE-0012/construction-2交通疏解、围护与临时道路包，预算MOP 44,625,000，范围包括施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。本包依赖设计包与造价咨询包成果，属业主额外成本纳入。",
+      "functional_requirements": [
+        "提供施工期周边道路交通疏解设施，维持地块周边道路基本通行能力，并配合公共交通与行人流线。",
+        "设置施工围挡与出入口，满足封闭施工、车辆进出管理及公共安全隔离需要。",
+        "修建临时道路及行人通道，保障施工车辆、应急车辆与行人安全通行，并兼顾无障碍通行预期。",
+        "配置扬尘与噪声控制设施，满足业主对施工期环境管理及社区影响的控制期望。",
+        "设置施工期临时排水，防止场地及周边道路积水，并与市政排水接口协调。",
+        "所有临时设施应可随施工阶段调整，并支持后续主体拆除与建筑垃圾外运作业面的移交。"
+      ],
+      "technical_requirements": [
+        "BIM协调：临时交通疏解、围挡、临时道路与排水设施应纳入BIM协调流程，并与设计包模型对接。",
+        "MEP协调：临时排水、临时照明及交通疏解相关机电接口应与设计包及后续主体工程协调。",
+        "结构协调：围挡基础、临时道路路基及排水构筑物应满足稳定性与承载要求，并与地块边界条件协调。",
+        "交通接口布局：交通疏解设施应与周边道路、公共交通站点及行人过街设施衔接，布局需经业主审查。",
+        "公共通行布局：行人通道应连续、安全、可识别，并考虑无障碍通行及夜间照明。",
+        "耐久性目标：临时设施在24个月工期内应满足重复使用与维护要求，围挡与临时道路应具备足够耐久性。",
+        "可维护性目标：临时排水与扬尘噪声控制设施应便于检查、清理与更换。",
+        "业主验收路径：分阶段设置交通疏解、围挡、临时道路及排水设施的业主验收节点，验收合格后方可进入下一阶段。",
+        "能耗使用目标：临时照明与降尘设备应优先选用低能耗设备，并纳入施工期能耗监测。"
+      ],
+      "budget_policy": "本包预算为MOP 44,625,000，属业主额外成本纳入。业主将按DBB模式下的工程量清单与单价分析进行报价评审，要求投标人提供价格基础、主要材料与设备价格来源、临时设施摊销与维护费用说明。业主保留按实际工程量与变更控制程序调整合同价的权力；重大范围与预算变更须经宏观审批。评标时业主代理将综合判断价格合理性、交付信心、风险控制与能力匹配，不以最低价作为唯一判据。",
+      "schedule_policy": "总工期24个月，本包施工期交通疏解与围护设施须与设计包、造价咨询包及后续主体拆除工程衔接。业主强调里程碑现实性：投标人应提供施工进度视图，明确交通疏解设施、围挡与出入口、临时道路及行人通道、扬尘噪声控制设施、临时排水的分阶段完成时间。业主审查时间、包间接口时间及公共通行协调时间应纳入进度计划。业主将审查进度计划的可行性、资源配备与风险缓冲，不接受无合理依据的压缩工期。",
+      "compliance_requirements": [
+        "业主审查节奏：业主按阶段审查交通疏解方案、围挡与出入口布置、临时道路及排水设计，并保留现场抽查与定期审查权利。",
+        "问题升级路径：现场质量、安全或公共通行问题应在约定时限内升级至业主代表，重大事项提交业主内部决策。",
+        "文档纪律：承包商须保持施工记录、检查记录、材料证明、变更记录及竣工资料完整可追溯。",
+        "接口签署：交通疏解、临时排水与市政接口、围挡与地块边界接口须经业主与相关方签署确认。",
+        "公共通行协调：施工期间行人及车辆通行安排须提前与业主及相关公共部门协调，并设置清晰的临时指引。",
+        "质量目标跟踪：业主按分阶段验收节点跟踪质量目标，包括围挡稳定性、临时道路平整度、排水通畅性及降尘降噪效果。",
+        "安全期望跟踪：业主跟踪施工期交通安全、行人安全及临时设施结构安全，要求承包商提交安全计划与应急安排。",
+        "变更控制纪律：任何范围、设计或工期变更须经业主变更控制程序审批，重大变更须经宏观审批。"
+      ],
+      "risk_priorities": [
+        "交通疏解与公共通行风险：施工期周边道路交通疏解不当可能影响公众出行与交通安全，业主优先关注。",
+        "接口协调风险：与设计包、造价咨询包、市政排水及交通管理部门的接口若协调不足，可能导致返工与工期延误。",
+        "环境控制风险：扬尘与噪声控制不达标可能引发社区投诉与监管压力，业主期望承包商具备环境管理能力。",
+        "临时设施安全风险：围挡、临时道路及排水设施在台风、暴雨等天气下的稳定性与排水能力是业主关注重点。",
+        "工期与资源风险：24个月总工期下，本包须与主体拆除工程衔接，资源配备不足或进度滞后将影响后续工程。",
+        "价格与变更风险：工程量清单准确性、临时设施摊销及变更控制纪律影响造价控制，业主将审查价格基础与风险应对。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0012/construction-2",
+          "package_type": "contractor",
+          "package_name": "交通疏解、围护与临时道路包",
+          "scope": "Authorized scope: 施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。\nBuyer refinement: 施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "城市交通疏解设施施工与协调能力",
+            "施工围挡与出入口布置能力",
+            "临时道路及行人通道施工能力",
+            "扬尘与噪声控制设施配置能力",
+            "施工期临时排水施工与接口协调能力",
+            "城市施工物流与场地布置能力",
+            "质量文档管理能力",
+            "安全期望跟踪与现场安全管理能力",
+            "公共通行协调能力",
+            "与设计包及造价咨询包的接口协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工方法与交付方式说明",
+            "质量方针与质量目标实现方案",
+            "价格基础与工程量清单报价分析",
+            "施工进度视图与里程碑安排",
+            "风险应对方案（交通疏解、环境控制、天气影响、接口协调）",
+            "安全计划与应急安排",
+            "公共通行协调方案"
+          ],
+          "pricing_requirements": "按工程量清单计价，要求提供单价分析与主要材料设备价格来源；临时设施摊销、维护及拆除费用应单独列明；价格基础须与设计包及造价咨询包成果一致。业主将审查价格合理性与风险应对的匹配度。\nBinding currency: MOP; package ceiling: 44625000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配备现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "公共通行协调"
+          ],
+          "owner_decision_policy": "业主代理将定性比较各投标，综合判断能力匹配、价格合理性、风险控制、交付信心与人员配备现实性；不以最低价作为唯一判据，并保留按变更控制程序调整合同价的权力。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0012/construction-2",
+        "package_type": "contractor",
+        "package_name": "交通疏解、围护与临时道路包",
+        "scope": "Authorized scope: 施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。\nBuyer refinement: 施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "城市交通疏解设施施工与协调能力",
+          "施工围挡与出入口布置能力",
+          "临时道路及行人通道施工能力",
+          "扬尘与噪声控制设施配置能力",
+          "施工期临时排水施工与接口协调能力",
+          "城市施工物流与场地布置能力",
+          "质量文档管理能力",
+          "安全期望跟踪与现场安全管理能力",
+          "公共通行协调能力",
+          "与设计包及造价咨询包的接口协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工方法与交付方式说明",
+          "质量方针与质量目标实现方案",
+          "价格基础与工程量清单报价分析",
+          "施工进度视图与里程碑安排",
+          "风险应对方案（交通疏解、环境控制、天气影响、接口协调）",
+          "安全计划与应急安排",
+          "公共通行协调方案"
+        ],
+        "pricing_requirements": "按工程量清单计价，要求提供单价分析与主要材料设备价格来源；临时设施摊销、维护及拆除费用应单独列明；价格基础须与设计包及造价咨询包成果一致。业主将审查价格合理性与风险应对的匹配度。\nBinding currency: MOP; package ceiling: 44625000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配备现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "公共通行协调"
+        ],
+        "owner_decision_policy": "业主代理将定性比较各投标，综合判断能力匹配、价格合理性、风险控制、交付信心与人员配备现实性；不以最低价作为唯一判据，并保留按变更控制程序调整合同价的权力。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0295",
+        "company_name": "江苏乾堪建设工程有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "长期负责公共工程统筹，压力下先确认工期与接口责任，再谈资源调配。他最先注意到跨部门审批与清拆移交之间的时间缝隙，倾向把风险前置为明确的里程碑。讨论中常带来进度与合规之间的张力，提醒团队不要为赶工牺牲监管服务与文件纪律。",
+          "responsibilities": [
+            "统筹清拆工程整体工期与里程碑",
+            "协调设计、监管与施工接口",
+            "主持招标包划分与采购节奏讨论",
+            "向业主汇报项目风险与进度"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先讲结论与关键日期，再补充依据；对模糊承诺会当场追问。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否对应实际工作量。她最先发现预算科目之间的错配，倾向用保守估算留出风险缓冲。讨论中带来成本控制与工期弹性之间的张力，强调每笔支付评审都要有可追溯依据。",
+          "responsibilities": [
+            "编制与复核项目成本基准",
+            "评审投标报价基础与支付安排",
+            "跟踪变更与风险预备费",
+            "提交成本控制与支付评审意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，习惯用分项数字说明立场，对未量化的成本假设会要求补充依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量目标负责人",
+          "personal_profile": "工程背景出身，压力下先看技术方案是否可施工、可检验。他最先注意到清拆范围与周边交通设施的衔接细节，倾向把质量目标拆成可检查的验收点。讨论中带来设计理想与现场可行性之间的张力，坚持独立检查与文件纪律。",
+          "responsibilities": [
+            "协调设计文件与清拆技术方案",
+            "制定质量目标与验收检查点",
+            "组织独立检查与质量复核",
+            "评估投标方的技术能力匹配"
+          ],
+          "decision_authority": "final",
+          "communication_style": "务实细致，喜欢用图纸与检查清单说话，对含糊的技术承诺会要求具体做法。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标包协调经理",
+          "personal_profile": "熟悉公共采购流程，压力下先确认招标包的边界与评标标准是否一致。她最先注意到投标方能力与包件要求的匹配度，倾向用结构化评分减少争议。讨论中带来程序严谨与采购效率之间的张力，强调文件纪律与业主审查留痕。",
+          "responsibilities": [
+            "划分招标包并编制采购计划",
+            "组织评标与能力匹配审查",
+            "管理投标问答与文件纪律",
+            "协调判给建议与业主审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健有条理，按程序节点推进，对越过程序的提议会明确提示风险。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "现场与监管",
+          "position": "现场监管与风险应对主管",
+          "personal_profile": "常驻现场思维，压力下先判断施工对周边环境与公众的影响。他最先注意到清拆粉尘、噪音与交通改道的现实约束，倾向把风险应对写成可执行的现场措施。讨论中带来现场实际与合约条款之间的张力，重视监管服务与安全底线。",
+          "responsibilities": [
+            "制定现场监管与风险应对方案",
+            "评估清拆对周边环境的影响",
+            "跟踪安全与可持续发展目标",
+            "提交现场报告与整改建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直白务实，用现场情况与具体措施说明问题，对纸面方案会追问落地方式。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "财务与资源规划",
+          "position": "财务与资源规划主管",
+          "personal_profile": "从资金与人力可用性看问题，压力下先确认资源承诺是否与项目节奏匹配。她最先注意到团队可用性与支付节奏之间的错位，倾向用分阶段资源计划降低集中风险。讨论中带来资源现实与项目雄心之间的张力，强调可持续的资金安排。",
+          "responsibilities": [
+            "编制项目资金与资源计划",
+            "评估团队可用性与资源匹配",
+            "跟踪付款节奏与财务风险",
+            "提交资源规划与财务审查意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "冷静克制，用资源与资金数据支撑判断，对过度乐观的计划会提出分阶段建议。"
+        }
+      ],
+      "COMP-0295": [
+        {
+          "agent_id": "COMP-0295_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯把清拆包拆成结构拆除、基础破除、垃圾外运和场地平整四条主线。他最先注意到的是资源冲突和关键路径，常把讨论拉回能否按期交付和是否需要调整施工顺序。他带来的张力是：当团队想先抢进度时，他会坚持先确认资源可用性和外运处置能力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调内部资源分配与外部分包接口",
+            "主持包级风险评审与进度纠偏",
+            "对接业主代表与监管服务沟通"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，习惯用里程碑和资源缺口说明问题。"
+        },
+        {
+          "agent_id": "COMP-0295_02_林敏华",
+          "agent_name": "林敏华",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价构成和付款条件高度敏感，压力下会反复核对工程量清单与成本假设。她最先注意到的是价格依据是否完整、付款节点是否覆盖前期投入，以及变更和索赔条款是否清晰。她带来的张力是：当技术团队追求施工便利时，她会提醒成本控制和付款评审风险。",
+          "responsibilities": [
+            "编制投标报价与价格依据说明",
+            "负责成本控制与付款评审",
+            "审核分包合约与变更计价条款",
+            "跟踪付款申请与结算文档"
+          ],
+          "decision_authority": "final",
+          "communication_style": "细致、审慎，喜欢用数字和条款说话，对模糊表述会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0295_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验导向，压力下先判断施工可行性和安全边界。他最先注意到的是拆除顺序、机械配置和建筑垃圾临时堆放空间，以及周边环境对施工时段的限制。他带来的张力是：当商务团队压缩成本时，他会坚持保留必要的安全措施和资源冗余。",
+          "responsibilities": [
+            "编制清拆施工方案与进度计划",
+            "管理现场拆除作业与建筑垃圾分类",
+            "协调机械、人力和外运资源",
+            "落实安全管理和现场质量目标"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实、简短，偏好现场照片和工序图说明问题，不喜欢空泛讨论。"
+        },
+        {
+          "agent_id": "COMP-0295_04_周凯琳",
+          "agent_name": "周凯琳",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "质量与合规部",
+          "position": "质量经理",
+          "personal_profile": "以质量目标和文档纪律为核心，压力下会先检查验收标准和检查记录是否闭环。她最先注意到的是拆除边界是否清晰、垃圾分类是否符合要求、外运处置是否有可追溯记录。她带来的张力是：当进度压力要求简化流程时，她会坚持独立检查和文档留痕。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "执行独立质量检查与验收",
+            "管理建筑垃圾外运处置记录",
+            "维护文档纪律与合规档案"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨、条理清晰，习惯用检查表和不符合项清单推动整改。"
+        },
+        {
+          "agent_id": "COMP-0295_05_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调负责人",
+          "personal_profile": "关注设计与施工接口，压力下先确认设计文件是否满足清拆和场地整治的可施工性。他最先注意到的是图纸深度、现场条件差异和设计变更对工期的影响。他带来的张力是：当施工团队想按经验调整时，他会要求设计方书面确认，避免责任不清。",
+          "responsibilities": [
+            "协调设计方与施工方的技术接口",
+            "审核清拆范围和场地整治设计可施工性",
+            "管理设计变更与技术澄清",
+            "参与交付前的设计符合性检查"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和但坚持程序，喜欢用图纸标注和会议纪要推动共识。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下先看整体工期与资源是否匹配，习惯把清拆包拆成可交付节点再倒排资源。他最先注意到的是团队可用量与包体量之间的落差，容易在讨论中把乐观报价拉回可执行范围，带来进度与成本之间的张力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调业主接口与内部资源规划",
+            "主持投标风险应对与关键节点评审",
+            "监督质量目标与可持续发展目标的落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先给结论再列依据，偏好用节点表和资源清单说话。"
+        },
+        {
+          "agent_id": "COMP-0153_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本部",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力下会反复核对报价基础与付款条件，最先发现成本漏项和现金流缺口。她倾向保守报价，常在讨论中与进度导向的同事形成成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制报价基础与成本控制方案",
+            "开展付款评审与付款评估安排",
+            "审核分包与采购价格合理性",
+            "维护文档纪律与商务记录"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用分项数字和假设条件说明立场，语气克制。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "施工技术负责人",
+          "personal_profile": "现场思维强，压力下先想拆除顺序、机械配置和废弃物外运路径，最先注意到场地条件与结构拆除的可行性。他倾向以技术方案推动进度，容易在讨论中低估行政与合规等待时间，带来技术乐观与程序审慎之间的张力。",
+          "responsibilities": [
+            "制定结构拆除与场地整治技术方案",
+            "评估施工专业作业与设备配置",
+            "开展质量评审与独立复核安排",
+            "配合设计协调与现场报告"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实具体，常用工序步骤和现场例子解释判断，语速偏快。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "安全环保部",
+          "position": "安全环保经理",
+          "personal_profile": "风险意识突出，压力下先看拆除作业的安全边界与建筑垃圾处置合规，最先注意到环境敏感点与监管要求。她倾向在方案未闭环前保留意见，常在讨论中与赶工诉求形成安全合规与进度之间的张力。",
+          "responsibilities": [
+            "编制安全管理与环境保护措施",
+            "监督建筑垃圾分类与外运处置合规",
+            "跟踪可持续发展目标与监管要求",
+            "参与风险应对与现场检查"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "谨慎细致，先提风险再给可行条件，措辞留有余地。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "合约与业主接口部",
+          "position": "合约协调经理",
+          "personal_profile": "擅长在业主与内部团队之间翻译需求，压力下先确认合约边界与责任划分，最先注意到范围外事项与变更风险。他倾向以书面确认降低争议，常在讨论中提醒不要为争取包件而承诺超出能力的事项，带来商务弹性与合约纪律之间的张力。",
+          "responsibilities": [
+            "负责业主接口与利益相关方协调",
+            "管理合约边界与变更记录",
+            "组织投标文件与文档纪律检查",
+            "协调设计协调与依赖包接口"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和有条理，习惯复述对方要点再提出条件，重视书面留痕。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯把清拆包拆成结构拆除、废料外运、场地平整三条主线并行推演。他最先注意到的是资源缺口与关键路径冲突，容易在讨论中把技术细节拉回到交付承诺与业主期望管理上，带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调设计、成本与施工三方接口",
+            "对接业主代表与监管服务沟通",
+            "主持内部风险评审与资源规划"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，先讲结论再列依据，习惯用里程碑和资源曲线说话，对模糊承诺会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0493_02_黄丽芬",
+          "agent_name": "黄丽芬",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务合约经理",
+          "personal_profile": "对报价结构与付款条件高度敏感，压力下会反复核对价格基础与成本边界，尤其关注清拆包中垃圾分类外运处置的计量与变更风险。她最先注意到的是合约条款中的开口项，常把讨论引向支付评审与成本控制，带来商务严谨与进度弹性之间的张力。",
+          "responsibilities": [
+            "编制投标报价与价格基础说明",
+            "负责付款评审与成本复核",
+            "管理分包合约与变更计量",
+            "跟踪成本控制与现金流安排"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用数字和条款编号表达立场，对不确定费用会要求书面澄清。"
+        },
+        {
+          "agent_id": "COMP-0493_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场导向强，压力下优先判断可施工性与班组调度，最先注意到的是场地条件、机械配置与拆除顺序的可行性。他倾向把方案落到每日作业面上，容易与商务和设计在措施费与工序安排上产生张力，但能快速给出风险应对的现场版本。",
+          "responsibilities": [
+            "编制施工组织与拆除顺序方案",
+            "负责现场进度与班组资源调度",
+            "落实安全文明施工与场地报告",
+            "提出现场风险应对与应急安排"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "简短具体，多用现场实例和工序图说明问题，不喜欢空泛表述。"
+        },
+        {
+          "agent_id": "COMP-0493_04_周美玲",
+          "agent_name": "周美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量与环境部",
+          "position": "质量环境经理",
+          "personal_profile": "以体系和证据为先，压力下先检查质量目标与环保合规链条是否闭合，最先注意到的是建筑垃圾分类、外运处置记录与独立检查安排是否可追溯。她常把讨论拉回文档纪律与质量目标跟踪，带来合规严谨与现场效率之间的张力。",
+          "responsibilities": [
+            "建立质量目标与检查计划",
+            "监督建筑垃圾分类与外运处置合规",
+            "组织独立检查与整改闭环",
+            "维护质量与环境文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和但坚持，习惯用检查表和证据链说话，对缺失记录会明确要求补正。"
+        },
+        {
+          "agent_id": "COMP-0493_05_吴家明",
+          "agent_name": "吴家明",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计与施工之间找平衡，压力下先确认设计意图与现场条件的偏差，最先注意到的是拆除边界、结构保留要求与图纸一致性。他倾向用技术澄清化解冲突，但会在设计变更与成本控制之间带来协调张力。",
+          "responsibilities": [
+            "协调设计文件与现场拆除边界",
+            "处理设计澄清与技术接口",
+            "支持施工前咨询与方案比选",
+            "跟踪设计变更对工期与成本的影响"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "耐心细致，喜欢用图纸标注和对比说明问题，倾向先澄清再决策。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0295",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-2",
+        "agent_id": "COMP-0295_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们公司是承包商，业务范围涵盖市政、道路、土石方、绿化等，与这个交通疏解、围护与临时道路包在能力上高度契合。包内不含主体结构拆除与建筑垃圾外运，正好落在我们可控的施工范围内。资源方面，公司总容量2.0，已占用0，本包需求0.7，资源上完全能独立承担。业主的报价要求、质量文档、安全计划、公共通行协调等，都是我们作为单一责任投标人可以组织的常规内容。内部讨论没有提出必须依赖另一家企业共享投标身份或技术权威的硬性缺口。因此我判断可以独立投标，不需要组合体。风险主要在交通疏解协调、天气影响和与设计包、造价咨询包的接口，这些通过施工方法、进度视图、风险应对方案和接口协调机制来管理，属于正常投标风险，不是放弃投标的理由。价格上要按工程量清单计价，临时设施摊销、维护及拆除费用单独列明，并与设计包及造价咨询包成果保持一致，这是投标文件编制纪律问题。综上，选择独立投标。",
+        "content": "管理层决定：对交通疏解、围护与临时道路包（CASE-0012/construction-2）以江苏乾堪建设工程有限公司名义独立投标。投标文件将围绕角色计划与团队可用性摘要、施工方法与交付方式、质量方针与质量目标实现方案、价格基础与工程量清单报价分析、施工进度视图与里程碑、风险应对方案、安全计划与应急安排、公共通行协调方案八项内容组织。报价按工程量清单计价，提供单价分析与主要材料设备价格来源，临时设施摊销、维护及拆除费用单独列明，并与设计包及造价咨询包成果保持一致。交通疏解与公共通行协调、扬尘噪声控制、施工期临时排水及与设计包、造价咨询包的接口，作为重点风险应对事项纳入施工组织与进度安排。本决定基于情景试运行资料，不代表真实企业能力或历史采购结果。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:58",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-2",
+        "agent_id": "COMP-0153_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个包是清拆工程的前置施工包，内容集中在交通疏解、围挡、临时道路、扬尘噪声控制和临时排水，属于典型的市政施工配套工作，与我方作为承包商的施工组织、场地布置和现场协调能力高度契合。我方资源占用为零，可用资源2.0，包要求0.7，容量上完全有余量。包预算4462.5万MOP，规模适中，不构成财务压力。风险点在于城市交通疏解和公共通行协调需要与设计包、造价咨询包接口一致，价格基础须与上游成果对齐，这属于正常的投标组织与协调工作，不需要引入组合体来分担投标人身份或交付责任。我方可以作为单一责任投标人，通过常规的专业分包和外部支持解决局部专项，不需要共享投标人身份。因此判断为独立投标。",
+        "content": "管理层决定：对CASE-0012/construction-2交通疏解、围护与临时道路包以独立投标人身份参与投标。理由如下：一、能力匹配，本包聚焦施工期交通疏解设施、围挡与出入口、临时道路及行人通道、扬尘噪声控制与临时排水，属我方施工组织与现场管理强项；二、资源充足，当前无占用，可用资源2.0对包需求0.7，团队可用性满足；三、商业合理，包预算4462.5万MOP，规模适中，价格基础可按工程量清单计价并与设计包、造价咨询包成果对齐；四、风险可控，交通疏解、环境控制、天气影响与接口协调纳入风险应对方案，公共通行协调与安全应急单独成章。标书将提交角色计划与团队可用性摘要、施工方法与交付方式、质量方针与目标实现方案、价格基础与工程量清单报价分析、施工进度视图与里程碑、风险应对方案、安全计划与应急安排、公共通行协调方案。临时设施摊销、维护及拆除费用单独列明，主要材料设备价格来源随报价说明提供。局部专项拟通过常规专业分包与外部支持解决，不改变单一责任投标人身份。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:58",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个包是清拆工程中的交通疏解、围护与临时道路包，属于我们作为本地总承包商的常规能力范围：围挡、临时道路、行人通道、扬尘噪声控制、临时排水，都是我们日常施工管理的内容。公司资源占用为零，可用资源2.0，包需求0.7，容量上没有硬约束。价格上限4463万MOP，相对整个1.5亿项目是合理比例，商业价值可接受。真正的风险在于它与设计包、造价咨询包的接口，以及公共通行协调和交通疏解方案需要与设计成果一致；但这些属于我们作为单一责任投标人可以自行组织的协调工作，通过分包和外部专业支持即可覆盖，不需要共享投标人身份或让渡交付主导权。我们有三体系认证，质量、安全、环境管理有制度基础。因此我倾向独立投标，把接口协调、交通疏解方案、价格基础一致性作为投标假设和风险应对写清楚，而不是拉组合体。",
+        "content": "得宝建筑集团有限公司就CASE-0012/construction-2交通疏解、围护与临时道路包提交独立投标意向。我们确认本包范围限于施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水，不含主体结构拆除与建筑垃圾外运。公司将作为单一责任投标人承担本包交付，按业主列明的角色计划与团队可用性摘要、施工方法与交付方式、质量方针与质量目标实现方案、价格基础与工程量清单报价分析、施工进度视图与里程碑、风险应对方案、安全计划与应急安排、公共通行协调方案组织投标文件。价格按工程量清单计价，提供单价分析与主要材料设备价格来源，临时设施摊销、维护及拆除费用单独列明，价格基础与设计包及造价咨询包成果保持一致。交通疏解与公共通行协调由公司统一对外接口，专业交通疏解设施与临时排水施工按需采用经公司管理的分包与外部专业支持，公司保留现场管理、安全、质量记录与进度控制的主导权。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:58",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-2",
+        "agent_id": "COMP-0153_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "交通标志标线、临时排水接口等专项采用常规专业分包，含管理费与接口协调，暂按估算数列，分包报价待确认\n报价按工程量清单计价，由以下成本构成：交通疏解设施与围挡工程MOP 11,280,000；临时道路及行人通道工程MOP 7,860,000；扬尘与噪声控制设施MOP 4,350,000；施工期临时排水工程MOP 3,980,000；临时设施摊销、维护及拆除费用MOP 5,240,000（单独列明）；现场管理、安全与质量文档MOP 4,630,000；专业分包与外部支持MOP 2,870,000（暂按估算，分包报价待确认）；风险、保险、管理费与利润MOP 4,415,000",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:43:19",
+        "verification_requests": [
+          {
+            "question": "交通标志标线、临时排水接口等专项采用常规专业分包，含管理费与接口协调，暂按估算数列，分包报价待确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "报价按工程量清单计价，由以下成本构成：交通疏解设施与围挡工程MOP 11,280,000；临时道路及行人通道工程MOP 7,860,000；扬尘与噪声控制设施MOP 4,350,000；施工期临时排水工程MOP 3,980,000；临时设施摊销、维护及拆除费用MOP 5,240,000（单独列明）；现场管理、安全与质量文档MOP 4,630,000；专业分包与外部支持MOP 2,870,000（暂按估算，分包报价待确认）；风险、保险、管理费与利润MOP 4,415,000",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0012/construction-2",
+        "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+        "agent_name": "林晓彤",
+        "department": "财务与资源规划",
+        "position": "财务与资源规划主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要对本包判给承担交付与公帑责任。江苏乾堪报价MOP 41,990,000，低于上限MOP 44,625,000，且清单分项完整、临时设施摊销维护拆除单列，交通疏解与公共通行协调方案具体，质量文档与独立复核程序清楚，边界明确不含主体拆除与垃圾外运，与授权范围一致。另两家报价接近上限，中交一航局有未决条件且分包报价待确认，得宝关键专业分包尚未选定，交付确定性较弱。江苏乾堪的主要材料设备价格为暂定估价，固定总价下价格波动风险预备是否充足需要澄清，但这是判给前可以聚焦落实的事项，不改变其作为单一责任投标人的责任完整性。综合能力匹配、价格合理性与风险控制，判给江苏乾堪是负责任的业主决定。",
+        "content": "经综合评审，本包判给江苏乾堪建设工程有限公司（COMP-0295），判给金额为MOP 41,990,000。该公司以单一责任投标人身份独立投标，技术路线覆盖交通疏解、围挡与出入口、临时道路及行人通道、扬尘与噪声控制、施工期临时排水，边界明确不含主体结构拆除与建筑垃圾外运，清单分项完整且临时设施摊销维护拆除费用单列，质量文档与独立复核程序清楚，风险应对与接口协调安排具体，报价低于本包上限，价格合理性与方案完整性较为均衡。判给前澄清重点为主要材料设备询价来源的落实、固定总价下材料价格波动风险预备的充足性说明，以及高峰期人员调配安排的细化，相关澄清与文件核对按业主审查程序推进，并纳入业主审查与批准节点。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:44:07",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0012/construction-2",
+        "decision": "bid",
+        "reason": "本包属于施工类交通疏解与临时设施工程，与我公司市政、道路、土石方及现场管理能力匹配度高，且明确不含主体结构拆除与建筑垃圾外运，边界清晰。公司当前可用资源为2.0，本包需求0.7，具备独立承担的资源条件。业主关注的角色计划、施工方法、质量目标、价格基础、进度视图、风险应对、安全与公共通行协调，均可由我公司作为单一责任投标人组织编制，无需另一家企业共享投标身份或技术权威。交通疏解、环境控制、天气影响及与设计包、造价咨询包的接口属于可通过施工组织、进度安排和接口协调机制管理的正常投标风险。因此决定独立投标，按工程量清单计价并单独列明临时设施摊销、维护及拆除费用，确保价格基础与设计包及造价咨询包成果一致。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+          "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+          "临时设施摊销、维护及拆除费用在报价中单独列明",
+          "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+          "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0012/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，本包为清拆工程配套的交通疏解、围护与临时道路施工包，与我方施工组织、场地布置、现场安全与质量文档管理能力匹配度高。当前资源占用为零，可用资源2.0，包需求0.7，团队可用性充足，具备独立承担并作为单一责任投标人的条件。包预算4462.5万MOP在可承受范围内，价格基础可与设计包及造价咨询包成果对齐。交通疏解、环境控制、天气影响和接口协调等风险属于正常投标风险，可通过施工方法、进度视图、风险应对方案和公共通行协调方案在标书中回应，无需以组合体形式分担投标人身份或交付责任。决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按工程量清单计价，单价分析与主要材料设备价格来源在报价文件中提供",
+          "临时设施摊销、维护及拆除费用单独列明",
+          "价格基础与设计包及造价咨询包成果保持一致，接口协调在标书中说明",
+          "局部专项施工采用常规专业分包与外部支持，我方保持单一责任投标人身份",
+          "交通疏解与公共通行协调方案按业主审查要求编制并纳入风险应对"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0012/construction-2",
+        "decision": "bid",
+        "reason": "管理层判断：本包属于公司可独立承担的城市施工临时工程范畴，围护、临时道路、行人通道、环境控制与临时排水均在总承包施工管理能力之内，资源可用且无占用冲突，报价上限与包内容匹配。设计包与造价咨询包的接口、公共通行协调、交通疏解方案一致性是需要在施工方法与风险应对中明确安排的常规接口风险，可通过分包与外部专业支持解决，不构成必须共享投标人身份或交付责任的组合体情形。公司具备三体系认证与本地施工管理经验，可作为单一责任投标人提交。投标前提是价格基础与设计包、造价咨询包成果保持一致，并在报价中单列临时设施摊销、维护及拆除费用。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任投标人身份独立投标，不组建组合体",
+          "交通疏解设施、临时排水等专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权",
+          "价格基础与设计包及造价咨询包成果保持一致，临时设施摊销、维护及拆除费用单独列明",
+          "公共通行协调与交通疏解方案在投标文件中明确接口安排与风险应对",
+          "投标报价在44625000.0 MOP上限内按工程量清单计价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0012/construction-2_001",
+        "package_id": "CASE-0012/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0295",
+        "bidder_name": "江苏乾堪建设工程有限公司",
+        "technical_proposal": "江苏乾堪建设工程有限公司以单一责任投标人身份承接交通疏解、围护与临时道路包（CASE-0012/construction-2）。本包边界明确：施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运，我公司不将边界外工作纳入报价。\n\n技术路线：\n1. 交通疏解：按设计包交通组织图则编制分阶段疏解方案，设置临时标志、标线、护栏、水马、导向牌与夜间反光设施，行人与车辆分流，保留消防及紧急通道。\n2. 围护与出入口：采用装配式围挡加基础配重，出入口设置洗车槽、沉淀池、门禁与车辆冲洗设施，围挡高度与外观按业主要求统一。\n3. 临时道路及行人通道：路基压实加临时路面铺装，设置防滑行人通道、无障碍坡道与照明，定期巡查修补。\n4. 扬尘与噪声控制：围挡喷淋、雾炮、覆盖、洒水降尘，噪声监测与作业时段管理。\n5. 施工期临时排水：临时排水沟、集水井与沉淀池，接入市政排水前与相关方确认接口，雨季前完成疏通检查。\n\n质量方针：一次成优、过程受控。按内部质量程序执行材料进场检验、工序自检与独立复核、隐蔽验收记录与竣工资料归档，质量目标为分项工程一次验收合格率100%，无重大质量事故。\n\n接口协调：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对工程量清单口径与单价分析基础，价格基础与两包成果保持一致；设专人负责接口台账与变更记录。",
+        "implementation_plan": "组织方式：公司独立承担，不设联合体。项目总监陈志强统筹，下设施工经理、交通疏解协调员、安全主任、质量工程师、测量与资料员；主要作业由公司自有班组承担，交通器材、围挡板材、临时路面材料及排水管材按投标阶段市场询价来源采购，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入。\n\n实施步骤：\n1. 进场准备：现场踏勘、接口确认、临时设施布置报审、交通疏解方案报批。\n2. 围挡与出入口先行：完成围挡封闭与出入口设置，形成封闭作业面。\n3. 交通疏解设施分批安装，随主体拆除进度动态调整。\n4. 临时道路与行人通道随阶段推进铺设与改移。\n5. 扬尘噪声控制设施与临时排水同步配置，雨季前完成排水系统检查。\n6. 分阶段验收、维护与拆除，临时设施摊销、维护及拆除费用单独列项。\n\n资源安排：本包需求资源0.7，公司当前可用资源2.0，可独立承担；按施工高峰配置现场管理与作业人员，具体人数按进度视图动态调配。",
+        "quotation": 41990000.0,
+        "schedule_commitment": "按项目总工期24个月编制施工进度视图，本包工作随主体拆除阶段分阶段推进：进场准备与围挡封闭在第1至第2个月完成；交通疏解设施与临时道路分批实施，随主体作业面移交动态调整；扬尘噪声控制与临时排水设施全过程配置并定期维护；完工前完成临时设施拆除与场地恢复。关键里程碑：围挡封闭完成、首批交通疏解设施投用、临时排水系统雨季前检查完成、分阶段验收、临时设施拆除完成。具体开工日期以业主移交场地及设计包图则确认为准。",
+        "compliance_statement": "响应业主八项要求：\n1. 角色计划与团队可用性摘要：提供项目总监、施工经理、交通疏解协调员、安全主任、质量工程师及资料员角色计划，公司当前可用资源2.0，本包需求0.7，资源可独立保障。\n2. 施工方法与交付方式：按分阶段交通疏解、围挡先行、临时道路随阶段改移的方式交付，边界不含主体结构拆除与建筑垃圾外运。\n3. 质量方针与质量目标：执行内部质量程序与独立复核，分项工程一次验收合格率100%。\n4. 价格基础与工程量清单报价分析：按工程量清单计价，提供单价分析与主要材料设备价格来源；临时设施摊销、维护及拆除费用单独列明；价格基础与设计包及造价咨询包成果保持一致。\n5. 施工进度视图与里程碑：按24个月总工期编制分阶段进度视图与里程碑。\n6. 风险应对方案：覆盖交通疏解、环境控制、天气影响与接口协调。\n7. 安全计划与应急安排：设安全主任与应急物资，编制交通、台风暴雨及突发事故应急预案。\n8. 公共通行协调方案：设交通疏解协调员，与周边商户、居民及相关方沟通，保留行人及紧急通道。\n\n价格合理性：报价按工程量清单口径编制，单价分析与材料设备价格来源可追溯，风险预备费与风险应对方案匹配，接受业主价格审查。",
+        "risk_response": "交通疏解风险：编制分阶段疏解方案并报批，设置临时标志标线与夜间反光设施，安排协调员现场疏导，随主体进度动态调整。\n环境控制风险：围挡喷淋、雾炮、覆盖与洒水降尘常态化，噪声监测与作业时段管理，超标即调整作业安排。\n天气影响风险：雨季前完成临时排水系统检查与疏通，台风暴雨前加固围挡与临时设施，预留天气影响工期缓冲。\n接口协调风险：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对清单口径与单价分析基础，建立接口台账与变更记录，设专人跟踪。\n材料价格波动风险：本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款。\n公共通行风险：保留行人通道与紧急通道，设置无障碍坡道与照明，定期巡查修补，与周边相关方保持沟通。",
+        "submission_summary": "江苏乾堪建设工程有限公司以单一责任投标人身份独立投标交通疏解、围护与临时道路包（CASE-0012/construction-2），不设联合体，不与其他企业共享投标身份。\n\n报价基础（MOP）：\n- 交通疏解设施工程：7,380,000\n- 施工围挡与出入口工程：8,960,000\n- 临时道路及行人通道工程：6,720,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水工程：2,860,000\n- 临时设施摊销、维护及拆除费用（单独列明）：3,540,000\n- 现场管理、安全环保、质量文档与接口协调费用：4,210,000\n- 公司管理费、利润及风险预备费：5,140,000\n合计报价：41,990,000 MOP，低于本包上限44,625,000 MOP。\n\n价格说明：按工程量清单计价，提供单价分析与主要材料设备价格来源；主要材料设备价格为投标阶段市场询价暂定估价，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入，属暂定假设而非已取得报价。临时设施摊销、维护及拆除费用单独列项。价格基础与设计包及造价咨询包成果保持一致。本包按固定总价报价，材料价格波动风险已计入风险预备费。\n\n资源与工期：公司当前可用资源2.0，本包需求0.7，可独立承担；按项目总工期24个月编制分阶段进度视图与里程碑。\n\n付款安排建议：按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量，具体以合同约定为准。",
+        "quotation_breakdown": [
+          {
+            "item": "交通疏解设施工程（标志、标线、护栏、水马、导向及夜间设施）",
+            "amount": 7380000,
+            "basis": "按设计包交通疏解图则估算工程量乘以单价分析，含安装、改移与拆除；单价按当前材料价格指数1.0545及人工价格指数1.098计取"
+          },
+          {
+            "item": "施工围挡与出入口工程（装配式围挡、基础配重、门禁、洗车槽及沉淀池）",
+            "amount": 8960000,
+            "basis": "按围挡延米与出入口数量估算，含板材、基础、门禁与冲洗设施；材料价格为投标阶段市场询价暂定估价"
+          },
+          {
+            "item": "临时道路及行人通道工程（路基、临时路面、防滑通道、无障碍坡道及照明）",
+            "amount": 6720000,
+            "basis": "按临时道路面积与行人通道长度估算，含路基压实、路面铺装与照明；随阶段改移部分按一次改移计入"
+          },
+          {
+            "item": "扬尘与噪声控制设施（喷淋、雾炮、覆盖、噪声监测及洒水降尘）",
+            "amount": 3180000,
+            "basis": "按施工期配置设备台班、监测点与耗材估算，含设备摊销与运行维护"
+          },
+          {
+            "item": "施工期临时排水工程（排水沟、集水井、沉淀池及接口协调）",
+            "amount": 2860000,
+            "basis": "按排水线路长度与集水井数量估算，含与市政排水接口确认及雨季前疏通检查"
+          },
+          {
+            "item": "临时设施摊销、维护及拆除费用（单独列明）",
+            "amount": 3540000,
+            "basis": "按围挡、临时道路、疏解设施及排水设施的原值分摊、定期维护与完工拆除清运估算，单独列项不与永久工程混计"
+          },
+          {
+            "item": "现场管理、安全环保、质量文档与接口协调费用",
+            "amount": 4210000,
+            "basis": "按项目总监、施工经理、安全主任、质量工程师及资料员等现场管理人员工期投入估算，含安全应急物资、质量文档管理与与设计包、造价咨询包接口协调"
+          },
+          {
+            "item": "公司管理费、利润及风险预备费",
+            "amount": 5140000,
+            "basis": "按上述直接费的综合取费计取，含交通疏解动态调整、天气影响、材料价格波动及接口风险预备；本包按固定总价报价，材料价格波动风险已计入预备费"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+          "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+          "临时设施摊销、维护及拆除费用在报价中单独列明",
+          "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+          "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入",
+          "本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款",
+          "开工日期以业主移交场地及设计包图则确认为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0012/construction-2_002",
+        "package_id": "CASE-0012/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标人（中交第一航务工程局有限公司）以单一责任投标人身份提交本包技术方案。施工方法：交通疏解设施采用预制混凝土基座加水马组合式围挡，按设计包交通疏解图分阶段布置，设置临时行人通道与无障碍衔接；施工围挡采用2.5米高镀锌钢骨架加彩钢板，出入口设洗车槽与沉淀池；临时道路采用200毫米厚C25混凝土面层加碎石垫层，行人通道铺设防滑钢板并设扶手；扬尘控制配置雾炮机、喷淋系统与TSP在线监测，噪声控制采用低噪设备与临时隔声屏；临时排水沿围挡内侧设300×300排水沟，经三级沉淀后排入市政雨水系统，接口位置与设计包及造价咨询包成果核对后实施。质量方针：一次验收合格率100%，质量目标为分项工程验收合格率100%、无重大质量事故。质量实现方案包括材料进场检验、工序三检制、独立检查复核、质量文档按分项归档。安全计划：设置专职安全员，编制交通疏解与临时排水专项安全方案，配置应急物资与演练安排。公共通行协调方案：设公共通行协调专员，与周边商户及居民建立沟通机制，分阶段发布通行指引，保留不少于1.5米行人通道。接口协调：与设计包核对交通疏解与临时排水图纸，与造价咨询包核对工程量清单与单价分析，接口协调会议纳入进度视图。",
+        "implementation_plan": "按24个月项目工期编制施工进度视图，本包施工期与清拆主体施工期同步，分三个阶段：第一阶段（第1至3个月）完成交通疏解设施与围挡搭设、临时道路及行人通道施工、临时排水系统施工；第二阶段（第4至20个月）进行设施维护、扬尘噪声控制运行、交通疏解动态调整与公共通行协调；第三阶段（第21至24个月）完成设施拆除与场地恢复。里程碑：M1第1个月末交通疏解方案报批完成；M2第3个月末围挡与临时道路验收；M3第12个月末中期交通疏解评估；M4第20个月末设施拆除启动；M5第24个月末全部临时设施拆除完成。团队可用性摘要：项目总监1名、项目经理1名、施工员4名、安全员2名、质量员2名、交通协调专员2名、环境控制专员1名、测量员2名，当前资源占用为零，可用资源2.0满足包需求0.7。局部专项（如交通标志标线、临时排水接口）采用常规专业分包与外部支持，由我方统一管理并承担单一责任。",
+        "quotation": 44625000.0,
+        "schedule_commitment": "本包施工进度与项目24个月总工期同步。关键里程碑：第1个月末完成交通疏解方案报批；第3个月末完成围挡、临时道路及临时排水系统并验收；第12个月末完成中期交通疏解评估与调整；第20个月末启动临时设施拆除；第24个月末完成全部临时设施拆除与场地恢复。若因天气或接口协调导致局部延误，通过备用资源与分阶段调整在总工期内消化，不单独延长本包工期。",
+        "compliance_statement": "我方接受业主按设计包及造价咨询包成果审查价格合理性与风险应对匹配度。报价按工程量清单计价，提供单价分析及主要材料设备价格来源说明；临时设施摊销、维护及拆除费用已单独列明。价格基础与设计包交通疏解图、临时排水图及造价咨询包工程量清单保持一致，接口协调在标书中说明。我方为单一责任投标人，局部专业分包不改变责任主体。质量文档按分项归档供业主审查，安全与公共通行协调方案纳入业主审查范围。",
+        "risk_response": "交通疏解风险：分阶段动态调整方案，设置备用交通标志与绕行指引，与交通管理部门保持沟通。环境控制风险：雾炮与喷淋联动TSP监测，超标自动加喷，噪声敏感时段调整作业。天气影响风险：雨季前完成临时排水系统并配置备用抽水泵，台风季节加固围挡与临时设施。接口协调风险：与设计包及造价咨询包建立定期接口会议，图纸与清单差异在施工前澄清。公共通行风险：保留不少于1.5米行人通道，设协调专员处理投诉。价格风险：主要材料价格按投标期价格基础，临时设施摊销已单独列明，不依赖未确认的分包报价。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交CASE-0012/construction-2交通疏解、围护与临时道路包报价，总报价MOP 44,625,000，与包预算上限一致。报价按工程量清单计价，由以下成本构成：交通疏解设施与围挡工程MOP 11,280,000；临时道路及行人通道工程MOP 7,860,000；扬尘与噪声控制设施MOP 4,350,000；施工期临时排水工程MOP 3,980,000；临时设施摊销、维护及拆除费用MOP 5,240,000（单独列明）；现场管理、安全与质量文档MOP 4,630,000；专业分包与外部支持MOP 2,870,000（暂按估算，分包报价待确认）；风险、保险、管理费与利润MOP 4,415,000。价格基础与设计包及造价咨询包成果对齐，局部专项采用常规专业分包，我方保持单一责任。团队可用资源2.0，包需求0.7，可用性充足。付款按里程碑申请，具体节点在合同阶段细化。",
+        "quotation_breakdown": [
+          {
+            "item": "交通疏解设施与围挡工程",
+            "amount": 11280000,
+            "basis": "按设计包交通疏解图及造价咨询包工程量清单估算：组合式围挡约3200米、水马及交通标志约1800件、出入口设施6处，含材料、安装与拆除摊销"
+          },
+          {
+            "item": "临时道路及行人通道工程",
+            "amount": 7860000,
+            "basis": "临时道路约6800平方米混凝土面层及垫层、行人通道约1200平方米防滑钢板与扶手，含基层处理、排水坡度与维护"
+          },
+          {
+            "item": "扬尘与噪声控制设施",
+            "amount": 4350000,
+            "basis": "雾炮机6台、喷淋系统约1500米、TSP在线监测4套、临时隔声屏约800平方米，含运行电费与耗材"
+          },
+          {
+            "item": "施工期临时排水工程",
+            "amount": 3980000,
+            "basis": "排水沟约2600米、三级沉淀池8座、抽排设备及与市政雨水系统接口协调，含雨季增强排水备用"
+          },
+          {
+            "item": "临时设施摊销、维护及拆除费用",
+            "amount": 5240000,
+            "basis": "围挡与临时道路等临时设施按24个月摊销，含日常维护、交通疏解动态调整、拆除及场地恢复，单独列明"
+          },
+          {
+            "item": "现场管理、安全与质量文档",
+            "amount": 4630000,
+            "basis": "项目总监及管理人员24个月薪酬、安全应急物资、质量检测与文档管理、公共通行协调专员费用"
+          },
+          {
+            "item": "专业分包与外部支持",
+            "amount": 2870000,
+            "basis": "交通标志标线、临时排水接口等专项采用常规专业分包，含管理费与接口协调，暂按估算数列，分包报价待确认"
+          },
+          {
+            "item": "风险、保险、管理费与利润",
+            "amount": 4415000,
+            "basis": "交通疏解与天气影响风险预备、保险、公司管理费及合理利润，按直接费约11%计取"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_7d0b2e06a068535cd84d",
+          "condition_50549247851b358a02bf"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按工程量清单计价，单价分析与主要材料设备价格来源在报价文件中提供",
+          "临时设施摊销、维护及拆除费用单独列明",
+          "价格基础与设计包及造价咨询包成果保持一致，接口协调在标书中说明",
+          "局部专项施工采用常规专业分包与外部支持，我方保持单一责任投标人身份",
+          "交通疏解与公共通行协调方案按业主审查要求编制并纳入风险应对"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0012/construction-2_003",
+        "package_id": "CASE-0012/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份独立投标CASE-0012/construction-2交通疏解、围护与临时道路包，不组建组合体。技术方案围绕授权范围组织：施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；明确不含主体结构拆除与建筑垃圾外运，界面在施工组织说明中逐项划清。\n\n交通疏解设施：按设计包交通疏解成果布置导向标志、水马、护栏、临时信号与夜间反光警示，分阶段转换并保留行人绕行通道；交通疏解专业作业采用经公司管理的分包，公司统一对外接口、统一放样验收与每日巡查记录。\n\n围护与出入口：围挡按连续封闭、稳固抗风原则设置，出入口设洗车槽、沉淀池与门禁值守，围挡广告与照明按业主审查意见执行。\n\n临时道路及行人通道：路基压实、临时路面铺装、防滑与无障碍过渡，行人通道设防护顶棚与照明，定期检查修补。\n\n环境控制：围挡喷淋、覆盖、洒水降尘与噪声监测点布置，按ISO 14001程序形成监测记录。\n\n临时排水：临时排水沟、集水井与沉淀设施接入市政排水接口，与设计包排水成果核对后实施，雨季前完成清淤检查。\n\n质量与文档：按ISO 9001程序执行材料进场检验、工序自检与独立复核，施工记录、监测记录与验收资料同步归档，满足质量文档管理能力要求。\n\n公司具备ISO 9001、ISO 14001、ISO 45001三体系认证，作为本包质量、环境与职业健康安全管理的制度基础。交通疏解与临时排水专业分包尚待按公司采购程序选定，本投标以经公司管理的分包与外部专业支持为报价与交付假设。",
+        "implementation_plan": "一、组织与角色计划：项目总监统一对外接口，设施工经理、交通疏解协调员、环境与安全主任、质量文档管理员各岗，交通疏解设施与临时排水专业作业由经公司管理的分包承担，公司保留现场管理、安全、质量记录与进度控制主导权。团队可用性按公司当前资源状态安排，本包不与其他占用冲突。\n\n二、施工顺序：进场后先完成围挡封闭与出入口设置，同步实施第一阶段交通疏解改道；随后铺设临时道路与行人通道；环境控制设施随围挡同步安装；临时排水在雨季前完成并与市政接口核对；各阶段转换前提交交通疏解转换方案供业主与相关方审查。\n\n三、接口协调：与设计包核对交通疏解、临时排水与围挡布置成果；与造价咨询包核对工程量清单口径与临时设施摊销、维护及拆除费用单列方式；价格基础与两包成果保持一致。\n\n四、公共通行协调：设公共通行协调员，公布施工信息与绕行指引，处理商户与行人投诉并记录闭环。\n\n五、进度视图：按项目总体工期编排本包里程碑，围挡与首阶段疏解完成、临时道路贯通、排水系统投用、各阶段疏解转换、临时设施拆除与场地移交。\n\n六、质量与安全：执行三体系程序，工序自检加独立复核，每周安全巡查与应急演练，恶劣天气前加固围挡与检查排水。",
+        "quotation": 44620000.0,
+        "schedule_commitment": "本包进度按项目总体工期编排，自进场通知起分阶段实施：围挡封闭与首阶段交通疏解在进场初期完成，临时道路与行人通道随后贯通，临时排水在首个雨季前投用，各阶段疏解转换按业主审查通过的方案执行，临时设施在主体施工完成后拆除并移交场地。关键里程碑与设计包、造价咨询包成果核对后锁定，遇天气或交通疏解方案调整时按风险应对程序报批调整，不擅自压缩阶段转换的安全准备时间。",
+        "compliance_statement": "业主对角色计划与团队可用性摘要、施工方法与交付方式、质量方针与质量目标实现方案、价格基础与工程量清单报价分析、施工进度视图与里程碑、风险应对方案、安全计划与应急安排、公共通行协调方案的审查要求，公司逐项对应提交。价格按工程量清单计价，提供单价分析与主要材料设备价格来源，临时设施摊销、维护及拆除费用单独列明，价格基础与设计包及造价咨询包成果保持一致。公司接受业主对价格合理性与风险应对匹配度的审查，并按业主审查意见修订施工方法与疏解转换安排。质量文档按ISO 9001程序归档，供业主随时查阅。",
+        "risk_response": "交通疏解风险：分阶段转换方案提前报审，转换期加派交通协调员与临时标志，专业分包由公司统一管理并保留验收权。\n环境控制风险：围挡喷淋与洒水降尘按监测数据调整频次，噪声监测点记录留档，超标即调整作业时段。\n天气影响风险：雨季前完成临时排水投用与清淤，恶劣天气前加固围挡、检查行人通道顶棚，按应急预案停工与复工。\n接口协调风险：与设计包核对疏解与排水成果，与造价咨询包核对清单口径，接口差异在施工前以书面澄清闭环。\n公共通行风险：设公共通行协调员，公布绕行指引，投诉记录闭环处理。\n价格风险：材料与人工价格指数呈上行趋势，报价中已计提风险预备；如业主接受，可就主要材料价格设置经双方同意的调整机制，否则按固定报价执行并自行承担已计提范围内的波动。\n分包风险：交通疏解与临时排水专业分包尚待按公司采购程序选定，公司以自身管理能力承担交付责任。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立提交CASE-0012/construction-2交通疏解、围护与临时道路包投标，不组建组合体，专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权。\n\n报价基础（MOP）：\n- 交通疏解设施施工与阶段转换：8,380,000\n- 施工围挡、出入口及大门值守设施：7,260,000\n- 临时道路及行人通道：6,950,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水：3,620,000\n- 临时设施摊销、维护及拆除（单列）：4,870,000\n- 现场管理、安全环保与质量文档：4,310,000\n- 材料与人工价格风险预备及管理费：3,610,000\n- 不可预见费与接口协调预备：2,440,000\n合计报价：44,620,000 MOP，在44,625,000 MOP上限内。\n\n价格按工程量清单计价，临时设施摊销、维护及拆除费用按业主要求单列，价格基础与设计包及造价咨询包成果保持一致。报价已计入材料与人工价格指数上行的风险预备，若业主不接受价格调整机制，则按固定报价执行并自行承担已计提范围内的波动。交通疏解与临时排水专业分包尚待按公司采购程序选定，属经公司管理的分包假设，不改变单一责任投标人身份。",
+        "quotation_breakdown": [
+          {
+            "item": "交通疏解设施施工与阶段转换",
+            "amount": 8380000,
+            "basis": "导向标志、水马护栏、临时信号与警示设施，含多阶段转换与专业分包管理，按设计包疏解成果估算工程量"
+          },
+          {
+            "item": "施工围挡、出入口及大门值守设施",
+            "amount": 7260000,
+            "basis": "连续封闭围挡、出入口门禁、洗车槽与沉淀池，按围护长度与出入口数量估算"
+          },
+          {
+            "item": "临时道路及行人通道",
+            "amount": 6950000,
+            "basis": "路基压实、临时路面铺装、行人防护顶棚与照明，按临时道路面积与通道长度估算"
+          },
+          {
+            "item": "扬尘与噪声控制设施",
+            "amount": 3180000,
+            "basis": "围挡喷淋、覆盖、洒水降尘与噪声监测点，含监测记录与维护"
+          },
+          {
+            "item": "施工期临时排水",
+            "amount": 3620000,
+            "basis": "临时排水沟、集水井、沉淀设施及市政接口协调，含雨季前清淤维护"
+          },
+          {
+            "item": "临时设施摊销、维护及拆除（单列）",
+            "amount": 4870000,
+            "basis": "按业主要求单列：临时设施摊销、施工期维护与完工拆除清运"
+          },
+          {
+            "item": "现场管理、安全环保与质量文档",
+            "amount": 4310000,
+            "basis": "项目管理团队、安全主任、环境监测、质量文档管理与公共通行协调员"
+          },
+          {
+            "item": "材料价格与人工价格风险预备及管理费",
+            "amount": 3610000,
+            "basis": "按材料价格指数与人工价格指数上行趋势计提风险预备，含公司管理费与合理利润"
+          },
+          {
+            "item": "不可预见费与接口协调预备",
+            "amount": 2440000,
+            "basis": "设计包与造价咨询包接口核对、交通疏解方案调整及天气影响的预备费用"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任投标人身份独立投标，不组建组合体",
+          "交通疏解设施、临时排水等专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权",
+          "价格基础与设计包及造价咨询包成果保持一致，临时设施摊销、维护及拆除费用单独列明",
+          "公共通行协调与交通疏解方案在投标文件中明确接口安排与风险应对",
+          "投标报价在44625000.0 MOP上限内按工程量清单计价",
+          "交通疏解与临时排水专业分包尚待按公司采购程序选定，本投标以经公司管理的分包为报价与交付假设"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0012/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0012/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "quotation": 41990000.0,
+            "quotation_breakdown": [
+              {
+                "item": "交通疏解设施工程（标志、标线、护栏、水马、导向及夜间设施）",
+                "amount": 7380000,
+                "basis": "按设计包交通疏解图则估算工程量乘以单价分析，含安装、改移与拆除；单价按当前材料价格指数1.0545及人工价格指数1.098计取"
+              },
+              {
+                "item": "施工围挡与出入口工程（装配式围挡、基础配重、门禁、洗车槽及沉淀池）",
+                "amount": 8960000,
+                "basis": "按围挡延米与出入口数量估算，含板材、基础、门禁与冲洗设施；材料价格为投标阶段市场询价暂定估价"
+              },
+              {
+                "item": "临时道路及行人通道工程（路基、临时路面、防滑通道、无障碍坡道及照明）",
+                "amount": 6720000,
+                "basis": "按临时道路面积与行人通道长度估算，含路基压实、路面铺装与照明；随阶段改移部分按一次改移计入"
+              },
+              {
+                "item": "扬尘与噪声控制设施（喷淋、雾炮、覆盖、噪声监测及洒水降尘）",
+                "amount": 3180000,
+                "basis": "按施工期配置设备台班、监测点与耗材估算，含设备摊销与运行维护"
+              },
+              {
+                "item": "施工期临时排水工程（排水沟、集水井、沉淀池及接口协调）",
+                "amount": 2860000,
+                "basis": "按排水线路长度与集水井数量估算，含与市政排水接口确认及雨季前疏通检查"
+              },
+              {
+                "item": "临时设施摊销、维护及拆除费用（单独列明）",
+                "amount": 3540000,
+                "basis": "按围挡、临时道路、疏解设施及排水设施的原值分摊、定期维护与完工拆除清运估算，单独列项不与永久工程混计"
+              },
+              {
+                "item": "现场管理、安全环保、质量文档与接口协调费用",
+                "amount": 4210000,
+                "basis": "按项目总监、施工经理、安全主任、质量工程师及资料员等现场管理人员工期投入估算，含安全应急物资、质量文档管理与与设计包、造价咨询包接口协调"
+              },
+              {
+                "item": "公司管理费、利润及风险预备费",
+                "amount": 5140000,
+                "basis": "按上述直接费的综合取费计取，含交通疏解动态调整、天气影响、材料价格波动及接口风险预备；本包按固定总价报价，材料价格波动风险已计入预备费"
+              }
+            ],
+            "submission_summary": "江苏乾堪建设工程有限公司以单一责任投标人身份独立投标交通疏解、围护与临时道路包（CASE-0012/construction-2），不设联合体，不与其他企业共享投标身份。\n\n报价基础（MOP）：\n- 交通疏解设施工程：7,380,000\n- 施工围挡与出入口工程：8,960,000\n- 临时道路及行人通道工程：6,720,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水工程：2,860,000\n- 临时设施摊销、维护及拆除费用（单独列明）：3,540,000\n- 现场管理、安全环保、质量文档与接口协调费用：4,210,000\n- 公司管理费、利润及风险预备费：5,140,000\n合计报价：41,990,000 MOP，低于本包上限44,625,000 MOP。\n\n价格说明：按工程量清单计价，提供单价分析与主要材料设备价格来源；主要材料设备价格为投标阶段市场询价暂定估价，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入，属暂定假设而非已取得报价。临时设施摊销、维护及拆除费用单独列项。价格基础与设计包及造价咨询包成果保持一致。本包按固定总价报价，材料价格波动风险已计入风险预备费。\n\n资源与工期：公司当前可用资源2.0，本包需求0.7，可独立承担；按项目总工期24个月编制分阶段进度视图与里程碑。\n\n付款安排建议：按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量，具体以合同约定为准。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+              "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+              "临时设施摊销、维护及拆除费用在报价中单独列明",
+              "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+              "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入",
+              "本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款",
+              "开工日期以业主移交场地及设计包图则确认为准"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 44625000.0,
+            "quotation_breakdown": [
+              {
+                "item": "交通疏解设施与围挡工程",
+                "amount": 11280000,
+                "basis": "按设计包交通疏解图及造价咨询包工程量清单估算：组合式围挡约3200米、水马及交通标志约1800件、出入口设施6处，含材料、安装与拆除摊销"
+              },
+              {
+                "item": "临时道路及行人通道工程",
+                "amount": 7860000,
+                "basis": "临时道路约6800平方米混凝土面层及垫层、行人通道约1200平方米防滑钢板与扶手，含基层处理、排水坡度与维护"
+              },
+              {
+                "item": "扬尘与噪声控制设施",
+                "amount": 4350000,
+                "basis": "雾炮机6台、喷淋系统约1500米、TSP在线监测4套、临时隔声屏约800平方米，含运行电费与耗材"
+              },
+              {
+                "item": "施工期临时排水工程",
+                "amount": 3980000,
+                "basis": "排水沟约2600米、三级沉淀池8座、抽排设备及与市政雨水系统接口协调，含雨季增强排水备用"
+              },
+              {
+                "item": "临时设施摊销、维护及拆除费用",
+                "amount": 5240000,
+                "basis": "围挡与临时道路等临时设施按24个月摊销，含日常维护、交通疏解动态调整、拆除及场地恢复，单独列明"
+              },
+              {
+                "item": "现场管理、安全与质量文档",
+                "amount": 4630000,
+                "basis": "项目总监及管理人员24个月薪酬、安全应急物资、质量检测与文档管理、公共通行协调专员费用"
+              },
+              {
+                "item": "专业分包与外部支持",
+                "amount": 2870000,
+                "basis": "交通标志标线、临时排水接口等专项采用常规专业分包，含管理费与接口协调，暂按估算数列，分包报价待确认"
+              },
+              {
+                "item": "风险、保险、管理费与利润",
+                "amount": 4415000,
+                "basis": "交通疏解与天气影响风险预备、保险、公司管理费及合理利润，按直接费约11%计取"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交CASE-0012/construction-2交通疏解、围护与临时道路包报价，总报价MOP 44,625,000，与包预算上限一致。报价按工程量清单计价，由以下成本构成：交通疏解设施与围挡工程MOP 11,280,000；临时道路及行人通道工程MOP 7,860,000；扬尘与噪声控制设施MOP 4,350,000；施工期临时排水工程MOP 3,980,000；临时设施摊销、维护及拆除费用MOP 5,240,000（单独列明）；现场管理、安全与质量文档MOP 4,630,000；专业分包与外部支持MOP 2,870,000（暂按估算，分包报价待确认）；风险、保险、管理费与利润MOP 4,415,000。价格基础与设计包及造价咨询包成果对齐，局部专项采用常规专业分包，我方保持单一责任。团队可用资源2.0，包需求0.7，可用性充足。付款按里程碑申请，具体节点在合同阶段细化。",
+            "unresolved_condition_ids": [
+              "condition_7d0b2e06a068535cd84d",
+              "condition_50549247851b358a02bf"
+            ],
+            "bid_assumptions": [
+              "按工程量清单计价，单价分析与主要材料设备价格来源在报价文件中提供",
+              "临时设施摊销、维护及拆除费用单独列明",
+              "价格基础与设计包及造价咨询包成果保持一致，接口协调在标书中说明",
+              "局部专项施工采用常规专业分包与外部支持，我方保持单一责任投标人身份",
+              "交通疏解与公共通行协调方案按业主审查要求编制并纳入风险应对"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 44620000.0,
+            "quotation_breakdown": [
+              {
+                "item": "交通疏解设施施工与阶段转换",
+                "amount": 8380000,
+                "basis": "导向标志、水马护栏、临时信号与警示设施，含多阶段转换与专业分包管理，按设计包疏解成果估算工程量"
+              },
+              {
+                "item": "施工围挡、出入口及大门值守设施",
+                "amount": 7260000,
+                "basis": "连续封闭围挡、出入口门禁、洗车槽与沉淀池，按围护长度与出入口数量估算"
+              },
+              {
+                "item": "临时道路及行人通道",
+                "amount": 6950000,
+                "basis": "路基压实、临时路面铺装、行人防护顶棚与照明，按临时道路面积与通道长度估算"
+              },
+              {
+                "item": "扬尘与噪声控制设施",
+                "amount": 3180000,
+                "basis": "围挡喷淋、覆盖、洒水降尘与噪声监测点，含监测记录与维护"
+              },
+              {
+                "item": "施工期临时排水",
+                "amount": 3620000,
+                "basis": "临时排水沟、集水井、沉淀设施及市政接口协调，含雨季前清淤维护"
+              },
+              {
+                "item": "临时设施摊销、维护及拆除（单列）",
+                "amount": 4870000,
+                "basis": "按业主要求单列：临时设施摊销、施工期维护与完工拆除清运"
+              },
+              {
+                "item": "现场管理、安全环保与质量文档",
+                "amount": 4310000,
+                "basis": "项目管理团队、安全主任、环境监测、质量文档管理与公共通行协调员"
+              },
+              {
+                "item": "材料价格与人工价格风险预备及管理费",
+                "amount": 3610000,
+                "basis": "按材料价格指数与人工价格指数上行趋势计提风险预备，含公司管理费与合理利润"
+              },
+              {
+                "item": "不可预见费与接口协调预备",
+                "amount": 2440000,
+                "basis": "设计包与造价咨询包接口核对、交通疏解方案调整及天气影响的预备费用"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立提交CASE-0012/construction-2交通疏解、围护与临时道路包投标，不组建组合体，专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权。\n\n报价基础（MOP）：\n- 交通疏解设施施工与阶段转换：8,380,000\n- 施工围挡、出入口及大门值守设施：7,260,000\n- 临时道路及行人通道：6,950,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水：3,620,000\n- 临时设施摊销、维护及拆除（单列）：4,870,000\n- 现场管理、安全环保与质量文档：4,310,000\n- 材料与人工价格风险预备及管理费：3,610,000\n- 不可预见费与接口协调预备：2,440,000\n合计报价：44,620,000 MOP，在44,625,000 MOP上限内。\n\n价格按工程量清单计价，临时设施摊销、维护及拆除费用按业主要求单列，价格基础与设计包及造价咨询包成果保持一致。报价已计入材料与人工价格指数上行的风险预备，若业主不接受价格调整机制，则按固定报价执行并自行承担已计提范围内的波动。交通疏解与临时排水专业分包尚待按公司采购程序选定，属经公司管理的分包假设，不改变单一责任投标人身份。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司以单一责任投标人身份独立投标，不组建组合体",
+              "交通疏解设施、临时排水等专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权",
+              "价格基础与设计包及造价咨询包成果保持一致，临时设施摊销、维护及拆除费用单独列明",
+              "公共通行协调与交通疏解方案在投标文件中明确接口安排与风险应对",
+              "投标报价在44625000.0 MOP上限内按工程量清单计价",
+              "交通疏解与临时排水专业分包尚待按公司采购程序选定，本投标以经公司管理的分包为报价与交付假设"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 交通疏解、围护与临时道路包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0012/construction-2",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何家俊",
+          "OWNER-4048bdd520aa7f_06_林晓彤"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0012/construction-2_001",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "technical_view": "技术路线覆盖交通疏解、围挡出入口、临时道路行人通道、扬尘噪声控制与临时排水，分阶段疏解与围挡先行安排清晰，边界明确不含主体拆除与垃圾外运。",
+            "cost_view": "报价MOP 41,990,000低于上限MOP 44,625,000，清单分项齐全且临时设施摊销维护拆除单列，但主要材料设备按暂定估价计入，价格基础尚待落实。",
+            "owner_control_view": "对业主八项审查要求逐项回应，角色计划、质量目标、进度视图与风险应对均有对应说明，业主审查清晰度较好。",
+            "strengths": [
+              "分项报价完整，临时设施摊销维护拆除单独列明",
+              "交通疏解与公共通行协调方案具体，设专职协调员",
+              "质量文档与独立复核程序说明清楚"
+            ],
+            "concerns": [
+              "主要材料设备价格为暂定估价，供应商报价尚未取得",
+              "固定总价下材料价格波动风险预备是否充足需核实",
+              "自有班组承担主要作业，高峰期人员调配细节偏简略"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-2_002",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "施工方法具体，围挡、临时道路混凝土面层、雾炮与TSP在线监测、三级沉淀排水等配置量化清楚，三阶段进度与总工期同步。",
+            "cost_view": "报价MOP 44,625,000达到包预算上限，分项与工程量清单口径一致，但专业分包MOP 2,870,000为估算且分包报价待确认。",
+            "owner_control_view": "接受业主按设计包与造价咨询包成果审查，质量文档分项归档，接口会议纳入进度视图，审查配合态度明确。",
+            "strengths": [
+              "技术方案量化程度高，环境监测与排水配置具体",
+              "团队角色计划完整，资源可用性充足",
+              "里程碑与总工期衔接清晰"
+            ],
+            "concerns": [
+              "报价触及预算上限，价格调整余地小",
+              "专业分包报价待确认，存在后续价格与责任界面风险",
+              "提交两项未决条件，需在判给前澄清"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-2_003",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "围绕授权范围组织方案，交通疏解阶段转换、围挡封闭、行人通道防护顶棚与临时排水接口均有说明，三体系程序作为质量环境安全基础。",
+            "cost_view": "报价MOP 44,620,000接近上限，含材料人工风险预备与不可预见费，但交通疏解与临时排水专业分包尚未选定，报价以分包假设为基础。",
+            "owner_control_view": "逐项对应业主八项审查要求，接受价格合理性与风险应对匹配度审查，并提出可协商材料价格调整机制。",
+            "strengths": [
+              "三体系认证支撑质量、环境与安全管理",
+              "公共通行协调与投诉闭环安排具体",
+              "风险预备与不可预见费分列，价格构成透明"
+            ],
+            "concerns": [
+              "关键专业分包尚未选定，交付信心依赖后续采购",
+              "报价接近上限且含价格调整诉求，固定总价确定性较弱",
+              "分包管理能力需在履约阶段重点跟踪"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标均覆盖本包授权范围，江苏乾堪报价MOP 41,990,000明显低于另两家接近上限的MOP 44,625,000与MOP 44,620,000，但其材料价格为暂定估价；中交一航局技术量化最充分但触及上限且有未决条件，得宝依赖尚未选定的专业分包。综合能力匹配、价格合理性与风险控制，江苏乾堪在价格与方案完整性之间较为均衡。",
+        "recommended_winner": "COMP-0295",
+        "owner_review_notes": "建议优先与江苏乾堪谈判，要求落实主要材料设备询价来源并澄清固定总价下价格波动风险预备，再确认判给。中交一航局与得宝可作为备选，前者需澄清未决条件与分包报价，后者需锁定专业分包后再作承诺。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0012",
+      "package_awards": [
+        {
+          "package_id": "CASE-0012/construction-2",
+          "selected_bidder_id": "COMP-0295",
+          "selected_bidder_name": "江苏乾堪建设工程有限公司",
+          "bidder_type": "company",
+          "decision_reason": "江苏乾堪以单一责任投标人身份独立投标，报价MOP 41,990,000低于本包上限MOP 44,625,000，清单分项齐全且临时设施摊销维护拆除单列，交通疏解、围挡出入口、临时道路行人通道、扬尘噪声控制与临时排水技术路线覆盖完整，边界明确不含主体拆除与垃圾外运，质量文档与独立复核程序清楚，风险应对与接口协调安排具体。相比中交一航局报价触及上限且有未决条件、专业分包报价待确认，以及得宝报价接近上限且关键专业分包尚未选定，江苏乾堪在价格合理性与方案完整性之间更为均衡，交付责任清晰。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+            "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+            "临时设施摊销、维护及拆除费用在报价中单独列明",
+            "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+            "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入",
+            "本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款",
+            "开工日期以业主移交场地及设计包图则确认为准"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0295"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:42:58",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0012/construction-2",
+          "decision": "bid",
+          "reason": "本包属于施工类交通疏解与临时设施工程，与我公司市政、道路、土石方及现场管理能力匹配度高，且明确不含主体结构拆除与建筑垃圾外运，边界清晰。公司当前可用资源为2.0，本包需求0.7，具备独立承担的资源条件。业主关注的角色计划、施工方法、质量目标、价格基础、进度视图、风险应对、安全与公共通行协调，均可由我公司作为单一责任投标人组织编制，无需另一家企业共享投标身份或技术权威。交通疏解、环境控制、天气影响及与设计包、造价咨询包的接口属于可通过施工组织、进度安排和接口协调机制管理的正常投标风险。因此决定独立投标，按工程量清单计价并单独列明临时设施摊销、维护及拆除费用，确保价格基础与设计包及造价咨询包成果一致。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+            "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+            "临时设施摊销、维护及拆除费用在报价中单独列明",
+            "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+            "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:58",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0012/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，本包为清拆工程配套的交通疏解、围护与临时道路施工包，与我方施工组织、场地布置、现场安全与质量文档管理能力匹配度高。当前资源占用为零，可用资源2.0，包需求0.7，团队可用性充足，具备独立承担并作为单一责任投标人的条件。包预算4462.5万MOP在可承受范围内，价格基础可与设计包及造价咨询包成果对齐。交通疏解、环境控制、天气影响和接口协调等风险属于正常投标风险，可通过施工方法、进度视图、风险应对方案和公共通行协调方案在标书中回应，无需以组合体形式分担投标人身份或交付责任。决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按工程量清单计价，单价分析与主要材料设备价格来源在报价文件中提供",
+            "临时设施摊销、维护及拆除费用单独列明",
+            "价格基础与设计包及造价咨询包成果保持一致，接口协调在标书中说明",
+            "局部专项施工采用常规专业分包与外部支持，我方保持单一责任投标人身份",
+            "交通疏解与公共通行协调方案按业主审查要求编制并纳入风险应对"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:58",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0012/construction-2",
+          "decision": "bid",
+          "reason": "管理层判断：本包属于公司可独立承担的城市施工临时工程范畴，围护、临时道路、行人通道、环境控制与临时排水均在总承包施工管理能力之内，资源可用且无占用冲突，报价上限与包内容匹配。设计包与造价咨询包的接口、公共通行协调、交通疏解方案一致性是需要在施工方法与风险应对中明确安排的常规接口风险，可通过分包与外部专业支持解决，不构成必须共享投标人身份或交付责任的组合体情形。公司具备三体系认证与本地施工管理经验，可作为单一责任投标人提交。投标前提是价格基础与设计包、造价咨询包成果保持一致，并在报价中单列临时设施摊销、维护及拆除费用。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任投标人身份独立投标，不组建组合体",
+            "交通疏解设施、临时排水等专业作业采用经公司管理的分包与外部专业支持，公司保留交付主导权",
+            "价格基础与设计包及造价咨询包成果保持一致，临时设施摊销、维护及拆除费用单独列明",
+            "公共通行协调与交通疏解方案在投标文件中明确接口安排与风险应对",
+            "投标报价在44625000.0 MOP上限内按工程量清单计价"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:43",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "bidder_id": "COMP-0295"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:43",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:43",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:56",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:44:03",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "recommended_winner": "COMP-0295"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:44:07",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-2",
+          "selected_bidder_id": "COMP-0295"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "作为业主方，本包（CASE-0012/construction-2，交通疏解、围护与临时道路包）的投标承诺与合同条款在能力匹配上可接受：单一责任投标人 COMP-0295 独立承担，报价 41,990,000 MOP 低于本包上限 44,625,000 MOP，资源需求 0.7 与其申报可用资源 2.0 匹配，工期按项目总工期 24 个月分阶段推进，范围边界明确排除主体结构拆除与建筑垃圾外运，与设计包、造价咨询包接口协调已在方案中列明。\n\n本组织就自身立场作出以下决定，供写入下一稿：\n1. 固定总价范围：接受本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款；临时设施摊销、维护及拆除费用单独列项，属固定总价内已包含项，不另行计量支付。\n2. 计量与支付基础：按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量；具体节点与比例以合同约定为准，业主保留价格审查权。\n3. 审查期限：业主对交通疏解方案报批、临时设施布置报审及分阶段验收的审查期为收到完整资料后 14 个日历日，逾期未答复视为无异议但不免除承包人合规责任。\n4. 暂定估价处理：主要材料设备价格为投标阶段市场询价暂定估价，供应商报价以实际取得为准；该暂定假设不改变固定总价，实际取得报价与暂定估价的差异由承包人承担，除非属业主指令的范围变更。\n5. 开工条件：开工日期以业主移交场地及设计包图则确认为准，场地移交延迟相应顺延工期，不构成承包人违约。\n\n上述条款为可执行的情景义务，不表示未来工程交付或法定审批已经完成；相关交付物按义务加审查/验收条件管理。"
+          },
+          "COMP-0295": {
+            "action": "accept",
+            "reason": "本包为交通疏解、围护与临时道路包，与本公司市政、道路、土石方及交通器材销售等能力匹配；报价41,990,000 MOP低于包预算44,625,000 MOP，资源需求0.7低于可用2.0，可独立承担。投标文件已明确边界不含主体结构拆除与建筑垃圾外运，临时设施摊销、维护及拆除费用单独列项，固定总价且材料价格波动风险计入风险预备费，风险分配清晰。关于本公司自身立场，确认如下并请写入下一稿：主要材料设备价格为投标阶段市场询价暂定估价，未取得供应商报价前按暂定估价计入，属暂定假设而非已取得报价；开工日期以业主移交场地及设计包图则确认为准；付款按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量，具体以合同约定为准。上述均为本公司自身报价与履约安排，不构成未决外部证据，接受按所供条款与资源承诺签约。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM849BD599/CASE-0012/construction-2/round-1/contract",
+          "simulation_id": "SIM849BD599",
+          "project_id": "CASE-0012",
+          "package_id": "CASE-0012/construction-2",
+          "session_id": "SIM849BD599/CASE-0012/construction-2/round-1",
+          "snapshot_version": "804a7cc21a678b1687d050bf233540327a8130fc2f5cf75bbf5db0355fe0144c",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0012/construction-2_001",
+          "bidder_id": "COMP-0295",
+          "lead_id": "COMP-0295",
+          "members": [
+            "COMP-0295"
+          ],
+          "price": 41990000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0295": 0.7
+          },
+          "work_shares": {
+            "COMP-0295": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "9477fd9aea448c4744a474d2b47787e151e550f375e7bc001a3416b54057d7b0",
+          "terms": {
+            "schedule_commitment": "按项目总工期24个月编制施工进度视图，本包工作随主体拆除阶段分阶段推进：进场准备与围挡封闭在第1至第2个月完成；交通疏解设施与临时道路分批实施，随主体作业面移交动态调整；扬尘噪声控制与临时排水设施全过程配置并定期维护；完工前完成临时设施拆除与场地恢复。关键里程碑：围挡封闭完成、首批交通疏解设施投用、临时排水系统雨季前检查完成、分阶段验收、临时设施拆除完成。具体开工日期以业主移交场地及设计包图则确认为准。",
+            "risk_response": "交通疏解风险：编制分阶段疏解方案并报批，设置临时标志标线与夜间反光设施，安排协调员现场疏导，随主体进度动态调整。\n环境控制风险：围挡喷淋、雾炮、覆盖与洒水降尘常态化，噪声监测与作业时段管理，超标即调整作业安排。\n天气影响风险：雨季前完成临时排水系统检查与疏通，台风暴雨前加固围挡与临时设施，预留天气影响工期缓冲。\n接口协调风险：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对清单口径与单价分析基础，建立接口台账与变更记录，设专人跟踪。\n材料价格波动风险：本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款。\n公共通行风险：保留行人通道与紧急通道，设置无障碍坡道与照明，定期巡查修补，与周边相关方保持沟通。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0012/construction-2_001",
+              "package_id": "CASE-0012/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0295",
+              "bidder_name": "江苏乾堪建设工程有限公司",
+              "technical_proposal": "江苏乾堪建设工程有限公司以单一责任投标人身份承接交通疏解、围护与临时道路包（CASE-0012/construction-2）。本包边界明确：施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运，我公司不将边界外工作纳入报价。\n\n技术路线：\n1. 交通疏解：按设计包交通组织图则编制分阶段疏解方案，设置临时标志、标线、护栏、水马、导向牌与夜间反光设施，行人与车辆分流，保留消防及紧急通道。\n2. 围护与出入口：采用装配式围挡加基础配重，出入口设置洗车槽、沉淀池、门禁与车辆冲洗设施，围挡高度与外观按业主要求统一。\n3. 临时道路及行人通道：路基压实加临时路面铺装，设置防滑行人通道、无障碍坡道与照明，定期巡查修补。\n4. 扬尘与噪声控制：围挡喷淋、雾炮、覆盖、洒水降尘，噪声监测与作业时段管理。\n5. 施工期临时排水：临时排水沟、集水井与沉淀池，接入市政排水前与相关方确认接口，雨季前完成疏通检查。\n\n质量方针：一次成优、过程受控。按内部质量程序执行材料进场检验、工序自检与独立复核、隐蔽验收记录与竣工资料归档，质量目标为分项工程一次验收合格率100%，无重大质量事故。\n\n接口协调：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对工程量清单口径与单价分析基础，价格基础与两包成果保持一致；设专人负责接口台账与变更记录。",
+              "implementation_plan": "组织方式：公司独立承担，不设联合体。项目总监陈志强统筹，下设施工经理、交通疏解协调员、安全主任、质量工程师、测量与资料员；主要作业由公司自有班组承担，交通器材、围挡板材、临时路面材料及排水管材按投标阶段市场询价来源采购，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入。\n\n实施步骤：\n1. 进场准备：现场踏勘、接口确认、临时设施布置报审、交通疏解方案报批。\n2. 围挡与出入口先行：完成围挡封闭与出入口设置，形成封闭作业面。\n3. 交通疏解设施分批安装，随主体拆除进度动态调整。\n4. 临时道路与行人通道随阶段推进铺设与改移。\n5. 扬尘噪声控制设施与临时排水同步配置，雨季前完成排水系统检查。\n6. 分阶段验收、维护与拆除，临时设施摊销、维护及拆除费用单独列项。\n\n资源安排：本包需求资源0.7，公司当前可用资源2.0，可独立承担；按施工高峰配置现场管理与作业人员，具体人数按进度视图动态调配。",
+              "quotation": 41990000.0,
+              "schedule_commitment": "按项目总工期24个月编制施工进度视图，本包工作随主体拆除阶段分阶段推进：进场准备与围挡封闭在第1至第2个月完成；交通疏解设施与临时道路分批实施，随主体作业面移交动态调整；扬尘噪声控制与临时排水设施全过程配置并定期维护；完工前完成临时设施拆除与场地恢复。关键里程碑：围挡封闭完成、首批交通疏解设施投用、临时排水系统雨季前检查完成、分阶段验收、临时设施拆除完成。具体开工日期以业主移交场地及设计包图则确认为准。",
+              "compliance_statement": "响应业主八项要求：\n1. 角色计划与团队可用性摘要：提供项目总监、施工经理、交通疏解协调员、安全主任、质量工程师及资料员角色计划，公司当前可用资源2.0，本包需求0.7，资源可独立保障。\n2. 施工方法与交付方式：按分阶段交通疏解、围挡先行、临时道路随阶段改移的方式交付，边界不含主体结构拆除与建筑垃圾外运。\n3. 质量方针与质量目标：执行内部质量程序与独立复核，分项工程一次验收合格率100%。\n4. 价格基础与工程量清单报价分析：按工程量清单计价，提供单价分析与主要材料设备价格来源；临时设施摊销、维护及拆除费用单独列明；价格基础与设计包及造价咨询包成果保持一致。\n5. 施工进度视图与里程碑：按24个月总工期编制分阶段进度视图与里程碑。\n6. 风险应对方案：覆盖交通疏解、环境控制、天气影响与接口协调。\n7. 安全计划与应急安排：设安全主任与应急物资，编制交通、台风暴雨及突发事故应急预案。\n8. 公共通行协调方案：设交通疏解协调员，与周边商户、居民及相关方沟通，保留行人及紧急通道。\n\n价格合理性：报价按工程量清单口径编制，单价分析与材料设备价格来源可追溯，风险预备费与风险应对方案匹配，接受业主价格审查。",
+              "risk_response": "交通疏解风险：编制分阶段疏解方案并报批，设置临时标志标线与夜间反光设施，安排协调员现场疏导，随主体进度动态调整。\n环境控制风险：围挡喷淋、雾炮、覆盖与洒水降尘常态化，噪声监测与作业时段管理，超标即调整作业安排。\n天气影响风险：雨季前完成临时排水系统检查与疏通，台风暴雨前加固围挡与临时设施，预留天气影响工期缓冲。\n接口协调风险：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对清单口径与单价分析基础，建立接口台账与变更记录，设专人跟踪。\n材料价格波动风险：本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款。\n公共通行风险：保留行人通道与紧急通道，设置无障碍坡道与照明，定期巡查修补，与周边相关方保持沟通。",
+              "submission_summary": "江苏乾堪建设工程有限公司以单一责任投标人身份独立投标交通疏解、围护与临时道路包（CASE-0012/construction-2），不设联合体，不与其他企业共享投标身份。\n\n报价基础（MOP）：\n- 交通疏解设施工程：7,380,000\n- 施工围挡与出入口工程：8,960,000\n- 临时道路及行人通道工程：6,720,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水工程：2,860,000\n- 临时设施摊销、维护及拆除费用（单独列明）：3,540,000\n- 现场管理、安全环保、质量文档与接口协调费用：4,210,000\n- 公司管理费、利润及风险预备费：5,140,000\n合计报价：41,990,000 MOP，低于本包上限44,625,000 MOP。\n\n价格说明：按工程量清单计价，提供单价分析与主要材料设备价格来源；主要材料设备价格为投标阶段市场询价暂定估价，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入，属暂定假设而非已取得报价。临时设施摊销、维护及拆除费用单独列项。价格基础与设计包及造价咨询包成果保持一致。本包按固定总价报价，材料价格波动风险已计入风险预备费。\n\n资源与工期：公司当前可用资源2.0，本包需求0.7，可独立承担；按项目总工期24个月编制分阶段进度视图与里程碑。\n\n付款安排建议：按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量，具体以合同约定为准。",
+              "quotation_breakdown": [
+                {
+                  "item": "交通疏解设施工程（标志、标线、护栏、水马、导向及夜间设施）",
+                  "amount": 7380000,
+                  "basis": "按设计包交通疏解图则估算工程量乘以单价分析，含安装、改移与拆除；单价按当前材料价格指数1.0545及人工价格指数1.098计取"
+                },
+                {
+                  "item": "施工围挡与出入口工程（装配式围挡、基础配重、门禁、洗车槽及沉淀池）",
+                  "amount": 8960000,
+                  "basis": "按围挡延米与出入口数量估算，含板材、基础、门禁与冲洗设施；材料价格为投标阶段市场询价暂定估价"
+                },
+                {
+                  "item": "临时道路及行人通道工程（路基、临时路面、防滑通道、无障碍坡道及照明）",
+                  "amount": 6720000,
+                  "basis": "按临时道路面积与行人通道长度估算，含路基压实、路面铺装与照明；随阶段改移部分按一次改移计入"
+                },
+                {
+                  "item": "扬尘与噪声控制设施（喷淋、雾炮、覆盖、噪声监测及洒水降尘）",
+                  "amount": 3180000,
+                  "basis": "按施工期配置设备台班、监测点与耗材估算，含设备摊销与运行维护"
+                },
+                {
+                  "item": "施工期临时排水工程（排水沟、集水井、沉淀池及接口协调）",
+                  "amount": 2860000,
+                  "basis": "按排水线路长度与集水井数量估算，含与市政排水接口确认及雨季前疏通检查"
+                },
+                {
+                  "item": "临时设施摊销、维护及拆除费用（单独列明）",
+                  "amount": 3540000,
+                  "basis": "按围挡、临时道路、疏解设施及排水设施的原值分摊、定期维护与完工拆除清运估算，单独列项不与永久工程混计"
+                },
+                {
+                  "item": "现场管理、安全环保、质量文档与接口协调费用",
+                  "amount": 4210000,
+                  "basis": "按项目总监、施工经理、安全主任、质量工程师及资料员等现场管理人员工期投入估算，含安全应急物资、质量文档管理与与设计包、造价咨询包接口协调"
+                },
+                {
+                  "item": "公司管理费、利润及风险预备费",
+                  "amount": 5140000,
+                  "basis": "按上述直接费的综合取费计取，含交通疏解动态调整、天气影响、材料价格波动及接口风险预备；本包按固定总价报价，材料价格波动风险已计入预备费"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+                "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+                "临时设施摊销、维护及拆除费用在报价中单独列明",
+                "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+                "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入",
+                "本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款",
+                "开工日期以业主移交场地及设计包图则确认为准"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "9477fd9aea448c4744a474d2b47787e151e550f375e7bc001a3416b54057d7b0"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0012/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+          "budget": 44625000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM849BD599/CASE-0012/construction-2/round-1/contract",
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/construction-2",
+    "session_id": "SIM849BD599/CASE-0012/construction-2/round-1",
+    "snapshot_version": "804a7cc21a678b1687d050bf233540327a8130fc2f5cf75bbf5db0355fe0144c",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0012/construction-2_001",
+    "bidder_id": "COMP-0295",
+    "lead_id": "COMP-0295",
+    "members": [
+      "COMP-0295"
+    ],
+    "price": 41990000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0295": 0.7
+    },
+    "work_shares": {
+      "COMP-0295": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0295": true
+    },
+    "signed_terms_hash": "9477fd9aea448c4744a474d2b47787e151e550f375e7bc001a3416b54057d7b0",
+    "terms": {
+      "schedule_commitment": "按项目总工期24个月编制施工进度视图，本包工作随主体拆除阶段分阶段推进：进场准备与围挡封闭在第1至第2个月完成；交通疏解设施与临时道路分批实施，随主体作业面移交动态调整；扬尘噪声控制与临时排水设施全过程配置并定期维护；完工前完成临时设施拆除与场地恢复。关键里程碑：围挡封闭完成、首批交通疏解设施投用、临时排水系统雨季前检查完成、分阶段验收、临时设施拆除完成。具体开工日期以业主移交场地及设计包图则确认为准。",
+      "risk_response": "交通疏解风险：编制分阶段疏解方案并报批，设置临时标志标线与夜间反光设施，安排协调员现场疏导，随主体进度动态调整。\n环境控制风险：围挡喷淋、雾炮、覆盖与洒水降尘常态化，噪声监测与作业时段管理，超标即调整作业安排。\n天气影响风险：雨季前完成临时排水系统检查与疏通，台风暴雨前加固围挡与临时设施，预留天气影响工期缓冲。\n接口协调风险：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对清单口径与单价分析基础，建立接口台账与变更记录，设专人跟踪。\n材料价格波动风险：本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款。\n公共通行风险：保留行人通道与紧急通道，设置无障碍坡道与照明，定期巡查修补，与周边相关方保持沟通。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0012/construction-2_001",
+        "package_id": "CASE-0012/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0295",
+        "bidder_name": "江苏乾堪建设工程有限公司",
+        "technical_proposal": "江苏乾堪建设工程有限公司以单一责任投标人身份承接交通疏解、围护与临时道路包（CASE-0012/construction-2）。本包边界明确：施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运，我公司不将边界外工作纳入报价。\n\n技术路线：\n1. 交通疏解：按设计包交通组织图则编制分阶段疏解方案，设置临时标志、标线、护栏、水马、导向牌与夜间反光设施，行人与车辆分流，保留消防及紧急通道。\n2. 围护与出入口：采用装配式围挡加基础配重，出入口设置洗车槽、沉淀池、门禁与车辆冲洗设施，围挡高度与外观按业主要求统一。\n3. 临时道路及行人通道：路基压实加临时路面铺装，设置防滑行人通道、无障碍坡道与照明，定期巡查修补。\n4. 扬尘与噪声控制：围挡喷淋、雾炮、覆盖、洒水降尘，噪声监测与作业时段管理。\n5. 施工期临时排水：临时排水沟、集水井与沉淀池，接入市政排水前与相关方确认接口，雨季前完成疏通检查。\n\n质量方针：一次成优、过程受控。按内部质量程序执行材料进场检验、工序自检与独立复核、隐蔽验收记录与竣工资料归档，质量目标为分项工程一次验收合格率100%，无重大质量事故。\n\n接口协调：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对工程量清单口径与单价分析基础，价格基础与两包成果保持一致；设专人负责接口台账与变更记录。",
+        "implementation_plan": "组织方式：公司独立承担，不设联合体。项目总监陈志强统筹，下设施工经理、交通疏解协调员、安全主任、质量工程师、测量与资料员；主要作业由公司自有班组承担，交通器材、围挡板材、临时路面材料及排水管材按投标阶段市场询价来源采购，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入。\n\n实施步骤：\n1. 进场准备：现场踏勘、接口确认、临时设施布置报审、交通疏解方案报批。\n2. 围挡与出入口先行：完成围挡封闭与出入口设置，形成封闭作业面。\n3. 交通疏解设施分批安装，随主体拆除进度动态调整。\n4. 临时道路与行人通道随阶段推进铺设与改移。\n5. 扬尘噪声控制设施与临时排水同步配置，雨季前完成排水系统检查。\n6. 分阶段验收、维护与拆除，临时设施摊销、维护及拆除费用单独列项。\n\n资源安排：本包需求资源0.7，公司当前可用资源2.0，可独立承担；按施工高峰配置现场管理与作业人员，具体人数按进度视图动态调配。",
+        "quotation": 41990000.0,
+        "schedule_commitment": "按项目总工期24个月编制施工进度视图，本包工作随主体拆除阶段分阶段推进：进场准备与围挡封闭在第1至第2个月完成；交通疏解设施与临时道路分批实施，随主体作业面移交动态调整；扬尘噪声控制与临时排水设施全过程配置并定期维护；完工前完成临时设施拆除与场地恢复。关键里程碑：围挡封闭完成、首批交通疏解设施投用、临时排水系统雨季前检查完成、分阶段验收、临时设施拆除完成。具体开工日期以业主移交场地及设计包图则确认为准。",
+        "compliance_statement": "响应业主八项要求：\n1. 角色计划与团队可用性摘要：提供项目总监、施工经理、交通疏解协调员、安全主任、质量工程师及资料员角色计划，公司当前可用资源2.0，本包需求0.7，资源可独立保障。\n2. 施工方法与交付方式：按分阶段交通疏解、围挡先行、临时道路随阶段改移的方式交付，边界不含主体结构拆除与建筑垃圾外运。\n3. 质量方针与质量目标：执行内部质量程序与独立复核，分项工程一次验收合格率100%。\n4. 价格基础与工程量清单报价分析：按工程量清单计价，提供单价分析与主要材料设备价格来源；临时设施摊销、维护及拆除费用单独列明；价格基础与设计包及造价咨询包成果保持一致。\n5. 施工进度视图与里程碑：按24个月总工期编制分阶段进度视图与里程碑。\n6. 风险应对方案：覆盖交通疏解、环境控制、天气影响与接口协调。\n7. 安全计划与应急安排：设安全主任与应急物资，编制交通、台风暴雨及突发事故应急预案。\n8. 公共通行协调方案：设交通疏解协调员，与周边商户、居民及相关方沟通，保留行人及紧急通道。\n\n价格合理性：报价按工程量清单口径编制，单价分析与材料设备价格来源可追溯，风险预备费与风险应对方案匹配，接受业主价格审查。",
+        "risk_response": "交通疏解风险：编制分阶段疏解方案并报批，设置临时标志标线与夜间反光设施，安排协调员现场疏导，随主体进度动态调整。\n环境控制风险：围挡喷淋、雾炮、覆盖与洒水降尘常态化，噪声监测与作业时段管理，超标即调整作业安排。\n天气影响风险：雨季前完成临时排水系统检查与疏通，台风暴雨前加固围挡与临时设施，预留天气影响工期缓冲。\n接口协调风险：与设计包核对交通疏解图则与临时设施布置，与造价咨询包核对清单口径与单价分析基础，建立接口台账与变更记录，设专人跟踪。\n材料价格波动风险：本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款。\n公共通行风险：保留行人通道与紧急通道，设置无障碍坡道与照明，定期巡查修补，与周边相关方保持沟通。",
+        "submission_summary": "江苏乾堪建设工程有限公司以单一责任投标人身份独立投标交通疏解、围护与临时道路包（CASE-0012/construction-2），不设联合体，不与其他企业共享投标身份。\n\n报价基础（MOP）：\n- 交通疏解设施工程：7,380,000\n- 施工围挡与出入口工程：8,960,000\n- 临时道路及行人通道工程：6,720,000\n- 扬尘与噪声控制设施：3,180,000\n- 施工期临时排水工程：2,860,000\n- 临时设施摊销、维护及拆除费用（单独列明）：3,540,000\n- 现场管理、安全环保、质量文档与接口协调费用：4,210,000\n- 公司管理费、利润及风险预备费：5,140,000\n合计报价：41,990,000 MOP，低于本包上限44,625,000 MOP。\n\n价格说明：按工程量清单计价，提供单价分析与主要材料设备价格来源；主要材料设备价格为投标阶段市场询价暂定估价，供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入，属暂定假设而非已取得报价。临时设施摊销、维护及拆除费用单独列项。价格基础与设计包及造价咨询包成果保持一致。本包按固定总价报价，材料价格波动风险已计入风险预备费。\n\n资源与工期：公司当前可用资源2.0，本包需求0.7，可独立承担；按项目总工期24个月编制分阶段进度视图与里程碑。\n\n付款安排建议：按进度节点计量支付，临时设施摊销、维护及拆除费用按阶段计量，具体以合同约定为准。",
+        "quotation_breakdown": [
+          {
+            "item": "交通疏解设施工程（标志、标线、护栏、水马、导向及夜间设施）",
+            "amount": 7380000,
+            "basis": "按设计包交通疏解图则估算工程量乘以单价分析，含安装、改移与拆除；单价按当前材料价格指数1.0545及人工价格指数1.098计取"
+          },
+          {
+            "item": "施工围挡与出入口工程（装配式围挡、基础配重、门禁、洗车槽及沉淀池）",
+            "amount": 8960000,
+            "basis": "按围挡延米与出入口数量估算，含板材、基础、门禁与冲洗设施；材料价格为投标阶段市场询价暂定估价"
+          },
+          {
+            "item": "临时道路及行人通道工程（路基、临时路面、防滑通道、无障碍坡道及照明）",
+            "amount": 6720000,
+            "basis": "按临时道路面积与行人通道长度估算，含路基压实、路面铺装与照明；随阶段改移部分按一次改移计入"
+          },
+          {
+            "item": "扬尘与噪声控制设施（喷淋、雾炮、覆盖、噪声监测及洒水降尘）",
+            "amount": 3180000,
+            "basis": "按施工期配置设备台班、监测点与耗材估算，含设备摊销与运行维护"
+          },
+          {
+            "item": "施工期临时排水工程（排水沟、集水井、沉淀池及接口协调）",
+            "amount": 2860000,
+            "basis": "按排水线路长度与集水井数量估算，含与市政排水接口确认及雨季前疏通检查"
+          },
+          {
+            "item": "临时设施摊销、维护及拆除费用（单独列明）",
+            "amount": 3540000,
+            "basis": "按围挡、临时道路、疏解设施及排水设施的原值分摊、定期维护与完工拆除清运估算，单独列项不与永久工程混计"
+          },
+          {
+            "item": "现场管理、安全环保、质量文档与接口协调费用",
+            "amount": 4210000,
+            "basis": "按项目总监、施工经理、安全主任、质量工程师及资料员等现场管理人员工期投入估算，含安全应急物资、质量文档管理与与设计包、造价咨询包接口协调"
+          },
+          {
+            "item": "公司管理费、利润及风险预备费",
+            "amount": 5140000,
+            "basis": "按上述直接费的综合取费计取，含交通疏解动态调整、天气影响、材料价格波动及接口风险预备；本包按固定总价报价，材料价格波动风险已计入预备费"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司当前可用资源2.0，本包需求0.7，资源上可独立承担",
+          "交通疏解、环境控制、天气影响及接口协调通过施工组织与风险应对方案管理，属于正常投标风险",
+          "临时设施摊销、维护及拆除费用在报价中单独列明",
+          "价格基础与设计包及造价咨询包成果保持一致，作为投标编制纪律执行",
+          "主要材料设备价格来源在投标文件中提供，具体供应商报价以投标阶段实际取得为准，未取得前按暂定估价计入",
+          "本包按固定总价报价，材料价格波动风险已计入风险预备费，不另设无上限调价条款",
+          "开工日期以业主移交场地及设计包图则确认为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "施工期周边道路交通疏解设施、施工围挡与出入口、临时道路及行人通道、扬尘与噪声控制设施、施工期临时排水；不含主体结构拆除与建筑垃圾外运。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

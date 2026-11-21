@@ -1,0 +1,2202 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM849BD599/CASE-0012/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 82875000.0,
+      "project": {
+        "project_id": "CASE-0012",
+        "name": "粤澳新通道项目-南粤批发市场清拆工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0012/construction-1",
+        "project_id": "CASE-0012",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "南粤批发市场主体清拆与场地整治包",
+        "scope": "地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+        "budget": 82875000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0012/design",
+          "CASE-0012/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0295",
+          "COMP-0153",
+          "COMP-0493"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0012",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+              "project_id": "CASE-0012",
+              "package_id": "CASE-0012/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1850000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIM849BD599/CASE-0012/design/round-1/contract",
+              "project_id": "CASE-0012",
+              "package_id": "CASE-0012/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 3995000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM849BD599/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "package_id": "CASE-0012/design",
+            "contract_id": "SIM849BD599/CASE-0012/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 3995000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "package_id": "CASE-0012/cost",
+            "contract_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0185"
+            ],
+            "price": 1850000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0012",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIM849BD599/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0012",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0295": {
+        "entity_id": "COMP-0295",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0295",
+          "company_name": "江苏乾堪建设工程有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0295",
+          "name": "江苏乾堪建设工程有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "1f1ab1a168642b1c50273849dcd1f1b64d5f0c2e24e1dfec3bf8925ecde67361"
+  },
+  "spec": {
+    "package_id": "CASE-0012/construction-1",
+    "project_id": "CASE-0012",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "南粤批发市场主体清拆与场地整治包",
+    "scope": "地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+    "budget": 82875000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0012/design",
+      "CASE-0012/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0295",
+      "COMP-0153",
+      "COMP-0493"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0012",
+      "project_name": "粤澳新通道项目-南粤批发市场清拆工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0012",
+      "project_scope": "粤澳新通道项目-南粤批发市场清拆工程位于澳门，地块面积约7,400平方米，属交通基础设施前期清拆工程。业主为澳门特别行政区政府公共建设局，采用DBB交付模式，总预算MOP 150,000,000，总工期24个月。本次招标包为南粤批发市场主体清拆与场地整治包，范围包括地块范围内既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。业主已分别签订设计包（MOP 3,995,000）与造价咨询包（MOP 1,850,000），本清拆包预算为MOP 82,875,000，须与设计及造价咨询成果衔接。",
+      "functional_requirements": [
+        "完成约7,400平方米既有批发市场建筑物的结构拆除，包括主体结构、基础与地坪破除。",
+        "按澳门建筑废弃物管理要求进行建筑垃圾分类、临时堆放、装车与外运处置。",
+        "完成场地初步平整，达到设计包所要求的交付面标高与场地条件。",
+        "拆除与平整过程须满足公共安全、施工安全及周边环境质量目标。",
+        "为后续交通基础设施主体工程提供可交接的场地条件，并保留与交通疏解、围护、临时道路及地下管线迁改包的清晰接口。",
+        "施工期间须配合业主对周边公共通道与公众出入的协调安排。"
+      ],
+      "technical_requirements": [
+        "BIM协调：拆除范围、结构构件与场地平整模型须与设计包BIM成果对接，并提交拆除顺序模拟。",
+        "MEP协调：拆除前须确认既有管线断接与隔离方案，并与地下管线迁改包明确界面。",
+        "结构协调：拆除方案须经设计包结构复核，明确临时支撑、稳定性与相邻结构保护措施。",
+        "运输接口布置：建筑废弃物外运路线、车辆出入口与临时堆场布置须与交通疏解包协调。",
+        "公共出入布置：施工围挡、行人通道与公众安全隔离须满足业主公共出入协调要求。",
+        "耐久性目标：场地平整与临时工程须满足施工期耐久与安全使用要求。",
+        "可维护性目标：临时设施与围挡须便于检查、维护与拆除。",
+        "业主验收路径：分阶段验收（拆除完成、清运完成、场地平整完成）须与设计包及造价咨询包成果对应。",
+        "能源使用目标：施工机械与临时用电须符合业主能源使用与减排期望。"
+      ],
+      "budget_policy": "本包预算为MOP 82,875,000，属业主额外成本纳入。业主将按设计包与造价咨询包成果建立工程量清单与价格基准，采用综合单价与总价结合的报价评审方式。投标报价须包含拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。业主保留按实际工程量与变更控制程序调整合同价的权力，重大范围与预算变更须经宏观审批。评标时业主将定性比较报价合理性与价格基础，不以最低价自动判给。",
+      "schedule_policy": "总工期24个月，本清拆包须与设计包、造价咨询包及后续交通疏解、围护、临时道路、地下管线迁改包形成里程碑接口。业主强调里程碑现实性，要求投标人提交拆除顺序、外运节奏与场地移交计划。业主审查时间、包间接口时间与公共出入协调时间须纳入总进度。清拆包须在场地移交后按批准顺序推进，并为后续主体工程预留合理接口窗口。",
+      "compliance_requirements": [
+        "业主审查节奏：按月进度审查与关键节点专项审查，拆除方案、外运计划与场地移交须经业主审查。",
+        "问题升级路径：现场安全、环境或接口冲突须按业主—监理—承包商升级路径及时报告。",
+        "文档纪律：拆除记录、清运联单、分类台账、验收记录与竣工资料须完整可追溯。",
+        "接口签认：与设计包、造价咨询包、交通疏解包、围护包、临时道路包及地下管线迁改包的接口须书面签认。",
+        "公共出入协调：施工围挡、行人通道与公众安全安排须经业主与相关公共部门协调确认。",
+        "质量目标跟踪：分阶段验收与质量目标须由监理独立核查并报业主。",
+        "安全期望跟踪：安全期望指标须定期报告，异常须即时升级。",
+        "变更控制纪律：范围、预算与工期变更须按DBB变更控制程序并经宏观审批。"
+      ],
+      "risk_priorities": [
+        "拆除结构与相邻结构稳定性风险，须以临时支撑与监测方案控制。",
+        "建筑废弃物分类、外运与处置合规风险，须以联单与台账管理。",
+        "公共出入与周边交通干扰风险，须与交通疏解包及公共部门协调。",
+        "地下管线界面风险，须与管线迁改包明确断接与隔离责任。",
+        "价格波动与工程量变化风险，须以风险预备与变更控制应对。",
+        "工期接口风险，须以里程碑现实性与包间协调时间控制。",
+        "安全与环境卫生风险，须以安全期望跟踪与监理独立核查控制。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0012/construction-1",
+          "package_type": "contractor",
+          "package_name": "南粤批发市场主体清拆与场地整治包",
+          "scope": "Authorized scope: 地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。\nBuyer refinement: 地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "城市清拆施工组织能力",
+            "结构拆除与临时支撑协调能力",
+            "建筑垃圾分类与外运处置管理能力",
+            "施工安全与公共安全管理能力",
+            "环境与噪音粉尘控制能力",
+            "场地平整与移交能力",
+            "BIM与设计接口协调能力",
+            "MEP与地下管线界面协调能力",
+            "质量文档管理能力",
+            "公共出入协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "拆除施工方法与顺序说明",
+            "建筑垃圾分类、外运与处置方案",
+            "质量方针与质量目标落实方法",
+            "安全期望跟踪与公共安全管理方案",
+            "价格基础与工程量清单报价",
+            "进度视图与里程碑计划",
+            "风险应对与接口协调方案"
+          ],
+          "pricing_requirements": "按设计包与造价咨询包成果编制工程量清单综合单价与总价，包含拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备；报价须说明价格基础与风险预备逻辑。\nBinding currency: MOP; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "公共出入协调"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制与交付信心，不以最低价自动判给；判给须经业主审查与宏观审批程序。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0012/construction-1",
+        "package_type": "contractor",
+        "package_name": "南粤批发市场主体清拆与场地整治包",
+        "scope": "Authorized scope: 地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。\nBuyer refinement: 地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "城市清拆施工组织能力",
+          "结构拆除与临时支撑协调能力",
+          "建筑垃圾分类与外运处置管理能力",
+          "施工安全与公共安全管理能力",
+          "环境与噪音粉尘控制能力",
+          "场地平整与移交能力",
+          "BIM与设计接口协调能力",
+          "MEP与地下管线界面协调能力",
+          "质量文档管理能力",
+          "公共出入协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "拆除施工方法与顺序说明",
+          "建筑垃圾分类、外运与处置方案",
+          "质量方针与质量目标落实方法",
+          "安全期望跟踪与公共安全管理方案",
+          "价格基础与工程量清单报价",
+          "进度视图与里程碑计划",
+          "风险应对与接口协调方案"
+        ],
+        "pricing_requirements": "按设计包与造价咨询包成果编制工程量清单综合单价与总价，包含拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备；报价须说明价格基础与风险预备逻辑。\nBinding currency: MOP; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "公共出入协调"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制与交付信心，不以最低价自动判给；判给须经业主审查与宏观审批程序。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0295",
+        "company_name": "江苏乾堪建设工程有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "长期负责公共工程统筹，压力下先确认工期与接口责任，再谈资源调配。他最先注意到跨部门审批与清拆移交之间的时间缝隙，倾向把风险前置为明确的里程碑。讨论中常带来进度与合规之间的张力，提醒团队不要为赶工牺牲监管服务与文件纪律。",
+          "responsibilities": [
+            "统筹清拆工程整体工期与里程碑",
+            "协调设计、监管与施工接口",
+            "主持招标包划分与采购节奏讨论",
+            "向业主汇报项目风险与进度"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先讲结论与关键日期，再补充依据；对模糊承诺会当场追问。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否对应实际工作量。她最先发现预算科目之间的错配，倾向用保守估算留出风险缓冲。讨论中带来成本控制与工期弹性之间的张力，强调每笔支付评审都要有可追溯依据。",
+          "responsibilities": [
+            "编制与复核项目成本基准",
+            "评审投标报价基础与支付安排",
+            "跟踪变更与风险预备费",
+            "提交成本控制与支付评审意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，习惯用分项数字说明立场，对未量化的成本假设会要求补充依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量目标负责人",
+          "personal_profile": "工程背景出身，压力下先看技术方案是否可施工、可检验。他最先注意到清拆范围与周边交通设施的衔接细节，倾向把质量目标拆成可检查的验收点。讨论中带来设计理想与现场可行性之间的张力，坚持独立检查与文件纪律。",
+          "responsibilities": [
+            "协调设计文件与清拆技术方案",
+            "制定质量目标与验收检查点",
+            "组织独立检查与质量复核",
+            "评估投标方的技术能力匹配"
+          ],
+          "decision_authority": "final",
+          "communication_style": "务实细致，喜欢用图纸与检查清单说话，对含糊的技术承诺会要求具体做法。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标包协调经理",
+          "personal_profile": "熟悉公共采购流程，压力下先确认招标包的边界与评标标准是否一致。她最先注意到投标方能力与包件要求的匹配度，倾向用结构化评分减少争议。讨论中带来程序严谨与采购效率之间的张力，强调文件纪律与业主审查留痕。",
+          "responsibilities": [
+            "划分招标包并编制采购计划",
+            "组织评标与能力匹配审查",
+            "管理投标问答与文件纪律",
+            "协调判给建议与业主审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健有条理，按程序节点推进，对越过程序的提议会明确提示风险。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "现场与监管",
+          "position": "现场监管与风险应对主管",
+          "personal_profile": "常驻现场思维，压力下先判断施工对周边环境与公众的影响。他最先注意到清拆粉尘、噪音与交通改道的现实约束，倾向把风险应对写成可执行的现场措施。讨论中带来现场实际与合约条款之间的张力，重视监管服务与安全底线。",
+          "responsibilities": [
+            "制定现场监管与风险应对方案",
+            "评估清拆对周边环境的影响",
+            "跟踪安全与可持续发展目标",
+            "提交现场报告与整改建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直白务实，用现场情况与具体措施说明问题，对纸面方案会追问落地方式。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "财务与资源规划",
+          "position": "财务与资源规划主管",
+          "personal_profile": "从资金与人力可用性看问题，压力下先确认资源承诺是否与项目节奏匹配。她最先注意到团队可用性与支付节奏之间的错位，倾向用分阶段资源计划降低集中风险。讨论中带来资源现实与项目雄心之间的张力，强调可持续的资金安排。",
+          "responsibilities": [
+            "编制项目资金与资源计划",
+            "评估团队可用性与资源匹配",
+            "跟踪付款节奏与财务风险",
+            "提交资源规划与财务审查意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "冷静克制，用资源与资金数据支撑判断，对过度乐观的计划会提出分阶段建议。"
+        }
+      ],
+      "COMP-0295": [
+        {
+          "agent_id": "COMP-0295_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯把清拆包拆成结构拆除、基础破除、垃圾外运和场地平整四条主线。他最先注意到的是资源冲突和关键路径，常把讨论拉回能否按期交付和是否需要调整施工顺序。他带来的张力是：当团队想先抢进度时，他会坚持先确认资源可用性和外运处置能力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调内部资源分配与外部分包接口",
+            "主持包级风险评审与进度纠偏",
+            "对接业主代表与监管服务沟通"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，习惯用里程碑和资源缺口说明问题。"
+        },
+        {
+          "agent_id": "COMP-0295_02_林敏华",
+          "agent_name": "林敏华",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价构成和付款条件高度敏感，压力下会反复核对工程量清单与成本假设。她最先注意到的是价格依据是否完整、付款节点是否覆盖前期投入，以及变更和索赔条款是否清晰。她带来的张力是：当技术团队追求施工便利时，她会提醒成本控制和付款评审风险。",
+          "responsibilities": [
+            "编制投标报价与价格依据说明",
+            "负责成本控制与付款评审",
+            "审核分包合约与变更计价条款",
+            "跟踪付款申请与结算文档"
+          ],
+          "decision_authority": "final",
+          "communication_style": "细致、审慎，喜欢用数字和条款说话，对模糊表述会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0295_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验导向，压力下先判断施工可行性和安全边界。他最先注意到的是拆除顺序、机械配置和建筑垃圾临时堆放空间，以及周边环境对施工时段的限制。他带来的张力是：当商务团队压缩成本时，他会坚持保留必要的安全措施和资源冗余。",
+          "responsibilities": [
+            "编制清拆施工方案与进度计划",
+            "管理现场拆除作业与建筑垃圾分类",
+            "协调机械、人力和外运资源",
+            "落实安全管理和现场质量目标"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实、简短，偏好现场照片和工序图说明问题，不喜欢空泛讨论。"
+        },
+        {
+          "agent_id": "COMP-0295_04_周凯琳",
+          "agent_name": "周凯琳",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "质量与合规部",
+          "position": "质量经理",
+          "personal_profile": "以质量目标和文档纪律为核心，压力下会先检查验收标准和检查记录是否闭环。她最先注意到的是拆除边界是否清晰、垃圾分类是否符合要求、外运处置是否有可追溯记录。她带来的张力是：当进度压力要求简化流程时，她会坚持独立检查和文档留痕。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "执行独立质量检查与验收",
+            "管理建筑垃圾外运处置记录",
+            "维护文档纪律与合规档案"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨、条理清晰，习惯用检查表和不符合项清单推动整改。"
+        },
+        {
+          "agent_id": "COMP-0295_05_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0295",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调负责人",
+          "personal_profile": "关注设计与施工接口，压力下先确认设计文件是否满足清拆和场地整治的可施工性。他最先注意到的是图纸深度、现场条件差异和设计变更对工期的影响。他带来的张力是：当施工团队想按经验调整时，他会要求设计方书面确认，避免责任不清。",
+          "responsibilities": [
+            "协调设计方与施工方的技术接口",
+            "审核清拆范围和场地整治设计可施工性",
+            "管理设计变更与技术澄清",
+            "参与交付前的设计符合性检查"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和但坚持程序，喜欢用图纸标注和会议纪要推动共识。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下先看整体工期与资源是否匹配，习惯把清拆包拆成可交付节点再倒排资源。他最先注意到的是团队可用量与包体量之间的落差，容易在讨论中把乐观报价拉回可执行范围，带来进度与成本之间的张力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调业主接口与内部资源规划",
+            "主持投标风险应对与关键节点评审",
+            "监督质量目标与可持续发展目标的落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先给结论再列依据，偏好用节点表和资源清单说话。"
+        },
+        {
+          "agent_id": "COMP-0153_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本部",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力下会反复核对报价基础与付款条件，最先发现成本漏项和现金流缺口。她倾向保守报价，常在讨论中与进度导向的同事形成成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制报价基础与成本控制方案",
+            "开展付款评审与付款评估安排",
+            "审核分包与采购价格合理性",
+            "维护文档纪律与商务记录"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用分项数字和假设条件说明立场，语气克制。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "施工技术负责人",
+          "personal_profile": "现场思维强，压力下先想拆除顺序、机械配置和废弃物外运路径，最先注意到场地条件与结构拆除的可行性。他倾向以技术方案推动进度，容易在讨论中低估行政与合规等待时间，带来技术乐观与程序审慎之间的张力。",
+          "responsibilities": [
+            "制定结构拆除与场地整治技术方案",
+            "评估施工专业作业与设备配置",
+            "开展质量评审与独立复核安排",
+            "配合设计协调与现场报告"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实具体，常用工序步骤和现场例子解释判断，语速偏快。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "安全环保部",
+          "position": "安全环保经理",
+          "personal_profile": "风险意识突出，压力下先看拆除作业的安全边界与建筑垃圾处置合规，最先注意到环境敏感点与监管要求。她倾向在方案未闭环前保留意见，常在讨论中与赶工诉求形成安全合规与进度之间的张力。",
+          "responsibilities": [
+            "编制安全管理与环境保护措施",
+            "监督建筑垃圾分类与外运处置合规",
+            "跟踪可持续发展目标与监管要求",
+            "参与风险应对与现场检查"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "谨慎细致，先提风险再给可行条件，措辞留有余地。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "合约与业主接口部",
+          "position": "合约协调经理",
+          "personal_profile": "擅长在业主与内部团队之间翻译需求，压力下先确认合约边界与责任划分，最先注意到范围外事项与变更风险。他倾向以书面确认降低争议，常在讨论中提醒不要为争取包件而承诺超出能力的事项，带来商务弹性与合约纪律之间的张力。",
+          "responsibilities": [
+            "负责业主接口与利益相关方协调",
+            "管理合约边界与变更记录",
+            "组织投标文件与文档纪律检查",
+            "协调设计协调与依赖包接口"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和有条理，习惯复述对方要点再提出条件，重视书面留痕。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯把清拆包拆成结构拆除、废料外运、场地平整三条主线并行推演。他最先注意到的是资源缺口与关键路径冲突，容易在讨论中把技术细节拉回到交付承诺与业主期望管理上，带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹清拆包整体交付策略与工期安排",
+            "协调设计、成本与施工三方接口",
+            "对接业主代表与监管服务沟通",
+            "主持内部风险评审与资源规划"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，先讲结论再列依据，习惯用里程碑和资源曲线说话，对模糊承诺会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0493_02_黄丽芬",
+          "agent_name": "黄丽芬",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务合约经理",
+          "personal_profile": "对报价结构与付款条件高度敏感，压力下会反复核对价格基础与成本边界，尤其关注清拆包中垃圾分类外运处置的计量与变更风险。她最先注意到的是合约条款中的开口项，常把讨论引向支付评审与成本控制，带来商务严谨与进度弹性之间的张力。",
+          "responsibilities": [
+            "编制投标报价与价格基础说明",
+            "负责付款评审与成本复核",
+            "管理分包合约与变更计量",
+            "跟踪成本控制与现金流安排"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用数字和条款编号表达立场，对不确定费用会要求书面澄清。"
+        },
+        {
+          "agent_id": "COMP-0493_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场导向强，压力下优先判断可施工性与班组调度，最先注意到的是场地条件、机械配置与拆除顺序的可行性。他倾向把方案落到每日作业面上，容易与商务和设计在措施费与工序安排上产生张力，但能快速给出风险应对的现场版本。",
+          "responsibilities": [
+            "编制施工组织与拆除顺序方案",
+            "负责现场进度与班组资源调度",
+            "落实安全文明施工与场地报告",
+            "提出现场风险应对与应急安排"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "简短具体，多用现场实例和工序图说明问题，不喜欢空泛表述。"
+        },
+        {
+          "agent_id": "COMP-0493_04_周美玲",
+          "agent_name": "周美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量与环境部",
+          "position": "质量环境经理",
+          "personal_profile": "以体系和证据为先，压力下先检查质量目标与环保合规链条是否闭合，最先注意到的是建筑垃圾分类、外运处置记录与独立检查安排是否可追溯。她常把讨论拉回文档纪律与质量目标跟踪，带来合规严谨与现场效率之间的张力。",
+          "responsibilities": [
+            "建立质量目标与检查计划",
+            "监督建筑垃圾分类与外运处置合规",
+            "组织独立检查与整改闭环",
+            "维护质量与环境文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和但坚持，习惯用检查表和证据链说话，对缺失记录会明确要求补正。"
+        },
+        {
+          "agent_id": "COMP-0493_05_吴家明",
+          "agent_name": "吴家明",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计与施工之间找平衡，压力下先确认设计意图与现场条件的偏差，最先注意到的是拆除边界、结构保留要求与图纸一致性。他倾向用技术澄清化解冲突，但会在设计变更与成本控制之间带来协调张力。",
+          "responsibilities": [
+            "协调设计文件与现场拆除边界",
+            "处理设计澄清与技术接口",
+            "支持施工前咨询与方案比选",
+            "跟踪设计变更对工期与成本的影响"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "耐心细致，喜欢用图纸标注和对比说明问题，倾向先澄清再决策。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0295",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "COMP-0295_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们是一家以市政、园林、土石方、房屋建筑和装饰为主业的承包商，清拆与场地整治在业务方向上并不陌生，结构拆除、基础破除、渣土分类外运、场地平整这些工序属于我们能够组织管理的范围。这个包约7,400平方米，预算上限8,287.5万MOP，资源需求0.7，而我们当前可用资源为2.0、占用为0，容量上完全能够承接，不存在必须靠外部伙伴共享投标身份才能成立的问题。包内明确不含交通疏解、围护、临时道路和地下管线迁改，这实际上把最需要专业接口的部分切走了，剩下的核心是拆除组织、安全文明施工、环境控制和渣土合规处置，这些都可以通过我们自己的项目管理班子加上常规专业分包和运输处置供应商来完成，属于正常的投标风险，应在施工方法、价格基础和风险预备中处理，而不是升级为组合体。真正的短板是：公司资料里没有可引用的历史清拆项目业绩，也没有现成的团队可用性清单和机械设备清单，BIM与MEP接口协调能力偏弱，澳门本地渣土外运处置的合规路径和处置场接纳安排尚未落实。这些是需要在投标文件中用角色计划、拆除顺序说明、分类外运方案和风险应对来正面回答的问题，也是我必须在提交前确认的事项。我的判断是独立投标，但把关键前提写成明确的投标假设和提交前核查项：项目经理与安全主任的到位承诺、拆除机械与临时支撑资源、渣土运输与处置单位的报价和接纳确认、以及按设计包与造价咨询包成果编制的工程量清单价格基础。若这些核查在提交前无法形成可交代的结论，我会选择放弃而不是带着空心承诺去投。",
+        "content": "管理层决定：对南粤批发市场主体清拆与场地整治包（CASE-0012/construction-1）以独立投标人身份参与投标，不组建组合体。理由是本包范围聚焦于约7,400平方米既有建筑物的结构拆除、基础与地坪破除、建筑垃圾分类外运处置及场地初步平整，且明确不含交通疏解、围护、临时道路与地下管线迁改，与我方市政、土石方、房屋建筑及场地整治的组织能力相匹配；当前可用资源2.0、占用0，容量足以支撑，无需外部伙伴共享投标身份或交付责任。投标文件将重点呈现：角色计划与团队可用性摘要，明确项目经理、安全主任、拆除作业主管与环保控制人员的岗位职责与到位安排；拆除施工方法与顺序说明，含结构拆除与临时支撑的协调原则；建筑垃圾分类、外运与处置方案，说明分类标准、运输路线、处置场对接与联单记录；质量方针与质量目标落实方法，以及质量文档管理与独立复核安排；安全期望跟踪与公共安全管理方案，覆盖围蔽边界、公众出入协调与应急预案；进度视图与里程碑计划；价格基础与工程量清单报价，按设计包与造价咨询包成果编制综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备，并说明风险预备逻辑。同时如实说明BIM与MEP及地下管线界面协调由我方牵头、以接口协调会和模型/图纸会审方式管理，管线迁改不在本包范围。提交前须落实的核查：项目班子与关键工种的实际可用性、拆除机械与临时支撑资源清单、渣土运输与处置单位的报价及接纳确认、工程量清单价格基础与设计包造价包成果的一致性。上述核查未形成可交代结论前不提交。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:31",
+        "verification_requests": [
+          {
+            "question": "因此决定独立投标，并把团队到位、机械资源、渣土处置报价与接纳、工程量清单价格基础列为提交前必须落实的核查项；若核查不能形成可交代结论，则转为放弃",
+            "required_before_submission": true
+          },
+          {
+            "question": "提交前须落实的核查：项目班子与关键工种的实际可用性、拆除机械与临时支撑资源清单、渣土运输与处置单位的报价及接纳确认、工程量清单价格基础与设计包造价包成果的一致性",
+            "required_before_submission": true
+          },
+          {
+            "question": "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "COMP-0153_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个清拆包在业务范围上与我们公司的能力高度契合：我们具备建设工程施工、土石方工程、园林绿化、环境保护监测、水污染治理、土壤污染治理与修复等资质和经验，城市清拆施工组织、结构拆除、建筑垃圾分类外运、场地平整等正是我们的强项。包体量约8287.5万澳门元，工期24个月，资源需求0.7，我们当前可用资源2.0，完全有能力独立承担。虽然包内包含BIM与设计接口协调、MEP与地下管线界面协调等要求，但这些都是可以通过常规设计协调和分包管理解决的，不需要联合体。我们作为承包商可以担任单一责任主体，通过分包管理、质量安全体系、环境控制措施来满足业主要求。内部讨论没有提出必须联合体才能投标的硬性障碍，也没有未解决的资格条件。因此，我决定以独立投标人身份参与，并制定详细的技术方案、价格基础和风险应对措施。",
+        "content": "## 投标决策说明\n\n经管理层审议，中交第一航务工程局有限公司决定独立参与南粤批发市场主体清拆与场地整治包（CASE-0012/construction-1）的投标。\n\n### 决策依据\n1. **业务契合度**：本包内容为既有建筑物结构拆除、基础地坪破除、建筑垃圾分类外运处置及场地初步平整，与我公司建设工程施工、土石方工程、环境保护监测、土壤污染治理等主营业务高度一致。\n2. **资源可用性**：公司当前可用资源为2.0（归一化企业能力），远高于包所需0.7，具备充足的人员、设备和资金保障。\n3. **独立履约能力**：包内要求的BIM与设计接口协调、MEP与地下管线界面协调，可通过我公司设计管理团队与专业分包商协同完成，无需联合体即可实现单一责任主体管理。\n4. **风险可控**：包范围明确排除交通疏解、围护与临时道路、地下管线迁改，降低了外部协调风险。我公司将通过安全文明施工方案、环境控制措施、建筑垃圾分类处置计划等有效管控风险。\n5. **战略价值**：参与澳门清拆工程有助于巩固公司在粤港澳大湾区基础设施市场的地位，积累城市更新项目经验。\n\n### 投标策略\n- 按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。\n- 提交角色计划与团队可用性摘要、拆除施工方法与顺序说明、建筑垃圾分类外运与处置方案、质量方针与目标落实方法、安全期望跟踪与公共安全管理方案、价格基础与工程量清单报价、进度视图与里程碑计划、风险应对与接口协调方案。\n- 明确价格基础与风险预备逻辑，确保报价合理且具备竞争力。\n\n### 结论\n本包与公司能力匹配度高，资源充足，风险可控，决定以独立投标人身份参与，不采用联合体形式。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:28",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们是一家本地总承包企业，具备设计建造、施工管理、土方地基、环保项目等综合能力，并有ISO三体系认证。这个包是约7,400平方米既有批发市场的结构拆除、基础地坪破除、垃圾分类外运、场地初步平整，不含交通疏解、围护、临时道路和地下管线迁改。范围相对聚焦，属于我们施工能力可以覆盖的拆除与场地整治类型，不需要另一家企业共享投标人身份或承担包级交付责任。资源方面，授权情景显示可用资源2.0、占用0，包需求0.7，容量充足，可以独立承担。价格上限约8,287.5万MOP，规模适中，风险主要是拆除安全、粉尘噪音、公共出入和废弃物外运处置，这些都可以通过施工组织、分包管理和风险预备来应对，属于正常投标风险而非需要组合体的责任缺口。我倾向于独立投标，把拆除方法、分类外运、安全文明施工和价格基础讲清楚，同时把地下管线界面和BIM协调作为接口管理事项处理，而不是扩大成联合体责任。",
+        "content": "得宝建筑集团有限公司就南粤批发市场主体清拆与场地整治包提交独立投标意向。我方将以单一责任投标人身份承担地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整，并明确不含交通疏解、围护与临时道路及地下管线迁改。投标文件将包含角色计划与团队可用性摘要、拆除施工方法与顺序说明、建筑垃圾分类外运与处置方案、质量方针与质量目标落实方法、安全期望跟踪与公共安全管理方案、价格基础与工程量清单报价、进度视图与里程碑计划、风险应对与接口协调方案。报价按设计包与造价咨询包成果编制综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备，并说明价格基础与风险预备逻辑。地下管线界面与BIM协调按接口管理处理，由我方统一协调，不改变单一投标人责任。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:42:27",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0295",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "COMP-0295_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "现场分拣、临时堆场、合规运输及处置单位接纳费用；运输与处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排\n独立投标人单一责任下的容量与合规风险预备，覆盖渣土处置接纳未落实、机械租赁待确认、关键工种可用性待核查及缺少同类清拆业绩的商业风险，按直接费约13.7%计取\n主要风险及应对：1）渣土外运处置价格与接纳未落实——报价中按暂估单价计入并设风险预备，提交前与本地合规单位确认报价及接纳安排，若无法确认则启动备用处置路径；2）拆除机械与临时支撑租赁安排待确认——以自有加常规租赁配置，报价含机械台班风险预备；3）项目班子与关键工种可用性待核查——按角色计划配置，提交前完成可用性核查；4）BIM与管线界面协调能力偏弱——由我方牵头组织协调会与图纸会审，不构成独立设计责任；5）缺少同类清拆业绩——以施工组织方案、质量安全体系及价格基础说明回应\n其中渣土外运处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排；机械租赁与人员可用性亦为已披露假设\n拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认，该事项作为已披露假设不阻断提交",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:42:52",
+        "verification_requests": [
+          {
+            "question": "现场分拣、临时堆场、合规运输及处置单位接纳费用；运输与处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排",
+            "required_before_submission": false
+          },
+          {
+            "question": "独立投标人单一责任下的容量与合规风险预备，覆盖渣土处置接纳未落实、机械租赁待确认、关键工种可用性待核查及缺少同类清拆业绩的商业风险，按直接费约13.7%计取",
+            "required_before_submission": false
+          },
+          {
+            "question": "主要风险及应对：1）渣土外运处置价格与接纳未落实——报价中按暂估单价计入并设风险预备，提交前与本地合规单位确认报价及接纳安排，若无法确认则启动备用处置路径；2）拆除机械与临时支撑租赁安排待确认——以自有加常规租赁配置，报价含机械台班风险预备；3）项目班子与关键工种可用性待核查——按角色计划配置，提交前完成可用性核查；4）BIM与管线界面协调能力偏弱——由我方牵头组织协调会与图纸会审，不构成独立设计责任；5）缺少同类清拆业绩——以施工组织方案、质量安全体系及价格基础说明回应",
+            "required_before_submission": false
+          },
+          {
+            "question": "其中渣土外运处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排；机械租赁与人员可用性亦为已披露假设",
+            "required_before_submission": false
+          },
+          {
+            "question": "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认，该事项作为已披露假设不阻断提交",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "COMP-0153_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "分类人工与堆放管理、许可承运商运输、许可处置场处置费，按拆建料产生量估算；承运与处置单价为暂定估算，待分包报价确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:42:48",
+        "verification_requests": [
+          {
+            "question": "分类人工与堆放管理、许可承运商运输、许可处置场处置费，按拆建料产生量估算；承运与处置单价为暂定估算，待分包报价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0012/construction-1",
+        "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+        "agent_name": "林晓彤",
+        "department": "财务与资源规划",
+        "position": "财务与资源规划主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要对本包的交付信心与问责清晰度负责。评标推荐得宝，我认可这一方向：得宝报价MOP 72,985,000低于包上限，固定总价且无未设上限调整条款，投标假设最少，质量与安全管理体系明确，业主审查路径清楚，交付信心相对最高。中交第一航务能力匹配最强、报价MOP 72,325,000最低，但进度视图未锁定，承运与处置商许可及容量仍属履约期假设，时间确定性偏弱。江苏乾堪报价触及上限MOP 82,875,000，且渣土处置、机械租赁与人员可用性均为未落实假设，交付信心与风险控制偏弱，不宜优先。得宝的主要短板是计划十个月完成、工期偏长，以及外运处置依赖合格分包商、BIM与管线界面协调描述较概括，这些属于可澄清事项，不改变其作为最终判给对象的合理性。",
+        "content": "经评标与业主审查，本包判给得宝建筑集团有限公司，报价MOP 72,985,000。该投标以单一责任主体承担包内责任，固定总价且无未设上限调整条款，投标假设最少，质量与安全管理体系完整，关键工序独立检查与业主审查路径清晰，交付信心相对最高。预合同澄清聚焦工期压缩与总体进度衔接、分包到位安排、外运处置许可与容量证据、BIM与管线界面协调深化，以及价格基础与风险预备的可追溯性，相关记录纳入业主审查与审批程序。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:43:56",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0012/construction-1",
+        "decision": "bid",
+        "reason": "管理判断：本包属于我们能够作为单一责任投标人承担的拆除与场地整治工程，业务方向与市政、土石方、房屋建筑能力相符，资源占用为零、可用容量充足，且包内已排除交通疏解、围护、临时道路与地下管线迁改，接口复杂度可控，不需要以组合体形式共享投标身份或交付责任。主要风险在于缺少可引用的同类清拆业绩、团队与机械可用性尚未形成清单、渣土外运处置的合规路径与接纳安排未落实、BIM与管线界面协调偏弱。这些通过角色计划、拆除方法与顺序、分类外运处置方案、安全与环保控制、价格基础与风险预备来回应，属于正常投标风险而非问责缺口。因此决定独立投标，并把团队到位、机械资源、渣土处置报价与接纳、工程量清单价格基础列为提交前必须落实的核查项；若核查不能形成可交代结论，则转为放弃。",
+        "unresolved_condition_ids": [
+          "condition_0f24c95d598ca7aef6fa",
+          "condition_60a8e78a3826099164a9",
+          "condition_ce9753b66eea05bcd60d"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以独立投标人身份投标，不设组合体，全部包内责任由我方单一承担。",
+          "项目班子与关键工种按角色计划到位，具体人员可用性以提交前核查结果为准。",
+          "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认。",
+          "建筑垃圾外运与处置拟委托本地合规运输及处置单位，报价与接纳确认在提交前落实。",
+          "工程量清单综合单价与总价依据设计包与造价咨询包成果编制，价格基础与风险预备逻辑在报价说明中交代。",
+          "交通疏解、围护、临时道路及地下管线迁改不在本包范围，相关界面以协调会与图纸会审方式管理。",
+          "BIM与MEP及管线界面协调由我方牵头组织，不构成独立设计责任。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0012/construction-1",
+        "decision": "bid",
+        "reason": "本包为既有批发市场清拆与场地整治，范围明确，不含交通疏解、围护与临时道路，不含地下管线迁改，与我公司城市清拆、土石方、环境保护、土壤修复等主营业务高度匹配。公司当前可用资源为2.0，远高于包所需0.7，具备独立履约能力。包预算8287.5万澳门元，规模适中，风险可控。我们可通过常规分包管理解决BIM与MEP接口协调，无需联合体。投标可巩固公司在澳门清拆市场的地位，符合公司战略方向。因此决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司当前可用资源2.0为授权情景数据，假设在投标及履约期间保持可用。",
+          "BIM与设计接口协调、MEP与地下管线界面协调将通过公司内部设计管理团队及专业分包商解决，假设相关分包商能够按计划到位。",
+          "建筑垃圾分类外运处置将委托具备澳门当地许可的承运商与处置场，假设相关许可与容量在履约期间可获得。",
+          "报价基于设计包与造价咨询包成果，假设该等成果在投标截止前提供。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0012/construction-1",
+        "decision": "bid",
+        "reason": "管理层判断：本包为单一地块的结构拆除与场地整治，范围清晰、边界明确，与我方总承包、土方地基及环保项目能力匹配。授权情景资源充足，我方可以作为单一责任投标人独立承担，无需另一家企业共享投标人身份或包级交付责任。主要风险集中在拆除安全、粉尘噪音控制、建筑垃圾外运处置和公共出入协调，可通过施工组织设计、分包管理、安全文明施工措施和风险预备金处理，属于正常投标风险。价格上限约8,287.5万MOP，商业规模可接受。因此决定独立投标，按设计包与造价咨询包成果编制工程量清单综合单价与总价，并在报价中说明价格基础与风险预备逻辑。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+          "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+          "地下管线迁改不在本包范围，相关界面按接口协调处理",
+          "交通疏解、围护与临时道路不在本包范围",
+          "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0012/construction-1_001",
+        "package_id": "CASE-0012/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0295",
+        "bidder_name": "江苏乾堪建设工程有限公司",
+        "technical_proposal": "我方以独立投标人身份承担南粤批发市场主体清拆与场地整治包全部包内责任。技术方案围绕约7,400平方米既有批发市场建筑物展开：采用机械拆除为主、人工配合的施工方法，先进行结构稳定性评估与临时支撑设置，按由上至下、先非承重后承重的顺序分段拆除；基础与地坪采用液压破碎锤破除，钢筋与混凝土分类归堆。建筑垃圾按惰性物料、可回收金属、可燃杂物三类现场分拣，设置临时分类堆场并覆盖防尘网，委托本地合规运输及处置单位外运，全过程联单记录。场地初步平整按设计标高控制，预留排水坡向。BIM与MEP及地下管线界面由我方牵头组织接口协调会与图纸会审，管线迁改不在本包范围。质量文档执行内部三检与独立复核，安全与环保控制覆盖围蔽边界、公众出入协调、噪音粉尘监测及应急预案。",
+        "implementation_plan": "进场后先完成现场移交、测量放线与结构稳定性复核，设置临时支撑与围蔽边界；随后按分区流水作业：A区主体结构拆除、B区基础与地坪破除、C区分类堆场与外运。拆除机械以自有加常规租赁配置，运输车辆按渣土处置单位安排调度。每区完成后即进行场地初步平整并移交测量记录。关键里程碑：第1月完成施工准备与支撑；第2至4月完成主体结构拆除；第3至5月完成基础地坪破除与分类外运；第5至6月完成场地初步平整与移交。项目班子按角色计划配置项目经理、安全主任、拆除作业主管、环保控制人员及质量文档管理员，具体人员可用性以提交前核查结果为准。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "总工期6个月，自现场移交之日起计。第1月施工准备与临时支撑；第2至4月主体结构拆除；第3至5月基础地坪破除与分类外运；第5至6月场地初步平整与移交。关键里程碑按分区流水设置，每区完成后即移交测量记录。若因不可控因素导致渣土处置接纳延迟，我方将启动备用处置路径并调整分区顺序，不因此延长总工期。",
+        "compliance_statement": "我方接受业主按设计包与造价咨询包成果进行工程量清单计量与支付审核。质量方面执行内部三检与独立复核，质量文档按业主文档管理要求同步提交。安全期望跟踪以周报与月度安全会议形式向业主汇报，公共出入协调方案报业主审批后实施。BIM与MEP管线接口协调由我方牵头组织接口协调会与图纸会审，管线迁改不在本包范围，相关界面以会议纪要确认。",
+        "risk_response": "主要风险及应对：1）渣土外运处置价格与接纳未落实——报价中按暂估单价计入并设风险预备，提交前与本地合规单位确认报价及接纳安排，若无法确认则启动备用处置路径；2）拆除机械与临时支撑租赁安排待确认——以自有加常规租赁配置，报价含机械台班风险预备；3）项目班子与关键工种可用性待核查——按角色计划配置，提交前完成可用性核查；4）BIM与管线界面协调能力偏弱——由我方牵头组织协调会与图纸会审，不构成独立设计责任；5）缺少同类清拆业绩——以施工组织方案、质量安全体系及价格基础说明回应。上述未落实事项均作为已披露假设，不构成提交前阻断条件。",
+        "submission_summary": "我方以独立投标人身份提交南粤批发市场主体清拆与场地整治包报价，总价 MOP 82,875,000，与包预算上限一致。价格基础按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖结构拆除与临时支撑、基础地坪破除、建筑垃圾分类外运处置、场地初步平整、安全文明施工、项目管理与BIM接口协调、保险税费及风险预备。其中渣土外运处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排；机械租赁与人员可用性亦为已披露假设。风险预备分两部分：常规风险预备按直接费约5%计取，另设商业调整与容量风险预备 MOP 9,980,000，覆盖处置价格波动、机械到位、关键工种可用性及缺少同类清拆业绩的独立投标风险。付款按业主计量审核节点支付。",
+        "quotation_breakdown": [
+          {
+            "item": "结构拆除与临时支撑工程",
+            "amount": 18650000,
+            "basis": "按设计包与造价咨询包成果工程量清单综合单价编制，含机械拆除、人工配合、临时支撑搭拆及结构稳定性复核，参考本地拆除市场单价与机械台班估算"
+          },
+          {
+            "item": "基础与地坪破除工程",
+            "amount": 9250000,
+            "basis": "液压破碎锤破除基础与地坪，含钢筋分离与混凝土块破碎，按面积与厚度估算工程量"
+          },
+          {
+            "item": "建筑垃圾分类、外运与处置",
+            "amount": 21480000,
+            "basis": "现场分拣、临时堆场、合规运输及处置单位接纳费用；运输与处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排"
+          },
+          {
+            "item": "场地初步平整与移交",
+            "amount": 6350000,
+            "basis": "按设计标高平整、排水坡向控制、测量复核及移交记录，含机械台班与测量配合"
+          },
+          {
+            "item": "安全文明施工与环境保护",
+            "amount": 5480000,
+            "basis": "围蔽边界维护、公众出入协调、噪音粉尘监测、洒水降尘、安全防护及应急预案演练"
+          },
+          {
+            "item": "项目管理、质量文档与BIM接口协调",
+            "amount": 4720000,
+            "basis": "项目班子与关键工种薪酬分摊、质量三检与独立复核、BIM与MEP管线接口协调会及图纸会审"
+          },
+          {
+            "item": "保险、税费及风险预备",
+            "amount": 6965000,
+            "basis": "工程一切险与第三者责任险、按现行税率计取税费，风险预备按直接费约5%计取，覆盖渣土处置价格波动、机械租赁到位及工期接口风险"
+          },
+          {
+            "item": "商业调整与容量风险预备",
+            "amount": 9980000,
+            "basis": "独立投标人单一责任下的容量与合规风险预备，覆盖渣土处置接纳未落实、机械租赁待确认、关键工种可用性待核查及缺少同类清拆业绩的商业风险，按直接费约13.7%计取"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_0f24c95d598ca7aef6fa",
+          "condition_60a8e78a3826099164a9",
+          "condition_ce9753b66eea05bcd60d",
+          "condition_b985b6ea84129dea88b1",
+          "condition_8112370c045cfb6eae39",
+          "condition_33b869742f21ffef73ce",
+          "condition_eacbbdc01c5e6c5453d6",
+          "condition_ee2380b479b457a525df"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以独立投标人身份投标，不设组合体，全部包内责任由我方单一承担。",
+          "项目班子与关键工种按角色计划到位，具体人员可用性以提交前核查结果为准，该事项作为已披露假设不阻断提交。",
+          "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认，该事项作为已披露假设不阻断提交。",
+          "建筑垃圾外运与处置拟委托本地合规运输及处置单位，报价与接纳确认在提交前落实，该事项作为已披露假设不阻断提交。",
+          "工程量清单综合单价与总价依据设计包与造价咨询包成果编制，价格基础与风险预备逻辑在报价说明中交代。",
+          "交通疏解、围护、临时道路及地下管线迁改不在本包范围，相关界面以协调会与图纸会审方式管理。",
+          "BIM与MEP及管线界面协调由我方牵头组织，不构成独立设计责任。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0012/construction-1_002",
+        "package_id": "CASE-0012/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "## 技术方案概述\n\n本投标人为中交第一航务工程局有限公司，以单一公司身份独立投标，不设联合体、不设未具名合作方。本包为南粤批发市场主体清拆与场地整治包（CASE-0012/construction-1），授权范围为地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。\n\n### 拆除施工方法与顺序\n1. 进场准备：接收设计包与造价咨询包成果，完成现场复核、结构现状查勘、拆除顺序推演与临时支撑需求识别；建立公共出入隔离与警示体系。\n2. 由上而下、由外而内分段拆除：先拆除附属构件与非结构部分，再实施主体结构分段解体；对可能影响相邻构筑物的部位设置临时支撑，支撑方案由公司设计管理团队复核。\n3. 基础与地坪破除：结构解体完成后分区破除基础与地坪，破除料就地分类，避免二次倒运。\n4. 场地初步平整：按移交标高与平整度要求分区整平，形成可移交场地。\n\n### 建筑垃圾分类、外运与处置\n按惰性拆建料、可回收金属、非惰性杂物等类别现场分类堆放，设置分类标识与计量记录；外运委托具备澳门当地许可的承运商与处置场，按计划假设在履约期间取得许可与容量，运输联单与处置凭证纳入质量文档管理。\n\n### 环境与公共安全控制\n拆除作业采用湿法抑尘、围挡喷淋、噪音时段控制与粉尘监测；公共出入协调设专人值守，安全期望跟踪以周度巡查与整改闭环落实。\n\n### 质量与文档\n执行公司内部质量程序与独立检查方法，拆除、分类、外运、处置、平整各工序设检查点；BIM与设计接口协调、MEP与地下管线界面协调由公司设计管理团队牵头、专业分包商配合，界面以书面移交单确认。",
+        "implementation_plan": "## 实施计划\n\n1. 动员与准备阶段：接收设计包与造价咨询包成果，完成现场移交、施工组织设计报审、分包商与承运处置商落实、临时支撑与安全设施布置。\n2. 结构拆除阶段：按分区顺序实施主体结构解体，同步分类堆放与临时支撑管理。\n3. 基础与地坪破除阶段：分区破除基础与地坪，破除料就地分类。\n4. 外运与处置阶段：与拆除作业穿插进行，按类别外运至许可处置场，保留联单与计量记录。\n5. 场地平整与移交阶段：分区整平、验收、文档归档与场地移交。\n\n资源安排：公司当前可用资源为2.0（归一化企业能力），远高于本包所需0.7，具备独立履约能力；现场设项目经理、施工经理、安全主任、环境主任、质量工程师、测量与文档管理人员，拆除与土石方作业以自有机械为主、专业分包为辅。BIM与MEP界面协调由公司设计管理团队承担，属公司自身责任范围内的管理支持。",
+        "quotation": 72325000.0,
+        "schedule_commitment": "按项目总体24个月工期框架编制本包进度视图，自场地移交与设计包、造价咨询包成果接收后启动，依次完成动员准备、结构拆除、基础与地坪破除、外运处置、场地平整与移交；关键里程碑为：动员完成、主体结构拆除完成、基础地坪破除完成、外运处置完成、场地移交。具体月数以业主移交时点与审批进度为准，投标阶段不锁定绝对日历日期。",
+        "compliance_statement": "1. 角色计划与团队可用性摘要：提交项目经理、施工经理、安全主任、环境主任、质量工程师及文档管理人员角色计划，公司当前可用资源2.0高于本包所需0.7。\n2. 拆除施工方法与顺序说明：按由上而下、由外而内分段拆除，临时支撑由公司设计管理团队复核。\n3. 建筑垃圾分类、外运与处置方案：现场分类、许可承运与处置、联单与计量记录。\n4. 质量方针与质量目标落实方法：公司内部质量程序、工序检查点与独立检查方法。\n5. 安全期望跟踪与公共安全管理方案：周度巡查、整改闭环、公共出入值守。\n6. 价格基础与工程量清单报价：按设计包与造价咨询包成果编制综合单价与总价，含拆除、分类、外运、处置、平整、安全文明施工、保险、税费及风险预备。\n7. 进度视图与里程碑计划：见进度承诺。\n8. 风险应对与接口协调方案：见风险应对。\n\n本投标人接受业主按模拟包内既定控制程序开展支付审核、进度审核与文档审查。",
+        "risk_response": "1. 设计包与造价咨询包成果到位风险：报价基于该等成果在投标截止前提供；若成果滞后或工程量差异较大，按合同约定程序提出调整。\n2. 分包与承运处置商到位风险：BIM与MEP界面协调由公司设计管理团队牵头、专业分包商配合；承运与处置商须具备澳门当地许可，相关许可与容量为投标假设，未视为已落实。\n3. 材料与人工价格波动：报价已计提风险预备，价格基础为按成果编制的综合单价，波动超出预备范围时按合同调整机制处理。\n4. 公共安全与环境风险：抑尘、噪音时段控制、监测与巡查闭环。\n5. 界面风险：包范围已排除交通疏解、围护与临时道路、地下管线迁改，界面以书面移交单确认，避免责任模糊。",
+        "submission_summary": "中交第一航务工程局有限公司以单一公司身份独立投标南粤批发市场主体清拆与场地整治包，不采用联合体。\n\n报价基础（MOP）：\n- 结构拆除与临时支撑：21,460,000\n- 基础与地坪破除及场地初步平整：9,860,000\n- 建筑垃圾分类、外运与处置：17,350,000\n- 安全文明施工、环境与公共出入管理：6,480,000\n- 项目管理、BIM与MEP界面协调及质量文档：5,920,000\n- 保险、税费及保函：4,310,000\n- 风险预备与价格调整缓冲：6,945,000\n合计报价：72,325,000 MOP，低于包上限82,875,000 MOP。\n\n价格逻辑：拆除与土石方以自有机械与人员为主，外运处置依赖许可承运与处置商，其单价为暂定估算而非已收报价；风险预备覆盖材料与人工指数波动、处置容量不确定性与分包到位风险。公司资源充足，故未计入联合体协调溢价，报价体现单一责任主体的管理效率。\n\n投标假设：公司可用资源2.0在投标及履约期间保持可用；BIM与MEP界面协调由公司设计管理团队与专业分包商解决并假设按计划到位；承运与处置商许可与容量假设在履约期间可获得；报价基于设计包与造价咨询包成果在投标截止前提供。",
+        "quotation_breakdown": [
+          {
+            "item": "结构拆除与临时支撑工程",
+            "amount": 21460000,
+            "basis": "约7,400平方米既有批发市场建筑物结构解体，含人工、机械台班、临时支撑材料与安拆、分段作业降效，按设计包与造价咨询包成果估算"
+          },
+          {
+            "item": "基础与地坪破除及场地初步平整",
+            "amount": 9860000,
+            "basis": "基础与地坪破除工程量、破除机械台班、平整土方与压实，按场地面积与破除深度估算"
+          },
+          {
+            "item": "建筑垃圾分类、外运与处置",
+            "amount": 17350000,
+            "basis": "分类人工与堆放管理、许可承运商运输、许可处置场处置费，按拆建料产生量估算；承运与处置单价为暂定估算，待分包报价确认"
+          },
+          {
+            "item": "安全文明施工、环境与公共出入管理",
+            "amount": 6480000,
+            "basis": "抑尘喷淋、噪音与粉尘监测、围挡与警示、公共出入值守、安全巡查与整改闭环，按作业期现场投入估算"
+          },
+          {
+            "item": "项目管理、BIM与MEP界面协调及质量文档",
+            "amount": 5920000,
+            "basis": "项目经理与现场管理团队、设计管理团队BIM与管线界面协调、独立检查与文档管理，按公司自身管理投入估算"
+          },
+          {
+            "item": "保险、税费及保函费用",
+            "amount": 4310000,
+            "basis": "工程一切险、第三者责任险、履约保函与相关税费，按报价基数比例估算"
+          },
+          {
+            "item": "风险预备与价格调整缓冲",
+            "amount": 6945000,
+            "basis": "材料与人工价格指数波动、处置场容量与许可不确定性、分包到位风险及不可预见工程量的预备费，按直接费比例计提"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_38e764c1c4868cf22920"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司当前可用资源2.0为授权情景数据，假设在投标及履约期间保持可用。",
+          "BIM与设计接口协调、MEP与地下管线界面协调将通过公司内部设计管理团队及专业分包商解决，假设相关分包商能够按计划到位。",
+          "建筑垃圾分类外运处置将委托具备澳门当地许可的承运商与处置场，假设相关许可与容量在履约期间可获得。",
+          "报价基于设计包与造价咨询包成果，假设该等成果在投标截止前提供。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0012/construction-1_003",
+        "package_id": "CASE-0012/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份提交本包技术方案。针对约7,400平方米既有批发市场建筑物，采用分区分段、先非结构后结构、先附属后主体的拆除顺序，设置临时支撑与防倾覆措施，确保结构拆除稳定。建筑垃圾分类按惰性物料、可回收金属、木材及一般废弃物分流，现场设置分类堆场与洒水降尘设施，外运委托合格分包商并全程联单管理。场地初步平整按设计标高控制，预留后续工序界面。质量方面执行ISO 9001程序，编制拆除专项方案与检验批计划，关键工序独立检查。安全方面执行ISO 45001，设置公共出入隔离通道、每日安全巡查与噪音粉尘监测。BIM与设计接口由我方统一协调，地下管线界面按接口管理处理，不改变单一投标人责任。",
+        "implementation_plan": "进场后先完成现场移交、测量放线及临时设施布置，随后按分区依次推进：A区非结构拆除与分类、B区结构拆除与临时支撑、C区基础与地坪破除、D区场地初步平整与移交。拆除作业采用机械为主、人工配合，配置破碎机、挖掘机、装载机及洒水车。建筑垃圾按类别外运至指定处置场，保留联单与影像记录。每周召开进度与安全协调会，按里程碑向业主提交进度视图。地下管线界面与BIM协调由我方项目团队统一对接设计包与造价咨询包成果，确保综合单价与总价编制一致。",
+        "quotation": 72985000.0,
+        "schedule_commitment": "总工期按项目总体24个月框架内安排本包施工，自进场令起计，计划在10个月内完成全部拆除、分类外运、场地平整及移交，其中结构拆除与基础破除为关键线路。里程碑：第1月完成现场移交与临时设施；第4月完成A区非结构拆除；第7月完成B区结构拆除；第9月完成基础与地坪破除；第10月完成场地初步平整与移交。",
+        "compliance_statement": "我方接受业主按设计包与造价咨询包成果进行工程量清单综合单价与总价审核，报价基础清晰可追溯。质量目标按ISO 9001落实，关键工序报验与独立检查记录可供业主查阅。安全期望跟踪通过每日巡查、每周安全会议及月度报告向业主汇报。公共出入协调方案报业主审批后实施。地下管线界面与BIM协调由我方统一对接，不改变单一投标人责任。",
+        "risk_response": "主要风险及应对：拆除安全风险通过专项方案、临时支撑及持证人员操作控制；粉尘噪音风险通过洒水降尘、噪音监测及作业时间管理控制；建筑垃圾外运处置风险通过合格分包商管理、联单追踪及备用处置场安排控制；公共出入协调风险通过隔离通道、指示标志及专人疏导控制；价格风险通过风险预备金覆盖，报价为固定总价，不依赖未 capped 调整条款。地下管线迁改不在本包范围，按接口协调处理。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份提交南粤批发市场主体清拆与场地整治包报价。报价按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。\n\n费用构成：结构拆除与临时支撑 MOP 18,650,000；基础与地坪破除 MOP 9,850,000；建筑垃圾分类与外运处置 MOP 14,280,000；场地初步平整与移交 MOP 6,350,000；安全文明施工与公共出入协调 MOP 7,280,000；保险、税费及管理费 MOP 8,950,000；风险预备 MOP 7,625,000。合计 MOP 72,985,000。\n\n价格基础：综合单价参照设计包与造价咨询包成果，结合当前材料与人工价格指数调整；风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%。本报价为固定总价，包含合格分包商管理责任，地下管线迁改及交通疏解、围护与临时道路不在本包范围。",
+        "quotation_breakdown": [
+          {
+            "item": "结构拆除与临时支撑工程",
+            "amount": 18650000,
+            "basis": "按设计包拆除工程量及造价咨询包综合单价估算，含机械台班、人工、临时支撑材料及措施"
+          },
+          {
+            "item": "基础与地坪破除工程",
+            "amount": 9850000,
+            "basis": "按基础与地坪面积及破除厚度估算，含破碎、清运及机械配合"
+          },
+          {
+            "item": "建筑垃圾分类与外运处置",
+            "amount": 14280000,
+            "basis": "按分类堆场、装车、外运至指定处置场及处置费估算，含联单管理"
+          },
+          {
+            "item": "场地初步平整与移交",
+            "amount": 6350000,
+            "basis": "按平整面积、标高控制及移交前清理估算"
+          },
+          {
+            "item": "安全文明施工与公共出入协调",
+            "amount": 7280000,
+            "basis": "含隔离围挡、洒水降尘、噪音监测、公共通道维护及安全巡查"
+          },
+          {
+            "item": "保险、税费及管理费",
+            "amount": 8950000,
+            "basis": "按合同保险、税费及公司管理费分摊估算"
+          },
+          {
+            "item": "风险预备",
+            "amount": 7625000,
+            "basis": "按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+          "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+          "地下管线迁改不在本包范围，相关界面按接口协调处理",
+          "交通疏解、围护与临时道路不在本包范围",
+          "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0012/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0012/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "结构拆除与临时支撑工程",
+                "amount": 18650000,
+                "basis": "按设计包与造价咨询包成果工程量清单综合单价编制，含机械拆除、人工配合、临时支撑搭拆及结构稳定性复核，参考本地拆除市场单价与机械台班估算"
+              },
+              {
+                "item": "基础与地坪破除工程",
+                "amount": 9250000,
+                "basis": "液压破碎锤破除基础与地坪，含钢筋分离与混凝土块破碎，按面积与厚度估算工程量"
+              },
+              {
+                "item": "建筑垃圾分类、外运与处置",
+                "amount": 21480000,
+                "basis": "现场分拣、临时堆场、合规运输及处置单位接纳费用；运输与处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排"
+              },
+              {
+                "item": "场地初步平整与移交",
+                "amount": 6350000,
+                "basis": "按设计标高平整、排水坡向控制、测量复核及移交记录，含机械台班与测量配合"
+              },
+              {
+                "item": "安全文明施工与环境保护",
+                "amount": 5480000,
+                "basis": "围蔽边界维护、公众出入协调、噪音粉尘监测、洒水降尘、安全防护及应急预案演练"
+              },
+              {
+                "item": "项目管理、质量文档与BIM接口协调",
+                "amount": 4720000,
+                "basis": "项目班子与关键工种薪酬分摊、质量三检与独立复核、BIM与MEP管线接口协调会及图纸会审"
+              },
+              {
+                "item": "保险、税费及风险预备",
+                "amount": 6965000,
+                "basis": "工程一切险与第三者责任险、按现行税率计取税费，风险预备按直接费约5%计取，覆盖渣土处置价格波动、机械租赁到位及工期接口风险"
+              },
+              {
+                "item": "商业调整与容量风险预备",
+                "amount": 9980000,
+                "basis": "独立投标人单一责任下的容量与合规风险预备，覆盖渣土处置接纳未落实、机械租赁待确认、关键工种可用性待核查及缺少同类清拆业绩的商业风险，按直接费约13.7%计取"
+              }
+            ],
+            "submission_summary": "我方以独立投标人身份提交南粤批发市场主体清拆与场地整治包报价，总价 MOP 82,875,000，与包预算上限一致。价格基础按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖结构拆除与临时支撑、基础地坪破除、建筑垃圾分类外运处置、场地初步平整、安全文明施工、项目管理与BIM接口协调、保险税费及风险预备。其中渣土外运处置单价为暂估，待提交前与本地合规单位确认报价及接纳安排；机械租赁与人员可用性亦为已披露假设。风险预备分两部分：常规风险预备按直接费约5%计取，另设商业调整与容量风险预备 MOP 9,980,000，覆盖处置价格波动、机械到位、关键工种可用性及缺少同类清拆业绩的独立投标风险。付款按业主计量审核节点支付。",
+            "unresolved_condition_ids": [
+              "condition_0f24c95d598ca7aef6fa",
+              "condition_60a8e78a3826099164a9",
+              "condition_ce9753b66eea05bcd60d",
+              "condition_b985b6ea84129dea88b1",
+              "condition_8112370c045cfb6eae39",
+              "condition_33b869742f21ffef73ce",
+              "condition_eacbbdc01c5e6c5453d6",
+              "condition_ee2380b479b457a525df"
+            ],
+            "bid_assumptions": [
+              "以独立投标人身份投标，不设组合体，全部包内责任由我方单一承担。",
+              "项目班子与关键工种按角色计划到位，具体人员可用性以提交前核查结果为准，该事项作为已披露假设不阻断提交。",
+              "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认，该事项作为已披露假设不阻断提交。",
+              "建筑垃圾外运与处置拟委托本地合规运输及处置单位，报价与接纳确认在提交前落实，该事项作为已披露假设不阻断提交。",
+              "工程量清单综合单价与总价依据设计包与造价咨询包成果编制，价格基础与风险预备逻辑在报价说明中交代。",
+              "交通疏解、围护、临时道路及地下管线迁改不在本包范围，相关界面以协调会与图纸会审方式管理。",
+              "BIM与MEP及管线界面协调由我方牵头组织，不构成独立设计责任。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 72325000.0,
+            "quotation_breakdown": [
+              {
+                "item": "结构拆除与临时支撑工程",
+                "amount": 21460000,
+                "basis": "约7,400平方米既有批发市场建筑物结构解体，含人工、机械台班、临时支撑材料与安拆、分段作业降效，按设计包与造价咨询包成果估算"
+              },
+              {
+                "item": "基础与地坪破除及场地初步平整",
+                "amount": 9860000,
+                "basis": "基础与地坪破除工程量、破除机械台班、平整土方与压实，按场地面积与破除深度估算"
+              },
+              {
+                "item": "建筑垃圾分类、外运与处置",
+                "amount": 17350000,
+                "basis": "分类人工与堆放管理、许可承运商运输、许可处置场处置费，按拆建料产生量估算；承运与处置单价为暂定估算，待分包报价确认"
+              },
+              {
+                "item": "安全文明施工、环境与公共出入管理",
+                "amount": 6480000,
+                "basis": "抑尘喷淋、噪音与粉尘监测、围挡与警示、公共出入值守、安全巡查与整改闭环，按作业期现场投入估算"
+              },
+              {
+                "item": "项目管理、BIM与MEP界面协调及质量文档",
+                "amount": 5920000,
+                "basis": "项目经理与现场管理团队、设计管理团队BIM与管线界面协调、独立检查与文档管理，按公司自身管理投入估算"
+              },
+              {
+                "item": "保险、税费及保函费用",
+                "amount": 4310000,
+                "basis": "工程一切险、第三者责任险、履约保函与相关税费，按报价基数比例估算"
+              },
+              {
+                "item": "风险预备与价格调整缓冲",
+                "amount": 6945000,
+                "basis": "材料与人工价格指数波动、处置场容量与许可不确定性、分包到位风险及不可预见工程量的预备费，按直接费比例计提"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一公司身份独立投标南粤批发市场主体清拆与场地整治包，不采用联合体。\n\n报价基础（MOP）：\n- 结构拆除与临时支撑：21,460,000\n- 基础与地坪破除及场地初步平整：9,860,000\n- 建筑垃圾分类、外运与处置：17,350,000\n- 安全文明施工、环境与公共出入管理：6,480,000\n- 项目管理、BIM与MEP界面协调及质量文档：5,920,000\n- 保险、税费及保函：4,310,000\n- 风险预备与价格调整缓冲：6,945,000\n合计报价：72,325,000 MOP，低于包上限82,875,000 MOP。\n\n价格逻辑：拆除与土石方以自有机械与人员为主，外运处置依赖许可承运与处置商，其单价为暂定估算而非已收报价；风险预备覆盖材料与人工指数波动、处置容量不确定性与分包到位风险。公司资源充足，故未计入联合体协调溢价，报价体现单一责任主体的管理效率。\n\n投标假设：公司可用资源2.0在投标及履约期间保持可用；BIM与MEP界面协调由公司设计管理团队与专业分包商解决并假设按计划到位；承运与处置商许可与容量假设在履约期间可获得；报价基于设计包与造价咨询包成果在投标截止前提供。",
+            "unresolved_condition_ids": [
+              "condition_38e764c1c4868cf22920"
+            ],
+            "bid_assumptions": [
+              "公司当前可用资源2.0为授权情景数据，假设在投标及履约期间保持可用。",
+              "BIM与设计接口协调、MEP与地下管线界面协调将通过公司内部设计管理团队及专业分包商解决，假设相关分包商能够按计划到位。",
+              "建筑垃圾分类外运处置将委托具备澳门当地许可的承运商与处置场，假设相关许可与容量在履约期间可获得。",
+              "报价基于设计包与造价咨询包成果，假设该等成果在投标截止前提供。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 72985000.0,
+            "quotation_breakdown": [
+              {
+                "item": "结构拆除与临时支撑工程",
+                "amount": 18650000,
+                "basis": "按设计包拆除工程量及造价咨询包综合单价估算，含机械台班、人工、临时支撑材料及措施"
+              },
+              {
+                "item": "基础与地坪破除工程",
+                "amount": 9850000,
+                "basis": "按基础与地坪面积及破除厚度估算，含破碎、清运及机械配合"
+              },
+              {
+                "item": "建筑垃圾分类与外运处置",
+                "amount": 14280000,
+                "basis": "按分类堆场、装车、外运至指定处置场及处置费估算，含联单管理"
+              },
+              {
+                "item": "场地初步平整与移交",
+                "amount": 6350000,
+                "basis": "按平整面积、标高控制及移交前清理估算"
+              },
+              {
+                "item": "安全文明施工与公共出入协调",
+                "amount": 7280000,
+                "basis": "含隔离围挡、洒水降尘、噪音监测、公共通道维护及安全巡查"
+              },
+              {
+                "item": "保险、税费及管理费",
+                "amount": 8950000,
+                "basis": "按合同保险、税费及公司管理费分摊估算"
+              },
+              {
+                "item": "风险预备",
+                "amount": 7625000,
+                "basis": "按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份提交南粤批发市场主体清拆与场地整治包报价。报价按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。\n\n费用构成：结构拆除与临时支撑 MOP 18,650,000；基础与地坪破除 MOP 9,850,000；建筑垃圾分类与外运处置 MOP 14,280,000；场地初步平整与移交 MOP 6,350,000；安全文明施工与公共出入协调 MOP 7,280,000；保险、税费及管理费 MOP 8,950,000；风险预备 MOP 7,625,000。合计 MOP 72,985,000。\n\n价格基础：综合单价参照设计包与造价咨询包成果，结合当前材料与人工价格指数调整；风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%。本报价为固定总价，包含合格分包商管理责任，地下管线迁改及交通疏解、围护与临时道路不在本包范围。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+              "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+              "地下管线迁改不在本包范围，相关界面按接口协调处理",
+              "交通疏解、围护与临时道路不在本包范围",
+              "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 南粤批发市场主体清拆与场地整治包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0012/construction-1",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何家俊",
+          "OWNER-4048bdd520aa7f_06_林晓彤"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0012/construction-1_001",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "technical_view": "拆除顺序、临时支撑、分类外运与场地平整的方法说明完整，分区流水与六个月工期视图清晰，但缺少同类清拆业绩，BIM与管线界面协调仅以会议纪要方式处理，能力匹配偏弱。",
+            "cost_view": "报价MOP 82,875,000与包预算上限一致，其中另设MOP 9,980,000商业调整与容量风险预备，反映渣土处置、机械租赁与人员可用性均未落实，价格虽在上限内但可信度依赖多项待确认假设。",
+            "owner_control_view": "接受业主计量审核、三检与独立复核、周报与月度安全会议汇报，业主审查路径清楚，但多项关键事项列为已披露假设而非提交前落实，文档纪律尚可而交付信心不足。",
+            "strengths": [
+              "拆除方法与分区流水安排具体，进度里程碑明确",
+              "质量三检、独立复核与安全周报机制回应业主审查要求",
+              "风险预备分项列明，价格基础交代较透明"
+            ],
+            "concerns": [
+              "渣土处置单价、机械租赁与人员可用性均为未落实假设",
+              "缺少同类清拆业绩，BIM与管线界面协调能力自认偏弱",
+              "报价触及预算上限且含大额商业风险预备，后续索赔暴露较高"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-1_002",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "拆除顺序、临时支撑复核、分类外运与场地平整方案成熟，公司设计管理团队承担BIM与MEP界面协调，企业资源远高于本包所需，能力匹配最强。",
+            "cost_view": "报价MOP 72,325,000低于包上限，拆除与土石方以自有机械人员为主，外运处置单价为暂定估算并设风险预备，价格基础与资源投入相符，属可信的低价。",
+            "owner_control_view": "逐项回应业主八项内容要求，接受支付、进度与文档审查，界面以书面移交单确认，业主审查清晰度与文档纪律良好。",
+            "strengths": [
+              "企业资源与团队配置充足，单一责任主体管理效率高",
+              "对业主控制要求逐项回应，界面责任划分清楚",
+              "价格低于上限且风险预备覆盖处置容量与价格波动"
+            ],
+            "concerns": [
+              "进度视图未锁定月数与绝对日期，交付时间确定性偏弱",
+              "承运与处置商许可及容量仍属履约期假设",
+              "报价依赖设计包与造价咨询包成果按时提供"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0012/construction-1_003",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "分区分段、先非结构后结构的拆除顺序与临时支撑措施合理，ISO 9001与ISO 45001体系支撑质量与安全控制，外运处置通过合格分包商统一管理，能力匹配良好。",
+            "cost_view": "报价MOP 72,985,000低于包上限，外运处置与安全文明施工分项计价较实，风险预备按直接费约8%计取，固定总价且无未设上限调整条款，价格合理性较好。",
+            "owner_control_view": "接受工程量清单审核，关键工序报验与独立检查记录可供查阅，每日巡查、每周安全会议与月度报告形成安全期望跟踪，公共出入方案报批后实施，业主审查清晰。",
+            "strengths": [
+              "无未落实的提交前条件，投标假设最少，交付信心较高",
+              "质量与安全管理体系明确，关键工序独立检查",
+              "固定总价与风险预备结构清楚，价格可追溯"
+            ],
+            "concerns": [
+              "计划十个月完成，较其他投标工期偏长，需核对与总体进度衔接",
+              "外运处置依赖合格分包商，分包到位情况未具体说明",
+              "BIM与管线界面协调描述较概括，深化程度有限"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标均在预算内或触及上限，中交第一航务与得宝报价分别为MOP 72,325,000与MOP 72,985,000，明显低于江苏乾堪的MOP 82,875,000，且前两者价格基础更实。得宝无未落实条件、体系完整，中交第一航务资源与界面协调最强但进度视图未锁定，江苏乾堪则多项关键事项仍为假设。",
+        "recommended_winner": "COMP-0493",
+        "owner_review_notes": "建议优先与得宝建筑集团就工期压缩与分包到位安排进行澄清，同时保留中交第一航务作为能力匹配备选；江苏乾堪的报价与假设组合使交付信心与风险控制偏弱，不宜优先。判给仍须经业主审查与宏观审批程序确认。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0012",
+      "package_awards": [
+        {
+          "package_id": "CASE-0012/construction-1",
+          "selected_bidder_id": "COMP-0493",
+          "selected_bidder_name": "得宝建筑集团有限公司",
+          "bidder_type": "company",
+          "decision_reason": "得宝建筑集团有限公司报价MOP 72,985,000低于包上限，采用固定总价且无未设上限调整条款，投标假设最少，质量与安全管理体系完整，关键工序独立检查与业主审查路径清晰，交付信心高于江苏乾堪，时间确定性优于中交第一航务。中交第一航务虽能力匹配最强且报价MOP 72,325,000最低，但进度视图未锁定、承运与处置商许可及容量仍属履约期假设；江苏乾堪报价触及上限MOP 82,875,000且多项关键事项仍为假设。判给得宝并以预合同澄清聚焦工期压缩与总体进度衔接、分包到位安排、外运处置许可与容量证据、BIM与管线界面协调深化，以及价格基础与风险预备的可追溯性。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+            "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+            "地下管线迁改不在本包范围，相关界面按接口协调处理",
+            "交通疏解、围护与临时道路不在本包范围",
+            "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0493"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:42:31",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0012/construction-1",
+          "decision": "bid",
+          "reason": "管理判断：本包属于我们能够作为单一责任投标人承担的拆除与场地整治工程，业务方向与市政、土石方、房屋建筑能力相符，资源占用为零、可用容量充足，且包内已排除交通疏解、围护、临时道路与地下管线迁改，接口复杂度可控，不需要以组合体形式共享投标身份或交付责任。主要风险在于缺少可引用的同类清拆业绩、团队与机械可用性尚未形成清单、渣土外运处置的合规路径与接纳安排未落实、BIM与管线界面协调偏弱。这些通过角色计划、拆除方法与顺序、分类外运处置方案、安全与环保控制、价格基础与风险预备来回应，属于正常投标风险而非问责缺口。因此决定独立投标，并把团队到位、机械资源、渣土处置报价与接纳、工程量清单价格基础列为提交前必须落实的核查项；若核查不能形成可交代结论，则转为放弃。",
+          "unresolved_condition_ids": [
+            "condition_0f24c95d598ca7aef6fa",
+            "condition_60a8e78a3826099164a9",
+            "condition_ce9753b66eea05bcd60d"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以独立投标人身份投标，不设组合体，全部包内责任由我方单一承担。",
+            "项目班子与关键工种按角色计划到位，具体人员可用性以提交前核查结果为准。",
+            "拆除机械、临时支撑及运输车辆以自有加常规租赁方式配置，租赁安排尚待确认。",
+            "建筑垃圾外运与处置拟委托本地合规运输及处置单位，报价与接纳确认在提交前落实。",
+            "工程量清单综合单价与总价依据设计包与造价咨询包成果编制，价格基础与风险预备逻辑在报价说明中交代。",
+            "交通疏解、围护、临时道路及地下管线迁改不在本包范围，相关界面以协调会与图纸会审方式管理。",
+            "BIM与MEP及管线界面协调由我方牵头组织，不构成独立设计责任。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:31",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0012/construction-1",
+          "decision": "bid",
+          "reason": "本包为既有批发市场清拆与场地整治，范围明确，不含交通疏解、围护与临时道路，不含地下管线迁改，与我公司城市清拆、土石方、环境保护、土壤修复等主营业务高度匹配。公司当前可用资源为2.0，远高于包所需0.7，具备独立履约能力。包预算8287.5万澳门元，规模适中，风险可控。我们可通过常规分包管理解决BIM与MEP接口协调，无需联合体。投标可巩固公司在澳门清拆市场的地位，符合公司战略方向。因此决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司当前可用资源2.0为授权情景数据，假设在投标及履约期间保持可用。",
+            "BIM与设计接口协调、MEP与地下管线界面协调将通过公司内部设计管理团队及专业分包商解决，假设相关分包商能够按计划到位。",
+            "建筑垃圾分类外运处置将委托具备澳门当地许可的承运商与处置场，假设相关许可与容量在履约期间可获得。",
+            "报价基于设计包与造价咨询包成果，假设该等成果在投标截止前提供。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:31",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0012/construction-1",
+          "decision": "bid",
+          "reason": "管理层判断：本包为单一地块的结构拆除与场地整治，范围清晰、边界明确，与我方总承包、土方地基及环保项目能力匹配。授权情景资源充足，我方可以作为单一责任投标人独立承担，无需另一家企业共享投标人身份或包级交付责任。主要风险集中在拆除安全、粉尘噪音控制、建筑垃圾外运处置和公共出入协调，可通过施工组织设计、分包管理、安全文明施工措施和风险预备金处理，属于正常投标风险。价格上限约8,287.5万MOP，商业规模可接受。因此决定独立投标，按设计包与造价咨询包成果编制工程量清单综合单价与总价，并在报价中说明价格基础与风险预备逻辑。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+            "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+            "地下管线迁改不在本包范围，相关界面按接口协调处理",
+            "交通疏解、围护与临时道路不在本包范围",
+            "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:33",
+        "event_type": "internal_condition_review",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0012/construction-1",
+          "outcomes": [
+            {
+              "condition_id": "condition_0f24c95d598ca7aef6fa",
+              "question": "因此决定独立投标，并把团队到位、机械资源、渣土处置报价与接纳、工程量清单价格基础列为提交前必须落实的核查项；若核查不能形成可交代结论，则转为放弃",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未提供项目班子到位、拆除机械与临时支撑清单、渣土运输与处置单位报价及接纳确认，也未提供工程量清单价格基础，仅显示企业资源与角色资格，故这些提交前核查项均无记录。"
+            },
+            {
+              "condition_id": "condition_60a8e78a3826099164a9",
+              "question": "提交前须落实的核查：项目班子与关键工种的实际可用性、拆除机械与临时支撑资源清单、渣土运输与处置单位的报价及接纳确认、工程量清单价格基础与设计包造价包成果的一致性",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未载明关键工种实际可用性、拆除机械与临时支撑资源清单、渣土运输处置单位报价与接纳确认，也未载明工程量清单价格基础与设计包造价包成果的一致性。"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:52",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "bidder_id": "COMP-0295"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:52",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:42:52",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:43",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:51",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "recommended_winner": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:43:56",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0012/construction-1",
+          "selected_bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "本包为南粤批发市场主体清拆与场地整治包，投标人 COMP-0493 以单一责任投标人身份提交固定总价 MOP 72,985,000，低于本包预算 MOP 82,875,000，价格、币种、范围、成员与资源承诺（COMP-0493 资源 0.7、工作份额 1.0）均与公告字段一致，未出现文本静默改动。技术方案覆盖分区分段拆除顺序、临时支撑与防倾覆、建筑垃圾分类与外运联单管理、场地平整与移交，并明确 ISO 9001 与 ISO 45001 程序、公共出入隔离与噪音粉尘监测，与本包范围匹配。工期承诺在项目总体 24 个月框架内以 10 个月完成并给出分月里程碑，属可执行的未来义务，按里程碑报验与业主审核条件落实，不视为已完成交付或已取得法定批准。已披露的投标假设作为风险分配予以接受：地下管线迁改、交通疏解、围护与临时道路不在本包范围，按接口协调处理；专业拆除与外运由合格分包商实施但由投标人承担包级交付责任；风险预备约占直接费 8% 已含于固定总价，报价不依赖未设上限的调整条款。业主方自身立场在此明确并写入下一版：本包采用固定总价，工程量清单综合单价与总价以设计包与造价咨询包成果为审核基础，除合同明确约定的变更外不作价格调整；里程碑进度视图按月提交、业主在收到后 14 日内审核并反馈；关键工序报验与独立检查记录在工序完成后 7 日内提交备查；公共出入协调方案在进场前报业主审批后实施。上述决定不改变价格、范围、成员与资源等规范字段。未发现需拒收或修订的重大未决风险，故接受本次提供的确切条款、资源与义务。"
+          },
+          "COMP-0493": {
+            "action": "accept",
+            "reason": "得宝建筑集团有限公司（COMP-0493）确认接受本包（CASE-0012/construction-1）第1轮合同草案的全部条款。报价 MOP 72,985,000 为固定总价，处于包预算 MOP 82,875,000 之内；资源承诺 0.7 未超过我方可用能力 2.0；工作份额 1.0 与单一责任投标人身份一致。范围、里程碑（10个月，含第1、4、7、9、10月节点）、风险应对与已披露的投标假设（合格分包商管理、地下管线迁改及交通疏解、围护与临时道路不在本包范围、风险预备计取）均按原文接受，作为合同风险分配的一部分，不视为缺失证据。我方对自身立场作出如下决定并请写入下一稿：本包固定总价已包含工程量清单综合单价与总价审核所需的配合工作，不因业主按设计包与造价咨询包成果复核而调整；进度款按月度完成量计量支付，业主审核期为收到计量申请后14日内；风险预备由我方管理，不另行计价。上述决定不改变价格、币种、范围、成员与资源等规范字段。本接受仅授权可执行的模拟义务，不表示未来工程交付物或法定审批已经完成，相关交付物按合同约定的审查与验收条件作为义务履行。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM849BD599/CASE-0012/construction-1/round-1/contract",
+          "simulation_id": "SIM849BD599",
+          "project_id": "CASE-0012",
+          "package_id": "CASE-0012/construction-1",
+          "session_id": "SIM849BD599/CASE-0012/construction-1/round-1",
+          "snapshot_version": "86dd5c3a8316725f10746946da2cf0f110b33a611552842295107b33fc9ff0c6",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0012/construction-1_003",
+          "bidder_id": "COMP-0493",
+          "lead_id": "COMP-0493",
+          "members": [
+            "COMP-0493"
+          ],
+          "price": 72985000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0493": 0.7
+          },
+          "work_shares": {
+            "COMP-0493": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "d55bdddd567d32c5dfa08fd7160928f33cb7b23b5c8da54f17949f99e3a3bc42",
+          "terms": {
+            "schedule_commitment": "总工期按项目总体24个月框架内安排本包施工，自进场令起计，计划在10个月内完成全部拆除、分类外运、场地平整及移交，其中结构拆除与基础破除为关键线路。里程碑：第1月完成现场移交与临时设施；第4月完成A区非结构拆除；第7月完成B区结构拆除；第9月完成基础与地坪破除；第10月完成场地初步平整与移交。",
+            "risk_response": "主要风险及应对：拆除安全风险通过专项方案、临时支撑及持证人员操作控制；粉尘噪音风险通过洒水降尘、噪音监测及作业时间管理控制；建筑垃圾外运处置风险通过合格分包商管理、联单追踪及备用处置场安排控制；公共出入协调风险通过隔离通道、指示标志及专人疏导控制；价格风险通过风险预备金覆盖，报价为固定总价，不依赖未 capped 调整条款。地下管线迁改不在本包范围，按接口协调处理。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0012/construction-1_003",
+              "package_id": "CASE-0012/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0493",
+              "bidder_name": "得宝建筑集团有限公司",
+              "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份提交本包技术方案。针对约7,400平方米既有批发市场建筑物，采用分区分段、先非结构后结构、先附属后主体的拆除顺序，设置临时支撑与防倾覆措施，确保结构拆除稳定。建筑垃圾分类按惰性物料、可回收金属、木材及一般废弃物分流，现场设置分类堆场与洒水降尘设施，外运委托合格分包商并全程联单管理。场地初步平整按设计标高控制，预留后续工序界面。质量方面执行ISO 9001程序，编制拆除专项方案与检验批计划，关键工序独立检查。安全方面执行ISO 45001，设置公共出入隔离通道、每日安全巡查与噪音粉尘监测。BIM与设计接口由我方统一协调，地下管线界面按接口管理处理，不改变单一投标人责任。",
+              "implementation_plan": "进场后先完成现场移交、测量放线及临时设施布置，随后按分区依次推进：A区非结构拆除与分类、B区结构拆除与临时支撑、C区基础与地坪破除、D区场地初步平整与移交。拆除作业采用机械为主、人工配合，配置破碎机、挖掘机、装载机及洒水车。建筑垃圾按类别外运至指定处置场，保留联单与影像记录。每周召开进度与安全协调会，按里程碑向业主提交进度视图。地下管线界面与BIM协调由我方项目团队统一对接设计包与造价咨询包成果，确保综合单价与总价编制一致。",
+              "quotation": 72985000.0,
+              "schedule_commitment": "总工期按项目总体24个月框架内安排本包施工，自进场令起计，计划在10个月内完成全部拆除、分类外运、场地平整及移交，其中结构拆除与基础破除为关键线路。里程碑：第1月完成现场移交与临时设施；第4月完成A区非结构拆除；第7月完成B区结构拆除；第9月完成基础与地坪破除；第10月完成场地初步平整与移交。",
+              "compliance_statement": "我方接受业主按设计包与造价咨询包成果进行工程量清单综合单价与总价审核，报价基础清晰可追溯。质量目标按ISO 9001落实，关键工序报验与独立检查记录可供业主查阅。安全期望跟踪通过每日巡查、每周安全会议及月度报告向业主汇报。公共出入协调方案报业主审批后实施。地下管线界面与BIM协调由我方统一对接，不改变单一投标人责任。",
+              "risk_response": "主要风险及应对：拆除安全风险通过专项方案、临时支撑及持证人员操作控制；粉尘噪音风险通过洒水降尘、噪音监测及作业时间管理控制；建筑垃圾外运处置风险通过合格分包商管理、联单追踪及备用处置场安排控制；公共出入协调风险通过隔离通道、指示标志及专人疏导控制；价格风险通过风险预备金覆盖，报价为固定总价，不依赖未 capped 调整条款。地下管线迁改不在本包范围，按接口协调处理。",
+              "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份提交南粤批发市场主体清拆与场地整治包报价。报价按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。\n\n费用构成：结构拆除与临时支撑 MOP 18,650,000；基础与地坪破除 MOP 9,850,000；建筑垃圾分类与外运处置 MOP 14,280,000；场地初步平整与移交 MOP 6,350,000；安全文明施工与公共出入协调 MOP 7,280,000；保险、税费及管理费 MOP 8,950,000；风险预备 MOP 7,625,000。合计 MOP 72,985,000。\n\n价格基础：综合单价参照设计包与造价咨询包成果，结合当前材料与人工价格指数调整；风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%。本报价为固定总价，包含合格分包商管理责任，地下管线迁改及交通疏解、围护与临时道路不在本包范围。",
+              "quotation_breakdown": [
+                {
+                  "item": "结构拆除与临时支撑工程",
+                  "amount": 18650000,
+                  "basis": "按设计包拆除工程量及造价咨询包综合单价估算，含机械台班、人工、临时支撑材料及措施"
+                },
+                {
+                  "item": "基础与地坪破除工程",
+                  "amount": 9850000,
+                  "basis": "按基础与地坪面积及破除厚度估算，含破碎、清运及机械配合"
+                },
+                {
+                  "item": "建筑垃圾分类与外运处置",
+                  "amount": 14280000,
+                  "basis": "按分类堆场、装车、外运至指定处置场及处置费估算，含联单管理"
+                },
+                {
+                  "item": "场地初步平整与移交",
+                  "amount": 6350000,
+                  "basis": "按平整面积、标高控制及移交前清理估算"
+                },
+                {
+                  "item": "安全文明施工与公共出入协调",
+                  "amount": 7280000,
+                  "basis": "含隔离围挡、洒水降尘、噪音监测、公共通道维护及安全巡查"
+                },
+                {
+                  "item": "保险、税费及管理费",
+                  "amount": 8950000,
+                  "basis": "按合同保险、税费及公司管理费分摊估算"
+                },
+                {
+                  "item": "风险预备",
+                  "amount": 7625000,
+                  "basis": "按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+                "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+                "地下管线迁改不在本包范围，相关界面按接口协调处理",
+                "交通疏解、围护与临时道路不在本包范围",
+                "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "d55bdddd567d32c5dfa08fd7160928f33cb7b23b5c8da54f17949f99e3a3bc42"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0012/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+          "budget": 82875000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "internal_condition_review": true,
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {
+      "condition_0f24c95d598ca7aef6fa": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0012/construction-1",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未提供项目班子到位、拆除机械与临时支撑清单、渣土运输与处置单位报价及接纳确认，也未提供工程量清单价格基础，仅显示企业资源与角色资格，故这些提交前核查项均无记录。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "a7b949bf5bc7a84cc0a8d30ffc96565392d4ce69b2f566b6ac0e2cf045ae5b0a"
+      },
+      "condition_60a8e78a3826099164a9": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0012/construction-1",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未载明关键工种实际可用性、拆除机械与临时支撑资源清单、渣土运输处置单位报价与接纳确认，也未载明工程量清单价格基础与设计包造价包成果的一致性。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "ab802bde7e98ceefd2d367de5486374d46fc8cbbe29fbbb82885e969a9fbf8e5"
+      }
+    }
+  },
+  "proposal": {
+    "proposal_id": "SIM849BD599/CASE-0012/construction-1/round-1/contract",
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/construction-1",
+    "session_id": "SIM849BD599/CASE-0012/construction-1/round-1",
+    "snapshot_version": "86dd5c3a8316725f10746946da2cf0f110b33a611552842295107b33fc9ff0c6",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0012/construction-1_003",
+    "bidder_id": "COMP-0493",
+    "lead_id": "COMP-0493",
+    "members": [
+      "COMP-0493"
+    ],
+    "price": 72985000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0493": 0.7
+    },
+    "work_shares": {
+      "COMP-0493": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0493": true
+    },
+    "signed_terms_hash": "d55bdddd567d32c5dfa08fd7160928f33cb7b23b5c8da54f17949f99e3a3bc42",
+    "terms": {
+      "schedule_commitment": "总工期按项目总体24个月框架内安排本包施工，自进场令起计，计划在10个月内完成全部拆除、分类外运、场地平整及移交，其中结构拆除与基础破除为关键线路。里程碑：第1月完成现场移交与临时设施；第4月完成A区非结构拆除；第7月完成B区结构拆除；第9月完成基础与地坪破除；第10月完成场地初步平整与移交。",
+      "risk_response": "主要风险及应对：拆除安全风险通过专项方案、临时支撑及持证人员操作控制；粉尘噪音风险通过洒水降尘、噪音监测及作业时间管理控制；建筑垃圾外运处置风险通过合格分包商管理、联单追踪及备用处置场安排控制；公共出入协调风险通过隔离通道、指示标志及专人疏导控制；价格风险通过风险预备金覆盖，报价为固定总价，不依赖未 capped 调整条款。地下管线迁改不在本包范围，按接口协调处理。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0012/construction-1_003",
+        "package_id": "CASE-0012/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份提交本包技术方案。针对约7,400平方米既有批发市场建筑物，采用分区分段、先非结构后结构、先附属后主体的拆除顺序，设置临时支撑与防倾覆措施，确保结构拆除稳定。建筑垃圾分类按惰性物料、可回收金属、木材及一般废弃物分流，现场设置分类堆场与洒水降尘设施，外运委托合格分包商并全程联单管理。场地初步平整按设计标高控制，预留后续工序界面。质量方面执行ISO 9001程序，编制拆除专项方案与检验批计划，关键工序独立检查。安全方面执行ISO 45001，设置公共出入隔离通道、每日安全巡查与噪音粉尘监测。BIM与设计接口由我方统一协调，地下管线界面按接口管理处理，不改变单一投标人责任。",
+        "implementation_plan": "进场后先完成现场移交、测量放线及临时设施布置，随后按分区依次推进：A区非结构拆除与分类、B区结构拆除与临时支撑、C区基础与地坪破除、D区场地初步平整与移交。拆除作业采用机械为主、人工配合，配置破碎机、挖掘机、装载机及洒水车。建筑垃圾按类别外运至指定处置场，保留联单与影像记录。每周召开进度与安全协调会，按里程碑向业主提交进度视图。地下管线界面与BIM协调由我方项目团队统一对接设计包与造价咨询包成果，确保综合单价与总价编制一致。",
+        "quotation": 72985000.0,
+        "schedule_commitment": "总工期按项目总体24个月框架内安排本包施工，自进场令起计，计划在10个月内完成全部拆除、分类外运、场地平整及移交，其中结构拆除与基础破除为关键线路。里程碑：第1月完成现场移交与临时设施；第4月完成A区非结构拆除；第7月完成B区结构拆除；第9月完成基础与地坪破除；第10月完成场地初步平整与移交。",
+        "compliance_statement": "我方接受业主按设计包与造价咨询包成果进行工程量清单综合单价与总价审核，报价基础清晰可追溯。质量目标按ISO 9001落实，关键工序报验与独立检查记录可供业主查阅。安全期望跟踪通过每日巡查、每周安全会议及月度报告向业主汇报。公共出入协调方案报业主审批后实施。地下管线界面与BIM协调由我方统一对接，不改变单一投标人责任。",
+        "risk_response": "主要风险及应对：拆除安全风险通过专项方案、临时支撑及持证人员操作控制；粉尘噪音风险通过洒水降尘、噪音监测及作业时间管理控制；建筑垃圾外运处置风险通过合格分包商管理、联单追踪及备用处置场安排控制；公共出入协调风险通过隔离通道、指示标志及专人疏导控制；价格风险通过风险预备金覆盖，报价为固定总价，不依赖未 capped 调整条款。地下管线迁改不在本包范围，按接口协调处理。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份提交南粤批发市场主体清拆与场地整治包报价。报价按设计包与造价咨询包成果编制工程量清单综合单价与总价，涵盖拆除、分类、外运、处置、场地平整、安全文明施工、保险、税费及风险预备。\n\n费用构成：结构拆除与临时支撑 MOP 18,650,000；基础与地坪破除 MOP 9,850,000；建筑垃圾分类与外运处置 MOP 14,280,000；场地初步平整与移交 MOP 6,350,000；安全文明施工与公共出入协调 MOP 7,280,000；保险、税费及管理费 MOP 8,950,000；风险预备 MOP 7,625,000。合计 MOP 72,985,000。\n\n价格基础：综合单价参照设计包与造价咨询包成果，结合当前材料与人工价格指数调整；风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%。本报价为固定总价，包含合格分包商管理责任，地下管线迁改及交通疏解、围护与临时道路不在本包范围。",
+        "quotation_breakdown": [
+          {
+            "item": "结构拆除与临时支撑工程",
+            "amount": 18650000,
+            "basis": "按设计包拆除工程量及造价咨询包综合单价估算，含机械台班、人工、临时支撑材料及措施"
+          },
+          {
+            "item": "基础与地坪破除工程",
+            "amount": 9850000,
+            "basis": "按基础与地坪面积及破除厚度估算，含破碎、清运及机械配合"
+          },
+          {
+            "item": "建筑垃圾分类与外运处置",
+            "amount": 14280000,
+            "basis": "按分类堆场、装车、外运至指定处置场及处置费估算，含联单管理"
+          },
+          {
+            "item": "场地初步平整与移交",
+            "amount": 6350000,
+            "basis": "按平整面积、标高控制及移交前清理估算"
+          },
+          {
+            "item": "安全文明施工与公共出入协调",
+            "amount": 7280000,
+            "basis": "含隔离围挡、洒水降尘、噪音监测、公共通道维护及安全巡查"
+          },
+          {
+            "item": "保险、税费及管理费",
+            "amount": 8950000,
+            "basis": "按合同保险、税费及公司管理费分摊估算"
+          },
+          {
+            "item": "风险预备",
+            "amount": 7625000,
+            "basis": "按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取，约占直接费8%"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单综合单价与总价，报价以该等成果为价格基础",
+          "建筑垃圾外运处置及专业拆除作业拟通过合格分包商实施，由我方统一管理并承担包级交付责任",
+          "地下管线迁改不在本包范围，相关界面按接口协调处理",
+          "交通疏解、围护与临时道路不在本包范围",
+          "风险预备按拆除安全、粉尘噪音控制、外运处置及公共出入协调等风险因素计取"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "地块范围内约7,400平方米既有批发市场建筑物的结构拆除、基础与地坪破除、建筑垃圾分类、外运处置及场地初步平整；不含交通疏解、围护与临时道路，不含地下管线迁改。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

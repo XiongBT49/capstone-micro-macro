@@ -1,0 +1,19 @@
+{
+  "locked_at_utc": "2026-11-19T10:25:15.032445+00:00",
+  "cases": [
+    "CASE-0145",
+    "CASE-0089",
+    "CASE-0202"
+  ],
+  "sampling": "One case per source type (commercial/office, tourism/hotel, mixed development) from Shenzhen, Zhuhai, Guangzhou or Dongguan. Within each stratum use sorted IDs and random.Random(20261120), as drawn before authorization.",
+  "arms": [
+    "single",
+    "solo",
+    "multi"
+  ],
+  "settings": "full; two candidates per role; no prefix change; shared upstream reference multi; same rubric and model as previous batch",
+  "primary": "mean of paired R1-R6 task score differences, multi minus single",
+  "secondary": "multi minus solo; project-equal means and project bootstrap intervals; paired differences by criterion and task type",
+  "stopping": "Stop after these three cases. Report separately and pool all twelve regardless of sign.",
+  "rubric_sha256": "d7f5da41e60d693bf5a20b3303bc87be896749e49421ebdd2964d177fc2151a5"
+}

@@ -1,0 +1,1529 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMC47C6B63/CASE-0003/design/round-1",
+  "snapshot": {
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/design",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 4500000.0,
+      "project": {
+        "project_id": "CASE-0003",
+        "name": "九澳水库扩容建造工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0003/design",
+        "project_id": "CASE-0003",
+        "kind": "design",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "总体及施工图设计与现场设计配合",
+        "scope": "总体及施工图设计与现场设计配合",
+        "budget": 4500000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0169",
+          "COMP-0295"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0169": {
+        "entity_id": "COMP-0169",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0169",
+          "company_name": "中国建筑第五工程局有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0169",
+          "name": "中国建筑第五工程局有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0295": {
+        "entity_id": "COMP-0295",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0295",
+          "company_name": "江苏乾堪建设工程有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0295",
+          "name": "江苏乾堪建设工程有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "f0c1ee5447057a4e8f56f5168a95dc36db8d30e720b1115fa71891c60d917fde"
+  },
+  "spec": {
+    "package_id": "CASE-0003/design",
+    "project_id": "CASE-0003",
+    "kind": "design",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "总体及施工图设计与现场设计配合",
+    "scope": "总体及施工图设计与现场设计配合",
+    "budget": 4500000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0169",
+      "COMP-0295"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0003",
+      "project_name": "九澳水库扩容建造工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0003",
+      "project_scope": "九澳水库扩容建造工程为澳门市政与公共基础设施项目，目标将水库库容由34万立方米增至74万立方米。项目采用DBB交付模式，业主为澳门特别行政区政府公共建设局。本次模拟采购仅涵盖已授权的设计招标包（CASE-0003/design），其范围为总体及施工图设计与现场设计配合，预算为MOP 4,500,000，项目总预算为MOP 150,000,000，总工期24个月。业主将按模拟情景对设计包进行定性比较与判给，所有范围与预算变更须经宏观审批。",
+      "functional_requirements": [
+        "满足水库库容由34万立方米扩容至74万立方米的总体设计功能目标",
+        "提供总体设计及施工图设计文件，并配合现场施工设计交底与设计变更处理",
+        "协调大坝、溢洪道、取水设施及库区道路等水工构筑物的功能布局",
+        "考虑公共安全、防洪调度及周边环境协调的功能要求",
+        "支持施工阶段设计配合与验收配合，确保设计意图在建造中落实"
+      ],
+      "technical_requirements": [
+        "BIM协调：建立水库扩容工程三维信息模型，协调水工结构、机电及管线接口",
+        "MEP协调：完成取水、放水、监测及电气系统的机电综合设计",
+        "结构协调：大坝加高、溢洪道及库岸结构的安全与耐久设计",
+        "交通接口布局：库区施工运输道路与公共道路的接口设计",
+        "公共通道布局：施工期及运营期公共安全通道与围护设计",
+        "耐久性目标：水工结构满足长期运行耐久性要求",
+        "可维护性目标：设计便于后期巡检、清淤及设备维护",
+        "业主验收路径：设计成果按业主审查节点分阶段提交与验收",
+        "能耗目标：泵站及附属设施考虑节能运行目标"
+      ],
+      "budget_policy": "设计包预算为MOP 4,500,000，属业主额外成本。业主将按设计阶段（总体设计、施工图设计、现场配合）审核报价合理性，采用定性比较原则评估价格基础与工作范围匹配度。超出授权范围或预算的变更须经宏观审批。",
+      "schedule_policy": "总工期24个月，设计包须在项目前期完成总体设计并分阶段提交施工图，预留业主审查时间、设计包与后续施工及供货包的接口时间，以及公共通道协调时间。里程碑须体现设计审查、施工图交付及现场配合的合理节奏。",
+      "compliance_requirements": [
+        "业主审查节奏：按设计阶段设置审查节点并定期召开设计协调会",
+        "问题升级路径：设计问题按层级上报业主并限时回复",
+        "文档纪律：设计文件、计算书及变更记录须完整归档",
+        "接口签署：设计包与后续施工、供货包的接口须经业主签署确认",
+        "公共通道协调：施工期公共安全通道方案须经业主与相关方协调",
+        "质量目标跟踪：按业主要求跟踪设计质量目标达成情况",
+        "安全期望跟踪：设计安全审查纳入业主监督范围",
+        "变更控制纪律：设计变更须经业主审批并记录"
+      ],
+      "risk_priorities": [
+        "设计深度不足导致施工阶段变更风险",
+        "水工结构安全与耐久性风险",
+        "设计与施工、供货接口协调风险",
+        "公共安全与施工期交通协调风险",
+        "设计进度延误影响总工期风险",
+        "预算控制与变更审批风险"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0003/design",
+          "package_type": "design",
+          "package_name": "总体及施工图设计与现场设计配合",
+          "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合",
+          "required_company_role": "designer",
+          "qualification_requirements": [
+            "水库及水工设施总体设计协调能力",
+            "施工图设计深化能力",
+            "BIM协调能力",
+            "MEP协调能力",
+            "结构协调能力",
+            "现场设计配合能力",
+            "质量文档能力",
+            "公共通道布局设计能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "交付方法与设计阶段划分",
+            "质量方法与设计审查流程",
+            "价格基础与费用构成",
+            "进度视图与里程碑计划",
+            "风险应对与设计变更管理"
+          ],
+          "pricing_requirements": "按设计阶段及工作范围提交价格基础，业主定性比较价格合理性与工作范围匹配度。\nBinding currency: MOP; package ceiling: 4500000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "独立性保证",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格、风险与交付信心。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0003/design",
+        "package_type": "design",
+        "package_name": "总体及施工图设计与现场设计配合",
+        "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合",
+        "required_company_role": "designer",
+        "qualification_requirements": [
+          "水库及水工设施总体设计协调能力",
+          "施工图设计深化能力",
+          "BIM协调能力",
+          "MEP协调能力",
+          "结构协调能力",
+          "现场设计配合能力",
+          "质量文档能力",
+          "公共通道布局设计能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "交付方法与设计阶段划分",
+          "质量方法与设计审查流程",
+          "价格基础与费用构成",
+          "进度视图与里程碑计划",
+          "风险应对与设计变更管理"
+        ],
+        "pricing_requirements": "按设计阶段及工作范围提交价格基础，业主定性比较价格合理性与工作范围匹配度。\nBinding currency: MOP; package ceiling: 4500000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "独立性保证",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格、风险与交付信心。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0169",
+        "company_name": "中国建筑第五工程局有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0295",
+        "company_name": "江苏乾堪建设工程有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与关键路径，习惯把扩容目标拆成可验证的里程碑。他最先注意到的是承包商资源是否与24个月工期匹配，容易在讨论中把话题拉回进度与接口风险，带来进度优先与质量成本之间的张力。",
+          "responsibilities": [
+            "统筹九澳水库扩容工程整体交付目标",
+            "主持招标包划分与组合体方案评审",
+            "协调设计、施工与监管服务接口",
+            "跟踪工期与关键里程碑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列依据，偏好用里程碑表和风险清单说话。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否自洽。她最先注意到预算1.5亿MOP与各包报价之间的偏差，倾向在讨论中质疑低价风险与支付评审安排，带来成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制与复核采购预算及价格基础",
+            "组织支付评审与成本审查",
+            "评估投标报价合理性与风险准备",
+            "监控变更与成本偏差"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数据与对比说话，对模糊表述会追问依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量经理",
+          "personal_profile": "工程思维强，压力下先看技术方案是否满足扩容后的运行与安全要求。他最先注意到设计深度、独立复核与质量目标跟踪是否落实，讨论中常坚持技术审查不可压缩，带来质量要求与工期成本之间的张力。",
+          "responsibilities": [
+            "协调设计与施工技术接口",
+            "组织质量目标跟踪与独立复核",
+            "审查技术方案与规范符合性",
+            "推动可持续发展目标落实"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨细致，偏好用技术依据和检查清单沟通，对简化审查的提议会明确保留意见。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标与合约统筹",
+          "personal_profile": "程序意识强，压力下先确认招标程序与文件纪律是否完整。她最先注意到投标资格、评标标准与判给理由的可追溯性，讨论中倾向放慢节奏确保合规，带来程序严谨与决策效率之间的张力。",
+          "responsibilities": [
+            "统筹招标包文件与评标安排",
+            "维护文档纪律与判给记录",
+            "协调组合体与监管服务采购安排",
+            "组织开标与评标流程"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "稳健克制，按程序步骤陈述，强调记录与依据，避免仓促表态。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "对外协调与风险",
+          "position": "业主代表与风险协调",
+          "personal_profile": "善于换位思考，压力下先看各方诉求与公众影响。他最先注意到利益相关方沟通与风险应对是否到位，讨论中常提醒预留协商空间，带来外部协调与内部管控之间的张力。",
+          "responsibilities": [
+            "负责业主接口与利益相关方协调",
+            "组织风险识别与风险应对预案",
+            "汇总现场报告与进度通报",
+            "协调监管服务与社区沟通"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "温和务实，先倾听再归纳，用情景与影响说明推动共识。"
+        }
+      ],
+      "COMP-0169": [
+        {
+          "agent_id": "COMP-0169_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计总体协调部",
+          "position": "设计总负责人",
+          "personal_profile": "压力下先抓总体技术路线与工期匹配，习惯把设计决策与现场可施工性放在同一张图上权衡。最先注意到的是总体方案与施工图之间的接口风险，以及设计进度对24个月工期的影响。讨论中常把技术理想拉回到可交付现实，带来方案完整性与工期压力之间的张力。",
+          "responsibilities": [
+            "总体设计技术路线与设计协调",
+            "设计进度与工期匹配控制",
+            "现场设计配合总体安排",
+            "设计质量目标跟踪",
+            "业主接口与设计汇报"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，习惯用图纸与进度表说话，对模糊表述会追问具体接口。"
+        },
+        {
+          "agent_id": "COMP-0169_02_何嘉敏",
+          "agent_name": "何嘉敏",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计质量与合规部",
+          "position": "设计质量审核经理",
+          "personal_profile": "压力下优先守住质量底线与审批合规，对设计输入不完整或审查链条缺失非常敏感。最先注意到的是图纸会审记录、计算书依据和监管报批节点。讨论中常以独立复核视角提出保留意见，带来质量严谨性与推进速度之间的张力。",
+          "responsibilities": [
+            "设计成果独立复核与质量审查",
+            "审批报批节点与合规检查",
+            "设计文档纪律与版本控制",
+            "质量目标跟踪与整改闭环",
+            "独立检查方法维护"
+          ],
+          "decision_authority": "veto",
+          "communication_style": "谨慎、条理清晰，习惯引用审查依据和检查清单，对未闭环事项会明确标注风险等级。"
+        },
+        {
+          "agent_id": "COMP-0169_03_黄志远",
+          "agent_name": "黄志远",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "造价与商务管理部",
+          "position": "设计造价控制经理",
+          "personal_profile": "压力下先算清设计变更对造价与付款节奏的影响，对预算450万MOP的边界非常敏感。最先注意到的是设计深度与造价估算的匹配、付款评审节点和成本超支信号。讨论中常以成本控制视角质疑设计优化是否值得，带来设计品质与造价约束之间的张力。",
+          "responsibilities": [
+            "设计阶段造价估算与成本控制",
+            "付款评审与付款评估支持",
+            "设计变更费用影响分析",
+            "报价基础与价格依据整理",
+            "成本审查与预算边界监控"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "务实、数字导向，喜欢用对比表和敏感性分析说明问题，对没有费用依据的优化建议会要求补充测算。"
+        },
+        {
+          "agent_id": "COMP-0169_04_林淑仪",
+          "agent_name": "林淑仪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "现场设计与资源协调部",
+          "position": "现场设计配合主管",
+          "personal_profile": "压力下先看现场条件与资源可用性，对设计可施工性和现场配合响应速度特别关注。最先注意到的是现场设计配合需求、团队可用性摘要和跨专业接口冲突。讨论中常把设计拉回现场实际，带来现场灵活性与设计标准化之间的张力。",
+          "responsibilities": [
+            "现场设计配合与问题响应",
+            "团队可用性摘要与角色计划",
+            "跨专业接口协调与冲突处理",
+            "现场报告与设计交底",
+            "资源规划与设计配合排班"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "平实、现场感强，习惯用具体案例和现场照片说明问题，对脱离现场的设计安排会直接提出替代方案。"
+        },
+        {
+          "agent_id": "COMP-0169_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "风险与可持续发展部",
+          "position": "风险与可持续设计经理",
+          "personal_profile": "压力下先识别设计风险与可持续目标的落地缺口，对水库扩容项目的环境与监管敏感性保持警觉。最先注意到的是风险应对措施是否可执行、可持续目标是否有设计载体。讨论中常以长期风险视角挑战短期便利方案，带来风险审慎与推进效率之间的张力。",
+          "responsibilities": [
+            "设计风险识别与风险应对建议",
+            "可持续目标与环保设计衔接",
+            "监管服务要求跟踪",
+            "交付方式与设计责任界面分析",
+            "风险登记与缓解措施跟踪"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "分析型、前瞻性强，习惯用风险矩阵和情景对比表达观点，对未识别风险会坚持要求补充评估。"
+        }
+      ],
+      "COMP-0295": [
+        {
+          "agent_id": "COMP-0295_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "设计总体协调组",
+          "position": "设计总负责人",
+          "personal_profile": "压力下先锁定总体设计路线与工期接口，习惯把设计包拆成可交付节点并追问现场配合边界；讨论中会主动暴露资源冲突，倾向以保守承诺换取可控交付。",
+          "responsibilities": [
+            "统筹总体设计与施工图设计的进度与接口",
+            "对接业主与监管服务的设计审查要求",
+            "组织内部质量评审与设计交付确认",
+            "协调现场设计配合与变更响应"
+          ],
+          "decision_authority": "final",
+          "communication_style": "先给结论再列依据，语气平稳，对不确定事项会明确标注假设条件。"
+        },
+        {
+          "agent_id": "COMP-0295_02_周敏仪",
+          "agent_name": "周敏仪",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "设计技术组",
+          "position": "水利与市政设计主管",
+          "personal_profile": "对水库扩容的库容、水工结构与市政管线衔接高度敏感，压力下优先核查技术可行性与规范符合性；容易在技术细节上与进度安排产生张力，但会坚持独立复核。",
+          "responsibilities": [
+            "负责水工与市政专业设计技术方案",
+            "组织专业间设计条件与图纸会签",
+            "开展独立技术复核与质量目标跟踪",
+            "编制设计说明与施工图技术交底"
+          ],
+          "decision_authority": "technical_veto",
+          "communication_style": "用数据和规范条文说话，对技术风险直言不讳，习惯用对比方案说明取舍。"
+        },
+        {
+          "agent_id": "COMP-0295_03_林嘉豪",
+          "agent_name": "林嘉豪",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "商务与成本组",
+          "position": "设计商务与成本经理",
+          "personal_profile": "对报价依据与支付节点最敏感，压力下先看成本控制与现金流影响；讨论中常提醒设计深度与收费匹配，倾向用分阶段付款降低商务风险。",
+          "responsibilities": [
+            "编制设计报价与价格依据说明",
+            "负责支付评审与付款条件建议",
+            "跟踪设计成本控制与资源投入",
+            "协调分包与外部顾问的商务安排"
+          ],
+          "decision_authority": "commercial_review",
+          "communication_style": "条理清晰，喜欢用金额与节点表说明问题，对超支信号会直接提出保留意见。"
+        },
+        {
+          "agent_id": "COMP-0295_04_黄志远",
+          "agent_name": "黄志远",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "现场设计配合组",
+          "position": "现场设计代表",
+          "personal_profile": "长期关注现场可施工性，压力下先判断设计图纸与现场条件的落差；容易在图纸深度与施工便利之间制造讨论张力，强调现场报告与快速响应。",
+          "responsibilities": [
+            "负责现场设计配合与施工问题反馈",
+            "编制现场设计报告与巡查记录",
+            "协调设计变更的现场确认",
+            "跟踪现场质量目标与设计符合性"
+          ],
+          "decision_authority": "site_recommendation",
+          "communication_style": "口语化、重实例，习惯用现场照片与问题清单推动决策。"
+        },
+        {
+          "agent_id": "COMP-0295_05_吴凯琳",
+          "agent_name": "吴凯琳",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "质量与合规组",
+          "position": "设计质量与合规主管",
+          "personal_profile": "对文档纪律与审批程序最为警觉，压力下先检查合规链条是否完整；讨论中会坚持独立检查与记录留痕，常因程序要求与进度压力形成张力。",
+          "responsibilities": [
+            "组织设计质量审查与独立检查",
+            "维护设计文档与审批记录纪律",
+            "跟踪监管服务与合规要求",
+            "评估设计风险应对与质量目标达成"
+          ],
+          "decision_authority": "quality_veto",
+          "communication_style": "严谨克制，以检查清单和证据链表达意见，对程序缺失会明确要求补正。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0003/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "这次是九澳水库扩容的总体及施工图设计与现场设计配合包，设计费上限450万MOP，相对1.5亿的工程总造价属于合理的设计占比。公司资料显示具备水利水电、市政、工程总承包与工程设计（建筑、市政、公路）等业务范围，企业参数中设计能力、技术能力、管理能力均为0.8，资源占用为0，可用资源2.0，本包仅需0.25，容量上完全能承接。真正的短板是水库及水工设施的专项总体设计协调——资料里没有明确的水工设计专项业绩，也没有团队可用性清单。但这是设计牵头方可以处理的问题：以我方作为单一责任设计主体，把水工专项、BIM、MEP、结构等专业协调纳入我方设计管理与审查流程，通过分包顾问补足专项深度，同时由我方控制设计阶段划分、审查关口、文档纪律与责任传递。这属于正常的外部专业支持，不构成必须共享投标人身份的组合体。价格基础按设计阶段与工作范围编制，业主定性比较价格合理性与范围匹配度，我方有造价咨询与工程管理能力支撑。风险在于水工专项能力证据不足与现场配合投入，需要在投标文件中以角色计划、团队可用性摘要、质量方法与设计审查流程、风险应对与设计变更管理来正面回应。综合判断：值得投，以独立投标人身份投标，专项顾问作为受控分包并明确责任边界。",
+        "content": "决定：以中国建筑第五工程局有限公司名义独立投标九澳水库扩容建造工程总体及施工图设计与现场设计配合包（CASE-0003/design），报价上限MOP 4,500,000。\n\n定位与责任：我方作为单一责任设计主体与设计牵头方，对总体设计协调、施工图深化、现场设计配合负总责；水工专项、BIM、MEP、结构等专业协调以受控专业顾问方式补足，纳入我方设计管理与审查体系，明确接口与责任传递，不改变投标人身份。\n\n回应业主内容要求：提交角色计划与团队可用性摘要，说明各专业角色与投入节奏；提交交付方法与设计阶段划分，明确总体设计与施工图阶段的交付物与审查关口；提交质量方法与设计审查流程，包括内部校审、独立复核与文档纪律；提交价格基础与费用构成，按设计阶段及工作范围分列；提交进度视图与里程碑计划，与24个月工程工期衔接；提交风险应对与设计变更管理，覆盖现场设计配合响应与变更控制。\n\n资源与容量：本包所需资源0.25，我方当前占用为0、可用2.0，容量可支撑；现场设计配合按施工阶段派驻与远程结合安排。\n\n投标假设：水工专项与部分专业协调顾问为拟聘外部支持，尚未取得正式承诺与报价，相关费用按草案估算计入价格基础，待确认后锁定；团队具体人员可用性以提交前的角色计划核对为准。\n\n风险控制：对水工专项深度证据不足的风险，以顾问配置与审查关口前置化解；对现场配合投入风险，以里程碑计划与变更管理流程控制；对价格合理性，以范围匹配与费用构成透明化回应业主定性比较。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:33:05",
+        "verification_requests": [
+          {
+            "question": "投标假设：水工专项与部分专业协调顾问为拟聘外部支持，尚未取得正式承诺与报价，相关费用按草案估算计入价格基础，待确认后锁定；团队具体人员可用性以提交前的角色计划核对为准",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0003/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调组",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "我们公司是设计企业，业务范围涵盖市政、园林、水利水电、房屋建筑等设计与施工，这次九澳水库扩容的总体及施工图设计与现场设计配合，预算450万MOP，属于我们能够承接的设计服务范畴。公司可用资源2.0，本包仅需0.25，资源上完全有余量。但包内明确要求水库及水工设施总体设计协调、BIM、MEP、结构协调等能力，我们虽有水利水电和市政设计背景，但水库扩容这类水工专项的总体设计协调并非我们的强项，内部也没有现成的团队可用性证据。作为设计主导方，我们可以通过分包补充水工、BIM、MEP等专项，但需要明确设计责任划分和审查流程。考虑到这是情景试运行，且我们具备设计主导和文档管理能力，我倾向于以单一责任主体投标，通过常规专业分包补足专项能力，而不是组建组合体。这样既保持投标身份清晰，也能在报价和风险应对中体现我们对工作范围的理解。",
+        "content": "江苏乾堪建设工程有限公司拟以单一责任主体身份参与九澳水库扩容建造工程总体及施工图设计与现场设计配合招标包投标。我方将提交角色计划与团队可用性摘要、交付方法与设计阶段划分、质量方法与设计审查流程、价格基础与费用构成、进度视图与里程碑计划、风险应对与设计变更管理。设计主导与总体协调由我方负责，水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，相关分包范围、责任划分与审查节点在投标文件中明确，不作为共享投标身份的组合体安排。报价在450万MOP上限内按设计阶段与工作范围编制价格基础，供业主定性比较。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:33:02",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0003/design",
+        "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+        "agent_name": "何俊杰",
+        "department": "对外协调与风险",
+        "position": "业主代表与风险协调",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为九澳水库扩容设计包的交付负最终责任。评标推荐中国建筑第五工程局有限公司，我认同这一方向。虽然其报价MOP 4,480,000贴近上限，且水工专项及部分BIM、MEP、结构协调依赖尚未取得正式承诺与报价的外部顾问，但该投标在总体协调、审查关口、文档纪律和独立复核安排上明显更完整，现场配合投入也更有规划，交付信心较强。江苏乾堪建设工程有限公司报价MOP 4,400,000略低，但关键专业依赖未确定分包，现场配合费MOP 360,000偏低，人员尚未锁定，后期服务不足风险较高。两相比较，中国建筑第五工程局有限公司的能力匹配和风险控制更符合本包需要。价格基础中MOP 860,000专项顾问费为草案估算，需要在合同前锁定正式承诺与报价，并核对角色计划与团队可用性摘要，这是可管理的澄清事项，不影响判给决定。",
+        "content": "经综合评标与业主审查，九澳水库扩容建造工程总体及施工图设计与现场设计配合包判给中国建筑第五工程局有限公司，报价MOP 4,480,000。该投标在总体协调、审查流程、文档纪律和独立复核安排上更为完整，现场配合投入规划更充分，能力匹配与交付信心优于另一投标。合同前澄清重点为锁定水工专项及BIM、MEP、结构顾问的正式承诺与报价，并提交角色计划与团队可用性摘要，以巩固价格基础与资源落实。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:33:29",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0169",
+        "package_id": "CASE-0003/design",
+        "decision": "bid",
+        "reason": "管理层判断：本包属于我方业务范围内的设计牵头工作，资源占用低、容量充足，设计能力与管理能力参数支持我方作为单一责任设计主体承接总体及施工图设计与现场设计配合。水工专项深度与BIM、MEP、结构协调属于可通过受控专业顾问补足的正常设计分包事项，由我方掌握设计阶段划分、审查关口、模型与接口协调、文档纪律与责任传递，不需要共享投标人身份或让渡设计主导权。价格按设计阶段与工作范围编制价格基础，配合业主对范围匹配度的定性比较。因此决定独立投标，专项顾问作为投标假设列明，不作为已落实承诺。",
+        "unresolved_condition_ids": [
+          "condition_e74897d93639bc033c51"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+          "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+          "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+          "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+          "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0003/design",
+        "decision": "bid",
+        "reason": "本包为设计服务，预算450万MOP，资源需求0.25，公司当前可用资源2.0，资源与工期压力可控。公司具备市政、水利水电、园林及房屋建筑设计与施工背景，能够作为单一责任主体承担总体及施工图设计协调与现场配合。水工专项、BIM、MEP、结构等能力缺口可通过常规专业分包和外部技术支持补足，由我方统一控制设计审查、质量文档和接口协调，不构成必须共享投标身份的组合体情形。价格按设计阶段与工作范围提交价格基础，业主定性比较，我方可在450万MOP上限内合理报价。综合判断，独立投标符合公司业务方向与风险承受度。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件中的范围与责任划分为准。",
+          "团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。",
+          "报价在450万MOP上限内按设计阶段与工作范围编制，最终价格以投标文件价格基础为准。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0003/design_001",
+        "package_id": "CASE-0003/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0169",
+        "bidder_name": "中国建筑第五工程局有限公司",
+        "technical_proposal": "我方以中国建筑第五工程局有限公司单一责任设计主体身份承接九澳水库扩容建造工程总体及施工图设计与现场设计配合包。技术路线分三阶段推进：\n\n一、总体设计阶段：完成库容由34万增至74万立方米方案的水工总体布局复核、公共通道布局设计、坝体与溢洪及取水设施总体协调，形成总体设计文件与专业接口清单，提交业主审查。\n\n二、施工图设计阶段：按水工、结构、MEP、公共通道分专业深化，BIM模型按专业分模并做碰撞与净高检查，结构与MEP接口以接口矩阵逐项闭合，出图前完成内部校审与独立复核。\n\n三、现场设计配合阶段：与24个月工程工期衔接，派驻与远程结合，处理现场释疑、材料与工艺确认、设计变更评估与图纸修订，保持文档纪律与版本控制。\n\n能力匹配说明：我方具备建筑、市政、公路行业设计及工程管理服务能力，可承担总体设计牵头与施工图深化管理；水工专项深度与部分BIM、MEP、结构协调以受控专业顾问补足，纳入我方设计管理与审查体系，接口与责任传递由我方掌握，不改变投标人身份。专项顾问为拟聘外部支持，尚未取得正式承诺与报价，相关费用按草案估算计入价格基础。",
+        "implementation_plan": "阶段划分与交付物：\n1. 启动与总体设计（第1至第6个月）：角色计划与团队可用性摘要定稿、设计基础资料核对、总体设计方案与公共通道布局、专业接口清单、总体设计审查包。\n2. 施工图设计（第7至第15个月）：分专业施工图、BIM模型协调报告、MEP与结构接口闭合记录、内部校审与独立复核记录、施工图送审包。\n3. 施工配合与现场设计配合（第16个月起至工程完工）：现场释疑响应、变更评估、图纸修订与竣工图配合。\n\n组织安排：设计总负责人统筹，设总体协调、水工专项、结构、MEP、BIM、文档控制角色；专项顾问按接口清单交付，由我方审查后对外提交。\n\n审查关口：总体设计审查、施工图内部校审、独立复核、业主审查意见闭合四道关口，每道关口留存检查记录。\n\n资源安排：本包资源需求0.25，我方当前占用0、可用2.0，容量可支撑；现场配合按施工阶段派驻与远程结合，具体节奏在进度视图中细化。",
+        "quotation": 4480000.0,
+        "schedule_commitment": "总体设计自启动起6个月内提交审查包；施工图设计于第15个月末完成送审；现场设计配合自施工阶段起持续至工程完工，与24个月工程工期衔接。里程碑：第2个月设计基础与角色计划确认，第6个月总体设计审查，第12个月施工图中期检查，第15个月施工图送审，第16个月起现场配合启动。专项顾问承诺未锁定前，相关交付按草案排期，锁定后复核里程碑。",
+        "compliance_statement": "我方接受业主对设计阶段交付物、审查关口与文档纪律的审查控制。按业主要求提交角色计划与团队可用性摘要、交付方法与设计阶段划分、质量方法与设计审查流程、价格基础与费用构成、进度视图与里程碑计划、风险应对与设计变更管理六项内容。设计审查按内部校审、独立复核、业主审查意见闭合的顺序执行，审查记录与模型版本纳入文档控制。价格按设计阶段与工作范围分列，便于业主对范围匹配度作定性比较。",
+        "risk_response": "主要风险与应对：\n1. 水工专项深度证据不足：以专项顾问配置与审查关口前置化解，顾问成果经我方审查后提交，责任传递由我方控制。\n2. 专项顾问承诺与报价未锁定：费用按草案估算计入价格基础，锁定后复核价格构成，不改变投标人身份与总体责任。\n3. 现场配合投入波动：以里程碑计划与变更管理流程控制，派驻与远程结合调节投入节奏。\n4. 专业接口冲突：以接口矩阵与BIM碰撞检查在出图前闭合，减少施工阶段返工。\n5. 设计变更：建立变更评估与图纸修订流程，变更影响及时反馈业主审查。",
+        "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计主体身份投标CASE-0003/design总体及施工图设计与现场设计配合包，报价MOP 4,480,000，在MOP 4,500,000上限内。\n\n价格基础按设计阶段与工作范围编制：总体设计阶段780,000；施工图设计阶段1,520,000；BIM协调与模型审查430,000；水工专项及专业顾问草案860,000；现场设计配合520,000；文档控制、质量审查与保险管理费210,000；风险与变更预备费160,000。合计4,480,000。\n\n费用构成说明：主体为设计人员工时与审查投入；水工专项与部分BIM、MEP、结构协调为拟聘外部支持，尚未取得正式承诺与报价，按草案估算计入，属投标假设而非已落实承诺；风险预备费覆盖顾问锁定与审查闭合的不确定性。\n\n资源方面本包需求0.25，我方可用2.0，容量充足。付款与里程碑按设计阶段交付物与审查关口设置，具体在合同阶段细化。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计阶段费用",
+            "amount": 780000,
+            "basis": "设计总负责人与总体协调、公共通道布局、水工总体复核等角色投入，按阶段工作量与审查轮次估算"
+          },
+          {
+            "item": "施工图设计阶段费用",
+            "amount": 1520000,
+            "basis": "水工、结构、MEP、公共通道分专业深化出图，含内部校审与独立复核工时"
+          },
+          {
+            "item": "BIM协调与模型审查费用",
+            "amount": 430000,
+            "basis": "分模建模、碰撞与净高检查、模型审查会与协调报告，按模型审查轮次估算"
+          },
+          {
+            "item": "水工专项及专业顾问草案费用",
+            "amount": 860000,
+            "basis": "拟聘外部专项顾问草案估算，尚未取得正式承诺与报价，含我方管理审查与责任传递成本"
+          },
+          {
+            "item": "现场设计配合费用",
+            "amount": 520000,
+            "basis": "施工阶段派驻与远程结合的现场释疑、变更评估与图纸修订投入，按工程工期配合节奏估算"
+          },
+          {
+            "item": "文档控制、质量审查与保险管理费",
+            "amount": 210000,
+            "basis": "文档版本控制、审查记录归档、设计责任保险与管理分摊"
+          },
+          {
+            "item": "风险与变更预备费",
+            "amount": 160000,
+            "basis": "专项顾问承诺未锁定、审查意见闭合与现场变更响应的风险预备"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_e74897d93639bc033c51"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+          "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+          "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+          "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+          "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0003/design_002",
+        "package_id": "CASE-0003/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0295",
+        "bidder_name": "江苏乾堪建设工程有限公司",
+        "technical_proposal": "我方以单一责任主体身份承担九澳水库扩容建造工程总体及施工图设计与现场设计配合。总体设计协调由我方设计总负责人牵头，统筹水工工艺、结构、MEP、BIM及公共通道布局等专业接口；施工图深化按水库枢纽、取水及输水设施、管理及公共通道分区推进，各专业出图前完成内部碰撞检查与独立复核。BIM协调采用统一模型标准与阶段性合模审查，MEP与结构协调通过固定接口协调会与提资计划控制。现场设计配合覆盖施工阶段设计交底、现场巡查、设计变更评估与竣工图配合。水工专项、BIM建模、MEP及结构计算等能力缺口，拟通过常规专业分包与外部技术支持补足，由我方统一控制设计审查、质量文档与接口协调，分包范围与责任划分在投标文件中明确，不构成共享投标身份的组合体安排。",
+        "implementation_plan": "设计阶段划分为总体设计、施工图设计及现场配合三阶段。总体设计阶段完成设计基础复核、总体布置与专业接口策划，提交总体设计文件供业主审查；施工图设计阶段按分区出图，每区完成内部专业合模、独立复核及业主审查后定稿；现场配合阶段按施工进度派驻设计代表，处理设计交底、现场问题澄清与变更评估。关键里程碑包括总体设计审查、施工图分区审查、施工图定稿及现场配合启动。BIM模型随设计阶段同步深化，MEP与结构协调通过提资计划与接口协调会落实。",
+        "quotation": 4400000.0,
+        "schedule_commitment": "总体设计阶段按业主审查节点提交总体设计文件；施工图设计按分区滚动出图，每区在内部合模与独立复核完成后提交业主审查；现场设计配合自施工启动起持续至竣工图交付。BIM模型与设计阶段同步深化，接口协调会按固定周期召开。具体里程碑日期以投标文件进度视图为准。",
+        "compliance_statement": "我方接受业主对设计阶段成果的审查与确认权，按业主审查意见闭环管理设计修改。质量文档与设计审查流程由我方统一控制，独立检查记录随阶段成果提交。专业分包与外部技术支持纳入我方质量管理体系，不改变我方单一责任主体地位。",
+        "risk_response": "主要风险包括水工专项与BIM、MEP、结构能力缺口、专业分包接口协调及施工阶段设计变更。应对措施：以固定接口协调会与提资计划控制专业接口；分包范围与责任在投标文件中明确，由我方统一审查；设计变更按业主确认流程评估，风险预备费覆盖接口与变更协调成本。分包商尚未确定，相关承诺以投标文件范围与责任划分为准。",
+        "submission_summary": "江苏乾堪建设工程有限公司以单一责任主体身份提交九澳水库扩容建造工程总体及施工图设计与现场设计配合投标。报价MOP 4,400,000，在450万MOP上限内，按设计阶段与工作范围编制价格基础：总体设计阶段MOP 780,000；施工图设计阶段MOP 1,650,000；BIM协调与模型管理MOP 420,000；专业分包与外部技术支持暂定MOP 680,000；现场设计配合MOP 360,000；质量文档与设计审查管理MOP 210,000；项目管理、保险与风险预备MOP 300,000。水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件范围与责任划分为准。团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。报价供业主定性比较价格合理性与工作范围匹配度。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计阶段费用",
+            "amount": 780000,
+            "basis": "设计总负责人、水工及总体协调工程师、公共通道布局设计人员投入，含总体设计文件编制与业主审查配合"
+          },
+          {
+            "item": "施工图设计阶段费用",
+            "amount": 1650000,
+            "basis": "结构、MEP、水工专项施工图深化人员投入，含分区出图、内部合模与独立复核"
+          },
+          {
+            "item": "BIM协调与模型管理费",
+            "amount": 420000,
+            "basis": "BIM执行计划编制、模型标准维护、阶段性合模审查及碰撞检查协调"
+          },
+          {
+            "item": "专业分包与外部技术支持费",
+            "amount": 680000,
+            "basis": "水工专项计算、MEP系统深化及结构独立复核等常规专业分包与外部技术支持的暂定费用，具体分包商尚未确定"
+          },
+          {
+            "item": "现场设计配合费",
+            "amount": 360000,
+            "basis": "施工阶段设计代表派驻、设计交底、现场巡查、变更评估及竣工图配合"
+          },
+          {
+            "item": "质量文档与设计审查管理费",
+            "amount": 210000,
+            "basis": "质量文档控制、设计审查流程管理、独立检查记录及文档交付"
+          },
+          {
+            "item": "项目管理、保险与风险预备费",
+            "amount": 300000,
+            "basis": "项目综合管理、专业责任保险及设计变更与接口风险预备"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件中的范围与责任划分为准。",
+          "团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。",
+          "报价在450万MOP上限内按设计阶段与工作范围编制，最终价格以投标文件价格基础为准。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0003/design",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0003/design_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "quotation": 4480000.0,
+            "quotation_breakdown": [
+              {
+                "item": "总体设计阶段费用",
+                "amount": 780000,
+                "basis": "设计总负责人与总体协调、公共通道布局、水工总体复核等角色投入，按阶段工作量与审查轮次估算"
+              },
+              {
+                "item": "施工图设计阶段费用",
+                "amount": 1520000,
+                "basis": "水工、结构、MEP、公共通道分专业深化出图，含内部校审与独立复核工时"
+              },
+              {
+                "item": "BIM协调与模型审查费用",
+                "amount": 430000,
+                "basis": "分模建模、碰撞与净高检查、模型审查会与协调报告，按模型审查轮次估算"
+              },
+              {
+                "item": "水工专项及专业顾问草案费用",
+                "amount": 860000,
+                "basis": "拟聘外部专项顾问草案估算，尚未取得正式承诺与报价，含我方管理审查与责任传递成本"
+              },
+              {
+                "item": "现场设计配合费用",
+                "amount": 520000,
+                "basis": "施工阶段派驻与远程结合的现场释疑、变更评估与图纸修订投入，按工程工期配合节奏估算"
+              },
+              {
+                "item": "文档控制、质量审查与保险管理费",
+                "amount": 210000,
+                "basis": "文档版本控制、审查记录归档、设计责任保险与管理分摊"
+              },
+              {
+                "item": "风险与变更预备费",
+                "amount": 160000,
+                "basis": "专项顾问承诺未锁定、审查意见闭合与现场变更响应的风险预备"
+              }
+            ],
+            "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计主体身份投标CASE-0003/design总体及施工图设计与现场设计配合包，报价MOP 4,480,000，在MOP 4,500,000上限内。\n\n价格基础按设计阶段与工作范围编制：总体设计阶段780,000；施工图设计阶段1,520,000；BIM协调与模型审查430,000；水工专项及专业顾问草案860,000；现场设计配合520,000；文档控制、质量审查与保险管理费210,000；风险与变更预备费160,000。合计4,480,000。\n\n费用构成说明：主体为设计人员工时与审查投入；水工专项与部分BIM、MEP、结构协调为拟聘外部支持，尚未取得正式承诺与报价，按草案估算计入，属投标假设而非已落实承诺；风险预备费覆盖顾问锁定与审查闭合的不确定性。\n\n资源方面本包需求0.25，我方可用2.0，容量充足。付款与里程碑按设计阶段交付物与审查关口设置，具体在合同阶段细化。",
+            "unresolved_condition_ids": [
+              "condition_e74897d93639bc033c51"
+            ],
+            "bid_assumptions": [
+              "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+              "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+              "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+              "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+              "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0003/design_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "quotation": 4400000.0,
+            "quotation_breakdown": [
+              {
+                "item": "总体设计阶段费用",
+                "amount": 780000,
+                "basis": "设计总负责人、水工及总体协调工程师、公共通道布局设计人员投入，含总体设计文件编制与业主审查配合"
+              },
+              {
+                "item": "施工图设计阶段费用",
+                "amount": 1650000,
+                "basis": "结构、MEP、水工专项施工图深化人员投入，含分区出图、内部合模与独立复核"
+              },
+              {
+                "item": "BIM协调与模型管理费",
+                "amount": 420000,
+                "basis": "BIM执行计划编制、模型标准维护、阶段性合模审查及碰撞检查协调"
+              },
+              {
+                "item": "专业分包与外部技术支持费",
+                "amount": 680000,
+                "basis": "水工专项计算、MEP系统深化及结构独立复核等常规专业分包与外部技术支持的暂定费用，具体分包商尚未确定"
+              },
+              {
+                "item": "现场设计配合费",
+                "amount": 360000,
+                "basis": "施工阶段设计代表派驻、设计交底、现场巡查、变更评估及竣工图配合"
+              },
+              {
+                "item": "质量文档与设计审查管理费",
+                "amount": 210000,
+                "basis": "质量文档控制、设计审查流程管理、独立检查记录及文档交付"
+              },
+              {
+                "item": "项目管理、保险与风险预备费",
+                "amount": 300000,
+                "basis": "项目综合管理、专业责任保险及设计变更与接口风险预备"
+              }
+            ],
+            "submission_summary": "江苏乾堪建设工程有限公司以单一责任主体身份提交九澳水库扩容建造工程总体及施工图设计与现场设计配合投标。报价MOP 4,400,000，在450万MOP上限内，按设计阶段与工作范围编制价格基础：总体设计阶段MOP 780,000；施工图设计阶段MOP 1,650,000；BIM协调与模型管理MOP 420,000；专业分包与外部技术支持暂定MOP 680,000；现场设计配合MOP 360,000；质量文档与设计审查管理MOP 210,000；项目管理、保险与风险预备MOP 300,000。水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件范围与责任划分为准。团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。报价供业主定性比较价格合理性与工作范围匹配度。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件中的范围与责任划分为准。",
+              "团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。",
+              "报价在450万MOP上限内按设计阶段与工作范围编制，最终价格以投标文件价格基础为准。"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 总体及施工图设计与现场设计配合.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0003/design",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何俊杰"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0003/design_001",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "technical_view": "总体设计牵头、施工图分专业深化与现场配合的三阶段路线清晰，接口矩阵与独立复核安排具体，但水工专项及部分BIM、MEP、结构协调依赖尚未落实的外部顾问，技术深度存在不确定。",
+            "cost_view": "报价MOP 4,480,000贴近上限，费用按阶段分列且含风险预备费，但其中MOP 860,000专项顾问费仅为草案估算，价格基础尚未锁定，可信度取决于顾问承诺能否兑现。",
+            "owner_control_view": "对业主审查关口、文档版本控制与六项提交内容回应完整，独立复核与审查记录闭合流程明确，业主审查清晰度较高。",
+            "strengths": [
+              "总体协调与审查关口设计完整，交付信心较强",
+              "文档纪律与独立复核安排具体",
+              "资源容量充足，现场配合节奏有初步规划"
+            ],
+            "concerns": [
+              "水工专项顾问未取得正式承诺与报价，能力匹配存在缺口",
+              "专项费用为草案估算，后续可能引发价格调整或索赔",
+              "团队具体人员可用性尚待角色计划核对"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0003/design_002",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "technical_view": "总体设计、分区施工图与现场配合的框架合理，BIM合模与接口协调会安排可行，但水工、BIM、MEP及结构能力均依赖未确定的分包，技术自主性偏弱。",
+            "cost_view": "报价MOP 4,400,000低于上限，但专业分包暂定MOP 680,000且分包商未定，现场配合费MOP 360,000偏低，价格可能低估实际深化与现场投入。",
+            "owner_control_view": "接受业主审查与闭环管理，分包纳入质量管理体系的表述清楚，但独立检查与文档纪律的具体安排不如另一投标具体。",
+            "strengths": [
+              "报价在预算内且阶段费用分列清楚",
+              "分区滚动出图与接口协调会安排务实",
+              "单一责任主体立场明确"
+            ],
+            "concerns": [
+              "关键专业能力依赖未确定分包，交付信心不足",
+              "现场配合投入偏低，存在后期服务不足风险",
+              "人员尚未锁定，团队可用性证据薄弱"
+            ]
+          }
+        ],
+        "comparison_summary": "两家投标均在MOP 4,500,000上限内，中国建筑第五工程局有限公司在总体协调、审查流程与文档纪律上更完整，江苏乾堪建设工程有限公司价格略低但关键专业依赖未定分包且现场投入偏薄。综合能力匹配、风险控制与交付信心，前者更符合本包需要。",
+        "recommended_winner": "COMP-0169",
+        "owner_review_notes": "建议判给中国建筑第五工程局有限公司，但须在合同前要求其锁定水工专项及BIM、MEP、结构顾问的正式承诺与报价，并提交角色计划与团队可用性摘要。若顾问承诺无法落实，业主应保留重新评估价格基础或要求补充资源的权利。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0003",
+      "package_awards": [
+        {
+          "package_id": "CASE-0003/design",
+          "selected_bidder_id": "COMP-0169",
+          "selected_bidder_name": "中国建筑第五工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中国建筑第五工程局有限公司以单一责任设计主体身份投标，总体设计牵头、施工图分专业深化与现场配合的三阶段路线清晰，接口矩阵与独立复核安排具体，对业主审查关口和文档版本控制回应完整，资源容量充足，现场配合节奏有初步规划。其报价MOP 4,480,000在MOP 4,500,000上限内，费用按设计阶段分列并含风险预备费。相比江苏乾堪建设工程有限公司，后者报价MOP 4,400,000略低，但水工、BIM、MEP及结构能力均依赖未确定分包，现场配合投入偏低，人员尚未锁定，交付信心不足。因此判给中国建筑第五工程局有限公司，合同前澄清重点为锁定水工专项及BIM、MEP、结构顾问的正式承诺与报价，并提交角色计划与团队可用性摘要。",
+          "unresolved_condition_ids": [
+            "condition_e74897d93639bc033c51"
+          ],
+          "bid_assumptions": [
+            "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+            "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+            "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+            "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+            "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0169"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:33:05",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0169",
+          "package_id": "CASE-0003/design",
+          "decision": "bid",
+          "reason": "管理层判断：本包属于我方业务范围内的设计牵头工作，资源占用低、容量充足，设计能力与管理能力参数支持我方作为单一责任设计主体承接总体及施工图设计与现场设计配合。水工专项深度与BIM、MEP、结构协调属于可通过受控专业顾问补足的正常设计分包事项，由我方掌握设计阶段划分、审查关口、模型与接口协调、文档纪律与责任传递，不需要共享投标人身份或让渡设计主导权。价格按设计阶段与工作范围编制价格基础，配合业主对范围匹配度的定性比较。因此决定独立投标，专项顾问作为投标假设列明，不作为已落实承诺。",
+          "unresolved_condition_ids": [
+            "condition_e74897d93639bc033c51"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+            "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+            "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+            "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+            "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:05",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0003/design",
+          "decision": "bid",
+          "reason": "本包为设计服务，预算450万MOP，资源需求0.25，公司当前可用资源2.0，资源与工期压力可控。公司具备市政、水利水电、园林及房屋建筑设计与施工背景，能够作为单一责任主体承担总体及施工图设计协调与现场配合。水工专项、BIM、MEP、结构等能力缺口可通过常规专业分包和外部技术支持补足，由我方统一控制设计审查、质量文档和接口协调，不构成必须共享投标身份的组合体情形。价格按设计阶段与工作范围提交价格基础，业主定性比较，我方可在450万MOP上限内合理报价。综合判断，独立投标符合公司业务方向与风险承受度。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "水工专项、BIM、MEP及结构协调拟通过常规专业分包与外部技术支持补足，具体分包商尚未确定，相关承诺以投标文件中的范围与责任划分为准。",
+            "团队可用性以投标时提交的角色计划与团队可用性摘要为准，当前尚未完成人员锁定。",
+            "报价在450万MOP上限内按设计阶段与工作范围编制，最终价格以投标文件价格基础为准。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:17",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/design",
+          "bidder_id": "COMP-0169"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:17",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/design",
+          "bidder_id": "COMP-0295"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:17",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0003/design",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:25",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0003/design",
+          "recommended_winner": "COMP-0169"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:33:29",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0003/design",
+          "selected_bidder_id": "COMP-0169"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "作为业主，本局确认接受该合同草案（revision 0）的全部条款、资源承诺与义务。决策要点如下：\n\n1. 价格与范围：报价 MOP 4,480,000 在包预算 MOP 4,500,000 上限内，币种为 MOP，范围与包范围（总体及施工图设计与现场设计配合）一致；价格、币种、范围、成员（COMP-0169）与资源承诺（0.25）作为既定字段予以锁定，文本不得静默变更。\n\n2. 已披露的投标假设按风险分配接受，不视为缺失证据：水工专项及部分 BIM、MEP、结构协调顾问为拟聘外部支持、尚未取得正式承诺与报价，费用按草案估算计入价格基础；该等顾问纳入投标人设计管理与审查体系，责任传递由投标人掌握，不改变其单一责任主体身份。顾问锁定后复核价格构成与里程碑，但不得改变投标人身份、总体责任及本包固定价格上限。\n\n3. 本局对自身立场的决定（写入下一稿）：上述 MOP 4,480,000 为固定总价，涵盖本包全部设计阶段与现场配合工作范围；专项顾问草案费用已含于该固定价内，顾问锁定后价格调整仅在超出风险与变更预备费 MOP 160,000 且经本局书面批准时方可提出，否则由投标人承担。计量与付款以设计阶段交付物及审查关口为节点：总体设计审查通过、施工图送审受理、现场配合按里程碑进度分期支付。本局审查期限为收到完整审查包后 21 个日历日内出具意见，逾期未复视为无异议但不免除投标人质量责任。\n\n4. 未来交付物按义务处理：总体设计 6 个月内提交审查包、施工图第 15 个月末送审、第 16 个月起现场配合至工程完工，均作为可执行的合同义务，附审查与验收条件，不表示工程交付物或法定审批已完成。\n\n5. 未决条件 condition_e74897d93639bc033c51 保留为未决状态，在下一稿中明确其闭合条件与责任方；本接受不视为对该条件的放弃。\n\n6. 资源方面本包需求 0.25，投标人可用容量充足，本局采购行为不占用本局资源。综上，无重大未决风险需驳回或要求修订，予以接受。"
+          },
+          "COMP-0169": {
+            "action": "accept",
+            "reason": "我方作为投标人 COMP-0169，确认接受本修订草案（revision 0）的全部条款，并授权按所供条款、资源与义务执行。\n\n关键确认事项：\n1. 价格与币种：合同价 MOP 4,480,000，币种 MOP，在包预算 MOP 4,500,000 上限内；价格、币种、范围、成员与资源以规范字段为准，文本不改变上述字段。\n2. 资源承诺：COMP-0169 资源承诺 0.25（normalized_enterprise_capacity），工作份额 1.0；我方当前占用 0、可用 2.0，容量可支撑。\n3. 范围：总体及施工图设计与现场设计配合，与包范围一致。\n4. 已披露的投标假设按风险分配接受，不作为缺失证据：水工专项及部分 BIM、MEP、结构协调顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础；锁定后复核价格构成与里程碑，不改变投标人身份与总体责任。\n5. 未决条件 condition_e74897d93639bc033c51 保持未决状态，不视为已核实；相关交付在锁定前按草案排期。\n6. 本阶段仅授权可执行的模拟义务，不主张未来工程交付物或法定审批已经完成；未来交付物按带审查与验收条件的义务评估。\n\n关于我方自身立场（投标人）的明确决定，供写入下一稿：\n- 专项顾问费用 860,000 属固定价内草案估算项；顾问正式承诺与报价锁定后，若实际费用超出该估算，超出部分按变更管理流程提交业主审查，不单方调整合同总价。\n- 付款与里程碑按设计阶段交付物与审查关口设置：总体设计审查包（第6个月）、施工图中期检查（第12个月）、施工图送审（第15个月）、现场配合启动（第16个月起）；具体付款比例在合同阶段细化，我方接受以审查关口通过为付款触发条件。\n- 业主审查意见闭合周期我方按合理期限配合，具体审查期限由业主决定并写入下一稿。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+          "simulation_id": "SIMC47C6B63",
+          "project_id": "CASE-0003",
+          "package_id": "CASE-0003/design",
+          "session_id": "SIMC47C6B63/CASE-0003/design/round-1",
+          "snapshot_version": "3bee022215332d018af139ea5b2eb7ccd952c186fa2ab9b784a1affa8b67107e",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0003/design_001",
+          "bidder_id": "COMP-0169",
+          "lead_id": "COMP-0169",
+          "members": [
+            "COMP-0169"
+          ],
+          "price": 4480000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0169": 0.25
+          },
+          "work_shares": {
+            "COMP-0169": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "5082cb87dab389bc75179c9c22befa9331f09459954809f73d87c64660efa9d1",
+          "terms": {
+            "schedule_commitment": "总体设计自启动起6个月内提交审查包；施工图设计于第15个月末完成送审；现场设计配合自施工阶段起持续至工程完工，与24个月工程工期衔接。里程碑：第2个月设计基础与角色计划确认，第6个月总体设计审查，第12个月施工图中期检查，第15个月施工图送审，第16个月起现场配合启动。专项顾问承诺未锁定前，相关交付按草案排期，锁定后复核里程碑。",
+            "risk_response": "主要风险与应对：\n1. 水工专项深度证据不足：以专项顾问配置与审查关口前置化解，顾问成果经我方审查后提交，责任传递由我方控制。\n2. 专项顾问承诺与报价未锁定：费用按草案估算计入价格基础，锁定后复核价格构成，不改变投标人身份与总体责任。\n3. 现场配合投入波动：以里程碑计划与变更管理流程控制，派驻与远程结合调节投入节奏。\n4. 专业接口冲突：以接口矩阵与BIM碰撞检查在出图前闭合，减少施工阶段返工。\n5. 设计变更：建立变更评估与图纸修订流程，变更影响及时反馈业主审查。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0003/design_001",
+              "package_id": "CASE-0003/design",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0169",
+              "bidder_name": "中国建筑第五工程局有限公司",
+              "technical_proposal": "我方以中国建筑第五工程局有限公司单一责任设计主体身份承接九澳水库扩容建造工程总体及施工图设计与现场设计配合包。技术路线分三阶段推进：\n\n一、总体设计阶段：完成库容由34万增至74万立方米方案的水工总体布局复核、公共通道布局设计、坝体与溢洪及取水设施总体协调，形成总体设计文件与专业接口清单，提交业主审查。\n\n二、施工图设计阶段：按水工、结构、MEP、公共通道分专业深化，BIM模型按专业分模并做碰撞与净高检查，结构与MEP接口以接口矩阵逐项闭合，出图前完成内部校审与独立复核。\n\n三、现场设计配合阶段：与24个月工程工期衔接，派驻与远程结合，处理现场释疑、材料与工艺确认、设计变更评估与图纸修订，保持文档纪律与版本控制。\n\n能力匹配说明：我方具备建筑、市政、公路行业设计及工程管理服务能力，可承担总体设计牵头与施工图深化管理；水工专项深度与部分BIM、MEP、结构协调以受控专业顾问补足，纳入我方设计管理与审查体系，接口与责任传递由我方掌握，不改变投标人身份。专项顾问为拟聘外部支持，尚未取得正式承诺与报价，相关费用按草案估算计入价格基础。",
+              "implementation_plan": "阶段划分与交付物：\n1. 启动与总体设计（第1至第6个月）：角色计划与团队可用性摘要定稿、设计基础资料核对、总体设计方案与公共通道布局、专业接口清单、总体设计审查包。\n2. 施工图设计（第7至第15个月）：分专业施工图、BIM模型协调报告、MEP与结构接口闭合记录、内部校审与独立复核记录、施工图送审包。\n3. 施工配合与现场设计配合（第16个月起至工程完工）：现场释疑响应、变更评估、图纸修订与竣工图配合。\n\n组织安排：设计总负责人统筹，设总体协调、水工专项、结构、MEP、BIM、文档控制角色；专项顾问按接口清单交付，由我方审查后对外提交。\n\n审查关口：总体设计审查、施工图内部校审、独立复核、业主审查意见闭合四道关口，每道关口留存检查记录。\n\n资源安排：本包资源需求0.25，我方当前占用0、可用2.0，容量可支撑；现场配合按施工阶段派驻与远程结合，具体节奏在进度视图中细化。",
+              "quotation": 4480000.0,
+              "schedule_commitment": "总体设计自启动起6个月内提交审查包；施工图设计于第15个月末完成送审；现场设计配合自施工阶段起持续至工程完工，与24个月工程工期衔接。里程碑：第2个月设计基础与角色计划确认，第6个月总体设计审查，第12个月施工图中期检查，第15个月施工图送审，第16个月起现场配合启动。专项顾问承诺未锁定前，相关交付按草案排期，锁定后复核里程碑。",
+              "compliance_statement": "我方接受业主对设计阶段交付物、审查关口与文档纪律的审查控制。按业主要求提交角色计划与团队可用性摘要、交付方法与设计阶段划分、质量方法与设计审查流程、价格基础与费用构成、进度视图与里程碑计划、风险应对与设计变更管理六项内容。设计审查按内部校审、独立复核、业主审查意见闭合的顺序执行，审查记录与模型版本纳入文档控制。价格按设计阶段与工作范围分列，便于业主对范围匹配度作定性比较。",
+              "risk_response": "主要风险与应对：\n1. 水工专项深度证据不足：以专项顾问配置与审查关口前置化解，顾问成果经我方审查后提交，责任传递由我方控制。\n2. 专项顾问承诺与报价未锁定：费用按草案估算计入价格基础，锁定后复核价格构成，不改变投标人身份与总体责任。\n3. 现场配合投入波动：以里程碑计划与变更管理流程控制，派驻与远程结合调节投入节奏。\n4. 专业接口冲突：以接口矩阵与BIM碰撞检查在出图前闭合，减少施工阶段返工。\n5. 设计变更：建立变更评估与图纸修订流程，变更影响及时反馈业主审查。",
+              "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计主体身份投标CASE-0003/design总体及施工图设计与现场设计配合包，报价MOP 4,480,000，在MOP 4,500,000上限内。\n\n价格基础按设计阶段与工作范围编制：总体设计阶段780,000；施工图设计阶段1,520,000；BIM协调与模型审查430,000；水工专项及专业顾问草案860,000；现场设计配合520,000；文档控制、质量审查与保险管理费210,000；风险与变更预备费160,000。合计4,480,000。\n\n费用构成说明：主体为设计人员工时与审查投入；水工专项与部分BIM、MEP、结构协调为拟聘外部支持，尚未取得正式承诺与报价，按草案估算计入，属投标假设而非已落实承诺；风险预备费覆盖顾问锁定与审查闭合的不确定性。\n\n资源方面本包需求0.25，我方可用2.0，容量充足。付款与里程碑按设计阶段交付物与审查关口设置，具体在合同阶段细化。",
+              "quotation_breakdown": [
+                {
+                  "item": "总体设计阶段费用",
+                  "amount": 780000,
+                  "basis": "设计总负责人与总体协调、公共通道布局、水工总体复核等角色投入，按阶段工作量与审查轮次估算"
+                },
+                {
+                  "item": "施工图设计阶段费用",
+                  "amount": 1520000,
+                  "basis": "水工、结构、MEP、公共通道分专业深化出图，含内部校审与独立复核工时"
+                },
+                {
+                  "item": "BIM协调与模型审查费用",
+                  "amount": 430000,
+                  "basis": "分模建模、碰撞与净高检查、模型审查会与协调报告，按模型审查轮次估算"
+                },
+                {
+                  "item": "水工专项及专业顾问草案费用",
+                  "amount": 860000,
+                  "basis": "拟聘外部专项顾问草案估算，尚未取得正式承诺与报价，含我方管理审查与责任传递成本"
+                },
+                {
+                  "item": "现场设计配合费用",
+                  "amount": 520000,
+                  "basis": "施工阶段派驻与远程结合的现场释疑、变更评估与图纸修订投入，按工程工期配合节奏估算"
+                },
+                {
+                  "item": "文档控制、质量审查与保险管理费",
+                  "amount": 210000,
+                  "basis": "文档版本控制、审查记录归档、设计责任保险与管理分摊"
+                },
+                {
+                  "item": "风险与变更预备费",
+                  "amount": 160000,
+                  "basis": "专项顾问承诺未锁定、审查意见闭合与现场变更响应的风险预备"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_e74897d93639bc033c51"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+                "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+                "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+                "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+                "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "总体及施工图设计与现场设计配合",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "5082cb87dab389bc75179c9c22befa9331f09459954809f73d87c64660efa9d1"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0003/design": {
+          "package_type": "design",
+          "required_company_role": "designer",
+          "scope": "总体及施工图设计与现场设计配合",
+          "budget": 4500000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/design",
+    "session_id": "SIMC47C6B63/CASE-0003/design/round-1",
+    "snapshot_version": "3bee022215332d018af139ea5b2eb7ccd952c186fa2ab9b784a1affa8b67107e",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0003/design_001",
+    "bidder_id": "COMP-0169",
+    "lead_id": "COMP-0169",
+    "members": [
+      "COMP-0169"
+    ],
+    "price": 4480000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0169": 0.25
+    },
+    "work_shares": {
+      "COMP-0169": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0169": true
+    },
+    "signed_terms_hash": "5082cb87dab389bc75179c9c22befa9331f09459954809f73d87c64660efa9d1",
+    "terms": {
+      "schedule_commitment": "总体设计自启动起6个月内提交审查包；施工图设计于第15个月末完成送审；现场设计配合自施工阶段起持续至工程完工，与24个月工程工期衔接。里程碑：第2个月设计基础与角色计划确认，第6个月总体设计审查，第12个月施工图中期检查，第15个月施工图送审，第16个月起现场配合启动。专项顾问承诺未锁定前，相关交付按草案排期，锁定后复核里程碑。",
+      "risk_response": "主要风险与应对：\n1. 水工专项深度证据不足：以专项顾问配置与审查关口前置化解，顾问成果经我方审查后提交，责任传递由我方控制。\n2. 专项顾问承诺与报价未锁定：费用按草案估算计入价格基础，锁定后复核价格构成，不改变投标人身份与总体责任。\n3. 现场配合投入波动：以里程碑计划与变更管理流程控制，派驻与远程结合调节投入节奏。\n4. 专业接口冲突：以接口矩阵与BIM碰撞检查在出图前闭合，减少施工阶段返工。\n5. 设计变更：建立变更评估与图纸修订流程，变更影响及时反馈业主审查。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0003/design_001",
+        "package_id": "CASE-0003/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0169",
+        "bidder_name": "中国建筑第五工程局有限公司",
+        "technical_proposal": "我方以中国建筑第五工程局有限公司单一责任设计主体身份承接九澳水库扩容建造工程总体及施工图设计与现场设计配合包。技术路线分三阶段推进：\n\n一、总体设计阶段：完成库容由34万增至74万立方米方案的水工总体布局复核、公共通道布局设计、坝体与溢洪及取水设施总体协调，形成总体设计文件与专业接口清单，提交业主审查。\n\n二、施工图设计阶段：按水工、结构、MEP、公共通道分专业深化，BIM模型按专业分模并做碰撞与净高检查，结构与MEP接口以接口矩阵逐项闭合，出图前完成内部校审与独立复核。\n\n三、现场设计配合阶段：与24个月工程工期衔接，派驻与远程结合，处理现场释疑、材料与工艺确认、设计变更评估与图纸修订，保持文档纪律与版本控制。\n\n能力匹配说明：我方具备建筑、市政、公路行业设计及工程管理服务能力，可承担总体设计牵头与施工图深化管理；水工专项深度与部分BIM、MEP、结构协调以受控专业顾问补足，纳入我方设计管理与审查体系，接口与责任传递由我方掌握，不改变投标人身份。专项顾问为拟聘外部支持，尚未取得正式承诺与报价，相关费用按草案估算计入价格基础。",
+        "implementation_plan": "阶段划分与交付物：\n1. 启动与总体设计（第1至第6个月）：角色计划与团队可用性摘要定稿、设计基础资料核对、总体设计方案与公共通道布局、专业接口清单、总体设计审查包。\n2. 施工图设计（第7至第15个月）：分专业施工图、BIM模型协调报告、MEP与结构接口闭合记录、内部校审与独立复核记录、施工图送审包。\n3. 施工配合与现场设计配合（第16个月起至工程完工）：现场释疑响应、变更评估、图纸修订与竣工图配合。\n\n组织安排：设计总负责人统筹，设总体协调、水工专项、结构、MEP、BIM、文档控制角色；专项顾问按接口清单交付，由我方审查后对外提交。\n\n审查关口：总体设计审查、施工图内部校审、独立复核、业主审查意见闭合四道关口，每道关口留存检查记录。\n\n资源安排：本包资源需求0.25，我方当前占用0、可用2.0，容量可支撑；现场配合按施工阶段派驻与远程结合，具体节奏在进度视图中细化。",
+        "quotation": 4480000.0,
+        "schedule_commitment": "总体设计自启动起6个月内提交审查包；施工图设计于第15个月末完成送审；现场设计配合自施工阶段起持续至工程完工，与24个月工程工期衔接。里程碑：第2个月设计基础与角色计划确认，第6个月总体设计审查，第12个月施工图中期检查，第15个月施工图送审，第16个月起现场配合启动。专项顾问承诺未锁定前，相关交付按草案排期，锁定后复核里程碑。",
+        "compliance_statement": "我方接受业主对设计阶段交付物、审查关口与文档纪律的审查控制。按业主要求提交角色计划与团队可用性摘要、交付方法与设计阶段划分、质量方法与设计审查流程、价格基础与费用构成、进度视图与里程碑计划、风险应对与设计变更管理六项内容。设计审查按内部校审、独立复核、业主审查意见闭合的顺序执行，审查记录与模型版本纳入文档控制。价格按设计阶段与工作范围分列，便于业主对范围匹配度作定性比较。",
+        "risk_response": "主要风险与应对：\n1. 水工专项深度证据不足：以专项顾问配置与审查关口前置化解，顾问成果经我方审查后提交，责任传递由我方控制。\n2. 专项顾问承诺与报价未锁定：费用按草案估算计入价格基础，锁定后复核价格构成，不改变投标人身份与总体责任。\n3. 现场配合投入波动：以里程碑计划与变更管理流程控制，派驻与远程结合调节投入节奏。\n4. 专业接口冲突：以接口矩阵与BIM碰撞检查在出图前闭合，减少施工阶段返工。\n5. 设计变更：建立变更评估与图纸修订流程，变更影响及时反馈业主审查。",
+        "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计主体身份投标CASE-0003/design总体及施工图设计与现场设计配合包，报价MOP 4,480,000，在MOP 4,500,000上限内。\n\n价格基础按设计阶段与工作范围编制：总体设计阶段780,000；施工图设计阶段1,520,000；BIM协调与模型审查430,000；水工专项及专业顾问草案860,000；现场设计配合520,000；文档控制、质量审查与保险管理费210,000；风险与变更预备费160,000。合计4,480,000。\n\n费用构成说明：主体为设计人员工时与审查投入；水工专项与部分BIM、MEP、结构协调为拟聘外部支持，尚未取得正式承诺与报价，按草案估算计入，属投标假设而非已落实承诺；风险预备费覆盖顾问锁定与审查闭合的不确定性。\n\n资源方面本包需求0.25，我方可用2.0，容量充足。付款与里程碑按设计阶段交付物与审查关口设置，具体在合同阶段细化。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计阶段费用",
+            "amount": 780000,
+            "basis": "设计总负责人与总体协调、公共通道布局、水工总体复核等角色投入，按阶段工作量与审查轮次估算"
+          },
+          {
+            "item": "施工图设计阶段费用",
+            "amount": 1520000,
+            "basis": "水工、结构、MEP、公共通道分专业深化出图，含内部校审与独立复核工时"
+          },
+          {
+            "item": "BIM协调与模型审查费用",
+            "amount": 430000,
+            "basis": "分模建模、碰撞与净高检查、模型审查会与协调报告，按模型审查轮次估算"
+          },
+          {
+            "item": "水工专项及专业顾问草案费用",
+            "amount": 860000,
+            "basis": "拟聘外部专项顾问草案估算，尚未取得正式承诺与报价，含我方管理审查与责任传递成本"
+          },
+          {
+            "item": "现场设计配合费用",
+            "amount": 520000,
+            "basis": "施工阶段派驻与远程结合的现场释疑、变更评估与图纸修订投入，按工程工期配合节奏估算"
+          },
+          {
+            "item": "文档控制、质量审查与保险管理费",
+            "amount": 210000,
+            "basis": "文档版本控制、审查记录归档、设计责任保险与管理分摊"
+          },
+          {
+            "item": "风险与变更预备费",
+            "amount": 160000,
+            "basis": "专项顾问承诺未锁定、审查意见闭合与现场变更响应的风险预备"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_e74897d93639bc033c51"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工专项设计顾问为拟聘外部支持，尚未取得正式承诺与报价，费用按草案估算计入价格基础",
+          "BIM、MEP、结构协调顾问为拟聘外部支持，纳入我方设计管理与审查体系，责任传递由我方控制",
+          "团队具体人员可用性以提交前角色计划与团队可用性摘要核对为准",
+          "现场设计配合按施工阶段派驻与远程结合安排，具体投入节奏在进度视图中细化",
+          "报价在MOP 4,500,000上限内按设计阶段与工作范围编制价格基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "总体及施工图设计与现场设计配合",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

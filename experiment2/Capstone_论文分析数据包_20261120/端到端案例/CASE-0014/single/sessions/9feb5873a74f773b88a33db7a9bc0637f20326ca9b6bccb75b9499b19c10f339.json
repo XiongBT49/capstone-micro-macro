@@ -1,0 +1,1528 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMB0BD209B/CASE-0014/cost/round-1",
+  "snapshot": {
+    "simulation_id": "SIMB0BD209B",
+    "project_id": "CASE-0014",
+    "package_id": "CASE-0014/cost",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 2250000.0,
+      "project": {
+        "project_id": "CASE-0014",
+        "name": "氹仔污水厂排放管改道及周边平整工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；；氹仔污水厂排放管改道及周边平整工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0014/cost",
+        "project_id": "CASE-0014",
+        "kind": "cost_consulting",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "造价咨询与合同成本管理",
+        "scope": "造价咨询与合同成本管理",
+        "budget": 2250000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0286",
+          "COMP-0208"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0286": {
+        "entity_id": "COMP-0286",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0286",
+          "company_name": "招商局重庆交通科研设计院有限公司",
+          "company_role": "supervisor",
+          "profile": "本地企业资料：一般项目：从事公路与城市市政道路、桥梁、隧道、交通工程、公路客车及专用车、汽车运用、环保与节能、计算机应用领域的科学研究、技术开发、技术转让、技术咨询服务。（以下经营范围凭相关资质证书执业）公路行业设计甲级，市政行业（道路工程、桥梁工程、城市隧道工程）设计甲级，市政行业（燃气、轨道交通除外）设计乙级，建筑行业（建筑工程）设计乙级，风景园林工程设计专项甲级，工程勘察综合类甲级，工程咨询：公路专业甲级，工程咨询：市政公用工程（市政交通）专业甲级，建设项目环境影响评价（甲级），水土保持方案编制（四星级），地质灾害治理工程施工（乙级），公路工程试验检测综合甲级，公路工程桥梁隧道工程专项试验检测。承包与其实力、规模、业绩相适应的国外工程项目，生产、销售建筑材料（不含危险化学品），仪器仪表、普通机械设备开发、生产、销售与安装（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0286",
+          "name": "招商局重庆交通科研设计院有限公司",
+          "role": "QS",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0208": {
+        "entity_id": "COMP-0208",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0208",
+          "company_name": "中铁武汉大桥工程咨询监理有限公司",
+          "company_role": "supervisor",
+          "profile": "本地企业资料：工程监理；工程测量；工程试验检测；市政基础设施工程：一类（道路、桥梁工程、轨道交通勘察）施工图审查；工程代建、工程项目管理；工程招标代理、工程造价咨询服务、工程咨询及技术咨询服务。（涉及许可经营项目，应取得相关部门许可后方可经营）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0208",
+          "name": "中铁武汉大桥工程咨询监理有限公司",
+          "role": "QS",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "8cd68fc744393942aedff7669c9ff7b7aba711eafec9c9e1ab6edff48fb07548"
+  },
+  "spec": {
+    "package_id": "CASE-0014/cost",
+    "project_id": "CASE-0014",
+    "kind": "cost_consulting",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "造价咨询与合同成本管理",
+    "scope": "造价咨询与合同成本管理",
+    "budget": 2250000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0286",
+      "COMP-0208"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0014",
+      "project_name": "氹仔污水厂排放管改道及周边平整工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；；氹仔污水厂排放管改道及周边平整工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0014",
+      "project_scope": "本项目为氹仔污水厂排放管改道及周边平整工程，属市政与公共基础设施。业主为澳门特别行政区政府公共建设局，采用DBB交付模式，工期24个月，总预算MOP 150,000,000。本次采购仅涵盖经授权的造价咨询与合同成本管理服务包（CASE-0014/cost），预算MOP 2,250,000，服务范围包括造价咨询、合同成本管理及相关成本审查，不涉及政府审批或现场监督。",
+      "functional_requirements": [
+        "提供排放管改道及周边平整工程的造价咨询服务，包括成本估算、预算编制与成本控制建议。",
+        "提供合同成本管理服务，包括合同条款成本审查、付款审核、变更成本评估与索赔分析。",
+        "协助业主进行成本风险识别与成本风险应对建议。",
+        "提供定期成本报告与成本趋势分析，支持业主决策。",
+        "确保造价咨询成果与设计、施工进度协调，满足业主评审与验收要求。"
+      ],
+      "technical_requirements": [
+        "采用BIM协调进行工程量与成本关联分析。",
+        "建立成本分解结构（CBS）与工程量清单（BQ）的对应关系。",
+        "提供基于MOP的造价数据库与市场询价支持。",
+        "确保造价文件与设计图纸、技术规范一致。",
+        "建立成本变更控制流程与文档记录。",
+        "提供可维护的成本管理文档与知识转移。",
+        "满足业主验收路径：阶段性成本报告提交、审查与确认。",
+        "考虑能源使用目标与可持续性目标在成本评估中的体现。"
+      ],
+      "budget_policy": "本包预算为MOP 2,250,000，属业主额外成本。业主将基于报价合理性、服务范围完整性与成本控制能力进行定性比较。报价应涵盖全部授权服务范围，并明确费率结构、付款节点与额外服务计费方式。业主保留根据实际服务需求调整工作范围与相应费用的权利，但须遵循变更控制程序。",
+      "schedule_policy": "服务期应与项目24个月工期匹配，覆盖设计、招标、施工及验收阶段。业主评审时间应纳入进度计划，包接口时间（与设计、施工、监督包）需明确协调。公共访问协调时间应在成本评估中予以考虑。里程碑应现实可行，并预留业主审查与确认时间。",
+      "compliance_requirements": [
+        "业主评审节奏：每月成本报告评审，关键节点专题评审。",
+        "问题升级路径：成本顾问向业主项目代表报告，重大问题提交业主决策。",
+        "文档纪律：所有成本文件须版本控制、归档并可追溯。",
+        "接口签署：成本文件与设计、施工、监督包的接口须经业主确认。",
+        "公共访问协调：成本评估须考虑公共访问安排的影响。",
+        "质量目标跟踪：定期评估成本咨询成果与质量目标的符合性。",
+        "安全期望跟踪：成本评估中纳入安全措施费用审查。",
+        "变更控制纪律：任何范围或预算变更须经业主宏观批准。"
+      ],
+      "risk_priorities": [
+        "成本超支风险：通过持续成本监控与预警机制控制。",
+        "合同索赔风险：通过严谨的合同成本审查与文档管理降低。",
+        "市场材料价格波动风险：在成本估算中考虑价格指数调整。",
+        "工期延误导致的成本增加风险：在进度成本关联分析中识别。",
+        "接口协调风险：与设计、施工、监督包的成本接口须明确。",
+        "公共访问与安全期望风险：在成本评估中充分考虑相关措施费用。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0014/cost",
+          "package_type": "supervision",
+          "package_name": "造价咨询与合同成本管理",
+          "scope": "Authorized scope: 造价咨询与合同成本管理\nBuyer refinement: 造价咨询与合同成本管理，包括成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更成本评估、索赔分析及成本报告。不涉及现场监督或政府审批。",
+          "required_company_role": "supervisor",
+          "qualification_requirements": [
+            "造价咨询与合同成本管理能力",
+            "成本估算与预算编制能力",
+            "合同成本审查与付款审核能力",
+            "变更与索赔成本分析能力",
+            "成本报告与文档管理能力",
+            "与设计、施工、监督包的接口协调能力",
+            "独立成本审查与质量保证能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "交付方法与质量方法",
+            "价格基础与费率结构",
+            "进度视图与里程碑计划",
+            "风险应对方案",
+            "类似项目造价咨询经验（模拟）"
+          ],
+          "pricing_requirements": "基于服务范围与工作量的固定总价或费率制报价，明确付款节点与额外服务计费方式。报价以MOP计，须涵盖全部授权服务。\nBinding currency: MOP; package ceiling: 2250000.0.",
+          "evaluation_criteria": [
+            "能力匹配",
+            "价格合理性",
+            "交付信心",
+            "风险控制",
+            "人员配置现实性",
+            "业主评审清晰度",
+            "文档纪律",
+            "质量目标契合",
+            "接口协调",
+            "独立性保证"
+          ],
+          "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，并考虑人员配置现实性与文档纪律。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0014/cost",
+        "package_type": "supervision",
+        "package_name": "造价咨询与合同成本管理",
+        "scope": "Authorized scope: 造价咨询与合同成本管理\nBuyer refinement: 造价咨询与合同成本管理，包括成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更成本评估、索赔分析及成本报告。不涉及现场监督或政府审批。",
+        "required_company_role": "supervisor",
+        "qualification_requirements": [
+          "造价咨询与合同成本管理能力",
+          "成本估算与预算编制能力",
+          "合同成本审查与付款审核能力",
+          "变更与索赔成本分析能力",
+          "成本报告与文档管理能力",
+          "与设计、施工、监督包的接口协调能力",
+          "独立成本审查与质量保证能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "交付方法与质量方法",
+          "价格基础与费率结构",
+          "进度视图与里程碑计划",
+          "风险应对方案",
+          "类似项目造价咨询经验（模拟）"
+        ],
+        "pricing_requirements": "基于服务范围与工作量的固定总价或费率制报价，明确付款节点与额外服务计费方式。报价以MOP计，须涵盖全部授权服务。\nBinding currency: MOP; package ceiling: 2250000.0.",
+        "evaluation_criteria": [
+          "能力匹配",
+          "价格合理性",
+          "交付信心",
+          "风险控制",
+          "人员配置现实性",
+          "业主评审清晰度",
+          "文档纪律",
+          "质量目标契合",
+          "接口协调",
+          "独立性保证"
+        ],
+        "owner_decision_policy": "业主将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，并考虑人员配置现实性与文档纪律。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0286",
+        "company_name": "招商局重庆交通科研设计院有限公司",
+        "company_role": "supervisor",
+        "profile": "本地企业资料：一般项目：从事公路与城市市政道路、桥梁、隧道、交通工程、公路客车及专用车、汽车运用、环保与节能、计算机应用领域的科学研究、技术开发、技术转让、技术咨询服务。（以下经营范围凭相关资质证书执业）公路行业设计甲级，市政行业（道路工程、桥梁工程、城市隧道工程）设计甲级，市政行业（燃气、轨道交通除外）设计乙级，建筑行业（建筑工程）设计乙级，风景园林工程设计专项甲级，工程勘察综合类甲级，工程咨询：公路专业甲级，工程咨询：市政公用工程（市政交通）专业甲级，建设项目环境影响评价（甲级），水土保持方案编制（四星级），地质灾害治理工程施工（乙级），公路工程试验检测综合甲级，公路工程桥梁隧道工程专项试验检测。承包与其实力、规模、业绩相适应的国外工程项目，生产、销售建筑材料（不含危险化学品），仪器仪表、普通机械设备开发、生产、销售与安装（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0208",
+        "company_name": "中铁武汉大桥工程咨询监理有限公司",
+        "company_role": "supervisor",
+        "profile": "本地企业资料：工程监理；工程测量；工程试验检测；市政基础设施工程：一类（道路、桥梁工程、轨道交通勘察）施工图审查；工程代建、工程项目管理；工程招标代理、工程造价咨询服务、工程咨询及技术咨询服务。（涉及许可经营项目，应取得相关部门许可后方可经营）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目统筹主管",
+          "personal_profile": "压力下先稳住工期与接口，习惯把复杂问题拆成可交付节点；最先注意跨部门依赖与现场可行性，讨论中会不断追问谁负责收口，容易把技术争议拉回时间与资源约束。",
+          "responsibilities": [
+            "统筹氹仔污水厂排放管改道及周边平整工程整体推进",
+            "协调设计、施工与监管服务之间的接口",
+            "主持包件划分与招标包协调",
+            "跟踪工期与关键节点"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先讲结论再列依据，偏好用节点表与责任分工说话。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感且保守，压力下倾向先锁定报价基础与支付风险；最先注意报价依据是否完整、变更空间是否过大，讨论中会带来预算纪律与成本控制的张力，不轻易接受模糊估算。",
+          "responsibilities": [
+            "编制与复核项目造价控制目标",
+            "评审投标报价基础与价格合理性",
+            "组织支付评审与支付评估",
+            "监控成本偏差与变更影响"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，习惯用分项数字与假设条件说明立场，语气克制。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "工程品质",
+          "position": "品质与验收统筹",
+          "personal_profile": "以质量目标为锚，压力下先看独立检查与验收路径是否闭合；最先注意施工可行性与质量风险点，讨论中会坚持质量复核不能被工期压缩，常与成本与进度视角形成张力。",
+          "responsibilities": [
+            "制定质量目标与品质控制计划",
+            "组织独立检查与质量复核",
+            "审核施工方案中的质量控制要点",
+            "跟踪验收与缺陷整改"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实细致，喜欢用检查清单与风险案例表达意见，态度坚定。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "合约与采购",
+          "position": "招标包与合约协调主管",
+          "personal_profile": "重视程序与文档纪律，压力下先确认招标包边界与评审规则是否清楚；最先注意合约条款与责任划分的漏洞，讨论中会提醒程序合规与文件一致性，倾向放慢节奏换取可审计性。",
+          "responsibilities": [
+            "编制招标包划分与采购计划",
+            "协调招标文件与合约条款",
+            "组织评标程序与文档纪律",
+            "管理组合体与监管服务的合约接口"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨稳健，常用条款依据与程序步骤支撑观点，表达平和。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "对外协调",
+          "position": "业主界面与持份者协调",
+          "personal_profile": "擅长在多方诉求中寻找可接受方案，压力下先判断公众与使用方的敏感点；最先注意沟通时机与信息一致性，讨论中会带来外部接受度与舆情风险的张力，倾向提前释放信息。",
+          "responsibilities": [
+            "对接使用方与相关持份者",
+            "协调业主审查与对外沟通",
+            "汇总现场报告与社区关注",
+            "管理信息发布与回应节奏"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "亲和圆融，善于复述各方立场后提出折中方案。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_郑美玲",
+          "agent_name": "郑美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "设计与技术",
+          "position": "设计协调与技术审查",
+          "personal_profile": "技术导向且注重可建造性，压力下先核对设计输入与现场条件是否匹配；最先注意排放管改道的技术接口与周边平整的衔接，讨论中会坚持设计协调前置，容易与赶工倾向产生张力。",
+          "responsibilities": [
+            "协调设计输入与设计审查",
+            "核对排放管改道技术接口",
+            "评估周边平整与现场条件衔接",
+            "跟踪可持续目标与技术标准"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "理性克制，偏好用技术依据与图纸逻辑说明问题。"
+        }
+      ],
+      "COMP-0286": [
+        {
+          "agent_id": "COMP-0286_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0286",
+          "company_role": "supervisor",
+          "department": "造价咨询部",
+          "position": "首席造价工程师",
+          "personal_profile": "在压力下首先关注合同成本边界与支付条款的严谨性，习惯用结构化清单核对每一项造价依据。他倾向于在早期就锁定成本风险，对模糊的计量规则会反复追问，给团队带来一种必须把数字落到实处的紧迫感。",
+          "responsibilities": [
+            "统筹造价咨询与合同成本管理包的整体交付",
+            "审核工程量清单与成本估算的合理性",
+            "主持支付评审与变更成本评估",
+            "对接业主进行成本汇报与谈判"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、数据驱动，喜欢用表格和对比数字说话，对不确定事项会明确标注假设条件。"
+        },
+        {
+          "agent_id": "COMP-0286_02_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0286",
+          "company_role": "supervisor",
+          "department": "合同管理部",
+          "position": "合同经理",
+          "personal_profile": "对合同条款的措辞和风险分配极为敏感，在讨论中总是先确认责任归属和索赔路径。她倾向于用保守的合同解释来保护公司，但也会在证据充分时灵活调整，给团队带来一种法律合规优先的张力。",
+          "responsibilities": [
+            "管理合同文件与条款解释",
+            "评估合同变更与索赔的合规性",
+            "协调业主与承包商的合同界面",
+            "维护文档纪律与版本控制"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "措辞严谨，习惯引用合同条款编号，喜欢用书面确认来固化口头共识。"
+        },
+        {
+          "agent_id": "COMP-0286_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0286",
+          "company_role": "supervisor",
+          "department": "项目管理部",
+          "position": "项目控制经理",
+          "personal_profile": "在压力下优先关注工期与资源匹配，对进度偏差和资源冲突非常警觉。他倾向于用实际可用资源来倒推计划可行性，经常在讨论中提出资源瓶颈问题，给团队带来一种执行层面的现实约束感。",
+          "responsibilities": [
+            "编制与维护项目控制计划",
+            "监控工期与资源使用情况",
+            "协调现场报告与进度评审",
+            "评估风险应对对成本的影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实、节奏快，喜欢用里程碑和资源负荷图来沟通，对拖延容忍度低。"
+        },
+        {
+          "agent_id": "COMP-0286_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0286",
+          "company_role": "supervisor",
+          "department": "质量与技术部",
+          "position": "质量审核主任",
+          "personal_profile": "首先关注质量目标的可测量性和独立复核机制，对任何未经独立检查的成果都持保留态度。她倾向于在流程中嵌入检查点，给团队带来一种质量优先于速度的张力，但也会在风险可控时接受并行推进。",
+          "responsibilities": [
+            "制定质量审核与独立检查方案",
+            "复核造价成果的准确性与一致性",
+            "跟踪质量目标的达成情况",
+            "组织内部质量评审会议"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，喜欢用检查表和证据链来支撑结论，对模糊表述会要求澄清。"
+        },
+        {
+          "agent_id": "COMP-0286_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0286",
+          "company_role": "supervisor",
+          "department": "客户与市场部",
+          "position": "业主接口经理",
+          "personal_profile": "在压力下首先考虑业主的显性与隐性期望，善于捕捉业主未明说的优先级。他倾向于用关系维护来换取信息透明，给团队带来一种客户导向的柔性视角，但有时会与内部严谨流程产生摩擦。",
+          "responsibilities": [
+            "维护业主关系与期望管理",
+            "协调业主评审与反馈闭环",
+            "收集业主需求并转化为内部任务",
+            "协助准备业主汇报材料"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "温和、善于倾听，喜欢用非正式沟通铺垫正式议题，注重措辞的接受度。"
+        }
+      ],
+      "COMP-0208": [
+        {
+          "agent_id": "COMP-0208_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "造价咨询部",
+          "position": "首席造价顾问",
+          "personal_profile": "在压力下优先核对合同成本边界与支付条款，习惯先看报价依据和变更机制。讨论中常把技术方案拉回成本可控性，提醒团队不要为争取判给而低估风险准备。",
+          "responsibilities": [
+            "统筹造价咨询与合同成本管理方案",
+            "审核报价依据与成本控制目标",
+            "主持支付评审与成本复核",
+            "协调设计变更的费用影响评估"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、数据导向，先给结论再列依据，对模糊表述会追问具体数字。"
+        },
+        {
+          "agent_id": "COMP-0208_02_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "合同管理部",
+          "position": "合同经理",
+          "personal_profile": "对合同条款的权责对等高度敏感，压力下会反复确认付款条件与索赔路径。她倾向于把业主接口和承包商义务写清楚，常提醒团队文档纪律是成本控制的第一道防线。",
+          "responsibilities": [
+            "编制合同成本管理框架与支付评审流程",
+            "协调业主与承包商的合同界面",
+            "跟踪付款评审与成本文档纪律",
+            "评估合同风险与索赔应对"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，善用条款编号和流程步骤，语气稳健但坚持原则。"
+        },
+        {
+          "agent_id": "COMP-0208_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "工程监理部",
+          "position": "驻地监理工程师",
+          "personal_profile": "长期关注现场实际进度与质量目标，压力下先看施工顺序和资源到位情况。他容易对纯纸面成本优化提出质疑，强调现场签证和实际完成量必须与支付评审一致。",
+          "responsibilities": [
+            "提供现场进度与完成量核实意见",
+            "参与质量目标跟踪与现场报告",
+            "配合支付评审的现场核实",
+            "反馈施工风险对成本的影响"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、简短，喜欢用现场例子说明问题，对不落地的方案会直接指出。"
+        },
+        {
+          "agent_id": "COMP-0208_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "项目管理部",
+          "position": "项目协调经理",
+          "personal_profile": "擅长在多方利益中寻找可执行平衡，压力下优先确认业主审查节点和团队可用性。她常把讨论拉回工期与资源计划，提醒不要因过度承诺而损害交付质量。",
+          "responsibilities": [
+            "协调业主审查与利益相关方沟通",
+            "编制团队可用性与角色计划",
+            "跟踪工期与资源计划匹配",
+            "组织内部质量审查与交付节奏"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "温和但有条理，善于总结共识，会明确记录待办与责任人。"
+        },
+        {
+          "agent_id": "COMP-0208_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "技术审核部",
+          "position": "独立复核工程师",
+          "personal_profile": "习惯以独立检查视角审视成本假设，压力下更关注数据来源和计算逻辑是否可追溯。他常提出替代估算路径，对过于乐观的单价或费率假设保持警惕。",
+          "responsibilities": [
+            "独立复核造价计算与成本假设",
+            "检查支付评审的数据一致性",
+            "评估报价依据的合理性",
+            "提出成本风险与替代方案"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "冷静、分析型，喜欢用对比表和假设检验说明观点，措辞谨慎。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0286",
+        "company_role": "supervisor",
+        "package_id": "CASE-0014/cost",
+        "agent_id": "COMP-0286_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "造价咨询部",
+        "position": "首席造价工程师",
+        "message_type": "decision",
+        "thoughts": "我们公司是设计院背景，造价咨询与合同成本管理这个包属于我们工程咨询甲级资质可以覆盖的业务方向，成本估算、预算编制、变更索赔分析这些能力与我们的技术能力、造价估算能力是匹配的。包预算225万MOP，资源需求0.25，我们可用资源2.0，完全有余量，不需要联合体。这个包不涉及现场监督或政府审批，责任边界清晰，我们作为单一责任主体完全可以承担。内部讨论没有提出任何必须联合才能做的硬缺口，也没有未解决的先决条件。风险主要是费率结构报价的准确性和与设计、施工、监督包的接口协调，但这些属于正常投标风险，通过角色计划、质量方法、风险应对方案来管理即可。我判断应当独立投标。",
+        "content": "本公司拟以单一投标人身份参与氹仔污水厂排放管改道及周边平整工程的造价咨询与合同成本管理包投标。投标文件将包含：角色计划与团队可用性摘要，明确造价负责人及各专业造价人员的分工与投入；交付方法与质量方法，覆盖成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更成本评估、索赔分析及成本报告的编制与独立复核流程；价格基础与费率结构，以MOP计价，明确固定总价或费率制构成、付款节点及额外服务计费方式，并控制在225万MOP上限之内；进度视图与里程碑计划，与项目24个月工期及设计、施工、监督各包接口相衔接；风险应对方案，针对工作量测算偏差、变更索赔争议及接口协调等风险提出应对措施；以及类似项目造价咨询经验的模拟说明。本公司将作为唯一责任主体承担全部授权服务的质量与文档管理责任，不设组合体安排。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:00:55",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0208",
+        "company_role": "supervisor",
+        "package_id": "CASE-0014/cost",
+        "agent_id": "COMP-0208_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "造价咨询部",
+        "position": "首席造价顾问",
+        "message_type": "decision",
+        "thoughts": "这次是造价咨询与合同成本管理包，预算225万MOP，资源需求仅0.25，我们可用资源2.0，占用为0，容量上完全吃得下。公司资料里明确写了工程造价咨询服务、工程招标代理、工程咨询及技术咨询服务，造价咨询属于我们业务范围内的核心服务，不是勉强跨界。包的内容是成本估算、预算编制、成本控制、合同成本审查、付款审核、变更索赔分析、成本报告，不涉及现场监督和政府审批，正好避开我们相对不突出的现场监管环节，是纯咨询型工作，责任边界清楚。招标方要的角色计划、交付方法、价格基础、进度视图、风险应对和类似经验，我们都能以单一责任主体组织出来，不需要另一家单位共享投标人身份或分担包级责任。内部讨论没有提出必须联合才能做的硬缺口，接口协调和独立审查都可以通过内部复核机制和常规外部支持解决，不构成组合体理由。风险方面主要是报价固定总价下的工作量估算偏差和付款审核的独立性要求，这些用费率结构、复核门槛和文档纪律来管。综合看，这是一个契合度高、容量充裕、商业价值合理、声誉风险可控的机会，应当以独立投标人身份参与。",
+        "content": "本公司拟以单一投标人身份参与氹仔污水厂排放管改道及周边平整工程的造价咨询与合同成本管理包。角色计划与团队可用性摘要将按成本估算、合同成本审查与付款审核、变更索赔分析、成本报告与文档管理四条线配置人员，并明确一名包级负责人对全部授权服务负总责。交付方法与质量方法采用分阶段成果审查、独立复核与版本控制，付款审核与变更评估设置双人复核门槛，确保独立成本审查与质量保证可追溯。价格基础拟以费率制为主、关键里程碑固定总价包干为辅，报价以MOP计并涵盖全部授权服务，付款节点与额外服务计费方式在投标文件中逐项列明。进度视图按24个月项目周期编排里程碑，与设计、施工、监督各包的接口以接口清单和定期协调会管理。风险应对重点覆盖工作量估算偏差、审核独立性与文档完整性，并预留合理风险余量。类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:00:55",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0208",
+        "company_role": "supervisor",
+        "package_id": "CASE-0014/cost",
+        "agent_id": "COMP-0208_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "造价咨询部",
+        "position": "首席造价顾问",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "额外服务按事先约定的费率计费，须经业主书面确认后启动，不纳入固定总价范围\n额外服务按事先约定费率计费，须经业主书面确认后启动",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:01:05",
+        "verification_requests": [
+          {
+            "question": "额外服务按事先约定的费率计费，须经业主书面确认后启动，不纳入固定总价范围",
+            "required_before_submission": false
+          },
+          {
+            "question": "额外服务按事先约定费率计费，须经业主书面确认后启动",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0014/cost",
+        "agent_id": "OWNER-4048bdd520aa7f_06_郑美玲",
+        "agent_name": "郑美玲",
+        "department": "设计与技术",
+        "position": "设计协调与技术审查",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个造价咨询包选择一个既可靠又符合预算的承担方。评标推荐COMP-0208，报价MOP 1,758,000，比COMP-0286低MOP 212,000，且其双人复核和接口清单管理机制清晰，符合业主控制要求。但COMP-0208有两项未解决条件，涉及接口资料时点和额外服务计费，且独立复核投入相对较低，这让我对质量保证深度有所顾虑。COMP-0286方案完整，独立复核和文档控制投入更充分，但报价较高。考虑到本项目为公共基础设施，成本管理质量至关重要，而COMP-0208的复核机制已有明确设计，未解决条件可通过预合同澄清聚焦解决，且其价格优势明显，我决定接受评标推荐，选择COMP-0208，并将预合同澄清重点放在两项未解决条件的具体安排以及独立复核投入的确认上。这样既控制了成本，又通过澄清确保质量要求得到满足。",
+        "content": "经综合评审，本包判给COMP-0208（中铁武汉大桥工程咨询监理有限公司），其报价MOP 1,758,000在预算上限内，双人复核与接口清单管理机制契合业主控制要求。预合同澄清将聚焦于两项未解决条件的具体安排，包括接口资料提交时点与额外服务计费方式，并确认独立复核投入深度以满足质量目标。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:01:17",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0286",
+        "package_id": "CASE-0014/cost",
+        "decision": "bid",
+        "reason": "经管理层审议，造价咨询与合同成本管理包属于公司工程咨询业务范围内的常规服务，成本估算、预算编制、合同成本审查、付款审核、变更与索赔分析及成本报告均在公司能力覆盖之内，且不涉及现场监督或政府审批，责任边界清晰。公司当前可用资源为2.0，本包资源需求仅0.25，团队可用性充足，无需借助外部主体分担投标身份或包级责任。报价上限225万MOP，采用固定总价或费率制均可控。主要风险在于费率结构与工作量测算的准确性、以及与设计、施工、监督各包的接口协调，这些将通过角色计划、交付与质量方法、进度视图和风险应对方案在投标文件中予以回应，属于正常投标风险管理范畴，不构成需要组合体承接的问责缺口。因此决定以单一责任主体独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以公司现有可用资源2.0中的0.25投入本包，团队可用性以投标时提交的角色计划与团队可用性摘要为准",
+          "报价采用固定总价或费率制，总额不超过225万MOP，付款节点与额外服务计费方式在投标文件中明确",
+          "与设计、施工、监督各包的接口协调通过合同约定的协调机制与例会安排落实",
+          "类似项目造价咨询经验以模拟情景资料形式提供，不作为历史业绩回放"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0208",
+        "package_id": "CASE-0014/cost",
+        "decision": "bid",
+        "reason": "管理层判断：本包为造价咨询与合同成本管理，属公司资料中明确列明的工程造价咨询与工程咨询业务范围，服务内容为成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更与索赔成本分析及成本报告，不涉及现场监督或政府审批，与公司能力结构契合。授权情景资源显示可用资源2.0、占用0，本包资源需求0.25，团队可用性摘要可以按角色计划落实，不存在需要另一家单位共享投标人身份或分担包级责任的问责缺口。招标方要求的交付方法与质量方法、价格基础与费率结构、进度视图与里程碑、风险应对及类似项目经验，均可由公司作为单一责任主体组织提交。主要风险在于固定总价下的工作量估算偏差、付款审核独立性与接口协调，拟通过费率制与固定总价组合报价、内部独立复核门槛、文档纪律和与设计施工监督包的接口清单加以控制，并在报价中预留合理风险余量。包额225万MOP在预算上限内，商业价值与声誉收益匹配，故决定独立投标，不采用组合体。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0014/cost_001",
+        "package_id": "CASE-0014/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0286",
+        "bidder_name": "招商局重庆交通科研设计院有限公司",
+        "technical_proposal": "本公司以单一投标人身份独立承接本包全部授权服务，不设组合体安排，全部质量与文档责任由本公司承担。\n\n**角色计划与团队可用性摘要**：设造价负责人1名（首席造价工程师，全程投入），土建及市政专业造价工程师2名，机电安装造价工程师1名，合同与索赔分析员1名，文档与成本报告控制员1名，独立复核人1名（不参与编制，仅作独立成本审查）。团队投入约0.25个企业资源当量，公司当前可用资源2.0，占用为零，可用性充足。\n\n**交付方法与质量方法**：成本估算与预算编制采用工程量清单分解加单价库校核；合同成本审查与付款审核执行编制—复核—签发三级流程，付款审核逐笔核对计量凭证与合同条款；变更成本评估与索赔分析建立变更台账与索赔事件时间线，区分合同风险归属；成本报告按月出具并附累计曲线与偏差说明。独立复核人对估算、付款证书与变更评估结论签署复核意见，形成内部质量闭环。\n\n**接口协调**：与设计包对接设计变更与限额设计信息，与施工包对接计量与进度款申报，与监督包对接现场计量确认，通过固定例会与统一成本台账实现接口留痕。\n\n**类似经验（模拟）**：以模拟情景资料形式提供市政管网与场地平整类造价咨询的角色分工与交付方法说明，不作为历史业绩回放。",
+        "implementation_plan": "第1阶段（第1至2月）：组建团队、建立成本编码体系与合同成本台账、编制项目成本管理计划与付款审核流程，完成初步成本估算复核。\n第2阶段（第3至6月）：配合设计深化完成预算编制与限额校核，建立变更与索赔登记机制，出具首份月度成本报告。\n第3阶段（第7至20月）：施工期持续成本控制，逐笔付款审核、变更成本评估、索赔分析，按月成本报告与季度成本趋势评审。\n第4阶段（第21至24月）：结算前成本复核、争议事项梳理、最终成本报告与文档移交。\n各阶段与设计、施工、监督包例会同步，接口事项在台账中登记并跟踪闭环。",
+        "quotation": 1970000.0,
+        "schedule_commitment": "服务期覆盖项目24个月工期，自合同生效起至最终成本报告与文档移交完成。里程碑：第2月末完成成本管理计划与台账建立；第6月末完成预算编制与限额校核；第20月末完成施工期成本控制主体工作；第24月末完成结算前复核与最终成本报告。关键节点与设计、施工、监督包进度对齐，接口事项按例会节奏跟踪。",
+        "compliance_statement": "本公司接受业主对成本咨询成果的审查与复核权。付款审核结论、变更成本评估与索赔分析均附计算依据与合同条款索引，供业主复核；月度成本报告按业主要求格式提交。独立复核人意见随成果一并提交，形成可追溯的内部质量记录。所有成果文件版本受控，业主提出的复核意见在约定时限内书面回应并留痕。",
+        "risk_response": "1. 工作量测算偏差：以分阶段人月计划与月度工时记录对照，偏差超过约定阈值时书面提示业主并协商调整服务投入。2. 变更与索赔争议：建立变更台账与索赔事件时间线，提前识别争议点，出具合同风险归属分析供业主决策。3. 接口协调风险：固定例会加统一成本台账，接口事项登记、跟踪、闭环，避免信息断点。4. 固定总价下的价格风险：已在报价中计入风险预备，报价为固定总价，不设材料或人工调价条款；如业主要求扩大服务范围，按额外服务计费方式另行协商。5. 团队可用性：公司当前可用资源充足，关键岗位设替补人员，避免单点依赖。",
+        "submission_summary": "本公司以单一投标人身份独立投标本包，不设组合体，全部授权服务由本公司承担质量与文档责任。\n\n**报价基础**：固定总价 MOP 1,970,000，涵盖成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更成本评估、索赔分析及成本报告全部授权服务，未超 MOP 2,250,000 上限。\n\n**费用构成**：\n- 造价负责人及专业造价工程师团队人工费：MOP 986,000\n- 合同与索赔分析及付款审核专项人工：MOP 372,000\n- 独立复核与质量保证：MOP 168,000\n- 文档控制与成本报告编制：MOP 143,000\n- 接口协调与例会投入：MOP 96,000\n- 软件工具、差旅及办公分摊：MOP 87,000\n- 风险预备与商业调整：MOP 118,000\n合计：MOP 1,970,000\n\n**付款节点**：按里程碑分四期支付，签约及成本管理计划完成付20%，预算编制与限额校核完成付25%，施工期成本控制按季度进度付40%，最终成本报告与文档移交完成付15%。\n\n**额外服务计费**：超出授权范围的专项索赔仲裁支持、额外复核轮次或延长服务期，按人月费率另行报价并经业主书面确认后执行。\n\n**说明**：报价为固定总价，不设材料或人工调价条款；风险预备已计入报价以覆盖工作量测算与接口协调不确定性。类似项目经验以模拟情景资料形式提供。",
+        "quotation_breakdown": [
+          {
+            "item": "造价负责人及专业造价工程师团队人工费",
+            "amount": 986000,
+            "basis": "造价负责人全程投入加土建市政2名、机电1名造价工程师按项目24个月工期分阶段投入，按本公司内部人工成本与投入人月测算"
+          },
+          {
+            "item": "合同与索赔分析及付款审核专项人工",
+            "amount": 372000,
+            "basis": "合同成本审查、逐笔付款审核、变更成本评估与索赔分析专项人月，含争议事项梳理工作量"
+          },
+          {
+            "item": "独立复核与质量保证",
+            "amount": 168000,
+            "basis": "独立复核人不参与编制，对估算、付款证书与变更评估签署复核意见的专项投入"
+          },
+          {
+            "item": "文档控制与成本报告编制",
+            "amount": 143000,
+            "basis": "月度成本报告、成本台账维护、文档归档与移交的专职文档控制投入"
+          },
+          {
+            "item": "接口协调与例会投入",
+            "amount": 96000,
+            "basis": "与设计、施工、监督包固定例会及接口留痕的协调工时"
+          },
+          {
+            "item": "软件工具、差旅及办公分摊",
+            "amount": 87000,
+            "basis": "造价软件许可、数据校核工具、驻场交通与办公分摊"
+          },
+          {
+            "item": "风险预备与商业调整",
+            "amount": 118000,
+            "basis": "针对工作量测算偏差、变更索赔争议及接口协调不确定性的风险预备，含固定总价下的价格风险承担"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以公司现有可用资源2.0中的0.25投入本包，团队可用性以投标时提交的角色计划与团队可用性摘要为准",
+          "报价采用固定总价，总额不超过225万MOP，付款节点与额外服务计费方式在投标文件中明确",
+          "与设计、施工、监督各包的接口协调通过合同约定的协调机制与例会安排落实",
+          "类似项目造价咨询经验以模拟情景资料形式提供，不作为历史业绩回放"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0014/cost_002",
+        "package_id": "CASE-0014/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0208",
+        "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+        "technical_proposal": "本公司以单一投标人身份承担本包全部授权范围内的造价咨询与合同成本管理服务，不涉及现场监督或政府审批。技术方案按四条工作线组织：成本估算与预算编制线负责工程量复核、单价与费率基准建立、预算书与成本基准版本管理；合同成本审查与付款审核线负责合同价款条款梳理、计量支付审核、付款证书建议与扣款核对；变更与索赔成本分析线负责变更计价、索赔成因与费用构成分析、谈判支持文件；成本报告与文档管理线负责月度成本报告、风险储备跟踪、变更台账与文档版本控制。包级负责人对全部授权服务负总责，各线设主办人员与复核人员分离，付款审核与变更评估执行双人复核门槛，超过设定金额阈值的付款建议须经独立复核人签署后方可提交业主。与设计、施工、监督各包的接口以接口清单管理，明确资料提交时点、格式与责任边界，并通过定期协调会与书面往来记录闭环。质量方法采用分阶段成果审查、独立复核、版本控制与文档纪律，全部成果可追溯至输入依据与复核记录。类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实。",
+        "implementation_plan": "进场后首月完成启动与基线建立：接收设计文件、合同文本与计量规则，编制工作分解、接口清单与成本编码体系，提交成本管理计划。第2至4个月完成预算复核与成本基准确认，形成成本控制建议与风险储备框架。施工期按月度循环执行计量支付审核、变更与索赔评估、成本报告，付款审核在收到完整资料后按约定时限出具审核意见，变更评估按金额分级设置复核层级。每季度进行一次成本基准与风险储备回顾，并向业主提交成本趋势分析。竣工阶段完成结算审核支持、变更索赔台账归集与最终成本报告。全部里程碑与24个月项目周期对齐，人员按四条工作线配置，包级负责人全程在岗，高峰期由公司内部后备人员补充，不依赖外部单位分担包级责任。",
+        "quotation": 1758000.0,
+        "schedule_commitment": "服务期与项目24个月周期对齐。进场首月完成启动与成本管理计划；第2至4个月完成预算复核与成本基准确认；施工期按月出具付款审核意见与成本报告，按季度进行成本基准回顾；竣工阶段完成结算审核支持与最终成本报告。关键里程碑在投标文件中逐项列明，付款节点与里程碑对应。",
+        "compliance_statement": "接受业主对成果的审查与进度检查。付款审核与变更评估设置双人复核门槛，超过金额阈值的付款建议须经独立复核人签署后提交。全部成果保留输入依据、复核记录与版本痕迹，供业主随时查阅。额外服务按事先约定的费率计费，须经业主书面确认后启动，不纳入固定总价范围。",
+        "risk_response": "主要风险为固定总价下的工作量估算偏差、付款审核独立性与多包接口协调。应对措施：报价采用固定总价与费率制组合，固定总价覆盖明确授权服务，超出范围的工作按约定费率计费；付款审核与变更评估执行双人复核与独立签署；接口以清单与定期协调会管理并留存书面记录；在报价中预留合理风险余量。若设计或施工包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。",
+        "submission_summary": "本公司以单一投标人身份提交本包全部授权服务的报价，总价MOP 1,758,000，涵盖成本估算与预算编制、合同成本审查与付款审核、变更与索赔成本分析、成本报告与文档管理及接口协调。\n费用构成：包级负责人与估算预算线MOP 486,000；合同成本审查与付款审核线MOP 412,000；变更与索赔分析线MOP 358,000；成本报告、文档管理与接口协调MOP 236,000；独立复核与质量保证MOP 148,000；风险余量与商业调整MOP 118,000。\n价格基础为固定总价覆盖明确授权服务，额外服务按约定费率计费并经业主书面确认。付款节点与里程碑对应，在投标文件中逐项列明。报价在包额上限MOP 2,250,000以内。类似项目经验以模拟情景资料表述。",
+        "quotation_breakdown": [
+          {
+            "item": "包级负责人与成本估算、预算编制线人员费用",
+            "amount": 486000,
+            "basis": "按24个月项目周期配置包级负责人及估算预算主办、复核人员，依据公司内部费率与投入工时估算"
+          },
+          {
+            "item": "合同成本审查与付款审核线人员费用",
+            "amount": 412000,
+            "basis": "按月度计量支付审核循环、双人复核门槛与合同价款条款梳理工作量估算"
+          },
+          {
+            "item": "变更与索赔成本分析线人员费用",
+            "amount": 358000,
+            "basis": "按变更分级评估、索赔费用构成分析与谈判支持文件的预计工作量估算"
+          },
+          {
+            "item": "成本报告、文档管理与接口协调费用",
+            "amount": 236000,
+            "basis": "月度成本报告、变更台账、版本控制及与设计施工监督包接口协调会议与往来记录管理"
+          },
+          {
+            "item": "独立复核、质量保证与内部审查费用",
+            "amount": 148000,
+            "basis": "独立复核人签署、分阶段成果审查与内部质量审查投入"
+          },
+          {
+            "item": "风险余量与商业调整",
+            "amount": 118000,
+            "basis": "固定总价下工作量估算偏差、审核独立性保障与文档完整性风险的预留余量"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_72f8314cd26b3988ddd4",
+          "condition_9f56f2287e20839ff45c"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本报价基于24个月项目周期与授权范围内的造价咨询与合同成本管理服务，不含现场监督或政府审批",
+          "额外服务按事先约定费率计费，须经业主书面确认后启动",
+          "设计、施工、监督各包按接口清单约定时点提交资料，资料延迟时相应审核时限顺延",
+          "类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0014/cost",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0014/cost_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0286",
+            "bidder_name": "招商局重庆交通科研设计院有限公司",
+            "quotation": 1970000.0,
+            "quotation_breakdown": [
+              {
+                "item": "造价负责人及专业造价工程师团队人工费",
+                "amount": 986000,
+                "basis": "造价负责人全程投入加土建市政2名、机电1名造价工程师按项目24个月工期分阶段投入，按本公司内部人工成本与投入人月测算"
+              },
+              {
+                "item": "合同与索赔分析及付款审核专项人工",
+                "amount": 372000,
+                "basis": "合同成本审查、逐笔付款审核、变更成本评估与索赔分析专项人月，含争议事项梳理工作量"
+              },
+              {
+                "item": "独立复核与质量保证",
+                "amount": 168000,
+                "basis": "独立复核人不参与编制，对估算、付款证书与变更评估签署复核意见的专项投入"
+              },
+              {
+                "item": "文档控制与成本报告编制",
+                "amount": 143000,
+                "basis": "月度成本报告、成本台账维护、文档归档与移交的专职文档控制投入"
+              },
+              {
+                "item": "接口协调与例会投入",
+                "amount": 96000,
+                "basis": "与设计、施工、监督包固定例会及接口留痕的协调工时"
+              },
+              {
+                "item": "软件工具、差旅及办公分摊",
+                "amount": 87000,
+                "basis": "造价软件许可、数据校核工具、驻场交通与办公分摊"
+              },
+              {
+                "item": "风险预备与商业调整",
+                "amount": 118000,
+                "basis": "针对工作量测算偏差、变更索赔争议及接口协调不确定性的风险预备，含固定总价下的价格风险承担"
+              }
+            ],
+            "submission_summary": "本公司以单一投标人身份独立投标本包，不设组合体，全部授权服务由本公司承担质量与文档责任。\n\n**报价基础**：固定总价 MOP 1,970,000，涵盖成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更成本评估、索赔分析及成本报告全部授权服务，未超 MOP 2,250,000 上限。\n\n**费用构成**：\n- 造价负责人及专业造价工程师团队人工费：MOP 986,000\n- 合同与索赔分析及付款审核专项人工：MOP 372,000\n- 独立复核与质量保证：MOP 168,000\n- 文档控制与成本报告编制：MOP 143,000\n- 接口协调与例会投入：MOP 96,000\n- 软件工具、差旅及办公分摊：MOP 87,000\n- 风险预备与商业调整：MOP 118,000\n合计：MOP 1,970,000\n\n**付款节点**：按里程碑分四期支付，签约及成本管理计划完成付20%，预算编制与限额校核完成付25%，施工期成本控制按季度进度付40%，最终成本报告与文档移交完成付15%。\n\n**额外服务计费**：超出授权范围的专项索赔仲裁支持、额外复核轮次或延长服务期，按人月费率另行报价并经业主书面确认后执行。\n\n**说明**：报价为固定总价，不设材料或人工调价条款；风险预备已计入报价以覆盖工作量测算与接口协调不确定性。类似项目经验以模拟情景资料形式提供。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "以公司现有可用资源2.0中的0.25投入本包，团队可用性以投标时提交的角色计划与团队可用性摘要为准",
+              "报价采用固定总价，总额不超过225万MOP，付款节点与额外服务计费方式在投标文件中明确",
+              "与设计、施工、监督各包的接口协调通过合同约定的协调机制与例会安排落实",
+              "类似项目造价咨询经验以模拟情景资料形式提供，不作为历史业绩回放"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0014/cost_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0208",
+            "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+            "quotation": 1758000.0,
+            "quotation_breakdown": [
+              {
+                "item": "包级负责人与成本估算、预算编制线人员费用",
+                "amount": 486000,
+                "basis": "按24个月项目周期配置包级负责人及估算预算主办、复核人员，依据公司内部费率与投入工时估算"
+              },
+              {
+                "item": "合同成本审查与付款审核线人员费用",
+                "amount": 412000,
+                "basis": "按月度计量支付审核循环、双人复核门槛与合同价款条款梳理工作量估算"
+              },
+              {
+                "item": "变更与索赔成本分析线人员费用",
+                "amount": 358000,
+                "basis": "按变更分级评估、索赔费用构成分析与谈判支持文件的预计工作量估算"
+              },
+              {
+                "item": "成本报告、文档管理与接口协调费用",
+                "amount": 236000,
+                "basis": "月度成本报告、变更台账、版本控制及与设计施工监督包接口协调会议与往来记录管理"
+              },
+              {
+                "item": "独立复核、质量保证与内部审查费用",
+                "amount": 148000,
+                "basis": "独立复核人签署、分阶段成果审查与内部质量审查投入"
+              },
+              {
+                "item": "风险余量与商业调整",
+                "amount": 118000,
+                "basis": "固定总价下工作量估算偏差、审核独立性保障与文档完整性风险的预留余量"
+              }
+            ],
+            "submission_summary": "本公司以单一投标人身份提交本包全部授权服务的报价，总价MOP 1,758,000，涵盖成本估算与预算编制、合同成本审查与付款审核、变更与索赔成本分析、成本报告与文档管理及接口协调。\n费用构成：包级负责人与估算预算线MOP 486,000；合同成本审查与付款审核线MOP 412,000；变更与索赔分析线MOP 358,000；成本报告、文档管理与接口协调MOP 236,000；独立复核与质量保证MOP 148,000；风险余量与商业调整MOP 118,000。\n价格基础为固定总价覆盖明确授权服务，额外服务按约定费率计费并经业主书面确认。付款节点与里程碑对应，在投标文件中逐项列明。报价在包额上限MOP 2,250,000以内。类似项目经验以模拟情景资料表述。",
+            "unresolved_condition_ids": [
+              "condition_72f8314cd26b3988ddd4",
+              "condition_9f56f2287e20839ff45c"
+            ],
+            "bid_assumptions": [
+              "本报价基于24个月项目周期与授权范围内的造价咨询与合同成本管理服务，不含现场监督或政府审批",
+              "额外服务按事先约定费率计费，须经业主书面确认后启动",
+              "设计、施工、监督各包按接口清单约定时点提交资料，资料延迟时相应审核时限顺延",
+              "类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 造价咨询与合同成本管理.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0014/cost",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_林嘉敏",
+          "OWNER-4048bdd520aa7f_03_黄伟强",
+          "OWNER-4048bdd520aa7f_04_苏丽华",
+          "OWNER-4048bdd520aa7f_05_何家豪",
+          "OWNER-4048bdd520aa7f_06_郑美玲"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0014/cost_001",
+            "bidder_id": "COMP-0286",
+            "bidder_name": "招商局重庆交通科研设计院有限公司",
+            "technical_view": "以单一投标人独立承接全部授权服务，设造价负责人全程投入并配土建市政、机电、合同索赔、文档控制及独立复核岗位，四条工作线覆盖估算预算、合同付款审核、变更索赔与成本报告，能力匹配完整。",
+            "cost_view": "固定总价MOP 1,970,000在MOP 2,250,000上限内，人工、独立复核、文档控制与风险预备分项清晰，报价与24个月分阶段人月投入相符，价格可信且留有合理风险余量。",
+            "owner_control_view": "明确接受业主审查复核权，付款审核、变更评估与索赔分析附计算依据及合同条款索引，独立复核意见随成果提交并版本受控，业主评审清晰度高。",
+            "strengths": [
+              "角色计划与团队可用性摘要具体，关键岗位设替补，人员配置现实性强",
+              "编制—复核—签发三级流程加独立复核人，独立性保证与质量目标契合",
+              "接口协调以固定例会与统一成本台账留痕，文档纪律良好"
+            ],
+            "concerns": [
+              "报价高于另一投标人，业主需确认其质量与独立复核投入是否值得价差",
+              "固定总价下若授权范围扩大需另行协商，存在后续计费接口需在合同中明确"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0014/cost_002",
+            "bidder_id": "COMP-0208",
+            "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+            "technical_view": "以单一投标人按四条工作线组织，包级负责人负总责，主办与复核分离，付款审核与变更评估设双人复核门槛，交付方法与质量方法完整且与授权范围一致。",
+            "cost_view": "固定总价MOP 1,758,000低于另一投标人且在上限内，费用按工作线分解并含风险余量，额外服务按费率另行确认，报价与工作量估算基本相符，属可信的低价。",
+            "owner_control_view": "接受业主审查与进度检查，超阈值付款建议须独立复核人签署后提交，成果保留输入依据与版本痕迹，业主控制响应清晰。",
+            "strengths": [
+              "双人复核与金额阈值分级复核机制明确，独立性保证具体",
+              "接口清单管理资料提交时点与责任边界，接口协调可操作",
+              "价格较低且费用构成与里程碑付款对应，交付信心较好"
+            ],
+            "concerns": [
+              "提交两项未解决条件，涉及接口资料时点与额外服务计费，需在判给前澄清",
+              "独立复核与质量保证投入低于另一投标人，需确认复核深度是否满足业主质量目标"
+            ]
+          }
+        ],
+        "comparison_summary": "两家均为单一投标人且能力覆盖本包全部授权服务，COMP-0208报价MOP 1,758,000较低且复核机制清晰，COMP-0286报价MOP 1,970,000在独立复核、文档控制与团队配置上投入更充分。业主需在价格优势与质量保证深度之间权衡，并澄清COMP-0208的未解决条件。",
+        "recommended_winner": "COMP-0208",
+        "owner_review_notes": "建议优先考虑COMP-0208，其价格较低、双人复核与接口清单管理契合业主控制要求，但须在判给前澄清两项未解决条件并确认独立复核投入。COMP-0286方案完整、独立性保证强，可作为备选或在质量优先时进一步谈判。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0014",
+      "package_awards": [
+        {
+          "package_id": "CASE-0014/cost",
+          "selected_bidder_id": "COMP-0208",
+          "selected_bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+          "bidder_type": "company",
+          "decision_reason": "COMP-0208以单一投标人身份提交了完整的技术方案，其双人复核与金额阈值分级复核机制明确，接口清单管理可操作，报价MOP 1,758,000在预算上限内且费用构成清晰，较COMP-0286的MOP 1,970,000更具价格优势。虽然COMP-0208存在两项未解决条件且独立复核投入相对较低，但通过预合同澄清可聚焦确认接口资料时点、额外服务计费安排及复核深度，从而在控制成本的同时保障质量目标。COMP-0286方案虽完整但报价较高，在质量与价格权衡下，COMP-0208更符合业主对成本效益和交付信心的要求。",
+          "unresolved_condition_ids": [
+            "condition_72f8314cd26b3988ddd4",
+            "condition_9f56f2287e20839ff45c"
+          ],
+          "bid_assumptions": [
+            "本报价基于24个月项目周期与授权范围内的造价咨询与合同成本管理服务，不含现场监督或政府审批",
+            "额外服务按事先约定费率计费，须经业主书面确认后启动",
+            "设计、施工、监督各包按接口清单约定时点提交资料，资料延迟时相应审核时限顺延",
+            "类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0208"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:00:55",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0286",
+          "package_id": "CASE-0014/cost",
+          "decision": "bid",
+          "reason": "经管理层审议，造价咨询与合同成本管理包属于公司工程咨询业务范围内的常规服务，成本估算、预算编制、合同成本审查、付款审核、变更与索赔分析及成本报告均在公司能力覆盖之内，且不涉及现场监督或政府审批，责任边界清晰。公司当前可用资源为2.0，本包资源需求仅0.25，团队可用性充足，无需借助外部主体分担投标身份或包级责任。报价上限225万MOP，采用固定总价或费率制均可控。主要风险在于费率结构与工作量测算的准确性、以及与设计、施工、监督各包的接口协调，这些将通过角色计划、交付与质量方法、进度视图和风险应对方案在投标文件中予以回应，属于正常投标风险管理范畴，不构成需要组合体承接的问责缺口。因此决定以单一责任主体独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以公司现有可用资源2.0中的0.25投入本包，团队可用性以投标时提交的角色计划与团队可用性摘要为准",
+            "报价采用固定总价或费率制，总额不超过225万MOP，付款节点与额外服务计费方式在投标文件中明确",
+            "与设计、施工、监督各包的接口协调通过合同约定的协调机制与例会安排落实",
+            "类似项目造价咨询经验以模拟情景资料形式提供，不作为历史业绩回放"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:00:55",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0208",
+          "package_id": "CASE-0014/cost",
+          "decision": "bid",
+          "reason": "管理层判断：本包为造价咨询与合同成本管理，属公司资料中明确列明的工程造价咨询与工程咨询业务范围，服务内容为成本估算、预算编制、成本控制建议、合同成本审查、付款审核、变更与索赔成本分析及成本报告，不涉及现场监督或政府审批，与公司能力结构契合。授权情景资源显示可用资源2.0、占用0，本包资源需求0.25，团队可用性摘要可以按角色计划落实，不存在需要另一家单位共享投标人身份或分担包级责任的问责缺口。招标方要求的交付方法与质量方法、价格基础与费率结构、进度视图与里程碑、风险应对及类似项目经验，均可由公司作为单一责任主体组织提交。主要风险在于固定总价下的工作量估算偏差、付款审核独立性与接口协调，拟通过费率制与固定总价组合报价、内部独立复核门槛、文档纪律和与设计施工监督包的接口清单加以控制，并在报价中预留合理风险余量。包额225万MOP在预算上限内，商业价值与声誉收益匹配，故决定独立投标，不采用组合体。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:01:07",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0014/cost",
+          "bidder_id": "COMP-0286"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:01:07",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0014/cost",
+          "bidder_id": "COMP-0208"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:01:07",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0014/cost",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:01:13",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0014/cost",
+          "recommended_winner": "COMP-0208"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:01:17",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0014/cost",
+          "selected_bidder_id": "COMP-0208"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "本局（OWNER-4048bdd520aa7f）经内部讨论决定接受本次修订草案（revision 0）的全部条款，作为本包（CASE-0014/cost）的可执行模拟义务。理由如下：\n\n1. 价格与范围：报价MOP 1,758,000为固定总价，覆盖明确授权的造价咨询与合同成本管理服务，在包额上限MOP 2,250,000以内；范围与包定义一致，不含现场监督或政府审批。\n2. 资源与成员：单一投标人COMP-0208，资源承诺0.25 normalized_enterprise_capacity，工作份额1.0，与包资源需求0.25相符。\n3. 风险分配：投标假设（额外服务按约定费率并经业主书面确认、资料延迟按接口清单顺延审核时限、类似经验以模拟情景资料表述）作为拟议风险分配予以接受，不视为缺失证据。\n4. 本局对自身立场的决定（供写入下一稿）：（a）固定总价覆盖范围以投标文件所列四条工作线及接口协调为限，超出部分属额外服务，须经本局书面确认后按约定费率计费；（b）计量与付款以里程碑对应节点为基础，付款建议须附双人复核与独立复核人签署记录；（c）本局对成果的审查期与进度检查按合同约定时限执行，资料延迟按接口清单顺延。\n5. 未决条件：condition_72f8314cd26b3988ddd4与condition_9f56f2287e20839ff45c作为合同履行中的待落实事项保留，不影响本次授权；本阶段仅授权可执行模拟义务，不主张未来工程交付或法定审批已完成。\n\n综上，接受所供确切条款、资源与义务。"
+          },
+          "COMP-0208": {
+            "action": "accept",
+            "reason": "作为投标人 COMP-0208，本组织确认接受所提供的确切条款：价格 MOP 1,758,000、币种 MOP、范围 造价咨询与合同成本管理、成员仅 COMP-0208、资源承诺 0.25（normalized_enterprise_capacity）、工作份额 1.0，均与投标承诺一致，且报价在包额上限 MOP 2,250,000 以内。本组织对自身立场作出如下决定，供写入下一稿：(1) 固定总价覆盖明确授权服务，额外服务按事先约定费率计费并须经业主书面确认后启动，不纳入固定总价；(2) 付款审核在收到完整资料后按约定时限出具审核意见，超过设定金额阈值的付款建议须经独立复核人签署后提交业主；(3) 若设计、施工、监督各包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。上述为已披露的投标假设与风险分配，本组织予以接受，不视为缺失证据。未决条件 condition_72f8314cd26b3988ddd4 与 condition_9f56f2287e20839ff45c 作为后续审查/验收条件处理，不改变价格、范围、成员与资源等规范字段。本阶段仅授权可执行的模拟义务，不主张未来工程交付物或法定审批已经发生。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMB0BD209B/CASE-0014/cost/round-1/contract",
+          "simulation_id": "SIMB0BD209B",
+          "project_id": "CASE-0014",
+          "package_id": "CASE-0014/cost",
+          "session_id": "SIMB0BD209B/CASE-0014/cost/round-1",
+          "snapshot_version": "2214db4ae39651075c448ffa572758b34675f7e19c962725451fbb4d65b6c3cf",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0014/cost_002",
+          "bidder_id": "COMP-0208",
+          "lead_id": "COMP-0208",
+          "members": [
+            "COMP-0208"
+          ],
+          "price": 1758000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0208": 0.25
+          },
+          "work_shares": {
+            "COMP-0208": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "e029cf977b8ef1dee113fe3fff6b01d332b897ede19543f076c8154b3e9ce95f",
+          "terms": {
+            "schedule_commitment": "服务期与项目24个月周期对齐。进场首月完成启动与成本管理计划；第2至4个月完成预算复核与成本基准确认；施工期按月出具付款审核意见与成本报告，按季度进行成本基准回顾；竣工阶段完成结算审核支持与最终成本报告。关键里程碑在投标文件中逐项列明，付款节点与里程碑对应。",
+            "risk_response": "主要风险为固定总价下的工作量估算偏差、付款审核独立性与多包接口协调。应对措施：报价采用固定总价与费率制组合，固定总价覆盖明确授权服务，超出范围的工作按约定费率计费；付款审核与变更评估执行双人复核与独立签署；接口以清单与定期协调会管理并留存书面记录；在报价中预留合理风险余量。若设计或施工包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0014/cost_002",
+              "package_id": "CASE-0014/cost",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0208",
+              "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+              "technical_proposal": "本公司以单一投标人身份承担本包全部授权范围内的造价咨询与合同成本管理服务，不涉及现场监督或政府审批。技术方案按四条工作线组织：成本估算与预算编制线负责工程量复核、单价与费率基准建立、预算书与成本基准版本管理；合同成本审查与付款审核线负责合同价款条款梳理、计量支付审核、付款证书建议与扣款核对；变更与索赔成本分析线负责变更计价、索赔成因与费用构成分析、谈判支持文件；成本报告与文档管理线负责月度成本报告、风险储备跟踪、变更台账与文档版本控制。包级负责人对全部授权服务负总责，各线设主办人员与复核人员分离，付款审核与变更评估执行双人复核门槛，超过设定金额阈值的付款建议须经独立复核人签署后方可提交业主。与设计、施工、监督各包的接口以接口清单管理，明确资料提交时点、格式与责任边界，并通过定期协调会与书面往来记录闭环。质量方法采用分阶段成果审查、独立复核、版本控制与文档纪律，全部成果可追溯至输入依据与复核记录。类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实。",
+              "implementation_plan": "进场后首月完成启动与基线建立：接收设计文件、合同文本与计量规则，编制工作分解、接口清单与成本编码体系，提交成本管理计划。第2至4个月完成预算复核与成本基准确认，形成成本控制建议与风险储备框架。施工期按月度循环执行计量支付审核、变更与索赔评估、成本报告，付款审核在收到完整资料后按约定时限出具审核意见，变更评估按金额分级设置复核层级。每季度进行一次成本基准与风险储备回顾，并向业主提交成本趋势分析。竣工阶段完成结算审核支持、变更索赔台账归集与最终成本报告。全部里程碑与24个月项目周期对齐，人员按四条工作线配置，包级负责人全程在岗，高峰期由公司内部后备人员补充，不依赖外部单位分担包级责任。",
+              "quotation": 1758000.0,
+              "schedule_commitment": "服务期与项目24个月周期对齐。进场首月完成启动与成本管理计划；第2至4个月完成预算复核与成本基准确认；施工期按月出具付款审核意见与成本报告，按季度进行成本基准回顾；竣工阶段完成结算审核支持与最终成本报告。关键里程碑在投标文件中逐项列明，付款节点与里程碑对应。",
+              "compliance_statement": "接受业主对成果的审查与进度检查。付款审核与变更评估设置双人复核门槛，超过金额阈值的付款建议须经独立复核人签署后提交。全部成果保留输入依据、复核记录与版本痕迹，供业主随时查阅。额外服务按事先约定的费率计费，须经业主书面确认后启动，不纳入固定总价范围。",
+              "risk_response": "主要风险为固定总价下的工作量估算偏差、付款审核独立性与多包接口协调。应对措施：报价采用固定总价与费率制组合，固定总价覆盖明确授权服务，超出范围的工作按约定费率计费；付款审核与变更评估执行双人复核与独立签署；接口以清单与定期协调会管理并留存书面记录；在报价中预留合理风险余量。若设计或施工包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。",
+              "submission_summary": "本公司以单一投标人身份提交本包全部授权服务的报价，总价MOP 1,758,000，涵盖成本估算与预算编制、合同成本审查与付款审核、变更与索赔成本分析、成本报告与文档管理及接口协调。\n费用构成：包级负责人与估算预算线MOP 486,000；合同成本审查与付款审核线MOP 412,000；变更与索赔分析线MOP 358,000；成本报告、文档管理与接口协调MOP 236,000；独立复核与质量保证MOP 148,000；风险余量与商业调整MOP 118,000。\n价格基础为固定总价覆盖明确授权服务，额外服务按约定费率计费并经业主书面确认。付款节点与里程碑对应，在投标文件中逐项列明。报价在包额上限MOP 2,250,000以内。类似项目经验以模拟情景资料表述。",
+              "quotation_breakdown": [
+                {
+                  "item": "包级负责人与成本估算、预算编制线人员费用",
+                  "amount": 486000,
+                  "basis": "按24个月项目周期配置包级负责人及估算预算主办、复核人员，依据公司内部费率与投入工时估算"
+                },
+                {
+                  "item": "合同成本审查与付款审核线人员费用",
+                  "amount": 412000,
+                  "basis": "按月度计量支付审核循环、双人复核门槛与合同价款条款梳理工作量估算"
+                },
+                {
+                  "item": "变更与索赔成本分析线人员费用",
+                  "amount": 358000,
+                  "basis": "按变更分级评估、索赔费用构成分析与谈判支持文件的预计工作量估算"
+                },
+                {
+                  "item": "成本报告、文档管理与接口协调费用",
+                  "amount": 236000,
+                  "basis": "月度成本报告、变更台账、版本控制及与设计施工监督包接口协调会议与往来记录管理"
+                },
+                {
+                  "item": "独立复核、质量保证与内部审查费用",
+                  "amount": 148000,
+                  "basis": "独立复核人签署、分阶段成果审查与内部质量审查投入"
+                },
+                {
+                  "item": "风险余量与商业调整",
+                  "amount": 118000,
+                  "basis": "固定总价下工作量估算偏差、审核独立性保障与文档完整性风险的预留余量"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_72f8314cd26b3988ddd4",
+                "condition_9f56f2287e20839ff45c"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "本报价基于24个月项目周期与授权范围内的造价咨询与合同成本管理服务，不含现场监督或政府审批",
+                "额外服务按事先约定费率计费，须经业主书面确认后启动",
+                "设计、施工、监督各包按接口清单约定时点提交资料，资料延迟时相应审核时限顺延",
+                "类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "造价咨询与合同成本管理",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "e029cf977b8ef1dee113fe3fff6b01d332b897ede19543f076c8154b3e9ce95f"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0014/cost": {
+          "package_type": "supervision",
+          "required_company_role": "supervisor",
+          "scope": "造价咨询与合同成本管理",
+          "budget": 2250000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMB0BD209B/CASE-0014/cost/round-1/contract",
+    "simulation_id": "SIMB0BD209B",
+    "project_id": "CASE-0014",
+    "package_id": "CASE-0014/cost",
+    "session_id": "SIMB0BD209B/CASE-0014/cost/round-1",
+    "snapshot_version": "2214db4ae39651075c448ffa572758b34675f7e19c962725451fbb4d65b6c3cf",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0014/cost_002",
+    "bidder_id": "COMP-0208",
+    "lead_id": "COMP-0208",
+    "members": [
+      "COMP-0208"
+    ],
+    "price": 1758000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0208": 0.25
+    },
+    "work_shares": {
+      "COMP-0208": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0208": true
+    },
+    "signed_terms_hash": "e029cf977b8ef1dee113fe3fff6b01d332b897ede19543f076c8154b3e9ce95f",
+    "terms": {
+      "schedule_commitment": "服务期与项目24个月周期对齐。进场首月完成启动与成本管理计划；第2至4个月完成预算复核与成本基准确认；施工期按月出具付款审核意见与成本报告，按季度进行成本基准回顾；竣工阶段完成结算审核支持与最终成本报告。关键里程碑在投标文件中逐项列明，付款节点与里程碑对应。",
+      "risk_response": "主要风险为固定总价下的工作量估算偏差、付款审核独立性与多包接口协调。应对措施：报价采用固定总价与费率制组合，固定总价覆盖明确授权服务，超出范围的工作按约定费率计费；付款审核与变更评估执行双人复核与独立签署；接口以清单与定期协调会管理并留存书面记录；在报价中预留合理风险余量。若设计或施工包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0014/cost_002",
+        "package_id": "CASE-0014/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0208",
+        "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+        "technical_proposal": "本公司以单一投标人身份承担本包全部授权范围内的造价咨询与合同成本管理服务，不涉及现场监督或政府审批。技术方案按四条工作线组织：成本估算与预算编制线负责工程量复核、单价与费率基准建立、预算书与成本基准版本管理；合同成本审查与付款审核线负责合同价款条款梳理、计量支付审核、付款证书建议与扣款核对；变更与索赔成本分析线负责变更计价、索赔成因与费用构成分析、谈判支持文件；成本报告与文档管理线负责月度成本报告、风险储备跟踪、变更台账与文档版本控制。包级负责人对全部授权服务负总责，各线设主办人员与复核人员分离，付款审核与变更评估执行双人复核门槛，超过设定金额阈值的付款建议须经独立复核人签署后方可提交业主。与设计、施工、监督各包的接口以接口清单管理，明确资料提交时点、格式与责任边界，并通过定期协调会与书面往来记录闭环。质量方法采用分阶段成果审查、独立复核、版本控制与文档纪律，全部成果可追溯至输入依据与复核记录。类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实。",
+        "implementation_plan": "进场后首月完成启动与基线建立：接收设计文件、合同文本与计量规则，编制工作分解、接口清单与成本编码体系，提交成本管理计划。第2至4个月完成预算复核与成本基准确认，形成成本控制建议与风险储备框架。施工期按月度循环执行计量支付审核、变更与索赔评估、成本报告，付款审核在收到完整资料后按约定时限出具审核意见，变更评估按金额分级设置复核层级。每季度进行一次成本基准与风险储备回顾，并向业主提交成本趋势分析。竣工阶段完成结算审核支持、变更索赔台账归集与最终成本报告。全部里程碑与24个月项目周期对齐，人员按四条工作线配置，包级负责人全程在岗，高峰期由公司内部后备人员补充，不依赖外部单位分担包级责任。",
+        "quotation": 1758000.0,
+        "schedule_commitment": "服务期与项目24个月周期对齐。进场首月完成启动与成本管理计划；第2至4个月完成预算复核与成本基准确认；施工期按月出具付款审核意见与成本报告，按季度进行成本基准回顾；竣工阶段完成结算审核支持与最终成本报告。关键里程碑在投标文件中逐项列明，付款节点与里程碑对应。",
+        "compliance_statement": "接受业主对成果的审查与进度检查。付款审核与变更评估设置双人复核门槛，超过金额阈值的付款建议须经独立复核人签署后提交。全部成果保留输入依据、复核记录与版本痕迹，供业主随时查阅。额外服务按事先约定的费率计费，须经业主书面确认后启动，不纳入固定总价范围。",
+        "risk_response": "主要风险为固定总价下的工作量估算偏差、付款审核独立性与多包接口协调。应对措施：报价采用固定总价与费率制组合，固定总价覆盖明确授权服务，超出范围的工作按约定费率计费；付款审核与变更评估执行双人复核与独立签署；接口以清单与定期协调会管理并留存书面记录；在报价中预留合理风险余量。若设计或施工包资料提交延迟，按接口清单约定顺延相应审核时限并书面告知业主。",
+        "submission_summary": "本公司以单一投标人身份提交本包全部授权服务的报价，总价MOP 1,758,000，涵盖成本估算与预算编制、合同成本审查与付款审核、变更与索赔成本分析、成本报告与文档管理及接口协调。\n费用构成：包级负责人与估算预算线MOP 486,000；合同成本审查与付款审核线MOP 412,000；变更与索赔分析线MOP 358,000；成本报告、文档管理与接口协调MOP 236,000；独立复核与质量保证MOP 148,000；风险余量与商业调整MOP 118,000。\n价格基础为固定总价覆盖明确授权服务，额外服务按约定费率计费并经业主书面确认。付款节点与里程碑对应，在投标文件中逐项列明。报价在包额上限MOP 2,250,000以内。类似项目经验以模拟情景资料表述。",
+        "quotation_breakdown": [
+          {
+            "item": "包级负责人与成本估算、预算编制线人员费用",
+            "amount": 486000,
+            "basis": "按24个月项目周期配置包级负责人及估算预算主办、复核人员，依据公司内部费率与投入工时估算"
+          },
+          {
+            "item": "合同成本审查与付款审核线人员费用",
+            "amount": 412000,
+            "basis": "按月度计量支付审核循环、双人复核门槛与合同价款条款梳理工作量估算"
+          },
+          {
+            "item": "变更与索赔成本分析线人员费用",
+            "amount": 358000,
+            "basis": "按变更分级评估、索赔费用构成分析与谈判支持文件的预计工作量估算"
+          },
+          {
+            "item": "成本报告、文档管理与接口协调费用",
+            "amount": 236000,
+            "basis": "月度成本报告、变更台账、版本控制及与设计施工监督包接口协调会议与往来记录管理"
+          },
+          {
+            "item": "独立复核、质量保证与内部审查费用",
+            "amount": 148000,
+            "basis": "独立复核人签署、分阶段成果审查与内部质量审查投入"
+          },
+          {
+            "item": "风险余量与商业调整",
+            "amount": 118000,
+            "basis": "固定总价下工作量估算偏差、审核独立性保障与文档完整性风险的预留余量"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_72f8314cd26b3988ddd4",
+          "condition_9f56f2287e20839ff45c"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本报价基于24个月项目周期与授权范围内的造价咨询与合同成本管理服务，不含现场监督或政府审批",
+          "额外服务按事先约定费率计费，须经业主书面确认后启动",
+          "设计、施工、监督各包按接口清单约定时点提交资料，资料延迟时相应审核时限顺延",
+          "类似项目造价咨询经验以模拟情景资料表述，不主张超出授权情景的事实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "造价咨询与合同成本管理",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

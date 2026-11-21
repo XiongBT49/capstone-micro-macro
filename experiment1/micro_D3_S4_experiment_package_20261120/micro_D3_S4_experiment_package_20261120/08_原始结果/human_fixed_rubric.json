@@ -1,0 +1,57 @@
+{
+  "evidence_accuracy": {
+    "weight": 30,
+    "description": "Claims agree with the supplied source evidence; citations support the specific claim and belong to the relevant company.",
+    "anchors": [
+      "0: material invented or contradicted evidence",
+      "1: several unsupported or misapplied claims",
+      "2: mixed accurate evidence with substantive omissions or ambiguity",
+      "3: accurate relevant claims with only minor limitations",
+      "4: precise faithful evidence use with no material unsupported claim"
+    ]
+  },
+  "role_fit": {
+    "weight": 25,
+    "description": "The ordering and rationale connect the specified project role to actual comparable experience and supplied public capability.",
+    "anchors": [
+      "0: disregards the specified role",
+      "1: weak or largely irrelevant role matching",
+      "2: plausible basic matching with limited differentiation",
+      "3: clear relevant role-specific comparison",
+      "4: coherent project-specific comparison of meaningful candidate differences"
+    ]
+  },
+  "constraint_uncertainty": {
+    "weight": 20,
+    "description": "Respects the twelve fixed candidates, source limits and uncertainty; missing information stays unknown and zero history is not proof of inability.",
+    "anchors": [
+      "0: violates material constraints or treats guesses as established facts",
+      "1: major uncertainty or constraint omissions",
+      "2: acknowledges some limits but incompletely",
+      "3: handles material constraints and unknowns appropriately",
+      "4: precise balanced handling of all consequential uncertainties and evidence limits"
+    ]
+  },
+  "risk": {
+    "weight": 15,
+    "description": "Identifies evidence-grounded risks and distinguishes an actual conflict from an unverified concern; unsupported alarming claims lower the score.",
+    "anchors": [
+      "0: fabricated material risks or ignores explicit critical conflicts",
+      "1: mostly generic or unsupported risk treatment",
+      "2: some relevant risk recognition with incomplete qualification",
+      "3: relevant qualified risks tied to evidence",
+      "4: prioritizes the material evidence-grounded risks and their uncertainty proportionately"
+    ]
+  },
+  "actionability": {
+    "weight": 10,
+    "description": "The final ordering and checks support an auditable next step; do not reward verbosity, a fixed number of risks, or confident language.",
+    "anchors": [
+      "0: unusable or internally contradictory decision",
+      "1: vague decision or unusable checks",
+      "2: usable order with basic follow-up",
+      "3: clear decision and specific feasible checks for relevant unknowns",
+      "4: concise coherent decision with targeted verifiable next actions"
+    ]
+  }
+}

@@ -1,0 +1,1605 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM849BD599/CASE-0012/cost/round-1",
+  "snapshot": {
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/cost",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 2250000.0,
+      "project": {
+        "project_id": "CASE-0012",
+        "name": "粤澳新通道项目-南粤批发市场清拆工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0012/cost",
+        "project_id": "CASE-0012",
+        "kind": "cost_consulting",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "造价咨询与合同成本管理",
+        "scope": "造价咨询与合同成本管理",
+        "budget": 2250000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0208",
+          "COMP-0185"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0208": {
+        "entity_id": "COMP-0208",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0208",
+          "company_name": "中铁武汉大桥工程咨询监理有限公司",
+          "company_role": "supervisor",
+          "profile": "本地企业资料：工程监理；工程测量；工程试验检测；市政基础设施工程：一类（道路、桥梁工程、轨道交通勘察）施工图审查；工程代建、工程项目管理；工程招标代理、工程造价咨询服务、工程咨询及技术咨询服务。（涉及许可经营项目，应取得相关部门许可后方可经营）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0208",
+          "name": "中铁武汉大桥工程咨询监理有限公司",
+          "role": "QS",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0185": {
+        "entity_id": "COMP-0185",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0185",
+          "company_name": "中建三局第二建设工程有限责任公司",
+          "company_role": "supervisor",
+          "profile": "本地企业资料：许可项目 ： 建设工程施工;施工专业作业;建设工程设计;人防工程设计;供电业务;发电业务、输电业务、供（配）电业务;输电、供电、受电电力设施的安装、维修和试验;建筑智能化系统设计;建设工程勘察;建筑物拆除作业（爆破作业除外）;特种设备安装改造修理;公路管理与养护;路基路面养护作业;住宅室内装饰装修;城市生活垃圾经营性服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目 ： 技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;土石方工程施工;园林绿化工程施工;工程管理服务;工程造价咨询业务;工程技术服务（规划管理、勘察、设计、监理除外）;租赁服务（不含许可类租赁服务）;建筑工程机械与设备租赁;普通机械设备安装服务;机械设备租赁;特种设备出租;信息技术咨询服务;专用设备制造（不含许可类专业设备制造）;轴承、齿轮和传动部件销售;对外承包工程;规划设计管理;工业工程设计服务;专用设备修理;金属结构销售;金属结构制造;建筑用钢筋产品销售;光伏设备及元器件销售;光伏发电设备租赁;建筑工程用机械销售;交通安全、管制专用设备制造;建筑工程用机械制造;电气信号设备装置制造;公路水运工程试验检测服务;道路货物运输站经营;土壤污染治理与修复服务;污水处理及其再生利用;水污染治理;固体废物治理;大气污染治理;市政设施管理;合同能源管理;节能管理服务;信息系统集成服务;建筑装饰材料销售;建筑材料销售;停车场服务;物业管理;城市绿化管理;商业综合体管理服务;医院管理;公共事业管理服务;园区管理服务。（除许可业务外，可自主依法经营法律法规非禁止或限制的项目）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0185",
+          "name": "中建三局第二建设工程有限责任公司",
+          "role": "QS",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "1f1ab1a168642b1c50273849dcd1f1b64d5f0c2e24e1dfec3bf8925ecde67361"
+  },
+  "spec": {
+    "package_id": "CASE-0012/cost",
+    "project_id": "CASE-0012",
+    "kind": "cost_consulting",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "造价咨询与合同成本管理",
+    "scope": "造价咨询与合同成本管理",
+    "budget": 2250000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0208",
+      "COMP-0185"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0012",
+      "project_name": "粤澳新通道项目-南粤批发市场清拆工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；地块占地面积约为7,400平方米；粤澳新通道项目-南粤批发市场清拆工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0012",
+      "project_scope": "粤澳新通道项目-南粤批发市场清拆工程位于澳门，地块面积约7,400平方米，属交通基础设施前期清拆工程。业主为澳门特别行政区政府公共建设局，采用DBB交付模式，总预算MOP 150,000,000，工期24个月。本次采购仅针对已授权的造价咨询与合同成本管理招标包（CASE-0012/cost），该包为业主额外成本，预算MOP 2,250,000，服务范围限于造价咨询与合同成本管理，不涉及政府审批或现场监管服务。",
+      "functional_requirements": [
+        "提供清拆工程全过程的造价咨询与合同成本管理服务，包括工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析及合同成本风险预警。",
+        "协助业主建立成本控制基准与现金流预测，支持DBB模式下设计、供应、施工各阶段的成本接口管理。",
+        "对清拆工程特有的废弃物处理、临时交通改道、公共接口等成本项提供专项造价分析。",
+        "提供合同成本管理建议，包括变更控制程序、付款条件、价格调整机制及争议预防措施。",
+        "定期提交成本报告与风险提示，支持业主进行宏观审批所需的成本论证。"
+      ],
+      "technical_requirements": [
+        "采用BIM或数字化工程量计量工具进行成本估算与核对，确保与设计模型协调一致。",
+        "建立与设计、施工、供应等接口包的成本信息交换机制，确保造价数据可追溯。",
+        "制定清拆工程专属的计量与计价规则，涵盖拆除、运输、废弃物处置及场地恢复。",
+        "提供成本数据库与市场询价支持，结合澳门本地材料与人工价格指数进行动态调整。",
+        "建立业主验收路径，包括成本文件审核、阶段成果确认及最终结算审核流程。",
+        "设定耐久性、可维护性及能源使用相关成本目标的跟踪方法，支持全生命周期成本考量。"
+      ],
+      "budget_policy": "本包预算为MOP 2,250,000，属业主额外成本。业主将按服务阶段或里程碑支付，要求投标人提供详细价格基准（如人工时费率、专项服务费率、可报销费用上限）。评标时业主代理将定性比较价格合理性、服务范围完整性与成本控制能力，不单纯以最低价判给。",
+      "schedule_policy": "服务期覆盖24个月项目工期，关键里程碑包括：合同签订后1个月内提交成本管理计划；设计阶段配合完成工程量清单与预算编制；施工阶段按月提交成本报告与付款审核；竣工后3个月内完成结算审核。业主将预留合理审查时间，并要求投标人明确各阶段人员投入与交付时间。",
+      "compliance_requirements": [
+        "业主审查节奏：每月成本例会、季度成本审查及关键里程碑成果审查。",
+        "问题升级路径：造价咨询方须在发现成本偏差或合同争议风险时48小时内向业主指定代表书面报告。",
+        "文档纪律：所有成本文件须版本控制、可追溯，并符合业主档案管理要求。",
+        "接口签署：成本文件与设计、施工、供应包之间的接口须经业主确认。",
+        "公共访问协调：涉及公共道路或设施的成本估算须与交通协调方案一致。",
+        "质量目标跟踪：建立成本估算准确度、变更处理及时率等质量指标并定期汇报。",
+        "安全期望跟踪：成本建议中须考虑安全措施费用，确保安全投入不被低估。",
+        "变更控制纪律：任何超出授权范围的成本变更须经业主书面批准。"
+      ],
+      "risk_priorities": [
+        "清拆工程废弃物处理成本不确定性高，需优先建立风险准备金与市场询价机制。",
+        "DBB模式下设计与施工接口可能产生成本争议，须提前明确计量与变更程序。",
+        "澳门本地材料与人工价格波动风险，要求造价咨询方提供价格指数联动建议。",
+        "公共接口与临时交通改道成本易被遗漏，须在清单中专项列项。",
+        "业主宏观审批要求成本文件具备充分论证与透明度，避免因文件质量导致审批延误。",
+        "造价咨询方独立性风险，须确保其不与施工或供应方存在利益冲突。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0012/cost",
+          "package_type": "supervision",
+          "package_name": "造价咨询与合同成本管理",
+          "scope": "Authorized scope: 造价咨询与合同成本管理\nBuyer refinement: 造价咨询与合同成本管理，包括工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。不包含政府审批或现场监管服务。",
+          "required_company_role": "supervisor",
+          "qualification_requirements": [
+            "清拆工程计量与计价能力",
+            "合同成本管理与变更控制能力",
+            "澳门本地造价数据库与市场询价能力",
+            "BIM或数字化工程量计量能力",
+            "成本风险识别与预警能力",
+            "独立造价审查与报告能力",
+            "业主审查配合与文档管理能力"
+          ],
+          "proposal_requirements": [
+            "团队角色计划与可用性摘要",
+            "造价咨询服务交付方法",
+            "质量保证与独立复核方法",
+            "价格基准与费率结构",
+            "进度视图与里程碑计划",
+            "风险应对方案"
+          ],
+          "pricing_requirements": "投标人须提交详细价格基准，包括人工时费率、专项服务费率、可报销费用上限及付款里程碑建议。报价以MOP计，业主将审查价格合理性与服务范围的匹配度。\nBinding currency: MOP; package ceiling: 2250000.0.",
+          "evaluation_criteria": [
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标契合",
+            "独立性保证"
+          ],
+          "owner_decision_policy": "业主代理将定性比较投标人的能力匹配、价格合理性、风险控制、人员配置现实性、业主审查清晰度、文档纪律、质量目标契合及独立性保证，综合判断后作出判给决定。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0012/cost",
+        "package_type": "supervision",
+        "package_name": "造价咨询与合同成本管理",
+        "scope": "Authorized scope: 造价咨询与合同成本管理\nBuyer refinement: 造价咨询与合同成本管理，包括工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。不包含政府审批或现场监管服务。",
+        "required_company_role": "supervisor",
+        "qualification_requirements": [
+          "清拆工程计量与计价能力",
+          "合同成本管理与变更控制能力",
+          "澳门本地造价数据库与市场询价能力",
+          "BIM或数字化工程量计量能力",
+          "成本风险识别与预警能力",
+          "独立造价审查与报告能力",
+          "业主审查配合与文档管理能力"
+        ],
+        "proposal_requirements": [
+          "团队角色计划与可用性摘要",
+          "造价咨询服务交付方法",
+          "质量保证与独立复核方法",
+          "价格基准与费率结构",
+          "进度视图与里程碑计划",
+          "风险应对方案"
+        ],
+        "pricing_requirements": "投标人须提交详细价格基准，包括人工时费率、专项服务费率、可报销费用上限及付款里程碑建议。报价以MOP计，业主将审查价格合理性与服务范围的匹配度。\nBinding currency: MOP; package ceiling: 2250000.0.",
+        "evaluation_criteria": [
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标契合",
+          "独立性保证"
+        ],
+        "owner_decision_policy": "业主代理将定性比较投标人的能力匹配、价格合理性、风险控制、人员配置现实性、业主审查清晰度、文档纪律、质量目标契合及独立性保证，综合判断后作出判给决定。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0208",
+        "company_name": "中铁武汉大桥工程咨询监理有限公司",
+        "company_role": "supervisor",
+        "profile": "本地企业资料：工程监理；工程测量；工程试验检测；市政基础设施工程：一类（道路、桥梁工程、轨道交通勘察）施工图审查；工程代建、工程项目管理；工程招标代理、工程造价咨询服务、工程咨询及技术咨询服务。（涉及许可经营项目，应取得相关部门许可后方可经营）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0185",
+        "company_name": "中建三局第二建设工程有限责任公司",
+        "company_role": "supervisor",
+        "profile": "本地企业资料：许可项目 ： 建设工程施工;施工专业作业;建设工程设计;人防工程设计;供电业务;发电业务、输电业务、供（配）电业务;输电、供电、受电电力设施的安装、维修和试验;建筑智能化系统设计;建设工程勘察;建筑物拆除作业（爆破作业除外）;特种设备安装改造修理;公路管理与养护;路基路面养护作业;住宅室内装饰装修;城市生活垃圾经营性服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目 ： 技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;土石方工程施工;园林绿化工程施工;工程管理服务;工程造价咨询业务;工程技术服务（规划管理、勘察、设计、监理除外）;租赁服务（不含许可类租赁服务）;建筑工程机械与设备租赁;普通机械设备安装服务;机械设备租赁;特种设备出租;信息技术咨询服务;专用设备制造（不含许可类专业设备制造）;轴承、齿轮和传动部件销售;对外承包工程;规划设计管理;工业工程设计服务;专用设备修理;金属结构销售;金属结构制造;建筑用钢筋产品销售;光伏设备及元器件销售;光伏发电设备租赁;建筑工程用机械销售;交通安全、管制专用设备制造;建筑工程用机械制造;电气信号设备装置制造;公路水运工程试验检测服务;道路货物运输站经营;土壤污染治理与修复服务;污水处理及其再生利用;水污染治理;固体废物治理;大气污染治理;市政设施管理;合同能源管理;节能管理服务;信息系统集成服务;建筑装饰材料销售;建筑材料销售;停车场服务;物业管理;城市绿化管理;商业综合体管理服务;医院管理;公共事业管理服务;园区管理服务。（除许可业务外，可自主依法经营法律法规非禁止或限制的项目）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "长期负责公共工程统筹，压力下先确认工期与接口责任，再谈资源调配。他最先注意到跨部门审批与清拆移交之间的时间缝隙，倾向把风险前置为明确的里程碑。讨论中常带来进度与合规之间的张力，提醒团队不要为赶工牺牲监管服务与文件纪律。",
+          "responsibilities": [
+            "统筹清拆工程整体工期与里程碑",
+            "协调设计、监管与施工接口",
+            "主持招标包划分与采购节奏讨论",
+            "向业主汇报项目风险与进度"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先讲结论与关键日期，再补充依据；对模糊承诺会当场追问。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否对应实际工作量。她最先发现预算科目之间的错配，倾向用保守估算留出风险缓冲。讨论中带来成本控制与工期弹性之间的张力，强调每笔支付评审都要有可追溯依据。",
+          "responsibilities": [
+            "编制与复核项目成本基准",
+            "评审投标报价基础与支付安排",
+            "跟踪变更与风险预备费",
+            "提交成本控制与支付评审意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，习惯用分项数字说明立场，对未量化的成本假设会要求补充依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量目标负责人",
+          "personal_profile": "工程背景出身，压力下先看技术方案是否可施工、可检验。他最先注意到清拆范围与周边交通设施的衔接细节，倾向把质量目标拆成可检查的验收点。讨论中带来设计理想与现场可行性之间的张力，坚持独立检查与文件纪律。",
+          "responsibilities": [
+            "协调设计文件与清拆技术方案",
+            "制定质量目标与验收检查点",
+            "组织独立检查与质量复核",
+            "评估投标方的技术能力匹配"
+          ],
+          "decision_authority": "final",
+          "communication_style": "务实细致，喜欢用图纸与检查清单说话，对含糊的技术承诺会要求具体做法。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标包协调经理",
+          "personal_profile": "熟悉公共采购流程，压力下先确认招标包的边界与评标标准是否一致。她最先注意到投标方能力与包件要求的匹配度，倾向用结构化评分减少争议。讨论中带来程序严谨与采购效率之间的张力，强调文件纪律与业主审查留痕。",
+          "responsibilities": [
+            "划分招标包并编制采购计划",
+            "组织评标与能力匹配审查",
+            "管理投标问答与文件纪律",
+            "协调判给建议与业主审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健有条理，按程序节点推进，对越过程序的提议会明确提示风险。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "现场与监管",
+          "position": "现场监管与风险应对主管",
+          "personal_profile": "常驻现场思维，压力下先判断施工对周边环境与公众的影响。他最先注意到清拆粉尘、噪音与交通改道的现实约束，倾向把风险应对写成可执行的现场措施。讨论中带来现场实际与合约条款之间的张力，重视监管服务与安全底线。",
+          "responsibilities": [
+            "制定现场监管与风险应对方案",
+            "评估清拆对周边环境的影响",
+            "跟踪安全与可持续发展目标",
+            "提交现场报告与整改建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直白务实，用现场情况与具体措施说明问题，对纸面方案会追问落地方式。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "财务与资源规划",
+          "position": "财务与资源规划主管",
+          "personal_profile": "从资金与人力可用性看问题，压力下先确认资源承诺是否与项目节奏匹配。她最先注意到团队可用性与支付节奏之间的错位，倾向用分阶段资源计划降低集中风险。讨论中带来资源现实与项目雄心之间的张力，强调可持续的资金安排。",
+          "responsibilities": [
+            "编制项目资金与资源计划",
+            "评估团队可用性与资源匹配",
+            "跟踪付款节奏与财务风险",
+            "提交资源规划与财务审查意见"
+          ],
+          "decision_authority": "final",
+          "communication_style": "冷静克制，用资源与资金数据支撑判断，对过度乐观的计划会提出分阶段建议。"
+        }
+      ],
+      "COMP-0208": [
+        {
+          "agent_id": "COMP-0208_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先判断公司资源与风险边界，先看整体资源占用与合同承诺是否匹配，常把讨论拉回资源规划与最终责任归属，带来资源约束与决策速度之间的张力。",
+          "responsibilities": [
+            "统筹公司资源规划与投标决策",
+            "审批造价咨询包的整体交付策略",
+            "对接业主高层与关键利益相关方",
+            "监督质量目标与可持续发展目标的落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先结论后依据，强调责任边界与资源现实。"
+        },
+        {
+          "agent_id": "COMP-0208_02_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "造价咨询部",
+          "position": "造价咨询经理",
+          "personal_profile": "对数字与合同条款高度敏感，压力下先核查报价基础与支付条件，善于发现成本漏项与支付风险，常因坚持成本复核而拖慢会议节奏，带来成本控制与进度之间的张力。",
+          "responsibilities": [
+            "编制与复核造价咨询方案及报价基础",
+            "执行合同成本管理与支付评审",
+            "组织成本评审与变更评估",
+            "维护成本文档纪律与版本控制"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "数据驱动，逐项核对，习惯用清单与对比表说明问题。"
+        },
+        {
+          "agent_id": "COMP-0208_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "工程监理部",
+          "position": "高级监理工程师",
+          "personal_profile": "现场经验丰富，压力下先关注施工可行性与质量目标的可验证性，对独立检查与质量复核有执念，常质疑过于乐观的工期安排，带来质量优先与工期弹性之间的张力。",
+          "responsibilities": [
+            "制定质量目标与独立检查方案",
+            "审核承包商质量计划与现场报告",
+            "协调现场质量评审与整改跟踪",
+            "参与支付评审中的质量符合性确认"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实具体，以现场实例说明风险，强调可验证证据。"
+        },
+        {
+          "agent_id": "COMP-0208_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "项目管理部",
+          "position": "项目经理",
+          "personal_profile": "擅长跨方协调与进度整合，压力下先梳理利益相关方诉求与关键路径，注重文档纪律与会议纪要闭环，常因追求共识而推迟决策，带来协调效率与决策果断之间的张力。",
+          "responsibilities": [
+            "统筹造价咨询包的进度与交付协调",
+            "组织利益相关方沟通与业主接口",
+            "维护项目文档纪律与风险登记册",
+            "跟踪质量目标与可持续发展目标的执行"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，善于归纳各方立场，常用时间线与责任矩阵沟通。"
+        },
+        {
+          "agent_id": "COMP-0208_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0208",
+          "company_role": "supervisor",
+          "department": "技术咨询部",
+          "position": "技术咨询主管",
+          "personal_profile": "技术背景扎实，压力下先评估技术方案的可比性与设计协调一致性，关注独立复核方法是否充分，常对造价估算的技术假设提出质疑，带来技术严谨与商务效率之间的张力。",
+          "responsibilities": [
+            "提供设计协调与技术评审支持",
+            "复核造价估算中的技术假设与工程量",
+            "组织独立技术检查与质量复核",
+            "参与风险应对与技术变更评估"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "逻辑严谨，偏好用技术依据与对比分析支撑观点。"
+        }
+      ],
+      "COMP-0185": [
+        {
+          "agent_id": "COMP-0185_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0185",
+          "company_role": "supervisor",
+          "department": "造价咨询部",
+          "position": "首席造价工程师",
+          "personal_profile": "在压力下优先核对合同条款与工程量清单的对应关系，对数字异常敏感，习惯先建立成本基线再讨论风险。他倾向于把不确定性转化为可量化的风险准备金，但有时会因过度保守而拖慢决策节奏，在讨论中常提醒团队不要低估清拆工程的隐蔽成本。",
+          "responsibilities": [
+            "统筹造价咨询与合同成本管理包的交付质量",
+            "审核工程量清单与成本估算的合理性",
+            "主持成本评审与支付评估会议",
+            "监控成本目标与预算偏差",
+            "协调设计变更对成本的影响评估"
+          ],
+          "decision_authority": "final",
+          "communication_style": "以数据与条款为依据，先结论后论据，语气沉稳，习惯用对比表格呈现成本差异，对模糊表述会当场追问具体数字。"
+        },
+        {
+          "agent_id": "COMP-0185_02_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0185",
+          "company_role": "supervisor",
+          "department": "合同管理部",
+          "position": "合同经理",
+          "personal_profile": "对合同风险条款有近乎本能的警觉，阅读文件时先看责任边界与索赔机制。她认为清拆工程的最大风险来自现场条件变化引发的合同争议，因此坚持在早期明确计量规则与变更程序。讨论中她常扮演风险刹车角色，但偶尔因坚持条款完整性而显得不够灵活。",
+          "responsibilities": [
+            "起草与审查造价咨询合同及分包合同条款",
+            "管理合同变更与索赔评估流程",
+            "维护合同文档纪律与版本控制",
+            "协调业主与承包方的合同界面",
+            "跟踪合同支付节点与履约保证"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "措辞严谨，喜欢引用合同条款编号，习惯用风险矩阵说明问题，对口头承诺会要求书面确认，语速中等但逻辑链条完整。"
+        },
+        {
+          "agent_id": "COMP-0185_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0185",
+          "company_role": "supervisor",
+          "department": "项目管理部",
+          "position": "项目总监",
+          "personal_profile": "从现场视角看问题，最先关注工期可行性与资源到位情况。他相信清拆工程的关键在于现场协调与进度控制，对纯办公室推演保持警惕。压力下他会主动压缩非关键路径，但有时低估文档与审批流程所需时间，讨论中常把话题拉回现场可执行性。",
+          "responsibilities": [
+            "统筹项目整体进度与资源计划",
+            "主持现场报告与利益相关方协调",
+            "评估清拆作业的工期与风险应对",
+            "对接业主代表与监管服务要求",
+            "监督质量目标与安全措施的落实"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "直白务实，多用现场实例说明观点，偏好短句与行动项，对冗长理论讨论会主动打断并追问下一步安排。"
+        },
+        {
+          "agent_id": "COMP-0185_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0185",
+          "company_role": "supervisor",
+          "department": "质量与合规部",
+          "position": "质量合规主管",
+          "personal_profile": "以独立检查为职业信条，对质量目标与合规证据的完整性要求极高。她习惯在方案中预设检查点与复核记录，认为清拆工程的环保与安全合规是不可妥协的底线。讨论中她常提出额外验证步骤，可能被视为增加工作量，但她坚持这是降低返工风险的必要投入。",
+          "responsibilities": [
+            "制定质量目标与独立检查计划",
+            "审核清拆作业的环保与安全合规文件",
+            "组织内部质量评审与整改跟踪",
+            "维护文档纪律与检查记录",
+            "评估分包商的质量管理能力"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理清晰，习惯用检查清单与证据链说话，对缺失项会逐条列出，语气平和但立场坚定，不轻易接受口头保证。"
+        },
+        {
+          "agent_id": "COMP-0185_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0185",
+          "company_role": "supervisor",
+          "department": "商务与客户部",
+          "position": "商务经理",
+          "personal_profile": "从业主视角与商业可行性出发，最先关注报价基础与支付条件是否匹配业主预算节奏。他擅长在谈判中寻找双方可接受的折中方案，但有时为了维持关系而弱化风险提示。讨论中他常提醒团队注意业主评审的关注点与付款评审流程。",
+          "responsibilities": [
+            "维护业主界面与利益相关方沟通",
+            "编制报价基础与商务建议书",
+            "跟踪支付评审与付款评估流程",
+            "协调组合体或联合投标的商务安排",
+            "收集业主反馈并调整服务方案"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "善于倾听与提问，常用业主关切点组织论述，语气亲和，但在关键商务条款上会明确底线，习惯用情景对比说明利弊。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0208",
+        "company_role": "supervisor",
+        "package_id": "CASE-0012/cost",
+        "agent_id": "COMP-0208_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "这次招标包是清拆工程的造价咨询与合同成本管理，预算上限225万MOP，属于我们监理主业之外的延伸服务。公司资料里明确列有工程造价咨询服务、工程招标代理和工程咨询，造价估算能力参数也不低，资源上目前2.0全部空闲，这个包只需要0.25，容量完全够。真正的顾虑是：清拆工程计量计价、澳门本地造价数据库与市场询价、BIM计量这几项是包的核心能力需求，而公司资料没有给出具体的人员名单、本地数据库或过往清拆造价业绩，这些是能力证据的空白，不是资格障碍。我的判断是这属于可以自己作为单一责任投标人承担的专业服务包，造价咨询不需要共享投标人身份或分担包级交付责任，缺的本地询价和BIM计量可以通过常规专业支持或内部调配解决，不必上升到组合体。风险在于报价合理性审查和独立复核方法，业主会看费率结构和交付方法是否扎实，如果团队角色计划写得空泛，评标会失分。所以决定投标，但要把团队可用性、独立复核、本地询价来源和BIM计量安排作为投标假设写清楚，不虚构已落实的资源或报价。",
+        "content": "管理层决定：就CASE-0012/cost造价咨询与合同成本管理包提交独立投标，报价以MOP计，控制在225万MOP上限内。投标文件按业主要求组织六部分：团队角色计划与可用性摘要、造价咨询服务交付方法、质量保证与独立复核方法、价格基准与费率结构、进度视图与里程碑计划、风险应对方案。交付方法上，工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析与结算审核支持按清拆工程特点分阶段设置复核节点，独立复核由不参与原编制的第二人签署，文档管理按业主审查配合要求留痕。价格基准分列人工时费率、专项服务费率、可报销费用上限及付款里程碑建议，报价合理性以服务范围与投入工时的匹配说明支撑。风险应对重点覆盖本地市场询价来源的建立、BIM或数字化计量的支持安排、以及成本风险预警的触发机制。需说明的是，本地造价数据库、清拆专项业绩与关键人员到位情况目前为待核实事项，投标文件将如实反映拟议安排，不表述为已落实承诺；若开标前关键人员无法确认，将按内部评审程序处理。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:41:15",
+        "verification_requests": [
+          {
+            "question": "需说明的是，本地造价数据库、清拆专项业绩与关键人员到位情况目前为待核实事项，投标文件将如实反映拟议安排，不表述为已落实承诺；若开标前关键人员无法确认，将按内部评审程序处理",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0185",
+        "company_role": "supervisor",
+        "package_id": "CASE-0012/cost",
+        "agent_id": "COMP-0185_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "造价咨询部",
+        "position": "首席造价工程师",
+        "message_type": "decision",
+        "thoughts": "这是一个造价咨询与合同成本管理包，预算225万MOP，资源需求仅0.25，我们可用资源2.0，容量上完全无压力。公司资料里明确列有工程造价咨询业务、工程管理服务、工程技术服务等经营范围，企业参数中造价估算能力0.8、技术能力0.8、管理能力0.8，说明我们在造价咨询这一专业方向上具备可信的能力基础。包的范围是清单编制复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警和结算审核支持，不含政府审批或现场监管，边界清晰，属于我们可作为单一责任方承接的专业服务。清拆工程计量计价、澳门本地造价数据库与市场询价、BIM计量这几项需要具体团队和本地数据支撑，但这些都是可以通过内部团队配置和常规外部专业支持解决的执行细节，不构成需要另一家企业共享投标主体身份和包级责任的问责缺口。风险偏好0.5、协作偏好0.5，属于中性，没有必要为这个规模可控、专业对口的包引入组合体而稀释责任和利润。因此我倾向独立投标，同时在投标文件中把团队角色计划、独立复核方法、价格基准与费率结构、进度视图和风险应对写扎实，用文档纪律和独立审查机制回应业主对质量与价格合理性的关注。",
+        "content": "管理层决定：对CASE-0012/cost造价咨询与合同成本管理包独立投标。理由是本包与公司造价咨询及工程管理业务方向高度匹配，资源需求0.25而公司可用资源2.0，容量充裕；包范围边界清晰，不含政府审批或现场监管，公司可作为单一责任主体承担清单编制复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。投标文件将重点提交团队角色计划与可用性摘要、造价咨询服务交付方法、质量保证与独立复核方法、价格基准与费率结构（人工时费率、专项服务费率、可报销费用上限及付款里程碑建议，均以MOP计）、进度视图与里程碑计划以及风险应对方案。针对清拆工程计量计价、澳门本地造价数据库与市场询价、BIM或数字化计量等专项需求，将以内部团队配置和常规专业支持落实，并在质量与文档管理上设置独立复核与审查节点，确保报价合理性与服务范围匹配。本决策为独立投标，不采用组合体形式。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:41:14",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0208",
+        "company_role": "supervisor",
+        "package_id": "CASE-0012/cost",
+        "agent_id": "COMP-0208_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "关键造价人员到位情况待核实：投标文件如实反映拟议人员安排，不表述为已落实承诺；若开标前关键人员无法确认，按内部评审程序处理\n本地询价来源、BIM计量支持与关键人员到位情况为待核实事项，已在投标文件中如实说明为拟议安排，不表述为已落实承诺\n关键造价人员到位情况待核实，投标文件如实反映拟议人员安排，不表述为已落实承诺",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:41:24",
+        "verification_requests": [
+          {
+            "question": "关键造价人员到位情况待核实：投标文件如实反映拟议人员安排，不表述为已落实承诺；若开标前关键人员无法确认，按内部评审程序处理",
+            "required_before_submission": false
+          },
+          {
+            "question": "本地询价来源、BIM计量支持与关键人员到位情况为待核实事项，已在投标文件中如实说明为拟议安排，不表述为已落实承诺",
+            "required_before_submission": false
+          },
+          {
+            "question": "关键造价人员到位情况待核实，投标文件如实反映拟议人员安排，不表述为已落实承诺",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0185",
+        "company_role": "supervisor",
+        "package_id": "CASE-0012/cost",
+        "agent_id": "COMP-0185_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "造价咨询部",
+        "position": "首席造价工程师",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:41:30",
+        "verification_requests": [
+          {
+            "question": "清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0012/cost",
+        "agent_id": "OWNER-4048bdd520aa7f_06_林晓彤",
+        "agent_name": "林晓彤",
+        "department": "财务与资源规划",
+        "position": "财务与资源规划主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为南粤批发市场清拆工程的造价咨询与合同成本管理服务选择一个可靠、可落地且价格合理的承担方。两家投标报价接近，COMP-0208报价MOP 1,830,000略低，但其本地询价来源、BIM计量支持与关键人员到位均自述为待落实事项，能力落地风险较高，若进场后无法兑现，将直接影响清单复核、变更估价与结算审核的进度和质量。COMP-0185报价MOP 1,850,000，虽略高，但团队岗位配置完整、公司可用资源充裕、三级质量控制与独立复核机制清晰，价格基准分项详细并设可报销费用上限，可核验性更强。评标推荐COMP-0185，与我的风险判断一致。我决定判给COMP-0185，并在预合同澄清阶段聚焦本地询价来源清单、BIM计量接口确认、关键人员到位证据与价格基准细化，确保服务启动阶段有明确的核验节点。",
+        "content": "经综合评估，本包判给中建三局第二建设工程有限责任公司（COMP-0185），报价MOP 1,850,000。该投标以单一责任主体提交，团队岗位配置完整，三级质量控制与独立复核机制清晰，价格基准分项详细并设可报销费用上限，能力匹配与价格可核验性较好。预合同澄清重点为本地询价来源清单、BIM计量接口确认、关键人员到位证据与价格基准细化，相关核验节点纳入业主审查与批准流程。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:41:40",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0208",
+        "package_id": "CASE-0012/cost",
+        "decision": "bid",
+        "reason": "本包为造价咨询与合同成本管理，属公司资料明列的工程造价咨询与工程咨询业务范围，与监理主业形成互补而非冲突。资源账上可用2.0、占用0，本包仅需0.25，容量不构成约束。包的核心需求中，清拆计量计价、合同成本与变更控制、成本风险预警、独立审查报告与业主审查配合，均可由公司以单一责任投标人身份组织交付；澳门本地造价数据库与市场询价、BIM计量属于可通过内部调配与常规专业支持补强的执行细节，不改变投标人身份与包级责任归属，因此不构成组合体理由。主要风险是团队角色计划与可用性摘要缺乏具体人员证据、本地询价来源尚未落实、报价费率结构需经得起业主价格合理性审查。管理上采取有条件投标：以现有能力框架编制交付方法、质量保证与独立复核方法、进度视图与风险应对，价格基准按人工时费率与专项服务费率分列并设可报销费用上限，同时在投标文件中如实说明本地询价与BIM计量的支持安排，不将拟议支持表述为已签约承诺。若开标前发现关键造价人员无法到位或费率结构无法覆盖服务范围，则按内部评审撤回。",
+        "unresolved_condition_ids": [
+          "condition_1f3523e4dc44dce4db5d"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0185",
+        "package_id": "CASE-0012/cost",
+        "decision": "bid",
+        "reason": "管理判断：本包为造价咨询与合同成本管理，预算225万MOP，资源需求0.25，公司当前可用资源2.0，容量与工期压力可控。公司经营范围明确涵盖工程造价咨询、工程管理服务与工程技术服务，企业参数显示造价估算、技术与管理能力均处于可信水平，具备作为单一责任主体承接清单复核、成本估算、预算控制、变更估价、付款审核、索赔分析与结算审核支持的能力。包范围不含政府审批或现场监管，责任边界清晰，无需另一家企业共享投标主体身份或包级交付责任，因此不构成组合体情形。清拆工程计量计价、澳门本地造价数据库与市场询价、BIM计量等属于可通过内部团队配置与常规专业支持落实的执行事项，应在投标中以团队角色计划、独立复核方法、价格基准与费率结构、进度视图和风险应对方案予以说明，并按业主审查要求做好文档管理与质量把关。综合机会价值、能力匹配、容量余量与风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+          "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+          "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+          "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+          "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+          "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0012/cost_001",
+        "package_id": "CASE-0012/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0208",
+        "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+        "technical_proposal": "本投标以单一公司身份提交，不设组合体。针对南粤批发市场清拆工程的造价咨询与合同成本管理，我方按清拆工程特点设置分阶段交付：\n\n1. 工程量清单编制或复核：以清拆范围、结构类型、废弃物分类与运输处置为主线建立计量口径，对既有清单逐项复核并出具差异说明。\n2. 成本估算与预算控制：按清拆工序、机械台班、弃置运输与处置单价建立估算模型，设置预算控制基准与月度偏差分析。\n3. 变更估价与付款审核：建立变更估价流程与付款审核清单，付款审核以合同条款、计量记录与现场确认三方对照。\n4. 索赔分析与结算审核支持：设置索赔事项台账与时效跟踪，结算审核按分项核对、独立复核、业主审查配合三步推进。\n5. 成本风险预警：设置材料价格、弃置处置单价、工期延误与变更累积四类触发指标，超阈值即出具预警提示。\n\n本地造价数据库与市场询价来源、BIM或数字化计量支持目前为拟议安排，我方在投标文件中如实说明为待落实事项，不表述为已签约承诺。",
+        "implementation_plan": "进场后首月完成计量口径确认、清拆分项分解与既有资料接收，形成清单复核计划与预算控制基准。第二至第三月完成工程量清单复核与成本估算初稿，同步建立本地询价来源清单与价格档案。施工阶段按月执行付款审核与变更估价，按季度出具成本风险预警报告与预算偏差分析。结算阶段按分项核对、独立复核、业主审查配合推进，独立复核由不参与原编制的第二人签署。文档管理按业主审查配合要求全程留痕，报告与复核记录可追溯。",
+        "quotation": 1830000.0,
+        "schedule_commitment": "服务期与项目工期一致，按24个月安排。首月完成进场与计量口径确认；第二至第三月完成清单复核与成本估算初稿；施工阶段按月付款审核、按季度成本风险预警；结算阶段按业主安排推进结算审核支持。里程碑计划在进场后提交业主确认。",
+        "compliance_statement": "我方接受业主对造价咨询成果的审查与复核要求。独立复核由不参与原编制的第二人签署，复核记录与编制记录分离留痕。付款审核与变更估价均设置业主审查配合节点，报告与计量依据按业主要求提交。文档管理按业主审查配合要求执行，确保成果可追溯。",
+        "risk_response": "主要风险及应对：\n1. 本地询价来源尚未落实：进场后优先建立清拆弃置运输与处置、机械台班等询价渠道，询价来源清单与价格档案在首季度内形成，未落实前相关单价标注为估算性价格。\n2. BIM或数字化计量支持尚未签约：按拟议支持安排计列，若支持无法到位，以传统计量方式补足并如实告知业主。\n3. 关键造价人员到位情况待核实：投标文件如实反映拟议人员安排，不表述为已落实承诺；若开标前关键人员无法确认，按内部评审程序处理。\n4. 成本风险预警：设置材料价格、弃置处置单价、工期延误与变更累积四类触发指标，超阈值即出具预警提示并建议应对措施。",
+        "submission_summary": "本投标以单一公司身份提交，报价MOP 1,830,000，控制在包上限MOP 2,250,000以内。\n\n价格基准构成：\n- 项目造价团队人工时费用：MOP 986,000\n- 独立复核与质量保证费用：MOP 214,000\n- 本地询价与造价数据维护费用：MOP 168,000\n- BIM或数字化计量支持费用：MOP 132,000\n- 成本风险预警与报告编制费用：MOP 146,000\n- 项目管理、文档管理与不可预见费：MOP 184,000\n合计：MOP 1,830,000\n\n报价以服务范围与投入工时的匹配说明支撑，人工时费率与专项服务费率分列。本地询价来源、BIM计量支持与关键人员到位情况为待核实事项，已在投标文件中如实说明为拟议安排，不表述为已落实承诺。付款里程碑建议按进场、清单复核完成、施工阶段季度审核、结算审核支持分节点设置。",
+        "quotation_breakdown": [
+          {
+            "item": "项目造价团队人工时费用",
+            "amount": 986000,
+            "basis": "按清拆工程计量、估算、变更估价、付款审核与结算支持分阶段配置造价人员工时，含项目经理、造价工程师与计量人员，按不同职级费率分列，属估算性工时投入"
+          },
+          {
+            "item": "独立复核与质量保证费用",
+            "amount": 214000,
+            "basis": "独立复核由不参与原编制的第二人签署，覆盖清单复核、变更估价与结算审核关键节点，含复核工时与文档控制"
+          },
+          {
+            "item": "本地询价与造价数据维护费用",
+            "amount": 168000,
+            "basis": "建立清拆弃置运输与处置、机械台班等本地询价来源与价格档案，属拟议安排，询价来源尚未落实，按估算性支出计列"
+          },
+          {
+            "item": "BIM或数字化计量支持费用",
+            "amount": 132000,
+            "basis": "按清拆范围数字化计量与工程量核对需要计列支持工时，属拟议支持安排，尚未签约，按估算性支出计列"
+          },
+          {
+            "item": "成本风险预警与报告编制费用",
+            "amount": 146000,
+            "basis": "设置四类成本风险触发指标，按季度出具预警报告与预算偏差分析，含报告编制与业主审查配合工时"
+          },
+          {
+            "item": "项目管理、文档管理与不可预见费",
+            "amount": 184000,
+            "basis": "含项目协调、文档留痕、业主审查配合管理工时及不可预见费，按服务范围与投入工时匹配原则计列"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_1f3523e4dc44dce4db5d",
+          "condition_98a4049c4ed06019b69a",
+          "condition_3f0f894042b1e20fbd6f",
+          "condition_a1d2ee23286e407bbab5"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本地造价数据库与市场询价来源为拟议安排，尚未落实，相关单价在落实前标注为估算性价格",
+          "BIM或数字化计量支持为拟议支持安排，尚未签约，若无法到位以传统计量方式补足",
+          "关键造价人员到位情况待核实，投标文件如实反映拟议人员安排，不表述为已落实承诺",
+          "报价为基于服务范围与估算工时的价格基准，最终以业主审查确认的服务范围为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0012/cost_002",
+        "package_id": "CASE-0012/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0185",
+        "bidder_name": "中建三局第二建设工程有限责任公司",
+        "technical_proposal": "中建三局第二建设工程有限责任公司以单一责任主体身份独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式，全部交付责任、质量责任与合同成本审查责任由本公司承担。\n\n一、服务范围理解\n本包为粤澳新通道项目-南粤批发市场清拆工程（地块约7,400平方米，项目工期24个月，DBB模式）的造价咨询与合同成本管理服务，内容包括：工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。明确不含政府审批与现场监管服务，责任边界清晰。\n\n二、团队角色计划与可用性摘要\n本公司当前可用资源2.0，本包资源需求0.25，容量充裕，可保证团队稳定投入。拟配置：首席造价工程师1名（总体负责、变更与索赔审定）、注册造价工程师2名（清拆工程计量计价、清单复核）、成本控制工程师1名（预算控制、付款审核）、BIM计量工程师1名（模型工程量提取与计量接口管理）、合同管理专员1名（合同成本台账、风险预警）、文档控制员1名（文档管理与业主审查配合）。编制与独立复核人员分离，复核人员不参与其复核对象的编制工作。\n\n三、交付方法\n1. 清拆工程计量与计价：按清拆工序分解（结构拆除、基础拆除、废弃物分类外运、场地平整及环境处理），建立计量规则与计价口径说明，清单编制与复核双轨并行。\n2. 成本估算与预算控制：以本公司造价数据积累为基础建立成本基线，设置月度预算执行对比与偏差阈值预警。\n3. 变更估价与索赔分析：建立变更登记、估价、审批跟踪台账，索赔事项按合同条款逐项分析并提供独立意见。\n4. 付款审核：按合同付款条件核对计量、凭证与累计支付，出具付款审核意见。\n5. 结算审核支持：编制结算审核计划，分阶段核对，形成结算审核报告。\n6. BIM或数字化计量：以公司现有技术条件配置BIM计量，明确模型版本、计量接口与人工复核的衔接规则，模型工程量须经人工独立校核后方可用于计价。\n7. 澳门本地造价数据库与市场询价：以公司现有数据积累为基础，必要时采用常规外部询价支持，外部询价仅作为本公司管理下的支持手段，不作为共享投标主体。\n\n四、质量保证与独立复核方法\n设置三级质量控制：编制人自检、专业复核人独立复核、首席造价工程师审定签发。复核人员与编制人员分离；关键成果（清单、估算、变更估价、结算审核报告）实行独立复核签署；建立文档版本控制与审查意见闭环记录，配合业主审查轮次并保留全部审查痕迹。\n\n五、价格基准与费率结构\n按人工时费率、专项服务费率、可报销费用上限及付款里程碑建议分项列示，全部以MOP计，详见报价说明。\n\n六、进度视图与里程碑计划\n按项目24个月工期配置服务节奏：启动与数据收集、清单编制复核、成本基线建立、施工期变更与付款审核、结算审核支持分阶段推进，里程碑与业主审查节点对齐。\n\n七、风险应对方案\n针对清拆工程量不确定性、废弃物外运计价波动、变更与索赔集中发生、BIM模型与现场不一致、外部询价数据时效性等风险，分别设置计量复核、价格指数跟踪、变更预警阈值、模型人工校核及询价数据有效期管理等应对措施。",
+        "implementation_plan": "阶段一（启动期）：组建团队并提交角色计划，收集图纸、合同与现场资料，建立文档控制与计量规则框架，完成BIM模型接收与计量接口确认。\n阶段二（清单与估算期）：完成工程量清单编制或复核，建立成本估算与预算基线，提交业主审查并按审查意见修订闭环。\n阶段三（施工期持续服务）：按月开展计量核对、付款审核、变更估价与合同成本台账更新，设置成本偏差预警阈值并按月提交成本风险预警报告。\n阶段四（索赔与结算期）：集中处理索赔分析，编制结算审核计划，分阶段核对结算资料，出具结算审核报告并配合业主审查。\n全过程：编制与复核分离，独立复核签署，文档版本控制，业主审查意见闭环记录。外部询价支持按需启动，由本公司统一管理与把关。",
+        "quotation": 1850000.0,
+        "schedule_commitment": "服务期与项目24个月工期对齐：启动期约1个月，清单与估算期约3个月，施工期持续服务贯穿施工阶段，索赔与结算审核支持延续至结算完成。里程碑与业主审查节点对齐，各阶段成果按约定时点提交；如业主审查轮次增加，按合同约定另行协商工时调整。",
+        "compliance_statement": "本公司接受业主对价格合理性与服务范围匹配度的审查，提交详细价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议，全部以MOP计。付款里程碑建议按阶段成果设置：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交。文档管理实行版本控制与审查意见闭环，配合业主各轮审查并保留完整记录。本包不含政府审批与现场监管服务，相关责任不在本包范围内。",
+        "risk_response": "1. 清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点。\n2. 废弃物外运与材料价格波动：跟踪价格指数，变更估价采用合同约定口径，必要时提示业主价格调整机制。\n3. 变更与索赔集中发生：建立变更登记与预警阈值，提前配置复核工时余量。\n4. BIM模型与现场不一致：模型工程量须经人工独立校核后方可用于计价。\n5. 外部询价数据时效性：设定询价数据有效期，关键价格由本公司复核确认。\n6. 团队稳定性：公司可用资源2.0、本包需求0.25，容量充裕，可保证人员稳定投入。",
+        "submission_summary": "中建三局第二建设工程有限责任公司以单一责任主体独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式。\n\n报价总额：MOP 1,850,000（在包预算上限MOP 2,250,000以内）。\n\n费用构成：\n- 核心造价团队人工时费用：MOP 986,000\n- BIM计量与数字化工程量专项服务费：MOP 218,000\n- 独立复核与质量审查专项费：MOP 176,000\n- 文档控制与业主审查配合费：MOP 124,000\n- 外部市场询价与数据支持费：MOP 96,000（估算性支持预算，非已取得的外部报价）\n- 可报销费用上限：MOP 68,000\n- 风险预备金与公司管理费：MOP 182,000\n合计：MOP 1,850,000\n\n价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议均以MOP计，按业主审查要求详细列示。报价为固定总价加可报销费用上限模式，可报销费用按实报销且不超过上限。\n\n付款里程碑建议：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交分阶段支付。\n\n本包不含政府审批与现场监管服务。外部询价支持为常规专业支持，由本公司统一管理与把关，不作为共享投标主体。",
+        "quotation_breakdown": [
+          {
+            "item": "核心造价团队人工时费用",
+            "amount": 986000,
+            "basis": "首席造价工程师、注册造价工程师2名、成本控制工程师、合同管理专员的项目期投入工时，按分级人工时费率估算，含清拆工程计量计价与合同成本管理全过程"
+          },
+          {
+            "item": "BIM计量与数字化工程量专项服务费",
+            "amount": 218000,
+            "basis": "BIM计量工程师投入及模型工程量提取、人工校核衔接的专项服务工时，按专项服务费率估算"
+          },
+          {
+            "item": "独立复核与质量审查专项费",
+            "amount": 176000,
+            "basis": "独立复核人员与编制人员分离配置，关键成果独立复核签署及业主审查轮次配合的专项工时"
+          },
+          {
+            "item": "文档控制与业主审查配合费",
+            "amount": 124000,
+            "basis": "文档控制员投入、版本控制、审查意见闭环记录及报告编制支持"
+          },
+          {
+            "item": "外部市场询价与数据支持费",
+            "amount": 96000,
+            "basis": "澳门本地市场询价与数据核验的常规外部支持，按需启动，由本公司统一管理，属估算性支持预算而非已取得的外部报价"
+          },
+          {
+            "item": "可报销费用上限",
+            "amount": 68000,
+            "basis": "现场踏勘、资料复制、通讯及必要差旅等可报销费用上限，按实报销且不超过此上限"
+          },
+          {
+            "item": "风险预备金与公司管理费",
+            "amount": 182000,
+            "basis": "清拆工程量不确定性与变更集中发生的风险预备，以及公司管理与保险分摊"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_685a2a8e95422405de47"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+          "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+          "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+          "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+          "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+          "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内",
+          "外部市场询价与数据支持费为估算性支持预算，尚未取得外部报价，实际启动时由本公司统一管理与复核"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0012/cost",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0012/cost_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0208",
+            "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+            "quotation": 1830000.0,
+            "quotation_breakdown": [
+              {
+                "item": "项目造价团队人工时费用",
+                "amount": 986000,
+                "basis": "按清拆工程计量、估算、变更估价、付款审核与结算支持分阶段配置造价人员工时，含项目经理、造价工程师与计量人员，按不同职级费率分列，属估算性工时投入"
+              },
+              {
+                "item": "独立复核与质量保证费用",
+                "amount": 214000,
+                "basis": "独立复核由不参与原编制的第二人签署，覆盖清单复核、变更估价与结算审核关键节点，含复核工时与文档控制"
+              },
+              {
+                "item": "本地询价与造价数据维护费用",
+                "amount": 168000,
+                "basis": "建立清拆弃置运输与处置、机械台班等本地询价来源与价格档案，属拟议安排，询价来源尚未落实，按估算性支出计列"
+              },
+              {
+                "item": "BIM或数字化计量支持费用",
+                "amount": 132000,
+                "basis": "按清拆范围数字化计量与工程量核对需要计列支持工时，属拟议支持安排，尚未签约，按估算性支出计列"
+              },
+              {
+                "item": "成本风险预警与报告编制费用",
+                "amount": 146000,
+                "basis": "设置四类成本风险触发指标，按季度出具预警报告与预算偏差分析，含报告编制与业主审查配合工时"
+              },
+              {
+                "item": "项目管理、文档管理与不可预见费",
+                "amount": 184000,
+                "basis": "含项目协调、文档留痕、业主审查配合管理工时及不可预见费，按服务范围与投入工时匹配原则计列"
+              }
+            ],
+            "submission_summary": "本投标以单一公司身份提交，报价MOP 1,830,000，控制在包上限MOP 2,250,000以内。\n\n价格基准构成：\n- 项目造价团队人工时费用：MOP 986,000\n- 独立复核与质量保证费用：MOP 214,000\n- 本地询价与造价数据维护费用：MOP 168,000\n- BIM或数字化计量支持费用：MOP 132,000\n- 成本风险预警与报告编制费用：MOP 146,000\n- 项目管理、文档管理与不可预见费：MOP 184,000\n合计：MOP 1,830,000\n\n报价以服务范围与投入工时的匹配说明支撑，人工时费率与专项服务费率分列。本地询价来源、BIM计量支持与关键人员到位情况为待核实事项，已在投标文件中如实说明为拟议安排，不表述为已落实承诺。付款里程碑建议按进场、清单复核完成、施工阶段季度审核、结算审核支持分节点设置。",
+            "unresolved_condition_ids": [
+              "condition_1f3523e4dc44dce4db5d",
+              "condition_98a4049c4ed06019b69a",
+              "condition_3f0f894042b1e20fbd6f",
+              "condition_a1d2ee23286e407bbab5"
+            ],
+            "bid_assumptions": [
+              "本地造价数据库与市场询价来源为拟议安排，尚未落实，相关单价在落实前标注为估算性价格",
+              "BIM或数字化计量支持为拟议支持安排，尚未签约，若无法到位以传统计量方式补足",
+              "关键造价人员到位情况待核实，投标文件如实反映拟议人员安排，不表述为已落实承诺",
+              "报价为基于服务范围与估算工时的价格基准，最终以业主审查确认的服务范围为准"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0012/cost_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0185",
+            "bidder_name": "中建三局第二建设工程有限责任公司",
+            "quotation": 1850000.0,
+            "quotation_breakdown": [
+              {
+                "item": "核心造价团队人工时费用",
+                "amount": 986000,
+                "basis": "首席造价工程师、注册造价工程师2名、成本控制工程师、合同管理专员的项目期投入工时，按分级人工时费率估算，含清拆工程计量计价与合同成本管理全过程"
+              },
+              {
+                "item": "BIM计量与数字化工程量专项服务费",
+                "amount": 218000,
+                "basis": "BIM计量工程师投入及模型工程量提取、人工校核衔接的专项服务工时，按专项服务费率估算"
+              },
+              {
+                "item": "独立复核与质量审查专项费",
+                "amount": 176000,
+                "basis": "独立复核人员与编制人员分离配置，关键成果独立复核签署及业主审查轮次配合的专项工时"
+              },
+              {
+                "item": "文档控制与业主审查配合费",
+                "amount": 124000,
+                "basis": "文档控制员投入、版本控制、审查意见闭环记录及报告编制支持"
+              },
+              {
+                "item": "外部市场询价与数据支持费",
+                "amount": 96000,
+                "basis": "澳门本地市场询价与数据核验的常规外部支持，按需启动，由本公司统一管理，属估算性支持预算而非已取得的外部报价"
+              },
+              {
+                "item": "可报销费用上限",
+                "amount": 68000,
+                "basis": "现场踏勘、资料复制、通讯及必要差旅等可报销费用上限，按实报销且不超过此上限"
+              },
+              {
+                "item": "风险预备金与公司管理费",
+                "amount": 182000,
+                "basis": "清拆工程量不确定性与变更集中发生的风险预备，以及公司管理与保险分摊"
+              }
+            ],
+            "submission_summary": "中建三局第二建设工程有限责任公司以单一责任主体独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式。\n\n报价总额：MOP 1,850,000（在包预算上限MOP 2,250,000以内）。\n\n费用构成：\n- 核心造价团队人工时费用：MOP 986,000\n- BIM计量与数字化工程量专项服务费：MOP 218,000\n- 独立复核与质量审查专项费：MOP 176,000\n- 文档控制与业主审查配合费：MOP 124,000\n- 外部市场询价与数据支持费：MOP 96,000（估算性支持预算，非已取得的外部报价）\n- 可报销费用上限：MOP 68,000\n- 风险预备金与公司管理费：MOP 182,000\n合计：MOP 1,850,000\n\n价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议均以MOP计，按业主审查要求详细列示。报价为固定总价加可报销费用上限模式，可报销费用按实报销且不超过上限。\n\n付款里程碑建议：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交分阶段支付。\n\n本包不含政府审批与现场监管服务。外部询价支持为常规专业支持，由本公司统一管理与把关，不作为共享投标主体。",
+            "unresolved_condition_ids": [
+              "condition_685a2a8e95422405de47"
+            ],
+            "bid_assumptions": [
+              "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+              "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+              "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+              "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+              "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+              "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内",
+              "外部市场询价与数据支持费为估算性支持预算，尚未取得外部报价，实际启动时由本公司统一管理与复核"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 造价咨询与合同成本管理.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0012/cost",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何家俊",
+          "OWNER-4048bdd520aa7f_06_林晓彤"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0012/cost_001",
+            "bidder_id": "COMP-0208",
+            "bidder_name": "中铁武汉大桥工程咨询监理有限公司",
+            "technical_view": "清拆工程计量计价、变更估价、付款审核与结算支持的分阶段交付方法清晰，四类成本风险触发指标与季度预警报告贴合本包需要，但本地询价来源、BIM计量支持与关键人员到位均自述为拟议安排，能力落地存在不确定性。",
+            "cost_view": "报价MOP 1,830,000低于包上限MOP 2,250,000，人工时与独立复核费用分列且与工时投入说明相配，但本地询价与BIM支持费用属未落实的估算性支出，价格基准的可信度依赖这些待核实事项。",
+            "owner_control_view": "明确接受业主审查与复核要求，独立复核由不参与原编制的第二人签署并分离留痕，付款审核与变更估价设业主审查配合节点，业主审查清晰度与文档纪律较好。",
+            "strengths": [
+              "清拆工序分解与计量口径说明具体，风险预警指标设置可操作",
+              "独立复核与编制记录分离留痕，业主审查配合节点明确",
+              "报价低于包上限且费用分项与工时投入说明相互支撑"
+            ],
+            "concerns": [
+              "本地造价数据库与市场询价来源尚未落实，相关单价仅为估算性价格",
+              "BIM或数字化计量支持尚未签约，若无法到位需以传统计量补足",
+              "关键造价人员到位情况待核实，团队配置现实性尚未确认"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0012/cost_002",
+            "bidder_id": "COMP-0185",
+            "bidder_name": "中建三局第二建设工程有限责任公司",
+            "technical_view": "以单一责任主体投标，团队角色计划列明首席造价工程师、两名注册造价工程师、成本控制、BIM计量、合同管理与文档控制岗位，三级质量控制与编制复核分离机制完整，对清拆计量、变更索赔与BIM人工校核衔接的交付方法覆盖本包全部能力需要。",
+            "cost_view": "报价MOP 1,850,000低于包上限MOP 2,250,000，分级人工时费率、专项服务费率、可报销费用上限与风险预备金分列清楚，固定总价加可报销上限的模式使价格基准较可核验，外部询价费仅为估算性支持预算但已如实说明。",
+            "owner_control_view": "接受业主对价格合理性与服务范围匹配度的审查，付款里程碑按阶段成果设置，文档版本控制与审查意见闭环记录完整，并明确本包不含政府审批与现场监管服务，业主审查清晰度与独立性保证较强。",
+            "strengths": [
+              "团队岗位配置完整且公司可用资源充裕，人员配置现实性较强",
+              "三级质量控制与独立复核签署机制清晰，独立性保证明确",
+              "价格基准分项详细并设可报销费用上限，价格可核验性较好"
+            ],
+            "concerns": [
+              "外部市场询价与数据支持费尚未取得外部报价，本地询价能力仍需进场后验证",
+              "澳门本地造价数据库以公司现有数据积累为基础，本地价格档案深度待确认"
+            ]
+          }
+        ],
+        "comparison_summary": "两家投标报价接近，中建三局第二建设工程有限责任公司报价MOP 1,850,000略高于中铁武汉大桥工程咨询监理有限公司的MOP 1,830,000，但团队岗位配置、独立复核机制与价格基准可核验性更完整。中铁武汉大桥工程咨询监理有限公司交付方法贴合清拆特点，但本地询价、BIM支持与关键人员均属待落实事项，能力落地风险较高。",
+        "recommended_winner": "COMP-0185",
+        "owner_review_notes": "综合能力匹配、人员配置现实性、独立性保证与价格可核验性，建议判给中建三局第二建设工程有限责任公司，并在合同谈判中要求其提交本地询价来源清单与BIM计量接口确认作为进场条件。两家投标的本地询价与外部支持均属估算性安排，业主应在服务启动阶段设置价格档案与人员到位的核验节点。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0012",
+      "package_awards": [
+        {
+          "package_id": "CASE-0012/cost",
+          "selected_bidder_id": "COMP-0185",
+          "selected_bidder_name": "中建三局第二建设工程有限责任公司",
+          "bidder_type": "company",
+          "decision_reason": "COMP-0185以单一责任主体投标，团队岗位配置完整且公司可用资源充裕，三级质量控制与独立复核签署机制清晰，价格基准分项详细并设可报销费用上限，价格可核验性较好，整体能力匹配与交付风险可控。COMP-0208报价虽略低，但本地询价、BIM支持与关键人员均属待落实事项，能力落地不确定性较高。因此选择COMP-0185，并在预合同澄清阶段聚焦本地询价来源清单、BIM计量接口确认、关键人员到位证据与价格基准细化。",
+          "unresolved_condition_ids": [
+            "condition_685a2a8e95422405de47"
+          ],
+          "bid_assumptions": [
+            "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+            "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+            "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+            "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+            "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+            "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内",
+            "外部市场询价与数据支持费为估算性支持预算，尚未取得外部报价，实际启动时由本公司统一管理与复核"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0185"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:41:15",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0208",
+          "package_id": "CASE-0012/cost",
+          "decision": "bid",
+          "reason": "本包为造价咨询与合同成本管理，属公司资料明列的工程造价咨询与工程咨询业务范围，与监理主业形成互补而非冲突。资源账上可用2.0、占用0，本包仅需0.25，容量不构成约束。包的核心需求中，清拆计量计价、合同成本与变更控制、成本风险预警、独立审查报告与业主审查配合，均可由公司以单一责任投标人身份组织交付；澳门本地造价数据库与市场询价、BIM计量属于可通过内部调配与常规专业支持补强的执行细节，不改变投标人身份与包级责任归属，因此不构成组合体理由。主要风险是团队角色计划与可用性摘要缺乏具体人员证据、本地询价来源尚未落实、报价费率结构需经得起业主价格合理性审查。管理上采取有条件投标：以现有能力框架编制交付方法、质量保证与独立复核方法、进度视图与风险应对，价格基准按人工时费率与专项服务费率分列并设可报销费用上限，同时在投标文件中如实说明本地询价与BIM计量的支持安排，不将拟议支持表述为已签约承诺。若开标前发现关键造价人员无法到位或费率结构无法覆盖服务范围，则按内部评审撤回。",
+          "unresolved_condition_ids": [
+            "condition_1f3523e4dc44dce4db5d"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:15",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0185",
+          "package_id": "CASE-0012/cost",
+          "decision": "bid",
+          "reason": "管理判断：本包为造价咨询与合同成本管理，预算225万MOP，资源需求0.25，公司当前可用资源2.0，容量与工期压力可控。公司经营范围明确涵盖工程造价咨询、工程管理服务与工程技术服务，企业参数显示造价估算、技术与管理能力均处于可信水平，具备作为单一责任主体承接清单复核、成本估算、预算控制、变更估价、付款审核、索赔分析与结算审核支持的能力。包范围不含政府审批或现场监管，责任边界清晰，无需另一家企业共享投标主体身份或包级交付责任，因此不构成组合体情形。清拆工程计量计价、澳门本地造价数据库与市场询价、BIM计量等属于可通过内部团队配置与常规专业支持落实的执行事项，应在投标中以团队角色计划、独立复核方法、价格基准与费率结构、进度视图和风险应对方案予以说明，并按业主审查要求做好文档管理与质量把关。综合机会价值、能力匹配、容量余量与风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+            "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+            "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+            "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+            "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+            "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:30",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/cost",
+          "bidder_id": "COMP-0208"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:30",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0012/cost",
+          "bidder_id": "COMP-0185"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:30",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0012/cost",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:36",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0012/cost",
+          "recommended_winner": "COMP-0185"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:41:40",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0012/cost",
+          "selected_bidder_id": "COMP-0185"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "业主方内部讨论后决定接受本轮报价与条款。理由如下：\n\n1. 价格与预算：报价 MOP 1,850,000 在包预算上限 MOP 2,250,000 以内，费用构成分项清晰，采用固定总价加可报销费用上限（MOP 68,000，按实报销且不超上限）模式，价格基准与付款里程碑建议均以 MOP 列示，符合业主对价格合理性与服务范围匹配度的审查要求。\n\n2. 范围与责任边界：本包为造价咨询与合同成本管理，明确不含政府审批与现场监管服务，责任边界清晰，与业主本包采购范围一致。\n\n3. 资源与团队：投标方可用资源 2.0、本包需求 0.25，容量充裕；编制与独立复核人员分离、三级质量控制与关键成果独立复核签署机制满足业主对成果质量的要求。\n\n4. 风险分配：清拆工程量不确定性、废弃物外运与材料价格波动、变更与索赔集中、BIM 模型与现场不一致、外部询价时效性等风险均有对应措施；外部市场询价与数据支持费 MOP 96,000 为估算性支持预算而非已取得的外部报价，业主接受该披露假设，实际启动时由承包方统一管理与复核。\n\n5. 工期对齐：服务期与项目 24 个月工期对齐，里程碑与业主审查节点对齐；如业主审查轮次增加，按合同约定另行协商工时调整，业主接受该安排。\n\n6. 待决事项：投标文件中列有未决条件 condition_685a2a8e95422405de47，业主在本轮不将其作为签约前提，相关事项在合同履行阶段按约定程序处理。\n\n本决定仅授权本模拟中可执行的合同义务，不表示未来工程交付成果或法定审批已经完成；未来交付按合同约定的审查与验收条件执行。"
+          },
+          "COMP-0185": {
+            "action": "accept",
+            "reason": "作为投标方 COMP-0185，本组织确认接受本轮合同条款，并授权按所提供条款、资源与义务执行。\n\n- 价格与币种：MOP 1,850,000，在包预算上限 MOP 2,250,000 以内；币种为 MOP，未作任何换算。\n- 资源承诺：本包资源承诺 0.25（normalized_enterprise_capacity），本组织可用资源 2.0，容量充裕，可保证团队稳定投入。\n- 工作份额：本组织工作份额 1.0，以单一责任主体独立承担全部交付、质量与合同成本审查责任，不采用组合体形式。\n- 范围：造价咨询与合同成本管理，不含政府审批与现场监管服务，责任边界清晰。\n- 已披露的投标假设（内部造价团队承担清拆计量计价、本地数据库与常规外部询价支持、BIM 计量按现有技术条件配置、内部独立复核、MOP 计价、不含政府审批与现场监管、外部询价费为估算性支持预算）作为风险分配予以接受，不视为缺失证据。\n- 未决条件 condition_685a2a8e95422405de47 不改变价格、币种、范围、成员与资源等规范字段；本组织接受以本轮条款作为可执行的模拟义务，未来交付物按带审查与验收条件的义务处理。\n- 本决定仅为情景模拟中的能力匹配确认，不构成对未来工程交付或法定审批已完成的陈述。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+          "simulation_id": "SIM849BD599",
+          "project_id": "CASE-0012",
+          "package_id": "CASE-0012/cost",
+          "session_id": "SIM849BD599/CASE-0012/cost/round-1",
+          "snapshot_version": "b19a911f6382c564874fcd9aa5fa46d8d57522638f226fafec7e0ade0af30368",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0012/cost_002",
+          "bidder_id": "COMP-0185",
+          "lead_id": "COMP-0185",
+          "members": [
+            "COMP-0185"
+          ],
+          "price": 1850000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0185": 0.25
+          },
+          "work_shares": {
+            "COMP-0185": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "7da7113f1c28758365caa62bc63d7f428e1fb9e2ef11fabb8e6dbee6c7f252e5",
+          "terms": {
+            "schedule_commitment": "服务期与项目24个月工期对齐：启动期约1个月，清单与估算期约3个月，施工期持续服务贯穿施工阶段，索赔与结算审核支持延续至结算完成。里程碑与业主审查节点对齐，各阶段成果按约定时点提交；如业主审查轮次增加，按合同约定另行协商工时调整。",
+            "risk_response": "1. 清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点。\n2. 废弃物外运与材料价格波动：跟踪价格指数，变更估价采用合同约定口径，必要时提示业主价格调整机制。\n3. 变更与索赔集中发生：建立变更登记与预警阈值，提前配置复核工时余量。\n4. BIM模型与现场不一致：模型工程量须经人工独立校核后方可用于计价。\n5. 外部询价数据时效性：设定询价数据有效期，关键价格由本公司复核确认。\n6. 团队稳定性：公司可用资源2.0、本包需求0.25，容量充裕，可保证人员稳定投入。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0012/cost_002",
+              "package_id": "CASE-0012/cost",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0185",
+              "bidder_name": "中建三局第二建设工程有限责任公司",
+              "technical_proposal": "中建三局第二建设工程有限责任公司以单一责任主体身份独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式，全部交付责任、质量责任与合同成本审查责任由本公司承担。\n\n一、服务范围理解\n本包为粤澳新通道项目-南粤批发市场清拆工程（地块约7,400平方米，项目工期24个月，DBB模式）的造价咨询与合同成本管理服务，内容包括：工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。明确不含政府审批与现场监管服务，责任边界清晰。\n\n二、团队角色计划与可用性摘要\n本公司当前可用资源2.0，本包资源需求0.25，容量充裕，可保证团队稳定投入。拟配置：首席造价工程师1名（总体负责、变更与索赔审定）、注册造价工程师2名（清拆工程计量计价、清单复核）、成本控制工程师1名（预算控制、付款审核）、BIM计量工程师1名（模型工程量提取与计量接口管理）、合同管理专员1名（合同成本台账、风险预警）、文档控制员1名（文档管理与业主审查配合）。编制与独立复核人员分离，复核人员不参与其复核对象的编制工作。\n\n三、交付方法\n1. 清拆工程计量与计价：按清拆工序分解（结构拆除、基础拆除、废弃物分类外运、场地平整及环境处理），建立计量规则与计价口径说明，清单编制与复核双轨并行。\n2. 成本估算与预算控制：以本公司造价数据积累为基础建立成本基线，设置月度预算执行对比与偏差阈值预警。\n3. 变更估价与索赔分析：建立变更登记、估价、审批跟踪台账，索赔事项按合同条款逐项分析并提供独立意见。\n4. 付款审核：按合同付款条件核对计量、凭证与累计支付，出具付款审核意见。\n5. 结算审核支持：编制结算审核计划，分阶段核对，形成结算审核报告。\n6. BIM或数字化计量：以公司现有技术条件配置BIM计量，明确模型版本、计量接口与人工复核的衔接规则，模型工程量须经人工独立校核后方可用于计价。\n7. 澳门本地造价数据库与市场询价：以公司现有数据积累为基础，必要时采用常规外部询价支持，外部询价仅作为本公司管理下的支持手段，不作为共享投标主体。\n\n四、质量保证与独立复核方法\n设置三级质量控制：编制人自检、专业复核人独立复核、首席造价工程师审定签发。复核人员与编制人员分离；关键成果（清单、估算、变更估价、结算审核报告）实行独立复核签署；建立文档版本控制与审查意见闭环记录，配合业主审查轮次并保留全部审查痕迹。\n\n五、价格基准与费率结构\n按人工时费率、专项服务费率、可报销费用上限及付款里程碑建议分项列示，全部以MOP计，详见报价说明。\n\n六、进度视图与里程碑计划\n按项目24个月工期配置服务节奏：启动与数据收集、清单编制复核、成本基线建立、施工期变更与付款审核、结算审核支持分阶段推进，里程碑与业主审查节点对齐。\n\n七、风险应对方案\n针对清拆工程量不确定性、废弃物外运计价波动、变更与索赔集中发生、BIM模型与现场不一致、外部询价数据时效性等风险，分别设置计量复核、价格指数跟踪、变更预警阈值、模型人工校核及询价数据有效期管理等应对措施。",
+              "implementation_plan": "阶段一（启动期）：组建团队并提交角色计划，收集图纸、合同与现场资料，建立文档控制与计量规则框架，完成BIM模型接收与计量接口确认。\n阶段二（清单与估算期）：完成工程量清单编制或复核，建立成本估算与预算基线，提交业主审查并按审查意见修订闭环。\n阶段三（施工期持续服务）：按月开展计量核对、付款审核、变更估价与合同成本台账更新，设置成本偏差预警阈值并按月提交成本风险预警报告。\n阶段四（索赔与结算期）：集中处理索赔分析，编制结算审核计划，分阶段核对结算资料，出具结算审核报告并配合业主审查。\n全过程：编制与复核分离，独立复核签署，文档版本控制，业主审查意见闭环记录。外部询价支持按需启动，由本公司统一管理与把关。",
+              "quotation": 1850000.0,
+              "schedule_commitment": "服务期与项目24个月工期对齐：启动期约1个月，清单与估算期约3个月，施工期持续服务贯穿施工阶段，索赔与结算审核支持延续至结算完成。里程碑与业主审查节点对齐，各阶段成果按约定时点提交；如业主审查轮次增加，按合同约定另行协商工时调整。",
+              "compliance_statement": "本公司接受业主对价格合理性与服务范围匹配度的审查，提交详细价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议，全部以MOP计。付款里程碑建议按阶段成果设置：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交。文档管理实行版本控制与审查意见闭环，配合业主各轮审查并保留完整记录。本包不含政府审批与现场监管服务，相关责任不在本包范围内。",
+              "risk_response": "1. 清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点。\n2. 废弃物外运与材料价格波动：跟踪价格指数，变更估价采用合同约定口径，必要时提示业主价格调整机制。\n3. 变更与索赔集中发生：建立变更登记与预警阈值，提前配置复核工时余量。\n4. BIM模型与现场不一致：模型工程量须经人工独立校核后方可用于计价。\n5. 外部询价数据时效性：设定询价数据有效期，关键价格由本公司复核确认。\n6. 团队稳定性：公司可用资源2.0、本包需求0.25，容量充裕，可保证人员稳定投入。",
+              "submission_summary": "中建三局第二建设工程有限责任公司以单一责任主体独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式。\n\n报价总额：MOP 1,850,000（在包预算上限MOP 2,250,000以内）。\n\n费用构成：\n- 核心造价团队人工时费用：MOP 986,000\n- BIM计量与数字化工程量专项服务费：MOP 218,000\n- 独立复核与质量审查专项费：MOP 176,000\n- 文档控制与业主审查配合费：MOP 124,000\n- 外部市场询价与数据支持费：MOP 96,000（估算性支持预算，非已取得的外部报价）\n- 可报销费用上限：MOP 68,000\n- 风险预备金与公司管理费：MOP 182,000\n合计：MOP 1,850,000\n\n价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议均以MOP计，按业主审查要求详细列示。报价为固定总价加可报销费用上限模式，可报销费用按实报销且不超过上限。\n\n付款里程碑建议：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交分阶段支付。\n\n本包不含政府审批与现场监管服务。外部询价支持为常规专业支持，由本公司统一管理与把关，不作为共享投标主体。",
+              "quotation_breakdown": [
+                {
+                  "item": "核心造价团队人工时费用",
+                  "amount": 986000,
+                  "basis": "首席造价工程师、注册造价工程师2名、成本控制工程师、合同管理专员的项目期投入工时，按分级人工时费率估算，含清拆工程计量计价与合同成本管理全过程"
+                },
+                {
+                  "item": "BIM计量与数字化工程量专项服务费",
+                  "amount": 218000,
+                  "basis": "BIM计量工程师投入及模型工程量提取、人工校核衔接的专项服务工时，按专项服务费率估算"
+                },
+                {
+                  "item": "独立复核与质量审查专项费",
+                  "amount": 176000,
+                  "basis": "独立复核人员与编制人员分离配置，关键成果独立复核签署及业主审查轮次配合的专项工时"
+                },
+                {
+                  "item": "文档控制与业主审查配合费",
+                  "amount": 124000,
+                  "basis": "文档控制员投入、版本控制、审查意见闭环记录及报告编制支持"
+                },
+                {
+                  "item": "外部市场询价与数据支持费",
+                  "amount": 96000,
+                  "basis": "澳门本地市场询价与数据核验的常规外部支持，按需启动，由本公司统一管理，属估算性支持预算而非已取得的外部报价"
+                },
+                {
+                  "item": "可报销费用上限",
+                  "amount": 68000,
+                  "basis": "现场踏勘、资料复制、通讯及必要差旅等可报销费用上限，按实报销且不超过此上限"
+                },
+                {
+                  "item": "风险预备金与公司管理费",
+                  "amount": 182000,
+                  "basis": "清拆工程量不确定性与变更集中发生的风险预备，以及公司管理与保险分摊"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_685a2a8e95422405de47"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+                "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+                "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+                "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+                "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+                "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内",
+                "外部市场询价与数据支持费为估算性支持预算，尚未取得外部报价，实际启动时由本公司统一管理与复核"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "造价咨询与合同成本管理",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "7da7113f1c28758365caa62bc63d7f428e1fb9e2ef11fabb8e6dbee6c7f252e5"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0012/cost": {
+          "package_type": "supervision",
+          "required_company_role": "supervisor",
+          "scope": "造价咨询与合同成本管理",
+          "budget": 2250000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM849BD599/CASE-0012/cost/round-1/contract",
+    "simulation_id": "SIM849BD599",
+    "project_id": "CASE-0012",
+    "package_id": "CASE-0012/cost",
+    "session_id": "SIM849BD599/CASE-0012/cost/round-1",
+    "snapshot_version": "b19a911f6382c564874fcd9aa5fa46d8d57522638f226fafec7e0ade0af30368",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0012/cost_002",
+    "bidder_id": "COMP-0185",
+    "lead_id": "COMP-0185",
+    "members": [
+      "COMP-0185"
+    ],
+    "price": 1850000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0185": 0.25
+    },
+    "work_shares": {
+      "COMP-0185": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0185": true
+    },
+    "signed_terms_hash": "7da7113f1c28758365caa62bc63d7f428e1fb9e2ef11fabb8e6dbee6c7f252e5",
+    "terms": {
+      "schedule_commitment": "服务期与项目24个月工期对齐：启动期约1个月，清单与估算期约3个月，施工期持续服务贯穿施工阶段，索赔与结算审核支持延续至结算完成。里程碑与业主审查节点对齐，各阶段成果按约定时点提交；如业主审查轮次增加，按合同约定另行协商工时调整。",
+      "risk_response": "1. 清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点。\n2. 废弃物外运与材料价格波动：跟踪价格指数，变更估价采用合同约定口径，必要时提示业主价格调整机制。\n3. 变更与索赔集中发生：建立变更登记与预警阈值，提前配置复核工时余量。\n4. BIM模型与现场不一致：模型工程量须经人工独立校核后方可用于计价。\n5. 外部询价数据时效性：设定询价数据有效期，关键价格由本公司复核确认。\n6. 团队稳定性：公司可用资源2.0、本包需求0.25，容量充裕，可保证人员稳定投入。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0012/cost_002",
+        "package_id": "CASE-0012/cost",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0185",
+        "bidder_name": "中建三局第二建设工程有限责任公司",
+        "technical_proposal": "中建三局第二建设工程有限责任公司以单一责任主体身份独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式，全部交付责任、质量责任与合同成本审查责任由本公司承担。\n\n一、服务范围理解\n本包为粤澳新通道项目-南粤批发市场清拆工程（地块约7,400平方米，项目工期24个月，DBB模式）的造价咨询与合同成本管理服务，内容包括：工程量清单编制或复核、成本估算、预算控制、变更估价、付款审核、索赔分析、合同成本风险预警及结算审核支持。明确不含政府审批与现场监管服务，责任边界清晰。\n\n二、团队角色计划与可用性摘要\n本公司当前可用资源2.0，本包资源需求0.25，容量充裕，可保证团队稳定投入。拟配置：首席造价工程师1名（总体负责、变更与索赔审定）、注册造价工程师2名（清拆工程计量计价、清单复核）、成本控制工程师1名（预算控制、付款审核）、BIM计量工程师1名（模型工程量提取与计量接口管理）、合同管理专员1名（合同成本台账、风险预警）、文档控制员1名（文档管理与业主审查配合）。编制与独立复核人员分离，复核人员不参与其复核对象的编制工作。\n\n三、交付方法\n1. 清拆工程计量与计价：按清拆工序分解（结构拆除、基础拆除、废弃物分类外运、场地平整及环境处理），建立计量规则与计价口径说明，清单编制与复核双轨并行。\n2. 成本估算与预算控制：以本公司造价数据积累为基础建立成本基线，设置月度预算执行对比与偏差阈值预警。\n3. 变更估价与索赔分析：建立变更登记、估价、审批跟踪台账，索赔事项按合同条款逐项分析并提供独立意见。\n4. 付款审核：按合同付款条件核对计量、凭证与累计支付，出具付款审核意见。\n5. 结算审核支持：编制结算审核计划，分阶段核对，形成结算审核报告。\n6. BIM或数字化计量：以公司现有技术条件配置BIM计量，明确模型版本、计量接口与人工复核的衔接规则，模型工程量须经人工独立校核后方可用于计价。\n7. 澳门本地造价数据库与市场询价：以公司现有数据积累为基础，必要时采用常规外部询价支持，外部询价仅作为本公司管理下的支持手段，不作为共享投标主体。\n\n四、质量保证与独立复核方法\n设置三级质量控制：编制人自检、专业复核人独立复核、首席造价工程师审定签发。复核人员与编制人员分离；关键成果（清单、估算、变更估价、结算审核报告）实行独立复核签署；建立文档版本控制与审查意见闭环记录，配合业主审查轮次并保留全部审查痕迹。\n\n五、价格基准与费率结构\n按人工时费率、专项服务费率、可报销费用上限及付款里程碑建议分项列示，全部以MOP计，详见报价说明。\n\n六、进度视图与里程碑计划\n按项目24个月工期配置服务节奏：启动与数据收集、清单编制复核、成本基线建立、施工期变更与付款审核、结算审核支持分阶段推进，里程碑与业主审查节点对齐。\n\n七、风险应对方案\n针对清拆工程量不确定性、废弃物外运计价波动、变更与索赔集中发生、BIM模型与现场不一致、外部询价数据时效性等风险，分别设置计量复核、价格指数跟踪、变更预警阈值、模型人工校核及询价数据有效期管理等应对措施。",
+        "implementation_plan": "阶段一（启动期）：组建团队并提交角色计划，收集图纸、合同与现场资料，建立文档控制与计量规则框架，完成BIM模型接收与计量接口确认。\n阶段二（清单与估算期）：完成工程量清单编制或复核，建立成本估算与预算基线，提交业主审查并按审查意见修订闭环。\n阶段三（施工期持续服务）：按月开展计量核对、付款审核、变更估价与合同成本台账更新，设置成本偏差预警阈值并按月提交成本风险预警报告。\n阶段四（索赔与结算期）：集中处理索赔分析，编制结算审核计划，分阶段核对结算资料，出具结算审核报告并配合业主审查。\n全过程：编制与复核分离，独立复核签署，文档版本控制，业主审查意见闭环记录。外部询价支持按需启动，由本公司统一管理与把关。",
+        "quotation": 1850000.0,
+        "schedule_commitment": "服务期与项目24个月工期对齐：启动期约1个月，清单与估算期约3个月，施工期持续服务贯穿施工阶段，索赔与结算审核支持延续至结算完成。里程碑与业主审查节点对齐，各阶段成果按约定时点提交；如业主审查轮次增加，按合同约定另行协商工时调整。",
+        "compliance_statement": "本公司接受业主对价格合理性与服务范围匹配度的审查，提交详细价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议，全部以MOP计。付款里程碑建议按阶段成果设置：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交。文档管理实行版本控制与审查意见闭环，配合业主各轮审查并保留完整记录。本包不含政府审批与现场监管服务，相关责任不在本包范围内。",
+        "risk_response": "1. 清拆工程量不确定性：计量规则先行确认，清单复核双轨并行，设置计量差异复核节点。\n2. 废弃物外运与材料价格波动：跟踪价格指数，变更估价采用合同约定口径，必要时提示业主价格调整机制。\n3. 变更与索赔集中发生：建立变更登记与预警阈值，提前配置复核工时余量。\n4. BIM模型与现场不一致：模型工程量须经人工独立校核后方可用于计价。\n5. 外部询价数据时效性：设定询价数据有效期，关键价格由本公司复核确认。\n6. 团队稳定性：公司可用资源2.0、本包需求0.25，容量充裕，可保证人员稳定投入。",
+        "submission_summary": "中建三局第二建设工程有限责任公司以单一责任主体独立投标CASE-0012/cost造价咨询与合同成本管理包，不采用组合体形式。\n\n报价总额：MOP 1,850,000（在包预算上限MOP 2,250,000以内）。\n\n费用构成：\n- 核心造价团队人工时费用：MOP 986,000\n- BIM计量与数字化工程量专项服务费：MOP 218,000\n- 独立复核与质量审查专项费：MOP 176,000\n- 文档控制与业主审查配合费：MOP 124,000\n- 外部市场询价与数据支持费：MOP 96,000（估算性支持预算，非已取得的外部报价）\n- 可报销费用上限：MOP 68,000\n- 风险预备金与公司管理费：MOP 182,000\n合计：MOP 1,850,000\n\n价格基准：分级人工时费率、专项服务费率、可报销费用上限及付款里程碑建议均以MOP计，按业主审查要求详细列示。报价为固定总价加可报销费用上限模式，可报销费用按实报销且不超过上限。\n\n付款里程碑建议：启动与团队到位、清单与估算成果提交、施工期按月服务、结算审核报告提交分阶段支付。\n\n本包不含政府审批与现场监管服务。外部询价支持为常规专业支持，由本公司统一管理与把关，不作为共享投标主体。",
+        "quotation_breakdown": [
+          {
+            "item": "核心造价团队人工时费用",
+            "amount": 986000,
+            "basis": "首席造价工程师、注册造价工程师2名、成本控制工程师、合同管理专员的项目期投入工时，按分级人工时费率估算，含清拆工程计量计价与合同成本管理全过程"
+          },
+          {
+            "item": "BIM计量与数字化工程量专项服务费",
+            "amount": 218000,
+            "basis": "BIM计量工程师投入及模型工程量提取、人工校核衔接的专项服务工时，按专项服务费率估算"
+          },
+          {
+            "item": "独立复核与质量审查专项费",
+            "amount": 176000,
+            "basis": "独立复核人员与编制人员分离配置，关键成果独立复核签署及业主审查轮次配合的专项工时"
+          },
+          {
+            "item": "文档控制与业主审查配合费",
+            "amount": 124000,
+            "basis": "文档控制员投入、版本控制、审查意见闭环记录及报告编制支持"
+          },
+          {
+            "item": "外部市场询价与数据支持费",
+            "amount": 96000,
+            "basis": "澳门本地市场询价与数据核验的常规外部支持，按需启动，由本公司统一管理，属估算性支持预算而非已取得的外部报价"
+          },
+          {
+            "item": "可报销费用上限",
+            "amount": 68000,
+            "basis": "现场踏勘、资料复制、通讯及必要差旅等可报销费用上限，按实报销且不超过此上限"
+          },
+          {
+            "item": "风险预备金与公司管理费",
+            "amount": 182000,
+            "basis": "清拆工程量不确定性与变更集中发生的风险预备，以及公司管理与保险分摊"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_685a2a8e95422405de47"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "清拆工程计量与计价能力由公司内部造价团队承担，具体人员配置在投标团队角色计划中列明",
+          "澳门本地造价数据库与市场询价能力以公司现有数据积累为基础，必要时采用常规外部询价支持，不作为共享投标主体",
+          "BIM或数字化工程量计量能力按公司现有技术条件配置，并在交付方法中说明模型与计量接口管理",
+          "独立造价审查与报告由内部独立复核机制执行，复核人员与编制人员分离",
+          "报价以MOP计，价格基准、人工时费率、专项服务费率、可报销费用上限及付款里程碑建议在投标文件中详细列示",
+          "本投标不涉及政府审批或现场监管服务，相关责任不在本包范围内",
+          "外部市场询价与数据支持费为估算性支持预算，尚未取得外部报价，实际启动时由本公司统一管理与复核"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "造价咨询与合同成本管理",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

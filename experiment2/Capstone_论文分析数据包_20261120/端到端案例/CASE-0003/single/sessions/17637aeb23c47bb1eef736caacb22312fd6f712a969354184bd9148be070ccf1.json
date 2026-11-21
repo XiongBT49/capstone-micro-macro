@@ -1,0 +1,2037 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMC47C6B63/CASE-0003/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 82875000.0,
+      "project": {
+        "project_id": "CASE-0003",
+        "name": "九澳水库扩容建造工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0003/construction-1",
+        "project_id": "CASE-0003",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "主坝加高与库盆扩容土建包",
+        "scope": "九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+        "budget": 82875000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0003/design",
+          "CASE-0003/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0025",
+          "COMP-0493"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0003",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMC47C6B63/CASE-0003/cost/round-1/contract",
+              "project_id": "CASE-0003",
+              "package_id": "CASE-0003/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1970000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+              "project_id": "CASE-0003",
+              "package_id": "CASE-0003/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4480000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMC47C6B63/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "package_id": "CASE-0003/design",
+            "contract_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 4480000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "package_id": "CASE-0003/cost",
+            "contract_id": "SIMC47C6B63/CASE-0003/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 1970000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0003",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "f0c1ee5447057a4e8f56f5168a95dc36db8d30e720b1115fa71891c60d917fde"
+  },
+  "spec": {
+    "package_id": "CASE-0003/construction-1",
+    "project_id": "CASE-0003",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "主坝加高与库盆扩容土建包",
+    "scope": "九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+    "budget": 82875000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0003/design",
+      "CASE-0003/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0025",
+      "COMP-0493"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0003",
+      "project_name": "九澳水库扩容建造工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0003",
+      "project_scope": "九澳水库扩容建造工程为市政公共基础设施项目，目标是将水库库容由34万立方米扩容至74万立方米。本次业主招标包为「主坝加高与库盆扩容土建包」，范围包括主坝加高加固、库盆开挖扩容、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。项目采用DBB交付模式，设计包与造价咨询包已判给，土建包须与已判给的设计及造价成果衔接。",
+      "functional_requirements": [
+        "主坝加高加固后满足扩容后水库蓄水与结构安全运行要求",
+        "库盆开挖扩容至74万立方米总库容，开挖料处置与边坡稳定协调",
+        "坝基与边坡处理满足长期稳定性与耐久性目标",
+        "溢洪道及取水口土建结构满足运行与检修可达性",
+        "施工期间维持水库区域基本排水与公共安全条件",
+        "与已判给设计包、造价咨询包的成果及现场条件衔接",
+        "施工组织满足澳门城市周边运输与公共道路使用协调"
+      ],
+      "technical_requirements": [
+        "BIM协调：土建包须与设计包模型衔接，提交施工阶段模型与碰撞检查记录",
+        "MEP协调：预留机电设备安装接口与套管，不含机电安装本体",
+        "结构协调：坝体加高、坝基处理与溢洪道结构须统一坐标与标高控制",
+        "交通接口布置：施工车辆进出与公共道路衔接须提交交通组织方案",
+        "公共通道布置：施工期间维持行人及周边公共通道安全",
+        "耐久性目标：水工结构满足长期抗渗、抗冲刷与耐久性要求",
+        "可维护性目标：溢洪道、取水口及边坡监测设施保留检修通道与可达性",
+        "业主验收路径：分部分项验收、隐蔽工程验收与竣工资料移交须经业主审查",
+        "能耗使用目标：施工期临时用电与设备选型考虑节能目标"
+      ],
+      "budget_policy": "本包预算为MOP 82,875,000，属业主额外成本口径。业主以设计包与造价咨询包成果为报价基础，要求投标人提交价格基准与工程量清单对应说明；评标时业主代理将结合价格合理性、风险控制与交付信心进行定性比较，重大范围与预算变更须经宏观审批。",
+      "schedule_policy": "总工期24个月。业主关注里程碑现实性，包括施工准备、坝基处理、库盆开挖、坝体加高、溢洪道与取水口结构、调试与验收节点；须预留业主审查时间、设计包与造价包接口时间，以及公共通道与交通协调时间。",
+      "compliance_requirements": [
+        "业主审查节奏：按月进度审查与关键节点专题审查",
+        "问题升级路径：现场问题经监理上报业主，重大事项进入业主决策流程",
+        "文档纪律：施工记录、验收资料与变更文件须完整可追溯",
+        "接口签认：与设计包、造价包及后续机电包的接口须书面签认",
+        "公共通道协调：施工期间公共通道调整须经业主与相关方协调",
+        "质量目标跟踪：分部分项质量目标须定期对照检查",
+        "安全期望跟踪：施工安全期望须纳入定期报告与现场检查",
+        "变更控制纪律：范围与预算变更须按DBB变更控制程序报批"
+      ],
+      "risk_priorities": [
+        "坝基与边坡处理的地质不确定性风险",
+        "库盆开挖料处置与运输对周边公共环境的影响风险",
+        "施工期水库区域排水与公共安全风险",
+        "与设计包、造价包接口不清导致的返工风险",
+        "澳门本地劳动力与材料价格波动风险",
+        "雨季与台风季节对土方与坝体施工的工期影响风险",
+        "变更审批周期对里程碑的延误风险"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0003/construction-1",
+          "package_type": "contractor",
+          "package_name": "主坝加高与库盆扩容土建包",
+          "scope": "Authorized scope: 九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。\nBuyer refinement: 九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "水工坝体加高加固施工能力",
+            "库盆开挖与土石方调配能力",
+            "坝基与边坡处理施工能力",
+            "溢洪道及取水口土建结构施工能力",
+            "城市周边施工物流与交通组织能力",
+            "质量文档管理能力",
+            "安全期望跟踪与现场安全管理能力",
+            "与设计及造价接口协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工方法与交付方案",
+            "质量方针与质量目标对照说明",
+            "价格基准与工程量清单报价说明",
+            "工期视图与里程碑计划",
+            "风险应对方案",
+            "交通组织与公共通道协调方案",
+            "安全期望跟踪与报告安排"
+          ],
+          "pricing_requirements": "按设计包与造价咨询包成果编制工程量清单报价，价格基准须与业主预算口径一致；业主以价格合理性、风险控制与交付信心进行定性比较。\nBinding currency: MOP; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主代理将结合能力匹配、价格合理性、风险控制与交付信心进行定性比较，并参考设计包与造价包成果及团队可用性摘要作出判给建议。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0003/construction-1",
+        "package_type": "contractor",
+        "package_name": "主坝加高与库盆扩容土建包",
+        "scope": "Authorized scope: 九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。\nBuyer refinement: 九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "水工坝体加高加固施工能力",
+          "库盆开挖与土石方调配能力",
+          "坝基与边坡处理施工能力",
+          "溢洪道及取水口土建结构施工能力",
+          "城市周边施工物流与交通组织能力",
+          "质量文档管理能力",
+          "安全期望跟踪与现场安全管理能力",
+          "与设计及造价接口协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工方法与交付方案",
+          "质量方针与质量目标对照说明",
+          "价格基准与工程量清单报价说明",
+          "工期视图与里程碑计划",
+          "风险应对方案",
+          "交通组织与公共通道协调方案",
+          "安全期望跟踪与报告安排"
+        ],
+        "pricing_requirements": "按设计包与造价咨询包成果编制工程量清单报价，价格基准须与业主预算口径一致；业主以价格合理性、风险控制与交付信心进行定性比较。\nBinding currency: MOP; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主代理将结合能力匹配、价格合理性、风险控制与交付信心进行定性比较，并参考设计包与造价包成果及团队可用性摘要作出判给建议。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与关键路径，习惯把扩容目标拆成可验证的里程碑。他最先注意到的是承包商资源是否与24个月工期匹配，容易在讨论中把话题拉回进度与接口风险，带来进度优先与质量成本之间的张力。",
+          "responsibilities": [
+            "统筹九澳水库扩容工程整体交付目标",
+            "主持招标包划分与组合体方案评审",
+            "协调设计、施工与监管服务接口",
+            "跟踪工期与关键里程碑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列依据，偏好用里程碑表和风险清单说话。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否自洽。她最先注意到预算1.5亿MOP与各包报价之间的偏差，倾向在讨论中质疑低价风险与支付评审安排，带来成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制与复核采购预算及价格基础",
+            "组织支付评审与成本审查",
+            "评估投标报价合理性与风险准备",
+            "监控变更与成本偏差"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数据与对比说话，对模糊表述会追问依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量经理",
+          "personal_profile": "工程思维强，压力下先看技术方案是否满足扩容后的运行与安全要求。他最先注意到设计深度、独立复核与质量目标跟踪是否落实，讨论中常坚持技术审查不可压缩，带来质量要求与工期成本之间的张力。",
+          "responsibilities": [
+            "协调设计与施工技术接口",
+            "组织质量目标跟踪与独立复核",
+            "审查技术方案与规范符合性",
+            "推动可持续发展目标落实"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨细致，偏好用技术依据和检查清单沟通，对简化审查的提议会明确保留意见。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标与合约统筹",
+          "personal_profile": "程序意识强，压力下先确认招标程序与文件纪律是否完整。她最先注意到投标资格、评标标准与判给理由的可追溯性，讨论中倾向放慢节奏确保合规，带来程序严谨与决策效率之间的张力。",
+          "responsibilities": [
+            "统筹招标包文件与评标安排",
+            "维护文档纪律与判给记录",
+            "协调组合体与监管服务采购安排",
+            "组织开标与评标流程"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "稳健克制，按程序步骤陈述，强调记录与依据，避免仓促表态。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "对外协调与风险",
+          "position": "业主代表与风险协调",
+          "personal_profile": "善于换位思考，压力下先看各方诉求与公众影响。他最先注意到利益相关方沟通与风险应对是否到位，讨论中常提醒预留协商空间，带来外部协调与内部管控之间的张力。",
+          "responsibilities": [
+            "负责业主接口与利益相关方协调",
+            "组织风险识别与风险应对预案",
+            "汇总现场报告与进度通报",
+            "协调监管服务与社区沟通"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "温和务实，先倾听再归纳，用情景与影响说明推动共识。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先判断整体工期与资源匹配，先关注投标包与公司能力的契合度及业主审查要求。讨论中倾向推动快速形成可执行方案，但会因过度聚焦进度而低估质量与安全细节，常与质量负责人产生张力。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "主持内部评审与最终投标决策",
+            "对接业主与关键利益相关方",
+            "监控工期与成本控制目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，偏好结论先行，常用简短指令推动讨论。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本部",
+          "position": "商务经理",
+          "personal_profile": "对报价基础与支付审查高度敏感，先核对成本构成与现金流风险。压力下倾向保守报价以保障利润，但可能低估竞争性，与项目总监的进取策略形成张力。",
+          "responsibilities": [
+            "编制报价基础与成本审查",
+            "评估支付审查与资金安排",
+            "协调分包与采购商务条款",
+            "跟踪成本控制与变更管理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致谨慎，善用数据与条款说明立场，语速平稳。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "面对技术难题时先分析设计协调与施工可行性，注重方案可实施性。压力下坚持技术标准，可能因追求完美而拖慢决策，与商务的务实取向产生摩擦。",
+          "responsibilities": [
+            "审核设计协调与施工方案",
+            "评估技术能力匹配与风险应对",
+            "监督质量目标与独立检查",
+            "协调现场技术问题与文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "逻辑严谨，喜欢用技术依据说话，表达清晰但有时过于详细。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与安全部",
+          "position": "质量安全经理",
+          "personal_profile": "首先关注质量目标与安全合规，对文档纪律和独立检查有执念。压力下坚持按程序办事，可能被视为拖慢进度，与项目总监的快速推进形成持续张力。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场安全与合规",
+            "管理质量文档与记录",
+            "组织内部质量审查"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理分明，强调程序与证据，语气坚定但不失礼貌。"
+        },
+        {
+          "agent_id": "COMP-0153_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "资源与计划部",
+          "position": "资源计划经理",
+          "personal_profile": "优先评估团队可用性与资源分配，善于从进度视角发现瓶颈。压力下倾向争取更多资源，可能忽视成本约束，与商务经理在资源投入上常有分歧。",
+          "responsibilities": [
+            "编制团队可用性摘要与角色计划",
+            "协调设备与材料供应计划",
+            "监控进度与资源负荷",
+            "支持风险应对与调度"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实灵活，常用图表与时间线沟通，善于协调但有时过于乐观。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源匹配，习惯先确认关键路径和外部依赖。对业主接口和监管审批节奏敏感，常提醒团队不要低估跨部门协调时间。讨论中倾向于推动快速决策，但会因过度聚焦进度而忽略细节风险。",
+          "responsibilities": [
+            "统筹投标包整体交付策略与资源规划",
+            "业主与监管方高层接口协调",
+            "监督工期与关键节点达成",
+            "主持内部风险评审与决策会议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，偏好结构化汇报，常用里程碑和风险清单推动讨论。"
+        },
+        {
+          "agent_id": "COMP-0025_02_黄丽芳",
+          "agent_name": "黄丽芳",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价依据和付款条件高度敏感，习惯逐项核对成本构成与现金流影响。在讨论中会反复确认变更和索赔机制，担心低价风险。倾向于保守报价，但可能因过度谨慎而降低竞争力。",
+          "responsibilities": [
+            "编制报价基础与成本分解",
+            "审核合同条款与付款安排",
+            "评估分包与采购价格合理性",
+            "监控项目现金流与成本控制"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、谨慎，善用数字和条款依据，常以书面形式确认关键商务事项。"
+        },
+        {
+          "agent_id": "COMP-0025_03_李国华",
+          "agent_name": "李国华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，首先关注施工可行性、土方平衡和地基处理风险。对资源调度和工序衔接有直觉判断，但容易低估行政流程耗时。讨论中常提出替代施工方案，有时与商务保守立场产生张力。",
+          "responsibilities": [
+            "制定施工方案与进度计划",
+            "评估坝基处理与土方工程可行性",
+            "协调现场资源与分包作业",
+            "监督质量目标与安全措施落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实、具体，喜欢用现场案例和工序图说明问题，语言简练。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "对质量目标和合规要求极为坚持，习惯先识别潜在缺陷和监管红线。在压力下会放慢节奏以确保检查到位，但可能被视为拖累进度。讨论中常提醒文档纪律和独立检查的重要性。",
+          "responsibilities": [
+            "建立质量与安全管理体系",
+            "组织内部质量审查与独立检查",
+            "跟踪整改项与合规文档",
+            "对接监管机构质量安全要求"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、有条理，偏好检查表和标准条款，语气坚定但合作。"
+        },
+        {
+          "agent_id": "COMP-0025_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，首先关注图纸可施工性和接口一致性。对设计变更敏感，倾向于提前澄清模糊点。讨论中可能因追求设计优化而低估现场执行难度。",
+          "responsibilities": [
+            "协调设计方与施工团队接口",
+            "审核施工图与设计可施工性",
+            "管理设计变更与技术澄清",
+            "支持投标技术方案编制"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "分析型、注重细节，常用图纸和对比方案沟通，语气平和。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯用里程碑倒推关键路径；对业主接口和跨部门协调敏感，但容易低估现场执行细节，常在讨论中把话题拉回合同边界与风险分担。",
+          "responsibilities": [
+            "统筹投标包整体交付策略与资源计划",
+            "对接业主与监管方，管理外部接口",
+            "主持内部评审，平衡成本、工期与质量目标",
+            "监控关键里程碑与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先结论后依据，习惯用里程碑和风险清单推进讨论。"
+        },
+        {
+          "agent_id": "COMP-0493_02_黄丽华",
+          "agent_name": "黄丽华",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和条款高度敏感，报价前先核对价格基础与支付条件；在压力下倾向保守报价以覆盖不确定性，会反复追问成本假设与变更机制，容易与追求进度的同事产生张力。",
+          "responsibilities": [
+            "编制报价与价格基础说明",
+            "审核合同条款与支付评审安排",
+            "管理分包询价与成本控制",
+            "评估现金流与财务风险"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，善用表格与对比，强调数字依据和合同边界。"
+        },
+        {
+          "agent_id": "COMP-0493_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "到现场先看土方平衡、边坡稳定和施工通道，关注可施工性与班组排班；对图纸深度和地质条件变化警觉，常提出替代工法，但有时低估审批与协调时间。",
+          "responsibilities": [
+            "制定施工方案与进度视图",
+            "管理土方、坝体与边坡作业",
+            "协调现场资源与分包班组",
+            "落实安全与环保措施"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实具体，多用现场实例和工序逻辑说明问题。"
+        },
+        {
+          "agent_id": "COMP-0493_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量经理",
+          "personal_profile": "首先关注质量目标与独立检查安排，对文档纪律和可追溯性要求严格；压力下坚持先验证后放行，容易被视为拖慢进度，但能守住质量底线。",
+          "responsibilities": [
+            "建立质量目标与检查计划",
+            "组织独立检查与质量评审",
+            "管理质量文档与记录纪律",
+            "跟踪整改与闭环"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，习惯用检查清单和证据说话。"
+        },
+        {
+          "agent_id": "COMP-0493_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "先看设计意图与施工可行性的衔接，关注设计变更对成本和工期的影响；善于在设计与施工之间翻译需求，但有时过度追求优化而忽略现场约束。",
+          "responsibilities": [
+            "协调设计与施工界面",
+            "评审设计可施工性与变更影响",
+            "管理设计文档与版本控制",
+            "支持投标技术方案编制"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "善于用图纸和界面图沟通，强调设计意图与现场条件的匹配。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-1",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这次是九澳水库主坝加高与库盆扩容土建包，预算约8287.5万MOP，工期24个月，属于典型的水工土建施工。我们公司作为承包商，施工能力、土石方、坝基边坡处理、质量与安全管理在情景参数上都处于较高水平，资源占用为零，可用资源2.0，完全能独立承担这个包。包内明确不含机电设备安装与临时供水管线，边界清晰，不需要引入联合体来分担主体交付责任。内部讨论没有提出任何必须由另一家企业共享投标人身份或技术权威的硬性缺口。真正的压力在于城市周边施工的交通组织、与设计包和造价包的接口协调、以及按业主预算口径编制工程量清单报价，这些都可以通过我们自己的项目团队、常规专业分包和外部造价支持来解决，属于正常的投标风险，应在施工方法、工期视图、风险应对和价格基准中体现。我倾向于投标，但报价必须严格对齐设计包与造价咨询包成果，交通组织和安全期望跟踪要写实，不能把未落实的分包或外部支持说成已确定。",
+        "content": "管理层决定：对九澳水库主坝加高与库盆扩容土建包（CASE-0003/construction-1）以单一责任投标人身份提交投标。投标文件将围绕角色计划与团队可用性摘要、施工方法与交付方案、质量方针与质量目标对照说明、价格基准与工程量清单报价说明、工期视图与里程碑计划、风险应对方案、交通组织与公共通道协调方案、安全期望跟踪与报告安排八项内容组织。报价按设计包与造价咨询包成果编制，价格基准与业主预算口径对齐，控制在8287.5万MOP上限内。交通组织与公共通道协调作为重点风险应对单列，明确施工时段、运输路线与临时通道管理。与设计及造价接口设固定协调节点与文件审查关口。质量文档管理与安全期望跟踪按周记录、按月报告。外部造价与专业分包支持按计划性安排表述，未取得报价前以草案成本预留处理，不作为已落实承诺。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:41",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-1",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们得宝国际是本地总承包企业，业务覆盖土方、地基、地下工程、道路桥梁、海事、给排水等，与这个水库主坝加高、库盆开挖、坝基边坡处理、溢洪道及取水口土建包在能力面上高度吻合。资源账上可用资源2.0，占用为0，包需求0.7，容量上完全能独立承接。这个包不含机电与临时供水管线，边界清晰，正是我们作为单一责任承包商的强项。内部讨论没有提出必须依赖外部伙伴共享投标身份或技术权威的问题，水工坝体加高加固虽属专业，但属于可通过专业分包与自有土石方、地基能力组合管理的正常施工风险，不构成问责缺口。价格上限82875000 MOP，需按设计包与造价咨询包成果编制工程量清单，价格基准与业主预算口径一致，这要求我们做好造价接口协调与文档纪律。工期24个月，城市周边施工物流与交通组织是重点，但都在我们可控范围。我判断应当独立投标，以单一责任主体身份提交，把专业水工部分作为受控分包纳入我们的质量、安全与进度管理体系，而不是搞组合体削弱问责清晰度。",
+        "content": "得宝国际有限公司就九澳水库主坝加高与库盆扩容土建包提交独立投标意向。我方将以单一问责承包商身份承担主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构的施工责任，范围不含机电设备安装与临时供水管线。投标文件将包含角色计划与团队可用性摘要、施工方法与交付方案、质量方针与质量目标对照说明、按设计包与造价咨询包成果编制的工程量清单报价及价格基准说明、24个月工期视图与里程碑计划、风险应对方案、城市周边交通组织与公共通道协调方案，以及安全期望跟踪与报告安排。专业水工工序将以受控专业分包纳入我方质量、安全与进度管理体系，由我方统一协调设计及造价接口，确保文档纪律与业主预算口径一致。报价以MOP计，控制在包上限82875000以内，并以价格合理性、风险控制与交付信心回应业主的定性比较。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:38",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-1",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们得宝是本地总承包企业，业务覆盖土木、地基、土方、道路桥梁、海事与给排水，九澳水库这个土建包在业务方向上与我们高度契合。资源账面上可用2.0、占用0，资源需求0.7，容量上完全能独立承担。包内不含机电与临时供水管线，边界清晰，正是我们擅长的土建主体。真正的顾虑是水工坝体加高加固这类专业水工经验在资料里没有明确记录，但这类专项可以通过有经验的水工分包与顾问支持来补足，我们仍然是单一责任投标人，负责现场管理、安全、工期、交通组织、质量记录与分包管控，这属于正常的投标风险，不是问责缺口。价格上限8287.5万，需按设计包与造价包成果编制工程量清单，价格基准要与业主预算口径一致，这要求我们在报价纪律和接口协调上做扎实。工期24个月，城市周边施工物流与交通组织是重点，需要专门方案。综合看，这是一个值得争取、我们能独立可信投标的机会，应选择bid，同时把水工专项支持、交通组织、报价口径作为明确的投标假设与风险应对来管理。",
+        "content": "得宝建筑集团有限公司就九澳水库扩容建造工程主坝加高与库盆扩容土建包提交投标意向。我们确认本包范围为主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构，不含机电设备安装与临时供水管线，边界清晰，与我方总承包与土木施工主业契合。交付方案上，我方作为单一问责投标人统筹现场管理、施工方法与进度，水工坝体加高加固等专项施工拟由具备相应经验的分包与顾问提供技术支持，并由我方统一控制质量、安全与接口。质量方面按ISO 9001、ISO 14001、ISO 45001体系执行，提交质量方针与质量目标对照说明及质量文档管理安排。工期视图按24个月编排里程碑，重点回应城市周边施工物流与公共通道协调，提交交通组织方案。报价按设计包与造价咨询包成果编制工程量清单，价格基准与业主预算口径对齐，上限8287.5万MOP，价格说明区分已落实报价与暂定成本准备。风险应对覆盖坝基与边坡处理、开挖土石方调配、雨季与周边环境扰动，并提交安全期望跟踪与报告安排。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:35:39",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0003/construction-1",
+        "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+        "agent_name": "何俊杰",
+        "department": "对外协调与风险",
+        "position": "业主代表与风险协调",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要对本包的交付结果承担问责。评标推荐中交第一航务，我认同这一判断：其报价MOP 81,150,000低于包上限MOP 82,875,000，留有合理余量，施工方法覆盖主坝加高加固、库盆开挖调配、坝基边坡处理与溢洪道取水口土建全部范围，质量文档与安全期望跟踪安排具体，对业主控制要求的回应最完整。得宝国际报价触及包上限，核心水工工序依赖尚未落实的分包，价格与能力缓冲都偏紧；得宝建筑报价最低，但水工专项经验未明确记录，专项分包以暂定成本准备计入，成本确定性不足，低价带来的索赔与工期暴露由业主承担，不宜作为最终判给对象。中交第一航务的外部造价咨询与专业分包支持目前仅为草案成本预留，交通路线与时段尚待踏勘细化，这些属于签约前必须澄清落实的事项，但不改变其作为最终判给对象的结论。",
+        "content": "经评标与业主审查，本包判给中交第一航务工程局有限公司，报价MOP 81,150,000，低于包上限MOP 82,875,000。该公司以单一责任投标人身份全面承担主坝加高加固、库盆开挖扩容、坝基与边坡处理及溢洪道取水口土建结构，施工方法、质量文档纪律、安全期望跟踪与接口协调安排与本包能力需求匹配度最高。签约前澄清重点为落实外部造价咨询与专业分包支持的正式报价依据，并细化交通组织路线与时段，相关文件按业主审查关口提交审批。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:37:00",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0003/construction-1",
+        "decision": "bid",
+        "reason": "管理判断：本包属于公司可信赖承接的水工土建施工范围，情景资源充足且无占用，施工、质量、安全与土石方调配能力与包内需求匹配，包内已排除机电安装与临时供水管线，交付边界清楚。公司可作为单一责任投标人独立提交，无需联合体共享投标人身份或交付权威。主要风险是城市周边交通组织、与设计及造价包的接口协调、以及按业主预算口径编制工程量清单报价，这些通过角色计划、施工方法与交付方案、工期视图、风险应对和价格基准说明来管理，属于正常投标风险而非责任缺口。因此决定投标，并在投标文件中明确外部造价与专业分包支持为计划性安排，不作为已落实承诺。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+          "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+          "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+          "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+          "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0025",
+        "package_id": "CASE-0003/construction-1",
+        "decision": "bid",
+        "reason": "管理判断：本包属土建施工总承包性质，与我方总承包、土方、地基、地下工程、道路桥梁及给排水能力高度契合，资源账显示可用资源2.0、占用0，包需求0.7，具备独立承接的容量与领导力。包范围明确排除机电与临时供水管线，边界清晰，适合以单一问责承包商身份投标。水工坝体加高加固等专业工序可通过受控专业分包与自有土石方、地基能力组合实施，属正常施工风险，应在施工方法、价格基准、工期视图与风险应对中管理，而非以组合体转移问责。业主以价格合理性、风险控制与交付信心作定性比较，我方应以清晰的交付方案、质量目标对照、交通组织方案与安全期望跟踪报告建立交付信心。因此决定独立投标，不组建组合体。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一问责总承包商身份独立投标，不组建组合体",
+          "水工坝体加高加固等专业工序通过受控专业分包实施，由我方统一管理质量、安全与进度",
+          "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径一致",
+          "报价以MOP计并控制在包上限82875000以内",
+          "工期按24个月编排里程碑计划，交通组织与公共通道协调方案纳入投标文件",
+          "专业分包的具体安排属投标假设，尚未取得供应商报价或承诺"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0003/construction-1",
+        "decision": "bid",
+        "reason": "管理层判断：本包为九澳水库主坝加高与库盆扩容土建包，范围限于土建主体，不含机电与临时供水管线，与得宝作为本地总承包在土木、地基、土方、道路桥梁与给排水方面的业务方向一致，属于可信的业务延伸。资源账显示可用资源2.0、占用0，包需求0.7，容量足以独立承担并保留余量，无需引入共享投标身份的组合体。主要风险在于水工坝体加高加固的专项经验在现有资料中未明确记录，以及城市周边交通组织与按设计、造价成果编制工程量清单报价的口径一致性。我们的处理是把水工专项施工作为有经验分包与顾问支持纳入交付方案，由得宝保持单一问责投标人身份，负责现场管理、安全期望跟踪、工期控制、交通协调、质量文档与分包管控，并在报价中体现相应风险准备。价格上限8287.5万MOP，须与业主预算口径对齐，以价格合理性、风险控制与交付信心参与定性比较。综合战略价值、能力匹配与风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工坝体加高加固专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责投标人身份",
+          "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径对齐",
+          "城市周边施工物流与公共通道协调按提交的交通组织方案执行，并与相关方协调",
+          "专项分包报价在投标阶段以暂定成本准备计入，待正式报价后调整",
+          "工期按24个月编排，里程碑以业主确认的开工条件为前提"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0003/construction-1_001",
+        "package_id": "CASE-0003/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标以单一责任投标人身份提交，全面承担主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构施工。施工方法：主坝加高采用分层填筑与碾压，坝体加固采用混凝土防渗墙与帷幕灌浆；库盆开挖按自上而下分层开挖，土石方调配优先就近平衡，弃渣运至指定弃渣场；坝基与边坡处理采用锚杆、挂网喷混凝土与排水孔；溢洪道及取水口按设计图纸施工，混凝土结构采用定型模板与泵送浇筑。质量方针：过程受控、一次成优，质量目标与业主质量目标对照说明见质量计划。安全期望跟踪：按周记录、按月报告，现场设专职安全主任与安全巡查队。交通组织与公共通道协调单列方案，明确施工时段、运输路线与临时通道管理。与设计及造价包接口设固定协调节点与文件审查关口。外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺。",
+        "implementation_plan": "总工期24个月，里程碑计划：第1-2月施工准备与临时设施；第3-6月库盆开挖与土石方调配；第7-12月主坝加高加固与坝基处理；第13-18月溢洪道及取水口土建结构；第19-21月边坡处理与收尾；第22-24月调试、验收与移交。关键路径为库盆开挖与主坝加高。资源计划：项目经理1名、技术负责人1名、施工员6名、安全主任1名、质量工程师2名、测量与试验人员4名、机械操作与土石方班组约60人、混凝土与结构班组约40人。主要设备：挖掘机8台、自卸车20辆、压路机4台、混凝土泵车2台、灌浆设备2套。外部造价咨询与专业分包支持按计划性安排管理，投标阶段以草案成本预留。",
+        "quotation": 81150000.0,
+        "schedule_commitment": "总工期24个月，自业主开工通知起算。里程碑：第2月末完成施工准备；第6月末完成库盆开挖50%；第12月末完成主坝加高加固；第18月末完成溢洪道及取水口结构；第21月末完成边坡处理；第24月末完成验收移交。关键路径为库盆开挖与主坝加高，设月度进度评审与周协调会。",
+        "compliance_statement": "按业主八项投标内容组织：角色计划与团队可用性摘要见实施计划；施工方法与交付方案见技术建议；质量方针与质量目标对照说明按质量计划提交；价格基准与工程量清单报价说明按设计包与造价咨询包成果编制，价格基准与业主预算口径一致；工期视图与里程碑计划见进度承诺；风险应对方案见风险应对；交通组织与公共通道协调方案单列；安全期望跟踪与报告安排按周记录、按月报告。接受业主按价格合理性、风险控制与交付信心进行定性比较。",
+        "risk_response": "主要风险：城市周边交通组织与公共通道协调、与设计及造价包接口协调、按业主预算口径编制工程量清单报价。应对：交通组织单列方案，明确施工时段、运输路线与临时通道管理，设专职交通协调员；与设计及造价包设固定协调节点与文件审查关口，每月接口协调会；工程量清单报价以设计包与造价咨询包成果为依据，外部造价咨询为计划性安排，投标阶段以草案成本预留。材料价格波动风险通过风险预备费与价格调整缓冲覆盖，不声称固定价格。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 81,150,000，低于包上限82,875,000。报价按设计包与造价咨询包成果草案工程量编制，价格基准与业主预算口径一致。费用构成：库盆开挖与土石方调配MOP 18,650,000；主坝加高加固与坝基处理MOP 24,800,000；溢洪道及取水口土建结构MOP 14,200,000；边坡处理与排水MOP 6,800,000；交通组织与公共通道协调MOP 4,200,000；项目管理质量安全与文档MOP 5,600,000；外部造价咨询与专业分包支持草案预留MOP 3,100,000；风险预备费与价格调整缓冲MOP 3,800,000。合计MOP 81,150,000。外部造价咨询与专业分包支持为计划性安排，未取得正式报价，以草案成本预留，不作为已落实承诺。工期24个月，里程碑计划见进度承诺。质量文档按周记录、按月报告，安全期望跟踪同步执行。",
+        "quotation_breakdown": [
+          {
+            "item": "库盆开挖与土石方调配",
+            "amount": 18650000,
+            "basis": "按设计包与造价咨询包成果草案工程量估算，含开挖、运输、弃渣场处置及土石方平衡调配，单价参照情景材料价格指数调整"
+          },
+          {
+            "item": "主坝加高加固与坝基处理",
+            "amount": 24800000,
+            "basis": "含分层填筑碾压、混凝土防渗墙、帷幕灌浆及坝基处理，按草案工程量与施工方案估算"
+          },
+          {
+            "item": "溢洪道及取水口土建结构",
+            "amount": 14200000,
+            "basis": "含混凝土结构、模板、钢筋、止水与预埋件，按设计包成果草案工程量估算"
+          },
+          {
+            "item": "边坡处理与排水工程",
+            "amount": 6800000,
+            "basis": "含锚杆、挂网喷混凝土、排水孔与截水沟，按边坡处理范围草案估算"
+          },
+          {
+            "item": "交通组织、临时设施与公共通道协调",
+            "amount": 4200000,
+            "basis": "含施工时段管理、运输路线维护、临时通道设置与公共通道协调，按24个月工期分摊"
+          },
+          {
+            "item": "项目管理、质量安全与文档管理",
+            "amount": 5600000,
+            "basis": "含项目经理部运行、质量文档管理、安全期望跟踪与周记录月报告，按24个月工期估算"
+          },
+          {
+            "item": "外部造价咨询与专业分包支持（草案预留）",
+            "amount": 3100000,
+            "basis": "计划性安排，投标阶段以草案成本预留，未取得正式报价，不作为已落实承诺"
+          },
+          {
+            "item": "风险预备费与价格调整缓冲",
+            "amount": 3800000,
+            "basis": "覆盖材料价格波动、城市周边交通组织不确定性及与设计造价接口协调风险，按直接费约5%预留"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+          "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+          "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+          "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+          "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0003/construction-1_002",
+        "package_id": "CASE-0003/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一问责总承包商身份独立投标本包，不组建组合体。施工范围为主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构，明确不含机电设备安装与临时供水管线。\n\n施工方法：主坝加高采用分层填筑与碾压，坝体与坝基接触带设置防渗处理，加高段与既有坝体接缝按设计包要求做台阶搭接与界面处理；库盆开挖按分区、分层、分序组织，土石方按挖填平衡与调配计划就近利用，余料按批准的弃土安排外运；坝基与边坡处理采用清基、锚固、排水与护坡组合工序，边坡监测点随开挖进度布设；溢洪道与取水口土建结构按结构分段流水施工，与坝体作业面错开。\n\n专业工序安排：水工坝体加高加固中的专业灌浆、防渗等工序拟以受控专业分包实施，由我方统一管理质量、安全、进度与文档，分包安排属投标假设，尚未取得供应商报价或承诺。土石方、地基、道路与给排水等能力由我方自有资源与常规专业队伍组合承担。\n\n质量方针与质量目标对照：按ISO 9001质量管理体系运行，设置工序验收、材料进场复检、隐蔽工程签认与独立检查环节，质量目标与业主验收口径逐项对照，形成可追溯的检查记录与整改闭环。\n\n接口协调：与设计包、造价咨询包建立定期接口会议与文件传递清单，工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径一致，变更与计量按合同程序处理。",
+        "implementation_plan": "按24个月工期编排里程碑：\n第1至3个月：施工准备、临时设施、交通组织方案报批、测量放线、坝基清基与围堰及导流准备。\n第4至10个月：库盆分区开挖与土石方调配，坝基处理与边坡加固同步推进。\n第8至16个月：主坝加高加固分层填筑与防渗工序，专业分包工序按批准顺序插入。\n第12至19个月：溢洪道与取水口土建结构施工，与坝体作业面错开组织。\n第18至22个月：边坡护面、排水系统、道路恢复与场地整治。\n第22至24个月：系统检查、缺陷整改、竣工文档移交与验收。\n\n资源安排：现场设项目经理、施工经理、质量与安全专员、测量与文档控制岗位，土石方与运输队伍按开挖高峰配置，专业分包队伍纳入我方统一调度。城市周边施工物流按分时段运输与指定路线组织，公共通道维持通行并设临时指示与围护。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "总工期24个月，与项目工期一致。关键里程碑：第3个月完成施工准备与交通组织报批；第10个月完成库盆开挖主体；第16个月完成主坝加高加固主体；第19个月完成溢洪道与取水口结构；第24个月完成竣工验收与文档移交。雨季与台风季按预案调整开挖与填筑节奏，关键线路设置缓冲。",
+        "compliance_statement": "接受业主以价格合理性、风险控制与交付信心进行定性比较。我方提供角色计划与团队可用性摘要、施工方法与交付方案、质量方针与质量目标对照说明、按设计包与造价咨询包成果编制的工程量清单报价及价格基准说明、24个月工期视图与里程碑计划、风险应对方案、交通组织与公共通道协调方案、安全期望跟踪与报告安排。计量与变更按合同程序报审，文档按业主格式提交，配合业主及造价咨询包的进度与支付审查。",
+        "risk_response": "主要风险与应对：水工专业工序能力依赖受控专业分包，通过分包资格审查、工序样板与独立检查控制，分包安排尚未取得报价或承诺；城市周边运输与公共通道受限，采用分时段运输、指定路线与临时交通指示；材料与人工价格波动，在报价中设置风险预备费，不主张无上限调整；雨季与台风影响开挖填筑，设置季节性缓冲与排水预案；与设计及造价接口存在变更风险，通过定期接口会议与文件清单管理。",
+        "submission_summary": "得宝国际有限公司以单一问责总承包商身份独立投标九澳水库主坝加高与库盆扩容土建包，不组建组合体，范围不含机电设备安装与临时供水管线。\n\n报价基准：依据设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致，报价以MOP计。\n\n费用构成（MOP）：\n- 坝基与边坡处理：9,850,000\n- 库盆开挖与土石方调配：18,650,000\n- 主坝加高加固：21,400,000\n- 溢洪道及取水口土建结构：12,350,000\n- 交通组织、临时设施与现场管理：6,350,000\n- 质量安全体系、保险与保函：3,480,000\n- 专业分包管理与风险预备费：5,860,000\n- 企业管理费与利润：4,935,000\n合计：82,875,000 MOP，处于包上限82,875,000以内。\n\n说明：水工专业工序拟以受控专业分包实施，属投标假设，尚未取得供应商报价或承诺；风险预备费覆盖材料与人工价格波动及不可预见工序，报价为固定总价，不依赖无上限调整条款。工期24个月，交通组织与安全期望跟踪报告纳入投标文件。",
+        "quotation_breakdown": [
+          {
+            "item": "坝基与边坡处理工程",
+            "amount": 9850000,
+            "basis": "清基、锚固、排水与护坡工序，按设计包工程量估算，含专业分包配合"
+          },
+          {
+            "item": "库盆开挖与土石方调配",
+            "amount": 18650000,
+            "basis": "开挖至74万立方米库容，含分层开挖、运输、弃土安排与机械台班，按造价咨询包口径估算"
+          },
+          {
+            "item": "主坝加高加固工程",
+            "amount": 21400000,
+            "basis": "分层填筑、碾压、防渗与接缝处理，含受控专业分包工序的暂估成本"
+          },
+          {
+            "item": "溢洪道及取水口土建结构",
+            "amount": 12350000,
+            "basis": "结构分段流水施工，含模板、钢筋、混凝土与临时支护"
+          },
+          {
+            "item": "交通组织、临时设施与现场管理",
+            "amount": 6350000,
+            "basis": "城市周边分时段运输、公共通道协调、临时设施、测量与文档控制"
+          },
+          {
+            "item": "质量安全体系、保险与保函",
+            "amount": 3480000,
+            "basis": "ISO体系运行、独立检查、安全期望跟踪报告、工程保险与履约保函"
+          },
+          {
+            "item": "专业分包管理与风险预备费",
+            "amount": 5860000,
+            "basis": "专业分包协调与界面管理、材料与人工价格波动预备、不可预见工序风险"
+          },
+          {
+            "item": "企业管理费与利润",
+            "amount": 4935000,
+            "basis": "公司管理费分摊与合理利润，按本包规模与风险水平计取"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一问责总承包商身份独立投标，不组建组合体",
+          "水工坝体加高加固等专业工序通过受控专业分包实施，由我方统一管理质量、安全与进度",
+          "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径一致",
+          "报价以MOP计并控制在包上限82875000以内",
+          "工期按24个月编排里程碑计划，交通组织与公共通道协调方案纳入投标文件",
+          "专业分包的具体安排属投标假设，尚未取得供应商报价或承诺"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0003/construction-1_003",
+        "package_id": "CASE-0003/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一问责投标人身份承接本包全部土建范围：主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构。我方不设组合体，不依赖未具名合作方，全部现场管理、安全期望跟踪、工期控制、交通协调、质量文档与分包管控由得宝统一负责。\n\n施工方法：主坝加高加固采用分层填筑与碾压、坝面削坡与护面结构、坝体与坝基防渗处理相结合的方法；库盆开挖按分区流水组织，土石方按填筑料、弃料与可利用料分类调配，减少二次倒运；坝基与边坡处理采用清基、锚固、排水与护坡综合措施；溢洪道及取水口土建结构按先深后浅、先结构后装修的顺序组织。水工坝体加高加固专项施工由具备相应经验的分包与顾问提供技术支持，得宝保持单一问责并统一控制质量、安全与接口。\n\n质量方针与质量目标对照：按ISO 9001、ISO 14001、ISO 45001体系执行，提交质量方针与质量目标对照说明；设置独立检查与材料复核流程，质量文档按分项工程同步归档。\n\n交通组织与公共通道协调：针对城市周边施工物流，提交交通组织方案，分阶段安排运输时段、临时通道与公共通道协调，并与相关方保持沟通。\n\n安全期望跟踪与报告：建立安全期望跟踪清单，按周报告现场安全状态与整改闭环。\n\n本技术方案为情景试运行编制，不复现历史中标结果。",
+        "implementation_plan": "按24个月编排，里程碑以业主确认的开工条件为前提：\n第1至3个月：施工准备、临时设施、交通组织方案落实、测量放线、坝基与库盆开挖启动。\n第4至10个月：库盆开挖扩容至74万立方米主体完成，土石方分类调配与填筑料储备同步推进。\n第6至14个月：主坝加高加固分层填筑与碾压、坝面削坡与护面结构施工。\n第10至16个月：坝基与边坡处理、排水与护坡工程。\n第14至20个月：溢洪道及取水口土建结构施工。\n第20至23个月：收尾、调试配合、质量文档整理与验收准备。\n第24个月：竣工验收与移交。\n\n资源安排：得宝可用资源2.0、占用0，本包需求0.7，容量足以独立承担并保留余量。现场设项目经理、施工经理、安全主任、质量工程师、测量与文档管理人员；水工专项分包与顾问按暂定成本准备计入，待正式报价后调整。",
+        "quotation": 75895000.0,
+        "schedule_commitment": "总工期24个月，自业主确认开工条件起算。关键里程碑：第3个月完成施工准备与开挖启动；第10个月完成库盆开挖主体；第14个月完成主坝加高加固；第16个月完成坝基与边坡处理；第20个月完成溢洪道及取水口土建结构；第24个月竣工验收与移交。里程碑以业主确认的开工条件为前提，雨季与周边环境扰动已在风险准备中考虑。",
+        "compliance_statement": "我方接受业主按设计包与造价咨询包成果核对工程量清单报价，价格基准与业主预算口径对齐，报价上限8287.5万MOP以内。质量方面按ISO 9001、ISO 14001、ISO 45001体系执行，提交质量方针与质量目标对照说明及质量文档管理安排，配合业主质量目标对照检查。安全方面提交安全期望跟踪与报告安排，按周报告现场安全状态与整改闭环。进度方面提交工期视图与里程碑计划，配合业主进度审查。接口方面由得宝统一协调设计、造价与现场施工接口，保持单一问责。",
+        "risk_response": "主要风险与应对：\n1. 水工坝体加高加固专项经验在现有资料中未明确记录：由具备相应经验的分包与顾问提供技术支持，得宝保持单一问责并统一控制质量与安全；专项分包现阶段以暂定成本准备计入，待正式报价后调整。\n2. 坝基与边坡处理不确定性：施工前补充勘察与监测，按信息化施工动态调整，风险准备中已计提。\n3. 城市周边交通组织与公共通道协调：提交交通组织方案，分阶段安排运输时段与临时通道，与相关方协调。\n4. 雨季与周边环境扰动：安排雨季施工措施与排水，控制扬尘与噪声。\n5. 工程量清单报价口径一致性：按设计包与造价咨询包成果编制，价格基准与业主预算口径对齐，区分已落实报价与暂定成本准备。\n6. 价格波动：材料价格指数1.0545、人工价格指数1.0980已在报价中考虑，风险准备覆盖剩余波动。",
+        "submission_summary": "得宝建筑集团有限公司以单一问责投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 75,895,000，在包上限MOP 82,875,000以内。\n\n报价构成：坝体加高加固与库盆开挖土石方MOP 28,650,000；坝基与边坡处理MOP 12,480,000；溢洪道及取水口土建结构MOP 14,260,000；水工专项分包与顾问技术支持MOP 7,350,000（暂定成本准备，非已收到正式报价）；现场管理、安全与质量文档MOP 6,180,000；交通组织与公共通道协调MOP 2,350,000；风险准备与不可预见费MOP 4,625,000。合计MOP 75,895,000。\n\n价格基准按设计包与造价咨询包成果编制的工程量清单，与业主预算口径对齐。我方可用资源2.0、占用0，本包需求0.7，容量足以独立承担并保留余量，无需引入组合体。水工专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责，负责现场管理、安全期望跟踪、工期控制、交通协调、质量文档与分包管控。工期24个月，里程碑以业主确认的开工条件为前提。本投标为情景试运行编制，不复现历史中标结果。",
+        "quotation_breakdown": [
+          {
+            "item": "坝体加高加固与库盆开挖土石方工程",
+            "amount": 28650000,
+            "basis": "按设计包与造价咨询包成果编制的工程量清单，含坝体分层填筑碾压、坝面削坡护面、库盆开挖至74万立方米及土石方分类调配；参考材料价格指数1.0545与人工价格指数1.0980计入"
+          },
+          {
+            "item": "坝基与边坡处理工程",
+            "amount": 12480000,
+            "basis": "清基、锚固、排水与护坡综合措施，按工程量清单分项估算"
+          },
+          {
+            "item": "溢洪道及取水口土建结构工程",
+            "amount": 14260000,
+            "basis": "混凝土结构、模板、钢筋与止水等土建分项，按工程量清单估算"
+          },
+          {
+            "item": "水工专项分包与顾问技术支持",
+            "amount": 7350000,
+            "basis": "坝体加高加固专项施工由具备相应经验的分包与顾问支持，现阶段为暂定成本准备，非已收到正式报价；待正式报价后调整"
+          },
+          {
+            "item": "现场管理、安全与质量文档",
+            "amount": 6180000,
+            "basis": "项目经理、施工经理、安全主任、质量工程师、测量与文档人员24个月现场管理，含安全期望跟踪与报告安排、ISO体系执行与质量文档管理"
+          },
+          {
+            "item": "交通组织与公共通道协调",
+            "amount": 2350000,
+            "basis": "城市周边施工物流运输时段安排、临时通道与公共通道协调，按交通组织方案估算"
+          },
+          {
+            "item": "风险准备与不可预见费",
+            "amount": 4625000,
+            "basis": "覆盖坝基与边坡处理不确定性、雨季与周边环境扰动、专项分包报价调整及价格波动风险；按已落实成本约6%计提"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "水工坝体加高加固专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责投标人身份",
+          "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径对齐",
+          "城市周边施工物流与公共通道协调按提交的交通组织方案执行，并与相关方协调",
+          "专项分包报价在投标阶段以暂定成本准备计入，待正式报价后调整",
+          "工期按24个月编排，里程碑以业主确认的开工条件为前提"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0003/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0003/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 81150000.0,
+            "quotation_breakdown": [
+              {
+                "item": "库盆开挖与土石方调配",
+                "amount": 18650000,
+                "basis": "按设计包与造价咨询包成果草案工程量估算，含开挖、运输、弃渣场处置及土石方平衡调配，单价参照情景材料价格指数调整"
+              },
+              {
+                "item": "主坝加高加固与坝基处理",
+                "amount": 24800000,
+                "basis": "含分层填筑碾压、混凝土防渗墙、帷幕灌浆及坝基处理，按草案工程量与施工方案估算"
+              },
+              {
+                "item": "溢洪道及取水口土建结构",
+                "amount": 14200000,
+                "basis": "含混凝土结构、模板、钢筋、止水与预埋件，按设计包成果草案工程量估算"
+              },
+              {
+                "item": "边坡处理与排水工程",
+                "amount": 6800000,
+                "basis": "含锚杆、挂网喷混凝土、排水孔与截水沟，按边坡处理范围草案估算"
+              },
+              {
+                "item": "交通组织、临时设施与公共通道协调",
+                "amount": 4200000,
+                "basis": "含施工时段管理、运输路线维护、临时通道设置与公共通道协调，按24个月工期分摊"
+              },
+              {
+                "item": "项目管理、质量安全与文档管理",
+                "amount": 5600000,
+                "basis": "含项目经理部运行、质量文档管理、安全期望跟踪与周记录月报告，按24个月工期估算"
+              },
+              {
+                "item": "外部造价咨询与专业分包支持（草案预留）",
+                "amount": 3100000,
+                "basis": "计划性安排，投标阶段以草案成本预留，未取得正式报价，不作为已落实承诺"
+              },
+              {
+                "item": "风险预备费与价格调整缓冲",
+                "amount": 3800000,
+                "basis": "覆盖材料价格波动、城市周边交通组织不确定性及与设计造价接口协调风险，按直接费约5%预留"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 81,150,000，低于包上限82,875,000。报价按设计包与造价咨询包成果草案工程量编制，价格基准与业主预算口径一致。费用构成：库盆开挖与土石方调配MOP 18,650,000；主坝加高加固与坝基处理MOP 24,800,000；溢洪道及取水口土建结构MOP 14,200,000；边坡处理与排水MOP 6,800,000；交通组织与公共通道协调MOP 4,200,000；项目管理质量安全与文档MOP 5,600,000；外部造价咨询与专业分包支持草案预留MOP 3,100,000；风险预备费与价格调整缓冲MOP 3,800,000。合计MOP 81,150,000。外部造价咨询与专业分包支持为计划性安排，未取得正式报价，以草案成本预留，不作为已落实承诺。工期24个月，里程碑计划见进度承诺。质量文档按周记录、按月报告，安全期望跟踪同步执行。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+              "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+              "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+              "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+              "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "坝基与边坡处理工程",
+                "amount": 9850000,
+                "basis": "清基、锚固、排水与护坡工序，按设计包工程量估算，含专业分包配合"
+              },
+              {
+                "item": "库盆开挖与土石方调配",
+                "amount": 18650000,
+                "basis": "开挖至74万立方米库容，含分层开挖、运输、弃土安排与机械台班，按造价咨询包口径估算"
+              },
+              {
+                "item": "主坝加高加固工程",
+                "amount": 21400000,
+                "basis": "分层填筑、碾压、防渗与接缝处理，含受控专业分包工序的暂估成本"
+              },
+              {
+                "item": "溢洪道及取水口土建结构",
+                "amount": 12350000,
+                "basis": "结构分段流水施工，含模板、钢筋、混凝土与临时支护"
+              },
+              {
+                "item": "交通组织、临时设施与现场管理",
+                "amount": 6350000,
+                "basis": "城市周边分时段运输、公共通道协调、临时设施、测量与文档控制"
+              },
+              {
+                "item": "质量安全体系、保险与保函",
+                "amount": 3480000,
+                "basis": "ISO体系运行、独立检查、安全期望跟踪报告、工程保险与履约保函"
+              },
+              {
+                "item": "专业分包管理与风险预备费",
+                "amount": 5860000,
+                "basis": "专业分包协调与界面管理、材料与人工价格波动预备、不可预见工序风险"
+              },
+              {
+                "item": "企业管理费与利润",
+                "amount": 4935000,
+                "basis": "公司管理费分摊与合理利润，按本包规模与风险水平计取"
+              }
+            ],
+            "submission_summary": "得宝国际有限公司以单一问责总承包商身份独立投标九澳水库主坝加高与库盆扩容土建包，不组建组合体，范围不含机电设备安装与临时供水管线。\n\n报价基准：依据设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致，报价以MOP计。\n\n费用构成（MOP）：\n- 坝基与边坡处理：9,850,000\n- 库盆开挖与土石方调配：18,650,000\n- 主坝加高加固：21,400,000\n- 溢洪道及取水口土建结构：12,350,000\n- 交通组织、临时设施与现场管理：6,350,000\n- 质量安全体系、保险与保函：3,480,000\n- 专业分包管理与风险预备费：5,860,000\n- 企业管理费与利润：4,935,000\n合计：82,875,000 MOP，处于包上限82,875,000以内。\n\n说明：水工专业工序拟以受控专业分包实施，属投标假设，尚未取得供应商报价或承诺；风险预备费覆盖材料与人工价格波动及不可预见工序，报价为固定总价，不依赖无上限调整条款。工期24个月，交通组织与安全期望跟踪报告纳入投标文件。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "以单一问责总承包商身份独立投标，不组建组合体",
+              "水工坝体加高加固等专业工序通过受控专业分包实施，由我方统一管理质量、安全与进度",
+              "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径一致",
+              "报价以MOP计并控制在包上限82875000以内",
+              "工期按24个月编排里程碑计划，交通组织与公共通道协调方案纳入投标文件",
+              "专业分包的具体安排属投标假设，尚未取得供应商报价或承诺"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 75895000.0,
+            "quotation_breakdown": [
+              {
+                "item": "坝体加高加固与库盆开挖土石方工程",
+                "amount": 28650000,
+                "basis": "按设计包与造价咨询包成果编制的工程量清单，含坝体分层填筑碾压、坝面削坡护面、库盆开挖至74万立方米及土石方分类调配；参考材料价格指数1.0545与人工价格指数1.0980计入"
+              },
+              {
+                "item": "坝基与边坡处理工程",
+                "amount": 12480000,
+                "basis": "清基、锚固、排水与护坡综合措施，按工程量清单分项估算"
+              },
+              {
+                "item": "溢洪道及取水口土建结构工程",
+                "amount": 14260000,
+                "basis": "混凝土结构、模板、钢筋与止水等土建分项，按工程量清单估算"
+              },
+              {
+                "item": "水工专项分包与顾问技术支持",
+                "amount": 7350000,
+                "basis": "坝体加高加固专项施工由具备相应经验的分包与顾问支持，现阶段为暂定成本准备，非已收到正式报价；待正式报价后调整"
+              },
+              {
+                "item": "现场管理、安全与质量文档",
+                "amount": 6180000,
+                "basis": "项目经理、施工经理、安全主任、质量工程师、测量与文档人员24个月现场管理，含安全期望跟踪与报告安排、ISO体系执行与质量文档管理"
+              },
+              {
+                "item": "交通组织与公共通道协调",
+                "amount": 2350000,
+                "basis": "城市周边施工物流运输时段安排、临时通道与公共通道协调，按交通组织方案估算"
+              },
+              {
+                "item": "风险准备与不可预见费",
+                "amount": 4625000,
+                "basis": "覆盖坝基与边坡处理不确定性、雨季与周边环境扰动、专项分包报价调整及价格波动风险；按已落实成本约6%计提"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一问责投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 75,895,000，在包上限MOP 82,875,000以内。\n\n报价构成：坝体加高加固与库盆开挖土石方MOP 28,650,000；坝基与边坡处理MOP 12,480,000；溢洪道及取水口土建结构MOP 14,260,000；水工专项分包与顾问技术支持MOP 7,350,000（暂定成本准备，非已收到正式报价）；现场管理、安全与质量文档MOP 6,180,000；交通组织与公共通道协调MOP 2,350,000；风险准备与不可预见费MOP 4,625,000。合计MOP 75,895,000。\n\n价格基准按设计包与造价咨询包成果编制的工程量清单，与业主预算口径对齐。我方可用资源2.0、占用0，本包需求0.7，容量足以独立承担并保留余量，无需引入组合体。水工专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责，负责现场管理、安全期望跟踪、工期控制、交通协调、质量文档与分包管控。工期24个月，里程碑以业主确认的开工条件为前提。本投标为情景试运行编制，不复现历史中标结果。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "水工坝体加高加固专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责投标人身份",
+              "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径对齐",
+              "城市周边施工物流与公共通道协调按提交的交通组织方案执行，并与相关方协调",
+              "专项分包报价在投标阶段以暂定成本准备计入，待正式报价后调整",
+              "工期按24个月编排，里程碑以业主确认的开工条件为前提"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 主坝加高与库盆扩容土建包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0003/construction-1",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何俊杰"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0003/construction-1_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "单一责任投标人身份清晰，主坝分层填筑碾压、防渗墙与帷幕灌浆、库盆分层开挖与土石方就近平衡、边坡锚喷排水等方法覆盖本包全部土建范围，24个月里程碑与关键路径安排合理。",
+            "cost_view": "报价MOP 81,150,000低于包上限MOP 82,875,000，按设计包与造价咨询包草案工程量编制，含风险预备费与价格调整缓冲，价格基准与业主预算口径一致，报价可信。",
+            "owner_control_view": "对业主八项投标内容逐项回应，质量目标对照、周记录月报告的安全期望跟踪、交通组织单列方案与设计造价接口协调节点均有安排，业主审查清晰度较高。",
+            "strengths": [
+              "施工方法与水工坝体加高加固、库盆开挖调配能力匹配度高",
+              "质量文档与安全期望跟踪安排具体，文档纪律较好",
+              "交通组织与公共通道协调单列方案并设专职协调员"
+            ],
+            "concerns": [
+              "外部造价咨询与专业分包支持仅以草案成本预留，未取得正式报价",
+              "交通路线与时段待现场踏勘后细化，存在后续调整空间"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-1_002",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "technical_view": "以单一问责总承包商身份独立投标，施工方法、分区流水与季节性缓冲安排完整，但水工坝体加高加固的灌浆防渗等关键工序依赖受控专业分包，能力落实尚待验证。",
+            "cost_view": "报价MOP 82,875,000正好触及包上限，费用构成完整并含质量安全体系、保险保函与风险预备费，价格可解释但缺乏余量，后续变更空间有限。",
+            "owner_control_view": "对八项投标内容均有回应，ISO体系、独立检查与接口会议安排清晰，但专业分包尚未取得报价或承诺，业主审查时需进一步核实分包落实。",
+            "strengths": [
+              "费用构成完整，涵盖保险保函与独立检查",
+              "质量目标与验收口径逐项对照，可追溯性较好",
+              "交通组织与安全期望跟踪报告纳入投标文件"
+            ],
+            "concerns": [
+              "水工专业工序依赖尚未落实的分包，核心能力存在不确定性",
+              "报价触及包上限，价格缓冲有限"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-1_003",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "单一问责投标人身份明确，施工方法覆盖全部土建范围，团队可用性摘要显示资源余量充足，但水工坝体加高加固专项经验在资料中未明确记录，依赖分包与顾问支持。",
+            "cost_view": "报价MOP 75,895,000为三家最低，按设计包与造价咨询包工程量清单编制并计入材料与人工价格指数，但水工专项分包以暂定成本准备计入，价格基础存在待调整部分。",
+            "owner_control_view": "对质量、安全、进度与接口协调均有回应并保持单一问责，ISO体系与周报告安排清晰，但专项分包报价未落实，业主审查时需关注成本确定性。",
+            "strengths": [
+              "报价最低且在包上限以内，价格基准与业主预算口径对齐",
+              "资源余量充足，可独立承担并保留余量",
+              "质量安全体系与文档管理安排完整"
+            ],
+            "concerns": [
+              "水工专项经验未明确记录，依赖暂定成本的分包与顾问",
+              "专项分包报价待正式报价后调整，存在成本上升与索赔暴露"
+            ]
+          }
+        ],
+        "comparison_summary": "三家均为单一责任投标人，中交第一航务在施工方法、文档纪律与接口协调上最贴合本包能力需求，得宝国际报价触及包上限且核心工序依赖未落实分包，得宝建筑报价最低但水工专项经验与暂定成本带来不确定性。综合交付信心、能力匹配与风险控制，中交第一航务为最稳妥选择。",
+        "recommended_winner": "COMP-0153",
+        "owner_review_notes": "建议判给中交第一航务工程局有限公司，其报价MOP 81,150,000低于包上限且方法、资源与业主控制回应匹配度最高。签约前应要求其落实外部造价咨询与专业分包报价，并细化交通组织路线与时段。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0003",
+      "package_awards": [
+        {
+          "package_id": "CASE-0003/construction-1",
+          "selected_bidder_id": "COMP-0153",
+          "selected_bidder_name": "中交第一航务工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第一航务工程局有限公司以单一责任投标人身份提交，报价MOP 81,150,000低于包上限MOP 82,875,000，施工方法与本包水工土建范围匹配度最高，质量目标对照、周记录月报告的安全期望跟踪、交通组织单列方案及与设计造价包的接口协调节点均有明确安排，业主控制回应完整。相较之下，得宝国际报价触及包上限且核心工序依赖未落实分包，得宝建筑虽报价最低但水工专项经验未明确记录、专项分包以暂定成本准备计入，成本与工期确定性不足。判给中交第一航务在交付信心、能力匹配与风险控制上最为稳妥。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+            "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+            "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+            "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+            "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0153"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:35:41",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0003/construction-1",
+          "decision": "bid",
+          "reason": "管理判断：本包属于公司可信赖承接的水工土建施工范围，情景资源充足且无占用，施工、质量、安全与土石方调配能力与包内需求匹配，包内已排除机电安装与临时供水管线，交付边界清楚。公司可作为单一责任投标人独立提交，无需联合体共享投标人身份或交付权威。主要风险是城市周边交通组织、与设计及造价包的接口协调、以及按业主预算口径编制工程量清单报价，这些通过角色计划、施工方法与交付方案、工期视图、风险应对和价格基准说明来管理，属于正常投标风险而非责任缺口。因此决定投标，并在投标文件中明确外部造价与专业分包支持为计划性安排，不作为已落实承诺。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+            "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+            "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+            "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+            "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:41",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0025",
+          "package_id": "CASE-0003/construction-1",
+          "decision": "bid",
+          "reason": "管理判断：本包属土建施工总承包性质，与我方总承包、土方、地基、地下工程、道路桥梁及给排水能力高度契合，资源账显示可用资源2.0、占用0，包需求0.7，具备独立承接的容量与领导力。包范围明确排除机电与临时供水管线，边界清晰，适合以单一问责承包商身份投标。水工坝体加高加固等专业工序可通过受控专业分包与自有土石方、地基能力组合实施，属正常施工风险，应在施工方法、价格基准、工期视图与风险应对中管理，而非以组合体转移问责。业主以价格合理性、风险控制与交付信心作定性比较，我方应以清晰的交付方案、质量目标对照、交通组织方案与安全期望跟踪报告建立交付信心。因此决定独立投标，不组建组合体。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一问责总承包商身份独立投标，不组建组合体",
+            "水工坝体加高加固等专业工序通过受控专业分包实施，由我方统一管理质量、安全与进度",
+            "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径一致",
+            "报价以MOP计并控制在包上限82875000以内",
+            "工期按24个月编排里程碑计划，交通组织与公共通道协调方案纳入投标文件",
+            "专业分包的具体安排属投标假设，尚未取得供应商报价或承诺"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:35:41",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0003/construction-1",
+          "decision": "bid",
+          "reason": "管理层判断：本包为九澳水库主坝加高与库盆扩容土建包，范围限于土建主体，不含机电与临时供水管线，与得宝作为本地总承包在土木、地基、土方、道路桥梁与给排水方面的业务方向一致，属于可信的业务延伸。资源账显示可用资源2.0、占用0，包需求0.7，容量足以独立承担并保留余量，无需引入共享投标身份的组合体。主要风险在于水工坝体加高加固的专项经验在现有资料中未明确记录，以及城市周边交通组织与按设计、造价成果编制工程量清单报价的口径一致性。我们的处理是把水工专项施工作为有经验分包与顾问支持纳入交付方案，由得宝保持单一问责投标人身份，负责现场管理、安全期望跟踪、工期控制、交通协调、质量文档与分包管控，并在报价中体现相应风险准备。价格上限8287.5万MOP，须与业主预算口径对齐，以价格合理性、风险控制与交付信心参与定性比较。综合战略价值、能力匹配与风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "水工坝体加高加固专项施工由具备相应经验的分包与顾问支持，得宝保持单一问责投标人身份",
+            "工程量清单报价依据设计包与造价咨询包成果编制，价格基准与业主预算口径对齐",
+            "城市周边施工物流与公共通道协调按提交的交通组织方案执行，并与相关方协调",
+            "专项分包报价在投标阶段以暂定成本准备计入，待正式报价后调整",
+            "工期按24个月编排，里程碑以业主确认的开工条件为前提"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:04",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:04",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:04",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:49",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:56",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "recommended_winner": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:00",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-1",
+          "selected_bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "The bid from COMP-0153 is within the package budget (MOP 81,150,000 against a ceiling of MOP 82,875,000), covers the full scope of the construction package, and commits 0.7 normalized enterprise capacity with a 100% work share, matching the package resource requirement. The disclosed bid assumptions are accepted as proposed risk allocations: the quotation is based on draft design and cost-consulting outputs with a price basis aligned to the owner budget; external cost consulting and specialist subcontracting are planned arrangements carried as draft cost provisions and are not treated as confirmed commitments; traffic and public-access coordination will be detailed after site inspection; interface coordination with the design and cost packages is managed through fixed coordination nodes and document review gates; and the 24-month schedule runs from the owner commencement notice. These are obligations subject to future review and acceptance, not claims that deliverables or approvals already exist. As buyer, I decide the following for the next draft: the MOP 81,150,000 is a fixed lump-sum price for the stated scope, with the risk reserve and price-adjustment buffer of MOP 3,800,000 inside that price and not payable as an extra; measurement and payment follow monthly progress certification against the milestone schedule, with the final account reconciled to the as-built quantities; and the monthly progress review and weekly coordination meeting cadence is accepted as the review period. No material unresolved risk remains that would require rejection or revision."
+          },
+          "COMP-0153": {
+            "action": "accept",
+            "reason": "作为联合体唯一成员与责任投标人，本组织确认接受本修订草案（revision 0）的全部条款、资源承诺与义务：报价 MOP 81,150,000（低于包上限 82,875,000），资源承诺 0.7 normalized_enterprise_capacity，工作份额 1.0，工期 24 个月，范围与 cost_inclusion 为 owner_additional 均按规范字段执行。就本组织自身立场，明确以下决定以便写入下一稿：(1) 外部造价咨询与专业分包支持 MOP 3,100,000 为计划性安排与草案成本预留，属固定价内的风险自担项，不作为已落实承诺，也不构成业主额外付款依据；(2) 工程量清单以设计包与造价咨询包成果草案工程量及业主预算口径为计量与计价基础，最终计量按实际完成并经业主验收的工程量结算，单价按情景材料价格指数调整；(3) 风险预备费与价格调整缓冲 MOP 3,800,000 覆盖材料价格波动与交通组织不确定性，不声称固定价格；(4) 交通组织具体路线与时段待现场踏勘后细化，属本组织履约细化义务，不构成未决外部证据；(5) 里程碑与月度进度评审、周协调会、周记录月报告为可执行义务，验收移交以业主审查接受为条件。上述均为未来履约义务，不声称工程交付物或法定审批已完成。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMC47C6B63/CASE-0003/construction-1/round-1/contract",
+          "simulation_id": "SIMC47C6B63",
+          "project_id": "CASE-0003",
+          "package_id": "CASE-0003/construction-1",
+          "session_id": "SIMC47C6B63/CASE-0003/construction-1/round-1",
+          "snapshot_version": "889dbfdf280636f3fa34b19e12df6b75f24a0c65097b6375ffa67c40dc7812db",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0003/construction-1_001",
+          "bidder_id": "COMP-0153",
+          "lead_id": "COMP-0153",
+          "members": [
+            "COMP-0153"
+          ],
+          "price": 81150000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0153": 0.7
+          },
+          "work_shares": {
+            "COMP-0153": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "e3594971230434fafcc279ec786c122f7b67ed06644e9623897543ebe3486686",
+          "terms": {
+            "schedule_commitment": "总工期24个月，自业主开工通知起算。里程碑：第2月末完成施工准备；第6月末完成库盆开挖50%；第12月末完成主坝加高加固；第18月末完成溢洪道及取水口结构；第21月末完成边坡处理；第24月末完成验收移交。关键路径为库盆开挖与主坝加高，设月度进度评审与周协调会。",
+            "risk_response": "主要风险：城市周边交通组织与公共通道协调、与设计及造价包接口协调、按业主预算口径编制工程量清单报价。应对：交通组织单列方案，明确施工时段、运输路线与临时通道管理，设专职交通协调员；与设计及造价包设固定协调节点与文件审查关口，每月接口协调会；工程量清单报价以设计包与造价咨询包成果为依据，外部造价咨询为计划性安排，投标阶段以草案成本预留。材料价格波动风险通过风险预备费与价格调整缓冲覆盖，不声称固定价格。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0003/construction-1_001",
+              "package_id": "CASE-0003/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0153",
+              "bidder_name": "中交第一航务工程局有限公司",
+              "technical_proposal": "本投标以单一责任投标人身份提交，全面承担主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构施工。施工方法：主坝加高采用分层填筑与碾压，坝体加固采用混凝土防渗墙与帷幕灌浆；库盆开挖按自上而下分层开挖，土石方调配优先就近平衡，弃渣运至指定弃渣场；坝基与边坡处理采用锚杆、挂网喷混凝土与排水孔；溢洪道及取水口按设计图纸施工，混凝土结构采用定型模板与泵送浇筑。质量方针：过程受控、一次成优，质量目标与业主质量目标对照说明见质量计划。安全期望跟踪：按周记录、按月报告，现场设专职安全主任与安全巡查队。交通组织与公共通道协调单列方案，明确施工时段、运输路线与临时通道管理。与设计及造价包接口设固定协调节点与文件审查关口。外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺。",
+              "implementation_plan": "总工期24个月，里程碑计划：第1-2月施工准备与临时设施；第3-6月库盆开挖与土石方调配；第7-12月主坝加高加固与坝基处理；第13-18月溢洪道及取水口土建结构；第19-21月边坡处理与收尾；第22-24月调试、验收与移交。关键路径为库盆开挖与主坝加高。资源计划：项目经理1名、技术负责人1名、施工员6名、安全主任1名、质量工程师2名、测量与试验人员4名、机械操作与土石方班组约60人、混凝土与结构班组约40人。主要设备：挖掘机8台、自卸车20辆、压路机4台、混凝土泵车2台、灌浆设备2套。外部造价咨询与专业分包支持按计划性安排管理，投标阶段以草案成本预留。",
+              "quotation": 81150000.0,
+              "schedule_commitment": "总工期24个月，自业主开工通知起算。里程碑：第2月末完成施工准备；第6月末完成库盆开挖50%；第12月末完成主坝加高加固；第18月末完成溢洪道及取水口结构；第21月末完成边坡处理；第24月末完成验收移交。关键路径为库盆开挖与主坝加高，设月度进度评审与周协调会。",
+              "compliance_statement": "按业主八项投标内容组织：角色计划与团队可用性摘要见实施计划；施工方法与交付方案见技术建议；质量方针与质量目标对照说明按质量计划提交；价格基准与工程量清单报价说明按设计包与造价咨询包成果编制，价格基准与业主预算口径一致；工期视图与里程碑计划见进度承诺；风险应对方案见风险应对；交通组织与公共通道协调方案单列；安全期望跟踪与报告安排按周记录、按月报告。接受业主按价格合理性、风险控制与交付信心进行定性比较。",
+              "risk_response": "主要风险：城市周边交通组织与公共通道协调、与设计及造价包接口协调、按业主预算口径编制工程量清单报价。应对：交通组织单列方案，明确施工时段、运输路线与临时通道管理，设专职交通协调员；与设计及造价包设固定协调节点与文件审查关口，每月接口协调会；工程量清单报价以设计包与造价咨询包成果为依据，外部造价咨询为计划性安排，投标阶段以草案成本预留。材料价格波动风险通过风险预备费与价格调整缓冲覆盖，不声称固定价格。",
+              "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 81,150,000，低于包上限82,875,000。报价按设计包与造价咨询包成果草案工程量编制，价格基准与业主预算口径一致。费用构成：库盆开挖与土石方调配MOP 18,650,000；主坝加高加固与坝基处理MOP 24,800,000；溢洪道及取水口土建结构MOP 14,200,000；边坡处理与排水MOP 6,800,000；交通组织与公共通道协调MOP 4,200,000；项目管理质量安全与文档MOP 5,600,000；外部造价咨询与专业分包支持草案预留MOP 3,100,000；风险预备费与价格调整缓冲MOP 3,800,000。合计MOP 81,150,000。外部造价咨询与专业分包支持为计划性安排，未取得正式报价，以草案成本预留，不作为已落实承诺。工期24个月，里程碑计划见进度承诺。质量文档按周记录、按月报告，安全期望跟踪同步执行。",
+              "quotation_breakdown": [
+                {
+                  "item": "库盆开挖与土石方调配",
+                  "amount": 18650000,
+                  "basis": "按设计包与造价咨询包成果草案工程量估算，含开挖、运输、弃渣场处置及土石方平衡调配，单价参照情景材料价格指数调整"
+                },
+                {
+                  "item": "主坝加高加固与坝基处理",
+                  "amount": 24800000,
+                  "basis": "含分层填筑碾压、混凝土防渗墙、帷幕灌浆及坝基处理，按草案工程量与施工方案估算"
+                },
+                {
+                  "item": "溢洪道及取水口土建结构",
+                  "amount": 14200000,
+                  "basis": "含混凝土结构、模板、钢筋、止水与预埋件，按设计包成果草案工程量估算"
+                },
+                {
+                  "item": "边坡处理与排水工程",
+                  "amount": 6800000,
+                  "basis": "含锚杆、挂网喷混凝土、排水孔与截水沟，按边坡处理范围草案估算"
+                },
+                {
+                  "item": "交通组织、临时设施与公共通道协调",
+                  "amount": 4200000,
+                  "basis": "含施工时段管理、运输路线维护、临时通道设置与公共通道协调，按24个月工期分摊"
+                },
+                {
+                  "item": "项目管理、质量安全与文档管理",
+                  "amount": 5600000,
+                  "basis": "含项目经理部运行、质量文档管理、安全期望跟踪与周记录月报告，按24个月工期估算"
+                },
+                {
+                  "item": "外部造价咨询与专业分包支持（草案预留）",
+                  "amount": 3100000,
+                  "basis": "计划性安排，投标阶段以草案成本预留，未取得正式报价，不作为已落实承诺"
+                },
+                {
+                  "item": "风险预备费与价格调整缓冲",
+                  "amount": 3800000,
+                  "basis": "覆盖材料价格波动、城市周边交通组织不确定性及与设计造价接口协调风险，按直接费约5%预留"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+                "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+                "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+                "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+                "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "e3594971230434fafcc279ec786c122f7b67ed06644e9623897543ebe3486686"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0003/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+          "budget": 82875000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMC47C6B63/CASE-0003/construction-1/round-1/contract",
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/construction-1",
+    "session_id": "SIMC47C6B63/CASE-0003/construction-1/round-1",
+    "snapshot_version": "889dbfdf280636f3fa34b19e12df6b75f24a0c65097b6375ffa67c40dc7812db",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0003/construction-1_001",
+    "bidder_id": "COMP-0153",
+    "lead_id": "COMP-0153",
+    "members": [
+      "COMP-0153"
+    ],
+    "price": 81150000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0153": 0.7
+    },
+    "work_shares": {
+      "COMP-0153": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0153": true
+    },
+    "signed_terms_hash": "e3594971230434fafcc279ec786c122f7b67ed06644e9623897543ebe3486686",
+    "terms": {
+      "schedule_commitment": "总工期24个月，自业主开工通知起算。里程碑：第2月末完成施工准备；第6月末完成库盆开挖50%；第12月末完成主坝加高加固；第18月末完成溢洪道及取水口结构；第21月末完成边坡处理；第24月末完成验收移交。关键路径为库盆开挖与主坝加高，设月度进度评审与周协调会。",
+      "risk_response": "主要风险：城市周边交通组织与公共通道协调、与设计及造价包接口协调、按业主预算口径编制工程量清单报价。应对：交通组织单列方案，明确施工时段、运输路线与临时通道管理，设专职交通协调员；与设计及造价包设固定协调节点与文件审查关口，每月接口协调会；工程量清单报价以设计包与造价咨询包成果为依据，外部造价咨询为计划性安排，投标阶段以草案成本预留。材料价格波动风险通过风险预备费与价格调整缓冲覆盖，不声称固定价格。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0003/construction-1_001",
+        "package_id": "CASE-0003/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标以单一责任投标人身份提交，全面承担主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构施工。施工方法：主坝加高采用分层填筑与碾压，坝体加固采用混凝土防渗墙与帷幕灌浆；库盆开挖按自上而下分层开挖，土石方调配优先就近平衡，弃渣运至指定弃渣场；坝基与边坡处理采用锚杆、挂网喷混凝土与排水孔；溢洪道及取水口按设计图纸施工，混凝土结构采用定型模板与泵送浇筑。质量方针：过程受控、一次成优，质量目标与业主质量目标对照说明见质量计划。安全期望跟踪：按周记录、按月报告，现场设专职安全主任与安全巡查队。交通组织与公共通道协调单列方案，明确施工时段、运输路线与临时通道管理。与设计及造价包接口设固定协调节点与文件审查关口。外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺。",
+        "implementation_plan": "总工期24个月，里程碑计划：第1-2月施工准备与临时设施；第3-6月库盆开挖与土石方调配；第7-12月主坝加高加固与坝基处理；第13-18月溢洪道及取水口土建结构；第19-21月边坡处理与收尾；第22-24月调试、验收与移交。关键路径为库盆开挖与主坝加高。资源计划：项目经理1名、技术负责人1名、施工员6名、安全主任1名、质量工程师2名、测量与试验人员4名、机械操作与土石方班组约60人、混凝土与结构班组约40人。主要设备：挖掘机8台、自卸车20辆、压路机4台、混凝土泵车2台、灌浆设备2套。外部造价咨询与专业分包支持按计划性安排管理，投标阶段以草案成本预留。",
+        "quotation": 81150000.0,
+        "schedule_commitment": "总工期24个月，自业主开工通知起算。里程碑：第2月末完成施工准备；第6月末完成库盆开挖50%；第12月末完成主坝加高加固；第18月末完成溢洪道及取水口结构；第21月末完成边坡处理；第24月末完成验收移交。关键路径为库盆开挖与主坝加高，设月度进度评审与周协调会。",
+        "compliance_statement": "按业主八项投标内容组织：角色计划与团队可用性摘要见实施计划；施工方法与交付方案见技术建议；质量方针与质量目标对照说明按质量计划提交；价格基准与工程量清单报价说明按设计包与造价咨询包成果编制，价格基准与业主预算口径一致；工期视图与里程碑计划见进度承诺；风险应对方案见风险应对；交通组织与公共通道协调方案单列；安全期望跟踪与报告安排按周记录、按月报告。接受业主按价格合理性、风险控制与交付信心进行定性比较。",
+        "risk_response": "主要风险：城市周边交通组织与公共通道协调、与设计及造价包接口协调、按业主预算口径编制工程量清单报价。应对：交通组织单列方案，明确施工时段、运输路线与临时通道管理，设专职交通协调员；与设计及造价包设固定协调节点与文件审查关口，每月接口协调会；工程量清单报价以设计包与造价咨询包成果为依据，外部造价咨询为计划性安排，投标阶段以草案成本预留。材料价格波动风险通过风险预备费与价格调整缓冲覆盖，不声称固定价格。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库主坝加高与库盆扩容土建包投标，报价MOP 81,150,000，低于包上限82,875,000。报价按设计包与造价咨询包成果草案工程量编制，价格基准与业主预算口径一致。费用构成：库盆开挖与土石方调配MOP 18,650,000；主坝加高加固与坝基处理MOP 24,800,000；溢洪道及取水口土建结构MOP 14,200,000；边坡处理与排水MOP 6,800,000；交通组织与公共通道协调MOP 4,200,000；项目管理质量安全与文档MOP 5,600,000；外部造价咨询与专业分包支持草案预留MOP 3,100,000；风险预备费与价格调整缓冲MOP 3,800,000。合计MOP 81,150,000。外部造价咨询与专业分包支持为计划性安排，未取得正式报价，以草案成本预留，不作为已落实承诺。工期24个月，里程碑计划见进度承诺。质量文档按周记录、按月报告，安全期望跟踪同步执行。",
+        "quotation_breakdown": [
+          {
+            "item": "库盆开挖与土石方调配",
+            "amount": 18650000,
+            "basis": "按设计包与造价咨询包成果草案工程量估算，含开挖、运输、弃渣场处置及土石方平衡调配，单价参照情景材料价格指数调整"
+          },
+          {
+            "item": "主坝加高加固与坝基处理",
+            "amount": 24800000,
+            "basis": "含分层填筑碾压、混凝土防渗墙、帷幕灌浆及坝基处理，按草案工程量与施工方案估算"
+          },
+          {
+            "item": "溢洪道及取水口土建结构",
+            "amount": 14200000,
+            "basis": "含混凝土结构、模板、钢筋、止水与预埋件，按设计包成果草案工程量估算"
+          },
+          {
+            "item": "边坡处理与排水工程",
+            "amount": 6800000,
+            "basis": "含锚杆、挂网喷混凝土、排水孔与截水沟，按边坡处理范围草案估算"
+          },
+          {
+            "item": "交通组织、临时设施与公共通道协调",
+            "amount": 4200000,
+            "basis": "含施工时段管理、运输路线维护、临时通道设置与公共通道协调，按24个月工期分摊"
+          },
+          {
+            "item": "项目管理、质量安全与文档管理",
+            "amount": 5600000,
+            "basis": "含项目经理部运行、质量文档管理、安全期望跟踪与周记录月报告，按24个月工期估算"
+          },
+          {
+            "item": "外部造价咨询与专业分包支持（草案预留）",
+            "amount": 3100000,
+            "basis": "计划性安排，投标阶段以草案成本预留，未取得正式报价，不作为已落实承诺"
+          },
+          {
+            "item": "风险预备费与价格调整缓冲",
+            "amount": 3800000,
+            "basis": "覆盖材料价格波动、城市周边交通组织不确定性及与设计造价接口协调风险，按直接费约5%预留"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按设计包与造价咨询包成果编制工程量清单报价，价格基准与业主预算口径一致",
+          "外部造价咨询与专业分包支持为计划性安排，投标时以草案成本预留，不作为已落实承诺",
+          "城市周边交通组织与公共通道协调方案在投标文件中单列，具体路线与时段待现场踏勘后细化",
+          "与设计及造价包的接口协调通过固定协调节点与文件审查关口管理",
+          "工期按24个月编制里程碑计划，具体开工日期以业主通知为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "九澳水库主坝加高加固、库盆开挖扩容至74万立方米、坝基与边坡处理、溢洪道及取水口土建结构；不含机电设备安装与临时供水管线。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

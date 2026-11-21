@@ -1,0 +1,1632 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIME3B32373/CASE-0019/supply-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/supply-2",
+    "round_id": 1,
+    "tick": 15,
+    "public": {
+      "environment": {
+        "current_tick": 15,
+        "market_demand_index": 1.061811376099563,
+        "material_price_index": 1.1124378916329212,
+        "labor_price_index": 1.1722884529013,
+        "financing_condition_index": 0.9507764034575142,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 12495000.0,
+      "project": {
+        "project_id": "CASE-0019",
+        "name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0019/supply-2",
+        "project_id": "CASE-0019",
+        "kind": "supply",
+        "buyer_id": "$construction_lead",
+        "name": "隧道机电、消防及通风系统施工包材料采购",
+        "scope": "仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+        "budget": 12495000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [
+          "CASE-0019/construction-2"
+        ],
+        "cost_inclusion": "included_in_parent",
+        "parent_package_id": "CASE-0019/construction-2",
+        "candidate_ids": [
+          "COMP-0154",
+          "COMP-0167"
+        ]
+      }
+    },
+    "private": {
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 0.6000000000000001,
+        "occupied_resource": 1.4,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8700000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 1.4,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000005",
+              "project_id": "CASE-0019",
+              "project_stage": "contract_award",
+              "role": "Contractor",
+              "status": "active",
+              "resource_allocation": 1.4,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 14,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIME3B32373/CASE-0019/construction-1/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/construction-1",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 78750000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIME3B32373/CASE-0019/construction-2/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/construction-2",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 39000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIME3B32373/EVT000173",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0019",
+            "role": "Contractor",
+            "available_resource": 1.3,
+            "occupied_resource": 0.7,
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000174",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/construction-1",
+            "contract_id": "SIME3B32373/CASE-0019/construction-1/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0191"
+            ],
+            "price": 78750000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000175",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0019",
+            "role": "Contractor",
+            "available_resource": 0.6000000000000001,
+            "occupied_resource": 1.4,
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000176",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/construction-2",
+            "contract_id": "SIME3B32373/CASE-0019/construction-2/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0191"
+            ],
+            "price": 39000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000177",
+            "event_type": "project_state_updated",
+            "tick": 14,
+            "project_id": "CASE-0019",
+            "stage": "contract_award",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 5,
+          "selected_events": 5,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0154": {
+        "entity_id": "COMP-0154",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0154",
+          "company_name": "中交第二公路工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0154",
+          "name": "中交第二公路工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8600000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0167": {
+        "entity_id": "COMP-0167",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0167",
+          "company_name": "中国建筑第三工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0167",
+          "name": "中国建筑第三工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8500000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "7ad2fbe691cb17091119da15585532355cc6047a4706098b6721551d5adbea14"
+  },
+  "spec": {
+    "package_id": "CASE-0019/supply-2",
+    "project_id": "CASE-0019",
+    "kind": "supply",
+    "buyer_id": "$construction_lead",
+    "name": "隧道机电、消防及通风系统施工包材料采购",
+    "scope": "仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+    "budget": 12495000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [
+      "CASE-0019/construction-2"
+    ],
+    "cost_inclusion": "included_in_parent",
+    "parent_package_id": "CASE-0019/construction-2",
+    "candidate_ids": [
+      "COMP-0154",
+      "COMP-0167"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0019",
+      "project_name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0019",
+      "project_scope": "本项目为澳门新城填海区A区至澳门半岛之间连接通道改善工程（行人隧道），采用DBB交付模式，业主为模拟业主机构。本次采购为已授权材料供应包（CASE-0019/supply-2），仅涵盖隧道机电、消防及通风系统施工包所需材料与构配件的供货、运输到场、质量证明文件及质保期内更换，不含施工、安装、临时工程或措施费，亦不承担施工界面责任。材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。业主在本次模拟中关注材料供应与施工包之间的接口协调、质量文件纪律及交付确定性。",
+      "functional_requirements": [
+        "满足行人隧道机电系统（供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷）的材料与构配件供应需求",
+        "材料与构配件须适配施工包安装工艺及现场条件，提供完整接口信息供承包商安装",
+        "按施工进度分批供货，确保现场不断料且不积压",
+        "提供质量证明文件、出厂检验报告及质保期内更换承诺",
+        "支持维护保养及备品备件计划，满足运营期可维护性目标"
+      ],
+      "technical_requirements": [
+        "材料与构配件须符合隧道机电、消防及通风系统的设计技术规格及澳门适用标准",
+        "提供BIM协调所需的材料族信息及接口尺寸，支持施工包综合管线协调",
+        "消防报警与灭火材料须满足消防验收相关技术文件要求",
+        "通风及排水泵材料须满足耐久性及能效目标",
+        "提供材料可维护性说明及备件更换指引",
+        "质量证明文件须与供货批次对应，支持业主验收路径"
+      ],
+      "budget_policy": "本供应包预算为MOP 12,495,000，已包含在施工包合同价内，由施工包承包商作为买方支付。业主在模拟中关注报价合理性及与施工包预算的匹配度，要求投标人提供价格基础及分项报价，业主将结合市场材料价格指数及交付确定性进行定性比较。",
+      "schedule_policy": "供应包工期须与施工包24个月总工期及机电安装里程碑衔接。业主关注供货计划的现实性、分批到场时间、与施工包接口时间及业主审查时间。投标人须提交供货进度视图，明确材料采购、生产、运输到场及质量文件提交节点。",
+      "compliance_requirements": [
+        "业主审查节奏：按施工包里程碑设置材料供货节点审查",
+        "问题升级路径：供货偏差或质量文件缺失须及时升级至业主",
+        "文档纪律：质量证明文件、送货单及验收记录须完整归档",
+        "接口签署：材料接口信息须经施工包承包商及业主确认",
+        "公共通道协调：供货运输须配合公共通道及交通安排",
+        "质量目标跟踪：按批次跟踪材料质量目标达成情况",
+        "安全期望跟踪：运输及现场交付须符合安全期望",
+        "变更控制纪律：材料规格或数量变更须经业主变更控制程序"
+      ],
+      "risk_priorities": [
+        "材料价格波动风险（当前材料价格指数1.112）",
+        "供货延迟影响施工包机电安装关键路径",
+        "质量证明文件不完整导致验收延误",
+        "材料与现场安装接口不匹配",
+        "质保期内更换响应不及时",
+        "运输到场受公共通道协调影响"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0019/supply-2",
+          "package_type": "supplier",
+          "package_name": "隧道机电、消防及通风系统施工包材料采购",
+          "scope": "Authorized scope: 仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。\nBuyer refinement: 仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+          "required_company_role": "supplier",
+          "qualification_requirements": [
+            "隧道机电材料供应协调能力",
+            "消防及通风系统材料质量保证能力",
+            "供货物流与分批到场安排能力",
+            "质量证明文件管理能力",
+            "备品备件计划与质保期支持能力",
+            "与施工包承包商的接口信息提供能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "供货方法说明",
+            "质量保证方法",
+            "价格基础及分项报价",
+            "供货进度视图",
+            "风险应对说明"
+          ],
+          "pricing_requirements": "投标人须提交含分项的材料供应价格基础，报价以MOP计，包含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\nBinding currency: MOP; package ceiling: 12495000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "文档纪律",
+            "质量目标匹配",
+            "可维护性支持",
+            "接口协调"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制及交付信心，并考虑与施工包承包商的接口协调能力。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0019/supply-2",
+        "package_type": "supplier",
+        "package_name": "隧道机电、消防及通风系统施工包材料采购",
+        "scope": "Authorized scope: 仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。\nBuyer refinement: 仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+        "required_company_role": "supplier",
+        "qualification_requirements": [
+          "隧道机电材料供应协调能力",
+          "消防及通风系统材料质量保证能力",
+          "供货物流与分批到场安排能力",
+          "质量证明文件管理能力",
+          "备品备件计划与质保期支持能力",
+          "与施工包承包商的接口信息提供能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "供货方法说明",
+          "质量保证方法",
+          "价格基础及分项报价",
+          "供货进度视图",
+          "风险应对说明"
+        ],
+        "pricing_requirements": "投标人须提交含分项的材料供应价格基础，报价以MOP计，包含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\nBinding currency: MOP; package ceiling: 12495000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "文档纪律",
+          "质量目标匹配",
+          "可维护性支持",
+          "接口协调"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制及交付信心，并考虑与施工包承包商的接口协调能力。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "owner",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0154",
+        "company_name": "中交第二公路工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0167",
+        "company_name": "中国建筑第三工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与成本平衡，习惯先确认业主核心诉求再分配资源；对风险信号敏感，常提醒团队不要低估审批与协调时间；讨论中倾向于推动快速形成可执行方案，但可能对细节质量把控施加压力。",
+          "responsibilities": [
+            "统筹投标策略与最终报价审批",
+            "协调业主与内部关键决策",
+            "监控整体工期与成本控制目标",
+            "审批资源计划与风险应对方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善于用简明语言总结复杂问题，在会议中常以提问引导团队聚焦关键矛盾。"
+        },
+        {
+          "agent_id": "COMP-0191_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，在压力下会反复核对报价基础与支付条件；首先注意到成本漏项和现金流风险；讨论中常带来保守的财务视角，提醒团队不要为中标牺牲合理利润。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付条件",
+            "进行成本控制与支付评审",
+            "管理分包采购与商务谈判"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致严谨，习惯用数据支撑观点，表达清晰但有时显得过于谨慎。"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "以技术可行性和施工安全为第一考量，在压力下会深入分析地质条件和施工方案；首先注意到设计协调问题与现场技术风险；讨论中常坚持技术标准，可能对工期压缩持保留态度。",
+          "responsibilities": [
+            "审核设计图纸与施工方案",
+            "协调设计变更与技术接口",
+            "监督现场施工质量与安全",
+            "组织技术交底与工艺试验"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "逻辑性强，喜欢用图纸和规范说话，表达准确但有时过于技术化。"
+        },
+        {
+          "agent_id": "COMP-0191_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量目标和安全合规视为不可妥协的底线，在压力下会坚持独立检查与文档记录；首先注意到质量目标偏差和监管要求；讨论中常带来合规视角，可能对赶工方案提出质疑。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "组织独立质量评审与验收",
+            "监督安全措施与合规文档",
+            "跟踪整改与质量缺陷处理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "原则性强，沟通直接，善于用检查表和证据说明问题。"
+        },
+        {
+          "agent_id": "COMP-0191_05_周家豪",
+          "agent_name": "周家豪",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "施工经理",
+          "personal_profile": "注重现场可操作性和资源调度效率，在压力下会优先保证关键线路施工；首先注意到劳动力、机械和材料供应情况；讨论中常强调实际执行难度，可能对过于理想化的计划提出修正。",
+          "responsibilities": [
+            "编制施工进度与资源计划",
+            "协调现场分包与机械调度",
+            "管理临时交通疏解配合",
+            "跟踪每日施工进展与问题"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实直白，喜欢用现场实例说明问题，沟通节奏快。"
+        }
+      ],
+      "COMP-0154": [
+        {
+          "agent_id": "COMP-0154_01_林启衡",
+          "agent_name": "林启衡",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "公司经营决策层",
+          "position": "总经理（投标决策人）",
+          "personal_profile": "长期在粤港澳区域做工程与材料供应，习惯先把招标包的边界读清楚再谈价格。压力下会先问三件事：这个包是否只做供货、付款方是谁、资源占用会不会挤压其他机会。他最先注意到的是合同界面与付款链条，容易把讨论拉回商业底线，对过度承诺持怀疑态度。",
+          "responsibilities": [
+            "主持投标与否的最终决策",
+            "审定报价策略与风险应对",
+            "协调公司资源投入与组合体安排",
+            "对业主及买方的高层沟通"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列两三条依据，遇到模糊表述会要求对方明确责任边界。"
+        },
+        {
+          "agent_id": "COMP-0154_02_何咏芝",
+          "agent_name": "何咏芝",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "商务与造价管理",
+          "position": "商务合约经理",
+          "personal_profile": "做造价出身，对数字与条款的对应关系非常敏感。压力下会逐项核对报价基础是否覆盖供货、运输到场、质量证明文件与质保期更换，并警惕把施工界面费用误算进来。她带来的张力是不断追问成本依据，容易让讨论变慢但很少漏项。",
+          "responsibilities": [
+            "编制报价与价格基础说明",
+            "审核付款条件与付款评审安排",
+            "梳理供货范围与合同界面",
+            "成本控制与变更计价口径"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "条理清晰，喜欢用清单和分项数字说话，对含糊承诺会当场要求补充依据。"
+        },
+        {
+          "agent_id": "COMP-0154_03_苏柏言",
+          "agent_name": "苏柏言",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "材料供应与质量管理",
+          "position": "材料质量与供应经理",
+          "personal_profile": "常驻供应与检测一线，判断问题时先看材料来源、检验批次与到场节奏。压力下他倾向保守，宁可多留检验余量也不愿在质量证明文件上冒险。他带来的张力是对工期压缩的抵触，会反复强调质保期内的更换责任与质量目标追踪。",
+          "responsibilities": [
+            "材料来源与供货计划安排",
+            "质量证明文件与检验安排",
+            "质保期内更换责任落实",
+            "质量目标追踪与独立复核配合"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "务实细致，习惯用批次、时间和检验节点描述问题，对赶工要求会明确说出风险。"
+        },
+        {
+          "agent_id": "COMP-0154_04_郑家骏",
+          "agent_name": "郑家骏",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "项目交付与协调",
+          "position": "供货协调主管",
+          "personal_profile": "长期做现场与买方对接，思考方式是先排到场时间再谈其他。压力下他会主动联系施工包承包商确认需求节奏，但也容易为了保交付而低估运输与仓储的不确定性。他带来的张力是交付优先与成本纪律之间的拉扯。",
+          "responsibilities": [
+            "与施工包承包商的供货协调",
+            "运输到场与仓储安排",
+            "现场供货进度报告",
+            "临时需求变化的响应安排"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "节奏快、口语化，喜欢用时间表和责任人来推进讨论，遇到冲突会提议先定交付节点。"
+        },
+        {
+          "agent_id": "COMP-0154_05_罗美珊",
+          "agent_name": "罗美珊",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "合规与文件管理",
+          "position": "合约文件与合规专员",
+          "personal_profile": "习惯从文件完整性反推风险，最先注意到的是资质表述、证明文件与审批口径是否一致。压力下她不会替业务做判断，而是把不确定项逐条列出交给决策人。她带来的张力是对文档纪律的坚持，常提醒不要用口头承诺替代书面依据。",
+          "responsibilities": [
+            "投标文件与证明文件整理",
+            "合规口径与监管服务要求核对",
+            "文件版本与文档纪律管理",
+            "开标评标所需资料准备"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "谨慎克制，以条目和依据说话，倾向把待确认事项明确标注而不是自行假设。"
+        }
+      ],
+      "COMP-0167": [
+        {
+          "agent_id": "COMP-0167_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先考虑公司整体风险与资源调配，习惯先看合同责任边界与付款条件，对超出能力范围的承诺保持警惕。讨论中常提出资源冲突与长期信誉的权衡，倾向于稳健决策。",
+          "responsibilities": [
+            "统筹本次材料供应包的投标决策与资源分配",
+            "审批最终报价与合同条款",
+            "协调跨部门资源以确保供货可靠性",
+            "监控项目整体风险与合规要求"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，注重事实与数据，善于归纳关键风险点，在会议中常以提问引导团队思考。"
+        },
+        {
+          "agent_id": "COMP-0167_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，关注成本构成与付款节点，在压力下会反复核对报价基础与现金流影响。讨论中常提醒隐性成本与合同罚则，倾向于保守报价但保留谈判空间。",
+          "responsibilities": [
+            "编制材料采购报价与成本分析",
+            "评审合同付款条款与支付安排",
+            "管理供应商与分包商的商务接口",
+            "跟踪材料价格波动对成本的影响"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致严谨，喜欢用清单和对比说明问题，表达清晰但有时过于关注细节。"
+        },
+        {
+          "agent_id": "COMP-0167_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "物资供应部",
+          "position": "供应链主管",
+          "personal_profile": "重视供货时效与库存周转，在压力下首先确认物流与产能瓶颈，对突发供应中断有较强预案意识。讨论中常强调实际交付能力而非理论产能，倾向于提前锁定资源。",
+          "responsibilities": [
+            "评估材料供应能力与交货周期",
+            "制定供货计划与运输方案",
+            "管理材料质量证明文件与质保期更换",
+            "协调供应商产能与库存水平"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实高效，习惯用时间表和流程图沟通，对模糊承诺会直接追问具体节点。"
+        },
+        {
+          "agent_id": "COMP-0167_04_张丽芳",
+          "agent_name": "张丽芳",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "质量管理部",
+          "position": "质量经理",
+          "personal_profile": "将质量目标视为不可妥协的底线，在压力下会坚持独立检查与文件追溯，对任何可能影响材料性能的变更保持高度警觉。讨论中常提出质量风险与验证方案，倾向于增加检验环节。",
+          "responsibilities": [
+            "制定材料质量控制计划与检验标准",
+            "审核质量证明文件与测试报告",
+            "监督质保期内更换流程",
+            "跟踪质量目标达成情况"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理分明，注重证据与标准引用，表达直接且坚持原则，有时显得固执。"
+        },
+        {
+          "agent_id": "COMP-0167_05_周家豪",
+          "agent_name": "周家豪",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "工程管理部",
+          "position": "项目协调经理",
+          "personal_profile": "擅长在多方界面中寻找平衡，在压力下优先梳理施工承包商的材料需求节奏与现场接收条件，对界面责任划分敏感。讨论中常提醒材料到场与施工进度的匹配性，倾向于灵活调整供货顺序。",
+          "responsibilities": [
+            "对接施工承包商明确材料需求与到场时间",
+            "协调现场接收与卸货条件",
+            "反馈施工进度对材料供应的调整需求",
+            "参与供货风险应对与应急预案制定"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "善于倾听与协调，表达温和但立场明确，常用实例说明界面问题。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0154",
+        "company_role": "supplier",
+        "package_id": "CASE-0019/supply-2",
+        "agent_id": "COMP-0154_01_林启衡",
+        "agent_name": "林启衡",
+        "department": "公司经营决策层",
+        "position": "总经理（投标决策人）",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，范围清晰：供货、运输到场、质量证明文件、质保期更换，不含施工安装，也不承担施工界面责任。公司作为供应商角色，资源占用为零，可用资源2.0，包所需资源仅0.25，容量上完全有余。公司资料里有货物进出口、建筑材料销售、砼结构构件销售、机械设备租赁、仓储设备租赁、道路货物运输站经营等，具备材料组织、物流到场和文件管理的商业基础。隧道机电、消防及通风系统的材料品类较专业，但这是采购与供应链协调问题，可以通过合格供应商渠道、分批到场计划和质保期支持来管理，不需要联合体共享投标人身份或交付责任。价格上限12495000 MOP，材料价格指数偏高，需要在报价中留出价格波动余量，并明确分项价格基础。买方是施工包承包商，付款依赖其合同价内支付，存在回款节奏风险，但这是商业条款管理问题，不是放弃投标的理由。我判断可以独立投标，以单一责任供应商身份承担供货、文件与质保更换，不承担安装和系统集成责任。",
+        "content": "中交第二公路工程局有限公司就隧道机电、消防及通风系统施工包材料采购包提交独立投标意向。我方以单一责任供应商身份承担材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换，不含施工、安装、临时工程或措施费，不承担施工界面责任。供货方法上，按施工包承包商的安装顺序编制分批到场计划，设置材料品类清单、到货批次和现场交接记录，物流与仓储资源按需调配。质量保证方面，建立材料来源清单和进场质量证明文件台账，按批次提交合格证明、检验记录和更换承诺，质保期内按约定响应更换。价格基础以MOP计，分项列明材料费、运输到场费、质量证明文件费和质保期更换费用，考虑材料价格指数波动设置合理风险余量。供货进度视图与施工包进度联动，风险应对覆盖供应延迟、价格波动和付款节奏。团队可用性摘要显示供货协调、质量文件和物流安排岗位可即时投入，资源占用不影响本包履约。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:14:51",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0167",
+        "company_role": "supplier",
+        "package_id": "CASE-0019/supply-2",
+        "agent_id": "COMP-0167_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，范围清晰：供货、运输到场、质量证明文件、质保期更换，不含施工安装和界面责任，买方是施工包承包商。公司作为供应商，资源占用为零，可用资源2.0，本包仅需0.25，容量上完全无压力。公司资料涵盖机电安装、金属结构、建材销售等，具备材料组织与供货协调的基本能力，且供应可靠性参数较高。报价上限12495000 MOP，材料价格指数偏高，需要在价格基础中留出材料涨价余量。风险主要是分批到场安排、质量证明文件管理和质保期更换响应，这些都可以通过供货方法说明、质量保证方法和风险应对说明来覆盖，不需要联合体。没有未决条件，也没有必须提交前完成的核查。我判断可以独立投标，作为单一责任供应商，把安装界面明确排除在外。",
+        "content": "我方拟以单一责任供应商身份参与隧道机电、消防及通风系统施工包材料采购投标。角色计划与团队可用性摘要显示，本包所需资源占我方总容量比例很低，现有资源无占用，可保证供货协调、质量文件管理和质保期支持的专人投入。供货方法说明将明确材料组织、分批到场安排、运输责任和到场验收交接流程，并明确不含施工、安装、临时工程及施工界面责任。质量保证方法覆盖材料来源控制、出厂与到场质量证明文件归档、批次可追溯性及不合格品处理。价格基础按MOP分项列明供货、运输到场、质量证明文件和质保期内更换费用，考虑当前材料价格指数水平预留合理涨价余量，不含施工安装费用。供货进度视图与施工包承包商的安装计划衔接，设置分批到场节点和提前预警机制。风险应对说明针对材料涨价、物流延误、质量文件缺失和质保期更换响应提出具体措施。我方接受以施工包承包商为买方和付款方的合同安排，并按招标要求提交全部文件。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:14:50",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0154",
+        "company_role": "supplier",
+        "package_id": "CASE-0019/supply-2",
+        "agent_id": "COMP-0154_01_林启衡",
+        "agent_name": "林启衡",
+        "department": "公司经营决策层",
+        "position": "总经理（投标决策人）",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整\n价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-20T01:15:01",
+        "verification_requests": [
+          {
+            "question": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整",
+            "required_before_submission": false
+          },
+          {
+            "question": "价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "COMP-0191",
+        "company_role": "owner",
+        "package_id": "CASE-0019/supply-2",
+        "agent_id": "COMP-0191_05_周家豪",
+        "agent_name": "周家豪",
+        "department": "施工管理部",
+        "position": "施工经理",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个材料采购包选择一个能可靠交付、价格合理且责任清晰的供应商。评标推荐中交第二公路工程局，其报价MOP 11,645,000低于预算，分项结构完整，三线岗位配置直接对应供货协调、质量文件和物流安排，且明确以施工包承包商为买方付款方，接口责任不越界。虽然该投标提交了两项未决条件，材料费为暂定估算，备品备件投入相对有限，但这些属于合同前可澄清的事项，不影响其作为首选供应商的总体可靠性。中国建筑第三工程局报价MOP 11,980,000略高，文档纪律更强且无未决条件，但价格和岗位配置略逊。考虑到本包为材料供应，核心风险在于供货及时性、质量文件完整性和价格可控性，中交第二公路工程局的方案在这些方面表现均衡，且价格优势明显。因此，我决定判给中交第二公路工程局，并在合同前重点澄清两项未决条件、复核材料清单估算以及明确备品备件与仓储缓冲安排。",
+        "content": "本包判给中交第二公路工程局有限公司（COMP-0154），其报价MOP 11,645,000，分项结构完整，岗位配置贴合供货协调、质量文件与物流安排需求，且明确以施工包承包商为买方付款方，不越界承担施工界面责任。合同前澄清重点为两项未决条件、材料清单估算复核以及备品备件与仓储缓冲安排，相关澄清工作按业主审查节点推进。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-20T01:15:09",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0154",
+        "package_id": "CASE-0019/supply-2",
+        "decision": "bid",
+        "reason": "管理层认为该包属于公司可作为单一责任供应商承接的材料供应业务，范围边界清楚，不含施工安装与界面责任，与公司现有材料销售、物流到场、仓储租赁和进出口能力相匹配。资源占用为零，所需资源远低于可用容量，团队可用性摘要和角色计划可以按供货协调、质量文件、物流分批到场三条线配置。主要风险是材料价格指数上行和买方付款节奏，我们将在价格基础中设置分项报价与价格调整边界，在风险应对中明确质保期更换责任和备品备件计划，并以质量证明文件管理作为交付控制点。无需组合体，因为公司能够独立承担供货、运输、文件与质保责任，联合体反而会增加责任界面和协调成本。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组成组合体",
+          "材料品类与规格以施工包承包商最终确认的采购清单为准",
+          "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+          "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+          "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0167",
+        "package_id": "CASE-0019/supply-2",
+        "decision": "bid",
+        "reason": "本包为施工包材料采购，范围限于供货、运输到场、质量证明文件和质保期更换，不含施工安装与界面责任，与我方作为供应商的角色定位一致。公司当前资源占用为零，可用资源2.0，本包仅需0.25，团队可用性充足，不存在容量冲突。公司资料涵盖机电安装、金属结构制作与建材销售，具备隧道机电、消防及通风系统材料的组织、供货协调和质量文件管理能力，供应可靠性参数较高。报价上限12495000 MOP，材料价格指数处于1.11水平，价格基础中会预留材料涨价与分批运输的合理余量，分项列明供货、运输、质量文件和质保期更换费用。主要风险为分批到场衔接、质量证明文件完整性和质保期更换响应，将通过供货进度视图、质量保证方法和风险应对说明予以覆盖，并以施工包承包商为唯一买方接口。无需联合体，我方可以作为单一责任供应商独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0019/supply-2_001",
+        "package_id": "CASE-0019/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0154",
+        "bidder_name": "中交第二公路工程局有限公司",
+        "technical_proposal": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。供货范围严格限定为隧道机电、消防及通风系统施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换，不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n角色计划与团队可用性摘要：设供货协调负责人1名，统筹品类清单、批次计划与买方接口；质量文件专员1名，负责材料来源清单、进场质量证明文件台账与批次合格证明提交；物流安排专员1名，负责运输到场、现场交接记录与分批到场联动。三线岗位由公司现有人员即时投入，资源占用不影响本包履约。\n\n供货方法说明：以施工包承包商最终确认的采购清单为基准，按安装顺序编制分批到场计划，明确材料品类、规格、到货批次与交接记录；运输到场由公司物流资源按需调配，仓储租赁能力作为缓冲支撑。\n\n质量保证方法：建立材料来源清单与进场质量证明文件台账，按批次提交合格证明与检验记录，质保期内按约定响应更换，更换责任限于所供材料本身，不延伸至安装或系统调试责任。\n\n价格基础：以MOP计分项列明材料费、运输到场费、质量证明文件费、质保期更换费用及价格波动风险余量，不含施工安装费用。\n\n供货进度视图：与施工包进度联动，按批次滚动更新到场计划，提前识别供应延迟并启动替代货源协调。\n\n风险应对说明：覆盖材料价格指数上行、供应延迟与买方付款节奏三类主要风险，在价格基础中设置分项报价与价格调整边界，在合同条款中约定付款节奏。",
+        "implementation_plan": "第一阶段（合同签订后即启动）：与施工包承包商确认最终采购清单、规格与分批到场需求，建立材料来源清单与质量证明文件台账模板，锁定首批材料订单。\n\n第二阶段（按施工包安装顺序分批执行）：按批次组织供货与运输到场，每批到场提交合格证明与检验记录，现场交接记录双方签认；物流安排专员滚动更新到场计划，与施工包进度联动。\n\n第三阶段（质保期内）：按约定响应质保期更换，维护备品备件计划，配合买方完成材料层面的质量文件归档。\n\n接口信息提供：向施工包承包商提供材料品类清单、批次到场计划、质量证明文件与更换承诺，不承担施工界面责任。",
+        "quotation": 11645000.0,
+        "schedule_commitment": "供货进度与施工包安装顺序联动，合同签订后完成采购清单确认与首批订单锁定，按批次滚动更新到场计划；每批到场提交质量证明文件并完成现场交接记录。质保期内按约定响应更换。具体批次时间以施工包承包商确认的安装计划为准。",
+        "compliance_statement": "接受业主及施工包承包商对材料品类、规格、批次到场计划与质量证明文件的审查；按批次提交合格证明与检验记录供核验；现场交接记录双方签认；质保期更换按约定响应并留存记录。不承担施工界面责任，材料费用由施工包承包商作为买方按合同价内材料费用支付。",
+        "risk_response": "供应延迟：按批次滚动更新到场计划，提前识别延迟并启动替代货源协调，仓储缓冲支撑连续性。材料价格波动：在价格基础中设置分项报价与价格调整边界，风险余量覆盖合同期内价格上行敞口。买方付款节奏：在合同条款中约定付款节奏，付款由施工包承包商按合同价内材料费用支付。质保期更换：责任限于所供材料本身，不延伸至安装或系统调试责任，备品备件计划保障更换响应。",
+        "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。报价以MOP计，含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n分项报价合计：材料费9,680,000 + 运输到场费620,000 + 质量证明文件费185,000 + 质保期更换费用310,000 + 材料价格波动风险余量430,000 + 供货协调与项目管理费265,000 + 备品备件计划与仓储缓冲155,000 = MOP 11,645,000。\n\n价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身。付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定。",
+        "quotation_breakdown": [
+          {
+            "item": "材料费（机电、消防及通风系统材料与构配件）",
+            "amount": 9680000,
+            "basis": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整"
+          },
+          {
+            "item": "运输到场费",
+            "amount": 620000,
+            "basis": "按分批到场计划估算的运输、装卸与现场交接费用，含跨境物流与本地配送"
+          },
+          {
+            "item": "质量证明文件费",
+            "amount": 185000,
+            "basis": "材料来源清单、进场质量证明文件台账、批次合格证明与检验记录编制及归档"
+          },
+          {
+            "item": "质保期更换费用",
+            "amount": 310000,
+            "basis": "质保期内材料本身更换责任准备金，按供货价值比例计提，不含安装或系统调试责任"
+          },
+          {
+            "item": "材料价格波动风险余量",
+            "amount": 430000,
+            "basis": "参考当前材料价格指数1.1124设置的风险余量，覆盖合同期内价格上行敞口"
+          },
+          {
+            "item": "供货协调与项目管理费",
+            "amount": 265000,
+            "basis": "供货协调、质量文件、物流安排三线岗位的项目管理投入及公司管理费分摊"
+          },
+          {
+            "item": "备品备件计划与仓储缓冲",
+            "amount": 155000,
+            "basis": "备品备件计划编制与仓储租赁缓冲支撑，保障分批到场连续性"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_439a123f814516a6771c",
+          "condition_7374ec96e65951e96db3"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组成组合体",
+          "材料品类与规格以施工包承包商最终确认的采购清单为准",
+          "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+          "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+          "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0019/supply-2_002",
+        "package_id": "CASE-0019/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0167",
+        "bidder_name": "中国建筑第三工程局有限公司",
+        "technical_proposal": "我方以单一责任供应商身份，为隧道机电、消防及通风系统施工包提供材料与构配件供应。供应范围严格限定为：供货、运输到场、质量证明文件提交及质保期内更换；不含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。\n\n材料组织覆盖行人隧道机电安装所需的供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统材料。我方按施工包承包商的安装计划编制分批供货清单，每批材料随附出厂合格证、材质证明、型式检验报告（如适用）及装箱清单，并按批次建立可追溯档案。\n\n质量保证采用来源控制、进场验收与批次追溯三级管理：材料来源以具备相应生产资质的供应商为主，到货前完成文件预审；到场后配合买方按批次核对规格、数量与外观，文件缺失或不合格品按退换流程处理。\n\n供货进度视图以施工包安装计划为基准，设置分批到场节点、提前预警机制及备品备件清单。质保期内更换响应按材料类别设定响应时限，由专人对接买方。\n\n本包所需资源占我方总容量比例很低，现有资源无占用，可保证供货协调、质量文件管理和质保期支持的专人投入。",
+        "implementation_plan": "1. 启动阶段：与施工包承包商确认材料清单、技术规格、分批到场计划及质量证明文件要求，形成供货基线。\n2. 采购组织：按材料类别组织货源，优先选用具备生产资质与质量文件齐全的供应商；对关键材料（消防报警、通风设备、供配电元件）提前锁定批次。\n3. 分批到场：依据安装进度编制分批到场节点，每批到场前完成文件预审与运输安排，到场后配合买方验收交接。\n4. 质量文件管理：按批次归档出厂合格证、材质证明、检验报告及装箱清单，建立可追溯台账。\n5. 质保期支持：按材料类别设定更换响应时限，由专人对接买方，备品备件按清单储备。\n6. 收尾阶段：完成全部批次文件移交与质保期责任交接。",
+        "quotation": 11980000.0,
+        "schedule_commitment": "供货进度以施工包承包商的安装计划为基准，分批到场节点在合同签订后与买方确认。每批材料到场前完成文件预审与运输安排，设置提前预警机制。质保期内更换响应按材料类别设定时限，由专人对接。",
+        "compliance_statement": "我方接受以施工包承包商为买方和付款方的合同安排，按招标要求提交全部文件。质量证明文件按批次归档并接受买方查验；供货进度与安装计划衔接，接受买方对分批到场节点的进度审查。",
+        "risk_response": "材料涨价风险：报价中已预留合理涨价余量，并持续跟踪材料价格指数；物流延误风险：设置分批到场节点与提前预警机制，保留运输备选安排；质量文件缺失风险：到货前完成文件预审，缺失文件按退换流程处理；质保期更换响应风险：按材料类别设定响应时限并储备备品备件。",
+        "submission_summary": "我方以单一责任供应商身份提交隧道机电、消防及通风系统施工包材料采购报价，总价MOP 11,980,000，包含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n报价基础：材料供货费MOP 9,860,000；运输到场及分批配送费MOP 780,000；质量证明文件管理费MOP 260,000；质保期内更换及备品备件支持费MOP 420,000；供货协调与项目管理费MOP 310,000；风险及价格波动预备费MOP 350,000。合计MOP 11,980,000。\n\n本包所需资源占我方总容量比例很低，现有资源无占用，团队可用性充足。我方接受以施工包承包商为买方和付款方的合同安排，按招标要求提交全部文件。",
+        "quotation_breakdown": [
+          {
+            "item": "机电、消防及通风系统材料供货费",
+            "amount": 9860000,
+            "basis": "按施工包材料清单估算，覆盖供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统材料；含材料价格指数1.11水平下的合理涨价余量，属估算性报价基础"
+          },
+          {
+            "item": "运输到场及分批配送费",
+            "amount": 780000,
+            "basis": "按分批到场计划估算的运输、装卸及配送协调费用，含多次到场衔接成本"
+          },
+          {
+            "item": "质量证明文件管理费",
+            "amount": 260000,
+            "basis": "按批次文件预审、归档、可追溯台账及移交工作估算"
+          },
+          {
+            "item": "质保期内更换及备品备件支持费",
+            "amount": 420000,
+            "basis": "按材料类别设定更换响应时限及备品备件储备估算"
+          },
+          {
+            "item": "供货协调与项目管理费",
+            "amount": 310000,
+            "basis": "专人供货协调、进度对接及买方接口管理费用"
+          },
+          {
+            "item": "风险及价格波动预备费",
+            "amount": 350000,
+            "basis": "针对材料价格波动、物流延误及质量文件缺失风险的预备性安排"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单及技术规格以施工包承包商提供的安装计划为准，报价基于估算性材料清单",
+          "分批到场节点在合同签订后与买方确认",
+          "材料价格指数按当前1.11水平考虑合理涨价余量",
+          "质保期内更换响应时限按材料类别在合同中约定"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0019/supply-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0019/supply-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "quotation": 11645000.0,
+            "quotation_breakdown": [
+              {
+                "item": "材料费（机电、消防及通风系统材料与构配件）",
+                "amount": 9680000,
+                "basis": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整"
+              },
+              {
+                "item": "运输到场费",
+                "amount": 620000,
+                "basis": "按分批到场计划估算的运输、装卸与现场交接费用，含跨境物流与本地配送"
+              },
+              {
+                "item": "质量证明文件费",
+                "amount": 185000,
+                "basis": "材料来源清单、进场质量证明文件台账、批次合格证明与检验记录编制及归档"
+              },
+              {
+                "item": "质保期更换费用",
+                "amount": 310000,
+                "basis": "质保期内材料本身更换责任准备金，按供货价值比例计提，不含安装或系统调试责任"
+              },
+              {
+                "item": "材料价格波动风险余量",
+                "amount": 430000,
+                "basis": "参考当前材料价格指数1.1124设置的风险余量，覆盖合同期内价格上行敞口"
+              },
+              {
+                "item": "供货协调与项目管理费",
+                "amount": 265000,
+                "basis": "供货协调、质量文件、物流安排三线岗位的项目管理投入及公司管理费分摊"
+              },
+              {
+                "item": "备品备件计划与仓储缓冲",
+                "amount": 155000,
+                "basis": "备品备件计划编制与仓储租赁缓冲支撑，保障分批到场连续性"
+              }
+            ],
+            "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。报价以MOP计，含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n分项报价合计：材料费9,680,000 + 运输到场费620,000 + 质量证明文件费185,000 + 质保期更换费用310,000 + 材料价格波动风险余量430,000 + 供货协调与项目管理费265,000 + 备品备件计划与仓储缓冲155,000 = MOP 11,645,000。\n\n价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身。付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定。",
+            "unresolved_condition_ids": [
+              "condition_439a123f814516a6771c",
+              "condition_7374ec96e65951e96db3"
+            ],
+            "bid_assumptions": [
+              "公司以单一责任供应商身份独立投标，不组成组合体",
+              "材料品类与规格以施工包承包商最终确认的采购清单为准",
+              "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+              "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+              "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0019/supply-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "quotation": 11980000.0,
+            "quotation_breakdown": [
+              {
+                "item": "机电、消防及通风系统材料供货费",
+                "amount": 9860000,
+                "basis": "按施工包材料清单估算，覆盖供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统材料；含材料价格指数1.11水平下的合理涨价余量，属估算性报价基础"
+              },
+              {
+                "item": "运输到场及分批配送费",
+                "amount": 780000,
+                "basis": "按分批到场计划估算的运输、装卸及配送协调费用，含多次到场衔接成本"
+              },
+              {
+                "item": "质量证明文件管理费",
+                "amount": 260000,
+                "basis": "按批次文件预审、归档、可追溯台账及移交工作估算"
+              },
+              {
+                "item": "质保期内更换及备品备件支持费",
+                "amount": 420000,
+                "basis": "按材料类别设定更换响应时限及备品备件储备估算"
+              },
+              {
+                "item": "供货协调与项目管理费",
+                "amount": 310000,
+                "basis": "专人供货协调、进度对接及买方接口管理费用"
+              },
+              {
+                "item": "风险及价格波动预备费",
+                "amount": 350000,
+                "basis": "针对材料价格波动、物流延误及质量文件缺失风险的预备性安排"
+              }
+            ],
+            "submission_summary": "我方以单一责任供应商身份提交隧道机电、消防及通风系统施工包材料采购报价，总价MOP 11,980,000，包含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n报价基础：材料供货费MOP 9,860,000；运输到场及分批配送费MOP 780,000；质量证明文件管理费MOP 260,000；质保期内更换及备品备件支持费MOP 420,000；供货协调与项目管理费MOP 310,000；风险及价格波动预备费MOP 350,000。合计MOP 11,980,000。\n\n本包所需资源占我方总容量比例很低，现有资源无占用，团队可用性充足。我方接受以施工包承包商为买方和付款方的合同安排，按招标要求提交全部文件。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "材料清单及技术规格以施工包承包商提供的安装计划为准，报价基于估算性材料清单",
+              "分批到场节点在合同签订后与买方确认",
+              "材料价格指数按当前1.11水平考虑合理涨价余量",
+              "质保期内更换响应时限按材料类别在合同中约定"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 隧道机电、消防及通风系统施工包材料采购.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0019/supply-2",
+        "evaluators": [
+          "COMP-0191_01_陈志强",
+          "COMP-0191_02_李美玲",
+          "COMP-0191_03_黄伟明",
+          "COMP-0191_04_张丽华",
+          "COMP-0191_05_周家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0019/supply-2_001",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "technical_view": "供货方法以施工包承包商确认的采购清单为基准，按安装顺序编制分批到场计划，三线岗位（供货协调、质量文件、物流安排）职责清晰，与施工包进度联动的思路具体可行。",
+            "cost_view": "报价MOP 11,645,000低于包预算MOP 12,495,000，分项列明材料费、运输、文件、质保更换及价格波动余量，材料费为暂定估算并设调整边界，价格基础可信但需在清单确认后复核。",
+            "owner_control_view": "接受业主及施工包承包商对品类、规格、批次计划与质量文件的审查，按批次提交合格证明并双方签认交接记录，接口信息提供明确且不越界承担施工界面责任。",
+            "strengths": [
+              "三线岗位配置与供货协调、质量文件、物流安排需求直接对应",
+              "分项报价结构完整，价格波动余量与质保更换责任边界清晰",
+              "明确以施工包承包商为买方付款方，接口与文档纪律表述到位"
+            ],
+            "concerns": [
+              "材料费为暂定估算，最终清单确认后存在调整空间",
+              "提交两项未决条件，需在合同前澄清",
+              "备品备件与仓储缓冲投入相对有限"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0019/supply-2_002",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "technical_view": "以来源控制、进场验收与批次追溯三级管理组织材料供应，关键材料提前锁定批次，分批到场与文件预审流程完整，团队可用性充足。",
+            "cost_view": "报价MOP 11,980,000低于包预算MOP 12,495,000，分项覆盖供货、配送、文件管理、质保备件及风险预备费，价格基础合理且风险余量安排明确。",
+            "owner_control_view": "接受以施工包承包商为买方和付款方的合同安排，按批次归档质量文件并接受进度审查，响应业主控制要求的态度积极。",
+            "strengths": [
+              "质量文件预审与可追溯台账管理细致，文档纪律强",
+              "质保期更换按材料类别设定响应时限并储备备品备件",
+              "无未决条件，投标表述完整清晰"
+            ],
+            "concerns": [
+              "运输及分批配送费与项目管理费高于另一投标，价格略高",
+              "材料清单仍为估算性基础，需清单确认后锁定",
+              "对替代货源与供应延迟的应对描述相对概括"
+            ]
+          }
+        ],
+        "comparison_summary": "两家投标均以单一责任供应商身份响应，范围界定清晰且不越界承担施工界面责任；中交第二公路工程局报价MOP 11,645,000较低且分项结构完整，中国建筑第三工程局报价MOP 11,980,000略高但质量文件与质保支持安排更细。综合能力匹配、风险控制与交付信心，两者接近，前者在价格与协调岗位配置上略优，后者在文档纪律与无未决条件上更稳。",
+        "recommended_winner": "COMP-0154",
+        "owner_review_notes": "建议优先考虑中交第二公路工程局，其报价较低、岗位配置与接口协调贴合本包需求，但须在合同前澄清两项未决条件并复核材料清单估算。中国建筑第三工程局可作为备选，其质量文件与质保支持更完整，可在谈判中用于比价与条件优化。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0019",
+      "package_awards": [
+        {
+          "package_id": "CASE-0019/supply-2",
+          "selected_bidder_id": "COMP-0154",
+          "selected_bidder_name": "中交第二公路工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第二公路工程局报价MOP 11,645,000低于预算且分项结构完整，三线岗位配置与供货协调、质量文件、物流安排需求直接对应，明确以施工包承包商为买方付款方且不越界承担施工界面责任，综合能力匹配和价格优势使其成为本包最合适的供应商。",
+          "unresolved_condition_ids": [
+            "condition_439a123f814516a6771c",
+            "condition_7374ec96e65951e96db3"
+          ],
+          "bid_assumptions": [
+            "公司以单一责任供应商身份独立投标，不组成组合体",
+            "材料品类与规格以施工包承包商最终确认的采购清单为准",
+            "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+            "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+            "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0154"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-20T01:14:51",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0154",
+          "package_id": "CASE-0019/supply-2",
+          "decision": "bid",
+          "reason": "管理层认为该包属于公司可作为单一责任供应商承接的材料供应业务，范围边界清楚，不含施工安装与界面责任，与公司现有材料销售、物流到场、仓储租赁和进出口能力相匹配。资源占用为零，所需资源远低于可用容量，团队可用性摘要和角色计划可以按供货协调、质量文件、物流分批到场三条线配置。主要风险是材料价格指数上行和买方付款节奏，我们将在价格基础中设置分项报价与价格调整边界，在风险应对中明确质保期更换责任和备品备件计划，并以质量证明文件管理作为交付控制点。无需组合体，因为公司能够独立承担供货、运输、文件与质保责任，联合体反而会增加责任界面和协调成本。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任供应商身份独立投标，不组成组合体",
+            "材料品类与规格以施工包承包商最终确认的采购清单为准",
+            "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+            "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+            "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:14:51",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0167",
+          "package_id": "CASE-0019/supply-2",
+          "decision": "bid",
+          "reason": "本包为施工包材料采购，范围限于供货、运输到场、质量证明文件和质保期更换，不含施工安装与界面责任，与我方作为供应商的角色定位一致。公司当前资源占用为零，可用资源2.0，本包仅需0.25，团队可用性充足，不存在容量冲突。公司资料涵盖机电安装、金属结构制作与建材销售，具备隧道机电、消防及通风系统材料的组织、供货协调和质量文件管理能力，供应可靠性参数较高。报价上限12495000 MOP，材料价格指数处于1.11水平，价格基础中会预留材料涨价与分批运输的合理余量，分项列明供货、运输、质量文件和质保期更换费用。主要风险为分批到场衔接、质量证明文件完整性和质保期更换响应，将通过供货进度视图、质量保证方法和风险应对说明予以覆盖，并以施工包承包商为唯一买方接口。无需联合体，我方可以作为单一责任供应商独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:15:01",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/supply-2",
+          "bidder_id": "COMP-0154"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:15:01",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/supply-2",
+          "bidder_id": "COMP-0167"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:15:01",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0019/supply-2",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:15:06",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0019/supply-2",
+          "recommended_winner": "COMP-0154"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:15:09",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0019/supply-2",
+          "selected_bidder_id": "COMP-0154"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "作为买方（COMP-0191，施工包 CASE-0019/construction-2 的承包商），我方接受本材料采购包（CASE-0019/supply-2）的拟定合同条款，理由如下：\n\n1. 价格与预算：报价 MOP 11,645,000 在包预算 MOP 12,495,000 以内，分项报价（材料费、运输到场费、质量证明文件费、质保期更换费、价格波动风险余量、供货协调管理费、备品备件与仓储缓冲）结构清晰，材料费为暂定估算并约定待采购清单确认后按分项单价调整，符合我方对固定价内材料费用的计量与支付基础。\n\n2. 范围与责任边界：供货范围严格限定为材料与构配件的供货、运输到场、质量证明文件及质保期内更换，不含施工、安装、临时工程或措施费，不承担施工界面责任；质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任。该边界与我方施工包责任划分一致，无界面重叠风险。\n\n3. 进度与接口：供货进度与施工包安装顺序联动，按批次滚动更新到场计划，每批到场提交质量证明文件并完成双方签认的现场交接记录；具体批次时间以我方确认的安装计划为准，接口安排可执行。\n\n4. 风险分配：供应延迟、材料价格波动、付款节奏与质保期更换四类风险均有对应措施；付款由我方作为买方按合同价内材料费用支付，付款节奏在合同条款中约定，属我方自身立场事项，我方确认按合同价内材料费用、以批次到场验收与质量证明文件齐备为付款前提的分批支付节奏执行。\n\n5. 资源与合规：供应商资源承诺 0.25（normalized_enterprise_capacity）、工作份额 1.0，与其现有人员即时投入的说明相符；合规审查、批次合格证明与检验记录提交、现场交接签认等义务可核验。\n\n6. 未决条件：bid 文件中列示的未决条件（condition_439a123f814516a6771c、condition_7374ec96e65951e96db3）不改变价格、币种、范围、成员与资源等 canonical 字段，且已通过上述条款与假设得到覆盖；本阶段仅授权可执行的模拟义务，未来工程交付与法定审批仍按审查/验收条件作为义务管理。\n\n综上，接受所供确切条款、资源与义务。"
+          },
+          "COMP-0154": {
+            "action": "accept",
+            "reason": "作为投标方 COMP-0154，本组织确认接受所提供的确切条款、资源承诺与义务。报价 MOP 11,645,000 在包预算 MOP 12,495,000 之内，资源承诺 0.25 与工作份额 1.0 均在现有能力范围内。供货范围严格限定为材料与构配件供货、运输到场、质量证明文件及质保期内更换，不含施工安装与施工界面责任，与公司能力相符。已披露的投标假设（单一责任供应商、清单以施工包承包商最终确认为准、付款由施工包承包商按合同价内材料费用支付）作为风险分配予以接受。未决条件 condition_439a123f814516a6771c 与 condition_7374ec96e65951e96db3 属本组织自身立场事项，本组织决定：材料品类与规格以施工包承包商最终确认的采购清单为准，清单确认后按分项单价调整；付款节奏在合同条款中约定，由施工包承包商按合同价内材料费用支付；质保期更换责任限于所供材料本身。上述决定可写入下一稿，无需等待本组织另行出具文件。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIME3B32373/CASE-0019/supply-2/round-1/contract",
+          "simulation_id": "SIME3B32373",
+          "project_id": "CASE-0019",
+          "package_id": "CASE-0019/supply-2",
+          "session_id": "SIME3B32373/CASE-0019/supply-2/round-1",
+          "snapshot_version": "9011b7938134648ad59e5b9ac9a73598720cd42b090fb403508666a45298c740",
+          "buyer_id": "COMP-0191",
+          "bid_id": "bid_CASE-0019/supply-2_001",
+          "bidder_id": "COMP-0154",
+          "lead_id": "COMP-0154",
+          "members": [
+            "COMP-0154"
+          ],
+          "price": 11645000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0154": 0.25
+          },
+          "work_shares": {
+            "COMP-0154": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "ebd97c721b92304d7fd4b2f2b203c4a566fae4590e835075ffcfc7f8315fd7c7",
+          "terms": {
+            "schedule_commitment": "供货进度与施工包安装顺序联动，合同签订后完成采购清单确认与首批订单锁定，按批次滚动更新到场计划；每批到场提交质量证明文件并完成现场交接记录。质保期内按约定响应更换。具体批次时间以施工包承包商确认的安装计划为准。",
+            "risk_response": "供应延迟：按批次滚动更新到场计划，提前识别延迟并启动替代货源协调，仓储缓冲支撑连续性。材料价格波动：在价格基础中设置分项报价与价格调整边界，风险余量覆盖合同期内价格上行敞口。买方付款节奏：在合同条款中约定付款节奏，付款由施工包承包商按合同价内材料费用支付。质保期更换：责任限于所供材料本身，不延伸至安装或系统调试责任，备品备件计划保障更换响应。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0019/supply-2_001",
+              "package_id": "CASE-0019/supply-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0154",
+              "bidder_name": "中交第二公路工程局有限公司",
+              "technical_proposal": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。供货范围严格限定为隧道机电、消防及通风系统施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换，不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n角色计划与团队可用性摘要：设供货协调负责人1名，统筹品类清单、批次计划与买方接口；质量文件专员1名，负责材料来源清单、进场质量证明文件台账与批次合格证明提交；物流安排专员1名，负责运输到场、现场交接记录与分批到场联动。三线岗位由公司现有人员即时投入，资源占用不影响本包履约。\n\n供货方法说明：以施工包承包商最终确认的采购清单为基准，按安装顺序编制分批到场计划，明确材料品类、规格、到货批次与交接记录；运输到场由公司物流资源按需调配，仓储租赁能力作为缓冲支撑。\n\n质量保证方法：建立材料来源清单与进场质量证明文件台账，按批次提交合格证明与检验记录，质保期内按约定响应更换，更换责任限于所供材料本身，不延伸至安装或系统调试责任。\n\n价格基础：以MOP计分项列明材料费、运输到场费、质量证明文件费、质保期更换费用及价格波动风险余量，不含施工安装费用。\n\n供货进度视图：与施工包进度联动，按批次滚动更新到场计划，提前识别供应延迟并启动替代货源协调。\n\n风险应对说明：覆盖材料价格指数上行、供应延迟与买方付款节奏三类主要风险，在价格基础中设置分项报价与价格调整边界，在合同条款中约定付款节奏。",
+              "implementation_plan": "第一阶段（合同签订后即启动）：与施工包承包商确认最终采购清单、规格与分批到场需求，建立材料来源清单与质量证明文件台账模板，锁定首批材料订单。\n\n第二阶段（按施工包安装顺序分批执行）：按批次组织供货与运输到场，每批到场提交合格证明与检验记录，现场交接记录双方签认；物流安排专员滚动更新到场计划，与施工包进度联动。\n\n第三阶段（质保期内）：按约定响应质保期更换，维护备品备件计划，配合买方完成材料层面的质量文件归档。\n\n接口信息提供：向施工包承包商提供材料品类清单、批次到场计划、质量证明文件与更换承诺，不承担施工界面责任。",
+              "quotation": 11645000.0,
+              "schedule_commitment": "供货进度与施工包安装顺序联动，合同签订后完成采购清单确认与首批订单锁定，按批次滚动更新到场计划；每批到场提交质量证明文件并完成现场交接记录。质保期内按约定响应更换。具体批次时间以施工包承包商确认的安装计划为准。",
+              "compliance_statement": "接受业主及施工包承包商对材料品类、规格、批次到场计划与质量证明文件的审查；按批次提交合格证明与检验记录供核验；现场交接记录双方签认；质保期更换按约定响应并留存记录。不承担施工界面责任，材料费用由施工包承包商作为买方按合同价内材料费用支付。",
+              "risk_response": "供应延迟：按批次滚动更新到场计划，提前识别延迟并启动替代货源协调，仓储缓冲支撑连续性。材料价格波动：在价格基础中设置分项报价与价格调整边界，风险余量覆盖合同期内价格上行敞口。买方付款节奏：在合同条款中约定付款节奏，付款由施工包承包商按合同价内材料费用支付。质保期更换：责任限于所供材料本身，不延伸至安装或系统调试责任，备品备件计划保障更换响应。",
+              "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。报价以MOP计，含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n分项报价合计：材料费9,680,000 + 运输到场费620,000 + 质量证明文件费185,000 + 质保期更换费用310,000 + 材料价格波动风险余量430,000 + 供货协调与项目管理费265,000 + 备品备件计划与仓储缓冲155,000 = MOP 11,645,000。\n\n价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身。付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定。",
+              "quotation_breakdown": [
+                {
+                  "item": "材料费（机电、消防及通风系统材料与构配件）",
+                  "amount": 9680000,
+                  "basis": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整"
+                },
+                {
+                  "item": "运输到场费",
+                  "amount": 620000,
+                  "basis": "按分批到场计划估算的运输、装卸与现场交接费用，含跨境物流与本地配送"
+                },
+                {
+                  "item": "质量证明文件费",
+                  "amount": 185000,
+                  "basis": "材料来源清单、进场质量证明文件台账、批次合格证明与检验记录编制及归档"
+                },
+                {
+                  "item": "质保期更换费用",
+                  "amount": 310000,
+                  "basis": "质保期内材料本身更换责任准备金，按供货价值比例计提，不含安装或系统调试责任"
+                },
+                {
+                  "item": "材料价格波动风险余量",
+                  "amount": 430000,
+                  "basis": "参考当前材料价格指数1.1124设置的风险余量，覆盖合同期内价格上行敞口"
+                },
+                {
+                  "item": "供货协调与项目管理费",
+                  "amount": 265000,
+                  "basis": "供货协调、质量文件、物流安排三线岗位的项目管理投入及公司管理费分摊"
+                },
+                {
+                  "item": "备品备件计划与仓储缓冲",
+                  "amount": 155000,
+                  "basis": "备品备件计划编制与仓储租赁缓冲支撑，保障分批到场连续性"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_439a123f814516a6771c",
+                "condition_7374ec96e65951e96db3"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "公司以单一责任供应商身份独立投标，不组成组合体",
+                "材料品类与规格以施工包承包商最终确认的采购清单为准",
+                "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+                "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+                "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+            "cost_inclusion": "included_in_parent",
+            "parent_package_id": "CASE-0019/construction-2"
+          }
+        },
+        "terms_hash": "ebd97c721b92304d7fd4b2f2b203c4a566fae4590e835075ffcfc7f8315fd7c7"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0019/supply-2": {
+          "package_type": "supplier",
+          "required_company_role": "supplier",
+          "scope": "仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+          "budget": 12495000.0,
+          "currency": "MOP",
+          "buyer_id": "COMP-0191"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIME3B32373/CASE-0019/supply-2/round-1/contract",
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/supply-2",
+    "session_id": "SIME3B32373/CASE-0019/supply-2/round-1",
+    "snapshot_version": "9011b7938134648ad59e5b9ac9a73598720cd42b090fb403508666a45298c740",
+    "buyer_id": "COMP-0191",
+    "bid_id": "bid_CASE-0019/supply-2_001",
+    "bidder_id": "COMP-0154",
+    "lead_id": "COMP-0154",
+    "members": [
+      "COMP-0154"
+    ],
+    "price": 11645000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0154": 0.25
+    },
+    "work_shares": {
+      "COMP-0154": 1.0
+    },
+    "signatures": {
+      "COMP-0191": true,
+      "COMP-0154": true
+    },
+    "signed_terms_hash": "ebd97c721b92304d7fd4b2f2b203c4a566fae4590e835075ffcfc7f8315fd7c7",
+    "terms": {
+      "schedule_commitment": "供货进度与施工包安装顺序联动，合同签订后完成采购清单确认与首批订单锁定，按批次滚动更新到场计划；每批到场提交质量证明文件并完成现场交接记录。质保期内按约定响应更换。具体批次时间以施工包承包商确认的安装计划为准。",
+      "risk_response": "供应延迟：按批次滚动更新到场计划，提前识别延迟并启动替代货源协调，仓储缓冲支撑连续性。材料价格波动：在价格基础中设置分项报价与价格调整边界，风险余量覆盖合同期内价格上行敞口。买方付款节奏：在合同条款中约定付款节奏，付款由施工包承包商按合同价内材料费用支付。质保期更换：责任限于所供材料本身，不延伸至安装或系统调试责任，备品备件计划保障更换响应。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0019/supply-2_001",
+        "package_id": "CASE-0019/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0154",
+        "bidder_name": "中交第二公路工程局有限公司",
+        "technical_proposal": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。供货范围严格限定为隧道机电、消防及通风系统施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换，不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n角色计划与团队可用性摘要：设供货协调负责人1名，统筹品类清单、批次计划与买方接口；质量文件专员1名，负责材料来源清单、进场质量证明文件台账与批次合格证明提交；物流安排专员1名，负责运输到场、现场交接记录与分批到场联动。三线岗位由公司现有人员即时投入，资源占用不影响本包履约。\n\n供货方法说明：以施工包承包商最终确认的采购清单为基准，按安装顺序编制分批到场计划，明确材料品类、规格、到货批次与交接记录；运输到场由公司物流资源按需调配，仓储租赁能力作为缓冲支撑。\n\n质量保证方法：建立材料来源清单与进场质量证明文件台账，按批次提交合格证明与检验记录，质保期内按约定响应更换，更换责任限于所供材料本身，不延伸至安装或系统调试责任。\n\n价格基础：以MOP计分项列明材料费、运输到场费、质量证明文件费、质保期更换费用及价格波动风险余量，不含施工安装费用。\n\n供货进度视图：与施工包进度联动，按批次滚动更新到场计划，提前识别供应延迟并启动替代货源协调。\n\n风险应对说明：覆盖材料价格指数上行、供应延迟与买方付款节奏三类主要风险，在价格基础中设置分项报价与价格调整边界，在合同条款中约定付款节奏。",
+        "implementation_plan": "第一阶段（合同签订后即启动）：与施工包承包商确认最终采购清单、规格与分批到场需求，建立材料来源清单与质量证明文件台账模板，锁定首批材料订单。\n\n第二阶段（按施工包安装顺序分批执行）：按批次组织供货与运输到场，每批到场提交合格证明与检验记录，现场交接记录双方签认；物流安排专员滚动更新到场计划，与施工包进度联动。\n\n第三阶段（质保期内）：按约定响应质保期更换，维护备品备件计划，配合买方完成材料层面的质量文件归档。\n\n接口信息提供：向施工包承包商提供材料品类清单、批次到场计划、质量证明文件与更换承诺，不承担施工界面责任。",
+        "quotation": 11645000.0,
+        "schedule_commitment": "供货进度与施工包安装顺序联动，合同签订后完成采购清单确认与首批订单锁定，按批次滚动更新到场计划；每批到场提交质量证明文件并完成现场交接记录。质保期内按约定响应更换。具体批次时间以施工包承包商确认的安装计划为准。",
+        "compliance_statement": "接受业主及施工包承包商对材料品类、规格、批次到场计划与质量证明文件的审查；按批次提交合格证明与检验记录供核验；现场交接记录双方签认；质保期更换按约定响应并留存记录。不承担施工界面责任，材料费用由施工包承包商作为买方按合同价内材料费用支付。",
+        "risk_response": "供应延迟：按批次滚动更新到场计划，提前识别延迟并启动替代货源协调，仓储缓冲支撑连续性。材料价格波动：在价格基础中设置分项报价与价格调整边界，风险余量覆盖合同期内价格上行敞口。买方付款节奏：在合同条款中约定付款节奏，付款由施工包承包商按合同价内材料费用支付。质保期更换：责任限于所供材料本身，不延伸至安装或系统调试责任，备品备件计划保障更换响应。",
+        "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份独立投标本材料采购包，不组成组合体。报价以MOP计，含供货、运输到场、质量证明文件及质保期内更换费用，不含施工安装费用。\n\n分项报价合计：材料费9,680,000 + 运输到场费620,000 + 质量证明文件费185,000 + 质保期更换费用310,000 + 材料价格波动风险余量430,000 + 供货协调与项目管理费265,000 + 备品备件计划与仓储缓冲155,000 = MOP 11,645,000。\n\n价格基础说明：材料费按施工包承包商最终确认的采购清单估算，为暂定估算，待清单确认后按分项单价调整；风险余量参考当前材料价格指数1.1124设置；质保期更换责任限于所供材料本身。付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定。",
+        "quotation_breakdown": [
+          {
+            "item": "材料费（机电、消防及通风系统材料与构配件）",
+            "amount": 9680000,
+            "basis": "按施工包承包商最终确认的采购清单品类与规格估算，含供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统所需材料，为暂定估算，待清单确认后按分项单价调整"
+          },
+          {
+            "item": "运输到场费",
+            "amount": 620000,
+            "basis": "按分批到场计划估算的运输、装卸与现场交接费用，含跨境物流与本地配送"
+          },
+          {
+            "item": "质量证明文件费",
+            "amount": 185000,
+            "basis": "材料来源清单、进场质量证明文件台账、批次合格证明与检验记录编制及归档"
+          },
+          {
+            "item": "质保期更换费用",
+            "amount": 310000,
+            "basis": "质保期内材料本身更换责任准备金，按供货价值比例计提，不含安装或系统调试责任"
+          },
+          {
+            "item": "材料价格波动风险余量",
+            "amount": 430000,
+            "basis": "参考当前材料价格指数1.1124设置的风险余量，覆盖合同期内价格上行敞口"
+          },
+          {
+            "item": "供货协调与项目管理费",
+            "amount": 265000,
+            "basis": "供货协调、质量文件、物流安排三线岗位的项目管理投入及公司管理费分摊"
+          },
+          {
+            "item": "备品备件计划与仓储缓冲",
+            "amount": 155000,
+            "basis": "备品备件计划编制与仓储租赁缓冲支撑，保障分批到场连续性"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_439a123f814516a6771c",
+          "condition_7374ec96e65951e96db3"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组成组合体",
+          "材料品类与规格以施工包承包商最终确认的采购清单为准",
+          "报价含供货、运输到场、质量证明文件和质保期更换费用，不含施工安装费用",
+          "质保期更换责任限于所供材料本身，不延伸至安装或系统调试责任",
+          "付款由施工包承包商按合同价内材料费用支付，付款节奏在合同条款中约定"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "仅为施工包「隧道机电、消防及通风系统施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+      "cost_inclusion": "included_in_parent",
+      "parent_package_id": "CASE-0019/construction-2"
+    }
+  }
+}

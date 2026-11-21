@@ -1,0 +1,10374 @@
+# 固定四次调用：S4与D3决策对照
+
+本文件为按要求删减后的展示副本；完整原始实验保存在资料包之外。其余质量评分、过程失败和费用未因本次删减而调整。
+
+433条既有记录；92开发、46验证、295测试；S4/D3各四步，另60条固定测试记录运行同角色独立审议G3消融。
+本轮固定方案无按测试成绩调参。8%为相对提升目标，不是预设结果。质量分为匿名双顺序LLM自动代理评分，未冒充人工专家意见。
+
+## 质量评价
+
+```json
+{
+  "schema_version": "micro-fixed-blind-rubric.v1",
+  "control_arm": "S4",
+  "target_arm": "D3",
+  "primary_estimand": "Predeclared held-out test mean target-minus-control of two-order-averaged fixed-rubric scores among complete judge pairs.",
+  "primary_test": {
+    "planned_units": 295,
+    "complete_judge_pairs": 169,
+    "incomplete_judge_pairs": 126,
+    "complete_pair_coverage": 0.5728813559322034,
+    "planned_groups": 232,
+    "complete_groups": 144,
+    "mean_scores_by_arm": {
+      "S4": 71.3646449704142,
+      "D3": 72.64423076923077
+    },
+    "dimension_mean_0_to_4_by_arm": {
+      "S4": {
+        "evidence_accuracy": 2.9497041420118344,
+        "role_fit": 2.9023668639053253,
+        "constraint_uncertainty": 2.9437869822485205,
+        "risk": 2.497041420118343,
+        "actionability": 2.8076923076923075
+      },
+      "D3": {
+        "evidence_accuracy": 2.9881656804733727,
+        "role_fit": 2.970414201183432,
+        "constraint_uncertainty": 2.9792899408284024,
+        "risk": 2.559171597633136,
+        "actionability": 2.8698224852071004
+      }
+    },
+    "target_minus_control_score": 1.2795857988165693,
+    "relative_improvement_percent": 1.793024822511273,
+    "all_planned_units_delta_bounds_if_missing_arbitrary_0_to_100": [
+      -41.978813559322035,
+      43.44491525423729
+    ],
+    "target_higher_pairs": 38,
+    "control_higher_pairs": 17,
+    "tied_pairs": 114,
+    "position_effects_by_arm": {
+      "S4": {
+        "mean_A_minus_B_score": -1.0133136094674555,
+        "mean_absolute_A_minus_B_score": 2.46301775147929,
+        "different_score_across_positions": 82
+      },
+      "D3": {
+        "mean_A_minus_B_score": -0.46597633136094674,
+        "mean_absolute_A_minus_B_score": 2.0636094674556213,
+        "different_score_across_positions": 73
+      }
+    },
+    "order_winner_direction_reversals": 4,
+    "order_delta_disagreements": 56,
+    "mean_absolute_difference_between_order_deltas": 2.026627218934911,
+    "paired_project_group_bootstrap": {
+      "replicates": 10000,
+      "seed": 20261120,
+      "groups": 144,
+      "delta_ci95": [
+        -0.0076066979783571765,
+        2.867011459565098
+      ],
+      "relative_percent_ci95": [
+        -0.010541606340445897,
+        4.1017511208347734
+      ],
+      "relative_bootstraps_undefined": 0
+    },
+    "test_bootstrap_1000_sensitivity": {
+      "replicates": 1000,
+      "seed": 20261120,
+      "groups": 144,
+      "delta_ci95": [
+        -0.05243563798329127,
+        2.864353716777408
+      ],
+      "relative_percent_ci95": [
+        -0.07229717442176205,
+        4.090572615795881
+      ],
+      "relative_bootstraps_undefined": 0
+    }
+  },
+  "by_phase": {
+    "dev": {
+      "planned_units": 92,
+      "complete_judge_pairs": 63,
+      "incomplete_judge_pairs": 29,
+      "complete_pair_coverage": 0.6847826086956522,
+      "planned_groups": 66,
+      "complete_groups": 48,
+      "mean_scores_by_arm": {
+        "S4": 71.85515873015873,
+        "D3": 72.1329365079365
+      },
+      "dimension_mean_0_to_4_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.9126984126984126,
+          "constraint_uncertainty": 2.984126984126984,
+          "risk": 2.4761904761904763,
+          "actionability": 2.7777777777777777
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.9285714285714284,
+          "constraint_uncertainty": 2.992063492063492,
+          "risk": 2.507936507936508,
+          "actionability": 2.7857142857142856
+        }
+      },
+      "target_minus_control_score": 0.27777777777777146,
+      "relative_improvement_percent": 0.3865801463481895,
+      "all_planned_units_delta_bounds_if_missing_arbitrary_0_to_100": [
+        -31.331521739130434,
+        31.71195652173913
+      ],
+      "target_higher_pairs": 11,
+      "control_higher_pairs": 6,
+      "tied_pairs": 46,
+      "position_effects_by_arm": {
+        "S4": {
+          "mean_A_minus_B_score": -0.7341269841269841,
+          "mean_absolute_A_minus_B_score": 3.5912698412698414,
+          "different_score_across_positions": 40
+        },
+        "D3": {
+          "mean_A_minus_B_score": -0.5357142857142857,
+          "mean_absolute_A_minus_B_score": 2.996031746031746,
+          "different_score_across_positions": 33
+        }
+      },
+      "order_winner_direction_reversals": 1,
+      "order_delta_disagreements": 18,
+      "mean_absolute_difference_between_order_deltas": 1.3492063492063493,
+      "paired_project_group_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261120,
+        "groups": 48,
+        "delta_ci95": [
+          -0.10081386385199984,
+          0.6617925579322727
+        ],
+        "relative_percent_ci95": [
+          -0.13947830064571035,
+          0.9238472376324065
+        ],
+        "relative_bootstraps_undefined": 0
+      },
+      "test_bootstrap_1000_sensitivity": null
+    },
+    "validation": {
+      "planned_units": 46,
+      "complete_judge_pairs": 30,
+      "incomplete_judge_pairs": 16,
+      "complete_pair_coverage": 0.6521739130434783,
+      "planned_groups": 33,
+      "complete_groups": 22,
+      "mean_scores_by_arm": {
+        "S4": 72.41666666666667,
+        "D3": 73.22916666666667
+      },
+      "dimension_mean_0_to_4_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.933333333333333,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.566666666666667,
+          "actionability": 2.783333333333333
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.6166666666666667,
+          "actionability": 2.8666666666666667
+        }
+      },
+      "target_minus_control_score": 0.8125,
+      "relative_improvement_percent": 1.1219792865362483,
+      "all_planned_units_delta_bounds_if_missing_arbitrary_0_to_100": [
+        -34.25271739130435,
+        35.3125
+      ],
+      "target_higher_pairs": 9,
+      "control_higher_pairs": 4,
+      "tied_pairs": 17,
+      "position_effects_by_arm": {
+        "S4": {
+          "mean_A_minus_B_score": -1.6666666666666667,
+          "mean_absolute_A_minus_B_score": 3.5,
+          "different_score_across_positions": 20
+        },
+        "D3": {
+          "mean_A_minus_B_score": -0.4583333333333333,
+          "mean_absolute_A_minus_B_score": 2.5416666666666665,
+          "different_score_across_positions": 18
+        }
+      },
+      "order_winner_direction_reversals": 1,
+      "order_delta_disagreements": 13,
+      "mean_absolute_difference_between_order_deltas": 2.2916666666666665,
+      "paired_project_group_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261120,
+        "groups": 22,
+        "delta_ci95": [
+          0.11554118773945633,
+          1.4732142857142918
+        ],
+        "relative_percent_ci95": [
+          0.15725307667858363,
+          2.054624162838516
+        ],
+        "relative_bootstraps_undefined": 0
+      },
+      "test_bootstrap_1000_sensitivity": null
+    },
+    "test": {
+      "planned_units": 295,
+      "complete_judge_pairs": 169,
+      "incomplete_judge_pairs": 126,
+      "complete_pair_coverage": 0.5728813559322034,
+      "planned_groups": 232,
+      "complete_groups": 144,
+      "mean_scores_by_arm": {
+        "S4": 71.3646449704142,
+        "D3": 72.64423076923077
+      },
+      "dimension_mean_0_to_4_by_arm": {
+        "S4": {
+          "evidence_accuracy": 2.9497041420118344,
+          "role_fit": 2.9023668639053253,
+          "constraint_uncertainty": 2.9437869822485205,
+          "risk": 2.497041420118343,
+          "actionability": 2.8076923076923075
+        },
+        "D3": {
+          "evidence_accuracy": 2.9881656804733727,
+          "role_fit": 2.970414201183432,
+          "constraint_uncertainty": 2.9792899408284024,
+          "risk": 2.559171597633136,
+          "actionability": 2.8698224852071004
+        }
+      },
+      "target_minus_control_score": 1.2795857988165693,
+      "relative_improvement_percent": 1.793024822511273,
+      "all_planned_units_delta_bounds_if_missing_arbitrary_0_to_100": [
+        -41.978813559322035,
+        43.44491525423729
+      ],
+      "target_higher_pairs": 38,
+      "control_higher_pairs": 17,
+      "tied_pairs": 114,
+      "position_effects_by_arm": {
+        "S4": {
+          "mean_A_minus_B_score": -1.0133136094674555,
+          "mean_absolute_A_minus_B_score": 2.46301775147929,
+          "different_score_across_positions": 82
+        },
+        "D3": {
+          "mean_A_minus_B_score": -0.46597633136094674,
+          "mean_absolute_A_minus_B_score": 2.0636094674556213,
+          "different_score_across_positions": 73
+        }
+      },
+      "order_winner_direction_reversals": 4,
+      "order_delta_disagreements": 56,
+      "mean_absolute_difference_between_order_deltas": 2.026627218934911,
+      "paired_project_group_bootstrap": {
+        "replicates": 10000,
+        "seed": 20261120,
+        "groups": 144,
+        "delta_ci95": [
+          -0.0076066979783571765,
+          2.867011459565098
+        ],
+        "relative_percent_ci95": [
+          -0.010541606340445897,
+          4.1017511208347734
+        ],
+        "relative_bootstraps_undefined": 0
+      },
+      "test_bootstrap_1000_sensitivity": {
+        "replicates": 1000,
+        "seed": 20261120,
+        "groups": 144,
+        "delta_ci95": [
+          -0.05243563798329127,
+          2.864353716777408
+        ],
+        "relative_percent_ci95": [
+          -0.07229717442176205,
+          4.090572615795881
+        ],
+        "relative_bootstraps_undefined": 0
+      }
+    },
+    "all": {
+      "planned_units": 433,
+      "complete_judge_pairs": 262,
+      "incomplete_judge_pairs": 171,
+      "complete_pair_coverage": 0.605080831408776,
+      "planned_groups": 331,
+      "complete_groups": 214,
+      "mean_scores_by_arm": {
+        "S4": 71.6030534351145,
+        "D3": 72.58826335877863
+      },
+      "dimension_mean_0_to_4_by_arm": {
+        "S4": {
+          "evidence_accuracy": 2.967557251908397,
+          "role_fit": 2.9083969465648853,
+          "constraint_uncertainty": 2.9599236641221376,
+          "risk": 2.5,
+          "actionability": 2.7977099236641223
+        },
+        "D3": {
+          "evidence_accuracy": 2.9923664122137406,
+          "role_fit": 2.963740458015267,
+          "constraint_uncertainty": 2.984732824427481,
+          "risk": 2.553435114503817,
+          "actionability": 2.849236641221374
+        }
+      },
+      "target_minus_control_score": 0.9852099236641294,
+      "relative_improvement_percent": 1.3759328358209058,
+      "all_planned_units_delta_bounds_if_missing_arbitrary_0_to_100": [
+        -38.895785219399535,
+        40.08804849884527
+      ],
+      "target_higher_pairs": 58,
+      "control_higher_pairs": 27,
+      "tied_pairs": 177,
+      "position_effects_by_arm": {
+        "S4": {
+          "mean_A_minus_B_score": -1.0209923664122138,
+          "mean_absolute_A_minus_B_score": 2.8530534351145036,
+          "different_score_across_positions": 142
+        },
+        "D3": {
+          "mean_A_minus_B_score": -0.4818702290076336,
+          "mean_absolute_A_minus_B_score": 2.342557251908397,
+          "different_score_across_positions": 124
+        }
+      },
+      "order_winner_direction_reversals": 6,
+      "order_delta_disagreements": 87,
+      "mean_absolute_difference_between_order_deltas": 1.8940839694656488,
+      "paired_project_group_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261120,
+        "groups": 214,
+        "delta_ci95": [
+          0.10888044917841776,
+          2.0187220920426983
+        ],
+        "relative_percent_ci95": [
+          0.15034470555430318,
+          2.8530089107961314
+        ],
+        "relative_bootstraps_undefined": 0
+      },
+      "test_bootstrap_1000_sensitivity": null
+    }
+  },
+  "judge_requests_observed": 866,
+  "failed_judge_orders": 200,
+  "failure_types": {
+    "ValueError": 199,
+    "TypeError": 1
+  },
+  "incomplete_pair_unit_ids": [
+    "CASE-0014::检测/质量控制",
+    "CASE-0020::设计",
+    "CASE-0020::检测/质量控制",
+    "CASE-0035::设计",
+    "CASE-0058::设计",
+    "CASE-0062::设计",
+    "CASE-0070::咨询/顾问",
+    "CASE-0076::设计",
+    "CASE-0103::施工/总承包",
+    "CASE-0105::施工/总承包",
+    "CASE-0124::施工/总承包",
+    "CASE-0127::施工/总承包",
+    "CASE-0150::监理",
+    "CASE-0151::勘察/测绘",
+    "CASE-0160::施工/总承包",
+    "CASE-0166::设计",
+    "CASE-0171::咨询/顾问",
+    "CASE-0186::施工/总承包",
+    "CASE-0190::设计",
+    "CASE-0215::设计",
+    "CASE-0221::设计",
+    "CASE-0223::设计",
+    "CASE-0235::施工/总承包",
+    "CASE-0243::施工/总承包",
+    "CASE-0257::施工/总承包",
+    "CASE-0270::施工/总承包",
+    "CASE-0272::施工/总承包",
+    "CASE-0274::供应/制造",
+    "CASE-0288::施工/总承包",
+    "CASE-0289::施工/总承包",
+    "CASE-0304::施工/总承包",
+    "CASE-0316::咨询/顾问",
+    "CASE-0334::施工/总承包",
+    "CASE-0339::施工/总承包",
+    "CASE-0344::施工/总承包",
+    "CASE-0002::造价/工料测量",
+    "CASE-0003::设计",
+    "CASE-0007::设计",
+    "CASE-0007::检测/质量控制",
+    "CASE-0007::造价/工料测量",
+    "CASE-0012::施工/总承包",
+    "CASE-0028::咨询/顾问",
+    "CASE-0041::设计",
+    "CASE-0052::设计",
+    "CASE-0054::施工/总承包",
+    "CASE-0077::设计",
+    "CASE-0079::设计",
+    "CASE-0087::咨询/顾问",
+    "CASE-0096::施工/总承包",
+    "CASE-0097::施工/总承包",
+    "CASE-0100::施工/总承包",
+    "CASE-0107::施工/总承包",
+    "CASE-0121::施工/总承包",
+    "CASE-0133::设计",
+    "CASE-0136::设计",
+    "CASE-0156::施工/总承包",
+    "CASE-0158::设计",
+    "CASE-0163::设计",
+    "CASE-0164::施工/总承包",
+    "CASE-0164::设计",
+    "CASE-0193::咨询/顾问",
+    "CASE-0197::设计",
+    "CASE-0208::施工/总承包",
+    "CASE-0260::施工/总承包",
+    "CASE-0262::施工/总承包",
+    "CASE-0278::施工/总承包",
+    "CASE-0285::施工/总承包",
+    "CASE-0286::施工/总承包",
+    "CASE-0312::施工/总承包",
+    "CASE-0333::施工/总承包",
+    "CASE-0006::检测/质量控制",
+    "CASE-0030::设计",
+    "CASE-0033::施工/总承包",
+    "CASE-0039::设计",
+    "CASE-0057::设计",
+    "CASE-0061::设计",
+    "CASE-0068::设计",
+    "CASE-0072::咨询/顾问",
+    "CASE-0118::设计",
+    "CASE-0126::施工/总承包",
+    "CASE-0140::设计",
+    "CASE-0140::咨询/顾问",
+    "CASE-0146::设计",
+    "CASE-0155::设计",
+    "CASE-0159::咨询/顾问",
+    "CASE-0162::施工/总承包",
+    "CASE-0162::设计",
+    "CASE-0167::施工/总承包",
+    "CASE-0167::设计",
+    "CASE-0174::咨询/顾问",
+    "CASE-0196::施工/总承包",
+    "CASE-0202::施工/总承包",
+    "CASE-0204::施工/总承包",
+    "CASE-0205::施工/总承包",
+    "CASE-0236::施工/总承包",
+    "CASE-0256::施工/总承包",
+    "CASE-0267::施工/总承包",
+    "CASE-0269::施工/总承包",
+    "CASE-0280::施工/总承包",
+    "CASE-0281::施工/总承包",
+    "CASE-0283::施工/总承包",
+    "CASE-0290::施工/总承包",
+    "CASE-0297::施工/总承包",
+    "CASE-0301::施工/总承包",
+    "CASE-0317::施工/总承包",
+    "CASE-0001::检测/质量控制",
+    "CASE-0015::检测/质量控制",
+    "CASE-0023::施工/总承包",
+    "CASE-0049::设计",
+    "CASE-0050::设计",
+    "CASE-0056::设计",
+    "CASE-0073::咨询/顾问",
+    "CASE-0109::设计",
+    "CASE-0110::设计",
+    "CASE-0111::设计",
+    "CASE-0129::设计",
+    "CASE-0143::设计",
+    "CASE-0169::设计",
+    "CASE-0188::咨询/顾问",
+    "CASE-0189::设计",
+    "CASE-0191::咨询/顾问",
+    "CASE-0195::施工/总承包",
+    "CASE-0198::设计",
+    "CASE-0198::监理",
+    "CASE-0224::设计",
+    "CASE-0241::施工/总承包",
+    "CASE-0259::施工/总承包",
+    "CASE-0259::设计",
+    "CASE-0282::供应/制造",
+    "CASE-0292::施工/总承包",
+    "CASE-0295::施工/总承包",
+    "CASE-0306::施工/总承包",
+    "CASE-0310::施工/总承包",
+    "CASE-0315::供应/制造",
+    "CASE-0322::施工/总承包",
+    "CASE-0337::施工/总承包",
+    "CASE-0004::施工/总承包",
+    "CASE-0004::设计",
+    "CASE-0005::施工/总承包",
+    "CASE-0005::检测/质量控制",
+    "CASE-0008::施工/总承包",
+    "CASE-0009::施工/总承包",
+    "CASE-0013::检测/质量控制",
+    "CASE-0016::施工/总承包",
+    "CASE-0017::施工/总承包",
+    "CASE-0027::设计",
+    "CASE-0031::设计",
+    "CASE-0036::施工/总承包",
+    "CASE-0055::设计",
+    "CASE-0060::设计",
+    "CASE-0065::设计",
+    "CASE-0081::施工/总承包",
+    "CASE-0112::设计",
+    "CASE-0113::设计",
+    "CASE-0114::设计",
+    "CASE-0115::设计",
+    "CASE-0138::施工/总承包",
+    "CASE-0139::设计",
+    "CASE-0157::设计",
+    "CASE-0220::设计",
+    "CASE-0228::设计",
+    "CASE-0234::施工/总承包",
+    "CASE-0237::施工/总承包",
+    "CASE-0245::施工/总承包",
+    "CASE-0263::供应/制造",
+    "CASE-0265::施工/总承包",
+    "CASE-0268::供应/制造",
+    "CASE-0273::设计",
+    "CASE-0276::供应/制造",
+    "CASE-0309::施工/总承包",
+    "CASE-0349::施工/总承包"
+  ],
+  "paired_unit_results": [
+    {
+      "unit_id": "CASE-0011::施工/总承包",
+      "case_id": "CASE-0011",
+      "group": "f69037c5b93125dc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 70.625,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -8.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 5.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 5.0
+    },
+    {
+      "unit_id": "CASE-0011::检测/质量控制",
+      "case_id": "CASE-0011",
+      "group": "f69037c5b93125dc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0014::施工/总承包",
+      "case_id": "CASE-0014",
+      "group": "74c5d63a82723e4b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0014::设计",
+      "case_id": "CASE-0014",
+      "group": "74c5d63a82723e4b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0020::施工/总承包",
+      "case_id": "CASE-0020",
+      "group": "8c75a77c2ca56442",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0022::施工/总承包",
+      "case_id": "CASE-0022",
+      "group": "bd98c21ccd2c4c7b",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0042::施工/总承包",
+      "case_id": "CASE-0042",
+      "group": "403446a5251b762b",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 65.625,
+        "D3": 65.625
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0053::施工/总承包",
+      "case_id": "CASE-0053",
+      "group": "cd7c207c56c12ca4",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0059::设计",
+      "case_id": "CASE-0059",
+      "group": "693f7046b0b3357b",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0064::设计",
+      "case_id": "CASE-0064",
+      "group": "d161a734f1b6ab93",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 66.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 5.0,
+        "D3": -8.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0067::施工/总承包",
+      "case_id": "CASE-0067",
+      "group": "7e3d9b2d6df61c76",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 12.5,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0069::施工/总承包",
+      "case_id": "CASE-0069",
+      "group": "e07182d642acf529",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 65.625,
+        "D3": 62.5
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0078::设计",
+      "case_id": "CASE-0078",
+      "group": "16d532cb34971827",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0084::咨询/顾问",
+      "case_id": "CASE-0084",
+      "group": "5cc7dfe38d3283ce",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0098::施工/总承包",
+      "case_id": "CASE-0098",
+      "group": "bca6ac5143efe526",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0099::施工/总承包",
+      "case_id": "CASE-0099",
+      "group": "bca6ac5143efe526",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0102::施工/总承包",
+      "case_id": "CASE-0102",
+      "group": "bca6ac5143efe526",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0104::施工/总承包",
+      "case_id": "CASE-0104",
+      "group": "bca6ac5143efe526",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 67.5,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": 8.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 2.5
+    },
+    {
+      "unit_id": "CASE-0125::施工/总承包",
+      "case_id": "CASE-0125",
+      "group": "b5c78bd26fb0cb57",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0128::施工/总承包",
+      "case_id": "CASE-0128",
+      "group": "4646213725b6c38d",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0150::施工/总承包",
+      "case_id": "CASE-0150",
+      "group": "eff89f3cc90143f0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0150::设计",
+      "case_id": "CASE-0150",
+      "group": "eff89f3cc90143f0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0150::勘察/测绘",
+      "case_id": "CASE-0150",
+      "group": "eff89f3cc90143f0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0151::设计",
+      "case_id": "CASE-0151",
+      "group": "fb2d8ea0de611647",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0160::设计",
+      "case_id": "CASE-0160",
+      "group": "7a49a698e0f3fc7d",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0176::咨询/顾问",
+      "case_id": "CASE-0176",
+      "group": "8d78d16c2b0bc4db",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0179::咨询/顾问",
+      "case_id": "CASE-0179",
+      "group": "4d12683ce252b0a6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0184::施工/总承包",
+      "case_id": "CASE-0184",
+      "group": "c8473cb98c682247",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 12.5,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 12.5
+    },
+    {
+      "unit_id": "CASE-0186::设计",
+      "case_id": "CASE-0186",
+      "group": "8ab371a7e3bdee02",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0186::咨询/顾问",
+      "case_id": "CASE-0186",
+      "group": "8ab371a7e3bdee02",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0190::咨询/顾问",
+      "case_id": "CASE-0190",
+      "group": "cdcfbea137a4f3cd",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -2.5,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0192::设计",
+      "case_id": "CASE-0192",
+      "group": "224bc6cd3ac1f68a",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0192::咨询/顾问",
+      "case_id": "CASE-0192",
+      "group": "224bc6cd3ac1f68a",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0194::设计",
+      "case_id": "CASE-0194",
+      "group": "a2971f75c7ee0d20",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 7.5
+    },
+    {
+      "unit_id": "CASE-0199::施工/总承包",
+      "case_id": "CASE-0199",
+      "group": "7c4c9526d15c3db0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0199::设计",
+      "case_id": "CASE-0199",
+      "group": "7c4c9526d15c3db0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0207::监理",
+      "case_id": "CASE-0207",
+      "group": "f2bae6b7094cd327",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0209::施工/总承包",
+      "case_id": "CASE-0209",
+      "group": "54b58620133d0016",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0218::设计",
+      "case_id": "CASE-0218",
+      "group": "2ffbe1346e4140c8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 66.875,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -8.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 8.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 8.75
+    },
+    {
+      "unit_id": "CASE-0219::设计",
+      "case_id": "CASE-0219",
+      "group": "9f36fbb638eb8959",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0242::施工/总承包",
+      "case_id": "CASE-0242",
+      "group": "3b5093ab64f6eeb7",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0246::施工/总承包",
+      "case_id": "CASE-0246",
+      "group": "908c5c0edf1bd85b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 72.5
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -5.0
+      },
+      "delta_by_order": {
+        "order_1": -5.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 5.0
+    },
+    {
+      "unit_id": "CASE-0251::施工/总承包",
+      "case_id": "CASE-0251",
+      "group": "8eb7670466b4ec00",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0266::施工/总承包",
+      "case_id": "CASE-0266",
+      "group": "32b93e30a04ddf20",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0271::施工/总承包",
+      "case_id": "CASE-0271",
+      "group": "5cb135062d3e475d",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0287::供应/制造",
+      "case_id": "CASE-0287",
+      "group": "8c413ca5cf454224",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0305::施工/总承包",
+      "case_id": "CASE-0305",
+      "group": "0e01bd83553148b9",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0307::施工/总承包",
+      "case_id": "CASE-0307",
+      "group": "a7e21ff37846f171",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0316::设计",
+      "case_id": "CASE-0316",
+      "group": "2383333a7aa4a255",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0327::施工/总承包",
+      "case_id": "CASE-0327",
+      "group": "60b8bb46a9adf835",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 8.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 8.75
+    },
+    {
+      "unit_id": "CASE-0329::施工/总承包",
+      "case_id": "CASE-0329",
+      "group": "bb6311c8ad8134a2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0336::施工/总承包",
+      "case_id": "CASE-0336",
+      "group": "ccad2e0d8d29bebf",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0002::研究",
+      "case_id": "CASE-0002",
+      "group": "b1448de47ce6684e",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0002::代建/项目管理",
+      "case_id": "CASE-0002",
+      "group": "b1448de47ce6684e",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0003::施工/总承包",
+      "case_id": "CASE-0003",
+      "group": "8983f353d44d0af2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0003::检测/质量控制",
+      "case_id": "CASE-0003",
+      "group": "8983f353d44d0af2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0007::施工/总承包",
+      "case_id": "CASE-0007",
+      "group": "a92fe72912c69c2e",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0018::施工/总承包",
+      "case_id": "CASE-0018",
+      "group": "42b413cfeadbb4a5",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0018::检测/质量控制",
+      "case_id": "CASE-0018",
+      "group": "42b413cfeadbb4a5",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0021::施工/总承包",
+      "case_id": "CASE-0021",
+      "group": "6c460fa4010f6619",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0025::设计",
+      "case_id": "CASE-0025",
+      "group": "6a0c277221695c82",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0028::设计",
+      "case_id": "CASE-0028",
+      "group": "2d58fd8d9c1cdd2a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0032::施工/总承包",
+      "case_id": "CASE-0032",
+      "group": "51de6b79f717aad8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0032::咨询/顾问",
+      "case_id": "CASE-0032",
+      "group": "51de6b79f717aad8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0037::施工/总承包",
+      "case_id": "CASE-0037",
+      "group": "0cb0d15c3c76bb98",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0043::设计",
+      "case_id": "CASE-0043",
+      "group": "c65e048d261f6767",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0083::咨询/顾问",
+      "case_id": "CASE-0083",
+      "group": "e00228b75f1ca6eb",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0092::咨询/顾问",
+      "case_id": "CASE-0092",
+      "group": "ce3bc048c960185d",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.125,
+        "D3": 25.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.5,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 1.0,
+          "role_fit": 1.0,
+          "constraint_uncertainty": 1.0,
+          "risk": 1.0,
+          "actionability": 1.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 1.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": -43.75,
+        "order_2": -42.5
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 1.25
+    },
+    {
+      "unit_id": "CASE-0101::施工/总承包",
+      "case_id": "CASE-0101",
+      "group": "f1e9ca6c01a8f091",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 12.5,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 12.5
+    },
+    {
+      "unit_id": "CASE-0120::设计",
+      "case_id": "CASE-0120",
+      "group": "6e376375ce08a620",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0122::施工/总承包",
+      "case_id": "CASE-0122",
+      "group": "f1e9ca6c01a8f091",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0130::设计",
+      "case_id": "CASE-0130",
+      "group": "c693c863da8e3f0a",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0135::设计",
+      "case_id": "CASE-0135",
+      "group": "cdef634c8e48eefc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0141::咨询/顾问",
+      "case_id": "CASE-0141",
+      "group": "dcbea86010f0a537",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0144::施工/总承包",
+      "case_id": "CASE-0144",
+      "group": "064327b7f65ea1b9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0144::设计",
+      "case_id": "CASE-0144",
+      "group": "064327b7f65ea1b9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0144::咨询/顾问",
+      "case_id": "CASE-0144",
+      "group": "064327b7f65ea1b9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0152::设计",
+      "case_id": "CASE-0152",
+      "group": "c425bdcc446614d6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0154::设计",
+      "case_id": "CASE-0154",
+      "group": "284c0b92630e023d",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 25.0,
+        "D3": 76.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 1.0,
+          "role_fit": 1.0,
+          "constraint_uncertainty": 1.0,
+          "risk": 1.0,
+          "actionability": 1.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 10.0
+      },
+      "delta_by_order": {
+        "order_1": 46.25,
+        "order_2": 56.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0156::设计",
+      "case_id": "CASE-0156",
+      "group": "fe882492eb822683",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0156::咨询/顾问",
+      "case_id": "CASE-0156",
+      "group": "fe882492eb822683",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 65.625,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 2.5,
+        "order_2": 12.5
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0156::专业分包",
+      "case_id": "CASE-0156",
+      "group": "fe882492eb822683",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.75,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 2.5
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 2.5
+    },
+    {
+      "unit_id": "CASE-0156::勘察/测绘",
+      "case_id": "CASE-0156",
+      "group": "fe882492eb822683",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0156::监理",
+      "case_id": "CASE-0156",
+      "group": "fe882492eb822683",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -2.5,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0165::设计",
+      "case_id": "CASE-0165",
+      "group": "e5dcf6485067c997",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0173::设计",
+      "case_id": "CASE-0173",
+      "group": "675100bb02f29f46",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0175::咨询/顾问",
+      "case_id": "CASE-0175",
+      "group": "678ecd8cd815f221",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -2.5,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0178::咨询/顾问",
+      "case_id": "CASE-0178",
+      "group": "dce7675eee57a2a6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0181::设计",
+      "case_id": "CASE-0181",
+      "group": "65e045116601435a",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0212::施工/总承包",
+      "case_id": "CASE-0212",
+      "group": "db5404956eadc9f2",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0230::施工/总承包",
+      "case_id": "CASE-0230",
+      "group": "d083ca75d8cab962",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0232::咨询/顾问",
+      "case_id": "CASE-0232",
+      "group": "d2adfd32487a631f",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0239::施工/总承包",
+      "case_id": "CASE-0239",
+      "group": "20da7ad96aa3971c",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 12.5,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0247::咨询/顾问",
+      "case_id": "CASE-0247",
+      "group": "bd5a987d5fd38fc4",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0248::咨询/顾问",
+      "case_id": "CASE-0248",
+      "group": "7c7795cf1fd9f0c4",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0250::施工/总承包",
+      "case_id": "CASE-0250",
+      "group": "7174e990ed66fa58",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0252::施工/总承包",
+      "case_id": "CASE-0252",
+      "group": "568a6c99849be485",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0264::施工/总承包",
+      "case_id": "CASE-0264",
+      "group": "222f9288d713baf6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0275::施工/总承包",
+      "case_id": "CASE-0275",
+      "group": "2a928c98c8ee9999",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 1.25,
+        "D3": -1.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0284::施工/总承包",
+      "case_id": "CASE-0284",
+      "group": "bf00f90c4c8328b5",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0300::施工/总承包",
+      "case_id": "CASE-0300",
+      "group": "161d742d3bad92de",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0308::施工/总承包",
+      "case_id": "CASE-0308",
+      "group": "1292530ef17f77b7",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0311::施工/总承包",
+      "case_id": "CASE-0311",
+      "group": "f755facb507151b8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 70.625
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0321::施工/总承包",
+      "case_id": "CASE-0321",
+      "group": "bb1d9903bfc33bba",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0325::施工/总承包",
+      "case_id": "CASE-0325",
+      "group": "01b23c26314f69a6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0345::施工/总承包",
+      "case_id": "CASE-0345",
+      "group": "e027cd1cd1878eec",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0006::施工/总承包",
+      "case_id": "CASE-0006",
+      "group": "8e1ba4b2ac99a7f4",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0006::设计",
+      "case_id": "CASE-0006",
+      "group": "8e1ba4b2ac99a7f4",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0006::造价/工料测量",
+      "case_id": "CASE-0006",
+      "group": "8e1ba4b2ac99a7f4",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0010::施工/总承包",
+      "case_id": "CASE-0010",
+      "group": "926f9c0d31fd7334",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0033::咨询/顾问",
+      "case_id": "CASE-0033",
+      "group": "5b47b1e2abeeb5a2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0044::设计",
+      "case_id": "CASE-0044",
+      "group": "b72b2080d908fd7c",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -1.25,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0047::设计",
+      "case_id": "CASE-0047",
+      "group": "7388d03996bdc5c0",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 66.875,
+        "D3": 66.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 8.75,
+        "D3": -8.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0048::施工/总承包",
+      "case_id": "CASE-0048",
+      "group": "c34e3f61c0b6c361",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0051::设计",
+      "case_id": "CASE-0051",
+      "group": "1748c4a8f3d510d7",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0080::施工/总承包",
+      "case_id": "CASE-0080",
+      "group": "fa4b30171bc6edf6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 25.0,
+        "D3": 67.5
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 1.0,
+          "role_fit": 1.0,
+          "constraint_uncertainty": 1.0,
+          "risk": 1.0,
+          "actionability": 1.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 7.5
+      },
+      "delta_by_order": {
+        "order_1": 38.75,
+        "order_2": 46.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 7.5
+    },
+    {
+      "unit_id": "CASE-0093::施工/总承包",
+      "case_id": "CASE-0093",
+      "group": "dd036f705806d1ce",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0116::设计",
+      "case_id": "CASE-0116",
+      "group": "a6b5da1d88625a67",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0117::设计",
+      "case_id": "CASE-0117",
+      "group": "a6b5da1d88625a67",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": -1.25
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 10.0
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 13.75
+    },
+    {
+      "unit_id": "CASE-0119::设计",
+      "case_id": "CASE-0119",
+      "group": "a6b5da1d88625a67",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 65.625,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 12.5,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0123::施工/总承包",
+      "case_id": "CASE-0123",
+      "group": "cf6183c72f2c777a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0145::施工/总承包",
+      "case_id": "CASE-0145",
+      "group": "4991672739478ace",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 27.5,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 1.0,
+          "role_fit": 1.0,
+          "constraint_uncertainty": 1.5,
+          "risk": 1.0,
+          "actionability": 1.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -5.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 41.25,
+        "order_2": 46.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 5.0
+    },
+    {
+      "unit_id": "CASE-0145::设计",
+      "case_id": "CASE-0145",
+      "group": "4991672739478ace",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 25.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 1.0,
+          "role_fit": 1.0,
+          "constraint_uncertainty": 1.0,
+          "risk": 1.0,
+          "actionability": 1.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 50.0,
+        "order_2": 46.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0145::专业分包",
+      "case_id": "CASE-0145",
+      "group": "4991672739478ace",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 65.625,
+        "D3": 70.625
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 10.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0147::设计",
+      "case_id": "CASE-0147",
+      "group": "56c7f7f641b25dde",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0159::设计",
+      "case_id": "CASE-0159",
+      "group": "81f6c8f06c936a68",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 67.5
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -10.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": -6.25
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0161::咨询/顾问",
+      "case_id": "CASE-0161",
+      "group": "f6e2a24e55125337",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0168::设计",
+      "case_id": "CASE-0168",
+      "group": "a695519f4f3fb43e",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0170::施工/总承包",
+      "case_id": "CASE-0170",
+      "group": "159b35594e85655e",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0170::设计",
+      "case_id": "CASE-0170",
+      "group": "159b35594e85655e",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0170::供应/制造",
+      "case_id": "CASE-0170",
+      "group": "159b35594e85655e",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0182::设计",
+      "case_id": "CASE-0182",
+      "group": "c2cf3de23620f771",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0183::施工/总承包",
+      "case_id": "CASE-0183",
+      "group": "27998b813af7c874",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0187::咨询/顾问",
+      "case_id": "CASE-0187",
+      "group": "461bdd71ca152543",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0196::设计",
+      "case_id": "CASE-0196",
+      "group": "f65bb610f15307b9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0196::代建/项目管理",
+      "case_id": "CASE-0196",
+      "group": "f65bb610f15307b9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0200::设计",
+      "case_id": "CASE-0200",
+      "group": "fa2caca6b5a76c2f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0210::施工/总承包",
+      "case_id": "CASE-0210",
+      "group": "fb2f9662d705448c",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0211::施工/总承包",
+      "case_id": "CASE-0211",
+      "group": "4d9588a4565a510b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0226::设计",
+      "case_id": "CASE-0226",
+      "group": "f4f252982531e61d",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 66.875,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -8.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 8.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 8.75
+    },
+    {
+      "unit_id": "CASE-0227::设计",
+      "case_id": "CASE-0227",
+      "group": "c14e491a7a195fc8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0238::施工/总承包",
+      "case_id": "CASE-0238",
+      "group": "6de28ae0ee097f6e",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0249::咨询/顾问",
+      "case_id": "CASE-0249",
+      "group": "da15f02f7b8cd6a8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 67.5,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 7.5,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 11.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 11.25
+    },
+    {
+      "unit_id": "CASE-0277::施工/总承包",
+      "case_id": "CASE-0277",
+      "group": "d90ca458baa77809",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0294::施工/总承包",
+      "case_id": "CASE-0294",
+      "group": "55b803b28ed937dc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0299::施工/总承包",
+      "case_id": "CASE-0299",
+      "group": "bf91036a8b0dad18",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0326::施工/总承包",
+      "case_id": "CASE-0326",
+      "group": "4b11a9a3ad830b0b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0330::施工/总承包",
+      "case_id": "CASE-0330",
+      "group": "5510591719fe6c80",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 81.25,
+        "D3": 81.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 4.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 4.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0335::施工/总承包",
+      "case_id": "CASE-0335",
+      "group": "306e4cab446555bd",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0340::施工/总承包",
+      "case_id": "CASE-0340",
+      "group": "15733e678446c50d",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0341::施工/总承包",
+      "case_id": "CASE-0341",
+      "group": "5510591719fe6c80",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0343::施工/总承包",
+      "case_id": "CASE-0343",
+      "group": "f00371a6a8570ecb",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0346::施工/总承包",
+      "case_id": "CASE-0346",
+      "group": "6952e7a32d0be0d6",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 7.5
+    },
+    {
+      "unit_id": "CASE-0350::施工/总承包",
+      "case_id": "CASE-0350",
+      "group": "73fd51fe05537f95",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0352::施工/总承包",
+      "case_id": "CASE-0352",
+      "group": "e302ac765b45a15f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0001::施工/总承包",
+      "case_id": "CASE-0001",
+      "group": "40435efcc11773c0",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0001::设计",
+      "case_id": "CASE-0001",
+      "group": "40435efcc11773c0",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0015::施工/总承包",
+      "case_id": "CASE-0015",
+      "group": "19edc7b83aeaabb6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0015::设计",
+      "case_id": "CASE-0015",
+      "group": "19edc7b83aeaabb6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0026::施工/总承包",
+      "case_id": "CASE-0026",
+      "group": "0adb61f8abecaeb2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0026::设计",
+      "case_id": "CASE-0026",
+      "group": "0adb61f8abecaeb2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0026::检测/质量控制",
+      "case_id": "CASE-0026",
+      "group": "0adb61f8abecaeb2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0026::代建/项目管理",
+      "case_id": "CASE-0026",
+      "group": "0adb61f8abecaeb2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0026::造价/工料测量",
+      "case_id": "CASE-0026",
+      "group": "0adb61f8abecaeb2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0029::设计",
+      "case_id": "CASE-0029",
+      "group": "1937922ad548104e",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0034::施工/总承包",
+      "case_id": "CASE-0034",
+      "group": "692ab0070947e521",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0038::设计",
+      "case_id": "CASE-0038",
+      "group": "8a8c5fda4ccf9337",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0063::专业分包",
+      "case_id": "CASE-0063",
+      "group": "e781c645baf4afee",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 70.625
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 8.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0066::设计",
+      "case_id": "CASE-0066",
+      "group": "8771c28f436418a3",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0074::设计",
+      "case_id": "CASE-0074",
+      "group": "b60cc273616300fc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0082::咨询/顾问",
+      "case_id": "CASE-0082",
+      "group": "c32f254f3e9d9064",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": -12.5,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 12.5
+    },
+    {
+      "unit_id": "CASE-0085::咨询/顾问",
+      "case_id": "CASE-0085",
+      "group": "4b56b10405b1fba2",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0086::咨询/顾问",
+      "case_id": "CASE-0086",
+      "group": "9097f94fc0f92abf",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0089::咨询/顾问",
+      "case_id": "CASE-0089",
+      "group": "a5e99d30a8fe5561",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0090::咨询/顾问",
+      "case_id": "CASE-0090",
+      "group": "bb09e6764a34ea42",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0108::设计",
+      "case_id": "CASE-0108",
+      "group": "173a4444063a3fd5",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0134::设计",
+      "case_id": "CASE-0134",
+      "group": "306753d28e90b4f8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0137::施工/总承包",
+      "case_id": "CASE-0137",
+      "group": "bba856ae5208aac1",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0172::咨询/顾问",
+      "case_id": "CASE-0172",
+      "group": "f7c9f94102bb3bbf",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0177::咨询/顾问",
+      "case_id": "CASE-0177",
+      "group": "b3bc7d894197aa39",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0185::咨询/顾问",
+      "case_id": "CASE-0185",
+      "group": "aa614e903f57bec1",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0189::咨询/顾问",
+      "case_id": "CASE-0189",
+      "group": "caa890231c899fd3",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0195::设计",
+      "case_id": "CASE-0195",
+      "group": "c0a76424542b2550",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0195::勘察/测绘",
+      "case_id": "CASE-0195",
+      "group": "c0a76424542b2550",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0195::监理",
+      "case_id": "CASE-0195",
+      "group": "c0a76424542b2550",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0198::施工/总承包",
+      "case_id": "CASE-0198",
+      "group": "840828b08e413ae2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0201::设计",
+      "case_id": "CASE-0201",
+      "group": "0be46fa0adf30e48",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0203::施工/总承包",
+      "case_id": "CASE-0203",
+      "group": "b86f7b67de1f316f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 65.0,
+        "D3": 65.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0206::施工/总承包",
+      "case_id": "CASE-0206",
+      "group": "c7acf16d4969c1d9",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0213::施工/总承包",
+      "case_id": "CASE-0213",
+      "group": "d506cea806aa8812",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0214::设计",
+      "case_id": "CASE-0214",
+      "group": "02d1dda334a153e7",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0217::设计",
+      "case_id": "CASE-0217",
+      "group": "e66c05450dd57a37",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0222::设计",
+      "case_id": "CASE-0222",
+      "group": "ed8c08f1d79077f2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0225::设计",
+      "case_id": "CASE-0225",
+      "group": "fd0321e0f0f7c6ea",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0231::咨询/顾问",
+      "case_id": "CASE-0231",
+      "group": "51f04cae3a69d7d6",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0240::咨询/顾问",
+      "case_id": "CASE-0240",
+      "group": "dca3954f9affa626",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0244::施工/总承包",
+      "case_id": "CASE-0244",
+      "group": "9fbc95d750189f15",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0255::施工/总承包",
+      "case_id": "CASE-0255",
+      "group": "eb4724c9ee4c9c50",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0291::供应/制造",
+      "case_id": "CASE-0291",
+      "group": "b916b43571aa096c",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0296::施工/总承包",
+      "case_id": "CASE-0296",
+      "group": "4cc65d23e04b9194",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 73.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0298::施工/总承包",
+      "case_id": "CASE-0298",
+      "group": "be1aeb3469f09747",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0302::施工/总承包",
+      "case_id": "CASE-0302",
+      "group": "59851c25917d4923",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0303::施工/总承包",
+      "case_id": "CASE-0303",
+      "group": "63fc7336d40922c8",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0313::供应/制造",
+      "case_id": "CASE-0313",
+      "group": "7139a4c07f7d150f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0318::施工/总承包",
+      "case_id": "CASE-0318",
+      "group": "ced98c9c766542e3",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0319::施工/总承包",
+      "case_id": "CASE-0319",
+      "group": "dd99fb89f495b719",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 10.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 10.0
+    },
+    {
+      "unit_id": "CASE-0323::施工/总承包",
+      "case_id": "CASE-0323",
+      "group": "d4d3bd5c59371e7a",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 66.25,
+        "D3": 69.375
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 5.0,
+        "D3": -11.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0328::施工/总承包",
+      "case_id": "CASE-0328",
+      "group": "3786592439fe858b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0342::施工/总承包",
+      "case_id": "CASE-0342",
+      "group": "a896d047bdafdbcc",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0004::检测/质量控制",
+      "case_id": "CASE-0004",
+      "group": "e1e9635d2ad2c310",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0005::设计",
+      "case_id": "CASE-0005",
+      "group": "230819b814c1c770",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0005::造价/工料测量",
+      "case_id": "CASE-0005",
+      "group": "230819b814c1c770",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0005::咨询/顾问",
+      "case_id": "CASE-0005",
+      "group": "230819b814c1c770",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0008::检测/质量控制",
+      "case_id": "CASE-0008",
+      "group": "839e9b8e494e275a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0009::检测/质量控制",
+      "case_id": "CASE-0009",
+      "group": "ed9e538c0a68d8f4",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0013::施工/总承包",
+      "case_id": "CASE-0013",
+      "group": "fb97692fc5fbc8f4",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0016::检测/质量控制",
+      "case_id": "CASE-0016",
+      "group": "ede356ed9aad80bf",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0019::施工/总承包",
+      "case_id": "CASE-0019",
+      "group": "c46819f32abf77ee",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0024::设计",
+      "case_id": "CASE-0024",
+      "group": "f67a07e55f546a92",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0024::咨询/顾问",
+      "case_id": "CASE-0024",
+      "group": "f67a07e55f546a92",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0040::供应/制造",
+      "case_id": "CASE-0040",
+      "group": "a90cf7471e577445",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0045::设计",
+      "case_id": "CASE-0045",
+      "group": "e2bbe8f21275854e",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 70.625
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 8.75
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0046::施工/总承包",
+      "case_id": "CASE-0046",
+      "group": "9fa62391e67c05e7",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0071::咨询/顾问",
+      "case_id": "CASE-0071",
+      "group": "5e655a8073e3e89a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0075::设计",
+      "case_id": "CASE-0075",
+      "group": "733b2cc186586fef",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -8.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 8.75
+    },
+    {
+      "unit_id": "CASE-0088::咨询/顾问",
+      "case_id": "CASE-0088",
+      "group": "caa0e85c1ecb028a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0091::咨询/顾问",
+      "case_id": "CASE-0091",
+      "group": "c8e8e7a6438a0a54",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0094::施工/总承包",
+      "case_id": "CASE-0094",
+      "group": "f352fd1ad88d34ff",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0095::施工/总承包",
+      "case_id": "CASE-0095",
+      "group": "96d55f44276917d2",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0106::施工/总承包",
+      "case_id": "CASE-0106",
+      "group": "b0d12b32bd4b0fd5",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0131::设计",
+      "case_id": "CASE-0131",
+      "group": "7367115111bf671b",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0132::设计",
+      "case_id": "CASE-0132",
+      "group": "5934957df99d0e7a",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0142::施工/总承包",
+      "case_id": "CASE-0142",
+      "group": "fc1440b6e5308a13",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 66.875,
+        "D3": 66.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -8.75,
+        "D3": 8.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0142::咨询/顾问",
+      "case_id": "CASE-0142",
+      "group": "fc1440b6e5308a13",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0148::施工/总承包",
+      "case_id": "CASE-0148",
+      "group": "ee7e5a0d266f132d",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 73.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 3.75
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0148::设计",
+      "case_id": "CASE-0148",
+      "group": "ee7e5a0d266f132d",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0149::设计",
+      "case_id": "CASE-0149",
+      "group": "89c3d9fb878eb840",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0153::施工/总承包",
+      "case_id": "CASE-0153",
+      "group": "6cb8fe5e0dddba92",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 3.75,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": -8.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 8.75
+    },
+    {
+      "unit_id": "CASE-0157::施工/总承包",
+      "case_id": "CASE-0157",
+      "group": "ea36af4ed7bf7540",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 63.75,
+        "D3": 63.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -2.5,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0157::勘察/测绘",
+      "case_id": "CASE-0157",
+      "group": "ea36af4ed7bf7540",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.25,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0157::监理",
+      "case_id": "CASE-0157",
+      "group": "ea36af4ed7bf7540",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 64.375,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 12.5,
+        "order_2": 8.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0180::咨询/顾问",
+      "case_id": "CASE-0180",
+      "group": "8f0de013fba1ff90",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0216::设计",
+      "case_id": "CASE-0216",
+      "group": "50082b2200b9016c",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 12.5,
+        "D3": -12.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0229::施工/总承包",
+      "case_id": "CASE-0229",
+      "group": "a7eda547f4ea67ba",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0233::设计",
+      "case_id": "CASE-0233",
+      "group": "2faf812a76c1dbb9",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 56.25,
+        "D3": 63.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 2.5,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 2.5,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": -1.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 13.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 13.75
+    },
+    {
+      "unit_id": "CASE-0253::设计",
+      "case_id": "CASE-0253",
+      "group": "6c545114599ea401",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 68.125,
+        "D3": 71.25
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 6.25,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0254::施工/总承包",
+      "case_id": "CASE-0254",
+      "group": "ab98ccf68f0cdfb0",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0258::供应/制造",
+      "case_id": "CASE-0258",
+      "group": "ddd42c9682de9214",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0261::施工/总承包",
+      "case_id": "CASE-0261",
+      "group": "6dc2b8affd082bc0",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0279::施工/总承包",
+      "case_id": "CASE-0279",
+      "group": "78d68a4255f41aa5",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 70.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -2.5,
+        "D3": 2.5
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0279::供应/制造",
+      "case_id": "CASE-0279",
+      "group": "78d68a4255f41aa5",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0279::专业分包",
+      "case_id": "CASE-0279",
+      "group": "78d68a4255f41aa5",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 62.5,
+        "D3": 62.5
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0293::施工/总承包",
+      "case_id": "CASE-0293",
+      "group": "8d615461a1312d13",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 65.0,
+        "D3": 68.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 2.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 1.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 1.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -12.5,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 6.25
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 6.25
+    },
+    {
+      "unit_id": "CASE-0314::供应/制造",
+      "case_id": "CASE-0314",
+      "group": "0fadb0269dea3071",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 75.0,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0320::施工/总承包",
+      "case_id": "CASE-0320",
+      "group": "fbb19c71d89ef0e8",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 68.75,
+        "D3": 68.75
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 0.0,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0324::施工/总承包",
+      "case_id": "CASE-0324",
+      "group": "e7d6080019d77226",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.125,
+        "D3": 75.0
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -3.75,
+        "D3": 0.0
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0331::施工/总承包",
+      "case_id": "CASE-0331",
+      "group": "937b48b9adc4377f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 76.25,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -10.0,
+        "D3": 6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0332::施工/总承包",
+      "case_id": "CASE-0332",
+      "group": "416be4990928485f",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 71.875,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": -6.25,
+        "D3": -1.25
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 3.75
+      },
+      "order_direction_reversal": true,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 7.5
+    },
+    {
+      "unit_id": "CASE-0338::施工/总承包",
+      "case_id": "CASE-0338",
+      "group": "7d7c1b9f5e68f960",
+      "phase": "dev",
+      "scores_by_arm": {
+        "S4": 78.125,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0347::施工/总承包",
+      "case_id": "CASE-0347",
+      "group": "76bdb367866ae894",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 78.125,
+        "D3": 78.125
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.5,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 3.0
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 6.25,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 0.0,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": false,
+      "absolute_order_delta_difference": 0.0
+    },
+    {
+      "unit_id": "CASE-0348::施工/总承包",
+      "case_id": "CASE-0348",
+      "group": "f86b56c6a6dbad11",
+      "phase": "test",
+      "scores_by_arm": {
+        "S4": 73.75,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 3.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": -3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    },
+    {
+      "unit_id": "CASE-0351::施工/总承包",
+      "case_id": "CASE-0351",
+      "group": "908a4929415b1b06",
+      "phase": "validation",
+      "scores_by_arm": {
+        "S4": 70.0,
+        "D3": 71.875
+      },
+      "dimensions_by_arm": {
+        "S4": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.0,
+          "actionability": 2.5
+        },
+        "D3": {
+          "evidence_accuracy": 3.0,
+          "role_fit": 3.0,
+          "constraint_uncertainty": 3.0,
+          "risk": 2.5,
+          "actionability": 2.5
+        }
+      },
+      "position_A_minus_B_by_arm": {
+        "S4": 2.5,
+        "D3": -6.25
+      },
+      "delta_by_order": {
+        "order_1": 3.75,
+        "order_2": 0.0
+      },
+      "order_direction_reversal": false,
+      "order_delta_disagreement": true,
+      "absolute_order_delta_difference": 3.75
+    }
+  ],
+  "rubric_protocol": {
+    "schema_version": "micro-fixed-blind-rubric.v1",
+    "dimensions": [
+      "evidence_accuracy",
+      "role_fit",
+      "constraint_uncertainty",
+      "risk",
+      "actionability"
+    ],
+    "weights": {
+      "evidence_accuracy": 30,
+      "role_fit": 25,
+      "constraint_uncertainty": 20,
+      "risk": 15,
+      "actionability": 10
+    },
+    "score_scale": [
+      0,
+      4
+    ],
+    "weighted_total_scale": [
+      0,
+      100
+    ],
+    "weighted_formula": "sum(weight_i * integer_score_i / 4)",
+    "rubric": {
+      "evidence_accuracy": {
+        "weight": 30,
+        "description": "Claims agree with the supplied source evidence; citations support the specific claim and belong to the relevant company.",
+        "anchors": [
+          "0: material invented or contradicted evidence",
+          "1: several unsupported or misapplied claims",
+          "2: mixed accurate evidence with substantive omissions or ambiguity",
+          "3: accurate relevant claims with only minor limitations",
+          "4: precise faithful evidence use with no material unsupported claim"
+        ]
+      },
+      "role_fit": {
+        "weight": 25,
+        "description": "The ordering and rationale connect the specified project role to actual comparable experience and supplied public capability.",
+        "anchors": [
+          "0: disregards the specified role",
+          "1: weak or largely irrelevant role matching",
+          "2: plausible basic matching with limited differentiation",
+          "3: clear relevant role-specific comparison",
+          "4: coherent project-specific comparison of meaningful candidate differences"
+        ]
+      },
+      "constraint_uncertainty": {
+        "weight": 20,
+        "description": "Respects the twelve fixed candidates, source limits and uncertainty; missing information stays unknown and zero history is not proof of inability.",
+        "anchors": [
+          "0: violates material constraints or treats guesses as established facts",
+          "1: major uncertainty or constraint omissions",
+          "2: acknowledges some limits but incompletely",
+          "3: handles material constraints and unknowns appropriately",
+          "4: precise balanced handling of all consequential uncertainties and evidence limits"
+        ]
+      },
+      "risk": {
+        "weight": 15,
+        "description": "Identifies evidence-grounded risks and distinguishes an actual conflict from an unverified concern; unsupported alarming claims lower the score.",
+        "anchors": [
+          "0: fabricated material risks or ignores explicit critical conflicts",
+          "1: mostly generic or unsupported risk treatment",
+          "2: some relevant risk recognition with incomplete qualification",
+          "3: relevant qualified risks tied to evidence",
+          "4: prioritizes the material evidence-grounded risks and their uncertainty proportionately"
+        ]
+      },
+      "actionability": {
+        "weight": 10,
+        "description": "The final ordering and checks support an auditable next step; do not reward verbosity, a fixed number of risks, or confident language.",
+        "anchors": [
+          "0: unusable or internally contradictory decision",
+          "1: vague decision or unusable checks",
+          "2: usable order with basic follow-up",
+          "3: clear decision and specific feasible checks for relevant unknowns",
+          "4: concise coherent decision with targeted verifiable next actions"
+        ]
+      }
+    },
+    "judge_system_sha256": "08de38b54b6823972ce85d708d347caf6cc2cda4cdd532e50d20b77a766a24ee",
+    "blind_orders": 2,
+    "same_model_judge": true,
+    "judge_context": "Only common evidence and anonymous final decisions; no mechanism, intermediate messages, generation status, outcomes, or cross-order memory.",
+    "judge_pair_policy": "Mean of both valid swapped orders for each final decision; never select the better order. Any missing or invalid order excludes the unit from the complete-pair rubric estimand, with coverage and bounded missingness sensitivity reported.",
+    "split_policy": "Use the predeclared dev/validation/test project-group assignment; never choose samples or parameters for a target gain.",
+    "primary_test_bootstrap_replicates": 10000,
+    "other_split_bootstrap_replicates": 1000,
+    "bootstrap_seed": 20261120,
+    "bootstrap_unit": "paired project group",
+    "relative_improvement": "(mean_D3 - mean_S4) / mean_S4 * 100; undefined when denominator is zero",
+    "interpretation": [
+      "Automatic LLM proxy ratings are not human expert judgements.",
+      "Same-model generation and judging can share preferences and blind spots.",
+      "Citation existence validation is structural, not a guarantee of semantic accuracy.",
+      "Original433 is retrospective; observed advantages do not establish external causal effectiveness.",
+      "Simulated profit and real profit are not run or verified by this evaluation."
+    ]
+  },
+  "real_profit_status": "not_run_or_verified",
+  "simulated_profit_status": "not_run",
+  "human_expert_evaluation_status": "not_run",
+  "retrospective": true,
+  "target_relative_gain_8_percent": "research target only; never an acceptance condition or sample-selection rule"
+}
+```
+
+## 工程与费用
+
+全部4690次请求已记账，费用按usage估算51.790084元，预算60元；未核对供应商账单。
+决策状态：{'ok': 921, 'fallback': 5}；评分状态：{'ok': 757, 'parse_error': 229}。
+
+## 解释边界
+
+原始事实未改动；增强是来源索引、已知/未知标注及共同提示。
+S4/D3比较还包含序列自检与独立汇总结构差异；G3消融仅在预定60条上估计岗位分工价值。
+原始433条曾被分析，查询组划分不重拟合继承OOF历史，不能称独立前瞻验证。
+本轮没有执行生命周期模拟，模拟工期、成本、利润为未运行；现实工程盈利为未验证。
+完整原始请求、响应、每步意见、失败、引用、匿名映射和账本均保留。

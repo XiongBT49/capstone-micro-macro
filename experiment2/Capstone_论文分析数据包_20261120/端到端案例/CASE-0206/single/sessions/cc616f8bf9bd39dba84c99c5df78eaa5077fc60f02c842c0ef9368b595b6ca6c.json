@@ -1,0 +1,1666 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMEC711881/CASE-0206/supply-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/supply-1",
+    "round_id": 1,
+    "tick": 15,
+    "public": {
+      "environment": {
+        "current_tick": 15,
+        "market_demand_index": 1.061811376099563,
+        "material_price_index": 1.1124378916329212,
+        "labor_price_index": 1.1722884529013,
+        "financing_condition_index": 0.9507764034575142,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "MOP",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 23205000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "MOP",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "澳门新葡京酒店",
+        "owner_id": "OWNER-aa9fb4e593b5ca",
+        "project_id": "CASE-0206",
+        "project_type": "building",
+        "region": "Macau",
+        "scope": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店"
+      },
+      "package": {
+        "package_id": "CASE-0206/supply-1",
+        "project_id": "CASE-0206",
+        "kind": "supply",
+        "buyer_id": "$construction_lead",
+        "name": "主体结构与外立面工程包材料采购",
+        "scope": "仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+        "budget": 23205000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [
+          "CASE-0206/construction-1"
+        ],
+        "cost_inclusion": "included_in_parent",
+        "parent_package_id": "CASE-0206/construction-1",
+        "candidate_ids": [
+          "COMP-0154",
+          "COMP-0167"
+        ]
+      }
+    },
+    "private": {
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 0.6000000000000001,
+        "occupied_resource": 1.4,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8700000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 1.4,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000006",
+              "project_id": "CASE-0206",
+              "project_stage": "contract_award",
+              "role": "Contractor",
+              "status": "active",
+              "resource_allocation": 1.4,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 14,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMEC711881/CASE-0206/construction-1/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/construction-1",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 82875000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMEC711881/CASE-0206/construction-2/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/construction-2",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 40480000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMEC711881/EVT000175",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0206",
+            "role": "Contractor",
+            "available_resource": 1.3,
+            "occupied_resource": 0.7,
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000176",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/construction-1",
+            "contract_id": "SIMEC711881/CASE-0206/construction-1/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0191"
+            ],
+            "price": 82875000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000177",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0206",
+            "role": "Contractor",
+            "available_resource": 0.6000000000000001,
+            "occupied_resource": 1.4,
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000178",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/construction-2",
+            "contract_id": "SIMEC711881/CASE-0206/construction-2/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0191"
+            ],
+            "price": 40480000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000179",
+            "event_type": "project_state_updated",
+            "tick": 14,
+            "project_id": "CASE-0206",
+            "stage": "contract_award",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 5,
+          "selected_events": 5,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0154": {
+        "entity_id": "COMP-0154",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0154",
+          "company_name": "中交第二公路工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0154",
+          "name": "中交第二公路工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8600000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0167": {
+        "entity_id": "COMP-0167",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0167",
+          "company_name": "中国建筑第三工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0167",
+          "name": "中国建筑第三工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8500000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "ae4d2dbbd2c703c406e2bef11197de2b8d81bbace3eb5ecca46e6f3c1a529657"
+  },
+  "spec": {
+    "package_id": "CASE-0206/supply-1",
+    "project_id": "CASE-0206",
+    "kind": "supply",
+    "buyer_id": "$construction_lead",
+    "name": "主体结构与外立面工程包材料采购",
+    "scope": "仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+    "budget": 23205000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [
+      "CASE-0206/construction-1"
+    ],
+    "cost_inclusion": "included_in_parent",
+    "parent_package_id": "CASE-0206/construction-1",
+    "candidate_ids": [
+      "COMP-0154",
+      "COMP-0167"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0206",
+      "project_name": "澳门新葡京酒店",
+      "project_type": "building",
+      "location": "Macau",
+      "owner_intent": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0206",
+      "project_scope": "澳门新葡京酒店为文旅与酒店娱乐综合项目，总建筑面积约13.5万平方米，采用DBB交付模式，工期24个月，情景预算MOP 150,000,000。本次业主方模拟包简报仅针对已授权的材料供应包（CASE-0206/supply-1），该包为施工包「主体结构与外立面工程包」供应材料与构配件，不含施工、安装及临时工程，材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。业主方通过本简报明确该供应包的模拟采购目标、能力匹配要求与业主审查控制需要。",
+      "functional_requirements": [
+        "供应包须满足主体结构（混凝土、钢结构）及外立面幕墙、屋面防水等施工所需材料与构配件的供货功能，确保材料品种、规格、数量与施工进度匹配。",
+        "供应包须提供完整的质量证明文件，包括材料合格证、检测报告、批次追溯信息，满足业主质量目标跟踪需要。",
+        "供应包须具备运输到场协调能力，按施工包承包商的进度计划安排交付，减少现场等待与仓储压力。",
+        "供应包须在质保期内承担更换责任，对不符合质量目标的材料及时响应更换，保障施工连续性。",
+        "供应包须提供材料接口信息（如幕墙构件与主体连接参数、防水材料施工条件），供施工包承包商协调安装界面。",
+        "供应包须支持可维护性目标，提供材料维护保养建议与备件供应计划，便于酒店长期运营。"
+      ],
+      "technical_requirements": [
+        "材料技术参数须满足酒店塔楼及裙楼结构设计耐久性目标，混凝土强度等级、钢结构防腐防火性能、幕墙气密水密性能须符合设计文件要求。",
+        "供应包须配合BIM协调，提供材料构件的几何与属性信息，支持施工包进行结构、幕墙与机电接口的碰撞检查。",
+        "幕墙及屋面防水材料须满足澳门气候条件下的耐候性与防水等级要求，并提供相应的测试报告。",
+        "供应包须明确材料进场验收标准与抽样检测方案，配合业主质量目标跟踪与施工包质量验收。",
+        "供应包须提供材料安装技术指导文件（非现场施工），协助施工包理解材料性能与安装条件，确保接口协调。",
+        "供应包须考虑节能与可持续目标，优先提供符合绿色建材标准的材料选项，并附相关环境声明。"
+      ],
+      "budget_policy": "本供应包情景预算为MOP 23,205,000，已包含在施工包合同价内，由施工包承包商作为买方支付。业主方在模拟评审中将关注报价的合理性、价格构成的透明度（材料单价、运输费、质保期服务费）以及价格与质量目标的匹配度。业主方不直接支付该供应包，但将通过施工包合同条款间接审查材料成本对整体预算的影响。价格比较采用定性原则，结合交付信心、能力匹配与风险控制综合判断。",
+      "schedule_policy": "供应包交付计划须与施工包24个月工期匹配，业主方关注材料供应里程碑的现实性，包括首批材料到场时间、分批交付节奏与施工进度的衔接。业主方审查时间应预留于材料样品确认与质量文件审核环节。供应包与施工包的接口时间（如材料进场验收、质量证明文件移交）须在供应计划中明确。公共通道与运输协调时间（如澳门市区运输限制时段）须纳入交付安排。",
+      "compliance_requirements": [
+        "业主审查节奏：业主方将按材料供应关键节点（样品确认、首批交付、质量文件审核）安排审查会议，供应包须配合提供进度报告。",
+        "问题升级路径：供应包须明确与施工包承包商及业主方的沟通 escalation 路径，材料质量问题应在约定时限内升级至业主方代表。",
+        "文档纪律：供应包须建立完整的材料质量文档体系，包括合格证、检测报告、交付记录、更换记录，确保可追溯。",
+        "接口签署：材料接口信息（如幕墙连接参数）须经施工包承包商与业主方代表共同确认签署，方可批量供应。",
+        "公共通道协调：材料运输须遵守澳门公共通道使用规定，供应包须提前提交运输计划供业主方协调。",
+        "质量目标跟踪：业主方将跟踪材料质量目标的达成情况，供应包须定期提交质量统计与不合格品处理报告。",
+        "安全期望跟踪：供应包须确保材料包装、运输与卸货过程符合安全期望，提交安全运输方案供业主方审查。",
+        "变更控制纪律：材料规格或供应范围的任何变更须经业主方变更控制程序审批，未经批准不得擅自变更。"
+      ],
+      "risk_priorities": [
+        "材料价格波动风险：澳门材料价格指数呈上升趋势，供应包须在报价中考虑价格调整机制或锁定策略，业主方关注价格风险应对方案。",
+        "供应延迟风险：材料交付延迟可能影响施工关键路径，业主方优先关注供应包的交付物流能力与备选运输方案。",
+        "质量不合格风险：材料质量不达标将导致返工与工期延误，业主方优先审查供应包的质量管理体系与检测能力。",
+        "接口协调风险：材料接口信息不准确可能造成施工安装困难，业主方关注供应包与施工包的接口协调机制。",
+        "质保期响应风险：质保期内更换响应不及时可能影响酒店运营，业主方关注供应包的售后支持能力与备件计划。",
+        "跨境物流风险：材料若涉及跨境运输，须考虑通关与政策稳定性，业主方关注供应包的跨境物流经验与风险应对。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0206/supply-1",
+          "package_type": "supplier",
+          "package_name": "主体结构与外立面工程包材料采购",
+          "scope": "Authorized scope: 仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。\nBuyer refinement: 仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+          "required_company_role": "supplier",
+          "qualification_requirements": [
+            "酒店项目主体结构材料供应能力",
+            "幕墙与屋面防水材料产品匹配能力",
+            "澳门地区材料交付物流协调能力",
+            "材料质量证明文件管理能力",
+            "质保期更换与售后支持能力",
+            "材料接口信息提供能力",
+            "备件计划与可维护性支持能力"
+          ],
+          "proposal_requirements": [
+            "供应团队角色计划与可用性摘要",
+            "材料供应交付方法说明",
+            "质量保证方案与检测计划",
+            "报价基础与价格构成明细",
+            "供应进度视图与里程碑计划",
+            "风险应对方案（价格波动、延迟、质量）"
+          ],
+          "pricing_requirements": "投标报价须以MOP为单位，涵盖材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用。报价应明确价格调整机制（如材料价格指数联动），并说明价格构成。业主方将定性比较报价合理性与价格风险应对。\nBinding currency: MOP; package ceiling: 23205000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持"
+          ],
+          "owner_decision_policy": "业主方将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，优先选择材料质量目标匹配度高、文档纪律严谨、接口协调清晰的供应包。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0206/supply-1",
+        "package_type": "supplier",
+        "package_name": "主体结构与外立面工程包材料采购",
+        "scope": "Authorized scope: 仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。\nBuyer refinement: 仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+        "required_company_role": "supplier",
+        "qualification_requirements": [
+          "酒店项目主体结构材料供应能力",
+          "幕墙与屋面防水材料产品匹配能力",
+          "澳门地区材料交付物流协调能力",
+          "材料质量证明文件管理能力",
+          "质保期更换与售后支持能力",
+          "材料接口信息提供能力",
+          "备件计划与可维护性支持能力"
+        ],
+        "proposal_requirements": [
+          "供应团队角色计划与可用性摘要",
+          "材料供应交付方法说明",
+          "质量保证方案与检测计划",
+          "报价基础与价格构成明细",
+          "供应进度视图与里程碑计划",
+          "风险应对方案（价格波动、延迟、质量）"
+        ],
+        "pricing_requirements": "投标报价须以MOP为单位，涵盖材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用。报价应明确价格调整机制（如材料价格指数联动），并说明价格构成。业主方将定性比较报价合理性与价格风险应对。\nBinding currency: MOP; package ceiling: 23205000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持"
+        ],
+        "owner_decision_policy": "业主方将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，优先选择材料质量目标匹配度高、文档纪律严谨、接口协调清晰的供应包。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "owner",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0154",
+        "company_name": "中交第二公路工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0167",
+        "company_name": "中国建筑第三工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目统筹与业主界面",
+          "position": "项目总监",
+          "personal_profile": "压力下先稳住整体节奏，习惯把工期、资源与业主期望放在同一张表上权衡。最先注意到的是承诺与可用资源之间的缺口，讨论中常把乐观方案拉回可交付边界，带来进度与资源之间的张力。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "业主界面与监管服务沟通",
+            "组合体与分包界面协调",
+            "关键节点与工期承诺把关"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先给结论再列依据，对模糊承诺会当场追问"
+        },
+        {
+          "agent_id": "COMP-0191_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力越大越回到报价基础与支付条件逐项核对。最先注意到的是成本漏项与付款节奏风险，讨论中倾向压低不可预见费，常与进度方在赶工投入上形成张力。",
+          "responsibilities": [
+            "报价基础与成本控制",
+            "付款评审与支付评估配合",
+            "变更与索赔的商务处理",
+            "分包采购与合同条款审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数字说话，对未量化的假设会要求补充依据"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "技术与设计协调",
+          "position": "技术总工",
+          "personal_profile": "面对技术争议先回到图纸与规范依据，习惯把设计协调问题拆成可验证的构造节点。最先注意到的是设计接口与施工可行性冲突，讨论中坚持独立复核，常因要求补图补算而拖慢决策节奏。",
+          "responsibilities": [
+            "设计协调与施工方案审查",
+            "桩基、结构与幕墙技术接口把关",
+            "独立检查与技术复核安排",
+            "质量目标跟踪的技术支撑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨克制，偏好书面确认，对口头承诺会要求落到图纸或会议纪要"
+        },
+        {
+          "agent_id": "COMP-0191_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量与安全监管",
+          "position": "质量安全经理",
+          "personal_profile": "把质量与安全视为不可交易项，压力下反而更强调检查频次与记录完整。最先注意到的是现场执行与方案之间的偏差，讨论中愿意为整改争取时间，常与赶工诉求形成直接张力。",
+          "responsibilities": [
+            "质量目标跟踪与现场质量评审",
+            "安全监管与风险应对落实",
+            "文档纪律与检查记录管理",
+            "独立检查与整改闭环跟踪"
+          ],
+          "decision_authority": "final",
+          "communication_style": "坚定务实，先讲风险后果再谈方案，对整改期限要求明确"
+        },
+        {
+          "agent_id": "COMP-0191_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "资源与交付计划",
+          "position": "资源计划经理",
+          "personal_profile": "以资源可用性为思考起点，习惯把团队可用性摘要与工期排布对齐。最先注意到的是人力与机械的峰值冲突，讨论中倾向保守排产，常因不愿超配资源而与商务方在赶工成本上产生张力。",
+          "responsibilities": [
+            "团队可用性与角色计划编制",
+            "资源规划与分包劳务协调",
+            "进度视图与交付方法维护",
+            "现场报告与资源风险预警"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实简明，用排程与资源表沟通，对临时加码会先问资源从哪来"
+        }
+      ],
+      "COMP-0154": [
+        {
+          "agent_id": "COMP-0154_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先考虑公司整体风险与资源调配，习惯先看合同责任边界与付款条件，对超出能力范围的承诺非常警惕。讨论中常提出资源冲突与长期信誉的张力，倾向于在确认买方付款能力后才推进。",
+          "responsibilities": [
+            "统筹公司整体资源与投标策略",
+            "审批最终报价与合同条款",
+            "协调跨部门资源与冲突",
+            "监控项目风险与合规性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，注重结论与风险点，常用简短语句明确立场。"
+        },
+        {
+          "agent_id": "COMP-0154_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，关注成本构成与付款节点，习惯在报价前反复核对价格基础与市场波动。讨论中常提醒材料价格指数与融资条件变化，强调付款评审与现金流安全。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "进行成本评审与付款评审",
+            "分析合同条款与付款条件",
+            "评估买方支付可靠性"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致、谨慎，喜欢用数据说话，常以提问方式引导讨论。"
+        },
+        {
+          "agent_id": "COMP-0154_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "供应链管理部",
+          "position": "采购与物流主管",
+          "personal_profile": "注重实际供货能力与物流时效，对材料质量证明文件与质保期更换流程非常熟悉。讨论中常提出供应商产能与运输风险，强调供货计划与现场需求的匹配。",
+          "responsibilities": [
+            "评估材料供应来源与产能",
+            "制定供货与运输计划",
+            "管理质量证明文件与质保期更换",
+            "协调供应商与物流资源"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、具体，喜欢用案例和流程说明问题，注重可操作性。"
+        },
+        {
+          "agent_id": "COMP-0154_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "质量管理部",
+          "position": "质量经理",
+          "personal_profile": "对质量目标与文档纪律有极高要求，习惯在早期识别质量风险并制定检查方案。讨论中常强调独立检查与质量证明文件的完整性，对任何可能影响质量目标的妥协持保留态度。",
+          "responsibilities": [
+            "制定质量目标与检查方案",
+            "审核材料质量证明文件",
+            "监督质保期内的更换流程",
+            "进行独立质量评审"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨、有条理，注重标准与证据，常以清单方式沟通。"
+        },
+        {
+          "agent_id": "COMP-0154_05_刘家豪",
+          "agent_name": "刘家豪",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "工程管理部",
+          "position": "项目协调经理",
+          "personal_profile": "擅长多方协调与界面管理，对施工包的进度与材料需求有清晰把握。讨论中常关注材料到场时间与施工计划的衔接，强调与买方及其他利益相关方的沟通。",
+          "responsibilities": [
+            "协调与买方及施工方的界面",
+            "跟踪材料需求与供货进度",
+            "参与现场报告与会议",
+            "管理利益相关方沟通"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "灵活、善于倾听，注重共识与协作，常用协调性语言。"
+        }
+      ],
+      "COMP-0167": [
+        {
+          "agent_id": "COMP-0167_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先判断风险与资源匹配，先看整体交付可行性和公司声誉。讨论中常提醒不要为了单一包牺牲整体资源调度，倾向稳健决策。",
+          "responsibilities": [
+            "统筹公司整体投标策略与资源分配",
+            "审批最终报价与合同条款",
+            "协调跨部门资源与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，善于归纳关键风险，常用简短结论推动决策。"
+        },
+        {
+          "agent_id": "COMP-0167_02_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，先看成本构成与付款条件，压力下会反复核对报价基础。常带来成本控制与付款评审的张力，提醒团队不要低估资金占用。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "评审付款条件与成本风险",
+            "协调供应商与分包询价"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "细致严谨，喜欢用数据说话，表达清晰但有时过于保守。"
+        },
+        {
+          "agent_id": "COMP-0167_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "工程管理部",
+          "position": "工程总监",
+          "personal_profile": "注重现场可执行性，先看工期与资源匹配，压力下会强调施工界面与进度风险。常带来工期与资源计划的张力，提醒团队不要脱离现场实际。",
+          "responsibilities": [
+            "评估施工方案与工期可行性",
+            "协调现场资源与进度计划",
+            "监督质量目标与安全措施"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实果断，常用现场案例说明问题，语言直接。"
+        },
+        {
+          "agent_id": "COMP-0167_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "采购供应部",
+          "position": "采购经理",
+          "personal_profile": "关注供应链稳定性与材料质量证明，先看供应商可靠性和交货周期。压力下会强调备选方案和质保期更换责任，带来供应风险与成本平衡的张力。",
+          "responsibilities": [
+            "评估材料供应能力与交货计划",
+            "审核质量证明文件与质保条款",
+            "协调物流运输与到场验收"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "条理分明，注重细节，善于用清单方式沟通。"
+        },
+        {
+          "agent_id": "COMP-0167_05_张立仁",
+          "agent_name": "张立仁",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "质量安全部",
+          "position": "质量经理",
+          "personal_profile": "坚持标准与文档纪律，先看质量目标与检验程序，压力下会强调独立检查与合规性。常带来质量要求与进度压力的张力，提醒团队不要妥协验收标准。",
+          "responsibilities": [
+            "制定质量计划与检验标准",
+            "监督材料质量与文档记录",
+            "协调第三方检测与质量评审"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "严谨规范，喜欢引用标准条款，表达冷静客观。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0154",
+        "company_role": "supplier",
+        "package_id": "CASE-0206/supply-1",
+        "agent_id": "COMP-0154_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，买方是主体结构施工包的承包商，付款责任清晰，不涉及施工界面、安装或临时工程，责任边界对我们有利。我们作为供应商，企业资料显示具备建筑材料销售、砼结构构件与金属结构制造（分支机构）、货物进出口、仓储与道路货运站经营等一般经营能力，供应可靠性与材料质量参数处于中上水平，资源占用为零、可用资源2.0，承接这个0.25资源需求的包不会挤压现有任务。真正的顾虑有三点：一是包内要求幕墙与屋面防水材料的产品匹配能力，我们的资料没有明确对应产品线，需要以采购与代理渠道解决，这属于正常供应商安排而非需要联合体；二是澳门本地交付物流与质保期更换服务需要具体落地计划，目前只有拟议方案，没有已签的运输或备件承诺；三是报价上限23205000 MOP，而材料价格指数1.112、 labour 指数1.172，价格波动是主要商业风险，必须在报价中设置指数联动与调价机制，否则毛利会被侵蚀。我不认为需要组合体：我们可作为单一责任供应商承担供货、运输到场、质量证明文件与质保更换，产品线缺口通过合格制造商与代理供货解决，责任仍由我们统一承担。因此决定独立投标，但把关键供应商报价、运输安排与质保备件方案作为投标假设明确写出，不假装已落实。",
+        "content": "拟以单一责任供应商身份参与主体结构与外立面工程包材料采购投标。供应范围严格限定为材料与构配件供货、运输到场、质量证明文件及质保期内更换，不承担施工、安装、临时工程或施工界面责任。供应团队按角色计划配置供货协调、质量文件管理与售后响应岗位，并提交可用性摘要。交付方法采用分批到场与里程碑进度视图，与施工包承包商的施工节奏对接。质量保证方案包含材料来源控制、出厂与到场检测计划、质量证明文件清单与归档纪律。报价以MOP计，涵盖材料单价、运输到场费用、质量证明文件费用与质保期更换服务费用，并明确价格构成与材料价格指数联动调价机制，以应对价格波动风险。风险应对覆盖价格波动、交付延迟与质量偏差三类情形，并说明备件计划与可维护性支持。需说明：主要材料供应商报价与运输安排尚在落实，投标文件将如实标注为投标假设，不作为已落实承诺。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:49:48",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0167",
+        "company_role": "supplier",
+        "package_id": "CASE-0206/supply-1",
+        "agent_id": "COMP-0167_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，范围清晰：供货、运输到场、质量证明文件、质保期更换，不含施工安装和界面责任，买方是施工包的承包商。我们作为供应商，公司资料显示具备混凝土预制构件及制品销售、金属结构制作与安装、建筑与装饰材料销售等经营范围，材料供应与质量文件管理属于我们能够作为单一责任供应商承担的业务。资源方面当前占用为零、可用资源2.0，本包仅需0.25，容量不构成压力。报价上限23205000 MOP，材料价格指数处于1.11、劳动力指数1.17，价格波动是主要商业风险，需要在报价中设置指数联动与调价机制。这不是需要组合体的情形：不需要共享投标人身份或让另一家企业分担包级责任，普通的产品来源与物流安排属于正常供应组织。因此我倾向独立投标，把价格调整机制、质量证明文件管理和质保期更换承诺写实。",
+        "content": "管理层决定：就主体结构与外立面工程包材料采购（CASE-0206/supply-1）以单一责任供应商身份独立投标。投标范围严格限定为材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换，不承担施工、安装、临时工程或施工界面责任。投标文件将包含：供应团队角色计划与可用性摘要；材料供应交付方法说明，含分批到场与物流协调安排；质量保证方案与检测计划，明确质量证明文件的编制、审核与移交纪律；以MOP为单位的报价基础与价格构成明细，区分材料单价、运输到场费用、质量证明文件费用与质保期更换服务费用，并设置材料价格指数联动调价机制；供应进度视图与里程碑计划；针对价格波动、交付延迟与质量问题的风险应对方案。报价总额控制在23205000 MOP上限以内，价格风险通过调价机制与分批交付安排管理。本决定不依赖任何未完成的资格或资源前置条件。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:49:46",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0154",
+        "company_role": "supplier",
+        "package_id": "CASE-0206/supply-1",
+        "agent_id": "COMP-0154_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "质保期内接到更换申请后按拟议响应时限受理、核实、更换并闭环记录",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:50:08",
+        "verification_requests": [
+          {
+            "question": "质保期内接到更换申请后按拟议响应时限受理、核实、更换并闭环记录",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "COMP-0191",
+        "company_role": "owner",
+        "package_id": "CASE-0206/supply-1",
+        "agent_id": "COMP-0191_05_何俊杰",
+        "agent_name": "何俊杰",
+        "department": "资源与交付计划",
+        "position": "资源计划经理",
+        "message_type": "decision",
+        "thoughts": "作为业主方最终决策人，我需要为这个材料供应包选择一个能够可靠交付、价格合理且责任清晰的供应商。评标推荐中建三局，我认同这一判断。中建三局的报价MOP 23,205,000正好在包预算上限以内，分项构成透明，团队配置和资源可用性说明具体，质量证明文件的三级检查纪律严谨，业主审查透明度好。相比之下，中交二公局的报价MOP 23,310,000略高于预算，且幕墙与屋面防水产品依赖代理渠道，主要材料单价和承运安排均为投标假设，价格基础可信度偏弱，风险准备金占比偏高，交付与索赔风险需要重点关注。虽然中建三局也存在材料来源、承运安排和交付里程碑需进一步细化的问题，但这些属于合同签订前可以澄清落实的事项，不影响其作为最终判给对象的合理性。因此，我决定将本包判给中国建筑第三工程局有限公司，并在合同签订前重点澄清材料来源与承运安排、交付里程碑细化以及调价机制细节。",
+        "content": "经综合评审，本包判给中国建筑第三工程局有限公司，报价总额MOP 23,205,000。该投标以单一责任供应商身份响应，团队配置与资源可用性说明具体，质量证明文件管理纪律严谨，报价分项透明且处于预算上限以内，整体能力匹配度较高。合同签订前澄清重点为材料来源与承运安排的落实、交付里程碑的细化以及调价机制细节的明确，以对齐业主审查要求。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T15:50:20",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0154",
+        "package_id": "CASE-0206/supply-1",
+        "decision": "bid",
+        "reason": "管理层判断：本包为纯材料供应，责任边界限于供货、运输到场、质量证明文件与质保期更换，不含施工安装与界面责任，与我方作为供应商的角色定位一致，且买方为施工包承包商、付款路径清晰。我方资源占用为零、可用资源充足，承接该包不会影响现有任务；供应可靠性与材料质量参数支持我们作为单一责任供应商作出承诺。主要风险是材料价格波动与澳门本地交付、质保更换的落地安排，这些通过报价中的指数联动调价机制、分批交付里程碑、质量证明文件清单与备件计划来管理，属于正常供应风险管理，不构成需要组合体分担责任的情形。幕墙与屋面防水材料的产品匹配缺口，将通过合格制造商与代理供货渠道解决，由我方统一对买方负责，不改变投标主体身份。因此选择独立投标，并在投标文件中如实说明供应商报价与运输安排尚在落实中，作为明确的投标假设而非既成事实。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "主要材料（含幕墙与屋面防水相关产品）的制造商或代理供货报价尚在询价中，投标报价中的材料单价以拟议成本口径编制，待正式报价后复核。",
+          "澳门本地运输到场安排拟通过外部物流服务解决，具体承运安排尚待落实，作为投标假设列明。",
+          "质保期更换与备件支持拟以制造商质保加我方售后响应组合实现，具体备件清单与响应时限在投标文件中作为拟议方案说明。",
+          "报价中的价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准。",
+          "本包不含施工、安装、临时工程与措施费，亦不承担施工界面责任，该边界在投标文件中明确声明。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0167",
+        "package_id": "CASE-0206/supply-1",
+        "decision": "bid",
+        "reason": "本包为施工包下的材料与构配件供应，范围限于供货、运输到场、质量证明文件与质保期更换，不含施工安装与界面责任，与我方作为供应商的角色和材料销售、构件供应能力相符。当前可用资源2.0、占用0，本包资源需求0.25，团队可用性摘要可以支撑独立投标。商业上，包预算23205000 MOP在可接受区间，主要风险是材料价格波动与交付延迟，可通过报价基础中的价格指数联动条款、分批交付里程碑和质保期更换承诺加以管理。无需引入组合体：不存在必须由另一家企业共享投标人身份或包级交付责任的情形，产品来源与运输属于正常供应组织。管理判断为独立投标，按业主要求提交供应团队角色计划、交付方法、质量保证与检测计划、报价构成、进度视图和风险应对方案。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+          "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+          "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+          "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0206/supply-1_001",
+        "package_id": "CASE-0206/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0154",
+        "bidder_name": "中交第二公路工程局有限公司",
+        "technical_proposal": "我方以单一责任供应商身份承接本包，供应范围严格限定为：主体结构与外立面工程包所需材料与构配件的供货、运输到场、质量证明文件提交及质保期内更换。不含施工、安装、临时工程与措施费，不承担施工界面责任。\n\n供应团队角色计划与可用性摘要：设供货协调负责人1名（统筹订单、排产与到场节奏）、质量证明文件管理员1名（出厂与到场文件清单、归档与移交）、售后与备件响应员1名（质保期更换受理与跟踪），另设材料接口信息联络人1名（向买方提供规格、批次、检测与接口信息）。上述岗位由我方现有可用资源内配置，不占用其他在建任务资源。\n\n材料供应交付方法：按施工包承包商的施工节奏编制分批到场计划，采用订单确认—排产跟踪—出厂检验—到场交接—文件移交的五段式流程；每批到场前提交批次清单与质量证明文件包，到场后由买方按交接单签认。\n\n产品匹配说明：幕墙与屋面防水相关产品线不在我方自产范围内，拟通过合格制造商及代理供货渠道组织供货，由我方统一对买方负责，不改变投标主体身份。相关制造商或代理报价尚在询价中，本投标中的材料单价为拟议成本口径，属投标假设。\n\n质量保证方案与检测计划：材料来源控制（制造商资质与批次可追溯）、出厂检验报告与合格证随批提交、到场外观与规格核对、按买方要求配合第三方检测取样；质量证明文件按材料类别建立清单与归档纪律，竣工前完成全套文件移交。\n\n备件计划与可维护性支持：以制造商质保加我方售后响应组合实现，拟议方案为常用规格备件清单与响应时限承诺，具体清单与时限在合同签订阶段与买方确认。",
+        "implementation_plan": "1. 合同签订后两周内完成供应团队到位、与买方施工进度对接、提交分批到场里程碑计划与质量证明文件清单模板。\n2. 按施工包进度分批次组织供货：首批为基础与桩基相关材料，随后为主体结构混凝土与钢结构构配件，外立面幕墙及屋面防水材料按买方安装顺序分批到场。\n3. 每批次执行订单确认、排产跟踪、出厂检验、运输到场、交接签认、文件移交六个控制点，批次间隔与到场窗口由买方施工节奏确定。\n4. 质量证明文件随批提交并同步归档，按月向买方提交文件台账。\n5. 质保期内接到更换申请后按拟议响应时限受理、核实、更换并闭环记录。\n6. 供应进度视图以里程碑表形式提交，标注各材料类别的计划到场窗口与文件提交节点。",
+        "quotation": 23310000.0,
+        "schedule_commitment": "供应期与施工包「主体结构与外立面工程包」施工进度同步，按买方施工节奏分批到场。合同签订后两周内提交分批到场里程碑计划；首批基础与桩基相关材料按买方开工节点到场；主体结构材料按结构施工分层分段供应；外立面幕墙及屋面防水材料按买方安装顺序分批到场。每批次到场前完成出厂检验与质量证明文件包提交。质保期自各批次验收合格之日起算，按合同约定执行。",
+        "compliance_statement": "我方接受业主方及买方对材料来源、批次可追溯性、质量证明文件完整性与到场交接记录的检查。质量证明文件按材料类别建立清单，随批提交并同步归档，按月提交文件台账供买方核对。到场材料由买方按交接单签认，我方配合买方组织的第三方检测取样。质保期内更换申请按拟议响应时限受理并闭环记录，接受买方对更换执行情况的核查。材料接口信息（规格、批次、检测数据）按买方要求及时提供。",
+        "risk_response": "价格波动：报价中单列价格波动风险准备金，并明确以材料价格指数联动调价机制应对，最终调价公式以招标文件要求为准；本报价不称为固定价，主要材料单价为拟议成本口径，待制造商正式报价后复核。\n交付延迟：采用分批到场与里程碑进度视图，与买方施工节奏对接；运输到场通过外部物流服务解决，承运安排尚待落实，作为投标假设列明，并预留批次间隔缓冲。\n质量偏差：执行材料来源控制、出厂检验报告与合格证随批提交、到场外观与规格核对、配合第三方检测取样；发现偏差按批次隔离并启动更换流程。\n产品匹配缺口：幕墙与屋面防水产品线通过合格制造商及代理渠道解决，由我方统一对买方负责；相关报价尚在询价中，属投标假设。\n责任边界：本包不含施工、安装、临时工程与措施费，不承担施工界面责任，该边界在投标文件中明确声明。",
+        "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份投标主体结构与外立面工程包材料采购，报价总额 MOP 23,310,000。\n\n报价构成（MOP）：\n- 主体结构材料供货 11,280,000\n- 外立面幕墙及屋面防水材料供货 6,180,000\n- 运输到场 1,460,000\n- 质量证明文件管理 520,000\n- 质保期更换与备件支持 880,000\n- 价格波动风险准备金 1,180,000\n- 供应管理与售后响应团队 690,000\n- 企业管理费与合理利润 1,120,000\n合计 23,310,000。\n\n报价基础：材料单价采用拟议成本口径，主要材料制造商或代理报价尚在询价中；运输到场拟通过外部物流服务解决，承运安排尚待落实；质保期更换以制造商质保加我方售后响应组合实现。上述均为投标假设，非已落实承诺。价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准，本报价不称为固定价。\n\n责任边界：仅供货、运输到场、质量证明文件与质保期更换，不含施工、安装、临时工程与措施费，不承担施工界面责任。\n\n付款与买方：材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。",
+        "quotation_breakdown": [
+          {
+            "item": "主体结构材料（混凝土、钢筋及钢结构构配件）供货成本",
+            "amount": 11280000,
+            "basis": "按13.5万平方米塔楼及裙楼主体结构材料用量估算，材料单价采用拟议成本口径并计入当前材料价格指数水平；制造商正式报价尚在询价中，属投标假设"
+          },
+          {
+            "item": "外立面幕墙及屋面防水材料供货成本",
+            "amount": 6180000,
+            "basis": "幕墙与屋面防水产品线通过合格制造商及代理渠道组织供货，含代理环节成本；代理报价尚在询价中，属投标假设"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 1460000,
+            "basis": "澳门本地运输到场安排拟通过外部物流服务解决，按分批到场次数、装卸与跨境运输环节估算；承运安排尚待落实，属投标假设"
+          },
+          {
+            "item": "质量证明文件管理费用",
+            "amount": 520000,
+            "basis": "质量证明文件管理员岗位、文件清单编制、随批文件包制作、归档与竣工移交的人工与文档成本"
+          },
+          {
+            "item": "质保期更换与备件支持费用",
+            "amount": 880000,
+            "basis": "质保期内更换受理、核实、更换执行与备件储备的拟议方案成本，含制造商质保衔接"
+          },
+          {
+            "item": "价格波动风险准备金",
+            "amount": 1180000,
+            "basis": "材料价格指数当前处于1.11水平且存在波动，按主要材料成本的一定比例计提风险准备金，与指数联动调价机制配合使用"
+          },
+          {
+            "item": "供应管理与售后响应团队费用",
+            "amount": 690000,
+            "basis": "供货协调负责人、材料接口信息联络人及售后响应岗位的人工成本，按供应期投入估算"
+          },
+          {
+            "item": "企业管理费与合理利润",
+            "amount": 1120000,
+            "basis": "按上述直接成本合计的约4.5%计取，覆盖企业管理费、保险与合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_35ba8678a6b35cc223f8"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "主要材料（含幕墙与屋面防水相关产品）的制造商或代理供货报价尚在询价中，投标报价中的材料单价以拟议成本口径编制，待正式报价后复核。",
+          "澳门本地运输到场安排拟通过外部物流服务解决，具体承运安排尚待落实，作为投标假设列明。",
+          "质保期更换与备件支持拟以制造商质保加我方售后响应组合实现，具体备件清单与响应时限在投标文件中作为拟议方案说明。",
+          "报价中的价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准。",
+          "本包不含施工、安装、临时工程与措施费，亦不承担施工界面责任，该边界在投标文件中明确声明。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0206/supply-1_002",
+        "package_id": "CASE-0206/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0167",
+        "bidder_name": "中国建筑第三工程局有限公司",
+        "technical_proposal": "本投标以单一责任供应商身份，就主体结构与外立面工程包材料采购（CASE-0206/supply-1）提交材料与构配件供应方案。供应范围严格限定为：材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含施工、安装、临时工程、措施费及施工界面责任。\n\n供应团队角色计划与可用性摘要：设供应项目经理1名（统筹订单、交付与业主/施工承包商接口）、质量与证明文件主管1名（负责材料质量证明文件的编制、审核与移交纪律）、物流协调员1名（负责澳门地区到场运输与分批交付衔接）、售后与备件协调员1名（负责质保期更换与备件计划）。当前企业可用资源2.0，本包资源需求0.25，团队可用性可支撑独立投标。\n\n材料供应交付方法：按施工包承包商的施工计划编制分批到场计划，主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）与幕墙及屋面防水材料分批次、分区域交付；运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。\n\n质量保证方案与检测计划：建立材料来源审查、出厂质量证明文件核验、到场外观与规格复核的三级检查；质量证明文件按材料类别编制清单，随批次移交并留存副本；对幕墙与防水材料提供产品匹配说明及接口信息。\n\n供应进度视图与里程碑计划：以施工包施工计划为基准，设置首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动等里程碑；具体交付里程碑在合同谈判阶段细化。\n\n风险应对：材料价格波动通过材料价格指数联动调价机制管理；交付延迟通过分批交付、备选运输承运安排及安全库存管理；质量问题通过质量证明文件核验、到场复检及质保期更换承诺应对。",
+        "implementation_plan": "1. 投标阶段：确定材料产品来源与运输承运安排，编制分批到场计划与质量证明文件清单。\n2. 合同签订后：与施工包承包商确认施工进度视图，细化交付里程碑；建立订单、交付、质量证明文件与售后接口。\n3. 供应执行：按批次组织材料出厂检验与质量证明文件核验，安排运输到场，完成到场交接与文件移交。\n4. 质保期：按业主要求的质保期限与响应时限提供更换服务，维护备件计划与可维护性支持。\n5. 价格管理：按材料价格指数联动机制定期复核调价，保持报价基础透明。",
+        "quotation": 23205000.0,
+        "schedule_commitment": "供应进度视图与施工包承包商的施工计划衔接，按分批交付里程碑执行：首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动。具体交付里程碑在合同谈判阶段细化，整体供应周期覆盖施工包施工期。",
+        "compliance_statement": "业主方可对材料质量证明文件、到场检验记录、分批交付进度及质保期更换响应进行审查；我方按内部质量程序与独立检查方法提供文件与记录，配合业主方或施工包承包商的进度与质量复核。",
+        "risk_response": "价格波动：以材料价格指数联动调价机制为基础，明确指数与调价周期，对不可调价部分设置风险准备。交付延迟：分批交付、备选运输承运安排及安全库存管理。质量问题：出厂质量证明文件核验、到场复检及质保期更换承诺。",
+        "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份独立投标主体结构与外立面工程包材料采购（CASE-0206/supply-1），报价总额MOP 23,205,000，处于包预算上限以内。报价构成为：主体结构材料供货MOP 11,860,000；幕墙与屋面防水材料供货MOP 6,350,000；运输到场费用MOP 1,680,000；质量证明文件费用MOP 620,000；质保期更换与售后支持MOP 980,000；价格波动风险准备与调价机制管理MOP 720,000；供应管理、保险与杂项MOP 930,000；报价取整调整MOP 65,000。上述金额合计MOP 23,205,000。报价基础区分材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用，并设置材料价格指数联动调价机制。本报价为投标阶段估算，材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。",
+        "quotation_breakdown": [
+          {
+            "item": "主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）供货",
+            "amount": 11860000,
+            "basis": "按13.5万平方米酒店塔楼及裙楼主体结构材料估算用量与当前材料价格指数1.1124测算，含出厂价与供应商管理费；属投标阶段估算，非已收到供应商报价"
+          },
+          {
+            "item": "幕墙与屋面防水材料供货",
+            "amount": 6350000,
+            "basis": "按外立面幕墙及屋面防水材料估算用量与产品匹配要求测算，含产品选型与接口信息提供；属投标阶段估算"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 1680000,
+            "basis": "按澳门地区到场运输、分批交付物流协调及承运安排估算，含装卸配合与到场交接"
+          },
+          {
+            "item": "质量证明文件编制、审核与移交",
+            "amount": 620000,
+            "basis": "按材料类别质量证明文件清单、核验与移交纪律所需人工及文档管理估算"
+          },
+          {
+            "item": "质保期更换与售后支持",
+            "amount": 980000,
+            "basis": "按业主要求质保期限内的更换服务、响应时限及备件计划支持估算"
+          },
+          {
+            "item": "价格波动风险准备与调价机制管理",
+            "amount": 720000,
+            "basis": "按材料价格指数联动调价机制的操作管理及部分不可调价材料的风险准备估算"
+          },
+          {
+            "item": "供应管理、保险与杂项",
+            "amount": 930000,
+            "basis": "按供应项目管理、运输保险、文件杂项及不可预见费估算"
+          },
+          {
+            "item": "报价取整调整",
+            "amount": 65000,
+            "basis": "按投标报价取整至MOP 23,205,000的尾差调整，使分项合计与投标总额一致"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+          "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+          "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+          "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0206/supply-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0206/supply-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "quotation": 23310000.0,
+            "quotation_breakdown": [
+              {
+                "item": "主体结构材料（混凝土、钢筋及钢结构构配件）供货成本",
+                "amount": 11280000,
+                "basis": "按13.5万平方米塔楼及裙楼主体结构材料用量估算，材料单价采用拟议成本口径并计入当前材料价格指数水平；制造商正式报价尚在询价中，属投标假设"
+              },
+              {
+                "item": "外立面幕墙及屋面防水材料供货成本",
+                "amount": 6180000,
+                "basis": "幕墙与屋面防水产品线通过合格制造商及代理渠道组织供货，含代理环节成本；代理报价尚在询价中，属投标假设"
+              },
+              {
+                "item": "运输到场费用",
+                "amount": 1460000,
+                "basis": "澳门本地运输到场安排拟通过外部物流服务解决，按分批到场次数、装卸与跨境运输环节估算；承运安排尚待落实，属投标假设"
+              },
+              {
+                "item": "质量证明文件管理费用",
+                "amount": 520000,
+                "basis": "质量证明文件管理员岗位、文件清单编制、随批文件包制作、归档与竣工移交的人工与文档成本"
+              },
+              {
+                "item": "质保期更换与备件支持费用",
+                "amount": 880000,
+                "basis": "质保期内更换受理、核实、更换执行与备件储备的拟议方案成本，含制造商质保衔接"
+              },
+              {
+                "item": "价格波动风险准备金",
+                "amount": 1180000,
+                "basis": "材料价格指数当前处于1.11水平且存在波动，按主要材料成本的一定比例计提风险准备金，与指数联动调价机制配合使用"
+              },
+              {
+                "item": "供应管理与售后响应团队费用",
+                "amount": 690000,
+                "basis": "供货协调负责人、材料接口信息联络人及售后响应岗位的人工成本，按供应期投入估算"
+              },
+              {
+                "item": "企业管理费与合理利润",
+                "amount": 1120000,
+                "basis": "按上述直接成本合计的约4.5%计取，覆盖企业管理费、保险与合理利润"
+              }
+            ],
+            "submission_summary": "中交第二公路工程局有限公司以单一责任供应商身份投标主体结构与外立面工程包材料采购，报价总额 MOP 23,310,000。\n\n报价构成（MOP）：\n- 主体结构材料供货 11,280,000\n- 外立面幕墙及屋面防水材料供货 6,180,000\n- 运输到场 1,460,000\n- 质量证明文件管理 520,000\n- 质保期更换与备件支持 880,000\n- 价格波动风险准备金 1,180,000\n- 供应管理与售后响应团队 690,000\n- 企业管理费与合理利润 1,120,000\n合计 23,310,000。\n\n报价基础：材料单价采用拟议成本口径，主要材料制造商或代理报价尚在询价中；运输到场拟通过外部物流服务解决，承运安排尚待落实；质保期更换以制造商质保加我方售后响应组合实现。上述均为投标假设，非已落实承诺。价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准，本报价不称为固定价。\n\n责任边界：仅供货、运输到场、质量证明文件与质保期更换，不含施工、安装、临时工程与措施费，不承担施工界面责任。\n\n付款与买方：材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。",
+            "unresolved_condition_ids": [
+              "condition_35ba8678a6b35cc223f8"
+            ],
+            "bid_assumptions": [
+              "主要材料（含幕墙与屋面防水相关产品）的制造商或代理供货报价尚在询价中，投标报价中的材料单价以拟议成本口径编制，待正式报价后复核。",
+              "澳门本地运输到场安排拟通过外部物流服务解决，具体承运安排尚待落实，作为投标假设列明。",
+              "质保期更换与备件支持拟以制造商质保加我方售后响应组合实现，具体备件清单与响应时限在投标文件中作为拟议方案说明。",
+              "报价中的价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准。",
+              "本包不含施工、安装、临时工程与措施费，亦不承担施工界面责任，该边界在投标文件中明确声明。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0206/supply-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "quotation": 23205000.0,
+            "quotation_breakdown": [
+              {
+                "item": "主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）供货",
+                "amount": 11860000,
+                "basis": "按13.5万平方米酒店塔楼及裙楼主体结构材料估算用量与当前材料价格指数1.1124测算，含出厂价与供应商管理费；属投标阶段估算，非已收到供应商报价"
+              },
+              {
+                "item": "幕墙与屋面防水材料供货",
+                "amount": 6350000,
+                "basis": "按外立面幕墙及屋面防水材料估算用量与产品匹配要求测算，含产品选型与接口信息提供；属投标阶段估算"
+              },
+              {
+                "item": "运输到场费用",
+                "amount": 1680000,
+                "basis": "按澳门地区到场运输、分批交付物流协调及承运安排估算，含装卸配合与到场交接"
+              },
+              {
+                "item": "质量证明文件编制、审核与移交",
+                "amount": 620000,
+                "basis": "按材料类别质量证明文件清单、核验与移交纪律所需人工及文档管理估算"
+              },
+              {
+                "item": "质保期更换与售后支持",
+                "amount": 980000,
+                "basis": "按业主要求质保期限内的更换服务、响应时限及备件计划支持估算"
+              },
+              {
+                "item": "价格波动风险准备与调价机制管理",
+                "amount": 720000,
+                "basis": "按材料价格指数联动调价机制的操作管理及部分不可调价材料的风险准备估算"
+              },
+              {
+                "item": "供应管理、保险与杂项",
+                "amount": 930000,
+                "basis": "按供应项目管理、运输保险、文件杂项及不可预见费估算"
+              },
+              {
+                "item": "报价取整调整",
+                "amount": 65000,
+                "basis": "按投标报价取整至MOP 23,205,000的尾差调整，使分项合计与投标总额一致"
+              }
+            ],
+            "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份独立投标主体结构与外立面工程包材料采购（CASE-0206/supply-1），报价总额MOP 23,205,000，处于包预算上限以内。报价构成为：主体结构材料供货MOP 11,860,000；幕墙与屋面防水材料供货MOP 6,350,000；运输到场费用MOP 1,680,000；质量证明文件费用MOP 620,000；质保期更换与售后支持MOP 980,000；价格波动风险准备与调价机制管理MOP 720,000；供应管理、保险与杂项MOP 930,000；报价取整调整MOP 65,000。上述金额合计MOP 23,205,000。报价基础区分材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用，并设置材料价格指数联动调价机制。本报价为投标阶段估算，材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+              "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+              "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+              "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 主体结构与外立面工程包材料采购.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0206/supply-1",
+        "evaluators": [
+          "COMP-0191_01_梁志远",
+          "COMP-0191_02_陈嘉敏",
+          "COMP-0191_03_黄伟强",
+          "COMP-0191_04_苏丽华",
+          "COMP-0191_05_何俊杰"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0206/supply-1_001",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "technical_view": "供应团队角色计划完整，交付方法采用五段式流程，但幕墙与屋面防水产品线依赖外部代理渠道，材料单价与承运安排均为投标假设，产品匹配与交付信心的落实程度有限。",
+            "cost_view": "报价MOP 23,310,000略高于预算上限，其中单列价格波动风险准备金MOP 1,180,000，但主要材料单价与运输费用均未取得正式报价，价格基础的可信度偏弱。",
+            "owner_control_view": "接受业主与买方对材料来源、批次追溯及质量证明文件的检查，文件台账与第三方检测配合安排清晰，但质保响应时限与备件清单仍为拟议方案。",
+            "strengths": [
+              "质量证明文件管理岗位与随批归档纪律明确",
+              "责任边界声明清晰，不含施工界面责任",
+              "风险应对覆盖价格波动、延迟与质量偏差"
+            ],
+            "concerns": [
+              "幕墙与屋面防水产品依赖代理渠道，产品匹配能力未落实",
+              "主要材料单价与承运安排均为投标假设，报价可信度不足",
+              "报价高于包预算上限，且风险准备金占比偏高"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0206/supply-1_002",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "technical_view": "供应团队角色计划与可用性摘要具体，交付方法按分批分区域组织，质量证明文件三级检查与接口信息提供安排完整，整体能力匹配度较高。",
+            "cost_view": "报价MOP 23,205,000处于预算上限以内，分项构成清晰并区分材料、运输、文件与质保费用，但材料来源与承运安排仍属投标阶段估算，需在合同谈判中复核。",
+            "owner_control_view": "明确接受业主对质量证明文件、到场检验记录与质保更换响应的审查，内部质量程序与独立检查方法表述清晰，业主审查透明度较好。",
+            "strengths": [
+              "团队配置与资源可用性说明具体，人员配置现实性较好",
+              "质量证明文件编制、审核与移交纪律严谨",
+              "报价分项透明且处于预算上限以内"
+            ],
+            "concerns": [
+              "材料产品来源与运输承运安排尚未最终确定",
+              "交付里程碑需在合同谈判阶段细化，进度承诺偏原则性",
+              "价格波动风险准备金额相对有限，调价机制细节待明确"
+            ]
+          }
+        ],
+        "comparison_summary": "两家投标均以单一责任供应商身份响应，中建三局在团队配置、质量证明文件纪律与业主审查清晰度上更贴合本包需求，且报价MOP 23,205,000处于预算上限以内；中交二公局报价MOP 23,310,000略高于预算，且幕墙与防水产品依赖代理渠道、多项价格基础仍为假设。综合能力匹配、价格合理性与交付信心，中建三局为较优选择。",
+        "recommended_winner": "COMP-0167",
+        "owner_review_notes": "建议判给中国建筑第三工程局有限公司，并在合同谈判中要求其落实材料来源、承运安排与交付里程碑，明确调价机制细节。中交二公局可作为备选，但其代理渠道与未落实报价假设带来的交付与索赔风险需重点关注。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0206",
+      "package_awards": [
+        {
+          "package_id": "CASE-0206/supply-1",
+          "selected_bidder_id": "COMP-0167",
+          "selected_bidder_name": "中国建筑第三工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中建三局报价MOP 23,205,000处于包预算上限以内，分项构成清晰，团队配置与资源可用性说明具体，质量证明文件管理纪律严谨，业主审查透明度好，整体能力匹配度较高。中交二公局报价MOP 23,310,000略高于预算，且幕墙与防水产品依赖代理渠道，主要材料单价与承运安排均为投标假设，价格基础可信度偏弱，风险准备金占比偏高，交付与索赔风险需重点关注。综合能力匹配、价格合理性与交付信心，中建三局为更优选择。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+            "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+            "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+            "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0167"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T15:49:48",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0154",
+          "package_id": "CASE-0206/supply-1",
+          "decision": "bid",
+          "reason": "管理层判断：本包为纯材料供应，责任边界限于供货、运输到场、质量证明文件与质保期更换，不含施工安装与界面责任，与我方作为供应商的角色定位一致，且买方为施工包承包商、付款路径清晰。我方资源占用为零、可用资源充足，承接该包不会影响现有任务；供应可靠性与材料质量参数支持我们作为单一责任供应商作出承诺。主要风险是材料价格波动与澳门本地交付、质保更换的落地安排，这些通过报价中的指数联动调价机制、分批交付里程碑、质量证明文件清单与备件计划来管理，属于正常供应风险管理，不构成需要组合体分担责任的情形。幕墙与屋面防水材料的产品匹配缺口，将通过合格制造商与代理供货渠道解决，由我方统一对买方负责，不改变投标主体身份。因此选择独立投标，并在投标文件中如实说明供应商报价与运输安排尚在落实中，作为明确的投标假设而非既成事实。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "主要材料（含幕墙与屋面防水相关产品）的制造商或代理供货报价尚在询价中，投标报价中的材料单价以拟议成本口径编制，待正式报价后复核。",
+            "澳门本地运输到场安排拟通过外部物流服务解决，具体承运安排尚待落实，作为投标假设列明。",
+            "质保期更换与备件支持拟以制造商质保加我方售后响应组合实现，具体备件清单与响应时限在投标文件中作为拟议方案说明。",
+            "报价中的价格调整机制以材料价格指数联动为基础，最终调价公式以招标文件要求为准。",
+            "本包不含施工、安装、临时工程与措施费，亦不承担施工界面责任，该边界在投标文件中明确声明。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:49:48",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0167",
+          "package_id": "CASE-0206/supply-1",
+          "decision": "bid",
+          "reason": "本包为施工包下的材料与构配件供应，范围限于供货、运输到场、质量证明文件与质保期更换，不含施工安装与界面责任，与我方作为供应商的角色和材料销售、构件供应能力相符。当前可用资源2.0、占用0，本包资源需求0.25，团队可用性摘要可以支撑独立投标。商业上，包预算23205000 MOP在可接受区间，主要风险是材料价格波动与交付延迟，可通过报价基础中的价格指数联动条款、分批交付里程碑和质保期更换承诺加以管理。无需引入组合体：不存在必须由另一家企业共享投标人身份或包级交付责任的情形，产品来源与运输属于正常供应组织。管理判断为独立投标，按业主要求提交供应团队角色计划、交付方法、质量保证与检测计划、报价构成、进度视图和风险应对方案。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+            "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+            "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+            "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:50:08",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/supply-1",
+          "bidder_id": "COMP-0154"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:50:08",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/supply-1",
+          "bidder_id": "COMP-0167"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:50:08",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0206/supply-1",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:50:16",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0206/supply-1",
+          "recommended_winner": "COMP-0167"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:50:20",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0206/supply-1",
+          "selected_bidder_id": "COMP-0167"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "作为买方 COMP-0191，我方确认接受本供应包（CASE-0206/supply-1）的拟定合同条款，价格 MOP 23,205,000、币种 MOP、范围、成员（COMP-0167）与资源承诺（0.25）均按拟定字段执行。就我方自身立场，明确以下决定以便写入下一稿：第一，本供应包全部费用已包含在母施工包 CASE-0206/construction-1 的合同价内，由我方作为该施工包承包商支付，不另行计价或重复计量；第二，付款与计量以分批到场交付并完成质量证明文件移交为计量基础，按批次验收后支付，具体付款节点在合同谈判阶段细化，但不改变本包固定总价性质；第三，我方对材料质量证明文件、到场检验记录、分批交付进度及质保期更换响应的审查期限为收到文件后 14 日内提出意见，逾期未提出视为通过；第四，接受投标文件中披露的假设作为风险分配：材料价格指数联动调价机制、交付里程碑在合同谈判阶段细化、质保期更换按我方要求期限与响应时限承诺，均属可执行的合同义务而非缺失证据；第五，供应进度视图须与施工包施工计划衔接，具体里程碑细化不影响本包整体供应周期覆盖施工期的承诺。上述决定不改变价格、币种、范围、成员与资源等规范字段，我方据此授权执行本模拟合同义务。"
+          },
+          "COMP-0167": {
+            "action": "accept",
+            "reason": "作为 COMP-0167 的授权决策，我方接受本次修订 0 的合同条款。理由如下：\n\n1. 范围与角色一致：本包仅为我方作为单一责任供应商提供主体结构与外立面工程包的材料与构配件供货、运输到场、质量证明文件及质保期更换，不含施工、安装、临时工程或措施费，也不承担施工界面责任，与我方投标承诺及能力定位一致。\n\n2. 价格与预算：报价 MOP 23,205,000 处于包预算上限 23,205,000 以内，币种为 MOP，分项构成与投标文件一致，未改变价格、币种、范围、成员或资源等规范字段。\n\n3. 资源承诺：本包资源需求 0.25，我方当前可用资源 2.0，工作份额 1.0，可支撑独立履约，不构成组合体或包级责任分担。\n\n4. 风险分配可接受：材料价格指数联动调价机制、分批交付与备选承运安排、质量证明文件核验与到场复检、质保期更换承诺，均为我方在投标中已披露的拟议风险分配，我方接受。\n\n5. 未来交付物按义务处理：供应进度视图与施工包施工计划衔接、交付里程碑在合同谈判阶段细化，均作为可审查、可验收的合同义务，不主张未来工程交付或法定审批已完成。\n\n6. 无未决条件：unresolved_condition_ids 为空，verified_condition_ids 为空，未发现需修订或拒绝的重大未决风险。\n\n据此，我方确认接受所提供的确切条款、资源与义务。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMEC711881/CASE-0206/supply-1/round-1/contract",
+          "simulation_id": "SIMEC711881",
+          "project_id": "CASE-0206",
+          "package_id": "CASE-0206/supply-1",
+          "session_id": "SIMEC711881/CASE-0206/supply-1/round-1",
+          "snapshot_version": "e0197818f8b21196ee10e5f3d5d80530227709afb089cd4076af6aa1373a60e7",
+          "buyer_id": "COMP-0191",
+          "bid_id": "bid_CASE-0206/supply-1_002",
+          "bidder_id": "COMP-0167",
+          "lead_id": "COMP-0167",
+          "members": [
+            "COMP-0167"
+          ],
+          "price": 23205000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0167": 0.25
+          },
+          "work_shares": {
+            "COMP-0167": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "c0842cba8713c8281fbaba84ce154eeb75ff32938786702a8d6fda6eff7f1b53",
+          "terms": {
+            "schedule_commitment": "供应进度视图与施工包承包商的施工计划衔接，按分批交付里程碑执行：首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动。具体交付里程碑在合同谈判阶段细化，整体供应周期覆盖施工包施工期。",
+            "risk_response": "价格波动：以材料价格指数联动调价机制为基础，明确指数与调价周期，对不可调价部分设置风险准备。交付延迟：分批交付、备选运输承运安排及安全库存管理。质量问题：出厂质量证明文件核验、到场复检及质保期更换承诺。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0206/supply-1_002",
+              "package_id": "CASE-0206/supply-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0167",
+              "bidder_name": "中国建筑第三工程局有限公司",
+              "technical_proposal": "本投标以单一责任供应商身份，就主体结构与外立面工程包材料采购（CASE-0206/supply-1）提交材料与构配件供应方案。供应范围严格限定为：材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含施工、安装、临时工程、措施费及施工界面责任。\n\n供应团队角色计划与可用性摘要：设供应项目经理1名（统筹订单、交付与业主/施工承包商接口）、质量与证明文件主管1名（负责材料质量证明文件的编制、审核与移交纪律）、物流协调员1名（负责澳门地区到场运输与分批交付衔接）、售后与备件协调员1名（负责质保期更换与备件计划）。当前企业可用资源2.0，本包资源需求0.25，团队可用性可支撑独立投标。\n\n材料供应交付方法：按施工包承包商的施工计划编制分批到场计划，主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）与幕墙及屋面防水材料分批次、分区域交付；运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。\n\n质量保证方案与检测计划：建立材料来源审查、出厂质量证明文件核验、到场外观与规格复核的三级检查；质量证明文件按材料类别编制清单，随批次移交并留存副本；对幕墙与防水材料提供产品匹配说明及接口信息。\n\n供应进度视图与里程碑计划：以施工包施工计划为基准，设置首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动等里程碑；具体交付里程碑在合同谈判阶段细化。\n\n风险应对：材料价格波动通过材料价格指数联动调价机制管理；交付延迟通过分批交付、备选运输承运安排及安全库存管理；质量问题通过质量证明文件核验、到场复检及质保期更换承诺应对。",
+              "implementation_plan": "1. 投标阶段：确定材料产品来源与运输承运安排，编制分批到场计划与质量证明文件清单。\n2. 合同签订后：与施工包承包商确认施工进度视图，细化交付里程碑；建立订单、交付、质量证明文件与售后接口。\n3. 供应执行：按批次组织材料出厂检验与质量证明文件核验，安排运输到场，完成到场交接与文件移交。\n4. 质保期：按业主要求的质保期限与响应时限提供更换服务，维护备件计划与可维护性支持。\n5. 价格管理：按材料价格指数联动机制定期复核调价，保持报价基础透明。",
+              "quotation": 23205000.0,
+              "schedule_commitment": "供应进度视图与施工包承包商的施工计划衔接，按分批交付里程碑执行：首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动。具体交付里程碑在合同谈判阶段细化，整体供应周期覆盖施工包施工期。",
+              "compliance_statement": "业主方可对材料质量证明文件、到场检验记录、分批交付进度及质保期更换响应进行审查；我方按内部质量程序与独立检查方法提供文件与记录，配合业主方或施工包承包商的进度与质量复核。",
+              "risk_response": "价格波动：以材料价格指数联动调价机制为基础，明确指数与调价周期，对不可调价部分设置风险准备。交付延迟：分批交付、备选运输承运安排及安全库存管理。质量问题：出厂质量证明文件核验、到场复检及质保期更换承诺。",
+              "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份独立投标主体结构与外立面工程包材料采购（CASE-0206/supply-1），报价总额MOP 23,205,000，处于包预算上限以内。报价构成为：主体结构材料供货MOP 11,860,000；幕墙与屋面防水材料供货MOP 6,350,000；运输到场费用MOP 1,680,000；质量证明文件费用MOP 620,000；质保期更换与售后支持MOP 980,000；价格波动风险准备与调价机制管理MOP 720,000；供应管理、保险与杂项MOP 930,000；报价取整调整MOP 65,000。上述金额合计MOP 23,205,000。报价基础区分材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用，并设置材料价格指数联动调价机制。本报价为投标阶段估算，材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。",
+              "quotation_breakdown": [
+                {
+                  "item": "主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）供货",
+                  "amount": 11860000,
+                  "basis": "按13.5万平方米酒店塔楼及裙楼主体结构材料估算用量与当前材料价格指数1.1124测算，含出厂价与供应商管理费；属投标阶段估算，非已收到供应商报价"
+                },
+                {
+                  "item": "幕墙与屋面防水材料供货",
+                  "amount": 6350000,
+                  "basis": "按外立面幕墙及屋面防水材料估算用量与产品匹配要求测算，含产品选型与接口信息提供；属投标阶段估算"
+                },
+                {
+                  "item": "运输到场费用",
+                  "amount": 1680000,
+                  "basis": "按澳门地区到场运输、分批交付物流协调及承运安排估算，含装卸配合与到场交接"
+                },
+                {
+                  "item": "质量证明文件编制、审核与移交",
+                  "amount": 620000,
+                  "basis": "按材料类别质量证明文件清单、核验与移交纪律所需人工及文档管理估算"
+                },
+                {
+                  "item": "质保期更换与售后支持",
+                  "amount": 980000,
+                  "basis": "按业主要求质保期限内的更换服务、响应时限及备件计划支持估算"
+                },
+                {
+                  "item": "价格波动风险准备与调价机制管理",
+                  "amount": 720000,
+                  "basis": "按材料价格指数联动调价机制的操作管理及部分不可调价材料的风险准备估算"
+                },
+                {
+                  "item": "供应管理、保险与杂项",
+                  "amount": 930000,
+                  "basis": "按供应项目管理、运输保险、文件杂项及不可预见费估算"
+                },
+                {
+                  "item": "报价取整调整",
+                  "amount": 65000,
+                  "basis": "按投标报价取整至MOP 23,205,000的尾差调整，使分项合计与投标总额一致"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+                "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+                "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+                "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+            "cost_inclusion": "included_in_parent",
+            "parent_package_id": "CASE-0206/construction-1"
+          }
+        },
+        "terms_hash": "c0842cba8713c8281fbaba84ce154eeb75ff32938786702a8d6fda6eff7f1b53"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0206/supply-1": {
+          "package_type": "supplier",
+          "required_company_role": "supplier",
+          "scope": "仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+          "budget": 23205000.0,
+          "currency": "MOP",
+          "buyer_id": "COMP-0191"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMEC711881/CASE-0206/supply-1/round-1/contract",
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/supply-1",
+    "session_id": "SIMEC711881/CASE-0206/supply-1/round-1",
+    "snapshot_version": "e0197818f8b21196ee10e5f3d5d80530227709afb089cd4076af6aa1373a60e7",
+    "buyer_id": "COMP-0191",
+    "bid_id": "bid_CASE-0206/supply-1_002",
+    "bidder_id": "COMP-0167",
+    "lead_id": "COMP-0167",
+    "members": [
+      "COMP-0167"
+    ],
+    "price": 23205000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0167": 0.25
+    },
+    "work_shares": {
+      "COMP-0167": 1.0
+    },
+    "signatures": {
+      "COMP-0191": true,
+      "COMP-0167": true
+    },
+    "signed_terms_hash": "c0842cba8713c8281fbaba84ce154eeb75ff32938786702a8d6fda6eff7f1b53",
+    "terms": {
+      "schedule_commitment": "供应进度视图与施工包承包商的施工计划衔接，按分批交付里程碑执行：首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动。具体交付里程碑在合同谈判阶段细化，整体供应周期覆盖施工包施工期。",
+      "risk_response": "价格波动：以材料价格指数联动调价机制为基础，明确指数与调价周期，对不可调价部分设置风险准备。交付延迟：分批交付、备选运输承运安排及安全库存管理。质量问题：出厂质量证明文件核验、到场复检及质保期更换承诺。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0206/supply-1_002",
+        "package_id": "CASE-0206/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0167",
+        "bidder_name": "中国建筑第三工程局有限公司",
+        "technical_proposal": "本投标以单一责任供应商身份，就主体结构与外立面工程包材料采购（CASE-0206/supply-1）提交材料与构配件供应方案。供应范围严格限定为：材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含施工、安装、临时工程、措施费及施工界面责任。\n\n供应团队角色计划与可用性摘要：设供应项目经理1名（统筹订单、交付与业主/施工承包商接口）、质量与证明文件主管1名（负责材料质量证明文件的编制、审核与移交纪律）、物流协调员1名（负责澳门地区到场运输与分批交付衔接）、售后与备件协调员1名（负责质保期更换与备件计划）。当前企业可用资源2.0，本包资源需求0.25，团队可用性可支撑独立投标。\n\n材料供应交付方法：按施工包承包商的施工计划编制分批到场计划，主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）与幕墙及屋面防水材料分批次、分区域交付；运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。\n\n质量保证方案与检测计划：建立材料来源审查、出厂质量证明文件核验、到场外观与规格复核的三级检查；质量证明文件按材料类别编制清单，随批次移交并留存副本；对幕墙与防水材料提供产品匹配说明及接口信息。\n\n供应进度视图与里程碑计划：以施工包施工计划为基准，设置首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动等里程碑；具体交付里程碑在合同谈判阶段细化。\n\n风险应对：材料价格波动通过材料价格指数联动调价机制管理；交付延迟通过分批交付、备选运输承运安排及安全库存管理；质量问题通过质量证明文件核验、到场复检及质保期更换承诺应对。",
+        "implementation_plan": "1. 投标阶段：确定材料产品来源与运输承运安排，编制分批到场计划与质量证明文件清单。\n2. 合同签订后：与施工包承包商确认施工进度视图，细化交付里程碑；建立订单、交付、质量证明文件与售后接口。\n3. 供应执行：按批次组织材料出厂检验与质量证明文件核验，安排运输到场，完成到场交接与文件移交。\n4. 质保期：按业主要求的质保期限与响应时限提供更换服务，维护备件计划与可维护性支持。\n5. 价格管理：按材料价格指数联动机制定期复核调价，保持报价基础透明。",
+        "quotation": 23205000.0,
+        "schedule_commitment": "供应进度视图与施工包承包商的施工计划衔接，按分批交付里程碑执行：首批材料到场、主体结构材料分批到场、幕墙材料到场、屋面防水材料到场及质保期启动。具体交付里程碑在合同谈判阶段细化，整体供应周期覆盖施工包施工期。",
+        "compliance_statement": "业主方可对材料质量证明文件、到场检验记录、分批交付进度及质保期更换响应进行审查；我方按内部质量程序与独立检查方法提供文件与记录，配合业主方或施工包承包商的进度与质量复核。",
+        "risk_response": "价格波动：以材料价格指数联动调价机制为基础，明确指数与调价周期，对不可调价部分设置风险准备。交付延迟：分批交付、备选运输承运安排及安全库存管理。质量问题：出厂质量证明文件核验、到场复检及质保期更换承诺。",
+        "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份独立投标主体结构与外立面工程包材料采购（CASE-0206/supply-1），报价总额MOP 23,205,000，处于包预算上限以内。报价构成为：主体结构材料供货MOP 11,860,000；幕墙与屋面防水材料供货MOP 6,350,000；运输到场费用MOP 1,680,000；质量证明文件费用MOP 620,000；质保期更换与售后支持MOP 980,000；价格波动风险准备与调价机制管理MOP 720,000；供应管理、保险与杂项MOP 930,000；报价取整调整MOP 65,000。上述金额合计MOP 23,205,000。报价基础区分材料单价、运输到场费用、质量证明文件费用及质保期更换服务费用，并设置材料价格指数联动调价机制。本报价为投标阶段估算，材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担。",
+        "quotation_breakdown": [
+          {
+            "item": "主体结构材料（混凝土预制构件、钢结构构件、预应力材料等）供货",
+            "amount": 11860000,
+            "basis": "按13.5万平方米酒店塔楼及裙楼主体结构材料估算用量与当前材料价格指数1.1124测算，含出厂价与供应商管理费；属投标阶段估算，非已收到供应商报价"
+          },
+          {
+            "item": "幕墙与屋面防水材料供货",
+            "amount": 6350000,
+            "basis": "按外立面幕墙及屋面防水材料估算用量与产品匹配要求测算，含产品选型与接口信息提供；属投标阶段估算"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 1680000,
+            "basis": "按澳门地区到场运输、分批交付物流协调及承运安排估算，含装卸配合与到场交接"
+          },
+          {
+            "item": "质量证明文件编制、审核与移交",
+            "amount": 620000,
+            "basis": "按材料类别质量证明文件清单、核验与移交纪律所需人工及文档管理估算"
+          },
+          {
+            "item": "质保期更换与售后支持",
+            "amount": 980000,
+            "basis": "按业主要求质保期限内的更换服务、响应时限及备件计划支持估算"
+          },
+          {
+            "item": "价格波动风险准备与调价机制管理",
+            "amount": 720000,
+            "basis": "按材料价格指数联动调价机制的操作管理及部分不可调价材料的风险准备估算"
+          },
+          {
+            "item": "供应管理、保险与杂项",
+            "amount": 930000,
+            "basis": "按供应项目管理、运输保险、文件杂项及不可预见费估算"
+          },
+          {
+            "item": "报价取整调整",
+            "amount": 65000,
+            "basis": "按投标报价取整至MOP 23,205,000的尾差调整，使分项合计与投标总额一致"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料产品来源与运输承运安排按正常供应组织在投标阶段确定，不构成组合体或包级责任分担",
+          "报价中的价格调整机制以材料价格指数联动为基础，具体指数与调价周期在投标文件中明确",
+          "质保期更换服务按业主要求的质保期限与响应时限承诺，具体条款以投标文件为准",
+          "供应进度视图与施工包承包商的施工计划衔接，交付里程碑在合同谈判阶段细化"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "仅为施工包「主体结构与外立面工程包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+      "cost_inclusion": "included_in_parent",
+      "parent_package_id": "CASE-0206/construction-1"
+    }
+  }
+}

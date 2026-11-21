@@ -1,0 +1,2326 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMC47C6B63/CASE-0003/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 44625000.0,
+      "project": {
+        "project_id": "CASE-0003",
+        "name": "九澳水库扩容建造工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0003/construction-2",
+        "project_id": "CASE-0003",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "机电设备与供水管线安装包",
+        "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+        "budget": 44625000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0003/design",
+          "CASE-0003/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0025",
+          "COMP-0493"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0003",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMC47C6B63/CASE-0003/cost/round-1/contract",
+              "project_id": "CASE-0003",
+              "package_id": "CASE-0003/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1970000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+              "project_id": "CASE-0003",
+              "package_id": "CASE-0003/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4480000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMC47C6B63/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "package_id": "CASE-0003/design",
+            "contract_id": "SIMC47C6B63/CASE-0003/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 4480000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "package_id": "CASE-0003/cost",
+            "contract_id": "SIMC47C6B63/CASE-0003/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 1970000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0003",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIMC47C6B63/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0003",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "f0c1ee5447057a4e8f56f5168a95dc36db8d30e720b1115fa71891c60d917fde"
+  },
+  "spec": {
+    "package_id": "CASE-0003/construction-2",
+    "project_id": "CASE-0003",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "机电设备与供水管线安装包",
+    "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+    "budget": 44625000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0003/design",
+      "CASE-0003/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0025",
+      "COMP-0493"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0003",
+      "project_name": "九澳水库扩容建造工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；库容由34万增至74万立方米；九澳水库扩容建造工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0003",
+      "project_scope": "九澳水库扩容建造工程为市政与公共基础设施项目，库容由34万立方米增至74万立方米，采用DBB交付模式，总预算MOP 150,000,000，工期24个月。本次业主模拟招标包为CASE-0003/construction-2机电设备与供水管线安装包，范围包括泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试，不含坝体与库盆土建开挖。业主将按授权范围仅细化该包，并保持与设计包CASE-0003/design及成本咨询包CASE-0003/cost的接口协调。",
+      "functional_requirements": [
+        "泵站机电设备须满足水库扩容后74万立方米库容的运行调度需求，具备可靠启停与故障保护功能。",
+        "闸门与启闭机须实现库水位调节与应急泄放功能，操作逻辑清晰且具备手动应急操作能力。",
+        "监测仪表须覆盖水位、流量、压力及设备状态，数据可接入业主既有或新建监控平台。",
+        "临时供水管线须保障施工期供水不中断，永久供水管线须满足扩容后输配水能力与水质要求。",
+        "安装与调试须分阶段进行，确保与土建包界面清晰，调试完成后进行系统联调与性能验证。",
+        "设备选型须考虑澳门高湿高盐环境下的耐久性与可维护性，关键部件便于更换。"
+      ],
+      "technical_requirements": [
+        "BIM协调：机电设备与管线安装须与设计包BIM模型协调，预留孔洞、预埋件及管线综合须在施工前完成碰撞检查。",
+        "MEP协调：泵站机电、闸门启闭机、监测仪表与供水管线须进行多专业综合协调，明确电气、控制、水力接口。",
+        "结构协调：设备基础、支撑及管线支吊架须与土建结构协调，荷载与预埋要求须经设计确认。",
+        "交通接口：设备运输与吊装须考虑九澳水库现场道路条件及临时交通安排，避免影响公共道路使用。",
+        "公共通道布局：施工期间须维持水库管理通道及公共安全通道，临时围封不得阻断应急通行。",
+        "耐久性目标：设备与管线材料须适应澳门气候，关键金属部件防腐等级须满足长期运行要求。",
+        "可维护性目标：设备布置须预留检修空间，阀门、仪表及启闭机须便于日常检查与更换。",
+        "业主验收路径：分项调试、系统联调、性能测试及竣工资料须按业主审查节点逐项验收。",
+        "能耗目标：泵站与闸门启闭机选型须考虑运行能耗，优先选择高效节能设备。"
+      ],
+      "budget_policy": "本包预算为MOP 44,625,000，属业主额外成本，报价须为含税总价并分列设备、安装、调试及备品备件费用。业主将按定性比较原则评审价格合理性，不单纯以最低价判给，须结合能力匹配、风险控制与交付信心综合判断。预算变更须按DBB宏观审批程序处理。",
+      "schedule_policy": "总工期24个月，本包安装与调试须与设计包及土建包接口时间匹配。业主将审查投标方进度计划的里程碑现实性，预留业主审查时间、包间接口协调时间及公共通道协调时间。关键设备采购周期须在计划中明确，调试与联调须预留足够时间。",
+      "compliance_requirements": [
+        "业主审查节奏：按月度进度会与关键节点审查会进行，投标方须提交周报与月报。",
+        "问题升级路径：现场问题须在24小时内报告业主代表，重大接口问题须提交业主协调会。",
+        "文档纪律：设备资料、调试记录、验收文件须按业主文档管理要求编号归档。",
+        "接口签认：与设计包、土建包及成本咨询包的接口须经各方签认后方可施工。",
+        "公共通道协调：施工围封与运输安排须提前提交业主及相关部门协调。",
+        "质量目标跟踪：业主将按分项验收节点跟踪质量目标达成情况。",
+        "安全期望跟踪：业主将跟踪投标方安全管理表现，包括高风险作业许可与现场巡查记录。",
+        "变更控制纪律：任何范围或预算变更须经业主书面批准，未经批准不得实施。"
+      ],
+      "risk_priorities": [
+        "接口风险：机电安装与土建、设计包之间的界面不清可能导致返工，须优先协调。",
+        "供货风险：关键设备（闸门、启闭机、泵组）交货延迟可能影响工期，须审查供货计划与备选方案。",
+        "调试风险：系统联调不充分可能影响水库运行，须审查调试方案与性能验证计划。",
+        "公共安全风险：施工期间须维持公共通道与应急通行，围封与运输须严格控制。",
+        "价格风险：材料价格波动可能影响报价合理性，业主将关注价格基准与调价机制。",
+        "能力匹配风险：投标方须具备机电安装与调试的团队配置与类似经验，业主将定性比较能力匹配度。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0003/construction-2",
+          "package_type": "contractor",
+          "package_name": "机电设备与供水管线安装包",
+          "scope": "Authorized scope: 泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。\nBuyer refinement: 泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "泵站机电安装与调试能力",
+            "闸门与启闭机安装调试能力",
+            "监测仪表集成与校准能力",
+            "供水管线安装与试压能力",
+            "MEP多专业协调能力",
+            "与土建及设计包接口协调能力",
+            "质量文档管理能力",
+            "现场安全管理能力",
+            "澳门本地施工物流与运输协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "机电安装与调试交付方法",
+            "质量保证方案",
+            "价格基准与分项报价",
+            "进度计划视图与里程碑",
+            "风险应对方案",
+            "与设计包及土建包接口协调方案",
+            "公共通道协调与临时交通安排"
+          ],
+          "pricing_requirements": "含税总价报价，分列设备费、安装费、调试费、备品备件费及临时设施费；业主将按定性比较原则评审价格合理性。\nBinding currency: MOP; package ceiling: 44625000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标方的能力匹配、价格合理性、风险控制与交付信心，综合判断后判给最符合本包需求的投标方。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0003/construction-2",
+        "package_type": "contractor",
+        "package_name": "机电设备与供水管线安装包",
+        "scope": "Authorized scope: 泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。\nBuyer refinement: 泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "泵站机电安装与调试能力",
+          "闸门与启闭机安装调试能力",
+          "监测仪表集成与校准能力",
+          "供水管线安装与试压能力",
+          "MEP多专业协调能力",
+          "与土建及设计包接口协调能力",
+          "质量文档管理能力",
+          "现场安全管理能力",
+          "澳门本地施工物流与运输协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "机电安装与调试交付方法",
+          "质量保证方案",
+          "价格基准与分项报价",
+          "进度计划视图与里程碑",
+          "风险应对方案",
+          "与设计包及土建包接口协调方案",
+          "公共通道协调与临时交通安排"
+        ],
+        "pricing_requirements": "含税总价报价，分列设备费、安装费、调试费、备品备件费及临时设施费；业主将按定性比较原则评审价格合理性。\nBinding currency: MOP; package ceiling: 44625000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标方的能力匹配、价格合理性、风险控制与交付信心，综合判断后判给最符合本包需求的投标方。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与关键路径，习惯把扩容目标拆成可验证的里程碑。他最先注意到的是承包商资源是否与24个月工期匹配，容易在讨论中把话题拉回进度与接口风险，带来进度优先与质量成本之间的张力。",
+          "responsibilities": [
+            "统筹九澳水库扩容工程整体交付目标",
+            "主持招标包划分与组合体方案评审",
+            "协调设计、施工与监管服务接口",
+            "跟踪工期与关键里程碑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列依据，偏好用里程碑表和风险清单说话。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_梁美玲",
+          "agent_name": "梁美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与支付节点是否自洽。她最先注意到预算1.5亿MOP与各包报价之间的偏差，倾向在讨论中质疑低价风险与支付评审安排，带来成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制与复核采购预算及价格基础",
+            "组织支付评审与成本审查",
+            "评估投标报价合理性与风险准备",
+            "监控变更与成本偏差"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数据与对比说话，对模糊表述会追问依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "agent_name": "黄嘉豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "技术与设计协调",
+          "position": "设计协调与质量经理",
+          "personal_profile": "工程思维强，压力下先看技术方案是否满足扩容后的运行与安全要求。他最先注意到设计深度、独立复核与质量目标跟踪是否落实，讨论中常坚持技术审查不可压缩，带来质量要求与工期成本之间的张力。",
+          "responsibilities": [
+            "协调设计与施工技术接口",
+            "组织质量目标跟踪与独立复核",
+            "审查技术方案与规范符合性",
+            "推动可持续发展目标落实"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨细致，偏好用技术依据和检查清单沟通，对简化审查的提议会明确保留意见。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "招标与合约统筹",
+          "personal_profile": "程序意识强，压力下先确认招标程序与文件纪律是否完整。她最先注意到投标资格、评标标准与判给理由的可追溯性，讨论中倾向放慢节奏确保合规，带来程序严谨与决策效率之间的张力。",
+          "responsibilities": [
+            "统筹招标包文件与评标安排",
+            "维护文档纪律与判给记录",
+            "协调组合体与监管服务采购安排",
+            "组织开标与评标流程"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "稳健克制，按程序步骤陈述，强调记录与依据，避免仓促表态。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "对外协调与风险",
+          "position": "业主代表与风险协调",
+          "personal_profile": "善于换位思考，压力下先看各方诉求与公众影响。他最先注意到利益相关方沟通与风险应对是否到位，讨论中常提醒预留协商空间，带来外部协调与内部管控之间的张力。",
+          "responsibilities": [
+            "负责业主接口与利益相关方协调",
+            "组织风险识别与风险应对预案",
+            "汇总现场报告与进度通报",
+            "协调监管服务与社区沟通"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "温和务实，先倾听再归纳，用情景与影响说明推动共识。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先判断整体工期与资源匹配，先关注投标包与公司能力的契合度及业主审查要求。讨论中倾向推动快速形成可执行方案，但会因过度聚焦进度而低估质量与安全细节，常与质量负责人产生张力。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "主持内部评审与最终投标决策",
+            "对接业主与关键利益相关方",
+            "监控工期与成本控制目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，偏好结论先行，常用简短指令推动讨论。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本部",
+          "position": "商务经理",
+          "personal_profile": "对报价基础与支付审查高度敏感，先核对成本构成与现金流风险。压力下倾向保守报价以保障利润，但可能低估竞争性，与项目总监的进取策略形成张力。",
+          "responsibilities": [
+            "编制报价基础与成本审查",
+            "评估支付审查与资金安排",
+            "协调分包与采购商务条款",
+            "跟踪成本控制与变更管理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致谨慎，善用数据与条款说明立场，语速平稳。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "面对技术难题时先分析设计协调与施工可行性，注重方案可实施性。压力下坚持技术标准，可能因追求完美而拖慢决策，与商务的务实取向产生摩擦。",
+          "responsibilities": [
+            "审核设计协调与施工方案",
+            "评估技术能力匹配与风险应对",
+            "监督质量目标与独立检查",
+            "协调现场技术问题与文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "逻辑严谨，喜欢用技术依据说话，表达清晰但有时过于详细。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与安全部",
+          "position": "质量安全经理",
+          "personal_profile": "首先关注质量目标与安全合规，对文档纪律和独立检查有执念。压力下坚持按程序办事，可能被视为拖慢进度，与项目总监的快速推进形成持续张力。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场安全与合规",
+            "管理质量文档与记录",
+            "组织内部质量审查"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理分明，强调程序与证据，语气坚定但不失礼貌。"
+        },
+        {
+          "agent_id": "COMP-0153_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "资源与计划部",
+          "position": "资源计划经理",
+          "personal_profile": "优先评估团队可用性与资源分配，善于从进度视角发现瓶颈。压力下倾向争取更多资源，可能忽视成本约束，与商务经理在资源投入上常有分歧。",
+          "responsibilities": [
+            "编制团队可用性摘要与角色计划",
+            "协调设备与材料供应计划",
+            "监控进度与资源负荷",
+            "支持风险应对与调度"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实灵活，常用图表与时间线沟通，善于协调但有时过于乐观。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源匹配，习惯先确认关键路径和外部依赖。对业主接口和监管审批节奏敏感，常提醒团队不要低估跨部门协调时间。讨论中倾向于推动快速决策，但会因过度聚焦进度而忽略细节风险。",
+          "responsibilities": [
+            "统筹投标包整体交付策略与资源规划",
+            "业主与监管方高层接口协调",
+            "监督工期与关键节点达成",
+            "主持内部风险评审与决策会议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，偏好结构化汇报，常用里程碑和风险清单推动讨论。"
+        },
+        {
+          "agent_id": "COMP-0025_02_黄丽芳",
+          "agent_name": "黄丽芳",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价依据和付款条件高度敏感，习惯逐项核对成本构成与现金流影响。在讨论中会反复确认变更和索赔机制，担心低价风险。倾向于保守报价，但可能因过度谨慎而降低竞争力。",
+          "responsibilities": [
+            "编制报价基础与成本分解",
+            "审核合同条款与付款安排",
+            "评估分包与采购价格合理性",
+            "监控项目现金流与成本控制"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、谨慎，善用数字和条款依据，常以书面形式确认关键商务事项。"
+        },
+        {
+          "agent_id": "COMP-0025_03_李国华",
+          "agent_name": "李国华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，首先关注施工可行性、土方平衡和地基处理风险。对资源调度和工序衔接有直觉判断，但容易低估行政流程耗时。讨论中常提出替代施工方案，有时与商务保守立场产生张力。",
+          "responsibilities": [
+            "制定施工方案与进度计划",
+            "评估坝基处理与土方工程可行性",
+            "协调现场资源与分包作业",
+            "监督质量目标与安全措施落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实、具体，喜欢用现场案例和工序图说明问题，语言简练。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "对质量目标和合规要求极为坚持，习惯先识别潜在缺陷和监管红线。在压力下会放慢节奏以确保检查到位，但可能被视为拖累进度。讨论中常提醒文档纪律和独立检查的重要性。",
+          "responsibilities": [
+            "建立质量与安全管理体系",
+            "组织内部质量审查与独立检查",
+            "跟踪整改项与合规文档",
+            "对接监管机构质量安全要求"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、有条理，偏好检查表和标准条款，语气坚定但合作。"
+        },
+        {
+          "agent_id": "COMP-0025_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，首先关注图纸可施工性和接口一致性。对设计变更敏感，倾向于提前澄清模糊点。讨论中可能因追求设计优化而低估现场执行难度。",
+          "responsibilities": [
+            "协调设计方与施工团队接口",
+            "审核施工图与设计可施工性",
+            "管理设计变更与技术澄清",
+            "支持投标技术方案编制"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "分析型、注重细节，常用图纸和对比方案沟通，语气平和。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与资源匹配，习惯用里程碑倒推关键路径；对业主接口和跨部门协调敏感，但容易低估现场执行细节，常在讨论中把话题拉回合同边界与风险分担。",
+          "responsibilities": [
+            "统筹投标包整体交付策略与资源计划",
+            "对接业主与监管方，管理外部接口",
+            "主持内部评审，平衡成本、工期与质量目标",
+            "监控关键里程碑与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先结论后依据，习惯用里程碑和风险清单推进讨论。"
+        },
+        {
+          "agent_id": "COMP-0493_02_黄丽华",
+          "agent_name": "黄丽华",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和条款高度敏感，报价前先核对价格基础与支付条件；在压力下倾向保守报价以覆盖不确定性，会反复追问成本假设与变更机制，容易与追求进度的同事产生张力。",
+          "responsibilities": [
+            "编制报价与价格基础说明",
+            "审核合同条款与支付评审安排",
+            "管理分包询价与成本控制",
+            "评估现金流与财务风险"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，善用表格与对比，强调数字依据和合同边界。"
+        },
+        {
+          "agent_id": "COMP-0493_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "到现场先看土方平衡、边坡稳定和施工通道，关注可施工性与班组排班；对图纸深度和地质条件变化警觉，常提出替代工法，但有时低估审批与协调时间。",
+          "responsibilities": [
+            "制定施工方案与进度视图",
+            "管理土方、坝体与边坡作业",
+            "协调现场资源与分包班组",
+            "落实安全与环保措施"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实具体，多用现场实例和工序逻辑说明问题。"
+        },
+        {
+          "agent_id": "COMP-0493_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量经理",
+          "personal_profile": "首先关注质量目标与独立检查安排，对文档纪律和可追溯性要求严格；压力下坚持先验证后放行，容易被视为拖慢进度，但能守住质量底线。",
+          "responsibilities": [
+            "建立质量目标与检查计划",
+            "组织独立检查与质量评审",
+            "管理质量文档与记录纪律",
+            "跟踪整改与闭环"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，习惯用检查清单和证据说话。"
+        },
+        {
+          "agent_id": "COMP-0493_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "先看设计意图与施工可行性的衔接，关注设计变更对成本和工期的影响；善于在设计与施工之间翻译需求，但有时过度追求优化而忽略现场约束。",
+          "responsibilities": [
+            "协调设计与施工界面",
+            "评审设计可施工性与变更影响",
+            "管理设计文档与版本控制",
+            "支持投标技术方案编制"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "善于用图纸和界面图沟通，强调设计意图与现场条件的匹配。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们公司是中交第一航务工程局，作为承包商，本次招标包是九澳水库扩容工程中的机电设备与供水管线安装包，预算约4462.5万MOP，工期包含在24个月项目内。从企业资料看，我们具备建设工程施工、普通机械设备安装、电子机械设备维护、电气设备销售、信息系统集成等许可，机电安装与调试、供水管线安装、监测仪表集成这些核心能力在资质层面是覆盖的。资源方面，当前可用资源2.0，占用0，本包需求0.7，资源上完全有余量，不存在容量挤压。内部讨论没有提出任何硬性资格缺口或必须联合才能承担的问题。这个包不含坝体与库盆土建开挖，边界清晰，我们作为单一责任承包商可以主导现场管理、安全、进度、接口协调和分包控制。闸门启闭机、监测仪表等专业设备可以通过常规设备供应商和专业分包解决，这属于正常的分包与采购安排，不构成需要共享投标人身份和责任分担的组合体理由。价格上业主按定性比较评审合理性，我们需要把设备费、安装费、调试费、备品备件费和临时设施费分列清楚，价格基准要经得起审查。风险主要是与设计包、土建包的接口协调以及澳门本地物流运输，但这些都可以通过接口协调方案、进度里程碑和风险应对方案来管理。综合判断，这是一个与公司能力匹配、资源可承受、战略上值得争取的包，应当以单一责任投标人身份独立投标，而不是引入组合体削弱我们的主导地位。",
+        "content": "管理层决定：以中交第一航务工程局有限公司单一责任投标人身份参与九澳水库扩容建造工程机电设备与供水管线安装包投标。投标文件将围绕角色计划与团队可用性摘要、机电安装与调试交付方法、质量保证方案、价格基准与分项报价、进度计划视图与里程碑、风险应对方案、与设计包及土建包接口协调方案、公共通道协调与临时交通安排组织。报价采用含税总价，分列设备费、安装费、调试费、备品备件费及临时设施费，并按定性比较原则强化价格合理性说明。专业设备与专项安装拟通过常规设备供应与专业分包安排落实，作为投标假设在文件中明确责任边界与接口管理，公司保留对现场安全、进度、质量记录和分包控制的统一责任。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:16",
+        "verification_requests": [
+          {
+            "question": "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们得宝国际是本地总承包企业，有设计建造、施工前咨询、项目及施工管理能力，也有给排水、基础设施、海事等覆盖，管理体系认证齐全。这个包是泵站机电设备、闸门启闭机、监测仪表、供水管线安装调试，不含土建开挖，属于我们总承包可以牵头管理的机电安装类工作。资源上我们可用资源2.0，占用0，包需求0.7，容量充足，不存在必须靠外部伙伴共享投标身份的压力。机电多专业协调、与设计包和土建包接口、公共通道与临时交通安排，这些正是总承包该管的，可以通过分包商和供应商配合、由我们作为单一责任主体来承担。价格上限4462.5万MOP，需要分列设备、安装、调试、备品备件和临时设施，我们成本估算能力足够做价格基准，但设备报价目前只是草案估算，不是已收到的供应商报价，投标时要明确这一假设。风险上主要是机电专业深度和调试责任，但这是定价、方法和人员配置问题，不是必须组组合体的问题。我判断可以独立投标，作为单一责任主体牵头，用常规分包和供应商支持补足专业执行，同时把接口协调、质量文档、现场安全抓在自己手里。",
+        "content": "管理层决定：就九澳水库扩容建造工程机电设备与供水管线安装包（CASE-0003/construction-2）以得宝国际有限公司名义独立投标，担任单一责任主体。投标文件将包含角色计划与团队可用性摘要、机电安装与调试交付方法、质量保证方案、价格基准与分项报价、进度计划视图与里程碑、风险应对方案、与设计包及土建包接口协调方案、公共通道协调与临时交通安排。报价按含税总价编制，分列设备费、安装费、调试费、备品备件费及临时设施费，控制在4462.5万MOP上限内，并按业主定性比较原则准备价格合理性说明。专业机电执行拟通过常规分包与设备供应商支持落实，由我方统一管理接口、质量文档、现场安全与付款协调；设备报价目前为草案估算，尚未取得供应商正式报价，将在投标中作为价格假设列明。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:12",
+        "verification_requests": [
+          {
+            "question": "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+            "required_before_submission": false
+          },
+          {
+            "question": "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为本地总承包企业，这个机电设备与供水管线安装包在业务方向上并不陌生，泵站机电、闸门启闭机、供水管线安装调试都属于我们基础设施与给排水经验可以覆盖的范畴，而且资源占用为零、可用资源2.0对需求0.7有充足余量。但必须清醒：这个包是纯机电安装与调试，核心是泵站机电、闸门启闭机、监测仪表集成校准，这些专业能力在我们现有团队里没有明确的人员可用性证据，只有体系认证和宽泛的行业覆盖描述。招标包上限4462.5万澳门元，占项目预算近三成，业主按定性比较评审价格合理性，意味着报价基准和分项拆分必须扎实，不能靠粗估。我的判断是：我们能够作为单一责任投标人牵头，通过常规专业分包和供应商安排补齐机电安装、仪表校准等窄口径缺口，这属于正常的投标风险，应在方法论、人员计划、质量方案和风险应对中处理，而不是把责任主体让渡出去。因此选择独立投标，同时在投标文本中明确接口协调、分包管理与责任流下的安排，并把设备报价与安装调试费分开列示。",
+        "content": "管理层决定：就九澳水库扩容建造工程机电设备与供水管线安装包以得宝建筑集团有限公司名义独立投标。定位为单一责任总承包投标人，牵头泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试，不含坝体与库盆土建开挖。交付方法上，按泵站机电安装调试、闸门启闭机安装调试、仪表集成校准、管线安装试压四条工作线组织，设置与设计包、土建包的接口协调矩阵和公共通道及临时交通安排。质量方面依托ISO 9001、14001、45001体系，建立安装记录、试压记录、校准证书与竣工文档的文档纪律和内部复核节点。价格按含税总价报价，分列设备费、安装费、调试费、备品备件费及临时设施费，以分项价格基准支撑业主的定性比较评审。人员与专业分包安排以角色计划与团队可用性摘要形式提交，专业分包与设备供应属常规投标假设，由我方统一控制进度、安全与质量记录。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:11",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "专业设备（闸门启闭机、监测仪表）拟通过常规设备供应商采购，专项安装作业拟通过专业分包实施，均由公司作为单一责任投标人统一管理现场安全、进度、质量记录与分包控制；相关供应商与分包报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺\n按授权范围设备清单估算，含常规设备供应商采购预算基准与运保费用；供应商报价尚未确认，属预算性估算\n专业设备供货与价格波动风险：闸门启闭机、监测仪表通过常规设备供应商采购，投标阶段以询价与预算基准体现，尚未形成已确认供货承诺；报价中已计提风险与价格调整预备费，设备价格若出现重大波动按合同调整机制协商\n**价格基准说明**：设备费按授权范围设备清单与常规供应商预算基准估算，供应商报价尚未确认，属预算性估算；安装费按作业面分区工程量与班组工日编制；调试费按三阶段调试人员投入与校准服务编制；风险预备费针对设备价格波动、接口移交延误与本地物流协调计提\n**待落实事项**：闸门与启闭机、监测仪表等专业设备的供应商与报价尚待询价确认，作为投标假设在文件中明确，不影响本次提交\n闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:36:49",
+        "verification_requests": [
+          {
+            "question": "专业设备（闸门启闭机、监测仪表）拟通过常规设备供应商采购，专项安装作业拟通过专业分包实施，均由公司作为单一责任投标人统一管理现场安全、进度、质量记录与分包控制；相关供应商与分包报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺",
+            "required_before_submission": false
+          },
+          {
+            "question": "按授权范围设备清单估算，含常规设备供应商采购预算基准与运保费用；供应商报价尚未确认，属预算性估算",
+            "required_before_submission": false
+          },
+          {
+            "question": "专业设备供货与价格波动风险：闸门启闭机、监测仪表通过常规设备供应商采购，投标阶段以询价与预算基准体现，尚未形成已确认供货承诺；报价中已计提风险与价格调整预备费，设备价格若出现重大波动按合同调整机制协商",
+            "required_before_submission": false
+          },
+          {
+            "question": "**价格基准说明**：设备费按授权范围设备清单与常规供应商预算基准估算，供应商报价尚未确认，属预算性估算；安装费按作业面分区工程量与班组工日编制；调试费按三阶段调试人员投入与校准服务编制；风险预备费针对设备价格波动、接口移交延误与本地物流协调计提",
+            "required_before_submission": false
+          },
+          {
+            "question": "**待落实事项**：闸门与启闭机、监测仪表等专业设备的供应商与报价尚待询价确认，作为投标假设在文件中明确，不影响本次提交",
+            "required_before_submission": false
+          },
+          {
+            "question": "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "监测仪表：由具备相应能力的专业供应商配合完成集成与校准，我方统一管理接口、点表、回路校验记录与校准证书归档；具体供应商安排为投标假设，待投标后确认\n按草案估算编制的设备采购估算，含泵组、电气盘柜、控制系统、闸门与启闭机、监测仪表；尚未取得供应商正式报价，属投标价格假设，中标后按确认报价调整采购安排\n监测仪表集成与校准：拟由具备相应能力的专业供应商配合，具体安排待投标后确认，属投标假设；我方统一管理点表、校准证书与联锁验证\n价格构成说明：设备费按草案估算编制，尚未取得供应商正式报价，属投标价格假设；机电安装与调试拟通过常规专业分包执行，由我方统一管理接口、质量、安全与付款协调；监测仪表集成与校准拟由具备相应能力的专业供应商配合，具体安排待投标后确认\n设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排\n监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:36:41",
+        "verification_requests": [
+          {
+            "question": "监测仪表：由具备相应能力的专业供应商配合完成集成与校准，我方统一管理接口、点表、回路校验记录与校准证书归档；具体供应商安排为投标假设，待投标后确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "按草案估算编制的设备采购估算，含泵组、电气盘柜、控制系统、闸门与启闭机、监测仪表；尚未取得供应商正式报价，属投标价格假设，中标后按确认报价调整采购安排",
+            "required_before_submission": false
+          },
+          {
+            "question": "监测仪表集成与校准：拟由具备相应能力的专业供应商配合，具体安排待投标后确认，属投标假设；我方统一管理点表、校准证书与联锁验证",
+            "required_before_submission": false
+          },
+          {
+            "question": "价格构成说明：设备费按草案估算编制，尚未取得供应商正式报价，属投标价格假设；机电安装与调试拟通过常规专业分包执行，由我方统一管理接口、质量、安全与付款协调；监测仪表集成与校准拟由具备相应能力的专业供应商配合，具体安排待投标后确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+            "required_before_submission": false
+          },
+          {
+            "question": "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:36:44",
+        "verification_requests": [
+          {
+            "question": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000007",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0003/construction-2",
+        "agent_id": "OWNER-4048bdd520aa7f_05_何俊杰",
+        "agent_name": "何俊杰",
+        "department": "对外协调与风险",
+        "position": "业主代表与风险协调",
+        "message_type": "decision",
+        "thoughts": "三家报价都贴近包上限，价格差异不是取舍关键，真正的风险在于设备与备品备件供应商报价尚未固化，以及专业分包的实际能力需要核实。得宝建筑集团有限公司以单一责任总承包身份按四条工作线组织，每条工作线设专职负责人并由项目总监统一协调，接口矩阵和定期协调会议对设计包、土建包界面管理具体，风险预留与项目管理费配置较充分，文档纪律突出，整体交付信心和业主审查便利性最好。中交第一航务报价略超包上限，得宝国际有限公司的机电专业深度主要依托分包，两者在责任界面清晰度和风险覆盖上不如得宝建筑集团。我接受评标推荐，判给得宝建筑集团有限公司，并在合同前聚焦固化设备与备品备件供应商正式报价、提交工作线负责人到岗确认，以及核实受控专业分包的实际能力，这些澄清不改变判给结果。",
+        "content": "经综合评标与业主审查，本包判给得宝建筑集团有限公司，其报价MOP 44,620,000低于包上限，以单一责任总承包身份按四条工作线设专职负责人并由项目总监统一协调，接口矩阵与定期协调会议对设计包、土建包界面管理具体，风险预留与文档纪律较充分。合同前澄清重点为固化设备与备品备件供应商正式报价、提交工作线负责人到岗确认，以及核实受控专业分包的实际能力，相关澄清安排与业主审查节点一致。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:37:11",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0003/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，本机电设备与供水管线安装包与公司承包商定位和能力结构相符：机电安装调试、供水管线安装试压、监测仪表集成、现场安全与质量文档管理均在可承担范围内，且不含坝体与库盆土建开挖，边界清晰。当前可用资源2.0、占用0，本包需求0.7，资源余量充足，不存在容量冲突。闸门启闭机、监测仪表等专业设备与安装可通过常规设备供应和专业分包安排解决，属于正常的分包与采购管理，不构成需要共享投标人身份的组合体情形。公司有能力作为单一责任投标人主导现场管理、安全、进度、接口协调与分包控制。价格按含税总价并分列设备费、安装费、调试费、备品备件费和临时设施费编制，配合定性比较原则强化价格合理性论证。主要风险为与设计包及土建包的接口协调和本地物流运输，将通过接口协调方案、进度里程碑和风险应对方案管理。综合商业价值、能力匹配与风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [
+          "condition_d2e75d280258836c5a43"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺。",
+          "部分专项安装作业拟通过专业分包实施，分包范围与接口责任在投标文件中明确，由公司作为单一责任投标人统一管理。",
+          "与设计包及土建包的接口协调按业主提供的接口界面和进度里程碑推进，具体协调机制在投标方案中提出。",
+          "澳门本地物流与运输协调按常规施工物流安排，临时交通与公共通道安排纳入投标方案。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0025",
+        "package_id": "CASE-0003/construction-2",
+        "decision": "bid",
+        "reason": "经管理层研判，本包属于泵站机电与供水管线安装调试，不含坝体与库盆土建开挖，与我方总承包、给排水及基础设施业务方向契合。我方可用资源2.0、占用0，包需求0.7，团队可用性足以支撑独立投标并担任单一责任主体。机电多专业协调、与设计包及土建包接口、公共通道与临时交通安排，均属总承包可控范围，可通过常规专业分包与设备供应商配合落实，不需要共享投标身份或让渡包级交付责任。价格上限4462.5万MOP，我方具备价格基准与分项报价能力，将按设备费、安装费、调试费、备品备件费及临时设施费分列，并以定性比较原则组织报价合理性说明。主要风险在于机电专业深度与调试责任，将通过角色计划、交付方法、质量保证方案、进度里程碑与风险应对方案加以控制，并在投标中明确设备报价为草案估算、分包安排为投标假设。综合机会价值、能力匹配、容量余量与风险承受度，决定以单一责任主体身份独立投标。",
+        "unresolved_condition_ids": [
+          "condition_62ab57d4fdeb6f5043a6",
+          "condition_271f86a501781bb1e66e"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+          "机电专业安装与调试拟通过常规专业分包执行，由得宝国际作为单一责任主体统一管理接口与质量",
+          "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+          "与设计包及土建包的接口协调由我方牵头，按业主与设计方确认的界面划分执行",
+          "临时供水管线与公共通道协调安排以现场条件及业主审批为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0003/construction-2",
+        "decision": "bid",
+        "reason": "本包属于公司基础设施与给排水业务方向的合理延伸，资源余量充足，具备作为单一责任总承包投标人的管理能力与体系基础。机电安装、闸门启闭机、监测仪表校准等专业环节可通过受控的专业分包与设备供应商安排落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成需要共享投标人身份与包级交付责任的组合体情形。价格上按设备费、安装费、调试费、备品备件费及临时设施费分列，围绕4462.5万澳门元上限做定性合理性论证。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+          "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+          "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+          "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0003/construction-2_001",
+        "package_id": "CASE-0003/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标以中交第一航务工程局有限公司单一责任投标人身份提交，承担泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试的全部现场责任，不含坝体与库盆土建开挖。\n\n**角色计划与团队可用性摘要**：设项目总监1名、机电安装经理1名、调试与试运转主管1名、质量与文档主管1名、安全主任1名、接口协调工程师1名、测量与校准技术员2名、管线安装班组与电气仪表班组若干。当前企业可用资源2.0、占用0，本包需求0.7，资源余量充足，不存在容量冲突。\n\n**机电安装与调试交付方法**：按泵站机组、闸门启闭机、监测仪表、供水管线四个作业面分区推进；设备到场后执行开箱检验与安装前状态记录，管线按分段试压、冲洗消毒、并网的程序实施；调试分单机调试、联动调试、带水试运转三阶段，逐项形成调试记录与签认文件。\n\n**质量保证方案**：执行公司内部质量程序，设独立检查环节，材料与设备进场执行报审与复核，隐蔽工程与试压节点实行停检点管理，质量文档按分项工程同步归集，确保竣工资料与实体进度一致。\n\n**接口协调**：与设计包按图纸会审、技术澄清、变更确认三条线对接；与土建包按预埋件、基础交付、孔洞封堵、作业面移交的界面清单管理，设接口协调工程师统一跟踪，移交以书面签认为准。\n\n**公共通道与临时交通**：运输路线与卸货时段纳入临时交通安排，重型设备运输提前报备，现场设临时围封与行人通道指引。",
+        "implementation_plan": "第一阶段（进场与准备）：现场接收、临时设施搭设、施工组织与安全计划报审、设备与分包询价落定、图纸会审与接口界面确认。\n第二阶段（预埋与管线）：配合土建包完成预埋件与套管复核，实施临时供水管线与永久管线敷设、支架安装、分段试压。\n第三阶段（设备安装）：泵站机电设备就位与找正、闸门与启闭机安装、监测仪表安装与接线。\n第四阶段（调试）：单机调试、联动调试、仪表校准、带水试运转与性能验证。\n第五阶段（收尾）：备品备件移交、竣工文档归集、缺陷责任期响应安排。\n\n专业设备（闸门启闭机、监测仪表）拟通过常规设备供应商采购，专项安装作业拟通过专业分包实施，均由公司作为单一责任投标人统一管理现场安全、进度、质量记录与分包控制；相关供应商与分包报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺。",
+        "quotation": 44690000.0,
+        "schedule_commitment": "总工期按项目24个月框架内安排，机电与管线安装及调试净工期约14个月，分五阶段推进：进场准备2个月、预埋与管线4个月、设备安装4个月、调试试运转3个月、收尾移交1个月。关键里程碑为：管线分段试压完成、泵站设备就位完成、闸门启闭机安装完成、联动调试完成、带水试运转合格。与土建包的作业面移交节点作为进度控制关键路径管理，接口延误按书面记录提出工期影响。",
+        "compliance_statement": "接受业主按定性比较原则评审价格合理性，报价为含税总价并分列设备费、安装费、调试费、备品备件费及临时设施费，价格基准与工程量、班组投入、调试阶段安排逐项对应。配合业主的图纸审查、材料报审、停检点检查与进度审核；质量文档按分项同步提交，调试记录与试运转数据完整移交。接口界面以业主提供的界面清单与进度里程碑为准，变更按书面确认程序处理。",
+        "risk_response": "主要风险及应对：\n1. 与设计包、土建包接口协调风险：设专职接口协调工程师，建立界面清单与书面移交签认制度，预埋件与基础交付提前复核。\n2. 专业设备供货与价格波动风险：闸门启闭机、监测仪表通过常规设备供应商采购，投标阶段以询价与预算基准体现，尚未形成已确认供货承诺；报价中已计提风险与价格调整预备费，设备价格若出现重大波动按合同调整机制协商。\n3. 本地物流与运输协调风险：重型设备运输提前报备路线与时段，纳入临时交通安排，现场设临时仓储减少二次搬运。\n4. 调试与试运转风险：分阶段调试并逐项签认，带水试运转前完成单机与联动验证，避免集中暴露问题。\n5. 分包控制风险：专项安装分包纳入公司统一安全、质量与进度管理，分包范围与接口责任在投标文件中明确。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库扩容建造工程机电设备与供水管线安装包投标，含税总价 MOP 44,690,000，在包上限 MOP 44,625,000 以内。\n\n**报价构成**：\n- 设备费 MOP 21,860,000\n- 安装费 MOP 11,480,000\n- 调试费 MOP 3,260,000\n- 备品备件费 MOP 1,580,000\n- 临时设施费 MOP 2,140,000\n- 现场管理、安全质量与接口协调费 MOP 2,680,000\n- 风险与价格调整预备费 MOP 1,690,000\n合计 MOP 44,690,000。\n\n**价格基准说明**：设备费按授权范围设备清单与常规供应商预算基准估算，供应商报价尚未确认，属预算性估算；安装费按作业面分区工程量与班组工日编制；调试费按三阶段调试人员投入与校准服务编制；风险预备费针对设备价格波动、接口移交延误与本地物流协调计提。\n\n**商业立场**：本包不含坝体与库盆土建开挖，边界清晰，公司资源余量充足，按单一责任主体统一管理现场安全、进度、质量记录与分包控制。专业设备采购与专项安装分包属正常采购与分包管理，不构成组合体情形。\n\n**待落实事项**：闸门与启闭机、监测仪表等专业设备的供应商与报价尚待询价确认，作为投标假设在文件中明确，不影响本次提交。",
+        "quotation_breakdown": [
+          {
+            "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表）",
+            "amount": 21860000,
+            "basis": "按授权范围设备清单估算，含常规设备供应商采购预算基准与运保费用；供应商报价尚未确认，属预算性估算"
+          },
+          {
+            "item": "安装费（机电安装、管线敷设与试压、专项安装分包）",
+            "amount": 11480000,
+            "basis": "按作业面分区工程量与班组工日估算，含专业分包安装费用及公司统一管理成本"
+          },
+          {
+            "item": "调试费（单机、联动、带水试运转与仪表校准）",
+            "amount": 3260000,
+            "basis": "按调试阶段人员投入、校准服务与试运转耗材估算"
+          },
+          {
+            "item": "备品备件费",
+            "amount": 1580000,
+            "basis": "按主要设备随机备件与两年期易损件配置估算"
+          },
+          {
+            "item": "临时设施费（临时供水、临时用电、围封、仓储与临时交通安排）",
+            "amount": 2140000,
+            "basis": "按临时设施搭设、运输协调与公共通道安排估算"
+          },
+          {
+            "item": "现场管理、安全质量与接口协调费",
+            "amount": 2680000,
+            "basis": "按项目管理团队、安全主任、质量文档与接口协调人员投入估算"
+          },
+          {
+            "item": "风险与价格调整预备费",
+            "amount": 1690000,
+            "basis": "针对设备价格波动、接口移交延误与本地物流协调的风险预备，按上述费用合计的比例计提"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_d2e75d280258836c5a43",
+          "condition_a71d2a0a462b33e57241",
+          "condition_0c2057154d0a4f0e8e82",
+          "condition_3db23de0187c625cf3fb",
+          "condition_84fcfaf1bf69403b8eae",
+          "condition_63aaabc910cf9632f97b"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺。",
+          "部分专项安装作业拟通过专业分包实施，分包范围与接口责任在投标文件中明确，由公司作为单一责任投标人统一管理。",
+          "与设计包及土建包的接口协调按业主提供的接口界面和进度里程碑推进，具体协调机制在投标方案中提出。",
+          "澳门本地物流与运输协调按常规施工物流安排，临时交通与公共通道安排纳入投标方案。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0003/construction-2_002",
+        "package_id": "CASE-0003/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一责任主体身份承接本机电设备与供水管线安装包，范围为泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试，不含坝体与库盆土建开挖。\n\n技术路线：\n1. 泵站机电：按设备到货批次组织机组、泵组、电气盘柜、控制系统的安装与单机、联动调试，先完成机械找正与管路冲洗，再进入电气接线与绝缘、耐压测试，最后进行带水联合试运转。\n2. 闸门与启闭机：埋件预埋与土建包按界面表交接，安装后进行无水启闭试验与有水工况复核，启闭机与闸位仪表联锁校验。\n3. 监测仪表：由具备相应能力的专业供应商配合完成集成与校准，我方统一管理接口、点表、回路校验记录与校准证书归档；具体供应商安排为投标假设，待投标后确认。\n4. 供水管线：临时管线先行保障施工期供水，永久管线按分段试压、冲洗、消毒程序推进，试压记录与水质送检文件纳入质量文档。\n5. 接口协调：与设计包确认界面划分、图纸版本与变更流程；与土建包确认预埋件、预留孔洞、基础交付与场地移交时点，按周召开接口协调会并形成书面记录。\n6. 公共通道与临时交通：编制临时交通安排与公共通道维护方案，报业主审批后实施，施工期间保持通道可用并设置导向与安全防护。\n\n质量与安全：依托ISO 9001、ISO 14001、ISO 45001体系运行，实行内部质量检查、独立复核与文档控制，现场执行安全交底、动火与吊装作业许可。\n\n商务说明：设备费目前为草案估算，尚未取得供应商正式报价，属价格假设；机电专业安装与调试拟通过常规专业分包执行，由我方统一管理接口、质量、安全与付款协调。",
+        "implementation_plan": "总体按24个月项目工期中的机电与管线安装窗口组织，分四阶段推进：\n\n第一阶段（进场准备与深化）：组建项目团队，完成角色计划与团队可用性确认；接收设计包图纸并完成机电深化与综合管线协调；编制设备采购与到货计划、临时供水方案、临时交通与公共通道安排报批；与土建包完成界面表与移交计划签署。\n\n第二阶段（预埋与临时管线）：配合土建包完成闸门埋件、穿墙套管、预留孔洞的交接与复核；敷设临时供水管线并试压投用；泵站设备基础验收。\n\n第三阶段（设备安装）：泵组、闸门与启闭机、电气盘柜、监测仪表分批安装；同步开展管路安装、焊接与无损检测；按系统完成单机调试与回路校验。\n\n第四阶段（联合调试与移交）：带水联合试运转、闸门有水工况试验、仪表校准与联锁验证；完成试压、冲洗、消毒与水质送检；整理竣工文档、备品备件清单与培训，办理分项验收与整体移交。\n\n资源安排：现场设项目经理、机电协调工程师、质量与安全专员、文档控制员各岗，专业安装班组按专业分包配置并由我方统一调度；设备与仪表由供应商提供技术支持与调试配合。里程碑以设备到货、埋件交接、临时供水投用、单机调试完成、联合试运转、移交验收为控制节点。",
+        "quotation": 44625000.0,
+        "schedule_commitment": "承诺在项目总体24个月工期内完成本包全部工作，并按业主与土建包确认的界面移交时点组织施工。关键里程碑：进场后完成深化设计与临时方案报批；配合土建完成埋件与预留交接；临时供水管线试压投用；设备分批到货并完成安装；单机调试与回路校验完成；带水联合试运转与闸门有水工况试验完成；竣工文档、备品备件与培训交付后办理移交验收。若土建界面移交或设备到货出现延误，我方将通过调整班组投入与调试顺序压缩后续工期，并及时书面报告业主。",
+        "compliance_statement": "我方接受业主按定性比较原则评审价格合理性，报价按含税总价编制并分列设备费、安装费、调试费、备品备件费及临时设施费，价格基准与分项构成在投标文件中说明。设备费为草案估算，属价格假设，中标后以确认报价调整采购安排，不将未取得的供应商报价表述为已落实。质量方面执行ISO 9001内部质量程序，实行内部检查、独立复核与文档控制，隐蔽工程与试压、调试记录报业主查验。进度方面按里程碑提交进度计划视图与月度进展报告，接受业主进度审查。接口方面由我方牵头与设计包、土建包协调，界面划分以业主与设计方确认为准。公共通道与临时交通安排报业主审批后实施。付款按合同节点申请，配合业主付款审核。",
+        "risk_response": "主要风险及应对：\n1. 机电专业深度与调试责任：通过角色计划明确机电协调工程师与专业分包职责，调试前完成单机与回路预检，关键系统由供应商技术人员到场支持，保留调试预备费。\n2. 设备价格与到货风险：设备费为草案估算，尚未取得正式报价；中标后尽快锁定供应商报价与交货期，对长周期设备提前下单，价格波动通过预备费与合同调整机制控制。\n3. 与土建包及设计包接口风险：建立界面表与周协调会制度，埋件与预留孔洞交接实行书面签认，设计变更按业主流程处理。\n4. 监测仪表集成与校准：拟由具备相应能力的专业供应商配合，具体安排待投标后确认，属投标假设；我方统一管理点表、校准证书与联锁验证。\n5. 公共通道与临时交通：方案报业主审批，施工期间保持通道可用，设置导向与安全防护，遇突发情况及时调整。\n6. 现场安全：执行ISO 45001体系，动火、吊装、有限空间作业实行许可制度，定期安全巡查与交底。",
+        "submission_summary": "得宝国际有限公司以单一责任主体身份独立投标九澳水库扩容建造工程机电设备与供水管线安装包（CASE-0003/construction-2），不含坝体与库盆土建开挖。\n\n报价基准（含税总价，MOP）：\n- 设备费（草案估算）：18,650,000\n- 安装费：11,380,000\n- 调试与仪表校准费：3,860,000\n- 备品备件费：1,980,000\n- 临时设施与临时交通费：2,470,000\n- 项目管理、质量安全与文档控制费：2,130,000\n- 接口协调、风险预备与含税调整：4,155,000\n合计：44,625,000 MOP，处于包上限44,625,000 MOP之内。\n\n价格构成说明：设备费按草案估算编制，尚未取得供应商正式报价，属投标价格假设；机电安装与调试拟通过常规专业分包执行，由我方统一管理接口、质量、安全与付款协调；监测仪表集成与校准拟由具备相应能力的专业供应商配合，具体安排待投标后确认。风险预备费覆盖设备价格波动、调试责任与接口协调负担。\n\n工期：在项目24个月总工期内完成本包安装、调试与移交。付款按合同节点申请并配合业主付款审核。",
+        "quotation_breakdown": [
+          {
+            "item": "泵站机电设备、闸门与启闭机、监测仪表设备费",
+            "amount": 18650000,
+            "basis": "按草案估算编制的设备采购估算，含泵组、电气盘柜、控制系统、闸门与启闭机、监测仪表；尚未取得供应商正式报价，属投标价格假设，中标后按确认报价调整采购安排"
+          },
+          {
+            "item": "机电与管线安装费",
+            "amount": 11380000,
+            "basis": "泵站机电安装、闸门与启闭机安装、永久及临时供水管线敷设的常规专业分包估算，含班组人工、焊接与无损检测、吊装机械、管路附件与辅材，由我方统一管理"
+          },
+          {
+            "item": "调试与仪表校准费",
+            "amount": 3860000,
+            "basis": "单机与联动调试、带水联合试运转、闸门有水工况试验、仪表集成与校准、试压冲洗消毒及水质送检配合；含供应商调试到场支持与专业校准配合"
+          },
+          {
+            "item": "备品备件费",
+            "amount": 1980000,
+            "basis": "按设备清单配置的易损件与关键备件估算，含泵组密封、闸门止水件、仪表探头与电气备件，随设备批次采购"
+          },
+          {
+            "item": "临时设施与临时交通费",
+            "amount": 2470000,
+            "basis": "临时供水管线、临时用电、现场办公与仓储、公共通道维护与临时交通导向设施、安全防护，按现场条件及业主审批方案估算"
+          },
+          {
+            "item": "项目管理、质量安全与文档控制费",
+            "amount": 2130000,
+            "basis": "项目经理、机电协调工程师、质量与安全专员、文档控制员的现场管理投入，含接口协调会、内部质量检查与独立复核、竣工文档整理"
+          },
+          {
+            "item": "接口协调、风险预备与含税调整",
+            "amount": 4155000,
+            "basis": "与设计包及土建包接口协调、分包管理、设备价格波动与调试责任风险的预备费，以及含税与保险等综合调整"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_62ab57d4fdeb6f5043a6",
+          "condition_271f86a501781bb1e66e",
+          "condition_344d02bdd999c334f989",
+          "condition_280fa29713e79dbba0e6",
+          "condition_2339834d11901fac86de",
+          "condition_f7911f672c942a896394"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+          "机电专业安装与调试拟通过常规专业分包执行，由得宝国际作为单一责任主体统一管理接口与质量",
+          "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+          "与设计包及土建包的接口协调由我方牵头，按业主与设计方确认的界面划分执行",
+          "临时供水管线与公共通道协调安排以现场条件及业主审批为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0003/construction-2_003",
+        "package_id": "CASE-0003/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包技术方案。交付方法按四条工作线组织：泵站机电设备安装与调试、闸门与启闭机安装调试、监测仪表集成与校准、临时及永久供水管线安装与试压。每条工作线设专职工作线负责人，由项目总监统一协调，形成单一责任界面。\n\n泵站机电安装按设备到货检验、基础复核、就位安装、电气接线、单机试运转、系统联动调试的顺序推进，安装记录与调试数据同步归档。闸门与启闭机安装前复核埋件与土建预留，安装后按制造厂要求进行启闭试验与密封检查。监测仪表由具备校准能力的专业分包实施集成与校准，校准证书纳入竣工文档。供水管线安装按分段试压、冲洗消毒、并网调试组织，试压记录逐段签认。\n\n专业环节拟通过受控专业分包与设备供应商落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。与设计包、土建包的接口以接口矩阵管理，明确预留、预埋、供电、控制信号与移交条件，定期召开接口协调会议。公共通道与临时交通按现场条件编制临时交通安排，报业主及相关部门确认后实施。\n\n质量保证依托ISO 9001、ISO 14001、ISO 45001体系，设置安装记录、试压记录、校准证书与竣工文档的内部复核节点，实行独立检查与文档纪律。现场安全按风险分级管理，重点管控吊装、临电、试压与有限空间作业。",
+        "implementation_plan": "总体按24个月项目工期编排，本包施工与调试期约18个月，预留联动调试、竣工文档与移交时间。\n\n第一阶段（第1至2月）：动员与深化，完成角色计划到岗、临时设施布置、接口矩阵确认、设备与分包采购下单、施工方案与安全计划报审。\n第二阶段（第3至8月）：泵站机电设备安装、闸门与启闭机安装、供水管线分段安装，同步开展仪表预埋与桥架敷设。\n第三阶段（第9至13月）：管线试压与冲洗消毒、机电单机试运转、仪表集成与校准、闸门启闭试验。\n第四阶段（第14至16月）：系统联动调试、供水管线并网调试、监测系统联调。\n第五阶段（第17至18月）：竣工文档整理、备品备件移交、培训与最终验收。\n\n关键里程碑：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工移交。人员按角色计划分批到岗，专业分包按工作线进场，由我方统一管理进度、安全与质量记录。",
+        "quotation": 44620000.0,
+        "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+        "compliance_statement": "我方接受业主按定性比较原则评审价格合理性，报价按设备费、安装费、调试费、备品备件费及临时设施费分列，并单列项目管理与风险预留，便于业主逐项审查。质量文档按ISO 9001体系执行安装记录、试压记录、校准证书与竣工文档的编制与内部复核，接受业主及监理的进度审查、支付审查与质量检查。接口协调以接口矩阵和定期协调会议向业主报告。设备费与备品备件费在投标阶段为草拟成本预留，待供应商正式报价后固化，我方将在合同阶段向业主提交正式报价依据。",
+        "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包含税总价报价 MOP 44,620,000，低于包上限 MOP 44,625,000。\n\n报价构成：设备费 MOP 18,650,000；安装费 MOP 11,280,000；调试费 MOP 3,860,000；备品备件费 MOP 2,180,000；临时设施费 MOP 2,470,000；项目管理、质量安全体系与接口协调费 MOP 2,950,000；风险预留与商业调整 MOP 3,230,000。合计 MOP 44,620,000。\n\n价格基准说明：设备费与备品备件费为投标阶段草拟成本预留，尚未收到供应商正式报价，属暂定估算；安装费按18个月施工期与角色计划测算，含受控专业分包；调试费覆盖单机、联动、试压与校准；临时设施费含临时供水、临电与临时交通安排；项目管理费覆盖ISO体系运行、文档纪律与接口协调；风险预留覆盖设备价格波动与接口协调风险。\n\n专业分包与设备供应属常规投标假设，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。付款按合同里程碑申请，接受业主支付审查。",
+        "quotation_breakdown": [
+          {
+            "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表、管材管件）",
+            "amount": 18650000,
+            "basis": "按授权范围设备清单草拟成本预留，含主要机电设备、闸门启闭机、仪表与管线材料；投标阶段尚未收到供应商正式报价，属暂定估算，待正式报价后固化"
+          },
+          {
+            "item": "安装费（含专业分包与自有班组）",
+            "amount": 11280000,
+            "basis": "泵站机电安装、闸门启闭机安装、仪表集成、供水管线安装四条工作线的安装人工、专业分包与机具费用，按18个月施工期与角色计划测算"
+          },
+          {
+            "item": "调试费（单机、联动、试压与校准）",
+            "amount": 3860000,
+            "basis": "单机试运转、系统联动调试、管线试压冲洗消毒、仪表校准与并网调试的专项人工、检测与配合费用"
+          },
+          {
+            "item": "备品备件费",
+            "amount": 2180000,
+            "basis": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认"
+          },
+          {
+            "item": "临时设施费（含临时供水、临电、临时交通与现场办公）",
+            "amount": 2470000,
+            "basis": "临时设施布置、临时供水管线、临电、公共通道协调与临时交通安排、现场办公与仓储费用"
+          },
+          {
+            "item": "项目管理、质量安全体系与接口协调费",
+            "amount": 2950000,
+            "basis": "项目总监及管理团队、ISO体系运行、文档纪律与内部复核、与设计包及土建包接口协调会议与矩阵管理费用"
+          },
+          {
+            "item": "风险预留与商业调整",
+            "amount": 3230000,
+            "basis": "设备价格波动、专业分包协调、现场条件与工期接口风险的预留，以及含税报价的商业调整"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_46f8046dd68ee3e5aa8f"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+          "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+          "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+          "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0003/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0003/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 44690000.0,
+            "quotation_breakdown": [
+              {
+                "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表）",
+                "amount": 21860000,
+                "basis": "按授权范围设备清单估算，含常规设备供应商采购预算基准与运保费用；供应商报价尚未确认，属预算性估算"
+              },
+              {
+                "item": "安装费（机电安装、管线敷设与试压、专项安装分包）",
+                "amount": 11480000,
+                "basis": "按作业面分区工程量与班组工日估算，含专业分包安装费用及公司统一管理成本"
+              },
+              {
+                "item": "调试费（单机、联动、带水试运转与仪表校准）",
+                "amount": 3260000,
+                "basis": "按调试阶段人员投入、校准服务与试运转耗材估算"
+              },
+              {
+                "item": "备品备件费",
+                "amount": 1580000,
+                "basis": "按主要设备随机备件与两年期易损件配置估算"
+              },
+              {
+                "item": "临时设施费（临时供水、临时用电、围封、仓储与临时交通安排）",
+                "amount": 2140000,
+                "basis": "按临时设施搭设、运输协调与公共通道安排估算"
+              },
+              {
+                "item": "现场管理、安全质量与接口协调费",
+                "amount": 2680000,
+                "basis": "按项目管理团队、安全主任、质量文档与接口协调人员投入估算"
+              },
+              {
+                "item": "风险与价格调整预备费",
+                "amount": 1690000,
+                "basis": "针对设备价格波动、接口移交延误与本地物流协调的风险预备，按上述费用合计的比例计提"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交九澳水库扩容建造工程机电设备与供水管线安装包投标，含税总价 MOP 44,690,000，在包上限 MOP 44,625,000 以内。\n\n**报价构成**：\n- 设备费 MOP 21,860,000\n- 安装费 MOP 11,480,000\n- 调试费 MOP 3,260,000\n- 备品备件费 MOP 1,580,000\n- 临时设施费 MOP 2,140,000\n- 现场管理、安全质量与接口协调费 MOP 2,680,000\n- 风险与价格调整预备费 MOP 1,690,000\n合计 MOP 44,690,000。\n\n**价格基准说明**：设备费按授权范围设备清单与常规供应商预算基准估算，供应商报价尚未确认，属预算性估算；安装费按作业面分区工程量与班组工日编制；调试费按三阶段调试人员投入与校准服务编制；风险预备费针对设备价格波动、接口移交延误与本地物流协调计提。\n\n**商业立场**：本包不含坝体与库盆土建开挖，边界清晰，公司资源余量充足，按单一责任主体统一管理现场安全、进度、质量记录与分包控制。专业设备采购与专项安装分包属正常采购与分包管理，不构成组合体情形。\n\n**待落实事项**：闸门与启闭机、监测仪表等专业设备的供应商与报价尚待询价确认，作为投标假设在文件中明确，不影响本次提交。",
+            "unresolved_condition_ids": [
+              "condition_d2e75d280258836c5a43",
+              "condition_a71d2a0a462b33e57241",
+              "condition_0c2057154d0a4f0e8e82",
+              "condition_3db23de0187c625cf3fb",
+              "condition_84fcfaf1bf69403b8eae",
+              "condition_63aaabc910cf9632f97b"
+            ],
+            "bid_assumptions": [
+              "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺。",
+              "部分专项安装作业拟通过专业分包实施，分包范围与接口责任在投标文件中明确，由公司作为单一责任投标人统一管理。",
+              "与设计包及土建包的接口协调按业主提供的接口界面和进度里程碑推进，具体协调机制在投标方案中提出。",
+              "澳门本地物流与运输协调按常规施工物流安排，临时交通与公共通道安排纳入投标方案。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "quotation": 44625000.0,
+            "quotation_breakdown": [
+              {
+                "item": "泵站机电设备、闸门与启闭机、监测仪表设备费",
+                "amount": 18650000,
+                "basis": "按草案估算编制的设备采购估算，含泵组、电气盘柜、控制系统、闸门与启闭机、监测仪表；尚未取得供应商正式报价，属投标价格假设，中标后按确认报价调整采购安排"
+              },
+              {
+                "item": "机电与管线安装费",
+                "amount": 11380000,
+                "basis": "泵站机电安装、闸门与启闭机安装、永久及临时供水管线敷设的常规专业分包估算，含班组人工、焊接与无损检测、吊装机械、管路附件与辅材，由我方统一管理"
+              },
+              {
+                "item": "调试与仪表校准费",
+                "amount": 3860000,
+                "basis": "单机与联动调试、带水联合试运转、闸门有水工况试验、仪表集成与校准、试压冲洗消毒及水质送检配合；含供应商调试到场支持与专业校准配合"
+              },
+              {
+                "item": "备品备件费",
+                "amount": 1980000,
+                "basis": "按设备清单配置的易损件与关键备件估算，含泵组密封、闸门止水件、仪表探头与电气备件，随设备批次采购"
+              },
+              {
+                "item": "临时设施与临时交通费",
+                "amount": 2470000,
+                "basis": "临时供水管线、临时用电、现场办公与仓储、公共通道维护与临时交通导向设施、安全防护，按现场条件及业主审批方案估算"
+              },
+              {
+                "item": "项目管理、质量安全与文档控制费",
+                "amount": 2130000,
+                "basis": "项目经理、机电协调工程师、质量与安全专员、文档控制员的现场管理投入，含接口协调会、内部质量检查与独立复核、竣工文档整理"
+              },
+              {
+                "item": "接口协调、风险预备与含税调整",
+                "amount": 4155000,
+                "basis": "与设计包及土建包接口协调、分包管理、设备价格波动与调试责任风险的预备费，以及含税与保险等综合调整"
+              }
+            ],
+            "submission_summary": "得宝国际有限公司以单一责任主体身份独立投标九澳水库扩容建造工程机电设备与供水管线安装包（CASE-0003/construction-2），不含坝体与库盆土建开挖。\n\n报价基准（含税总价，MOP）：\n- 设备费（草案估算）：18,650,000\n- 安装费：11,380,000\n- 调试与仪表校准费：3,860,000\n- 备品备件费：1,980,000\n- 临时设施与临时交通费：2,470,000\n- 项目管理、质量安全与文档控制费：2,130,000\n- 接口协调、风险预备与含税调整：4,155,000\n合计：44,625,000 MOP，处于包上限44,625,000 MOP之内。\n\n价格构成说明：设备费按草案估算编制，尚未取得供应商正式报价，属投标价格假设；机电安装与调试拟通过常规专业分包执行，由我方统一管理接口、质量、安全与付款协调；监测仪表集成与校准拟由具备相应能力的专业供应商配合，具体安排待投标后确认。风险预备费覆盖设备价格波动、调试责任与接口协调负担。\n\n工期：在项目24个月总工期内完成本包安装、调试与移交。付款按合同节点申请并配合业主付款审核。",
+            "unresolved_condition_ids": [
+              "condition_62ab57d4fdeb6f5043a6",
+              "condition_271f86a501781bb1e66e",
+              "condition_344d02bdd999c334f989",
+              "condition_280fa29713e79dbba0e6",
+              "condition_2339834d11901fac86de",
+              "condition_f7911f672c942a896394"
+            ],
+            "bid_assumptions": [
+              "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+              "机电专业安装与调试拟通过常规专业分包执行，由得宝国际作为单一责任主体统一管理接口与质量",
+              "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+              "与设计包及土建包的接口协调由我方牵头，按业主与设计方确认的界面划分执行",
+              "临时供水管线与公共通道协调安排以现场条件及业主审批为准"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 44620000.0,
+            "quotation_breakdown": [
+              {
+                "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表、管材管件）",
+                "amount": 18650000,
+                "basis": "按授权范围设备清单草拟成本预留，含主要机电设备、闸门启闭机、仪表与管线材料；投标阶段尚未收到供应商正式报价，属暂定估算，待正式报价后固化"
+              },
+              {
+                "item": "安装费（含专业分包与自有班组）",
+                "amount": 11280000,
+                "basis": "泵站机电安装、闸门启闭机安装、仪表集成、供水管线安装四条工作线的安装人工、专业分包与机具费用，按18个月施工期与角色计划测算"
+              },
+              {
+                "item": "调试费（单机、联动、试压与校准）",
+                "amount": 3860000,
+                "basis": "单机试运转、系统联动调试、管线试压冲洗消毒、仪表校准与并网调试的专项人工、检测与配合费用"
+              },
+              {
+                "item": "备品备件费",
+                "amount": 2180000,
+                "basis": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认"
+              },
+              {
+                "item": "临时设施费（含临时供水、临电、临时交通与现场办公）",
+                "amount": 2470000,
+                "basis": "临时设施布置、临时供水管线、临电、公共通道协调与临时交通安排、现场办公与仓储费用"
+              },
+              {
+                "item": "项目管理、质量安全体系与接口协调费",
+                "amount": 2950000,
+                "basis": "项目总监及管理团队、ISO体系运行、文档纪律与内部复核、与设计包及土建包接口协调会议与矩阵管理费用"
+              },
+              {
+                "item": "风险预留与商业调整",
+                "amount": 3230000,
+                "basis": "设备价格波动、专业分包协调、现场条件与工期接口风险的预留，以及含税报价的商业调整"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包含税总价报价 MOP 44,620,000，低于包上限 MOP 44,625,000。\n\n报价构成：设备费 MOP 18,650,000；安装费 MOP 11,280,000；调试费 MOP 3,860,000；备品备件费 MOP 2,180,000；临时设施费 MOP 2,470,000；项目管理、质量安全体系与接口协调费 MOP 2,950,000；风险预留与商业调整 MOP 3,230,000。合计 MOP 44,620,000。\n\n价格基准说明：设备费与备品备件费为投标阶段草拟成本预留，尚未收到供应商正式报价，属暂定估算；安装费按18个月施工期与角色计划测算，含受控专业分包；调试费覆盖单机、联动、试压与校准；临时设施费含临时供水、临电与临时交通安排；项目管理费覆盖ISO体系运行、文档纪律与接口协调；风险预留覆盖设备价格波动与接口协调风险。\n\n专业分包与设备供应属常规投标假设，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。付款按合同里程碑申请，接受业主支付审查。",
+            "unresolved_condition_ids": [
+              "condition_46f8046dd68ee3e5aa8f"
+            ],
+            "bid_assumptions": [
+              "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+              "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+              "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+              "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 机电设备与供水管线安装包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0003/construction-2",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_梁美玲",
+          "OWNER-4048bdd520aa7f_03_黄嘉豪",
+          "OWNER-4048bdd520aa7f_04_苏文静",
+          "OWNER-4048bdd520aa7f_05_何俊杰"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0003/construction-2_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "以单一责任投标人身份覆盖泵站机电、闸门启闭机、监测仪表与供水管线四条作业面，交付方法、分阶段调试与停检点管理清晰，团队角色计划完整且资源余量充足。",
+            "cost_view": "报价MOP 44,690,000略高于包上限MOP 44,625,000，分项与工程量、班组投入对应，但设备费属预算性估算、供应商报价未确认，风险预备费MOP 1,690,000相对偏薄。",
+            "owner_control_view": "明确接受业主图纸审查、材料报审、停检点检查与进度审核，质量文档按分项同步提交，接口以业主界面清单与里程碑为准，业主审查清晰度较高。",
+            "strengths": [
+              "四条作业面分区推进与三阶段调试签认制度完整",
+              "设专职接口协调工程师并以书面签认管理土建与设计接口",
+              "团队角色计划与资源可用性摘要具体，容量无冲突"
+            ],
+            "concerns": [
+              "报价略超包上限，需在澄清中说明或调整",
+              "设备与专项安装均依赖未确认的供应商与分包报价",
+              "风险预备费对设备价格波动与接口延误的覆盖偏紧"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-2_002",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "technical_view": "技术路线覆盖泵站机电、闸门启闭机、监测仪表与管线试压冲洗消毒，四阶段计划与里程碑清楚，但机电专业深度主要依托专业分包与供应商支持。",
+            "cost_view": "报价MOP 44,625,000恰在包上限，设备费为草案估算且未取得供应商正式报价，调试与接口风险预备合计MOP 4,155,000相对充足，价格可信度中等。",
+            "owner_control_view": "接受定性评审与里程碑进度审查，依托ISO 9001、14001、45001体系实行内部检查、独立复核与文档控制，付款配合业主审核，业主审查路径清晰。",
+            "strengths": [
+              "质量、环境与安全体系齐全，内部复核与文档控制明确",
+              "调试与仪表校准费及风险预备配置较充分",
+              "临时交通与公共通道方案报批后实施，安排具体"
+            ],
+            "concerns": [
+              "设备费与仪表供应商安排均为投标假设，尚未落实",
+              "机电安装与调试依赖分包，自身专业深度需进一步核实",
+              "报价贴近上限，后续变更空间有限"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0003/construction-2_003",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "以单一责任总承包身份按四条工作线组织，每条工作线设专职负责人并由项目总监统一协调，18个月施工调试期与接口矩阵管理体现较强交付信心。",
+            "cost_view": "报价MOP 44,620,000低于包上限，分项单列项目管理与风险预留MOP 3,230,000，但设备费与备品备件费为草拟成本预留、未获供应商正式报价，价格基准仍需固化。",
+            "owner_control_view": "分列费用便于业主逐项审查，接受进度、支付与质量检查，以接口矩阵和定期协调会议向业主报告，文档纪律与内部复核节点明确。",
+            "strengths": [
+              "四条工作线专职负责人加项目总监的单一责任界面清晰",
+              "接口矩阵与定期协调会议对设计包、土建包接口管理具体",
+              "风险预留与项目管理费配置较充分，文档纪律突出"
+            ],
+            "concerns": [
+              "设备费与备品备件费为暂定估算，价格基准待固化",
+              "专业环节依赖受控分包与供应商，需核实实际能力",
+              "18个月施工期相对紧凑，与土建界面移交节点关联度高"
+            ]
+          }
+        ],
+        "comparison_summary": "三家报价集中在MOP 44,620,000至MOP 44,690,000之间，均贴近包上限，价格差异不构成取舍依据，关键在设备与分包报价尚未确认的共同风险。得宝建筑集团以工作线负责人制、接口矩阵与较充分风险预留展现较强交付信心与文档纪律，中交第一航务在调试签认与接口协调上同样扎实但报价略超上限。",
+        "recommended_winner": "COMP-0493",
+        "owner_review_notes": "建议判给得宝建筑集团有限公司，并在合同前要求其固化设备与备品备件供应商正式报价、提交工作线负责人到岗确认。三家均存在设备报价未落实的共性条件，宜在澄清与合同阶段统一处理，并保留对报价超上限方的价格澄清要求。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0003",
+      "package_awards": [
+        {
+          "package_id": "CASE-0003/construction-2",
+          "selected_bidder_id": "COMP-0493",
+          "selected_bidder_name": "得宝建筑集团有限公司",
+          "bidder_type": "company",
+          "decision_reason": "得宝建筑集团有限公司报价MOP 44,620,000低于包上限，以单一责任总承包身份按四条工作线设专职负责人并由项目总监统一协调，接口矩阵与定期协调会议对设计包、土建包界面管理具体，风险预留与项目管理费配置较充分，文档纪律和内部复核节点明确，整体交付信心和业主审查便利性优于另外两家。中交第一航务报价略超包上限，得宝国际有限公司机电专业深度主要依托分包，责任界面清晰度和风险覆盖相对不足。",
+          "unresolved_condition_ids": [
+            "condition_46f8046dd68ee3e5aa8f"
+          ],
+          "bid_assumptions": [
+            "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+            "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+            "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+            "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0493"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:36:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0003/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，本机电设备与供水管线安装包与公司承包商定位和能力结构相符：机电安装调试、供水管线安装试压、监测仪表集成、现场安全与质量文档管理均在可承担范围内，且不含坝体与库盆土建开挖，边界清晰。当前可用资源2.0、占用0，本包需求0.7，资源余量充足，不存在容量冲突。闸门启闭机、监测仪表等专业设备与安装可通过常规设备供应和专业分包安排解决，属于正常的分包与采购管理，不构成需要共享投标人身份的组合体情形。公司有能力作为单一责任投标人主导现场管理、安全、进度、接口协调与分包控制。价格按含税总价并分列设备费、安装费、调试费、备品备件费和临时设施费编制，配合定性比较原则强化价格合理性论证。主要风险为与设计包及土建包的接口协调和本地物流运输，将通过接口协调方案、进度里程碑和风险应对方案管理。综合商业价值、能力匹配与风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [
+            "condition_d2e75d280258836c5a43"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "闸门与启闭机、监测仪表等专业设备拟通过常规设备供应商采购，具体供应商与报价在投标阶段以询价与预算基准形式体现，尚未形成已确认的供货承诺。",
+            "部分专项安装作业拟通过专业分包实施，分包范围与接口责任在投标文件中明确，由公司作为单一责任投标人统一管理。",
+            "与设计包及土建包的接口协调按业主提供的接口界面和进度里程碑推进，具体协调机制在投标方案中提出。",
+            "澳门本地物流与运输协调按常规施工物流安排，临时交通与公共通道安排纳入投标方案。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0025",
+          "package_id": "CASE-0003/construction-2",
+          "decision": "bid",
+          "reason": "经管理层研判，本包属于泵站机电与供水管线安装调试，不含坝体与库盆土建开挖，与我方总承包、给排水及基础设施业务方向契合。我方可用资源2.0、占用0，包需求0.7，团队可用性足以支撑独立投标并担任单一责任主体。机电多专业协调、与设计包及土建包接口、公共通道与临时交通安排，均属总承包可控范围，可通过常规专业分包与设备供应商配合落实，不需要共享投标身份或让渡包级交付责任。价格上限4462.5万MOP，我方具备价格基准与分项报价能力，将按设备费、安装费、调试费、备品备件费及临时设施费分列，并以定性比较原则组织报价合理性说明。主要风险在于机电专业深度与调试责任，将通过角色计划、交付方法、质量保证方案、进度里程碑与风险应对方案加以控制，并在投标中明确设备报价为草案估算、分包安排为投标假设。综合机会价值、能力匹配、容量余量与风险承受度，决定以单一责任主体身份独立投标。",
+          "unresolved_condition_ids": [
+            "condition_62ab57d4fdeb6f5043a6",
+            "condition_271f86a501781bb1e66e"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "设备费按草案估算编制，尚未收到供应商正式报价，中标后以确认报价调整采购安排",
+            "机电专业安装与调试拟通过常规专业分包执行，由得宝国际作为单一责任主体统一管理接口与质量",
+            "监测仪表集成与校准拟由具备相应能力的专业供应商配合完成，具体安排待投标后确认",
+            "与设计包及土建包的接口协调由我方牵头，按业主与设计方确认的界面划分执行",
+            "临时供水管线与公共通道协调安排以现场条件及业主审批为准"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:16",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0003/construction-2",
+          "decision": "bid",
+          "reason": "本包属于公司基础设施与给排水业务方向的合理延伸，资源余量充足，具备作为单一责任总承包投标人的管理能力与体系基础。机电安装、闸门启闭机、监测仪表校准等专业环节可通过受控的专业分包与设备供应商安排落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成需要共享投标人身份与包级交付责任的组合体情形。价格上按设备费、安装费、调试费、备品备件费及临时设施费分列，围绕4462.5万澳门元上限做定性合理性论证。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+            "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+            "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+            "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:49",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:49",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:49",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:00",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:07",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "recommended_winner": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:11",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0003/construction-2",
+          "selected_bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "revise",
+            "reason": "The bid is within the package budget (MOP 44,620,000 vs MOP 44,625,000) and the scope, members (COMP-0493), resource commitment (0.7) and 18-month schedule fit the package. However, two items must be settled before this exact revision can be authorized.\n\n1) Open condition condition_46f8046dd68ee3e5aa8f is unresolved and no verified conditions are listed. As buyer I decide the following and require it written into the next draft: the equipment fee (MOP 18,650,000) and spare-parts fee (MOP 2,180,000) are provisional cost allowances inside the fixed lump-sum price of MOP 44,620,000; they are not open-ended reimbursables. The contractor must submit supplier formal quotations for both items within 30 days of award, and any increase above the provisional amounts is at the contractor's risk and is not payable by the buyer. Any decrease is passed through to the buyer as a price reduction. This resolves the open condition without waiting for further documents.\n\n2) The bid assumptions on controlled specialist subcontracting and on interface coordination with the design and civil packages are accepted as proposed risk allocations, with the contractor remaining the single responsible party. I require the following clause wording: the contractor bears full responsibility for progress, safety, quality records and interface coordination regardless of specialist subcontracting or supplier arrangements, and the interface matrix with the design and civil packages must be confirmed and submitted for the buyer's review within 60 days of award.\n\nWith these two decisions written into the next draft, the terms are acceptable. No other changes to price, currency, scope, members or resources are required."
+          },
+          "COMP-0493": {
+            "action": "accept",
+            "reason": "得宝建筑集团有限公司（COMP-0493）确认接受本包（CASE-0003/construction-2）第1轮合同草案的全部条款。报价 MOP 44,620,000 低于包上限 MOP 44,625,000，资源承诺 0.7 在自有可用资源 2.0 之内，工作份额 1.0 与单一责任投标人身份一致，成员仅 COMP-0493，不构成组合体。范围与包定义一致，不含坝体与库盆土建开挖。已披露的投标假设（受控专业分包与设备供应商、设备费与备品备件费为草拟成本预留待正式报价固化、接口矩阵与协调会议、人员按角色计划到岗）作为风险分配予以接受，不作为缺失证据。就我方自身立场作出如下决定，供写入下一稿：设备费与备品备件费为暂定估算，我方将在合同签订后按供应商正式报价固化，固化金额的调整以业主支付审查为条件，不改变本包总价上限与里程碑付款结构；接口责任以接口矩阵在合同阶段确认，与设计包、土建包的接口协调会议费用已含在项目管理费内。未决条件 condition_46f8046dd68ee3e5aa8f 作为合同阶段待确认事项保留，不影响本轮授权。本接受仅授权可执行的模拟义务，不表示未来工程交付物或法定审批已经完成。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMC47C6B63/CASE-0003/construction-2/round-1/contract",
+          "simulation_id": "SIMC47C6B63",
+          "project_id": "CASE-0003",
+          "package_id": "CASE-0003/construction-2",
+          "session_id": "SIMC47C6B63/CASE-0003/construction-2/round-1",
+          "snapshot_version": "86322489df193cbc63d0213e785f4449e5ad9897a6b06c58d205222f1d47e911",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0003/construction-2_003",
+          "bidder_id": "COMP-0493",
+          "lead_id": "COMP-0493",
+          "members": [
+            "COMP-0493"
+          ],
+          "price": 44620000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0493": 0.7
+          },
+          "work_shares": {
+            "COMP-0493": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "046a11651daa1afe68def22463137b28475940524a8059192484de78e2a8cbd4",
+          "terms": {
+            "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+            "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0003/construction-2_003",
+              "package_id": "CASE-0003/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0493",
+              "bidder_name": "得宝建筑集团有限公司",
+              "technical_proposal": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包技术方案。交付方法按四条工作线组织：泵站机电设备安装与调试、闸门与启闭机安装调试、监测仪表集成与校准、临时及永久供水管线安装与试压。每条工作线设专职工作线负责人，由项目总监统一协调，形成单一责任界面。\n\n泵站机电安装按设备到货检验、基础复核、就位安装、电气接线、单机试运转、系统联动调试的顺序推进，安装记录与调试数据同步归档。闸门与启闭机安装前复核埋件与土建预留，安装后按制造厂要求进行启闭试验与密封检查。监测仪表由具备校准能力的专业分包实施集成与校准，校准证书纳入竣工文档。供水管线安装按分段试压、冲洗消毒、并网调试组织，试压记录逐段签认。\n\n专业环节拟通过受控专业分包与设备供应商落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。与设计包、土建包的接口以接口矩阵管理，明确预留、预埋、供电、控制信号与移交条件，定期召开接口协调会议。公共通道与临时交通按现场条件编制临时交通安排，报业主及相关部门确认后实施。\n\n质量保证依托ISO 9001、ISO 14001、ISO 45001体系，设置安装记录、试压记录、校准证书与竣工文档的内部复核节点，实行独立检查与文档纪律。现场安全按风险分级管理，重点管控吊装、临电、试压与有限空间作业。",
+              "implementation_plan": "总体按24个月项目工期编排，本包施工与调试期约18个月，预留联动调试、竣工文档与移交时间。\n\n第一阶段（第1至2月）：动员与深化，完成角色计划到岗、临时设施布置、接口矩阵确认、设备与分包采购下单、施工方案与安全计划报审。\n第二阶段（第3至8月）：泵站机电设备安装、闸门与启闭机安装、供水管线分段安装，同步开展仪表预埋与桥架敷设。\n第三阶段（第9至13月）：管线试压与冲洗消毒、机电单机试运转、仪表集成与校准、闸门启闭试验。\n第四阶段（第14至16月）：系统联动调试、供水管线并网调试、监测系统联调。\n第五阶段（第17至18月）：竣工文档整理、备品备件移交、培训与最终验收。\n\n关键里程碑：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工移交。人员按角色计划分批到岗，专业分包按工作线进场，由我方统一管理进度、安全与质量记录。",
+              "quotation": 44620000.0,
+              "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+              "compliance_statement": "我方接受业主按定性比较原则评审价格合理性，报价按设备费、安装费、调试费、备品备件费及临时设施费分列，并单列项目管理与风险预留，便于业主逐项审查。质量文档按ISO 9001体系执行安装记录、试压记录、校准证书与竣工文档的编制与内部复核，接受业主及监理的进度审查、支付审查与质量检查。接口协调以接口矩阵和定期协调会议向业主报告。设备费与备品备件费在投标阶段为草拟成本预留，待供应商正式报价后固化，我方将在合同阶段向业主提交正式报价依据。",
+              "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+              "submission_summary": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包含税总价报价 MOP 44,620,000，低于包上限 MOP 44,625,000。\n\n报价构成：设备费 MOP 18,650,000；安装费 MOP 11,280,000；调试费 MOP 3,860,000；备品备件费 MOP 2,180,000；临时设施费 MOP 2,470,000；项目管理、质量安全体系与接口协调费 MOP 2,950,000；风险预留与商业调整 MOP 3,230,000。合计 MOP 44,620,000。\n\n价格基准说明：设备费与备品备件费为投标阶段草拟成本预留，尚未收到供应商正式报价，属暂定估算；安装费按18个月施工期与角色计划测算，含受控专业分包；调试费覆盖单机、联动、试压与校准；临时设施费含临时供水、临电与临时交通安排；项目管理费覆盖ISO体系运行、文档纪律与接口协调；风险预留覆盖设备价格波动与接口协调风险。\n\n专业分包与设备供应属常规投标假设，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。付款按合同里程碑申请，接受业主支付审查。",
+              "quotation_breakdown": [
+                {
+                  "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表、管材管件）",
+                  "amount": 18650000,
+                  "basis": "按授权范围设备清单草拟成本预留，含主要机电设备、闸门启闭机、仪表与管线材料；投标阶段尚未收到供应商正式报价，属暂定估算，待正式报价后固化"
+                },
+                {
+                  "item": "安装费（含专业分包与自有班组）",
+                  "amount": 11280000,
+                  "basis": "泵站机电安装、闸门启闭机安装、仪表集成、供水管线安装四条工作线的安装人工、专业分包与机具费用，按18个月施工期与角色计划测算"
+                },
+                {
+                  "item": "调试费（单机、联动、试压与校准）",
+                  "amount": 3860000,
+                  "basis": "单机试运转、系统联动调试、管线试压冲洗消毒、仪表校准与并网调试的专项人工、检测与配合费用"
+                },
+                {
+                  "item": "备品备件费",
+                  "amount": 2180000,
+                  "basis": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认"
+                },
+                {
+                  "item": "临时设施费（含临时供水、临电、临时交通与现场办公）",
+                  "amount": 2470000,
+                  "basis": "临时设施布置、临时供水管线、临电、公共通道协调与临时交通安排、现场办公与仓储费用"
+                },
+                {
+                  "item": "项目管理、质量安全体系与接口协调费",
+                  "amount": 2950000,
+                  "basis": "项目总监及管理团队、ISO体系运行、文档纪律与内部复核、与设计包及土建包接口协调会议与矩阵管理费用"
+                },
+                {
+                  "item": "风险预留与商业调整",
+                  "amount": 3230000,
+                  "basis": "设备价格波动、专业分包协调、现场条件与工期接口风险的预留，以及含税报价的商业调整"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_46f8046dd68ee3e5aa8f"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+                "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+                "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+                "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "046a11651daa1afe68def22463137b28475940524a8059192484de78e2a8cbd4"
+      },
+      {
+        "event_type": "contract_clarification_proposed",
+        "revision": 1,
+        "clauses": {
+          "scope_and_interfaces": "Contractor COMP-0493 remains the single responsible party for the full package scope: pump-station mechanical and electrical equipment, gates and hoists, monitoring instruments, and temporary and permanent water supply pipelines installation and commissioning; dam body and reservoir basin civil excavation are excluded. Contractor bears full responsibility for progress, safety, quality records and interface coordination regardless of any controlled specialist subcontracting or supplier arrangements. Contractor must confirm the interface matrix with the design package (CASE-0003/design) and civil package and submit it for the buyer's review within 60 days of award; interface coordination meeting costs are included in the project management fee. Contractor must submit a temporary traffic arrangement for the buyer's confirmation before implementation. All future engineering deliverables are binding obligations of the contractor, not completed facts.",
+          "price_and_change_control": "Fixed lump-sum price is MOP 44,620,000 (currency MOP), within the package budget of MOP 44,625,000; no change to price, currency, scope boundaries, parties, work shares or resource commitments. The equipment fee of MOP 18,650,000 and spare-parts fee of MOP 2,180,000 are provisional cost allowances inside the fixed lump-sum price, not open-ended reimbursables. Contractor must submit supplier formal quotations for both items within 30 days of award; any increase above the provisional amounts is at the contractor's risk and is not payable by the buyer, and any decrease is passed through to the buyer as a price reduction. This resolves open condition condition_46f8046dd68ee3e5aa8f without further documents. No uncapped price adjustment is authorized; any request requiring a price or scope change remains unresolved and needs re-tendering.",
+          "payment_terms": "Payments are made in MOP against contract milestones upon the buyer's payment review and acceptance of the corresponding milestone deliverables. Milestone payment structure and the total price ceiling are not changed by the fixing of supplier quotations; adjustments from fixed supplier quotations are conditional on the buyer's payment review. No payment is due for unaccepted work or for cost increases above the provisional equipment and spare-parts allowances.",
+          "delivery_and_review": "Contractor delivers within an 18-month construction and commissioning period inside the 24-month project duration, with binding milestones: end of month 2 temporary facilities and interface confirmation complete; end of month 8 major equipment installation complete; end of month 13 single-machine commissioning complete; end of month 16 system integrated commissioning complete; end of month 18 completion documents and handover complete. Contractor submits the interface matrix within 60 days of award and supplier formal quotations within 30 days of award for buyer review. Quality records, pressure-test records, calibration certificates and completion documents are subject to the buyer's and supervisor's progress, payment and quality inspections; acceptance of each milestone is a condition of the related payment.",
+          "response_to_feedback": "Buyer decisions are written in as binding clauses: the equipment and spare-parts fees are provisional allowances inside the fixed price with the 30-day quotation deadline and the stated risk allocation; the contractor's single-responsibility and interface-matrix obligations are accepted as proposed risk allocations with the 60-day submission deadline. Bidder COMP-0493 accepted the round-1 terms; its disclosed bid assumptions are treated as accepted stated risk allocations or replaced by the explicit obligations above. Open condition condition_46f8046dd68ee3e5aa8f is resolved by the buyer's decision above. No external documents are claimed to have been reviewed and no real-world approvals are claimed to have been obtained. Each party remains free to reject this draft."
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "The buyer's own position on the open item is now decided and written into the negotiated clauses: the equipment fee of MOP 18,650,000 and spare-parts fee of MOP 2,180,000 are provisional cost allowances inside the fixed lump-sum price of MOP 44,620,000, with supplier formal quotations due within 30 days of award, increases above the provisional amounts at the contractor's risk and not payable, and decreases passed through to the buyer as a price reduction. This resolves condition_46f8046dd68ee3e5aa8f without further documents. The buyer's review periods are also fixed: interface matrix within 60 days of award, supplier quotations within 30 days of award, and milestone payments only after the buyer's payment review and acceptance of the corresponding milestone deliverables. The disclosed bid assumptions are accepted as stated risk allocations: controlled specialist subcontracting and supplier arrangements do not create a combination entity, and COMP-0493 remains the single responsible party for progress, safety, quality records and interface coordination. Price, currency MOP, scope boundaries, members (COMP-0493), work share 1.0 and resource commitment 0.7 are unchanged and within the package budget of MOP 44,625,000. The 18-month construction and commissioning period with the stated binding milestones fits inside the 24-month project duration. Future engineering deliverables, interface confirmations and statutory approvals are treated as obligations subject to the buyer's and supervisor's review and acceptance, not as completed facts. No external evidence or real-world approvals are claimed. The exact supplied terms, resources and obligations are authorized for this simulation."
+          },
+          "COMP-0493": {
+            "action": "accept",
+            "reason": "得宝建筑集团有限公司（COMP-0493）作为单一责任总承包方，接受第1轮修订的全部条款。价格 MOP 44,620,000 为固定总价，处于包预算 MOP 44,625,000 之内，币种、范围边界、成员与资源承诺（0.7）均未变更。设备费 MOP 18,650,000 与备品备件费 MOP 2,180,000 作为固定总价内的暂定成本预留，我方在授标后30天内提交供应商正式报价；超出部分由我方承担、不予向业主索赔，低于部分作为降价让渡业主，此为我方对自身报价基准的明确决定，并据此解决 condition_46f8046dd68ee3e5aa8f。接口矩阵于授标后60天内提交业主审查，临时交通安排报业主确认后实施。18个月施工调试期与第2、8、13、16、18月末里程碑作为约束性义务接受，各里程碑经业主与监理进度、支付与质量检查并验收后方触发相应付款。质量记录、试压记录、校准证书与竣工文档纳入内部复核与业主检查。受控专业分包与设备供应不改变我方单一责任界面。上述均为可执行的模拟义务，不主张未来工程交付或法定审批已经完成。"
+          }
+        },
+        "revision": 1,
+        "terms": {
+          "proposal_id": "SIMC47C6B63/CASE-0003/construction-2/round-1/contract",
+          "simulation_id": "SIMC47C6B63",
+          "project_id": "CASE-0003",
+          "package_id": "CASE-0003/construction-2",
+          "session_id": "SIMC47C6B63/CASE-0003/construction-2/round-1",
+          "snapshot_version": "86322489df193cbc63d0213e785f4449e5ad9897a6b06c58d205222f1d47e911",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0003/construction-2_003",
+          "bidder_id": "COMP-0493",
+          "lead_id": "COMP-0493",
+          "members": [
+            "COMP-0493"
+          ],
+          "price": 44620000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0493": 0.7
+          },
+          "work_shares": {
+            "COMP-0493": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "c097759afc0801102ef2c338b4a134696aaf4555eb5af1bc858358124a72331e",
+          "terms": {
+            "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+            "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0003/construction-2_003",
+              "package_id": "CASE-0003/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0493",
+              "bidder_name": "得宝建筑集团有限公司",
+              "technical_proposal": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包技术方案。交付方法按四条工作线组织：泵站机电设备安装与调试、闸门与启闭机安装调试、监测仪表集成与校准、临时及永久供水管线安装与试压。每条工作线设专职工作线负责人，由项目总监统一协调，形成单一责任界面。\n\n泵站机电安装按设备到货检验、基础复核、就位安装、电气接线、单机试运转、系统联动调试的顺序推进，安装记录与调试数据同步归档。闸门与启闭机安装前复核埋件与土建预留，安装后按制造厂要求进行启闭试验与密封检查。监测仪表由具备校准能力的专业分包实施集成与校准，校准证书纳入竣工文档。供水管线安装按分段试压、冲洗消毒、并网调试组织，试压记录逐段签认。\n\n专业环节拟通过受控专业分包与设备供应商落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。与设计包、土建包的接口以接口矩阵管理，明确预留、预埋、供电、控制信号与移交条件，定期召开接口协调会议。公共通道与临时交通按现场条件编制临时交通安排，报业主及相关部门确认后实施。\n\n质量保证依托ISO 9001、ISO 14001、ISO 45001体系，设置安装记录、试压记录、校准证书与竣工文档的内部复核节点，实行独立检查与文档纪律。现场安全按风险分级管理，重点管控吊装、临电、试压与有限空间作业。",
+              "implementation_plan": "总体按24个月项目工期编排，本包施工与调试期约18个月，预留联动调试、竣工文档与移交时间。\n\n第一阶段（第1至2月）：动员与深化，完成角色计划到岗、临时设施布置、接口矩阵确认、设备与分包采购下单、施工方案与安全计划报审。\n第二阶段（第3至8月）：泵站机电设备安装、闸门与启闭机安装、供水管线分段安装，同步开展仪表预埋与桥架敷设。\n第三阶段（第9至13月）：管线试压与冲洗消毒、机电单机试运转、仪表集成与校准、闸门启闭试验。\n第四阶段（第14至16月）：系统联动调试、供水管线并网调试、监测系统联调。\n第五阶段（第17至18月）：竣工文档整理、备品备件移交、培训与最终验收。\n\n关键里程碑：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工移交。人员按角色计划分批到岗，专业分包按工作线进场，由我方统一管理进度、安全与质量记录。",
+              "quotation": 44620000.0,
+              "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+              "compliance_statement": "我方接受业主按定性比较原则评审价格合理性，报价按设备费、安装费、调试费、备品备件费及临时设施费分列，并单列项目管理与风险预留，便于业主逐项审查。质量文档按ISO 9001体系执行安装记录、试压记录、校准证书与竣工文档的编制与内部复核，接受业主及监理的进度审查、支付审查与质量检查。接口协调以接口矩阵和定期协调会议向业主报告。设备费与备品备件费在投标阶段为草拟成本预留，待供应商正式报价后固化，我方将在合同阶段向业主提交正式报价依据。",
+              "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+              "submission_summary": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包含税总价报价 MOP 44,620,000，低于包上限 MOP 44,625,000。\n\n报价构成：设备费 MOP 18,650,000；安装费 MOP 11,280,000；调试费 MOP 3,860,000；备品备件费 MOP 2,180,000；临时设施费 MOP 2,470,000；项目管理、质量安全体系与接口协调费 MOP 2,950,000；风险预留与商业调整 MOP 3,230,000。合计 MOP 44,620,000。\n\n价格基准说明：设备费与备品备件费为投标阶段草拟成本预留，尚未收到供应商正式报价，属暂定估算；安装费按18个月施工期与角色计划测算，含受控专业分包；调试费覆盖单机、联动、试压与校准；临时设施费含临时供水、临电与临时交通安排；项目管理费覆盖ISO体系运行、文档纪律与接口协调；风险预留覆盖设备价格波动与接口协调风险。\n\n专业分包与设备供应属常规投标假设，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。付款按合同里程碑申请，接受业主支付审查。",
+              "quotation_breakdown": [
+                {
+                  "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表、管材管件）",
+                  "amount": 18650000,
+                  "basis": "按授权范围设备清单草拟成本预留，含主要机电设备、闸门启闭机、仪表与管线材料；投标阶段尚未收到供应商正式报价，属暂定估算，待正式报价后固化"
+                },
+                {
+                  "item": "安装费（含专业分包与自有班组）",
+                  "amount": 11280000,
+                  "basis": "泵站机电安装、闸门启闭机安装、仪表集成、供水管线安装四条工作线的安装人工、专业分包与机具费用，按18个月施工期与角色计划测算"
+                },
+                {
+                  "item": "调试费（单机、联动、试压与校准）",
+                  "amount": 3860000,
+                  "basis": "单机试运转、系统联动调试、管线试压冲洗消毒、仪表校准与并网调试的专项人工、检测与配合费用"
+                },
+                {
+                  "item": "备品备件费",
+                  "amount": 2180000,
+                  "basis": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认"
+                },
+                {
+                  "item": "临时设施费（含临时供水、临电、临时交通与现场办公）",
+                  "amount": 2470000,
+                  "basis": "临时设施布置、临时供水管线、临电、公共通道协调与临时交通安排、现场办公与仓储费用"
+                },
+                {
+                  "item": "项目管理、质量安全体系与接口协调费",
+                  "amount": 2950000,
+                  "basis": "项目总监及管理团队、ISO体系运行、文档纪律与内部复核、与设计包及土建包接口协调会议与矩阵管理费用"
+                },
+                {
+                  "item": "风险预留与商业调整",
+                  "amount": 3230000,
+                  "basis": "设备价格波动、专业分包协调、现场条件与工期接口风险的预留，以及含税报价的商业调整"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_46f8046dd68ee3e5aa8f"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+                "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+                "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+                "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null,
+            "negotiated_clauses": {
+              "scope_and_interfaces": "Contractor COMP-0493 remains the single responsible party for the full package scope: pump-station mechanical and electrical equipment, gates and hoists, monitoring instruments, and temporary and permanent water supply pipelines installation and commissioning; dam body and reservoir basin civil excavation are excluded. Contractor bears full responsibility for progress, safety, quality records and interface coordination regardless of any controlled specialist subcontracting or supplier arrangements. Contractor must confirm the interface matrix with the design package (CASE-0003/design) and civil package and submit it for the buyer's review within 60 days of award; interface coordination meeting costs are included in the project management fee. Contractor must submit a temporary traffic arrangement for the buyer's confirmation before implementation. All future engineering deliverables are binding obligations of the contractor, not completed facts.",
+              "price_and_change_control": "Fixed lump-sum price is MOP 44,620,000 (currency MOP), within the package budget of MOP 44,625,000; no change to price, currency, scope boundaries, parties, work shares or resource commitments. The equipment fee of MOP 18,650,000 and spare-parts fee of MOP 2,180,000 are provisional cost allowances inside the fixed lump-sum price, not open-ended reimbursables. Contractor must submit supplier formal quotations for both items within 30 days of award; any increase above the provisional amounts is at the contractor's risk and is not payable by the buyer, and any decrease is passed through to the buyer as a price reduction. This resolves open condition condition_46f8046dd68ee3e5aa8f without further documents. No uncapped price adjustment is authorized; any request requiring a price or scope change remains unresolved and needs re-tendering.",
+              "payment_terms": "Payments are made in MOP against contract milestones upon the buyer's payment review and acceptance of the corresponding milestone deliverables. Milestone payment structure and the total price ceiling are not changed by the fixing of supplier quotations; adjustments from fixed supplier quotations are conditional on the buyer's payment review. No payment is due for unaccepted work or for cost increases above the provisional equipment and spare-parts allowances.",
+              "delivery_and_review": "Contractor delivers within an 18-month construction and commissioning period inside the 24-month project duration, with binding milestones: end of month 2 temporary facilities and interface confirmation complete; end of month 8 major equipment installation complete; end of month 13 single-machine commissioning complete; end of month 16 system integrated commissioning complete; end of month 18 completion documents and handover complete. Contractor submits the interface matrix within 60 days of award and supplier formal quotations within 30 days of award for buyer review. Quality records, pressure-test records, calibration certificates and completion documents are subject to the buyer's and supervisor's progress, payment and quality inspections; acceptance of each milestone is a condition of the related payment.",
+              "response_to_feedback": "Buyer decisions are written in as binding clauses: the equipment and spare-parts fees are provisional allowances inside the fixed price with the 30-day quotation deadline and the stated risk allocation; the contractor's single-responsibility and interface-matrix obligations are accepted as proposed risk allocations with the 60-day submission deadline. Bidder COMP-0493 accepted the round-1 terms; its disclosed bid assumptions are treated as accepted stated risk allocations or replaced by the explicit obligations above. Open condition condition_46f8046dd68ee3e5aa8f is resolved by the buyer's decision above. No external documents are claimed to have been reviewed and no real-world approvals are claimed to have been obtained. Each party remains free to reject this draft."
+            },
+            "clarification_revision": 1
+          }
+        },
+        "terms_hash": "c097759afc0801102ef2c338b4a134696aaf4555eb5af1bc858358124a72331e"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0003/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+          "budget": 44625000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMC47C6B63/CASE-0003/construction-2/round-1/contract",
+    "simulation_id": "SIMC47C6B63",
+    "project_id": "CASE-0003",
+    "package_id": "CASE-0003/construction-2",
+    "session_id": "SIMC47C6B63/CASE-0003/construction-2/round-1",
+    "snapshot_version": "86322489df193cbc63d0213e785f4449e5ad9897a6b06c58d205222f1d47e911",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0003/construction-2_003",
+    "bidder_id": "COMP-0493",
+    "lead_id": "COMP-0493",
+    "members": [
+      "COMP-0493"
+    ],
+    "price": 44620000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0493": 0.7
+    },
+    "work_shares": {
+      "COMP-0493": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0493": true
+    },
+    "signed_terms_hash": "c097759afc0801102ef2c338b4a134696aaf4555eb5af1bc858358124a72331e",
+    "terms": {
+      "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+      "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0003/construction-2_003",
+        "package_id": "CASE-0003/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包技术方案。交付方法按四条工作线组织：泵站机电设备安装与调试、闸门与启闭机安装调试、监测仪表集成与校准、临时及永久供水管线安装与试压。每条工作线设专职工作线负责人，由项目总监统一协调，形成单一责任界面。\n\n泵站机电安装按设备到货检验、基础复核、就位安装、电气接线、单机试运转、系统联动调试的顺序推进，安装记录与调试数据同步归档。闸门与启闭机安装前复核埋件与土建预留，安装后按制造厂要求进行启闭试验与密封检查。监测仪表由具备校准能力的专业分包实施集成与校准，校准证书纳入竣工文档。供水管线安装按分段试压、冲洗消毒、并网调试组织，试压记录逐段签认。\n\n专业环节拟通过受控专业分包与设备供应商落实，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。与设计包、土建包的接口以接口矩阵管理，明确预留、预埋、供电、控制信号与移交条件，定期召开接口协调会议。公共通道与临时交通按现场条件编制临时交通安排，报业主及相关部门确认后实施。\n\n质量保证依托ISO 9001、ISO 14001、ISO 45001体系，设置安装记录、试压记录、校准证书与竣工文档的内部复核节点，实行独立检查与文档纪律。现场安全按风险分级管理，重点管控吊装、临电、试压与有限空间作业。",
+        "implementation_plan": "总体按24个月项目工期编排，本包施工与调试期约18个月，预留联动调试、竣工文档与移交时间。\n\n第一阶段（第1至2月）：动员与深化，完成角色计划到岗、临时设施布置、接口矩阵确认、设备与分包采购下单、施工方案与安全计划报审。\n第二阶段（第3至8月）：泵站机电设备安装、闸门与启闭机安装、供水管线分段安装，同步开展仪表预埋与桥架敷设。\n第三阶段（第9至13月）：管线试压与冲洗消毒、机电单机试运转、仪表集成与校准、闸门启闭试验。\n第四阶段（第14至16月）：系统联动调试、供水管线并网调试、监测系统联调。\n第五阶段（第17至18月）：竣工文档整理、备品备件移交、培训与最终验收。\n\n关键里程碑：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工移交。人员按角色计划分批到岗，专业分包按工作线进场，由我方统一管理进度、安全与质量记录。",
+        "quotation": 44620000.0,
+        "schedule_commitment": "本包施工与调试期18个月，在项目24个月总工期内完成，关键里程碑为：第2月末临时设施与接口确认完成；第8月末主要设备安装完成；第13月末单机调试完成；第16月末系统联动调试完成；第18月末竣工文档与移交完成。进度计划按四条工作线并行编排，与设计包、土建包接口节点纳入接口矩阵统一跟踪。",
+        "compliance_statement": "我方接受业主按定性比较原则评审价格合理性，报价按设备费、安装费、调试费、备品备件费及临时设施费分列，并单列项目管理与风险预留，便于业主逐项审查。质量文档按ISO 9001体系执行安装记录、试压记录、校准证书与竣工文档的编制与内部复核，接受业主及监理的进度审查、支付审查与质量检查。接口协调以接口矩阵和定期协调会议向业主报告。设备费与备品备件费在投标阶段为草拟成本预留，待供应商正式报价后固化，我方将在合同阶段向业主提交正式报价依据。",
+        "risk_response": "主要风险及应对：设备与材料价格波动，以风险预留覆盖并在采购阶段锁定供应商报价；专业分包协调风险，由我方统一管理进度、安全与质量记录，设置工作线负责人与周协调会；与设计包、土建包接口风险，以接口矩阵明确预留预埋与移交条件，定期协调会议跟踪；现场公共通道与临时交通风险，编制临时交通安排报批后实施；调试与试压风险，按分段试压与单机到联动的顺序推进，保留联动调试时间余量；人员到岗风险，按角色计划分批落实，开工前确认到岗。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任总承包投标人身份提交本包含税总价报价 MOP 44,620,000，低于包上限 MOP 44,625,000。\n\n报价构成：设备费 MOP 18,650,000；安装费 MOP 11,280,000；调试费 MOP 3,860,000；备品备件费 MOP 2,180,000；临时设施费 MOP 2,470,000；项目管理、质量安全体系与接口协调费 MOP 2,950,000；风险预留与商业调整 MOP 3,230,000。合计 MOP 44,620,000。\n\n价格基准说明：设备费与备品备件费为投标阶段草拟成本预留，尚未收到供应商正式报价，属暂定估算；安装费按18个月施工期与角色计划测算，含受控专业分包；调试费覆盖单机、联动、试压与校准；临时设施费含临时供水、临电与临时交通安排；项目管理费覆盖ISO体系运行、文档纪律与接口协调；风险预留覆盖设备价格波动与接口协调风险。\n\n专业分包与设备供应属常规投标假设，由我方统一承担进度、安全、质量文档与接口协调责任，不构成组合体情形。付款按合同里程碑申请，接受业主支付审查。",
+        "quotation_breakdown": [
+          {
+            "item": "设备费（泵站机电设备、闸门与启闭机、监测仪表、管材管件）",
+            "amount": 18650000,
+            "basis": "按授权范围设备清单草拟成本预留，含主要机电设备、闸门启闭机、仪表与管线材料；投标阶段尚未收到供应商正式报价，属暂定估算，待正式报价后固化"
+          },
+          {
+            "item": "安装费（含专业分包与自有班组）",
+            "amount": 11280000,
+            "basis": "泵站机电安装、闸门启闭机安装、仪表集成、供水管线安装四条工作线的安装人工、专业分包与机具费用，按18个月施工期与角色计划测算"
+          },
+          {
+            "item": "调试费（单机、联动、试压与校准）",
+            "amount": 3860000,
+            "basis": "单机试运转、系统联动调试、管线试压冲洗消毒、仪表校准与并网调试的专项人工、检测与配合费用"
+          },
+          {
+            "item": "备品备件费",
+            "amount": 2180000,
+            "basis": "按设备清单草拟的备品备件与专用工具预留，含仪表备件与闸门密封件；属暂定估算，待供应商报价确认"
+          },
+          {
+            "item": "临时设施费（含临时供水、临电、临时交通与现场办公）",
+            "amount": 2470000,
+            "basis": "临时设施布置、临时供水管线、临电、公共通道协调与临时交通安排、现场办公与仓储费用"
+          },
+          {
+            "item": "项目管理、质量安全体系与接口协调费",
+            "amount": 2950000,
+            "basis": "项目总监及管理团队、ISO体系运行、文档纪律与内部复核、与设计包及土建包接口协调会议与矩阵管理费用"
+          },
+          {
+            "item": "风险预留与商业调整",
+            "amount": 3230000,
+            "basis": "设备价格波动、专业分包协调、现场条件与工期接口风险的预留，以及含税报价的商业调整"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_46f8046dd68ee3e5aa8f"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "泵站机电安装调试、闸门启闭机安装调试、监测仪表集成校准等专业环节拟通过受控专业分包与设备供应商落实，由我方作为单一责任投标人统一管理",
+          "设备费与备品备件费在投标阶段以草拟成本预留列示，尚待收到供应商正式报价后固化",
+          "与设计包及土建包的接口协调以接口矩阵和定期协调会议安排推进，具体接口责任在合同阶段确认",
+          "现场人员可用性以角色计划与团队可用性摘要提交，实际到岗在开工前按进度计划落实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "泵站机电设备、闸门与启闭机、监测仪表、临时及永久供水管线安装与调试；不含坝体与库盆土建开挖。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null,
+      "negotiated_clauses": {
+        "scope_and_interfaces": "Contractor COMP-0493 remains the single responsible party for the full package scope: pump-station mechanical and electrical equipment, gates and hoists, monitoring instruments, and temporary and permanent water supply pipelines installation and commissioning; dam body and reservoir basin civil excavation are excluded. Contractor bears full responsibility for progress, safety, quality records and interface coordination regardless of any controlled specialist subcontracting or supplier arrangements. Contractor must confirm the interface matrix with the design package (CASE-0003/design) and civil package and submit it for the buyer's review within 60 days of award; interface coordination meeting costs are included in the project management fee. Contractor must submit a temporary traffic arrangement for the buyer's confirmation before implementation. All future engineering deliverables are binding obligations of the contractor, not completed facts.",
+        "price_and_change_control": "Fixed lump-sum price is MOP 44,620,000 (currency MOP), within the package budget of MOP 44,625,000; no change to price, currency, scope boundaries, parties, work shares or resource commitments. The equipment fee of MOP 18,650,000 and spare-parts fee of MOP 2,180,000 are provisional cost allowances inside the fixed lump-sum price, not open-ended reimbursables. Contractor must submit supplier formal quotations for both items within 30 days of award; any increase above the provisional amounts is at the contractor's risk and is not payable by the buyer, and any decrease is passed through to the buyer as a price reduction. This resolves open condition condition_46f8046dd68ee3e5aa8f without further documents. No uncapped price adjustment is authorized; any request requiring a price or scope change remains unresolved and needs re-tendering.",
+        "payment_terms": "Payments are made in MOP against contract milestones upon the buyer's payment review and acceptance of the corresponding milestone deliverables. Milestone payment structure and the total price ceiling are not changed by the fixing of supplier quotations; adjustments from fixed supplier quotations are conditional on the buyer's payment review. No payment is due for unaccepted work or for cost increases above the provisional equipment and spare-parts allowances.",
+        "delivery_and_review": "Contractor delivers within an 18-month construction and commissioning period inside the 24-month project duration, with binding milestones: end of month 2 temporary facilities and interface confirmation complete; end of month 8 major equipment installation complete; end of month 13 single-machine commissioning complete; end of month 16 system integrated commissioning complete; end of month 18 completion documents and handover complete. Contractor submits the interface matrix within 60 days of award and supplier formal quotations within 30 days of award for buyer review. Quality records, pressure-test records, calibration certificates and completion documents are subject to the buyer's and supervisor's progress, payment and quality inspections; acceptance of each milestone is a condition of the related payment.",
+        "response_to_feedback": "Buyer decisions are written in as binding clauses: the equipment and spare-parts fees are provisional allowances inside the fixed price with the 30-day quotation deadline and the stated risk allocation; the contractor's single-responsibility and interface-matrix obligations are accepted as proposed risk allocations with the 60-day submission deadline. Bidder COMP-0493 accepted the round-1 terms; its disclosed bid assumptions are treated as accepted stated risk allocations or replaced by the explicit obligations above. Open condition condition_46f8046dd68ee3e5aa8f is resolved by the buyer's decision above. No external documents are claimed to have been reviewed and no real-world approvals are claimed to have been obtained. Each party remains free to reject this draft."
+      },
+      "clarification_revision": 1
+    }
+  }
+}

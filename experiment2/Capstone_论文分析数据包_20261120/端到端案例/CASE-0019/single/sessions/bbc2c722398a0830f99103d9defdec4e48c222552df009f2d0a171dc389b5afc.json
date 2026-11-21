@@ -1,0 +1,2019 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIME3B32373/CASE-0019/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 82875000.0,
+      "project": {
+        "project_id": "CASE-0019",
+        "name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0019/construction-1",
+        "project_id": "CASE-0019",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "行人隧道主体土建及结构施工包",
+        "scope": "新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+        "budget": 82875000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0019/design",
+          "CASE-0019/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0191",
+          "COMP-0494"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0019",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIME3B32373/CASE-0019/cost/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 2000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIME3B32373/CASE-0019/design/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIME3B32373/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/design",
+            "contract_id": "SIME3B32373/CASE-0019/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 4000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/cost",
+            "contract_id": "SIME3B32373/CASE-0019/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 2000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0019",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0494": {
+        "entity_id": "COMP-0494",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0494",
+          "company_name": "得寶國際-得寶建築合作經營",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0494",
+          "name": "得寶國際-得寶建築合作經營",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "7ad2fbe691cb17091119da15585532355cc6047a4706098b6721551d5adbea14"
+  },
+  "spec": {
+    "package_id": "CASE-0019/construction-1",
+    "project_id": "CASE-0019",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "行人隧道主体土建及结构施工包",
+    "scope": "新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+    "budget": 82875000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0019/design",
+      "CASE-0019/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0191",
+      "COMP-0494"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0019",
+      "project_name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0019",
+      "project_scope": "本项目为澳门新城填海区A区至澳门半岛之间的连接通道改善工程（行人隧道），采用DBB交付模式。业主已授权本次招标包为CASE-0019/construction-1（行人隧道主体土建及结构施工包），范围包括明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。项目总预算MOP 150,000,000，本包预算MOP 82,875,000，工期24个月。业主已另行判给设计包（MOP 4,000,000）和造价咨询包（MOP 2,000,000），本包须与设计及造价咨询成果衔接。",
+      "functional_requirements": [
+        "提供安全、连续、无障碍的行人通行空间，满足日常及应急疏散需求",
+        "隧道结构满足设计使用年限内的承载、防水、耐久及维护要求",
+        "临时交通疏解方案须保障施工期间周边道路及行人通行安全",
+        "与后续机电、装修、导向标识及外部道路接驳工程预留接口条件",
+        "施工期间维持公共交通及应急车辆通行能力"
+      ],
+      "technical_requirements": [
+        "BIM协调：施工包须配合设计包完成BIM模型深化与施工阶段协调",
+        "MEP协调：土建阶段预留机电管线套管、孔洞及设备基础接口",
+        "结构协调：明挖/暗挖段支护体系与永久结构受力转换须经独立复核",
+        "运输接口布局：施工运输路线与公共交通、行人流线分离",
+        "公共通道布局：施工围挡与临时行人通道须满足无障碍及安全要求",
+        "耐久性目标：隧道结构满足设计使用年限及防水等级要求",
+        "可维护性目标：接缝、防水及排水系统便于检查与维护",
+        "业主验收路径：分阶段验收（支护、结构、防水、回填）与最终验收",
+        "能耗使用目标：施工设备及临时设施满足节能与排放控制要求"
+      ],
+      "budget_policy": "本包预算为MOP 82,875,000，采用工程量清单计价。业主将依据造价咨询包的造价建议与审查意见，结合市场材料价格指数（1.0545）、人工价格指数（1.0980）及融资条件指数（0.9799）进行报价合理性分析。评标时采用定性比较原则，综合判断报价合理性、风险控制与交付信心，不单纯以最低价判给。",
+      "schedule_policy": "总工期24个月，施工包须提交里程碑计划，明确开挖支护、结构施工、防水回填及临时交通疏解各阶段时间。业主审查时间、设计包与施工包接口时间、公共通道协调时间须纳入计划。里程碑须现实可行，并预留业主审查及接口确认时间。",
+      "compliance_requirements": [
+        "业主审查节奏：每月进度审查会议及关键节点专项审查",
+        "问题升级路径：施工异常或安全事件须在24小时内报告业主",
+        "文档纪律：施工记录、检验批、材料证明及变更文件须完整归档",
+        "接口签署：与设计、机电、外部道路接驳的接口须经业主确认",
+        "公共通道协调：临时交通疏解及行人通道方案须经业主与交通部门协调",
+        "质量目标跟踪：分阶段质量验收指标须定期向业主报告",
+        "安全期望跟踪：安全巡查、隐患整改及事故报告须定期提交",
+        "变更控制纪律：范围与预算变更须经宏观审批，施工包不得擅自变更"
+      ],
+      "risk_priorities": [
+        "开挖支护及暗挖段施工安全风险",
+        "隧道防水与接缝质量控制风险",
+        "临时交通疏解与公共通道协调风险",
+        "材料价格与人工价格波动风险",
+        "设计接口与施工深化协调风险",
+        "工期延误及里程碑偏差风险",
+        "周边环境与沉降监测风险"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0019/construction-1",
+          "package_type": "contractor",
+          "package_name": "行人隧道主体土建及结构施工包",
+          "scope": "Authorized scope: 新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。\nBuyer refinement: 新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "隧道明挖与暗挖施工能力",
+            "城市施工物流与交通疏解能力",
+            "隧道结构及防水施工能力",
+            "质量文档管理能力",
+            "安全期望跟踪与现场安全管理能力",
+            "BIM施工深化协调能力",
+            "接口协调与业主审查响应能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工方法与交付方案",
+            "质量方针与质量目标实现路径",
+            "价格基础与工程量清单报价",
+            "进度视图与里程碑计划",
+            "风险应对方案",
+            "安全与临时交通疏解方案"
+          ],
+          "pricing_requirements": "按工程量清单计价，报价须包含开挖支护、结构、防水、回填及临时交通疏解配合全部费用。业主将参考造价咨询意见及市场价格指数进行报价合理性分析。\nBinding currency: MOP; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制与交付信心，不单纯以最低价判给。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0019/construction-1",
+        "package_type": "contractor",
+        "package_name": "行人隧道主体土建及结构施工包",
+        "scope": "Authorized scope: 新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。\nBuyer refinement: 新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "隧道明挖与暗挖施工能力",
+          "城市施工物流与交通疏解能力",
+          "隧道结构及防水施工能力",
+          "质量文档管理能力",
+          "安全期望跟踪与现场安全管理能力",
+          "BIM施工深化协调能力",
+          "接口协调与业主审查响应能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工方法与交付方案",
+          "质量方针与质量目标实现路径",
+          "价格基础与工程量清单报价",
+          "进度视图与里程碑计划",
+          "风险应对方案",
+          "安全与临时交通疏解方案"
+        ],
+        "pricing_requirements": "按工程量清单计价，报价须包含开挖支护、结构、防水、回填及临时交通疏解配合全部费用。业主将参考造价咨询意见及市场价格指数进行报价合理性分析。\nBinding currency: MOP; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标，综合判断能力匹配、价格合理性、风险控制与交付信心，不单纯以最低价判给。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-项目管理处",
+          "position": "项目总管（业主代表）",
+          "personal_profile": "长期负责跨海及填海区交通基建，习惯先锁定工期与接口风险，再谈造价。压力下倾向把问题拆成可交付节点，最担心承建单位低估行人隧道与A区连接段的接口协调难度。讨论中会主动追问团队是否真的能在24个月内完成关键路径，并提醒不要把业主审批当成理所当然的缓冲。",
+          "responsibilities": [
+            "统筹CASE-0019整体交付目标与工期节点",
+            "主持招标包划分与采购策略讨论",
+            "协调设计、监管与承建单位之间的接口",
+            "向局方汇报重大风险与判给建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，对模糊承诺会当场要求量化。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_黄嘉敏",
+          "agent_name": "黄嘉敏",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-设计协调组",
+          "position": "设计协调主管",
+          "personal_profile": "工程师出身，对图纸深度与现场可施工性之间的落差特别敏感。她先看设计说明是否覆盖行人隧道的防水、通风与逃生要求，再看投标组合体是否有能力把设计意图落地。压力下容易坚持设计完整性，可能与其他成员在造价压缩上产生张力。",
+          "responsibilities": [
+            "审查设计文件深度与设计协调安排",
+            "评估投标方对设计意图的理解与落实能力",
+            "跟踪设计变更对工期与造价的影响",
+            "组织设计审查与独立复核"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "细致、以图纸和条款为依据，喜欢用具体技术点反问，语气克制但立场坚定。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_李伟雄",
+          "agent_name": "李伟雄",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-成本控制组",
+          "position": "成本控制与支付评审主管",
+          "personal_profile": "做造价评审多年，习惯把报价拆到工项与风险准备金层面，对低价投标背后的资源缺口高度警觉。他先看价格基础是否完整、支付评审机制是否清晰，再判断报价是否可持续。讨论中常扮演刹车角色，担心为了赶工期而放松成本纪律。",
+          "responsibilities": [
+            "评审投标报价基础与成本合理性",
+            "设计支付评审与成本控制机制",
+            "评估风险准备金与价格调整条款",
+            "跟踪判给后的成本偏差"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "数字导向、追问细节，常用对比与区间说明问题，不轻易接受口头保证。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-质量与监管组",
+          "position": "质量监管与验收统筹",
+          "personal_profile": "长期从事工程质量监管，先看投标方的质量目标追踪与独立检查安排，而不是先看承诺口号。她认为行人隧道的隐蔽工程与防水质量决定后期维护成本，压力下会坚持保留独立检查节点。她的张力在于可能对赶工安排提出较多保留意见。",
+          "responsibilities": [
+            "制定质量目标与验收检查框架",
+            "评估投标方质量方法与独立检查能力",
+            "监督监管服务与现场质量记录",
+            "组织关键工序的质量复核"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实、以检查记录说话，倾向用清单式提问，对含糊的质量承诺会持续跟进。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-采购与合约组",
+          "position": "采购与合约协调主管",
+          "personal_profile": "熟悉澳门招标程序与组合体安排，先看投标结构、责任划分与文件纪律是否清晰。他认为采购阶段留下的模糊条款会在履约阶段放大成争议，压力下倾向把权责写死。讨论中会提醒其他成员注意程序合规与文件一致性，可能与追求速度的意见产生摩擦。",
+          "responsibilities": [
+            "组织招标包文件与评标程序",
+            "审查组合体结构与责任划分",
+            "维护采购文件与评标记录的一致性",
+            "协调判给后的合约交底"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "程序化、条理清晰，习惯引用条款与文件编号，对程序瑕疵零容忍。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_何淑贞",
+          "agent_name": "何淑贞",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-对外协调组",
+          "position": "利益相关方与社区协调主管",
+          "personal_profile": "擅长处理居民、交通与跨部门沟通，先看施工期间对周边出行与社区的影响，再看技术方案。她认为行人隧道改善工程的成败很大程度取决于沟通节奏，压力下会优先争取缓冲与透明说明。她的张力在于可能要求为协调留出更多时间，与紧凑工期形成拉扯。",
+          "responsibilities": [
+            "统筹居民与跨部门利益相关方沟通",
+            "评估施工期交通与社区影响安排",
+            "协调业主对外说明与信息发布",
+            "跟踪投诉与社区反馈的处理"
+          ],
+          "decision_authority": "advise",
+          "communication_style": "亲和、善于倾听，先复述对方关切再提方案，对冲突场面能降温但立场明确。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先判断合同边界与最终交付责任，习惯先确认业主验收标准与工期刚性，再决定资源投入。他倾向把风险集中到可控节点，对模糊授权容忍度低，常在讨论中追问谁对最终结果负责。",
+          "responsibilities": [
+            "统筹投标策略与最终报价审批",
+            "对接业主与监管方，确认验收与工期要求",
+            "裁决内部资源冲突与重大风险应对",
+            "监督质量目标与可持续发展目标的落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结论先行，偏好用责任矩阵和关键路径说话，对未闭环事项会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本组",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，先看报价构成与支付条件，再评估现金流与变更空间。她倾向在投标阶段锁定价格依据，对业主额外费用条款会逐项核对，讨论中常提醒不要用乐观假设掩盖成本缺口。",
+          "responsibilities": [
+            "编制报价与价格依据说明",
+            "开展成本控制与支付评审",
+            "管理分包与采购商务条款",
+            "跟踪付款评审与变更索赔"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用表格和分项数字表达立场，对模糊表述会要求量化。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术组",
+          "position": "技术负责人",
+          "personal_profile": "面对技术争议时先回到设计意图与现场条件，重视可施工性与独立复核。他容易对未经验证的施工方案提出质疑，倾向用试验段和监测数据说话，讨论中常把设计协调与现场风险放在一起权衡。",
+          "responsibilities": [
+            "审核施工方案与临时支护设计",
+            "组织设计协调与技术交底",
+            "制定质量目标与独立检查计划",
+            "评估开挖与结构施工风险"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨、偏技术化，习惯用条件句和验证步骤推进讨论，对跳过复核的提议会明确保留意见。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "现场执行组",
+          "position": "现场经理",
+          "personal_profile": "到现场先看工序衔接与交通疏解，关注班组可用性和每日产出。她对资源计划与工期承诺之间的落差非常敏感，讨论中常把抽象方案拉回到人机料是否到位，倾向用短周期滚动计划暴露问题。",
+          "responsibilities": [
+            "统筹现场施工组织与资源计划",
+            "编制并提交现场报告与进度记录",
+            "协调临时交通疏解与周边利益相关方",
+            "落实安全文明施工与工序验收"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、节奏快，多用现场实例和短句，对不落地的计划会直接指出执行障碍。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与风险组",
+          "position": "质量与风险经理",
+          "personal_profile": "先识别质量目标与监管要求的偏差，再评估风险应对是否可验证。他倾向对赶工方案保持审慎，强调文档纪律与独立检查记录，讨论中常提醒质量缺陷的返工成本会侵蚀报价空间。",
+          "responsibilities": [
+            "建立质量目标跟踪与检查台账",
+            "组织独立检查与质量评审",
+            "维护文档纪律与合规记录",
+            "评估风险应对措施的有效性"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "稳健、注重证据，习惯用检查清单和偏差记录表达观点，对压缩检查环节的提议会明确反对。"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与成本平衡，习惯先确认业主核心诉求再分配资源；对风险信号敏感，常提醒团队不要低估审批与协调时间；讨论中倾向于推动快速形成可执行方案，但可能对细节质量把控施加压力。",
+          "responsibilities": [
+            "统筹投标策略与最终报价审批",
+            "协调业主与内部关键决策",
+            "监控整体工期与成本控制目标",
+            "审批资源计划与风险应对方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善于用简明语言总结复杂问题，在会议中常以提问引导团队聚焦关键矛盾。"
+        },
+        {
+          "agent_id": "COMP-0191_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，在压力下会反复核对报价基础与支付条件；首先注意到成本漏项和现金流风险；讨论中常带来保守的财务视角，提醒团队不要为中标牺牲合理利润。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付条件",
+            "进行成本控制与支付评审",
+            "管理分包采购与商务谈判"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致严谨，习惯用数据支撑观点，表达清晰但有时显得过于谨慎。"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "以技术可行性和施工安全为第一考量，在压力下会深入分析地质条件和施工方案；首先注意到设计协调问题与现场技术风险；讨论中常坚持技术标准，可能对工期压缩持保留态度。",
+          "responsibilities": [
+            "审核设计图纸与施工方案",
+            "协调设计变更与技术接口",
+            "监督现场施工质量与安全",
+            "组织技术交底与工艺试验"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "逻辑性强，喜欢用图纸和规范说话，表达准确但有时过于技术化。"
+        },
+        {
+          "agent_id": "COMP-0191_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量目标和安全合规视为不可妥协的底线，在压力下会坚持独立检查与文档记录；首先注意到质量目标偏差和监管要求；讨论中常带来合规视角，可能对赶工方案提出质疑。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "组织独立质量评审与验收",
+            "监督安全措施与合规文档",
+            "跟踪整改与质量缺陷处理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "原则性强，沟通直接，善于用检查表和证据说明问题。"
+        },
+        {
+          "agent_id": "COMP-0191_05_周家豪",
+          "agent_name": "周家豪",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "施工经理",
+          "personal_profile": "注重现场可操作性和资源调度效率，在压力下会优先保证关键线路施工；首先注意到劳动力、机械和材料供应情况；讨论中常强调实际执行难度，可能对过于理想化的计划提出修正。",
+          "responsibilities": [
+            "编制施工进度与资源计划",
+            "协调现场分包与机械调度",
+            "管理临时交通疏解配合",
+            "跟踪每日施工进展与问题"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实直白，喜欢用现场实例说明问题，沟通节奏快。"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_陳志強",
+          "agent_name": "陳志強",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "項目管理部",
+          "position": "項目總監",
+          "personal_profile": "壓力下傾向先穩定團隊情緒再作決策，注重整體工期與資源調配；最先注意到合約風險與業主期望落差；討論中常帶入『能否按時交付』的張力，促使團隊正視現實限制。",
+          "responsibilities": [
+            "統籌行人隧道主體土建包的整體交付",
+            "協調設計與成本包介面",
+            "業主介面與匯報",
+            "資源規劃與調配",
+            "風險應對與決策把關"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉穩直接，善用簡報與會議紀要推進共識，必要時強勢拍板。"
+        },
+        {
+          "agent_id": "COMP-0494_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "成本控制部",
+          "position": "成本經理",
+          "personal_profile": "對數字高度敏感，壓力下更堅持逐項核對；最先注意到報價基礎與付款條款的缺口；討論中常質疑過度樂觀的估算，帶來成本紀律的張力。",
+          "responsibilities": [
+            "編制與審核投標報價基礎",
+            "成本控制與付款評審",
+            "分包商報價分析",
+            "變更與索賠成本評估",
+            "現金流與融資條件評估"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "條理分明，以數據說話，書面記錄嚴謹。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黃偉雄",
+          "agent_name": "黃偉雄",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "工程技術部",
+          "position": "技術總監",
+          "personal_profile": "工程思維主導，壓力下傾向回歸技術本質；最先注意到施工可行性與地質風險；討論中常提出替代工法與安全冗餘，帶來技術嚴謹與工期取捨的張力。",
+          "responsibilities": [
+            "審核明挖與暗挖段施工方案",
+            "結構與防水設計協調",
+            "質量目標跟蹤與獨立檢查安排",
+            "安全與環境管理體系落實",
+            "技術風險應對"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "務實精準，喜歡用圖紙與計算說明，對模糊表述會追問到底。"
+        },
+        {
+          "agent_id": "COMP-0494_04_張淑儀",
+          "agent_name": "張淑儀",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "合約與採購部",
+          "position": "合約經理",
+          "personal_profile": "規則導向，壓力下更重視程序正義；最先注意到合約條款與監管要求的不一致；討論中常提醒法律與合規邊界，帶來程序約束的張力。",
+          "responsibilities": [
+            "投標文件與合約條款審查",
+            "分包採購與組合體安排",
+            "監管合規與許可申請協調",
+            "文件紀律與記錄管理",
+            "索賠與爭議處理支援"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "嚴謹細緻，用詞準確，偏好書面確認與清單管理。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "現場經理",
+          "personal_profile": "行動導向，壓力下傾向快速解決現場問題；最先注意到勞動力與物料供應的即時缺口；討論中常催促決策以配合施工節奏，帶來執行速度與計劃周全的張力。",
+          "responsibilities": [
+            "現場施工組織與進度控制",
+            "勞動力與物料供應計劃",
+            "臨時交通疏解配合",
+            "工地安全與質量檢查",
+            "現場報告與問題上報"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "簡潔有力，習慣用現場照片與進度圖溝通，強調即時行動。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-1",
+        "agent_id": "COMP-0153_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个与我们业务方向高度契合的隧道主体土建包，明挖暗挖、结构防水、回填和临时交通疏解都在我们作为总承包商的常规掌控范围内。公司资源账面上可用2.0，占用为0，包需求0.7，容量上完全能独立承担。预算8287.5万MOP，工期24个月，属于中等规模，风险可控。内部讨论没有提出任何必须依赖外部伙伴才能成立的技术或责任缺口，机电、装修、导向标识都已排除在外，接口相对干净。我倾向于以单一责任主体身份投标，把分包和外部支持放在常规管理框架下，而不是搞组合体削弱我们的主导权和利润空间。需要提醒的是，团队可用性、BIM深化协调和交通疏解方案要在投标文件中用角色计划和交付方案说清楚，报价要按工程量清单完整覆盖开挖支护、结构、防水、回填及交通疏解配合，并留出材料与人工价格指数的风险余量。",
+        "content": "管理层决定：以中交第一航务工程局有限公司名义独立投标新城填海区A区至澳门半岛连接通道改善工程行人隧道主体土建及结构施工包。投标策略要点：一、以单一责任总承包商身份提交，明确公司在开挖支护、隧道结构、防水接缝、回填及临时交通疏解配合上的统筹责任；二、编制角色计划与团队可用性摘要，说明关键岗位配置和资源投入节奏；三、施工方法与交付方案重点覆盖明挖与暗挖衔接、城市施工物流与交通疏解、结构防水质量控制；四、质量方针与目标实现路径配套文档管理和业主审查响应机制；五、进度视图按24个月工期设置里程碑，并预留接口协调窗口；六、报价按工程量清单计价，完整包含开挖支护、结构、防水、回填及交通疏解配合全部费用，参考造价咨询意见和市场价格指数校核合理性，并在风险应对方案中列明材料与人工价格波动、临时交通疏解审批和现场安全期望跟踪的应对措施；七、专业作业和外部支持按常规分包与顾问安排管理，由公司统一控制安全、质量记录、付款协调和接口审查，不改变单一投标主体责任。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:44:06",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-1",
+        "agent_id": "COMP-0191_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为承包商，这个行人隧道主体土建包在业务方向上完全对口：明挖暗挖、结构、防水、回填、临时交通疏解都是我们的核心施工范畴，公司资质与施工能力参数也支持独立承担。资源上可用2.0、占用0，包需求0.7，容量充足，不存在必须靠联合体才能凑齐交付权威的问题。真正的顾虑是：公司档案里没有历史项目记录和团队可用性明细，隧道暗挖和城市交通疏解属于高风险工序，报价上限8287.5万要在工程量清单下覆盖全部费用，材料与人工价格指数都在上行，利润空间需要谨慎测算。但这些是定价、方法和风险应对层面的问题，可以通过分包专业工序、明确自营与分包边界、设置质量与安全审查关口来解决，不需要让另一家企业共享投标人身份和包级交付责任。因此我倾向独立投标，把暗挖专业作业和交通疏解配合作为受控分包安排写入方案，同时把团队可用性和关键人员到位作为投标假设管理。",
+        "content": "决策：参与投标（独立投标）。本包与公司施工主业高度契合，公司具备隧道明挖暗挖、结构、防水、回填及临时交通疏解配合的施工组织能力，可作为单一责任主体提交完整投标。投标文件将围绕角色计划与团队可用性摘要、施工方法与交付方案、质量方针与质量目标实现路径、工程量清单价格基础、进度视图与里程碑计划、风险应对方案、安全与临时交通疏解方案逐项响应。交付安排上，公司自营承担现场管理、安全管理、质量管理、测量与文档控制，暗挖专业作业与交通疏解配合按受控分包方式纳入统一管理，明确接口责任与验收标准，不改变公司作为唯一责任投标人的地位。报价按工程量清单计价，覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用，并结合材料与人工价格指数设置风险准备金。质量与文档按内部复核与独立检查双轨执行，配合业主审查节点。团队可用性与关键人员到位情况作为投标假设管理，在提交前完成内部确认。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:44:06",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-1",
+        "agent_id": "COMP-0494_01_陳志強",
+        "agent_name": "陳志強",
+        "department": "項目管理部",
+        "position": "項目總監",
+        "message_type": "decision",
+        "thoughts": "我们是一家本地总承包企业，具备建筑、土木、地下工程、地基、填海、道路桥梁等综合施工背景，并持有ISO三体系认证，资源账面上可用2.0、占用0，足以覆盖本包0.7的资源需求。这个行人隧道主体土建包属于明挖/暗挖开挖支护、结构、防水、回填及临时交通疏解配合，正好落在我们的施工能力范围内，且不含机电装修，边界清晰，责任单一，我们完全有能力作为单一责任投标人牵头。预算8287.5万MOP，工期24个月，规模适中，业主按工程量清单计价并做报价合理性分析，这要求我们把价格基础和工程量清单做扎实。内部讨论没有提出任何必须依赖外部伙伴共享投标人身份或技术权威的硬缺口；明挖暗挖、防水、交通疏解都是我们可自行组织或通过常规专业分包与外部支持解决的正常施工风险，不构成组合体理由。真正的管理关注点是：团队可用性需要以角色计划和可用性摘要落实，不能拿公司总量当人员已到位；BIM深化协调、质量文档、安全与临时交通疏解方案要在标书中给出可执行路径；报价要区分自拟成本与尚未取得的分包报价。综合判断，机会值得争取，我们应独立投标，以单一责任主体身份控制工期、安全、质量与接口，同时把上述落实事项作为投标假设管理。",
+        "content": "管理层决定：就新城填海区A区至澳门半岛连接通道改善工程行人隧道主体土建及结构施工包（CASE-0019/construction-1）以单一责任投标人身份提交投标，报价上限按包预算82875000.0 MOP控制。投标文件将围绕业主所列内容组织：角色计划与团队可用性摘要，明确关键岗位与投入节奏，不以公司总量替代人员到位承诺；施工方法与交付方案，覆盖明挖与暗挖段开挖支护、隧道底板侧墙顶板结构、防水与接缝、回填及临时交通疏解配合；质量方针与质量目标实现路径，依托ISO 9001、ISO 14001、ISO 45001体系落实文档纪律与独立复核；价格基础与工程量清单报价，按清单计价并区分自拟成本与尚未取得的分包报价，配合业主造价咨询与市场价格指数分析；进度视图与里程碑计划；风险应对方案；安全与临时交通疏解方案。BIM施工深化协调与接口协调作为内部深化与业主审查响应机制纳入方案。本包不含机电、装修、导向标识及外部道路接驳，投标范围严格按授权范围界定，避免责任外溢。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:44:07",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0019/construction-1",
+        "agent_id": "OWNER-4048bdd520aa7f_06_何淑贞",
+        "agent_name": "何淑贞",
+        "department": "公共建设局-对外协调组",
+        "position": "利益相关方与社区协调主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为行人隧道主体土建及结构施工包的判给承担问责。评标推荐中建八局第二建设有限公司，其报价MOP 78,750,000低于包上限，价格具备竞争力，且技术方案对明挖、暗挖、结构、防水及交通疏解均有针对性安排，关键工序停止点与独立检查机制具体，质量文档纪律较好。然而，暗挖与交通疏解分包仅为暂估价，团队可用性以投标假设管理，这些是判给前必须澄清的重点。中交第一航务工程局方案最完整但报价触及上限，价格无优势；得寶國際报价超上限且分包未锁定，价格合理性不足。综合 affordability、交付风险与问责清晰度，中建八局第二建设在价格与管控机制上较均衡，通过判给前澄清分包暂估与团队到位，可降低履约不确定性。因此，我决定将本包判给中建八局第二建设有限公司，并附预合同澄清重点。",
+        "content": "经综合评标与业主审查，本包判给中建八局第二建设有限公司，报价MOP 78,750,000。该投标在包上限以内，技术方案对明挖、暗挖、结构、防水及交通疏解均有针对性安排，关键工序停止点与独立检查机制具体，质量文档纪律较好，风险应对覆盖暗挖安全、交通疏解及价格上行。预合同澄清重点为暗挖与交通疏解分包暂估价的锁定安排及关键岗位人员到位证据，相关澄清与业主审查和批准流程对齐。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-20T01:13:19",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0019/construction-1",
+        "decision": "bid",
+        "reason": "经管理层审议，本包属于公司核心施工能力范围，明挖暗挖、隧道结构、防水、回填及临时交通疏解配合均可由公司作为单一责任总承包商统筹实施，无需引入共享投标身份和责任分工的组合体。公司当前资源占用为零，可用容量足以覆盖本包需求，具备独立投标的交付条件。商业上，8287.5万MOP的包规模适中，与公司风险偏好和区域定位相符，值得争取。管理要求是：投标文件须以角色计划与团队可用性摘要、施工方法与交付方案、质量方针与目标实现路径、进度视图与里程碑计划、风险应对方案、安全与临时交通疏解方案回应业主关切；报价按工程量清单计价，完整覆盖开挖支护、结构、防水、回填及交通疏解配合费用，并参考造价咨询意见与市场价格指数做合理性校核。专业分包和外部支持按常规分包管理，由公司统一控制现场安全、质量记录、付款协调和接口审查，不作为组合体处理。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任总承包商身份独立投标，不组建组合体",
+          "专业分包和外部技术支持按常规分包与顾问安排管理，由公司统一控制现场安全、质量记录和接口审查",
+          "报价按工程量清单计价，覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用",
+          "关键岗位人员配置和团队可用性在投标文件中以角色计划形式说明",
+          "BIM施工深化协调由公司内部团队主导，必要时引入外部技术支持"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0019/construction-1",
+        "decision": "bid",
+        "reason": "管理判断：本包属于公司核心土建施工范畴，明挖暗挖、隧道结构、防水接缝、回填及临时交通疏解配合均在公司施工能力与资质覆盖范围内，公司可作为单一责任投标人独立承担。资源账面上可用容量2.0、占用0，相对包需求0.7有充足余量，不存在必须借助联合体才能形成交付权威的缺口。主要风险在于暗挖工序与城市交通疏解的安全质量压力、工程量清单报价在材料与人工价格上行背景下的合理性，以及团队可用性尚未有明细佐证。处理方式是：以自营管理团队为交付主体，暗挖专业作业与交通疏解配合按受控分包安排纳入风险应对与角色计划，报价按工程量清单逐项组价并预留风险准备金，质量与安全按业主审查节点设置内部复核关口。上述属于正常投标风险，不构成放弃或改为联合体的理由。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+          "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+          "关键岗位人员与团队可用性在提交前完成内部确认",
+          "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+          "质量与安全按业主审查节点设置内部复核与独立检查关口"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0494",
+        "package_id": "CASE-0019/construction-1",
+        "decision": "bid",
+        "reason": "本包为行人隧道主体土建及结构施工，属于我们总承包与地下工程、土木施工的核心能力范围，边界清晰、不含机电装修，责任可单一承担。公司资源账面无占用、可用容量足以覆盖本包需求，ISO三体系认证支撑质量、环境与安全管理要求。内部讨论未出现必须由另一主体共享投标人身份、技术权威或商业暴露的问责缺口；明挖暗挖、防水、临时交通疏解及BIM深化属于可通过自身组织与常规专业分包管理的正常施工风险，不构成组合体理由。因此决定以单一责任投标人身份参与投标，重点把角色计划与团队可用性、施工方法与交付方案、质量目标实现路径、工程量清单价格基础、进度里程碑、风险应对及安全与临时交通疏解方案做扎实，并在报价中区分自拟成本与尚未取得的分包报价，确保报价合理性经得起业主造价咨询与市场价格指数分析。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按授权范围投标，不含机电、装修、导向标识及外部道路接驳",
+          "关键岗位人员可用性以角色计划与团队可用性摘要为准，提交前完成内部确认",
+          "明挖暗挖专业作业、防水及临时交通疏解配合按常规专业分包或外部支持组织，分包报价尚未取得，报价中先以自拟成本列示",
+          "BIM施工深化协调由我方牵头组织，按业主审查节点提交",
+          "报价按工程量清单计价，接受业主造价咨询意见及市场价格指数合理性分析",
+          "工期按项目24个月框架编排里程碑，具体节点以招标文件为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0019/construction-1_001",
+        "package_id": "CASE-0019/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "中交第一航务工程局有限公司以单一责任总承包商身份独立投标本行人隧道主体土建及结构施工包，不组建组合体，不设共享投标身份。技术方案围绕明挖段与暗挖段的衔接组织：明挖段采用分段开挖、分层支护、随挖随撑，暗挖段按围岩与覆土条件采用台阶法或环形开挖留核心土，初支紧跟、二衬适时施作；隧道结构按底板、侧墙、顶板顺序组织流水，模板台车与定型钢模结合，混凝土供应与浇筑窗口按城市施工限制排布。防水与接缝作为独立质量控制单元，实行基面处理、防水板铺设、施工缝与变形缝止水带安装三道验收，隐蔽前由内部质量组独立检查并留存影像与检查记录。回填按分层厚度与压实度控制，与临时交通疏解分期同步。BIM施工深化由公司内部团队主导，用于开挖步序、结构分块、管线避让与交通改道可视化协调，必要时引入外部技术支持，但接口审查与模型交付责任仍由公司统一承担。机电、装修、导向标识及外部道路接驳不在本包范围，相关接口以书面移交清单与业主审查窗口处理。",
+        "implementation_plan": "总体按24个月工期编排：第1至2月完成进场、施工组织设计报审、临时交通疏解方案报批、测量控制网与BIM深化启动；第3至10月为明挖段开挖支护与底板结构主攻期，同步推进暗挖段洞口加固与前期开挖；第8至16月为暗挖段开挖支护与二衬、明挖段侧墙顶板流水施工；第14至20月集中完成防水、接缝、回填与结构验收；第20至23月为分段验收、缺陷整改与竣工资料整理；第24月为移交与保修启动。关键岗位按项目总监、施工经理、结构工程师、岩土与暗挖工程师、质量经理、安全经理、BIM协调员、测量与文档控制员配置，团队可用性以角色计划形式说明，人员进场节奏与开挖面数量匹配。专业作业与外部支持按常规分包与顾问安排管理，由公司统一控制现场安全、质量记录、付款协调与接口审查，分包不改变单一主体责任。临时交通疏解配合按分期改道、夜间作业窗口与交警及业主协调会议机制执行。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺按24个月工期完成本包全部工作，里程碑为：第2月末完成施工组织设计与临时交通疏解方案报批；第10月末完成明挖段开挖支护与底板；第16月末完成暗挖段二衬与明挖段侧墙顶板；第20月末完成防水、接缝与回填；第23月末完成分段验收与竣工资料；第24月完成移交。预留接口协调窗口，与设计包及造价包依赖事项按业主审查节奏对接，不因本包原因压缩后续机电与装修界面。",
+        "compliance_statement": "接受业主按工程量清单计价及参考造价咨询意见与市场价格指数进行报价合理性分析。公司以单一责任总承包商身份对开挖支护、结构、防水、回填及临时交通疏解配合全部费用负责，报价基础与工程量清单逐项对应。质量方针以过程验收与隐蔽工程独立检查为核心，配套文档管理与业主审查响应机制，业主审查意见按登记、回复、闭合三步跟踪。付款协调与进度审查按合同节点执行，分包付款由公司统一管理。BIM深化模型与接口移交清单按业主审查窗口提交。",
+        "risk_response": "主要风险及应对：材料与人工价格波动按风险预备费覆盖并保留合同允许范围内的指数校核依据；临时交通疏解审批时序不确定，提前在第1至2月启动报批并设替代改道预案；现场安全期望跟踪通过安全经理日常巡查、周度安全会议与业主联合检查落实；明挖与暗挖衔接风险通过步序BIM模拟与监测数据预警控制；防水与接缝质量风险通过独立检查与隐蔽前影像记录控制；专业分包履约风险通过公司统一付款协调与质量记录审查控制。若出现超出合同范围的接口变更，按业主审查程序提出，不自行扩大本包范围。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任总承包商身份独立投标本包，不组建组合体，专业分包与外部技术支持按常规分包与顾问安排管理，由公司统一控制安全、质量记录、付款协调与接口审查。\n\n报价按工程量清单计价，完整覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用，合计MOP 82,875,000，与包上限一致，反映材料价格指数1.055、人工价格指数1.098及24个月现场管理投入下的成本基础。\n\n费用构成：开挖及支护MOP 24,680,000；隧道结构MOP 27,350,000；防水接缝与回填MOP 9,860,000；临时交通疏解配合MOP 4,380,000；现场管理安全与质量文档MOP 6,120,000；专业分包与外部技术支持管理MOP 3,950,000；风险预备费与企业管利MOP 6,535,000。\n\n付款按合同节点申请，进度按24个月里程碑视图执行，质量与安全按内部检查与业主审查双轨跟踪。",
+        "quotation_breakdown": [
+          {
+            "item": "明挖与暗挖段开挖及支护",
+            "amount": 24680000,
+            "basis": "按工程量清单开挖与支护项目估算，含土石方开挖、支护构件、洞口加固、降水与监测配合，参考材料价格指数1.055与人工价格指数1.098调整"
+          },
+          {
+            "item": "隧道结构（底板、侧墙、顶板）",
+            "amount": 27350000,
+            "basis": "按结构混凝土、钢筋、模板台车与定型钢模摊销估算，含流水段组织与城市限时浇筑窗口的工效折减"
+          },
+          {
+            "item": "防水、接缝与回填",
+            "amount": 9860000,
+            "basis": "防水板、止水带、施工缝与变形缝处理及分层回填压实，按独立质量控制单元配置检查工时"
+          },
+          {
+            "item": "临时交通疏解配合",
+            "amount": 4380000,
+            "basis": "分期改道、临时围挡与导向设施、夜间作业窗口配合及与交通管理部门的协调会议投入"
+          },
+          {
+            "item": "现场管理、安全与质量文档",
+            "amount": 6120000,
+            "basis": "项目总监及关键岗位薪酬、安全期望跟踪、内部质量独立检查、BIM深化协调与文档控制，按24个月现场管理投入估算"
+          },
+          {
+            "item": "专业分包与外部技术支持管理",
+            "amount": 3950000,
+            "basis": "常规专业分包与外部技术支持的协调、审查与付款管理成本，由公司统一控制，非组合体安排"
+          },
+          {
+            "item": "风险预备费与企业管理费及利润",
+            "amount": 6535000,
+            "basis": "覆盖材料与人工价格波动、审批时序不确定、现场安全期望跟踪及保修期响应的风险预备，叠加企业管理费与合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任总承包商身份独立投标，不组建组合体",
+          "专业分包和外部技术支持按常规分包与顾问安排管理，由公司统一控制现场安全、质量记录和接口审查",
+          "报价按工程量清单计价，覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用",
+          "关键岗位人员配置和团队可用性在投标文件中以角色计划形式说明",
+          "BIM施工深化协调由公司内部团队主导，必要时引入外部技术支持"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0019/construction-1_002",
+        "package_id": "CASE-0019/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以中建八局第二建设有限公司为唯一责任投标人，独立承担行人隧道主体土建及结构施工包全部授权范围。技术方案要点：\n\n1. 施工方法：明挖段采用分段分层开挖、钢支撑加锚杆联合支护、随挖随撑；暗挖段采用受控分步开挖与初期支护紧跟、短进尺、强支护、快封闭原则，暗挖专业作业按受控分包纳入公司统一管理，接口责任与验收标准在投标文件中明确。\n2. 隧道结构：底板、侧墙、顶板按清水混凝土标准控制模板体系与浇筑分层，采用定型钢模与台车组合，控制接缝错台与外观质量。\n3. 防水与接缝：结构自防水为主，外防水卷材与施工缝、变形缝止水带、注浆系统相结合，设置淋水试验与渗漏整改闭环。\n4. 回填：分层回填、分层压实，按压实度检测节点验收。\n5. 临时交通疏解配合：按业主与交通主管部门审查的疏解方案实施围挡、导改、行人通道与夜间作业窗口管理，交通疏解配合按受控分包安排，纳入公司统一调度。\n6. 质量与文档：执行内部复核与独立检查双轨制，按业主审查节点设置质量关口，BIM施工深化用于管线避让、工序模拟与接口核对。\n7. 安全：以安全期望跟踪为主线，设置现场安全管理体系、危大工程专项方案与监测预警。\n\n本包不含机电、装修、导向标识及外部道路接驳，相关接口仅作协调配合，不纳入本报价。",
+        "implementation_plan": "总体按24个月项目工期组织，本包施工期约20个月，预留收尾与验收窗口。\n\n阶段一（第1至2月）：进场准备、施工组织设计与专项方案报审、测量控制网布设、围挡与临时交通疏解设施搭设、BIM深化启动。\n阶段二（第3至9月）：明挖段开挖与支护分段推进，同步底板结构施工，形成流水。\n阶段三（第7至15月）：暗挖段分步开挖与初期支护，受控分包作业面与自营管理团队同步配置，监测数据日汇总。\n阶段四（第10至18月）：侧墙与顶板结构、防水与接缝施工，回填分层跟进。\n阶段五（第18至20月）：回填完成、接缝注浆、淋水试验与渗漏整改、竣工资料整理。\n阶段六（第20至22月）：验收、移交与缺陷责任期准备。\n\n关键岗位：项目经理、技术负责人、安全总监、质量负责人、测量与文档控制由公司自营派出；暗挖专业班组与交通疏解配合班组按受控分包管理，纳入统一进度、安全与质量考核。团队可用性在提交前完成内部确认，作为投标假设管理。",
+        "quotation": 78750000.0,
+        "schedule_commitment": "本包施工期约20个月，在项目24个月总工期内完成主体土建、防水、回填与临时交通疏解配合，并预留验收与移交窗口。里程碑：第2月末完成施工准备与方案报审；第9月末完成明挖段开挖支护；第15月末完成暗挖段开挖与初期支护；第18月末完成结构、防水与接缝；第20月末完成回填与淋水试验整改；第22月末完成验收移交。关键线路为暗挖段开挖与初期支护，按短进尺、强支护、快封闭组织，监测数据异常即启动预警与工序调整。",
+        "compliance_statement": "按业主审查节点设置内部复核与独立检查双轨关口：施工组织设计与专项方案报审前完成公司内部技术复核；关键工序（暗挖分步开挖、结构浇筑、防水与接缝、回填压实）设置停止点，经内部质量复核与独立检查确认后方可进入下一工序；BIM施工深化成果按业主审查意见闭环；质量文档按分项工程同步归档，配合业主与监管机构的进度审查、支付审查与质量抽查。接口协调由项目经理统一对外，暗挖分包与交通疏解分包的接口责任、验收标准与考核办法在分包合同中明确，不改变公司作为唯一责任投标人的地位。",
+        "risk_response": "主要风险与应对：\n1. 暗挖工序安全质量风险：采用短进尺、强支护、快封闭，设置监测预警阈值与应急支护预案，暗挖专业作业按受控分包管理并纳入公司统一安全考核。\n2. 城市交通疏解风险：提前与交通主管部门对接疏解方案审批窗口，设置夜间作业与行人通道保障措施，交通疏解配合分包纳入统一调度。\n3. 材料与人工价格上行风险：报价中设置风险准备金与价格上行缓冲，按工程量清单组价并参考价格指数进行合理性说明；如业主接受，可就主要材料设置有限幅度的指数调整机制，本报价按固定总价基础提交并已内含该缓冲。\n4. 团队可用性风险：关键岗位人员与团队可用性在提交前完成内部确认，作为投标假设管理。\n5. 接口风险：与机电、装修及外部道路接驳包的接口仅作协调配合，明确界面划分，避免范围蔓延。\n6. 质量文档风险：文档控制专人负责，按业主审查节点同步提交，避免竣工资料滞后。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份独立提交本包投标，报价 MOP 78,750,000，在包上限 MOP 82,875,000 以内。\n\n报价基础（按工程量清单组价，合计 MOP 78,750,000）：\n- 明挖段开挖与支护：MOP 14,860,000\n- 暗挖段开挖与初期支护（受控分包暂估）：MOP 18,640,000\n- 隧道结构（底板、侧墙、顶板）：MOP 21,480,000\n- 防水、接缝与回填：MOP 8,320,000\n- 临时交通疏解配合：MOP 4,260,000\n- 现场管理、安全、质量与BIM深化：MOP 6,980,000\n- 风险准备金与价格上行缓冲：MOP 4,210,000\n\n价格逻辑：结构工程与暗挖段为本包主要成本，按清单工程量与当前材料、人工价格指数组价；暗挖专业作业与交通疏解配合按受控分包暂估计入，属估算而非已收报价；风险准备金针对材料与人工价格上行、暗挖工序不确定性与交通疏解审批窗口设置。本报价为固定总价基础，已内含价格上行缓冲，不另设无上限调整条款。\n\n交付安排：公司自营承担现场管理、安全管理、质量管理、测量与文档控制，暗挖与交通疏解按受控分包纳入统一管理，接口责任与验收标准明确，不改变唯一责任投标人地位。施工期约20个月，在项目24个月总工期内完成。\n\n投标假设：公司可用资源2.0、占用0，可满足本包0.7的资源需求；暗挖专业作业与临时交通疏解配合按受控分包安排；关键岗位人员与团队可用性在提交前完成内部确认；报价按工程量清单组价并计入价格上行风险准备金；质量与安全按业主审查节点设置内部复核与独立检查关口。",
+        "quotation_breakdown": [
+          {
+            "item": "明挖段开挖与支护",
+            "amount": 14860000,
+            "basis": "按工程量清单组价：土石方开挖、钢支撑与锚杆支护、降水与监测，含材料价格指数上行调整"
+          },
+          {
+            "item": "暗挖段开挖与初期支护（受控分包）",
+            "amount": 18640000,
+            "basis": "暗挖专业作业受控分包估算，含分包管理费与接口协调，属暂估分包价，非已收报价"
+          },
+          {
+            "item": "隧道结构（底板、侧墙、顶板）",
+            "amount": 21480000,
+            "basis": "钢筋混凝土结构按清单工程量组价，含模板台车摊销、混凝土与钢筋材料价格指数调整"
+          },
+          {
+            "item": "防水、接缝与回填",
+            "amount": 8320000,
+            "basis": "外防水卷材、止水带、注浆系统、分层回填与压实检测，含淋水试验整改预留"
+          },
+          {
+            "item": "临时交通疏解配合",
+            "amount": 4260000,
+            "basis": "围挡、导改、行人通道与夜间作业窗口配合，按受控分包估算并计入协调管理"
+          },
+          {
+            "item": "现场管理、安全、质量与BIM深化",
+            "amount": 6980000,
+            "basis": "自营管理团队、安全总监与专职安全员、质量与文档控制、测量、BIM施工深化协调，按施工期人工与设备投入估算"
+          },
+          {
+            "item": "风险准备金与价格上行缓冲",
+            "amount": 4210000,
+            "basis": "针对材料与人工价格指数上行、暗挖工序不确定性与交通疏解审批窗口设置的风险准备金"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+          "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+          "关键岗位人员与团队可用性在提交前完成内部确认",
+          "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+          "质量与安全按业主审查节点设置内部复核与独立检查关口"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0019/construction-1_003",
+        "package_id": "CASE-0019/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0494",
+        "bidder_name": "得寶國際-得寶建築合作經營",
+        "technical_proposal": "本投标以单一责任投标人身份提交，投标人为得寶國際-得寶建築合作經營，按授权范围承担行人隧道主体土建及结构施工全部责任，不含机电、装修、导向标识及外部道路接驳。\n\n一、施工方法与技术方案\n1. 明挖段：采用分段分层开挖，支护以临时钢板桩/型钢支撑与喷射混凝土护面组合，按监测数据动态调整支撑轴力；开挖至设计标高后及时封闭底板，减少基坑暴露时间。\n2. 暗挖段：按设计工法组织超前支护、分步开挖与初期支护，控制单循环进尺，实施地表沉降与隧道收敛监测，超限即启动预警响应与加固措施。\n3. 隧道结构：底板、侧墙、顶板按分段浇筑组织，模板体系与支撑体系经内部独立复核；混凝土供应、浇筑顺序与养护制度纳入质量目标实现路径。\n4. 防水与接缝：以结构自防水为主、外防水层为辅，施工缝、变形缝按设计节点做法施工，接缝部位实行样板先行与隐蔽验收双签。\n5. 回填：分层回填、分层压实，压实度按检验批抽检，回填与临时交通疏解时序联动。\n6. 临时交通疏解配合：编制分阶段交通疏解配合方案，与既有道路运行单位及业主审查节点衔接，围挡、导改、行人通道设置按批准方案实施。\n\n二、BIM施工深化协调\n由我方牵头组织BIM施工深化，建立模型审查与碰撞检查机制，按业主审查节点提交深化成果，接口协调以内部深化会议与业主审查响应双轨推进。\n\n三、质量方针与质量目标实现路径\n依托ISO 9001、ISO 14001、ISO 45001体系，落实文档纪律、检验批管理与独立复核；关键工序设停止点，隐蔽工程验收留痕，质量目标分解至分项工程并按月考核。\n\n四、团队与角色计划\n关键岗位按角色计划与团队可用性摘要配置，明确项目经理、技术负责人、安全主任、质量负责人及BIM协调人的投入节奏，不以公司总量替代人员到位承诺。\n\n五、边界与责任\n严格按授权范围界定责任，机电、装修、导向标识及外部道路接驳不在本包范围，避免责任外溢；与相邻包的接口以书面移交清单管理。",
+        "implementation_plan": "按项目24个月框架编排里程碑，具体节点以招标文件为准。\n\n第一阶段（进场准备）：施工组织设计与专项方案报审、临时设施与围挡布置、交通疏解配合方案报批、BIM深化启动、关键岗位到位确认。\n第二阶段（明挖段）：分段开挖与支护、监测系统布设、底板与侧墙结构施工、防水与接缝施工、回填。\n第三阶段（暗挖段）：超前支护与分步开挖、初期支护、二衬结构、防水与接缝、回填。\n第四阶段（收尾）：结构验收、监测数据整理、竣工文档移交、临时交通疏解设施撤除与场地恢复。\n\n各阶段以周计划与月进度视图滚动更新，关键线路工序设缓冲；明挖与暗挖作业面按资源节奏错峰组织，专业分包作业面由我方统一协调与验收。",
+        "quotation": 82995000.0,
+        "schedule_commitment": "按项目24个月框架编排里程碑：进场准备与方案报审、明挖段施工、暗挖段施工、收尾验收四阶段推进；关键线路设缓冲，周计划与月进度视图滚动更新，具体节点以招标文件为准。",
+        "compliance_statement": "接受业主按工程量清单计价及造价咨询意见、市场价格指数进行报价合理性分析；报价中区分自拟成本与尚未取得的分包报价，明挖暗挖专业作业、防水及临时交通疏解配合按常规专业分包或外部支持组织，相关分包报价尚未取得，以自拟成本列示并标注为暂定假设。BIM施工深化与接口协调按业主审查节点提交，质量文档按ISO 9001体系留痕，接受业主审查与进度复核。",
+        "risk_response": "1. 分包报价未锁定：明挖暗挖专业作业、防水及交通疏解配合分包报价尚未取得，报价中以自拟成本列示并计入风险预备，中标后按内部采购程序锁定。\n2. 材料与人工价格指数上行：报价已含价格波动风险准备，若合同约定调整机制则按机制执行，不另行主张固定价外调整。\n3. 城市施工物流与交通疏解：编制分阶段疏解配合方案，与相关单位及业主审查节点衔接，设专人协调。\n4. 暗挖段沉降与收敛风险：实施监测预警与分级响应，超限即启动加固措施。\n5. 关键岗位可用性：以角色计划与团队可用性摘要为准，提交前完成内部确认。\n6. 接口风险：与相邻包以书面移交清单管理，避免责任外溢。",
+        "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份提交行人隧道主体土建及结构施工包（CASE-0019/construction-1）投标，报价 MOP 82,995,000，按工程量清单计价，覆盖开挖支护、结构、防水、接缝、回填及临时交通疏解配合全部授权范围费用。\n\n报价基础：\n- 明挖段开挖与支护 MOP 14,280,000\n- 暗挖段开挖与初期支护 MOP 18,650,000\n- 隧道结构 MOP 21,460,000\n- 防水、接缝与回填 MOP 7,350,000\n- 临时交通疏解配合与现场管理 MOP 6,480,000\n- BIM深化、质量文档与接口协调 MOP 2,860,000\n- 公司管理费、保险、风险预备与利润 MOP 11,915,000\n合计 MOP 82,995,000。\n\n报价略高于包预算上限，主要因明挖暗挖专业作业、防水及交通疏解配合分包报价尚未取得，以自拟成本列示并计入风险预备；材料与人工价格指数处于上行区间，报价已含相应风险准备。本包边界清晰、不含机电装修，责任可单一承担，公司资源账面无占用、可用容量足以覆盖本包需求，ISO三体系认证支撑质量、环境与安全管理要求。",
+        "quotation_breakdown": [
+          {
+            "item": "明挖段开挖与支护",
+            "amount": 14280000,
+            "basis": "按自拟成本估算，含土方开挖、临时支护、监测布设与降水配合；工程量为授权范围估算，属暂定假设"
+          },
+          {
+            "item": "暗挖段开挖与初期支护",
+            "amount": 18650000,
+            "basis": "按自拟成本估算，含超前支护、分步开挖、初期支护与监测；专业作业拟按常规专业分包组织，分包报价尚未取得"
+          },
+          {
+            "item": "隧道结构（底板、侧墙、顶板）",
+            "amount": 21460000,
+            "basis": "按自拟成本估算，含模板支撑体系、钢筋、混凝土浇筑与养护；含材料价格指数波动风险准备"
+          },
+          {
+            "item": "防水、接缝与回填",
+            "amount": 7350000,
+            "basis": "按自拟成本估算，含外防水层、施工缝与变形缝节点、分层回填与压实检验"
+          },
+          {
+            "item": "临时交通疏解配合与现场管理",
+            "amount": 6480000,
+            "basis": "含围挡导改、行人通道、交通配合协调、现场管理团队与安全管理投入；按24个月框架分摊"
+          },
+          {
+            "item": "BIM深化、质量文档与接口协调",
+            "amount": 2860000,
+            "basis": "含BIM施工深化组织、模型审查、文档控制与业主审查响应；由我方牵头组织"
+          },
+          {
+            "item": "公司管理费、保险、风险预备与利润",
+            "amount": 11915000,
+            "basis": "按直接成本比例计取，含ISO三体系运行、保险、不可预见风险预备及合理利润；反映分包报价未锁定与材料人工价格指数上行风险"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按授权范围投标，不含机电、装修、导向标识及外部道路接驳",
+          "关键岗位人员可用性以角色计划与团队可用性摘要为准，提交前完成内部确认",
+          "明挖暗挖专业作业、防水及临时交通疏解配合按常规专业分包或外部支持组织，分包报价尚未取得，报价中先以自拟成本列示",
+          "BIM施工深化协调由我方牵头组织，按业主审查节点提交",
+          "报价按工程量清单计价，接受业主造价咨询意见及市场价格指数合理性分析",
+          "工期按项目24个月框架编排里程碑，具体节点以招标文件为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0019/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0019/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "明挖与暗挖段开挖及支护",
+                "amount": 24680000,
+                "basis": "按工程量清单开挖与支护项目估算，含土石方开挖、支护构件、洞口加固、降水与监测配合，参考材料价格指数1.055与人工价格指数1.098调整"
+              },
+              {
+                "item": "隧道结构（底板、侧墙、顶板）",
+                "amount": 27350000,
+                "basis": "按结构混凝土、钢筋、模板台车与定型钢模摊销估算，含流水段组织与城市限时浇筑窗口的工效折减"
+              },
+              {
+                "item": "防水、接缝与回填",
+                "amount": 9860000,
+                "basis": "防水板、止水带、施工缝与变形缝处理及分层回填压实，按独立质量控制单元配置检查工时"
+              },
+              {
+                "item": "临时交通疏解配合",
+                "amount": 4380000,
+                "basis": "分期改道、临时围挡与导向设施、夜间作业窗口配合及与交通管理部门的协调会议投入"
+              },
+              {
+                "item": "现场管理、安全与质量文档",
+                "amount": 6120000,
+                "basis": "项目总监及关键岗位薪酬、安全期望跟踪、内部质量独立检查、BIM深化协调与文档控制，按24个月现场管理投入估算"
+              },
+              {
+                "item": "专业分包与外部技术支持管理",
+                "amount": 3950000,
+                "basis": "常规专业分包与外部技术支持的协调、审查与付款管理成本，由公司统一控制，非组合体安排"
+              },
+              {
+                "item": "风险预备费与企业管理费及利润",
+                "amount": 6535000,
+                "basis": "覆盖材料与人工价格波动、审批时序不确定、现场安全期望跟踪及保修期响应的风险预备，叠加企业管理费与合理利润"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任总承包商身份独立投标本包，不组建组合体，专业分包与外部技术支持按常规分包与顾问安排管理，由公司统一控制安全、质量记录、付款协调与接口审查。\n\n报价按工程量清单计价，完整覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用，合计MOP 82,875,000，与包上限一致，反映材料价格指数1.055、人工价格指数1.098及24个月现场管理投入下的成本基础。\n\n费用构成：开挖及支护MOP 24,680,000；隧道结构MOP 27,350,000；防水接缝与回填MOP 9,860,000；临时交通疏解配合MOP 4,380,000；现场管理安全与质量文档MOP 6,120,000；专业分包与外部技术支持管理MOP 3,950,000；风险预备费与企业管利MOP 6,535,000。\n\n付款按合同节点申请，进度按24个月里程碑视图执行，质量与安全按内部检查与业主审查双轨跟踪。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司以单一责任总承包商身份独立投标，不组建组合体",
+              "专业分包和外部技术支持按常规分包与顾问安排管理，由公司统一控制现场安全、质量记录和接口审查",
+              "报价按工程量清单计价，覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用",
+              "关键岗位人员配置和团队可用性在投标文件中以角色计划形式说明",
+              "BIM施工深化协调由公司内部团队主导，必要时引入外部技术支持"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 78750000.0,
+            "quotation_breakdown": [
+              {
+                "item": "明挖段开挖与支护",
+                "amount": 14860000,
+                "basis": "按工程量清单组价：土石方开挖、钢支撑与锚杆支护、降水与监测，含材料价格指数上行调整"
+              },
+              {
+                "item": "暗挖段开挖与初期支护（受控分包）",
+                "amount": 18640000,
+                "basis": "暗挖专业作业受控分包估算，含分包管理费与接口协调，属暂估分包价，非已收报价"
+              },
+              {
+                "item": "隧道结构（底板、侧墙、顶板）",
+                "amount": 21480000,
+                "basis": "钢筋混凝土结构按清单工程量组价，含模板台车摊销、混凝土与钢筋材料价格指数调整"
+              },
+              {
+                "item": "防水、接缝与回填",
+                "amount": 8320000,
+                "basis": "外防水卷材、止水带、注浆系统、分层回填与压实检测，含淋水试验整改预留"
+              },
+              {
+                "item": "临时交通疏解配合",
+                "amount": 4260000,
+                "basis": "围挡、导改、行人通道与夜间作业窗口配合，按受控分包估算并计入协调管理"
+              },
+              {
+                "item": "现场管理、安全、质量与BIM深化",
+                "amount": 6980000,
+                "basis": "自营管理团队、安全总监与专职安全员、质量与文档控制、测量、BIM施工深化协调，按施工期人工与设备投入估算"
+              },
+              {
+                "item": "风险准备金与价格上行缓冲",
+                "amount": 4210000,
+                "basis": "针对材料与人工价格指数上行、暗挖工序不确定性与交通疏解审批窗口设置的风险准备金"
+              }
+            ],
+            "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份独立提交本包投标，报价 MOP 78,750,000，在包上限 MOP 82,875,000 以内。\n\n报价基础（按工程量清单组价，合计 MOP 78,750,000）：\n- 明挖段开挖与支护：MOP 14,860,000\n- 暗挖段开挖与初期支护（受控分包暂估）：MOP 18,640,000\n- 隧道结构（底板、侧墙、顶板）：MOP 21,480,000\n- 防水、接缝与回填：MOP 8,320,000\n- 临时交通疏解配合：MOP 4,260,000\n- 现场管理、安全、质量与BIM深化：MOP 6,980,000\n- 风险准备金与价格上行缓冲：MOP 4,210,000\n\n价格逻辑：结构工程与暗挖段为本包主要成本，按清单工程量与当前材料、人工价格指数组价；暗挖专业作业与交通疏解配合按受控分包暂估计入，属估算而非已收报价；风险准备金针对材料与人工价格上行、暗挖工序不确定性与交通疏解审批窗口设置。本报价为固定总价基础，已内含价格上行缓冲，不另设无上限调整条款。\n\n交付安排：公司自营承担现场管理、安全管理、质量管理、测量与文档控制，暗挖与交通疏解按受控分包纳入统一管理，接口责任与验收标准明确，不改变唯一责任投标人地位。施工期约20个月，在项目24个月总工期内完成。\n\n投标假设：公司可用资源2.0、占用0，可满足本包0.7的资源需求；暗挖专业作业与临时交通疏解配合按受控分包安排；关键岗位人员与团队可用性在提交前完成内部确认；报价按工程量清单组价并计入价格上行风险准备金；质量与安全按业主审查节点设置内部复核与独立检查关口。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+              "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+              "关键岗位人员与团队可用性在提交前完成内部确认",
+              "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+              "质量与安全按业主审查节点设置内部复核与独立检查关口"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "quotation": 82995000.0,
+            "quotation_breakdown": [
+              {
+                "item": "明挖段开挖与支护",
+                "amount": 14280000,
+                "basis": "按自拟成本估算，含土方开挖、临时支护、监测布设与降水配合；工程量为授权范围估算，属暂定假设"
+              },
+              {
+                "item": "暗挖段开挖与初期支护",
+                "amount": 18650000,
+                "basis": "按自拟成本估算，含超前支护、分步开挖、初期支护与监测；专业作业拟按常规专业分包组织，分包报价尚未取得"
+              },
+              {
+                "item": "隧道结构（底板、侧墙、顶板）",
+                "amount": 21460000,
+                "basis": "按自拟成本估算，含模板支撑体系、钢筋、混凝土浇筑与养护；含材料价格指数波动风险准备"
+              },
+              {
+                "item": "防水、接缝与回填",
+                "amount": 7350000,
+                "basis": "按自拟成本估算，含外防水层、施工缝与变形缝节点、分层回填与压实检验"
+              },
+              {
+                "item": "临时交通疏解配合与现场管理",
+                "amount": 6480000,
+                "basis": "含围挡导改、行人通道、交通配合协调、现场管理团队与安全管理投入；按24个月框架分摊"
+              },
+              {
+                "item": "BIM深化、质量文档与接口协调",
+                "amount": 2860000,
+                "basis": "含BIM施工深化组织、模型审查、文档控制与业主审查响应；由我方牵头组织"
+              },
+              {
+                "item": "公司管理费、保险、风险预备与利润",
+                "amount": 11915000,
+                "basis": "按直接成本比例计取，含ISO三体系运行、保险、不可预见风险预备及合理利润；反映分包报价未锁定与材料人工价格指数上行风险"
+              }
+            ],
+            "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份提交行人隧道主体土建及结构施工包（CASE-0019/construction-1）投标，报价 MOP 82,995,000，按工程量清单计价，覆盖开挖支护、结构、防水、接缝、回填及临时交通疏解配合全部授权范围费用。\n\n报价基础：\n- 明挖段开挖与支护 MOP 14,280,000\n- 暗挖段开挖与初期支护 MOP 18,650,000\n- 隧道结构 MOP 21,460,000\n- 防水、接缝与回填 MOP 7,350,000\n- 临时交通疏解配合与现场管理 MOP 6,480,000\n- BIM深化、质量文档与接口协调 MOP 2,860,000\n- 公司管理费、保险、风险预备与利润 MOP 11,915,000\n合计 MOP 82,995,000。\n\n报价略高于包预算上限，主要因明挖暗挖专业作业、防水及交通疏解配合分包报价尚未取得，以自拟成本列示并计入风险预备；材料与人工价格指数处于上行区间，报价已含相应风险准备。本包边界清晰、不含机电装修，责任可单一承担，公司资源账面无占用、可用容量足以覆盖本包需求，ISO三体系认证支撑质量、环境与安全管理要求。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "按授权范围投标，不含机电、装修、导向标识及外部道路接驳",
+              "关键岗位人员可用性以角色计划与团队可用性摘要为准，提交前完成内部确认",
+              "明挖暗挖专业作业、防水及临时交通疏解配合按常规专业分包或外部支持组织，分包报价尚未取得，报价中先以自拟成本列示",
+              "BIM施工深化协调由我方牵头组织，按业主审查节点提交",
+              "报价按工程量清单计价，接受业主造价咨询意见及市场价格指数合理性分析",
+              "工期按项目24个月框架编排里程碑，具体节点以招标文件为准"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 行人隧道主体土建及结构施工包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0019/construction-1",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_黄嘉敏",
+          "OWNER-4048bdd520aa7f_03_李伟雄",
+          "OWNER-4048bdd520aa7f_04_苏丽华",
+          "OWNER-4048bdd520aa7f_05_郑家豪",
+          "OWNER-4048bdd520aa7f_06_何淑贞"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0019/construction-1_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "技术方案完整覆盖明挖与暗挖衔接、结构流水、防水接缝独立验收及BIM深化，施工方法与交付方案清晰，团队角色计划与24个月进度视图匹配。",
+            "cost_view": "报价MOP 82,875,000与包上限一致，工程量清单组价完整，风险预备费覆盖价格波动与审批时序，价格基础可信但无竞价优势。",
+            "owner_control_view": "以单一责任总承包商身份响应业主审查，质量文档三步跟踪、BIM接口移交清单及分包统一管理机制明确，业主审查清晰度较高。",
+            "strengths": [
+              "单一责任主体，分包不改变主体责任，接口协调清晰",
+              "防水与接缝作为独立质量控制单元，隐蔽前独立检查留痕",
+              "风险应对覆盖价格波动、交通疏解审批及明暗挖衔接"
+            ],
+            "concerns": [
+              "报价触及包上限，价格竞争性有限",
+              "暗挖段与交通疏解均自营，资源集中度较高，需关注现场管理负荷"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-1_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "技术方案对明挖、暗挖、结构、防水及交通疏解均有针对性安排，暗挖与交通疏解采用受控分包并纳入统一管理，施工期约20个月留有余量。",
+            "cost_view": "报价MOP 78,750,000低于包上限，但暗挖段与交通疏解按受控分包暂估计入，分包报价尚未锁定，价格基础存在一定不确定性。",
+            "owner_control_view": "设置内部复核与独立检查双轨关口及关键工序停止点，质量文档同步归档，对业主审查节点响应清晰，但分包接口责任需在合同阶段进一步固化。",
+            "strengths": [
+              "报价在包上限以内，价格具备一定竞争力",
+              "关键工序停止点与独立检查机制具体，质量文档纪律较好",
+              "风险应对覆盖暗挖安全、交通疏解及价格上行"
+            ],
+            "concerns": [
+              "暗挖与交通疏解分包仅为暂估价，存在后续价格调整或履约衔接风险",
+              "团队可用性以投标假设管理，关键岗位到位承诺需在判给前确认"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-1_003",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "technical_view": "技术方案覆盖明挖、暗挖、结构、防水及回填主要工序，BIM深化与ISO三体系支撑质量目标，但施工方法描述相对概括，暗挖与交通疏解依赖常规专业分包。",
+            "cost_view": "报价MOP 82,995,000高于包上限，且明挖暗挖、防水及交通疏解分包报价尚未取得，以自拟成本列示并计入风险预备，价格基础可信度较低。",
+            "owner_control_view": "接受业主按工程量清单及价格指数分析报价，质量文档按ISO体系留痕，但分包报价未锁定且角色计划以团队可用性摘要为准，业主审查清晰度一般。",
+            "strengths": [
+              "明确区分自拟成本与未取得分包报价，报价披露较透明",
+              "ISO三体系与文档纪律支撑质量目标实现路径",
+              "边界划分清晰，避免责任外溢"
+            ],
+            "concerns": [
+              "报价高于包上限，价格合理性不足",
+              "关键专业分包报价未锁定，存在成本与履约不确定性",
+              "进度里程碑以招标文件为准，交付信心相对较弱"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标均以单一责任主体响应本包，中交第一航务工程局方案最完整且价格触及上限，中建八局第二建设报价较低但暗挖与交通疏解依赖暂估分包，得寶國際报价超上限且分包未锁定。综合能力匹配、价格合理性与风险控制，中建八局第二建设在价格与管控机制上较均衡，但需在判给前澄清分包暂估与团队到位。",
+        "recommended_winner": "COMP-0191",
+        "owner_review_notes": "建议优先与中建八局第二建设谈判，要求锁定暗挖与交通疏解分包价格并确认关键岗位到位，再作判给；中交第一航务工程局可作为备选，得寶國際因超上限及分包未锁定暂不优先。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0019",
+      "package_awards": [
+        {
+          "package_id": "CASE-0019/construction-1",
+          "selected_bidder_id": "COMP-0191",
+          "selected_bidder_name": "中建八局第二建设有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中建八局第二建设有限公司报价MOP 78,750,000在包上限以内，价格具备竞争力，技术方案对明挖、暗挖、结构、防水及交通疏解均有针对性安排，关键工序停止点与独立检查机制具体，质量文档纪律较好，风险应对覆盖暗挖安全、交通疏解及价格上行。相比中交第一航务工程局报价触及上限且无竞价优势，得寶國際报价超上限且分包未锁定，中建八局第二建设在价格与管控机制上更均衡。判给前需重点澄清暗挖与交通疏解分包暂估价的锁定安排及关键岗位人员到位证据，以降低履约风险。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+            "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+            "关键岗位人员与团队可用性在提交前完成内部确认",
+            "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+            "质量与安全按业主审查节点设置内部复核与独立检查关口"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0191"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:44:07",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0019/construction-1",
+          "decision": "bid",
+          "reason": "经管理层审议，本包属于公司核心施工能力范围，明挖暗挖、隧道结构、防水、回填及临时交通疏解配合均可由公司作为单一责任总承包商统筹实施，无需引入共享投标身份和责任分工的组合体。公司当前资源占用为零，可用容量足以覆盖本包需求，具备独立投标的交付条件。商业上，8287.5万MOP的包规模适中，与公司风险偏好和区域定位相符，值得争取。管理要求是：投标文件须以角色计划与团队可用性摘要、施工方法与交付方案、质量方针与目标实现路径、进度视图与里程碑计划、风险应对方案、安全与临时交通疏解方案回应业主关切；报价按工程量清单计价，完整覆盖开挖支护、结构、防水、回填及交通疏解配合费用，并参考造价咨询意见与市场价格指数做合理性校核。专业分包和外部支持按常规分包管理，由公司统一控制现场安全、质量记录、付款协调和接口审查，不作为组合体处理。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任总承包商身份独立投标，不组建组合体",
+            "专业分包和外部技术支持按常规分包与顾问安排管理，由公司统一控制现场安全、质量记录和接口审查",
+            "报价按工程量清单计价，覆盖开挖支护、结构、防水、回填及临时交通疏解配合全部费用",
+            "关键岗位人员配置和团队可用性在投标文件中以角色计划形式说明",
+            "BIM施工深化协调由公司内部团队主导，必要时引入外部技术支持"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:44:07",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0019/construction-1",
+          "decision": "bid",
+          "reason": "管理判断：本包属于公司核心土建施工范畴，明挖暗挖、隧道结构、防水接缝、回填及临时交通疏解配合均在公司施工能力与资质覆盖范围内，公司可作为单一责任投标人独立承担。资源账面上可用容量2.0、占用0，相对包需求0.7有充足余量，不存在必须借助联合体才能形成交付权威的缺口。主要风险在于暗挖工序与城市交通疏解的安全质量压力、工程量清单报价在材料与人工价格上行背景下的合理性，以及团队可用性尚未有明细佐证。处理方式是：以自营管理团队为交付主体，暗挖专业作业与交通疏解配合按受控分包安排纳入风险应对与角色计划，报价按工程量清单逐项组价并预留风险准备金，质量与安全按业主审查节点设置内部复核关口。上述属于正常投标风险，不构成放弃或改为联合体的理由。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+            "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+            "关键岗位人员与团队可用性在提交前完成内部确认",
+            "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+            "质量与安全按业主审查节点设置内部复核与独立检查关口"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:44:07",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0494",
+          "package_id": "CASE-0019/construction-1",
+          "decision": "bid",
+          "reason": "本包为行人隧道主体土建及结构施工，属于我们总承包与地下工程、土木施工的核心能力范围，边界清晰、不含机电装修，责任可单一承担。公司资源账面无占用、可用容量足以覆盖本包需求，ISO三体系认证支撑质量、环境与安全管理要求。内部讨论未出现必须由另一主体共享投标人身份、技术权威或商业暴露的问责缺口；明挖暗挖、防水、临时交通疏解及BIM深化属于可通过自身组织与常规专业分包管理的正常施工风险，不构成组合体理由。因此决定以单一责任投标人身份参与投标，重点把角色计划与团队可用性、施工方法与交付方案、质量目标实现路径、工程量清单价格基础、进度里程碑、风险应对及安全与临时交通疏解方案做扎实，并在报价中区分自拟成本与尚未取得的分包报价，确保报价合理性经得起业主造价咨询与市场价格指数分析。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按授权范围投标，不含机电、装修、导向标识及外部道路接驳",
+            "关键岗位人员可用性以角色计划与团队可用性摘要为准，提交前完成内部确认",
+            "明挖暗挖专业作业、防水及临时交通疏解配合按常规专业分包或外部支持组织，分包报价尚未取得，报价中先以自拟成本列示",
+            "BIM施工深化协调由我方牵头组织，按业主审查节点提交",
+            "报价按工程量清单计价，接受业主造价咨询意见及市场价格指数合理性分析",
+            "工期按项目24个月框架编排里程碑，具体节点以招标文件为准"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:45:11",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:45:11",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:45:11",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "bidder_id": "COMP-0494"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:09",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:15",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "recommended_winner": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:19",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-1",
+          "selected_bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "作为业主方，本决策仅代表本组织立场。拟签合同与投标承诺一致：唯一责任投标人为 COMP-0191，报价 MOP 78,750,000 在包预算 MOP 82,875,000 以内，资源承诺 0.7 与包需求一致，工作份额 1.0，范围与本包定义相符，不含机电、装修、导向标识及外部道路接驳。工期约20个月，在项目24个月总工期内，里程碑与验收移交窗口清晰。风险分配可接受：固定总价已内含材料与人工价格上行缓冲，不设无上限调整条款；暗挖与交通疏解按受控分包纳入统一管理，不改变唯一责任投标人地位；关键岗位可用性作为投标假设管理。业主方自身立场决定如下，供写入下一稿：本包按固定总价计价，工程量清单为计量与支付基础，风险准备金与价格上行缓冲已含在合同价内，业主不接受无上限指数调整；业主审查节点为施工组织设计与专项方案报审、关键工序停止点、BIM深化成果及竣工资料，审查期限按合同约定执行；临时交通疏解方案须经业主与交通主管部门审查后实施。上述均为可执行的模拟义务与审查条件，不构成对未来工程交付或法定审批已完成的声明。"
+          },
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "作为本包唯一责任投标人，我方确认接受本轮合同草案的全部条款、资源承诺与义务。\n\n关键确认事项：\n1. 价格与币种：固定总价 MOP 78,750,000，在包预算 MOP 82,875,000 以内；报价已内含材料与人工价格上行缓冲，不另设无上限调整条款。\n2. 资源承诺：本包占用我方 0.7 归一化企业资源，当前可用 2.0、占用 0，可满足需求；工作份额 100%。\n3. 范围：行人隧道主体土建（明挖/暗挖开挖与支护、结构、防水、接缝、回填及临时交通疏解配合），不含机电、装修、导向标识及外部道路接驳，接口仅作协调配合。\n4. 工期：本包约 20 个月，在项目 24 个月总工期内完成，预留验收与移交窗口；关键线路为暗挖段开挖与初期支护。\n5. 风险分配：暗挖专业作业与交通疏解配合按受控分包纳入统一管理，不改变我方唯一责任投标人地位；关键岗位与团队可用性已在提交前完成内部确认，作为投标假设管理。\n6. 质量与合规：按业主审查节点设置内部复核与独立检查双轨关口，关键工序设停止点，文档同步归档。\n\n本接受仅授权可执行的模拟义务，不表示未来工程交付物或法定审批已经完成；相关交付物按合同作为带审查/验收条件的义务履行。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIME3B32373/CASE-0019/construction-1/round-1/contract",
+          "simulation_id": "SIME3B32373",
+          "project_id": "CASE-0019",
+          "package_id": "CASE-0019/construction-1",
+          "session_id": "SIME3B32373/CASE-0019/construction-1/round-1",
+          "snapshot_version": "8e7e8817d6765bd7c6786bb36717d9f165fac7d05354292f45d16c2ba474d3d7",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0019/construction-1_002",
+          "bidder_id": "COMP-0191",
+          "lead_id": "COMP-0191",
+          "members": [
+            "COMP-0191"
+          ],
+          "price": 78750000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0191": 0.7
+          },
+          "work_shares": {
+            "COMP-0191": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "8c1b3bd6044db8f8a311b3c6f7db3a5cb78f0c6a5adb360133fb74fe0da3f40b",
+          "terms": {
+            "schedule_commitment": "本包施工期约20个月，在项目24个月总工期内完成主体土建、防水、回填与临时交通疏解配合，并预留验收与移交窗口。里程碑：第2月末完成施工准备与方案报审；第9月末完成明挖段开挖支护；第15月末完成暗挖段开挖与初期支护；第18月末完成结构、防水与接缝；第20月末完成回填与淋水试验整改；第22月末完成验收移交。关键线路为暗挖段开挖与初期支护，按短进尺、强支护、快封闭组织，监测数据异常即启动预警与工序调整。",
+            "risk_response": "主要风险与应对：\n1. 暗挖工序安全质量风险：采用短进尺、强支护、快封闭，设置监测预警阈值与应急支护预案，暗挖专业作业按受控分包管理并纳入公司统一安全考核。\n2. 城市交通疏解风险：提前与交通主管部门对接疏解方案审批窗口，设置夜间作业与行人通道保障措施，交通疏解配合分包纳入统一调度。\n3. 材料与人工价格上行风险：报价中设置风险准备金与价格上行缓冲，按工程量清单组价并参考价格指数进行合理性说明；如业主接受，可就主要材料设置有限幅度的指数调整机制，本报价按固定总价基础提交并已内含该缓冲。\n4. 团队可用性风险：关键岗位人员与团队可用性在提交前完成内部确认，作为投标假设管理。\n5. 接口风险：与机电、装修及外部道路接驳包的接口仅作协调配合，明确界面划分，避免范围蔓延。\n6. 质量文档风险：文档控制专人负责，按业主审查节点同步提交，避免竣工资料滞后。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0019/construction-1_002",
+              "package_id": "CASE-0019/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0191",
+              "bidder_name": "中建八局第二建设有限公司",
+              "technical_proposal": "本投标以中建八局第二建设有限公司为唯一责任投标人，独立承担行人隧道主体土建及结构施工包全部授权范围。技术方案要点：\n\n1. 施工方法：明挖段采用分段分层开挖、钢支撑加锚杆联合支护、随挖随撑；暗挖段采用受控分步开挖与初期支护紧跟、短进尺、强支护、快封闭原则，暗挖专业作业按受控分包纳入公司统一管理，接口责任与验收标准在投标文件中明确。\n2. 隧道结构：底板、侧墙、顶板按清水混凝土标准控制模板体系与浇筑分层，采用定型钢模与台车组合，控制接缝错台与外观质量。\n3. 防水与接缝：结构自防水为主，外防水卷材与施工缝、变形缝止水带、注浆系统相结合，设置淋水试验与渗漏整改闭环。\n4. 回填：分层回填、分层压实，按压实度检测节点验收。\n5. 临时交通疏解配合：按业主与交通主管部门审查的疏解方案实施围挡、导改、行人通道与夜间作业窗口管理，交通疏解配合按受控分包安排，纳入公司统一调度。\n6. 质量与文档：执行内部复核与独立检查双轨制，按业主审查节点设置质量关口，BIM施工深化用于管线避让、工序模拟与接口核对。\n7. 安全：以安全期望跟踪为主线，设置现场安全管理体系、危大工程专项方案与监测预警。\n\n本包不含机电、装修、导向标识及外部道路接驳，相关接口仅作协调配合，不纳入本报价。",
+              "implementation_plan": "总体按24个月项目工期组织，本包施工期约20个月，预留收尾与验收窗口。\n\n阶段一（第1至2月）：进场准备、施工组织设计与专项方案报审、测量控制网布设、围挡与临时交通疏解设施搭设、BIM深化启动。\n阶段二（第3至9月）：明挖段开挖与支护分段推进，同步底板结构施工，形成流水。\n阶段三（第7至15月）：暗挖段分步开挖与初期支护，受控分包作业面与自营管理团队同步配置，监测数据日汇总。\n阶段四（第10至18月）：侧墙与顶板结构、防水与接缝施工，回填分层跟进。\n阶段五（第18至20月）：回填完成、接缝注浆、淋水试验与渗漏整改、竣工资料整理。\n阶段六（第20至22月）：验收、移交与缺陷责任期准备。\n\n关键岗位：项目经理、技术负责人、安全总监、质量负责人、测量与文档控制由公司自营派出；暗挖专业班组与交通疏解配合班组按受控分包管理，纳入统一进度、安全与质量考核。团队可用性在提交前完成内部确认，作为投标假设管理。",
+              "quotation": 78750000.0,
+              "schedule_commitment": "本包施工期约20个月，在项目24个月总工期内完成主体土建、防水、回填与临时交通疏解配合，并预留验收与移交窗口。里程碑：第2月末完成施工准备与方案报审；第9月末完成明挖段开挖支护；第15月末完成暗挖段开挖与初期支护；第18月末完成结构、防水与接缝；第20月末完成回填与淋水试验整改；第22月末完成验收移交。关键线路为暗挖段开挖与初期支护，按短进尺、强支护、快封闭组织，监测数据异常即启动预警与工序调整。",
+              "compliance_statement": "按业主审查节点设置内部复核与独立检查双轨关口：施工组织设计与专项方案报审前完成公司内部技术复核；关键工序（暗挖分步开挖、结构浇筑、防水与接缝、回填压实）设置停止点，经内部质量复核与独立检查确认后方可进入下一工序；BIM施工深化成果按业主审查意见闭环；质量文档按分项工程同步归档，配合业主与监管机构的进度审查、支付审查与质量抽查。接口协调由项目经理统一对外，暗挖分包与交通疏解分包的接口责任、验收标准与考核办法在分包合同中明确，不改变公司作为唯一责任投标人的地位。",
+              "risk_response": "主要风险与应对：\n1. 暗挖工序安全质量风险：采用短进尺、强支护、快封闭，设置监测预警阈值与应急支护预案，暗挖专业作业按受控分包管理并纳入公司统一安全考核。\n2. 城市交通疏解风险：提前与交通主管部门对接疏解方案审批窗口，设置夜间作业与行人通道保障措施，交通疏解配合分包纳入统一调度。\n3. 材料与人工价格上行风险：报价中设置风险准备金与价格上行缓冲，按工程量清单组价并参考价格指数进行合理性说明；如业主接受，可就主要材料设置有限幅度的指数调整机制，本报价按固定总价基础提交并已内含该缓冲。\n4. 团队可用性风险：关键岗位人员与团队可用性在提交前完成内部确认，作为投标假设管理。\n5. 接口风险：与机电、装修及外部道路接驳包的接口仅作协调配合，明确界面划分，避免范围蔓延。\n6. 质量文档风险：文档控制专人负责，按业主审查节点同步提交，避免竣工资料滞后。",
+              "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份独立提交本包投标，报价 MOP 78,750,000，在包上限 MOP 82,875,000 以内。\n\n报价基础（按工程量清单组价，合计 MOP 78,750,000）：\n- 明挖段开挖与支护：MOP 14,860,000\n- 暗挖段开挖与初期支护（受控分包暂估）：MOP 18,640,000\n- 隧道结构（底板、侧墙、顶板）：MOP 21,480,000\n- 防水、接缝与回填：MOP 8,320,000\n- 临时交通疏解配合：MOP 4,260,000\n- 现场管理、安全、质量与BIM深化：MOP 6,980,000\n- 风险准备金与价格上行缓冲：MOP 4,210,000\n\n价格逻辑：结构工程与暗挖段为本包主要成本，按清单工程量与当前材料、人工价格指数组价；暗挖专业作业与交通疏解配合按受控分包暂估计入，属估算而非已收报价；风险准备金针对材料与人工价格上行、暗挖工序不确定性与交通疏解审批窗口设置。本报价为固定总价基础，已内含价格上行缓冲，不另设无上限调整条款。\n\n交付安排：公司自营承担现场管理、安全管理、质量管理、测量与文档控制，暗挖与交通疏解按受控分包纳入统一管理，接口责任与验收标准明确，不改变唯一责任投标人地位。施工期约20个月，在项目24个月总工期内完成。\n\n投标假设：公司可用资源2.0、占用0，可满足本包0.7的资源需求；暗挖专业作业与临时交通疏解配合按受控分包安排；关键岗位人员与团队可用性在提交前完成内部确认；报价按工程量清单组价并计入价格上行风险准备金；质量与安全按业主审查节点设置内部复核与独立检查关口。",
+              "quotation_breakdown": [
+                {
+                  "item": "明挖段开挖与支护",
+                  "amount": 14860000,
+                  "basis": "按工程量清单组价：土石方开挖、钢支撑与锚杆支护、降水与监测，含材料价格指数上行调整"
+                },
+                {
+                  "item": "暗挖段开挖与初期支护（受控分包）",
+                  "amount": 18640000,
+                  "basis": "暗挖专业作业受控分包估算，含分包管理费与接口协调，属暂估分包价，非已收报价"
+                },
+                {
+                  "item": "隧道结构（底板、侧墙、顶板）",
+                  "amount": 21480000,
+                  "basis": "钢筋混凝土结构按清单工程量组价，含模板台车摊销、混凝土与钢筋材料价格指数调整"
+                },
+                {
+                  "item": "防水、接缝与回填",
+                  "amount": 8320000,
+                  "basis": "外防水卷材、止水带、注浆系统、分层回填与压实检测，含淋水试验整改预留"
+                },
+                {
+                  "item": "临时交通疏解配合",
+                  "amount": 4260000,
+                  "basis": "围挡、导改、行人通道与夜间作业窗口配合，按受控分包估算并计入协调管理"
+                },
+                {
+                  "item": "现场管理、安全、质量与BIM深化",
+                  "amount": 6980000,
+                  "basis": "自营管理团队、安全总监与专职安全员、质量与文档控制、测量、BIM施工深化协调，按施工期人工与设备投入估算"
+                },
+                {
+                  "item": "风险准备金与价格上行缓冲",
+                  "amount": 4210000,
+                  "basis": "针对材料与人工价格指数上行、暗挖工序不确定性与交通疏解审批窗口设置的风险准备金"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+                "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+                "关键岗位人员与团队可用性在提交前完成内部确认",
+                "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+                "质量与安全按业主审查节点设置内部复核与独立检查关口"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "8c1b3bd6044db8f8a311b3c6f7db3a5cb78f0c6a5adb360133fb74fe0da3f40b"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0019/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+          "budget": 82875000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIME3B32373/CASE-0019/construction-1/round-1/contract",
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/construction-1",
+    "session_id": "SIME3B32373/CASE-0019/construction-1/round-1",
+    "snapshot_version": "8e7e8817d6765bd7c6786bb36717d9f165fac7d05354292f45d16c2ba474d3d7",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0019/construction-1_002",
+    "bidder_id": "COMP-0191",
+    "lead_id": "COMP-0191",
+    "members": [
+      "COMP-0191"
+    ],
+    "price": 78750000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0191": 0.7
+    },
+    "work_shares": {
+      "COMP-0191": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0191": true
+    },
+    "signed_terms_hash": "8c1b3bd6044db8f8a311b3c6f7db3a5cb78f0c6a5adb360133fb74fe0da3f40b",
+    "terms": {
+      "schedule_commitment": "本包施工期约20个月，在项目24个月总工期内完成主体土建、防水、回填与临时交通疏解配合，并预留验收与移交窗口。里程碑：第2月末完成施工准备与方案报审；第9月末完成明挖段开挖支护；第15月末完成暗挖段开挖与初期支护；第18月末完成结构、防水与接缝；第20月末完成回填与淋水试验整改；第22月末完成验收移交。关键线路为暗挖段开挖与初期支护，按短进尺、强支护、快封闭组织，监测数据异常即启动预警与工序调整。",
+      "risk_response": "主要风险与应对：\n1. 暗挖工序安全质量风险：采用短进尺、强支护、快封闭，设置监测预警阈值与应急支护预案，暗挖专业作业按受控分包管理并纳入公司统一安全考核。\n2. 城市交通疏解风险：提前与交通主管部门对接疏解方案审批窗口，设置夜间作业与行人通道保障措施，交通疏解配合分包纳入统一调度。\n3. 材料与人工价格上行风险：报价中设置风险准备金与价格上行缓冲，按工程量清单组价并参考价格指数进行合理性说明；如业主接受，可就主要材料设置有限幅度的指数调整机制，本报价按固定总价基础提交并已内含该缓冲。\n4. 团队可用性风险：关键岗位人员与团队可用性在提交前完成内部确认，作为投标假设管理。\n5. 接口风险：与机电、装修及外部道路接驳包的接口仅作协调配合，明确界面划分，避免范围蔓延。\n6. 质量文档风险：文档控制专人负责，按业主审查节点同步提交，避免竣工资料滞后。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0019/construction-1_002",
+        "package_id": "CASE-0019/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以中建八局第二建设有限公司为唯一责任投标人，独立承担行人隧道主体土建及结构施工包全部授权范围。技术方案要点：\n\n1. 施工方法：明挖段采用分段分层开挖、钢支撑加锚杆联合支护、随挖随撑；暗挖段采用受控分步开挖与初期支护紧跟、短进尺、强支护、快封闭原则，暗挖专业作业按受控分包纳入公司统一管理，接口责任与验收标准在投标文件中明确。\n2. 隧道结构：底板、侧墙、顶板按清水混凝土标准控制模板体系与浇筑分层，采用定型钢模与台车组合，控制接缝错台与外观质量。\n3. 防水与接缝：结构自防水为主，外防水卷材与施工缝、变形缝止水带、注浆系统相结合，设置淋水试验与渗漏整改闭环。\n4. 回填：分层回填、分层压实，按压实度检测节点验收。\n5. 临时交通疏解配合：按业主与交通主管部门审查的疏解方案实施围挡、导改、行人通道与夜间作业窗口管理，交通疏解配合按受控分包安排，纳入公司统一调度。\n6. 质量与文档：执行内部复核与独立检查双轨制，按业主审查节点设置质量关口，BIM施工深化用于管线避让、工序模拟与接口核对。\n7. 安全：以安全期望跟踪为主线，设置现场安全管理体系、危大工程专项方案与监测预警。\n\n本包不含机电、装修、导向标识及外部道路接驳，相关接口仅作协调配合，不纳入本报价。",
+        "implementation_plan": "总体按24个月项目工期组织，本包施工期约20个月，预留收尾与验收窗口。\n\n阶段一（第1至2月）：进场准备、施工组织设计与专项方案报审、测量控制网布设、围挡与临时交通疏解设施搭设、BIM深化启动。\n阶段二（第3至9月）：明挖段开挖与支护分段推进，同步底板结构施工，形成流水。\n阶段三（第7至15月）：暗挖段分步开挖与初期支护，受控分包作业面与自营管理团队同步配置，监测数据日汇总。\n阶段四（第10至18月）：侧墙与顶板结构、防水与接缝施工，回填分层跟进。\n阶段五（第18至20月）：回填完成、接缝注浆、淋水试验与渗漏整改、竣工资料整理。\n阶段六（第20至22月）：验收、移交与缺陷责任期准备。\n\n关键岗位：项目经理、技术负责人、安全总监、质量负责人、测量与文档控制由公司自营派出；暗挖专业班组与交通疏解配合班组按受控分包管理，纳入统一进度、安全与质量考核。团队可用性在提交前完成内部确认，作为投标假设管理。",
+        "quotation": 78750000.0,
+        "schedule_commitment": "本包施工期约20个月，在项目24个月总工期内完成主体土建、防水、回填与临时交通疏解配合，并预留验收与移交窗口。里程碑：第2月末完成施工准备与方案报审；第9月末完成明挖段开挖支护；第15月末完成暗挖段开挖与初期支护；第18月末完成结构、防水与接缝；第20月末完成回填与淋水试验整改；第22月末完成验收移交。关键线路为暗挖段开挖与初期支护，按短进尺、强支护、快封闭组织，监测数据异常即启动预警与工序调整。",
+        "compliance_statement": "按业主审查节点设置内部复核与独立检查双轨关口：施工组织设计与专项方案报审前完成公司内部技术复核；关键工序（暗挖分步开挖、结构浇筑、防水与接缝、回填压实）设置停止点，经内部质量复核与独立检查确认后方可进入下一工序；BIM施工深化成果按业主审查意见闭环；质量文档按分项工程同步归档，配合业主与监管机构的进度审查、支付审查与质量抽查。接口协调由项目经理统一对外，暗挖分包与交通疏解分包的接口责任、验收标准与考核办法在分包合同中明确，不改变公司作为唯一责任投标人的地位。",
+        "risk_response": "主要风险与应对：\n1. 暗挖工序安全质量风险：采用短进尺、强支护、快封闭，设置监测预警阈值与应急支护预案，暗挖专业作业按受控分包管理并纳入公司统一安全考核。\n2. 城市交通疏解风险：提前与交通主管部门对接疏解方案审批窗口，设置夜间作业与行人通道保障措施，交通疏解配合分包纳入统一调度。\n3. 材料与人工价格上行风险：报价中设置风险准备金与价格上行缓冲，按工程量清单组价并参考价格指数进行合理性说明；如业主接受，可就主要材料设置有限幅度的指数调整机制，本报价按固定总价基础提交并已内含该缓冲。\n4. 团队可用性风险：关键岗位人员与团队可用性在提交前完成内部确认，作为投标假设管理。\n5. 接口风险：与机电、装修及外部道路接驳包的接口仅作协调配合，明确界面划分，避免范围蔓延。\n6. 质量文档风险：文档控制专人负责，按业主审查节点同步提交，避免竣工资料滞后。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份独立提交本包投标，报价 MOP 78,750,000，在包上限 MOP 82,875,000 以内。\n\n报价基础（按工程量清单组价，合计 MOP 78,750,000）：\n- 明挖段开挖与支护：MOP 14,860,000\n- 暗挖段开挖与初期支护（受控分包暂估）：MOP 18,640,000\n- 隧道结构（底板、侧墙、顶板）：MOP 21,480,000\n- 防水、接缝与回填：MOP 8,320,000\n- 临时交通疏解配合：MOP 4,260,000\n- 现场管理、安全、质量与BIM深化：MOP 6,980,000\n- 风险准备金与价格上行缓冲：MOP 4,210,000\n\n价格逻辑：结构工程与暗挖段为本包主要成本，按清单工程量与当前材料、人工价格指数组价；暗挖专业作业与交通疏解配合按受控分包暂估计入，属估算而非已收报价；风险准备金针对材料与人工价格上行、暗挖工序不确定性与交通疏解审批窗口设置。本报价为固定总价基础，已内含价格上行缓冲，不另设无上限调整条款。\n\n交付安排：公司自营承担现场管理、安全管理、质量管理、测量与文档控制，暗挖与交通疏解按受控分包纳入统一管理，接口责任与验收标准明确，不改变唯一责任投标人地位。施工期约20个月，在项目24个月总工期内完成。\n\n投标假设：公司可用资源2.0、占用0，可满足本包0.7的资源需求；暗挖专业作业与临时交通疏解配合按受控分包安排；关键岗位人员与团队可用性在提交前完成内部确认；报价按工程量清单组价并计入价格上行风险准备金；质量与安全按业主审查节点设置内部复核与独立检查关口。",
+        "quotation_breakdown": [
+          {
+            "item": "明挖段开挖与支护",
+            "amount": 14860000,
+            "basis": "按工程量清单组价：土石方开挖、钢支撑与锚杆支护、降水与监测，含材料价格指数上行调整"
+          },
+          {
+            "item": "暗挖段开挖与初期支护（受控分包）",
+            "amount": 18640000,
+            "basis": "暗挖专业作业受控分包估算，含分包管理费与接口协调，属暂估分包价，非已收报价"
+          },
+          {
+            "item": "隧道结构（底板、侧墙、顶板）",
+            "amount": 21480000,
+            "basis": "钢筋混凝土结构按清单工程量组价，含模板台车摊销、混凝土与钢筋材料价格指数调整"
+          },
+          {
+            "item": "防水、接缝与回填",
+            "amount": 8320000,
+            "basis": "外防水卷材、止水带、注浆系统、分层回填与压实检测，含淋水试验整改预留"
+          },
+          {
+            "item": "临时交通疏解配合",
+            "amount": 4260000,
+            "basis": "围挡、导改、行人通道与夜间作业窗口配合，按受控分包估算并计入协调管理"
+          },
+          {
+            "item": "现场管理、安全、质量与BIM深化",
+            "amount": 6980000,
+            "basis": "自营管理团队、安全总监与专职安全员、质量与文档控制、测量、BIM施工深化协调，按施工期人工与设备投入估算"
+          },
+          {
+            "item": "风险准备金与价格上行缓冲",
+            "amount": 4210000,
+            "basis": "针对材料与人工价格指数上行、暗挖工序不确定性与交通疏解审批窗口设置的风险准备金"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司可用资源2.0、占用0，可满足本包0.7的资源需求",
+          "暗挖专业作业与临时交通疏解配合拟按受控分包安排，分包范围与接口责任在投标文件中明确",
+          "关键岗位人员与团队可用性在提交前完成内部确认",
+          "报价按工程量清单组价，并计入材料与人工价格上行风险准备金",
+          "质量与安全按业主审查节点设置内部复核与独立检查关口"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "新城填海区A区至澳门半岛连接通道改善工程的行人隧道主体土建：明挖/暗挖段开挖与支护、隧道结构（底板、侧墙、顶板）、防水、接缝、回填及临时交通疏解配合；不含机电、装修、导向标识及外部道路接驳。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

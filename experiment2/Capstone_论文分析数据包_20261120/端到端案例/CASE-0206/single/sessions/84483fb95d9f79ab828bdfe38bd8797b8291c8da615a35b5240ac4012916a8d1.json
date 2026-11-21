@@ -1,0 +1,2037 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMEC711881/CASE-0206/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "MOP",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 44625000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "MOP",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "澳门新葡京酒店",
+        "owner_id": "OWNER-aa9fb4e593b5ca",
+        "project_id": "CASE-0206",
+        "project_type": "building",
+        "region": "Macau",
+        "scope": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店"
+      },
+      "package": {
+        "package_id": "CASE-0206/construction-2",
+        "project_id": "CASE-0206",
+        "kind": "construction",
+        "buyer_id": "OWNER-aa9fb4e593b5ca",
+        "name": "机电与垂直交通工程包",
+        "scope": "给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+        "budget": 44625000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0206/design",
+          "CASE-0206/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0191",
+          "COMP-0494"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-aa9fb4e593b5ca": {
+        "entity_id": "OWNER-aa9fb4e593b5ca",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_name": "澳门旅游娱乐有限公司",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-aa9fb4e593b5ca",
+          "name": "澳门旅游娱乐有限公司",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000004",
+              "project_id": "CASE-0206",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMEC711881/CASE-0206/cost/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 2100000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 3750000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMEC711881/EVT000015",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/design",
+            "contract_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0169",
+              "COMP-0295"
+            ],
+            "price": 3750000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000017",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/cost",
+            "contract_id": "SIMEC711881/CASE-0206/cost/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 2100000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000018",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000100",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0206",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0494": {
+        "entity_id": "COMP-0494",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0494",
+          "company_name": "得寶國際-得寶建築合作經營",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0494",
+          "name": "得寶國際-得寶建築合作經營",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "ae4d2dbbd2c703c406e2bef11197de2b8d81bbace3eb5ecca46e6f3c1a529657"
+  },
+  "spec": {
+    "package_id": "CASE-0206/construction-2",
+    "project_id": "CASE-0206",
+    "kind": "construction",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "name": "机电与垂直交通工程包",
+    "scope": "给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+    "budget": 44625000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0206/design",
+      "CASE-0206/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0191",
+      "COMP-0494"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0206",
+      "project_name": "澳门新葡京酒店",
+      "project_type": "building",
+      "location": "Macau",
+      "owner_intent": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0206",
+      "project_scope": "澳门新葡京酒店为文旅与酒店娱乐建筑项目，总建筑面积约13.5万平方米，采用DBB交付模式，总预算MOP 150,000,000，总工期24个月。本次业主方模拟招标包为机电与垂直交通工程包（CASE-0206/construction-2），范围包括给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。业主方已完成设计包与造价咨询包签约，本包须与设计、造价及后续精装修、幕墙等界面协调，确保机电系统与垂直交通满足酒店运营、公共安全及可持续目标。",
+      "functional_requirements": [
+        "满足酒店客房、餐饮、娱乐、后勤及公共区域的全天候给排水与暖通空调服务需求",
+        "保障强弱电系统可靠供电与智能化运营管理，支持酒店业务连续性",
+        "消防系统须符合澳门酒店类建筑安全预期，覆盖报警、灭火、排烟与疏散联动",
+        "电梯与自动扶梯须满足高峰客流、无障碍通行及酒店服务流线要求",
+        "系统调试与试运行须达到业主验收目标，并完成运营人员培训与移交",
+        "机电系统设计须预留与精装修、幕墙、室外景观的接口条件",
+        "支持节能运行与可持续目标，降低全生命周期运营成本"
+      ],
+      "technical_requirements": [
+        "BIM协调：机电各专业须在统一BIM模型中进行碰撞检查与管线综合，提交协调报告",
+        "MEP协调：给排水、暖通、强弱电、消防系统之间须完成界面划分与联合调试计划",
+        "结构协调：设备基础、预留孔洞、荷载条件须与主体结构设计单位确认",
+        "垂直交通布局：电梯与自动扶梯的井道、机房、底坑及候梯空间须与建筑布局协调",
+        "公共访问布局：消防疏散、无障碍通道与设备检修通道须满足酒店公共安全预期",
+        "耐久性目标：主要设备与材料须满足酒店高使用率环境的耐久性要求",
+        "可维护性目标：设备选型与布置须便于日常维护、更换及备件管理",
+        "业主验收路径：分系统调试、联合试运行、性能测试与业主分阶段验收",
+        "能耗使用目标：暖通空调与垂直交通系统须提交能耗评估与节能运行策略"
+      ],
+      "budget_policy": "本包预算为MOP 44,625,000，由业主方在已批准的项目总预算MOP 150,000,000内控制。业主将依据造价咨询包提供的成本建议与成本审查进行预算比对，投标报价须提供价格基础与费用构成。任何范围或预算变更须经业主宏观审批，并遵循变更控制纪律。业主将定性比较各投标的价格合理性、能力匹配与风险控制，不单纯以最低价判给。",
+      "schedule_policy": "总工期24个月，本包须在设计与造价包已签约的基础上编制机电与垂直交通工程里程碑计划。业主关注里程碑现实性，须预留业主审查时间、设计包与造价包接口时间、以及公共访问协调时间。投标方须提交进度视图，说明设备采购周期、安装顺序、调试与验收安排，并识别关键路径与浮动时间。",
+      "compliance_requirements": [
+        "业主审查节奏：设定定期业主审查会议与阶段汇报节点，确保机电与垂直交通进展可控",
+        "问题升级路径：明确承包商内部升级与向业主汇报的触发条件与时限",
+        "文档纪律：要求提交完整的设计协调记录、调试报告、验收文件与竣工资料",
+        "接口签署：机电与结构、幕墙、精装修、室外景观的接口须经业主方确认签署",
+        "公共访问协调：施工期间须协调酒店公共通道、消防疏散与运营影响",
+        "质量目标跟踪：建立质量目标跟踪表，定期向业主报告达成情况",
+        "安全期望跟踪：建立安全期望跟踪机制，报告现场安全表现与整改闭环",
+        "变更控制纪律：任何范围、预算或工期变更须提交变更申请并经业主审批"
+      ],
+      "risk_priorities": [
+        "机电系统与主体结构、幕墙、精装修的接口风险，须通过BIM协调与接口签署提前化解",
+        "电梯与自动扶梯供货及安装周期风险，须在进度计划中识别关键路径",
+        "消防系统验收与公共安全期望风险，须提前与相关方沟通调试与验收安排",
+        "酒店运营连续性风险，施工与调试须减少对公共区域及后勤的影响",
+        "材料与人工价格波动风险，投标方须在价格基础中说明风险应对",
+        "承包商能力匹配与人员配置现实性风险，业主将定性比较交付信心与 staffing realism",
+        "变更控制风险，范围或预算变更须经宏观审批，避免失控"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0206/construction-2",
+          "package_type": "contractor",
+          "package_name": "机电与垂直交通工程包",
+          "scope": "Authorized scope: 给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。\nBuyer refinement: 给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "酒店类建筑机电与垂直交通工程协调能力",
+            "MEP多专业协调与BIM管线综合能力",
+            "消防系统安装调试与验收配合能力",
+            "电梯与自动扶梯供应安装及调试能力",
+            "城市施工物流与酒店运营环境施工组织能力",
+            "质量文档管理能力",
+            "安全期望跟踪与现场安全管理能力",
+            "与设计、造价及后续精装修包接口协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "机电与垂直交通施工方法及调试方案",
+            "质量方法与质量目标跟踪计划",
+            "价格基础与费用构成",
+            "进度视图与里程碑计划",
+            "风险应对与接口协调方案",
+            "安全期望跟踪与现场管理措施"
+          ],
+          "pricing_requirements": "投标方须提交价格基础与费用构成，涵盖设备供应、安装、调试、培训及保修期支持。业主将参考造价咨询包的成本建议与成本审查，定性比较价格合理性，并考虑风险应对与交付信心。\nBinding currency: MOP; package ceiling: 44625000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调"
+          ],
+          "owner_decision_policy": "业主方将定性比较各投标的能力匹配、价格合理性、风险控制与交付信心，综合判断后作出判给决定；不单纯以最低价为准，并须符合业主宏观审批与变更控制纪律。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0206/construction-2",
+        "package_type": "contractor",
+        "package_name": "机电与垂直交通工程包",
+        "scope": "Authorized scope: 给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。\nBuyer refinement: 给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "酒店类建筑机电与垂直交通工程协调能力",
+          "MEP多专业协调与BIM管线综合能力",
+          "消防系统安装调试与验收配合能力",
+          "电梯与自动扶梯供应安装及调试能力",
+          "城市施工物流与酒店运营环境施工组织能力",
+          "质量文档管理能力",
+          "安全期望跟踪与现场安全管理能力",
+          "与设计、造价及后续精装修包接口协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "机电与垂直交通施工方法及调试方案",
+          "质量方法与质量目标跟踪计划",
+          "价格基础与费用构成",
+          "进度视图与里程碑计划",
+          "风险应对与接口协调方案",
+          "安全期望跟踪与现场管理措施"
+        ],
+        "pricing_requirements": "投标方须提交价格基础与费用构成，涵盖设备供应、安装、调试、培训及保修期支持。业主将参考造价咨询包的成本建议与成本审查，定性比较价格合理性，并考虑风险应对与交付信心。\nBinding currency: MOP; package ceiling: 44625000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调"
+        ],
+        "owner_decision_policy": "业主方将定性比较各投标的能力匹配、价格合理性、风险控制与交付信心，综合判断后作出判给决定；不单纯以最低价为准，并须符合业主宏观审批与变更控制纪律。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_name": "澳门旅游娱乐有限公司",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-aa9fb4e593b5ca": [
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "项目开发部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与预算的平衡，习惯从业主投资回报角度审视每个决策。他最先注意到的是关键路径上的延误风险，常把技术讨论拉回到商业目标上，带来工期与质量之间的张力。",
+          "responsibilities": [
+            "统筹项目整体交付策略与里程碑",
+            "主持招标包划分与采购计划评审",
+            "协调设计、施工与监管服务界面",
+            "监控工期与成本偏差并推动纠偏"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善用数据与里程碑说话，会议中常以提问引导团队聚焦关键风险。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "成本控制部",
+          "position": "成本控制经理",
+          "personal_profile": "对数字高度敏感，在压力下会反复核对报价基础与支付条款，最先发现成本估算中的遗漏或过于乐观的假设。她倾向于保守的财务安排，常与追求进度的同事产生预算分配上的摩擦。",
+          "responsibilities": [
+            "编制与审核项目预算及现金流计划",
+            "评估投标报价的合理性与完整性",
+            "主持付款评审与变更成本评估",
+            "跟踪成本目标并预警超支风险"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨细致，习惯用表格和对比数据表达观点，对模糊表述会要求澄清。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "设计管理部",
+          "position": "设计协调经理",
+          "personal_profile": "以设计意图的完整实现为优先，在压力下会坚持设计标准与可持续目标，最先注意到图纸与规范之间的不一致。他常因设计变更的连锁影响与成本、工期团队产生张力，但善于用技术论证说服他人。",
+          "responsibilities": [
+            "协调设计顾问与承包商的设计接口",
+            "审核设计变更对质量与可持续目标的影响",
+            "组织设计评审与可施工性检查",
+            "管理设计文档的版本与分发纪律"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "理性沉稳，喜欢用图纸和规范条文支撑观点，对设计质量问题会直言不讳。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量与安全视为不可妥协的底线，在压力下会坚持独立检查与整改闭环，最先注意到现场执行与批准方案之间的偏差。她常因要求停工整改而与进度团队发生冲突，但始终以质量目标为锚点。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场质量与安全合规",
+            "组织独立质量审查与整改验证",
+            "跟踪质量缺陷的闭环处理"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "坚定清晰，善用检查清单和现场照片说明问题，对整改要求会明确期限。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "合约管理部",
+          "position": "合约经理",
+          "personal_profile": "注重合约条款的严谨性与风险分配的公平性，在压力下会仔细推敲每一条款的可执行性，最先注意到责任边界模糊或索赔隐患。他倾向于用合约语言锁定各方义务，常因条款解释与项目团队产生分歧。",
+          "responsibilities": [
+            "起草与审核招标文件及合约条款",
+            "管理投标澄清与合约谈判",
+            "处理合约变更与索赔评估",
+            "确保采购过程的文档纪律与合规"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "逻辑严密，习惯引用合约条文和先例，对模糊表述会要求书面确认。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源匹配，习惯先确认关键路径再分配任务。对业主接口和跨部门协调敏感，常提醒团队不要因局部优化牺牲整体交付。讨论中倾向于推动快速决策，但会要求关键风险有预案。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "业主接口与高层沟通",
+            "资源规划与关键节点决策",
+            "风险应对与应急预案审批"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先结论后依据，重视时间节点与责任归属。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价构成和支付条款高度敏感，习惯逐项核对成本依据与现金流影响。压力下会反复确认边界条件，避免模糊承诺。讨论中常提出保守的商务假设，提醒团队注意付款节奏与变更管理。",
+          "responsibilities": [
+            "报价编制与价格依据整理",
+            "支付评审与付款申请跟踪",
+            "合约条款与变更管理",
+            "成本控制与现金流预测"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、谨慎，善用数字和条款说话，偏好书面确认。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术总工",
+          "personal_profile": "面对技术难题时先分析结构安全与施工可行性，重视方案的可实施性和独立复核。对设计协调中的接口问题警觉，倾向于在早期提出技术质疑。讨论中常以技术底线约束进度压力，强调质量目标不可妥协。",
+          "responsibilities": [
+            "施工方案与设计协调",
+            "技术复核与独立检查",
+            "质量目标跟踪与验收标准",
+            "桩基、钢结构与幕墙技术管理"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、逻辑性强，习惯用图纸和数据说明问题，对模糊表述会追问细节。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "首先关注现场合规性与质量风险，对文档纪律和检查记录要求严格。压力下容易坚持程序完整性，可能拖慢进度但能降低返工风险。讨论中常提醒团队注意监管要求与可持续发展目标。",
+          "responsibilities": [
+            "质量计划与检查制度执行",
+            "现场安全监督与整改跟踪",
+            "文档纪律与质量记录管理",
+            "监管要求与可持续目标落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰、注重证据，习惯用检查清单和整改通知沟通。"
+        },
+        {
+          "agent_id": "COMP-0153_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "施工经理",
+          "personal_profile": "对现场进度和资源调度反应迅速，习惯根据实际工作面调整人力与机械安排。压力下倾向于优先保证关键工序连续，可能低估协调成本。讨论中常提出具体施工安排，强调可操作性和现场应变。",
+          "responsibilities": [
+            "现场施工组织与进度控制",
+            "分包协调与工作面安排",
+            "资源调度与设备管理",
+            "现场报告与问题反馈"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、简洁，多用现场实例和行动方案表达观点。"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目统筹与业主界面",
+          "position": "项目总监",
+          "personal_profile": "压力下先稳住整体节奏，习惯把工期、资源与业主期望放在同一张表上权衡。最先注意到的是承诺与可用资源之间的缺口，讨论中常把乐观方案拉回可交付边界，带来进度与资源之间的张力。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "业主界面与监管服务沟通",
+            "组合体与分包界面协调",
+            "关键节点与工期承诺把关"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先给结论再列依据，对模糊承诺会当场追问"
+        },
+        {
+          "agent_id": "COMP-0191_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力越大越回到报价基础与支付条件逐项核对。最先注意到的是成本漏项与付款节奏风险，讨论中倾向压低不可预见费，常与进度方在赶工投入上形成张力。",
+          "responsibilities": [
+            "报价基础与成本控制",
+            "付款评审与支付评估配合",
+            "变更与索赔的商务处理",
+            "分包采购与合同条款审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数字说话，对未量化的假设会要求补充依据"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "技术与设计协调",
+          "position": "技术总工",
+          "personal_profile": "面对技术争议先回到图纸与规范依据，习惯把设计协调问题拆成可验证的构造节点。最先注意到的是设计接口与施工可行性冲突，讨论中坚持独立复核，常因要求补图补算而拖慢决策节奏。",
+          "responsibilities": [
+            "设计协调与施工方案审查",
+            "桩基、结构与幕墙技术接口把关",
+            "独立检查与技术复核安排",
+            "质量目标跟踪的技术支撑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨克制，偏好书面确认，对口头承诺会要求落到图纸或会议纪要"
+        },
+        {
+          "agent_id": "COMP-0191_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量与安全监管",
+          "position": "质量安全经理",
+          "personal_profile": "把质量与安全视为不可交易项，压力下反而更强调检查频次与记录完整。最先注意到的是现场执行与方案之间的偏差，讨论中愿意为整改争取时间，常与赶工诉求形成直接张力。",
+          "responsibilities": [
+            "质量目标跟踪与现场质量评审",
+            "安全监管与风险应对落实",
+            "文档纪律与检查记录管理",
+            "独立检查与整改闭环跟踪"
+          ],
+          "decision_authority": "final",
+          "communication_style": "坚定务实，先讲风险后果再谈方案，对整改期限要求明确"
+        },
+        {
+          "agent_id": "COMP-0191_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "资源与交付计划",
+          "position": "资源计划经理",
+          "personal_profile": "以资源可用性为思考起点，习惯把团队可用性摘要与工期排布对齐。最先注意到的是人力与机械的峰值冲突，讨论中倾向保守排产，常因不愿超配资源而与商务方在赶工成本上产生张力。",
+          "responsibilities": [
+            "团队可用性与角色计划编制",
+            "资源规划与分包劳务协调",
+            "进度视图与交付方法维护",
+            "现场报告与资源风险预警"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实简明，用排程与资源表沟通，对临时加码会先问资源从哪来"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。他最先注意到的是业主需求变更对主体结构进度的影响，倾向于在讨论中引入风险缓冲和应急方案，常带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "协调设计、成本与施工团队之间的接口",
+            "主持内部评审与业主汇报",
+            "监控关键路径与里程碑达成"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，善于用简明语言总结复杂问题，强调行动项与责任人。"
+        },
+        {
+          "agent_id": "COMP-0494_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "成本控制部",
+          "position": "成本经理",
+          "personal_profile": "对数字敏感，在压力下会反复核对报价基础与支付条款，最先注意到成本超支风险和现金流影响。她倾向于在讨论中坚持成本纪律，常带来成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制与审核工程包报价基础",
+            "监控成本执行与支付评审",
+            "评估变更对成本的影响",
+            "参与分包采购与合同谈判"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，喜欢用数据说话，表达清晰但有时显得保守。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术总工",
+          "personal_profile": "技术导向，在压力下专注于施工方案可行性与质量目标，最先注意到结构安全与幕墙节点的技术难点。他倾向于在讨论中坚持技术标准，常带来技术严谨性与施工效率之间的张力。",
+          "responsibilities": [
+            "审核主体结构与外立面技术方案",
+            "监督现场施工质量与工艺标准",
+            "协调设计变更与技术澄清",
+            "组织质量检查与验收"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "专业冷静，注重细节与依据，常用图纸和规范说明问题。"
+        },
+        {
+          "agent_id": "COMP-0494_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "合约管理部",
+          "position": "合约经理",
+          "personal_profile": "规则意识强，在压力下优先确保合同条款与监管要求合规，最先注意到责任划分与索赔风险。她倾向于在讨论中强调文档纪律与程序正义，常带来合规要求与灵活应变之间的张力。",
+          "responsibilities": [
+            "管理工程包合同与分包合约",
+            "处理索赔与争议",
+            "确保投标文件与履约文档合规",
+            "协调保险与担保事宜"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理分明，措辞谨慎，善于引用合同条款与政策依据。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何家明",
+          "agent_name": "何家明",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "现场运营部",
+          "position": "现场经理",
+          "personal_profile": "行动导向，在压力下关注现场实际进展与资源可用性，最先注意到劳动力与材料供应瓶颈。他倾向于在讨论中要求明确可执行的计划，常带来现场现实与计划理想之间的张力。",
+          "responsibilities": [
+            "管理现场日常施工活动",
+            "协调劳动力与材料资源",
+            "监督安全与环保措施执行",
+            "编制现场报告与进度记录"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "直率务实，喜欢具体例子和现场照片，强调解决问题而非争论。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-2",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个酒店类机电与垂直交通工程包，预算约4463万MOP，占项目总预算近三成，属于高价值专业包。公司作为承包商，资源占用为零、可用资源2.0，资源上完全有余量承接。但公司资料以港口、海洋、土石方、船舶、环境治理等为主，酒店MEP多专业协调、电梯与自动扶梯供应安装、消防验收配合这些核心能力在资料中没有直接证据，属于能力缺口。不过这些缺口可以通过专业分包和供应商解决：电梯由设备厂商供货安装，消防、暖通、强弱电由专业分包承担，公司作为总承包方负责现场管理、进度、安全、质量文档和接口协调，这是承包商正常的组织方式，不构成必须联合投标的问责缺口。真正的风险在于酒店运营环境下的城市施工物流、与精装修包的接口，以及MEP深化设计的BIM管线综合能力，这些需要在投标文件中用角色计划、施工方法、质量方法和风险应对方案说清楚。价格方面有造价咨询包的成本建议作参照，报价需覆盖设备、安装、调试、培训和保修期支持。综合判断：机会值得争取，公司可作为单一责任投标人独立投标，以专业分包和电梯供应商作为常规外部支持，不需要组合体。",
+        "content": "中交第一航务工程局有限公司经管理层审议，决定以单一责任投标人身份参与澳门新葡京酒店机电与垂直交通工程包的投标。本包范围包括给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装及系统调试，不含主体结构、幕墙、精装修与室外景观。公司将作为总承包方统一承担现场管理、施工组织、安全管理、质量文档管理、进度控制及与设计、造价和后续精装修包的接口协调责任。电梯与自动扶梯拟由设备供应商按供货安装调试方式配合，消防、暖通、强弱电及给排水拟由专业分包实施，公司对分包范围、质量记录、调试与验收配合负总责，不改变单一问责的投标身份。投标文件将提交角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成、进度视图与里程碑计划、风险应对与接口协调方案、安全期望跟踪与现场管理措施。报价以MOP计价，覆盖设备供应、安装、调试、培训及保修期支持，并参照造价咨询包的成本建议作价格合理性定性比较。公司充分认识到酒店运营环境下的城市施工物流、MEP多专业BIM管线综合及精装修接口协调是主要风险，将在方案中设置接口协调机制、分阶段调试与验收计划、安全期望跟踪和现场管理措施予以应对。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:48:11",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-2",
+        "agent_id": "COMP-0191_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为总承包企业，机电与垂直交通工程包属于典型的专业分包型工作包，预算约4463万MOP，占项目总预算近三成，规模不小但仍在可控范围。公司资料显示具备建设工程施工、电气安装、特种设备安装改造修理、普通机械设备安装等许可，企业参数中施工、技术、管理、质量、安全能力均在0.8以上，资源占用为零、可用资源2.0，承接该包不会挤压现有承诺。真正的短板是酒店类机电多专业协调、BIM管线综合、电梯扶梯供应安装调试这类专业深度，以及澳门酒店运营环境下的城市施工物流组织。但这些属于可以通过专业分包、设备厂商供货安装协议和自身总包管理能力覆盖的常规风险，而不是必须由另一家企业共享投标人身份和包级交付责任的缺口。我们可以作为单一责任投标人，主导深化协调、进度、安全、质量文档和接口管理，把电梯、消防等专业工作以受控分包方式纳入自己的管理体系。价格上需要在设备供应、安装、调试、培训、保修支持上做扎实的费用构成，并预留风险应对余量。因此我倾向独立投标，而不是组建组合体。",
+        "content": "管理层决定：就澳门新葡京酒店机电与垂直交通工程包以单一责任投标人身份提交投标。本公司将担任机电与垂直交通工程的施工总承包管理角色，统一负责给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装协调、系统调试、质量文档、安全管理和与设计、造价及后续精装修包的接口协调。电梯与自动扶梯、消防等专业工作拟通过受控专业分包及设备厂商供货安装安排实施，由本公司统一管理进度、质量、安全与验收配合，分包安排属于投标假设，相关协议尚待落实。报价将按价格基础与费用构成分列设备供应、安装、调试、培训及保修期支持，并参考造价咨询包的成本建议做定性合理性校核，预留风险应对余量。进度视图将围绕24个月项目工期编排机电与垂直交通里程碑，并明确与设计包、造价包的依赖关系。质量方法将设定质量目标跟踪与文档管理纪律，安全措施将覆盖酒店运营环境下的城市施工物流组织。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:48:10",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-2",
+        "agent_id": "COMP-0494_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为本地总承包企业，机电与垂直交通工程包属于我们业务覆盖范围内的专业分包型工程包，预算约4463万澳门元，占项目总预算约三成，规模可控。公司具备ISO三体系认证，企业参数显示施工、质量、安全管理能力均在0.8以上，资源占用为零、可用资源2.0，承接此包不会挤压现有承诺。此包不含主体结构、幕墙与精装修，边界清晰，我们可作为单一责任投标人主导给排水、暖通、强弱电、消防及电梯扶梯的供应安装与调试，通过常规专业分包与设备供应商安排落实各专业，无需以组合体身份共享投标人责任。真正的风险在于酒店运营环境下的施工组织、MEP多专业BIM管线综合、电梯扶梯供应安装调试以及消防验收配合，这些需要我们在投标文件中以角色计划、施工方法与调试方案、质量目标跟踪、进度里程碑和风险应对方案说清楚，并在价格基础中把设备供应、安装、调试、培训与保修期支持分项列明。当前没有未决条件或强制提交前置条件，资源与能力匹配，值得以独立投标人身份争取，同时把专业分包与设备供货作为明确的投标假设管理。",
+        "content": "得寶國際-得寶建築合作經營就澳门新葡京酒店机电与垂直交通工程包提交独立投标意向。我们作为单一责任投标人，承担给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装及系统调试的总体协调与交付责任，不含主体结构、幕墙、精装修与室外景观。投标文件将包含角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成（涵盖设备供应、安装、调试、培训及保修期支持）、进度视图与里程碑计划、风险应对与接口协调方案，以及安全期望跟踪与现场管理措施。针对酒店运营环境施工组织、MEP多专业BIM管线综合、电梯扶梯供应安装调试与消防验收配合，我们将在方案中明确专业分包与设备供货的接口管理、责任划分与验收配合安排，并以报价与风险应对体现交付信心。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:48:10",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-2",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "按设备供应商供货安装调试方式的草案成本预留，含设备、安装、调试与法定检验配合；具体规格与报价待投标后按业主确认技术规格落实\n- 电梯与自动扶梯供应、安装及调试费：MOP 9,850,000（设备供应商配合方式，待技术规格确认）",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:48:22",
+        "verification_requests": [
+          {
+            "question": "按设备供应商供货安装调试方式的草案成本预留，含设备、安装、调试与法定检验配合；具体规格与报价待投标后按业主确认技术规格落实",
+            "required_before_submission": false
+          },
+          {
+            "question": "- 电梯与自动扶梯供应、安装及调试费：MOP 9,850,000（设备供应商配合方式，待技术规格确认）",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_role": "owner",
+        "package_id": "CASE-0206/construction-2",
+        "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+        "agent_name": "何家豪",
+        "department": "合约管理部",
+        "position": "合约经理",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个机电与垂直交通工程包的交付负全责。评标推荐中建八局第二建设有限公司，我认同这个方向。三家的报价都在预算内，但中交第一航务的报价虽然最低，其分包与设备成本基础最薄弱，风险预留也偏低，在酒店运营环境下容易产生索赔暴露，业主的问责风险较高。得寶國際的回应系统、文档纪律好，但报价最高，且设备与分包成本同样未锁定，价格合理性偏弱。中建八局的费用构成均衡，风险余量较充足，接口协调与里程碑安排具体，机电总协调与专职BIM人员配置现实，业主审查路径清晰。虽然其消防分包与电梯厂商协议尚待签订，设备成本为内部估算，但这些属于正常的签约前澄清事项，可以通过预签约澄清聚焦价格锁定、分包范围与接口责任书面化来管理。判给中建八局第二建设有限公司，符合业主的问责、交付信心与 affordability 要求。",
+        "content": "经评标与业主审查，现决定将机电与垂直交通工程包判给中建八局第二建设有限公司，报价MOP 40,480,000。该投标以单一责任投标人身份提交，费用构成均衡，风险余量较充足，机电总协调与专职BIM人员配置现实，接口协调与里程碑安排具体，业主审查路径清晰。预签约澄清聚焦消防分包与电梯厂商协议的范围与价格锁定、设备与分包成本的价格基础完善、酒店运营环境施工组织细化以及接口责任书面化，以符合业主变更控制纪律。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T15:48:58",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0206/construction-2",
+        "decision": "bid",
+        "reason": "管理层认为该机电与垂直交通工程包预算约4463万MOP，规模与公司资源余量匹配，公司当前无占用资源，具备作为单一责任投标人的组织条件。公司资料显示具备建设工程施工、机电设备安装、电子机械设备维护、信息系统集成等许可与一般经营能力，可作为总承包方承担现场管理、进度控制、安全管理、质量文档和接口协调。电梯与自动扶梯、消防、暖通、强弱电等专业工作拟通过设备供应商与专业分包实施，属于承包商正常的分包组织，不改变公司单一问责的投标身份，因此不选择组合体。主要风险在于酒店运营环境下的城市施工物流、MEP多专业BIM管线综合、与精装修包的接口协调，以及专业分包与设备供货的报价基础尚未取得正式报价。投标将以角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成、进度视图与里程碑计划、风险应对与接口协调方案、安全期望跟踪与现场管理措施回应业主要求，并在报价中预留设备、安装、调试、培训及保修期支持的费用，价格合理性参照造价咨询包的成本建议作定性比较。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯与自动扶梯由设备供应商按供货、安装、调试方式配合，具体供货范围与报价在投标后按业主确认的技术规格落实",
+          "消防、暖通、强弱电、给排水专业工作拟由专业分包实施，公司作为总承包方承担统一管理与质量文档责任",
+          "MEP深化设计与BIM管线综合由公司组织专业力量完成，并与设计包、造价包保持接口协调",
+          "报价中的设备与分包费用目前为草案成本预留，尚未取得正式供应商报价",
+          "保修期支持与培训费用按业主要求纳入价格基础与费用构成"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0206/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，机电与垂直交通工程包与本公司施工总承包定位和机电安装、特种设备安装、电气安装等许可能力相符，预算规模在可承受范围，当前资源占用为零，具备独立承担单一责任投标人的条件。酒店类机电协调、BIM管线综合、电梯扶梯供应安装调试等专业深度，可通过受控专业分包与设备厂商协议纳入本公司统一管理，不构成必须共享投标人身份的组合体情形。我们将以角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成、进度视图与里程碑计划、风险应对与接口协调方案、安全期望跟踪与现场管理措施作为投标响应主线，明确与设计、造价及后续精装修包的接口责任，并在报价中体现设备供应、安装、调试、培训及保修期支持的费用构成与合理风险余量。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+          "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+          "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+          "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+          "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0494",
+        "package_id": "CASE-0206/construction-2",
+        "decision": "bid",
+        "reason": "管理层判断：机电与垂直交通工程包边界清晰、规模适中，与我方总承包与施工管理能力契合，且当前资源无占用、可独立承担单一责任。酒店运营环境施工组织、MEP管线综合、电梯扶梯调试与消防验收配合属于可通过专业分包与设备供货安排管理的正常交付风险，不构成必须共享投标人身份的理由。我们以独立投标人身份提交，明确价格基础与费用构成、进度视图、质量与安全跟踪计划及接口协调方案，并将关键专业分包与设备供货列为投标假设，在投标文件中说明责任划分与接口管理。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "机电各专业（给排水、暖通空调、强弱电、消防）拟通过具备相应能力的专业分包实施，分包安排将在投标文件中作为明确假设列示，具体分包商承诺待中标后落实。",
+          "电梯与自动扶梯的供应与安装拟由设备供应商及其授权安装单位承担，我方作为单一责任投标人负责接口协调、进度与验收配合。",
+          "价格基础中的设备与分包费用目前为投标估算与预算性成本假设，尚未取得供应商正式报价，中标前将按投标澄清程序完善。",
+          "消防系统调试与验收配合按澳门现行验收程序安排，具体验收时间取决于业主与监管方的审查节奏。",
+          "酒店运营环境下的施工组织将按分区、分时段与运营协调方案执行，具体作业窗口需与业主运营方在开工前确认。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0206/construction-2_001",
+        "package_id": "CASE-0206/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "中交第一航务工程局有限公司以单一责任投标人身份承担本机电与垂直交通工程包。技术方案围绕酒店运营环境下的MEP多专业协调与BIM管线综合展开：由公司机电技术团队牵头建立BIM协调模型，统一给排水、暖通空调、强弱电、消防及电梯扶梯的管线综合与预留预埋复核，按设计包与造价包的接口节点提交深化成果。电梯与自动扶梯由设备供应商按供货、安装、调试方式配合，公司负责井道条件复核、进场计划、安装监督与系统联调；消防、暖通、强弱电、给排水由专业分包实施，公司统一承担施工组织、质量记录、调试与验收配合责任。调试方案采用分系统单机调试、分区联动调试、全系统综合调试三阶段，并预留与精装修包接口的复测窗口。质量方法以质量目标跟踪计划为核心，设置材料设备进场检验、隐蔽工程验收、系统性能测试与竣工文档移交四个控制点，全部记录纳入公司质量文档管理。安全期望跟踪以酒店运营环境为约束，实行施工物流分时配送、作业区与运营区物理隔离、动火与临电专项许可。",
+        "implementation_plan": "总体按24个月项目工期编排，本包施工与调试期按业主进度视图与里程碑计划衔接。第一阶段为深化设计与BIM管线综合，完成各专业协调模型与设备选型确认；第二阶段为设备供应与分包进场，按酒店运营分区组织城市施工物流，实行夜间与分时配送；第三阶段为安装施工，给排水、暖通、强弱电、消防按区段流水，电梯扶梯按井道移交顺序插入；第四阶段为分系统调试与联动调试，配合消防验收与电梯法定检验；第五阶段为培训、竣工文档移交与保修期支持。关键里程碑包括BIM综合模型确认、设备到货、各系统单机调试完成、消防联动验收、电梯扶梯检验合格及整体移交。与设计包、造价包及后续精装修包设置固定接口协调会与移交检查表。",
+        "quotation": 38510000.0,
+        "schedule_commitment": "本包施工与调试期按项目24个月总工期衔接，自收到开工令起按业主进度视图组织。深化设计与BIM管线综合在进场后首阶段完成；设备供应与分包按区段流水插入；分系统调试与联动调试在安装完成后依次展开；消防验收、电梯扶梯检验及培训移交按里程碑计划完成。公司承诺按业主确认的里程碑节点提交进度视图更新，并对分包与设备供应商的进度负总责。",
+        "compliance_statement": "公司接受业主及造价咨询包的成本审查与定性价格合理性比较，报价以MOP计价，价格基础与费用构成按设备供应、安装、调试、培训及保修期支持分列。公司作为单一责任投标人对分包范围、质量记录、调试与验收配合负总责，不改变单一问责身份。质量文档按公司质量目标跟踪计划提交，接受业主过程检查与支付审核。",
+        "risk_response": "主要风险及应对：酒店运营环境下的城市施工物流，采取分时配送、作业区隔离与运营协调员机制；MEP多专业BIM管线综合，由公司机电技术团队统一建模与碰撞复核，设置接口协调会；与精装修包接口，建立移交检查表与复测窗口；专业分包与设备供货报价基础尚未取得正式报价，已在报价中设置风险预留，并在投标后按业主确认的技术规格落实；材料价格波动按风险预留覆盖，不依赖未锁定的调整条款。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交本机电与垂直交通工程包报价，总价MOP 38,510,000，低于包预算上限44,625,000。价格基础与费用构成如下：\n- 给排水、暖通空调、强弱电及消防专业分包工程费：MOP 18,650,000（草案成本预留，尚未取得正式分包报价）\n- 电梯与自动扶梯供应、安装及调试费：MOP 9,850,000（设备供应商配合方式，待技术规格确认）\n- MEP深化设计与BIM管线综合费：MOP 1,680,000\n- 系统调试、培训及验收配合费：MOP 2,150,000\n- 现场管理、安全与质量文档管理费：MOP 2,480,000\n- 保修期支持及风险预留：MOP 1,920,000\n- 公司管理费与利润：MOP 1,780,000\n合计MOP 38,510,000。公司当前无占用资源，具备组织条件；电梯扶梯、消防、暖通、强弱电及给排水通过设备供应商与专业分包实施，属承包商正常分包组织，公司承担统一管理与质量文档责任。报价覆盖设备供应、安装、调试、培训及保修期支持，并参照造价咨询包成本建议作定性比较。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水、暖通空调、强弱电及消防专业分包工程费",
+            "amount": 18650000,
+            "basis": "按本包授权范围的专业分包草案成本预留，含安装人工、辅材、机械及分包管理配合；尚未取得正式分包报价，属投标阶段估算"
+          },
+          {
+            "item": "电梯与自动扶梯供应、安装及调试费",
+            "amount": 9850000,
+            "basis": "按设备供应商供货安装调试方式的草案成本预留，含设备、安装、调试与法定检验配合；具体规格与报价待投标后按业主确认技术规格落实"
+          },
+          {
+            "item": "MEP深化设计与BIM管线综合费",
+            "amount": 1680000,
+            "basis": "公司组织专业力量完成各专业协调模型、管线综合、预留预埋复核及与设计包造价包接口协调的估算"
+          },
+          {
+            "item": "系统调试、培训及验收配合费",
+            "amount": 2150000,
+            "basis": "分系统单机调试、分区联动调试、全系统综合调试、消防验收与电梯检验配合、运营人员培训的估算"
+          },
+          {
+            "item": "现场管理、安全与质量文档管理费",
+            "amount": 2480000,
+            "basis": "公司总承包现场管理团队、安全期望跟踪、施工物流组织、质量文档管理及与精装修包接口协调的估算"
+          },
+          {
+            "item": "保修期支持及风险预留",
+            "amount": 1920000,
+            "basis": "保修期响应支持、备品备件配合，以及酒店运营环境施工物流、分包报价未锁定与材料价格波动的风险预留"
+          },
+          {
+            "item": "公司管理费与利润",
+            "amount": 1780000,
+            "basis": "按公司单一责任总承包管理费与合理利润计取"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_118791774c28f41a416e",
+          "condition_6d3a469f5435f01b0663"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯与自动扶梯由设备供应商按供货、安装、调试方式配合，具体供货范围与报价在投标后按业主确认的技术规格落实",
+          "消防、暖通、强弱电、给排水专业工作拟由专业分包实施，公司作为总承包方承担统一管理与质量文档责任",
+          "MEP深化设计与BIM管线综合由公司组织专业力量完成，并与设计包、造价包保持接口协调",
+          "报价中的设备与分包费用目前为草案成本预留，尚未取得正式供应商报价",
+          "保修期支持与培训费用按业主要求纳入价格基础与费用构成"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0206/construction-2_002",
+        "package_id": "CASE-0206/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本公司以单一责任投标人身份承接澳门新葡京酒店机电与垂直交通工程包，担任机电与垂直交通施工总承包管理角色，对给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装、系统调试、培训及保修期支持承担统一责任。\n\n技术路线：\n1. 深化设计与BIM管线综合：由本公司主导机电多专业协调，配置专职BIM协调人员，按酒店客房、公共区域、后勤机房分区建立管线综合模型，执行碰撞检查与净高复核，形成可施工的深化图与预留预埋清单，并与设计包、精装修包进行接口会签。\n2. 给排水与消防：按系统分区组织立管、机房与末端安装，消防系统由具备相应能力的专业分包实施，本公司统一管理其进度、质量、调试与验收配合，组织水压试验、冲洗消毒、联动调试与消防验收资料整编。\n3. 暖通空调：风管预制与现场安装分段推进，机房设备就位与管道连接按调试顺序倒排，落实风量平衡与自控联调。\n4. 强弱电：桥架、线管、配电箱柜与末端点位按分区穿插施工，组织绝缘、接地、回路测试与系统送电。\n5. 电梯与自动扶梯：通过设备厂商协议落实供应与安装，本公司统一管理井道移交条件、安装进场时序、调试与特种设备验收配合，明确土建预留与精装修收口接口。\n6. 调试与培训：编制分系统调试计划与综合联调计划，组织业主运维人员培训并提交操作手册与竣工文档。\n\n本公司具备建设工程施工、特种设备安装改造修理、电气安装服务等许可能力，机电与垂直交通专业深度通过受控专业分包与设备厂商协议纳入统一管理，不构成组合体情形。",
+        "implementation_plan": "按24个月项目工期编排，围绕设计包与造价包的依赖关系设置里程碑：\n- 第1至3月：进场准备、施工组织设计报审、BIM协调机制建立、深化设计启动、分包与设备厂商协议落实、临设与物流方案报批。\n- 第4至8月：管线综合模型定稿与深化图分批出图，预留预埋配合，机房与竖井条件确认，电梯井道移交条件核查。\n- 第9至16月：给排水、暖通、强弱电、消防系统分区安装高峰，电梯与自动扶梯分批进场安装，穿插精装修包接口协调。\n- 第17至20月：分系统调试、水压与风量平衡、电气送电与联动测试、电梯单机与群控调试。\n- 第21至23月：消防验收配合、综合联调、业主培训、竣工文档移交。\n- 第24月：保修期支持启动与缺陷整改闭环。\n\n本公司配置项目经理、机电总协调、各专业工程师、BIM协调、质量与安全专职人员组成核心管理团队，专业作业由受控分包按本公司统一计划、统一质量与安全标准实施。",
+        "quotation": 40480000.0,
+        "schedule_commitment": "承诺按24个月项目工期交付，关键里程碑为：第3月完成深化设计与BIM协调机制建立，第8月完成管线综合定稿与井道条件移交，第16月完成主要系统安装与电梯安装，第20月完成分系统调试，第23月完成消防验收配合与综合联调及培训，第24月进入保修期支持。进度计划将与设计包、造价包及精装修包接口节点对齐，按月提交进度视图与偏差纠正措施。",
+        "compliance_statement": "接受业主及造价咨询包的成本建议与成本审查，按设备供应、安装、调试、培训及保修期支持分列价格基础与费用构成，配合定性价格合理性比较。质量方面设定质量目标跟踪计划，执行材料进场复核、工序验收与文档管理纪律，提交检验批与调试记录。接口方面明确与设计包的深化图会签、与造价包的计量口径、与精装修包的收口与移交责任，通过定期接口协调会与书面移交单闭环。",
+        "risk_response": "主要风险与应对：\n1. 设备与分包价格波动：报价中已列风险应对余量，设备与分包成本目前为内部估算，尚未取得正式报价，签约前将以厂商与分包协议锁定范围与价格。\n2. 电梯与消防专业分包落实：作为投标假设，相关协议尚待谈判与签订，本公司将通过受控分包管理条款统一进度、质量、安全与验收责任。\n3. 酒店运营环境施工：编制城市施工物流与降噪降尘方案，分时段运输与作业，减少对运营影响。\n4. 多包接口风险：设立专职接口协调人员，与设计、造价及精装修包建立书面接口清单与移交节点。\n5. 工期风险：按里程碑倒排，关键设备提前下单，设置赶工预案与备用作业面。",
+        "submission_summary": "本公司以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价MOP 40,480,000，在包预算MOP 44,625,000以内。\n\n费用构成：\n- 给排水、暖通空调、强弱电安装：MOP 13,860,000\n- 消防系统专业分包：MOP 5,250,000\n- 电梯与自动扶梯供应及安装：MOP 12,480,000\n- BIM管线综合与多专业协调：MOP 1,680,000\n- 调试、培训与保修期支持：MOP 2,150,000\n- 现场管理、安全质量文档与物流组织：MOP 2,480,000\n- 风险余量、保险与管理费：MOP 2,580,000\n合计：MOP 40,480,000\n\n价格基础说明：设备与分包成本为内部估算，尚未取得供应商正式报价，属暂定估算；电梯与自动扶梯厂商协议、消防专业分包协议尚待谈判签订，为本投标假设。本公司将通过统一管理实现进度、质量、安全与验收责任闭环，并预留风险应对余量以覆盖价格波动与接口协调风险。付款按合同里程碑申请，接受业主与造价咨询包的成本审查。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水、暖通空调、强弱电安装工程（含材料与劳务）",
+            "amount": 13860000,
+            "basis": "按分区工程量内部估算，含管道、风管、桥架、线缆、末端与机房安装劳务，参考当前材料与人工价格指数上调"
+          },
+          {
+            "item": "消防系统专业分包（安装、调试与验收配合）",
+            "amount": 5250000,
+            "basis": "专业分包内部估算，含喷淋、消火栓、报警与联动调试，分包协议尚待签订，属暂定估算"
+          },
+          {
+            "item": "电梯与自动扶梯供应及安装（设备厂商协议）",
+            "amount": 12480000,
+            "basis": "按梯型数量与厂商供货安装范围内部估算，含井道配合、安装、调试与特种设备验收配合，厂商协议尚待谈判，属暂定估算"
+          },
+          {
+            "item": "BIM管线综合与机电多专业协调",
+            "amount": 1680000,
+            "basis": "专职BIM协调人员、模型检查与深化图会签工作量，含与设计包、精装修包接口协调"
+          },
+          {
+            "item": "系统调试、培训与保修期支持",
+            "amount": 2150000,
+            "basis": "分系统调试与综合联调人工、测试仪器、业主培训与保修期响应人员安排"
+          },
+          {
+            "item": "现场管理、安全与质量文档、临时设施及城市物流组织",
+            "amount": 2480000,
+            "basis": "项目管理团队、安全专职、质量文档管理、酒店运营环境下物流组织与临时设施"
+          },
+          {
+            "item": "风险应对余量、保险与企业管理费",
+            "amount": 2580000,
+            "basis": "设备与分包价格波动、接口协调风险、保险及企业管理费的综合余量"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+          "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+          "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+          "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+          "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0206/construction-2_003",
+        "package_id": "CASE-0206/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0494",
+        "bidder_name": "得寶國際-得寶建築合作經營",
+        "technical_proposal": "得寶國際-得寶建築合作經營以单一责任投标人身份承接本机电与垂直交通工程包，负责给排水、暖通空调、强弱电、消防系统及电梯与自动扶梯的供应、安装与系统调试，不含主体结构、幕墙、精装修与室外景观。\n\n技术路线：\n1. 施工方法：按酒店运营环境分区、分时段组织施工，先完成机房、管井与主干管线，再推进楼层支管与末端；垂直交通设备按井道移交顺序分批进场安装。\n2. BIM管线综合：以设计包模型为基础开展机电管线综合与碰撞检查，形成综合图与预留预埋图，经内部独立审核后提交业主与设计方确认。\n3. 调试方案：各专业完成单机调试后进入系统联动调试，消防系统按澳门现行验收程序配合检测与验收；电梯与自动扶梯由设备供应商授权安装单位完成安装与调试，我方负责接口协调与验收配合。\n4. 专业分包与设备供货：给排水、暖通空调、强弱电、消防拟由具备相应能力的专业分包实施；电梯与自动扶梯由设备供应商及其授权安装单位承担。上述安排作为投标假设列示，我方承担总体协调与单一交付责任。\n5. 质量与安全：按ISO 9001、ISO 14001、ISO 45001体系执行内部质量检查、材料报审、隐蔽验收与安全期望跟踪，建立质量目标跟踪台账与现场安全管理措施。\n6. 接口协调：与设计、造价及后续精装修包建立接口协调会议与移交清单，明确预留预埋、设备基础、井道移交与成品保护责任。",
+        "implementation_plan": "总体按24个月项目工期编排，机电与垂直交通工程包施工与调试期约18个月，保修期支持按合同约定执行。\n\n阶段安排：\n- 第1至2月：深化设计与BIM管线综合，编制施工组织设计、专项方案与设备采购计划，完成专业分包与设备供货安排。\n- 第3至4月：机房与管井施工准备，主干管线与桥架安装，电梯井道移交检查。\n- 第5至12月：楼层机电管线、末端设备与消防系统安装，电梯与自动扶梯分批进场安装。\n- 第13至15月：各专业单机调试与系统联动调试，消防系统检测与验收配合，垂直交通设备调试与负荷试验。\n- 第16至18月：系统性能验证、培训、竣工资料整理与移交，配合精装修包接口收尾。\n- 保修期：按合同约定提供保修期支持与响应。\n\n资源安排：项目总监1名、项目经理1名、机电协调工程师3名、BIM协调员2名、质量与安全主任各1名、现场施工管理人员约8名，专业分包与设备供货单位按投标假设配置。",
+        "quotation": 41605000.0,
+        "schedule_commitment": "本包施工与调试期约18个月，在项目总体24个月工期内完成，具体开工时间以业主移交场地与设计确认为准。关键里程碑：第2月完成BIM综合图与施工组织设计报审；第4月完成机房与管井施工准备及电梯井道移交检查；第12月完成主要机电安装与垂直交通设备安装；第15月完成系统联动调试与消防验收配合；第18月完成培训、竣工资料移交与接口收尾。保修期支持按合同约定执行。",
+        "compliance_statement": "我方接受业主对质量、进度、安全与接口的监督与控制。\n\n1. 质量目标跟踪：建立质量目标跟踪台账，按分项工程记录检查、报审与验收结果，每月向业主提交质量报告。\n2. 进度控制：提交进度视图与里程碑计划，按周更新实际进度，偏差超过约定阈值时提交纠偏措施。\n3. 安全期望跟踪：按ISO 45001体系执行现场安全管理，建立安全期望跟踪清单，定期与业主沟通安全表现。\n4. 接口协调：与设计、造价及后续精装修包建立接口协调会议机制，形成接口移交清单与责任矩阵，确保预留预埋、设备基础与井道移交界面清晰。\n5. 文件与文档纪律：按ISO 9001体系执行文件控制与记录管理，竣工资料与验收文件按业主审查节奏提交。",
+        "risk_response": "主要风险与应对：\n1. 酒店运营环境施工组织风险：采取分区、分时段施工与运营协调方案，作业窗口在开工前与业主运营方确认，降低对酒店运营的影响。\n2. MEP多专业协调风险：以BIM管线综合与接口协调会议提前解决碰撞与界面问题，设置机电协调工程师专职跟进。\n3. 电梯与自动扶梯供应安装风险：设备供应商及其授权安装单位作为投标假设列示，我方负责接口协调与进度管控，设备进场计划与井道移交计划联动管理。\n4. 消防验收配合风险：按澳门现行验收程序提前安排检测与验收文件准备，验收时间取决于业主与监管方审查节奏，我方保持配合与响应。\n5. 价格风险：设备与分包费用目前为投标估算与预算性成本假设，尚未取得正式报价；报价中已包含风险预备费，中标前按投标澄清程序完善价格基础。\n6. 专业分包落实风险：分包安排作为明确投标假设，中标后按程序落实，我方承担单一责任与总体协调。",
+        "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价总额为MOP 41,605,000。\n\n费用构成：\n- 给排水、暖通空调、强弱电及消防专业分包工程费：MOP 18,650,000\n- 电梯与自动扶梯供应、安装及调试费：MOP 13,200,000\n- BIM管线综合与深化设计费：MOP 1,650,000\n- 项目管理、现场监督与接口协调费：MOP 2,380,000\n- 调试、培训与保修期支持费：MOP 1,480,000\n- 临时设施、安全环保与酒店运营协调费：MOP 1,120,000\n- 公司管理费、风险预备费与利润：MOP 3,125,000\n\n上述设备与分包费用为投标估算与预算性成本假设，尚未取得供应商或分包正式报价，中标前将按投标澄清程序完善。报价已考虑酒店运营环境施工组织、MEP管线综合、垂直交通调试与消防验收配合等交付风险，并包含风险预备费。我方以独立投标人身份承担总体协调与单一交付责任，专业分包与设备供货安排作为投标假设列示。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水、暖通空调、强弱电及消防专业分包工程费",
+            "amount": 18650000,
+            "basis": "按本包机电各专业工程量估算，含设备材料供应、安装、调试与验收配合；为投标估算，尚未取得分包正式报价"
+          },
+          {
+            "item": "电梯与自动扶梯供应、安装及调试费",
+            "amount": 13200000,
+            "basis": "按垂直交通设备数量与规格估算，含设备供应、授权安装、调试与培训；为预算性成本假设，尚未取得供应商正式报价"
+          },
+          {
+            "item": "BIM管线综合与深化设计费",
+            "amount": 1650000,
+            "basis": "BIM协调员2名及机电协调工程师投入，含碰撞检查、综合图与预留预埋图编制、内部独立审核及业主确认轮次"
+          },
+          {
+            "item": "项目管理、现场监督与接口协调费",
+            "amount": 2380000,
+            "basis": "项目总监、项目经理、现场施工管理人员及质量安全主任的现场管理投入，含与设计、造价及精装修包接口协调会议与移交管理"
+          },
+          {
+            "item": "调试、培训与保修期支持费",
+            "amount": 1480000,
+            "basis": "系统联动调试、消防验收配合、垂直交通设备调试与培训，以及保修期响应与备件支持"
+          },
+          {
+            "item": "临时设施、安全环保与酒店运营协调费",
+            "amount": 1120000,
+            "basis": "酒店运营环境下的分区施工、临时水电、安全防护、环保措施与运营协调"
+          },
+          {
+            "item": "公司管理费、风险预备费与利润",
+            "amount": 3125000,
+            "basis": "按上述直接费合计的约8.5%计取，涵盖公司管理费、设备与分包价格波动风险预备及合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "机电各专业（给排水、暖通空调、强弱电、消防）拟通过具备相应能力的专业分包实施，分包安排将在投标文件中作为明确假设列示，具体分包商承诺待中标后落实。",
+          "电梯与自动扶梯的供应与安装拟由设备供应商及其授权安装单位承担，我方作为单一责任投标人负责接口协调、进度与验收配合。",
+          "价格基础中的设备与分包费用目前为投标估算与预算性成本假设，尚未取得供应商正式报价，中标前将按投标澄清程序完善。",
+          "消防系统调试与验收配合按澳门现行验收程序安排，具体验收时间取决于业主与监管方的审查节奏。",
+          "酒店运营环境下的施工组织将按分区、分时段与运营协调方案执行，具体作业窗口需与业主运营方在开工前确认。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0206/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0206/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 38510000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水、暖通空调、强弱电及消防专业分包工程费",
+                "amount": 18650000,
+                "basis": "按本包授权范围的专业分包草案成本预留，含安装人工、辅材、机械及分包管理配合；尚未取得正式分包报价，属投标阶段估算"
+              },
+              {
+                "item": "电梯与自动扶梯供应、安装及调试费",
+                "amount": 9850000,
+                "basis": "按设备供应商供货安装调试方式的草案成本预留，含设备、安装、调试与法定检验配合；具体规格与报价待投标后按业主确认技术规格落实"
+              },
+              {
+                "item": "MEP深化设计与BIM管线综合费",
+                "amount": 1680000,
+                "basis": "公司组织专业力量完成各专业协调模型、管线综合、预留预埋复核及与设计包造价包接口协调的估算"
+              },
+              {
+                "item": "系统调试、培训及验收配合费",
+                "amount": 2150000,
+                "basis": "分系统单机调试、分区联动调试、全系统综合调试、消防验收与电梯检验配合、运营人员培训的估算"
+              },
+              {
+                "item": "现场管理、安全与质量文档管理费",
+                "amount": 2480000,
+                "basis": "公司总承包现场管理团队、安全期望跟踪、施工物流组织、质量文档管理及与精装修包接口协调的估算"
+              },
+              {
+                "item": "保修期支持及风险预留",
+                "amount": 1920000,
+                "basis": "保修期响应支持、备品备件配合，以及酒店运营环境施工物流、分包报价未锁定与材料价格波动的风险预留"
+              },
+              {
+                "item": "公司管理费与利润",
+                "amount": 1780000,
+                "basis": "按公司单一责任总承包管理费与合理利润计取"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交本机电与垂直交通工程包报价，总价MOP 38,510,000，低于包预算上限44,625,000。价格基础与费用构成如下：\n- 给排水、暖通空调、强弱电及消防专业分包工程费：MOP 18,650,000（草案成本预留，尚未取得正式分包报价）\n- 电梯与自动扶梯供应、安装及调试费：MOP 9,850,000（设备供应商配合方式，待技术规格确认）\n- MEP深化设计与BIM管线综合费：MOP 1,680,000\n- 系统调试、培训及验收配合费：MOP 2,150,000\n- 现场管理、安全与质量文档管理费：MOP 2,480,000\n- 保修期支持及风险预留：MOP 1,920,000\n- 公司管理费与利润：MOP 1,780,000\n合计MOP 38,510,000。公司当前无占用资源，具备组织条件；电梯扶梯、消防、暖通、强弱电及给排水通过设备供应商与专业分包实施，属承包商正常分包组织，公司承担统一管理与质量文档责任。报价覆盖设备供应、安装、调试、培训及保修期支持，并参照造价咨询包成本建议作定性比较。",
+            "unresolved_condition_ids": [
+              "condition_118791774c28f41a416e",
+              "condition_6d3a469f5435f01b0663"
+            ],
+            "bid_assumptions": [
+              "电梯与自动扶梯由设备供应商按供货、安装、调试方式配合，具体供货范围与报价在投标后按业主确认的技术规格落实",
+              "消防、暖通、强弱电、给排水专业工作拟由专业分包实施，公司作为总承包方承担统一管理与质量文档责任",
+              "MEP深化设计与BIM管线综合由公司组织专业力量完成，并与设计包、造价包保持接口协调",
+              "报价中的设备与分包费用目前为草案成本预留，尚未取得正式供应商报价",
+              "保修期支持与培训费用按业主要求纳入价格基础与费用构成"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 40480000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水、暖通空调、强弱电安装工程（含材料与劳务）",
+                "amount": 13860000,
+                "basis": "按分区工程量内部估算，含管道、风管、桥架、线缆、末端与机房安装劳务，参考当前材料与人工价格指数上调"
+              },
+              {
+                "item": "消防系统专业分包（安装、调试与验收配合）",
+                "amount": 5250000,
+                "basis": "专业分包内部估算，含喷淋、消火栓、报警与联动调试，分包协议尚待签订，属暂定估算"
+              },
+              {
+                "item": "电梯与自动扶梯供应及安装（设备厂商协议）",
+                "amount": 12480000,
+                "basis": "按梯型数量与厂商供货安装范围内部估算，含井道配合、安装、调试与特种设备验收配合，厂商协议尚待谈判，属暂定估算"
+              },
+              {
+                "item": "BIM管线综合与机电多专业协调",
+                "amount": 1680000,
+                "basis": "专职BIM协调人员、模型检查与深化图会签工作量，含与设计包、精装修包接口协调"
+              },
+              {
+                "item": "系统调试、培训与保修期支持",
+                "amount": 2150000,
+                "basis": "分系统调试与综合联调人工、测试仪器、业主培训与保修期响应人员安排"
+              },
+              {
+                "item": "现场管理、安全与质量文档、临时设施及城市物流组织",
+                "amount": 2480000,
+                "basis": "项目管理团队、安全专职、质量文档管理、酒店运营环境下物流组织与临时设施"
+              },
+              {
+                "item": "风险应对余量、保险与企业管理费",
+                "amount": 2580000,
+                "basis": "设备与分包价格波动、接口协调风险、保险及企业管理费的综合余量"
+              }
+            ],
+            "submission_summary": "本公司以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价MOP 40,480,000，在包预算MOP 44,625,000以内。\n\n费用构成：\n- 给排水、暖通空调、强弱电安装：MOP 13,860,000\n- 消防系统专业分包：MOP 5,250,000\n- 电梯与自动扶梯供应及安装：MOP 12,480,000\n- BIM管线综合与多专业协调：MOP 1,680,000\n- 调试、培训与保修期支持：MOP 2,150,000\n- 现场管理、安全质量文档与物流组织：MOP 2,480,000\n- 风险余量、保险与管理费：MOP 2,580,000\n合计：MOP 40,480,000\n\n价格基础说明：设备与分包成本为内部估算，尚未取得供应商正式报价，属暂定估算；电梯与自动扶梯厂商协议、消防专业分包协议尚待谈判签订，为本投标假设。本公司将通过统一管理实现进度、质量、安全与验收责任闭环，并预留风险应对余量以覆盖价格波动与接口协调风险。付款按合同里程碑申请，接受业主与造价咨询包的成本审查。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+              "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+              "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+              "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+              "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "quotation": 41605000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水、暖通空调、强弱电及消防专业分包工程费",
+                "amount": 18650000,
+                "basis": "按本包机电各专业工程量估算，含设备材料供应、安装、调试与验收配合；为投标估算，尚未取得分包正式报价"
+              },
+              {
+                "item": "电梯与自动扶梯供应、安装及调试费",
+                "amount": 13200000,
+                "basis": "按垂直交通设备数量与规格估算，含设备供应、授权安装、调试与培训；为预算性成本假设，尚未取得供应商正式报价"
+              },
+              {
+                "item": "BIM管线综合与深化设计费",
+                "amount": 1650000,
+                "basis": "BIM协调员2名及机电协调工程师投入，含碰撞检查、综合图与预留预埋图编制、内部独立审核及业主确认轮次"
+              },
+              {
+                "item": "项目管理、现场监督与接口协调费",
+                "amount": 2380000,
+                "basis": "项目总监、项目经理、现场施工管理人员及质量安全主任的现场管理投入，含与设计、造价及精装修包接口协调会议与移交管理"
+              },
+              {
+                "item": "调试、培训与保修期支持费",
+                "amount": 1480000,
+                "basis": "系统联动调试、消防验收配合、垂直交通设备调试与培训，以及保修期响应与备件支持"
+              },
+              {
+                "item": "临时设施、安全环保与酒店运营协调费",
+                "amount": 1120000,
+                "basis": "酒店运营环境下的分区施工、临时水电、安全防护、环保措施与运营协调"
+              },
+              {
+                "item": "公司管理费、风险预备费与利润",
+                "amount": 3125000,
+                "basis": "按上述直接费合计的约8.5%计取，涵盖公司管理费、设备与分包价格波动风险预备及合理利润"
+              }
+            ],
+            "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价总额为MOP 41,605,000。\n\n费用构成：\n- 给排水、暖通空调、强弱电及消防专业分包工程费：MOP 18,650,000\n- 电梯与自动扶梯供应、安装及调试费：MOP 13,200,000\n- BIM管线综合与深化设计费：MOP 1,650,000\n- 项目管理、现场监督与接口协调费：MOP 2,380,000\n- 调试、培训与保修期支持费：MOP 1,480,000\n- 临时设施、安全环保与酒店运营协调费：MOP 1,120,000\n- 公司管理费、风险预备费与利润：MOP 3,125,000\n\n上述设备与分包费用为投标估算与预算性成本假设，尚未取得供应商或分包正式报价，中标前将按投标澄清程序完善。报价已考虑酒店运营环境施工组织、MEP管线综合、垂直交通调试与消防验收配合等交付风险，并包含风险预备费。我方以独立投标人身份承担总体协调与单一交付责任，专业分包与设备供货安排作为投标假设列示。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "机电各专业（给排水、暖通空调、强弱电、消防）拟通过具备相应能力的专业分包实施，分包安排将在投标文件中作为明确假设列示，具体分包商承诺待中标后落实。",
+              "电梯与自动扶梯的供应与安装拟由设备供应商及其授权安装单位承担，我方作为单一责任投标人负责接口协调、进度与验收配合。",
+              "价格基础中的设备与分包费用目前为投标估算与预算性成本假设，尚未取得供应商正式报价，中标前将按投标澄清程序完善。",
+              "消防系统调试与验收配合按澳门现行验收程序安排，具体验收时间取决于业主与监管方的审查节奏。",
+              "酒店运营环境下的施工组织将按分区、分时段与运营协调方案执行，具体作业窗口需与业主运营方在开工前确认。"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 机电与垂直交通工程包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0206/construction-2",
+        "evaluators": [
+          "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "OWNER-aa9fb4e593b5ca_05_何家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0206/construction-2_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "以单一责任投标人身份提出BIM管线综合、三阶段调试及酒店运营环境分时物流方案，技术路线完整，但机电各专业与电梯均依赖尚未锁定的分包及设备供应商，深化能力主要停留在协调层面。",
+            "cost_view": "报价MOP 38,510,000为三家中最低，但专业分包与电梯设备均为草案成本预留、未取得正式报价，风险预留仅MOP 1,920,000，价格可信度依赖后续规格落实，存在低估与索赔暴露。",
+            "owner_control_view": "明确接受业主与造价咨询包的成本审查、质量文档与支付审核，单一问责身份清晰，但未提交正式分包与设备报价，业主审查清晰度受限。",
+            "strengths": [
+              "报价最低且在预算内，价格基础分列清楚",
+              "BIM协调与三阶段调试方案覆盖本包主要系统",
+              "酒店运营环境分时物流与作业区隔离措施具体"
+            ],
+            "concerns": [
+              "分包与电梯设备均无正式报价，成本基础薄弱",
+              "风险预留偏低，酒店运营环境与价格波动覆盖不足",
+              "机电专业自有团队深度未充分说明，交付信心依赖外部单位"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-2_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "以单一责任投标人身份提出分区BIM协调、专业分包受控管理及电梯厂商协议路线，24个月里程碑与调试、培训、保修安排衔接清楚，机电总协调与专职BIM人员配置较具体。",
+            "cost_view": "报价MOP 40,480,000处于预算内中位，费用构成完整并设MOP 2,580,000风险余量，但消防分包与电梯厂商协议尚待谈判、设备成本为内部估算，价格仍属暂定性质。",
+            "owner_control_view": "接受成本审查与定性比较，提出质量目标跟踪、接口会签与书面移交单闭环，业主审查路径清晰，但关键分包与厂商协议未落实削弱控制确定性。",
+            "strengths": [
+              "费用构成与风险余量较均衡，价格合理性较好",
+              "里程碑与接口协调机制具体，文档纪律表述清晰",
+              "机电总协调与专职BIM人员配置现实"
+            ],
+            "concerns": [
+              "消防分包与电梯厂商协议尚待签订，范围与价格未锁定",
+              "设备与分包成本为内部估算，签约前存在价格调整空间",
+              "酒店运营环境施工组织描述相对概括"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-2_003",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "technical_view": "以单一责任投标人身份提出分区施工、BIM综合图内部独立审核及18个月施工调试安排，项目总监、机电协调与BIM人员配置明确，但机电与垂直交通仍主要依托分包及供应商授权安装。",
+            "cost_view": "报价MOP 41,605,000为三家最高，费用构成完整并含风险预备费，但电梯与分包费用同为预算性假设、未取得正式报价，较高总价与未锁定成本并存，价格说服力一般。",
+            "owner_control_view": "对质量目标跟踪、进度视图、安全期望跟踪与文件控制回应系统，并提出接口责任矩阵，业主审查清晰度较高，但分包落实仍列为投标假设。",
+            "strengths": [
+              "质量、安全与文档纪律回应最系统，符合业主审查要求",
+              "人员配置与18个月施工调试安排具体",
+              "接口协调会议与移交清单机制清晰"
+            ],
+            "concerns": [
+              "报价最高且设备与分包成本未锁定，价格合理性偏弱",
+              "电梯与机电分包均依赖外部单位，自有专业深度有限",
+              "消防验收时间依赖监管节奏，进度确定性存在外部变量"
+            ]
+          }
+        ],
+        "comparison_summary": "三家均为单一责任投标人且报价在MOP 44,625,000预算内，中建八局第二建设有限公司在费用构成均衡、风险余量与接口协调清晰度上较为突出，得寶國際审查回应系统但报价最高，中交第一航务工程局报价最低却成本基础与风险预留最薄弱。综合能力匹配、价格合理性与交付信心，建议以中建八局第二建设有限公司为首选并在签约前锁定分包与设备价格。",
+        "recommended_winner": "COMP-0191",
+        "owner_review_notes": "三家关键分包与设备报价均未正式锁定，判给前须通过澄清与谈判落实范围、价格及风险余量，符合业主变更控制纪律。建议判给中建八局第二建设有限公司，并以价格锁定与接口责任书面化为签约条件。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0206",
+      "package_awards": [
+        {
+          "package_id": "CASE-0206/construction-2",
+          "selected_bidder_id": "COMP-0191",
+          "selected_bidder_name": "中建八局第二建设有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中建八局第二建设有限公司的报价MOP 40,480,000处于预算内，费用构成完整且风险余量较均衡，机电总协调与专职BIM人员配置具体，里程碑与接口协调机制清晰，文档纪律符合业主审查要求。相比中交第一航务报价最低但成本基础与风险预留最薄弱，以及得寶國際报价最高且设备与分包成本同样未锁定，中建八局在能力匹配、价格合理性与交付信心之间取得较好平衡。判给后以预签约澄清聚焦消防分包与电梯厂商协议的范围与价格锁定、设备与分包成本的价格基础完善、酒店运营环境施工组织细化以及接口责任书面化，符合业主变更控制纪律。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+            "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+            "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+            "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+            "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0191"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T15:48:11",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0206/construction-2",
+          "decision": "bid",
+          "reason": "管理层认为该机电与垂直交通工程包预算约4463万MOP，规模与公司资源余量匹配，公司当前无占用资源，具备作为单一责任投标人的组织条件。公司资料显示具备建设工程施工、机电设备安装、电子机械设备维护、信息系统集成等许可与一般经营能力，可作为总承包方承担现场管理、进度控制、安全管理、质量文档和接口协调。电梯与自动扶梯、消防、暖通、强弱电等专业工作拟通过设备供应商与专业分包实施，属于承包商正常的分包组织，不改变公司单一问责的投标身份，因此不选择组合体。主要风险在于酒店运营环境下的城市施工物流、MEP多专业BIM管线综合、与精装修包的接口协调，以及专业分包与设备供货的报价基础尚未取得正式报价。投标将以角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成、进度视图与里程碑计划、风险应对与接口协调方案、安全期望跟踪与现场管理措施回应业主要求，并在报价中预留设备、安装、调试、培训及保修期支持的费用，价格合理性参照造价咨询包的成本建议作定性比较。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "电梯与自动扶梯由设备供应商按供货、安装、调试方式配合，具体供货范围与报价在投标后按业主确认的技术规格落实",
+            "消防、暖通、强弱电、给排水专业工作拟由专业分包实施，公司作为总承包方承担统一管理与质量文档责任",
+            "MEP深化设计与BIM管线综合由公司组织专业力量完成，并与设计包、造价包保持接口协调",
+            "报价中的设备与分包费用目前为草案成本预留，尚未取得正式供应商报价",
+            "保修期支持与培训费用按业主要求纳入价格基础与费用构成"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:11",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0206/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，机电与垂直交通工程包与本公司施工总承包定位和机电安装、特种设备安装、电气安装等许可能力相符，预算规模在可承受范围，当前资源占用为零，具备独立承担单一责任投标人的条件。酒店类机电协调、BIM管线综合、电梯扶梯供应安装调试等专业深度，可通过受控专业分包与设备厂商协议纳入本公司统一管理，不构成必须共享投标人身份的组合体情形。我们将以角色计划与团队可用性摘要、机电与垂直交通施工方法及调试方案、质量方法与质量目标跟踪计划、价格基础与费用构成、进度视图与里程碑计划、风险应对与接口协调方案、安全期望跟踪与现场管理措施作为投标响应主线，明确与设计、造价及后续精装修包的接口责任，并在报价中体现设备供应、安装、调试、培训及保修期支持的费用构成与合理风险余量。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+            "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+            "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+            "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+            "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:11",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0494",
+          "package_id": "CASE-0206/construction-2",
+          "decision": "bid",
+          "reason": "管理层判断：机电与垂直交通工程包边界清晰、规模适中，与我方总承包与施工管理能力契合，且当前资源无占用、可独立承担单一责任。酒店运营环境施工组织、MEP管线综合、电梯扶梯调试与消防验收配合属于可通过专业分包与设备供货安排管理的正常交付风险，不构成必须共享投标人身份的理由。我们以独立投标人身份提交，明确价格基础与费用构成、进度视图、质量与安全跟踪计划及接口协调方案，并将关键专业分包与设备供货列为投标假设，在投标文件中说明责任划分与接口管理。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "机电各专业（给排水、暖通空调、强弱电、消防）拟通过具备相应能力的专业分包实施，分包安排将在投标文件中作为明确假设列示，具体分包商承诺待中标后落实。",
+            "电梯与自动扶梯的供应与安装拟由设备供应商及其授权安装单位承担，我方作为单一责任投标人负责接口协调、进度与验收配合。",
+            "价格基础中的设备与分包费用目前为投标估算与预算性成本假设，尚未取得供应商正式报价，中标前将按投标澄清程序完善。",
+            "消防系统调试与验收配合按澳门现行验收程序安排，具体验收时间取决于业主与监管方的审查节奏。",
+            "酒店运营环境下的施工组织将按分区、分时段与运营协调方案执行，具体作业窗口需与业主运营方在开工前确认。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:33",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:33",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:33",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "bidder_id": "COMP-0494"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:46",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:54",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "recommended_winner": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:58",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-2",
+          "selected_bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-aa9fb4e593b5ca": {
+            "action": "accept",
+            "reason": "作为业主，本组织接受该投标承诺作为本轮合同草案的授权基础。报价 MOP 40,480,000 在包预算 MOP 44,625,000 以内，范围与包范围一致（给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装与系统调试，不含主体结构、幕墙、精装修与室外景观），成员为 COMP-0191 单一责任主体，资源承诺 0.7 与包要求一致，工作份额 1.0。\n\n对投标方披露的假设，本组织按风险分配予以接受，不视为缺失证据：设备与分包成本为内部估算、厂商与消防分包协议尚待签订、BIM 协调由投标方主导、与设计包/造价包/精装修包接口责任待明确。上述事项均作为投标方的履约义务，由其以受控分包与厂商协议锁定范围与价格，并在签约后提交协议清单与价格基础供本组织及造价咨询包审查。\n\n本组织就自身立场作出以下决定，供写入下一版草案：(1) 报价为固定总价，包含完成包范围内全部供应、安装、调试、培训与保修期支持所需的全部费用，风险应对余量已计入总价，不另行计量或补偿；(2) 计量与付款按合同里程碑申请，以造价咨询包核定的计量口径为准，本组织审查期为收到完整申请后 14 个日历日；(3) 深化图、BIM 综合模型与接口移交单的审查期为收到后 10 个工作日，逾期未答复视为无异议但不免除投标方责任；(4) 设备与分包协议须在相应工序进场前签订并报备，未报备不得进场；(5) 24 个月工期与所列里程碑作为合同工期承诺，偏差须按月提交纠正措施。\n\n本阶段仅授权可执行的模拟履约义务，不表示未来工程交付物或法定审批已经完成；相关交付物按带审查与验收条件的义务处理。"
+          },
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "作为投标人 COMP-0191，本公司确认接受本包合同草案（revision 0）的全部条款，包括报价 MOP 40,480,000、24 个月工期承诺、资源承诺 0.7、工作份额 1.0 及范围界定。就本组织自身立场，明确以下决定以便写入下一稿：\n1. 报价性质：MOP 40,480,000 为固定总价，其中设备与分包成本按投标文件所列暂定估算计列；签约前以厂商与分包协议锁定范围与价格，锁定后价格调整仅在业主书面批准的变更指令下进行。\n2. 计量与付款基础：按合同里程碑申请计量，月度进度视图与偏差纠正措施作为计量支持文件；接受业主与造价咨询包的成本审查。\n3. 审查期限：业主对深化图会签、接口移交单与调试记录的审查期为本组织提交后 14 个日历日，逾期未提出书面意见视为通过，以避免工期停滞。\n4. 投标假设：电梯与自动扶梯厂商协议、消防专业分包协议尚待谈判签订，作为本组织受控分包管理下的履约义务，不构成对业主的额外索赔依据；本组织对进度、质量、安全与验收承担统一责任。\n5. 接口责任：与设计包、造价包及精装修包的接口清单与移交节点在合同谈判中书面明确，作为履约管理依据。\n上述内容不改变价格、币种、范围、成员与资源等规范字段。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMEC711881/CASE-0206/construction-2/round-1/contract",
+          "simulation_id": "SIMEC711881",
+          "project_id": "CASE-0206",
+          "package_id": "CASE-0206/construction-2",
+          "session_id": "SIMEC711881/CASE-0206/construction-2/round-1",
+          "snapshot_version": "5ad33ff7c76dac5dfc373cd0c325384d0de56d5c0c53694f99d51cbefe329811",
+          "buyer_id": "OWNER-aa9fb4e593b5ca",
+          "bid_id": "bid_CASE-0206/construction-2_002",
+          "bidder_id": "COMP-0191",
+          "lead_id": "COMP-0191",
+          "members": [
+            "COMP-0191"
+          ],
+          "price": 40480000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0191": 0.7
+          },
+          "work_shares": {
+            "COMP-0191": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "254a810b5fdd881cb4bc975e475c0c6ffb51e50b4d9ecc8b1fd00b065682820d",
+          "terms": {
+            "schedule_commitment": "承诺按24个月项目工期交付，关键里程碑为：第3月完成深化设计与BIM协调机制建立，第8月完成管线综合定稿与井道条件移交，第16月完成主要系统安装与电梯安装，第20月完成分系统调试，第23月完成消防验收配合与综合联调及培训，第24月进入保修期支持。进度计划将与设计包、造价包及精装修包接口节点对齐，按月提交进度视图与偏差纠正措施。",
+            "risk_response": "主要风险与应对：\n1. 设备与分包价格波动：报价中已列风险应对余量，设备与分包成本目前为内部估算，尚未取得正式报价，签约前将以厂商与分包协议锁定范围与价格。\n2. 电梯与消防专业分包落实：作为投标假设，相关协议尚待谈判与签订，本公司将通过受控分包管理条款统一进度、质量、安全与验收责任。\n3. 酒店运营环境施工：编制城市施工物流与降噪降尘方案，分时段运输与作业，减少对运营影响。\n4. 多包接口风险：设立专职接口协调人员，与设计、造价及精装修包建立书面接口清单与移交节点。\n5. 工期风险：按里程碑倒排，关键设备提前下单，设置赶工预案与备用作业面。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0206/construction-2_002",
+              "package_id": "CASE-0206/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0191",
+              "bidder_name": "中建八局第二建设有限公司",
+              "technical_proposal": "本公司以单一责任投标人身份承接澳门新葡京酒店机电与垂直交通工程包，担任机电与垂直交通施工总承包管理角色，对给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装、系统调试、培训及保修期支持承担统一责任。\n\n技术路线：\n1. 深化设计与BIM管线综合：由本公司主导机电多专业协调，配置专职BIM协调人员，按酒店客房、公共区域、后勤机房分区建立管线综合模型，执行碰撞检查与净高复核，形成可施工的深化图与预留预埋清单，并与设计包、精装修包进行接口会签。\n2. 给排水与消防：按系统分区组织立管、机房与末端安装，消防系统由具备相应能力的专业分包实施，本公司统一管理其进度、质量、调试与验收配合，组织水压试验、冲洗消毒、联动调试与消防验收资料整编。\n3. 暖通空调：风管预制与现场安装分段推进，机房设备就位与管道连接按调试顺序倒排，落实风量平衡与自控联调。\n4. 强弱电：桥架、线管、配电箱柜与末端点位按分区穿插施工，组织绝缘、接地、回路测试与系统送电。\n5. 电梯与自动扶梯：通过设备厂商协议落实供应与安装，本公司统一管理井道移交条件、安装进场时序、调试与特种设备验收配合，明确土建预留与精装修收口接口。\n6. 调试与培训：编制分系统调试计划与综合联调计划，组织业主运维人员培训并提交操作手册与竣工文档。\n\n本公司具备建设工程施工、特种设备安装改造修理、电气安装服务等许可能力，机电与垂直交通专业深度通过受控专业分包与设备厂商协议纳入统一管理，不构成组合体情形。",
+              "implementation_plan": "按24个月项目工期编排，围绕设计包与造价包的依赖关系设置里程碑：\n- 第1至3月：进场准备、施工组织设计报审、BIM协调机制建立、深化设计启动、分包与设备厂商协议落实、临设与物流方案报批。\n- 第4至8月：管线综合模型定稿与深化图分批出图，预留预埋配合，机房与竖井条件确认，电梯井道移交条件核查。\n- 第9至16月：给排水、暖通、强弱电、消防系统分区安装高峰，电梯与自动扶梯分批进场安装，穿插精装修包接口协调。\n- 第17至20月：分系统调试、水压与风量平衡、电气送电与联动测试、电梯单机与群控调试。\n- 第21至23月：消防验收配合、综合联调、业主培训、竣工文档移交。\n- 第24月：保修期支持启动与缺陷整改闭环。\n\n本公司配置项目经理、机电总协调、各专业工程师、BIM协调、质量与安全专职人员组成核心管理团队，专业作业由受控分包按本公司统一计划、统一质量与安全标准实施。",
+              "quotation": 40480000.0,
+              "schedule_commitment": "承诺按24个月项目工期交付，关键里程碑为：第3月完成深化设计与BIM协调机制建立，第8月完成管线综合定稿与井道条件移交，第16月完成主要系统安装与电梯安装，第20月完成分系统调试，第23月完成消防验收配合与综合联调及培训，第24月进入保修期支持。进度计划将与设计包、造价包及精装修包接口节点对齐，按月提交进度视图与偏差纠正措施。",
+              "compliance_statement": "接受业主及造价咨询包的成本建议与成本审查，按设备供应、安装、调试、培训及保修期支持分列价格基础与费用构成，配合定性价格合理性比较。质量方面设定质量目标跟踪计划，执行材料进场复核、工序验收与文档管理纪律，提交检验批与调试记录。接口方面明确与设计包的深化图会签、与造价包的计量口径、与精装修包的收口与移交责任，通过定期接口协调会与书面移交单闭环。",
+              "risk_response": "主要风险与应对：\n1. 设备与分包价格波动：报价中已列风险应对余量，设备与分包成本目前为内部估算，尚未取得正式报价，签约前将以厂商与分包协议锁定范围与价格。\n2. 电梯与消防专业分包落实：作为投标假设，相关协议尚待谈判与签订，本公司将通过受控分包管理条款统一进度、质量、安全与验收责任。\n3. 酒店运营环境施工：编制城市施工物流与降噪降尘方案，分时段运输与作业，减少对运营影响。\n4. 多包接口风险：设立专职接口协调人员，与设计、造价及精装修包建立书面接口清单与移交节点。\n5. 工期风险：按里程碑倒排，关键设备提前下单，设置赶工预案与备用作业面。",
+              "submission_summary": "本公司以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价MOP 40,480,000，在包预算MOP 44,625,000以内。\n\n费用构成：\n- 给排水、暖通空调、强弱电安装：MOP 13,860,000\n- 消防系统专业分包：MOP 5,250,000\n- 电梯与自动扶梯供应及安装：MOP 12,480,000\n- BIM管线综合与多专业协调：MOP 1,680,000\n- 调试、培训与保修期支持：MOP 2,150,000\n- 现场管理、安全质量文档与物流组织：MOP 2,480,000\n- 风险余量、保险与管理费：MOP 2,580,000\n合计：MOP 40,480,000\n\n价格基础说明：设备与分包成本为内部估算，尚未取得供应商正式报价，属暂定估算；电梯与自动扶梯厂商协议、消防专业分包协议尚待谈判签订，为本投标假设。本公司将通过统一管理实现进度、质量、安全与验收责任闭环，并预留风险应对余量以覆盖价格波动与接口协调风险。付款按合同里程碑申请，接受业主与造价咨询包的成本审查。",
+              "quotation_breakdown": [
+                {
+                  "item": "给排水、暖通空调、强弱电安装工程（含材料与劳务）",
+                  "amount": 13860000,
+                  "basis": "按分区工程量内部估算，含管道、风管、桥架、线缆、末端与机房安装劳务，参考当前材料与人工价格指数上调"
+                },
+                {
+                  "item": "消防系统专业分包（安装、调试与验收配合）",
+                  "amount": 5250000,
+                  "basis": "专业分包内部估算，含喷淋、消火栓、报警与联动调试，分包协议尚待签订，属暂定估算"
+                },
+                {
+                  "item": "电梯与自动扶梯供应及安装（设备厂商协议）",
+                  "amount": 12480000,
+                  "basis": "按梯型数量与厂商供货安装范围内部估算，含井道配合、安装、调试与特种设备验收配合，厂商协议尚待谈判，属暂定估算"
+                },
+                {
+                  "item": "BIM管线综合与机电多专业协调",
+                  "amount": 1680000,
+                  "basis": "专职BIM协调人员、模型检查与深化图会签工作量，含与设计包、精装修包接口协调"
+                },
+                {
+                  "item": "系统调试、培训与保修期支持",
+                  "amount": 2150000,
+                  "basis": "分系统调试与综合联调人工、测试仪器、业主培训与保修期响应人员安排"
+                },
+                {
+                  "item": "现场管理、安全与质量文档、临时设施及城市物流组织",
+                  "amount": 2480000,
+                  "basis": "项目管理团队、安全专职、质量文档管理、酒店运营环境下物流组织与临时设施"
+                },
+                {
+                  "item": "风险应对余量、保险与企业管理费",
+                  "amount": 2580000,
+                  "basis": "设备与分包价格波动、接口协调风险、保险及企业管理费的综合余量"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+                "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+                "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+                "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+                "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "254a810b5fdd881cb4bc975e475c0c6ffb51e50b4d9ecc8b1fd00b065682820d"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0206/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+          "budget": 44625000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-aa9fb4e593b5ca"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMEC711881/CASE-0206/construction-2/round-1/contract",
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/construction-2",
+    "session_id": "SIMEC711881/CASE-0206/construction-2/round-1",
+    "snapshot_version": "5ad33ff7c76dac5dfc373cd0c325384d0de56d5c0c53694f99d51cbefe329811",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "bid_id": "bid_CASE-0206/construction-2_002",
+    "bidder_id": "COMP-0191",
+    "lead_id": "COMP-0191",
+    "members": [
+      "COMP-0191"
+    ],
+    "price": 40480000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0191": 0.7
+    },
+    "work_shares": {
+      "COMP-0191": 1.0
+    },
+    "signatures": {
+      "OWNER-aa9fb4e593b5ca": true,
+      "COMP-0191": true
+    },
+    "signed_terms_hash": "254a810b5fdd881cb4bc975e475c0c6ffb51e50b4d9ecc8b1fd00b065682820d",
+    "terms": {
+      "schedule_commitment": "承诺按24个月项目工期交付，关键里程碑为：第3月完成深化设计与BIM协调机制建立，第8月完成管线综合定稿与井道条件移交，第16月完成主要系统安装与电梯安装，第20月完成分系统调试，第23月完成消防验收配合与综合联调及培训，第24月进入保修期支持。进度计划将与设计包、造价包及精装修包接口节点对齐，按月提交进度视图与偏差纠正措施。",
+      "risk_response": "主要风险与应对：\n1. 设备与分包价格波动：报价中已列风险应对余量，设备与分包成本目前为内部估算，尚未取得正式报价，签约前将以厂商与分包协议锁定范围与价格。\n2. 电梯与消防专业分包落实：作为投标假设，相关协议尚待谈判与签订，本公司将通过受控分包管理条款统一进度、质量、安全与验收责任。\n3. 酒店运营环境施工：编制城市施工物流与降噪降尘方案，分时段运输与作业，减少对运营影响。\n4. 多包接口风险：设立专职接口协调人员，与设计、造价及精装修包建立书面接口清单与移交节点。\n5. 工期风险：按里程碑倒排，关键设备提前下单，设置赶工预案与备用作业面。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0206/construction-2_002",
+        "package_id": "CASE-0206/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本公司以单一责任投标人身份承接澳门新葡京酒店机电与垂直交通工程包，担任机电与垂直交通施工总承包管理角色，对给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应安装、系统调试、培训及保修期支持承担统一责任。\n\n技术路线：\n1. 深化设计与BIM管线综合：由本公司主导机电多专业协调，配置专职BIM协调人员，按酒店客房、公共区域、后勤机房分区建立管线综合模型，执行碰撞检查与净高复核，形成可施工的深化图与预留预埋清单，并与设计包、精装修包进行接口会签。\n2. 给排水与消防：按系统分区组织立管、机房与末端安装，消防系统由具备相应能力的专业分包实施，本公司统一管理其进度、质量、调试与验收配合，组织水压试验、冲洗消毒、联动调试与消防验收资料整编。\n3. 暖通空调：风管预制与现场安装分段推进，机房设备就位与管道连接按调试顺序倒排，落实风量平衡与自控联调。\n4. 强弱电：桥架、线管、配电箱柜与末端点位按分区穿插施工，组织绝缘、接地、回路测试与系统送电。\n5. 电梯与自动扶梯：通过设备厂商协议落实供应与安装，本公司统一管理井道移交条件、安装进场时序、调试与特种设备验收配合，明确土建预留与精装修收口接口。\n6. 调试与培训：编制分系统调试计划与综合联调计划，组织业主运维人员培训并提交操作手册与竣工文档。\n\n本公司具备建设工程施工、特种设备安装改造修理、电气安装服务等许可能力，机电与垂直交通专业深度通过受控专业分包与设备厂商协议纳入统一管理，不构成组合体情形。",
+        "implementation_plan": "按24个月项目工期编排，围绕设计包与造价包的依赖关系设置里程碑：\n- 第1至3月：进场准备、施工组织设计报审、BIM协调机制建立、深化设计启动、分包与设备厂商协议落实、临设与物流方案报批。\n- 第4至8月：管线综合模型定稿与深化图分批出图，预留预埋配合，机房与竖井条件确认，电梯井道移交条件核查。\n- 第9至16月：给排水、暖通、强弱电、消防系统分区安装高峰，电梯与自动扶梯分批进场安装，穿插精装修包接口协调。\n- 第17至20月：分系统调试、水压与风量平衡、电气送电与联动测试、电梯单机与群控调试。\n- 第21至23月：消防验收配合、综合联调、业主培训、竣工文档移交。\n- 第24月：保修期支持启动与缺陷整改闭环。\n\n本公司配置项目经理、机电总协调、各专业工程师、BIM协调、质量与安全专职人员组成核心管理团队，专业作业由受控分包按本公司统一计划、统一质量与安全标准实施。",
+        "quotation": 40480000.0,
+        "schedule_commitment": "承诺按24个月项目工期交付，关键里程碑为：第3月完成深化设计与BIM协调机制建立，第8月完成管线综合定稿与井道条件移交，第16月完成主要系统安装与电梯安装，第20月完成分系统调试，第23月完成消防验收配合与综合联调及培训，第24月进入保修期支持。进度计划将与设计包、造价包及精装修包接口节点对齐，按月提交进度视图与偏差纠正措施。",
+        "compliance_statement": "接受业主及造价咨询包的成本建议与成本审查，按设备供应、安装、调试、培训及保修期支持分列价格基础与费用构成，配合定性价格合理性比较。质量方面设定质量目标跟踪计划，执行材料进场复核、工序验收与文档管理纪律，提交检验批与调试记录。接口方面明确与设计包的深化图会签、与造价包的计量口径、与精装修包的收口与移交责任，通过定期接口协调会与书面移交单闭环。",
+        "risk_response": "主要风险与应对：\n1. 设备与分包价格波动：报价中已列风险应对余量，设备与分包成本目前为内部估算，尚未取得正式报价，签约前将以厂商与分包协议锁定范围与价格。\n2. 电梯与消防专业分包落实：作为投标假设，相关协议尚待谈判与签订，本公司将通过受控分包管理条款统一进度、质量、安全与验收责任。\n3. 酒店运营环境施工：编制城市施工物流与降噪降尘方案，分时段运输与作业，减少对运营影响。\n4. 多包接口风险：设立专职接口协调人员，与设计、造价及精装修包建立书面接口清单与移交节点。\n5. 工期风险：按里程碑倒排，关键设备提前下单，设置赶工预案与备用作业面。",
+        "submission_summary": "本公司以单一责任投标人身份提交澳门新葡京酒店机电与垂直交通工程包投标，报价MOP 40,480,000，在包预算MOP 44,625,000以内。\n\n费用构成：\n- 给排水、暖通空调、强弱电安装：MOP 13,860,000\n- 消防系统专业分包：MOP 5,250,000\n- 电梯与自动扶梯供应及安装：MOP 12,480,000\n- BIM管线综合与多专业协调：MOP 1,680,000\n- 调试、培训与保修期支持：MOP 2,150,000\n- 现场管理、安全质量文档与物流组织：MOP 2,480,000\n- 风险余量、保险与管理费：MOP 2,580,000\n合计：MOP 40,480,000\n\n价格基础说明：设备与分包成本为内部估算，尚未取得供应商正式报价，属暂定估算；电梯与自动扶梯厂商协议、消防专业分包协议尚待谈判签订，为本投标假设。本公司将通过统一管理实现进度、质量、安全与验收责任闭环，并预留风险应对余量以覆盖价格波动与接口协调风险。付款按合同里程碑申请，接受业主与造价咨询包的成本审查。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水、暖通空调、强弱电安装工程（含材料与劳务）",
+            "amount": 13860000,
+            "basis": "按分区工程量内部估算，含管道、风管、桥架、线缆、末端与机房安装劳务，参考当前材料与人工价格指数上调"
+          },
+          {
+            "item": "消防系统专业分包（安装、调试与验收配合）",
+            "amount": 5250000,
+            "basis": "专业分包内部估算，含喷淋、消火栓、报警与联动调试，分包协议尚待签订，属暂定估算"
+          },
+          {
+            "item": "电梯与自动扶梯供应及安装（设备厂商协议）",
+            "amount": 12480000,
+            "basis": "按梯型数量与厂商供货安装范围内部估算，含井道配合、安装、调试与特种设备验收配合，厂商协议尚待谈判，属暂定估算"
+          },
+          {
+            "item": "BIM管线综合与机电多专业协调",
+            "amount": 1680000,
+            "basis": "专职BIM协调人员、模型检查与深化图会签工作量，含与设计包、精装修包接口协调"
+          },
+          {
+            "item": "系统调试、培训与保修期支持",
+            "amount": 2150000,
+            "basis": "分系统调试与综合联调人工、测试仪器、业主培训与保修期响应人员安排"
+          },
+          {
+            "item": "现场管理、安全与质量文档、临时设施及城市物流组织",
+            "amount": 2480000,
+            "basis": "项目管理团队、安全专职、质量文档管理、酒店运营环境下物流组织与临时设施"
+          },
+          {
+            "item": "风险应对余量、保险与企业管理费",
+            "amount": 2580000,
+            "basis": "设备与分包价格波动、接口协调风险、保险及企业管理费的综合余量"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯与自动扶梯的供应安装将通过设备厂商协议落实，具体条款尚待谈判",
+          "消防系统安装调试将由具备相应能力的专业分包承担，分包协议尚待签订",
+          "BIM管线综合与机电多专业协调将由本公司主导并配置专职协调人员",
+          "报价中的设备与分包成本目前为内部估算，尚未取得供应商正式报价",
+          "与设计包、造价包及后续精装修包的接口责任将在合同谈判中明确"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "给排水、暖通空调、强弱电、消防系统、电梯与自动扶梯的供应与安装、系统调试；不含主体结构、幕墙、精装修与室外景观。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

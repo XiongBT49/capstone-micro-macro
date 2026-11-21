@@ -1,0 +1,59 @@
+# S4/D3固定四次调用决策实验进度
+
+状态：completed_and_verified；更新时间UTC：2026-11-20T02:59:27.263547+00:00
+决策：926/926（S4/D3各433，G3消融60）；匿名评分：986/986。
+
+预算60元，包含全部生成与匿名评分；宏观及历史微观预算独立。
+开发/验证/测试为既有433条的查询项目组划分，不是全新独立数据。
+
+```json
+{
+  "experiment": "capstone_micro_s4d3_equal_calls_20261120_budget60",
+  "updated_at_UTC": "2026-11-20T02:59:27.263547+00:00",
+  "state": "completed_and_verified",
+  "decisions_completed": 926,
+  "decisions_planned": 926,
+  "decision_status_counts": {
+    "ok": 921,
+    "fallback": 5
+  },
+  "judges_completed": 986,
+  "judges_planned": 986,
+  "judge_status_counts": {
+    "ok": 757,
+    "parse_error": 229
+  },
+  "budget": {
+    "attempted_or_reserved_calls": 4690,
+    "new_api_requests": 4690,
+    "status_counts": {
+      "returned": 4677,
+      "response_failed": 13
+    },
+    "uncertain_finished_calls": 0,
+    "http_auth_failures": 0,
+    "accounted_cost_cny": 51.7900844,
+    "total_accounted_cny": 51.7900844,
+    "known_usage_cost_cny": 51.7900844,
+    "known_cost_cny": 51.7900844,
+    "unknown_reserved_cost_cny": 0.0,
+    "unknown_reserved_cny": 0.0,
+    "budget_cny": 60.0,
+    "remaining_budget_cny": 8.2099156,
+    "max_calls": 4690,
+    "budget_scope": "micro_s4d3_original_paid_calls_plus_new_calls_60_cny",
+    "actual_provider_bill_verified": false,
+    "prior_calls": 3590,
+    "new_paid_calls": 1100,
+    "total_unique_paid_calls": 4690,
+    "prior_cost_cny": 39.8114516,
+    "new_cost_cny": 11.9786328,
+    "prior_cost_units": 398114516,
+    "new_cost_units": 119786328,
+    "total_cost_units": 517900844,
+    "total_budget_cny": 60,
+    "copied_prior_calls_are_not_new_posts": true
+  },
+  "scope": "C:\\Users\\64126\\Desktop\\capstone\\runs\\capstone_micro_s4d3_equal_calls_20261120_budget60"
+}
+```

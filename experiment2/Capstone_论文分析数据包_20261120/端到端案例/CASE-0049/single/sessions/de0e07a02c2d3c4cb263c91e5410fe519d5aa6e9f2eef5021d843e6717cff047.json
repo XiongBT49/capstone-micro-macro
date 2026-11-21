@@ -1,0 +1,2615 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM45BEE469/CASE-0049/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "CNY",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "CNY",
+      "package_budget": 44625000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "CNY",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+        "owner_id": "OWNER-c328a5d9ef0c7d",
+        "project_id": "CASE-0049",
+        "project_type": "building",
+        "region": "Guangzhou",
+        "scope": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包"
+      },
+      "package": {
+        "package_id": "CASE-0049/construction-2",
+        "project_id": "CASE-0049",
+        "kind": "construction",
+        "buyer_id": "OWNER-c328a5d9ef0c7d",
+        "name": "学生宿舍机电安装与电梯施工包",
+        "scope": "给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+        "budget": 44625000.0,
+        "currency": "CNY",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0049/design",
+          "CASE-0049/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0493",
+          "COMP-0025"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-c328a5d9ef0c7d": {
+        "entity_id": "OWNER-c328a5d9ef0c7d",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_name": "广州市黄埔区教育局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-c328a5d9ef0c7d",
+          "name": "广州市黄埔区教育局",
+          "role": "Owner",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0049",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM45BEE469/CASE-0049/cost/round-1/contract",
+              "project_id": "CASE-0049",
+              "package_id": "CASE-0049/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1800000.0,
+              "currency": "CNY",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+              "project_id": "CASE-0049",
+              "package_id": "CASE-0049/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4480000.0,
+              "currency": "CNY",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM45BEE469/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "package_id": "CASE-0049/design",
+            "contract_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+            "buyer_id": "OWNER-c328a5d9ef0c7d",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 4480000.0,
+            "currency": "CNY",
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "package_id": "CASE-0049/cost",
+            "contract_id": "SIM45BEE469/CASE-0049/cost/round-1/contract",
+            "buyer_id": "OWNER-c328a5d9ef0c7d",
+            "members": [
+              "COMP-0208"
+            ],
+            "price": 1800000.0,
+            "currency": "CNY",
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0049",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "faf18b9fea1593777f16b2fa9c1b6c6f70a33600ec7a110632bf9c64ee6756e1"
+  },
+  "spec": {
+    "package_id": "CASE-0049/construction-2",
+    "project_id": "CASE-0049",
+    "kind": "construction",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "name": "学生宿舍机电安装与电梯施工包",
+    "scope": "给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+    "budget": 44625000.0,
+    "currency": "CNY",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0049/design",
+      "CASE-0049/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0493",
+      "COMP-0025"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0049",
+      "project_name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "project_type": "building",
+      "location": "Guangzhou",
+      "owner_intent": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "CNY 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0049",
+      "project_scope": "本项目为广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包，位于广州市黄埔区，总建筑面积约11650平方米，属居住建筑。业主为广州市黄埔区教育局，采用DBB交付模式，总预算CNY 150,000,000，总工期24个月。本次招标包为CASE-0049/construction-2学生宿舍机电安装与电梯施工包，范围包括给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试，不含土建结构与室外市政接驳，材料与设备由本包中标人自行采购。业主已另行委托设计包与造价咨询包，本包须与设计、造价成果紧密衔接。",
+      "functional_requirements": [
+        "满足学生宿舍日常使用的给排水系统，包括生活给水、排水、热水供应及卫生器具配套。",
+        "满足宿舍照明、插座、空调、公共区域用电及应急照明的电气系统。",
+        "满足宿舍通风与空调调节需求的通风空调系统，兼顾节能与舒适性。",
+        "满足消防要求的火灾自动报警、消火栓、喷淋、防排烟及应急疏散系统。",
+        "满足校园管理需求的弱电智能化系统，包括综合布线、网络、广播、安防监控及门禁。",
+        "提供安全可靠的电梯设备及安装调试，满足学生宿舍垂直交通需求。",
+        "各机电系统须与土建结构、建筑布局及室外市政接驳界面清晰衔接。",
+        "系统设计须考虑后期运维便利性、可维护性及备品备件支持。"
+      ],
+      "technical_requirements": [
+        "BIM协调：机电各专业须在BIM模型中协同设计，解决管线综合碰撞，预留土建孔洞与套管。",
+        "MEP协调：给排水、电气、通风空调、消防、弱电智能化各专业须统一协调，明确界面与施工顺序。",
+        "结构协调：机电荷载、设备基础、穿结构构件须与结构设计协调并取得设计确认。",
+        "电梯接口：电梯井道、机房、供电及弱电接口须与土建及设计包协调，明确安装调试条件。",
+        "公共通道布局：机电管线与设备布置不得影响宿舍公共通道净高及疏散宽度。",
+        "耐久性目标：主要材料与设备须满足设计使用年限及校园高频使用环境的耐久性要求。",
+        "可维护性目标：设备选型与布置须便于日常检修、更换及备件供应。",
+        "业主验收路径：分系统调试、联合试运转、专项验收及竣工移交须经业主确认。",
+        "能耗目标：空调、照明、给水等系统须满足设计能耗指标及绿色校园相关要求。"
+      ],
+      "budget_policy": "本包预算为CNY 44,625,000，属业主额外成本，采用工程量清单综合单价计价。业主将结合造价咨询包的清单与造价审核意见，对投标报价进行合理性比较，关注价格构成、材料设备档次与全生命周期维护成本的平衡。报价须包含材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件。业主保留对不平衡报价及重大偏差进行澄清与调整的权利，任何超出授权范围的预算变动须按宏观审批程序处理。",
+      "schedule_policy": [
+        "总工期24个月，本包须与设计包、造价包及土建总承包进度衔接，编制机电安装与电梯专项进度计划。",
+        "里程碑设置须现实可行，预留设备采购、进场检验、安装调试及专项验收时间。",
+        "业主审查时间须纳入进度计划，包括深化设计审查、材料设备封样确认及阶段验收。",
+        "包间接口时间须明确，包括与土建结构预留预埋、室外市政接驳及电梯井道移交的交接节点。",
+        "公共通道协调时间须考虑学校教学安排，施工与校园使用交叉区域须安排错峰或假期作业。"
+      ],
+      "compliance_requirements": [
+        "业主审查节奏：按月度例会及关键节点审查机制，对深化设计、材料设备选型、调试方案进行审查。",
+        "问题升级路径：现场重大问题须在约定时限内升级至业主项目负责人，并形成书面记录。",
+        "文档纪律：施工记录、检验批、隐蔽验收、调试报告及竣工资料须同步整理、真实完整。",
+        "接口签认：与土建、设计、造价及其他包之间的界面须经各方签认，避免责任不清。",
+        "公共通道协调：施工期间须保障校园公共通道安全与通行，涉及停水停电须提前报批并公告。",
+        "质量目标跟踪：业主按分系统质量目标进行抽查与阶段评价，关键工序须留影像资料。",
+        "安全期望跟踪：业主跟踪安全交底、临电临水、高空作业及电梯安装等专项安全措施落实情况。",
+        "变更控制纪律：任何范围、预算或工期变更须经业主书面确认，重大变更按宏观审批程序执行。"
+      ],
+      "risk_priorities": [
+        "机电各专业界面冲突导致返工与工期延误的风险。",
+        "电梯设备采购周期及安装调试条件不落实的风险。",
+        "材料设备价格波动及供应中断风险。",
+        "校园环境施工对教学秩序与公共安全的影响风险。",
+        "消防及专项验收不通过导致移交延迟的风险。",
+        "深化设计滞后或与设计包成果不一致的风险。",
+        "分包管理与施工人员到位不足导致质量与进度风险。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0049/construction-2",
+          "package_type": "contractor",
+          "package_name": "学生宿舍机电安装与电梯施工包",
+          "scope": "Authorized scope: 给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。\nBuyer refinement: 给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。须与设计包、造价包成果衔接，完成深化设计、安装、调试、专项验收配合及质保期服务。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "机电安装施工总承包协调能力",
+            "给排水与消防系统安装调试能力",
+            "电气与弱电智能化系统集成能力",
+            "通风空调系统安装与平衡调试能力",
+            "电梯采购安装与调试管理能力",
+            "BIM机电深化与管线综合协调能力",
+            "校园环境施工组织与公共通道协调能力",
+            "质量文档与竣工资料管理能力",
+            "安全施工与专项方案执行能力",
+            "分包管理与劳动力组织能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "机电各专业施工组织与交付方法",
+            "质量目标与质量保证措施",
+            "安全期望落实与专项安全方案",
+            "进度计划视图与里程碑安排",
+            "报价基础与工程量清单报价",
+            "风险应对与界面协调方案",
+            "电梯采购安装与调试专项方案",
+            "质保期服务与备品备件计划"
+          ],
+          "pricing_requirements": "按工程量清单综合单价报价，包含材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件。报价须与造价咨询包审核意见对照，业主比较价格合理性与全生命周期成本。\nBinding currency: CNY; package ceiling: 44625000.0.",
+          "evaluation_criteria": [
+            "delivery_confidence",
+            "capability_fit",
+            "price_reasonableness",
+            "risk_control",
+            "staffing_realism",
+            "owner_review_clarity",
+            "documentation_discipline",
+            "quality_target_fit",
+            "safety_expectation_tracking",
+            "interface_coordination",
+            "maintainability_support",
+            "public_access_coordination"
+          ],
+          "owner_decision_policy": "业主代理将综合比较投标人的能力匹配、报价合理性、风险控制与交付信心，结合团队配置现实性、文档纪律及接口协调方案进行定性评判，不单纯以最低价判给。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0049/construction-2",
+        "package_type": "contractor",
+        "package_name": "学生宿舍机电安装与电梯施工包",
+        "scope": "Authorized scope: 给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。\nBuyer refinement: 给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。须与设计包、造价包成果衔接，完成深化设计、安装、调试、专项验收配合及质保期服务。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "机电安装施工总承包协调能力",
+          "给排水与消防系统安装调试能力",
+          "电气与弱电智能化系统集成能力",
+          "通风空调系统安装与平衡调试能力",
+          "电梯采购安装与调试管理能力",
+          "BIM机电深化与管线综合协调能力",
+          "校园环境施工组织与公共通道协调能力",
+          "质量文档与竣工资料管理能力",
+          "安全施工与专项方案执行能力",
+          "分包管理与劳动力组织能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "机电各专业施工组织与交付方法",
+          "质量目标与质量保证措施",
+          "安全期望落实与专项安全方案",
+          "进度计划视图与里程碑安排",
+          "报价基础与工程量清单报价",
+          "风险应对与界面协调方案",
+          "电梯采购安装与调试专项方案",
+          "质保期服务与备品备件计划"
+        ],
+        "pricing_requirements": "按工程量清单综合单价报价，包含材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件。报价须与造价咨询包审核意见对照，业主比较价格合理性与全生命周期成本。\nBinding currency: CNY; package ceiling: 44625000.0.",
+        "evaluation_criteria": [
+          "delivery_confidence",
+          "capability_fit",
+          "price_reasonableness",
+          "risk_control",
+          "staffing_realism",
+          "owner_review_clarity",
+          "documentation_discipline",
+          "quality_target_fit",
+          "safety_expectation_tracking",
+          "interface_coordination",
+          "maintainability_support",
+          "public_access_coordination"
+        ],
+        "owner_decision_policy": "业主代理将综合比较投标人的能力匹配、报价合理性、风险控制与交付信心，结合团队配置现实性、文档纪律及接口协调方案进行定性评判，不单纯以最低价判给。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_name": "广州市黄埔区教育局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-c328a5d9ef0c7d": [
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "局领导",
+          "position": "分管副局长",
+          "personal_profile": "在压力下优先考虑程序合规与公众问责，首先关注招标包是否满足教育设施交付的时限与质量目标，倾向于在讨论中强调风险控制与资源平衡，常把技术争议拉回到预算与工期约束。",
+          "responsibilities": [
+            "主持采购方案决策",
+            "审定招标包划分与发包策略",
+            "协调跨部门资源与业主需求",
+            "监督质量目标与工期目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健直接，先听各方意见后归纳决策要点，用词正式且注重留痕。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "基建科",
+          "position": "科长",
+          "personal_profile": "对施工可行性与现场条件高度敏感，首先核查投标单位的团队可用性与交付方法，在讨论中容易与成本控制视角产生张力，坚持质量审查与独立检查不能因赶工而妥协。",
+          "responsibilities": [
+            "编制工程需求与质量目标",
+            "审核投标人交付方案与进度安排",
+            "组织现场考察与答疑",
+            "监督施工过程质量与安全"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实细致，习惯用具体案例和数据说明问题，对模糊承诺会追问细节。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "agent_name": "黄家豪",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "计财科",
+          "position": "副科长",
+          "personal_profile": "以资金安全和支付合规为第一判断标准，首先审视报价基础与付款评审流程，在讨论中常提醒预算上限与现金流风险，对超出概算的变更持审慎态度。",
+          "responsibilities": [
+            "审核项目预算与报价基础",
+            "设计付款评审与成本控制机制",
+            "监控合同支付与变更",
+            "评估财务风险与资金安排"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "谨慎条理，偏好书面依据与量化分析，发言常带条件限定。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_04_周文静",
+          "agent_name": "周文静",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "设计管理组",
+          "position": "设计协调负责人",
+          "personal_profile": "关注设计意图在施工中的可实施性，首先检查图纸深度与专业接口，在讨论中容易与施工方就设计变更责任产生分歧，强调设计协调与文档纪律。",
+          "responsibilities": [
+            "协调设计单位与施工单位接口",
+            "审查施工图与设计变更",
+            "管理设计文档与版本控制",
+            "参与质量目标设定与验收"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "理性清晰，善用图纸与规范说话，对接口遗漏会直接指出。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+          "agent_name": "吴国栋",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "教育装备与后勤",
+          "position": "后勤保障主任",
+          "personal_profile": "从最终使用者角度思考，首先关注宿舍功能布局与运维便利性，在讨论中常提出运营期成本与可持续性目标，容易与设计方就使用需求细节反复拉锯。",
+          "responsibilities": [
+            "提出使用需求与功能标准",
+            "参与设计评审与验收",
+            "协调学校运营衔接",
+            "跟踪可持续性目标落实"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "亲和务实，习惯用使用场景描述需求，对影响师生体验的细节坚持己见。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策与业主界面",
+          "position": "项目总监",
+          "personal_profile": "压力下先看合同边界与业主决策链，习惯把工期、付款与变更责任放在同一张表上权衡。他最先注意到的是业主审批节奏与总包责任界面是否清晰，常把乐观的施工安排拉回到可交付承诺，带来的张力是进度诉求与风险留白之间的拉扯。",
+          "responsibilities": [
+            "统筹本包投标与实施总体策略",
+            "业主界面与关键干系人协调",
+            "重大风险与资源投入的最终裁决",
+            "组合体与分包安排的决策把关"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列条件，对模糊承诺会当场追问依据。"
+        },
+        {
+          "agent_id": "COMP-0153_02_黄敏芝",
+          "agent_name": "黄敏芝",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与材料价格波动敞口，倾向用可追溯的单价与工程量支撑判断。她最先注意到清单缺项与付款节点错配，常提醒团队不要用低价换中标，带来的张力是成本纪律与市场竞争力之间的取舍。",
+          "responsibilities": [
+            "报价基础与成本测算复核",
+            "材料采购与付款评审",
+            "变更与索赔的商务评估",
+            "成本目标跟踪与偏差预警"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，用数据与假设条件说话，对未量化的乐观估计会要求补充依据。"
+        },
+        {
+          "agent_id": "COMP-0153_03_苏浩然",
+          "agent_name": "苏浩然",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "施工技术与交付",
+          "position": "施工技术负责人",
+          "personal_profile": "工程思维强，压力下先看施工方案可行性与现场资源匹配，习惯把工序衔接和季节影响提前排入计划。他最先注意到图纸与现场条件的冲突以及关键线路上的资源缺口，常提出更稳妥但更耗时的做法，带来的张力是技术稳妥与工期压缩之间的矛盾。",
+          "responsibilities": [
+            "施工组织设计与工序安排",
+            "土建与结构施工技术方案审查",
+            "现场资源计划与班组调配",
+            "工期视图与进度纠偏"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实具体，喜欢用工序图和节点说明问题，对不落地的进度承诺会直接指出风险。"
+        },
+        {
+          "agent_id": "COMP-0153_04_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与独立核查",
+          "position": "质量与核查主管",
+          "personal_profile": "标准意识强，压力下先看质量目标是否可验证、检查记录是否闭环，倾向在隐蔽工程前设置独立复核点。她最先注意到材料进场验收与工序交接的薄弱环节，常因坚持复检而拖慢节奏，带来的张力是质量底线与施工效率之间的冲突。",
+          "responsibilities": [
+            "质量目标跟踪与验收计划",
+            "材料与工序的独立检查安排",
+            "质量文档与记录纪律",
+            "整改闭环与质量风险上报"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨克制，用检查清单和证据说话，对跳过复核的做法会明确反对。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何俊霆",
+          "agent_name": "何俊霆",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "安全环保与合规",
+          "position": "安全环保经理",
+          "personal_profile": "风险预判型，压力下先看现场高风险作业与合规许可是否到位，习惯把安全投入视为不可压缩项。他最先注意到临时用电、高处作业与环保措施的执行缺口，常在赶工讨论中提出停工整改建议，带来的张力是安全合规与进度压力之间的对立。",
+          "responsibilities": [
+            "安全与环保管理方案落实",
+            "合规许可与监管沟通",
+            "现场风险巡查与隐患整改",
+            "可持续目标与文明施工跟踪"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "坚定明确，以风险等级和整改时限表达立场，对侥幸心理会直接警示。"
+        },
+        {
+          "agent_id": "COMP-0153_06_郑晓彤",
+          "agent_name": "郑晓彤",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "投标与文件治理",
+          "position": "投标协调与文档主管",
+          "personal_profile": "流程导向，压力下先看投标文件完整性与评标要点对应关系，习惯用清单管理资格证明、技术标与商务标的交叉引用。她最先注意到文件版本不一致与响应遗漏，常要求留出复核缓冲，带来的张力是文档严谨与提交时限之间的紧张。",
+          "responsibilities": [
+            "投标文件编制与响应核对",
+            "资格与业绩材料整理",
+            "评标要点对照与内部复核",
+            "文档版本与提交纪律管理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致耐心，以清单和截止时间推动协作，对临时改动会要求书面确认。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。对业主变更和设计协调敏感，常提醒团队不要因局部优化牺牲整体交付。讨论中倾向于推动快速决策，但会要求关键风险有预案。",
+          "responsibilities": [
+            "统筹施工包整体交付与业主接口",
+            "协调设计、成本与施工团队的工作衔接",
+            "监控工期与资源计划执行",
+            "主持内部风险评审与决策会议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，善于用简明语言总结复杂问题，强调行动项与责任人。"
+        },
+        {
+          "agent_id": "COMP-0493_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "成本与商务管理部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，在压力下首先检查报价基础与支付条件。倾向于保守估计成本，对材料价格波动和现金流风险警觉。讨论中常提出成本优化建议，但反对为中标而牺牲合理利润。",
+          "responsibilities": [
+            "编制与管理施工包报价与成本计划",
+            "审核分包与材料采购合同条款",
+            "监控项目现金流与支付评审",
+            "评估变更与索赔的成本影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、条理清晰，习惯用数据支撑观点，对模糊表述会追问细节。"
+        },
+        {
+          "agent_id": "COMP-0493_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "注重现场可执行性和工序衔接，在压力下优先解决实际施工障碍。对劳动力、机械和材料到场时间非常敏感，常从施工可行性角度质疑设计或计划。讨论中倾向于务实方案，但可能低估长期管理成本。",
+          "responsibilities": [
+            "编制施工组织设计与进度计划",
+            "管理现场土建施工与分包作业",
+            "协调材料采购与进场安排",
+            "跟踪现场质量与安全措施落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实、直白，喜欢用现场实例说明问题，关注具体操作细节。"
+        },
+        {
+          "agent_id": "COMP-0493_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量与安全部",
+          "position": "质量安全经理",
+          "personal_profile": "对质量目标和安全合规有强烈责任感，在压力下首先检查是否满足规范与体系要求。对文档纪律和检查记录非常重视，常提醒团队不要为赶工牺牲质量。讨论中倾向于坚持标准，但会考虑实际执行成本。",
+          "responsibilities": [
+            "建立并维护项目质量与安全管理体系",
+            "组织内部质量检查与独立复核",
+            "跟踪质量目标与整改闭环",
+            "审核分包商质量安全资质与表现"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、有条理，习惯引用程序和标准，强调证据与记录。"
+        },
+        {
+          "agent_id": "COMP-0493_05_吴国栋",
+          "agent_name": "吴国栋",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调负责人",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，在压力下优先识别设计冲突和可施工性问题。对图纸深度和设计变更的连锁影响敏感，常从全生命周期角度提出建议。讨论中倾向于提前解决问题，但可能增加前期协调时间。",
+          "responsibilities": [
+            "协调设计院与施工团队的技术接口",
+            "审核施工图与设计变更的施工可行性",
+            "管理设计交底与图纸会审",
+            "跟踪设计问题对工期与成本的影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "温和、分析性强，善于用图示和对比说明问题，注重共识建立。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。对业主变更和审批延迟敏感，倾向于在讨论中强调风险缓冲和决策时效，常把技术问题拉回到商业与合同层面。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "对接业主与监管方，协调报批报建",
+            "主持内部评审，跟踪质量与工期目标",
+            "审批分包与采购方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，善用结构化汇报，在会议中快速收敛分歧，但对细节追问耐心有限。"
+        },
+        {
+          "agent_id": "COMP-0025_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，先看报价构成与支付条件，再评估风险敞口。在讨论中常提醒成本超支和现金流压力，倾向于用保守假设做价格基础，对模糊的业主要求会要求书面澄清。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付评审",
+            "管理成本控制与变更索赔",
+            "评估分包商报价合理性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨、细致，习惯用数据说话，表达清晰但偏保守，对不确定事项会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0025_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，首先关注施工可行性和工序衔接，对资源到位和班组配合极为敏感。在讨论中常从实际执行角度提出反对意见，强调工期压缩带来的质量与安全风险，倾向于留出合理缓冲。",
+          "responsibilities": [
+            "编制施工方案与进度计划",
+            "管理现场施工与分包协调",
+            "监督质量目标与安全措施落实",
+            "编制现场报告与进度汇报"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实、直白，喜欢用现场案例说明问题，对理论性讨论缺乏耐心，但愿意倾听一线反馈。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全主任",
+          "personal_profile": "以标准和程序为出发点，先检查质量目标和安全合规性，对任何偏离规范的做法保持警惕。在讨论中常扮演质疑者角色，强调独立检查与文档纪律，倾向于用检查清单和整改闭环来推动决策。",
+          "responsibilities": [
+            "建立质量与安全管理体系",
+            "组织内部质量审查与独立检查",
+            "跟踪整改闭环与文档记录",
+            "评估分包商质量安全表现"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理分明、坚持原则，沟通时引用规范条文，语气平和但立场坚定，不易妥协。"
+        },
+        {
+          "agent_id": "COMP-0025_05_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调经理",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，先关注图纸可施工性和专业接口。在讨论中常提出优化建议以降低施工难度，但对设计变更的连锁影响保持谨慎，倾向于提前协调各专业冲突。",
+          "responsibilities": [
+            "协调设计院与施工团队接口",
+            "审核施工图可施工性",
+            "管理设计变更与技术澄清",
+            "参与价值工程与方案优化"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和、善于倾听，习惯用图示和对比方案沟通，在分歧中扮演调解角色。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为中交第一航务工程局，主营港航、海洋、土建与市政类工程，机电安装与电梯采购安装调试并非我们的核心强项。这个包要求给排水、电气、通风空调、消防、弱电智能化及电梯全专业集成，还要与设计包、造价包衔接做深化设计，属于典型的机电总承包协调型包。我们资源总量2.0，当前占用0，资源上并非不能承接，但团队可用性摘要、机电各专业班组和电梯专项能力在情景资料里没有可核实的证据，只有企业参数层面的通用能力评分。若单独投标，我们会在机电深化、消防专项验收、电梯采购调试这些关键环节显得单薄，评标时技术可信度不足，履约期也容易因分包失控而损害声誉。但若完全放弃，这个4.46亿上限的包在本地市场有战略价值，且我们具备施工总承包的现场管理、安全、质量文档和分包管理底盘，可以通过与有实力的机电安装企业组成组合体，由对方承担机电专业技术权威与相应商业暴露，我们承担现场总协调与土建界面，形成可信的整合投标。这不是普通分包能解决的，因为机电全专业的技术责任和调试责任需要共享投标人身份才站得住。因此我倾向以组合体方式参与，前提是找到合适的机电伙伴并明确责任划分。",
+        "content": "管理层决定：以组合体方式参与学生宿舍机电安装与电梯施工包的投标。理由是本包为机电全专业集成包，我司单独投标在机电深化、消防专项验收与电梯采购调试环节技术可信度不足，而组合体可补齐专业技术权威与实施能力。拟由我司担任现场总协调与界面管理角色，负责施工组织、安全专项方案、公共通道协调、质量文档与竣工资料；由机电伙伴承担给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试的技术责任与相应商业暴露。报价按工程量清单综合单价编制，涵盖材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件，并与造价咨询包审核意见对照，体现全生命周期成本合理性。进度计划按里程碑安排，预留与设计包、造价包成果衔接的深化设计窗口。风险应对重点为机电界面协调、电梯供货周期与专项验收配合。组合体协议、责任划分与关键岗位人员到位情况须在投标前以书面文件落实。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid_with_consortium",
+        "decision_impact": "final",
+        "final_decision": "bid_with_consortium",
+        "timestamp": "2026-11-19T14:22:15",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为本地总承包企业，机电安装与电梯包在业务范围内，资源账上可用2.0、占用0，资源上完全能承接，且包额约4462.5万CNY，对我们是合理规模。这个包不含土建，是纯机电与电梯的采购安装调试，需要给排水、电气、通风空调、消防、弱电、电梯、BIM深化等多专业协调。我们自身是总承包身份，具备机电施工总承包协调、分包管理、质量安全文档体系（ISO三体系），可以以单一责任投标人身份牵头，把各专业安装与电梯采购安装作为受控分包与采购安排，而不是需要另一家共享投标人身份的组合体。真正的风险在于：深化设计要与设计包、造价包衔接，电梯采购安装与调试需要可靠供应商，校园环境施工组织与公共通道协调要求高，报价须与造价咨询审核意见对照。这些都属于正常投标风险，应通过角色计划、分包管理、质量与安全专项方案、进度里程碑、风险应对与界面协调方案、质保与备品备件计划来管理，并在报价中留出合理风险余量。没有未决条件阻塞，也没有必须联合才能补上的核心责任缺口，因此选择独立投标。",
+        "content": "得宝建筑集团有限公司就学生宿舍机电安装与电梯施工包提交独立投标意向。我方以单一责任投标人身份承担给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试的施工组织、深化设计衔接、调试、专项验收配合与质保期服务，不含土建结构与室外市政接驳。投标文件将包含：角色计划与团队可用性摘要；机电各专业施工组织与交付方法；质量目标与质量保证措施；安全期望落实与专项安全方案；进度计划视图与里程碑安排；按工程量清单综合单价编制的报价基础，涵盖材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件，并与造价咨询包审核意见对照；风险应对与界面协调方案；电梯采购安装与调试专项方案；质保期服务与备品备件计划。机电专业安装与电梯采购安装拟通过受控分包与采购安排实施，由我方统一管理分包界面、劳动力组织、质量记录与安全执行，保持单一责任与交付控制。报价将在包上限44625000.0 CNY内，结合材料与人工价格指数及校园施工组织难度保留合理风险余量。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:22:15",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们是一家本地总承包企业，机电安装与电梯施工包属于我们业务范围内的常规专业分包型施工包，预算约4463万元，资源需求0.7，我们可用资源2.0，完全有余量。公司具备ISO三体系认证，profile覆盖给排水、电气、通风空调、消防、弱电、电梯等机电相关领域，也有校园与公共机构项目经验。这个包不含土建结构和室外市政，边界清晰，我们可以作为单一责任投标人，通过常规专业分包和电梯厂商采购安装配合来组织交付，不需要组合体。真正的风险在于：机电深化设计要与设计包、造价包衔接，电梯采购安装调试需要可靠的设备供应商配合，校园环境施工组织需要公共通道协调。这些都可以通过投标假设、分包管理和风险应对方案处理，不构成必须联合投标的问责缺口。价格上限4463万元，材料设备自购，需按清单综合单价报价并与造价咨询审核意见对照，我们要在报价基础中留出合理的设备采购与调试余量。综合判断：值得投标，独立投标。",
+        "content": "得宝国际有限公司就学生宿舍机电安装与电梯施工包提交独立投标意向。我们作为单一责任投标人，承担给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试的施工组织、深化设计协调、调试与专项验收配合、质保期服务。角色计划与团队可用性摘要将说明机电总承包协调、各专业安装调试、BIM管线综合与文档管理的岗位配置；交付方法按设计包与造价包成果衔接，设置深化设计与管线综合的评审节点；质量目标与质量保证措施依托ISO 9001体系，安全期望落实与专项安全方案依托ISO 45001体系，并针对校园环境制定公共通道协调与施工组织方案；进度计划视图列明各机电系统与电梯安装调试的关键里程碑；报价按工程量清单综合单价编制，包含材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件，并与造价咨询包审核意见对照说明价格合理性与全生命周期成本；风险应对与界面协调方案覆盖电梯采购安装调试专项安排、专业分包界面与验收配合。电梯设备与专业安装拟通过合格供应商与专业分包实施，相关承诺在投标阶段作为报价与进度假设管理。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:22:15",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "consortium_formation",
+        "round": 4,
+        "round_type": "external_role_negotiation",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "本包机电与电梯是核心，我司强在总协调与现场管理，弱在专业实施。得宝两家名字相近，但名字不能证明能力，也不能证明资源可用。我要的是书面责任划分和关键岗位到位证据，否则组合体只是把风险摊薄成模糊。若对方拿不出机电班组与电梯调试资源，我宁可单独投标或退出。",
+        "content": "我司的立场很明确：本包机电与电梯是技术主体，我司能承担现场总协调、公共通道协调、安全与质量文档管理、业主界面，但机电各专业与电梯采购调试不是我们的核心，情景资料里也没有可核实的班组与专项资源。因此组合体要成立，得宝两家中至少一家须以书面方式承担机电技术权威与相应商业暴露，明确关键岗位、深化设计与调试责任、质保期服务分工，并提供团队可用性摘要与电梯专项方案。责任界面不清，我司不会签字。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [],
+        "recommendation": "要求对方提交关键岗位到位与机电、电梯资源证据，并签署书面责任划分后再定组合体。",
+        "decision_impact": "责任划分与资源证据到位则组合体投标，否则我司单独投标或退出。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:19",
+        "verification_requests": [
+          {
+            "question": "得宝方能否提供机电各专业与电梯安装调试的关键岗位人员到位摘要及团队可用性证据？",
+            "required_before_submission": true
+          },
+          {
+            "question": "得宝方是否接受书面责任划分，由其在组合体中承担机电技术权威与相应商业暴露？",
+            "required_before_submission": true
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "consortium_formation",
+        "round": 4,
+        "round_type": "external_role_negotiation",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "我方资源账显示可用2.0、无占用，独立投标在容量上完全成立，组合体反而要共享投标人身份和包级责任，边际收益不明。除非对方能给出明确的电梯采购渠道或深化设计接口优势，并接受我方主导交付，否则维持独立投标。",
+        "content": "两位，我方对本案的判断很直接：本包机电安装与电梯施工落在我方总承包与机电协调能力范围内，资源账显示可用资源2.0、无占用，独立投标在容量和责任体系上都成立。若谈组合体，我需要看到贵方在电梯采购安装调试或BIM机电深化上有可核实的团队可用性摘要和角色计划，并明确由我方主导包级交付、统一对外承担工期与质量责任；否则共享投标人身份只会增加界面风险，不如各自独立投标。请贵方就电梯专项能力给出一项具体可核查的资源说明。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [],
+        "recommendation": "维持独立投标；除非对方提交可核实的电梯专项团队与角色计划并接受我方主导交付。",
+        "decision_impact": "组合体仅在对方证明电梯专项能力且接受我方主导时才有商业价值。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:19",
+        "verification_requests": [
+          {
+            "question": "请提供贵方电梯采购安装与调试专项的团队可用性摘要及角色计划，说明可投入人员与当前占用情况。",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "consortium_formation",
+        "round": 4,
+        "round_type": "external_role_negotiation",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "我们已决定独立投标，资源占用0.7、可用2.0，边界清晰，没有必须共享投标人身份的问责缺口。组合体只会摊薄我们的主导权和利润，还要多一层协调。除非对方能给出我们确实缺的电梯专项能力或明确的责任分工与费用优势，否则维持独标。",
+        "content": "得宝国际的立场很明确：这个包不含土建与室外市政，边界清楚，我们以单一责任投标人身份主导深化设计协调、安装调试、专项验收与质保期服务，资源余量足够，因此目前倾向独立投标。若贵方要谈组合体，需要说明能补上我们哪一项具体能力缺口，例如电梯采购安装调试的专项资源，并接受按专业界面划分责任、费用与工期风险的分摊。在拿到团队可用性摘要和角色计划之前，我们不会改变独标决定。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [],
+        "recommendation": "维持独立投标；除非对方提交电梯专项能力与责任分工证据，否则不组建组合体。",
+        "decision_impact": "独标保住主导权与利润；组合体仅在补足电梯专项能力时才有商业意义。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:19",
+        "verification_requests": [
+          {
+            "question": "贵方能否提供电梯采购安装调试的专项团队可用性摘要与角色计划，作为组合体分工依据？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000007",
+        "stage": "consortium_formation",
+        "round": 5,
+        "round_type": "external_accountability_confirmation",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "两家得宝都倾向独标，还反过来要我们证明电梯专项能力，这局面很被动。我司机电与电梯本就不是核心，硬撑独标技术可信度不足；但组合体若由对方主导交付、我们只做协调，责任界面和利润都要算清楚。关键是对方能否书面承担机电技术权威与商业暴露，并给出可核实的团队可用性摘要和电梯专项方案，否则谈不拢就退出。",
+        "content": "得宝两家都倾向独标，我理解，但我司的账要算清楚：本包机电与电梯是技术主体，我司能承担现场总协调、公共通道协调、安全与质量文档管理、业主界面，机电各专业与电梯采购调试不是我们的核心，情景资料里也没有可核实的班组与专项资源，硬撑独标在评标上说服力不足。组合体要成立，得宝至少一家须书面承担机电技术权威与相应商业暴露，明确关键岗位、深化设计与调试责任、质保期服务分工，并提交团队可用性摘要、角色计划和电梯专项方案；主导交付可以谈，但责任界面与费用分摊必须落到书面。拿不出这些，我司宁可退出也不签模糊协议。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [
+          "msg_000004",
+          "msg_000005",
+          "msg_000006"
+        ],
+        "recommendation": "要求对方书面承担机电技术权威与商业暴露并提交团队可用性摘要、角色计划和电梯专项方案，否则退出。",
+        "decision_impact": "责任划分与资源证据到位则组合体投标，否则我司退出本包。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:23",
+        "verification_requests": [
+          {
+            "question": "得宝任一家能否提交可核实的机电与电梯关键岗位团队可用性摘要、角色计划及电梯采购安装调试专项方案，并书面接受机电技术权威与相应商业暴露？",
+            "required_before_submission": true
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000008",
+        "stage": "consortium_formation",
+        "round": 5,
+        "round_type": "external_accountability_confirmation",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "我方资源账显示可用2.0、无占用，独立投标在容量和责任体系上完全成立，这是底线。陈立衡要求我方书面承担机电技术权威与商业暴露，这等于把包级风险压到我方头上，而对方并未提供任何可核实的机电或电梯资源。除非对方能拿出电梯专项团队可用性摘要并接受我方主导交付，否则共享投标人身份只会增加界面风险、摊薄利润。",
+        "content": "两位，我方立场不变：本包机电安装与电梯施工落在我方总承包与机电协调能力范围内，资源账可用2.0、无占用，独立投标在容量和责任体系上都成立，不需要共享投标人身份。若谈组合体，得宝国际须提交电梯采购安装调试的团队可用性摘要与角色计划，并接受由我方主导包级交付、统一对外承担工期与质量责任、按专业界面划分费用与风险；在此之前我方维持独标。请贵方就电梯专项资源给出一项具体可核查的说明。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [
+          "msg_000004",
+          "msg_000005",
+          "msg_000006"
+        ],
+        "recommendation": "维持独立投标；除非对方提交可核实的电梯专项团队与角色计划并接受我方主导交付。",
+        "decision_impact": "组合体仅在对方证明电梯专项能力且接受我方主导时才有商业价值。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:23",
+        "verification_requests": [
+          {
+            "question": "得宝国际能否提交电梯采购安装调试的团队可用性摘要与角色计划，并书面接受由得宝建筑主导包级交付与工期质量责任？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000009",
+        "stage": "consortium_formation",
+        "round": 5,
+        "round_type": "external_accountability_confirmation",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "negotiation",
+        "thoughts": "我方资源余量2.0、占用为零，独立投标在容量和责任体系上都站得住。组合体要让我放弃独标，必须换来独标拿不到的东西：电梯采购安装调试的专项资源、BIM机电深化能力，或者更清晰的责任与费用分摊。目前对方只有名字，没有任何可核实的团队可用性摘要或角色计划，共享投标人身份只会把包级工期和质量责任摊薄，不划算。",
+        "content": "两位，得宝国际的立场不变：本包边界清楚，我方以单一责任投标人主导深化设计协调、安装调试、专项验收与质保期服务，资源余量足够，独立投标在商业和责任上都成立。要谈组合体，我需要看到贵方补上我方哪一项具体缺口，例如电梯采购安装调试的专项团队可用性摘要与角色计划，并接受按专业界面划分责任、费用与工期风险。在拿到这些可核实材料之前，我方维持独标，不会为共享投标人身份牺牲主导权。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [
+          "msg_000004",
+          "msg_000005",
+          "msg_000006"
+        ],
+        "recommendation": "维持独立投标；除非对方提交电梯专项团队可用性摘要与书面责任分工，否则不组建组合体。",
+        "decision_impact": "独标保住主导权与利润；组合体仅在补足电梯专项能力并明确责任界面时才有商业意义。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:23",
+        "verification_requests": [
+          {
+            "question": "请对方提交电梯采购安装调试专项的团队可用性摘要与关键岗位角色计划，作为组合体谈判的前提。",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000010",
+        "stage": "consortium_failure_reconsideration",
+        "round": 3,
+        "round_type": "management_reconsideration",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "组合体没有谈成，得宝两家都坚持独标，这让我必须重新算这笔账。原来我倾向组合体，是因为本包机电与电梯是技术主体，而我司的核心底盘在施工总承包协调、现场安全、公共通道协调与质量文档管理，情景资料里确实没有可核实的机电班组与电梯专项资源证据。但组合体失败不等于必须退出：本包不含土建与室外市政，边界清楚，我司资源账可用2.0、无占用，容量上完全能承接。关键问题是，我能否以单一责任投标人身份，用普通专业分包、设备供应商、电梯安装调试单位、BIM深化顾问和检测机构来补足机电与电梯的专业缺口，同时自己牢牢控制包级交付、工期、安全、质量记录、付款协调与分包问责。我认为可以：机电安装、消防、通风空调、弱电智能化、电梯采购安装调试都是行业里成熟的可分包专业范围，我司作为总承包方主导深化设计协调、界面管理、专项验收配合与质保期服务，责任链条可以写清楚。风险在于评标时技术可信度，如果分包只是口头意向而没有角色计划、团队可用性摘要和电梯专项方案，评标会质疑。所以我的做法是：以独标推进，但在投标文件中把机电与电梯专业分包写成明确的投标假设与风险边界，附上拟用分包范围、界面划分、关键岗位角色计划、深化设计与调试责任、质保期分工，并设置周度界面协调与质量复核关口。原组合体谈判中那几项要求对方书面承担机电技术权威与商业暴露的条件，是针对组合体共享投标人身份的，现在组合体不成立，这些条件不再作为我司独标的前置门槛，但其中关于团队可用性、角色计划与电梯专项方案的要求，转化为我司对拟用分包商的内部核实事项，属于投标假设而非已落实事实。我不能把拟用分包说成已签约，也不能声称已通过审核，只能写成计划与待核实状态。综合判断：独标在商业、容量与责任体系上成立，技术可信度通过分包管理与界面控制来补，值得投标。",
+        "content": "管理层决定：本包以我司单一责任投标人身份投标，不再等待组合体。投标策略要点如下。第一，责任体系：我司作为包级交付责任人，统一对外承担工期、质量、安全与专项验收配合责任，机电与电梯专业以普通专业分包与设备供应方式组织，分包范围、界面划分、费用与风险分摊在投标文件中作为明确投标假设列示。第二，能力补足：给排水与消防、电气与弱电智能化、通风空调安装与平衡调试、电梯采购安装调试、BIM机电深化与管线综合，分别由拟用专业分包与顾问承担，我司负责深化设计协调、模型与文档标准、周度界面协调会与质量复核关口。第三，关键岗位与团队：投标附拟用分包关键岗位角色计划与团队可用性摘要，作为待核实事项说明，不表述为已签约或已审核通过。第四，报价与采购：按工程量清单综合单价编制，材料设备采购、安装调试、检测验收配合与质保备件纳入报价基础，并与造价包审核意见对照；分包询价与自有成本估算分别列示，未收到正式报价的部分按成本预备额处理。第五，风险边界：电梯专项方案、消防与弱电系统调试责任、质保期服务分工在投标文件中写明由我司统一协调、分包具体实施，并保留更换不合格分包的合同权利。第六，待核实事项：拟用分包商的机电与电梯关键岗位团队可用性、角色计划与电梯专项方案，以及其是否接受书面责任划分，作为内部核实事项在投标前尽量落实，但不作为放弃投标的前置条件。",
+        "references": [
+          "failed_consortium",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:22:36",
+        "verification_requests": [
+          {
+            "question": "拟用机电与电梯分包商能否提供关键岗位人员到位摘要及团队可用性证据？",
+            "required_before_submission": false
+          },
+          {
+            "question": "拟用电梯分包商能否提交电梯采购安装调试专项方案与角色计划？",
+            "required_before_submission": false
+          },
+          {
+            "question": "拟用分包商是否接受书面责任划分与质保期服务分工？",
+            "required_before_submission": false
+          },
+          {
+            "question": "第三，关键岗位与团队：投标附拟用分包关键岗位角色计划与团队可用性摘要，作为待核实事项说明，不表述为已签约或已审核通过",
+            "required_before_submission": false
+          },
+          {
+            "question": "第六，待核实事项：拟用分包商的机电与电梯关键岗位团队可用性、角色计划与电梯专项方案，以及其是否接受书面责任划分，作为内部核实事项在投标前尽量落实，但不作为放弃投标的前置条件",
+            "required_before_submission": false
+          },
+          {
+            "question": "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000011",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "电梯专项：电梯采购、安装、调试与质保由拟用电梯分包实施，我司统一管理供货周期、井道交接条件、安装调试计划与专项验收配合，电梯专项方案作为待核实事项在投标文件中列示\n关键岗位角色计划：我司设包级项目经理、施工经理、安全经理、质量经理、BIM协调负责人与界面协调工程师；拟用分包关键岗位团队可用性摘要与角色计划作为待核实事项列示，不作为已签约或已审核事实\n分包能力与团队可用性风险：拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案作为待核实事项，投标文件中列为计划与投标假设，不表述为已签约或已审核；未收到正式分包报价部分按成本预备额处理\n拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，在投标文件中作为计划与投标假设列示，不表述为已签约或已审核\n拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:23:02",
+        "verification_requests": [
+          {
+            "question": "电梯专项：电梯采购、安装、调试与质保由拟用电梯分包实施，我司统一管理供货周期、井道交接条件、安装调试计划与专项验收配合，电梯专项方案作为待核实事项在投标文件中列示",
+            "required_before_submission": false
+          },
+          {
+            "question": "关键岗位角色计划：我司设包级项目经理、施工经理、安全经理、质量经理、BIM协调负责人与界面协调工程师；拟用分包关键岗位团队可用性摘要与角色计划作为待核实事项列示，不作为已签约或已审核事实",
+            "required_before_submission": false
+          },
+          {
+            "question": "分包能力与团队可用性风险：拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案作为待核实事项，投标文件中列为计划与投标假设，不表述为已签约或已审核；未收到正式分包报价部分按成本预备额处理",
+            "required_before_submission": false
+          },
+          {
+            "question": "拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，在投标文件中作为计划与投标假设列示，不表述为已签约或已审核",
+            "required_before_submission": false
+          },
+          {
+            "question": "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000012",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "设计包衔接：深化设计与BIM管线综合成果须经设计包确认后方可施工，设置两次正式评审节点",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:55",
+        "verification_requests": [
+          {
+            "question": "设计包衔接：深化设计与BIM管线综合成果须经设计包确认后方可施工，设置两次正式评审节点",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000013",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_role": "owner",
+        "package_id": "CASE-0049/construction-2",
+        "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+        "agent_name": "吴国栋",
+        "department": "教育装备与后勤",
+        "position": "后勤保障主任",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个机电安装与电梯施工包选择一个既能控制交付风险、又对公共资金负责的投标人。评标推荐得宝国际，我认同这个方向，但必须清楚它是最低价，电梯供应商和专业分包尚未锁定，项目管理与质保投入相对偏低，风险预备费也有限。中交第一航务报价最高但包级统筹最稳健，得宝建筑团队计划具体但关键资源待选聘且电梯暂估偏高。综合权衡，得宝国际在业主控制回应、深化设计节点和文档纪律上最完整，报价在预算内且最低，对财政资金使用更有利。我决定判给得宝国际，同时把电梯供应商与专业分包承诺、项目管理与质保投入依据、风险预备费与价格调整机制作为签约前澄清重点，确保交付责任在合同层面落实。",
+        "content": "经评标与业主审查，本包判给得宝国际有限公司（COMP-0025），报价CNY 34,530,000。该投标以单一责任投标人身份覆盖给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试全部授权范围，深化设计与BIM管线综合节点清晰，业主审核、变更控制与文档移交机制完整，报价最低且在包预算内，有利于公共资金使用与全生命周期成本控制。签约前澄清聚焦于电梯供应商与专业安装分包承诺的落实、项目管理与质保投入依据的补充、风险预备费与价格调整机制的合同安排，以及备品备件配置对包内范围的覆盖，相关澄清与合同文件对齐业主审查关口。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T14:23:27",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-2",
+        "decision": "bid",
+        "reason": "组合体未成立，但本包边界清楚、不含土建与室外市政，我司资源账可用2.0、无占用，作为单一责任投标人承接包级交付在容量与责任体系上成立。机电各专业与电梯采购安装调试虽非我司核心能力，但属于行业成熟的可分包专业范围，可由我司以总承包方身份主导深化设计协调、界面管理、专项验收配合与质保期服务，通过普通专业分包、设备供应商、电梯安装调试单位、BIM深化顾问与检测机构补足，并由我司控制工期、安全、质量记录、付款协调与分包问责。原组合体谈判中要求对方书面承担机电技术权威与商业暴露的条件，随组合体不成立而不再作为前置门槛；其中团队可用性摘要、角色计划与电梯专项方案的要求，转为我司对拟用分包商的内部核实与投标假设，不写成已落实事实。投标文件将明确分包范围、界面划分、关键岗位角色计划、深化设计与调试责任、质保期分工，并设置周度界面协调与质量复核关口，以支撑技术可信度。",
+        "unresolved_condition_ids": [
+          "condition_3ba6cb1a0edb345b3fa3",
+          "condition_0a1ff5322496162f75ec",
+          "condition_1404688845b30ae609d8",
+          "condition_0cac2fc1dc8adb42858b",
+          "condition_5070577e294e347cb0aa",
+          "condition_c313c5b79d59c61451fc",
+          "condition_a4cff59d8ef58a568907",
+          "condition_4da9d36f089a1b08f7a3",
+          "condition_43ded03a5cb99e30702d",
+          "condition_939b9384cd7567d787b5"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本包以我司单一责任投标人身份投标，不依赖组合体。",
+          "机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任。",
+          "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核。",
+          "深化设计协调、BIM管线综合、周度界面协调会与质量复核关口由我司主导设置。",
+          "报价按工程量清单综合单价编制，未收到正式分包报价的部分按成本预备额处理，与造价包审核意见对照。",
+          "质保期服务由我司统一对外负责，分包按书面分工实施。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0049/construction-2",
+        "decision": "bid",
+        "reason": "管理层判断：本包属机电安装与电梯施工，落在我方总承包与机电协调能力范围内，资源账显示可用资源2.0、无占用，具备独立承担的项目容量。我们不缺核心交付责任，机电各专业与电梯采购安装可通过受控分包与采购安排纳入单一责任体系，由我方统一负责深化设计衔接、安装调试、专项验收配合、质保期服务与竣工资料，不需要另一家企业共享投标人身份或包级交付责任，故不采用组合体。主要风险是校园环境施工组织、与设计包和造价包的界面衔接、电梯采购安装调试的供应商可靠性，以及报价与造价咨询审核意见的对照；这些将通过角色计划与团队可用性摘要、机电各专业施工组织与交付方法、质量目标与保证措施、安全专项方案、进度计划视图与里程碑、风险应对与界面协调方案、电梯专项方案、质保与备品备件计划，以及按工程量清单综合单价编制的报价基础来管理，并在报价中保留合理风险余量。综合机会价值、能力匹配、资源余量和风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任总承包投标人身份独立投标，不组建组合体",
+          "机电各专业安装与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任",
+          "深化设计须与设计包、造价包成果衔接，相关界面在投标阶段按计划协调",
+          "报价按工程量清单综合单价编制，并对照造价咨询包审核意见",
+          "电梯供应商与各专业分包的最终选聘在投标后按采购程序落实，投标阶段仅作计划性安排",
+          "质保期服务与备品备件按业主要求在方案中承诺，具体供应安排在合同阶段细化"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0025",
+        "package_id": "CASE-0049/construction-2",
+        "decision": "bid",
+        "reason": "管理层认为该机电安装与电梯施工包落在公司总承包与机电施工能力范围内，边界清晰（不含土建与室外市政），资源占用0.7而公司可用资源2.0，具备独立承担的组织余量。公司具备ISO 9001、14001、45001体系认证，profile覆盖给排水、电气、通风空调、消防、弱电及电梯相关领域，可作为单一责任投标人主导深化设计协调、安装调试、专项验收配合与质保期服务。电梯采购安装、机电各专业分包属于常规专业分包与设备采购安排，通过分包管理、界面协调和风险应对方案控制，不构成需要共享投标人身份与包级交付责任的问责缺口，因此不选择组合体。报价按工程量清单综合单价编制，材料设备自购，需与造价咨询包审核意见对照，并在报价基础中体现全生命周期成本与备品备件安排。综上，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+          "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+          "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+          "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+          "质保期服务与备品备件计划按招标要求编入报价基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0049/construction-2_001",
+        "package_id": "CASE-0049/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "我司以单一责任投标人身份承接本包，对给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试的包级交付负总责。技术路线如下：\n\n1. 深化设计与BIM管线综合：由我司主导建立机电BIM协调模型与文档标准，设置模型会审与碰撞检查关口，与设计包、造价包成果逐项对照，形成可施工深化图与综合管线图，报业主与设计确认后实施。\n\n2. 专业分包组织：给排水与消防、电气与弱电智能化、通风空调安装与平衡调试、电梯采购安装调试分别由拟用专业分包与设备供应商承担，我司统一分包范围、界面划分、费用与风险分摊，保留更换不合格分包的合同权利。\n\n3. 质量与验收：执行材料设备进场复核、隐蔽工程验收、系统调试与联动测试、消防及电梯专项验收配合，竣工资料按分部分项归集，确保与造价包审核意见可对照。\n\n4. 电梯专项：电梯采购、安装、调试与质保由拟用电梯分包实施，我司统一管理供货周期、井道交接条件、安装调试计划与专项验收配合，电梯专项方案作为待核实事项在投标文件中列示。\n\n5. 校园环境施工组织：按教学与住宿使用要求组织公共通道协调、噪声与作业时段控制、临时围挡与安全通道，减少对校园正常秩序的影响。\n\n6. 质保期服务：由我司统一对外负责，分包按书面分工实施，备品备件按设备清单配置，响应时限与巡检计划在质保方案中明确。",
+        "implementation_plan": "总体按24个月项目工期安排，本包机电安装与电梯施工按以下阶段推进：\n\n第一阶段（第1至3月）：深化设计窗口。完成机电BIM协调模型、管线综合深化图、设备选型与采购计划，与设计包、造价包成果对照，提交业主审查。\n\n第二阶段（第4至10月）：预留预埋与主干管线安装。配合土建进度完成套管、预留孔洞、桥架与主干管道安装，同步开展电梯井道条件核查与电梯设备订货。\n\n第三阶段（第11至16月）：各专业系统安装。给排水、电气、通风空调、消防、弱电智能化分区分层安装，电梯设备进场安装，周度界面协调会与质量复核关口同步运行。\n\n第四阶段（第17至20月）：系统调试与专项验收。完成单机调试、系统联动调试、通风平衡调试、消防专项验收配合、电梯监督检验与弱电系统集成测试。\n\n第五阶段（第21至24月）：竣工资料移交、质保期启动与备品备件移交。\n\n关键岗位角色计划：我司设包级项目经理、施工经理、安全经理、质量经理、BIM协调负责人与界面协调工程师；拟用分包关键岗位团队可用性摘要与角色计划作为待核实事项列示，不作为已签约或已审核事实。",
+        "quotation": 42830000.0,
+        "schedule_commitment": "本包计划工期与项目总工期24个月衔接，自收到开工令起按深化设计、预留预埋、系统安装、调试与专项验收、竣工移交五阶段推进。关键里程碑：第3月完成深化设计与BIM管线综合报审；第10月完成主干管线与电梯井道条件核查；第16月完成各专业系统安装；第20月完成系统调试与消防、电梯专项验收；第24月完成竣工资料移交与质保期启动。我司承诺按周度界面协调会与月度进度评审控制偏差，电梯供货周期作为重点风险纳入采购计划前置管理。",
+        "compliance_statement": "我司接受业主及造价咨询包对工程量清单综合单价的审核与对照要求，报价基础按清单综合单价编制，材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件均纳入报价。我司设包级质量经理与文档控制岗位，执行材料设备进场复核、隐蔽验收、调试记录与竣工资料归集；付款与进度按合同节点报业主审核。深化设计成果、BIM模型与综合管线图报业主与设计确认后实施。我司理解本包不含土建结构与室外市政接驳，界面划分在投标文件中明确，与设计包、造价包成果衔接由我司统一协调。",
+        "risk_response": "主要风险与应对：\n1. 机电界面协调风险：设周度界面协调会与界面协调工程师，明确各专业分包交接条件与责任边界，质量复核关口前移。\n2. 电梯供货周期风险：电梯采购纳入早期订货计划，井道条件提前核查，供货节点与安装计划联动，保留更换不合格分包的合同权利。\n3. 消防与弱电专项验收风险：调试计划前置，专项验收配合由我司统一组织，分包按书面分工实施。\n4. 分包能力与团队可用性风险：拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案作为待核实事项，投标文件中列为计划与投标假设，不表述为已签约或已审核；未收到正式分包报价部分按成本预备额处理。\n5. 校园环境施工风险：公共通道协调、作业时段控制与安全通道设置纳入专项方案，减少对教学与住宿秩序影响。\n6. 价格风险：报价按工程量清单综合单价编制，未收到正式分包报价部分以成本预备额覆盖，报价与造价包审核意见对照。",
+        "submission_summary": "我司以单一责任投标人身份提交本包投标，报价总额为 CNY 42,830,000。报价按工程量清单综合单价编制，由以下成本构成：给排水与消防系统安装调试 CNY 8,650,000；电气与弱电智能化系统安装调试 CNY 11,200,000；通风空调系统安装与平衡调试 CNY 7,800,000；电梯采购安装与调试管理 CNY 6,350,000；BIM机电深化与管线综合协调 CNY 1,850,000；包级施工管理、安全文明施工与校园通道协调 CNY 2,650,000；检测、专项验收配合、质保期服务与备品备件 CNY 1,980,000；分包管理、界面协调与成本预备额 CNY 2,350,000。合计 CNY 42,830,000。\n\n报价基础说明：机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任；未收到正式分包报价的部分按成本预备额处理，并与造价咨询包审核意见对照。拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，在投标文件中作为计划与投标假设列示，不表述为已签约或已审核。质保期服务由我司统一对外负责，分包按书面分工实施。本报价在包预算 CNY 44,625,000 以内，体现全生命周期成本合理性。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水与消防系统安装调试（含材料设备采购）",
+            "amount": 8650000,
+            "basis": "按工程量清单综合单价估算，含管道、阀门、消防水系统、灭火设备采购与安装调试；未收到正式分包报价部分按成本预备额处理"
+          },
+          {
+            "item": "电气与弱电智能化系统安装调试（含材料设备采购）",
+            "amount": 11200000,
+            "basis": "含配电、照明、防雷接地、弱电智能化系统集成与调试；按清单综合单价与拟用分包询价估算，含设备采购与检测配合"
+          },
+          {
+            "item": "通风空调系统安装与平衡调试（含设备采购）",
+            "amount": 7800000,
+            "basis": "含风管、空调设备、冷热源及通风平衡调试；按清单综合单价估算，含设备采购与调试费用"
+          },
+          {
+            "item": "电梯采购安装与调试管理",
+            "amount": 6350000,
+            "basis": "含电梯设备采购、安装、调试、监督检验配合与质保期服务；按拟用电梯分包询价估算，未收到正式报价部分按成本预备额处理"
+          },
+          {
+            "item": "BIM机电深化与管线综合协调",
+            "amount": 1850000,
+            "basis": "含BIM协调模型建立、碰撞检查、深化图出图、模型会审与文档控制；按我司BIM协调团队与拟用顾问工作量估算"
+          },
+          {
+            "item": "包级施工管理、安全文明施工与校园通道协调",
+            "amount": 2650000,
+            "basis": "含我司项目经理、施工经理、安全经理、质量经理及界面协调人员费用，临时设施、安全通道、噪声控制与公共通道协调"
+          },
+          {
+            "item": "检测、专项验收配合、质保期服务与备品备件",
+            "amount": 1980000,
+            "basis": "含第三方检测配合、消防与电梯专项验收配合、质保期巡检与备品备件配置；按项目工期与设备清单估算"
+          },
+          {
+            "item": "分包管理、界面协调与成本预备额",
+            "amount": 2350000,
+            "basis": "含分包招标与管理、周度界面协调会、质量复核关口、未收到正式分包报价部分的成本预备额及价格风险缓冲"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_3ba6cb1a0edb345b3fa3",
+          "condition_0a1ff5322496162f75ec",
+          "condition_1404688845b30ae609d8",
+          "condition_0cac2fc1dc8adb42858b",
+          "condition_5070577e294e347cb0aa",
+          "condition_c313c5b79d59c61451fc",
+          "condition_a4cff59d8ef58a568907",
+          "condition_4da9d36f089a1b08f7a3",
+          "condition_43ded03a5cb99e30702d",
+          "condition_939b9384cd7567d787b5",
+          "condition_a525c8a1058829b99026",
+          "condition_3a55f053292483913beb",
+          "condition_174383e89631cf40ae05",
+          "condition_daaaa45d656c2826a060"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "本包以我司单一责任投标人身份投标，不依赖组合体。",
+          "机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任。",
+          "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核。",
+          "深化设计协调、BIM管线综合、周度界面协调会与质量复核关口由我司主导设置。",
+          "报价按工程量清单综合单价编制，未收到正式分包报价的部分按成本预备额处理，与造价包审核意见对照。",
+          "质保期服务由我司统一对外负责，分包按书面分工实施。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/construction-2_002",
+        "package_id": "CASE-0049/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份承担学生宿舍机电安装与电梯施工包。技术方案围绕给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试展开，不含土建结构与室外市政接驳。\n\n**角色计划与团队可用性摘要**：我方资源账显示可用资源2.0、无占用，具备独立承担本包的项目容量。拟设项目总监1名、机电经理1名、各专业工程师（给排水、电气、通风空调、消防、弱电）各1名、电梯专项协调员1名、BIM深化协调员1名、质量安全专员2名、文档控制员1名。机电各专业安装与电梯采购安装通过受控分包与采购安排实施，由我方统一管理分包界面、劳动力组织、质量记录与安全执行，保持单一责任与交付控制。\n\n**机电各专业施工组织与交付方法**：按设计包与造价包成果进行深化设计，完成管线综合与BIM协调，分系统编制施工方案与调试计划。给排水与消防系统按分区试压、冲洗、联动调试；电气与弱电智能化按回路校验、系统集成测试；通风空调按风量平衡与自控联调；电梯按采购、进场、安装、调试、专项验收流程管理。\n\n**质量目标与质量保证措施**：执行ISO 9001质量管理体系，设定一次验收合格率100%的质量目标，实行材料进场检验、工序三检、隐蔽工程验收、调试记录归档与竣工资料同步管理。\n\n**安全期望落实与专项安全方案**：执行ISO 45001职业健康安全管理体系，针对校园环境编制公共通道协调、临时用电、动火作业、高处作业与电梯井道作业专项安全方案，落实安全教育与每日巡查。\n\n**进度计划视图与里程碑安排**：按项目总工期24个月编排，机电深化设计与采购准备、各专业安装、系统调试、专项验收与移交分阶段推进，关键里程碑与设计包、造价包审核节点衔接。\n\n**电梯采购安装与调试专项方案**：电梯供应商与各专业分包的最终选聘在投标后按采购程序落实，投标阶段仅作计划性安排。我方将统一管理电梯采购、进场验收、安装调试、专项验收配合及质保期服务，并编制备品备件计划。\n\n**质保期服务与备品备件计划**：按业主要求承诺质保期服务，建立备品备件清单与响应机制，具体供应安排在合同阶段细化。",
+        "implementation_plan": "1. 投标后按采购程序选聘机电各专业分包与电梯供应商，签订受控分包与采购协议，明确界面、质量、安全与工期责任。\n2. 与设计包、造价包成果衔接，完成机电深化设计与BIM管线综合，报业主与造价咨询审核。\n3. 编制各专业施工方案、调试计划与专项安全方案，报审后实施。\n4. 按施工区域与系统分阶段组织安装，落实材料设备进场检验与工序验收。\n5. 分系统调试与联动测试，配合专项验收，同步整理竣工资料。\n6. 移交后进入质保期服务，执行备品备件计划与响应机制。",
+        "quotation": 36110000.0,
+        "schedule_commitment": "按项目总工期24个月编排。机电深化设计与采购准备阶段与设计包、造价包审核节点衔接；各专业安装按施工区域分阶段推进；系统调试与专项验收在安装完成后依次进行；质保期服务按合同约定执行。关键里程碑：深化设计完成、主要设备进场、各系统安装完成、联动调试完成、专项验收通过、移交。",
+        "compliance_statement": "我方接受业主对设计包、造价包成果衔接的审核意见，报价按工程量清单综合单价编制并对照造价咨询包审核意见。施工过程中接受业主与监理的进度、质量、安全监督，及时提交深化设计、调试记录与竣工资料。质保期服务与备品备件计划按业主要求落实。",
+        "risk_response": "主要风险及应对：\n1. 校园环境施工组织：编制公共通道协调与错峰施工方案，设置临时围挡与安全通道，减少对教学秩序影响。\n2. 与设计包、造价包界面衔接：建立定期协调会议与文件传递机制，深化设计成果报审后实施。\n3. 电梯采购安装调试供应商可靠性：投标后按采购程序选聘，合同明确供货、安装、调试与质保责任，我方统一管理界面。\n4. 报价与造价咨询审核意见对照：报价按工程量清单综合单价编制，保留风险余量，合同阶段按审核意见调整。\n5. 材料与人工价格波动：报价中已含风险余量，合同价格调整机制按招标文件约定执行。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立投标学生宿舍机电安装与电梯施工包，不组建组合体。报价按工程量清单综合单价编制，涵盖材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件，并对照造价咨询包审核意见。\n\n**报价构成（CNY）**：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装集成：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试：8,350,000（暂估，供应商投标后选聘）\n- BIM机电深化与管线综合协调：1,480,000\n- 项目管理、安全质量与竣工资料：2,360,000\n- 质保期服务与备品备件：1,120,000\n- 风险余量与价格调整缓冲：1,850,000\n\n**合计报价：36,110,000 CNY**，在包上限44,625,000 CNY内。报价结合材料价格指数1.0545、人工价格指数1.0980及校园施工组织难度保留合理风险余量。机电各专业与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水与消防系统安装调试",
+            "amount": 6850000,
+            "basis": "按工程量清单综合单价估算，含管道、设备、阀门、消防喷淋与联动调试，参考材料价格指数1.0545与人工价格指数1.0980"
+          },
+          {
+            "item": "电气与弱电智能化系统安装集成",
+            "amount": 7920000,
+            "basis": "按工程量清单综合单价估算，含配电、照明、防雷接地、弱电智能化系统集成与测试"
+          },
+          {
+            "item": "通风空调系统安装与平衡调试",
+            "amount": 6180000,
+            "basis": "按工程量清单综合单价估算，含风管、空调设备、自控联调与风量平衡调试"
+          },
+          {
+            "item": "电梯采购安装与调试",
+            "amount": 8350000,
+            "basis": "电梯设备采购、安装、调试与专项验收配合的暂估，供应商最终选聘在投标后按采购程序落实，投标阶段为计划性安排"
+          },
+          {
+            "item": "BIM机电深化与管线综合协调",
+            "amount": 1480000,
+            "basis": "深化设计协调、BIM模型检查与管线综合，与设计包、造价包成果衔接"
+          },
+          {
+            "item": "项目管理、安全质量与竣工资料",
+            "amount": 2360000,
+            "basis": "项目总监、机电经理、质量安全专员、文档控制员等管理人员费用，含校园环境施工组织与公共通道协调"
+          },
+          {
+            "item": "质保期服务与备品备件",
+            "amount": 1120000,
+            "basis": "质保期响应服务与备品备件计划，具体供应安排在合同阶段细化"
+          },
+          {
+            "item": "风险余量与价格调整缓冲",
+            "amount": 1850000,
+            "basis": "材料与人工价格波动、分包界面协调、校园施工组织难度及造价咨询审核意见对照的风险余量"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_481f0951828839de30ad",
+          "condition_e66fc988c7fee2bf00b5",
+          "condition_46293604c202954845a7"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任总承包投标人身份独立投标，不组建组合体",
+          "机电各专业安装与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任",
+          "深化设计须与设计包、造价包成果衔接，相关界面在投标阶段按计划协调",
+          "报价按工程量清单综合单价编制，并对照造价咨询包审核意见",
+          "电梯供应商与各专业分包的最终选聘在投标后按采购程序落实，投标阶段仅作计划性安排",
+          "质保期服务与备品备件按业主要求在方案中承诺，具体供应安排在合同阶段细化"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/construction-2_003",
+        "package_id": "CASE-0049/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一责任投标人身份承担学生宿舍机电安装与电梯施工包全部授权范围：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试，不含土建结构与室外市政接驳。公司持有ISO 9001、ISO 14001、ISO 45001体系认证，按内部质量程序对机电深化、材料设备采购、安装、调试、专项验收配合及质保期服务实施全过程管理。\n\n技术路线：\n1. 深化设计与BIM管线综合：以设计包成果为基准，在开工后30日内完成机电综合管线深化图与电梯井道接口复核，设置设计包与造价包联合评审节点，输出碰撞检查报告与净高分析，经业主与设计包确认后冻结施工版模型。\n2. 给排水与消防：按分区立管与横管预制化加工，消防系统按喷淋、消火栓、火灾报警分系统调试，配合消防专项验收。\n3. 电气与弱电智能化：配电箱柜、桥架、线缆敷设按回路编号管理，弱电系统完成综合布线、安防、门禁、网络集成调试。\n4. 通风空调：风管预制与漏光漏风检测，空调水系统冲洗与平衡调试，按房间逐间风量平衡并出具调试报告。\n5. 电梯采购安装调试：通过合格电梯供应商及专业安装分包实施，得宝国际作为单一责任方负责井道移交条件核查、到货验收、安装过程监督、调试与特种设备验收配合，并在投标阶段以报价与进度假设管理供应商承诺。\n6. 校园环境施工组织：按教学时段划分噪声与运输窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批后执行。\n\n质量目标：分项工程一次验收合格率100%，机电系统联动调试一次通过，竣工资料与BIM竣工模型同步移交。安全目标：依托ISO 45001体系编制临时用电、动火作业、高空作业、电梯井道作业专项方案，实现零重大安全事故。",
+        "implementation_plan": "总体按24个月项目工期编排，机电包施工期约16个月，与土建结构包穿插衔接，预留调试与验收窗口。\n\n阶段一（第1至2月）施工准备：组建机电总承包管理团队，完成深化设计启动、BIM管线综合建模、材料设备采购计划与电梯供应商技术接口确认；编制施工组织设计及专项安全方案报审。\n\n阶段二（第3至6月）预留预埋与主干管线：配合土建完成套管、预留孔洞复核，实施电气桥架主干、给排水立管、消防主干管、通风主干风管安装；电梯井道移交条件核查。\n\n阶段三（第7至12月）各专业全面安装：给排水、电气、通风空调、消防、弱电智能化分层分区安装；电梯设备到货验收并开始安装；每月召开机电综合协调会与造价咨询包审核意见对照会。\n\n阶段四（第13至16月）系统调试与专项验收：分系统单机调试、联动调试、风量水量平衡、消防检测、电梯特种设备验收；完成竣工资料编制与BIM竣工模型移交。\n\n阶段五（第17至24月）质保期服务：派驻维保人员，按备品备件计划供应，响应时间不超过24小时，每季度巡检一次。\n\n关键里程碑：深化设计冻结（第2月末）、主干管线完成（第6月末）、设备安装完成（第12月末）、联动调试完成（第15月末）、专项验收通过（第16月末）、竣工移交（第17月）、质保期服务启动。",
+        "quotation": 34530000.0,
+        "schedule_commitment": "承诺按项目总体24个月工期编排，机电包施工期16个月，关键里程碑如下：深化设计冻结第2月末；主干管线完成第6月末；设备安装完成第12月末；联动调试完成第15月末；专项验收通过第16月末；竣工移交第17月；质保期服务至第24月末。若设计包成果或土建移交延迟，得宝国际将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。",
+        "compliance_statement": "得宝国际接受业主及造价咨询包的全过程审核与支付审查。\n1. 报价基础：按工程量清单综合单价编制，材料设备自购，报价明细与造价咨询包审核意见逐项对照，差异说明随投标文件提交。\n2. 设计包衔接：深化设计与BIM管线综合成果须经设计包确认后方可施工，设置两次正式评审节点。\n3. 进度与质量审查：每月提交进度报告、质量检查记录与材料进场验收记录，接受业主抽查。\n4. 变更控制：任何界面调整或工程量变化按合同变更程序报审，未经批准不实施。\n5. 竣工资料：按业主档案要求编制竣工图、调试报告、验收记录与BIM竣工模型，随竣工移交同步提交。",
+        "risk_response": "主要风险与应对：\n1. 电梯供应商与专业安装分包界面风险：以合格供应商及专业分包为投标假设，得宝国际作为单一责任方统一管理到货验收、安装监督与调试，设置井道移交条件检查表与周例会制度；供应商最终承诺在合同签订前确认。\n2. 材料价格波动：报价中已含风险预备费，合同期内不另设调价机制；若主要材料价格指数波动超过10%，按合同约定程序与业主协商。\n3. 设计包与造价包成果衔接延迟：深化设计启动后设置评审节点，延迟超过14日启动赶工预案并报业主。\n4. 校园环境施工干扰：按教学时段划分噪声作业窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批。\n5. 专业分包管理：机电各专业分包纳入得宝国际统一质量、安全与进度管理体系，分包合同明确界面责任与验收标准。\n6. 质保期服务：派驻维保人员，备品备件按计划储备，响应时间不超过24小时。",
+        "submission_summary": "得宝国际有限公司以单一责任投标人身份提交学生宿舍机电安装与电梯施工包投标，报价总额为CNY 34,530,000，低于包预算44,625,000，价格基础为工程量清单综合单价，材料设备自购。\n\n报价构成：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装调试：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试管理：7,350,000\n- BIM深化设计与管线综合协调：1,280,000\n- 项目管理、安全文明施工与校园通道协调：2,150,000\n- 检测、专项验收配合、质保期服务与备品备件：1,680,000\n- 材料价格波动与分包界面风险预备费：1,120,000\n合计：34,530,000\n\n报价基础说明：电梯设备与专业安装分包按当前市场询价水平暂估，属投标阶段估算而非已收供应商报价；机电各专业分包范围在投标文件中明确，由得宝国际统一管理并承担单一责任。报价已考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，并预留约3%风险预备费，合同期内不另设调价机制。本报价与造价咨询包审核意见对照后提交，体现全生命周期成本与备品备件安排。\n\n支付安排建议：按月度进度计量支付，质保金按合同约定比例预留。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水与消防系统安装调试",
+            "amount": 6850000,
+            "basis": "按工程量清单综合单价估算，含管道、阀门、消防设备材料采购与安装、试压冲洗、消防检测配合；工程量以设计包图纸为暂估基础，待造价咨询包审核意见对照后复核。"
+          },
+          {
+            "item": "电气与弱电智能化系统安装调试",
+            "amount": 7920000,
+            "basis": "含配电箱柜、桥架、线缆、弱电设备材料采购与安装、综合布线及系统集成调试；按清单综合单价与暂估工程量计算。"
+          },
+          {
+            "item": "通风空调系统安装与平衡调试",
+            "amount": 6180000,
+            "basis": "含风管、空调水系统、设备采购安装、漏风检测与风量水量平衡调试；按清单综合单价与暂估工程量计算。"
+          },
+          {
+            "item": "电梯采购安装与调试管理",
+            "amount": 7350000,
+            "basis": "含电梯设备采购、专业安装分包、调试与特种设备验收配合；设备价格按当前市场询价水平暂估，安装分包按专业分包常规报价水平预留，属投标阶段估算而非已收供应商报价。"
+          },
+          {
+            "item": "BIM深化设计与管线综合协调",
+            "amount": 1280000,
+            "basis": "含BIM建模、碰撞检查、净高分析、设计包与造价包评审节点协调、竣工模型移交；按深化设计团队工作量估算。"
+          },
+          {
+            "item": "项目管理、安全文明施工与校园通道协调",
+            "amount": 2150000,
+            "basis": "含机电总承包管理团队、临时用电与专项安全方案、施工围挡与公共通道协调、成品保护；按16个月施工期管理投入估算。"
+          },
+          {
+            "item": "检测、专项验收配合、质保期服务与备品备件",
+            "amount": 1680000,
+            "basis": "含各系统检测费、消防与电梯专项验收配合、质保期维保人员与备品备件储备；按质保期服务计划估算。"
+          },
+          {
+            "item": "材料价格波动与分包界面风险预备费",
+            "amount": 1120000,
+            "basis": "考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，以及电梯供应商与机电专业分包界面协调风险，按直接费约3%预留；本项为风险预备，不构成对业主的调价机制。"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_8a8b53d31f42f8944c21",
+          "condition_2f45c1423da901d93d7e",
+          "condition_8d2e6523d0dafd7dcbf2"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+          "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+          "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+          "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+          "质保期服务与备品备件计划按招标要求编入报价基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0049/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0049/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 42830000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水与消防系统安装调试（含材料设备采购）",
+                "amount": 8650000,
+                "basis": "按工程量清单综合单价估算，含管道、阀门、消防水系统、灭火设备采购与安装调试；未收到正式分包报价部分按成本预备额处理"
+              },
+              {
+                "item": "电气与弱电智能化系统安装调试（含材料设备采购）",
+                "amount": 11200000,
+                "basis": "含配电、照明、防雷接地、弱电智能化系统集成与调试；按清单综合单价与拟用分包询价估算，含设备采购与检测配合"
+              },
+              {
+                "item": "通风空调系统安装与平衡调试（含设备采购）",
+                "amount": 7800000,
+                "basis": "含风管、空调设备、冷热源及通风平衡调试；按清单综合单价估算，含设备采购与调试费用"
+              },
+              {
+                "item": "电梯采购安装与调试管理",
+                "amount": 6350000,
+                "basis": "含电梯设备采购、安装、调试、监督检验配合与质保期服务；按拟用电梯分包询价估算，未收到正式报价部分按成本预备额处理"
+              },
+              {
+                "item": "BIM机电深化与管线综合协调",
+                "amount": 1850000,
+                "basis": "含BIM协调模型建立、碰撞检查、深化图出图、模型会审与文档控制；按我司BIM协调团队与拟用顾问工作量估算"
+              },
+              {
+                "item": "包级施工管理、安全文明施工与校园通道协调",
+                "amount": 2650000,
+                "basis": "含我司项目经理、施工经理、安全经理、质量经理及界面协调人员费用，临时设施、安全通道、噪声控制与公共通道协调"
+              },
+              {
+                "item": "检测、专项验收配合、质保期服务与备品备件",
+                "amount": 1980000,
+                "basis": "含第三方检测配合、消防与电梯专项验收配合、质保期巡检与备品备件配置；按项目工期与设备清单估算"
+              },
+              {
+                "item": "分包管理、界面协调与成本预备额",
+                "amount": 2350000,
+                "basis": "含分包招标与管理、周度界面协调会、质量复核关口、未收到正式分包报价部分的成本预备额及价格风险缓冲"
+              }
+            ],
+            "submission_summary": "我司以单一责任投标人身份提交本包投标，报价总额为 CNY 42,830,000。报价按工程量清单综合单价编制，由以下成本构成：给排水与消防系统安装调试 CNY 8,650,000；电气与弱电智能化系统安装调试 CNY 11,200,000；通风空调系统安装与平衡调试 CNY 7,800,000；电梯采购安装与调试管理 CNY 6,350,000；BIM机电深化与管线综合协调 CNY 1,850,000；包级施工管理、安全文明施工与校园通道协调 CNY 2,650,000；检测、专项验收配合、质保期服务与备品备件 CNY 1,980,000；分包管理、界面协调与成本预备额 CNY 2,350,000。合计 CNY 42,830,000。\n\n报价基础说明：机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任；未收到正式分包报价的部分按成本预备额处理，并与造价咨询包审核意见对照。拟用分包关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，在投标文件中作为计划与投标假设列示，不表述为已签约或已审核。质保期服务由我司统一对外负责，分包按书面分工实施。本报价在包预算 CNY 44,625,000 以内，体现全生命周期成本合理性。",
+            "unresolved_condition_ids": [
+              "condition_3ba6cb1a0edb345b3fa3",
+              "condition_0a1ff5322496162f75ec",
+              "condition_1404688845b30ae609d8",
+              "condition_0cac2fc1dc8adb42858b",
+              "condition_5070577e294e347cb0aa",
+              "condition_c313c5b79d59c61451fc",
+              "condition_a4cff59d8ef58a568907",
+              "condition_4da9d36f089a1b08f7a3",
+              "condition_43ded03a5cb99e30702d",
+              "condition_939b9384cd7567d787b5",
+              "condition_a525c8a1058829b99026",
+              "condition_3a55f053292483913beb",
+              "condition_174383e89631cf40ae05",
+              "condition_daaaa45d656c2826a060"
+            ],
+            "bid_assumptions": [
+              "本包以我司单一责任投标人身份投标，不依赖组合体。",
+              "机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任。",
+              "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核。",
+              "深化设计协调、BIM管线综合、周度界面协调会与质量复核关口由我司主导设置。",
+              "报价按工程量清单综合单价编制，未收到正式分包报价的部分按成本预备额处理，与造价包审核意见对照。",
+              "质保期服务由我司统一对外负责，分包按书面分工实施。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 36110000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水与消防系统安装调试",
+                "amount": 6850000,
+                "basis": "按工程量清单综合单价估算，含管道、设备、阀门、消防喷淋与联动调试，参考材料价格指数1.0545与人工价格指数1.0980"
+              },
+              {
+                "item": "电气与弱电智能化系统安装集成",
+                "amount": 7920000,
+                "basis": "按工程量清单综合单价估算，含配电、照明、防雷接地、弱电智能化系统集成与测试"
+              },
+              {
+                "item": "通风空调系统安装与平衡调试",
+                "amount": 6180000,
+                "basis": "按工程量清单综合单价估算，含风管、空调设备、自控联调与风量平衡调试"
+              },
+              {
+                "item": "电梯采购安装与调试",
+                "amount": 8350000,
+                "basis": "电梯设备采购、安装、调试与专项验收配合的暂估，供应商最终选聘在投标后按采购程序落实，投标阶段为计划性安排"
+              },
+              {
+                "item": "BIM机电深化与管线综合协调",
+                "amount": 1480000,
+                "basis": "深化设计协调、BIM模型检查与管线综合，与设计包、造价包成果衔接"
+              },
+              {
+                "item": "项目管理、安全质量与竣工资料",
+                "amount": 2360000,
+                "basis": "项目总监、机电经理、质量安全专员、文档控制员等管理人员费用，含校园环境施工组织与公共通道协调"
+              },
+              {
+                "item": "质保期服务与备品备件",
+                "amount": 1120000,
+                "basis": "质保期响应服务与备品备件计划，具体供应安排在合同阶段细化"
+              },
+              {
+                "item": "风险余量与价格调整缓冲",
+                "amount": 1850000,
+                "basis": "材料与人工价格波动、分包界面协调、校园施工组织难度及造价咨询审核意见对照的风险余量"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立投标学生宿舍机电安装与电梯施工包，不组建组合体。报价按工程量清单综合单价编制，涵盖材料设备采购、安装、调试、检测、验收配合、质保期服务及备品备件，并对照造价咨询包审核意见。\n\n**报价构成（CNY）**：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装集成：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试：8,350,000（暂估，供应商投标后选聘）\n- BIM机电深化与管线综合协调：1,480,000\n- 项目管理、安全质量与竣工资料：2,360,000\n- 质保期服务与备品备件：1,120,000\n- 风险余量与价格调整缓冲：1,850,000\n\n**合计报价：36,110,000 CNY**，在包上限44,625,000 CNY内。报价结合材料价格指数1.0545、人工价格指数1.0980及校园施工组织难度保留合理风险余量。机电各专业与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任。",
+            "unresolved_condition_ids": [
+              "condition_481f0951828839de30ad",
+              "condition_e66fc988c7fee2bf00b5",
+              "condition_46293604c202954845a7"
+            ],
+            "bid_assumptions": [
+              "以单一责任总承包投标人身份独立投标，不组建组合体",
+              "机电各专业安装与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任",
+              "深化设计须与设计包、造价包成果衔接，相关界面在投标阶段按计划协调",
+              "报价按工程量清单综合单价编制，并对照造价咨询包审核意见",
+              "电梯供应商与各专业分包的最终选聘在投标后按采购程序落实，投标阶段仅作计划性安排",
+              "质保期服务与备品备件按业主要求在方案中承诺，具体供应安排在合同阶段细化"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "quotation": 34530000.0,
+            "quotation_breakdown": [
+              {
+                "item": "给排水与消防系统安装调试",
+                "amount": 6850000,
+                "basis": "按工程量清单综合单价估算，含管道、阀门、消防设备材料采购与安装、试压冲洗、消防检测配合；工程量以设计包图纸为暂估基础，待造价咨询包审核意见对照后复核。"
+              },
+              {
+                "item": "电气与弱电智能化系统安装调试",
+                "amount": 7920000,
+                "basis": "含配电箱柜、桥架、线缆、弱电设备材料采购与安装、综合布线及系统集成调试；按清单综合单价与暂估工程量计算。"
+              },
+              {
+                "item": "通风空调系统安装与平衡调试",
+                "amount": 6180000,
+                "basis": "含风管、空调水系统、设备采购安装、漏风检测与风量水量平衡调试；按清单综合单价与暂估工程量计算。"
+              },
+              {
+                "item": "电梯采购安装与调试管理",
+                "amount": 7350000,
+                "basis": "含电梯设备采购、专业安装分包、调试与特种设备验收配合；设备价格按当前市场询价水平暂估，安装分包按专业分包常规报价水平预留，属投标阶段估算而非已收供应商报价。"
+              },
+              {
+                "item": "BIM深化设计与管线综合协调",
+                "amount": 1280000,
+                "basis": "含BIM建模、碰撞检查、净高分析、设计包与造价包评审节点协调、竣工模型移交；按深化设计团队工作量估算。"
+              },
+              {
+                "item": "项目管理、安全文明施工与校园通道协调",
+                "amount": 2150000,
+                "basis": "含机电总承包管理团队、临时用电与专项安全方案、施工围挡与公共通道协调、成品保护；按16个月施工期管理投入估算。"
+              },
+              {
+                "item": "检测、专项验收配合、质保期服务与备品备件",
+                "amount": 1680000,
+                "basis": "含各系统检测费、消防与电梯专项验收配合、质保期维保人员与备品备件储备；按质保期服务计划估算。"
+              },
+              {
+                "item": "材料价格波动与分包界面风险预备费",
+                "amount": 1120000,
+                "basis": "考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，以及电梯供应商与机电专业分包界面协调风险，按直接费约3%预留；本项为风险预备，不构成对业主的调价机制。"
+              }
+            ],
+            "submission_summary": "得宝国际有限公司以单一责任投标人身份提交学生宿舍机电安装与电梯施工包投标，报价总额为CNY 34,530,000，低于包预算44,625,000，价格基础为工程量清单综合单价，材料设备自购。\n\n报价构成：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装调试：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试管理：7,350,000\n- BIM深化设计与管线综合协调：1,280,000\n- 项目管理、安全文明施工与校园通道协调：2,150,000\n- 检测、专项验收配合、质保期服务与备品备件：1,680,000\n- 材料价格波动与分包界面风险预备费：1,120,000\n合计：34,530,000\n\n报价基础说明：电梯设备与专业安装分包按当前市场询价水平暂估，属投标阶段估算而非已收供应商报价；机电各专业分包范围在投标文件中明确，由得宝国际统一管理并承担单一责任。报价已考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，并预留约3%风险预备费，合同期内不另设调价机制。本报价与造价咨询包审核意见对照后提交，体现全生命周期成本与备品备件安排。\n\n支付安排建议：按月度进度计量支付，质保金按合同约定比例预留。",
+            "unresolved_condition_ids": [
+              "condition_8a8b53d31f42f8944c21",
+              "condition_2f45c1423da901d93d7e",
+              "condition_8d2e6523d0dafd7dcbf2"
+            ],
+            "bid_assumptions": [
+              "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+              "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+              "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+              "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+              "质保期服务与备品备件计划按招标要求编入报价基础"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 学生宿舍机电安装与电梯施工包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0049/construction-2",
+        "evaluators": [
+          "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "OWNER-c328a5d9ef0c7d_04_周文静",
+          "OWNER-c328a5d9ef0c7d_05_吴国栋"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0049/construction-2_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "以单一责任投标人身份统筹机电各专业与电梯分包，深化设计、BIM管线综合、质量复核关口与五阶段进度安排清晰，与设计包、造价包衔接路径明确。",
+            "cost_view": "报价CNY 42,830,000贴近包预算44,625,000，各分项按清单综合单价估算，未收到正式分包报价部分以成本预备额覆盖，价格基础可追溯但偏紧。",
+            "owner_control_view": "明确接受业主与造价咨询包审核，设质量经理与文档控制岗位，深化成果报审后实施，付款按合同节点报审，业主控制回应完整。",
+            "strengths": [
+              "包级统筹与单一责任架构清晰，界面协调与质量复核关口设置到位",
+              "电梯专项、校园通道协调与质保期服务均有书面安排",
+              "报价基础与造价包审核意见对照，文档纪律表述明确"
+            ],
+            "concerns": [
+              "拟用分包团队可用性、角色计划与电梯专项方案均列为待核实事项，交付资源尚未落实",
+              "未收到正式分包报价部分依赖成本预备额，存在后续价格与索赔暴露",
+              "报价接近预算上限，价格竞争力有限"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-2_002",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "以单一责任投标人身份独立投标，角色计划与团队可用性摘要具体，各专业施工组织、质量安全体系与调试流程覆盖包内需求。",
+            "cost_view": "报价CNY 36,110,000明显低于包预算，但电梯采购安装与调试列CNY 8,350,000暂估且供应商待选聘，风险余量CNY 1,850,000相对有限，低价可信度需核实。",
+            "owner_control_view": "接受业主与监理的进度、质量、安全监督，报价对照造价咨询包审核意见，但深化设计、调试记录与竣工资料的提交机制描述较概括。",
+            "strengths": [
+              "团队角色计划与可用资源摘要较具体，人员配置现实性较好",
+              "质量目标、安全专项方案与校园通道协调均有对应措施",
+              "报价在预算内且保留风险余量，价格具备吸引力"
+            ],
+            "concerns": [
+              "电梯供应商与各专业分包均待投标后选聘，关键资源与价格尚未锁定",
+              "电梯暂估金额偏高而其他分项偏低，报价结构均衡性存疑",
+              "质保期服务与备品备件具体安排留待合同阶段细化"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-2_003",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "technical_view": "以单一责任投标人身份承担全部授权范围，深化设计冻结、管线综合、各专业调试与电梯专项管理路线完整，机电包16个月施工期与总工期衔接合理。",
+            "cost_view": "报价CNY 34,530,000为三家最低，分项按清单综合单价估算并预留风险预备费，但电梯与专业分包均为投标阶段估算，低价对应的工作深度需核实。",
+            "owner_control_view": "接受业主与造价咨询包全过程审核，设两次设计评审节点、月度进度与质量报告、变更控制与竣工资料移交要求，业主控制回应最具体。",
+            "strengths": [
+              "深化设计、BIM管线综合与评审节点安排清晰，与设计包、造价包衔接路径明确",
+              "质量目标、安全专项方案、校园通道协调与质保响应时限均有量化承诺",
+              "业主审核、变更控制与文档移交机制表述完整，文档纪律较好"
+            ],
+            "concerns": [
+              "电梯供应商与专业安装分包仅为投标假设，最终承诺待合同签订前确认",
+              "报价最低且风险预备费有限，材料价格波动与分包界面存在后续索赔暴露",
+              "项目管理与检测质保分项投入相对偏低，需核实人力与备品备件配置是否覆盖范围"
+            ]
+          }
+        ],
+        "comparison_summary": "三家均为单一责任投标人，得宝国际在业主控制回应、深化设计节点与文档纪律上最完整，中交第一航务在包级统筹与风险缓冲上最稳健但报价最高，得宝建筑团队计划具体但关键资源待选聘。价格从CNY 34,530,000到CNY 42,830,000，最低价需结合电梯与分包未锁定情况核实其可信度。",
+        "recommended_winner": "COMP-0025",
+        "owner_review_notes": "建议优先与得宝国际谈判，要求其在签约前落实电梯供应商与专业分包承诺、补充项目管理与质保投入依据，并将风险预备费与价格调整机制写入合同。中交第一航务可作为备选，得宝建筑需澄清电梯暂估与分项报价结构后再比较。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0049",
+      "package_awards": [
+        {
+          "package_id": "CASE-0049/construction-2",
+          "selected_bidder_id": "COMP-0025",
+          "selected_bidder_name": "得宝国际有限公司",
+          "bidder_type": "company",
+          "decision_reason": "得宝国际以单一责任投标人身份覆盖全部授权范围，深化设计冻结、BIM管线综合、各专业调试与电梯专项管理路线完整，业主审核、变更控制与文档移交机制最具体，报价CNY 34,530,000为三家最低且在包预算内，对业主控制与 affordability 最有利。相比中交第一航务，其包级统筹稳健但报价最高且接近预算上限；相比得宝建筑，其团队计划具体但电梯暂估偏高且关键资源待选聘。得宝国际的电梯供应商与专业分包承诺、项目管理与质保投入依据、风险预备费与价格调整机制需在签约前澄清落实，但不改变判给结果。",
+          "unresolved_condition_ids": [
+            "condition_8a8b53d31f42f8944c21",
+            "condition_2f45c1423da901d93d7e",
+            "condition_8d2e6523d0dafd7dcbf2"
+          ],
+          "bid_assumptions": [
+            "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+            "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+            "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+            "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+            "质保期服务与备品备件计划按招标要求编入报价基础"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0025"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T14:22:15",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0049/construction-2",
+          "decision": "bid_with_consortium",
+          "reason": "本包为机电安装与电梯全专业集成包，要求深化设计、安装调试、专项验收与质保期服务一体化交付。我司在施工总承包协调、现场安全与质量文档管理上有底盘，但机电各专业与电梯采购调试并非核心能力，情景资料中也没有可核实的机电班组与电梯专项资源证据。单独投标在技术可信度和履约控制上偏弱，评标难以说服业主。以组合体方式与具备机电安装与电梯实施能力的伙伴共同投标，由伙伴承担机电专业技术权威与相应商业暴露，我司承担现场总协调、公共通道协调与界面管理，可使投标在技术、商务与责任划分上更完整。报价按工程量清单综合单价编制，材料设备采购、安装调试、检测验收配合与质保备件纳入报价基础，并与造价咨询包审核意见对照。组合体协议、责任划分与关键岗位人员到位情况须在投标前落实为书面文件。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "拟与具备机电安装与电梯实施能力的伙伴组成组合体，协议与责任划分在投标前以书面文件落实",
+            "机电各专业班组与电梯专项人员到位情况以伙伴提供的团队可用性摘要为准",
+            "报价按工程量清单综合单价编制，材料设备采购与质保备件纳入报价基础",
+            "深化设计窗口与设计包、造价包成果衔接按里程碑计划安排",
+            "电梯供货周期与专项验收配合在风险应对方案中单列"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:15",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0049/construction-2",
+          "decision": "bid",
+          "reason": "管理层判断：本包属机电安装与电梯施工，落在我方总承包与机电协调能力范围内，资源账显示可用资源2.0、无占用，具备独立承担的项目容量。我们不缺核心交付责任，机电各专业与电梯采购安装可通过受控分包与采购安排纳入单一责任体系，由我方统一负责深化设计衔接、安装调试、专项验收配合、质保期服务与竣工资料，不需要另一家企业共享投标人身份或包级交付责任，故不采用组合体。主要风险是校园环境施工组织、与设计包和造价包的界面衔接、电梯采购安装调试的供应商可靠性，以及报价与造价咨询审核意见的对照；这些将通过角色计划与团队可用性摘要、机电各专业施工组织与交付方法、质量目标与保证措施、安全专项方案、进度计划视图与里程碑、风险应对与界面协调方案、电梯专项方案、质保与备品备件计划，以及按工程量清单综合单价编制的报价基础来管理，并在报价中保留合理风险余量。综合机会价值、能力匹配、资源余量和风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一责任总承包投标人身份独立投标，不组建组合体",
+            "机电各专业安装与电梯采购安装通过受控分包与采购安排实施，由我方统一管理界面与交付责任",
+            "深化设计须与设计包、造价包成果衔接，相关界面在投标阶段按计划协调",
+            "报价按工程量清单综合单价编制，并对照造价咨询包审核意见",
+            "电梯供应商与各专业分包的最终选聘在投标后按采购程序落实，投标阶段仅作计划性安排",
+            "质保期服务与备品备件按业主要求在方案中承诺，具体供应安排在合同阶段细化"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:15",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0025",
+          "package_id": "CASE-0049/construction-2",
+          "decision": "bid",
+          "reason": "管理层认为该机电安装与电梯施工包落在公司总承包与机电施工能力范围内，边界清晰（不含土建与室外市政），资源占用0.7而公司可用资源2.0，具备独立承担的组织余量。公司具备ISO 9001、14001、45001体系认证，profile覆盖给排水、电气、通风空调、消防、弱电及电梯相关领域，可作为单一责任投标人主导深化设计协调、安装调试、专项验收配合与质保期服务。电梯采购安装、机电各专业分包属于常规专业分包与设备采购安排，通过分包管理、界面协调和风险应对方案控制，不构成需要共享投标人身份与包级交付责任的问责缺口，因此不选择组合体。报价按工程量清单综合单价编制，材料设备自购，需与造价咨询包审核意见对照，并在报价基础中体现全生命周期成本与备品备件安排。综上，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+            "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+            "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+            "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+            "质保期服务与备品备件计划按招标要求编入报价基础"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:26",
+        "event_type": "consortium_not_formed",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0049/construction-2"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:36",
+        "event_type": "bid_participation_reconsidered",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0049/construction-2",
+          "decision": "bid",
+          "reason": "组合体未成立，但本包边界清楚、不含土建与室外市政，我司资源账可用2.0、无占用，作为单一责任投标人承接包级交付在容量与责任体系上成立。机电各专业与电梯采购安装调试虽非我司核心能力，但属于行业成熟的可分包专业范围，可由我司以总承包方身份主导深化设计协调、界面管理、专项验收配合与质保期服务，通过普通专业分包、设备供应商、电梯安装调试单位、BIM深化顾问与检测机构补足，并由我司控制工期、安全、质量记录、付款协调与分包问责。原组合体谈判中要求对方书面承担机电技术权威与商业暴露的条件，随组合体不成立而不再作为前置门槛；其中团队可用性摘要、角色计划与电梯专项方案的要求，转为我司对拟用分包商的内部核实与投标假设，不写成已落实事实。投标文件将明确分包范围、界面划分、关键岗位角色计划、深化设计与调试责任、质保期分工，并设置周度界面协调与质量复核关口，以支撑技术可信度。",
+          "unresolved_condition_ids": [
+            "condition_3ba6cb1a0edb345b3fa3",
+            "condition_0a1ff5322496162f75ec",
+            "condition_1404688845b30ae609d8",
+            "condition_0cac2fc1dc8adb42858b",
+            "condition_5070577e294e347cb0aa",
+            "condition_c313c5b79d59c61451fc",
+            "condition_a4cff59d8ef58a568907",
+            "condition_4da9d36f089a1b08f7a3",
+            "condition_43ded03a5cb99e30702d",
+            "condition_939b9384cd7567d787b5"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "本包以我司单一责任投标人身份投标，不依赖组合体。",
+            "机电各专业与电梯采购安装调试由拟用专业分包与设备供应商承担，我司保留包级交付与分包问责责任。",
+            "拟用分包商的关键岗位团队可用性摘要、角色计划与电梯专项方案为待核实事项，投标文件中作为计划与投标假设列示，不表述为已签约或已审核。",
+            "深化设计协调、BIM管线综合、周度界面协调会与质量复核关口由我司主导设置。",
+            "报价按工程量清单综合单价编制，未收到正式分包报价的部分按成本预备额处理，与造价包审核意见对照。",
+            "质保期服务由我司统一对外负责，分包按书面分工实施。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:38",
+        "event_type": "internal_condition_review",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0049/construction-2",
+          "outcomes": [
+            {
+              "condition_id": "condition_3ba6cb1a0edb345b3fa3",
+              "question": "得宝方能否提供机电各专业与电梯安装调试的关键岗位人员到位摘要及团队可用性证据？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未提供任何具名机电与电梯关键岗位人员名单、到位时间或团队可用性证据，仅列出能力需求与投标内容要求。"
+            },
+            {
+              "condition_id": "condition_0a1ff5322496162f75ec",
+              "question": "得宝方是否接受书面责任划分，由其在组合体中承担机电技术权威与相应商业暴露？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有得宝方或任何组合体成员出具的书面责任划分或接受机电技术权威与商业暴露的承诺文件。"
+            },
+            {
+              "condition_id": "condition_1404688845b30ae609d8",
+              "question": "得宝任一家能否提交可核实的机电与电梯关键岗位团队可用性摘要、角色计划及电梯采购安装调试专项方案，并书面接受机电技术权威与相应商业暴露？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未包含可核实的团队可用性摘要、角色计划、电梯采购安装调试专项方案或书面接受技术权威与商业暴露的材料。"
+            },
+            {
+              "condition_id": "condition_0cac2fc1dc8adb42858b",
+              "question": "要求对方书面承担机电技术权威与商业暴露并提交团队可用性摘要、角色计划和电梯专项方案，否则退出",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有对方书面承担机电技术权威与商业暴露、提交团队可用性摘要、角色计划和电梯专项方案的任何证据。"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:15",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:23",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "recommended_winner": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:27",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-2",
+          "selected_bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-c328a5d9ef0c7d": {
+            "action": "accept",
+            "reason": "作为业主，我方确认接受本包（CASE-0049/construction-2）第1轮合同草案的全部条款：中标人为COMP-0025（得宝国际有限公司），合同价CNY 34,530,000，币种CNY，工作份额1.0，资源承诺0.7，范围限于给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试，不含土建结构与室外市政接驳，材料设备由中标人自行采购，cost_inclusion为owner_additional。\n\n我方对自身立场的决定如下，请写入下一稿：\n1. 固定总价范围：合同价CNY 34,530,000为固定总价，涵盖投标报价构成中全部八项内容，包括材料价格波动与分包界面风险预备费CNY 1,120,000；合同期内不设调价机制，材料价格指数波动不构成调价或索赔依据。\n2. 计量与支付基础：按月度进度计量支付，以经业主与造价咨询包审核确认的已完工程量为计量基础；质保金按合同价5%预留，质保期满且无未整改缺陷后返还。\n3. 审核期限：业主对月度进度计量申请的审核期为收到完整资料后14日；对深化设计成果的确认期为14日；对进度计划调整视图的审批期为7日。逾期未答复视为不构成批准，中标人可书面催告。\n4. 投标假设的处理：电梯供应商最终承诺须在合同签订前以书面形式提交业主确认，作为合同附件；未按期提交的，业主有权要求中标人更换合格供应商且不增加合同价。机电专业分包范围以投标文件所列界面为准，分包合同须报业主备案。\n5. 未决条件：投标文件中列明的三项未决条件（condition_8a8b53d31f42f8944c21、condition_2f45c1423da901d93d7e、condition_8d2e6523d0dafd7dcbf2）不构成对合同价、范围或工期的变更依据，仅作为中标人内部风险管理的披露事项。\n6. 未来交付物：深化设计、BIM综合成果、专项验收与竣工移交均作为合同义务按里程碑履行，须经业主及设计包、造价咨询包按约定节点审核确认，本接受不表示上述工程交付物或法定审批已经完成。\n\n上述决定不改变价格、币种、范围、成员与资源等规范字段，仅明确我方审核与支付立场。"
+          },
+          "COMP-0025": {
+            "action": "accept",
+            "reason": "得宝国际有限公司（COMP-0025）确认接受本包（CASE-0049/construction-2）第1轮合同草案的全部条款，作为单一责任投标人承担给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试范围，不含土建结构与室外市政接驳。价格CNY 34,530,000、币种CNY、成员COMP-0025、资源承诺0.7、工作份额1.0均按所供条款锁定，报价低于包预算44,625,000，价格基础为工程量清单综合单价，材料设备自购。工期承诺按项目总体24个月编排、机电包施工期16个月，关键里程碑为深化设计冻结第2月末、主干管线完成第6月末、设备安装完成第12月末、联动调试完成第15月末、专项验收通过第16月末、竣工移交第17月、质保期服务至第24月末；若设计包成果或土建移交延迟，将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。已披露的投标假设按风险分配接受：电梯采购安装调试通过合格电梯供应商及专业安装分包实施，由得宝国际作为单一责任方统一管理到货验收、安装监督与调试，供应商最终承诺在合同签订前确认；机电各专业分包纳入统一质量、安全与进度管理体系；深化设计与BIM管线综合按设计包与造价包成果衔接并设置评审节点；报价已考虑材料价格指数1.0545与劳动力价格指数1.0980波动并预留约3%风险预备费，合同期内不另设调价机制。关于未决条件，本方立场如下，请写入下一稿：电梯供应商与专业安装分包的技术接口与到货计划在合同签订前以书面确认函提交业主备案，不改变合同价格与工期；深化设计冻结与两次正式评审节点按第2月末与施工版模型冻结前执行，评审意见由业主与设计包在收到成果后14日内反馈，逾期视为无异议并进入下一节点；材料价格指数波动超过10%时按合同变更程序与业主协商，不构成自动调价。上述均为本方自身立场与可执行义务，不依赖本方组织另行出具文件。本接受仅授权可执行的模拟义务，不主张未来工程交付物或法定审批已经完成，相关成果按审查与验收条件作为义务履行。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM45BEE469/CASE-0049/construction-2/round-1/contract",
+          "simulation_id": "SIM45BEE469",
+          "project_id": "CASE-0049",
+          "package_id": "CASE-0049/construction-2",
+          "session_id": "SIM45BEE469/CASE-0049/construction-2/round-1",
+          "snapshot_version": "a754f8546169a0077a901a1396d02ea81c239933a14ebacd60e204f6dc2f9ac1",
+          "buyer_id": "OWNER-c328a5d9ef0c7d",
+          "bid_id": "bid_CASE-0049/construction-2_003",
+          "bidder_id": "COMP-0025",
+          "lead_id": "COMP-0025",
+          "members": [
+            "COMP-0025"
+          ],
+          "price": 34530000.0,
+          "currency": "CNY",
+          "resource_commitments": {
+            "COMP-0025": 0.7
+          },
+          "work_shares": {
+            "COMP-0025": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "d6f647eff61dda7fa41269e968d72bb98066b9be744f787af4cb6dfde3a6a8ad",
+          "terms": {
+            "schedule_commitment": "承诺按项目总体24个月工期编排，机电包施工期16个月，关键里程碑如下：深化设计冻结第2月末；主干管线完成第6月末；设备安装完成第12月末；联动调试完成第15月末；专项验收通过第16月末；竣工移交第17月；质保期服务至第24月末。若设计包成果或土建移交延迟，得宝国际将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。",
+            "risk_response": "主要风险与应对：\n1. 电梯供应商与专业安装分包界面风险：以合格供应商及专业分包为投标假设，得宝国际作为单一责任方统一管理到货验收、安装监督与调试，设置井道移交条件检查表与周例会制度；供应商最终承诺在合同签订前确认。\n2. 材料价格波动：报价中已含风险预备费，合同期内不另设调价机制；若主要材料价格指数波动超过10%，按合同约定程序与业主协商。\n3. 设计包与造价包成果衔接延迟：深化设计启动后设置评审节点，延迟超过14日启动赶工预案并报业主。\n4. 校园环境施工干扰：按教学时段划分噪声作业窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批。\n5. 专业分包管理：机电各专业分包纳入得宝国际统一质量、安全与进度管理体系，分包合同明确界面责任与验收标准。\n6. 质保期服务：派驻维保人员，备品备件按计划储备，响应时间不超过24小时。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0049/construction-2_003",
+              "package_id": "CASE-0049/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0025",
+              "bidder_name": "得宝国际有限公司",
+              "technical_proposal": "得宝国际有限公司以单一责任投标人身份承担学生宿舍机电安装与电梯施工包全部授权范围：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试，不含土建结构与室外市政接驳。公司持有ISO 9001、ISO 14001、ISO 45001体系认证，按内部质量程序对机电深化、材料设备采购、安装、调试、专项验收配合及质保期服务实施全过程管理。\n\n技术路线：\n1. 深化设计与BIM管线综合：以设计包成果为基准，在开工后30日内完成机电综合管线深化图与电梯井道接口复核，设置设计包与造价包联合评审节点，输出碰撞检查报告与净高分析，经业主与设计包确认后冻结施工版模型。\n2. 给排水与消防：按分区立管与横管预制化加工，消防系统按喷淋、消火栓、火灾报警分系统调试，配合消防专项验收。\n3. 电气与弱电智能化：配电箱柜、桥架、线缆敷设按回路编号管理，弱电系统完成综合布线、安防、门禁、网络集成调试。\n4. 通风空调：风管预制与漏光漏风检测，空调水系统冲洗与平衡调试，按房间逐间风量平衡并出具调试报告。\n5. 电梯采购安装调试：通过合格电梯供应商及专业安装分包实施，得宝国际作为单一责任方负责井道移交条件核查、到货验收、安装过程监督、调试与特种设备验收配合，并在投标阶段以报价与进度假设管理供应商承诺。\n6. 校园环境施工组织：按教学时段划分噪声与运输窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批后执行。\n\n质量目标：分项工程一次验收合格率100%，机电系统联动调试一次通过，竣工资料与BIM竣工模型同步移交。安全目标：依托ISO 45001体系编制临时用电、动火作业、高空作业、电梯井道作业专项方案，实现零重大安全事故。",
+              "implementation_plan": "总体按24个月项目工期编排，机电包施工期约16个月，与土建结构包穿插衔接，预留调试与验收窗口。\n\n阶段一（第1至2月）施工准备：组建机电总承包管理团队，完成深化设计启动、BIM管线综合建模、材料设备采购计划与电梯供应商技术接口确认；编制施工组织设计及专项安全方案报审。\n\n阶段二（第3至6月）预留预埋与主干管线：配合土建完成套管、预留孔洞复核，实施电气桥架主干、给排水立管、消防主干管、通风主干风管安装；电梯井道移交条件核查。\n\n阶段三（第7至12月）各专业全面安装：给排水、电气、通风空调、消防、弱电智能化分层分区安装；电梯设备到货验收并开始安装；每月召开机电综合协调会与造价咨询包审核意见对照会。\n\n阶段四（第13至16月）系统调试与专项验收：分系统单机调试、联动调试、风量水量平衡、消防检测、电梯特种设备验收；完成竣工资料编制与BIM竣工模型移交。\n\n阶段五（第17至24月）质保期服务：派驻维保人员，按备品备件计划供应，响应时间不超过24小时，每季度巡检一次。\n\n关键里程碑：深化设计冻结（第2月末）、主干管线完成（第6月末）、设备安装完成（第12月末）、联动调试完成（第15月末）、专项验收通过（第16月末）、竣工移交（第17月）、质保期服务启动。",
+              "quotation": 34530000.0,
+              "schedule_commitment": "承诺按项目总体24个月工期编排，机电包施工期16个月，关键里程碑如下：深化设计冻结第2月末；主干管线完成第6月末；设备安装完成第12月末；联动调试完成第15月末；专项验收通过第16月末；竣工移交第17月；质保期服务至第24月末。若设计包成果或土建移交延迟，得宝国际将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。",
+              "compliance_statement": "得宝国际接受业主及造价咨询包的全过程审核与支付审查。\n1. 报价基础：按工程量清单综合单价编制，材料设备自购，报价明细与造价咨询包审核意见逐项对照，差异说明随投标文件提交。\n2. 设计包衔接：深化设计与BIM管线综合成果须经设计包确认后方可施工，设置两次正式评审节点。\n3. 进度与质量审查：每月提交进度报告、质量检查记录与材料进场验收记录，接受业主抽查。\n4. 变更控制：任何界面调整或工程量变化按合同变更程序报审，未经批准不实施。\n5. 竣工资料：按业主档案要求编制竣工图、调试报告、验收记录与BIM竣工模型，随竣工移交同步提交。",
+              "risk_response": "主要风险与应对：\n1. 电梯供应商与专业安装分包界面风险：以合格供应商及专业分包为投标假设，得宝国际作为单一责任方统一管理到货验收、安装监督与调试，设置井道移交条件检查表与周例会制度；供应商最终承诺在合同签订前确认。\n2. 材料价格波动：报价中已含风险预备费，合同期内不另设调价机制；若主要材料价格指数波动超过10%，按合同约定程序与业主协商。\n3. 设计包与造价包成果衔接延迟：深化设计启动后设置评审节点，延迟超过14日启动赶工预案并报业主。\n4. 校园环境施工干扰：按教学时段划分噪声作业窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批。\n5. 专业分包管理：机电各专业分包纳入得宝国际统一质量、安全与进度管理体系，分包合同明确界面责任与验收标准。\n6. 质保期服务：派驻维保人员，备品备件按计划储备，响应时间不超过24小时。",
+              "submission_summary": "得宝国际有限公司以单一责任投标人身份提交学生宿舍机电安装与电梯施工包投标，报价总额为CNY 34,530,000，低于包预算44,625,000，价格基础为工程量清单综合单价，材料设备自购。\n\n报价构成：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装调试：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试管理：7,350,000\n- BIM深化设计与管线综合协调：1,280,000\n- 项目管理、安全文明施工与校园通道协调：2,150,000\n- 检测、专项验收配合、质保期服务与备品备件：1,680,000\n- 材料价格波动与分包界面风险预备费：1,120,000\n合计：34,530,000\n\n报价基础说明：电梯设备与专业安装分包按当前市场询价水平暂估，属投标阶段估算而非已收供应商报价；机电各专业分包范围在投标文件中明确，由得宝国际统一管理并承担单一责任。报价已考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，并预留约3%风险预备费，合同期内不另设调价机制。本报价与造价咨询包审核意见对照后提交，体现全生命周期成本与备品备件安排。\n\n支付安排建议：按月度进度计量支付，质保金按合同约定比例预留。",
+              "quotation_breakdown": [
+                {
+                  "item": "给排水与消防系统安装调试",
+                  "amount": 6850000,
+                  "basis": "按工程量清单综合单价估算，含管道、阀门、消防设备材料采购与安装、试压冲洗、消防检测配合；工程量以设计包图纸为暂估基础，待造价咨询包审核意见对照后复核。"
+                },
+                {
+                  "item": "电气与弱电智能化系统安装调试",
+                  "amount": 7920000,
+                  "basis": "含配电箱柜、桥架、线缆、弱电设备材料采购与安装、综合布线及系统集成调试；按清单综合单价与暂估工程量计算。"
+                },
+                {
+                  "item": "通风空调系统安装与平衡调试",
+                  "amount": 6180000,
+                  "basis": "含风管、空调水系统、设备采购安装、漏风检测与风量水量平衡调试；按清单综合单价与暂估工程量计算。"
+                },
+                {
+                  "item": "电梯采购安装与调试管理",
+                  "amount": 7350000,
+                  "basis": "含电梯设备采购、专业安装分包、调试与特种设备验收配合；设备价格按当前市场询价水平暂估，安装分包按专业分包常规报价水平预留，属投标阶段估算而非已收供应商报价。"
+                },
+                {
+                  "item": "BIM深化设计与管线综合协调",
+                  "amount": 1280000,
+                  "basis": "含BIM建模、碰撞检查、净高分析、设计包与造价包评审节点协调、竣工模型移交；按深化设计团队工作量估算。"
+                },
+                {
+                  "item": "项目管理、安全文明施工与校园通道协调",
+                  "amount": 2150000,
+                  "basis": "含机电总承包管理团队、临时用电与专项安全方案、施工围挡与公共通道协调、成品保护；按16个月施工期管理投入估算。"
+                },
+                {
+                  "item": "检测、专项验收配合、质保期服务与备品备件",
+                  "amount": 1680000,
+                  "basis": "含各系统检测费、消防与电梯专项验收配合、质保期维保人员与备品备件储备；按质保期服务计划估算。"
+                },
+                {
+                  "item": "材料价格波动与分包界面风险预备费",
+                  "amount": 1120000,
+                  "basis": "考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，以及电梯供应商与机电专业分包界面协调风险，按直接费约3%预留；本项为风险预备，不构成对业主的调价机制。"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_8a8b53d31f42f8944c21",
+                "condition_2f45c1423da901d93d7e",
+                "condition_8d2e6523d0dafd7dcbf2"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+                "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+                "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+                "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+                "质保期服务与备品备件计划按招标要求编入报价基础"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "d6f647eff61dda7fa41269e968d72bb98066b9be744f787af4cb6dfde3a6a8ad"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0049/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+          "budget": 44625000.0,
+          "currency": "CNY",
+          "buyer_id": "OWNER-c328a5d9ef0c7d"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "internal_condition_review": true,
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {
+      "condition_3ba6cb1a0edb345b3fa3": {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-2",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未提供任何具名机电与电梯关键岗位人员名单、到位时间或团队可用性证据，仅列出能力需求与投标内容要求。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "531cf3abff571076eb7e0225b04dd9e21d64c2e6c2a145f8603c870a213ee830"
+      },
+      "condition_0a1ff5322496162f75ec": {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-2",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有得宝方或任何组合体成员出具的书面责任划分或接受机电技术权威与商业暴露的承诺文件。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "d7730280ff6df36f56585be02acf181788fb3b1022ded572f7ab02062b21ed38"
+      },
+      "condition_1404688845b30ae609d8": {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-2",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未包含可核实的团队可用性摘要、角色计划、电梯采购安装调试专项方案或书面接受技术权威与商业暴露的材料。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "67a50272163ab9b9ca3e46f2da5cdaedbec10d6246433fa6c623b33c6fca7988"
+      },
+      "condition_0cac2fc1dc8adb42858b": {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-2",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有对方书面承担机电技术权威与商业暴露、提交团队可用性摘要、角色计划和电梯专项方案的任何证据。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "83581ebf598f50ffd3768bde7c66b18786292493e6951c340f8d1538261e0c3f"
+      }
+    }
+  },
+  "proposal": {
+    "proposal_id": "SIM45BEE469/CASE-0049/construction-2/round-1/contract",
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/construction-2",
+    "session_id": "SIM45BEE469/CASE-0049/construction-2/round-1",
+    "snapshot_version": "a754f8546169a0077a901a1396d02ea81c239933a14ebacd60e204f6dc2f9ac1",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "bid_id": "bid_CASE-0049/construction-2_003",
+    "bidder_id": "COMP-0025",
+    "lead_id": "COMP-0025",
+    "members": [
+      "COMP-0025"
+    ],
+    "price": 34530000.0,
+    "currency": "CNY",
+    "resource_commitments": {
+      "COMP-0025": 0.7
+    },
+    "work_shares": {
+      "COMP-0025": 1.0
+    },
+    "signatures": {
+      "OWNER-c328a5d9ef0c7d": true,
+      "COMP-0025": true
+    },
+    "signed_terms_hash": "d6f647eff61dda7fa41269e968d72bb98066b9be744f787af4cb6dfde3a6a8ad",
+    "terms": {
+      "schedule_commitment": "承诺按项目总体24个月工期编排，机电包施工期16个月，关键里程碑如下：深化设计冻结第2月末；主干管线完成第6月末；设备安装完成第12月末；联动调试完成第15月末；专项验收通过第16月末；竣工移交第17月；质保期服务至第24月末。若设计包成果或土建移交延迟，得宝国际将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。",
+      "risk_response": "主要风险与应对：\n1. 电梯供应商与专业安装分包界面风险：以合格供应商及专业分包为投标假设，得宝国际作为单一责任方统一管理到货验收、安装监督与调试，设置井道移交条件检查表与周例会制度；供应商最终承诺在合同签订前确认。\n2. 材料价格波动：报价中已含风险预备费，合同期内不另设调价机制；若主要材料价格指数波动超过10%，按合同约定程序与业主协商。\n3. 设计包与造价包成果衔接延迟：深化设计启动后设置评审节点，延迟超过14日启动赶工预案并报业主。\n4. 校园环境施工干扰：按教学时段划分噪声作业窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批。\n5. 专业分包管理：机电各专业分包纳入得宝国际统一质量、安全与进度管理体系，分包合同明确界面责任与验收标准。\n6. 质保期服务：派驻维保人员，备品备件按计划储备，响应时间不超过24小时。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0049/construction-2_003",
+        "package_id": "CASE-0049/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一责任投标人身份承担学生宿舍机电安装与电梯施工包全部授权范围：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试，不含土建结构与室外市政接驳。公司持有ISO 9001、ISO 14001、ISO 45001体系认证，按内部质量程序对机电深化、材料设备采购、安装、调试、专项验收配合及质保期服务实施全过程管理。\n\n技术路线：\n1. 深化设计与BIM管线综合：以设计包成果为基准，在开工后30日内完成机电综合管线深化图与电梯井道接口复核，设置设计包与造价包联合评审节点，输出碰撞检查报告与净高分析，经业主与设计包确认后冻结施工版模型。\n2. 给排水与消防：按分区立管与横管预制化加工，消防系统按喷淋、消火栓、火灾报警分系统调试，配合消防专项验收。\n3. 电气与弱电智能化：配电箱柜、桥架、线缆敷设按回路编号管理，弱电系统完成综合布线、安防、门禁、网络集成调试。\n4. 通风空调：风管预制与漏光漏风检测，空调水系统冲洗与平衡调试，按房间逐间风量平衡并出具调试报告。\n5. 电梯采购安装调试：通过合格电梯供应商及专业安装分包实施，得宝国际作为单一责任方负责井道移交条件核查、到货验收、安装过程监督、调试与特种设备验收配合，并在投标阶段以报价与进度假设管理供应商承诺。\n6. 校园环境施工组织：按教学时段划分噪声与运输窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批后执行。\n\n质量目标：分项工程一次验收合格率100%，机电系统联动调试一次通过，竣工资料与BIM竣工模型同步移交。安全目标：依托ISO 45001体系编制临时用电、动火作业、高空作业、电梯井道作业专项方案，实现零重大安全事故。",
+        "implementation_plan": "总体按24个月项目工期编排，机电包施工期约16个月，与土建结构包穿插衔接，预留调试与验收窗口。\n\n阶段一（第1至2月）施工准备：组建机电总承包管理团队，完成深化设计启动、BIM管线综合建模、材料设备采购计划与电梯供应商技术接口确认；编制施工组织设计及专项安全方案报审。\n\n阶段二（第3至6月）预留预埋与主干管线：配合土建完成套管、预留孔洞复核，实施电气桥架主干、给排水立管、消防主干管、通风主干风管安装；电梯井道移交条件核查。\n\n阶段三（第7至12月）各专业全面安装：给排水、电气、通风空调、消防、弱电智能化分层分区安装；电梯设备到货验收并开始安装；每月召开机电综合协调会与造价咨询包审核意见对照会。\n\n阶段四（第13至16月）系统调试与专项验收：分系统单机调试、联动调试、风量水量平衡、消防检测、电梯特种设备验收；完成竣工资料编制与BIM竣工模型移交。\n\n阶段五（第17至24月）质保期服务：派驻维保人员，按备品备件计划供应，响应时间不超过24小时，每季度巡检一次。\n\n关键里程碑：深化设计冻结（第2月末）、主干管线完成（第6月末）、设备安装完成（第12月末）、联动调试完成（第15月末）、专项验收通过（第16月末）、竣工移交（第17月）、质保期服务启动。",
+        "quotation": 34530000.0,
+        "schedule_commitment": "承诺按项目总体24个月工期编排，机电包施工期16个月，关键里程碑如下：深化设计冻结第2月末；主干管线完成第6月末；设备安装完成第12月末；联动调试完成第15月末；专项验收通过第16月末；竣工移交第17月；质保期服务至第24月末。若设计包成果或土建移交延迟，得宝国际将在7日内提交调整后的进度计划视图报业主审批，不因此增加合同工期以外的索赔。",
+        "compliance_statement": "得宝国际接受业主及造价咨询包的全过程审核与支付审查。\n1. 报价基础：按工程量清单综合单价编制，材料设备自购，报价明细与造价咨询包审核意见逐项对照，差异说明随投标文件提交。\n2. 设计包衔接：深化设计与BIM管线综合成果须经设计包确认后方可施工，设置两次正式评审节点。\n3. 进度与质量审查：每月提交进度报告、质量检查记录与材料进场验收记录，接受业主抽查。\n4. 变更控制：任何界面调整或工程量变化按合同变更程序报审，未经批准不实施。\n5. 竣工资料：按业主档案要求编制竣工图、调试报告、验收记录与BIM竣工模型，随竣工移交同步提交。",
+        "risk_response": "主要风险与应对：\n1. 电梯供应商与专业安装分包界面风险：以合格供应商及专业分包为投标假设，得宝国际作为单一责任方统一管理到货验收、安装监督与调试，设置井道移交条件检查表与周例会制度；供应商最终承诺在合同签订前确认。\n2. 材料价格波动：报价中已含风险预备费，合同期内不另设调价机制；若主要材料价格指数波动超过10%，按合同约定程序与业主协商。\n3. 设计包与造价包成果衔接延迟：深化设计启动后设置评审节点，延迟超过14日启动赶工预案并报业主。\n4. 校园环境施工干扰：按教学时段划分噪声作业窗口，设置独立施工通道与临时围挡，公共通道协调方案报业主审批。\n5. 专业分包管理：机电各专业分包纳入得宝国际统一质量、安全与进度管理体系，分包合同明确界面责任与验收标准。\n6. 质保期服务：派驻维保人员，备品备件按计划储备，响应时间不超过24小时。",
+        "submission_summary": "得宝国际有限公司以单一责任投标人身份提交学生宿舍机电安装与电梯施工包投标，报价总额为CNY 34,530,000，低于包预算44,625,000，价格基础为工程量清单综合单价，材料设备自购。\n\n报价构成：\n- 给排水与消防系统安装调试：6,850,000\n- 电气与弱电智能化系统安装调试：7,920,000\n- 通风空调系统安装与平衡调试：6,180,000\n- 电梯采购安装与调试管理：7,350,000\n- BIM深化设计与管线综合协调：1,280,000\n- 项目管理、安全文明施工与校园通道协调：2,150,000\n- 检测、专项验收配合、质保期服务与备品备件：1,680,000\n- 材料价格波动与分包界面风险预备费：1,120,000\n合计：34,530,000\n\n报价基础说明：电梯设备与专业安装分包按当前市场询价水平暂估，属投标阶段估算而非已收供应商报价；机电各专业分包范围在投标文件中明确，由得宝国际统一管理并承担单一责任。报价已考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，并预留约3%风险预备费，合同期内不另设调价机制。本报价与造价咨询包审核意见对照后提交，体现全生命周期成本与备品备件安排。\n\n支付安排建议：按月度进度计量支付，质保金按合同约定比例预留。",
+        "quotation_breakdown": [
+          {
+            "item": "给排水与消防系统安装调试",
+            "amount": 6850000,
+            "basis": "按工程量清单综合单价估算，含管道、阀门、消防设备材料采购与安装、试压冲洗、消防检测配合；工程量以设计包图纸为暂估基础，待造价咨询包审核意见对照后复核。"
+          },
+          {
+            "item": "电气与弱电智能化系统安装调试",
+            "amount": 7920000,
+            "basis": "含配电箱柜、桥架、线缆、弱电设备材料采购与安装、综合布线及系统集成调试；按清单综合单价与暂估工程量计算。"
+          },
+          {
+            "item": "通风空调系统安装与平衡调试",
+            "amount": 6180000,
+            "basis": "含风管、空调水系统、设备采购安装、漏风检测与风量水量平衡调试；按清单综合单价与暂估工程量计算。"
+          },
+          {
+            "item": "电梯采购安装与调试管理",
+            "amount": 7350000,
+            "basis": "含电梯设备采购、专业安装分包、调试与特种设备验收配合；设备价格按当前市场询价水平暂估，安装分包按专业分包常规报价水平预留，属投标阶段估算而非已收供应商报价。"
+          },
+          {
+            "item": "BIM深化设计与管线综合协调",
+            "amount": 1280000,
+            "basis": "含BIM建模、碰撞检查、净高分析、设计包与造价包评审节点协调、竣工模型移交；按深化设计团队工作量估算。"
+          },
+          {
+            "item": "项目管理、安全文明施工与校园通道协调",
+            "amount": 2150000,
+            "basis": "含机电总承包管理团队、临时用电与专项安全方案、施工围挡与公共通道协调、成品保护；按16个月施工期管理投入估算。"
+          },
+          {
+            "item": "检测、专项验收配合、质保期服务与备品备件",
+            "amount": 1680000,
+            "basis": "含各系统检测费、消防与电梯专项验收配合、质保期维保人员与备品备件储备；按质保期服务计划估算。"
+          },
+          {
+            "item": "材料价格波动与分包界面风险预备费",
+            "amount": 1120000,
+            "basis": "考虑材料价格指数1.0545与劳动力价格指数1.0980的波动，以及电梯供应商与机电专业分包界面协调风险，按直接费约3%预留；本项为风险预备，不构成对业主的调价机制。"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_8a8b53d31f42f8944c21",
+          "condition_2f45c1423da901d93d7e",
+          "condition_8d2e6523d0dafd7dcbf2"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "电梯采购安装调试拟通过合格电梯供应商及专业安装分包实施，具体承诺在投标阶段按报价与进度假设管理",
+          "机电各专业安装与调试拟通过专业分包与自有管理团队组合实施，分包范围在投标文件中明确",
+          "深化设计与BIM管线综合按设计包与造价包成果衔接，设置评审节点与文档交付标准",
+          "报价按工程量清单综合单价编制，材料设备自购，并与造价咨询包审核意见对照",
+          "质保期服务与备品备件计划按招标要求编入报价基础"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

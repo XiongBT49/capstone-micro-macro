@@ -1,0 +1,2053 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM45BEE469/CASE-0049/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "CNY",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "CNY",
+      "package_budget": 82875000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "CNY",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+        "owner_id": "OWNER-c328a5d9ef0c7d",
+        "project_id": "CASE-0049",
+        "project_type": "building",
+        "region": "Guangzhou",
+        "scope": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包"
+      },
+      "package": {
+        "package_id": "CASE-0049/construction-1",
+        "project_id": "CASE-0049",
+        "kind": "construction",
+        "buyer_id": "OWNER-c328a5d9ef0c7d",
+        "name": "学生宿舍主体土建与结构施工包",
+        "scope": "11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。",
+        "budget": 82875000.0,
+        "currency": "CNY",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0049/design",
+          "CASE-0049/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0493",
+          "COMP-0025"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-c328a5d9ef0c7d": {
+        "entity_id": "OWNER-c328a5d9ef0c7d",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_name": "广州市黄埔区教育局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-c328a5d9ef0c7d",
+          "name": "广州市黄埔区教育局",
+          "role": "Owner",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0049",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM45BEE469/CASE-0049/cost/round-1/contract",
+              "project_id": "CASE-0049",
+              "package_id": "CASE-0049/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1800000.0,
+              "currency": "CNY",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+              "project_id": "CASE-0049",
+              "package_id": "CASE-0049/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4480000.0,
+              "currency": "CNY",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM45BEE469/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "package_id": "CASE-0049/design",
+            "contract_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+            "buyer_id": "OWNER-c328a5d9ef0c7d",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 4480000.0,
+            "currency": "CNY",
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "package_id": "CASE-0049/cost",
+            "contract_id": "SIM45BEE469/CASE-0049/cost/round-1/contract",
+            "buyer_id": "OWNER-c328a5d9ef0c7d",
+            "members": [
+              "COMP-0208"
+            ],
+            "price": 1800000.0,
+            "currency": "CNY",
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0049",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0049",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0493": {
+        "entity_id": "COMP-0493",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0493",
+          "company_name": "得宝建筑集团有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0493",
+          "name": "得宝建筑集团有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "faf18b9fea1593777f16b2fa9c1b6c6f70a33600ec7a110632bf9c64ee6756e1"
+  },
+  "spec": {
+    "package_id": "CASE-0049/construction-1",
+    "project_id": "CASE-0049",
+    "kind": "construction",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "name": "学生宿舍主体土建与结构施工包",
+    "scope": "11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。",
+    "budget": 82875000.0,
+    "currency": "CNY",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0049/design",
+      "CASE-0049/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0493",
+      "COMP-0025"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0049",
+      "project_name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "project_type": "building",
+      "location": "Guangzhou",
+      "owner_intent": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "CNY 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0049",
+      "project_scope": "本项目为广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包，位于广州市黄埔区，建筑面积约11650平方米，采用DBB交付模式。业主为广州市黄埔区教育局，项目预算1.5亿元人民币，工期24个月。本次招标包为施工总承包中的主体土建与结构施工包（CASE-0049/construction-1），范围包括土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工，不含机电安装、室外工程与电梯，材料由中标人自行采购。业主已另行委托设计包（CASE-0049/design）与造价咨询包（CASE-0049/cost），本施工包须与设计、造价咨询成果紧密衔接。业主将按模拟情景要求，对投标人的能力匹配、人员配置真实性、质量安全目标、文件纪律及接口协调进行定性比较与判给。",
+      "functional_requirements": [
+        "满足11650平方米学生宿舍的居住功能与安全疏散要求，土建施工须为后续机电安装、电梯及室外工程提供合格界面。",
+        "主体结构、砌体、屋面、外墙及室内初装修须达到设计文件与业主质量目标要求，满足耐久性与可维护性预期。",
+        "施工组织须考虑校园环境与公共通道协调，减少对学校正常教学与周边居民的影响。",
+        "材料采购与进场计划须与施工进度匹配，并保留完整的质量证明与追溯文件。",
+        "须配合设计包与造价咨询包完成图纸深化、变更审核与费用控制，确保施工范围与投资控制目标一致。"
+      ],
+      "technical_requirements": [
+        "BIM协调：施工包须按设计包提供的模型进行施工深化与碰撞检查，提交施工阶段BIM协调记录。",
+        "机电协调：土建施工须预留机电套管、孔洞及设备基础，并与机电安装包进行接口确认。",
+        "结构协调：主体结构施工须与设计包结构专业保持沟通，重大节点须经业主与设计确认。",
+        "运输接口布置：施工场地出入口、材料运输路线须与校园交通及公共通道协调，并提交交通组织方案。",
+        "公共通道布置：施工期间须维持校园安全通道，设置临时围挡与指示，并制定公共通道协调计划。",
+        "耐久性目标：主要结构材料与外墙饰面须满足设计使用年限及当地气候耐久性要求。",
+        "可维护性目标：屋面、外墙及室内初装修须便于后期维护，提交可维护性说明。",
+        "业主验收路径：分部分项验收须按业主审查节点进行，隐蔽工程须经业主代表与监理见证。",
+        "能耗目标：施工临时用电用水须有计量与节约措施，并配合设计包节能目标。"
+      ],
+      "budget_policy": "本施工包预算为82875000元人民币（CNY），属业主额外成本（owner_additional），已包含在项目总预算1.5亿元内。业主将依据造价咨询包提供的工程量清单与造价建议进行评审，采用定性比较原则，综合判断报价合理性、价格依据清晰度及风险应对成本。付款安排按里程碑与业主审查节点挂钩，变更须经业主变更控制程序批准。",
+      "schedule_policy": "总工期24个月，施工包须提交符合里程碑的进度计划，明确土方、基础、主体结构、砌体、屋面、外墙及初装修各阶段时间。业主审查时间、设计包与造价咨询包的接口时间、公共通道协调时间须在计划中单独列明。进度计划须考虑校园学期安排与公共通道协调窗口，并保留合理风险缓冲。",
+      "compliance_requirements": [
+        "业主审查节奏：施工包须按业主设定的周报/月报节奏提交进度、质量、安全与文件报告，重要节点须提前报审。",
+        "问题升级路径：现场问题须按承包商→监理→业主代表的路径升级，重大事项须提交业主决策。",
+        "文件纪律：施工文件、材料证明、验收记录须完整归档，格式与提交时间须符合业主要求。",
+        "接口签认：与设计包、造价咨询包、机电安装及电梯等接口须经业主代表签认。",
+        "公共通道协调：施工期间公共通道调整须经业主与学校方确认，并提前公告。",
+        "质量目标跟踪：业主将按质量目标清单跟踪分部分项验收合格率与整改闭环。",
+        "安全期望跟踪：业主将跟踪安全巡查记录、隐患整改与安全培训执行情况。",
+        "变更控制纪律：任何范围、预算或工期变更须经业主变更控制程序批准，未经批准不得实施。"
+      ],
+      "risk_priorities": [
+        "施工范围与设计、造价咨询成果的接口风险，须通过接口签认与协调会议控制。",
+        "校园环境下的公共通道与安全协调风险，须提前制定交通组织与围挡方案。",
+        "材料价格波动与采购风险，须在报价中体现风险应对并提交采购计划。",
+        "工期风险，须识别关键路径并提交进度风险应对措施。",
+        "质量与安全风险，须建立质量安全目标跟踪与整改闭环机制。",
+        "变更控制风险，须严格执行业主变更程序，防止范围蔓延。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0049/construction-1",
+          "package_type": "contractor",
+          "package_name": "学生宿舍主体土建与结构施工包",
+          "scope": "Authorized scope: 11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。\nBuyer refinement: 11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。须与设计包、造价咨询包协调，并接受业主与监理的审查与接口签认。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "居住建筑土建施工总承包能力",
+            "校园环境施工组织与公共通道协调能力",
+            "主体结构与砌体、屋面、外墙施工能力",
+            "室内初装修施工与质量控制能力",
+            "材料采购与供应链协调能力",
+            "BIM施工深化与接口协调能力",
+            "质量、安全与文件管理能力",
+            "进度计划与风险应对能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工组织设计与交付方法",
+            "质量目标与质量保证方案",
+            "安全期望跟踪与安全管理方案",
+            "报价依据与价格构成说明",
+            "进度计划与里程碑视图",
+            "风险识别与风险应对方案",
+            "接口协调与公共通道协调方案",
+            "文件管理与归档计划"
+          ],
+          "pricing_requirements": "按工程量清单综合单价报价，报价须包含材料、人工、机械、管理费、利润、风险及规费税金，并说明价格依据与风险应对成本。报价以人民币（CNY）计，业主将结合造价咨询意见进行价格合理性比较。\nBinding currency: CNY; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "delivery confidence",
+            "capability fit",
+            "price reasonableness",
+            "risk control",
+            "staffing realism",
+            "owner review clarity",
+            "documentation discipline",
+            "quality target fit",
+            "safety expectation tracking",
+            "interface coordination",
+            "public access coordination"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标人的能力匹配、人员配置真实性、价格合理性、风险控制与交付信心，综合判断后判给最符合业主目标与项目控制要求的投标人。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0049/construction-1",
+        "package_type": "contractor",
+        "package_name": "学生宿舍主体土建与结构施工包",
+        "scope": "Authorized scope: 11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。\nBuyer refinement: 11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。须与设计包、造价咨询包协调，并接受业主与监理的审查与接口签认。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "居住建筑土建施工总承包能力",
+          "校园环境施工组织与公共通道协调能力",
+          "主体结构与砌体、屋面、外墙施工能力",
+          "室内初装修施工与质量控制能力",
+          "材料采购与供应链协调能力",
+          "BIM施工深化与接口协调能力",
+          "质量、安全与文件管理能力",
+          "进度计划与风险应对能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工组织设计与交付方法",
+          "质量目标与质量保证方案",
+          "安全期望跟踪与安全管理方案",
+          "报价依据与价格构成说明",
+          "进度计划与里程碑视图",
+          "风险识别与风险应对方案",
+          "接口协调与公共通道协调方案",
+          "文件管理与归档计划"
+        ],
+        "pricing_requirements": "按工程量清单综合单价报价，报价须包含材料、人工、机械、管理费、利润、风险及规费税金，并说明价格依据与风险应对成本。报价以人民币（CNY）计，业主将结合造价咨询意见进行价格合理性比较。\nBinding currency: CNY; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "delivery confidence",
+          "capability fit",
+          "price reasonableness",
+          "risk control",
+          "staffing realism",
+          "owner review clarity",
+          "documentation discipline",
+          "quality target fit",
+          "safety expectation tracking",
+          "interface coordination",
+          "public access coordination"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标人的能力匹配、人员配置真实性、价格合理性、风险控制与交付信心，综合判断后判给最符合业主目标与项目控制要求的投标人。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_name": "广州市黄埔区教育局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0493",
+        "company_name": "得宝建筑集团有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-c328a5d9ef0c7d": [
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "局领导",
+          "position": "分管副局长",
+          "personal_profile": "在压力下优先考虑程序合规与公众问责，首先关注招标包是否满足教育设施交付的时限与质量目标，倾向于在讨论中强调风险控制与资源平衡，常把技术争议拉回到预算与工期约束。",
+          "responsibilities": [
+            "主持采购方案决策",
+            "审定招标包划分与发包策略",
+            "协调跨部门资源与业主需求",
+            "监督质量目标与工期目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健直接，先听各方意见后归纳决策要点，用词正式且注重留痕。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "基建科",
+          "position": "科长",
+          "personal_profile": "对施工可行性与现场条件高度敏感，首先核查投标单位的团队可用性与交付方法，在讨论中容易与成本控制视角产生张力，坚持质量审查与独立检查不能因赶工而妥协。",
+          "responsibilities": [
+            "编制工程需求与质量目标",
+            "审核投标人交付方案与进度安排",
+            "组织现场考察与答疑",
+            "监督施工过程质量与安全"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实细致，习惯用具体案例和数据说明问题，对模糊承诺会追问细节。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "agent_name": "黄家豪",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "计财科",
+          "position": "副科长",
+          "personal_profile": "以资金安全和支付合规为第一判断标准，首先审视报价基础与付款评审流程，在讨论中常提醒预算上限与现金流风险，对超出概算的变更持审慎态度。",
+          "responsibilities": [
+            "审核项目预算与报价基础",
+            "设计付款评审与成本控制机制",
+            "监控合同支付与变更",
+            "评估财务风险与资金安排"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "谨慎条理，偏好书面依据与量化分析，发言常带条件限定。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_04_周文静",
+          "agent_name": "周文静",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "设计管理组",
+          "position": "设计协调负责人",
+          "personal_profile": "关注设计意图在施工中的可实施性，首先检查图纸深度与专业接口，在讨论中容易与施工方就设计变更责任产生分歧，强调设计协调与文档纪律。",
+          "responsibilities": [
+            "协调设计单位与施工单位接口",
+            "审查施工图与设计变更",
+            "管理设计文档与版本控制",
+            "参与质量目标设定与验收"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "理性清晰，善用图纸与规范说话，对接口遗漏会直接指出。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+          "agent_name": "吴国栋",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "教育装备与后勤",
+          "position": "后勤保障主任",
+          "personal_profile": "从最终使用者角度思考，首先关注宿舍功能布局与运维便利性，在讨论中常提出运营期成本与可持续性目标，容易与设计方就使用需求细节反复拉锯。",
+          "responsibilities": [
+            "提出使用需求与功能标准",
+            "参与设计评审与验收",
+            "协调学校运营衔接",
+            "跟踪可持续性目标落实"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "亲和务实，习惯用使用场景描述需求，对影响师生体验的细节坚持己见。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策与业主界面",
+          "position": "项目总监",
+          "personal_profile": "压力下先看合同边界与业主决策链，习惯把工期、付款与变更责任放在同一张表上权衡。他最先注意到的是业主审批节奏与总包责任界面是否清晰，常把乐观的施工安排拉回到可交付承诺，带来的张力是进度诉求与风险留白之间的拉扯。",
+          "responsibilities": [
+            "统筹本包投标与实施总体策略",
+            "业主界面与关键干系人协调",
+            "重大风险与资源投入的最终裁决",
+            "组合体与分包安排的决策把关"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列条件，对模糊承诺会当场追问依据。"
+        },
+        {
+          "agent_id": "COMP-0153_02_黄敏芝",
+          "agent_name": "黄敏芝",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力下先核对报价基础与材料价格波动敞口，倾向用可追溯的单价与工程量支撑判断。她最先注意到清单缺项与付款节点错配，常提醒团队不要用低价换中标，带来的张力是成本纪律与市场竞争力之间的取舍。",
+          "responsibilities": [
+            "报价基础与成本测算复核",
+            "材料采购与付款评审",
+            "变更与索赔的商务评估",
+            "成本目标跟踪与偏差预警"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，用数据与假设条件说话，对未量化的乐观估计会要求补充依据。"
+        },
+        {
+          "agent_id": "COMP-0153_03_苏浩然",
+          "agent_name": "苏浩然",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "施工技术与交付",
+          "position": "施工技术负责人",
+          "personal_profile": "工程思维强，压力下先看施工方案可行性与现场资源匹配，习惯把工序衔接和季节影响提前排入计划。他最先注意到图纸与现场条件的冲突以及关键线路上的资源缺口，常提出更稳妥但更耗时的做法，带来的张力是技术稳妥与工期压缩之间的矛盾。",
+          "responsibilities": [
+            "施工组织设计与工序安排",
+            "土建与结构施工技术方案审查",
+            "现场资源计划与班组调配",
+            "工期视图与进度纠偏"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实具体，喜欢用工序图和节点说明问题，对不落地的进度承诺会直接指出风险。"
+        },
+        {
+          "agent_id": "COMP-0153_04_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与独立核查",
+          "position": "质量与核查主管",
+          "personal_profile": "标准意识强，压力下先看质量目标是否可验证、检查记录是否闭环，倾向在隐蔽工程前设置独立复核点。她最先注意到材料进场验收与工序交接的薄弱环节，常因坚持复检而拖慢节奏，带来的张力是质量底线与施工效率之间的冲突。",
+          "responsibilities": [
+            "质量目标跟踪与验收计划",
+            "材料与工序的独立检查安排",
+            "质量文档与记录纪律",
+            "整改闭环与质量风险上报"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨克制，用检查清单和证据说话，对跳过复核的做法会明确反对。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何俊霆",
+          "agent_name": "何俊霆",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "安全环保与合规",
+          "position": "安全环保经理",
+          "personal_profile": "风险预判型，压力下先看现场高风险作业与合规许可是否到位，习惯把安全投入视为不可压缩项。他最先注意到临时用电、高处作业与环保措施的执行缺口，常在赶工讨论中提出停工整改建议，带来的张力是安全合规与进度压力之间的对立。",
+          "responsibilities": [
+            "安全与环保管理方案落实",
+            "合规许可与监管沟通",
+            "现场风险巡查与隐患整改",
+            "可持续目标与文明施工跟踪"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "坚定明确，以风险等级和整改时限表达立场，对侥幸心理会直接警示。"
+        },
+        {
+          "agent_id": "COMP-0153_06_郑晓彤",
+          "agent_name": "郑晓彤",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "投标与文件治理",
+          "position": "投标协调与文档主管",
+          "personal_profile": "流程导向，压力下先看投标文件完整性与评标要点对应关系，习惯用清单管理资格证明、技术标与商务标的交叉引用。她最先注意到文件版本不一致与响应遗漏，常要求留出复核缓冲，带来的张力是文档严谨与提交时限之间的紧张。",
+          "responsibilities": [
+            "投标文件编制与响应核对",
+            "资格与业绩材料整理",
+            "评标要点对照与内部复核",
+            "文档版本与提交纪律管理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致耐心，以清单和截止时间推动协作，对临时改动会要求书面确认。"
+        }
+      ],
+      "COMP-0493": [
+        {
+          "agent_id": "COMP-0493_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。对业主变更和设计协调敏感，常提醒团队不要因局部优化牺牲整体交付。讨论中倾向于推动快速决策，但会要求关键风险有预案。",
+          "responsibilities": [
+            "统筹施工包整体交付与业主接口",
+            "协调设计、成本与施工团队的工作衔接",
+            "监控工期与资源计划执行",
+            "主持内部风险评审与决策会议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，善于用简明语言总结复杂问题，强调行动项与责任人。"
+        },
+        {
+          "agent_id": "COMP-0493_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "成本与商务管理部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，在压力下首先检查报价基础与支付条件。倾向于保守估计成本，对材料价格波动和现金流风险警觉。讨论中常提出成本优化建议，但反对为中标而牺牲合理利润。",
+          "responsibilities": [
+            "编制与管理施工包报价与成本计划",
+            "审核分包与材料采购合同条款",
+            "监控项目现金流与支付评审",
+            "评估变更与索赔的成本影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、条理清晰，习惯用数据支撑观点，对模糊表述会追问细节。"
+        },
+        {
+          "agent_id": "COMP-0493_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "注重现场可执行性和工序衔接，在压力下优先解决实际施工障碍。对劳动力、机械和材料到场时间非常敏感，常从施工可行性角度质疑设计或计划。讨论中倾向于务实方案，但可能低估长期管理成本。",
+          "responsibilities": [
+            "编制施工组织设计与进度计划",
+            "管理现场土建施工与分包作业",
+            "协调材料采购与进场安排",
+            "跟踪现场质量与安全措施落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实、直白，喜欢用现场实例说明问题，关注具体操作细节。"
+        },
+        {
+          "agent_id": "COMP-0493_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "质量与安全部",
+          "position": "质量安全经理",
+          "personal_profile": "对质量目标和安全合规有强烈责任感，在压力下首先检查是否满足规范与体系要求。对文档纪律和检查记录非常重视，常提醒团队不要为赶工牺牲质量。讨论中倾向于坚持标准，但会考虑实际执行成本。",
+          "responsibilities": [
+            "建立并维护项目质量与安全管理体系",
+            "组织内部质量检查与独立复核",
+            "跟踪质量目标与整改闭环",
+            "审核分包商质量安全资质与表现"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、有条理，习惯引用程序和标准，强调证据与记录。"
+        },
+        {
+          "agent_id": "COMP-0493_05_吴国栋",
+          "agent_name": "吴国栋",
+          "company_id": "COMP-0493",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调负责人",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，在压力下优先识别设计冲突和可施工性问题。对图纸深度和设计变更的连锁影响敏感，常从全生命周期角度提出建议。讨论中倾向于提前解决问题，但可能增加前期协调时间。",
+          "responsibilities": [
+            "协调设计院与施工团队的技术接口",
+            "审核施工图与设计变更的施工可行性",
+            "管理设计交底与图纸会审",
+            "跟踪设计问题对工期与成本的影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "温和、分析性强，善于用图示和对比说明问题，注重共识建立。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。对业主变更和审批延迟敏感，倾向于在讨论中强调风险缓冲和决策时效，常把技术问题拉回到商业与合同层面。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "对接业主与监管方，协调报批报建",
+            "主持内部评审，跟踪质量与工期目标",
+            "审批分包与采购方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，善用结构化汇报，在会议中快速收敛分歧，但对细节追问耐心有限。"
+        },
+        {
+          "agent_id": "COMP-0025_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，先看报价构成与支付条件，再评估风险敞口。在讨论中常提醒成本超支和现金流压力，倾向于用保守假设做价格基础，对模糊的业主要求会要求书面澄清。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付评审",
+            "管理成本控制与变更索赔",
+            "评估分包商报价合理性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨、细致，习惯用数据说话，表达清晰但偏保守，对不确定事项会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0025_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，首先关注施工可行性和工序衔接，对资源到位和班组配合极为敏感。在讨论中常从实际执行角度提出反对意见，强调工期压缩带来的质量与安全风险，倾向于留出合理缓冲。",
+          "responsibilities": [
+            "编制施工方案与进度计划",
+            "管理现场施工与分包协调",
+            "监督质量目标与安全措施落实",
+            "编制现场报告与进度汇报"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实、直白，喜欢用现场案例说明问题，对理论性讨论缺乏耐心，但愿意倾听一线反馈。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全主任",
+          "personal_profile": "以标准和程序为出发点，先检查质量目标和安全合规性，对任何偏离规范的做法保持警惕。在讨论中常扮演质疑者角色，强调独立检查与文档纪律，倾向于用检查清单和整改闭环来推动决策。",
+          "responsibilities": [
+            "建立质量与安全管理体系",
+            "组织内部质量审查与独立检查",
+            "跟踪整改闭环与文档记录",
+            "评估分包商质量安全表现"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理分明、坚持原则，沟通时引用规范条文，语气平和但立场坚定，不易妥协。"
+        },
+        {
+          "agent_id": "COMP-0025_05_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调经理",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，先关注图纸可施工性和专业接口。在讨论中常提出优化建议以降低施工难度，但对设计变更的连锁影响保持谨慎，倾向于提前协调各专业冲突。",
+          "responsibilities": [
+            "协调设计院与施工团队接口",
+            "审核施工图可施工性",
+            "管理设计变更与技术澄清",
+            "参与价值工程与方案优化"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和、善于倾听，习惯用图示和对比方案沟通，在分歧中扮演调解角色。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-1",
+        "agent_id": "COMP-0153_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "项目决策与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个11650平方米学生宿舍的主体土建与结构施工包，预算约8287.5万元人民币，工期24个月，属于我们作为施工总承包企业的核心业务范围：土方、基础、主体结构、砌体、屋面、外墙、室内初装修，材料自采。公司资料显示我们具备建设工程施工、土石方、砼结构构件制造、建筑材料销售等许可与能力，施工能力、质量与安全管理参数均在0.8以上，资源占用为零、可用资源2.0，完全能独立承担。包内不含机电、室外工程与电梯，接口主要是与设计包、造价咨询包的协调以及业主与监理的审查签认，这些属于正常的施工总承包管理职责，不需要引入组合体来分担投标人身份或交付责任。真正的风险在于：校园环境施工的公共通道协调、BIM施工深化、材料价格指数上行（材料1.05、人工1.10）带来的成本压力，以及报价合理性比较。这些应通过施工组织设计、进度计划、风险应对成本计入报价、分包与采购安排来解决，而不是靠组合体。我们应以单一责任主体独立投标，把接口协调、质量目标、安全跟踪、文件管理写实写细，报价按工程量清单综合单价并说明价格依据。",
+        "content": "管理层决定：以中交第一航务工程局有限公司单一责任主体身份，独立投标学生宿舍主体土建与结构施工包（CASE-0049/construction-1），报价以人民币计，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金，并附价格依据与风险应对成本说明。投标文件将重点呈现：角色计划与团队可用性摘要、施工组织设计与交付方法、质量目标与质量保证方案、安全期望跟踪与安全管理方案、进度计划与里程碑视图、接口协调与公共通道协调方案、文件管理与归档计划。针对校园环境施工，我们将设置分区围挡与公共通道疏导、错峰运输与噪声控制；针对BIM施工深化，明确深化责任人与设计包、造价咨询包的接口签认流程；针对材料与人工价格上行，在报价中列明风险应对成本并锁定主要材料采购与供应链安排。本包不含机电、室外工程与电梯，相关界面在施工组织中明确划界，不纳入本包责任。所有分包与采购安排作为投标假设在文件中如实说明，不作为已落实承诺表述。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:21:44",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0493",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-1",
+        "agent_id": "COMP-0493_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个与我们主业高度吻合的居住建筑土建总承包包：土方、基础、主体结构、砌体、屋面、外墙、室内初装修，材料自采，不含机电、室外与电梯，边界清晰。我们公司资料覆盖总承包、施工管理、土方、地基、地下工程、道路桥梁等，且持有ISO三体系认证，施工与质量能力在情景参数中处于中上水平，资源占用为零、可用资源2.0，完全能作为单一责任投标人独立承担。真正的挑战在于：包件要求与设计包、造价咨询包协调并接受业主与监理审查签认，校园环境施工需要公共通道协调，BIM施工深化与接口管理要落地，报价须以人民币综合单价覆盖材料、人工、机械、管理费、利润、风险与规费税金，且上限82875000元。这些都属于正常的总承包管理风险，可通过施工组织设计、接口协调方案、进度里程碑视图、质量与安全方案、风险应对成本计入报价来解决，不需要另一家企业共享投标人身份或承担包级交付责任。因此我倾向独立投标，而不是组合体。需要提醒内部：团队可用性摘要、BIM深化人员配置、材料采购与供应链安排目前只是计划，不是已落实的承诺，报价中的风险与材料价格波动应对须留出合理余量，不能把意向当作已签合同。",
+        "content": "管理层决定：对CASE-0049/construction-1学生宿舍主体土建与结构施工包独立投标。理由是本包与公司居住建筑土建总承包主业高度契合，范围限于土方、基础、主体结构、砌体、屋面、外墙及室内初装修，材料自采，不含机电、室外与电梯，公司具备相应施工、质量、安全与文件管理能力及三体系认证，情景资源可用且无占用，可作为单一责任投标人承担。投标文件将重点回应业主所列内容：角色计划与团队可用性摘要、施工组织设计与交付方法、质量目标与质量保证方案、安全期望跟踪与安全管理方案、报价依据与价格构成说明、进度计划与里程碑视图、风险识别与风险应对方案、接口协调与公共通道协调方案、文件管理与归档计划。报价按工程量清单综合单价以人民币编制，控制在82875000元上限内，并说明材料价格与工期风险应对成本。与设计包、造价咨询包的协调及业主与监理的审查签认，按总承包接口管理处理，不寻求组合体。团队可用性、BIM深化人员配置与材料供应链安排目前为投标假设，将在方案中如实表述为计划安排，不作为已落实承诺。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:21:45",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-1",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个包是11650平方米学生宿舍的主体土建与结构施工，属于我们最熟悉的总承包业务范畴：土方、基础、主体结构、砌体、屋面、外墙、室内初装修，材料自采。公司资料显示我们在建筑、住宅、公共机构、土方、地基等方向有覆盖，并持有ISO三体系认证，施工能力、质量与安全管理参数在情景中处于中上水平。资源方面当前可用2.0、占用0，包要求0.7，容量上完全能独立承担，不需要靠联合体来凑身份或分摊责任。真正的压力在于：报价上限82875000 CNY，材料价格指数和人工价格指数都在上行，利润空间需要精算；工期24个月，校园环境施工需要处理公共通道与教学秩序协调；还要与设计包、造价咨询包做接口签认，BIM深化和文件管理要跟上。这些都属于正常总承包风险，可以通过施工组织设计、分包管理、材料询价、进度里程碑和风险应对成本来消化，不构成必须联合体投标的理由。我们应当以单一责任主体身份投标，把接口协调、质量目标和安全方案讲清楚，报价留出材料与人工波动的风险余量。",
+        "content": "得宝国际有限公司就学生宿舍主体土建与结构施工包提交投标意向。我们以单一总承包责任主体参与，承担土方、基础、主体结构、砌体、屋面、外墙及室内初装修的施工与材料采购，不含机电安装、室外工程与电梯。角色计划与团队可用性摘要将按当前资源状况编制，明确项目经理、技术负责人、质量与安全负责人及主要工种班组的配置。施工组织设计围绕校园环境下的公共通道协调、材料运输时段、噪声与安全隔离展开，并与设计包、造价咨询包建立接口签认与图纸会审机制。质量目标按ISO 9001体系设定分部分项验收标准，安全方案按ISO 45001跟踪期望并落实，环境管理按ISO 14001控制扬尘与废弃物。BIM施工深化用于结构与砌体、屋面、外墙的碰撞检查与接口协调，文件管理按归档计划执行。报价以工程量清单综合单价为基础，包含材料、人工、机械、管理费、利润、风险及规费税金，并说明价格依据与材料人工波动的风险应对成本，总额控制在82875000 CNY以内。进度计划给出24个月内的里程碑视图，识别关键路径与风险应对措施。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:21:45",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0049/construction-1",
+        "agent_id": "COMP-0025_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "技术路线：土方与基础阶段按校园环境控制开挖时序与运输时段，基坑支护与降排水按经审查的专项方案实施；主体结构采用常规钢筋混凝土框架体系，模板与钢筋加工在场内集中布置，按楼层流水组织；砌体与屋面、外墙按分部分项样板先行，室内初装修以样板间确认后批量展开",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:22:05",
+        "verification_requests": [
+          {
+            "question": "技术路线：土方与基础阶段按校园环境控制开挖时序与运输时段，基坑支护与降排水按经审查的专项方案实施；主体结构采用常规钢筋混凝土框架体系，模板与钢筋加工在场内集中布置，按楼层流水组织；砌体与屋面、外墙按分部分项样板先行，室内初装修以样板间确认后批量展开",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_role": "owner",
+        "package_id": "CASE-0049/construction-1",
+        "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+        "agent_name": "吴国栋",
+        "department": "教育装备与后勤",
+        "position": "后勤保障主任",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个学生宿舍项目的交付负全责。评标推荐得宝国际，其报价80,600,000元低于包上限，有一定价格优势，但供应商与分包报价尚未正式取得，成本为内部估算，且检测与部分劳务以分包方式组织，管理协调难度增加。中交一航与得宝建筑报价均为82,875,000元，与包上限一致，价格构成各有侧重，但同样存在人员锁定与采购承诺未落实的问题。从业主风险与问责角度，得宝国际的报价优势并非决定性，其内部估算成本在定标后可能出现重大偏差，而中交一航的施工组织方案针对校园环境提出分区围挡、公共通道疏导与错峰运输，质量三级检查与独立复核机制明确，BIM深化责任人与接口签认流程清晰，对业主审查要求响应完整。虽然中交一航也有材料采购合同未签署、BIM人员未锁定等风险，但这些属于可通过预合同澄清聚焦解决的事项，且其报价与包上限一致，在预算内。得宝建筑同样报价上限，但风险应对成本占比较高且未提供供应商报价支撑，团队到岗不确定性较大。综合权衡，我选择中交第一航务工程局有限公司，因其施工组织与校园协调方案更具体可操作，质量与文件管理机制更扎实，对业主控制要求的响应更完整，交付信心更强。预合同澄清将聚焦材料采购与供应商承诺的落实证据、BIM深化人员锁定计划、风险应对成本的价格支撑以及校园公共通道协调方案的最终确认。",
+        "content": "经综合评审，业主决定将CASE-0049/construction-1学生宿舍主体土建与结构施工包判给中交第一航务工程局有限公司，报价人民币82,875,000元。该投标人施工组织与校园公共通道协调方案具体可行，质量三级检查与独立复核机制明确，BIM深化责任人与接口签认流程清晰，对业主审查要求响应完整。预合同澄清将聚焦材料采购与供应商承诺的落实证据、BIM深化人员锁定计划、风险应对成本的价格支撑以及校园公共通道协调方案的最终确认，以支持后续合同履行与业主审查批准。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T14:23:15",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0049/construction-1",
+        "decision": "bid",
+        "reason": "经管理层研判，本包属于公司核心的居住建筑土建施工总承包业务，规模与24个月工期同我方资源与能力匹配，当前无占用资源、可用资源充足，具备独立作为单一责任主体投标的条件。包内不含机电、室外与电梯，接口协调与业主监理审查签认属于总承包正常管理职责，无需通过组合体分担投标人身份或交付责任。主要风险为校园环境公共通道协调、BIM深化、材料与人工价格上行及报价合理性比较，将通过施工组织设计、进度里程碑、风险应对成本计入报价、材料采购与供应链安排、质量与安全方案予以控制。因此决定独立投标，不组建组合体。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+          "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+          "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+          "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0493",
+        "package_id": "CASE-0049/construction-1",
+        "decision": "bid",
+        "reason": "经管理层研判，本包属于公司核心业务范围内的居住建筑土建施工总承包，边界清晰、材料自采、不含机电与室外工程，公司具备总承包、施工管理、土方基础与主体结构施工的完整能力，并持有ISO 9001、ISO 14001、ISO 45001三体系认证，情景资源账显示可用资源2.0、占用为零，具备作为单一责任投标人独立履约的条件。与设计包、造价咨询包的协调以及业主与监理的审查签认，属于总承包常规接口管理，可通过接口协调方案、BIM施工深化与文件管理计划落实，不构成必须由外部企业共享投标人身份或包级交付责任的问责缺口。因此决定独立投标，不组建组合体。报价按工程量清单综合单价编制，以人民币计价，在82875000元上限内覆盖材料、人工、机械、管理费、利润、风险及规费税金，并单列材料价格波动与工期风险应对成本；团队可用性、BIM深化人员与材料供应链安排作为投标假设在方案中明示，不作为已落实承诺对外表述。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "团队可用性摘要基于现有人员配置计划编制，具体人员到岗以中标后调配为准",
+          "BIM施工深化人员按计划配置，深化模型与设计包、造价咨询包的接口在开工前完成对接",
+          "主要材料由公司自行采购，供应链安排为计划方案，报价中的材料价格波动风险按情景材料价格指数留出应对余量",
+          "与设计包、造价咨询包的协调及业主与监理的审查签认，按总承包接口协调方案执行",
+          "报价以人民币综合单价编制，包含材料、人工、机械、管理费、利润、风险及规费税金，并单列风险应对成本"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0025",
+        "package_id": "CASE-0049/construction-1",
+        "decision": "bid",
+        "reason": "管理层判断：本包属于公司 credible 的核心土建总承包业务，11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙与室内初装修均在既有能力覆盖内，ISO三体系认证可支撑质量、安全与文件管理要求。当前可用资源2.0、占用0，包需求0.7，独立承担不存在容量缺口，无需引入共享投标身份与责任的联合体。主要风险是材料与人工价格上行、校园公共通道协调、与设计包及造价咨询包的接口签认，以及24个月工期下的进度控制；这些通过施工组织设计、材料询价与价格依据说明、接口协调方案、里程碑视图和风险应对成本计入报价来处理。报价须控制在82875000 CNY上限内并保留合理风险余量，按工程量清单综合单价编制。结论为以单一责任主体投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一总承包责任主体投标，不组建联合体",
+          "材料由本包自行采购，报价含材料价格波动风险应对成本",
+          "机电安装、室外工程与电梯不在本包范围",
+          "与设计包、造价咨询包的接口协调通过图纸会审与签认机制落实",
+          "报价按工程量清单综合单价编制并以CNY计价，总额不超过82875000 CNY",
+          "工期按24个月编排里程碑，校园公共通道协调纳入施工组织设计"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0049/construction-1_001",
+        "package_id": "CASE-0049/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标本包，承担11650平方米学生宿舍土方、基础、主体结构、砌体、屋面、外墙及室内初装修全部土建施工，不含机电安装、室外工程与电梯，界面在施工组织设计中明确划界。技术方案要点：\n\n1. 施工组织：按校园环境设置分区封闭围挡与独立施工出入口，公共通道保留不少于4米净宽并设疏导员；材料运输错峰至非教学时段，噪声敏感工序安排在周末或假期集中实施。\n2. 主体结构：基础与主体采用常规现浇钢筋混凝土框架结构施工工艺，模板周转按标准层配置，混凝土采用商品混凝土并执行进场检验与坍落度抽检。\n3. 砌体、屋面与外墙：砌体执行排砖与拉结筋预埋检查；屋面按设计坡度与防水层做法分层验收；外墙装饰按样板先行、分区验收。\n4. 室内初装修：按房间样板间先行，明确抹灰、地面与涂饰质量控制点，逐层移交。\n5. BIM施工深化：由我方牵头组织深化，明确深化责任人与设计包、造价咨询包的接口签认流程，深化成果经业主与监理审查后用于施工。\n6. 质量与安全：执行内部质量三级检查与独立复核，安全期望跟踪按周检查、按月评估，文件管理按分部分项归档。\n\n本包材料由我方自行采购，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制，属暂定测算，不作为已落实承诺。",
+        "implementation_plan": "总工期按24个月编排，分四个阶段：\n\n第一阶段（第1至3个月）：施工准备与土方基础。完成临设、围挡、公共通道疏导方案报审，土方开挖与基础施工，同步完成主要材料采购合同谈判与首批进场。\n第二阶段（第4至14个月）：主体结构施工。按标准层流水组织，模板、钢筋、混凝土工序穿插，每月完成若干标准层，同步开展BIM深化与设计接口签认。\n第三阶段（第15至20个月）：砌体、屋面、外墙与室内初装修。砌体与屋面先行，外墙装饰按样板分区推进，室内初装修逐层移交。\n第四阶段（第21至24个月）：收尾、质量整改、竣工资料整理与验收移交。\n\n关键里程碑：基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成、竣工验收。各里程碑与设计包、造价咨询包接口签认节点对应设置。\n\n资源安排：现场设项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位，按阶段动态配置；主要材料自行采购，采购与供应链安排按投标假设执行。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "我方承诺总工期24个月，自开工令下达之日起算。关键里程碑：第3个月末完成基础工程；第14个月末完成主体结构封顶；第20个月末完成砌体、屋面、外墙及室内初装修；第24个月末完成竣工验收与移交。各阶段与设计包、造价咨询包的接口签认节点纳入进度计划统一管理，因业主或设计接口原因导致的延误按合同约定处理。",
+        "compliance_statement": "我方接受业主与监理的审查与接口签认要求，具体响应：\n\n1. 角色计划与团队可用性摘要：投标文件中列明项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位配置与可用性，人员锁定在投标阶段尚未完成，以角色计划呈现。\n2. 施工组织设计与交付方法：按校园环境编制分区围挡、公共通道疏导、错峰运输与噪声控制方案，报业主与监理审查后实施。\n3. 质量目标与质量保证方案：执行内部质量三级检查与独立复核，样板先行，分部分项验收合格率目标明确。\n4. 安全期望跟踪与安全管理方案：按周检查、按月评估，安全期望跟踪记录报监理备案。\n5. 报价依据与价格构成说明：按工程量清单综合单价报价，含材料、人工、机械、管理费、利润、风险及规费税金，风险应对成本单列说明。\n6. 进度计划与里程碑视图：按24个月编排，里程碑与接口签认节点对应。\n7. 风险识别与风险应对方案：识别校园公共通道协调、BIM深化、材料与人工价格上行、报价合理性比较等风险，逐项制定应对措施。\n8. 接口协调与公共通道协调方案：明确与设计包、造价咨询包的接口签认流程，公共通道协调方案在开工前与业主、校方及监理进一步确认时段与路线。\n9. 文件管理与归档计划：按分部分项建立文件台账，竣工资料与验收同步整理。",
+        "risk_response": "主要风险及应对：\n\n1. 校园公共通道协调风险：设置分区围挡与独立施工出入口，保留公共通道净宽并设疏导员，运输错峰，方案开工前与业主、校方及监理确认。\n2. BIM施工深化风险：由我方牵头组织深化，明确深化责任人与接口签认流程，深化成果经业主与监理审查后用于施工，人员配置以角色计划呈现，尚未完成人员锁定。\n3. 材料与人工价格上行风险：报价中列明风险应对成本暂定额度，主要材料采购与供应链安排按投标假设推进，采购合同尚未签署，材料价格依据当前市场指数与询价区间编制。\n4. 报价合理性比较风险：按工程量清单综合单价编制，价格依据与风险应对成本说明完整，配合造价咨询意见进行价格合理性比较。\n5. 工期风险：按24个月编排里程碑，关键线路工序预留合理机动时间，接口签认节点纳入进度计划统一管理。\n6. 界面风险：本包不含机电安装、室外工程与电梯，在施工组织中明确划界，相关界面协调由总承包管理职责覆盖。",
+        "submission_summary": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标学生宿舍主体土建与结构施工包（CASE-0049/construction-1），报价人民币82,875,000元，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金。\n\n报价构成：\n- 土方、基础及主体结构工程：38,650,000元\n- 砌体、屋面、外墙及室内初装修工程：21,480,000元\n- 材料采购与供应链协调费：6,350,000元\n- 现场管理、BIM深化与接口协调费：4,980,000元\n- 质量、安全与文件管理费：3,260,000元\n- 风险应对成本：4,150,000元\n- 管理费、利润、规费及税金：4,005,000元\n\n价格依据：主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，材料价格依据当前市场价格指数与询价区间编制；BIM施工深化人员配置以角色计划呈现，尚未完成人员锁定；风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价。\n\n工期承诺24个月，关键里程碑为基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成及竣工验收。我方接受业主与监理的审查与接口签认，按校园环境要求落实公共通道协调、错峰运输与噪声控制。本包不含机电安装、室外工程与电梯，界面在施工组织中明确划界。",
+        "quotation_breakdown": [
+          {
+            "item": "土方、基础及主体结构工程",
+            "amount": 38650000,
+            "basis": "按工程量清单综合单价测算，含土方开挖、基础、钢筋混凝土主体结构的人工、材料、机械及措施费，材料价格按当前市场指数与询价区间暂定"
+          },
+          {
+            "item": "砌体、屋面、外墙及室内初装修工程",
+            "amount": 21480000,
+            "basis": "按工程量清单综合单价测算，含砌体、屋面防水、外墙装饰及室内初装修的人工、材料、机械及措施费"
+          },
+          {
+            "item": "材料采购与供应链协调费",
+            "amount": 6350000,
+            "basis": "自行采购材料的采购管理、仓储、检验与供应链协调费用，按材料采购总额的测算比例计取，采购合同尚未签署，属暂定测算"
+          },
+          {
+            "item": "现场管理、BIM深化与接口协调费",
+            "amount": 4980000,
+            "basis": "现场管理团队薪酬、BIM施工深化人员配置、与设计包及造价咨询包的接口签认协调、公共通道疏导与校园环境协调费用"
+          },
+          {
+            "item": "质量、安全与文件管理费",
+            "amount": 3260000,
+            "basis": "质量三级检查与独立复核、安全期望跟踪、文件管理与归档、检测与验收配合费用"
+          },
+          {
+            "item": "风险应对成本",
+            "amount": 4150000,
+            "basis": "管理层测算的暂定额度，覆盖材料与人工价格上行、校园公共通道协调不确定性、BIM深化返工及工期风险，不等同于已收到的供应商报价"
+          },
+          {
+            "item": "管理费、利润、规费及税金",
+            "amount": 4005000,
+            "basis": "按公司管理费率、合理利润率及现行规费税金标准计取"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+          "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+          "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+          "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/construction-1_002",
+        "package_id": "CASE-0049/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0493",
+        "bidder_name": "得宝建筑集团有限公司",
+        "technical_proposal": "得宝建筑集团有限公司以单一责任投标人身份承接本包，按总承包模式组织11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修施工，不含机电、室外工程与电梯。技术路线：\n\n1. 施工组织：按校园环境分区流水，先土方与基础、后主体结构、再砌体与屋面外墙、最后室内初装修，设置独立施工通道与临时围挡，与校方公共通道错峰使用。\n2. 主体结构：采用常规钢筋混凝土框架结构施工工艺，模板、钢筋、混凝土分项按流水段组织，混凝土供应以本地搅拌站为主并保留备用供应方案。\n3. 砌体、屋面与外墙：砌体按设计包深化后的排砖图施工，屋面与外墙按防水与保温构造层次逐层验收，外墙饰面样板先行。\n4. 室内初装修：按房间样板间先行、验收合格后大面积展开，控制空鼓、平整度与观感质量。\n5. BIM施工深化：由公司BIM深化人员按计划配置，深化模型与设计包、造价咨询包在开工前完成接口对接，用于碰撞检查、预留预埋与工程量复核。\n6. 质量与安全：执行ISO 9001、ISO 14001、ISO 45001三体系程序，实行班组自检、项目部复检、公司独立检查三级质量控制；安全管理以安全期望跟踪表逐项闭合。\n7. 接口协调：与设计包、造价咨询包建立接口台账，业主与监理审查签认按周例会与专题会机制推进。\n\n团队可用性、BIM深化人员配置与材料供应链安排为投标计划假设，具体人员到岗以中标后调配为准。",
+        "implementation_plan": "总体按24个月项目工期中的土建施工段组织，计划工期20个月，预留与设计包、造价咨询包接口及业主审查的机动时间。\n\n阶段一（第1至2月）：施工准备与土方基础。完成临设、围挡、测量放线、材料采购计划与BIM深化模型对接；土方开挖、基坑支护与基础施工同步推进。\n阶段二（第3至10月）：主体结构施工。按流水段组织钢筋、模板、混凝土，逐层验收，同步开展砌体预埋与预留。\n阶段三（第8至14月）：砌体与屋面、外墙施工。砌体随主体结构进度穿插，屋面防水与外墙饰面按样板先行。\n阶段四（第12至18月）：室内初装修。样板间验收后大面积展开，控制观感与实测实量指标。\n阶段五（第18至20月）：收尾、调试配合与移交。完成土建部分竣工资料整理、与机电及室外工程包的界面移交签认。\n\n里程碑：基础完成、主体结构封顶、屋面外墙完成、室内初装修完成、土建移交。材料采购按施工进度分批下单，主要材料价格波动风险按情景材料价格指数留出应对余量。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "土建施工计划工期20个月，在项目总工期24个月内完成并预留接口与审查机动时间。里程碑：第2月末基础完成，第10月末主体结构封顶，第14月末屋面外墙完成，第18月末室内初装修完成，第20月末土建移交。若因设计包深化或业主审查导致接口延误，按合同约定程序申请工期调整，不擅自压缩关键工序。",
+        "compliance_statement": "接受业主与监理的全过程审查与接口签认。具体安排：\n1. 每周提交进度、质量、安全与接口协调报告，配合业主与造价咨询包的进度款审核与造价核对。\n2. 材料进场报验、隐蔽工程验收、样板间验收均提前通知监理，签认后方进入下道工序。\n3. 与设计包、造价咨询包建立接口台账，设计变更与深化图确认按书面流程流转。\n4. 文件管理按公司ISO 9001文件控制程序执行，竣工资料与移交清单同步整理，确保归档完整。\n5. 安全期望跟踪表逐项闭合，接受业主与监理的安全检查与整改要求。",
+        "risk_response": "主要风险与应对：\n1. 材料价格波动：报价已按情景材料价格指数1.0545留出应对余量，主要材料分批采购并锁定供应计划；如价格大幅波动，按合同约定程序与业主协商调整机制，不单方面主张固定价外调价。\n2. 工期风险：计划工期20个月预留4个月机动，关键线路设置预警节点，劳动力与机械按流水段配置，避免窝工。\n3. 接口风险：与设计包、造价咨询包的深化图与造价核对在开工前完成对接，接口延误按书面台账记录并申请工期调整。\n4. 校园环境与公共通道协调：施工通道与校方通道分离，错峰运输，设置围挡与降尘降噪措施。\n5. 团队可用性风险：团队可用性摘要基于现有人员配置计划编制，具体人员到岗以中标后调配为准；BIM深化人员与材料供应链安排为计划方案，不作为已落实承诺。\n6. 质量风险：执行三级质量控制与样板先行，实测实量数据每周汇总，不合格项闭合后方可进入下道工序。",
+        "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立投标CASE-0049/construction-1学生宿舍主体土建与结构施工包，不组建组合体。报价按工程量清单综合单价以人民币编制，总报价CNY 82,875,000元，与包上限一致，价格构成如下：\n\n- 土方、基础及基坑支护：8,650,000元\n- 主体结构工程：28,600,000元\n- 砌体、屋面及外墙：11,250,000元\n- 室内初装修：7,350,000元\n- 材料采购、供应链协调及现场管理费：9,850,000元\n- BIM施工深化与接口协调费：1,850,000元\n- 风险应对、规费税金及利润：15,325,000元\n\n合计82,875,000元。报价已计入材料价格波动与工期风险应对成本，材料价格按情景指数1.0545留出余量。团队可用性、BIM深化人员配置与材料供应链安排为投标计划假设，具体以中标后调配为准。付款按合同里程碑申请，接受业主与造价咨询包审核。",
+        "quotation_breakdown": [
+          {
+            "item": "土方、基础及基坑支护工程",
+            "amount": 8650000,
+            "basis": "按11650平方米宿舍土方开挖、回填、基础及基坑支护工程量估算，含机械、人工、材料及措施费，为投标估算，非已获供应商报价"
+          },
+          {
+            "item": "主体结构工程（钢筋、模板、混凝土）",
+            "amount": 28600000,
+            "basis": "按钢筋混凝土框架结构含量估算，含钢筋、商品混凝土、模板、脚手架及结构施工人工机械，材料价格按情景材料价格指数1.0545计入波动余量"
+          },
+          {
+            "item": "砌体、屋面及外墙工程",
+            "amount": 11250000,
+            "basis": "按砌体、屋面防水保温、外墙饰面工程量估算，含材料、人工、机械及样板先行措施"
+          },
+          {
+            "item": "室内初装修工程",
+            "amount": 7350000,
+            "basis": "按宿舍室内初装修标准估算，含地面、墙面、顶棚基层与面层，样板间先行及实测实量质量控制"
+          },
+          {
+            "item": "材料采购、供应链协调及现场管理费",
+            "amount": 9850000,
+            "basis": "含材料自行采购的采购管理、仓储、检验、供应链协调，以及项目部现场管理、临时设施、安全文明施工与文件管理"
+          },
+          {
+            "item": "BIM施工深化与接口协调费",
+            "amount": 1850000,
+            "basis": "BIM深化人员按计划配置，与设计包、造价咨询包接口对接、模型复核及业主与监理审查签认协调"
+          },
+          {
+            "item": "风险应对、规费税金及利润",
+            "amount": 15325000,
+            "basis": "含材料价格波动与工期风险应对成本、规费、税金及公司管理利润，按情景价格指数与风险偏好0.5计取"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "团队可用性摘要基于现有人员配置计划编制，具体人员到岗以中标后调配为准",
+          "BIM施工深化人员按计划配置，深化模型与设计包、造价咨询包的接口在开工前完成对接",
+          "主要材料由公司自行采购，供应链安排为计划方案，报价中的材料价格波动风险按情景材料价格指数留出应对余量",
+          "与设计包、造价咨询包的协调及业主与监理的审查签认，按总承包接口协调方案执行",
+          "报价以人民币综合单价编制，包含材料、人工、机械、管理费、利润、风险及规费税金，并单列风险应对成本"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/construction-1_003",
+        "package_id": "CASE-0049/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一总承包责任主体投标本包，承担11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修施工，材料由本公司自行采购；机电安装、室外工程与电梯不在本包范围。\n\n技术路线：土方与基础阶段按校园环境控制开挖时序与运输时段，基坑支护与降排水按经审查的专项方案实施；主体结构采用常规钢筋混凝土框架体系，模板与钢筋加工在场内集中布置，按楼层流水组织；砌体与屋面、外墙按分部分项样板先行，室内初装修以样板间确认后批量展开。\n\nBIM施工深化用于结构预留预埋、砌体排布、屋面与外墙节点碰撞检查，并与设计包进行图纸会审与接口签认；与造价咨询包就工程量清单口径、变更计量与进度款审核建立固定对接人机制。\n\n质量按ISO 9001体系设定分部分项验收标准，实行班组自检、项目部专检、公司独立检查三级控制；环境按ISO 14001控制扬尘、噪声与建筑废弃物；安全按ISO 45001建立危险源清单与跟踪台账。\n\n须说明的能力边界：本公司对本包的施工组织、材料采购与质量安全负全部责任，不组建联合体；检测、部分专业劳务与材料供应以受本公司管理的分包与供应方式组织，相关报价为内部估算，尚未取得供应商正式报价。",
+        "implementation_plan": "第一阶段（第1至3月）：进场准备、临设与围挡、公共通道改道方案报审、土方开挖与基坑支护、基础施工；同步完成材料询价定标与首批主材进场计划。\n第二阶段（第4至12月）：基础验收后进入主体结构施工，按楼层分段流水，模板、钢筋、混凝土班组按周计划配置；穿插砌体与预留预埋深化。\n第三阶段（第13至18月）：砌体完成、屋面与外墙施工、门窗洞口收口，室内初装修样板间确认后批量推进。\n第四阶段（第19至22月）：初装修收尾、分部分项验收、与设计包及造价咨询包完成接口签认与计量核对。\n第五阶段（第23至24月）：竣工资料整理归档、专项验收与移交。\n\n校园公共通道协调：施工车辆按指定时段进出，设置独立人行通道与安全隔离，噪声作业避开教学时段；与校方建立每周协调例会。\n\n关键路径为主体结构施工与屋面外墙工序衔接，风险应对为提前锁定主材供应、保留备用劳务班组、在里程碑之间设置缓冲。",
+        "quotation": 80600000.0,
+        "schedule_commitment": "总工期24个月，与项目工期一致。里程碑：第3月末完成基础；第12月末主体结构封顶；第18月末砌体、屋面与外墙完成；第22月末初装修与分部分项验收完成；第24月末竣工资料归档与移交。关键路径为主体结构至屋面外墙工序，设置月度进度评审与偏差纠正机制；校园公共通道与教学时段限制纳入周计划滚动调整。",
+        "compliance_statement": "接受业主与监理的审查与接口签认要求。具体安排：图纸会审与设计变更由项目技术负责人统一归口，与设计包建立签认台账；工程量清单口径、计量与进度款由造价对接人与造价咨询包核对，付款申请附完整计量与验收资料供业主与监理审核；质量与安全实行周报与月度评审，隐蔽工程与关键工序提前报验；文件按归档计划分类编号，竣工资料与过程记录同步形成，接受业主抽查。",
+        "risk_response": "主要风险与应对：一是材料与人工价格上行，报价已按材料价格指数1.0545与人工价格指数1.0980计提价格波动应对成本，主材提前询价锁量，价格风险在报价内消化，不另设无上限调价条款；二是校园公共通道与教学时段协调，通过独立人行通道、限时运输与每周校方例会控制；三是与设计包、造价咨询包的接口签认滞后，设固定对接人与签认台账，未签认工序不进入下道；四是24个月工期下的进度控制，关键路径设缓冲并保留备用劳务班组；五是供应商与分包报价尚未正式取得，相关成本为内部估算，定标后如出现重大偏差将在合同允许范围内与业主沟通。",
+        "submission_summary": "得宝国际有限公司以单一总承包责任主体投标学生宿舍主体土建与结构施工包，不组建联合体，对本包施工、材料采购与质量安全承担全部责任。\n\n报价按工程量清单综合单价口径编制，总额CNY 80,600,000，低于包上限82,875,000，保留约2.7%的余量。构成：土方基础9,350,000；主体结构24,800,000；砌体屋面外墙及初装修17,650,000；材料采购与价格波动应对6,900,000；现场管理安全环境与文件8,250,000；BIM深化接口协调与检测3,150,000；管理费利润规费税金及风险预备费10,500,000。\n\n价格依据：材料与人工按当前价格指数上浮计入，风险预备费覆盖校园协调、工期与材料波动；供应商与分包报价尚未正式取得，相关成本为内部估算。付款按进度计量经造价咨询包核对、业主与监理审核后支付。",
+        "quotation_breakdown": [
+          {
+            "item": "土方、基础及基坑支护工程",
+            "amount": 9350000,
+            "basis": "按11650平方米建筑基底与场地条件估算的挖填、支护、降排水及基础混凝土工程量，含机械与人工，属内部估算"
+          },
+          {
+            "item": "主体结构工程（钢筋、模板、混凝土）",
+            "amount": 24800000,
+            "basis": "按楼层面积与结构含量估算的钢筋、混凝土、模板工程量，含周转材料与结构劳务，材料按当前价格指数上浮计入"
+          },
+          {
+            "item": "砌体、屋面、外墙及室内初装修工程",
+            "amount": 17650000,
+            "basis": "按砌体面积、屋面与外墙面积、初装修做法估算，含样板先行与质量控制投入"
+          },
+          {
+            "item": "材料采购与供应链协调（含价格波动应对）",
+            "amount": 6900000,
+            "basis": "主材自行采购的采购管理、仓储、运输与检测费用，并按材料价格指数1.0545与人工价格指数1.0980计提价格波动应对成本"
+          },
+          {
+            "item": "现场管理、安全环境与文件管理",
+            "amount": 8250000,
+            "basis": "项目经理、技术、质量、安全负责人及主要管理人员24个月现场配置，含临设、围挡、公共通道隔离、ISO三体系运行与归档管理"
+          },
+          {
+            "item": "BIM深化、接口协调与检测",
+            "amount": 3150000,
+            "basis": "结构与砌体、屋面、外墙深化建模与碰撞检查，与设计包、造价咨询包的会审签认工作量，第三方检测与测量费用"
+          },
+          {
+            "item": "管理费、利润、规费税金及风险预备费",
+            "amount": 10500000,
+            "basis": "按上述直接成本计取公司管理费与合理利润，加规费税金，并保留校园协调、工期与材料风险的预备费"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_2c194c9ed73c77dfe607"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一总承包责任主体投标，不组建联合体",
+          "材料由本包自行采购，报价含材料价格波动风险应对成本",
+          "机电安装、室外工程与电梯不在本包范围",
+          "与设计包、造价咨询包的接口协调通过图纸会审与签认机制落实",
+          "报价按工程量清单综合单价编制并以CNY计价，总额不超过82875000 CNY",
+          "工期按24个月编排里程碑，校园公共通道协调纳入施工组织设计",
+          "供应商与分包报价尚未正式取得，报价中相关成本为内部估算"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0049/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0049/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "土方、基础及主体结构工程",
+                "amount": 38650000,
+                "basis": "按工程量清单综合单价测算，含土方开挖、基础、钢筋混凝土主体结构的人工、材料、机械及措施费，材料价格按当前市场指数与询价区间暂定"
+              },
+              {
+                "item": "砌体、屋面、外墙及室内初装修工程",
+                "amount": 21480000,
+                "basis": "按工程量清单综合单价测算，含砌体、屋面防水、外墙装饰及室内初装修的人工、材料、机械及措施费"
+              },
+              {
+                "item": "材料采购与供应链协调费",
+                "amount": 6350000,
+                "basis": "自行采购材料的采购管理、仓储、检验与供应链协调费用，按材料采购总额的测算比例计取，采购合同尚未签署，属暂定测算"
+              },
+              {
+                "item": "现场管理、BIM深化与接口协调费",
+                "amount": 4980000,
+                "basis": "现场管理团队薪酬、BIM施工深化人员配置、与设计包及造价咨询包的接口签认协调、公共通道疏导与校园环境协调费用"
+              },
+              {
+                "item": "质量、安全与文件管理费",
+                "amount": 3260000,
+                "basis": "质量三级检查与独立复核、安全期望跟踪、文件管理与归档、检测与验收配合费用"
+              },
+              {
+                "item": "风险应对成本",
+                "amount": 4150000,
+                "basis": "管理层测算的暂定额度，覆盖材料与人工价格上行、校园公共通道协调不确定性、BIM深化返工及工期风险，不等同于已收到的供应商报价"
+              },
+              {
+                "item": "管理费、利润、规费及税金",
+                "amount": 4005000,
+                "basis": "按公司管理费率、合理利润率及现行规费税金标准计取"
+              }
+            ],
+            "submission_summary": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标学生宿舍主体土建与结构施工包（CASE-0049/construction-1），报价人民币82,875,000元，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金。\n\n报价构成：\n- 土方、基础及主体结构工程：38,650,000元\n- 砌体、屋面、外墙及室内初装修工程：21,480,000元\n- 材料采购与供应链协调费：6,350,000元\n- 现场管理、BIM深化与接口协调费：4,980,000元\n- 质量、安全与文件管理费：3,260,000元\n- 风险应对成本：4,150,000元\n- 管理费、利润、规费及税金：4,005,000元\n\n价格依据：主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，材料价格依据当前市场价格指数与询价区间编制；BIM施工深化人员配置以角色计划呈现，尚未完成人员锁定；风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价。\n\n工期承诺24个月，关键里程碑为基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成及竣工验收。我方接受业主与监理的审查与接口签认，按校园环境要求落实公共通道协调、错峰运输与噪声控制。本包不含机电安装、室外工程与电梯，界面在施工组织中明确划界。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+              "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+              "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+              "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "土方、基础及基坑支护工程",
+                "amount": 8650000,
+                "basis": "按11650平方米宿舍土方开挖、回填、基础及基坑支护工程量估算，含机械、人工、材料及措施费，为投标估算，非已获供应商报价"
+              },
+              {
+                "item": "主体结构工程（钢筋、模板、混凝土）",
+                "amount": 28600000,
+                "basis": "按钢筋混凝土框架结构含量估算，含钢筋、商品混凝土、模板、脚手架及结构施工人工机械，材料价格按情景材料价格指数1.0545计入波动余量"
+              },
+              {
+                "item": "砌体、屋面及外墙工程",
+                "amount": 11250000,
+                "basis": "按砌体、屋面防水保温、外墙饰面工程量估算，含材料、人工、机械及样板先行措施"
+              },
+              {
+                "item": "室内初装修工程",
+                "amount": 7350000,
+                "basis": "按宿舍室内初装修标准估算，含地面、墙面、顶棚基层与面层，样板间先行及实测实量质量控制"
+              },
+              {
+                "item": "材料采购、供应链协调及现场管理费",
+                "amount": 9850000,
+                "basis": "含材料自行采购的采购管理、仓储、检验、供应链协调，以及项目部现场管理、临时设施、安全文明施工与文件管理"
+              },
+              {
+                "item": "BIM施工深化与接口协调费",
+                "amount": 1850000,
+                "basis": "BIM深化人员按计划配置，与设计包、造价咨询包接口对接、模型复核及业主与监理审查签认协调"
+              },
+              {
+                "item": "风险应对、规费税金及利润",
+                "amount": 15325000,
+                "basis": "含材料价格波动与工期风险应对成本、规费、税金及公司管理利润，按情景价格指数与风险偏好0.5计取"
+              }
+            ],
+            "submission_summary": "得宝建筑集团有限公司以单一责任投标人身份独立投标CASE-0049/construction-1学生宿舍主体土建与结构施工包，不组建组合体。报价按工程量清单综合单价以人民币编制，总报价CNY 82,875,000元，与包上限一致，价格构成如下：\n\n- 土方、基础及基坑支护：8,650,000元\n- 主体结构工程：28,600,000元\n- 砌体、屋面及外墙：11,250,000元\n- 室内初装修：7,350,000元\n- 材料采购、供应链协调及现场管理费：9,850,000元\n- BIM施工深化与接口协调费：1,850,000元\n- 风险应对、规费税金及利润：15,325,000元\n\n合计82,875,000元。报价已计入材料价格波动与工期风险应对成本，材料价格按情景指数1.0545留出余量。团队可用性、BIM深化人员配置与材料供应链安排为投标计划假设，具体以中标后调配为准。付款按合同里程碑申请，接受业主与造价咨询包审核。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "团队可用性摘要基于现有人员配置计划编制，具体人员到岗以中标后调配为准",
+              "BIM施工深化人员按计划配置，深化模型与设计包、造价咨询包的接口在开工前完成对接",
+              "主要材料由公司自行采购，供应链安排为计划方案，报价中的材料价格波动风险按情景材料价格指数留出应对余量",
+              "与设计包、造价咨询包的协调及业主与监理的审查签认，按总承包接口协调方案执行",
+              "报价以人民币综合单价编制，包含材料、人工、机械、管理费、利润、风险及规费税金，并单列风险应对成本"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "quotation": 80600000.0,
+            "quotation_breakdown": [
+              {
+                "item": "土方、基础及基坑支护工程",
+                "amount": 9350000,
+                "basis": "按11650平方米建筑基底与场地条件估算的挖填、支护、降排水及基础混凝土工程量，含机械与人工，属内部估算"
+              },
+              {
+                "item": "主体结构工程（钢筋、模板、混凝土）",
+                "amount": 24800000,
+                "basis": "按楼层面积与结构含量估算的钢筋、混凝土、模板工程量，含周转材料与结构劳务，材料按当前价格指数上浮计入"
+              },
+              {
+                "item": "砌体、屋面、外墙及室内初装修工程",
+                "amount": 17650000,
+                "basis": "按砌体面积、屋面与外墙面积、初装修做法估算，含样板先行与质量控制投入"
+              },
+              {
+                "item": "材料采购与供应链协调（含价格波动应对）",
+                "amount": 6900000,
+                "basis": "主材自行采购的采购管理、仓储、运输与检测费用，并按材料价格指数1.0545与人工价格指数1.0980计提价格波动应对成本"
+              },
+              {
+                "item": "现场管理、安全环境与文件管理",
+                "amount": 8250000,
+                "basis": "项目经理、技术、质量、安全负责人及主要管理人员24个月现场配置，含临设、围挡、公共通道隔离、ISO三体系运行与归档管理"
+              },
+              {
+                "item": "BIM深化、接口协调与检测",
+                "amount": 3150000,
+                "basis": "结构与砌体、屋面、外墙深化建模与碰撞检查，与设计包、造价咨询包的会审签认工作量，第三方检测与测量费用"
+              },
+              {
+                "item": "管理费、利润、规费税金及风险预备费",
+                "amount": 10500000,
+                "basis": "按上述直接成本计取公司管理费与合理利润，加规费税金，并保留校园协调、工期与材料风险的预备费"
+              }
+            ],
+            "submission_summary": "得宝国际有限公司以单一总承包责任主体投标学生宿舍主体土建与结构施工包，不组建联合体，对本包施工、材料采购与质量安全承担全部责任。\n\n报价按工程量清单综合单价口径编制，总额CNY 80,600,000，低于包上限82,875,000，保留约2.7%的余量。构成：土方基础9,350,000；主体结构24,800,000；砌体屋面外墙及初装修17,650,000；材料采购与价格波动应对6,900,000；现场管理安全环境与文件8,250,000；BIM深化接口协调与检测3,150,000；管理费利润规费税金及风险预备费10,500,000。\n\n价格依据：材料与人工按当前价格指数上浮计入，风险预备费覆盖校园协调、工期与材料波动；供应商与分包报价尚未正式取得，相关成本为内部估算。付款按进度计量经造价咨询包核对、业主与监理审核后支付。",
+            "unresolved_condition_ids": [
+              "condition_2c194c9ed73c77dfe607"
+            ],
+            "bid_assumptions": [
+              "以单一总承包责任主体投标，不组建联合体",
+              "材料由本包自行采购，报价含材料价格波动风险应对成本",
+              "机电安装、室外工程与电梯不在本包范围",
+              "与设计包、造价咨询包的接口协调通过图纸会审与签认机制落实",
+              "报价按工程量清单综合单价编制并以CNY计价，总额不超过82875000 CNY",
+              "工期按24个月编排里程碑，校园公共通道协调纳入施工组织设计",
+              "供应商与分包报价尚未正式取得，报价中相关成本为内部估算"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 学生宿舍主体土建与结构施工包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0049/construction-1",
+        "evaluators": [
+          "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "OWNER-c328a5d9ef0c7d_04_周文静",
+          "OWNER-c328a5d9ef0c7d_05_吴国栋"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0049/construction-1_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "施工组织针对校园环境提出分区围挡、公共通道疏导与错峰运输，主体结构、砌体、屋面、外墙及室内初装修工艺常规可行，BIM深化由投标人牵头并明确接口签认流程。",
+            "cost_view": "报价MOP 82,875,000元与包上限一致，价格构成中风险应对成本单列但为管理层暂定，材料采购合同未签署，价格依据为市场指数与询价区间，整体可信度中等。",
+            "owner_control_view": "对业主审查与接口签认要求响应完整，覆盖角色计划、质量安全、进度、风险与文件管理，但人员锁定与采购承诺尚未落实。",
+            "strengths": [
+              "施工组织与校园公共通道协调方案具体，可操作性强",
+              "质量三级检查与独立复核机制明确，文件管理按分部分项归档",
+              "BIM深化责任人与接口签认流程清晰，接受业主与监理审查"
+            ],
+            "concerns": [
+              "材料采购合同与供应商承诺未签署，价格存在上行风险",
+              "BIM深化人员配置以角色计划呈现，尚未完成人员锁定",
+              "风险应对成本为管理层暂定额度，未获供应商报价支撑"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-1_002",
+            "bidder_id": "COMP-0493",
+            "bidder_name": "得宝建筑集团有限公司",
+            "technical_view": "采用总承包模式分区流水施工，主体结构、砌体、屋面、外墙及室内初装修工艺成熟，BIM深化与接口协调按周例会推进，但团队可用性与BIM人员配置为计划假设。",
+            "cost_view": "报价MOP 82,875,000元与包上限一致，价格构成中风险应对、规费税金及利润占比较高，材料价格按情景指数留出波动余量，但供应商报价未正式取得，价格合理性需进一步核实。",
+            "owner_control_view": "接受全过程审查与接口签认，每周提交进度、质量、安全与接口报告，文件管理按ISO程序执行，但人员到岗以中标后调配为准，存在不确定性。",
+            "strengths": [
+              "施工组织与校园环境协调方案完整，设置独立施工通道与错峰使用",
+              "三级质量控制与安全期望跟踪表逐项闭合，质量安全体系健全",
+              "接口台账与书面流程明确，配合造价咨询包审核"
+            ],
+            "concerns": [
+              "团队可用性摘要基于计划编制，具体人员到岗未锁定",
+              "材料供应链安排为计划方案，价格波动风险应对依赖情景指数",
+              "风险应对成本占比较高，但未提供供应商报价支撑"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/construction-1_003",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "technical_view": "以单一总承包责任主体投标，施工组织覆盖土方、基础、主体结构、砌体、屋面、外墙及室内初装修，BIM深化用于碰撞检查与接口签认，但检测与部分劳务以分包方式组织，报价为内部估算。",
+            "cost_view": "报价MOP 80,600,000元低于包上限，价格构成中材料采购与价格波动应对、现场管理及风险预备费均有列项，但供应商与分包报价尚未正式取得，成本为内部估算，可信度需结合定标后情况判断。",
+            "owner_control_view": "接受业主与监理审查，图纸会审与设计变更由技术负责人归口，工程量清单口径与造价咨询包核对，文件按归档计划分类编号，但供应商报价未落实可能影响后续成本控制。",
+            "strengths": [
+              "报价低于包上限，价格构成中风险预备费覆盖校园协调、工期与材料波动",
+              "施工组织与公共通道协调方案具体，设置独立人行通道与限时运输",
+              "质量、环境与安全按ISO三体系运行，接口签认台账明确"
+            ],
+            "concerns": [
+              "供应商与分包报价尚未正式取得，相关成本为内部估算",
+              "检测与部分专业劳务以分包方式组织，管理协调难度增加",
+              "材料与人工价格波动应对成本虽计提，但实际采购锁量尚未完成"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标人均具备居住建筑土建施工总承包能力，施工组织与校园环境协调方案总体可行；得宝国际报价MOP 80,600,000元低于包上限，但供应商报价未落实，中交一航与得宝建筑报价均为MOP 82,875,000元，价格构成与风险应对各有侧重。业主需在价格合理性与交付信心之间权衡，重点关注人员锁定、材料采购承诺与风险应对成本的实质性支撑。",
+        "recommended_winner": "COMP-0025",
+        "owner_review_notes": "建议优先与得宝国际有限公司进行谈判，要求其补充供应商与分包报价、明确人员锁定计划，并将风险预备费的使用机制纳入合同条款；若谈判无法落实关键条件，可考虑与中交第一航务工程局有限公司或得宝建筑集团有限公司进一步协商。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0049",
+      "package_awards": [
+        {
+          "package_id": "CASE-0049/construction-1",
+          "selected_bidder_id": "COMP-0153",
+          "selected_bidder_name": "中交第一航务工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第一航务工程局有限公司的施工组织方案针对校园环境提出分区围挡、公共通道疏导与错峰运输，可操作性强；质量三级检查与独立复核机制明确，文件管理按分部分项归档；BIM深化责任人与接口签认流程清晰，对业主审查要求响应完整。其报价82,875,000元与包上限一致，在预算内，价格构成中风险应对成本单列，材料采购与人员锁定虽未落实，但可通过预合同澄清聚焦解决。相比得宝国际，其内部估算成本与分包管理协调风险较高；相比得宝建筑，其风险应对成本占比高且团队到岗不确定性大。因此选择中交一航作为最终模拟判给结果。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+            "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+            "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+            "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0153"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T14:21:45",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0049/construction-1",
+          "decision": "bid",
+          "reason": "经管理层研判，本包属于公司核心的居住建筑土建施工总承包业务，规模与24个月工期同我方资源与能力匹配，当前无占用资源、可用资源充足，具备独立作为单一责任主体投标的条件。包内不含机电、室外与电梯，接口协调与业主监理审查签认属于总承包正常管理职责，无需通过组合体分担投标人身份或交付责任。主要风险为校园环境公共通道协调、BIM深化、材料与人工价格上行及报价合理性比较，将通过施工组织设计、进度里程碑、风险应对成本计入报价、材料采购与供应链安排、质量与安全方案予以控制。因此决定独立投标，不组建组合体。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+            "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+            "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+            "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:21:45",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0493",
+          "package_id": "CASE-0049/construction-1",
+          "decision": "bid",
+          "reason": "经管理层研判，本包属于公司核心业务范围内的居住建筑土建施工总承包，边界清晰、材料自采、不含机电与室外工程，公司具备总承包、施工管理、土方基础与主体结构施工的完整能力，并持有ISO 9001、ISO 14001、ISO 45001三体系认证，情景资源账显示可用资源2.0、占用为零，具备作为单一责任投标人独立履约的条件。与设计包、造价咨询包的协调以及业主与监理的审查签认，属于总承包常规接口管理，可通过接口协调方案、BIM施工深化与文件管理计划落实，不构成必须由外部企业共享投标人身份或包级交付责任的问责缺口。因此决定独立投标，不组建组合体。报价按工程量清单综合单价编制，以人民币计价，在82875000元上限内覆盖材料、人工、机械、管理费、利润、风险及规费税金，并单列材料价格波动与工期风险应对成本；团队可用性、BIM深化人员与材料供应链安排作为投标假设在方案中明示，不作为已落实承诺对外表述。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "团队可用性摘要基于现有人员配置计划编制，具体人员到岗以中标后调配为准",
+            "BIM施工深化人员按计划配置，深化模型与设计包、造价咨询包的接口在开工前完成对接",
+            "主要材料由公司自行采购，供应链安排为计划方案，报价中的材料价格波动风险按情景材料价格指数留出应对余量",
+            "与设计包、造价咨询包的协调及业主与监理的审查签认，按总承包接口协调方案执行",
+            "报价以人民币综合单价编制，包含材料、人工、机械、管理费、利润、风险及规费税金，并单列风险应对成本"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:21:45",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0025",
+          "package_id": "CASE-0049/construction-1",
+          "decision": "bid",
+          "reason": "管理层判断：本包属于公司 credible 的核心土建总承包业务，11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙与室内初装修均在既有能力覆盖内，ISO三体系认证可支撑质量、安全与文件管理要求。当前可用资源2.0、占用0，包需求0.7，独立承担不存在容量缺口，无需引入共享投标身份与责任的联合体。主要风险是材料与人工价格上行、校园公共通道协调、与设计包及造价咨询包的接口签认，以及24个月工期下的进度控制；这些通过施工组织设计、材料询价与价格依据说明、接口协调方案、里程碑视图和风险应对成本计入报价来处理。报价须控制在82875000 CNY上限内并保留合理风险余量，按工程量清单综合单价编制。结论为以单一责任主体投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一总承包责任主体投标，不组建联合体",
+            "材料由本包自行采购，报价含材料价格波动风险应对成本",
+            "机电安装、室外工程与电梯不在本包范围",
+            "与设计包、造价咨询包的接口协调通过图纸会审与签认机制落实",
+            "报价按工程量清单综合单价编制并以CNY计价，总额不超过82875000 CNY",
+            "工期按24个月编排里程碑，校园公共通道协调纳入施工组织设计"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:08",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:08",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "bidder_id": "COMP-0493"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:22:08",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:02",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:10",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "recommended_winner": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:23:15",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0049/construction-1",
+          "selected_bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-c328a5d9ef0c7d": {
+            "action": "accept",
+            "reason": "The proposed terms match the package budget of 82,875,000 CNY, the 24-month duration, the 0.7 normalized enterprise capacity commitment, and the stated scope (11650 sqm student dormitory civil works excluding MEP, outdoor works and elevators). The bidder's disclosed assumptions are accepted as risk allocations rather than missing evidence: self-procured materials with prices based on current market indices and inquiry ranges, BIM personnel shown as a role plan without completed staffing lock, public passage coordination to be confirmed with the owner, school and supervisor before commencement, and a provisional risk contingency amount. As buyer, I decide the following for the next draft: the price of 82,875,000 CNY is a fixed lump-sum inclusive of the listed breakdown items, materials, labor, machinery, management fee, profit, risk contingency, fees and taxes; the risk contingency of 4,150,000 CNY is inside the fixed price and is not separately reimbursable; measurement and payment follow the bill-of-quantities comprehensive unit rates with monthly progress measurement and payment within 30 days of certified measurement; owner review periods are 14 days for design-interface sign-off and 14 days for BIM deepening submissions, with delays attributable to owner or design interfaces handled per contract; the interface boundary excluding MEP, outdoor works and elevators is confirmed. These obligations are executable simulation commitments subject to future review and acceptance conditions, not claims that engineering deliverables or statutory approvals have already occurred."
+          },
+          "COMP-0153": {
+            "action": "accept",
+            "reason": "我方（COMP-0153）作为本包唯一成员与责任主体，经内部评估决定接受本轮 draft revision 0 的全部条款。理由如下：\n\n1. 能力匹配：本包为11650平方米学生宿舍土方、基础、主体结构、砌体、屋面、外墙及室内初装修土建施工，属我方施工能力覆盖范围；资源承诺0.7、工作份额1.0与我方现有可用资源2.0相符，不构成超配。\n\n2. 价格与范围：报价82,875,000元（CNY）与包预算一致，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金；范围明确不含机电安装、室外工程与电梯，界面在施工组织设计中划界，无范围歧义。\n\n3. 工期：24个月总工期与项目工期一致，里程碑（第3、14、20、24个月）清晰，接口签认节点纳入进度计划统一管理。\n\n4. 已披露投标假设的处理：材料自行采购但采购合同尚未签署、材料价格按当前市场指数与询价区间暂定、BIM深化人员以角色计划呈现尚未锁定、公共通道协调方案开工前确认、风险应对成本为管理层暂定额度——上述均为我方明示的风险分配假设，非缺失证据。我方确认接受这些假设作为合同风险分配基础，并承诺在开工前完成采购合同签署、人员锁定与公共通道方案确认等前置条件，相关不确定性由我方在风险应对成本额度内承担。\n\n5. 未来交付物按义务处理：本阶段仅授权可执行的模拟义务，不主张工程交付物或法定审批已完成；质量、安全、文件管理与验收均按合同约定的审查与验收条件执行。\n\n6. 无未决条件：unresolved_condition_ids 与 verified_condition_ids 均为空，无待决条款需修订。\n\n综上，接受所供条款、资源与义务，无需修订。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM45BEE469/CASE-0049/construction-1/round-1/contract",
+          "simulation_id": "SIM45BEE469",
+          "project_id": "CASE-0049",
+          "package_id": "CASE-0049/construction-1",
+          "session_id": "SIM45BEE469/CASE-0049/construction-1/round-1",
+          "snapshot_version": "9f5c9e15523cae92381c4bdb4669e2085debf8e3aacbba7d723f8ff1d3e45481",
+          "buyer_id": "OWNER-c328a5d9ef0c7d",
+          "bid_id": "bid_CASE-0049/construction-1_001",
+          "bidder_id": "COMP-0153",
+          "lead_id": "COMP-0153",
+          "members": [
+            "COMP-0153"
+          ],
+          "price": 82875000.0,
+          "currency": "CNY",
+          "resource_commitments": {
+            "COMP-0153": 0.7
+          },
+          "work_shares": {
+            "COMP-0153": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "12a640af3545ce8a24d88267e27901d1e0576f5d6c7f14c0c60686789c610ddb",
+          "terms": {
+            "schedule_commitment": "我方承诺总工期24个月，自开工令下达之日起算。关键里程碑：第3个月末完成基础工程；第14个月末完成主体结构封顶；第20个月末完成砌体、屋面、外墙及室内初装修；第24个月末完成竣工验收与移交。各阶段与设计包、造价咨询包的接口签认节点纳入进度计划统一管理，因业主或设计接口原因导致的延误按合同约定处理。",
+            "risk_response": "主要风险及应对：\n\n1. 校园公共通道协调风险：设置分区围挡与独立施工出入口，保留公共通道净宽并设疏导员，运输错峰，方案开工前与业主、校方及监理确认。\n2. BIM施工深化风险：由我方牵头组织深化，明确深化责任人与接口签认流程，深化成果经业主与监理审查后用于施工，人员配置以角色计划呈现，尚未完成人员锁定。\n3. 材料与人工价格上行风险：报价中列明风险应对成本暂定额度，主要材料采购与供应链安排按投标假设推进，采购合同尚未签署，材料价格依据当前市场指数与询价区间编制。\n4. 报价合理性比较风险：按工程量清单综合单价编制，价格依据与风险应对成本说明完整，配合造价咨询意见进行价格合理性比较。\n5. 工期风险：按24个月编排里程碑，关键线路工序预留合理机动时间，接口签认节点纳入进度计划统一管理。\n6. 界面风险：本包不含机电安装、室外工程与电梯，在施工组织中明确划界，相关界面协调由总承包管理职责覆盖。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0049/construction-1_001",
+              "package_id": "CASE-0049/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0153",
+              "bidder_name": "中交第一航务工程局有限公司",
+              "technical_proposal": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标本包，承担11650平方米学生宿舍土方、基础、主体结构、砌体、屋面、外墙及室内初装修全部土建施工，不含机电安装、室外工程与电梯，界面在施工组织设计中明确划界。技术方案要点：\n\n1. 施工组织：按校园环境设置分区封闭围挡与独立施工出入口，公共通道保留不少于4米净宽并设疏导员；材料运输错峰至非教学时段，噪声敏感工序安排在周末或假期集中实施。\n2. 主体结构：基础与主体采用常规现浇钢筋混凝土框架结构施工工艺，模板周转按标准层配置，混凝土采用商品混凝土并执行进场检验与坍落度抽检。\n3. 砌体、屋面与外墙：砌体执行排砖与拉结筋预埋检查；屋面按设计坡度与防水层做法分层验收；外墙装饰按样板先行、分区验收。\n4. 室内初装修：按房间样板间先行，明确抹灰、地面与涂饰质量控制点，逐层移交。\n5. BIM施工深化：由我方牵头组织深化，明确深化责任人与设计包、造价咨询包的接口签认流程，深化成果经业主与监理审查后用于施工。\n6. 质量与安全：执行内部质量三级检查与独立复核，安全期望跟踪按周检查、按月评估，文件管理按分部分项归档。\n\n本包材料由我方自行采购，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制，属暂定测算，不作为已落实承诺。",
+              "implementation_plan": "总工期按24个月编排，分四个阶段：\n\n第一阶段（第1至3个月）：施工准备与土方基础。完成临设、围挡、公共通道疏导方案报审，土方开挖与基础施工，同步完成主要材料采购合同谈判与首批进场。\n第二阶段（第4至14个月）：主体结构施工。按标准层流水组织，模板、钢筋、混凝土工序穿插，每月完成若干标准层，同步开展BIM深化与设计接口签认。\n第三阶段（第15至20个月）：砌体、屋面、外墙与室内初装修。砌体与屋面先行，外墙装饰按样板分区推进，室内初装修逐层移交。\n第四阶段（第21至24个月）：收尾、质量整改、竣工资料整理与验收移交。\n\n关键里程碑：基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成、竣工验收。各里程碑与设计包、造价咨询包接口签认节点对应设置。\n\n资源安排：现场设项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位，按阶段动态配置；主要材料自行采购，采购与供应链安排按投标假设执行。",
+              "quotation": 82875000.0,
+              "schedule_commitment": "我方承诺总工期24个月，自开工令下达之日起算。关键里程碑：第3个月末完成基础工程；第14个月末完成主体结构封顶；第20个月末完成砌体、屋面、外墙及室内初装修；第24个月末完成竣工验收与移交。各阶段与设计包、造价咨询包的接口签认节点纳入进度计划统一管理，因业主或设计接口原因导致的延误按合同约定处理。",
+              "compliance_statement": "我方接受业主与监理的审查与接口签认要求，具体响应：\n\n1. 角色计划与团队可用性摘要：投标文件中列明项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位配置与可用性，人员锁定在投标阶段尚未完成，以角色计划呈现。\n2. 施工组织设计与交付方法：按校园环境编制分区围挡、公共通道疏导、错峰运输与噪声控制方案，报业主与监理审查后实施。\n3. 质量目标与质量保证方案：执行内部质量三级检查与独立复核，样板先行，分部分项验收合格率目标明确。\n4. 安全期望跟踪与安全管理方案：按周检查、按月评估，安全期望跟踪记录报监理备案。\n5. 报价依据与价格构成说明：按工程量清单综合单价报价，含材料、人工、机械、管理费、利润、风险及规费税金，风险应对成本单列说明。\n6. 进度计划与里程碑视图：按24个月编排，里程碑与接口签认节点对应。\n7. 风险识别与风险应对方案：识别校园公共通道协调、BIM深化、材料与人工价格上行、报价合理性比较等风险，逐项制定应对措施。\n8. 接口协调与公共通道协调方案：明确与设计包、造价咨询包的接口签认流程，公共通道协调方案在开工前与业主、校方及监理进一步确认时段与路线。\n9. 文件管理与归档计划：按分部分项建立文件台账，竣工资料与验收同步整理。",
+              "risk_response": "主要风险及应对：\n\n1. 校园公共通道协调风险：设置分区围挡与独立施工出入口，保留公共通道净宽并设疏导员，运输错峰，方案开工前与业主、校方及监理确认。\n2. BIM施工深化风险：由我方牵头组织深化，明确深化责任人与接口签认流程，深化成果经业主与监理审查后用于施工，人员配置以角色计划呈现，尚未完成人员锁定。\n3. 材料与人工价格上行风险：报价中列明风险应对成本暂定额度，主要材料采购与供应链安排按投标假设推进，采购合同尚未签署，材料价格依据当前市场指数与询价区间编制。\n4. 报价合理性比较风险：按工程量清单综合单价编制，价格依据与风险应对成本说明完整，配合造价咨询意见进行价格合理性比较。\n5. 工期风险：按24个月编排里程碑，关键线路工序预留合理机动时间，接口签认节点纳入进度计划统一管理。\n6. 界面风险：本包不含机电安装、室外工程与电梯，在施工组织中明确划界，相关界面协调由总承包管理职责覆盖。",
+              "submission_summary": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标学生宿舍主体土建与结构施工包（CASE-0049/construction-1），报价人民币82,875,000元，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金。\n\n报价构成：\n- 土方、基础及主体结构工程：38,650,000元\n- 砌体、屋面、外墙及室内初装修工程：21,480,000元\n- 材料采购与供应链协调费：6,350,000元\n- 现场管理、BIM深化与接口协调费：4,980,000元\n- 质量、安全与文件管理费：3,260,000元\n- 风险应对成本：4,150,000元\n- 管理费、利润、规费及税金：4,005,000元\n\n价格依据：主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，材料价格依据当前市场价格指数与询价区间编制；BIM施工深化人员配置以角色计划呈现，尚未完成人员锁定；风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价。\n\n工期承诺24个月，关键里程碑为基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成及竣工验收。我方接受业主与监理的审查与接口签认，按校园环境要求落实公共通道协调、错峰运输与噪声控制。本包不含机电安装、室外工程与电梯，界面在施工组织中明确划界。",
+              "quotation_breakdown": [
+                {
+                  "item": "土方、基础及主体结构工程",
+                  "amount": 38650000,
+                  "basis": "按工程量清单综合单价测算，含土方开挖、基础、钢筋混凝土主体结构的人工、材料、机械及措施费，材料价格按当前市场指数与询价区间暂定"
+                },
+                {
+                  "item": "砌体、屋面、外墙及室内初装修工程",
+                  "amount": 21480000,
+                  "basis": "按工程量清单综合单价测算，含砌体、屋面防水、外墙装饰及室内初装修的人工、材料、机械及措施费"
+                },
+                {
+                  "item": "材料采购与供应链协调费",
+                  "amount": 6350000,
+                  "basis": "自行采购材料的采购管理、仓储、检验与供应链协调费用，按材料采购总额的测算比例计取，采购合同尚未签署，属暂定测算"
+                },
+                {
+                  "item": "现场管理、BIM深化与接口协调费",
+                  "amount": 4980000,
+                  "basis": "现场管理团队薪酬、BIM施工深化人员配置、与设计包及造价咨询包的接口签认协调、公共通道疏导与校园环境协调费用"
+                },
+                {
+                  "item": "质量、安全与文件管理费",
+                  "amount": 3260000,
+                  "basis": "质量三级检查与独立复核、安全期望跟踪、文件管理与归档、检测与验收配合费用"
+                },
+                {
+                  "item": "风险应对成本",
+                  "amount": 4150000,
+                  "basis": "管理层测算的暂定额度，覆盖材料与人工价格上行、校园公共通道协调不确定性、BIM深化返工及工期风险，不等同于已收到的供应商报价"
+                },
+                {
+                  "item": "管理费、利润、规费及税金",
+                  "amount": 4005000,
+                  "basis": "按公司管理费率、合理利润率及现行规费税金标准计取"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+                "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+                "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+                "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "12a640af3545ce8a24d88267e27901d1e0576f5d6c7f14c0c60686789c610ddb"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0049/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。",
+          "budget": 82875000.0,
+          "currency": "CNY",
+          "buyer_id": "OWNER-c328a5d9ef0c7d"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM45BEE469/CASE-0049/construction-1/round-1/contract",
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/construction-1",
+    "session_id": "SIM45BEE469/CASE-0049/construction-1/round-1",
+    "snapshot_version": "9f5c9e15523cae92381c4bdb4669e2085debf8e3aacbba7d723f8ff1d3e45481",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "bid_id": "bid_CASE-0049/construction-1_001",
+    "bidder_id": "COMP-0153",
+    "lead_id": "COMP-0153",
+    "members": [
+      "COMP-0153"
+    ],
+    "price": 82875000.0,
+    "currency": "CNY",
+    "resource_commitments": {
+      "COMP-0153": 0.7
+    },
+    "work_shares": {
+      "COMP-0153": 1.0
+    },
+    "signatures": {
+      "OWNER-c328a5d9ef0c7d": true,
+      "COMP-0153": true
+    },
+    "signed_terms_hash": "12a640af3545ce8a24d88267e27901d1e0576f5d6c7f14c0c60686789c610ddb",
+    "terms": {
+      "schedule_commitment": "我方承诺总工期24个月，自开工令下达之日起算。关键里程碑：第3个月末完成基础工程；第14个月末完成主体结构封顶；第20个月末完成砌体、屋面、外墙及室内初装修；第24个月末完成竣工验收与移交。各阶段与设计包、造价咨询包的接口签认节点纳入进度计划统一管理，因业主或设计接口原因导致的延误按合同约定处理。",
+      "risk_response": "主要风险及应对：\n\n1. 校园公共通道协调风险：设置分区围挡与独立施工出入口，保留公共通道净宽并设疏导员，运输错峰，方案开工前与业主、校方及监理确认。\n2. BIM施工深化风险：由我方牵头组织深化，明确深化责任人与接口签认流程，深化成果经业主与监理审查后用于施工，人员配置以角色计划呈现，尚未完成人员锁定。\n3. 材料与人工价格上行风险：报价中列明风险应对成本暂定额度，主要材料采购与供应链安排按投标假设推进，采购合同尚未签署，材料价格依据当前市场指数与询价区间编制。\n4. 报价合理性比较风险：按工程量清单综合单价编制，价格依据与风险应对成本说明完整，配合造价咨询意见进行价格合理性比较。\n5. 工期风险：按24个月编排里程碑，关键线路工序预留合理机动时间，接口签认节点纳入进度计划统一管理。\n6. 界面风险：本包不含机电安装、室外工程与电梯，在施工组织中明确划界，相关界面协调由总承包管理职责覆盖。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0049/construction-1_001",
+        "package_id": "CASE-0049/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标本包，承担11650平方米学生宿舍土方、基础、主体结构、砌体、屋面、外墙及室内初装修全部土建施工，不含机电安装、室外工程与电梯，界面在施工组织设计中明确划界。技术方案要点：\n\n1. 施工组织：按校园环境设置分区封闭围挡与独立施工出入口，公共通道保留不少于4米净宽并设疏导员；材料运输错峰至非教学时段，噪声敏感工序安排在周末或假期集中实施。\n2. 主体结构：基础与主体采用常规现浇钢筋混凝土框架结构施工工艺，模板周转按标准层配置，混凝土采用商品混凝土并执行进场检验与坍落度抽检。\n3. 砌体、屋面与外墙：砌体执行排砖与拉结筋预埋检查；屋面按设计坡度与防水层做法分层验收；外墙装饰按样板先行、分区验收。\n4. 室内初装修：按房间样板间先行，明确抹灰、地面与涂饰质量控制点，逐层移交。\n5. BIM施工深化：由我方牵头组织深化，明确深化责任人与设计包、造价咨询包的接口签认流程，深化成果经业主与监理审查后用于施工。\n6. 质量与安全：执行内部质量三级检查与独立复核，安全期望跟踪按周检查、按月评估，文件管理按分部分项归档。\n\n本包材料由我方自行采购，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制，属暂定测算，不作为已落实承诺。",
+        "implementation_plan": "总工期按24个月编排，分四个阶段：\n\n第一阶段（第1至3个月）：施工准备与土方基础。完成临设、围挡、公共通道疏导方案报审，土方开挖与基础施工，同步完成主要材料采购合同谈判与首批进场。\n第二阶段（第4至14个月）：主体结构施工。按标准层流水组织，模板、钢筋、混凝土工序穿插，每月完成若干标准层，同步开展BIM深化与设计接口签认。\n第三阶段（第15至20个月）：砌体、屋面、外墙与室内初装修。砌体与屋面先行，外墙装饰按样板分区推进，室内初装修逐层移交。\n第四阶段（第21至24个月）：收尾、质量整改、竣工资料整理与验收移交。\n\n关键里程碑：基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成、竣工验收。各里程碑与设计包、造价咨询包接口签认节点对应设置。\n\n资源安排：现场设项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位，按阶段动态配置；主要材料自行采购，采购与供应链安排按投标假设执行。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "我方承诺总工期24个月，自开工令下达之日起算。关键里程碑：第3个月末完成基础工程；第14个月末完成主体结构封顶；第20个月末完成砌体、屋面、外墙及室内初装修；第24个月末完成竣工验收与移交。各阶段与设计包、造价咨询包的接口签认节点纳入进度计划统一管理，因业主或设计接口原因导致的延误按合同约定处理。",
+        "compliance_statement": "我方接受业主与监理的审查与接口签认要求，具体响应：\n\n1. 角色计划与团队可用性摘要：投标文件中列明项目经理、技术负责人、施工员、质量员、安全员、材料员、资料员等岗位配置与可用性，人员锁定在投标阶段尚未完成，以角色计划呈现。\n2. 施工组织设计与交付方法：按校园环境编制分区围挡、公共通道疏导、错峰运输与噪声控制方案，报业主与监理审查后实施。\n3. 质量目标与质量保证方案：执行内部质量三级检查与独立复核，样板先行，分部分项验收合格率目标明确。\n4. 安全期望跟踪与安全管理方案：按周检查、按月评估，安全期望跟踪记录报监理备案。\n5. 报价依据与价格构成说明：按工程量清单综合单价报价，含材料、人工、机械、管理费、利润、风险及规费税金，风险应对成本单列说明。\n6. 进度计划与里程碑视图：按24个月编排，里程碑与接口签认节点对应。\n7. 风险识别与风险应对方案：识别校园公共通道协调、BIM深化、材料与人工价格上行、报价合理性比较等风险，逐项制定应对措施。\n8. 接口协调与公共通道协调方案：明确与设计包、造价咨询包的接口签认流程，公共通道协调方案在开工前与业主、校方及监理进一步确认时段与路线。\n9. 文件管理与归档计划：按分部分项建立文件台账，竣工资料与验收同步整理。",
+        "risk_response": "主要风险及应对：\n\n1. 校园公共通道协调风险：设置分区围挡与独立施工出入口，保留公共通道净宽并设疏导员，运输错峰，方案开工前与业主、校方及监理确认。\n2. BIM施工深化风险：由我方牵头组织深化，明确深化责任人与接口签认流程，深化成果经业主与监理审查后用于施工，人员配置以角色计划呈现，尚未完成人员锁定。\n3. 材料与人工价格上行风险：报价中列明风险应对成本暂定额度，主要材料采购与供应链安排按投标假设推进，采购合同尚未签署，材料价格依据当前市场指数与询价区间编制。\n4. 报价合理性比较风险：按工程量清单综合单价编制，价格依据与风险应对成本说明完整，配合造价咨询意见进行价格合理性比较。\n5. 工期风险：按24个月编排里程碑，关键线路工序预留合理机动时间，接口签认节点纳入进度计划统一管理。\n6. 界面风险：本包不含机电安装、室外工程与电梯，在施工组织中明确划界，相关界面协调由总承包管理职责覆盖。",
+        "submission_summary": "我方以中交第一航务工程局有限公司单一责任主体身份独立投标学生宿舍主体土建与结构施工包（CASE-0049/construction-1），报价人民币82,875,000元，按工程量清单综合单价编制，涵盖材料、人工、机械、管理费、利润、风险及规费税金。\n\n报价构成：\n- 土方、基础及主体结构工程：38,650,000元\n- 砌体、屋面、外墙及室内初装修工程：21,480,000元\n- 材料采购与供应链协调费：6,350,000元\n- 现场管理、BIM深化与接口协调费：4,980,000元\n- 质量、安全与文件管理费：3,260,000元\n- 风险应对成本：4,150,000元\n- 管理费、利润、规费及税金：4,005,000元\n\n价格依据：主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，材料价格依据当前市场价格指数与询价区间编制；BIM施工深化人员配置以角色计划呈现，尚未完成人员锁定；风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价。\n\n工期承诺24个月，关键里程碑为基础完成、主体封顶、屋面与外墙面层完成、室内初装修完成及竣工验收。我方接受业主与监理的审查与接口签认，按校园环境要求落实公共通道协调、错峰运输与噪声控制。本包不含机电安装、室外工程与电梯，界面在施工组织中明确划界。",
+        "quotation_breakdown": [
+          {
+            "item": "土方、基础及主体结构工程",
+            "amount": 38650000,
+            "basis": "按工程量清单综合单价测算，含土方开挖、基础、钢筋混凝土主体结构的人工、材料、机械及措施费，材料价格按当前市场指数与询价区间暂定"
+          },
+          {
+            "item": "砌体、屋面、外墙及室内初装修工程",
+            "amount": 21480000,
+            "basis": "按工程量清单综合单价测算，含砌体、屋面防水、外墙装饰及室内初装修的人工、材料、机械及措施费"
+          },
+          {
+            "item": "材料采购与供应链协调费",
+            "amount": 6350000,
+            "basis": "自行采购材料的采购管理、仓储、检验与供应链协调费用，按材料采购总额的测算比例计取，采购合同尚未签署，属暂定测算"
+          },
+          {
+            "item": "现场管理、BIM深化与接口协调费",
+            "amount": 4980000,
+            "basis": "现场管理团队薪酬、BIM施工深化人员配置、与设计包及造价咨询包的接口签认协调、公共通道疏导与校园环境协调费用"
+          },
+          {
+            "item": "质量、安全与文件管理费",
+            "amount": 3260000,
+            "basis": "质量三级检查与独立复核、安全期望跟踪、文件管理与归档、检测与验收配合费用"
+          },
+          {
+            "item": "风险应对成本",
+            "amount": 4150000,
+            "basis": "管理层测算的暂定额度，覆盖材料与人工价格上行、校园公共通道协调不确定性、BIM深化返工及工期风险，不等同于已收到的供应商报价"
+          },
+          {
+            "item": "管理费、利润、规费及税金",
+            "amount": 4005000,
+            "basis": "按公司管理费率、合理利润率及现行规费税金标准计取"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "主要材料按自行采购安排，采购合同与供应商承诺在投标阶段尚未签署，报价中的材料价格依据当前市场价格指数与询价区间编制",
+          "BIM施工深化由我方牵头组织，具体深化人员配置在投标文件中以角色计划呈现，尚未完成人员锁定",
+          "校园公共通道协调方案需在开工前与业主、校方及监理进一步确认时段与路线",
+          "报价中的风险应对成本为管理层测算的暂定额度，不等同于已收到的供应商报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "11650平方米学生宿舍的土方、基础、主体结构、砌体、屋面、外墙及室内初装修等土建施工；不含机电安装、室外工程与电梯。材料由本包中标人自行采购。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

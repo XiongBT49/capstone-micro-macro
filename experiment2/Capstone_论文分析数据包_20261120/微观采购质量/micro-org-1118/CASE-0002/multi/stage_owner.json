@@ -1,0 +1,1783 @@
+{
+  "case_id": "CASE-0002",
+  "arm": "multi",
+  "stage": "owner",
+  "profile": "full",
+  "seconds": 21.2,
+  "usage": {
+    "requests": 12,
+    "cache_hits": 0,
+    "input_tokens": 36230,
+    "output_tokens": 5824
+  },
+  "model": "deepseek-flash",
+  "recovery_events": [],
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0002",
+      "project_name": "轻轨东线西延青茂口岸",
+      "project_type": "交通基础设施",
+      "location": "澳门",
+      "owner_intent": "围绕「轻轨东线西延青茂口岸」开展招投标仿真。项目属地为澳门。项目类型为交通基础设施。交付模式为D&B。仿真输入不得包含真实合作企业和真实判给结果。",
+      "scale_hint": "由项目基础数据提供",
+      "budget_hint": "原始数据未提供",
+      "schedule_hint": "由业主方 agent 进一步细化",
+      "constraints": [
+        "项目类型：交通基础设施",
+        "合作方向：内地-澳门",
+        "交付模式：D&B",
+        "业主：澳门特别行政区政府公共建设局",
+        "业主性质：政府单位",
+        "评标标准提示：工程造价48%、施工期12%、工作计划18%、施工经验及质量22%",
+        "底价提示：不设底价"
+      ],
+      "source_mode": "case_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0002",
+      "project_scope": "本项目为澳门轻轨东线西延至青茂口岸的交通基础设施D&B招标仿真，业主为澳门特别行政区政府公共建设局。仿真范围覆盖设计、供应、施工及监管四类招标包，重点处理跨境段接口、管线迁移、既有设施保护、口岸段现场移交条件及公共通道协调。所有内容均为业主方模拟目标，不涉及真实企业或真实判给结果。",
+      "functional_requirements": [
+        "满足轻轨东线西延接入青茂口岸的运输功能与客流衔接需求",
+        "实现跨境段与口岸设施的运输接口、公共通道及换乘流线协调",
+        "保障施工期间口岸公共通道的可用性与安全通行",
+        "建立设计、供应、施工、监管之间的接口责任矩阵与移交条件",
+        "满足运营后的可维护性与设备更换可达性",
+        "提供独立检查与质量记录架构，支撑质量目标追踪"
+      ],
+      "technical_requirements": [
+        "BIM协同设计，覆盖跨境段与口岸段接口",
+        "MEP系统协调，包括供电、通风、消防与弱电接口",
+        "结构协调，满足既有设施保护与管线迁移要求",
+        "运输接口布局与公共通道布局协调",
+        "耐久性目标与可维护性目标纳入设计交付",
+        "业主验收路径与阶段移交条件明确",
+        "能源使用目标与可持续性目标纳入设计评审",
+        "施工期交通疏解与口岸运营协调方案"
+      ],
+      "budget_policy": "本项目不设底价，工程造价占评标权重48%。业主方要求招标文件明确价格基础、计量方式与支付评审条款，使各投标报价口径一致、可比可核。业主代理将结合价格合理性、风险控制与交付信心进行定性比较，不采用最低价判给原则。",
+      "schedule_policy": "工期由业主方代理进一步细化，施工期占评标权重12%。业主方要求投标人提交里程碑计划与施工期视图，明确业主审查时间、包间接口时间及口岸公共通道协调时间。工期评分以现场移交条件与接口责任矩阵为前提，确保各投标工期具可比性。",
+      "compliance_requirements": [
+        "业主审查节奏：设计阶段、施工准备阶段及关键接口节点设置业主审查",
+        "问题升级路径：接口争议与现场条件差异按业主代理升级机制处理",
+        "文档纪律：质量记录、检查报告与接口签认文件统一归档",
+        "接口签认：跨境段、管线迁移及既有设施保护接口须经业主签认",
+        "公共通道协调：施工期间口岸公共通道安排须经业主协调确认",
+        "质量目标追踪：独立检查方案与质量记录架构作为合同义务跟踪",
+        "安全期望追踪：施工安全与口岸运营安全期望纳入定期审查",
+        "变更控制纪律：变更须经业主审查与价格评审后实施"
+      ],
+      "risk_priorities": [
+        "跨境接口责任不清导致工期与造价争议",
+        "口岸段现场移交条件不明导致施工期评分失真",
+        "价格基础不一致削弱评标可比性与成本控制",
+        "质量评分流于形式，独立检查与文档纪律不足",
+        "既有设施保护与管线迁移责任边界模糊",
+        "公共通道协调不当影响口岸运营",
+        "组合体跨境经验与团队配置认定口径不一致"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "design_package",
+          "package_type": "design",
+          "package_name": "轻轨东线西延青茂口岸设计包",
+          "scope": "负责轻轨东线西延至青茂口岸的D&B设计工作，包括跨境段接口设计、口岸段运输接口布局、公共通道布局、MEP与结构协调、BIM协同、既有设施保护与管线迁移设计、耐久性与可维护性目标、能源使用目标，以及接口责任矩阵草案与现场移交条件建议。",
+          "required_company_role": "designer",
+          "qualification_requirements": [
+            "轨道交通延伸段设计协调能力",
+            "跨境接口设计协调能力",
+            "口岸段公共通道布局能力",
+            "BIM协同与MEP协调能力",
+            "既有设施保护与管线迁移设计能力",
+            "耐久性与可维护性设计能力",
+            "质量文档纪律能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "设计交付方法与BIM协同方案",
+            "质量方法与独立检查安排",
+            "价格基础与计量方式说明",
+            "设计进度视图与业主审查节点",
+            "接口责任矩阵草案与风险应对"
+          ],
+          "pricing_requirements": "按设计阶段与专业分工报价，明确价格基础、计量方式与支付评审节点，确保报价可比可核。",
+          "evaluation_criteria": [
+            "capability fit",
+            "delivery confidence",
+            "staffing realism",
+            "quality target fit",
+            "interface coordination",
+            "documentation discipline",
+            "owner review clarity"
+          ],
+          "owner_decision_policy": "业主代理将定性比较各投标人的设计能力契合度、团队配置真实性、接口协调方案与质量目标契合度，并结合价格合理性与风险控制综合判断。"
+        },
+        {
+          "package_id": "supplier_package",
+          "package_type": "supplier",
+          "package_name": "轻轨东线西延青茂口岸设备与系统供应包",
+          "scope": "负责业主选定设备、材料、系统及运输接口组件的供应，包括产品适配、供应协调、交付物流、质量文档、可维护性支持、保修与售后支持、备件计划，以及向主承包商提供安装接口信息。不包含现场安装施工。",
+          "required_company_role": "supplier",
+          "qualification_requirements": [
+            "轨道交通设备与系统产品适配能力",
+            "供应协调与交付物流能力",
+            "质量文档与可维护性支持能力",
+            "保修与售后支持能力",
+            "备件计划能力",
+            "向承包商提供接口信息能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "产品适配与供应交付方法",
+            "质量方法与质量文档架构",
+            "价格基础与报价明细",
+            "供应进度视图与交付物流安排",
+            "保修、售后与备件计划及风险应对"
+          ],
+          "pricing_requirements": "按设备与系统清单报价，明确价格基础、交付节点与支付评审条件，确保供应报价可比。",
+          "evaluation_criteria": [
+            "capability fit",
+            "delivery confidence",
+            "price reasonableness",
+            "quality target fit",
+            "maintainability support",
+            "documentation discipline",
+            "interface coordination"
+          ],
+          "owner_decision_policy": "业主代理将定性比较产品适配度、供应交付信心、质量文档与可维护性支持，并结合价格合理性与风险控制综合判断。"
+        },
+        {
+          "package_id": "contractor_package",
+          "package_type": "contractor",
+          "package_name": "轻轨东线西延青茂口岸施工包",
+          "scope": "负责轻轨东线西延至青茂口岸的施工实施，包括跨境段与口岸段土建、MEP安装、既有设施保护、管线迁移、公共通道施工协调、现场移交条件落实、施工期交通疏解，以及与设计包和供应包的接口协调。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "轨道交通施工能力",
+            "跨境段施工协调能力",
+            "口岸段现场施工组织能力",
+            "MEP安装协调能力",
+            "既有设施保护与管线迁移施工能力",
+            "施工期公共通道协调能力",
+            "质量文档与安全期望追踪能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工交付方法与施工期交通疏解方案",
+            "质量方法与独立检查配合安排",
+            "价格基础与计量方式说明",
+            "施工进度视图与里程碑计划",
+            "接口协调与风险应对"
+          ],
+          "pricing_requirements": "按施工分项与工程量清单报价，明确价格基础、计量方式与支付评审节点，确保施工报价可比可核。",
+          "evaluation_criteria": [
+            "capability fit",
+            "delivery confidence",
+            "price reasonableness",
+            "risk control",
+            "staffing realism",
+            "safety expectation tracking",
+            "interface coordination",
+            "public access coordination"
+          ],
+          "owner_decision_policy": "业主代理将定性比较施工能力契合度、工期与工作计划可行性、安全期望追踪与接口协调，并结合价格合理性与风险控制综合判断。"
+        },
+        {
+          "package_id": "supervision_package",
+          "package_type": "supervision",
+          "package_name": "轻轨东线西延青茂口岸监管服务包",
+          "scope": "负责独立现场监管服务，包括现场监测、质量审查、安全期望追踪、报告纪律、样本处理、业主升级路径及接口观察，覆盖设计、供应与施工包的接口协调与质量目标追踪。",
+          "required_company_role": "supervisor",
+          "qualification_requirements": [
+            "独立现场监测能力",
+            "质量审查与报告纪律能力",
+            "安全期望追踪能力",
+            "样本处理与文档管理能力",
+            "业主升级与接口观察能力",
+            "跨境段与口岸段监管协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "监管交付方法与独立检查方案",
+            "质量方法与报告纪律安排",
+            "价格基础与计量方式说明",
+            "监管进度视图与业主审查节点",
+            "接口观察与风险应对"
+          ],
+          "pricing_requirements": "按监管服务阶段与人员投入报价，明确价格基础、计量方式与支付评审节点，确保监管报价可比。",
+          "evaluation_criteria": [
+            "independence assurance",
+            "capability fit",
+            "quality target fit",
+            "safety expectation tracking",
+            "documentation discipline",
+            "owner review clarity",
+            "interface coordination"
+          ],
+          "owner_decision_policy": "业主代理将定性比较监管独立性、质量与安全追踪能力、报告纪律与接口观察方案，并结合价格合理性与风险控制综合判断。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "design_package",
+        "package_type": "design",
+        "package_name": "轻轨东线西延青茂口岸设计包",
+        "scope": "负责轻轨东线西延至青茂口岸的D&B设计工作，包括跨境段接口设计、口岸段运输接口布局、公共通道布局、MEP与结构协调、BIM协同、既有设施保护与管线迁移设计、耐久性与可维护性目标、能源使用目标，以及接口责任矩阵草案与现场移交条件建议。",
+        "required_company_role": "designer",
+        "qualification_requirements": [
+          "轨道交通延伸段设计协调能力",
+          "跨境接口设计协调能力",
+          "口岸段公共通道布局能力",
+          "BIM协同与MEP协调能力",
+          "既有设施保护与管线迁移设计能力",
+          "耐久性与可维护性设计能力",
+          "质量文档纪律能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "设计交付方法与BIM协同方案",
+          "质量方法与独立检查安排",
+          "价格基础与计量方式说明",
+          "设计进度视图与业主审查节点",
+          "接口责任矩阵草案与风险应对"
+        ],
+        "pricing_requirements": "按设计阶段与专业分工报价，明确价格基础、计量方式与支付评审节点，确保报价可比可核。",
+        "evaluation_criteria": [
+          "capability fit",
+          "delivery confidence",
+          "staffing realism",
+          "quality target fit",
+          "interface coordination",
+          "documentation discipline",
+          "owner review clarity"
+        ],
+        "owner_decision_policy": "业主代理将定性比较各投标人的设计能力契合度、团队配置真实性、接口协调方案与质量目标契合度，并结合价格合理性与风险控制综合判断。"
+      },
+      {
+        "package_id": "supplier_package",
+        "package_type": "supplier",
+        "package_name": "轻轨东线西延青茂口岸设备与系统供应包",
+        "scope": "负责业主选定设备、材料、系统及运输接口组件的供应，包括产品适配、供应协调、交付物流、质量文档、可维护性支持、保修与售后支持、备件计划，以及向主承包商提供安装接口信息。不包含现场安装施工。",
+        "required_company_role": "supplier",
+        "qualification_requirements": [
+          "轨道交通设备与系统产品适配能力",
+          "供应协调与交付物流能力",
+          "质量文档与可维护性支持能力",
+          "保修与售后支持能力",
+          "备件计划能力",
+          "向承包商提供接口信息能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "产品适配与供应交付方法",
+          "质量方法与质量文档架构",
+          "价格基础与报价明细",
+          "供应进度视图与交付物流安排",
+          "保修、售后与备件计划及风险应对"
+        ],
+        "pricing_requirements": "按设备与系统清单报价，明确价格基础、交付节点与支付评审条件，确保供应报价可比。",
+        "evaluation_criteria": [
+          "capability fit",
+          "delivery confidence",
+          "price reasonableness",
+          "quality target fit",
+          "maintainability support",
+          "documentation discipline",
+          "interface coordination"
+        ],
+        "owner_decision_policy": "业主代理将定性比较产品适配度、供应交付信心、质量文档与可维护性支持，并结合价格合理性与风险控制综合判断。"
+      },
+      {
+        "package_id": "contractor_package",
+        "package_type": "contractor",
+        "package_name": "轻轨东线西延青茂口岸施工包",
+        "scope": "负责轻轨东线西延至青茂口岸的施工实施，包括跨境段与口岸段土建、MEP安装、既有设施保护、管线迁移、公共通道施工协调、现场移交条件落实、施工期交通疏解，以及与设计包和供应包的接口协调。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "轨道交通施工能力",
+          "跨境段施工协调能力",
+          "口岸段现场施工组织能力",
+          "MEP安装协调能力",
+          "既有设施保护与管线迁移施工能力",
+          "施工期公共通道协调能力",
+          "质量文档与安全期望追踪能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工交付方法与施工期交通疏解方案",
+          "质量方法与独立检查配合安排",
+          "价格基础与计量方式说明",
+          "施工进度视图与里程碑计划",
+          "接口协调与风险应对"
+        ],
+        "pricing_requirements": "按施工分项与工程量清单报价，明确价格基础、计量方式与支付评审节点，确保施工报价可比可核。",
+        "evaluation_criteria": [
+          "capability fit",
+          "delivery confidence",
+          "price reasonableness",
+          "risk control",
+          "staffing realism",
+          "safety expectation tracking",
+          "interface coordination",
+          "public access coordination"
+        ],
+        "owner_decision_policy": "业主代理将定性比较施工能力契合度、工期与工作计划可行性、安全期望追踪与接口协调，并结合价格合理性与风险控制综合判断。"
+      },
+      {
+        "package_id": "supervision_package",
+        "package_type": "supervision",
+        "package_name": "轻轨东线西延青茂口岸监管服务包",
+        "scope": "负责独立现场监管服务，包括现场监测、质量审查、安全期望追踪、报告纪律、样本处理、业主升级路径及接口观察，覆盖设计、供应与施工包的接口协调与质量目标追踪。",
+        "required_company_role": "supervisor",
+        "qualification_requirements": [
+          "独立现场监测能力",
+          "质量审查与报告纪律能力",
+          "安全期望追踪能力",
+          "样本处理与文档管理能力",
+          "业主升级与接口观察能力",
+          "跨境段与口岸段监管协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "监管交付方法与独立检查方案",
+          "质量方法与报告纪律安排",
+          "价格基础与计量方式说明",
+          "监管进度视图与业主审查节点",
+          "接口观察与风险应对"
+        ],
+        "pricing_requirements": "按监管服务阶段与人员投入报价，明确价格基础、计量方式与支付评审节点，确保监管报价可比。",
+        "evaluation_criteria": [
+          "independence assurance",
+          "capability fit",
+          "quality target fit",
+          "safety expectation tracking",
+          "documentation discipline",
+          "owner review clarity",
+          "interface coordination"
+        ],
+        "owner_decision_policy": "业主代理将定性比较监管独立性、质量与安全追踪能力、报告纪律与接口观察方案，并结合价格合理性与风险控制综合判断。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "owner_001",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "澳门特别行政区政府公共建设局 是本案例的业主方，负责项目招标策略、评标组织和模拟判给决策。",
+        "strengths": [
+          "掌握项目目标",
+          "熟悉澳门公共工程管理要求"
+        ],
+        "weaknesses": [
+          "需要在有限基础信息下细化招标包和评标重点"
+        ],
+        "qualifications": [
+          "业主管理",
+          "招标组织",
+          "项目约束控制",
+          "评标决策"
+        ],
+        "past_project_experience": [
+          "轻轨东线西延青茂口岸"
+        ],
+        "capacity": "项目业主组织",
+        "risk_signals": [
+          "公共项目透明度要求高",
+          "跨区域协作和接口协调要求高"
+        ],
+        "eligible_packages": [
+          "design_package",
+          "supplier_package",
+          "contractor_package",
+          "supervision_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0461",
+        "company_name": "中交公路規劃設計院有限公司澳門分公司",
+        "company_role": "designer",
+        "profile": "中交公路規劃設計院有限公司澳門分公司 是候选企业池中的设计企业。 企业类型：央企。 办公地点：澳门。 经营范围：道路、桥梁、隧道、交通基础设施规划设计及设计连建造技术服务。",
+        "strengths": [
+          "代表项目经验：新城填海A区与澳门半岛连接桥A3设计；氹仔北安大马路行人隧道设计；新城填海区A区共同管道及道路设计连建造工程；大潭山隧道北连接线设计",
+          "合作伙伴或客户基础：澳门公共建设局、得宝国际/中国路桥合作经营、乘风、迪宝电机工程等",
+          "设计协调和业主审查提交能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：revenue、profit"
+        ],
+        "qualifications": [
+          "道路、桥梁、隧道、交通基础设施规划设计及设计连建造技术服务",
+          "母公司公开资料显示2001年通过ISO9001质量认证",
+          "交通工程设计/专业技术服务业",
+          "设计协调和业主审查提交能力"
+        ],
+        "past_project_experience": [
+          "新城填海A区与澳门半岛连接桥A3设计；氹仔北安大马路行人隧道设计；新城填海区A区共同管道及道路设计连建造工程；大潭山隧道北连接线设计"
+        ],
+        "capacity": "母公司公开资料显示员工735人（含分支机构）",
+        "risk_signals": [],
+        "eligible_packages": [
+          "design_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0468",
+        "company_name": "中鐵第四勘察設計院集團有限公司澳門分公司",
+        "company_role": "designer",
+        "profile": "中鐵第四勘察設計院集團有限公司澳門分公司 是候选企业池中的设计企业。 企业类型：央企。 办公地点：澳门。 经营范围：铁路、城市轨道交通、市政交通、综合交通枢纽及相关工程勘察设计。",
+        "strengths": [
+          "代表项目经验：澳门公共建设局规划项目、轻轨/车站配套工程相关设计服务；母公司承担中国高速铁路和城市轨道交通大量设计项目",
+          "合作伙伴或客户基础：澳门公共建设局、轨道交通及市政基础设施业主",
+          "设计协调和业主审查提交能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、revenue、profit"
+        ],
+        "qualifications": [
+          "铁路、城市轨道交通、市政交通、综合交通枢纽及相关工程勘察设计",
+          "母公司公开资料含ISO9001、ISO14001、ISO45001相关管理体系信息",
+          "工程勘察设计/专业技术服务业",
+          "设计协调和业主审查提交能力"
+        ],
+        "past_project_experience": [
+          "澳门公共建设局规划项目、轻轨/车站配套工程相关设计服务；母公司承担中国高速铁路和城市轨道交通大量设计项目"
+        ],
+        "capacity": "企业信息表未提供明确规模",
+        "risk_signals": [],
+        "eligible_packages": [
+          "design_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0259",
+        "company_name": "广东粤明动力有限公司",
+        "company_role": "supplier",
+        "profile": "广东粤明动力有限公司 是候选企业池中的供应企业。 企业类型：有限责任公司。 办公地点：广东省深圳市龙岗区。 经营范围：投资兴办实业（具体项目另行申报）；国内贸易；经济信息咨询（不含专营、专控、专卖商品及限制项目）；计算机软硬件、通讯设备、机电产品的技术开发（不含限制项目）；电能供应；综合管廊的建设、运营、维护、管理；物业管理；防盗报警系统、安全防范电视监控系统、楼寓防盗电子对讲系统、门禁系统、巡更系统工程设计、安装、维修；噪声治理（须取得环保部门技术资格认证后方可经营）；电力工程施工总承包、市政公用工程施工总承包、建筑工程施工总承包、建筑机电安装工程专业承包、输变电工程专业承包、城市及道路照明工程专业承包、环保工程专业承包（凭建筑业企业资质证书经营）；施工劳务作业。输配电及控制设备制造；电机制造；电力电子元器件制造；发电机及发电机组制造；机械电气设备制造；建筑用金属配件制造；金属切割及焊接设备制造；金属表面处理及热处理加工；门窗制造加工；电子专用材料制造；五金产品制造。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）从事输电、供电、受电电力设施安装、维修和试验。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）。",
+        "strengths": [
+          "供应协调、质量文件和售后支持能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、certifications、revenue、profit"
+        ],
+        "qualifications": [
+          "投资兴办实业（具体项目另行申报）；国内贸易；经济信息咨询（不含专营、专控、专卖商品及限制项目）；计算机软硬件、通讯设备、机电产品的技术开发（不含限制项目）；电能供应；综合管廊的建设、运营、维护、管理；物业管理；防盗报警系统、安全防范电视监控系统、楼寓防盗电子对讲系统、门禁系统、巡更系统工程设计、安装、维修；噪声治理（须取得环保部门技术资格认证后方可经营）；电力工程施工总承包、市政公用工程施工总承包、建筑工程施工总承包、建筑机电安装工程专业承包、输变电工程专业承包、城市及道路照明工程专业承包、环保工程专业承包（凭建筑业企业资质证书经营）；施工劳务作业。输配电及控制设备制造；电机制造；电力电子元器件制造；发电机及发电机组制造；机械电气设备制造；建筑用金属配件制造；金属切割及焊接设备制造；金属表面处理及热处理加工；门窗制造加工；电子专用材料制造；五金产品制造。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）从事输电、供电、受电电力设施安装、维修和试验。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+          "电气机械和器材制造业",
+          "供应协调、质量文件和售后支持能力"
+        ],
+        "past_project_experience": [
+          "企业信息表未提供明确代表项目"
+        ],
+        "capacity": "134人",
+        "risk_signals": [],
+        "eligible_packages": [
+          "supplier_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0271",
+        "company_name": "广州市安装集团有限公司",
+        "company_role": "supplier",
+        "profile": "广州市安装集团有限公司 是候选企业池中的供应企业。 企业类型：有限责任公司(法人独资)。 办公地点：广东省广州市越秀区。 经营范围：承接总公司工程建设业务;土石方工程施工;金属门窗工程施工;体育场地设施工程施工;普通机械设备安装服务;智能仓储装备销售;建筑材料销售;采购代理服务;住房租赁;非居住房地产租赁;市政设施管理;信息系统集成服务;信息系统运行维护服务;安全技术防范系统设计施工服务;电子专用设备销售;特种设备销售;网络技术服务;计算机及办公设备维修;第二类医疗器械销售;污水处理及其再生利用;房地产咨询;工程技术服务（规划管理、勘察、设计、监理除外）;停车场服务;工业控制计算机及系统销售;供应链管理服务;充电桩销售;太阳能热发电产品销售;3D打印服务;新材料技术研发;信息技术咨询服务;工程管理服务;电动汽车充电基础设施运营;电力设施器材销售;住宅水电安装维护服务;电子、机械设备维护（不含特种设备）;有色金属压延加工;制冷、空调设备销售;对外承包工程;技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;发电机及发电机组销售;配电开关控制设备销售;机械设备租赁;建筑工程机械与设备租赁;金属结构制造;电气机械设备销售;物业管理;机械设备销售;消防技术服务;货物进出口;工程造价咨询业务;工业工程设计服务;工业设计服务;专业设计服务;太阳能发电技术服务;太阳能热利用装备销售;风电场相关系统研发;风电场相关装备销售;风力发电技术服务;海上风电相关系统研发;新能源汽车换电设施销售;新能源原动设备销售;新兴能源技术研发;储能技术服务;节能管理服务;合同能源管理;环境卫生公共设施安装服务;水环境污染防治服务;生态资源监测;园林绿化工程施工;数字技术服务;工程和技术研究和试验发展;专用设备修理;通用设备修理;电气设备销售;电气设备修理;保温材料销售;防腐材料销售;电线、电缆经营;建筑工程用机械销售;建筑用金属配件销售;建筑装饰材料销售;气体压缩机械销售;金属加工机械制造;金属结构销售;涂料销售（不含危险化学品）;五金产品批发;装卸搬运;电气安装服务;建筑智能化工程施工;房屋建筑和市政基础设施项目工程总承包;住宅室内装饰装修;消防设施工程施工;建筑物拆除作业（爆破作业除外）;施工专业作业;电力设施承装、承修、承试;特种设备安装改造修理;第三类医疗器械经营;自来水生产与供应;房地产开发经营;建设工程设计;建筑智能化系统设计;建设工程施工;发电业务、输电业务、供（配）电业务;输电、供电、受电电力设施的安装、维修和试验;人防工程防护设备安装;燃气燃烧器具安装、维修。",
+        "strengths": [
+          "供应协调、质量文件和售后支持能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、certifications、revenue、profit"
+        ],
+        "qualifications": [
+          "承接总公司工程建设业务;土石方工程施工;金属门窗工程施工;体育场地设施工程施工;普通机械设备安装服务;智能仓储装备销售;建筑材料销售;采购代理服务;住房租赁;非居住房地产租赁;市政设施管理;信息系统集成服务;信息系统运行维护服务;安全技术防范系统设计施工服务;电子专用设备销售;特种设备销售;网络技术服务;计算机及办公设备维修;第二类医疗器械销售;污水处理及其再生利用;房地产咨询;工程技术服务（规划管理、勘察、设计、监理除外）;停车场服务;工业控制计算机及系统销售;供应链管理服务;充电桩销售;太阳能热发电产品销售;3D打印服务;新材料技术研发;信息技术咨询服务;工程管理服务;电动汽车充电基础设施运营;电力设施器材销售;住宅水电安装维护服务;电子、机械设备维护（不含特种设备）;有色金属压延加工;制冷、空调设备销售;对外承包工程;技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;发电机及发电机组销售;配电开关控制设备销售;机械设备租赁;建筑工程机械与设备租赁;金属结构制造;电气机械设备销售;物业管理;机械设备销售;消防技术服务;货物进出口;工程造价咨询业务;工业工程设计服务;工业设计服务;专业设计服务;太阳能发电技术服务;太阳能热利用装备销售;风电场相关系统研发;风电场相关装备销售;风力发电技术服务;海上风电相关系统研发;新能源汽车换电设施销售;新能源原动设备销售;新兴能源技术研发;储能技术服务;节能管理服务;合同能源管理;环境卫生公共设施安装服务;水环境污染防治服务;生态资源监测;园林绿化工程施工;数字技术服务;工程和技术研究和试验发展;专用设备修理;通用设备修理;电气设备销售;电气设备修理;保温材料销售;防腐材料销售;电线、电缆经营;建筑工程用机械销售;建筑用金属配件销售;建筑装饰材料销售;气体压缩机械销售;金属加工机械制造;金属结构销售;涂料销售（不含危险化学品）;五金产品批发;装卸搬运;电气安装服务;建筑智能化工程施工;房屋建筑和市政基础设施项目工程总承包;住宅室内装饰装修;消防设施工程施工;建筑物拆除作业（爆破作业除外）;施工专业作业;电力设施承装、承修、承试;特种设备安装改造修理;第三类医疗器械经营;自来水生产与供应;房地产开发经营;建设工程设计;建筑智能化系统设计;建设工程施工;发电业务、输电业务、供（配）电业务;输电、供电、受电电力设施的安装、维修和试验;人防工程防护设备安装;燃气燃烧器具安装、维修",
+          "建筑安装业",
+          "供应协调、质量文件和售后支持能力"
+        ],
+        "past_project_experience": [
+          "企业信息表未提供明确代表项目"
+        ],
+        "capacity": "645人",
+        "risk_signals": [],
+        "eligible_packages": [
+          "supplier_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "得寶國際-得寶建築合作經營 是候选企业池中的施工企业。 企业类型：私营。 办公地点：澳门。 经营范围：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。",
+        "strengths": [
+          "代表项目经验：新城A区与澳门半岛A3连接桥设计与建造、澳门轻轨东线系统、路环石排湾水库扩容、威尼斯人场馆升级、莲花路多功能建筑临时连接轻轨及地库/裙楼工程",
+          "合作伙伴或客户基础：Sands China、Wynn Macau、Galaxy Entertainment Group、Mandarin Oriental Hotel Macau、Mitsubishi Heavy Industries、Hsin Chong Group、Leighton Asia、CEM、CTM、DSOP、DSSCU、IAS、IC、SA、DSFSM、UPM、Instituto Salesiano、CB等",
+          "施工组织、安全管理和进度控制能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、revenue、profit"
+        ],
+        "qualifications": [
+          "总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目",
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证",
+          "建筑工程施工",
+          "施工组织、安全管理和进度控制能力"
+        ],
+        "past_project_experience": [
+          "新城A区与澳门半岛A3连接桥设计与建造、澳门轻轨东线系统、路环石排湾水库扩容、威尼斯人场馆升级、莲花路多功能建筑临时连接轻轨及地库/裙楼工程"
+        ],
+        "capacity": "企业信息表未提供明确规模",
+        "risk_signals": [],
+        "eligible_packages": [
+          "contractor_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "得宝国际有限公司 是候选企业池中的施工企业。 企业类型：私营。 办公地点：澳门/香港。 经营范围：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。",
+        "strengths": [
+          "代表项目经验：新城A区与澳门半岛A3连接桥设计与建造、澳门轻轨东线系统、路环石排湾水库扩容、威尼斯人场馆升级、莲花路多功能建筑临时连接轻轨及地库/裙楼工程",
+          "合作伙伴或客户基础：Sands China、Wynn Macau、Galaxy Entertainment Group、Mandarin Oriental Hotel Macau、Mitsubishi Heavy Industries、Hsin Chong Group、Leighton Asia、CEM、CTM、DSOP、DSSCU、IAS、IC、SA、DSFSM、UPM、Instituto Salesiano、CB等",
+          "施工组织、安全管理和进度控制能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、revenue、profit"
+        ],
+        "qualifications": [
+          "总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目",
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证",
+          "建筑工程施工",
+          "施工组织、安全管理和进度控制能力"
+        ],
+        "past_project_experience": [
+          "新城A区与澳门半岛A3连接桥设计与建造、澳门轻轨东线系统、路环石排湾水库扩容、威尼斯人场馆升级、莲花路多功能建筑临时连接轻轨及地库/裙楼工程"
+        ],
+        "capacity": "企业信息表未提供明确规模",
+        "risk_signals": [],
+        "eligible_packages": [
+          "contractor_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0467",
+        "company_name": "中鐵大橋勘測設計院集團有限公司澳門分公司",
+        "company_role": "supervisor",
+        "profile": "中鐵大橋勘測設計院集團有限公司澳門分公司 是候选企业池中的监管/顾问企业。 企业类型：央企。 办公地点：澳门。 经营范围：桥梁勘测设计，兼营铁道、市政、公路、隧道、建筑、规划、轨道交通设计、咨询监理、桥隧诊治等。",
+        "strengths": [
+          "代表项目经验：澳门轻轨东线初步设计；轻轨东线西延段至青洲站可行性研究；西湾大桥LED景观照明系统更换设计；西湾大桥/桥隧健康监测服务",
+          "合作伙伴或客户基础：澳门公共建设局、轻轨/交通基础设施业主单位",
+          "第三方监察、质量记录和业主报告能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、certifications、revenue、profit"
+        ],
+        "qualifications": [
+          "桥梁勘测设计，兼营铁道、市政、公路、隧道、建筑、规划、轨道交通设计、咨询监理、桥隧诊治等",
+          "工程勘察设计/专业技术服务业",
+          "第三方监察、质量记录和业主报告能力"
+        ],
+        "past_project_experience": [
+          "澳门轻轨东线初步设计；轻轨东线西延段至青洲站可行性研究；西湾大桥LED景观照明系统更换设计；西湾大桥/桥隧健康监测服务"
+        ],
+        "capacity": "企业信息表未提供明确规模",
+        "risk_signals": [],
+        "eligible_packages": [
+          "supervision_package"
+        ]
+      },
+      {
+        "company_id": "COMP-0803",
+        "company_name": "廣州地鐵工程咨詢有限公司",
+        "company_role": "supervisor",
+        "profile": "廣州地鐵工程咨詢有限公司 是候选企业池中的监管/顾问企业。 企业类型：国有。 办公地点：广州。 经营范围：地铁/轨道交通工程咨询。",
+        "strengths": [
+          "合作伙伴或客户基础：广州地铁集团（广州市国资委）",
+          "第三方监察、质量记录和业主报告能力"
+        ],
+        "weaknesses": [
+          "公开数据缺口：staff_scale、certifications、revenue、profit"
+        ],
+        "qualifications": [
+          "地铁/轨道交通工程咨询",
+          "工程咨询（轨交）",
+          "第三方监察、质量记录和业主报告能力"
+        ],
+        "past_project_experience": [
+          "企业信息表未提供明确代表项目"
+        ],
+        "capacity": "企业信息表未提供明确规模",
+        "risk_signals": [],
+        "eligible_packages": [
+          "supervision_package"
+        ]
+      }
+    ],
+    "company_agent_rosters": {
+      "owner_001": [
+        {
+          "agent_id": "owner_001_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "owner_001",
+          "company_role": "owner",
+          "department": "招标策略组",
+          "position": "招标策略主管",
+          "personal_profile": "在压力下首先关注招标包的划分是否清晰、投标人资格是否匹配。他倾向于用结构化清单梳理风险，但有时会因过度强调程序合规而拖慢决策节奏。他带来的张力是：在追求透明度的同时，可能低估跨区域协作的灵活性需求。",
+          "responsibilities": [
+            "制定招标包划分与投标人资格建议",
+            "组织评标重点与评分标准设计",
+            "协调跨区域接口与监管要求",
+            "跟踪招标进度与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，善用清单和流程图，但发言偏正式，较少主动征求非程序性意见。"
+        },
+        {
+          "agent_id": "owner_001_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "owner_001",
+          "company_role": "owner",
+          "department": "成本控制组",
+          "position": "成本控制经理",
+          "personal_profile": "对数字敏感，第一时间审视报价合理性与支付条款。她习惯用对比分析发现异常，但在时间紧迫时可能过于聚焦成本而忽略质量目标。她的张力在于：坚持成本底线与接受合理溢价之间的平衡。",
+          "responsibilities": [
+            "审核投标报价与价格基础",
+            "评估支付评审与成本风险",
+            "编制成本控制目标与预算约束",
+            "参与评标中的财务评审"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "直接、数据驱动，常以表格和对比数字表达观点，较少修饰。"
+        },
+        {
+          "agent_id": "owner_001_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "owner_001",
+          "company_role": "owner",
+          "department": "工程管理组",
+          "position": "工程管理协调员",
+          "personal_profile": "注重现场可行性与工期安排，善于从施工角度发现设计或招标包中的接口问题。他倾向于务实解决方案，但有时对文档纪律重视不足。他的张力是：推动进度与确保质量目标之间的取舍。",
+          "responsibilities": [
+            "评估工期与施工方案可行性",
+            "协调设计包与施工包接口",
+            "跟踪现场报告与质量目标",
+            "提出风险应对与资源计划建议"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "口语化、举例生动，喜欢用现场案例说明问题，但偶尔偏离议程。"
+        },
+        {
+          "agent_id": "owner_001_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "owner_001",
+          "company_role": "owner",
+          "department": "质量与监管组",
+          "position": "质量监管主任",
+          "personal_profile": "对质量标准和监管要求极为严谨，首先检查独立检查方案与文档纪律。她坚持原则，但可能因过度强调监管而增加投标人负担。她的张力是：严格监管与保持招标吸引力之间的平衡。",
+          "responsibilities": [
+            "制定质量目标与独立检查方案",
+            "审核监管服务包要求",
+            "监督文档纪律与质量评审",
+            "评估投标人质量 approach"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨、引用规范条文，常用应该、必须等措辞，但较少灵活变通。"
+        },
+        {
+          "agent_id": "owner_001_05_刘家豪",
+          "agent_name": "刘家豪",
+          "company_id": "owner_001",
+          "company_role": "owner",
+          "department": "业主代表办公室",
+          "position": "业主接口经理",
+          "personal_profile": "擅长 stakeholder 协调与业主需求传达，注重维护业主与投标人之间的沟通顺畅。他倾向于寻求共识，但有时在争议中立场不够鲜明。他的张力是：满足业主期望与保持招标公平性之间的协调。",
+          "responsibilities": [
+            "协调业主内部需求与招标包要求",
+            "管理投标人沟通与澄清",
+            "组织业主评审与判给建议",
+            "跟踪可持续发展目标与业主审查"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和、善于倾听，常用我们和各方等包容性语言，但决策时可能显得犹豫。"
+        }
+      ],
+      "COMP-0461": [
+        {
+          "agent_id": "COMP-0461_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0461",
+          "company_role": "designer",
+          "department": "设计管理部",
+          "position": "设计总监",
+          "personal_profile": "在压力下优先关注设计整体协调与业主审查要求，习惯从项目全生命周期角度审视设计决策。他首先注意到设计接口与合规风险，倾向于在讨论中强调设计质量与工期平衡的张力，常提醒团队避免过度设计而忽略施工可行性。",
+          "responsibilities": [
+            "设计总体协调与质量目标跟踪",
+            "业主审查提交与设计变更管理",
+            "设计团队资源规划与进度控制"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳果断，善于用结构化语言归纳复杂问题，在会议中常以提问引导团队聚焦关键矛盾。"
+        },
+        {
+          "agent_id": "COMP-0461_02_李婉华",
+          "agent_name": "李婉华",
+          "company_id": "COMP-0461",
+          "company_role": "designer",
+          "department": "项目管理部",
+          "position": "项目经理",
+          "personal_profile": "面对压力时首先梳理任务优先级与资源缺口，注重实际可执行性。她倾向于在讨论中提出具体的进度与成本控制方案，常因坚持现实工期而与设计理想主义产生张力，但能有效推动决策落地。",
+          "responsibilities": [
+            "设计包进度计划与资源调配",
+            "成本控制与支付评审配合",
+            "内部评审与交付文档管理"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实直接，习惯用数据与时间节点说话，沟通中注重明确责任与截止时间。"
+        },
+        {
+          "agent_id": "COMP-0461_03_黄启明",
+          "agent_name": "黄启明",
+          "company_id": "COMP-0461",
+          "company_role": "designer",
+          "department": "技术质量部",
+          "position": "技术质量经理",
+          "personal_profile": "在压力下首先关注技术标准与质量风险，习惯从规范符合性与可持续目标角度审视方案。他常在设计讨论中提出独立检查与验证要求，带来质量与效率之间的张力，但能确保交付成果的可靠性。",
+          "responsibilities": [
+            "设计质量审查与独立复核",
+            "可持续目标与规范符合性评估",
+            "技术风险识别与应对建议"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，喜欢引用规范条文与案例，沟通中强调证据与可追溯性。"
+        },
+        {
+          "agent_id": "COMP-0461_04_苏丽娜",
+          "agent_name": "苏丽娜",
+          "company_id": "COMP-0461",
+          "company_role": "designer",
+          "department": "合约与成本部",
+          "position": "合约成本经理",
+          "personal_profile": "在压力下优先分析合约条款与成本影响，对价格基础与支付评审尤为敏感。她倾向于在讨论中强调成本控制与合约风险，常因坚持成本底线而与设计优化产生张力，但能保障项目财务稳健。",
+          "responsibilities": [
+            "设计包报价基础与成本评审",
+            "合约条款审查与支付评估",
+            "变更索赔与风险成本分析"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "精明干练，善于用数字与合约条款支撑观点，沟通中注重细节与边界条件。"
+        },
+        {
+          "agent_id": "COMP-0461_05_张伟强",
+          "agent_name": "张伟强",
+          "company_id": "COMP-0461",
+          "company_role": "designer",
+          "department": "工程协调部",
+          "position": "高级工程协调员",
+          "personal_profile": "在压力下首先关注现场可行性与利益相关方协调，习惯从施工与运营角度反馈设计问题。他常在讨论中提出实际施工限制与协调难点，带来设计理想与现场现实的张力，但能促进设计可建造性。",
+          "responsibilities": [
+            "现场报告与利益相关方协调",
+            "设计可建造性审查与接口管理",
+            "施工阶段设计配合与问题解决"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "灵活务实，善于用现场案例说明问题，沟通中注重建立共识与推动协作。"
+        }
+      ],
+      "COMP-0468": [
+        {
+          "agent_id": "COMP-0468_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0468",
+          "company_role": "designer",
+          "department": "设计总体部",
+          "position": "设计总体负责人",
+          "personal_profile": "压力下优先确保设计整体逻辑与业主需求对齐，习惯先看合同范围与业主审查要求，再分解任务。讨论中常提醒团队不要过度承诺，强调设计输入完整性。",
+          "responsibilities": [
+            "统筹设计包整体技术方案与进度",
+            "业主审查提交与设计协调",
+            "设计变更与风险应对决策"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，善用结构化表达，重视书面记录与业主接口"
+        },
+        {
+          "agent_id": "COMP-0468_02_黄敏仪",
+          "agent_name": "黄敏仪",
+          "company_id": "COMP-0468",
+          "company_role": "designer",
+          "department": "项目管理部",
+          "position": "项目经理",
+          "personal_profile": "对工期和资源匹配高度敏感，压力下先核查团队可用性与交付节点，倾向用里程碑倒排。讨论中常提出资源冲突与外部依赖风险。",
+          "responsibilities": [
+            "编制团队可用性摘要与角色计划",
+            "协调设计进度与交付节点",
+            "监控风险应对与资源调配"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实清晰，注重时间与责任分配，善用清单与节点沟通"
+        },
+        {
+          "agent_id": "COMP-0468_03_李国华",
+          "agent_name": "李国华",
+          "company_id": "COMP-0468",
+          "company_role": "designer",
+          "department": "技术质量部",
+          "position": "技术质量总监",
+          "personal_profile": "以质量目标和独立复核为第一原则，压力下坚持按程序审查，不轻易妥协。讨论中常质疑设计验证是否充分，强调文档纪律。",
+          "responsibilities": [
+            "制定质量目标与质量方针",
+            "组织独立复核与质量审查",
+            "监督设计文档纪律与合规性"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，引用规范与程序，偏好书面审查意见"
+        },
+        {
+          "agent_id": "COMP-0468_04_张伟明",
+          "agent_name": "张伟明",
+          "company_id": "COMP-0468",
+          "company_role": "designer",
+          "department": "成本控制部",
+          "position": "成本控制经理",
+          "personal_profile": "对报价基础和成本风险高度警觉，压力下先审视价格依据与支付评审条款。讨论中常提醒设计对成本的影响，主张限额设计。",
+          "responsibilities": [
+            "编制报价基础与成本估算",
+            "支付评审与成本审查",
+            "设计阶段成本控制与限额设计"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "数据驱动，直接务实，善用对比与敏感性分析"
+        },
+        {
+          "agent_id": "COMP-0468_05_何嘉欣",
+          "agent_name": "何嘉欣",
+          "company_id": "COMP-0468",
+          "company_role": "designer",
+          "department": "设计协调部",
+          "position": "设计协调经理",
+          "personal_profile": "擅长多专业接口管理，压力下优先梳理接口矩阵与冲突点。讨论中常提出跨专业协调需求，关注业主期望与设计可施工性。",
+          "responsibilities": [
+            "协调各专业设计接口与冲突",
+            "业主需求沟通与期望管理",
+            "设计可施工性审查与优化"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "亲和协作，善用可视化工具，注重多方共识"
+        }
+      ],
+      "COMP-0259": [
+        {
+          "agent_id": "COMP-0259_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0259",
+          "company_role": "supplier",
+          "department": "供应协调部",
+          "position": "供应协调经理",
+          "personal_profile": "在压力下首先关注供应节奏与现场需求的匹配，习惯用清单和节点表推进工作。他倾向于把不确定性转化为可执行的备选方案，但有时会因过度强调供应保障而低估成本影响，在讨论中常带来资源调配与工期保障之间的张力。",
+          "responsibilities": [
+            "统筹供应包的整体协调与交付计划",
+            "对接业主与总包单位的供应需求",
+            "组织供应资源规划与风险应对",
+            "监控供应进度并处理异常情况"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，注重事实与数据，习惯用简洁的要点沟通，在会议中会主动确认各方责任与时间节点。"
+        },
+        {
+          "agent_id": "COMP-0259_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "COMP-0259",
+          "company_role": "supplier",
+          "department": "质量保证部",
+          "position": "质量经理",
+          "personal_profile": "质量优先的思考者，在压力下会反复核对质量文件与检验记录，对细节敏感。她首先注意到的是流程中的质量隐患和文档缺失，倾向于坚持独立检查与复核。在讨论中常带来质量目标与进度压力之间的张力，强调质量底线不可妥协。",
+          "responsibilities": [
+            "制定并执行供应包的质量控制计划",
+            "组织质量审查与独立检查",
+            "管理质量文档与追溯记录",
+            "跟踪质量目标的达成情况"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨细致，喜欢用书面报告和检查表沟通，在讨论中会引用具体条款和标准，语气坚定但保持专业。"
+        },
+        {
+          "agent_id": "COMP-0259_03_王海生",
+          "agent_name": "王海生",
+          "company_id": "COMP-0259",
+          "company_role": "supplier",
+          "department": "成本控制部",
+          "position": "成本控制主管",
+          "personal_profile": "对数字高度敏感，在压力下会快速测算成本影响和支付风险。他首先关注报价依据和支付条款的合理性，倾向于用保守的财务假设来规避风险。在讨论中常带来成本控制与供应保障之间的张力，提醒团队注意预算约束。",
+          "responsibilities": [
+            "编制供应包的成本预算与报价基础",
+            "审核支付申请与支付评估",
+            "监控成本执行与偏差分析",
+            "参与供应合同的经济条款评审"
+          ],
+          "decision_authority": "final",
+          "communication_style": "逻辑清晰，善于用财务数据和对比分析说话，沟通时注重条理和依据，有时会显得谨慎保守。"
+        },
+        {
+          "agent_id": "COMP-0259_04_张丽萍",
+          "agent_name": "张丽萍",
+          "company_id": "COMP-0259",
+          "company_role": "supplier",
+          "department": "客户与文档管理部",
+          "position": "客户接口与文档主管",
+          "personal_profile": "注重关系维护与文档纪律，在压力下会优先确保信息传递的准确性和及时性。她首先注意到的是各方沟通是否顺畅、文档是否齐全合规。在讨论中常带来客户满意度与内部流程之间的张力，强调业主接口和文档管理的重要性。",
+          "responsibilities": [
+            "维护业主与相关方的沟通渠道",
+            "管理供应包的全套文档与记录",
+            "组织内部文档评审与归档",
+            "协调售后支持与客户反馈处理"
+          ],
+          "decision_authority": "final",
+          "communication_style": "温和而有条理，善于倾听和总结，沟通时注重确认双方理解一致，常用邮件和会议纪要推进工作。"
+        },
+        {
+          "agent_id": "COMP-0259_05_刘振宇",
+          "agent_name": "刘振宇",
+          "company_id": "COMP-0259",
+          "company_role": "supplier",
+          "department": "技术支援部",
+          "position": "技术支援工程师",
+          "personal_profile": "技术导向的问题解决者，在压力下会深入分析技术可行性和产品适配性。他首先关注供应产品与技术规格的匹配度，倾向于用实验数据和技术论证支持决策。在讨论中常带来技术创新与标准符合性之间的张力，提醒团队注意技术风险。",
+          "responsibilities": [
+            "评估供应包的技术要求与产品适配",
+            "提供技术方案与产品选型建议",
+            "参与质量审查中的技术验证",
+            "支持售后技术问题处理"
+          ],
+          "decision_authority": "final",
+          "communication_style": "专业且注重细节，喜欢用技术图纸和数据说明问题，沟通时直接了当，有时会过于专注技术细节。"
+        }
+      ],
+      "COMP-0271": [
+        {
+          "agent_id": "COMP-0271_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0271",
+          "company_role": "supplier",
+          "department": "供应协调部",
+          "position": "供应协调总监",
+          "personal_profile": "在压力下优先确保供应节奏与现场需求匹配，对物料交付节点和供应商产能波动高度敏感。讨论中常提醒团队不要低估跨区域物流与库存缓冲的复杂性，倾向于用保守的供应计划换取履约确定性。",
+          "responsibilities": [
+            "统筹供应包整体协调与资源规划",
+            "对接业主与总包单位的供应需求",
+            "审核供应计划与风险应对方案",
+            "监督关键设备材料的交付节点"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，习惯用时间节点和数量指标说话，在争议中主动提出折中方案。"
+        },
+        {
+          "agent_id": "COMP-0271_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "COMP-0271",
+          "company_role": "supplier",
+          "department": "质量与文档管理部",
+          "position": "质量经理",
+          "personal_profile": "对质量文件和检验记录有近乎苛刻的坚持，认为文档纪律是供应质量的最后防线。压力下会反复核对技术规格与验收标准，常因坚持补充检测报告而拖慢决策节奏，但能显著降低后期质量争议。",
+          "responsibilities": [
+            "编制供应包质量计划与检验标准",
+            "组织内部质量审查与独立检查",
+            "管理质量目标跟踪与整改闭环",
+            "维护质量文档与可追溯记录"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用检查表和证据链表达观点，对模糊表述会当场追问细节。"
+        },
+        {
+          "agent_id": "COMP-0271_03_王海峰",
+          "agent_name": "王海峰",
+          "company_id": "COMP-0271",
+          "company_role": "supplier",
+          "department": "成本与商务管理部",
+          "position": "成本控制经理",
+          "personal_profile": "对报价构成和付款条件极为敏感，善于从现金流角度评估供应方案的可行性。讨论中常提醒团队注意隐性成本与付款节奏错配，倾向于用分阶段付款和价格调整机制控制风险。",
+          "responsibilities": [
+            "编制供应包报价与价格依据",
+            "执行成本控制与付款评审",
+            "评估供应商报价合理性",
+            "跟踪合同付款与结算条件"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "数据驱动，习惯用对比表格和敏感性分析说明问题，对超支风险直言不讳。"
+        },
+        {
+          "agent_id": "COMP-0271_04_张丽芳",
+          "agent_name": "张丽芳",
+          "company_id": "COMP-0271",
+          "company_role": "supplier",
+          "department": "客户与售后支持部",
+          "position": "客户接口经理",
+          "personal_profile": "以业主满意度为核心，擅长在供应执行中平衡合同边界与客户临时需求。压力下优先维护沟通渠道畅通，常提醒团队售后响应速度会影响后续合作机会，但有时会低估内部资源约束。",
+          "responsibilities": [
+            "维护业主与总包单位的日常沟通",
+            "协调售后支持与现场问题处理",
+            "收集客户反馈并推动内部改进",
+            "参与供应包交付后的服务评估"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "温和耐心，善于倾听并复述对方诉求，在冲突中倾向于先建立共识再谈方案。"
+        },
+        {
+          "agent_id": "COMP-0271_05_刘建国",
+          "agent_name": "刘建国",
+          "company_id": "COMP-0271",
+          "company_role": "supplier",
+          "department": "技术支援部",
+          "position": "技术支援主管",
+          "personal_profile": "关注设备材料的技术适配性与可维护性，对规格偏差和安装接口问题有敏锐直觉。讨论中常从全生命周期成本角度质疑低价方案，坚持技术论证先行，但可能因过度追求技术完美而影响进度。",
+          "responsibilities": [
+            "审核供应包技术规格与选型方案",
+            "提供安装调试与维护技术支持",
+            "评估供应商技术能力与产品兼容性",
+            "参与设计协调与技术澄清"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "严谨细致，喜欢用技术参数和案例对比支撑观点，对含糊的技术承诺会要求书面澄清。"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先看关键路径和风险敞口。他倾向于快速决策，但有时会低估细节协调的复杂性，常在讨论中提出进度与成本的权衡问题。",
+          "responsibilities": [
+            "统筹项目整体交付与工期控制",
+            "协调内部资源与分包安排",
+            "对接业主与监理，处理重大变更",
+            "监督质量、安全与可持续发展目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，注重效率，常用简明指令和关键数据沟通。"
+        },
+        {
+          "agent_id": "COMP-0494_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价基础和合约条款高度敏感，善于在谈判中寻找平衡点。她注重成本控制与支付评审的严谨性，但有时会因过度关注细节而拖慢决策节奏，常提醒团队注意现金流和风险分摊。",
+          "responsibilities": [
+            "编制投标报价与成本计划",
+            "评审分包合约与付款申请",
+            "监控项目成本与变更索赔",
+            "管理商务文档与合规记录"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致谨慎，善用条款和数字说话，书面沟通条理清晰。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "高级施工经理",
+          "personal_profile": "现场经验丰富，第一时间关注施工可行性和安全细节。他习惯从实操角度挑战设计假设，常提出替代方案以提升效率，但有时对行政流程缺乏耐心，在讨论中强调现场实际情况。",
+          "responsibilities": [
+            "管理现场施工与分包协调",
+            "监督施工质量与安全措施",
+            "编制施工进度与资源计划",
+            "处理现场技术问题与设计协调"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "务实直白，多用现场实例和直观描述，偏好面对面沟通。"
+        },
+        {
+          "agent_id": "COMP-0494_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计经理",
+          "personal_profile": "注重设计意图与施工可行性的结合，善于在多方之间建立共识。她倾向于通过早期协调减少后期变更，但有时会因追求完美而延长设计周期，常提醒团队关注可建造性和质量目标。",
+          "responsibilities": [
+            "协调设计与施工的接口",
+            "管理设计变更与图纸审核",
+            "组织可建造性评审",
+            "对接业主设计需求与规范符合性"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "温和理性，善于倾听和整合意见，常用图示和模型辅助沟通。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "对质量标准和安全隐患零容忍，习惯以检查表和体系文件驱动管理。他注重文档纪律和可追溯性，但有时会因严格而影响进度灵活性，在讨论中坚持合规优先。",
+          "responsibilities": [
+            "实施质量与安全管理体系",
+            "组织内部审核与独立检查",
+            "跟踪质量目标与整改闭环",
+            "管理安全培训与现场巡查"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨规范，引用标准和程序，沟通中强调证据和记录。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与关键路径，习惯先确认资源到位与接口责任；讨论中常提醒团队不要因局部优化牺牲总体交付，带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹施工包整体交付与工期目标",
+            "协调设计、施工与业主接口",
+            "主持内部生产会议与风险应对",
+            "监控关键节点与资源计划"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，以关键路径和资源缺口为沟通重点，倾向用短会与清单推动决策。"
+        },
+        {
+          "agent_id": "COMP-0025_02_黄丽芳",
+          "agent_name": "黄丽芳",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价基础与支付条款高度敏感，压力下先核查成本假设与现金流影响；常从合约风险角度提出保守意见，带来商务严谨与进度弹性之间的张力。",
+          "responsibilities": [
+            "编制报价基础与成本控制方案",
+            "评审分包与采购合约条款",
+            "跟踪付款评审与变更索赔",
+            "维护商务文档纪律"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，善用数字与条款依据，倾向以书面确认降低歧义。"
+        },
+        {
+          "agent_id": "COMP-0025_03_李国华",
+          "agent_name": "李国华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，第一时间关注施工可行性与安全条件；讨论中常强调班组可用性与工序衔接，带来现场实际与计划理想之间的张力。",
+          "responsibilities": [
+            "落实施工组织与现场进度控制",
+            "管理分包班组与资源调配",
+            "执行安全与质量检查",
+            "编制现场报告与问题跟踪"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "简明扼要，以现场事实和照片说话，偏好即时口头沟通加事后记录。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量与环境部",
+          "position": "质量经理",
+          "personal_profile": "注重体系与可追溯性，压力下先检查质量目标与检查记录；常坚持独立复核与文档纪律，带来质量要求与进度压力之间的张力。",
+          "responsibilities": [
+            "维护质量管理体系与质量目标跟踪",
+            "组织内部质量审查与独立检查",
+            "监督环保与可持续目标落实",
+            "管理质量文档与整改闭环"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致严谨，以检查表和标准条款沟通，倾向用书面报告推动整改。"
+        },
+        {
+          "agent_id": "COMP-0025_05_何家明",
+          "agent_name": "何家明",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计意图与施工现实间寻找平衡，压力下先梳理设计接口与可施工性；讨论中常提出优化替代方案，带来设计变更与成本控制之间的张力。",
+          "responsibilities": [
+            "协调设计与施工界面",
+            "评审设计可施工性与深化图",
+            "管理设计变更与信息传递",
+            "支持投标技术方案编制"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "开放协商，善用草图与对比方案说明，倾向以工作坊形式解决接口问题。"
+        }
+      ],
+      "COMP-0467": [
+        {
+          "agent_id": "COMP-0467_01_陈志明",
+          "agent_name": "陈志明",
+          "company_id": "COMP-0467",
+          "company_role": "supervisor",
+          "department": "项目监管部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注监管合规与业主期望的平衡，习惯先审视合同责任边界与风险分配。讨论中常提醒团队勿过度承诺，倾向以书面记录和程序正义应对争议，有时被视为保守。",
+          "responsibilities": [
+            "统筹监管服务整体策划与资源调配",
+            "业主接口与高层沟通",
+            "监管月报与关键风险上报",
+            "审批监管细则与检验计划"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳、条理清晰，善用书面备忘与会议纪要，强调依据与记录。"
+        },
+        {
+          "agent_id": "COMP-0467_02_黄丽芳",
+          "agent_name": "黄丽芳",
+          "company_id": "COMP-0467",
+          "company_role": "supervisor",
+          "department": "质量保证部",
+          "position": "质量经理",
+          "personal_profile": "对质量记录和文档纪律有近乎执着的坚持，压力下更关注细节遗漏。讨论中常提出独立检查与抽样复核方案，易与进度优先的同事产生张力。",
+          "responsibilities": [
+            "监管质量计划与检查程序编制",
+            "现场质量抽查与独立复核",
+            "不符合项跟踪与闭环",
+            "质量目标跟踪与报告"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨、直接，善用检查表与数据说话，对模糊表述会追问到底。"
+        },
+        {
+          "agent_id": "COMP-0467_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0467",
+          "company_role": "supervisor",
+          "department": "工程监督部",
+          "position": "高级驻地监督工程师",
+          "personal_profile": "现场经验丰富，第一时间关注施工安全与工序衔接，习惯以实际可行性挑战纸面计划。讨论中常提出替代方案，但有时低估行政程序耗时。",
+          "responsibilities": [
+            "日常现场监督与工序验收",
+            "承包商沟通与现场问题协调",
+            "现场日志与进度记录",
+            "安全文明施工巡查"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、口语化，善用现场实例说明观点，注重即时行动。"
+        },
+        {
+          "agent_id": "COMP-0467_04_张敏仪",
+          "agent_name": "张敏仪",
+          "company_id": "COMP-0467",
+          "company_role": "supervisor",
+          "department": "合约与成本部",
+          "position": "合约经理",
+          "personal_profile": "对付款评审与成本控制高度敏感，压力下更坚持按合约条款办事。讨论中常提醒变更与索赔的时效性，易与追求效率的同事产生摩擦。",
+          "responsibilities": [
+            "监管服务合约管理",
+            "付款评审与成本复核",
+            "变更与索赔评估",
+            "监管成本控制报告"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "精准、引用条款，善用对比与清单，避免情绪化表达。"
+        },
+        {
+          "agent_id": "COMP-0467_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "COMP-0467",
+          "company_role": "supervisor",
+          "department": "技术支援部",
+          "position": "结构监测主任",
+          "personal_profile": "技术导向，关注监测数据与结构安全，习惯以模型和数据分析支撑判断。讨论中常提出技术优化建议，但可能忽略非技术利益相关者的关切。",
+          "responsibilities": [
+            "桥梁与隧道健康监测方案制定",
+            "监测数据分析与预警",
+            "技术报告编制与审核",
+            "设计协调与技术澄清"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "理性、数据驱动，善用图表与趋势分析，表达简洁。"
+        }
+      ],
+      "COMP-0803": [
+        {
+          "agent_id": "COMP-0803_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0803",
+          "company_role": "supervisor",
+          "department": "项目监管部",
+          "position": "项目总监",
+          "personal_profile": "压力下优先确认监管边界与业主授权，先看合同责任与风险分配；讨论中常提醒团队不要越位承担施工责任，倾向以书面记录锁定立场。",
+          "responsibilities": [
+            "统筹监管服务整体策划与资源安排",
+            "业主接口与关键决策汇报",
+            "监管月报与质量目标跟踪",
+            "内部质量审查与文档纪律监督"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先结论后依据，强调书面确认与责任边界。"
+        },
+        {
+          "agent_id": "COMP-0803_02_林敏华",
+          "agent_name": "林敏华",
+          "company_id": "COMP-0803",
+          "company_role": "supervisor",
+          "department": "质量监察部",
+          "position": "质量监察经理",
+          "personal_profile": "对质量记录和现场证据链高度敏感，压力下先核查验收签认与整改闭环；讨论中常质疑证据不足的结论，带来质量优先的张力。",
+          "responsibilities": [
+            "现场质量巡查与独立检查安排",
+            "质量记录与整改跟踪",
+            "质量目标达成情况评估",
+            "监管报告质量复核"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致严谨，以证据说话，习惯用检查清单和记录说话。"
+        },
+        {
+          "agent_id": "COMP-0803_03_黄启明",
+          "agent_name": "黄启明",
+          "company_id": "COMP-0803",
+          "company_role": "supervisor",
+          "department": "合约与成本部",
+          "position": "合约成本主管",
+          "personal_profile": "对付款评审和成本依据的完整性最先警觉，压力下会坚持先核清计量与变更依据；讨论中常提醒监管服务自身的成本控制与资源投入平衡。",
+          "responsibilities": [
+            "监管服务费用与资源计划",
+            "付款评审与成本复核",
+            "变更与索赔的合约审查",
+            "监管成本控制建议"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，偏好数据与条款对照，语气务实。"
+        },
+        {
+          "agent_id": "COMP-0803_04_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0803",
+          "company_role": "supervisor",
+          "department": "工程监管部",
+          "position": "高级监管工程师",
+          "personal_profile": "现场经验导向，压力下先判断工序衔接与工期影响；讨论中常从施工可行性反推监管重点，带来进度与质量平衡的张力。",
+          "responsibilities": [
+            "施工过程监管与工序验收",
+            "工期与进度风险跟踪",
+            "现场问题协调与报告",
+            "监管方案技术复核"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "务实简练，多用现场实例，关注可操作性。"
+        },
+        {
+          "agent_id": "COMP-0803_05_郑雅文",
+          "agent_name": "郑雅文",
+          "company_id": "COMP-0803",
+          "company_role": "supervisor",
+          "department": "业主服务与文档部",
+          "position": "业主接口与文档主管",
+          "personal_profile": "对业主期望和文档一致性最先关注，压力下优先确保信息同步与记录可追溯；讨论中常提醒对外表述的统一性与合规性。",
+          "responsibilities": [
+            "业主沟通与期望管理",
+            "监管文档体系维护",
+            "报告提交与归档纪律",
+            "利益相关方协调记录"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "亲和有条理，注重书面记录与沟通闭环。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "owner_requirement_refinement",
+        "round": 1,
+        "round_type": "department_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "招标策略组",
+        "position": "招标策略主管",
+        "message_type": "opinion",
+        "thoughts": "这是需求细化阶段，还没有投标人，所以不能谈具体判给。我最担心的是招标包划分不清导致跨区域接口责任模糊，D&B模式下设计与施工责任捆绑，若口岸衔接界面未界定，后期变更会侵蚀业主控制。评分标准里造价占48%，不设底价，需警惕低价风险。应请设计或监管同事就接口责任给出一个具体确认。",
+        "content": "目前项目仍处早期意图，我关注的是招标包划分与跨区域接口责任。轻轨东线西延至青茂口岸涉及内地与澳门两侧的衔接界面，D&B模式下设计与施工责任捆绑，若口岸段接口、监管审批与验收责任未在招标包内界定清楚，后期变更会直接侵蚀业主的造价与工期控制。评分标准中工程造价占48%且不设底价，低价风险也需靠清晰的包界来约束。请设计管理同事就口岸衔接界面的责任划分给出一个具体确认，作为划分招标包的依据。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [],
+        "recommendation": "先明确口岸衔接界面的责任归属，再据此划分招标包并写入资格与评分要求。",
+        "decision_impact": "接口责任清晰度直接决定招标包划分与业主对造价、工期的可控程度。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:19",
+        "verification_requests": [
+          {
+            "question": "口岸衔接界面的设计与施工责任划分是否已有明确界定",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "owner_requirement_refinement",
+        "round": 1,
+        "round_type": "department_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_02_李美玲",
+        "agent_name": "李美玲",
+        "department": "成本控制组",
+        "position": "成本控制经理",
+        "message_type": "opinion",
+        "thoughts": "这是需求细化阶段，还没有报价可审，我的关注点应放在评标权重和价格基础设计上。工程造价占48%且不设底价，若价格基础定义不清，投标人可能用不同口径报价，导致横向比较失真，也削弱业主对成本的控制。我需要推动在招标文件中明确价格基础与支付评审要求。",
+        "content": "从成本控制角度看，这个包工程造价占48%且不设底价，价格基础若不在招标阶段写清楚，各投标人报价口径会不一致，评标时难以横向比较，业主对成本的控制也会被削弱。我建议在招标文件中明确价格基础、计量方式和支付评审要求，让报价可比、可核。请黄志强同事就价格基础与支付评审条款提出一版具体建议，供本轮讨论。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [],
+        "recommendation": "在招标文件中先明确价格基础、计量方式与支付评审条款，确保报价可比可核。",
+        "decision_impact": "价格基础不清会削弱评标可比性与业主成本控制，需在招标阶段先行明确。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:19",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "owner_requirement_refinement",
+        "round": 1,
+        "round_type": "department_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_03_黄伟明",
+        "agent_name": "黄伟明",
+        "department": "工程管理组",
+        "position": "工程管理协调员",
+        "message_type": "opinion",
+        "thoughts": "这是需求细化阶段，还没有投标人，所以不能谈判给。我作为工程管理协调员，最担心的是D&B模式下设计包与施工包的接口在招标文件里没写清楚，导致后期工期索赔。青茂口岸涉及内地-澳门跨境接口，通关协调、管线迁移、既有设施保护这些现场问题如果不提前在招标包中界定，施工期12%的评分权重就形同虚设。我应该提出一个具体的接口风险，请设计方或项目组给出回应。",
+        "content": "从现场角度看，轻轨东线西延接入青茂口岸，最怕的是设计包和施工包在跨境接口、管线迁移和既有设施保护上没划清责任，到时候施工单位进场才发现图纸和现场对不上，工期一拖就是几个月，施工期那12%的评分也失去意义。我建议在招标文件里先把这些接口的业主审查节点和承包商责任边界写实，别等到评标才补。想请设计管理组先给一个回应：设计包中跨境段接口的责任划分目前是怎么设想的，有没有明确的现场移交条件？",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [],
+        "recommendation": "在招标文件中明确跨境接口与管线迁移的业主审查节点及承包商责任边界，作为工期评分的前提条件。",
+        "decision_impact": "接口责任不清会削弱施工期评分的可比性，并增加后期工期索赔风险，影响业主对交付可行性的信心。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:19",
+        "verification_requests": [
+          {
+            "question": "设计包中跨境段接口的责任划分与现场移交条件目前如何设定？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_requirement_refinement",
+        "round": 1,
+        "round_type": "department_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_04_张丽华",
+        "agent_name": "张丽华",
+        "department": "质量与监管组",
+        "position": "质量监管主任",
+        "message_type": "opinion",
+        "thoughts": "这是需求细化阶段，我要把质量与监管要求写进招标包，但也要避免过度加重投标人负担。评标标准里施工经验及质量占22%，独立检查方案和文档纪律应成为可评审的实质内容，而不是空泛承诺。D&B模式下设计质量与施工质量衔接是关键风险，我应聚焦一个最影响判给信心的检查点。",
+        "content": "在轻轨东线西延青茂口岸这个D&B招标包里，施工经验及质量占评标权重22%，但业主目前对投标人如何落实独立检查、质量记录和文档纪律还没有可评审的实质要求，这会让质量分变成空泛承诺，削弱我们对判给结果的信心。D&B模式下设计与施工质量衔接最容易出漏洞，我建议在招标文件中明确要求投标人提交独立检查方案与质量记录架构作为质量评审依据。请质量与监管组同事先确认一项：评标表中质量部分应设置哪些可核查的评分要素。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [],
+        "recommendation": "在评标表中为质量部分设定可核查的独立检查方案与文档纪律评分要素，作为判给依据。",
+        "decision_impact": "明确质量评分要素可提升判给信心，避免质量分流于形式。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:19",
+        "verification_requests": [
+          {
+            "question": "评标表质量部分应设置哪些可核查的评分要素，特别是独立检查方案与文档纪律方面？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_requirement_refinement",
+        "round": 1,
+        "round_type": "department_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_05_刘家豪",
+        "agent_name": "刘家豪",
+        "department": "业主代表办公室",
+        "position": "业主接口经理",
+        "message_type": "opinion",
+        "thoughts": "这是需求细化阶段，还没有投标人，所以我不该谈具体判给。业主意图很粗，D&B 加内地-澳门合作方向，最影响后续评标公平和业主控制的是需求边界不清，尤其接口责任和工期假设。我倾向先请设计管理同事把接口责任矩阵作为澄清项，而不是一次列一堆检查。",
+        "content": "我们目前拿到的只是业主初步意向，轻轨东线西延青茂口岸采用D&B，又涉及内地与澳门合作方向，需求边界和接口责任如果现在不写清，后面评标时各投标人对工期和工作计划的理解会差很远，业主审查也会失去统一尺度。评标标准里工程造价占48%、施工期12%、工作计划18%，这些都需要以清晰的需求基线为前提。我想请设计管理同事先给出一份接口责任矩阵草案，明确哪些接口由业主承担、哪些由承建方承担，作为后续招标包划分和澄清的基础。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [],
+        "recommendation": "先由设计管理同事提交接口责任矩阵草案，明确业主与承建方接口分工，再据此细化招标包边界。",
+        "decision_impact": "接口责任清晰后，工期与工作计划评分才有可比基础，业主审查尺度也更一致。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:19",
+        "verification_requests": [
+          {
+            "question": "设计管理同事能否提交轻轨东线西延青茂口岸的接口责任矩阵草案，列明业主与承建方各自承担的接口？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "owner_requirement_refinement",
+        "round": 2,
+        "round_type": "cross_department_revision",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "招标策略组",
+        "position": "招标策略主管",
+        "message_type": "opinion",
+        "thoughts": "早期意图阶段，我最担心的是招标包边界和资格匹配没定，后面评分标准再细也白搭。口岸衔接接口责任是主线，但设计管理同事已被多次点名，我不该再重复要矩阵。更该盯的是投标人资格与包划分的匹配：D&B跨境项目，资格门槛若照搬本地常规，可能筛掉有能力的组合体，也可能放进来没跨境经验的。先请资格与评标组给一版资格门槛建议。",
+        "content": "目前项目还只是业主初步意向，我作为招标策略主管最担心的是招标包划分和投标人资格门槛没有同步定下来。轻轨东线西延青茂口岸是D&B，又涉及内地与澳门合作方向，如果资格条件只按本地常规设置，可能把有跨境接口经验的组合体挡在门外，也可能让缺乏口岸段经验的投标人进来，评标时工程造价48%的权重就会被低能力报价带偏。接口责任矩阵已由刘家豪同事提出，我不重复。我想请资格与评标组同事先给一版投标人资格门槛建议，说明组合体形式下如何认定跨境经验与团队配置，作为划分招标包的依据。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000001",
+          "msg_000002",
+          "msg_000003",
+          "msg_000004",
+          "msg_000005"
+        ],
+        "recommendation": "先由资格与评标组提交投标人资格门槛建议，明确组合体跨境经验与团队配置的认定口径，再据此划分招标包。",
+        "decision_impact": "资格门槛口径决定哪些投标人可进入评标，直接影响招标包划分与业主对造价、工期可控性的信心。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:22",
+        "verification_requests": [
+          {
+            "question": "资格与评标组能否提交一版投标人资格门槛建议，说明组合体形式下跨境经验与团队配置的认定口径？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000007",
+        "stage": "owner_requirement_refinement",
+        "round": 2,
+        "round_type": "cross_department_revision",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_02_李美玲",
+        "agent_name": "李美玲",
+        "department": "成本控制组",
+        "position": "成本控制经理",
+        "message_type": "opinion",
+        "thoughts": "早期意图阶段，预算和底价都未定，48%造价权重下若价格基础与计量方式不写清，报价口径会散，评标可比性和成本控制都会失守。我该把焦点放在价格基础这一项，请黄志强给一版具体条款建议，其他接口和质量问题留给后续轮次。",
+        "content": "从成本控制角度看，这个包工程造价占48%且不设底价，但业主目前连预算约束和价格基础都还没有落笔，各投标人的报价口径会各说各话，评标时无法横向比较，业主对成本的控制也会被削弱。我理解陈志强和刘家豪关心的接口责任同样重要，但价格基础是评标可比性的前提，先把它写实，接口和质量要求才有附着点。请黄志强同事就价格基础与计量方式提出一版具体条款建议，供本轮讨论。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000001",
+          "msg_000002",
+          "msg_000003",
+          "msg_000004",
+          "msg_000005"
+        ],
+        "recommendation": "先在招标文件中明确价格基础与计量方式，确保报价可比可核，再细化接口与质量要求。",
+        "decision_impact": "价格基础不清会削弱评标可比性与业主成本控制，直接影响判给信心。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:22",
+        "verification_requests": [
+          {
+            "question": "请黄志强就价格基础与计量方式提出一版具体条款建议",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000008",
+        "stage": "owner_requirement_refinement",
+        "round": 2,
+        "round_type": "cross_department_revision",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_03_黄伟明",
+        "agent_name": "黄伟明",
+        "department": "工程管理组",
+        "position": "工程管理协调员",
+        "message_type": "opinion",
+        "thoughts": "早期意图阶段，我最担心的是工期与施工可行性没有基线，施工期只占12%但工期一拖，口岸段现场移交和管线迁移就会变成索赔。评分里工作计划18%也需要现场条件支撑。我该请设计管理组给一个具体回应：口岸段现场移交条件与既有设施保护的责任设想，这决定工期评分是否可比。",
+        "content": "从现场可行性看，轻轨东线西延接入青茂口岸，最现实的风险是口岸段现场移交条件和既有设施保护责任没定，投标人报的施工期和工作计划就各说各话，施工期12%和工作计划18%的评分也失去可比基础。D&B把设计和施工绑在一起，若现场条件在招标阶段不写实，进场后图纸与现场对不上，工期一拖就是几个月，业主只能被动接受变更。想请设计管理组就口岸段现场移交条件与既有设施保护的责任设想给一个具体回应，作为工期评分和包界划分的依据。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000001",
+          "msg_000002",
+          "msg_000003",
+          "msg_000004",
+          "msg_000005"
+        ],
+        "recommendation": "先由设计管理组确认口岸段现场移交条件与既有设施保护责任设想，再据此设定工期与工作计划评分基线。",
+        "decision_impact": "现场移交条件不清会削弱工期与工作计划评分的可比性，增加后期工期索赔风险，影响业主对交付可行性的信心。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:22",
+        "verification_requests": [
+          {
+            "question": "设计管理组对口岸段现场移交条件与既有设施保护责任的设想是什么",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000009",
+        "stage": "owner_requirement_refinement",
+        "round": 2,
+        "round_type": "cross_department_revision",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_04_张丽华",
+        "agent_name": "张丽华",
+        "department": "质量与监管组",
+        "position": "质量监管主任",
+        "message_type": "opinion",
+        "thoughts": "我上一轮已提出质量评分要素，现在进入跨部门修订，重点应放在把质量要求落成可核查的招标条款，同时避免过度增加投标人负担。D&B下独立检查与文档纪律若只写在评分表而不进合同义务，质量分仍会流于形式。我需要一个具体回应：质量与监管组应确认独立检查方案在评标阶段的最低可核查内容。",
+        "content": "我留意到目前讨论多集中在接口与价格，但施工经验及质量占评标权重22%，若招标文件只写投标人须提交质量方案，却没有规定独立检查与质量记录的最低可核查内容，评标时各投标人提交的深度会差很远，业主难以横向比较，判给信心也会被削弱。D&B模式下设计与施工质量衔接最易出漏洞，我倾向把独立检查方案和文档纪律写成合同义务而非口号，但也要避免要求过细吓退有能力的投标人。请质量与监管组同事就评标阶段独立检查方案应包含的最低可核查内容给出一版具体建议。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000001",
+          "msg_000002",
+          "msg_000003",
+          "msg_000004",
+          "msg_000005"
+        ],
+        "recommendation": "把独立检查方案与质量记录架构列为质量评审的可核查要素，并同步写入合同义务，兼顾监管力度与招标吸引力。",
+        "decision_impact": "质量要求可核查化可提升判给信心，避免22%质量分流于形式，同时控制投标人负担。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:22",
+        "verification_requests": [
+          {
+            "question": "评标阶段独立检查方案应包含哪些最低可核查内容，请质量与监管组给出具体建议",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000010",
+        "stage": "owner_requirement_refinement",
+        "round": 2,
+        "round_type": "cross_department_revision",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_05_刘家豪",
+        "agent_name": "刘家豪",
+        "department": "业主代表办公室",
+        "position": "业主接口经理",
+        "message_type": "opinion",
+        "thoughts": "作为业主接口经理，我最担心的是需求基线还没定，招标包边界和接口责任都悬着，评标时各投标人理解不一，业主审查失去统一尺度。陈志强和设计管理同事都指向接口责任，但我不宜一次要求太多。当前最影响判给信心的是接口责任矩阵草案，这是后续包划分和澄清的基础。我应温和地请设计管理同事先交这一份，其他价格基础、质量评分要素留待后续轮次。",
+        "content": "我们目前拿到的只是业主初步意向，轻轨东线西延青茂口岸采用D&B，又涉及内地与澳门合作方向，需求边界和接口责任如果现在不写清，后面评标时各投标人对工期和工作计划的理解会差很远，业主审查也会失去统一尺度。评标标准里工程造价占48%、施工期12%、工作计划18%，这些都需要以清晰的需求基线为前提。我想请设计管理同事先给出一份接口责任矩阵草案，明确哪些接口由业主承担、哪些由承建方承担，作为后续招标包划分和澄清的基础。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000001",
+          "msg_000002",
+          "msg_000003",
+          "msg_000004",
+          "msg_000005"
+        ],
+        "recommendation": "先由设计管理同事提交接口责任矩阵草案，明确业主与承建方接口分工，再据此细化招标包边界。",
+        "decision_impact": "接口责任清晰后，工期与工作计划评分才有可比基础，业主审查尺度也更一致。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:22",
+        "verification_requests": [
+          {
+            "question": "设计管理同事能否提交一份接口责任矩阵草案，明确轻轨东线西延青茂口岸跨境段哪些接口由业主承担、哪些由承建方承担？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000011",
+        "stage": "owner_requirement_refinement",
+        "round": 3,
+        "round_type": "final_tender_requirements",
+        "company_id": "owner_001",
+        "company_role": "owner",
+        "package_id": "",
+        "agent_id": "owner_001_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "招标策略组",
+        "position": "招标策略主管",
+        "message_type": "summary",
+        "thoughts": "目前讨论已覆盖接口、资格、价格、现场移交和质量，但作为招标策略主管，我最担心的是招标包划分本身还没有落笔。D&B加跨境合作，若包界不清，资格门槛和评分权重都无处附着。我需要把包界作为本轮收口的核心，请资格与评标组给出与包界对应的资格认定口径，而不是再开新议题。",
+        "content": "目前讨论已覆盖接口、资格、价格、现场移交和质量，但我作为招标策略主管最担心的是招标包划分本身还没有落笔。轻轨东线西延青茂口岸采用D&B，又涉及内地与澳门合作方向，如果包界不先定，资格门槛、工程造价48%的评分口径和工期基线都无处附着，评标时各投标人对同一包的理解会分叉，业主审查也失去统一尺度。我想请资格与评标组同事就包界划分给出一版具体建议，说明是按设计施工一体单包还是按口岸段与区间段分设，并说明组合体形式下如何认定跨境经验与团队配置。",
+        "references": [
+          "project_idea",
+          "owner_requirements",
+          "company_profile"
+        ],
+        "response_to": [
+          "msg_000005",
+          "msg_000006",
+          "msg_000007",
+          "msg_000008",
+          "msg_000009",
+          "msg_000010"
+        ],
+        "recommendation": "先由资格与评标组提交与包界对应的投标人资格认定口径建议，作为本轮收口依据。",
+        "decision_impact": "包界与资格口径同步后，评标可比性和业主对造价、工期的可控性才有基础。",
+        "final_decision": "",
+        "timestamp": "2026-11-18T23:04:25",
+        "verification_requests": [
+          {
+            "question": "资格与评标组能否就招标包划分（单包或分段）及组合体跨境经验认定口径提交一版具体建议？",
+            "required_before_submission": false
+          }
+        ]
+      }
+    ],
+    "participation_decisions": [],
+    "consortiums": [],
+    "bid_documents": [],
+    "opening_record": [],
+    "evaluation_report": [],
+    "simulated_award_result": {},
+    "project_execution_log": {},
+    "tender_process_log": [],
+    "validation_context": {},
+    "verification_reviews": {}
+  }
+}

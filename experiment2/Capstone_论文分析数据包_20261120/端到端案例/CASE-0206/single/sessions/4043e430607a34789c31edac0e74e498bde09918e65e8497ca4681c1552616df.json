@@ -1,0 +1,2131 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMEC711881/CASE-0206/construction-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/construction-1",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "MOP",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 82875000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "MOP",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "澳门新葡京酒店",
+        "owner_id": "OWNER-aa9fb4e593b5ca",
+        "project_id": "CASE-0206",
+        "project_type": "building",
+        "region": "Macau",
+        "scope": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店"
+      },
+      "package": {
+        "package_id": "CASE-0206/construction-1",
+        "project_id": "CASE-0206",
+        "kind": "construction",
+        "buyer_id": "OWNER-aa9fb4e593b5ca",
+        "name": "主体结构与外立面工程包",
+        "scope": "13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+        "budget": 82875000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0206/design",
+          "CASE-0206/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0191",
+          "COMP-0494"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-aa9fb4e593b5ca": {
+        "entity_id": "OWNER-aa9fb4e593b5ca",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_name": "澳门旅游娱乐有限公司",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-aa9fb4e593b5ca",
+          "name": "澳门旅游娱乐有限公司",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000004",
+              "project_id": "CASE-0206",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIMEC711881/CASE-0206/cost/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 2100000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+              "project_id": "CASE-0206",
+              "package_id": "CASE-0206/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 3750000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIMEC711881/EVT000015",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/design",
+            "contract_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0169",
+              "COMP-0295"
+            ],
+            "price": 3750000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000017",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "package_id": "CASE-0206/cost",
+            "contract_id": "SIMEC711881/CASE-0206/cost/round-1/contract",
+            "buyer_id": "OWNER-aa9fb4e593b5ca",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 2100000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000018",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0206",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIMEC711881/EVT000100",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0206",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0494": {
+        "entity_id": "COMP-0494",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0494",
+          "company_name": "得寶國際-得寶建築合作經營",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0494",
+          "name": "得寶國際-得寶建築合作經營",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "ae4d2dbbd2c703c406e2bef11197de2b8d81bbace3eb5ecca46e6f3c1a529657"
+  },
+  "spec": {
+    "package_id": "CASE-0206/construction-1",
+    "project_id": "CASE-0206",
+    "kind": "construction",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "name": "主体结构与外立面工程包",
+    "scope": "13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+    "budget": 82875000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0206/design",
+      "CASE-0206/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0191",
+      "COMP-0494"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0206",
+      "project_name": "澳门新葡京酒店",
+      "project_type": "building",
+      "location": "Macau",
+      "owner_intent": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0206",
+      "project_scope": "澳门新葡京酒店为文旅与酒店娱乐综合体，总建筑面积约13.5万平方米，采用DBB交付模式。本次业主方模拟招标包聚焦主体结构与外立面工程包（CASE-0206/construction-1），范围包括酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。业主方已先行判出设计包（CASE-0206/design）与造价咨询包（CASE-0206/cost），本包须与上述设计及造价成果衔接，并作为后续机电、精装、景观包的界面基础。业主方将本包视为项目交付的关键路径包，要求投标方在模拟情景下展示结构施工、幕墙安装、质量与安全管理的综合能力，并接受业主方对范围、预算与工期变更的宏观审批控制。",
+      "functional_requirements": [
+        "满足13.5万平方米酒店塔楼及裙楼的结构承载、抗震、抗风与耐久使用功能，支撑文旅酒店运营荷载与流线需求。",
+        "外立面幕墙与屋面防水须满足澳门高湿、多雨、台风气候条件下的气密、水密、抗风压与耐候功能。",
+        "桩基与基础工程须为塔楼与裙楼提供稳定支撑，并预留与后续机电、精装、景观工程的接口条件。",
+        "混凝土与钢结构施工须满足酒店大跨度公共区域、设备层与屋顶设施的布置需求。",
+        "外立面须兼顾酒店品牌形象与夜间照明、广告位、维护通道等运营功能接口。",
+        "施工组织须考虑澳门城市密集环境下的运输、吊装、临时交通与公众通行协调。",
+        "为后续机电、精装修与室外景观包预留清晰的界面、预埋件、预留孔洞与荷载条件。"
+      ],
+      "technical_requirements": [
+        "BIM协调：本包须与设计包BIM模型对接，完成结构、幕墙与预留接口的碰撞检查与协调。",
+        "结构协调：桩基、基础、混凝土与钢结构须进行整体受力与施工阶段验算协调。",
+        "MEP协调：为机电包预留套管、孔洞、设备基础与管线走廊，避免后期凿改。",
+        "幕墙与屋面协调：外立面幕墙、屋面防水与结构变形缝、排水系统须统一节点设计。",
+        "运输界面布置：施工阶段材料运输、塔吊与卸料平台布置须与澳门城市道路及场地条件协调。",
+        "公众通行布局：施工围挡、临时人行通道与酒店运营区域隔离须满足公共安全与通行要求。",
+        "耐久性目标：结构设计使用年限与幕墙耐候性能须满足酒店长期运营维护要求。",
+        "可维护性目标：幕墙清洗、更换与屋面检修通道须具备可达性与可维护性。",
+        "能源使用目标：外立面遮阳、隔热与气密性能须支持酒店整体节能目标。",
+        "业主验收路径：分阶段结构验收、幕墙样板确认、屋面淋水试验与竣工联合验收须纳入质量计划。"
+      ],
+      "budget_policy": "本包预算为MOP 82,875,000，属业主额外成本口径（owner_additional），已包含在项目总预算MOP 150,000,000之内。业主方要求投标报价以设计包与造价咨询包成果为基准，按工程量清单或综合单价方式列明桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成。业主方将结合市场材料价格指数、人工价格指数与融资条件进行报价合理性审查，并对暂列金额、变更计价与价格调整机制提出明确要求。任何超出本包预算或项目总预算的范围与预算变更，须经业主方宏观审批。",
+      "schedule_policy": "项目总工期24个月，本包须在设计与造价成果确认后启动，并满足主体结构、幕墙与屋面防水的里程碑节点。业主方要求投标方提交施工总进度计划，明确桩基、基础、塔楼结构、裙楼结构、幕墙安装与屋面防水的先后关系及关键路径。进度安排须预留业主方设计审查、样板确认、造价复核与宏观审批时间，并考虑澳门公众通行协调、材料运输与台风季节对施工的影响。包间接口时间须与机电、精装修及景观包衔接，避免交叉作业冲突。",
+      "compliance_requirements": [
+        "业主审查节奏：按月度进度会与阶段节点审查会，审查施工进展、质量与安全表现。",
+        "问题升级路径：现场重大问题须在约定时限内升级至业主项目管理团队，并形成书面记录。",
+        "文档纪律：施工方案、材料报审、检验批记录、验收资料须按业主文档管理要求归档。",
+        "接口签认：与设计、造价、机电、精装及景观包的接口须经业主方签认后实施。",
+        "公众通行协调：施工围挡、临时通道与酒店运营区域的协调方案须经业主方审查。",
+        "质量目标跟踪：业主方按质量目标清单跟踪结构验收、幕墙样板与屋面防水试验结果。",
+        "安全期望跟踪：业主方跟踪安全计划执行、事故报告与整改闭环情况。",
+        "变更控制纪律：范围、预算与工期变更须走业主方变更控制程序并获宏观审批。"
+      ],
+      "risk_priorities": [
+        "结构施工与幕墙安装的界面风险，包括预埋件偏差、荷载条件变化与节点冲突。",
+        "澳门城市环境下的施工物流与公众通行风险，包括运输限制、吊装安全与临时交通安排。",
+        "台风与雨季对幕墙安装、屋面防水与施工进度的气候风险。",
+        "材料价格与人工价格波动导致的报价风险，以及融资条件变化对现金流的影响。",
+        "设计与造价成果深度不足导致的返工与变更风险。",
+        "与后续机电、精装修及景观包的接口协调风险。",
+        "安全与质量管理体系执行不到位的风险，包括分包管理与现场监督。",
+        "范围与预算变更审批周期对工期的影响风险。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0206/construction-1",
+          "package_type": "contractor",
+          "package_name": "主体结构与外立面工程包",
+          "scope": "Authorized scope: 13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。\nBuyer refinement: 13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "大型酒店塔楼与裙楼结构施工协调能力",
+            "桩基与基础工程施工组织能力",
+            "混凝土与钢结构施工质量控制能力",
+            "外立面幕墙安装与节点协调能力",
+            "屋面防水施工与淋水试验组织能力",
+            "澳门城市施工物流与吊装组织能力",
+            "公众通行协调与临时交通管理能力",
+            "质量文档与验收资料管理能力",
+            "安全期望跟踪与现场安全管理能力",
+            "与设计、造价及后续机电包接口协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工组织与交付方法说明",
+            "质量方法与质量目标响应",
+            "安全计划与安全期望跟踪措施",
+            "价格基准与工程量清单报价",
+            "施工进度视图与里程碑计划",
+            "风险应对与接口协调方案",
+            "分包管理与现场监督安排"
+          ],
+          "pricing_requirements": "按工程量清单或综合单价报价，列明桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成，说明暂列金额、变更计价与价格调整机制，报价以MOP计。\nBinding currency: MOP; package ceiling: 82875000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公众通行协调"
+          ],
+          "owner_decision_policy": "业主方将定性比较各投标方的能力匹配、价格合理性、风险控制与交付信心，综合判断人员配置现实性、文档纪律与接口协调能力后作出判给决定。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0206/construction-1",
+        "package_type": "contractor",
+        "package_name": "主体结构与外立面工程包",
+        "scope": "Authorized scope: 13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。\nBuyer refinement: 13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "大型酒店塔楼与裙楼结构施工协调能力",
+          "桩基与基础工程施工组织能力",
+          "混凝土与钢结构施工质量控制能力",
+          "外立面幕墙安装与节点协调能力",
+          "屋面防水施工与淋水试验组织能力",
+          "澳门城市施工物流与吊装组织能力",
+          "公众通行协调与临时交通管理能力",
+          "质量文档与验收资料管理能力",
+          "安全期望跟踪与现场安全管理能力",
+          "与设计、造价及后续机电包接口协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工组织与交付方法说明",
+          "质量方法与质量目标响应",
+          "安全计划与安全期望跟踪措施",
+          "价格基准与工程量清单报价",
+          "施工进度视图与里程碑计划",
+          "风险应对与接口协调方案",
+          "分包管理与现场监督安排"
+        ],
+        "pricing_requirements": "按工程量清单或综合单价报价，列明桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成，说明暂列金额、变更计价与价格调整机制，报价以MOP计。\nBinding currency: MOP; package ceiling: 82875000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公众通行协调"
+        ],
+        "owner_decision_policy": "业主方将定性比较各投标方的能力匹配、价格合理性、风险控制与交付信心，综合判断人员配置现实性、文档纪律与接口协调能力后作出判给决定。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_name": "澳门旅游娱乐有限公司",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-aa9fb4e593b5ca": [
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "项目开发部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与预算的平衡，习惯从业主投资回报角度审视每个决策。他最先注意到的是关键路径上的延误风险，常把技术讨论拉回到商业目标上，带来工期与质量之间的张力。",
+          "responsibilities": [
+            "统筹项目整体交付策略与里程碑",
+            "主持招标包划分与采购计划评审",
+            "协调设计、施工与监管服务界面",
+            "监控工期与成本偏差并推动纠偏"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善用数据与里程碑说话，会议中常以提问引导团队聚焦关键风险。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "成本控制部",
+          "position": "成本控制经理",
+          "personal_profile": "对数字高度敏感，在压力下会反复核对报价基础与支付条款，最先发现成本估算中的遗漏或过于乐观的假设。她倾向于保守的财务安排，常与追求进度的同事产生预算分配上的摩擦。",
+          "responsibilities": [
+            "编制与审核项目预算及现金流计划",
+            "评估投标报价的合理性与完整性",
+            "主持付款评审与变更成本评估",
+            "跟踪成本目标并预警超支风险"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨细致，习惯用表格和对比数据表达观点，对模糊表述会要求澄清。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "设计管理部",
+          "position": "设计协调经理",
+          "personal_profile": "以设计意图的完整实现为优先，在压力下会坚持设计标准与可持续目标，最先注意到图纸与规范之间的不一致。他常因设计变更的连锁影响与成本、工期团队产生张力，但善于用技术论证说服他人。",
+          "responsibilities": [
+            "协调设计顾问与承包商的设计接口",
+            "审核设计变更对质量与可持续目标的影响",
+            "组织设计评审与可施工性检查",
+            "管理设计文档的版本与分发纪律"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "理性沉稳，喜欢用图纸和规范条文支撑观点，对设计质量问题会直言不讳。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量与安全视为不可妥协的底线，在压力下会坚持独立检查与整改闭环，最先注意到现场执行与批准方案之间的偏差。她常因要求停工整改而与进度团队发生冲突，但始终以质量目标为锚点。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场质量与安全合规",
+            "组织独立质量审查与整改验证",
+            "跟踪质量缺陷的闭环处理"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "坚定清晰，善用检查清单和现场照片说明问题，对整改要求会明确期限。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "合约管理部",
+          "position": "合约经理",
+          "personal_profile": "注重合约条款的严谨性与风险分配的公平性，在压力下会仔细推敲每一条款的可执行性，最先注意到责任边界模糊或索赔隐患。他倾向于用合约语言锁定各方义务，常因条款解释与项目团队产生分歧。",
+          "responsibilities": [
+            "起草与审核招标文件及合约条款",
+            "管理投标澄清与合约谈判",
+            "处理合约变更与索赔评估",
+            "确保采购过程的文档纪律与合规"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "逻辑严密，习惯引用合约条文和先例，对模糊表述会要求书面确认。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源匹配，习惯先确认关键路径再分配任务。对业主接口和跨部门协调敏感，常提醒团队不要因局部优化牺牲整体交付。讨论中倾向于推动快速决策，但会要求关键风险有预案。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "业主接口与高层沟通",
+            "资源规划与关键节点决策",
+            "风险应对与应急预案审批"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先结论后依据，重视时间节点与责任归属。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价构成和支付条款高度敏感，习惯逐项核对成本依据与现金流影响。压力下会反复确认边界条件，避免模糊承诺。讨论中常提出保守的商务假设，提醒团队注意付款节奏与变更管理。",
+          "responsibilities": [
+            "报价编制与价格依据整理",
+            "支付评审与付款申请跟踪",
+            "合约条款与变更管理",
+            "成本控制与现金流预测"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致、谨慎，善用数字和条款说话，偏好书面确认。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术总工",
+          "personal_profile": "面对技术难题时先分析结构安全与施工可行性，重视方案的可实施性和独立复核。对设计协调中的接口问题警觉，倾向于在早期提出技术质疑。讨论中常以技术底线约束进度压力，强调质量目标不可妥协。",
+          "responsibilities": [
+            "施工方案与设计协调",
+            "技术复核与独立检查",
+            "质量目标跟踪与验收标准",
+            "桩基、钢结构与幕墙技术管理"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨、逻辑性强，习惯用图纸和数据说明问题，对模糊表述会追问细节。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏文静",
+          "agent_name": "苏文静",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "首先关注现场合规性与质量风险，对文档纪律和检查记录要求严格。压力下容易坚持程序完整性，可能拖慢进度但能降低返工风险。讨论中常提醒团队注意监管要求与可持续发展目标。",
+          "responsibilities": [
+            "质量计划与检查制度执行",
+            "现场安全监督与整改跟踪",
+            "文档纪律与质量记录管理",
+            "监管要求与可持续目标落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰、注重证据，习惯用检查清单和整改通知沟通。"
+        },
+        {
+          "agent_id": "COMP-0153_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "施工经理",
+          "personal_profile": "对现场进度和资源调度反应迅速，习惯根据实际工作面调整人力与机械安排。压力下倾向于优先保证关键工序连续，可能低估协调成本。讨论中常提出具体施工安排，强调可操作性和现场应变。",
+          "responsibilities": [
+            "现场施工组织与进度控制",
+            "分包协调与工作面安排",
+            "资源调度与设备管理",
+            "现场报告与问题反馈"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、简洁，多用现场实例和行动方案表达观点。"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目统筹与业主界面",
+          "position": "项目总监",
+          "personal_profile": "压力下先稳住整体节奏，习惯把工期、资源与业主期望放在同一张表上权衡。最先注意到的是承诺与可用资源之间的缺口，讨论中常把乐观方案拉回可交付边界，带来进度与资源之间的张力。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "业主界面与监管服务沟通",
+            "组合体与分包界面协调",
+            "关键节点与工期承诺把关"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先给结论再列依据，对模糊承诺会当场追问"
+        },
+        {
+          "agent_id": "COMP-0191_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "对数字敏感，压力越大越回到报价基础与支付条件逐项核对。最先注意到的是成本漏项与付款节奏风险，讨论中倾向压低不可预见费，常与进度方在赶工投入上形成张力。",
+          "responsibilities": [
+            "报价基础与成本控制",
+            "付款评审与支付评估配合",
+            "变更与索赔的商务处理",
+            "分包采购与合同条款审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，用数字说话，对未量化的假设会要求补充依据"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "技术与设计协调",
+          "position": "技术总工",
+          "personal_profile": "面对技术争议先回到图纸与规范依据，习惯把设计协调问题拆成可验证的构造节点。最先注意到的是设计接口与施工可行性冲突，讨论中坚持独立复核，常因要求补图补算而拖慢决策节奏。",
+          "responsibilities": [
+            "设计协调与施工方案审查",
+            "桩基、结构与幕墙技术接口把关",
+            "独立检查与技术复核安排",
+            "质量目标跟踪的技术支撑"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨克制，偏好书面确认，对口头承诺会要求落到图纸或会议纪要"
+        },
+        {
+          "agent_id": "COMP-0191_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量与安全监管",
+          "position": "质量安全经理",
+          "personal_profile": "把质量与安全视为不可交易项，压力下反而更强调检查频次与记录完整。最先注意到的是现场执行与方案之间的偏差，讨论中愿意为整改争取时间，常与赶工诉求形成直接张力。",
+          "responsibilities": [
+            "质量目标跟踪与现场质量评审",
+            "安全监管与风险应对落实",
+            "文档纪律与检查记录管理",
+            "独立检查与整改闭环跟踪"
+          ],
+          "decision_authority": "final",
+          "communication_style": "坚定务实，先讲风险后果再谈方案，对整改期限要求明确"
+        },
+        {
+          "agent_id": "COMP-0191_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "资源与交付计划",
+          "position": "资源计划经理",
+          "personal_profile": "以资源可用性为思考起点，习惯把团队可用性摘要与工期排布对齐。最先注意到的是人力与机械的峰值冲突，讨论中倾向保守排产，常因不愿超配资源而与商务方在赶工成本上产生张力。",
+          "responsibilities": [
+            "团队可用性与角色计划编制",
+            "资源规划与分包劳务协调",
+            "进度视图与交付方法维护",
+            "现场报告与资源风险预警"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实简明，用排程与资源表沟通，对临时加码会先问资源从哪来"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。他最先注意到的是业主需求变更对主体结构进度的影响，倾向于在讨论中引入风险缓冲和应急方案，常带来进度与成本的张力。",
+          "responsibilities": [
+            "统筹主体结构与外立面工程包的整体交付",
+            "协调设计、成本与施工团队之间的接口",
+            "主持内部评审与业主汇报",
+            "监控关键路径与里程碑达成"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，善于用简明语言总结复杂问题，强调行动项与责任人。"
+        },
+        {
+          "agent_id": "COMP-0494_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "成本控制部",
+          "position": "成本经理",
+          "personal_profile": "对数字敏感，在压力下会反复核对报价基础与支付条款，最先注意到成本超支风险和现金流影响。她倾向于在讨论中坚持成本纪律，常带来成本控制与工期弹性之间的张力。",
+          "responsibilities": [
+            "编制与审核工程包报价基础",
+            "监控成本执行与支付评审",
+            "评估变更对成本的影响",
+            "参与分包采购与合同谈判"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "严谨细致，喜欢用数据说话，表达清晰但有时显得保守。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术总工",
+          "personal_profile": "技术导向，在压力下专注于施工方案可行性与质量目标，最先注意到结构安全与幕墙节点的技术难点。他倾向于在讨论中坚持技术标准，常带来技术严谨性与施工效率之间的张力。",
+          "responsibilities": [
+            "审核主体结构与外立面技术方案",
+            "监督现场施工质量与工艺标准",
+            "协调设计变更与技术澄清",
+            "组织质量检查与验收"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "专业冷静，注重细节与依据，常用图纸和规范说明问题。"
+        },
+        {
+          "agent_id": "COMP-0494_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "合约管理部",
+          "position": "合约经理",
+          "personal_profile": "规则意识强，在压力下优先确保合同条款与监管要求合规，最先注意到责任划分与索赔风险。她倾向于在讨论中强调文档纪律与程序正义，常带来合规要求与灵活应变之间的张力。",
+          "responsibilities": [
+            "管理工程包合同与分包合约",
+            "处理索赔与争议",
+            "确保投标文件与履约文档合规",
+            "协调保险与担保事宜"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理分明，措辞谨慎，善于引用合同条款与政策依据。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何家明",
+          "agent_name": "何家明",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "现场运营部",
+          "position": "现场经理",
+          "personal_profile": "行动导向，在压力下关注现场实际进展与资源可用性，最先注意到劳动力与材料供应瓶颈。他倾向于在讨论中要求明确可执行的计划，常带来现场现实与计划理想之间的张力。",
+          "responsibilities": [
+            "管理现场日常施工活动",
+            "协调劳动力与材料资源",
+            "监督安全与环保措施执行",
+            "编制现场报告与进度记录"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "直率务实，喜欢具体例子和现场照片，强调解决问题而非争论。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个13.5万平方米酒店塔楼及裙楼的主体结构与外立面工程包，预算约8288万MOP，工期24个月，属于典型的大型房建结构总承包。公司作为承包商，施工能力、技术能力、管理能力都在0.8以上，资质等级0.85，资源占用为0，可用资源2.0，完全有余量承接。包内范围是桩基、基础、混凝土与钢结构、幕墙、屋面防水，不含机电和精装修，边界清晰，正是我们能够作为单一责任主体统筹的施工范围。幕墙和屋面防水属于专业分包范畴，但这是正常的施工分包，由我们作为总包统一管理进度、安全、质量文档和接口协调，不构成需要共享投标人身份的组合体情形。澳门城市施工物流、吊装、公众通行协调是难点，但属于报价和施工组织层面的风险，可以通过施工组织设计、临时交通管理方案和风险应对来消化。价格上限8288万MOP，需要严格按工程量清单报价，控制桩基和幕墙的成本构成。综合判断，这个包与公司能力匹配、资源充足、战略上值得争取，应当独立投标。",
+        "content": "管理层决定：对主体结构与外立面工程包（CASE-0206/construction-1）以独立投标方式参与。\n\n一、投标定位。本包为13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水，不含机电、精装修与室外景观，范围边界清晰，与公司施工能力高度匹配。公司将以单一责任主体身份承担施工总承包责任，统一管理各专业分包。\n\n二、团队与组织。按角色计划与团队可用性摘要配置项目经理、结构、幕墙、防水、安全与质量文档岗位，明确现场监督与分包管理安排，确保关键岗位到岗与职责闭环。\n\n三、施工组织与交付方法。编制施工组织与交付方法说明，重点回应澳门城市施工物流、吊装组织、公众通行协调与临时交通管理，形成分阶段施工进度视图与里程碑计划。\n\n四、质量与安全。提交质量方法与质量目标响应，建立混凝土与钢结构质量控制、幕墙节点协调、屋面防水淋水试验的组织与验收资料管理；提交安全计划与安全期望跟踪措施，落实分包安全交底与现场监督。\n\n五、价格基准。按工程量清单或综合单价报价，分列桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成，说明暂列金额、变更计价与价格调整机制，报价以MOP计，控制在8288万MOP上限内。\n\n六、风险与接口。提交风险应对与接口协调方案，明确与设计、造价及后续机电包的接口界面，分包管理按正常施工分包安排，由公司统一控制进度、安全与质量记录。\n\n七、投标假设。幕墙、屋面防水等专业作业拟按施工分包方式组织，具体分包安排以投标文件中的分包管理方案为准；报价中的分包成本以内部测算为基础，尚未取得外部报价确认。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:47:34",
+        "verification_requests": [
+          {
+            "question": "幕墙、屋面防水等专业作业拟按施工分包方式组织，具体分包安排以投标文件中的分包管理方案为准；报价中的分包成本以内部测算为基础，尚未取得外部报价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "COMP-0191_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目统筹与业主界面",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个主体结构与外立面工程包体量约8288万MOP，涵盖桩基、基础、混凝土钢结构、幕墙和屋面防水，是典型的大型酒店塔楼施工总承包范围。公司作为承包商，施工能力、管理能力、质量安全能力在情景参数中均处于中上水平，且当前资源占用为零，具备独立承担的组织条件。内部讨论没有提出必须依赖外部伙伴才能投标的硬性缺口，幕墙、钢结构等专业分包属于正常施工组织范畴，可由公司作为单一责任主体统一管理。澳门城市施工物流、公众通行协调、验收文档等要求，公司可通过施工组织设计、分包管理和现场监督来回应。因此，我倾向以独立投标人身份参与，不引入组合体，避免削弱责任链条和报价竞争力。需要提醒的是，公司历史业绩和具体团队可用性在情景资料中未展开，投标时应以角色计划和团队可用性摘要说明资源投入，并将关键专业分包列为投标假设，在报价中留出合理风险余量。",
+        "content": "中建八局第二建设有限公司拟独立参与澳门新葡京酒店主体结构与外立面工程包投标。公司将作为单一责任主体，承担13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水的施工总承包责任，不含机电、精装修与室外景观。投标文件将包括角色计划与团队可用性摘要、施工组织与交付方法、质量方法与质量目标响应、安全计划与安全期望跟踪措施、按工程量清单编制的价格基准、施工进度视图与里程碑计划、风险应对与接口协调方案，以及分包管理与现场监督安排。报价以MOP计，列明各分项价格构成，说明暂列金额、变更计价与价格调整机制。公司将通过统一的项目管理、安全质量体系和文档验收管理，协调设计、造价及后续机电包接口，确保工期、质量和安全目标可控。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:47:37",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "COMP-0494_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个与我们主业高度吻合的大型酒店塔楼主体结构与外立面工程包，预算约8287.5万MOP，工期24个月，属于我们熟悉的博彩酒店与综合体施工范畴。公司目前资源占用为零，可用资源2.0，具备承接条件；ISO三体系认证和总承包、地基、土方、道路桥梁、海事等覆盖范围说明我们在结构、桩基、幕墙、防水这些核心工序上有可信的施工组织基础。内部讨论没有提出任何必须联合体才能解决的硬缺口，幕墙、钢结构、桩基等专业分包属于正常的总包管理范畴，我们可以作为单一责任投标人统筹现场、安全、进度、质量记录和分包控制。真正的压力在于：13.5万平方米体量、澳门城市施工物流与吊装、公众通行与临时交通协调、以及与设计、造价和后续机电包的接口管理，这些都需要在施工组织、进度视图和风险应对里讲清楚，并通过价格基准和暂列金额留出合理缓冲。资源上2.0对0.7的需求是够的，但团队可用性摘要必须真实反映关键岗位的投入，不能把总量当成人员已到位。我的判断是独立投标，不引入组合体，因为组合体会稀释我们的责任边界和利润，而当前没有证据表明我们无法担任唯一责任投标人。",
+        "content": "管理层决定：就CASE-0206/construction-1主体结构与外立面工程包以得寶國際-得寶建築合作經營名义独立投标，不组建组合体。投标文件将围绕业主关注点组织：角色计划与团队可用性摘要，明确关键岗位投入与职责；施工组织与交付方法，覆盖桩基与基础、混凝土与钢结构、幕墙安装节点协调、屋面防水与淋水试验；质量方法与质量目标响应，依托ISO 9001体系并明确验收资料与文档纪律；安全计划与安全期望跟踪措施，落实ISO 45001与现场监督安排；价格基准与工程量清单报价，按MOP列明桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成，并说明暂列金额、变更计价与价格调整机制；施工进度视图与里程碑计划，反映24个月工期与关键线路；风险应对与接口协调方案，重点处理澳门城市施工物流与吊装、公众通行与临时交通管理、以及与设计、造价和后续机电包的接口；分包管理与现场监督安排，明确专业分包的范围边界、质量与安全责任传递。报价总额控制在82875000.0 MOP上限以内，并为物流、吊装与接口协调预留合理风险余量。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:47:39",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "COMP-0153_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "分包成本以内部测算为基础，尚未取得外部报价确认，属投标假设\n幕墙专业分包内部测算，含预埋件复核、节点样板、淋水与气密试验；尚未取得外部报价确认\n屋面防水专业分包内部测算，含基层处理、闭水与淋水试验、成品保护；尚未取得外部报价确认\n主要风险与应对：材料价格波动按价格调整机制处理，暂列金额覆盖；幕墙与防水分包成本尚未取得外部报价确认，以内部测算为基础并设风险预备费；澳门城市施工物流与吊装组织通过分时段进场、临时交通管理与吊装专项方案控制；公众通行协调设置引导与警戒；与设计、造价及后续机电包接口通过会签与界面台账管理\n幕墙与屋面防水按施工分包组织，分包成本为内部测算，尚未取得外部报价确认，属投标假设\n报价中的分包成本以内部测算为基础，尚未取得外部报价确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:47:56",
+        "verification_requests": [
+          {
+            "question": "分包成本以内部测算为基础，尚未取得外部报价确认，属投标假设",
+            "required_before_submission": false
+          },
+          {
+            "question": "幕墙专业分包内部测算，含预埋件复核、节点样板、淋水与气密试验；尚未取得外部报价确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "屋面防水专业分包内部测算，含基层处理、闭水与淋水试验、成品保护；尚未取得外部报价确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "主要风险与应对：材料价格波动按价格调整机制处理，暂列金额覆盖；幕墙与防水分包成本尚未取得外部报价确认，以内部测算为基础并设风险预备费；澳门城市施工物流与吊装组织通过分时段进场、临时交通管理与吊装专项方案控制；公众通行协调设置引导与警戒；与设计、造价及后续机电包接口通过会签与界面台账管理",
+            "required_before_submission": false
+          },
+          {
+            "question": "幕墙与屋面防水按施工分包组织，分包成本为内部测算，尚未取得外部报价确认，属投标假设",
+            "required_before_submission": false
+          },
+          {
+            "question": "报价中的分包成本以内部测算为基础，尚未取得外部报价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "COMP-0494_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "**施工组织与交付方法**：桩基与基础工程按分区流水组织，先塔楼后裙楼；混凝土结构采用爬模与常规模板结合，钢结构在预制场加工后现场吊装；幕墙按单元式与框架式结合，先做样板段确认节点；屋面防水按分区施工并组织淋水试验",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:47:57",
+        "verification_requests": [
+          {
+            "question": "**施工组织与交付方法**：桩基与基础工程按分区流水组织，先塔楼后裙楼；混凝土结构采用爬模与常规模板结合，钢结构在预制场加工后现场吊装；幕墙按单元式与框架式结合，先做样板段确认节点；屋面防水按分区施工并组织淋水试验",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_role": "owner",
+        "package_id": "CASE-0206/construction-1",
+        "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+        "agent_name": "何家豪",
+        "department": "合约管理部",
+        "position": "合约经理",
+        "message_type": "decision",
+        "thoughts": "三家投标报价均为MOP 82,875,000，贴近包预算上限，价格本身无法区分优劣，我的责任是把交付风险压到最低。中交第一航务工程局有限公司单一责任主体清晰，但幕墙与防水分包成本仅为内部测算且未决条件较多，价格可信度与后续索赔暴露让我不放心。得寶國際现场监督配置充实，但同样存在未决条件，且专业分包范围较广。中建八局第二建设有限公司方案完整、未提交未决条件，角色计划覆盖项目总监、结构与幕墙专业工程师及文档控制，质量目标、安全期望跟踪与接口台账按周复核的文档纪律具体，业主审查路径最顺畅，作为最终责任主体最可控。报价贴近上限意味着议价空间有限，但三家同价，选择完整度与可审查性更高的投标人更符合业主问责。判给后需就关键岗位到岗计划、受控专业分包的成本锁定与暂列金额使用机制做判给前澄清，使责任与价格基础在开工前落到纸面。",
+        "content": "经评标与业主审查，本包判给中建八局第二建设有限公司，报价MOP 82,875,000。三家报价同为MOP 82,875,000并贴近包预算上限，价格不构成区分因素，决定依据是能力匹配、人员配置现实性、文档纪律与接口协调；该投标人以单一投标人身份独立投标，方案完整且未提交未决条件，角色计划覆盖项目总监、结构与幕墙专业工程师及文档控制，质量目标、安全期望跟踪与接口台账按周更新响应具体，最符合业主对交付可控性与问责清晰度的要求。判给前澄清聚焦关键岗位到岗计划、受控专业分包的成本锁定与暂列金额使用机制，并与业主审查关口对齐。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T15:48:46",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0206/construction-1",
+        "decision": "bid",
+        "reason": "经管理层审议，主体结构与外立面工程包范围清晰、边界明确，属于公司施工能力可直接覆盖的房建结构总承包范畴。公司当前资源占用为零，可用资源充足，具备作为单一责任主体统筹桩基、基础、混凝土与钢结构、幕墙及屋面防水的组织条件。幕墙、防水等专业作业按正常施工分包管理，由公司统一控制进度、安全、质量文档与接口协调，不改变投标人身份与责任归属，无需组成组合体。澳门城市施工物流、吊装与公众通行协调属于可通过施工组织设计和风险应对消化的常规风险。报价须严格按工程量清单编制，列明各分项价格构成、暂列金额与变更计价机制，控制在8288万MOP上限内。决定以独立投标方式参与。",
+        "unresolved_condition_ids": [
+          "condition_2b594c2724f358aff194"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0206/construction-1",
+        "decision": "bid",
+        "reason": "经管理层审议，本包属于公司核心施工业务范围，合同额在可承受区间，且当前资源无占用，具备独立投标和履约的组织条件。幕墙、钢结构、桩基等专业工作可通过受控分包和公司统一的项目管理、安全质量体系完成，不需要以组合体形式分担投标人身份或包级交付责任。公司将作为单一责任主体，按工程量清单报价，明确桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成及暂列金额、变更计价机制，并在施工组织、进度里程碑、质量目标、安全期望跟踪和接口协调方面提交完整响应。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一投标人身份独立投标，不组建组合体。",
+          "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+          "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+          "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0494",
+        "package_id": "CASE-0206/construction-1",
+        "decision": "bid",
+        "reason": "经管理层审议，本工程包属于公司核心业务范围内的酒店塔楼主体结构与外立面施工，预算8287.5万MOP、工期24个月，与公司总承包、地基基础、混凝土钢结构及幕墙协调能力相匹配。公司当前无占用资源，可用资源2.0高于本包0.7的资源需求，具备独立承担的组织条件；ISO 9001、ISO 14001、ISO 45001体系认证可支撑质量、环境与安全管理响应。桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司作为单一责任投标人统一负责现场监督、安全期望跟踪、进度控制、质量文档与验收资料管理，不构成必须组建组合体的事由。主要风险集中在澳门城市施工物流与吊装组织、公众通行与临时交通协调、以及设计与后续机电包接口，这些将通过施工组织设计、里程碑进度视图、接口协调方案、暂列金额与价格调整机制在报价中体现。据此决定以公司名义独立投标，并按工程量清单或综合单价列明各分项价格构成。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任投标人身份独立投标，不设组合体",
+          "桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收",
+          "关键岗位人员可用性以投标时提交的团队可用性摘要为准",
+          "报价按工程量清单或综合单价编制，总额不超过82875000.0 MOP",
+          "暂列金额、变更计价与价格调整机制在投标文件中明确列示",
+          "施工物流、吊装与临时交通安排按施工组织设计执行，并与相关方协调"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0206/construction-1_001",
+        "package_id": "CASE-0206/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "中交第一航务工程局有限公司以单一责任主体身份投标主体结构与外立面工程包。施工范围覆盖13.5万平方米酒店塔楼及裙楼的桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水，不含机电、精装修与室外景观。\n\n施工组织：按塔楼与裙楼分区流水，桩基先行、基础跟进、主体结构分区分段爬升；钢结构在塔楼核心区与裙楼大跨区分别设置吊装工况，幕墙按结构验收段插入，屋面防水在结构封顶后分区完成并组织淋水试验。\n\n质量方法：混凝土按配合比审批、浇筑令、试块留置与养护记录控制；钢结构按焊缝工艺评定、高强螺栓终拧记录与涂层检测控制；幕墙按节点样板、预埋件复核、淋水与气密试验控制；防水按基层验收、闭水与淋水试验、成品保护记录控制。质量文档按分部分项建立验收资料台账，与设计、造价及后续机电包进行接口会签。\n\n安全与公众通行：设置现场安全期望跟踪清单，分包安全交底与每日巡查闭环；澳门城市施工物流采用分时段进场与临时交通管理方案，吊装作业设置警戒区与公众通行引导。\n\n分包管理：幕墙、屋面防水等专业作业按施工分包方式组织，由公司统一控制进度、安全、质量文档与接口协调，不改变投标人身份与责任归属。分包成本以内部测算为基础，尚未取得外部报价确认，属投标假设。",
+        "implementation_plan": "总工期按24个月项目周期安排，结构包施工进度视图如下：\n\n第1至3月：施工准备、桩基施工与试验桩检测；临时交通管理与物流方案报批。\n第4至7月：基础与地下室结构施工，塔楼与裙楼分区流水。\n第8至16月：塔楼与裙楼主体混凝土结构分段施工，钢结构吊装穿插；结构验收分段移交幕墙作业面。\n第14至20月：外立面幕墙安装与节点协调，按结构验收段自下而上推进。\n第18至22月：屋面防水施工、淋水试验与整改。\n第22至24月：收尾、质量文档整理、分部分项验收与移交。\n\n里程碑：桩基完成、基础完成、主体结构封顶、幕墙封闭、屋面防水验收、竣工移交。关键岗位按角色计划到岗，现场监督与分包管理按周例会与月度进度评审闭环。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺按24个月项目周期完成本包施工，关键里程碑为桩基完成、基础完成、主体结构封顶、幕墙封闭、屋面防水验收与竣工移交。接受按里程碑节点进行进度评审，因业主或设计变更导致的工期影响按合同机制协商调整。",
+        "compliance_statement": "响应业主对角色计划、施工组织、质量目标、安全期望跟踪、价格基准、进度视图、风险应对与分包管理的要求。提交团队可用性摘要与关键岗位到岗计划；质量目标按分部分项验收一次合格率控制，建立独立检查与材料复核流程；安全期望跟踪清单按周更新；报价按工程量清单综合单价编制，列明暂列金额与变更计价机制；分包管理由公司统一监督，不改变单一责任主体身份。",
+        "risk_response": "主要风险与应对：材料价格波动按价格调整机制处理，暂列金额覆盖；幕墙与防水分包成本尚未取得外部报价确认，以内部测算为基础并设风险预备费；澳门城市施工物流与吊装组织通过分时段进场、临时交通管理与吊装专项方案控制；公众通行协调设置引导与警戒；与设计、造价及后续机电包接口通过会签与界面台账管理。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任主体身份提交主体结构与外立面工程包投标，报价MOP 82,875,000，控制在包上限内。\n\n报价构成：桩基与基础MOP 14,860,000；混凝土与钢结构MOP 31,250,000；外立面幕墙MOP 18,640,000；屋面防水MOP 4,870,000；现场管理、安全与临时交通管理MOP 5,360,000；质量文档、验收与接口协调MOP 2,140,000；暂列金额与风险预备费MOP 5,755,000。合计MOP 82,875,000。\n\n价格基准按工程量清单综合单价编制，暂列金额约7%覆盖材料波动与分包成本未确认风险；变更按实计价，价格调整按合同机制执行。幕墙与屋面防水按施工分包组织，分包成本为内部测算，尚未取得外部报价确认，属投标假设。公司当前资源占用为零，可用资源充足，具备单一责任主体统筹条件。",
+        "quotation_breakdown": [
+          {
+            "item": "桩基与基础工程",
+            "amount": 14860000,
+            "basis": "按工程量清单综合单价测算，含桩基施工、试验检测、基坑支护与土方；内部测算，未取得外部报价确认"
+          },
+          {
+            "item": "混凝土与钢结构工程",
+            "amount": 31250000,
+            "basis": "塔楼与裙楼主体混凝土、钢筋、模板及钢结构制作安装；按综合单价与施工组织测算"
+          },
+          {
+            "item": "外立面幕墙工程",
+            "amount": 18640000,
+            "basis": "幕墙专业分包内部测算，含预埋件复核、节点样板、淋水与气密试验；尚未取得外部报价确认"
+          },
+          {
+            "item": "屋面防水工程",
+            "amount": 4870000,
+            "basis": "屋面防水专业分包内部测算，含基层处理、闭水与淋水试验、成品保护；尚未取得外部报价确认"
+          },
+          {
+            "item": "现场管理、安全与临时交通管理",
+            "amount": 5360000,
+            "basis": "项目经理、结构、幕墙、防水、安全与质量文档岗位配置，现场监督、安全期望跟踪与公众通行协调"
+          },
+          {
+            "item": "质量文档、验收与接口协调",
+            "amount": 2140000,
+            "basis": "分部分项验收资料台账、与设计造价及后续机电包接口会签、竣工资料整理"
+          },
+          {
+            "item": "暂列金额与风险预备费",
+            "amount": 5755000,
+            "basis": "按包预算约7%设置暂列金额，覆盖材料价格波动、分包成本未确认及澳门城市施工物流风险；变更按实计价"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_2b594c2724f358aff194",
+          "condition_be2c3d2641b3615c6411",
+          "condition_24f5ed65c02cdeb26fd1",
+          "condition_8a4ee64723a31111feba",
+          "condition_fe1a600872f563f73e51",
+          "condition_945249ca76bd541208d6",
+          "condition_9f46185d893b4679c4a6"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "幕墙、屋面防水等专业作业拟按施工分包方式组织，具体分包安排以投标文件中的分包管理方案为准",
+          "报价中的分包成本以内部测算为基础，尚未取得外部报价确认",
+          "暂列金额按包预算约7%设置，用于覆盖材料价格波动与未确认分包成本",
+          "变更计价按实结算，价格调整按合同机制执行"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0206/construction-1_002",
+        "package_id": "CASE-0206/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "中建八局第二建设有限公司以单一投标人身份独立投标本包，承担13.5万平方米酒店塔楼及裙楼主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水的施工总承包责任，不含机电、精装修与室外景观。\n\n**角色计划与团队可用性摘要**：拟设项目总监1名、项目经理1名、技术负责人1名、结构/幕墙/桩基专业工程师各2名、质量安全主任各1名、测量与试验负责人各1名、文档控制2名。关键岗位按投标阶段角色计划配置，人员可用性以团队可用性摘要为准。\n\n**施工组织与交付方法**：桩基与基础先行分区流水，塔楼核心筒与裙楼同步展开；混凝土结构采用爬模与布料机组合，钢结构在工厂预拼后分段吊装；幕墙按单元式与框架式分区安装，屋面防水与淋水试验穿插进行。澳门城市施工物流采用夜间与错峰运输、临时交通管理及公众通行协调方案。\n\n**质量方法与质量目标**：执行公司内部质量程序与独立检查方法，设置材料进场复核、混凝土试块与钢结构焊缝第三方检测、幕墙节点样板与淋水试验、屋面蓄水与淋水试验等控制点，质量目标为一次验收合格率100%。\n\n**安全计划与安全期望跟踪**：建立安全期望跟踪清单，按周复核高处作业、吊装、临时用电与公众通行防护，分包安全纳入统一考核。\n\n**分包管理与现场监督**：幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一项目管理、安全质量体系与文档验收管理，分包安排将在投标文件中说明。\n\n**接口协调**：与设计、造价及后续机电包建立接口台账，明确预留预埋、幕墙收口与机电穿墙节点移交时点。",
+        "implementation_plan": "按24个月项目工期编制施工进度视图：第1至3个月完成桩基与基础施工及检测；第4至14个月完成塔楼与裙楼混凝土结构，钢结构随结构分区吊装；第10至20个月进行外立面幕墙安装与节点收口；第16至21个月完成屋面防水与淋水试验；第20至24个月进行验收、资料移交与缺陷修复。关键里程碑包括：桩基验收、结构封顶、幕墙样板段验收、屋面淋水试验完成、竣工预验收。分包管理采用统一招标、进场审查、周例会与月度考核；现场监督按区域配置专职监督人员，质量文档与验收资料同步归档。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺按项目24个月工期完成本包全部工作，关键里程碑为：第3个月桩基验收、第14个月结构封顶、第20个月幕墙安装完成、第21个月屋面淋水试验完成、第24个月竣工预验收。若因设计或机电接口延误，按合同变更计价机制处理。",
+        "compliance_statement": "接受业主按工程量清单与综合单价进行支付审核与进度复核；暂列金额按招标文件规定使用，变更计价按合同条款及情景价格指数调整；质量文档与验收资料按业主审查要求同步提交，配合设计、造价及后续机电包接口协调。",
+        "risk_response": "主要风险包括材料价格波动、幕墙与钢结构专业分包接口、澳门城市施工物流与公众通行协调、以及设计变更导致的工期影响。应对措施：报价中已计入暂列金额与价格调整预备；分包采用受控专业分包并由公司统一管理；临时交通与吊装方案提前报批；接口台账按周更新。价格调整机制按招标文件要求列明，报价为基于当前工程量清单与情景价格指数的投标估算。",
+        "submission_summary": "中建八局第二建设有限公司以单一投标人身份独立投标本包，报价MOP 82,875,000，与包预算上限一致。报价构成：桩基与基础MOP 11,260,000；混凝土结构MOP 24,850,000；钢结构MOP 9,350,000；幕墙MOP 18,640,000；屋面防水MOP 3,180,000；现场管理、安全质量与临时交通协调MOP 6,250,000；暂列金额与价格调整预备MOP 4,820,000；公司管理费、利润与风险预备MOP 4,525,000。上述金额合计MOP 82,875,000。报价基于当前工程量清单与情景价格指数编制，属投标阶段估算；幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一管理并承担单一责任主体义务。",
+        "quotation_breakdown": [
+          {
+            "item": "桩基与基础工程",
+            "amount": 11260000,
+            "basis": "按工程量清单暂估工程量与情景价格指数编制，含桩基成孔、钢筋笼、混凝土浇筑、基础土方与检测配合，属投标阶段估算"
+          },
+          {
+            "item": "混凝土结构工程（塔楼及裙楼）",
+            "amount": 24850000,
+            "basis": "含模板、钢筋、混凝土、爬模与垂直运输，按13.5万平方米建筑面积及结构含量估算，属投标阶段估算"
+          },
+          {
+            "item": "钢结构工程",
+            "amount": 9350000,
+            "basis": "含钢构件加工、运输、吊装与焊缝检测，按暂估钢结构吨位及情景价格指数编制，属投标阶段估算"
+          },
+          {
+            "item": "外立面幕墙工程",
+            "amount": 18640000,
+            "basis": "含单元式与框架式幕墙、龙骨、面板、节点收口及样板段，按暂估幕墙面积与受控专业分包询价水平估算，属投标阶段估算"
+          },
+          {
+            "item": "屋面防水工程",
+            "amount": 3180000,
+            "basis": "含防水层、保温层、保护层及淋水试验组织，按暂估屋面面积估算，属投标阶段估算"
+          },
+          {
+            "item": "现场管理、安全质量与临时交通协调",
+            "amount": 6250000,
+            "basis": "含项目管理人员、安全质量监督、测量试验、文档控制、临时交通管理与公众通行协调，按24个月工期分摊"
+          },
+          {
+            "item": "暂列金额与价格调整预备",
+            "amount": 4820000,
+            "basis": "按招标文件要求列支暂列金额，并计入材料价格指数波动与变更计价的预备额度，属投标阶段估算"
+          },
+          {
+            "item": "公司管理费、利润与风险预备",
+            "amount": 4525000,
+            "basis": "按公司统一管理费分摊、合理利润及分包接口与工期风险预备计提"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一投标人身份独立投标，不组建组合体。",
+          "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+          "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+          "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0206/construction-1_003",
+        "package_id": "CASE-0206/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0494",
+        "bidder_name": "得寶國際-得寶建築合作經營",
+        "technical_proposal": "得寶國際-得寶建築合作經營以单一责任投标人身份独立投标本工程包，不设组合体。技术方案围绕13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水展开，不含机电、精装修与室外景观。\n\n**角色计划与团队可用性摘要**：拟投入项目总监1名、项目经理1名、结构总工1名、幕墙与屋面专业工程师各1名、质量与安全经理各1名、现场监督工程师6名、测量与文档控制人员3名。关键岗位人员可用性以投标时提交的团队可用性摘要为准，公司当前无占用资源，可用资源2.0高于本包资源需求0.7，具备独立承担的组织条件。\n\n**施工组织与交付方法**：桩基与基础工程按分区流水组织，先塔楼后裙楼；混凝土结构采用爬模与常规模板结合，钢结构在预制场加工后现场吊装；幕墙按单元式与框架式结合，先做样板段确认节点；屋面防水按分区施工并组织淋水试验。澳门城市施工物流与吊装组织通过分时段运输、临时吊装平台与交通协调方案落实。\n\n**质量方法与质量目标响应**：依托ISO 9001质量管理体系，建立材料进场检验、工序交接检查、隐蔽工程验收与独立复核制度；质量目标为分项工程一次验收合格率100%，验收资料与竣工文档同步形成。\n\n**安全计划与安全期望跟踪措施**：依托ISO 45001职业健康安全管理体系，编制专项安全方案，落实高空作业、吊装作业与临时用电安全措施；安全期望跟踪通过每日巡查、每周安全会议与隐患整改闭环管理实现。\n\n**分包管理与现场监督安排**：桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收，明确分包范围边界、质量与安全责任传递，不构成组合体。\n\n**接口协调方案**：与设计、造价及后续机电包建立定期接口协调会议，明确预留预埋、幕墙与机电收口、屋面与机电设备基础等界面责任。",
+        "implementation_plan": "按24个月工期编制施工进度视图与里程碑计划：\n\n- 第1至3个月：施工准备、桩基施工与基础开挖；\n- 第4至6个月：基础与地下室结构；\n- 第7至16个月：塔楼与裙楼混凝土结构逐层施工，钢结构同步吊装；\n- 第12至20个月：外立面幕墙安装，先样板段后大面积展开；\n- 第18至22个月：屋面防水施工与淋水试验；\n- 第21至24个月：收尾、验收资料整理与移交。\n\n关键线路为桩基→基础→塔楼结构→幕墙→屋面防水→验收。澳门城市施工物流与吊装按分时段运输与临时交通管理方案执行，并与相关方协调。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺总工期24个月，自开工令发出之日起计。关键里程碑：第3个月完成桩基，第6个月完成基础，第16个月完成主体结构，第20个月完成幕墙安装，第22个月完成屋面防水与淋水试验，第24个月完成竣工验收与资料移交。",
+        "compliance_statement": "接受业主按工程量清单或综合单价进行造价控制与支付审核。报价以MOP计，总额不超过82875000.0 MOP。暂列金额与风险预备费按业主批准程序使用；变更计价按合同约定的综合单价及实际工程量调整；价格调整机制针对主要材料价格波动设置调价公式，需经业主同意后执行。质量文档与验收资料按ISO 9001文档纪律同步提交，接受业主及监理的进度与质量审查。",
+        "risk_response": "主要风险及应对：\n1. 澳门城市施工物流与吊装组织：编制专项物流与吊装方案，分时段运输，提前与交通管理部门协调；\n2. 公众通行与临时交通管理：设置临时围挡与行人通道，安排交通疏导人员；\n3. 设计与后续机电包接口：建立接口协调会议制度，明确预留预埋与收口责任；\n4. 材料价格波动：在报价中设置暂列金额与调价机制；\n5. 专业分包管理：由公司统一监督与验收，质量与安全责任传递至分包合同。",
+        "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份独立投标CASE-0206/construction-1主体结构与外立面工程包，不设组合体。报价总额MOP 82,875,000，与包预算上限一致，价格构成如下：\n\n- 桩基与基础工程：MOP 11,250,000\n- 混凝土与钢结构工程：MOP 28,600,000\n- 外立面幕墙工程：MOP 17,800,000\n- 屋面防水工程：MOP 4,850,000\n- 现场管理、安全与质量监督：MOP 7,200,000\n- 施工物流、吊装与临时交通管理：MOP 3,650,000\n- 暂列金额与风险预备费：MOP 4,980,000\n- 公司管理费与利润：MOP 4,545,000\n\n合计MOP 82,875,000。报价按工程量清单或综合单价编制，暂列金额、变更计价与价格调整机制已在投标文件中明确列示。关键岗位人员可用性以团队可用性摘要为准；桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收。",
+        "quotation_breakdown": [
+          {
+            "item": "桩基与基础工程",
+            "amount": 11250000,
+            "basis": "按工程量清单暂估，含桩基施工、基础开挖与支护，专业分包管理费已计入"
+          },
+          {
+            "item": "混凝土与钢结构工程",
+            "amount": 28600000,
+            "basis": "按塔楼及裙楼结构工程量暂估，含混凝土、钢筋、模板与钢结构加工吊装"
+          },
+          {
+            "item": "外立面幕墙工程",
+            "amount": 17800000,
+            "basis": "按幕墙面积与节点复杂度暂估，含样板段、单元式与框架式幕墙安装"
+          },
+          {
+            "item": "屋面防水工程",
+            "amount": 4850000,
+            "basis": "按屋面面积暂估，含防水层施工与淋水试验组织"
+          },
+          {
+            "item": "现场管理、安全与质量监督",
+            "amount": 7200000,
+            "basis": "项目总监、项目经理、结构总工、质量安全经理及现场监督工程师24个月投入"
+          },
+          {
+            "item": "施工物流、吊装与临时交通管理",
+            "amount": 3650000,
+            "basis": "澳门城市施工物流协调、临时吊装平台与交通管理措施"
+          },
+          {
+            "item": "暂列金额与风险预备费",
+            "amount": 4980000,
+            "basis": "用于设计变更、接口协调与材料价格波动，按包预算约6%预留"
+          },
+          {
+            "item": "公司管理费与利润",
+            "amount": 4545000,
+            "basis": "按直接费约6%计取，含ISO体系运行与文档管理"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_bb15702f2a39ffebcf12"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任投标人身份独立投标，不设组合体",
+          "桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收",
+          "关键岗位人员可用性以投标时提交的团队可用性摘要为准",
+          "报价按工程量清单或综合单价编制，总额不超过82875000.0 MOP",
+          "暂列金额、变更计价与价格调整机制在投标文件中明确列示",
+          "施工物流、吊装与临时交通安排按施工组织设计执行，并与相关方协调"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0206/construction-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0206/construction-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "桩基与基础工程",
+                "amount": 14860000,
+                "basis": "按工程量清单综合单价测算，含桩基施工、试验检测、基坑支护与土方；内部测算，未取得外部报价确认"
+              },
+              {
+                "item": "混凝土与钢结构工程",
+                "amount": 31250000,
+                "basis": "塔楼与裙楼主体混凝土、钢筋、模板及钢结构制作安装；按综合单价与施工组织测算"
+              },
+              {
+                "item": "外立面幕墙工程",
+                "amount": 18640000,
+                "basis": "幕墙专业分包内部测算，含预埋件复核、节点样板、淋水与气密试验；尚未取得外部报价确认"
+              },
+              {
+                "item": "屋面防水工程",
+                "amount": 4870000,
+                "basis": "屋面防水专业分包内部测算，含基层处理、闭水与淋水试验、成品保护；尚未取得外部报价确认"
+              },
+              {
+                "item": "现场管理、安全与临时交通管理",
+                "amount": 5360000,
+                "basis": "项目经理、结构、幕墙、防水、安全与质量文档岗位配置，现场监督、安全期望跟踪与公众通行协调"
+              },
+              {
+                "item": "质量文档、验收与接口协调",
+                "amount": 2140000,
+                "basis": "分部分项验收资料台账、与设计造价及后续机电包接口会签、竣工资料整理"
+              },
+              {
+                "item": "暂列金额与风险预备费",
+                "amount": 5755000,
+                "basis": "按包预算约7%设置暂列金额，覆盖材料价格波动、分包成本未确认及澳门城市施工物流风险；变更按实计价"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任主体身份提交主体结构与外立面工程包投标，报价MOP 82,875,000，控制在包上限内。\n\n报价构成：桩基与基础MOP 14,860,000；混凝土与钢结构MOP 31,250,000；外立面幕墙MOP 18,640,000；屋面防水MOP 4,870,000；现场管理、安全与临时交通管理MOP 5,360,000；质量文档、验收与接口协调MOP 2,140,000；暂列金额与风险预备费MOP 5,755,000。合计MOP 82,875,000。\n\n价格基准按工程量清单综合单价编制，暂列金额约7%覆盖材料波动与分包成本未确认风险；变更按实计价，价格调整按合同机制执行。幕墙与屋面防水按施工分包组织，分包成本为内部测算，尚未取得外部报价确认，属投标假设。公司当前资源占用为零，可用资源充足，具备单一责任主体统筹条件。",
+            "unresolved_condition_ids": [
+              "condition_2b594c2724f358aff194",
+              "condition_be2c3d2641b3615c6411",
+              "condition_24f5ed65c02cdeb26fd1",
+              "condition_8a4ee64723a31111feba",
+              "condition_fe1a600872f563f73e51",
+              "condition_945249ca76bd541208d6",
+              "condition_9f46185d893b4679c4a6"
+            ],
+            "bid_assumptions": [
+              "幕墙、屋面防水等专业作业拟按施工分包方式组织，具体分包安排以投标文件中的分包管理方案为准",
+              "报价中的分包成本以内部测算为基础，尚未取得外部报价确认",
+              "暂列金额按包预算约7%设置，用于覆盖材料价格波动与未确认分包成本",
+              "变更计价按实结算，价格调整按合同机制执行"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "桩基与基础工程",
+                "amount": 11260000,
+                "basis": "按工程量清单暂估工程量与情景价格指数编制，含桩基成孔、钢筋笼、混凝土浇筑、基础土方与检测配合，属投标阶段估算"
+              },
+              {
+                "item": "混凝土结构工程（塔楼及裙楼）",
+                "amount": 24850000,
+                "basis": "含模板、钢筋、混凝土、爬模与垂直运输，按13.5万平方米建筑面积及结构含量估算，属投标阶段估算"
+              },
+              {
+                "item": "钢结构工程",
+                "amount": 9350000,
+                "basis": "含钢构件加工、运输、吊装与焊缝检测，按暂估钢结构吨位及情景价格指数编制，属投标阶段估算"
+              },
+              {
+                "item": "外立面幕墙工程",
+                "amount": 18640000,
+                "basis": "含单元式与框架式幕墙、龙骨、面板、节点收口及样板段，按暂估幕墙面积与受控专业分包询价水平估算，属投标阶段估算"
+              },
+              {
+                "item": "屋面防水工程",
+                "amount": 3180000,
+                "basis": "含防水层、保温层、保护层及淋水试验组织，按暂估屋面面积估算，属投标阶段估算"
+              },
+              {
+                "item": "现场管理、安全质量与临时交通协调",
+                "amount": 6250000,
+                "basis": "含项目管理人员、安全质量监督、测量试验、文档控制、临时交通管理与公众通行协调，按24个月工期分摊"
+              },
+              {
+                "item": "暂列金额与价格调整预备",
+                "amount": 4820000,
+                "basis": "按招标文件要求列支暂列金额，并计入材料价格指数波动与变更计价的预备额度，属投标阶段估算"
+              },
+              {
+                "item": "公司管理费、利润与风险预备",
+                "amount": 4525000,
+                "basis": "按公司统一管理费分摊、合理利润及分包接口与工期风险预备计提"
+              }
+            ],
+            "submission_summary": "中建八局第二建设有限公司以单一投标人身份独立投标本包，报价MOP 82,875,000，与包预算上限一致。报价构成：桩基与基础MOP 11,260,000；混凝土结构MOP 24,850,000；钢结构MOP 9,350,000；幕墙MOP 18,640,000；屋面防水MOP 3,180,000；现场管理、安全质量与临时交通协调MOP 6,250,000；暂列金额与价格调整预备MOP 4,820,000；公司管理费、利润与风险预备MOP 4,525,000。上述金额合计MOP 82,875,000。报价基于当前工程量清单与情景价格指数编制，属投标阶段估算；幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一管理并承担单一责任主体义务。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司以单一投标人身份独立投标，不组建组合体。",
+              "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+              "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+              "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-1_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "quotation": 82875000.0,
+            "quotation_breakdown": [
+              {
+                "item": "桩基与基础工程",
+                "amount": 11250000,
+                "basis": "按工程量清单暂估，含桩基施工、基础开挖与支护，专业分包管理费已计入"
+              },
+              {
+                "item": "混凝土与钢结构工程",
+                "amount": 28600000,
+                "basis": "按塔楼及裙楼结构工程量暂估，含混凝土、钢筋、模板与钢结构加工吊装"
+              },
+              {
+                "item": "外立面幕墙工程",
+                "amount": 17800000,
+                "basis": "按幕墙面积与节点复杂度暂估，含样板段、单元式与框架式幕墙安装"
+              },
+              {
+                "item": "屋面防水工程",
+                "amount": 4850000,
+                "basis": "按屋面面积暂估，含防水层施工与淋水试验组织"
+              },
+              {
+                "item": "现场管理、安全与质量监督",
+                "amount": 7200000,
+                "basis": "项目总监、项目经理、结构总工、质量安全经理及现场监督工程师24个月投入"
+              },
+              {
+                "item": "施工物流、吊装与临时交通管理",
+                "amount": 3650000,
+                "basis": "澳门城市施工物流协调、临时吊装平台与交通管理措施"
+              },
+              {
+                "item": "暂列金额与风险预备费",
+                "amount": 4980000,
+                "basis": "用于设计变更、接口协调与材料价格波动，按包预算约6%预留"
+              },
+              {
+                "item": "公司管理费与利润",
+                "amount": 4545000,
+                "basis": "按直接费约6%计取，含ISO体系运行与文档管理"
+              }
+            ],
+            "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份独立投标CASE-0206/construction-1主体结构与外立面工程包，不设组合体。报价总额MOP 82,875,000，与包预算上限一致，价格构成如下：\n\n- 桩基与基础工程：MOP 11,250,000\n- 混凝土与钢结构工程：MOP 28,600,000\n- 外立面幕墙工程：MOP 17,800,000\n- 屋面防水工程：MOP 4,850,000\n- 现场管理、安全与质量监督：MOP 7,200,000\n- 施工物流、吊装与临时交通管理：MOP 3,650,000\n- 暂列金额与风险预备费：MOP 4,980,000\n- 公司管理费与利润：MOP 4,545,000\n\n合计MOP 82,875,000。报价按工程量清单或综合单价编制，暂列金额、变更计价与价格调整机制已在投标文件中明确列示。关键岗位人员可用性以团队可用性摘要为准；桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收。",
+            "unresolved_condition_ids": [
+              "condition_bb15702f2a39ffebcf12"
+            ],
+            "bid_assumptions": [
+              "公司以单一责任投标人身份独立投标，不设组合体",
+              "桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收",
+              "关键岗位人员可用性以投标时提交的团队可用性摘要为准",
+              "报价按工程量清单或综合单价编制，总额不超过82875000.0 MOP",
+              "暂列金额、变更计价与价格调整机制在投标文件中明确列示",
+              "施工物流、吊装与临时交通安排按施工组织设计执行，并与相关方协调"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 主体结构与外立面工程包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0206/construction-1",
+        "evaluators": [
+          "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "OWNER-aa9fb4e593b5ca_05_何家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0206/construction-1_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "施工组织按塔楼与裙楼分区流水，桩基先行、主体分段爬升、幕墙按结构验收段插入，交付方法与本包结构、幕墙、防水界面契合，但幕墙与防水分包成本仅为内部测算，技术方案的落地仍依赖分包落实。",
+            "cost_view": "报价MOP 82,875,000贴近包预算上限，暂列金额与风险预备费MOP 5,755,000覆盖材料波动与未确认分包成本，价格基准清晰，但幕墙与屋面防水分包尚未取得外部报价确认，存在后续成本调整与索赔暴露。",
+            "owner_control_view": "对角色计划、质量目标、安全期望跟踪、价格基准与接口会签均有明确响应，单一责任主体身份清晰，业主审查路径较顺畅，但分包成本假设与多项未决条件需在澄清阶段落实。",
+            "strengths": [
+              "单一责任主体统筹结构、幕墙与防水界面，责任归属清晰",
+              "质量文档台账与设计、造价、机电接口会签安排具体",
+              "安全期望跟踪清单与澳门城市物流、临时交通方案有针对性"
+            ],
+            "concerns": [
+              "幕墙与屋面防水分包成本未取得外部报价确认，价格可信度依赖后续核实",
+              "未决条件较多，需在澄清阶段逐项闭合",
+              "暂列金额与风险预备费占比较高，可能反映对分包与物流风险的不确定"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-1_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "角色计划覆盖项目总监、结构、幕墙、桩基工程师与文档控制，施工组织采用爬模、工厂预拼与分区幕墙安装，交付方法与本包能力需求匹配度高，且未提交未决条件，方案完整度较好。",
+            "cost_view": "报价MOP 82,875,000与包预算上限一致，桩基、混凝土、钢结构与幕墙分项测算较细，暂列金额与价格调整预备MOP 4,820,000及管理费利润列示清楚，价格基准可核查，但整体贴近上限，议价空间有限。",
+            "owner_control_view": "明确接受工程量清单与综合单价支付审核，质量目标为一次验收合格率100%，安全期望跟踪按周复核，接口台账按周更新，业主审查清晰度与文档纪律表现较好。",
+            "strengths": [
+              "团队角色计划与现场监督配置完整，人员配置现实性较好",
+              "质量、安全与接口协调响应具体，文档纪律清晰",
+              "未提交未决条件，投标完整度较高"
+            ],
+            "concerns": [
+              "报价贴近包预算上限，价格竞争性有限",
+              "幕墙、钢结构、桩基均拟受控专业分包，需核实分包资源与成本锁定",
+              "钢结构与幕墙接口风险仍需在实施阶段持续跟踪"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0206/construction-1_003",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "technical_view": "以单一责任投标人身份投标，项目总监、结构总工、质量安全经理与六名现场监督工程师配置较充实，施工组织覆盖桩基、结构、幕墙与屋面防水，交付方法与本包能力需求匹配。",
+            "cost_view": "报价MOP 82,875,000与包预算上限一致，现场管理与安全质量监督MOP 7,200,000及物流吊装交通管理MOP 3,650,000列示较充分，暂列金额与风险预备费MOP 4,980,000合理，但整体价格贴近上限，成本优化空间有限。",
+            "owner_control_view": "接受工程量清单与综合单价造价控制，ISO 9001与ISO 45001体系支撑质量与安全期望跟踪，接口协调会议制度明确，业主审查路径清晰，但存在一项未决条件需澄清。",
+            "strengths": [
+              "现场监督与质量安全岗位配置充足，人员配置现实性较好",
+              "ISO体系与文档纪律支撑质量目标与验收资料管理",
+              "物流、吊装与临时交通管理单列费用，公众通行协调考虑充分"
+            ],
+            "concerns": [
+              "报价贴近包预算上限，价格合理性需结合分项核实",
+              "桩基、钢结构、幕墙、屋面防水均按专业分包管理，需核实分包成本与责任传递",
+              "存在一项未决条件，需在澄清阶段闭合"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标报价均为MOP 82,875,000并贴近包预算上限，价格差异不构成区分因素，比较重点落在能力匹配、人员配置现实性、文档纪律与接口协调。中建八局第二建设有限公司方案完整、未提交未决条件且质量安全与接口响应具体，得寶國際-得寶建築合作經營现场监督配置充实但有一项未决条件，中交第一航务工程局有限公司单一责任主体清晰但分包成本未确认且未决条件较多。",
+        "recommended_winner": "COMP-0191",
+        "owner_review_notes": "建议在判给前要求首选投标人澄清关键岗位到岗计划、专业分包成本锁定与暂列金额使用机制，并将未决条件纳入合同前置条件。三家报价均贴近上限，宜通过谈判争取价格与风险预备费的合理调整。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0206",
+      "package_awards": [
+        {
+          "package_id": "CASE-0206/construction-1",
+          "selected_bidder_id": "COMP-0191",
+          "selected_bidder_name": "中建八局第二建设有限公司",
+          "bidder_type": "company",
+          "decision_reason": "三家报价同为MOP 82,875,000并贴近包预算上限，价格不构成区分因素，比较落在能力匹配、人员配置现实性、文档纪律与接口协调。中建八局第二建设有限公司方案完整、未提交未决条件，角色计划与现场监督配置现实，质量目标、安全期望跟踪与接口台账按周更新响应具体，业主审查清晰度最好；相较之下中交第一航务工程局有限公司分包成本未确认且未决条件较多，得寶國際亦有一项未决条件，交付与价格基础的可控性略逊。判给前将就关键岗位到岗计划、受控专业分包成本锁定与暂列金额使用机制进行澄清，以巩固单一责任主体的问责基础。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一投标人身份独立投标，不组建组合体。",
+            "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+            "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+            "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0191"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T15:47:39",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0206/construction-1",
+          "decision": "bid",
+          "reason": "经管理层审议，主体结构与外立面工程包范围清晰、边界明确，属于公司施工能力可直接覆盖的房建结构总承包范畴。公司当前资源占用为零，可用资源充足，具备作为单一责任主体统筹桩基、基础、混凝土与钢结构、幕墙及屋面防水的组织条件。幕墙、防水等专业作业按正常施工分包管理，由公司统一控制进度、安全、质量文档与接口协调，不改变投标人身份与责任归属，无需组成组合体。澳门城市施工物流、吊装与公众通行协调属于可通过施工组织设计和风险应对消化的常规风险。报价须严格按工程量清单编制，列明各分项价格构成、暂列金额与变更计价机制，控制在8288万MOP上限内。决定以独立投标方式参与。",
+          "unresolved_condition_ids": [
+            "condition_2b594c2724f358aff194"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:47:39",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0206/construction-1",
+          "decision": "bid",
+          "reason": "经管理层审议，本包属于公司核心施工业务范围，合同额在可承受区间，且当前资源无占用，具备独立投标和履约的组织条件。幕墙、钢结构、桩基等专业工作可通过受控分包和公司统一的项目管理、安全质量体系完成，不需要以组合体形式分担投标人身份或包级交付责任。公司将作为单一责任主体，按工程量清单报价，明确桩基、基础、混凝土、钢结构、幕墙与屋面防水的价格构成及暂列金额、变更计价机制，并在施工组织、进度里程碑、质量目标、安全期望跟踪和接口协调方面提交完整响应。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一投标人身份独立投标，不组建组合体。",
+            "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+            "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+            "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:47:39",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0494",
+          "package_id": "CASE-0206/construction-1",
+          "decision": "bid",
+          "reason": "经管理层审议，本工程包属于公司核心业务范围内的酒店塔楼主体结构与外立面施工，预算8287.5万MOP、工期24个月，与公司总承包、地基基础、混凝土钢结构及幕墙协调能力相匹配。公司当前无占用资源，可用资源2.0高于本包0.7的资源需求，具备独立承担的组织条件；ISO 9001、ISO 14001、ISO 45001体系认证可支撑质量、环境与安全管理响应。桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司作为单一责任投标人统一负责现场监督、安全期望跟踪、进度控制、质量文档与验收资料管理，不构成必须组建组合体的事由。主要风险集中在澳门城市施工物流与吊装组织、公众通行与临时交通协调、以及设计与后续机电包接口，这些将通过施工组织设计、里程碑进度视图、接口协调方案、暂列金额与价格调整机制在报价中体现。据此决定以公司名义独立投标，并按工程量清单或综合单价列明各分项价格构成。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任投标人身份独立投标，不设组合体",
+            "桩基、钢结构、幕墙、屋面防水等专业工序按正常专业分包管理，由公司统一监督与验收",
+            "关键岗位人员可用性以投标时提交的团队可用性摘要为准",
+            "报价按工程量清单或综合单价编制，总额不超过82875000.0 MOP",
+            "暂列金额、变更计价与价格调整机制在投标文件中明确列示",
+            "施工物流、吊装与临时交通安排按施工组织设计执行，并与相关方协调"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:02",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "bidder_id": "COMP-0494"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:33",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:41",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "recommended_winner": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:48:46",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0206/construction-1",
+          "selected_bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-aa9fb4e593b5ca": {
+            "action": "accept",
+            "reason": "The bid from COMP-0191 is capability-fit and within the package budget of MOP 82,875,000, matching the package ceiling exactly with a transparent breakdown across piling, concrete, steel, curtain wall, roofing, site management, contingency and overhead. The 24-month schedule commitment aligns with the project duration, and the milestone set (piling acceptance month 3, structural topping-out month 14, curtain wall completion month 20, roof water test month 21, pre-acceptance month 24) is consistent with the package scope. The bidder commits as a single responsible entity with controlled specialist subcontracting for curtain wall, steel and piling, which is acceptable as a proposed risk allocation. Disclosed assumptions are accepted as risk allocations: single bidder with no consortium, controlled subcontracting under unified management, pricing based on current bill of quantities and scenario price index, and key personnel availability per the role plan and team availability summary. On the buyer's own position, I decide that the fixed price of MOP 82,875,000 is inclusive of the listed provisional sum and price adjustment allowance of MOP 4,820,000, measured and paid against the bill of quantities with comprehensive unit rates, with progress reviewed per the compliance statement; design or MEP interface delays are handled through the contract variation pricing mechanism. No material unresolved risks remain that would require revision, and future deliverables are treated as obligations subject to review and acceptance conditions."
+          },
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "中建八局第二建设有限公司（COMP-0191）作为单一投标人独立承担本包，报价MOP 82,875,000与包预算上限一致，资源承诺0.7在可用资源2.0范围内，工作份额1.0与单一责任主体一致。范围、工期24个月及关键里程碑（第3个月桩基验收、第14个月结构封顶、第20个月幕墙完成、第21个月屋面淋水试验、第24个月竣工预验收）清晰可执行。已披露的投标假设（受控专业分包、基于当前工程量清单与情景价格指数的投标估算、暂列金额与价格调整机制按招标文件列明、关键岗位以角色计划与团队可用性摘要为准）作为风险分配予以接受，不视为缺失证据。本阶段仅授权可执行的模拟义务，未来工程交付与法定审批仍按审查与验收条件作为义务处理。未发现需修订或拒绝的重大未决风险。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMEC711881/CASE-0206/construction-1/round-1/contract",
+          "simulation_id": "SIMEC711881",
+          "project_id": "CASE-0206",
+          "package_id": "CASE-0206/construction-1",
+          "session_id": "SIMEC711881/CASE-0206/construction-1/round-1",
+          "snapshot_version": "11a2f652faf1f812a887dc5d9ffeabff18db53a32e4925c6d245f723af678235",
+          "buyer_id": "OWNER-aa9fb4e593b5ca",
+          "bid_id": "bid_CASE-0206/construction-1_002",
+          "bidder_id": "COMP-0191",
+          "lead_id": "COMP-0191",
+          "members": [
+            "COMP-0191"
+          ],
+          "price": 82875000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0191": 0.7
+          },
+          "work_shares": {
+            "COMP-0191": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "dc5a45099c780bdb1244e378ccf1f49b754b205e3b0a0a4c7cb70d73a3f58a95",
+          "terms": {
+            "schedule_commitment": "承诺按项目24个月工期完成本包全部工作，关键里程碑为：第3个月桩基验收、第14个月结构封顶、第20个月幕墙安装完成、第21个月屋面淋水试验完成、第24个月竣工预验收。若因设计或机电接口延误，按合同变更计价机制处理。",
+            "risk_response": "主要风险包括材料价格波动、幕墙与钢结构专业分包接口、澳门城市施工物流与公众通行协调、以及设计变更导致的工期影响。应对措施：报价中已计入暂列金额与价格调整预备；分包采用受控专业分包并由公司统一管理；临时交通与吊装方案提前报批；接口台账按周更新。价格调整机制按招标文件要求列明，报价为基于当前工程量清单与情景价格指数的投标估算。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0206/construction-1_002",
+              "package_id": "CASE-0206/construction-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0191",
+              "bidder_name": "中建八局第二建设有限公司",
+              "technical_proposal": "中建八局第二建设有限公司以单一投标人身份独立投标本包，承担13.5万平方米酒店塔楼及裙楼主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水的施工总承包责任，不含机电、精装修与室外景观。\n\n**角色计划与团队可用性摘要**：拟设项目总监1名、项目经理1名、技术负责人1名、结构/幕墙/桩基专业工程师各2名、质量安全主任各1名、测量与试验负责人各1名、文档控制2名。关键岗位按投标阶段角色计划配置，人员可用性以团队可用性摘要为准。\n\n**施工组织与交付方法**：桩基与基础先行分区流水，塔楼核心筒与裙楼同步展开；混凝土结构采用爬模与布料机组合，钢结构在工厂预拼后分段吊装；幕墙按单元式与框架式分区安装，屋面防水与淋水试验穿插进行。澳门城市施工物流采用夜间与错峰运输、临时交通管理及公众通行协调方案。\n\n**质量方法与质量目标**：执行公司内部质量程序与独立检查方法，设置材料进场复核、混凝土试块与钢结构焊缝第三方检测、幕墙节点样板与淋水试验、屋面蓄水与淋水试验等控制点，质量目标为一次验收合格率100%。\n\n**安全计划与安全期望跟踪**：建立安全期望跟踪清单，按周复核高处作业、吊装、临时用电与公众通行防护，分包安全纳入统一考核。\n\n**分包管理与现场监督**：幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一项目管理、安全质量体系与文档验收管理，分包安排将在投标文件中说明。\n\n**接口协调**：与设计、造价及后续机电包建立接口台账，明确预留预埋、幕墙收口与机电穿墙节点移交时点。",
+              "implementation_plan": "按24个月项目工期编制施工进度视图：第1至3个月完成桩基与基础施工及检测；第4至14个月完成塔楼与裙楼混凝土结构，钢结构随结构分区吊装；第10至20个月进行外立面幕墙安装与节点收口；第16至21个月完成屋面防水与淋水试验；第20至24个月进行验收、资料移交与缺陷修复。关键里程碑包括：桩基验收、结构封顶、幕墙样板段验收、屋面淋水试验完成、竣工预验收。分包管理采用统一招标、进场审查、周例会与月度考核；现场监督按区域配置专职监督人员，质量文档与验收资料同步归档。",
+              "quotation": 82875000.0,
+              "schedule_commitment": "承诺按项目24个月工期完成本包全部工作，关键里程碑为：第3个月桩基验收、第14个月结构封顶、第20个月幕墙安装完成、第21个月屋面淋水试验完成、第24个月竣工预验收。若因设计或机电接口延误，按合同变更计价机制处理。",
+              "compliance_statement": "接受业主按工程量清单与综合单价进行支付审核与进度复核；暂列金额按招标文件规定使用，变更计价按合同条款及情景价格指数调整；质量文档与验收资料按业主审查要求同步提交，配合设计、造价及后续机电包接口协调。",
+              "risk_response": "主要风险包括材料价格波动、幕墙与钢结构专业分包接口、澳门城市施工物流与公众通行协调、以及设计变更导致的工期影响。应对措施：报价中已计入暂列金额与价格调整预备；分包采用受控专业分包并由公司统一管理；临时交通与吊装方案提前报批；接口台账按周更新。价格调整机制按招标文件要求列明，报价为基于当前工程量清单与情景价格指数的投标估算。",
+              "submission_summary": "中建八局第二建设有限公司以单一投标人身份独立投标本包，报价MOP 82,875,000，与包预算上限一致。报价构成：桩基与基础MOP 11,260,000；混凝土结构MOP 24,850,000；钢结构MOP 9,350,000；幕墙MOP 18,640,000；屋面防水MOP 3,180,000；现场管理、安全质量与临时交通协调MOP 6,250,000；暂列金额与价格调整预备MOP 4,820,000；公司管理费、利润与风险预备MOP 4,525,000。上述金额合计MOP 82,875,000。报价基于当前工程量清单与情景价格指数编制，属投标阶段估算；幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一管理并承担单一责任主体义务。",
+              "quotation_breakdown": [
+                {
+                  "item": "桩基与基础工程",
+                  "amount": 11260000,
+                  "basis": "按工程量清单暂估工程量与情景价格指数编制，含桩基成孔、钢筋笼、混凝土浇筑、基础土方与检测配合，属投标阶段估算"
+                },
+                {
+                  "item": "混凝土结构工程（塔楼及裙楼）",
+                  "amount": 24850000,
+                  "basis": "含模板、钢筋、混凝土、爬模与垂直运输，按13.5万平方米建筑面积及结构含量估算，属投标阶段估算"
+                },
+                {
+                  "item": "钢结构工程",
+                  "amount": 9350000,
+                  "basis": "含钢构件加工、运输、吊装与焊缝检测，按暂估钢结构吨位及情景价格指数编制，属投标阶段估算"
+                },
+                {
+                  "item": "外立面幕墙工程",
+                  "amount": 18640000,
+                  "basis": "含单元式与框架式幕墙、龙骨、面板、节点收口及样板段，按暂估幕墙面积与受控专业分包询价水平估算，属投标阶段估算"
+                },
+                {
+                  "item": "屋面防水工程",
+                  "amount": 3180000,
+                  "basis": "含防水层、保温层、保护层及淋水试验组织，按暂估屋面面积估算，属投标阶段估算"
+                },
+                {
+                  "item": "现场管理、安全质量与临时交通协调",
+                  "amount": 6250000,
+                  "basis": "含项目管理人员、安全质量监督、测量试验、文档控制、临时交通管理与公众通行协调，按24个月工期分摊"
+                },
+                {
+                  "item": "暂列金额与价格调整预备",
+                  "amount": 4820000,
+                  "basis": "按招标文件要求列支暂列金额，并计入材料价格指数波动与变更计价的预备额度，属投标阶段估算"
+                },
+                {
+                  "item": "公司管理费、利润与风险预备",
+                  "amount": 4525000,
+                  "basis": "按公司统一管理费分摊、合理利润及分包接口与工期风险预备计提"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "公司以单一投标人身份独立投标，不组建组合体。",
+                "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+                "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+                "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "dc5a45099c780bdb1244e378ccf1f49b754b205e3b0a0a4c7cb70d73a3f58a95"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0206/construction-1": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+          "budget": 82875000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-aa9fb4e593b5ca"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIMEC711881/CASE-0206/construction-1/round-1/contract",
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/construction-1",
+    "session_id": "SIMEC711881/CASE-0206/construction-1/round-1",
+    "snapshot_version": "11a2f652faf1f812a887dc5d9ffeabff18db53a32e4925c6d245f723af678235",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "bid_id": "bid_CASE-0206/construction-1_002",
+    "bidder_id": "COMP-0191",
+    "lead_id": "COMP-0191",
+    "members": [
+      "COMP-0191"
+    ],
+    "price": 82875000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0191": 0.7
+    },
+    "work_shares": {
+      "COMP-0191": 1.0
+    },
+    "signatures": {
+      "OWNER-aa9fb4e593b5ca": true,
+      "COMP-0191": true
+    },
+    "signed_terms_hash": "dc5a45099c780bdb1244e378ccf1f49b754b205e3b0a0a4c7cb70d73a3f58a95",
+    "terms": {
+      "schedule_commitment": "承诺按项目24个月工期完成本包全部工作，关键里程碑为：第3个月桩基验收、第14个月结构封顶、第20个月幕墙安装完成、第21个月屋面淋水试验完成、第24个月竣工预验收。若因设计或机电接口延误，按合同变更计价机制处理。",
+      "risk_response": "主要风险包括材料价格波动、幕墙与钢结构专业分包接口、澳门城市施工物流与公众通行协调、以及设计变更导致的工期影响。应对措施：报价中已计入暂列金额与价格调整预备；分包采用受控专业分包并由公司统一管理；临时交通与吊装方案提前报批；接口台账按周更新。价格调整机制按招标文件要求列明，报价为基于当前工程量清单与情景价格指数的投标估算。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0206/construction-1_002",
+        "package_id": "CASE-0206/construction-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "中建八局第二建设有限公司以单一投标人身份独立投标本包，承担13.5万平方米酒店塔楼及裙楼主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水的施工总承包责任，不含机电、精装修与室外景观。\n\n**角色计划与团队可用性摘要**：拟设项目总监1名、项目经理1名、技术负责人1名、结构/幕墙/桩基专业工程师各2名、质量安全主任各1名、测量与试验负责人各1名、文档控制2名。关键岗位按投标阶段角色计划配置，人员可用性以团队可用性摘要为准。\n\n**施工组织与交付方法**：桩基与基础先行分区流水，塔楼核心筒与裙楼同步展开；混凝土结构采用爬模与布料机组合，钢结构在工厂预拼后分段吊装；幕墙按单元式与框架式分区安装，屋面防水与淋水试验穿插进行。澳门城市施工物流采用夜间与错峰运输、临时交通管理及公众通行协调方案。\n\n**质量方法与质量目标**：执行公司内部质量程序与独立检查方法，设置材料进场复核、混凝土试块与钢结构焊缝第三方检测、幕墙节点样板与淋水试验、屋面蓄水与淋水试验等控制点，质量目标为一次验收合格率100%。\n\n**安全计划与安全期望跟踪**：建立安全期望跟踪清单，按周复核高处作业、吊装、临时用电与公众通行防护，分包安全纳入统一考核。\n\n**分包管理与现场监督**：幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一项目管理、安全质量体系与文档验收管理，分包安排将在投标文件中说明。\n\n**接口协调**：与设计、造价及后续机电包建立接口台账，明确预留预埋、幕墙收口与机电穿墙节点移交时点。",
+        "implementation_plan": "按24个月项目工期编制施工进度视图：第1至3个月完成桩基与基础施工及检测；第4至14个月完成塔楼与裙楼混凝土结构，钢结构随结构分区吊装；第10至20个月进行外立面幕墙安装与节点收口；第16至21个月完成屋面防水与淋水试验；第20至24个月进行验收、资料移交与缺陷修复。关键里程碑包括：桩基验收、结构封顶、幕墙样板段验收、屋面淋水试验完成、竣工预验收。分包管理采用统一招标、进场审查、周例会与月度考核；现场监督按区域配置专职监督人员，质量文档与验收资料同步归档。",
+        "quotation": 82875000.0,
+        "schedule_commitment": "承诺按项目24个月工期完成本包全部工作，关键里程碑为：第3个月桩基验收、第14个月结构封顶、第20个月幕墙安装完成、第21个月屋面淋水试验完成、第24个月竣工预验收。若因设计或机电接口延误，按合同变更计价机制处理。",
+        "compliance_statement": "接受业主按工程量清单与综合单价进行支付审核与进度复核；暂列金额按招标文件规定使用，变更计价按合同条款及情景价格指数调整；质量文档与验收资料按业主审查要求同步提交，配合设计、造价及后续机电包接口协调。",
+        "risk_response": "主要风险包括材料价格波动、幕墙与钢结构专业分包接口、澳门城市施工物流与公众通行协调、以及设计变更导致的工期影响。应对措施：报价中已计入暂列金额与价格调整预备；分包采用受控专业分包并由公司统一管理；临时交通与吊装方案提前报批；接口台账按周更新。价格调整机制按招标文件要求列明，报价为基于当前工程量清单与情景价格指数的投标估算。",
+        "submission_summary": "中建八局第二建设有限公司以单一投标人身份独立投标本包，报价MOP 82,875,000，与包预算上限一致。报价构成：桩基与基础MOP 11,260,000；混凝土结构MOP 24,850,000；钢结构MOP 9,350,000；幕墙MOP 18,640,000；屋面防水MOP 3,180,000；现场管理、安全质量与临时交通协调MOP 6,250,000；暂列金额与价格调整预备MOP 4,820,000；公司管理费、利润与风险预备MOP 4,525,000。上述金额合计MOP 82,875,000。报价基于当前工程量清单与情景价格指数编制，属投标阶段估算；幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，由公司统一管理并承担单一责任主体义务。",
+        "quotation_breakdown": [
+          {
+            "item": "桩基与基础工程",
+            "amount": 11260000,
+            "basis": "按工程量清单暂估工程量与情景价格指数编制，含桩基成孔、钢筋笼、混凝土浇筑、基础土方与检测配合，属投标阶段估算"
+          },
+          {
+            "item": "混凝土结构工程（塔楼及裙楼）",
+            "amount": 24850000,
+            "basis": "含模板、钢筋、混凝土、爬模与垂直运输，按13.5万平方米建筑面积及结构含量估算，属投标阶段估算"
+          },
+          {
+            "item": "钢结构工程",
+            "amount": 9350000,
+            "basis": "含钢构件加工、运输、吊装与焊缝检测，按暂估钢结构吨位及情景价格指数编制，属投标阶段估算"
+          },
+          {
+            "item": "外立面幕墙工程",
+            "amount": 18640000,
+            "basis": "含单元式与框架式幕墙、龙骨、面板、节点收口及样板段，按暂估幕墙面积与受控专业分包询价水平估算，属投标阶段估算"
+          },
+          {
+            "item": "屋面防水工程",
+            "amount": 3180000,
+            "basis": "含防水层、保温层、保护层及淋水试验组织，按暂估屋面面积估算，属投标阶段估算"
+          },
+          {
+            "item": "现场管理、安全质量与临时交通协调",
+            "amount": 6250000,
+            "basis": "含项目管理人员、安全质量监督、测量试验、文档控制、临时交通管理与公众通行协调，按24个月工期分摊"
+          },
+          {
+            "item": "暂列金额与价格调整预备",
+            "amount": 4820000,
+            "basis": "按招标文件要求列支暂列金额，并计入材料价格指数波动与变更计价的预备额度，属投标阶段估算"
+          },
+          {
+            "item": "公司管理费、利润与风险预备",
+            "amount": 4525000,
+            "basis": "按公司统一管理费分摊、合理利润及分包接口与工期风险预备计提"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一投标人身份独立投标，不组建组合体。",
+          "幕墙、钢结构、桩基等专业工作拟通过受控专业分包实施，分包安排将在投标文件中说明并由公司统一管理。",
+          "报价基于当前工程量清单和情景价格指数编制，暂列金额和价格调整机制按招标文件要求列明。",
+          "关键岗位人员可用性以投标阶段提交的角色计划与团队可用性摘要为准。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "13.5万平方米酒店塔楼及裙楼的主体结构、桩基与基础、混凝土与钢结构、外立面幕墙及屋面防水；不含机电、精装修与室外景观。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

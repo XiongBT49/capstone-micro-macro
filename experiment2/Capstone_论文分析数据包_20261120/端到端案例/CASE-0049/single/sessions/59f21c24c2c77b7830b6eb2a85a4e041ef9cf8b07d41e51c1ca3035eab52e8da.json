@@ -1,0 +1,1590 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM45BEE469/CASE-0049/supply-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/supply-2",
+    "round_id": 1,
+    "tick": 15,
+    "public": {
+      "environment": {
+        "current_tick": 15,
+        "market_demand_index": 1.061811376099563,
+        "material_price_index": 1.1124378916329212,
+        "labor_price_index": 1.1722884529013,
+        "financing_condition_index": 0.9507764034575142,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "CNY",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "CNY",
+      "package_budget": 12495000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "CNY",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+        "owner_id": "OWNER-c328a5d9ef0c7d",
+        "project_id": "CASE-0049",
+        "project_type": "building",
+        "region": "Guangzhou",
+        "scope": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包"
+      },
+      "package": {
+        "package_id": "CASE-0049/supply-2",
+        "project_id": "CASE-0049",
+        "kind": "supply",
+        "buyer_id": "$construction_lead",
+        "name": "学生宿舍机电安装与电梯施工包材料采购",
+        "scope": "仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+        "budget": 12495000.0,
+        "currency": "CNY",
+        "resource_required": 0.25,
+        "depends_on": [
+          "CASE-0049/construction-2"
+        ],
+        "cost_inclusion": "included_in_parent",
+        "parent_package_id": "CASE-0049/construction-2",
+        "candidate_ids": [
+          "COMP-0258",
+          "COMP-0191"
+        ]
+      }
+    },
+    "private": {
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 1.3,
+        "occupied_resource": 0.7,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8700000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.7,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000006",
+              "project_id": "CASE-0049",
+              "project_stage": "contract_award",
+              "role": "Contractor",
+              "status": "active",
+              "resource_allocation": 0.7,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 14,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM45BEE469/CASE-0049/construction-2/round-1/contract",
+              "project_id": "CASE-0049",
+              "package_id": "CASE-0049/construction-2",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 34530000.0,
+              "currency": "CNY",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM45BEE469/EVT000175",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0049",
+            "role": "Contractor",
+            "available_resource": 1.3,
+            "occupied_resource": 0.7,
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000176",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0049",
+            "package_id": "CASE-0049/construction-2",
+            "contract_id": "SIM45BEE469/CASE-0049/construction-2/round-1/contract",
+            "buyer_id": "OWNER-c328a5d9ef0c7d",
+            "members": [
+              "COMP-0025"
+            ],
+            "price": 34530000.0,
+            "currency": "CNY",
+            "committed": true
+          },
+          {
+            "event_id": "SIM45BEE469/EVT000177",
+            "event_type": "project_state_updated",
+            "tick": 14,
+            "project_id": "CASE-0049",
+            "stage": "contract_award",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 3,
+          "selected_events": 3,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0258": {
+        "entity_id": "COMP-0258",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0258",
+          "company_name": "保利长大工程有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：承包境内外公路工程、港口与航道工程、市政公用工程、房屋建筑工程、水利水电工程、铁路工程和路基工程、路面工程、桥梁工程、隧道工程、交通设施工程、机电工程、道路养护工程、城市轨道工程、海洋工程、机场工程、环保工程、管道工程、绿化工程等各类工程项目的勘察、设计、施工、管理、咨询（按本公司有效证书经营），以及配套设备、材料、构件的生产、经营、销售、安装及仓储；各类基础设施项目及附属设施的投资、建设、运营及管理；技术开发、技术转让、技术服务；实业投资、开发、经营；投资咨询（不含期货、证劵）；自有房屋租赁；销售：建筑材料、五金、交电、工业生产资料（不含实行汽车品牌销售管理的汽车、危险化学品）；机械设备制造、安装、改造和维修和租赁；钢结构制作、安装；货物进出口、技术进出口（法律、行政法规禁止的项目不得经营；法律、行政法规限制的项目须取得相关许可证方可经营），从事国内沿海普通货物运输、海上拖带及与海洋工程相关的专业服务（按本公司有效许可证经营）。(依法须经批准的项目，经相关部门批准后方可开展经营活动)。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0258",
+          "name": "保利长大工程有限公司",
+          "role": "Supplier",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8600000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Supplier",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8500000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "faf18b9fea1593777f16b2fa9c1b6c6f70a33600ec7a110632bf9c64ee6756e1"
+  },
+  "spec": {
+    "package_id": "CASE-0049/supply-2",
+    "project_id": "CASE-0049",
+    "kind": "supply",
+    "buyer_id": "$construction_lead",
+    "name": "学生宿舍机电安装与电梯施工包材料采购",
+    "scope": "仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+    "budget": 12495000.0,
+    "currency": "CNY",
+    "resource_required": 0.25,
+    "depends_on": [
+      "CASE-0049/construction-2"
+    ],
+    "cost_inclusion": "included_in_parent",
+    "parent_package_id": "CASE-0049/construction-2",
+    "candidate_ids": [
+      "COMP-0258",
+      "COMP-0191"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0049",
+      "project_name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "project_type": "building",
+      "location": "Guangzhou",
+      "owner_intent": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "CNY 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0049",
+      "project_scope": "本项目为广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包，位于广州，属居住建筑，建筑面积约11650平方米。业主采用DBB交付模式，项目预算为CNY 150,000,000，工期24个月。本次业主方模拟包简报仅针对已授权的供应包（CASE-0049/supply-2），该包为施工包「学生宿舍机电安装与电梯施工包」供应材料与构配件，不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。",
+      "functional_requirements": [
+        "供应包须满足施工包「学生宿舍机电安装与电梯施工包」所需的给排水、电气、通风空调、消防、弱电智能化及电梯相关材料与构配件的供货需求。",
+        "材料与构配件应满足学生宿舍作为居住建筑的使用功能要求，包括耐久性、安全性、可维护性及与设计文件的符合性。",
+        "供应包应提供完整的质量证明文件，包括产品合格证、检测报告、质保书等，以支持施工包的质量验收与竣工资料移交。",
+        "供应包应具备按施工进度计划分批供货的能力，确保材料到场时间与施工包的安装计划相协调。",
+        "供应包应提供质保期内的更换服务，并明确售后响应机制。",
+        "供应包应提供材料与设备的技术资料及接口信息，供施工包承包商进行安装协调。"
+      ],
+      "technical_requirements": [
+        "材料与构配件应符合国家及地方现行相关标准与规范，并满足设计图纸与技术规格书的要求。",
+        "供应包应提供BIM协调所需的材料与设备信息，包括尺寸、重量、接口参数等，以支持施工包的BIM协调工作。",
+        "供应包应提供MEP协调所需的接口信息，确保材料与设备与给排水、电气、通风空调、消防、弱电智能化及电梯系统的接口匹配。",
+        "供应包应提供结构协调所需的信息，确保材料与设备的荷载、固定方式等满足结构要求。",
+        "供应包应提供运输接口布局建议，确保材料运输到场路径与现场条件相适应。",
+        "供应包应提供公共访问布局相关信息，确保材料与设备不影响校园公共区域的安全与通行。",
+        "供应包应明确耐久性目标与可维护性目标，并提供相应的技术说明。",
+        "供应包应配合业主验收路径，提供必要的技术文件与样品。",
+        "供应包应提供材料与设备的能耗指标，支持项目的能源使用目标。"
+      ],
+      "budget_policy": "供应包预算为CNY 12,495,000，已包含在施工包合同价内，由施工包承包商作为买方支付。业主方模拟包简报要求供应包投标人提供详细的报价明细，包括材料单价、运输费用、质量证明文件费用、质保期服务费用等。业主将采用定性比较原则，结合价格合理性、交付信心、能力匹配、风险控制等因素进行综合评审。报价应基于市场行情及项目实际需求，并考虑材料价格波动风险。",
+      "schedule_policy": "供应包供货计划应与施工包24个月工期相协调，重点考虑施工包中机电安装与电梯工程的进度节点。供应包投标人应提供供货进度计划，明确分批供货时间、运输周期及现场交接安排。业主将关注供货计划与施工进度的匹配性、里程碑的现实性，以及业主审查时间、包接口时间与公共访问协调时间的预留。供应包应具备应对施工进度调整的灵活性。",
+      "compliance_requirements": [
+        "业主审查节奏：业主将定期审查供应包的供货进度、质量证明文件及质保服务情况，确保与施工包进度协调。",
+        "问题升级路径：建立供应包与施工包承包商之间的接口问题升级机制，重大问题及时上报业主。",
+        "文档纪律：供应包须按业主要求提交完整的质量证明文件、技术资料及供货记录，确保文档可追溯。",
+        "接口签署：供应包与施工包之间的材料交接、技术接口须经双方签署确认，业主保留抽查权。",
+        "公共访问协调：供应包运输车辆进出校园须遵守业主的公共访问协调安排，确保师生安全。",
+        "质量目标跟踪：业主将跟踪供应包的质量目标达成情况，包括材料合格率、质量证明文件完整性等。",
+        "安全期望跟踪：业主将跟踪供应包在运输、交付过程中的安全表现，确保符合项目安全期望。",
+        "变更控制纪律：任何材料规格、数量或供货计划的变更须经业主变更控制程序审批。"
+      ],
+      "risk_priorities": [
+        "材料质量风险：材料与构配件不符合设计或规范要求，影响施工包质量与验收。",
+        "供货延迟风险：供货不及时导致施工包进度延误，影响整体工期。",
+        "接口协调风险：供应包与施工包之间的技术接口信息不完整或不准确，导致安装返工。",
+        "价格波动风险：材料市场价格波动导致供应包成本超支。",
+        "质保服务风险：质保期内更换响应不及时，影响宿舍正常使用。",
+        "公共安全风险：运输车辆在校园内发生安全事故。",
+        "文档缺失风险：质量证明文件不完整，影响竣工资料移交。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0049/supply-2",
+          "package_type": "supplier",
+          "package_name": "学生宿舍机电安装与电梯施工包材料采购",
+          "scope": "Authorized scope: 仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。\nBuyer refinement: 仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+          "required_company_role": "supplier",
+          "qualification_requirements": [
+            "产品匹配能力：供应的材料与构配件须符合设计规格及施工包需求。",
+            "供应协调能力：具备与施工包承包商协调供货计划、接口信息的能力。",
+            "交付物流能力：具备将材料按时运输至施工现场的物流组织能力。",
+            "质量文档能力：能够提供完整的质量证明文件及技术资料。",
+            "可维护性支持能力：提供材料与设备的维护说明及技术支持。",
+            "质保与售后支持能力：具备质保期内更换及售后响应机制。",
+            "备件计划能力：提供关键材料的备件供应计划。",
+            "接口信息提供能力：向施工包承包商提供安装接口信息。"
+          ],
+          "proposal_requirements": [
+            "角色计划：明确项目团队角色分工及职责。",
+            "团队可用性摘要：提供团队人员可用性及投入计划。",
+            "交付方法：说明供货组织、运输安排及现场交接流程。",
+            "质量方法：说明质量控制措施及质量证明文件管理。",
+            "价格依据：提供报价明细及价格构成说明。",
+            "进度视图：提供供货进度计划及与施工进度的协调说明。",
+            "风险应对：识别主要风险并提出应对措施。"
+          ],
+          "pricing_requirements": "投标人应基于供应包范围提供详细报价，包括材料单价、运输费用、质量证明文件费用、质保期服务费用及备件费用等。报价应以CNY计价，并考虑材料价格波动风险。业主将定性比较价格合理性，结合交付信心、能力匹配等因素综合评审。\nBinding currency: CNY; package ceiling: 12495000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "独立性保证",
+            "公共访问协调"
+          ],
+          "owner_decision_policy": "业主将定性比较投标，综合评判能力匹配、价格、风险与交付信心。业主代理将结合供应包的具体需求，重点考察产品匹配、供应协调、交付物流、质量文档、可维护性支持、质保与售后支持、备件计划及接口信息提供等能力，并参考团队可用性摘要、角色计划、交付方法、质量方法、价格依据、进度视图及风险应对等投标内容，做出判给决定。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0049/supply-2",
+        "package_type": "supplier",
+        "package_name": "学生宿舍机电安装与电梯施工包材料采购",
+        "scope": "Authorized scope: 仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。\nBuyer refinement: 仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+        "required_company_role": "supplier",
+        "qualification_requirements": [
+          "产品匹配能力：供应的材料与构配件须符合设计规格及施工包需求。",
+          "供应协调能力：具备与施工包承包商协调供货计划、接口信息的能力。",
+          "交付物流能力：具备将材料按时运输至施工现场的物流组织能力。",
+          "质量文档能力：能够提供完整的质量证明文件及技术资料。",
+          "可维护性支持能力：提供材料与设备的维护说明及技术支持。",
+          "质保与售后支持能力：具备质保期内更换及售后响应机制。",
+          "备件计划能力：提供关键材料的备件供应计划。",
+          "接口信息提供能力：向施工包承包商提供安装接口信息。"
+        ],
+        "proposal_requirements": [
+          "角色计划：明确项目团队角色分工及职责。",
+          "团队可用性摘要：提供团队人员可用性及投入计划。",
+          "交付方法：说明供货组织、运输安排及现场交接流程。",
+          "质量方法：说明质量控制措施及质量证明文件管理。",
+          "价格依据：提供报价明细及价格构成说明。",
+          "进度视图：提供供货进度计划及与施工进度的协调说明。",
+          "风险应对：识别主要风险并提出应对措施。"
+        ],
+        "pricing_requirements": "投标人应基于供应包范围提供详细报价，包括材料单价、运输费用、质量证明文件费用、质保期服务费用及备件费用等。报价应以CNY计价，并考虑材料价格波动风险。业主将定性比较价格合理性，结合交付信心、能力匹配等因素综合评审。\nBinding currency: CNY; package ceiling: 12495000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "独立性保证",
+          "公共访问协调"
+        ],
+        "owner_decision_policy": "业主将定性比较投标，综合评判能力匹配、价格、风险与交付信心。业主代理将结合供应包的具体需求，重点考察产品匹配、供应协调、交付物流、质量文档、可维护性支持、质保与售后支持、备件计划及接口信息提供等能力，并参考团队可用性摘要、角色计划、交付方法、质量方法、价格依据、进度视图及风险应对等投标内容，做出判给决定。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "owner",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0258",
+        "company_name": "保利长大工程有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：承包境内外公路工程、港口与航道工程、市政公用工程、房屋建筑工程、水利水电工程、铁路工程和路基工程、路面工程、桥梁工程、隧道工程、交通设施工程、机电工程、道路养护工程、城市轨道工程、海洋工程、机场工程、环保工程、管道工程、绿化工程等各类工程项目的勘察、设计、施工、管理、咨询（按本公司有效证书经营），以及配套设备、材料、构件的生产、经营、销售、安装及仓储；各类基础设施项目及附属设施的投资、建设、运营及管理；技术开发、技术转让、技术服务；实业投资、开发、经营；投资咨询（不含期货、证劵）；自有房屋租赁；销售：建筑材料、五金、交电、工业生产资料（不含实行汽车品牌销售管理的汽车、危险化学品）；机械设备制造、安装、改造和维修和租赁；钢结构制作、安装；货物进出口、技术进出口（法律、行政法规禁止的项目不得经营；法律、行政法规限制的项目须取得相关许可证方可经营），从事国内沿海普通货物运输、海上拖带及与海洋工程相关的专业服务（按本公司有效许可证经营）。(依法须经批准的项目，经相关部门批准后方可开展经营活动)。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径和外部依赖。对业主变更和审批延迟敏感，倾向于在讨论中强调风险缓冲和决策时效，常把技术问题拉回到商业与合同层面。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "对接业主与监管方，协调报批报建",
+            "主持内部评审，跟踪质量与工期目标",
+            "审批分包与采购方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、果断，善用结构化汇报，在会议中快速收敛分歧，但对细节追问耐心有限。"
+        },
+        {
+          "agent_id": "COMP-0025_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，先看报价构成与支付条件，再评估风险敞口。在讨论中常提醒成本超支和现金流压力，倾向于用保守假设做价格基础，对模糊的业主要求会要求书面澄清。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付评审",
+            "管理成本控制与变更索赔",
+            "评估分包商报价合理性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨、细致，习惯用数据说话，表达清晰但偏保守，对不确定事项会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0025_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，首先关注施工可行性和工序衔接，对资源到位和班组配合极为敏感。在讨论中常从实际执行角度提出反对意见，强调工期压缩带来的质量与安全风险，倾向于留出合理缓冲。",
+          "responsibilities": [
+            "编制施工方案与进度计划",
+            "管理现场施工与分包协调",
+            "监督质量目标与安全措施落实",
+            "编制现场报告与进度汇报"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "务实、直白，喜欢用现场案例说明问题，对理论性讨论缺乏耐心，但愿意倾听一线反馈。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全主任",
+          "personal_profile": "以标准和程序为出发点，先检查质量目标和安全合规性，对任何偏离规范的做法保持警惕。在讨论中常扮演质疑者角色，强调独立检查与文档纪律，倾向于用检查清单和整改闭环来推动决策。",
+          "responsibilities": [
+            "建立质量与安全管理体系",
+            "组织内部质量审查与独立检查",
+            "跟踪整改闭环与文档记录",
+            "评估分包商质量安全表现"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理分明、坚持原则，沟通时引用规范条文，语气平和但立场坚定，不易妥协。"
+        },
+        {
+          "agent_id": "COMP-0025_05_吴家豪",
+          "agent_name": "吴家豪",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调经理",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，先关注图纸可施工性和专业接口。在讨论中常提出优化建议以降低施工难度，但对设计变更的连锁影响保持谨慎，倾向于提前协调各专业冲突。",
+          "responsibilities": [
+            "协调设计院与施工团队接口",
+            "审核施工图可施工性",
+            "管理设计变更与技术澄清",
+            "参与价值工程与方案优化"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "温和、善于倾听，习惯用图示和对比方案沟通，在分歧中扮演调解角色。"
+        }
+      ],
+      "COMP-0258": [
+        {
+          "agent_id": "COMP-0258_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0258",
+          "company_role": "supplier",
+          "department": "材料采购与供应链管理",
+          "position": "材料采购总监",
+          "personal_profile": "长期从事公路与房建项目的材料组织，习惯先看供货节奏与到场窗口，再谈价格。压力下会优先锁定关键材料的可用货源与替代方案，对付款条件与现金流非常敏感。讨论中常把其他成员的乐观进度拉回到实际供货能力，提醒不要用低价承诺换取不可兑现的到场时间。",
+          "responsibilities": [
+            "统筹学生宿舍主体土建与结构施工包的材料供货方案",
+            "组织供应商询价与价格基础复核",
+            "审核材料质量证明文件与质保期更换安排",
+            "跟踪供货到场节奏与库存缓冲"
+          ],
+          "decision_authority": "final",
+          "communication_style": "务实直接，先讲数量、时间与付款条件，再讲理由"
+        },
+        {
+          "agent_id": "COMP-0258_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0258",
+          "company_role": "supplier",
+          "department": "商务与成本控制",
+          "position": "商务成本经理",
+          "personal_profile": "擅长把报价拆成可核对的成本项，对任何未说明的加价或让利都会追问依据。压力下倾向保守报价，宁可少赚也不愿留下无法解释的成本缺口。讨论中常与采购方就价格基础产生张力，坚持把运输、损耗与质保期成本显性化。",
+          "responsibilities": [
+            "编制材料采购报价与价格基础说明",
+            "开展成本复核与付款条件评估",
+            "核对材料费用与施工包合同价的衔接",
+            "准备商务澄清与报价依据文件"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "条理清晰，用数字与分项说明支撑观点"
+        },
+        {
+          "agent_id": "COMP-0258_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0258",
+          "company_role": "supplier",
+          "department": "质量管理与技术支持",
+          "position": "材料质量主管",
+          "personal_profile": "从现场质量检查出身，看材料先看批次一致性与检测报告是否闭环。压力下不会为赶供货而放宽验收标准，倾向要求留出复检时间。讨论中常提出独立检查与抽样复核要求，与追求速度的成员形成张力，但能守住质量目标。",
+          "responsibilities": [
+            "制定材料进场质量验收与抽样复核方案",
+            "审核质量证明文件与检测报告完整性",
+            "跟踪质保期内更换与质量目标达成",
+            "组织独立检查与质量记录归档"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨克制，以标准和记录说话，少用形容词"
+        },
+        {
+          "agent_id": "COMP-0258_04_吴海峰",
+          "agent_name": "吴海峰",
+          "company_id": "COMP-0258",
+          "company_role": "supplier",
+          "department": "项目协调与业主接口",
+          "position": "项目协调经理",
+          "personal_profile": "熟悉本地房建项目的报批与现场协调，习惯先确认各方接口责任再推进。压力下会主动向业主与施工承包商同步风险，避免信息滞后。讨论中常提醒内部成员注意文件纪律与对外口径一致，倾向用协调换取时间而不是硬扛。",
+          "responsibilities": [
+            "对接施工承包商与业主的材料需求与到场计划",
+            "协调供货与施工进度的接口安排",
+            "维护文件纪律与对外沟通记录",
+            "汇总风险应对与现场报告"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "温和稳健，善于复述共识并明确下一步责任"
+        },
+        {
+          "agent_id": "COMP-0258_05_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "COMP-0258",
+          "company_role": "supplier",
+          "department": "资源计划与履约管理",
+          "position": "资源计划专员",
+          "personal_profile": "关注企业资源占用与多项目并行时的可用余量，对承诺过度特别警觉。压力下会先核算团队可用性与运输资源，再判断能否接单。讨论中常提出资源约束与排期冲突，提醒其他成员不要把情景资源当成无限供给。",
+          "responsibilities": [
+            "编制团队可用性摘要与资源计划",
+            "评估供货任务与现有资源占用的匹配度",
+            "跟踪运输与仓储资源的排期",
+            "维护履约风险清单与应对预案"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "简洁审慎，习惯用清单和排期表表达判断"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0191",
+          "company_role": "supplier",
+          "department": "供应链管理部",
+          "position": "供应链总监",
+          "personal_profile": "在压力下优先审视供应连续性与付款条件，习惯先确认材料到场节奏与合同支付节点的匹配度。他倾向于把材料采购视为独立商业决策，强调供货范围与施工界面严格分离，避免承担任何施工责任。讨论中常带来成本控制与付款评审之间的张力，提醒团队不要为了中标而接受不利的付款条款。",
+          "responsibilities": [
+            "统筹材料采购包的投标策略与报价评审",
+            "协调供应商资源与运输到场计划",
+            "审核付款条件与成本控制方案",
+            "对接施工包承包商的采购需求"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，偏好用数据与合同条款说话，在关键决策点会明确表态并推动结论。"
+        },
+        {
+          "agent_id": "COMP-0191_02_黄敏仪",
+          "agent_name": "黄敏仪",
+          "company_id": "COMP-0191",
+          "company_role": "supplier",
+          "department": "质量管理部",
+          "position": "质量经理",
+          "personal_profile": "对材料质量证明文件与质保期更换责任高度敏感，习惯在讨论初期就要求明确质量验收标准与独立检查方式。她关注质量目标的可追溯性，倾向于在投标阶段就锁定检测频次与不合格品处理流程。她的张力在于坚持质量优先可能拖慢报价节奏，但能有效防止后期质量争议。",
+          "responsibilities": [
+            "编制材料质量保证方案与检验计划",
+            "审核供应商质量证明文件与检测报告",
+            "跟踪质保期内更换责任与质量目标",
+            "组织内部质量评审与独立检查"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨细致，喜欢用清单和标准条款沟通，对模糊表述会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0191_03_周家俊",
+          "agent_name": "周家俊",
+          "company_id": "COMP-0191",
+          "company_role": "supplier",
+          "department": "工程管理部",
+          "position": "高级项目协调经理",
+          "personal_profile": "从施工视角理解材料需求，但清楚本包不含施工责任，因此特别注重供货计划与现场进度的衔接。他习惯先确认施工包的进度节点，再倒排材料到场时间，并预留运输与验收缓冲。讨论中常提醒团队注意供货延迟对施工包工期的影响，但会明确区分材料供应责任与施工界面责任。",
+          "responsibilities": [
+            "对接施工包承包商的材料需求与进度计划",
+            "编制供货到场计划与运输协调方案",
+            "参与现场收货与交接程序安排",
+            "反馈材料供应风险与应对建议"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理清晰，善于用进度图和节点表沟通，强调可执行性。"
+        },
+        {
+          "agent_id": "COMP-0191_04_梁淑贞",
+          "agent_name": "梁淑贞",
+          "company_id": "COMP-0191",
+          "company_role": "supplier",
+          "department": "商务合约部",
+          "position": "合约与成本经理",
+          "personal_profile": "对报价基础与成本构成极为敏感，习惯逐项核对材料单价、运输费用与付款评审条款。她倾向于在投标前完成详细的成本评审，并坚持价格基础透明可查。讨论中常带来商务严谨性与市场竞争力之间的张力，提醒团队不要低估资金占用成本。",
+          "responsibilities": [
+            "编制投标报价与价格基础说明",
+            "审核合同条款与付款评审安排",
+            "进行成本评审与利润测算",
+            "管理供应商付款与结算流程"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "精于数字，表达简洁，习惯用表格和对比数据支撑观点。"
+        },
+        {
+          "agent_id": "COMP-0191_05_吴启峰",
+          "agent_name": "吴启峰",
+          "company_id": "COMP-0191",
+          "company_role": "supplier",
+          "department": "风险管理部",
+          "position": "风险与合规主管",
+          "personal_profile": "在压力下首先扫描合同责任边界与合规要求，尤其关注材料供应包与施工包之间的责任划分。他习惯提前识别运输延误、质量争议和付款违约等风险，并推动制定风险应对预案。讨论中常带来风险控制与投标积极性之间的张力，但能确保团队不越界承担施工责任。",
+          "responsibilities": [
+            "评估材料供应包的风险与合规要求",
+            "编制风险应对预案与责任边界说明",
+            "审核合同中的责任限制与免责条款",
+            "监控供货期内的合规与文档纪律"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "审慎稳健，喜欢用风险矩阵和情景分析沟通，强调底线思维。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0258",
+        "company_role": "supplier",
+        "package_id": "CASE-0049/supply-2",
+        "agent_id": "COMP-0258_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "材料采购与供应链管理",
+        "position": "材料采购总监",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，范围清晰：供货、运输到场、质量证明文件和质保期更换，不含施工安装和界面责任。我们公司作为供应商，企业资料里明确包含配套设备、材料、构件的生产、经营、销售、安装及仓储，以及建筑材料销售和货物运输能力，供应可靠性参数也较高，资源占用为零、可用资源充足。这个包金额约1249.5万CNY，规模适中，不构成产能压力。真正的顾虑是：材料价格波动风险由我们承担，而报价以CNY计价、业主定性比较价格合理性；另外买方是施工包承包商，付款可靠性参数一般，回款节奏需要靠合同条款约束。但这些都属于正常商业风险，可以通过报价中的价格波动条款、质保与备件费用单列、供货进度与施工进度协调来管理，不需要引入联合体。联合体在这里没有意义，因为供应责任完全可以由我们单一主体承担。因此我倾向投标，但要在报价依据和风险应对中把价格波动、付款条件、质量证明文件责任写清楚。",
+        "content": "管理层决定：就学生宿舍机电安装与电梯施工包材料采购包以单一投标人身份投标。角色计划上，设置供应包负责人、材料计划与采购协调、物流运输与现场交接、质量文档与质保售后四个职能，明确各职能对供货计划、到场验收和质保更换的责任。团队可用性摘要按当前资源投入约0.25配置，保证供货高峰期有专人对接施工包承包商。交付方法说明供货组织、分批运输到场及现场交接签收流程，并与施工包进度计划建立滚动协调机制。质量方法以材料符合设计规格为核心，建立质量证明文件清单和随货资料台账，确保每批材料可追溯。价格依据按材料单价、运输费用、质量证明文件费用、质保期服务费用和备件费用分项列示，并对材料价格波动设置报价调整说明。进度视图给出供货里程碑与施工进度的对应关系。风险应对重点覆盖材料价格波动、买方付款节奏、运输延误和质保响应时效，并提出相应缓解措施。本包不含施工安装和施工界面责任，我方仅作为材料供应方承担供货、运输到场、质量证明和质保更换责任。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:25:10",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "supplier",
+        "package_id": "CASE-0049/supply-2",
+        "agent_id": "COMP-0191_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "供应链管理部",
+        "position": "供应链总监",
+        "message_type": "decision",
+        "thoughts": "这是一个纯材料供应包，范围清晰：供货、运输到场、质量证明文件、质保期更换，不含施工安装和界面责任。公司作为供应商角色，资源占用为零，可用资源2.0，包需求仅0.25，容量上完全能承接。公司资料里包含建筑材料销售、砼结构构件、金属结构、门窗、特种设备销售等一般经营项，具备材料组织与供货协调的基础能力，且本地企业在广州，物流半径合理。价格上限12495000元，材料价格指数1.11偏高，需要在报价中体现价格波动风险条款。这个包不需要联合体，也不需要施工资质，公司可以独立作为单一责任供应商投标。真正的风险在于：材料品类跨机电、消防、弱电、电梯配套，需要多品类供应商协调，而公司目前没有已确认的供应商报价，只有草案成本估算；另外买方是施工包承包商，付款依赖其合同价内支付，回款节奏需在报价和合同条款中管理。这些属于正常的供应组织与商务风险，通过报价依据、进度视图、风险应对和质保承诺可以覆盖，不构成必须联合体的理由。我倾向投标，但要在投标文件中明确供货范围边界、质量证明文件清单、备件计划和价格调整机制，并把供应商询价作为投标前的内部准备事项而非对外承诺。",
+        "content": "管理层决定：对CASE-0049/supply-2学生宿舍机电安装与电梯施工包材料采购包提交独立投标。投标定位为单一责任材料供应商，严格按授权范围承担供货、运输到场、质量证明文件和质保期内更换，不承担施工、安装、临时工程及施工界面责任。投标文件将包含：角色计划与团队可用性摘要，明确供货协调、质量文档和售后响应职责；交付方法，说明供货组织、运输安排及与施工包承包商的现场交接流程；质量方法，列明质量证明文件清单与技术资料管理；价格依据，按材料单价、运输费用、质量证明文件费用、质保期服务费用和备件费用分项报价，并设置材料价格波动应对条款；进度视图，与施工包进度协调的供货计划；风险应对，覆盖多品类供应协调、涨价、付款节奏和质保响应。投标前内部完成主要品类供应商询价与成本复核，确保报价有据；对外不将未确认的供应商承诺写成已落实事实。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:25:10",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "COMP-0025",
+        "company_role": "owner",
+        "package_id": "CASE-0049/supply-2",
+        "agent_id": "COMP-0025_05_吴家豪",
+        "agent_name": "吴家豪",
+        "department": "设计协调部",
+        "position": "设计协调经理",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个供应包的判给定下基调。评标推荐中建八局第二建设有限公司，理由是团队配置和协调机制更具体，资源保障更令人放心。我审阅了两家投标，保利长大工程有限公司报价略低，但团队投入仅0.25，高峰期响应能力存疑，且材料采购成本基于估算而非正式询价，成本真实性需要关注。中建八局第二建设有限公司报价稍高，但仍在预算内，团队资源充足且角色分工明确，协调机制具体，质量文档按批次台账管理，风险应对涵盖供应商履约和付款节奏。虽然其材料采购成本中未确认的供应商报价按估算列支，存在落实风险，但可以通过预合同澄清要求其确认询价依据。从业主问责和交付风险角度，我接受评标推荐，判给中建八局第二建设有限公司。预合同澄清重点放在材料采购成本的询价依据和供应商承诺的落实证据上，同时确认供货计划与施工进度的衔接安排。",
+        "content": "经评标与业主审查，学生宿舍机电安装与电梯施工包材料采购包判给中建八局第二建设有限公司。该公司以单一责任供应商身份投标，供应范围界定清晰，团队资源充足且角色分工明确，协调机制具体，质量文档按批次台账管理，风险应对涵盖供应商履约和付款节奏，报价在预算内且交付信心更强。预合同澄清重点为材料采购成本的询价依据和供应商承诺的落实证据，并确认供货计划与施工进度的衔接安排，以符合业主审查和批准要求。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T14:25:52",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0258",
+        "package_id": "CASE-0049/supply-2",
+        "decision": "bid",
+        "reason": "本包为施工包的材料与构配件供应，范围限于供货、运输到场、质量证明文件和质保期更换，不含施工安装与界面责任，与我方材料经营、销售、仓储及运输能力匹配，属于可单一主体承担、责任边界清晰的供应包。当前可用资源为2.0、占用为0，投入需求约0.25，不存在产能冲突。金额约1249.5万CNY，规模适中，具备商业价值。主要风险是材料价格波动和买方付款可靠性，可通过报价中的价格调整机制、质保与备件费用单列、供货进度与施工进度协调、质量证明文件台账管理来控制，无需联合体分担责任。故决定以单一投标人身份投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "报价以CNY计价，材料单价按投标期市场水平编制，并设置材料价格波动调整条款",
+          "买方为施工包承包商，付款节点与条件以合同约定为准，我方按合同主张付款",
+          "供货进度与施工包施工进度通过定期协调会滚动更新",
+          "质量证明文件随货提供，质保期内更换按约定响应时限执行",
+          "本包不含施工、安装、临时工程及施工界面责任"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0049/supply-2",
+        "decision": "bid",
+        "reason": "管理判断：本包为纯材料供应，范围边界清楚，不含施工与界面责任，与公司供应商角色和材料组织能力匹配。公司当前资源占用为零，可用资源2.0，包需求0.25，容量充足，可独立作为单一责任供应商提交，无需组合体。商业上，包预算12495000元在CNY计价下规模适中，材料价格指数偏高，需在报价中设置价格波动应对与质保期服务费用，保持价格合理性。主要风险是多品类供应协调、质量证明文件完整性、买方付款节奏和材料涨价，这些通过供应商询价、交付进度视图、质量文档管理和合同付款条款管理即可控制，属于正常供应风险而非责任缺口。因此决定投标，并在投标中明确供货范围、质保与备件承诺及价格调整机制。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组建组合体。",
+          "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+          "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+          "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+          "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0049/supply-2_001",
+        "package_id": "CASE-0049/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0258",
+        "bidder_name": "保利长大工程有限公司",
+        "technical_proposal": "保利长大工程有限公司以单一投标人身份响应学生宿舍机电安装与电梯施工包材料采购包。我方角色为材料与构配件供应商，供应范围严格限于：按设计规格供应给排水、电气、通风空调、消防、弱电智能化及电梯施工所需材料与构配件，负责运输到场、提供质量证明文件，并在质保期内承担更换责任。本包不含任何施工、安装、临时工程或措施费，我方不承担施工界面责任。\n\n产品匹配能力：我方依据施工包承包商提供的设计规格书、材料清单及技术参数组织货源，对每类材料建立规格对照表，确保所供产品符合设计及施工包需求。\n\n供应协调能力：设置供应包负责人作为单一对接窗口，与施工包承包商建立定期协调会机制，滚动更新供货计划，及时确认接口信息。\n\n交付物流能力：利用我方仓储与运输资源，按施工进度分批组织运输到场，执行现场交接签收流程，确保材料按时、完好交付。\n\n质量文档能力：建立质量证明文件清单和随货资料台账，每批材料随货提供合格证、检测报告等质量证明文件，确保可追溯。\n\n可维护性支持能力：随货提供材料与设备的维护说明及技术支持资料，配合施工包承包商完成安装接口信息交底。\n\n质保与售后支持能力：质保期内按约定响应时限执行更换，设置售后响应联系人，确保问题及时处理。\n\n备件计划能力：针对关键材料提供备件供应计划，明确备件品类、数量及供应周期。\n\n接口信息提供能力：向施工包承包商提供安装接口信息，包括材料规格、连接方式、技术参数等，确保施工顺利衔接。",
+        "implementation_plan": "一、供货组织\n1. 供应包负责人统筹全局，材料计划与采购协调员根据施工包进度计划编制供货计划，物流运输与现场交接员组织运输及现场签收，质量文档与质保售后员负责质量证明文件管理及质保期更换。\n2. 团队可用性摘要：当前资源投入约0.25，供货高峰期安排专人对接施工包承包商，确保响应及时。\n\n二、运输安排\n按材料类别和施工进度分批运输，提前与施工包承包商确认到场时间及卸货条件，运输过程做好成品保护，到场后双方共同验收签收。\n\n三、现场交接流程\n材料到场后，由物流运输与现场交接员与施工包承包商指定人员共同核对品种、规格、数量及外观质量，签署交接单，质量证明文件随货移交。\n\n四、进度协调\n与施工包承包商建立滚动协调机制，定期召开供货协调会，根据施工进度调整供货计划，确保材料供应与施工进度匹配。\n\n五、质量证明文件管理\n建立质量证明文件清单和随货资料台账，每批材料质量证明文件编号归档，确保可追溯；文件不齐全的材料不交付。\n\n六、质保期服务\n质保期内出现材料质量问题，按约定响应时限执行更换，并记录处理结果。",
+        "quotation": 12320000.0,
+        "schedule_commitment": "供货进度计划与施工包施工进度紧密协调。中标后立即与施工包承包商对接，确认材料清单及供货批次；首批材料于施工包需求前7天到场；后续按施工进度滚动供货，确保不因材料供应影响施工。质保期服务自材料交付验收合格之日起算，覆盖项目工期24个月。",
+        "compliance_statement": "我方接受业主及施工包承包商的质量监督与进度检查。质量证明文件随货提供，接受抽样检验；供货进度按协调会要求滚动更新；质保期内更换服务接受业主监督。我方仅承担供应包范围内的供货、运输、质量证明及质保更换责任，不承担施工界面责任。",
+        "risk_response": "主要风险及应对：\n1. 材料价格波动风险：报价中设置材料价格波动风险准备金，并在合同中约定价格调整机制，按市场指数波动调整。\n2. 买方付款可靠性风险：付款节点与条件以合同约定为准，我方按合同主张付款，并保持与买方的付款沟通。\n3. 运输延误风险：提前规划运输路线及批次，预留缓冲时间，与施工包承包商保持实时沟通。\n4. 质保响应时效风险：设置售后响应联系人，明确响应时限，确保质保期内及时更换。\n5. 质量证明文件不齐全风险：建立文件清单及台账，文件不齐全不交付。",
+        "submission_summary": "保利长大工程有限公司以单一投标人身份提交学生宿舍机电安装与电梯施工包材料采购包报价。报价总额为CNY 12,320,000，由以下分项构成：\n- 材料与构配件采购成本：CNY 10,380,000（按设计规格及市场水平估算，非供应商正式报价）\n- 运输到场费用：CNY 620,000\n- 质量证明文件及技术资料费用：CNY 185,000\n- 质保期服务及售后响应费用：CNY 310,000\n- 备件供应计划费用：CNY 145,000\n- 材料价格波动风险准备金：CNY 420,000\n- 项目管理及协调费用：CNY 260,000\n合计：CNY 12,320,000。\n本报价基于投标期市场水平编制，含材料价格波动调整机制。我方供应范围不含施工、安装、临时工程及施工界面责任。付款节点与条件以合同约定为准。供货进度与施工包施工进度通过定期协调会滚动更新。质量证明文件随货提供，质保期内更换按约定响应时限执行。",
+        "quotation_breakdown": [
+          {
+            "item": "材料与构配件采购成本",
+            "amount": 10380000,
+            "basis": "按施工包设计规格及材料清单估算，涵盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料，参考投标期市场水平及材料价格指数1.1124编制，属估算金额，非供应商正式报价"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 620000,
+            "basis": "按分批运输至施工现场估算，含装卸及成品保护，运距及批次根据施工进度安排"
+          },
+          {
+            "item": "质量证明文件及技术资料费用",
+            "amount": 185000,
+            "basis": "含质量证明文件编制、检测报告收集、资料台账管理及随货文件移交"
+          },
+          {
+            "item": "质保期服务及售后响应费用",
+            "amount": 310000,
+            "basis": "质保期内更换服务、售后响应联系人及技术支持，按项目工期24个月分摊"
+          },
+          {
+            "item": "备件供应计划费用",
+            "amount": 145000,
+            "basis": "关键材料备件储备及供应安排，备件品类及数量按施工包需求确定"
+          },
+          {
+            "item": "材料价格波动风险准备金",
+            "amount": 420000,
+            "basis": "考虑材料价格指数波动及市场不确定性，设置风险准备金，报价中已含价格调整机制说明"
+          },
+          {
+            "item": "项目管理及协调费用",
+            "amount": 260000,
+            "basis": "供应包负责人、计划协调、物流交接及文档管理人员投入，按0.25资源投入折算"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "报价以CNY计价，材料单价按投标期市场水平编制，并设置材料价格波动调整条款",
+          "买方为施工包承包商，付款节点与条件以合同约定为准，我方按合同主张付款",
+          "供货进度与施工包施工进度通过定期协调会滚动更新",
+          "质量证明文件随货提供，质保期内更换按约定响应时限执行",
+          "本包不含施工、安装、临时工程及施工界面责任"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/supply-2_002",
+        "package_id": "CASE-0049/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以单一责任供应商身份独立提交，不组建组合体。供应范围严格限定为：学生宿舍机电安装与电梯施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n产品匹配：按施工包设计规格与需求清单组织给排水、电气、通风空调、消防、弱电智能化及电梯配套材料与构配件，逐项核对型号、材质、技术参数与设计文件一致性，偏差项在供货前书面报买方确认。\n\n供应协调：设专职供货协调员对接施工包承包商，按施工进度提交供货计划、到货批次与接口信息；建立周度供货协调例会与到货预警机制。\n\n交付物流：按现场条件安排运输车辆与卸货交接，到场后与买方指定接收人办理数量清点、外观检查与签收，交接记录双方留存。\n\n质量文档：随批提供产品合格证、材质证明、检测报告及技术资料，按品类建立质量证明文件台账，确保可追溯。\n\n可维护性与售后：提供材料与设备维护说明及技术支持，质保期内按响应机制安排更换。\n\n备件计划：对关键材料与易损件提出备件供应计划，明确备件清单与补货周期。\n\n本包为纯材料供应，范围边界清楚，与我方供应商角色及材料组织能力匹配；当前资源占用为零，可用资源充足，可独立承担本包供货责任。",
+        "implementation_plan": "一、供货组织：中标后成立供货项目组，设供货负责人、协调员、质量文档员、物流对接人各司其职；按施工包进度编制供货总计划与月度、周度到货计划。\n\n二、采购与成本复核：投标前已完成主要品类供应商询价与内部成本复核，未确认的供应商承诺不作为已落实事实对外表述；中标后按合同清单分批下单，锁定货源与交期。\n\n三、运输与现场交接：按品类安排运输批次，到场前通知买方接收人；到场后办理数量清点、外观检查、随附质量证明文件移交与签收，异常当场记录并限期处理。\n\n四、质量证明文件管理：建立按品类、批次编号的质量证明文件台账，随货提供合格证、材质证明、检测报告及技术资料，确保与到货批次一一对应。\n\n五、质保期服务：明确质保响应联系人及响应时限，质保期内出现材料质量问题按约定更换，并保留更换记录。\n\n六、备件计划：对关键材料与易损件编制备件清单与补货周期，随供货计划提交买方。\n\n七、进度协调：供货计划与施工包进度视图联动，按施工节点提前排产与发运，遇施工进度调整时同步调整供货批次。",
+        "quotation": 12350000.0,
+        "schedule_commitment": "供货进度按施工包进度视图编制，自合同生效及买方下达供货计划起组织排产与发运；按施工节点分批次到场，首批材料到场时间以满足施工包开工需求为准，后续批次按周度供货计划滚动执行。遇施工进度调整，供货计划同步调整并提前书面通知买方。质保期自材料到场验收合格之日起按合同约定执行。",
+        "compliance_statement": "我方接受业主及买方按供应包范围进行的进度、质量与文件审查。供货计划、到货批次、质量证明文件台账及质保更换记录均按买方要求提交备查；买方对到货数量、外观及质量证明文件的签收确认作为供货完成依据。我方不承担施工、安装及施工界面责任，相关界面由施工包承包商负责。付款按合同条款执行，付款节奏在合同中明确。",
+        "risk_response": "一、多品类供应协调风险：设专职协调员，建立周度供货协调例会与到货预警，按品类分批排产。\n二、材料价格上涨风险：报价中设置材料价格波动应对与风险准备，并在合同中约定价格调整机制，报价为含价格波动应对的报价而非无条件固定价。\n三、质量证明文件完整性风险：建立按批次编号的质量证明文件台账，随货移交并逐批核对。\n四、买方付款节奏风险：付款安排按合同条款明确，供货批次与付款节点对应管理。\n五、质保响应风险：明确质保响应联系人与响应时限，保留更换记录。\n六、供应商履约风险：主要品类供应商询价与成本复核已在投标前内部完成，中标后分批锁定货源与交期，未确认的供应商承诺不作为已落实事实对外表述。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任供应商身份独立投标CASE-0049/supply-2学生宿舍机电安装与电梯施工包材料采购，不组建组合体，严格按授权范围承担供货、运输到场、质量证明文件和质保期内更换，不含施工、安装、临时工程及施工界面责任。\n\n报价以CNY计价，总报价为12,350,000元，由以下分项构成：\n- 材料与构配件采购成本 10,480,000元\n- 运输到场费用 520,000元\n- 质量证明文件与技术资料费用 185,000元\n- 质保期服务费用 310,000元\n- 备件供应计划费用 165,000元\n- 材料价格波动应对与风险准备 430,000元\n- 供货管理与协调费用 260,000元\n\n价格依据：主要品类供应商询价与内部成本复核已在投标前完成，未确认的供应商承诺不作为已落实事实对外表述；材料价格指数偏高，报价中设置价格波动应对并在合同中约定价格调整机制，报价为含价格波动应对的报价。付款由施工包承包商作为买方按合同条款支付。\n\n团队与交付：设供货负责人、协调员、质量文档员及物流对接人，按施工进度编制供货计划并周度协调；质量证明文件按批次台账管理；质保期内按响应机制更换；关键材料提供备件计划。\n\n本包范围边界清楚，与我方供应商角色及材料组织能力匹配，当前资源占用为零，可独立承担本包供货责任。",
+        "quotation_breakdown": [
+          {
+            "item": "材料与构配件采购成本",
+            "amount": 10480000,
+            "basis": "按施工包材料需求清单及主要品类供应商询价与内部成本复核估算，覆盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料；未确认的供应商报价按内部估算列支，属投标阶段估算而非已落实采购承诺"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 520000,
+            "basis": "按品类运输批次、车辆组织及现场卸货交接安排估算，含运输与到场交接配合"
+          },
+          {
+            "item": "质量证明文件与技术资料费用",
+            "amount": 185000,
+            "basis": "按品类质量证明文件台账建立、检测报告收集整理及技术资料编制估算"
+          },
+          {
+            "item": "质保期服务费用",
+            "amount": 310000,
+            "basis": "按质保期内响应机制、更换服务及技术支持安排估算"
+          },
+          {
+            "item": "备件供应计划费用",
+            "amount": 165000,
+            "basis": "按关键材料与易损件备件清单及补货周期安排估算"
+          },
+          {
+            "item": "材料价格波动应对与风险准备",
+            "amount": 430000,
+            "basis": "考虑材料价格指数偏高，按采购成本一定比例设置价格波动应对与风险准备，并在合同中约定价格调整机制"
+          },
+          {
+            "item": "供货管理与协调费用",
+            "amount": 260000,
+            "basis": "按供货项目组人员投入、周度协调例会及供货计划管理估算"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组建组合体。",
+          "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+          "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+          "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+          "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0049/supply-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0049/supply-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0258",
+            "bidder_name": "保利长大工程有限公司",
+            "quotation": 12320000.0,
+            "quotation_breakdown": [
+              {
+                "item": "材料与构配件采购成本",
+                "amount": 10380000,
+                "basis": "按施工包设计规格及材料清单估算，涵盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料，参考投标期市场水平及材料价格指数1.1124编制，属估算金额，非供应商正式报价"
+              },
+              {
+                "item": "运输到场费用",
+                "amount": 620000,
+                "basis": "按分批运输至施工现场估算，含装卸及成品保护，运距及批次根据施工进度安排"
+              },
+              {
+                "item": "质量证明文件及技术资料费用",
+                "amount": 185000,
+                "basis": "含质量证明文件编制、检测报告收集、资料台账管理及随货文件移交"
+              },
+              {
+                "item": "质保期服务及售后响应费用",
+                "amount": 310000,
+                "basis": "质保期内更换服务、售后响应联系人及技术支持，按项目工期24个月分摊"
+              },
+              {
+                "item": "备件供应计划费用",
+                "amount": 145000,
+                "basis": "关键材料备件储备及供应安排，备件品类及数量按施工包需求确定"
+              },
+              {
+                "item": "材料价格波动风险准备金",
+                "amount": 420000,
+                "basis": "考虑材料价格指数波动及市场不确定性，设置风险准备金，报价中已含价格调整机制说明"
+              },
+              {
+                "item": "项目管理及协调费用",
+                "amount": 260000,
+                "basis": "供应包负责人、计划协调、物流交接及文档管理人员投入，按0.25资源投入折算"
+              }
+            ],
+            "submission_summary": "保利长大工程有限公司以单一投标人身份提交学生宿舍机电安装与电梯施工包材料采购包报价。报价总额为CNY 12,320,000，由以下分项构成：\n- 材料与构配件采购成本：CNY 10,380,000（按设计规格及市场水平估算，非供应商正式报价）\n- 运输到场费用：CNY 620,000\n- 质量证明文件及技术资料费用：CNY 185,000\n- 质保期服务及售后响应费用：CNY 310,000\n- 备件供应计划费用：CNY 145,000\n- 材料价格波动风险准备金：CNY 420,000\n- 项目管理及协调费用：CNY 260,000\n合计：CNY 12,320,000。\n本报价基于投标期市场水平编制，含材料价格波动调整机制。我方供应范围不含施工、安装、临时工程及施工界面责任。付款节点与条件以合同约定为准。供货进度与施工包施工进度通过定期协调会滚动更新。质量证明文件随货提供，质保期内更换按约定响应时限执行。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "报价以CNY计价，材料单价按投标期市场水平编制，并设置材料价格波动调整条款",
+              "买方为施工包承包商，付款节点与条件以合同约定为准，我方按合同主张付款",
+              "供货进度与施工包施工进度通过定期协调会滚动更新",
+              "质量证明文件随货提供，质保期内更换按约定响应时限执行",
+              "本包不含施工、安装、临时工程及施工界面责任"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/supply-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 12350000.0,
+            "quotation_breakdown": [
+              {
+                "item": "材料与构配件采购成本",
+                "amount": 10480000,
+                "basis": "按施工包材料需求清单及主要品类供应商询价与内部成本复核估算，覆盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料；未确认的供应商报价按内部估算列支，属投标阶段估算而非已落实采购承诺"
+              },
+              {
+                "item": "运输到场费用",
+                "amount": 520000,
+                "basis": "按品类运输批次、车辆组织及现场卸货交接安排估算，含运输与到场交接配合"
+              },
+              {
+                "item": "质量证明文件与技术资料费用",
+                "amount": 185000,
+                "basis": "按品类质量证明文件台账建立、检测报告收集整理及技术资料编制估算"
+              },
+              {
+                "item": "质保期服务费用",
+                "amount": 310000,
+                "basis": "按质保期内响应机制、更换服务及技术支持安排估算"
+              },
+              {
+                "item": "备件供应计划费用",
+                "amount": 165000,
+                "basis": "按关键材料与易损件备件清单及补货周期安排估算"
+              },
+              {
+                "item": "材料价格波动应对与风险准备",
+                "amount": 430000,
+                "basis": "考虑材料价格指数偏高，按采购成本一定比例设置价格波动应对与风险准备，并在合同中约定价格调整机制"
+              },
+              {
+                "item": "供货管理与协调费用",
+                "amount": 260000,
+                "basis": "按供货项目组人员投入、周度协调例会及供货计划管理估算"
+              }
+            ],
+            "submission_summary": "中建八局第二建设有限公司以单一责任供应商身份独立投标CASE-0049/supply-2学生宿舍机电安装与电梯施工包材料采购，不组建组合体，严格按授权范围承担供货、运输到场、质量证明文件和质保期内更换，不含施工、安装、临时工程及施工界面责任。\n\n报价以CNY计价，总报价为12,350,000元，由以下分项构成：\n- 材料与构配件采购成本 10,480,000元\n- 运输到场费用 520,000元\n- 质量证明文件与技术资料费用 185,000元\n- 质保期服务费用 310,000元\n- 备件供应计划费用 165,000元\n- 材料价格波动应对与风险准备 430,000元\n- 供货管理与协调费用 260,000元\n\n价格依据：主要品类供应商询价与内部成本复核已在投标前完成，未确认的供应商承诺不作为已落实事实对外表述；材料价格指数偏高，报价中设置价格波动应对并在合同中约定价格调整机制，报价为含价格波动应对的报价。付款由施工包承包商作为买方按合同条款支付。\n\n团队与交付：设供货负责人、协调员、质量文档员及物流对接人，按施工进度编制供货计划并周度协调；质量证明文件按批次台账管理；质保期内按响应机制更换；关键材料提供备件计划。\n\n本包范围边界清楚，与我方供应商角色及材料组织能力匹配，当前资源占用为零，可独立承担本包供货责任。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "公司以单一责任供应商身份独立投标，不组建组合体。",
+              "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+              "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+              "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+              "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 学生宿舍机电安装与电梯施工包材料采购.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0049/supply-2",
+        "evaluators": [
+          "COMP-0025_01_陈志强",
+          "COMP-0025_02_李美玲",
+          "COMP-0025_03_黄伟杰",
+          "COMP-0025_04_张丽华",
+          "COMP-0025_05_吴家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0049/supply-2_001",
+            "bidder_id": "COMP-0258",
+            "bidder_name": "保利长大工程有限公司",
+            "technical_view": "技术方案完整覆盖产品匹配、供应协调、交付物流、质量文档、可维护性支持、质保售后、备件计划及接口信息提供，角色计划清晰但团队投入仅0.25，高峰期资源保障需关注。",
+            "cost_view": "报价MOP 12,320,000低于预算且分项合理，但材料采购成本基于估算而非正式询价，价格波动风险准备金与调价机制并存，需关注成本真实性。",
+            "owner_control_view": "接受业主及承包商监督，质量证明文件随货提供并接受抽样检验，供货进度滚动更新，质保更换接受监督，但未提及独立检查或文档纪律的具体措施。",
+            "strengths": [
+              "供应范围界定清晰，完全响应包内要求",
+              "质量文档管理有清单和台账，可追溯",
+              "风险应对识别全面，含价格波动和运输延误"
+            ],
+            "concerns": [
+              "团队投入仅0.25，高峰期响应能力存疑",
+              "材料采购成本为估算，未提供供应商询价依据",
+              "价格调整机制可能增加买方成本不确定性"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/supply-2_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "技术方案同样全面覆盖各项能力，强调专职协调员、周度例会及到货预警，团队角色分工明确且当前资源占用为零，供货计划与施工进度联动。",
+            "cost_view": "报价MOP 12,350,000略高于另一投标但仍在预算内，分项中运输费用较低，材料采购成本基于询价与内部复核，价格波动应对与风险准备合理。",
+            "owner_control_view": "接受业主及买方按范围审查，供货计划、质量台账及质保记录备查，签收确认作为完成依据，界面责任划分清晰，但未突出独立性保证措施。",
+            "strengths": [
+              "团队资源充足且角色分工明确，协调机制具体",
+              "质量文档按批次台账管理，可追溯性强",
+              "风险应对涵盖供应商履约和付款节奏"
+            ],
+            "concerns": [
+              "材料采购成本中未确认的供应商报价按估算列支，存在落实风险",
+              "报价略高，需确认价格优势是否匹配额外价值",
+              "对业主审查的响应描述较常规，缺乏亮点"
+            ]
+          }
+        ],
+        "comparison_summary": "两家投标均完整响应供应包范围，技术方案和风险应对相近，中建八局第二建设有限公司在团队配置和协调机制上更具体，保利长大工程有限公司报价略低但团队投入较紧。价格差异不大，均低于预算，推荐中建八局第二建设有限公司因其资源保障和文档纪律更令人放心。",
+        "recommended_winner": "COMP-0191",
+        "owner_review_notes": "两标均满足能力要求，中建八局第二建设有限公司团队可用性更优且协调机制明确，虽报价稍高但交付信心更强。建议判给中建八局第二建设有限公司，并在合同谈判中要求其确认材料采购成本的询价依据。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0049",
+      "package_awards": [
+        {
+          "package_id": "CASE-0049/supply-2",
+          "selected_bidder_id": "COMP-0191",
+          "selected_bidder_name": "中建八局第二建设有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中建八局第二建设有限公司在团队配置、协调机制和文档纪律上更具体，资源保障更可靠，虽然报价略高于另一投标，但仍在预算内，且交付信心更强。保利长大工程有限公司报价略低但团队投入较紧，高峰期响应能力存疑，材料采购成本基于估算，成本真实性风险较高。因此选择中建八局第二建设有限公司，预合同澄清聚焦于材料采购成本的询价依据和供应商承诺的落实证据。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任供应商身份独立投标，不组建组合体。",
+            "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+            "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+            "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+            "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0191"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T14:25:10",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0258",
+          "package_id": "CASE-0049/supply-2",
+          "decision": "bid",
+          "reason": "本包为施工包的材料与构配件供应，范围限于供货、运输到场、质量证明文件和质保期更换，不含施工安装与界面责任，与我方材料经营、销售、仓储及运输能力匹配，属于可单一主体承担、责任边界清晰的供应包。当前可用资源为2.0、占用为0，投入需求约0.25，不存在产能冲突。金额约1249.5万CNY，规模适中，具备商业价值。主要风险是材料价格波动和买方付款可靠性，可通过报价中的价格调整机制、质保与备件费用单列、供货进度与施工进度协调、质量证明文件台账管理来控制，无需联合体分担责任。故决定以单一投标人身份投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "报价以CNY计价，材料单价按投标期市场水平编制，并设置材料价格波动调整条款",
+            "买方为施工包承包商，付款节点与条件以合同约定为准，我方按合同主张付款",
+            "供货进度与施工包施工进度通过定期协调会滚动更新",
+            "质量证明文件随货提供，质保期内更换按约定响应时限执行",
+            "本包不含施工、安装、临时工程及施工界面责任"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:10",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0049/supply-2",
+          "decision": "bid",
+          "reason": "管理判断：本包为纯材料供应，范围边界清楚，不含施工与界面责任，与公司供应商角色和材料组织能力匹配。公司当前资源占用为零，可用资源2.0，包需求0.25，容量充足，可独立作为单一责任供应商提交，无需组合体。商业上，包预算12495000元在CNY计价下规模适中，材料价格指数偏高，需在报价中设置价格波动应对与质保期服务费用，保持价格合理性。主要风险是多品类供应协调、质量证明文件完整性、买方付款节奏和材料涨价，这些通过供应商询价、交付进度视图、质量文档管理和合同付款条款管理即可控制，属于正常供应风险而非责任缺口。因此决定投标，并在投标中明确供货范围、质保与备件承诺及价格调整机制。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任供应商身份独立投标，不组建组合体。",
+            "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+            "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+            "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+            "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:42",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/supply-2",
+          "bidder_id": "COMP-0258"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:42",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/supply-2",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:42",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0049/supply-2",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:47",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0049/supply-2",
+          "recommended_winner": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:25:52",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0049/supply-2",
+          "selected_bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "COMP-0025": {
+            "action": "accept",
+            "reason": "作为买方（施工包承包商 COMP-0025），我方接受本供应包合同草案 revision 0 的全部条款，并确认以下我方自身立场，供写入下一稿：\n\n1. 价格与计价：总价 12,350,000 CNY 为含材料价格波动应对的报价，非无条件固定价；合同应载明价格调整机制（以材料价格指数为基准，按约定幅度与周期调整），该机制属我方确认的计价基础。\n2. 付款基础与节奏：付款由我方按施工包合同价内安排支付，按到货批次验收签收对应付款节点，付款节奏在合同条款中明确；本包费用已包含在父包 CASE-0049/construction-2 合同价内（cost_inclusion: included_in_parent）。\n3. 审查与验收期限：到货数量、外观及质量证明文件由我方指定接收人签收确认，作为供货完成依据；质量证明文件按批次台账逐批核对，异议在签收后约定期限内书面提出。\n4. 范围边界：仅供货、运输到场、质量证明文件与质保期内更换，不含施工、安装、临时工程、措施费及施工界面责任，界面由我方施工包负责。\n5. 资源与成员：成员 COMP-0191，资源承诺 0.25 normalized_enterprise_capacity，工作份额 1.0，与草案一致。\n\n本接受授权的是可执行的模拟供货义务，未来交付物按带审查与验收条件的义务处理，不主张工程交付或法定审批已完成。"
+          },
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "本决策由中建八局第二建设有限公司（COMP-0191）作为投标人独立作出。经核对，本合同的报价、币种、范围、成员与资源承诺均与投标文件一致：报价 12,350,000 元（CNY），低于供应包预算 12,495,000 元；成员仅 COMP-0191，工作份额 1.0，资源承诺 0.25，低于我方可用资源 2.0，可独立承担。范围严格限定为材料与构配件供货、运输到场、质量证明文件及质保期内更换，不含施工安装与界面责任，与我方供应商角色及材料组织能力匹配。投标文件中已披露的假设（单一责任供应商、不含施工界面、报价含价格波动应对、供应商询价与成本复核已在投标前内部完成、未确认承诺不作为已落实事实）属于风险分配而非缺失证据，我方接受。关于买方自身立场的事项，我方明确如下，供写入下一稿：付款由施工包承包商作为买方按合同条款支付，付款节点与供货批次对应；材料价格波动按合同约定的价格调整机制执行，报价为含价格波动应对的报价而非无条件固定价；到货数量、外观及质量证明文件的签收确认作为供货完成依据。上述条款不改变价格、币种、范围、成员与资源等规范字段。本阶段仅授权可执行的模拟义务，不主张未来工程交付或法定审批已经完成，未来交付按带审查与验收条件的义务履行。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM45BEE469/CASE-0049/supply-2/round-1/contract",
+          "simulation_id": "SIM45BEE469",
+          "project_id": "CASE-0049",
+          "package_id": "CASE-0049/supply-2",
+          "session_id": "SIM45BEE469/CASE-0049/supply-2/round-1",
+          "snapshot_version": "9545eaf2400bf1f85a1abe4777ac0ff2183cd135cecced0df2e9529cb9a7bd4d",
+          "buyer_id": "COMP-0025",
+          "bid_id": "bid_CASE-0049/supply-2_002",
+          "bidder_id": "COMP-0191",
+          "lead_id": "COMP-0191",
+          "members": [
+            "COMP-0191"
+          ],
+          "price": 12350000.0,
+          "currency": "CNY",
+          "resource_commitments": {
+            "COMP-0191": 0.25
+          },
+          "work_shares": {
+            "COMP-0191": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "29cd81e0a8b55910cced832a7c8b15c9c97a1430f96620db8db8d670fdb4e488",
+          "terms": {
+            "schedule_commitment": "供货进度按施工包进度视图编制，自合同生效及买方下达供货计划起组织排产与发运；按施工节点分批次到场，首批材料到场时间以满足施工包开工需求为准，后续批次按周度供货计划滚动执行。遇施工进度调整，供货计划同步调整并提前书面通知买方。质保期自材料到场验收合格之日起按合同约定执行。",
+            "risk_response": "一、多品类供应协调风险：设专职协调员，建立周度供货协调例会与到货预警，按品类分批排产。\n二、材料价格上涨风险：报价中设置材料价格波动应对与风险准备，并在合同中约定价格调整机制，报价为含价格波动应对的报价而非无条件固定价。\n三、质量证明文件完整性风险：建立按批次编号的质量证明文件台账，随货移交并逐批核对。\n四、买方付款节奏风险：付款安排按合同条款明确，供货批次与付款节点对应管理。\n五、质保响应风险：明确质保响应联系人与响应时限，保留更换记录。\n六、供应商履约风险：主要品类供应商询价与成本复核已在投标前内部完成，中标后分批锁定货源与交期，未确认的供应商承诺不作为已落实事实对外表述。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0049/supply-2_002",
+              "package_id": "CASE-0049/supply-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0191",
+              "bidder_name": "中建八局第二建设有限公司",
+              "technical_proposal": "本投标以单一责任供应商身份独立提交，不组建组合体。供应范围严格限定为：学生宿舍机电安装与电梯施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n产品匹配：按施工包设计规格与需求清单组织给排水、电气、通风空调、消防、弱电智能化及电梯配套材料与构配件，逐项核对型号、材质、技术参数与设计文件一致性，偏差项在供货前书面报买方确认。\n\n供应协调：设专职供货协调员对接施工包承包商，按施工进度提交供货计划、到货批次与接口信息；建立周度供货协调例会与到货预警机制。\n\n交付物流：按现场条件安排运输车辆与卸货交接，到场后与买方指定接收人办理数量清点、外观检查与签收，交接记录双方留存。\n\n质量文档：随批提供产品合格证、材质证明、检测报告及技术资料，按品类建立质量证明文件台账，确保可追溯。\n\n可维护性与售后：提供材料与设备维护说明及技术支持，质保期内按响应机制安排更换。\n\n备件计划：对关键材料与易损件提出备件供应计划，明确备件清单与补货周期。\n\n本包为纯材料供应，范围边界清楚，与我方供应商角色及材料组织能力匹配；当前资源占用为零，可用资源充足，可独立承担本包供货责任。",
+              "implementation_plan": "一、供货组织：中标后成立供货项目组，设供货负责人、协调员、质量文档员、物流对接人各司其职；按施工包进度编制供货总计划与月度、周度到货计划。\n\n二、采购与成本复核：投标前已完成主要品类供应商询价与内部成本复核，未确认的供应商承诺不作为已落实事实对外表述；中标后按合同清单分批下单，锁定货源与交期。\n\n三、运输与现场交接：按品类安排运输批次，到场前通知买方接收人；到场后办理数量清点、外观检查、随附质量证明文件移交与签收，异常当场记录并限期处理。\n\n四、质量证明文件管理：建立按品类、批次编号的质量证明文件台账，随货提供合格证、材质证明、检测报告及技术资料，确保与到货批次一一对应。\n\n五、质保期服务：明确质保响应联系人及响应时限，质保期内出现材料质量问题按约定更换，并保留更换记录。\n\n六、备件计划：对关键材料与易损件编制备件清单与补货周期，随供货计划提交买方。\n\n七、进度协调：供货计划与施工包进度视图联动，按施工节点提前排产与发运，遇施工进度调整时同步调整供货批次。",
+              "quotation": 12350000.0,
+              "schedule_commitment": "供货进度按施工包进度视图编制，自合同生效及买方下达供货计划起组织排产与发运；按施工节点分批次到场，首批材料到场时间以满足施工包开工需求为准，后续批次按周度供货计划滚动执行。遇施工进度调整，供货计划同步调整并提前书面通知买方。质保期自材料到场验收合格之日起按合同约定执行。",
+              "compliance_statement": "我方接受业主及买方按供应包范围进行的进度、质量与文件审查。供货计划、到货批次、质量证明文件台账及质保更换记录均按买方要求提交备查；买方对到货数量、外观及质量证明文件的签收确认作为供货完成依据。我方不承担施工、安装及施工界面责任，相关界面由施工包承包商负责。付款按合同条款执行，付款节奏在合同中明确。",
+              "risk_response": "一、多品类供应协调风险：设专职协调员，建立周度供货协调例会与到货预警，按品类分批排产。\n二、材料价格上涨风险：报价中设置材料价格波动应对与风险准备，并在合同中约定价格调整机制，报价为含价格波动应对的报价而非无条件固定价。\n三、质量证明文件完整性风险：建立按批次编号的质量证明文件台账，随货移交并逐批核对。\n四、买方付款节奏风险：付款安排按合同条款明确，供货批次与付款节点对应管理。\n五、质保响应风险：明确质保响应联系人与响应时限，保留更换记录。\n六、供应商履约风险：主要品类供应商询价与成本复核已在投标前内部完成，中标后分批锁定货源与交期，未确认的供应商承诺不作为已落实事实对外表述。",
+              "submission_summary": "中建八局第二建设有限公司以单一责任供应商身份独立投标CASE-0049/supply-2学生宿舍机电安装与电梯施工包材料采购，不组建组合体，严格按授权范围承担供货、运输到场、质量证明文件和质保期内更换，不含施工、安装、临时工程及施工界面责任。\n\n报价以CNY计价，总报价为12,350,000元，由以下分项构成：\n- 材料与构配件采购成本 10,480,000元\n- 运输到场费用 520,000元\n- 质量证明文件与技术资料费用 185,000元\n- 质保期服务费用 310,000元\n- 备件供应计划费用 165,000元\n- 材料价格波动应对与风险准备 430,000元\n- 供货管理与协调费用 260,000元\n\n价格依据：主要品类供应商询价与内部成本复核已在投标前完成，未确认的供应商承诺不作为已落实事实对外表述；材料价格指数偏高，报价中设置价格波动应对并在合同中约定价格调整机制，报价为含价格波动应对的报价。付款由施工包承包商作为买方按合同条款支付。\n\n团队与交付：设供货负责人、协调员、质量文档员及物流对接人，按施工进度编制供货计划并周度协调；质量证明文件按批次台账管理；质保期内按响应机制更换；关键材料提供备件计划。\n\n本包范围边界清楚，与我方供应商角色及材料组织能力匹配，当前资源占用为零，可独立承担本包供货责任。",
+              "quotation_breakdown": [
+                {
+                  "item": "材料与构配件采购成本",
+                  "amount": 10480000,
+                  "basis": "按施工包材料需求清单及主要品类供应商询价与内部成本复核估算，覆盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料；未确认的供应商报价按内部估算列支，属投标阶段估算而非已落实采购承诺"
+                },
+                {
+                  "item": "运输到场费用",
+                  "amount": 520000,
+                  "basis": "按品类运输批次、车辆组织及现场卸货交接安排估算，含运输与到场交接配合"
+                },
+                {
+                  "item": "质量证明文件与技术资料费用",
+                  "amount": 185000,
+                  "basis": "按品类质量证明文件台账建立、检测报告收集整理及技术资料编制估算"
+                },
+                {
+                  "item": "质保期服务费用",
+                  "amount": 310000,
+                  "basis": "按质保期内响应机制、更换服务及技术支持安排估算"
+                },
+                {
+                  "item": "备件供应计划费用",
+                  "amount": 165000,
+                  "basis": "按关键材料与易损件备件清单及补货周期安排估算"
+                },
+                {
+                  "item": "材料价格波动应对与风险准备",
+                  "amount": 430000,
+                  "basis": "考虑材料价格指数偏高，按采购成本一定比例设置价格波动应对与风险准备，并在合同中约定价格调整机制"
+                },
+                {
+                  "item": "供货管理与协调费用",
+                  "amount": 260000,
+                  "basis": "按供货项目组人员投入、周度协调例会及供货计划管理估算"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "公司以单一责任供应商身份独立投标，不组建组合体。",
+                "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+                "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+                "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+                "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+            "cost_inclusion": "included_in_parent",
+            "parent_package_id": "CASE-0049/construction-2"
+          }
+        },
+        "terms_hash": "29cd81e0a8b55910cced832a7c8b15c9c97a1430f96620db8db8d670fdb4e488"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0049/supply-2": {
+          "package_type": "supplier",
+          "required_company_role": "supplier",
+          "scope": "仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+          "budget": 12495000.0,
+          "currency": "CNY",
+          "buyer_id": "COMP-0025"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM45BEE469/CASE-0049/supply-2/round-1/contract",
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/supply-2",
+    "session_id": "SIM45BEE469/CASE-0049/supply-2/round-1",
+    "snapshot_version": "9545eaf2400bf1f85a1abe4777ac0ff2183cd135cecced0df2e9529cb9a7bd4d",
+    "buyer_id": "COMP-0025",
+    "bid_id": "bid_CASE-0049/supply-2_002",
+    "bidder_id": "COMP-0191",
+    "lead_id": "COMP-0191",
+    "members": [
+      "COMP-0191"
+    ],
+    "price": 12350000.0,
+    "currency": "CNY",
+    "resource_commitments": {
+      "COMP-0191": 0.25
+    },
+    "work_shares": {
+      "COMP-0191": 1.0
+    },
+    "signatures": {
+      "COMP-0025": true,
+      "COMP-0191": true
+    },
+    "signed_terms_hash": "29cd81e0a8b55910cced832a7c8b15c9c97a1430f96620db8db8d670fdb4e488",
+    "terms": {
+      "schedule_commitment": "供货进度按施工包进度视图编制，自合同生效及买方下达供货计划起组织排产与发运；按施工节点分批次到场，首批材料到场时间以满足施工包开工需求为准，后续批次按周度供货计划滚动执行。遇施工进度调整，供货计划同步调整并提前书面通知买方。质保期自材料到场验收合格之日起按合同约定执行。",
+      "risk_response": "一、多品类供应协调风险：设专职协调员，建立周度供货协调例会与到货预警，按品类分批排产。\n二、材料价格上涨风险：报价中设置材料价格波动应对与风险准备，并在合同中约定价格调整机制，报价为含价格波动应对的报价而非无条件固定价。\n三、质量证明文件完整性风险：建立按批次编号的质量证明文件台账，随货移交并逐批核对。\n四、买方付款节奏风险：付款安排按合同条款明确，供货批次与付款节点对应管理。\n五、质保响应风险：明确质保响应联系人与响应时限，保留更换记录。\n六、供应商履约风险：主要品类供应商询价与成本复核已在投标前内部完成，中标后分批锁定货源与交期，未确认的供应商承诺不作为已落实事实对外表述。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0049/supply-2_002",
+        "package_id": "CASE-0049/supply-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以单一责任供应商身份独立提交，不组建组合体。供应范围严格限定为：学生宿舍机电安装与电梯施工包所需材料与构配件的供货、运输到场、质量证明文件提供及质保期内更换；不含任何施工、安装、临时工程或措施费，不承担施工界面责任。\n\n产品匹配：按施工包设计规格与需求清单组织给排水、电气、通风空调、消防、弱电智能化及电梯配套材料与构配件，逐项核对型号、材质、技术参数与设计文件一致性，偏差项在供货前书面报买方确认。\n\n供应协调：设专职供货协调员对接施工包承包商，按施工进度提交供货计划、到货批次与接口信息；建立周度供货协调例会与到货预警机制。\n\n交付物流：按现场条件安排运输车辆与卸货交接，到场后与买方指定接收人办理数量清点、外观检查与签收，交接记录双方留存。\n\n质量文档：随批提供产品合格证、材质证明、检测报告及技术资料，按品类建立质量证明文件台账，确保可追溯。\n\n可维护性与售后：提供材料与设备维护说明及技术支持，质保期内按响应机制安排更换。\n\n备件计划：对关键材料与易损件提出备件供应计划，明确备件清单与补货周期。\n\n本包为纯材料供应，范围边界清楚，与我方供应商角色及材料组织能力匹配；当前资源占用为零，可用资源充足，可独立承担本包供货责任。",
+        "implementation_plan": "一、供货组织：中标后成立供货项目组，设供货负责人、协调员、质量文档员、物流对接人各司其职；按施工包进度编制供货总计划与月度、周度到货计划。\n\n二、采购与成本复核：投标前已完成主要品类供应商询价与内部成本复核，未确认的供应商承诺不作为已落实事实对外表述；中标后按合同清单分批下单，锁定货源与交期。\n\n三、运输与现场交接：按品类安排运输批次，到场前通知买方接收人；到场后办理数量清点、外观检查、随附质量证明文件移交与签收，异常当场记录并限期处理。\n\n四、质量证明文件管理：建立按品类、批次编号的质量证明文件台账，随货提供合格证、材质证明、检测报告及技术资料，确保与到货批次一一对应。\n\n五、质保期服务：明确质保响应联系人及响应时限，质保期内出现材料质量问题按约定更换，并保留更换记录。\n\n六、备件计划：对关键材料与易损件编制备件清单与补货周期，随供货计划提交买方。\n\n七、进度协调：供货计划与施工包进度视图联动，按施工节点提前排产与发运，遇施工进度调整时同步调整供货批次。",
+        "quotation": 12350000.0,
+        "schedule_commitment": "供货进度按施工包进度视图编制，自合同生效及买方下达供货计划起组织排产与发运；按施工节点分批次到场，首批材料到场时间以满足施工包开工需求为准，后续批次按周度供货计划滚动执行。遇施工进度调整，供货计划同步调整并提前书面通知买方。质保期自材料到场验收合格之日起按合同约定执行。",
+        "compliance_statement": "我方接受业主及买方按供应包范围进行的进度、质量与文件审查。供货计划、到货批次、质量证明文件台账及质保更换记录均按买方要求提交备查；买方对到货数量、外观及质量证明文件的签收确认作为供货完成依据。我方不承担施工、安装及施工界面责任，相关界面由施工包承包商负责。付款按合同条款执行，付款节奏在合同中明确。",
+        "risk_response": "一、多品类供应协调风险：设专职协调员，建立周度供货协调例会与到货预警，按品类分批排产。\n二、材料价格上涨风险：报价中设置材料价格波动应对与风险准备，并在合同中约定价格调整机制，报价为含价格波动应对的报价而非无条件固定价。\n三、质量证明文件完整性风险：建立按批次编号的质量证明文件台账，随货移交并逐批核对。\n四、买方付款节奏风险：付款安排按合同条款明确，供货批次与付款节点对应管理。\n五、质保响应风险：明确质保响应联系人与响应时限，保留更换记录。\n六、供应商履约风险：主要品类供应商询价与成本复核已在投标前内部完成，中标后分批锁定货源与交期，未确认的供应商承诺不作为已落实事实对外表述。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任供应商身份独立投标CASE-0049/supply-2学生宿舍机电安装与电梯施工包材料采购，不组建组合体，严格按授权范围承担供货、运输到场、质量证明文件和质保期内更换，不含施工、安装、临时工程及施工界面责任。\n\n报价以CNY计价，总报价为12,350,000元，由以下分项构成：\n- 材料与构配件采购成本 10,480,000元\n- 运输到场费用 520,000元\n- 质量证明文件与技术资料费用 185,000元\n- 质保期服务费用 310,000元\n- 备件供应计划费用 165,000元\n- 材料价格波动应对与风险准备 430,000元\n- 供货管理与协调费用 260,000元\n\n价格依据：主要品类供应商询价与内部成本复核已在投标前完成，未确认的供应商承诺不作为已落实事实对外表述；材料价格指数偏高，报价中设置价格波动应对并在合同中约定价格调整机制，报价为含价格波动应对的报价。付款由施工包承包商作为买方按合同条款支付。\n\n团队与交付：设供货负责人、协调员、质量文档员及物流对接人，按施工进度编制供货计划并周度协调；质量证明文件按批次台账管理；质保期内按响应机制更换；关键材料提供备件计划。\n\n本包范围边界清楚，与我方供应商角色及材料组织能力匹配，当前资源占用为零，可独立承担本包供货责任。",
+        "quotation_breakdown": [
+          {
+            "item": "材料与构配件采购成本",
+            "amount": 10480000,
+            "basis": "按施工包材料需求清单及主要品类供应商询价与内部成本复核估算，覆盖给排水、电气、通风空调、消防、弱电智能化及电梯配套材料；未确认的供应商报价按内部估算列支，属投标阶段估算而非已落实采购承诺"
+          },
+          {
+            "item": "运输到场费用",
+            "amount": 520000,
+            "basis": "按品类运输批次、车辆组织及现场卸货交接安排估算，含运输与到场交接配合"
+          },
+          {
+            "item": "质量证明文件与技术资料费用",
+            "amount": 185000,
+            "basis": "按品类质量证明文件台账建立、检测报告收集整理及技术资料编制估算"
+          },
+          {
+            "item": "质保期服务费用",
+            "amount": 310000,
+            "basis": "按质保期内响应机制、更换服务及技术支持安排估算"
+          },
+          {
+            "item": "备件供应计划费用",
+            "amount": 165000,
+            "basis": "按关键材料与易损件备件清单及补货周期安排估算"
+          },
+          {
+            "item": "材料价格波动应对与风险准备",
+            "amount": 430000,
+            "basis": "考虑材料价格指数偏高，按采购成本一定比例设置价格波动应对与风险准备，并在合同中约定价格调整机制"
+          },
+          {
+            "item": "供货管理与协调费用",
+            "amount": 260000,
+            "basis": "按供货项目组人员投入、周度协调例会及供货计划管理估算"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任供应商身份独立投标，不组建组合体。",
+          "供货范围严格限定为材料与构配件供应、运输到场、质量证明文件和质保期更换，不含施工安装及界面责任。",
+          "投标报价以CNY计价，包含材料单价、运输、质量证明文件、质保期服务和备件费用，并设置材料价格波动应对条款。",
+          "主要品类供应商询价与成本复核在投标前内部完成，未确认的供应商承诺不作为已落实事实对外表述。",
+          "买方为施工包承包商，付款按其合同价内支付安排执行，付款节奏在合同条款中明确。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "仅为施工包「学生宿舍机电安装与电梯施工包」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：给排水、电气、通风空调、消防、弱电智能化及电梯采购安装调试；不含土建结构与室外市政接驳。材料与设备由本包中标人自行采购。",
+      "cost_inclusion": "included_in_parent",
+      "parent_package_id": "CASE-0049/construction-2"
+    }
+  }
+}

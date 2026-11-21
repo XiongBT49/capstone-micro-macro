@@ -1,0 +1,1822 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIMEC711881/CASE-0206/design/round-1",
+  "snapshot": {
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/design",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "MOP",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 4500000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "MOP",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "澳门新葡京酒店",
+        "owner_id": "OWNER-aa9fb4e593b5ca",
+        "project_id": "CASE-0206",
+        "project_type": "building",
+        "region": "Macau",
+        "scope": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店"
+      },
+      "package": {
+        "package_id": "CASE-0206/design",
+        "project_id": "CASE-0206",
+        "kind": "design",
+        "buyer_id": "OWNER-aa9fb4e593b5ca",
+        "name": "总体及施工图设计与现场设计配合",
+        "scope": "总体及施工图设计与现场设计配合",
+        "budget": 4500000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0169",
+          "COMP-0295"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-aa9fb4e593b5ca": {
+        "entity_id": "OWNER-aa9fb4e593b5ca",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_name": "澳门旅游娱乐有限公司",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-aa9fb4e593b5ca",
+          "name": "澳门旅游娱乐有限公司",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0169": {
+        "entity_id": "COMP-0169",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0169",
+          "company_name": "中国建筑第五工程局有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0169",
+          "name": "中国建筑第五工程局有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0295": {
+        "entity_id": "COMP-0295",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0295",
+          "company_name": "江苏乾堪建设工程有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0295",
+          "name": "江苏乾堪建设工程有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "ae4d2dbbd2c703c406e2bef11197de2b8d81bbace3eb5ecca46e6f3c1a529657"
+  },
+  "spec": {
+    "package_id": "CASE-0206/design",
+    "project_id": "CASE-0206",
+    "kind": "design",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "name": "总体及施工图设计与现场设计配合",
+    "scope": "总体及施工图设计与现场设计配合",
+    "budget": 4500000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0169",
+      "COMP-0295"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0206",
+      "project_name": "澳门新葡京酒店",
+      "project_type": "building",
+      "location": "Macau",
+      "owner_intent": "文旅与酒店娱乐项目；13.5万平方米；澳门新葡京酒店",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0206",
+      "project_scope": "澳门新葡京酒店为文旅与酒店娱乐综合项目，建筑面积约13.5万平方米，位于澳门。业主采用DBB交付模式，本次仅就授权设计招标包（CASE-0206/design）编制业主方模拟包件简报。设计包范围包括总体设计、施工图设计及现场设计配合，包件预算为MOP 4,500,000，项目总预算为MOP 150,000,000，计划工期24个月。业主将按模拟评审程序对设计投标进行定性比较，重点审查能力匹配、人员配置现实性、质量目标契合、文件纪律及接口协调。",
+      "functional_requirements": [
+        "满足文旅与酒店娱乐综合体运营需求的总体设计功能布局与流线组织",
+        "施工图设计深度满足招标、施工及现场配合需要",
+        "现场设计配合机制支持施工阶段设计澄清、样品确认与接口协调",
+        "公共访问与后勤流线分离，支持酒店、娱乐及文旅功能协调运行",
+        "设计成果支持后续施工、监管及供应商接口的信息传递"
+      ],
+      "technical_requirements": [
+        "BIM协同设计，支持多专业模型整合与碰撞检查",
+        "MEP协调设计，覆盖酒店、娱乐及公共区域机电系统接口",
+        "结构协调设计，满足大跨度、复杂功能空间及酒店运营荷载要求",
+        "交通接口布局与公共访问布局协调，支持客流与后勤分离",
+        "耐久性目标与可维护性目标纳入设计说明及材料选择",
+        "业主验收路径明确，包括阶段设计评审、施工图审查及现场配合验收",
+        "能耗使用目标纳入设计考量，支持可持续运营"
+      ],
+      "budget_policy": "设计包预算为MOP 4,500,000，按授权包件范围控制。业主以报价合理性、设计服务范围完整性和后续现场配合投入作为定性比较基础，不将预算视为唯一判据。任何范围或预算变更须经宏观审批，业主保留设计变更审查与支付节点控制权。",
+      "schedule_policy": "项目总工期24个月，设计包须提交与总体里程碑一致的设计进度视图。业主评审时间、包件接口时间及公共访问协调时间应纳入进度计划。设计方须说明各阶段成果交付、施工图完成及现场配合的里程碑现实性，并预留业主审查与接口确认时间。",
+      "compliance_requirements": [
+        "业主审查节奏：阶段设计成果按约定节点提交业主审查",
+        "问题升级路径：设计问题按层级升级至业主指定接口人",
+        "文件纪律：设计文件版本、提交记录及审查意见闭环管理",
+        "接口签署：交通接口、公用设施接口及业主利益相关方接口须经业主确认",
+        "公共访问协调：设计须配合业主进行公共访问安排协调",
+        "质量目标跟踪：设计质量目标纳入阶段审查与验收",
+        "安全期望跟踪：设计安全考量纳入审查记录",
+        "变更控制纪律：范围与预算变更须经宏观审批"
+      ],
+      "risk_priorities": [
+        "设计进度与24个月总工期匹配风险",
+        "施工图深度不足导致施工阶段变更风险",
+        "多专业接口协调不足风险",
+        "公共访问与运营流线协调风险",
+        "现场设计配合响应不足风险",
+        "设计文件纪律与版本控制风险"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0206/design",
+          "package_type": "design",
+          "package_name": "总体及施工图设计与现场设计配合",
+          "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合",
+          "required_company_role": "designer",
+          "qualification_requirements": [
+            "文旅与酒店娱乐综合体总体设计协调能力",
+            "施工图设计深度与文件纪律能力",
+            "BIM协同与多专业模型整合能力",
+            "MEP协调与结构协调能力",
+            "交通接口与公共访问布局协调能力",
+            "现场设计配合与快速响应能力",
+            "耐久性与可维护性设计考量能力",
+            "能耗使用目标纳入设计能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "总体及施工图设计交付方法",
+            "质量方法与设计审查流程",
+            "价格基础与费用构成",
+            "设计进度视图与里程碑",
+            "风险应对与现场配合安排"
+          ],
+          "pricing_requirements": "按设计包范围提交价格基础，说明总体设计、施工图设计及现场配合的费用构成。报价以MOP计，业主将结合范围完整性与服务投入进行定性比较。\nBinding currency: MOP; package ceiling: 4500000.0.",
+          "evaluation_criteria": [
+            "能力匹配",
+            "人员配置现实性",
+            "质量目标契合",
+            "文件纪律",
+            "接口协调",
+            "业主审查清晰度",
+            "价格合理性",
+            "风险控制",
+            "交付信心"
+          ],
+          "owner_decision_policy": "业主方代理将定性比较各投标的能力匹配、人员配置现实性、质量目标契合、文件纪律、接口协调、价格合理性与交付信心，综合判断后形成判给建议。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0206/design",
+        "package_type": "design",
+        "package_name": "总体及施工图设计与现场设计配合",
+        "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合",
+        "required_company_role": "designer",
+        "qualification_requirements": [
+          "文旅与酒店娱乐综合体总体设计协调能力",
+          "施工图设计深度与文件纪律能力",
+          "BIM协同与多专业模型整合能力",
+          "MEP协调与结构协调能力",
+          "交通接口与公共访问布局协调能力",
+          "现场设计配合与快速响应能力",
+          "耐久性与可维护性设计考量能力",
+          "能耗使用目标纳入设计能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "总体及施工图设计交付方法",
+          "质量方法与设计审查流程",
+          "价格基础与费用构成",
+          "设计进度视图与里程碑",
+          "风险应对与现场配合安排"
+        ],
+        "pricing_requirements": "按设计包范围提交价格基础，说明总体设计、施工图设计及现场配合的费用构成。报价以MOP计，业主将结合范围完整性与服务投入进行定性比较。\nBinding currency: MOP; package ceiling: 4500000.0.",
+        "evaluation_criteria": [
+          "能力匹配",
+          "人员配置现实性",
+          "质量目标契合",
+          "文件纪律",
+          "接口协调",
+          "业主审查清晰度",
+          "价格合理性",
+          "风险控制",
+          "交付信心"
+        ],
+        "owner_decision_policy": "业主方代理将定性比较各投标的能力匹配、人员配置现实性、质量目标契合、文件纪律、接口协调、价格合理性与交付信心，综合判断后形成判给建议。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_name": "澳门旅游娱乐有限公司",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0169",
+        "company_name": "中国建筑第五工程局有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0295",
+        "company_name": "江苏乾堪建设工程有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-aa9fb4e593b5ca": [
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "项目开发部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与预算的平衡，习惯从业主投资回报角度审视每个决策。他最先注意到的是关键路径上的延误风险，常把技术讨论拉回到商业目标上，带来工期与质量之间的张力。",
+          "responsibilities": [
+            "统筹项目整体交付策略与里程碑",
+            "主持招标包划分与采购计划评审",
+            "协调设计、施工与监管服务界面",
+            "监控工期与成本偏差并推动纠偏"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善用数据与里程碑说话，会议中常以提问引导团队聚焦关键风险。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "成本控制部",
+          "position": "成本控制经理",
+          "personal_profile": "对数字高度敏感，在压力下会反复核对报价基础与支付条款，最先发现成本估算中的遗漏或过于乐观的假设。她倾向于保守的财务安排，常与追求进度的同事产生预算分配上的摩擦。",
+          "responsibilities": [
+            "编制与审核项目预算及现金流计划",
+            "评估投标报价的合理性与完整性",
+            "主持付款评审与变更成本评估",
+            "跟踪成本目标并预警超支风险"
+          ],
+          "decision_authority": "final",
+          "communication_style": "严谨细致，习惯用表格和对比数据表达观点，对模糊表述会要求澄清。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "设计管理部",
+          "position": "设计协调经理",
+          "personal_profile": "以设计意图的完整实现为优先，在压力下会坚持设计标准与可持续目标，最先注意到图纸与规范之间的不一致。他常因设计变更的连锁影响与成本、工期团队产生张力，但善于用技术论证说服他人。",
+          "responsibilities": [
+            "协调设计顾问与承包商的设计接口",
+            "审核设计变更对质量与可持续目标的影响",
+            "组织设计评审与可施工性检查",
+            "管理设计文档的版本与分发纪律"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "理性沉稳，喜欢用图纸和规范条文支撑观点，对设计质量问题会直言不讳。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量与安全视为不可妥协的底线，在压力下会坚持独立检查与整改闭环，最先注意到现场执行与批准方案之间的偏差。她常因要求停工整改而与进度团队发生冲突，但始终以质量目标为锚点。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场质量与安全合规",
+            "组织独立质量审查与整改验证",
+            "跟踪质量缺陷的闭环处理"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "坚定清晰，善用检查清单和现场照片说明问题，对整改要求会明确期限。"
+        },
+        {
+          "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "OWNER-aa9fb4e593b5ca",
+          "company_role": "owner",
+          "department": "合约管理部",
+          "position": "合约经理",
+          "personal_profile": "注重合约条款的严谨性与风险分配的公平性，在压力下会仔细推敲每一条款的可执行性，最先注意到责任边界模糊或索赔隐患。他倾向于用合约语言锁定各方义务，常因条款解释与项目团队产生分歧。",
+          "responsibilities": [
+            "起草与审核招标文件及合约条款",
+            "管理投标澄清与合约谈判",
+            "处理合约变更与索赔评估",
+            "确保采购过程的文档纪律与合规"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "逻辑严密，习惯引用合约条文和先例，对模糊表述会要求书面确认。"
+        }
+      ],
+      "COMP-0169": [
+        {
+          "agent_id": "COMP-0169_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计总体协调部",
+          "position": "设计总负责人",
+          "personal_profile": "压力下先看整体工期与设计接口风险，习惯把业主需求翻译成可执行的设计里程碑。他最先注意到各专业提资是否闭合，常把设计变更的连锁影响摆到桌面上，容易在讨论中带来进度与质量之间的张力。",
+          "responsibilities": [
+            "统筹总体设计与施工图设计的进度与接口",
+            "对接业主设计需求与现场设计配合",
+            "组织内部设计评审与质量目标跟踪",
+            "协调各专业提资与出图计划"
+          ],
+          "decision_authority": "final",
+          "communication_style": "先给结论再列依据，语气平稳，习惯用里程碑和接口清单推进讨论。"
+        },
+        {
+          "agent_id": "COMP-0169_02_黄敏仪",
+          "agent_name": "黄敏仪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计质量与合规部",
+          "position": "设计质量经理",
+          "personal_profile": "对图纸一致性和审批合规高度敏感，压力下会逐条核对设计依据与监管要求。她最先发现说明与图纸之间的矛盾，常以独立复核视角提出返工风险，给讨论带来质量优先的张力。",
+          "responsibilities": [
+            "执行设计质量审查与独立复核",
+            "跟踪审批合规与文档纪律",
+            "维护质量目标与检查记录",
+            "评估设计交付的合规风险"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "条理清晰，喜欢用检查表和条款编号说话，对模糊表述会当场追问。"
+        },
+        {
+          "agent_id": "COMP-0169_03_梁俊豪",
+          "agent_name": "梁俊豪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "造价与商务管理部",
+          "position": "设计造价主管",
+          "personal_profile": "习惯先算清设计工作量与费用边界，压力下会紧盯报价依据和支付节点。他最先注意到设计范围与费用不匹配之处，常把成本控制与设计深度之间的取舍摆上桌面，带来商务约束的张力。",
+          "responsibilities": [
+            "编制设计报价与价格依据",
+            "开展设计阶段成本评审与支付评估",
+            "审核设计变更的费用影响",
+            "配合业主进行支付审查"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "数字先行，表达直接，常用对比表说明费用差异。"
+        },
+        {
+          "agent_id": "COMP-0169_04_苏咏芝",
+          "agent_name": "苏咏芝",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "现场设计服务部",
+          "position": "驻场设计协调员",
+          "personal_profile": "长期关注现场可施工性，压力下优先处理现场设计配合的即时问题。她最先注意到图纸与现场条件的偏差，常把施工可行性反馈带入设计讨论，带来现场实际与设计理想之间的张力。",
+          "responsibilities": [
+            "负责现场设计配合与工地报告",
+            "收集现场问题并反馈设计调整",
+            "协调施工方与设计团队的信息传递",
+            "跟踪现场设计变更的执行"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "务实简短，习惯用现场照片和问题清单沟通，强调可操作性。"
+        },
+        {
+          "agent_id": "COMP-0169_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "资源与计划管理部",
+          "position": "资源计划经理",
+          "personal_profile": "对团队可用资源和排期冲突非常敏感，压力下会先确认人力是否支撑出图节奏。他最先注意到专业间资源挤占，常把资源约束与设计承诺之间的差距提出来，带来计划可行性的张力。",
+          "responsibilities": [
+            "编制团队可用资源摘要与角色计划",
+            "评估设计包所需人力与排期",
+            "监控资源占用与出图负荷",
+            "提出资源调配与风险应对建议"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "以排期表和资源负荷图说话，语气谨慎，倾向先确认再承诺。"
+        }
+      ],
+      "COMP-0295": [
+        {
+          "agent_id": "COMP-0295_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先判断项目是否符合公司长期定位与资源承受力，先看整体风险与业主意图，再考虑技术细节。讨论中常把话题拉回商业可行性与合同边界，容易与追求技术完美的成员产生张力。",
+          "responsibilities": [
+            "统筹本次设计招标包的投标决策与资源调配",
+            "对接业主与关键利益相关方，确认设计范围与验收标准",
+            "审批设计团队组建与分包安排",
+            "监控设计进度与质量目标达成"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、务实，习惯用结论先行，再补充关键依据；在争议中倾向折中并推动形成可执行方案。"
+        },
+        {
+          "agent_id": "COMP-0295_02_周敏仪",
+          "agent_name": "周敏仪",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "设计管理部",
+          "position": "设计总监",
+          "personal_profile": "对设计质量与可施工性高度敏感，压力下先检查图纸一致性与规范符合性，再考虑成本。讨论中常坚持设计深度与现场配合的完整性，容易与成本控制视角形成拉锯。",
+          "responsibilities": [
+            "主持总体设计与施工图设计的技术路线",
+            "组织内部质量审查与独立校核",
+            "协调各专业设计接口与现场设计配合",
+            "跟踪设计质量目标与业主审查意见闭环"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，偏好用图纸与规范条文说话；对模糊要求会追问细节，语气平稳但立场坚定。"
+        },
+        {
+          "agent_id": "COMP-0295_03_黄志强",
+          "agent_name": "黄志强",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价依据与支付条件最为警觉，压力下先核算成本构成与现金流影响，再评估技术方案。讨论中常提醒合同风险与变更边界，容易与设计团队在费用投入上产生分歧。",
+          "responsibilities": [
+            "编制投标报价与价格依据说明",
+            "负责合同条款审查与支付评审",
+            "控制设计分包与外部顾问成本",
+            "评估设计变更对费用与工期的影响"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "数据驱动，习惯用数字与条款对比说明问题；表达简洁，对超支风险会直接提出反对意见。"
+        },
+        {
+          "agent_id": "COMP-0295_04_林嘉欣",
+          "agent_name": "林嘉欣",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "项目管理部",
+          "position": "项目经理",
+          "personal_profile": "关注进度与资源匹配，压力下先梳理关键路径与团队可用性，再讨论技术方案。讨论中常强调现场配合与报批节奏，容易与设计深度优先的成员在时间安排上产生摩擦。",
+          "responsibilities": [
+            "制定设计进度计划与资源计划",
+            "协调现场设计配合与业主沟通",
+            "跟踪报批与审批节点",
+            "管理设计团队日常运作与风险应对"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "节奏明快，喜欢用时间表与责任矩阵推进讨论；对延误信号反应迅速，会主动提出替代安排。"
+        },
+        {
+          "agent_id": "COMP-0295_05_吴文博",
+          "agent_name": "吴文博",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "技术质量部",
+          "position": "技术负责人",
+          "personal_profile": "对技术合规与可持续目标最为执着，压力下先核查规范符合性与独立校核记录，再考虑商务安排。讨论中常坚持技术底线与文档纪律，容易与进度优先的成员发生冲突。",
+          "responsibilities": [
+            "审核设计成果的技术合规性",
+            "组织独立校核与质量目标跟踪",
+            "管理设计文档与版本纪律",
+            "评估可持续目标与技术风险应对"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨细致，习惯引用规范与校核记录；对技术妥协持保留态度，表达克制但坚持原则。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "这次是澳门新葡京酒店的设计包，总体及施工图设计加现场配合，预算450万MOP，24个月工期，资源占用0.25，我们可用资源2.0，容量上完全撑得住。公司资料里明确写了有建筑行业（建筑工程）、市政行业、公路行业工程设计资质，还有工程管理、造价咨询、规划设计管理，设计能力参数0.8，技术和管理都是0.8，质量0.8，属于能独立承担设计总包的类型。这个包要的是文旅酒店综合体的总体协调、施工图深度、BIM多专业整合、MEP与结构协调、交通接口、现场配合、耐久可维护、能耗目标，这些都在我们设计主业的正常能力半径内，不需要另一家单位来共享投标人身份或分担设计总责。BIM和MEP这些是设计院常规要管的专业协调，可以通过内部团队加常规专业顾问解决，属于报价和方法论层面的事，不是 accountability 缺口。风险上主要是酒店类项目业主标准高、现场配合响应要求快、工期紧，但这些可以用角色计划、审查流程、里程碑和风险应对来管。商业上450万对一个13.5万平米酒店的设计包不算高，但作为本地标志性文旅项目，战略价值和后续施工总包机会值得争取。我倾向独立投标，把设计总负责牢牢握在自己手里。",
+        "content": "拟以单一责任投标人身份参与澳门新葡京酒店总体及施工图设计与现场设计配合包的投标。投标文件将围绕业主关注点组织：角色计划与团队可用性摘要，说明总体设计负责人、各专业负责人及现场配合人员的分工与投入；总体及施工图设计交付方法，覆盖方案深化、施工图深度控制与文件纪律；质量方法与设计审查流程，设置内部校审、专业会签与独立复核节点；BIM协同与多专业模型整合安排，明确模型交付标准与接口协调机制；MEP、结构及交通接口的协调路径；能耗使用目标与耐久性、可维护性设计考量如何纳入设计控制；设计进度视图与里程碑，匹配24个月项目工期；现场设计配合与快速响应安排；以及以MOP计价的价格基础，分列总体设计、施工图设计与现场配合的费用构成。BIM、专项工程等窄口径外部支持按常规专业顾问或分包安排，由公司统一管理并承担设计总责，不作为组合体处理。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T15:44:46",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "公司资料显示我们具备园林、市政、装饰、房屋建筑等设计与施工经验，但本包是13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场配合，核心是大型酒店多专业整合、BIM协同、MEP与结构协调、交通接口和能耗目标纳入设计。这些能力在团队可用性摘要和角色计划中目前没有具体证据，只有企业参数层面的通用评分。资源方面可用2.0、占用0，资源需求0.25，容量上可以承接，但设计主导能力与酒店综合体经验是实质短板。若独立投标，很可能在评标中被视为缺乏总体设计协调与多专业整合的 accountable design lead，形成履约与声誉风险。考虑以组合体方式，由具备酒店综合体总体设计与BIM/MEP整合能力的设计机构承担技术主导与相应设计责任，我方承担本地施工图深化、现场配合、本地合规与文档纪律，这样投标身份与责任划分清晰，能实质改变投标可信度。价格上限450万MOP，需在组合体内明确费用构成与分工。若无法落实具备相应能力且愿意共担责任的伙伴，则应放弃。",
+        "content": "管理层决定：以组合体方式参与澳门新葡京酒店总体及施工图设计与现场设计配合包的投标。理由是本包为13.5万平方米文旅酒店娱乐综合体，评标关注总体设计协调、施工图深度与文件纪律、BIM多专业模型整合、MEP与结构协调、交通接口、现场快速响应及能耗目标纳入设计。公司现有资料与团队可用性摘要不足以证明我方具备酒店综合体总体设计主导与全包设计责任能力，独立投标在技术权威与责任承担上存在实质缺口。组合体安排拟由具备酒店综合体总体设计与BIM/MEP整合能力的伙伴承担技术主导及相应设计责任，我方承担本地施工图深化、现场设计配合、文档与质量控制、本地合规接口，并在组合体协议中明确角色计划、交付方法、质量审查流程、进度里程碑、风险应对与费用构成。报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项说明价格基础。若投标前无法落实伙伴及分工协议，则不提交。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid_with_consortium",
+        "decision_impact": "final",
+        "final_decision": "bid_with_consortium",
+        "timestamp": "2026-11-19T15:44:42",
+        "verification_requests": [
+          {
+            "question": "是否已落实具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力、并愿意共担设计责任的组合体伙伴，且签署书面分工与责任协议？",
+            "required_before_submission": true
+          },
+          {
+            "question": "我方拟投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划是否已形成并经内部确认？",
+            "required_before_submission": false
+          },
+          {
+            "question": "组合体分工、责任边界与费用分摊须在投标前以书面协议确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "consortium_formation",
+        "round": 4,
+        "round_type": "external_role_negotiation",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "negotiation",
+        "thoughts": "我们记录的是组合体投标，但真正的缺口是酒店综合体总体设计的技术权威与全包设计责任，不是普通专项分包能补的。中建五局只是名字，不能当作已具备该能力或愿意共担责任。我要把话说清：我方可以承担本地施工图深化、现场配合与文档纪律，但总体设计主导与BIM/MEP整合必须由对方以书面分工承接，否则独立投标不成立。",
+        "content": "陈立衡代表江苏乾堪说明立场：本包是13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场配合，我方在本地施工图深化、现场设计配合、文档纪律与本地合规上有可用基础，但资料与团队可用性摘要不足以证明我方具备酒店综合体总体设计主导与BIM、MEP多专业整合能力，独立投标会留下真实的设计责任缺口。因此我们只考虑组合体路径，由贵司承担总体设计技术主导及相应设计责任，我方承担本地深化、现场配合与质量控制，并以书面分工与责任协议锁定边界和费用构成。请贵司提供团队可用性摘要、角色计划与同类综合体交付方法作为依据，我们再判断是否共同投标。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [],
+        "recommendation": "要求中建五局书面确认总体设计主导角色、团队可用性与责任共担，并签署分工与责任协议；未落实前不提交。",
+        "decision_impact": "决定我方是否以组合体参与本包；若伙伴责任与能力未书面落实，我方退出并放弃独立投标。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:44:50",
+        "verification_requests": [
+          {
+            "question": "中国建筑第五工程局有限公司是否具备文旅酒店娱乐综合体总体设计与BIM、MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据？",
+            "required_before_submission": true
+          },
+          {
+            "question": "中国建筑第五工程局有限公司是否愿意以书面协议承担总体设计技术主导及相应设计责任，并明确与我方的分工、责任边界与费用分摊？",
+            "required_before_submission": true
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "consortium_formation",
+        "round": 4,
+        "round_type": "external_role_negotiation",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "negotiation",
+        "thoughts": "对方以牵头身份来谈，但只披露名称，没有任何团队可用性或分工承诺。我公司已记录独立投标，资源占用为零，设计总责与450万MOP报价空间都在自己手里。若让出投标人身份，必须换来明确的设计总责分工、费用份额和接口控制权，否则独立投标更干净。先要求对方说明其拟承担的具体专业范围和人员可用性摘要。",
+        "content": "我们目前是独立投标立场，愿意听组合体方案，但不会仅因对方牵头就放弃单一责任投标人身份。请贵司说明拟承担的具体设计范围、团队可用性摘要和费用份额设想；若贵司能承担总体设计协调与业主对接的主责，我司可考虑负责施工图深度、BIM多专业整合与现场配合，并以接口清单和设计审查流程锁定责任边界。在收到上述书面说明前，我司维持独立投标。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [],
+        "recommendation": "要求对方提交范围分工、团队可用性摘要与费用份额书面说明，再决定是否转为组合体投标。",
+        "decision_impact": "若分工与费用份额不足以覆盖让出设计总责的风险，我司维持独立投标。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:44:50",
+        "verification_requests": [
+          {
+            "question": "请COMP-0295提供拟承担设计范围、团队可用性摘要及费用份额的书面说明",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "consortium_formation",
+        "round": 5,
+        "round_type": "external_accountability_confirmation",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "negotiation",
+        "thoughts": "中建五局反过来要我们承担总体设计协调主责，这正好是我方能力缺口，不能接。若我方硬扛总体设计主导，技术权威与全包设计责任都落在我方，风险不可控。但对方愿意承担施工图深度、BIM多专业整合与现场配合，这与我方原设想相反，需要重新界定：要么对方承担总体主导，要么组合体不成立。费用份额与责任边界必须书面，否则不提交。",
+        "content": "陈立衡回应中建五局：贵司提出由我方承担总体设计协调与业主对接主责，这与我们的能力判断相反。我方资料与团队可用性摘要不足以支撑13.5万平方米酒店综合体的总体设计技术权威，若由我方挂名主导，全包设计责任与业主审查压力会集中在我方，商业上不可接受。我方可以承担本地施工图深化、现场设计配合、文档纪律与质量控制，并接受相应责任。组合体要成立，须由贵司承担总体设计主导与BIM、MEP多专业整合，并以书面分工与责任协议锁定边界和费用份额。在此之前，我方不提交，也不独立投标。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [
+          "msg_000003",
+          "msg_000004"
+        ],
+        "recommendation": "要求中建五局书面确认总体设计主导角色、团队可用性摘要与责任共担，并签署分工与费用协议；未落实前不提交。",
+        "decision_impact": "决定我方是否以组合体参与本包；若对方不承担总体主导，我方退出并放弃独立投标。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:44:54",
+        "verification_requests": [
+          {
+            "question": "中建五局是否书面确认承担本包总体设计主导与BIM、MEP多专业整合角色，并提供团队可用性摘要与角色计划？",
+            "required_before_submission": true
+          },
+          {
+            "question": "组合体分工、责任边界与费用分摊是否已形成书面协议并经双方确认？",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000006",
+        "stage": "consortium_formation",
+        "round": 5,
+        "round_type": "external_accountability_confirmation",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "negotiation",
+        "thoughts": "对方明确只走组合体且要我方承担总体设计主导与设计责任，这实际上是把最重的问责压给我方，而他们只做本地深化与现场配合。我方独立投标的核心理由正是能单一责任承担总体协调，让出主导权没有好处；但若对方能补上本地合规与现场快速响应的真实缺口，并接受书面分工与责任协议，组合体可降低现场风险。关键是费用份额与责任边界是否对等，以及对方团队可用性是否有据。",
+        "content": "我方立场先说清楚：本包总体设计协调、施工图交付与现场配合，我司具备独立承担的能力与资源，独立投标仍是基准方案。贵司提出由我方承担总体设计技术主导与设计责任、贵司负责本地深化与现场配合，这个分工在问责上是对等的，但前提是贵司的团队可用性摘要、同类酒店综合体深化业绩与本地合规支持要有书面依据，而不是仅凭公司名称。费用份额须与责任权重匹配，接口清单、设计审查流程与责任协议须在投标前定稿。若这些能落实，我司可考虑转为组合体并承担设计总责；否则维持独立投标。",
+        "references": [
+          "package_requirements",
+          "company_profile",
+          "negotiation_record"
+        ],
+        "response_to": [
+          "msg_000003",
+          "msg_000004"
+        ],
+        "recommendation": "要求COMP-0295书面提交团队可用性摘要、同类深化业绩、本地合规支持说明及与责任权重匹配的费用份额，并确认接受接口清单与责任协议作为组合体前提。",
+        "decision_impact": "决定我方维持独立投标还是转为组合体并承担设计总责。",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:44:54",
+        "verification_requests": [
+          {
+            "question": "COMP-0295能否提供本包拟投入团队的可用性摘要与同类酒店综合体施工图深化业绩的书面依据",
+            "required_before_submission": false
+          },
+          {
+            "question": "COMP-0295能否书面确认接受总体设计主导归我方、本地深化与现场配合归其方的责任协议及对应费用份额",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000007",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0206/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留\n主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）\n若伙伴书面条件未能落实，组合体不提交投标",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T15:45:23",
+        "verification_requests": [
+          {
+            "question": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留",
+            "required_before_submission": false
+          },
+          {
+            "question": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）",
+            "required_before_submission": false
+          },
+          {
+            "question": "若伙伴书面条件未能落实，组合体不提交投标",
+            "required_before_submission": true
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000008",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-aa9fb4e593b5ca",
+        "company_role": "owner",
+        "package_id": "CASE-0206/design",
+        "agent_id": "OWNER-aa9fb4e593b5ca_05_何家豪",
+        "agent_name": "何家豪",
+        "department": "合约管理部",
+        "position": "合约经理",
+        "message_type": "decision",
+        "thoughts": "本包仅收到组合体一份投标，评标推荐其为候选。作为业主最终决策人，我需要从问责、风险与可负担性角度判断是否判给。组合体由中建五局主导总体设计与BIM/MEP整合，江苏乾堪负责本地施工图深化与现场配合，分工覆盖本包全部能力需求，报价MOP 3,750,000在MOP 4,500,000预算内且分项可核查，费用基础与责任权重匹配。主要不确定性在于团队可用性摘要与同类深化业绩仅为披露假设、尚未书面核实，接口清单与责任协议仍待定稿，报价空间偏紧。这些属于判给前必须聚焦澄清的事项，但不构成拒绝该组合体的理由，因为其技术方案与业主关注点契合度较高，且已就接口与责任协议形成书面框架。我决定判给该组合体，并将团队可用性书面确认、同类业绩证明、接口清单与责任协议定稿以及现场响应时限写入合同作为判给前的澄清重点。",
+        "content": "经业主最终决策，本包判给中建五局—江苏乾堪酒店综合体设计组合体，报价MOP 3,750,000。该组合体以中建五局为总体设计技术主导与设计总责方，江苏乾堪负责本地施工图深化与现场配合，分工覆盖本包全部能力需求，费用分项与责任权重匹配，报价在预算内且可核查。判给前澄清重点为团队可用性书面确认、同类深化业绩证明、接口清单与责任协议定稿，以及现场响应时限写入合同，相关安排按业主审查节点推进。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T15:45:31",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0169",
+        "package_id": "CASE-0206/design",
+        "decision": "bid",
+        "reason": "管理层判断：本包属于公司设计主业范围内的总体及施工图设计与现场配合，公司具备建筑工程设计资质和相应的设计、造价、工程管理能力，当前资源占用为零、可用容量充足，能够作为单一责任投标人独立承担总体设计协调、施工图交付和现场配合。BIM整合、MEP与结构协调、交通接口、能耗目标等属于设计院常规专业协调内容，可通过内部团队与常规专业支持安排解决，不构成需要另一家单位共享投标人身份或设计总责的问责缺口。主要风险在于酒店业主标准高、现场响应要求快、450万MOP报价空间偏紧，这些将通过明确的角色计划、设计审查流程、里程碑进度视图和风险应对安排来管理，并在价格基础中区分总体设计、施工图设计与现场配合的费用构成。项目为本地标志性文旅酒店，战略价值与后续施工机会值得投入，故决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "公司以单一责任投标人身份独立投标，不组建组合体",
+          "BIM、专项工程等窄口径外部支持按常规专业顾问或分包安排，由公司统一管理并承担设计总责",
+          "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+          "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "decision": "bid_with_consortium",
+        "reason": "本包要求对13.5万平方米文旅酒店娱乐综合体承担总体及施工图设计并现场配合，核心能力是酒店综合体总体设计协调、BIM多专业模型整合、MEP与结构协调及能耗目标纳入设计。公司资料与团队可用性摘要未能证明我方具备该等酒店综合体设计主导能力，独立投标将出现技术权威与全包设计责任缺口，属于真实的 accountable design lead 缺口，而非普通专项分包可以掩盖。公司资源容量允许参与，且我方在本地施工图深化、现场设计配合、文档纪律与本地合规方面有可用基础，因此以组合体方式参与是诚实且商业上合理的路径：由具备酒店综合体总体设计与多专业整合能力的伙伴承担技术主导与相应设计责任，我方承担本地施工图深化、现场配合与文档质量控制，并在组合体协议中明确分工、责任边界与费用构成。若在投标前无法落实该伙伴及分工安排，则不应提交。",
+        "unresolved_condition_ids": [
+          "condition_e5b3adc06c1afa4c712c",
+          "condition_9d20f7142e4d35cf4461",
+          "condition_aebcce8062a6234c57ad"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "组合体伙伴须具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并在组合体协议中承担技术主导与相应设计责任",
+          "我方在组合体中承担本地施工图深化、现场设计配合、文档与质量控制及本地合规接口",
+          "价格以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项列示费用构成",
+          "组合体分工、责任边界与费用分摊须在投标前以书面协议确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [
+      {
+        "consortium_id": "consortium_CASE-0206/design_001",
+        "consortium_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+        "package_id": "CASE-0206/design",
+        "lead_company_id": "COMP-0295",
+        "member_company_ids": [
+          "COMP-0169",
+          "COMP-0295"
+        ],
+        "formation_reason": "本包为13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场设计配合，评标关注总体设计协调、施工图深度与文件纪律、BIM多专业模型整合、MEP与结构协调、交通接口、现场快速响应及能耗目标纳入设计。牵头方江苏乾堪在本地施工图深化、现场设计配合、文档纪律与本地合规接口方面有可用基础，但其资料与团队可用性摘要不足以支撑酒店综合体总体设计技术权威与全包设计责任，存在真实的 accountable design lead 缺口。候选伙伴中建五局具备建筑行业（建筑工程）工程设计、工程总承包与项目管理业务基础，并在讨论中明确表示若团队可用性摘要、同类深化业绩、本地合规支持与责任权重匹配的费用份额能书面落实，可转为组合体并承担设计总责。双方在责任对等、接口清单、设计审查流程与责任协议作为投标前定稿条件上达成一致，属于能力互补而非同角色竞争合并。组合体仅纳入满足牵头方缺口所需的最小成员，保留其他潜在主体独立竞争空间。",
+        "role_split": {
+          "COMP-0169": "总体设计技术主导与设计总责：承担总体设计协调、业主对接主责、BIM多专业模型整合、MEP与结构协调、能耗目标纳入设计、施工图设计深度与文件纪律的最终技术把关，并对全包设计责任负责",
+          "COMP-0295": "本地深化与现场配合：承担本地施工图深化、现场设计配合与快速响应、文档与质量控制、本地合规接口，并按接口清单与设计审查流程接受总体设计主导方的技术审查"
+        },
+        "agreement_summary": "组合体协议要点：一、角色与责任边界以书面分工与责任协议锁定，中建五局承担总体设计技术主导与设计总责，江苏乾堪承担本地施工图深化、现场配合、文档与质量控制及本地合规接口；二、投标前定稿接口清单、设计审查流程与责任协议，作为组合体成立前提；三、费用份额与责任权重匹配，报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项说明价格基础与费用构成；四、明确进度里程碑、风险应对与现场配合安排，并纳入业主审查与质量目标；五、任一方未按书面条件落实团队可用性摘要、同类深化业绩或本地合规支持，则组合体不提交投标。",
+        "status": "formed"
+      }
+    ],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0206/design_001",
+        "package_id": "CASE-0206/design",
+        "bidder_type": "consortium",
+        "bidder_id": "consortium_CASE-0206/design_001",
+        "bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+        "technical_proposal": "本组合体以中建五局（COMP-0169）为总体设计技术主导与设计总责方，江苏乾堪（COMP-0295）为本地施工图深化、现场配合与文档质量控制方，共同承担澳门新葡京酒店13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场设计配合。技术方案围绕业主关注点组织：总体设计协调由中建五局设计总负责人牵头，建立业主对接主责与专业接口清单；施工图设计深度与文件纪律由双方联合校审，江苏乾堪负责本地深化与合规接口；BIM协同采用统一模型标准与多专业整合流程，由中建五局BIM经理统筹，江苏乾堪负责本地模型维护与现场反馈；MEP与结构协调通过定期专业会签与独立复核节点控制；交通接口与公共访问布局纳入总体设计协调范围；能耗使用目标与耐久性、可维护性设计考量作为设计控制要点纳入各阶段审查。现场设计配合由江苏乾堪派驻现场设计代表，按约定响应时限快速处理施工问题，中建五局提供技术后援。组合体已就接口清单、设计审查流程与责任协议形成书面框架，作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。",
+        "implementation_plan": "设计进度视图匹配项目24个月工期：第1至4月完成总体设计深化与业主审查；第5至10月完成施工图设计（含BIM多专业整合与专业会签）；第11至12月完成施工图审查与修改；第13至24月为现场设计配合期，江苏乾堪派驻现场设计代表，中建五局按需提供技术支援。关键里程碑包括总体设计评审、施工图交付、BIM模型整合审查、现场配合启动。组合体管理方面，设立联合设计管理小组，中建五局任组长，江苏乾堪任副组长，每月召开接口协调会，按接口清单与设计审查流程执行。费用分摊与责任权重匹配，中建五局承担总体设计主导与BIM/MEP整合费用份额，江苏乾堪承担本地深化与现场配合费用份额。",
+        "quotation": 3750000.0,
+        "schedule_commitment": "组合体承诺按项目24个月工期完成总体及施工图设计与现场设计配合。总体设计深化与业主审查在第1至4月完成；施工图设计（含BIM整合）在第5至10月完成；施工图审查与修改在第11至12月完成；现场设计配合自第13月起至第24月项目结束。关键里程碑按业主审查节点设置，组合体联合管理小组每月检查进度，确保设计交付与现场配合不延误。",
+        "compliance_statement": "组合体接受业主对设计过程的审查与控制，按业主审查节点提交总体设计、施工图及BIM模型成果。设计审查流程包括内部校审、专业会签与独立复核，业主审查意见由中建五局统一接收并组织回复，江苏乾堪负责本地深化部分的修改与合规接口。文件纪律方面，双方执行统一的文档控制程序，版本管理与交付记录可追溯。现场配合响应按约定时限执行，江苏乾堪现场代表每日记录并每周向业主报告。组合体理解业主对质量目标与能耗使用目标的关注，将相关要求纳入设计控制要点。",
+        "risk_response": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）。组合体将联合管理小组作为风险应对协调机制，每月评估风险状态并调整资源。若伙伴书面条件未能落实，组合体不提交投标。",
+        "submission_summary": "中建五局—江苏乾堪酒店综合体设计组合体提交澳门新葡京酒店总体及施工图设计与现场设计配合包报价，总价MOP 3,750,000，在450万MOP上限内。费用构成：总体设计协调与业主对接MOP 1,080,000；施工图设计深化与文件纪律MOP 960,000；BIM多专业模型整合与MEP/结构协调MOP 720,000；现场设计配合与快速响应MOP 540,000；组合体联合管理、接口协调与责任协议管理费MOP 270,000；风险准备金与设计责任保险分摊MOP 180,000。上述分项合计MOP 3,750,000。报价基础反映组合体共享问责的额外协调负担与责任权重匹配的费用份额，中建五局承担总体设计技术主导与设计总责，江苏乾堪承担本地深化与现场配合。组合体协议、接口清单与设计审查流程作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。付款安排按设计阶段里程碑与业主审查节点协商确定。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计协调与业主对接（中建五局主导）",
+            "amount": 1080000,
+            "basis": "按总体设计阶段约6个专业负责人月及设计总负责人部分投入估算，含业主审查会议与总体协调，属组合体主导方费用份额"
+          },
+          {
+            "item": "施工图设计深化与文件纪律（江苏乾堪本地深化）",
+            "amount": 960000,
+            "basis": "按本地施工图深化团队约8人月及文档控制投入估算，含合规接口与图纸校审，属本地深化方费用份额"
+          },
+          {
+            "item": "BIM多专业模型整合与MEP/结构协调（中建五局统筹）",
+            "amount": 720000,
+            "basis": "按BIM经理与协调工程师投入及模型整合工作量估算，含专业会签与独立复核节点"
+          },
+          {
+            "item": "现场设计配合与快速响应（江苏乾堪派驻）",
+            "amount": 540000,
+            "basis": "按现场设计代表派驻及响应安排估算，覆盖施工阶段现场配合，具体响应时限在投标文件中明确"
+          },
+          {
+            "item": "组合体联合管理、接口协调与责任协议管理费",
+            "amount": 270000,
+            "basis": "按双方联合管理小组、接口清单维护、设计审查流程与责任协议管理成本估算，反映组合体共享问责的额外协调负担"
+          },
+          {
+            "item": "风险准备金与设计责任保险分摊",
+            "amount": 180000,
+            "basis": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_e5b3adc06c1afa4c712c",
+          "condition_9d20f7142e4d35cf4461",
+          "condition_aebcce8062a6234c57ad",
+          "condition_d7fc94a5f4e8dd6825e6",
+          "condition_529dc07708de13ceb7c4",
+          "condition_e09e81caa81bec2e5d7f",
+          "condition_9d70783989d837ff7a82",
+          "condition_22de2518a987708a304d",
+          "condition_1cdddc7387492339e7a1",
+          "condition_dc0324175763f1007f8a",
+          "condition_2f5af18387cf4d812e9f",
+          "condition_873538f53247141f68de",
+          "condition_7ce7e6311647587b203f"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "组合体伙伴中建五局具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据（按披露假设管理，未书面核实）",
+          "中建五局以书面协议承担总体设计技术主导及相应设计责任，并明确与江苏乾堪的分工、责任边界与费用分摊（按披露假设管理，未书面核实）",
+          "组合体分工、责任边界与费用分摊在投标前以书面协议确认（按披露假设管理，未书面核实）",
+          "江苏乾堪投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划经内部确认（按披露假设管理，未书面核实）",
+          "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+          "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确",
+          "风险准备金与设计责任保险分摊按组合体设计责任风险估算，属暂定成本预留，非已收到供应商报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0206/design",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0206/design_001",
+            "bidder_type": "consortium",
+            "bidder_id": "consortium_CASE-0206/design_001",
+            "bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+            "quotation": 3750000.0,
+            "quotation_breakdown": [
+              {
+                "item": "总体设计协调与业主对接（中建五局主导）",
+                "amount": 1080000,
+                "basis": "按总体设计阶段约6个专业负责人月及设计总负责人部分投入估算，含业主审查会议与总体协调，属组合体主导方费用份额"
+              },
+              {
+                "item": "施工图设计深化与文件纪律（江苏乾堪本地深化）",
+                "amount": 960000,
+                "basis": "按本地施工图深化团队约8人月及文档控制投入估算，含合规接口与图纸校审，属本地深化方费用份额"
+              },
+              {
+                "item": "BIM多专业模型整合与MEP/结构协调（中建五局统筹）",
+                "amount": 720000,
+                "basis": "按BIM经理与协调工程师投入及模型整合工作量估算，含专业会签与独立复核节点"
+              },
+              {
+                "item": "现场设计配合与快速响应（江苏乾堪派驻）",
+                "amount": 540000,
+                "basis": "按现场设计代表派驻及响应安排估算，覆盖施工阶段现场配合，具体响应时限在投标文件中明确"
+              },
+              {
+                "item": "组合体联合管理、接口协调与责任协议管理费",
+                "amount": 270000,
+                "basis": "按双方联合管理小组、接口清单维护、设计审查流程与责任协议管理成本估算，反映组合体共享问责的额外协调负担"
+              },
+              {
+                "item": "风险准备金与设计责任保险分摊",
+                "amount": 180000,
+                "basis": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留"
+              }
+            ],
+            "submission_summary": "中建五局—江苏乾堪酒店综合体设计组合体提交澳门新葡京酒店总体及施工图设计与现场设计配合包报价，总价MOP 3,750,000，在450万MOP上限内。费用构成：总体设计协调与业主对接MOP 1,080,000；施工图设计深化与文件纪律MOP 960,000；BIM多专业模型整合与MEP/结构协调MOP 720,000；现场设计配合与快速响应MOP 540,000；组合体联合管理、接口协调与责任协议管理费MOP 270,000；风险准备金与设计责任保险分摊MOP 180,000。上述分项合计MOP 3,750,000。报价基础反映组合体共享问责的额外协调负担与责任权重匹配的费用份额，中建五局承担总体设计技术主导与设计总责，江苏乾堪承担本地深化与现场配合。组合体协议、接口清单与设计审查流程作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。付款安排按设计阶段里程碑与业主审查节点协商确定。",
+            "unresolved_condition_ids": [
+              "condition_e5b3adc06c1afa4c712c",
+              "condition_9d20f7142e4d35cf4461",
+              "condition_aebcce8062a6234c57ad",
+              "condition_d7fc94a5f4e8dd6825e6",
+              "condition_529dc07708de13ceb7c4",
+              "condition_e09e81caa81bec2e5d7f",
+              "condition_9d70783989d837ff7a82",
+              "condition_22de2518a987708a304d",
+              "condition_1cdddc7387492339e7a1",
+              "condition_dc0324175763f1007f8a",
+              "condition_2f5af18387cf4d812e9f",
+              "condition_873538f53247141f68de",
+              "condition_7ce7e6311647587b203f"
+            ],
+            "bid_assumptions": [
+              "组合体伙伴中建五局具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据（按披露假设管理，未书面核实）",
+              "中建五局以书面协议承担总体设计技术主导及相应设计责任，并明确与江苏乾堪的分工、责任边界与费用分摊（按披露假设管理，未书面核实）",
+              "组合体分工、责任边界与费用分摊在投标前以书面协议确认（按披露假设管理，未书面核实）",
+              "江苏乾堪投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划经内部确认（按披露假设管理，未书面核实）",
+              "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+              "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确",
+              "风险准备金与设计责任保险分摊按组合体设计责任风险估算，属暂定成本预留，非已收到供应商报价"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "1 bids opened for 总体及施工图设计与现场设计配合.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0206/design",
+        "evaluators": [
+          "OWNER-aa9fb4e593b5ca_01_陈志强",
+          "OWNER-aa9fb4e593b5ca_02_李美玲",
+          "OWNER-aa9fb4e593b5ca_03_黄伟明",
+          "OWNER-aa9fb4e593b5ca_04_张丽华",
+          "OWNER-aa9fb4e593b5ca_05_何家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0206/design_001",
+            "bidder_id": "consortium_CASE-0206/design_001",
+            "bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+            "technical_view": "组合体以中建五局主导总体设计与BIM/MEP整合、江苏乾堪负责本地施工图深化与现场配合，分工覆盖本包全部能力需求，但团队可用性摘要与同类深化业绩仅为披露假设、尚未书面核实。",
+            "cost_view": "报价MOP 3,750,000在MOP 4,500,000预算内，分项含总体协调、深化、BIM整合、现场配合、联合管理与风险准备金，费用基础与责任权重匹配，属可信但偏紧的报价。",
+            "owner_control_view": "组合体接受业主审查节点，设内部校审、专业会签与独立复核，业主意见由中建五局统一接收回复，文件版本可追溯，业主审查清晰度较好。",
+            "strengths": [
+              "分工与责任边界清晰，总体设计与本地深化互补",
+              "费用分项与责任权重对应，报价基础可核查",
+              "现场派驻与快速响应安排贴合24个月工期"
+            ],
+            "concerns": [
+              "团队可用性与同类业绩未书面核实，交付信心依赖投标前定稿",
+              "接口清单与责任协议仍为提交前提条件，存在落实风险",
+              "报价空间偏紧，深化阶段若范围扩大可能引发后续调整"
+            ]
+          }
+        ],
+        "comparison_summary": "本包仅收到组合体一份投标，其能力覆盖总体设计协调、施工图深化、BIM整合与现场配合，报价MOP 3,750,000在预算内且分项可核查。主要不确定性在于伙伴可用性与业绩尚未书面核实、接口与责任协议仍待定稿，需在判给前落实。",
+        "recommended_winner": "consortium_CASE-0206/design_001",
+        "owner_review_notes": "组合体方案与业主关注点契合度较高，建议在判给前要求书面确认团队可用性、同类业绩及接口责任协议，并将现场响应时限写入合同。若上述条件无法落实，业主可考虑重新招标。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0206",
+      "package_awards": [
+        {
+          "package_id": "CASE-0206/design",
+          "selected_bidder_id": "consortium_CASE-0206/design_001",
+          "selected_bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+          "bidder_type": "consortium",
+          "decision_reason": "组合体分工清晰、能力覆盖总体设计协调、施工图深化、BIM整合与现场配合，报价MOP 3,750,000在预算内且分项可核查，费用与责任权重匹配，现场派驻安排贴合24个月工期。虽团队可用性与业绩尚未书面核实、接口与责任协议待定稿，但已形成书面框架，可通过判给前澄清聚焦落实，故判给该组合体。",
+          "unresolved_condition_ids": [
+            "condition_e5b3adc06c1afa4c712c",
+            "condition_9d20f7142e4d35cf4461",
+            "condition_aebcce8062a6234c57ad",
+            "condition_d7fc94a5f4e8dd6825e6",
+            "condition_529dc07708de13ceb7c4",
+            "condition_e09e81caa81bec2e5d7f",
+            "condition_9d70783989d837ff7a82",
+            "condition_22de2518a987708a304d",
+            "condition_1cdddc7387492339e7a1",
+            "condition_dc0324175763f1007f8a",
+            "condition_2f5af18387cf4d812e9f",
+            "condition_873538f53247141f68de",
+            "condition_7ce7e6311647587b203f"
+          ],
+          "bid_assumptions": [
+            "组合体伙伴中建五局具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据（按披露假设管理，未书面核实）",
+            "中建五局以书面协议承担总体设计技术主导及相应设计责任，并明确与江苏乾堪的分工、责任边界与费用分摊（按披露假设管理，未书面核实）",
+            "组合体分工、责任边界与费用分摊在投标前以书面协议确认（按披露假设管理，未书面核实）",
+            "江苏乾堪投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划经内部确认（按披露假设管理，未书面核实）",
+            "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+            "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确",
+            "风险准备金与设计责任保险分摊按组合体设计责任风险估算，属暂定成本预留，非已收到供应商报价"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [],
+      "selected_consortiums": [
+        "consortium_CASE-0206/design_001"
+      ],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T15:44:46",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0169",
+          "package_id": "CASE-0206/design",
+          "decision": "bid",
+          "reason": "管理层判断：本包属于公司设计主业范围内的总体及施工图设计与现场配合，公司具备建筑工程设计资质和相应的设计、造价、工程管理能力，当前资源占用为零、可用容量充足，能够作为单一责任投标人独立承担总体设计协调、施工图交付和现场配合。BIM整合、MEP与结构协调、交通接口、能耗目标等属于设计院常规专业协调内容，可通过内部团队与常规专业支持安排解决，不构成需要另一家单位共享投标人身份或设计总责的问责缺口。主要风险在于酒店业主标准高、现场响应要求快、450万MOP报价空间偏紧，这些将通过明确的角色计划、设计审查流程、里程碑进度视图和风险应对安排来管理，并在价格基础中区分总体设计、施工图设计与现场配合的费用构成。项目为本地标志性文旅酒店，战略价值与后续施工机会值得投入，故决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "公司以单一责任投标人身份独立投标，不组建组合体",
+            "BIM、专项工程等窄口径外部支持按常规专业顾问或分包安排，由公司统一管理并承担设计总责",
+            "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+            "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:44:46",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0206/design",
+          "decision": "bid_with_consortium",
+          "reason": "本包要求对13.5万平方米文旅酒店娱乐综合体承担总体及施工图设计并现场配合，核心能力是酒店综合体总体设计协调、BIM多专业模型整合、MEP与结构协调及能耗目标纳入设计。公司资料与团队可用性摘要未能证明我方具备该等酒店综合体设计主导能力，独立投标将出现技术权威与全包设计责任缺口，属于真实的 accountable design lead 缺口，而非普通专项分包可以掩盖。公司资源容量允许参与，且我方在本地施工图深化、现场设计配合、文档纪律与本地合规方面有可用基础，因此以组合体方式参与是诚实且商业上合理的路径：由具备酒店综合体总体设计与多专业整合能力的伙伴承担技术主导与相应设计责任，我方承担本地施工图深化、现场配合与文档质量控制，并在组合体协议中明确分工、责任边界与费用构成。若在投标前无法落实该伙伴及分工安排，则不应提交。",
+          "unresolved_condition_ids": [
+            "condition_e5b3adc06c1afa4c712c",
+            "condition_9d20f7142e4d35cf4461",
+            "condition_aebcce8062a6234c57ad"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "组合体伙伴须具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并在组合体协议中承担技术主导与相应设计责任",
+            "我方在组合体中承担本地施工图深化、现场设计配合、文档与质量控制及本地合规接口",
+            "价格以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项列示费用构成",
+            "组合体分工、责任边界与费用分摊须在投标前以书面协议确认"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:44:58",
+        "event_type": "consortium_formed",
+        "payload": {
+          "consortium_id": "consortium_CASE-0206/design_001",
+          "package_id": "CASE-0206/design"
+        }
+      },
+      {
+        "event_type": "consortium_authorizations",
+        "consortium_id": "consortium_CASE-0206/design_001",
+        "decisions": {
+          "COMP-0169": {
+            "action": "accept",
+            "reason": "作为COMP-0169（中国建筑第五工程局有限公司），本组合体与自身能力定位高度匹配：我方在建筑行业（建筑工程）工程设计、工程总承包与项目管理方面具备业务基础，可在组合体中承担总体设计技术主导与设计总责，包括总体设计协调、业主对接主责、BIM多专业模型整合、MEP与结构协调、能耗目标纳入设计以及施工图深度与文件纪律的最终技术把关。牵头方COMP-0295承担本地施工图深化、现场配合、文档与质量控制及本地合规接口，双方形成能力互补而非同角色竞争。协议已锁定书面分工与责任边界、投标前定稿接口清单与设计审查流程、费用份额与责任权重匹配（MOP计价，450万MOP上限内分项说明）、进度里程碑与风险应对，并设置团队可用性摘要、同类深化业绩与本地合规支持未落实则不提交投标的前置条件，责任对等且风险可控。我方当前可用资源2.0、占用0.0，满足本包0.25的资源要求，故接受该组合体成立条件。"
+          },
+          "COMP-0295": {
+            "action": "accept",
+            "reason": "作为牵头方 COMP-0295，本组合体以书面分工锁定能力互补：中建五局（COMP-0169）承担总体设计技术主导与设计总责，填补我方在酒店综合体总体设计技术权威与全包设计责任上的真实缺口；我方承担本地施工图深化、现场配合、文档与质量控制及本地合规接口，与自身可用基础匹配。协议将接口清单、设计审查流程与责任协议设为投标前定稿条件，费用份额与责任权重匹配且报价控制在450万MOP上限内，并保留未落实团队可用性摘要、同类深化业绩或本地合规支持即不投标的退出条件，责任对等、风险可控，故接受所给条款、资源与义务。接受所附条件：投标前定稿接口清单、设计审查流程与责任协议；中建五局书面落实团队可用性摘要、同类深化业绩与本地合规支持；费用份额按总体设计、施工图设计与现场配合分项说明，总额不超过450万MOP；任一方未按书面条件落实即不提交投标。"
+          }
+        },
+        "terms_sha256": "844d4626f539faee3b7f0df008b56d596305fbc4c7a55c313127b7f76e8c30ff",
+        "negotiation_id": "SIMEC711881/CASE-0206/design/round-1/consortium/consortium_CASE-0206/design_001"
+      },
+      {
+        "timestamp": "2026-11-19T15:45:10",
+        "event_type": "internal_condition_review",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0206/design",
+          "outcomes": [
+            {
+              "condition_id": "condition_e5b3adc06c1afa4c712c",
+              "question": "是否已落实具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力、并愿意共担设计责任的组合体伙伴，且签署书面分工与责任协议？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未列出任何组合体伙伴，也没有签署的书面分工与责任协议，因此该伙伴安排属于未落实的未知项。"
+            },
+            {
+              "condition_id": "condition_d7fc94a5f4e8dd6825e6",
+              "question": "中国建筑第五工程局有限公司是否具备文旅酒店娱乐综合体总体设计与BIM、MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录未提及中国建筑第五工程局有限公司，也没有其文旅酒店娱乐综合体总体设计与BIM、MEP整合能力或团队可用性摘要、角色计划与交付方法。"
+            },
+            {
+              "condition_id": "condition_529dc07708de13ceb7c4",
+              "question": "中国建筑第五工程局有限公司是否愿意以书面协议承担总体设计技术主导及相应设计责任，并明确与我方的分工、责任边界与费用分摊？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有中国建筑第五工程局有限公司的书面承诺，也没有分工、责任边界与费用分摊协议。"
+            },
+            {
+              "condition_id": "condition_9d70783989d837ff7a82",
+              "question": "要求中建五局书面确认总体设计主导角色、团队可用性与责任共担，并签署分工与责任协议；未落实前不提交",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有中国建筑第五工程局有限公司关于总体设计主导角色、团队可用性与责任共担的书面确认，也没有签署的分工与责任协议。"
+            },
+            {
+              "condition_id": "condition_22de2518a987708a304d",
+              "question": "中建五局是否书面确认承担本包总体设计主导与BIM、MEP多专业整合角色，并提供团队可用性摘要与角色计划？",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有中国建筑第五工程局有限公司关于承担总体设计主导与BIM、MEP多专业整合角色的书面确认，也没有团队可用性摘要与角色计划。"
+            },
+            {
+              "condition_id": "condition_dc0324175763f1007f8a",
+              "question": "要求中建五局书面确认总体设计主导角色、团队可用性摘要与责任共担，并签署分工与费用协议；未落实前不提交",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有中国建筑第五工程局有限公司关于总体设计主导角色、团队可用性摘要与责任共担的书面确认，也没有签署的分工与费用协议。"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:45:24",
+        "event_type": "internal_condition_review",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0206/design",
+          "outcomes": [
+            {
+              "condition_id": "condition_7ce7e6311647587b203f",
+              "question": "若伙伴书面条件未能落实，组合体不提交投标",
+              "finding": "not_in_record",
+              "disposition": "proceed_as_disclosed_assumption",
+              "status": "assumed",
+              "source_ids": [],
+              "note": "情景记录中没有关于伙伴书面条件或组合体安排的任何文件，因此无法确认该前提是否已落实。"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:45:24",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0206/design",
+          "bidder_id": "consortium_CASE-0206/design_001"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:45:24",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0206/design",
+          "opened_bid_count": 1
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:45:27",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0206/design",
+          "recommended_winner": "consortium_CASE-0206/design_001"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T15:45:31",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0206/design",
+          "selected_bidder_id": "consortium_CASE-0206/design_001"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-aa9fb4e593b5ca": {
+            "action": "accept",
+            "reason": "The bid from consortium_CASE-0206/design_001 (lead COMP-0295, members COMP-0169 and COMP-0295) is within the MOP 4,500,000 package budget at MOP 3,750,000, matches the package scope of overall and construction drawing design plus on-site design coordination, and its 24-month schedule aligns with the project duration. Work shares (COMP-0169 0.6, COMP-0295 0.4) and resource commitments (COMP-0169 0.15, COMP-0295 0.1) are consistent with the package resource requirement of 0.25. The disclosed bid assumptions are accepted as proposed risk allocations: the consortium bears the risk that partner availability summaries and comparable deepening track records are not yet verified in writing, and the consortium's own stated precondition that the interface list and responsibility agreement be finalized in writing before submission is a condition on the bidder, not on the owner. As buyer, I decide the following for the next draft: the fixed price of MOP 3,750,000 is inclusive of all six quotation breakdown items and no additional charges will be accepted outside that total; payment will be tied to design-stage milestones and owner review nodes as proposed, with the specific milestone payment percentages to be fixed in the contract schedule; owner review periods are set at 15 working days per submission, with one consolidated round of comments per stage; and the on-site design representative response time is set at 48 hours for urgent construction queries and 5 working days for non-urgent matters. These decisions are recorded here so they can be written into the next draft. No unresolved condition blocks acceptance at this stage, and this acceptance authorizes executable simulation obligations only, not a claim that future engineering deliverables or statutory approvals have already occurred."
+          },
+          "COMP-0169": {
+            "action": "accept",
+            "reason": "作为联合体成员 COMP-0169，我方确认接受本草案的全部条款、资源承诺与义务：我方承担 0.15 的归一化企业能力投入与 0.6 的工作份额，与联合体牵头方 COMP-0295 的分工、责任边界和费用分摊一致。报价 MOP 3,750,000 在 450 万 MOP 上限内，分项构成与责任权重匹配。关于我方自身立场，现作出以下决定，供写入下一稿：第一，我方确认报价为固定总价，涵盖总体设计协调与业主对接、BIM 多专业模型整合与 MEP/结构协调、以及技术后援等全部我方工作份额，业主审查意见的常规回复与一次修改不另行计费；超出原定范围的新增工作按变更程序另行计价。第二，计量与付款以设计阶段里程碑和业主审查节点为基础，按我方 0.6 工作份额分期支付，总体设计评审、施工图交付、BIM 模型整合审查、现场配合启动各节点对应比例在签约时明确。第三，业主审查周期按每轮不超过 15 个工作日设定，审查超期导致的工期顺延不计入我方进度责任。第四，披露的投标假设（团队可用性摘要与同类深化业绩尚未书面核实、接口清单与责任协议投标前定稿）作为风险分配接受，我方将在投标前以书面协议落实联合体分工与责任边界。上述内容不改变价格、币种、范围、成员与资源等既定字段。"
+          },
+          "COMP-0295": {
+            "action": "accept",
+            "reason": "作为牵头方 COMP-0295，本组合体已就本包条款达成一致：报价 MOP 3,750,000 在 450 万 MOP 预算内，成员为 COMP-0169 与 COMP-0295，资源承诺为 COMP-0169 0.15、COMP-0295 0.1，工作份额为 COMP-0169 0.6、COMP-0295 0.4，均在授权情景能力范围内。已披露的投标假设（伙伴团队可用性摘要与同类深化业绩尚未书面核实、接口清单与责任协议需投标前定稿）按风险分配接受，并已通过风险准备金与联合管理机制覆盖，不视为缺失证据。本阶段仅授权可执行的模拟义务，未来设计交付与法定审批作为带审查与验收条件的义务处理。我方对自身立场作出如下决定并请写入下一稿：现场设计配合响应时限为收到施工问题后 2 个工作日内初步答复、5 个工作日内提交处理方案；付款按设计阶段里程碑与业主审查节点支付，总体设计审查通过付 30%、施工图交付付 40%、施工图审查通过付 20%、现场配合期结束付 10%。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+          "simulation_id": "SIMEC711881",
+          "project_id": "CASE-0206",
+          "package_id": "CASE-0206/design",
+          "session_id": "SIMEC711881/CASE-0206/design/round-1",
+          "snapshot_version": "fc6636039471e4b452ccee5120970d3ac8cc391d93a26c84057eaf325e49b974",
+          "buyer_id": "OWNER-aa9fb4e593b5ca",
+          "bid_id": "bid_CASE-0206/design_001",
+          "bidder_id": "consortium_CASE-0206/design_001",
+          "lead_id": "COMP-0295",
+          "members": [
+            "COMP-0169",
+            "COMP-0295"
+          ],
+          "price": 3750000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0169": 0.15,
+            "COMP-0295": 0.1
+          },
+          "work_shares": {
+            "COMP-0169": 0.6,
+            "COMP-0295": 0.4
+          },
+          "signatures": {},
+          "signed_terms_hash": "98b93d2a24ee83e9c261608f5aa4d19585c343d792f83f298b827f8c452e8fe7",
+          "terms": {
+            "schedule_commitment": "组合体承诺按项目24个月工期完成总体及施工图设计与现场设计配合。总体设计深化与业主审查在第1至4月完成；施工图设计（含BIM整合）在第5至10月完成；施工图审查与修改在第11至12月完成；现场设计配合自第13月起至第24月项目结束。关键里程碑按业主审查节点设置，组合体联合管理小组每月检查进度，确保设计交付与现场配合不延误。",
+            "risk_response": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）。组合体将联合管理小组作为风险应对协调机制，每月评估风险状态并调整资源。若伙伴书面条件未能落实，组合体不提交投标。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0206/design_001",
+              "package_id": "CASE-0206/design",
+              "bidder_type": "consortium",
+              "bidder_id": "consortium_CASE-0206/design_001",
+              "bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+              "technical_proposal": "本组合体以中建五局（COMP-0169）为总体设计技术主导与设计总责方，江苏乾堪（COMP-0295）为本地施工图深化、现场配合与文档质量控制方，共同承担澳门新葡京酒店13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场设计配合。技术方案围绕业主关注点组织：总体设计协调由中建五局设计总负责人牵头，建立业主对接主责与专业接口清单；施工图设计深度与文件纪律由双方联合校审，江苏乾堪负责本地深化与合规接口；BIM协同采用统一模型标准与多专业整合流程，由中建五局BIM经理统筹，江苏乾堪负责本地模型维护与现场反馈；MEP与结构协调通过定期专业会签与独立复核节点控制；交通接口与公共访问布局纳入总体设计协调范围；能耗使用目标与耐久性、可维护性设计考量作为设计控制要点纳入各阶段审查。现场设计配合由江苏乾堪派驻现场设计代表，按约定响应时限快速处理施工问题，中建五局提供技术后援。组合体已就接口清单、设计审查流程与责任协议形成书面框架，作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。",
+              "implementation_plan": "设计进度视图匹配项目24个月工期：第1至4月完成总体设计深化与业主审查；第5至10月完成施工图设计（含BIM多专业整合与专业会签）；第11至12月完成施工图审查与修改；第13至24月为现场设计配合期，江苏乾堪派驻现场设计代表，中建五局按需提供技术支援。关键里程碑包括总体设计评审、施工图交付、BIM模型整合审查、现场配合启动。组合体管理方面，设立联合设计管理小组，中建五局任组长，江苏乾堪任副组长，每月召开接口协调会，按接口清单与设计审查流程执行。费用分摊与责任权重匹配，中建五局承担总体设计主导与BIM/MEP整合费用份额，江苏乾堪承担本地深化与现场配合费用份额。",
+              "quotation": 3750000.0,
+              "schedule_commitment": "组合体承诺按项目24个月工期完成总体及施工图设计与现场设计配合。总体设计深化与业主审查在第1至4月完成；施工图设计（含BIM整合）在第5至10月完成；施工图审查与修改在第11至12月完成；现场设计配合自第13月起至第24月项目结束。关键里程碑按业主审查节点设置，组合体联合管理小组每月检查进度，确保设计交付与现场配合不延误。",
+              "compliance_statement": "组合体接受业主对设计过程的审查与控制，按业主审查节点提交总体设计、施工图及BIM模型成果。设计审查流程包括内部校审、专业会签与独立复核，业主审查意见由中建五局统一接收并组织回复，江苏乾堪负责本地深化部分的修改与合规接口。文件纪律方面，双方执行统一的文档控制程序，版本管理与交付记录可追溯。现场配合响应按约定时限执行，江苏乾堪现场代表每日记录并每周向业主报告。组合体理解业主对质量目标与能耗使用目标的关注，将相关要求纳入设计控制要点。",
+              "risk_response": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）。组合体将联合管理小组作为风险应对协调机制，每月评估风险状态并调整资源。若伙伴书面条件未能落实，组合体不提交投标。",
+              "submission_summary": "中建五局—江苏乾堪酒店综合体设计组合体提交澳门新葡京酒店总体及施工图设计与现场设计配合包报价，总价MOP 3,750,000，在450万MOP上限内。费用构成：总体设计协调与业主对接MOP 1,080,000；施工图设计深化与文件纪律MOP 960,000；BIM多专业模型整合与MEP/结构协调MOP 720,000；现场设计配合与快速响应MOP 540,000；组合体联合管理、接口协调与责任协议管理费MOP 270,000；风险准备金与设计责任保险分摊MOP 180,000。上述分项合计MOP 3,750,000。报价基础反映组合体共享问责的额外协调负担与责任权重匹配的费用份额，中建五局承担总体设计技术主导与设计总责，江苏乾堪承担本地深化与现场配合。组合体协议、接口清单与设计审查流程作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。付款安排按设计阶段里程碑与业主审查节点协商确定。",
+              "quotation_breakdown": [
+                {
+                  "item": "总体设计协调与业主对接（中建五局主导）",
+                  "amount": 1080000,
+                  "basis": "按总体设计阶段约6个专业负责人月及设计总负责人部分投入估算，含业主审查会议与总体协调，属组合体主导方费用份额"
+                },
+                {
+                  "item": "施工图设计深化与文件纪律（江苏乾堪本地深化）",
+                  "amount": 960000,
+                  "basis": "按本地施工图深化团队约8人月及文档控制投入估算，含合规接口与图纸校审，属本地深化方费用份额"
+                },
+                {
+                  "item": "BIM多专业模型整合与MEP/结构协调（中建五局统筹）",
+                  "amount": 720000,
+                  "basis": "按BIM经理与协调工程师投入及模型整合工作量估算，含专业会签与独立复核节点"
+                },
+                {
+                  "item": "现场设计配合与快速响应（江苏乾堪派驻）",
+                  "amount": 540000,
+                  "basis": "按现场设计代表派驻及响应安排估算，覆盖施工阶段现场配合，具体响应时限在投标文件中明确"
+                },
+                {
+                  "item": "组合体联合管理、接口协调与责任协议管理费",
+                  "amount": 270000,
+                  "basis": "按双方联合管理小组、接口清单维护、设计审查流程与责任协议管理成本估算，反映组合体共享问责的额外协调负担"
+                },
+                {
+                  "item": "风险准备金与设计责任保险分摊",
+                  "amount": 180000,
+                  "basis": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_e5b3adc06c1afa4c712c",
+                "condition_9d20f7142e4d35cf4461",
+                "condition_aebcce8062a6234c57ad",
+                "condition_d7fc94a5f4e8dd6825e6",
+                "condition_529dc07708de13ceb7c4",
+                "condition_e09e81caa81bec2e5d7f",
+                "condition_9d70783989d837ff7a82",
+                "condition_22de2518a987708a304d",
+                "condition_1cdddc7387492339e7a1",
+                "condition_dc0324175763f1007f8a",
+                "condition_2f5af18387cf4d812e9f",
+                "condition_873538f53247141f68de",
+                "condition_7ce7e6311647587b203f"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "组合体伙伴中建五局具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据（按披露假设管理，未书面核实）",
+                "中建五局以书面协议承担总体设计技术主导及相应设计责任，并明确与江苏乾堪的分工、责任边界与费用分摊（按披露假设管理，未书面核实）",
+                "组合体分工、责任边界与费用分摊在投标前以书面协议确认（按披露假设管理，未书面核实）",
+                "江苏乾堪投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划经内部确认（按披露假设管理，未书面核实）",
+                "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+                "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确",
+                "风险准备金与设计责任保险分摊按组合体设计责任风险估算，属暂定成本预留，非已收到供应商报价"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "总体及施工图设计与现场设计配合",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "98b93d2a24ee83e9c261608f5aa4d19585c343d792f83f298b827f8c452e8fe7"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0206/design": {
+          "package_type": "design",
+          "required_company_role": "designer",
+          "scope": "总体及施工图设计与现场设计配合",
+          "budget": 4500000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-aa9fb4e593b5ca"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "internal_condition_review": true,
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {
+      "condition_e5b3adc06c1afa4c712c": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未列出任何组合体伙伴，也没有签署的书面分工与责任协议，因此该伙伴安排属于未落实的未知项。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "61f7f5b9c4875c338700ce81a9fd303a0c34de0d43266127765db9b8b6a091c9"
+      },
+      "condition_d7fc94a5f4e8dd6825e6": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录未提及中国建筑第五工程局有限公司，也没有其文旅酒店娱乐综合体总体设计与BIM、MEP整合能力或团队可用性摘要、角色计划与交付方法。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "f8d272865dcf3c9ce47fd53f4463b1b19b5eb8cd6fb67a4f4704671dc5f3e0dd"
+      },
+      "condition_529dc07708de13ceb7c4": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有中国建筑第五工程局有限公司的书面承诺，也没有分工、责任边界与费用分摊协议。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "ee87a83431e5fc446103631430780202457b52385e3e1b292d106b463823899b"
+      },
+      "condition_9d70783989d837ff7a82": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有中国建筑第五工程局有限公司关于总体设计主导角色、团队可用性与责任共担的书面确认，也没有签署的分工与责任协议。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "59c74db1a3d5e02e35173c20fdbf00481dd89a2a81a611f6911ac67ab7cd29f1"
+      },
+      "condition_22de2518a987708a304d": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有中国建筑第五工程局有限公司关于承担总体设计主导与BIM、MEP多专业整合角色的书面确认，也没有团队可用性摘要与角色计划。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "127fbaaa47223f0bdee731d37e4c915fb66e73005aeaeb5dbed865d01567de9c"
+      },
+      "condition_dc0324175763f1007f8a": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有中国建筑第五工程局有限公司关于总体设计主导角色、团队可用性摘要与责任共担的书面确认，也没有签署的分工与费用协议。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "869c31f27e0dd44597d9051a268fae540e98e6a3aeded11487778637c559626b"
+      },
+      "condition_7ce7e6311647587b203f": {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0206/design",
+        "status": "assumed",
+        "source_ref": "scenario-record:silent",
+        "source_text": "No source item in the scenario record answers this question. 情景记录中没有关于伙伴书面条件或组合体安排的任何文件，因此无法确认该前提是否已落实。",
+        "reviewer": "simulated-internal-review-desk",
+        "source_sha256": "da30dff9779fe634d8e5ed6f13f157c735ccfe31c6757bc2c9378fca45eeb3a4"
+      }
+    }
+  },
+  "proposal": {
+    "proposal_id": "SIMEC711881/CASE-0206/design/round-1/contract",
+    "simulation_id": "SIMEC711881",
+    "project_id": "CASE-0206",
+    "package_id": "CASE-0206/design",
+    "session_id": "SIMEC711881/CASE-0206/design/round-1",
+    "snapshot_version": "fc6636039471e4b452ccee5120970d3ac8cc391d93a26c84057eaf325e49b974",
+    "buyer_id": "OWNER-aa9fb4e593b5ca",
+    "bid_id": "bid_CASE-0206/design_001",
+    "bidder_id": "consortium_CASE-0206/design_001",
+    "lead_id": "COMP-0295",
+    "members": [
+      "COMP-0169",
+      "COMP-0295"
+    ],
+    "price": 3750000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0169": 0.15,
+      "COMP-0295": 0.1
+    },
+    "work_shares": {
+      "COMP-0169": 0.6,
+      "COMP-0295": 0.4
+    },
+    "signatures": {
+      "OWNER-aa9fb4e593b5ca": true,
+      "COMP-0169": true,
+      "COMP-0295": true
+    },
+    "signed_terms_hash": "98b93d2a24ee83e9c261608f5aa4d19585c343d792f83f298b827f8c452e8fe7",
+    "terms": {
+      "schedule_commitment": "组合体承诺按项目24个月工期完成总体及施工图设计与现场设计配合。总体设计深化与业主审查在第1至4月完成；施工图设计（含BIM整合）在第5至10月完成；施工图审查与修改在第11至12月完成；现场设计配合自第13月起至第24月项目结束。关键里程碑按业主审查节点设置，组合体联合管理小组每月检查进度，确保设计交付与现场配合不延误。",
+      "risk_response": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）。组合体将联合管理小组作为风险应对协调机制，每月评估风险状态并调整资源。若伙伴书面条件未能落实，组合体不提交投标。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0206/design_001",
+        "package_id": "CASE-0206/design",
+        "bidder_type": "consortium",
+        "bidder_id": "consortium_CASE-0206/design_001",
+        "bidder_name": "中建五局—江苏乾堪酒店综合体设计组合体",
+        "technical_proposal": "本组合体以中建五局（COMP-0169）为总体设计技术主导与设计总责方，江苏乾堪（COMP-0295）为本地施工图深化、现场配合与文档质量控制方，共同承担澳门新葡京酒店13.5万平方米文旅酒店娱乐综合体的总体及施工图设计与现场设计配合。技术方案围绕业主关注点组织：总体设计协调由中建五局设计总负责人牵头，建立业主对接主责与专业接口清单；施工图设计深度与文件纪律由双方联合校审，江苏乾堪负责本地深化与合规接口；BIM协同采用统一模型标准与多专业整合流程，由中建五局BIM经理统筹，江苏乾堪负责本地模型维护与现场反馈；MEP与结构协调通过定期专业会签与独立复核节点控制；交通接口与公共访问布局纳入总体设计协调范围；能耗使用目标与耐久性、可维护性设计考量作为设计控制要点纳入各阶段审查。现场设计配合由江苏乾堪派驻现场设计代表，按约定响应时限快速处理施工问题，中建五局提供技术后援。组合体已就接口清单、设计审查流程与责任协议形成书面框架，作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。",
+        "implementation_plan": "设计进度视图匹配项目24个月工期：第1至4月完成总体设计深化与业主审查；第5至10月完成施工图设计（含BIM多专业整合与专业会签）；第11至12月完成施工图审查与修改；第13至24月为现场设计配合期，江苏乾堪派驻现场设计代表，中建五局按需提供技术支援。关键里程碑包括总体设计评审、施工图交付、BIM模型整合审查、现场配合启动。组合体管理方面，设立联合设计管理小组，中建五局任组长，江苏乾堪任副组长，每月召开接口协调会，按接口清单与设计审查流程执行。费用分摊与责任权重匹配，中建五局承担总体设计主导与BIM/MEP整合费用份额，江苏乾堪承担本地深化与现场配合费用份额。",
+        "quotation": 3750000.0,
+        "schedule_commitment": "组合体承诺按项目24个月工期完成总体及施工图设计与现场设计配合。总体设计深化与业主审查在第1至4月完成；施工图设计（含BIM整合）在第5至10月完成；施工图审查与修改在第11至12月完成；现场设计配合自第13月起至第24月项目结束。关键里程碑按业主审查节点设置，组合体联合管理小组每月检查进度，确保设计交付与现场配合不延误。",
+        "compliance_statement": "组合体接受业主对设计过程的审查与控制，按业主审查节点提交总体设计、施工图及BIM模型成果。设计审查流程包括内部校审、专业会签与独立复核，业主审查意见由中建五局统一接收并组织回复，江苏乾堪负责本地深化部分的修改与合规接口。文件纪律方面，双方执行统一的文档控制程序，版本管理与交付记录可追溯。现场配合响应按约定时限执行，江苏乾堪现场代表每日记录并每周向业主报告。组合体理解业主对质量目标与能耗使用目标的关注，将相关要求纳入设计控制要点。",
+        "risk_response": "主要风险包括：组合体伙伴团队可用性摘要与同类深化业绩尚未书面核实（按披露假设管理，已在报价中计入风险准备金）；接口清单与责任协议需投标前定稿（组合体已形成书面框架，作为提交前提）；酒店业主标准高、现场响应要求快（通过派驻现场代表与快速响应安排管理）；450万MOP报价空间偏紧（通过费用分项与责任权重匹配控制）。组合体将联合管理小组作为风险应对协调机制，每月评估风险状态并调整资源。若伙伴书面条件未能落实，组合体不提交投标。",
+        "submission_summary": "中建五局—江苏乾堪酒店综合体设计组合体提交澳门新葡京酒店总体及施工图设计与现场设计配合包报价，总价MOP 3,750,000，在450万MOP上限内。费用构成：总体设计协调与业主对接MOP 1,080,000；施工图设计深化与文件纪律MOP 960,000；BIM多专业模型整合与MEP/结构协调MOP 720,000；现场设计配合与快速响应MOP 540,000；组合体联合管理、接口协调与责任协议管理费MOP 270,000；风险准备金与设计责任保险分摊MOP 180,000。上述分项合计MOP 3,750,000。报价基础反映组合体共享问责的额外协调负担与责任权重匹配的费用份额，中建五局承担总体设计技术主导与设计总责，江苏乾堪承担本地深化与现场配合。组合体协议、接口清单与设计审查流程作为投标前定稿条件；团队可用性摘要与同类深化业绩按披露假设管理，未作为已核实事实。付款安排按设计阶段里程碑与业主审查节点协商确定。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计协调与业主对接（中建五局主导）",
+            "amount": 1080000,
+            "basis": "按总体设计阶段约6个专业负责人月及设计总负责人部分投入估算，含业主审查会议与总体协调，属组合体主导方费用份额"
+          },
+          {
+            "item": "施工图设计深化与文件纪律（江苏乾堪本地深化）",
+            "amount": 960000,
+            "basis": "按本地施工图深化团队约8人月及文档控制投入估算，含合规接口与图纸校审，属本地深化方费用份额"
+          },
+          {
+            "item": "BIM多专业模型整合与MEP/结构协调（中建五局统筹）",
+            "amount": 720000,
+            "basis": "按BIM经理与协调工程师投入及模型整合工作量估算，含专业会签与独立复核节点"
+          },
+          {
+            "item": "现场设计配合与快速响应（江苏乾堪派驻）",
+            "amount": 540000,
+            "basis": "按现场设计代表派驻及响应安排估算，覆盖施工阶段现场配合，具体响应时限在投标文件中明确"
+          },
+          {
+            "item": "组合体联合管理、接口协调与责任协议管理费",
+            "amount": 270000,
+            "basis": "按双方联合管理小组、接口清单维护、设计审查流程与责任协议管理成本估算，反映组合体共享问责的额外协调负担"
+          },
+          {
+            "item": "风险准备金与设计责任保险分摊",
+            "amount": 180000,
+            "basis": "按组合体设计责任风险与保险安排估算，含团队可用性摘要与同类业绩尚未书面核实所对应的管理预留"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_e5b3adc06c1afa4c712c",
+          "condition_9d20f7142e4d35cf4461",
+          "condition_aebcce8062a6234c57ad",
+          "condition_d7fc94a5f4e8dd6825e6",
+          "condition_529dc07708de13ceb7c4",
+          "condition_e09e81caa81bec2e5d7f",
+          "condition_9d70783989d837ff7a82",
+          "condition_22de2518a987708a304d",
+          "condition_1cdddc7387492339e7a1",
+          "condition_dc0324175763f1007f8a",
+          "condition_2f5af18387cf4d812e9f",
+          "condition_873538f53247141f68de",
+          "condition_7ce7e6311647587b203f"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "组合体伙伴中建五局具备文旅酒店娱乐综合体总体设计与BIM/MEP多专业整合能力，并提供团队可用性摘要、角色计划与交付方法作为依据（按披露假设管理，未书面核实）",
+          "中建五局以书面协议承担总体设计技术主导及相应设计责任，并明确与江苏乾堪的分工、责任边界与费用分摊（按披露假设管理，未书面核实）",
+          "组合体分工、责任边界与费用分摊在投标前以书面协议确认（按披露假设管理，未书面核实）",
+          "江苏乾堪投入本包的总体设计协调、施工图深化与现场配合人员的可用性摘要与角色计划经内部确认（按披露假设管理，未书面核实）",
+          "报价以MOP计，在450万MOP上限内按总体设计、施工图设计与现场配合分项构成",
+          "现场配合响应安排按项目24个月工期设定，具体响应时限在投标文件中明确",
+          "风险准备金与设计责任保险分摊按组合体设计责任风险估算，属暂定成本预留，非已收到供应商报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "总体及施工图设计与现场设计配合",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

@@ -1,0 +1,2155 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM61A2AE2A/CASE-0006/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIM61A2AE2A",
+    "project_id": "CASE-0006",
+    "package_id": "CASE-0006/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 52500000.0,
+      "project": {
+        "project_id": "CASE-0006",
+        "name": "澳氹第四条跨海大桥起止点周边路网建造工程 - A区东轴线 - 第1期工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；范围面积约32,000平方米；澳氹第四条跨海大桥起止点周边路网建造工程 - A区东轴线 - 第1期工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0006/construction-2",
+        "project_id": "CASE-0006",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "A区东轴线排水及地下管线工程包",
+        "scope": "范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+        "budget": 52500000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0006/design",
+          "CASE-0006/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0494",
+          "COMP-0025"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0006",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM61A2AE2A/CASE-0006/cost/round-1/contract",
+              "project_id": "CASE-0006",
+              "package_id": "CASE-0006/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 1920000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIM61A2AE2A/CASE-0006/design/round-1/contract",
+              "project_id": "CASE-0006",
+              "package_id": "CASE-0006/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM61A2AE2A/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0006",
+            "package_id": "CASE-0006/design",
+            "contract_id": "SIM61A2AE2A/CASE-0006/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 4000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM61A2AE2A/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0006",
+            "package_id": "CASE-0006/cost",
+            "contract_id": "SIM61A2AE2A/CASE-0006/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0208"
+            ],
+            "price": 1920000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM61A2AE2A/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0006",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIM61A2AE2A/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0006",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0494": {
+        "entity_id": "COMP-0494",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0494",
+          "company_name": "得寶國際-得寶建築合作經營",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0494",
+          "name": "得寶國際-得寶建築合作經營",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "73c720e5d3ca666b4e3d4dbc44a93cb49ae605d2a200603e35cf93682f501679"
+  },
+  "spec": {
+    "package_id": "CASE-0006/construction-2",
+    "project_id": "CASE-0006",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "A区东轴线排水及地下管线工程包",
+    "scope": "范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+    "budget": 52500000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0006/design",
+      "CASE-0006/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0494",
+      "COMP-0025"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0006",
+      "project_name": "澳氹第四条跨海大桥起止点周边路网建造工程 - A区东轴线 - 第1期工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；范围面积约32,000平方米；澳氹第四条跨海大桥起止点周边路网建造工程 - A区东轴线 - 第1期工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0006",
+      "project_scope": "本项目为澳门交通基础设施工程，范围面积约32,000平方米，属澳氹第四条跨海大桥起止点周边路网建造工程 - A区东轴线 - 第1期工程。本次业主模拟采购聚焦已授权的单一施工招标包：A区东轴线排水及地下管线工程包（CASE-0006/construction-2），内容包括范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。业主以DBB模式推进，设计包与造价咨询包已判给，施工包须在设计与造价成果基础上衔接，范围及预算变动须经宏观审批。",
+      "functional_requirements": [
+        "完成范围内雨水与污水排水管网施工，满足设计流量与排放接驳要求。",
+        "完成检查井、地下管沟及与道路衔接的管线预埋施工，确保与后续路面、路基及交通机电系统接口预留准确。",
+        "施工期间维持周边公共通行与排水功能，落实临时导流与公共安全措施。",
+        "按设计及造价咨询成果控制工程量与变更，确保施工范围与已判给设计包、造价包边界一致。",
+        "提供完整的竣工资料、管线记录及维护移交信息，支持后续运营维护。"
+      ],
+      "technical_requirements": [
+        "BIM协调：施工包须与设计包模型衔接，提交排水管网及地下管沟的施工深化模型与碰撞检查记录。",
+        "MEP协调：管线预埋须与交通机电系统预留接口协调，明确标高、位置及保护要求。",
+        "结构协调：检查井、管沟与道路结构衔接处须满足结构安全与沉降控制要求。",
+        "交通接口布局：施工组织须考虑与跨海大桥起止点周边路网的交通接口及临时改道安排。",
+        "公共通行布局：施工围挡、临时行人通道及作业时段须兼顾公众可达性与安全。",
+        "耐久性目标：排水管网及地下结构须满足设计使用年限及澳门环境条件下的耐久性要求。",
+        "可维护性目标：检查井、管沟及管线布置须便于检查、清疏及更换。",
+        "业主验收路径：分项验收、隐蔽工程验收及竣工移交须按业主审查节点逐项签认。",
+        "能耗使用目标：施工期临时用电、抽排水及设备运行须符合项目节能与环保目标。"
+      ],
+      "budget_policy": "本施工包预算为MOP 52,500,000，属业主额外成本纳入。业主以设计包与造价咨询包成果为报价基础，要求投标人按统一工程量清单及价格基准报价，并说明主要材料、人工及施工措施费构成。评标时业主代理将综合比较报价合理性、风险控制与交付信心，不以最低价作为唯一判据。范围或预算变动须经宏观审批，变更计价按合同及造价咨询意见处理。",
+      "schedule_policy": "总工期24个月，施工包须在设计与造价成果移交后按里程碑推进。业主审查时间、设计包与施工包接口时间、公共通行协调时间均须纳入进度计划。投标人须提交里程碑进度视图，说明排水管网、检查井、管沟及管线预埋的施工顺序与关键路径，并预留业主审查及接口确认时间。工期延误须及时报告并提交赶工或调整方案。",
+      "compliance_requirements": [
+        "业主审查节奏：按月度进度会与关键节点审查会跟踪施工包进展。",
+        "问题升级路径：现场问题须按承包商→监理→业主代表逐级升级，重大事项提交业主决策。",
+        "文档纪律：施工记录、隐蔽验收、材料证明及变更文件须完整归档并可追溯。",
+        "接口签认：与设计包、造价包及后续路面、机电包的接口须经业主代表签认。",
+        "公共通行协调：施工围挡、临时通道及作业时间须与业主及相关公共部门协调。",
+        "质量目标跟踪：按分项工程设定质量目标并定期核查整改闭环。",
+        "安全期望跟踪：施工安全措施及事故报告须纳入业主定期审查。",
+        "变更控制纪律：范围、预算及工期变更须按DBB合同及宏观审批要求执行。"
+      ],
+      "risk_priorities": [
+        "排水管网与既有地下管线冲突风险，须施工前探测并协调迁改。",
+        "公共通行与交通接口协调风险，须提前与业主及相关方沟通临时安排。",
+        "雨季施工及基坑排水风险，须制定临时排水与防汛措施。",
+        "设计与施工接口偏差风险，须通过BIM协调及接口签认控制。",
+        "材料价格与人工价格波动风险，须在报价中说明价格基准及风险应对。",
+        "范围与预算变更审批风险，须严格按宏观审批程序执行。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0006/construction-2",
+          "package_type": "contractor",
+          "package_name": "A区东轴线排水及地下管线工程包",
+          "scope": "Authorized scope: 范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。\nBuyer refinement: 范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "城市排水管网施工能力",
+            "地下管沟及检查井施工能力",
+            "城市施工物流与交通疏解能力",
+            "BIM施工深化协调能力",
+            "MEP接口协调能力",
+            "质量文档管理能力",
+            "公共通行协调能力",
+            "安全期望跟踪能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "施工方法与交付方案",
+            "质量保证方案",
+            "价格基准与报价构成",
+            "进度视图与里程碑计划",
+            "风险应对方案"
+          ],
+          "pricing_requirements": "按统一工程量清单报价，说明主要材料、人工、施工措施及临时工程费用构成，报价以MOP计。\nBinding currency: MOP; package ceiling: 52500000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公共通行协调"
+          ],
+          "owner_decision_policy": "业主代理将综合比较投标人的能力匹配、价格合理性、风险控制与交付信心，结合人员配置现实性与文档纪律作出定性判断，不以最低价作为唯一判据。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0006/construction-2",
+        "package_type": "contractor",
+        "package_name": "A区东轴线排水及地下管线工程包",
+        "scope": "Authorized scope: 范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。\nBuyer refinement: 范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "城市排水管网施工能力",
+          "地下管沟及检查井施工能力",
+          "城市施工物流与交通疏解能力",
+          "BIM施工深化协调能力",
+          "MEP接口协调能力",
+          "质量文档管理能力",
+          "公共通行协调能力",
+          "安全期望跟踪能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "施工方法与交付方案",
+          "质量保证方案",
+          "价格基准与报价构成",
+          "进度视图与里程碑计划",
+          "风险应对方案"
+        ],
+        "pricing_requirements": "按统一工程量清单报价，说明主要材料、人工、施工措施及临时工程费用构成，报价以MOP计。\nBinding currency: MOP; package ceiling: 52500000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公共通行协调"
+        ],
+        "owner_decision_policy": "业主代理将综合比较投标人的能力匹配、价格合理性、风险控制与交付信心，结合人员配置现实性与文档纪律作出定性判断，不以最低价作为唯一判据。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "项目管理",
+          "position": "项目总监",
+          "personal_profile": "压力下先看整体工期与接口风险，习惯把跨海大桥起止点与A区东轴线周边路网的衔接问题摆到桌面。他最先注意到的是工期与范围面积约32,000平方米之间的资源匹配，容易在讨论中把技术细节拉回到整体交付节奏，带来进度与质量之间的张力。",
+          "responsibilities": [
+            "统筹第1期工程整体交付节奏与工期目标",
+            "主持招标包划分与组合体方案协调",
+            "对接业主内部审批与外部监管服务要求",
+            "跟踪质量目标与可持续发展目标落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "先给结论再列依据，语气稳健，喜欢用工期节点和风险清单推进讨论。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制",
+          "position": "成本控制主管",
+          "personal_profile": "对报价与付款条款高度敏感，压力下会反复核对价格基础与付款评审逻辑。她最先注意到预算150000000 MOP与24个月工期之间的资金分布是否合理，常把讨论引向成本可追溯性，带来成本纪律与进度弹性之间的张力。",
+          "responsibilities": [
+            "编制与复核价格基础及成本评审意见",
+            "组织付款评审与付款评估流程",
+            "监控预算执行与变更成本影响",
+            "协调成本控制与工期安排的平衡"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "数字先行，措辞谨慎，习惯用对比表和假设条件说明立场。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "设计协调",
+          "position": "设计协调经理",
+          "personal_profile": "从设计可施工性出发思考，压力下会优先检查设计接口与现场条件的冲突。他最先注意到路网轴线与周边既有设施的衔接细节，倾向在讨论中提出设计优化，带来设计理想与施工现实之间的张力。",
+          "responsibilities": [
+            "协调设计文件与施工界面的一致性",
+            "组织设计评审与独立核查安排",
+            "跟踪设计变更对工期与成本的影响",
+            "支持招标包技术条件编制"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "以图纸和接口清单说话，表达细致，喜欢用示意图和分项说明澄清问题。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "质量与安全",
+          "position": "质量安全经理",
+          "personal_profile": "对质量目标与现场安全底线不妥协，压力下会先追问检查频次与整改闭环。她最先注意到质量评审记录与文档纪律是否完整，常把讨论拉向过程控制，带来质量严谨与推进速度之间的张力。",
+          "responsibilities": [
+            "制定质量目标跟踪与检查计划",
+            "组织质量评审与独立检查安排",
+            "监督现场报告与文档纪律",
+            "评估风险应对措施的执行效果"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，重视证据，习惯用检查清单和整改时限推动共识。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购与合约",
+          "position": "采购合约经理",
+          "personal_profile": "从招标程序与合约边界思考，压力下会先确认投标资格与评标标准的可操作性。他最先注意到招标包范围与组合体安排的合规细节，倾向在讨论中强调程序完整，带来程序严谨与效率之间的张力。",
+          "responsibilities": [
+            "组织招标包文件与评标安排",
+            "协调投标资格与组合体方案审查",
+            "管理合约条款与风险应对约定",
+            "维护采购过程文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "程序导向，措辞准确，喜欢用条款编号和时间表说明问题。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_郑美玲",
+          "agent_name": "郑美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "对外协调",
+          "position": "利益相关方协调主管",
+          "personal_profile": "关注公众与周边持份者的感受，压力下会先评估沟通窗口与舆情风险。她最先注意到施工对周边路网使用者的影响，常把讨论引向沟通节奏，带来公众期望与工程约束之间的张力。",
+          "responsibilities": [
+            "协调业主对外沟通与持份者关系",
+            "组织社区与监管服务信息通报",
+            "跟踪公众意见对工期与方案的影响",
+            "支持开标与判给阶段的信息发布"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "亲和务实，善于倾听，习惯用沟通计划和关键信息点凝聚共识。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先确认工期与资源匹配，先看整体交付节奏与关键路径。倾向于以保守承诺换取履约确定性，讨论中会主动暴露资源缺口，带来进度与成本之间的张力。",
+          "responsibilities": [
+            "统筹投标包整体交付策略与工期安排",
+            "协调设计、成本与施工界面",
+            "对接业主与监管服务沟通",
+            "审批资源计划与风险应对方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，先讲结论再列依据，习惯用工期节点和资源数字说话。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林美玲",
+          "agent_name": "林美玲",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对报价构成与付款条件高度敏感，先看价格基础与现金流影响。在讨论中倾向压低风险敞口，会反复核对成本假设，带来商务严谨与进度弹性之间的张力。",
+          "responsibilities": [
+            "编制报价基础与成本控制方案",
+            "审核付款评审与合约条款",
+            "管理分包与采购商务界面",
+            "跟踪变更与索赔文件纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，偏好书面确认，常用条款与数字对比表达立场。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "面对技术争议时先回到设计意图与施工可行性，关注路基处理与土方平衡的细节。讨论中会坚持技术底线，带来方案优化与成本控制之间的张力。",
+          "responsibilities": [
+            "审核施工方案与技术交底",
+            "协调设计接口与图纸问题",
+            "把控路基与路面工程质量目标",
+            "组织独立复核与技术风险应对"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "技术语言精确，喜欢用示意图和工序逻辑说明问题，对模糊表述会追问。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "进入现场先看质量目标与安全文明施工条件，对文档纪律和检查记录要求严格。讨论中倾向增加检验环节，带来质量保障与工期压力之间的张力。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "监督现场质量与安全措施落实",
+            "组织独立检查与整改闭环",
+            "维护质量文档与验收记录"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨细致，习惯用检查清单和整改时限沟通，对例外事项会书面升级。"
+        },
+        {
+          "agent_id": "COMP-0153_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "资源计划部",
+          "position": "资源计划经理",
+          "personal_profile": "先盘点团队可用性与机械材料供应节奏，对资源冲突反应迅速。讨论中倾向预留缓冲，带来资源保障与成本效率之间的张力。",
+          "responsibilities": [
+            "编制团队可用性摘要与角色计划",
+            "统筹机械材料与分包资源",
+            "跟踪资源占用与调配",
+            "支持工期与风险应对的资源安排"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "数据驱动，常用资源负荷表和供应时间线说明安排，语气平稳。"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_梁志遠",
+          "agent_name": "梁志遠",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "項目統籌與業主界面",
+          "position": "項目總監",
+          "personal_profile": "壓力下先確認合約邊界與業主期望是否一致，習慣把模糊承諾轉成可驗證節點。他最先注意到工期與外部依賴的錯位，會主動把設計與成本包的前置條件拉回桌面；張力在於他不願為趕開標而接受未閉合的工作範圍。",
+          "responsibilities": [
+            "業主界面與監管服務協調",
+            "投標包整體統籌與里程碑設定",
+            "組合體內部決策召集與爭議裁決",
+            "工期與外部依賴條件管理"
+          ],
+          "decision_authority": "final",
+          "communication_style": "簡潔直接，先講結論與風險，再列條件；對外保持穩定語氣，對內要求書面確認。"
+        },
+        {
+          "agent_id": "COMP-0494_02_陳詠芝",
+          "agent_name": "陳詠芝",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "商務與成本控制",
+          "position": "商務合約經理",
+          "personal_profile": "對數字敏感，壓力下會先拆解報價基礎與現金流節奏，特別留意付款審查條款與變更計量的可執行性。她帶入討論的張力是對低價中標的警惕，常要求把風險準備金顯性化。",
+          "responsibilities": [
+            "報價基礎與成本審查",
+            "付款審查與付款評估安排",
+            "合約條款與索賠風險識別",
+            "分包與採購價格紀律"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "條理分明，習慣用分項數字與假設條件說話，遇到含糊表述會要求補齊依據。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黃家俊",
+          "agent_name": "黃家俊",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "施工與現場交付",
+          "position": "施工經理",
+          "personal_profile": "以現場可施工性為第一判斷，壓力下先問人力與機械能否在真實場地條件下兌現進度。他最先注意到土方與路基工序的相互制約，會把資源計劃與天氣窗口掛鉤；張力在於他不接受紙面上樂觀的工期壓縮。",
+          "responsibilities": [
+            "土方與路基施工方案審核",
+            "資源計劃與現場調配",
+            "現場報告與進度紀律",
+            "分包班組履約管理"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "務實口語化，常用工序順序與現場例子說明問題，反對空泛承諾。"
+        },
+        {
+          "agent_id": "COMP-0494_04_蘇文靜",
+          "agent_name": "蘇文靜",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "質量與可持續管理",
+          "position": "質量及合規主管",
+          "personal_profile": "先看質量目標能否被獨立檢查驗證，壓力下傾向放慢節奏換取一次做對。她最先注意到文件紀律與檢查記錄的缺口，會把可持續目標與環保合規納入施工計劃；張力在於她常與趕工派衝突，堅持保留獨立檢查環節。",
+          "responsibilities": [
+            "質量目標追蹤與質量審查",
+            "獨立檢查與驗收安排",
+            "環境與可持續目標落實",
+            "文件紀律與合規記錄管理"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "冷靜細緻，以清單與證據說話，對缺失記錄會明確標註跟進責任。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何展鵬",
+          "agent_name": "何展鵬",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "設計協調與技術",
+          "position": "技術協調經理",
+          "personal_profile": "擅長在設計與施工之間找接口，壓力下先確認圖紙與現場條件的偏差是否影響投標假設。他最先注意到設計包與成本包的依賴關係，會主動提出替代工法但要求同步更新報價基礎；張力在於他不願在技術未閉合時簽署能力承諾。",
+          "responsibilities": [
+            "設計協調與施工前技術審核",
+            "投標技術方案與能力匹配說明",
+            "圖紙與現場條件偏差處理",
+            "技術風險應對與替代方案評估"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "分析型，喜歡畫接口關係與假設鏈，會用條件句表達立場。"
+        },
+        {
+          "agent_id": "COMP-0494_06_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "投標與文件管理",
+          "position": "投標文件主管",
+          "personal_profile": "對截止時間與文件完整性高度警覺，壓力下先建立版本控制與責任矩陣。她最先注意到評標要求與提交清單的落差，會把團隊可用性摘要與角色計劃整理成可核查證據；張力在於她堅持任何對外表述都必須有文件支撐。",
+          "responsibilities": [
+            "投標文件編排與提交紀律",
+            "團隊可用性摘要與角色計劃整理",
+            "評標要求對照與缺口清單",
+            "對外文件版本與記錄管理"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "精確守時，以清單與截止倒數溝通，對臨時變更要求正式書面指令。"
+        }
+      ],
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_梁志远",
+          "agent_name": "梁志远",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目投标与合约管理",
+          "position": "投标决策总监",
+          "personal_profile": "在压力下先看预算与合约边界，习惯把报价拆成可核对的成本项再决定是否让价。他最先注意到的是招标包的付款条件与变更风险，容易在讨论中把技术热情拉回商业可行性，带来成本与工期之间的张力。",
+          "responsibilities": [
+            "主持投标策略与判给前决策",
+            "审阅报价基础与成本控制方案",
+            "协调业主接口与合约条款澄清",
+            "把关投标文件与文档纪律"
+          ],
+          "decision_authority": "final",
+          "communication_style": "简洁直接，先给结论再列依据，偏好用数字和条件句表达立场。"
+        },
+        {
+          "agent_id": "COMP-0025_02_陈嘉敏",
+          "agent_name": "陈嘉敏",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程技术与设计协调",
+          "position": "技术统筹经理",
+          "personal_profile": "面对复杂路网与路基工程时，她先核对设计协调接口与施工可行性，再谈资源安排。她重视独立复核与质量目标追踪，讨论中常提出技术保留意见，形成进度诉求与质量要求之间的张力。",
+          "responsibilities": [
+            "统筹设计协调与施工方案审查",
+            "组织技术复核与独立检查安排",
+            "跟踪质量目标与验收标准",
+            "评估招标包范围的技术适配性"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，习惯用分点说明风险与前提，语气克制但坚持技术底线。"
+        },
+        {
+          "agent_id": "COMP-0025_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "施工与现场管理",
+          "position": "现场施工经理",
+          "personal_profile": "他凭现场直觉判断团队可用性与工序衔接，最先注意到土方、路基与路面结构层的实际作业面冲突。压力下倾向争取更宽松的工期与资源，容易与成本控制视角产生摩擦，但能快速给出可执行的施工安排。",
+          "responsibilities": [
+            "编制施工组织与进度视图",
+            "管理现场资源计划与班组调配",
+            "提交现场报告与进度更新",
+            "落实安全与环保现场要求"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实口语化，喜欢用现场例子说明问题，遇到分歧会直接提出替代工序。"
+        },
+        {
+          "agent_id": "COMP-0025_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "商务与成本控制",
+          "position": "成本与支付评审主管",
+          "personal_profile": "她对数字敏感，先看报价基础与支付评审链条是否闭合，再判断风险应对是否留有余量。她常提醒团队注意现金流与付款节点，讨论中带来审慎与速度之间的张力，不轻易接受未量化的承诺。",
+          "responsibilities": [
+            "编制并复核报价基础",
+            "执行成本评审与支付评估",
+            "跟踪付款评审与现金流安排",
+            "维护成本文档纪律"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致严谨，偏好表格化对比，提问直接且要求给出可验证依据。"
+        },
+        {
+          "agent_id": "COMP-0025_05_何俊杰",
+          "agent_name": "何俊杰",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量、安全与环境管理",
+          "position": "质量与合规经理",
+          "personal_profile": "他把质量目标与合规要求放在决策前端，最先检查独立检查路径与文档记录是否完整。压力下仍坚持先补齐审查再推进，容易与追求速度的现场视角形成张力，但能稳定业主对质量控制的信心。",
+          "responsibilities": [
+            "制定质量控制与独立检查方案",
+            "监督质量目标追踪与整改闭环",
+            "维护ISO体系相关文档纪律",
+            "参与风险应对与合规审查"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "沉稳克制，习惯引用程序与检查记录说话，对例外事项会明确标注保留意见。"
+        },
+        {
+          "agent_id": "COMP-0025_06_林咏诗",
+          "agent_name": "林咏诗",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "企业资源与利益相关方协调",
+          "position": "资源规划与业主界面经理",
+          "personal_profile": "她先看团队可用性摘要与角色计划是否匹配招标包需求，再评估业主审查节奏。她擅长在多方之间寻找可接受的协调方案，讨论中倾向缓和冲突，但会坚持资源现实，形成协作意愿与承载能力之间的张力。",
+          "responsibilities": [
+            "汇总团队可用性与角色计划",
+            "协调业主审查与利益相关方沟通",
+            "评估组合体或独立投标的资源适配",
+            "跟踪可持续发展目标与社区界面"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "温和有条理，善于复述各方立场后提出折中方案，表达中常带条件与前提。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0006/construction-2",
+        "agent_id": "COMP-0153_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目统筹部",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这个排水及地下管线工程包在业务方向上与我们的施工能力高度契合：城市排水管网、地下管沟、检查井、管线预埋都属于常规市政施工范畴，我们的施工能力、质量管理和成本估算参数都处于中上水平，资源占用为零、可用资源2.0对需求0.7有充足余量。预算5250万MOP，工期在24个月项目框架内，规模适中，不构成超负荷。风险点在于城市施工物流与交通疏解、公共通行协调、BIM深化与MEP接口协调，这些是市政管线工程的常态挑战，可以通过施工组织设计、交通疏解方案、分包专业作业和内部深化协调机制来管理，不需要另一家企业共享投标人身份或承担包级交付责任。我们作为承包商可以担任单一责任主体，主导现场管理、安全、进度、付款协调、质量记录和分包控制。因此我倾向独立投标，把接口协调和交通疏解作为报价与风险应对的组成部分，而不是引入组合体。",
+        "content": "管理层决定：对A区东轴线排水及地下管线工程包（CASE-0006/construction-2）以独立投标人身份提交投标。理由如下：一、业务契合，本包雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工属于我方施工能力覆盖的市政工程范畴，不含路面结构层、路基及交通机电系统，边界清晰。二、资源可行，当前无占用，可用资源对包需求有充足余量，可在项目周期内配置施工管理与作业团队。三、风险可控，城市施工物流与交通疏解、公共通行协调、BIM施工深化与MEP接口协调将通过施工组织设计、交通疏解专项方案、专业分包管理和内部深化协调机制处理，相关费用纳入报价与风险应对。四、商业合理，预算5250万MOP，按统一工程量清单报价，价格基准将说明主要材料、人工、施工措施及临时工程费用构成，报价以MOP计。投标文件将包含角色计划与团队可用性摘要、施工方法与交付方案、质量保证方案、价格基准与报价构成、进度视图与里程碑计划、风险应对方案。本决定为独立投标，不采用组合体形式；专业分包与外部支持按常规供应商安排管理，不改变单一责任投标人身份。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:21",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0006/construction-2",
+        "agent_id": "COMP-0494_01_梁志遠",
+        "agent_name": "梁志遠",
+        "department": "項目統籌與業主界面",
+        "position": "項目總監",
+        "message_type": "decision",
+        "thoughts": "我们作为本地总承包企业，排水管网、地下管沟、检查井、土方地基、道路桥梁及给排水均在业务覆盖范围内，且持有三项管理体系认证，资源占用为零、可用资源充足，具备作为单一责任投标人的条件。这个工程包不含路面结构层、路基和交通机电，边界清晰，正好落在我们的施工强项上，预算5250万MOP、工期与项目整体24个月匹配，属于可管理的规模。内部讨论中提到的BIM深化、MEP接口、交通疏解、公共通行协调，都是总承包应当通过自身管理团队加常规专业分包和外部技术支持来解决的事项，不构成必须由另一家企业共享投标人身份和责任的理由。真正的风险在于报价准确性、地下管线与既有设施的冲突处理、以及城市施工的交通与公众协调，这些应通过价格基准、风险应对方案、进度视图和分包管理纪律来控制，而不是靠组合体来掩盖。我倾向于独立投标，把责任边界握在自己手里，同时把关键的分包询价和现场条件核实作为投标假设明确写出。",
+        "content": "管理层决定：就A区东轴线排水及地下管线工程包（CASE-0006/construction-2）以得寶國際-得寶建築合作經營名义独立投标，不组织组合体。理由是本包范围集中于雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋，不含路面结构层、路基及交通机电系统，与我方总承包、给排水、地下工程及土方地基能力匹配；我方当前资源占用为零、可用资源充足，能够作为单一责任投标人承担包级交付、安全、质量与分包协调责任。投标文件将按业主要求提交角色计划与团队可用性摘要、施工方法与交付方案、质量保证方案、价格基准与报价构成、进度视图与里程碑计划及风险应对方案；报价按统一工程量清单以MOP编制，分列主要材料、人工、施工措施及临时工程费用，并说明价格指数上行的调整假设。BIM施工深化、MEP接口协调、交通疏解与公共通行协调由我方牵头管理，通过内部深化团队、常规专业分包及外部技术支持落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述。质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点，确保文档纪律与可追溯性。风险应对重点为地下管线与既有设施冲突、城市施工交通与公众协调、材料与人工价格波动及工期衔接，均纳入报价与进度计划管理。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:23",
+        "verification_requests": [
+          {
+            "question": "BIM施工深化、MEP接口协调、交通疏解与公共通行协调由我方牵头管理，通过内部深化团队、常规专业分包及外部技术支持落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述",
+            "required_before_submission": false
+          },
+          {
+            "question": "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0025",
+        "company_role": "contractor",
+        "package_id": "CASE-0006/construction-2",
+        "agent_id": "COMP-0025_01_梁志远",
+        "agent_name": "梁志远",
+        "department": "项目投标与合约管理",
+        "position": "投标决策总监",
+        "message_type": "decision",
+        "thoughts": "我们得宝国际是本地总承包企业，排水管网、地下管沟、检查井、土方地基、道路桥梁、给排水都在我们的业务覆盖范围内，这个工程包属于我们能够独立承担的核心施工类型。包内明确不含路面结构层、路基和交通机电，边界清晰，正好落在我们的施工强项上。资源方面，授权情景显示可用资源2.0、占用0，而本包需求0.7，容量充足，不存在被其他在建项目挤压的问题。预算5250万MOP，工期与项目整体24个月匹配，规模在我们可控范围内。内部讨论提到的BIM深化、MEP接口、交通疏解、公共通行协调，都是我们作为总承包可以自行组织或通过常规分包、外部支持解决的事项，不构成需要另一家企业共享投标主体身份和包级交付责任的缺口。因此我判断应当以单一责任投标人身份独立投标，把分包和外部支持放在报价、方法和风险应对里讲清楚，而不是搞组合体。",
+        "content": "管理层决定：以得宝国际有限公司单一责任投标人身份，就A区东轴线排水及地下管线工程包提交投标。\n\n一、投标定位。本包为雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，不含路面结构层、路基及交通机电系统，与公司总承包及基础设施、给排水、地下工程的业务方向高度一致，边界清晰，适合由公司独立承担并作为唯一责任主体。\n\n二、资源与工期。授权情景显示公司可用资源2.0、当前占用0，本包资源需求0.7，容量充足；项目整体工期24个月，本包进度视图将据此编排里程碑，并与设计、造价等前置包做好接口衔接。\n\n三、报价基准。按统一工程量清单以MOP报价，报价构成分列主要材料、人工、施工措施及临时工程费用；考虑材料价格指数与人工价格指数上行，在价格基准中设置合理的风险余量，并保持报价与施工方法、临时工程方案一致。\n\n四、交付与质量。提交角色计划与团队可用性摘要、施工方法与交付方案、质量保证方案、进度视图与里程碑计划、风险应对方案；依托ISO 9001、ISO 14001、ISO 45001体系落实质量文档管理、安全期望跟踪与环保措施，建立内部复核与独立检查节点。\n\n五、接口与协调。BIM施工深化协调、MEP接口协调、城市施工物流与交通疏解、公共通行协调由公司作为总承包统一组织，必要时采用常规专业分包与外部技术支持，相关范围、责任与费用在投标文件中明确，不改变单一投标主体与包级交付责任。\n\n六、风险应对。重点管控地下管线冲突、周边交通与公共通行影响、雨季施工与临时排水、材料价格波动；以分区分段施工、临时交通组织方案、监测与应急预案作为主要应对手段。\n\n七、投标假设。本决策基于授权情景提供的企业资料与资源数据；专业分包与外部技术支持按计划在投标文件中作为明确假设列示，尚未取得的报价以内部成本估算列示，待正式询价后更新。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:36:23",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0006/construction-2",
+        "agent_id": "COMP-0494_01_梁志遠",
+        "agent_name": "梁志遠",
+        "department": "項目統籌與業主界面",
+        "position": "項目總監",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "须说明的能力边界：BIM深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述\n内部深化团队与BIM碰撞检查、接口清单协调、交通疏解与公共通行协调的专业分包及外部技术支持，分包报价为内部估算，尚待正式询价确认\n须说明：BIM深化、MEP接口协调、交通疏解及公共通行协调的分包报价为内部估算，尚待正式询价确认，我方不将其陈述为已获报价\n地下管线与既有设施冲突：进场先探测与试挖，交叉段人工配合机械开挖，冲突处理按现场核实与设计深化结果调整，工程量按清单计量规则结算\n须说明：BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述\nBIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:36:40",
+        "verification_requests": [
+          {
+            "question": "须说明的能力边界：BIM深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述",
+            "required_before_submission": false
+          },
+          {
+            "question": "内部深化团队与BIM碰撞检查、接口清单协调、交通疏解与公共通行协调的专业分包及外部技术支持，分包报价为内部估算，尚待正式询价确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "须说明：BIM深化、MEP接口协调、交通疏解及公共通行协调的分包报价为内部估算，尚待正式询价确认，我方不将其陈述为已获报价",
+            "required_before_submission": false
+          },
+          {
+            "question": "地下管线与既有设施冲突：进场先探测与试挖，交叉段人工配合机械开挖，冲突处理按现场核实与设计深化结果调整，工程量按清单计量规则结算",
+            "required_before_submission": false
+          },
+          {
+            "question": "须说明：BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述",
+            "required_before_submission": false
+          },
+          {
+            "question": "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0006/construction-2",
+        "agent_id": "OWNER-4048bdd520aa7f_06_郑美玲",
+        "agent_name": "郑美玲",
+        "department": "对外协调",
+        "position": "利益相关方协调主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为这个工程包的交付负全责。评标推荐中交第一航务工程局，我认同这个方向。他们的报价MOP 47,508,000低于预算上限，分项构成清晰，风险预备费覆盖了地下管线和界面延误，施工组织、交通疏解和BIM深化都有具体安排，文档纪律和业主审查配合度也较好。得宝国际报价MOP 48,400,000虽然也低于上限，但部分材料以内部估算列示，价格基准不够扎实，作为备选可以，但当前不宜作为首选。得寶國際报价MOP 52,790,000已超预算上限，且多项分包报价未正式询价，条件未决，交付信心不足。因此我决定判给中交第一航务工程局，同时把分包管理落实和地下管线探摸对分段进度的影响作为预合同澄清重点，确保单一责任和进度安排有更具体的证据支撑。",
+        "content": "经综合评标与业主审查，A区东轴线排水及地下管线工程包判给中交第一航务工程局有限公司，报价MOP 47,508,000。该投标施工方法成熟，分段流水与支护降排水安排合理，BIM深化与MEP接口协调有专职人员，质量文档与安全期望跟踪纳入周检与月度评审，报价构成透明且风险预备费覆盖主要不确定性。预合同澄清重点为专业分包管理下单一责任的落实证据，以及地下管线探摸不确定性对分段进度的影响评估，相关澄清安排与业主审查节点对齐。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:37:33",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0006/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，本包属于我方 credible 承接范围内的市政排水及地下管线施工，施工能力、质量与成本管理参数均满足要求，当前资源占用为零、可用资源对包需求有充分余量，预算规模与工期在可承受区间。城市交通疏解、BIM深化和MEP接口属于可通过施工组织、专业分包和内部协调机制管理的常规风险，不构成必须由另一主体共享投标身份或包级交付责任的问责缺口。决定以单一责任投标人身份参与，按统一工程量清单报价，明确主要材料、人工、施工措施及临时工程费用构成，并在方案中落实角色计划、施工方法、质量保证、进度里程碑和风险应对。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+          "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+          "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+          "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0494",
+        "package_id": "CASE-0006/construction-2",
+        "decision": "bid",
+        "reason": "管理判断：本工程包属于排水及地下管线施工，范围明确排除路面结构层、路基与交通机电，与我方总承包及给排水、地下工程、土方地基的业务能力高度契合，且我方可用资源为2.0、当前无占用，具备独立承担并作为单一责任投标人的条件。BIM施工深化、MEP接口协调、交通疏解与公共通行协调属于总承包可通过内部团队、常规专业分包和外部技术支持管理的事项，不构成共享投标人身份或包级交付责任的必要，因此不选择组合体。商业上，5250万MOP的上限规模适中，可纳入我方在建组合而不挤压其他机会；风险上，主要不确定性来自地下条件、材料与人工价格指数上行以及城市施工的公众与交通协调，这些将通过统一工程量清单报价、明确主要材料人工与临时工程费用构成、设置风险准备金、编制进度视图与里程碑计划、以及分包界面与质量文档管理来消化。结论为独立投标，前提是按内部核定的价格基准和风险应对方案提交，不把未落实的分包报价当作已获报价。",
+        "unresolved_condition_ids": [
+          "condition_9dd8392d87eed552ad5e",
+          "condition_a491da1f06e5971e2226"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按统一工程量清单以MOP报价，报价上限为52500000.0，最终报价以内部价格基准核定为准。",
+          "主要材料、人工、施工措施及临时工程费用按当前价格指数编制，材料与人工价格上行风险通过风险准备金和调价假设覆盖。",
+          "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认。",
+          "地下管线与既有设施的冲突处理按现场核实与设计图纸深化结果调整，相关工程量按清单计量规则结算。",
+          "本包不含路面结构层、路基及交通机电系统，与相邻工程包的界面协调由业主统一安排，我方按接口计划配合。",
+          "质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0025",
+        "package_id": "CASE-0006/construction-2",
+        "decision": "bid",
+        "reason": "本包为排水及地下管线施工，属于公司总承包与基础设施、给排水、地下工程业务的核心能力范围，且明确排除路面结构层、路基与交通机电，边界清楚、责任可控。授权情景显示公司可用资源2.0、占用0，本包需求0.7，团队可用性足以支撑独立投标与履约。5250万MOP的规模与24个月工期在可管理区间，材料与人工价格指数上行需在报价基准中留出合理风险余量。BIM深化、MEP接口、交通疏解与公共通行协调属于总承包可通过内部组织、常规分包和外部技术支持解决的事项，不改变单一投标主体身份与包级交付责任，因此不采用组合体。投标将以角色计划与团队可用性摘要、施工方法与交付方案、质量保证方案、价格基准与报价构成、进度视图与里程碑计划、风险应对方案六项内容组织，突出ISO 9001、ISO 14001、ISO 45001体系下的质量、环境与安全管理，并以统一工程量清单按MOP报价。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "专业分包与外部技术支持按常规分包安排，在投标文件中作为明确假设列示，不改变单一投标主体身份",
+          "尚未取得供应商正式报价的部分以内部成本估算列示，待询价后更新报价基准",
+          "BIM施工深化与MEP接口协调由公司统一组织，必要时引入外部技术支持",
+          "材料与人工价格波动风险在报价中设置合理风险余量",
+          "进度视图按项目整体24个月工期编排，并与设计、造价等前置包接口衔接"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0006/construction-2_001",
+        "package_id": "CASE-0006/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标以单一责任投标人身份承接A区东轴线排水及地下管线工程包全部授权范围：雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，不含路面结构层、路基及交通机电系统。\n\n施工方法：排水管道按开槽埋管为主，采用钢板桩或槽钢加横撑支护、分层开挖、降排水后铺筑砂石垫层，HDPE/钢筋混凝土管按管径分段下管、承插接口、闭水或闭气试验合格后回填；检查井采用预制或现浇井身，井盖标高与道路衔接面统一放线控制。地下管沟采用分段明挖现浇，与道路衔接处管线预埋按道路专业提供的标高与平面控制点预留套管与包封。\n\n协调与深化：设专职BIM深化协调员，按设计模型进行管线综合与碰撞检查，形成施工深化图报审；MEP接口由项目技术负责人牵头与机电、道路标段进行接口台账管理，逐项签认移交界面。城市施工物流与交通疏解编制专项方案，分段围蔽、错峰出土、设置临时便道与行人通道，并与公共通行协调人对接。\n\n质量与文档：执行内部质量程序，材料进场复检、工序三检、隐蔽验收影像留档、独立检查抽查；质量文档按分项工程建立台账，竣工资料与试验报告同步归档。安全期望跟踪纳入周检与月度安全评审。\n\n团队：按角色计划配置项目总监、施工经理、技术负责人、质量安全主管、测量与试验人员、BIM协调员及作业班组，团队可用性摘要随投标文件提交；专业作业按常规分包安排，由我方统一管理并承担单一责任。",
+        "implementation_plan": "一、施工组织：按东轴线走向划分三个作业段流水施工，先深后浅、先污后雨，管沟与检查井同步跟进，道路衔接预埋段配合道路标段节点插入。\n二、主要工序：测量放线→管线探摸与迁改协调→支护与降排水→沟槽开挖→垫层与基础→管道安装与接口→检查井砌筑或安装→闭水/闭气试验→分层回填与压实检测→路面衔接预埋与界面移交。\n三、临时工程与措施：分段围蔽与临时便道、出土路线与洗车槽、临时排水与沉淀池、基坑监测点布设、夜间施工照明与噪声控制。\n四、资源投入：配置挖掘机、吊车、压实与降水设备及运输车辆，按段配置作业班组；主要材料按工程量清单分批采购进场，砂石、管材、井盖等设现场堆场并做标识与防护。\n五、协调机制：每周召开接口协调会，与道路、机电及公共通行相关方核对界面；BIM深化图经内部审核后报业主审查，变更按程序闭环。\n六、验收与移交：分项验收、隐蔽验收、系统通水试验与竣工资料移交分阶段完成，界面移交以签认单为准。",
+        "quotation": 47508000.0,
+        "schedule_commitment": "总工期按项目24个月框架内安排，本包施工期约16个月：第1至2个月施工准备、测量放线与交通疏解报批；第3至12个月分段进行管道、检查井与管沟主体施工；第10至14个月完成道路衔接预埋与界面移交；第14至16个月完成通水试验、分项验收与竣工资料移交。关键里程碑：开工后2个月完成首个作业段围蔽与开挖；第8个月完成雨污主干管过半；第12个月完成全部管道主体；第16个月完成验收移交。",
+        "compliance_statement": "接受业主按统一工程量清单计量支付与进度审核；按业主要求提交施工深化图、材料报审、隐蔽验收记录与试验报告供审查；BIM模型与深化成果按业主审查意见修改闭环；界面移交以双方签认单确认；质量文档按分项建立台账并接受抽查；安全期望跟踪以周检记录与月度评审报业主备查。付款按合同节点申报，经业主支付审核后计量。",
+        "risk_response": "一、地下既有管线不确定性：开工前探摸与物探复核，发现冲突即启动迁改协调并调整分段顺序，费用由风险预备费覆盖。\n二、材料与人工价格波动：报价已计入价格指数上浮，若合同允许按指数调整则按约定执行，否则以预备费吸收。\n三、交通疏解与公共通行压力：编制专项方案并设专职协调人，分段围蔽缩短占道时间，设置行人通道与告示。\n四、BIM深化与MEP接口风险：建立接口台账与周协调会，深化图报审前置，界面移交签认。\n五、雨季与基坑安全：降排水与支护监测同步，雨季施工预案与应急物资储备。\n六、专业分包管理风险：分包按常规供应商管理，纳入我方质量安全体系，由我方承担单一责任。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交A区东轴线排水及地下管线工程包投标，报价MOP 47,508,000，低于包预算上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与管沟主体材料费 16,850,000\n- 检查井、管沟及衔接预埋施工人工与班组费 11,280,000\n- 施工措施与临时工程费 7,350,000\n- 交通疏解与公共通行协调费 3,180,000\n- BIM深化、MEP接口协调与专业分包管理费 2,860,000\n- 项目管理、质量安全与文档管理费 3,620,000\n- 风险预备费与商业调整 2,360,000\n- 报价取整调整 8,000\n合计 47,508,000\n\n价格基准：按统一工程量清单报价，材料与人工已计入当前价格指数上浮，措施与临时工程按分段流水施工组织估算；城市交通疏解、BIM深化与MEP接口通过施工组织与内部协调机制落实，专业作业按常规分包由我方统一管理。工期在项目24个月框架内安排约16个月施工期。本报价为固定总价，风险预备费覆盖地下管线不确定性与界面延误。",
+        "quotation_breakdown": [
+          {
+            "item": "排水管道与管沟主体材料费",
+            "amount": 16850000,
+            "basis": "按统一工程量清单管径与延米估算的管材、砂石垫层、混凝土及井体材料，含材料价格指数上浮约5.5%的采购风险"
+          },
+          {
+            "item": "检查井、管沟及衔接预埋施工人工与班组费",
+            "amount": 11280000,
+            "basis": "按分段流水作业班组工日估算，含管道安装、井体施工、预埋套管包封及回填压实人工，人工价格指数上浮约9.8%"
+          },
+          {
+            "item": "施工措施与临时工程费",
+            "amount": 7350000,
+            "basis": "沟槽支护、降排水、分段围蔽、临时便道与洗车槽、出土运输路线、基坑监测及夜间施工措施"
+          },
+          {
+            "item": "交通疏解与公共通行协调费",
+            "amount": 3180000,
+            "basis": "交通疏解专项方案实施、临时标志标线、行人通道维护及公共通行协调专职人员"
+          },
+          {
+            "item": "BIM深化、MEP接口协调与专业分包管理费",
+            "amount": 2860000,
+            "basis": "BIM深化协调员与碰撞检查、接口台账管理、常规专业分包的管理与协调投入"
+          },
+          {
+            "item": "项目管理、质量安全与文档管理费",
+            "amount": 3620000,
+            "basis": "项目总监、施工经理、技术负责人、质量安全与测量试验人员、文档台账与竣工资料编制"
+          },
+          {
+            "item": "风险预备费与商业调整",
+            "amount": 2360000,
+            "basis": "地下管线探摸不确定性、材料与人工价格波动、界面移交延误及保修期响应的预备费"
+          },
+          {
+            "item": "报价取整调整",
+            "amount": 8000,
+            "basis": "将分项估算合计取整至整千位MOP的尾差调整"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+          "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+          "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+          "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0006/construction-2_002",
+        "package_id": "CASE-0006/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0494",
+        "bidder_name": "得寶國際-得寶建築合作經營",
+        "technical_proposal": "本投标以得寶國際-得寶建築合作經營单一责任投标人身份提交，不设组合体、不依赖未具名合作方。技术方案围绕本包授权范围编制：雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，明确不含路面结构层、路基及交通机电系统，相关界面按业主统一接口计划配合。\n\n施工方法：排水管网采用开槽埋管为主、局部受限段采用钢板桩或微型桩支护的明挖方案；管材按清单规格采购，接口按产品体系要求做闭水或闭气试验；检查井采用预制与现浇结合，井盖标高与相邻道路包衔接处预留调整余量；地下管沟分段流水施工，与既有管线交叉处先探后挖、人工配合机械开挖。管线预埋按道路包提交的平面与标高接口图深化，预埋套管与包封在道路结构层施工前完成并移交。\n\nBIM施工深化：由我方内部深化团队牵头建立排水与管沟模型，与设计包模型做碰撞检查，输出管线综合图、预留预埋图和分段施工顺序图；MEP接口协调由我方牵头，与相邻包及管线权属单位按接口清单逐项确认，形成接口移交记录。\n\n交通疏解与公共通行：编制分段交通疏解方案，采用分幅施工、临时钢板覆盖与夜间作业相结合，设置行人临时通道与围栏，公众沟通按阶段公告与现场协调员机制执行。\n\n质量与文档：按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点，材料进场检验、隐蔽工程验收、闭水试验记录、竣工图与移交文档实行清单化管理，确保可追溯。\n\n须说明的能力边界：BIM深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述。",
+        "implementation_plan": "总体按24个月项目工期内的本包施工窗口组织，分四个阶段推进：\n\n第一阶段（进场与准备）：现场接收与测量复核，既有地下管线探测与试挖，施工组织设计与交通疏解方案报批，临时设施、施工便道与围挡布置，BIM深化模型建立与碰撞检查首轮完成。\n\n第二阶段（主管网施工）：按东轴线分段流水，先深后浅、先干管后支管；开槽、支护、垫层、下管、接口、闭水试验、回填压实逐段验收；检查井与管沟同步跟进。\n\n第三阶段（预埋与接口）：与道路包衔接的管线预埋、套管包封、井盖标高调整，按接口清单逐项与相邻包移交并签认；MEP接口协调会按周召开。\n\n第四阶段（收尾与移交）：竣工测量、闭水与闭气试验汇总、竣工图与质量文档整编、缺陷整改、分段移交业主及后续道路包。\n\n资源安排：设项目经理、施工经理、质量与安全主任、测量与BIM协调员各岗，现场按段配置作业班组；土方、支护、管材供应与交通疏解设施通过常规专业分包与供应商落实，由我方统一管理并承担包级责任。里程碑以分段完成与接口移交为节点，进度视图按月度更新，遇地下障碍或权属单位协调延误时按已识别风险启动应对。",
+        "quotation": 52790000.0,
+        "schedule_commitment": "本包施工在项目24个月总工期内按业主交付的场地与接口计划分段实施，投标阶段不单独承诺超出项目总工期的完工日期。里程碑按四阶段设置：进场准备与BIM深化首轮完成、主管网分段完成并验收、预埋与接口逐项移交签认、竣工测量与文档整编及分段移交。进度视图按月度更新并向业主报告；地下障碍、权属单位协调或相邻包界面延误属已识别风险，按风险应对方案调整分段顺序，不改变包级交付责任。",
+        "compliance_statement": "我方接受业主按统一工程量清单计量与支付的控制方式，报价以MOP计并分列主要材料、人工、施工措施及临时工程费用构成，便于业主进行价格基准与支付审核。质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点，隐蔽工程、闭水试验与接口移交均形成可追溯记录供业主查验。BIM深化成果、接口清单与移交记录按业主审阅意见修订，业主审阅轮次纳入深化团队工作量。与相邻工程包的界面由业主统一安排，我方按接口计划配合并提交接口状态报告。须说明：BIM深化、MEP接口协调、交通疏解及公共通行协调的分包报价为内部估算，尚待正式询价确认，我方不将其陈述为已获报价。",
+        "risk_response": "主要风险及应对：\n1. 地下管线与既有设施冲突：进场先探测与试挖，交叉段人工配合机械开挖，冲突处理按现场核实与设计深化结果调整，工程量按清单计量规则结算。\n2. 材料与人工价格指数上行：报价已按当前指数编制并设风险准备金，价格上行风险以准备金及清单调价假设覆盖，不主张无上限调整。\n3. 城市施工交通与公众协调：分段交通疏解、临时钢板覆盖、行人通道与阶段公告，设现场协调员处理公众诉求。\n4. 相邻包界面与工期衔接：按接口清单逐项确认与签认，界面延误及时报告业主并调整分段顺序。\n5. 分包报价尚未正式询价：BIM深化、MEP接口协调、交通疏解与公共通行协调的分包为内部估算，正式询价确认前保留价格调整空间，不以已获报价陈述。\n6. 质量与安全：按三体系运行，内部审核与独立检查节点前置，缺陷整改闭环后移交。",
+        "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份，就A区东轴线排水及地下管线工程包（CASE-0006/construction-2）提交投标，不组织组合体，不依赖未具名合作方。\n\n报价基准：按统一工程量清单以MOP编制，分列主要材料、人工、施工措施及临时工程费用，材料与人工按当前价格指数（材料1.0545、人工1.0980）计入。\n\n报价构成（MOP）：\n- 排水管网与检查井主要材料费 15,860,000\n- 土方、支护与管沟开挖人工及机械 9,420,000\n- 管道安装、接口与试验人工 7,350,000\n- 施工措施与临时工程 6,180,000\n- BIM深化、MEP接口协调与专业分包管理 3,260,000\n- 现场管理、质量安全体系与文档管理 4,130,000\n- 风险准备金与价格调整假设 2,870,000\n- 企业管理费与利润 3,720,000\n合计报价：MOP 52,790,000，略高于包上限52,500,000，差额主要来自地下条件不确定性、城市交通与公众协调负担及价格指数上行的风险准备金；如业主就上限作进一步澄清，我方可在正式询价确认分包价格后复核。\n\n须说明：BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述。质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。",
+        "quotation_breakdown": [
+          {
+            "item": "排水管网与检查井主要材料费",
+            "amount": 15860000,
+            "basis": "按统一工程量清单口径估算的雨水与污水管材、检查井构件、管沟盖板、砂石垫层与回填材料，按当前材料价格指数1.0545计入；数量以清单为准，属内部估算"
+          },
+          {
+            "item": "土方、支护与管沟开挖人工及机械",
+            "amount": 9420000,
+            "basis": "开槽土方、局部钢板桩与微型桩支护、人工配合探挖，按当前人工价格指数1.0980与机械台班估算，属内部估算"
+          },
+          {
+            "item": "管道安装、接口与试验人工",
+            "amount": 7350000,
+            "basis": "下管、接口、闭水闭气试验、检查井砌筑与井盖安装的作业班组人工，按分段流水工效估算"
+          },
+          {
+            "item": "施工措施与临时工程",
+            "amount": 6180000,
+            "basis": "交通疏解设施、临时钢板覆盖、围挡与行人通道、临时排水与降排水、临时用电及场地布置，按分段施工方案估算"
+          },
+          {
+            "item": "BIM深化、MEP接口协调与专业分包管理",
+            "amount": 3260000,
+            "basis": "内部深化团队与BIM碰撞检查、接口清单协调、交通疏解与公共通行协调的专业分包及外部技术支持，分包报价为内部估算，尚待正式询价确认"
+          },
+          {
+            "item": "现场管理、质量安全体系与文档管理",
+            "amount": 4130000,
+            "basis": "项目经理部、质量与安全主任、测量与文档人员，ISO 9001、ISO 14001、ISO 45001体系运行、内部审核与独立检查节点、竣工文档整编"
+          },
+          {
+            "item": "风险准备金与价格调整假设",
+            "amount": 2870000,
+            "basis": "覆盖地下管线与既有设施冲突、材料与人工价格指数上行、城市公众与交通协调延误；价格上行风险以本准备金及清单调价假设覆盖，不主张无上限调整"
+          },
+          {
+            "item": "企业管理费与利润",
+            "amount": 3720000,
+            "basis": "按我方总承包管理费率与目标利润率计取，含保险、保函与总部支持分摊"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_9dd8392d87eed552ad5e",
+          "condition_a491da1f06e5971e2226",
+          "condition_bcf7938443392f04388f",
+          "condition_f1cbdde05126a116afb1",
+          "condition_41f659284b5e377488ba",
+          "condition_50414e15f4dc924aa1b5",
+          "condition_eabce6c20922939d469d"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按统一工程量清单以MOP报价，最终报价以内部价格基准核定为准。",
+          "主要材料、人工、施工措施及临时工程费用按当前价格指数编制，材料与人工价格上行风险通过风险准备金和调价假设覆盖。",
+          "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认。",
+          "地下管线与既有设施的冲突处理按现场核实与设计图纸深化结果调整，相关工程量按清单计量规则结算。",
+          "本包不含路面结构层、路基及交通机电系统，与相邻工程包的界面协调由业主统一安排，我方按接口计划配合。",
+          "质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0006/construction-2_003",
+        "package_id": "CASE-0006/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0025",
+        "bidder_name": "得宝国际有限公司",
+        "technical_proposal": "得宝国际有限公司以单一责任投标人身份承担A区东轴线排水及地下管线工程包全部施工责任。技术方案要点：\n\n一、施工方法与分区。按东轴线走向划分三个施工区段，采用开槽埋管为主、局部受限段采用支护开挖与顶管/套管过渡的工艺组合。雨水与污水管网分系统流水施工，先深后浅、先干管后支管，检查井与管沟随管道同步成型，与道路衔接段管线预埋按道路包提交的标高与平面控制点预留接口，界面处设置测量复核与移交记录。\n\n二、地下管沟与检查井。管沟采用放坡或钢板桩支护，视深度与周边荷载确定；检查井采用现浇或预制井筒，井盖标高按最终路面设计预留调整量，避免与路面结构层包冲突。\n\n三、BIM施工深化与MEP接口。由公司统一组织BIM施工深化，建立排水、管沟与既有及规划地下管线的碰撞检查流程，深化成果经内部独立复核后提交业主审查；与交通机电、给排水接驳等接口以接口清单和移交会形式管理，必要时引入外部技术支持，但责任仍由本公司承担。\n\n四、城市施工物流与交通疏解。编制分段临时交通组织方案，设置施工围挡、行人通道与夜间警示，材料运输错峰安排，弃土与外运路线报批后执行。\n\n五、质量与安全。依托ISO 9001、ISO 14001、ISO 45001体系，实行三级内部检查、隐蔽工程验收留痕、闭水/闭气试验与CCTV检测记录归档；安全期望跟踪以周检、专项检查与整改闭环落实。\n\n六、边界说明。本包不含路面结构层、路基及交通机电系统，相关界面以书面移交与联合测量确认。",
+        "implementation_plan": "一、动员与准备（第1至2月）：项目部组建、施工组织设计与专项方案报审、临时设施与围挡、测量控制网复测、材料与分包询价定标。\n\n二、先行段施工（第3至8月）：选择东轴线中段作为先行段，完成雨水主干管与检查井，验证工艺、交通疏解与监测方案，形成标准工序后推广。\n\n三、主体流水施工（第9至19月）：三个区段按先深后浅顺序流水推进，雨污分流同步实施，管沟支护、管道安装、检查井浇筑、回填压实与试验检测按段验收；与道路包衔接段预埋管线按接口计划提前完成。\n\n四、收尾与移交（第20至24月）：全线闭水试验、CCTV检测、竣工测量、资料整编、缺陷整改与分段移交，配合项目整体验收。\n\n五、资源安排：按授权情景本包资源需求0.7，公司可用资源2.0、占用0，配置项目经理、施工经理、质量与安全主任、测量与BIM协调人员及现场工程师，专业分包按常规分包安排并在投标文件中列明范围与责任。\n\n六、前置接口：本包依赖设计与造价包成果，进度视图按项目整体24个月编排，设计交付与工程量确认节点作为开工前置条件管理。",
+        "quotation": 48400000.0,
+        "schedule_commitment": "本包进度视图按项目整体24个月工期编排：第1至2月动员与报审，第3至8月先行段，第9至19月主体流水施工，第20至24月试验检测、收尾与分段移交。关键里程碑包括施工组织设计获批、先行段验收、雨污主干管贯通、全线闭水与CCTV检测完成、分段移交。进度与设计包、造价包交付节点衔接，设计或工程量确认延迟时按书面程序调整后续里程碑，不改变总工期承诺。",
+        "compliance_statement": "接受业主按统一工程量清单计价与计量支付的管理方式，配合业主及监管单位的质量、安全、环境检查。公司内部设三级检查与独立复核节点，隐蔽工程与试验检测记录实时归档供业主查阅；设计变更与现场签证按业主审批程序办理，未经批准不擅自变更。BIM深化成果与接口移交记录提交业主审查。付款按合同里程碑申请，接受业主的支付审核与进度复核。",
+        "risk_response": "一、地下管线冲突：施工前物探与试挖，建立冲突清单与迁改协调机制，必要时调整支护与管位。\n二、周边交通与公共通行影响：分段围挡、临时行人通道、夜间警示与交通协管，方案报批后执行并动态调整。\n三、雨季施工与临时排水：雨季前完成临时排水系统，基坑设置集水与抽排，暴雨预警时启动停工与防护预案。\n四、材料与人工价格波动：报价中设置风险余量，主要材料按合同约定方式管理价格风险，不依赖未约定的无上限调价。\n五、接口风险：与道路包、机电包的预埋与接驳以书面接口清单和联合测量确认，界面责任清晰。\n六、专业分包与外部技术支持：按常规分包安排，范围、责任与费用在投标文件中明确，公司承担包级交付责任。",
+        "submission_summary": "得宝国际有限公司以单一责任投标人身份就A区东轴线排水及地下管线工程包提交投标，报价MOP 48,400,000，低于包上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与检查井主要材料费 16,850,000\n- 管沟支护、土方与地下管沟施工费 9,450,000\n- 人工与现场管理费 8,720,000\n- 施工措施及临时工程费 5,360,000\n- BIM深化、MEP接口协调与专业分包管理费 3,180,000\n- 质量检测、试验与竣工文档费 2,140,000\n- 风险余量与商业调整 2,700,000\n合计 48,400,000\n\n价格基准：按统一工程量清单以MOP计价，分列主要材料、人工、施工措施及临时工程费用；材料价格指数1.0545与人工价格指数1.0980的上行影响已计入，并保留风险余量。尚未取得供应商正式报价的部分以内部成本估算列示，属暂定假设，待正式询价后更新报价基准。\n\n交付安排：按项目整体24个月工期编排，分动员、先行段、主体流水、收尾移交四阶段；BIM深化、MEP接口、交通疏解与公共通行协调由公司统一组织，专业分包与外部技术支持按常规分包安排并在投标文件中明确，不改变单一投标主体与包级交付责任。质量、环境与安全管理依托ISO 9001、ISO 14001、ISO 45001体系落实。",
+        "quotation_breakdown": [
+          {
+            "item": "排水管道与检查井主要材料费",
+            "amount": 16850000,
+            "basis": "按统一工程量清单估算的雨水与污水管材、预制及现浇井筒、井盖、砂石回填与混凝土用量，计入材料价格指数1.0545的现行水平；未取得供应商正式报价部分为内部成本估算"
+          },
+          {
+            "item": "管沟支护、土方与地下管沟施工费",
+            "amount": 9450000,
+            "basis": "开槽与支护开挖、土方外运、管沟结构及受限段过渡工艺，按分区段工程量与机械台班估算"
+          },
+          {
+            "item": "人工与现场管理费",
+            "amount": 8720000,
+            "basis": "现场工程师、测量、质量与安全人员及作业班组人工，计入人工价格指数1.0980的上行影响，含项目部管理开支"
+          },
+          {
+            "item": "施工措施及临时工程费",
+            "amount": 5360000,
+            "basis": "临时交通疏解、围挡与行人通道、临时排水与雨季措施、施工用水用电、临时设施及监测，按分段施工组织估算"
+          },
+          {
+            "item": "BIM深化、MEP接口协调与专业分包管理费",
+            "amount": 3180000,
+            "basis": "BIM施工深化与碰撞检查、接口清单与移交会、常规专业分包与外部技术支持的管理与协调投入"
+          },
+          {
+            "item": "质量检测、试验与竣工文档费",
+            "amount": 2140000,
+            "basis": "闭水闭气试验、CCTV检测、第三方检测配合、竣工测量与资料整编，按ISO 9001文档管理要求配置"
+          },
+          {
+            "item": "风险余量与商业调整",
+            "amount": 2700000,
+            "basis": "针对材料与人工价格波动、地下管线冲突、雨季与公共通行协调的风险余量，以及公司管理费与合理利润的综合调整"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "专业分包与外部技术支持按常规分包安排，在投标文件中作为明确假设列示，不改变单一投标主体身份",
+          "尚未取得供应商正式报价的部分以内部成本估算列示，待询价后更新报价基准",
+          "BIM施工深化与MEP接口协调由公司统一组织，必要时引入外部技术支持",
+          "材料与人工价格波动风险在报价中设置合理风险余量",
+          "进度视图按项目整体24个月工期编排，并与设计、造价等前置包接口衔接"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0006/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0006/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 47508000.0,
+            "quotation_breakdown": [
+              {
+                "item": "排水管道与管沟主体材料费",
+                "amount": 16850000,
+                "basis": "按统一工程量清单管径与延米估算的管材、砂石垫层、混凝土及井体材料，含材料价格指数上浮约5.5%的采购风险"
+              },
+              {
+                "item": "检查井、管沟及衔接预埋施工人工与班组费",
+                "amount": 11280000,
+                "basis": "按分段流水作业班组工日估算，含管道安装、井体施工、预埋套管包封及回填压实人工，人工价格指数上浮约9.8%"
+              },
+              {
+                "item": "施工措施与临时工程费",
+                "amount": 7350000,
+                "basis": "沟槽支护、降排水、分段围蔽、临时便道与洗车槽、出土运输路线、基坑监测及夜间施工措施"
+              },
+              {
+                "item": "交通疏解与公共通行协调费",
+                "amount": 3180000,
+                "basis": "交通疏解专项方案实施、临时标志标线、行人通道维护及公共通行协调专职人员"
+              },
+              {
+                "item": "BIM深化、MEP接口协调与专业分包管理费",
+                "amount": 2860000,
+                "basis": "BIM深化协调员与碰撞检查、接口台账管理、常规专业分包的管理与协调投入"
+              },
+              {
+                "item": "项目管理、质量安全与文档管理费",
+                "amount": 3620000,
+                "basis": "项目总监、施工经理、技术负责人、质量安全与测量试验人员、文档台账与竣工资料编制"
+              },
+              {
+                "item": "风险预备费与商业调整",
+                "amount": 2360000,
+                "basis": "地下管线探摸不确定性、材料与人工价格波动、界面移交延误及保修期响应的预备费"
+              },
+              {
+                "item": "报价取整调整",
+                "amount": 8000,
+                "basis": "将分项估算合计取整至整千位MOP的尾差调整"
+              }
+            ],
+            "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交A区东轴线排水及地下管线工程包投标，报价MOP 47,508,000，低于包预算上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与管沟主体材料费 16,850,000\n- 检查井、管沟及衔接预埋施工人工与班组费 11,280,000\n- 施工措施与临时工程费 7,350,000\n- 交通疏解与公共通行协调费 3,180,000\n- BIM深化、MEP接口协调与专业分包管理费 2,860,000\n- 项目管理、质量安全与文档管理费 3,620,000\n- 风险预备费与商业调整 2,360,000\n- 报价取整调整 8,000\n合计 47,508,000\n\n价格基准：按统一工程量清单报价，材料与人工已计入当前价格指数上浮，措施与临时工程按分段流水施工组织估算；城市交通疏解、BIM深化与MEP接口通过施工组织与内部协调机制落实，专业作业按常规分包由我方统一管理。工期在项目24个月框架内安排约16个月施工期。本报价为固定总价，风险预备费覆盖地下管线不确定性与界面延误。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+              "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+              "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+              "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0006/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "quotation": 52790000.0,
+            "quotation_breakdown": [
+              {
+                "item": "排水管网与检查井主要材料费",
+                "amount": 15860000,
+                "basis": "按统一工程量清单口径估算的雨水与污水管材、检查井构件、管沟盖板、砂石垫层与回填材料，按当前材料价格指数1.0545计入；数量以清单为准，属内部估算"
+              },
+              {
+                "item": "土方、支护与管沟开挖人工及机械",
+                "amount": 9420000,
+                "basis": "开槽土方、局部钢板桩与微型桩支护、人工配合探挖，按当前人工价格指数1.0980与机械台班估算，属内部估算"
+              },
+              {
+                "item": "管道安装、接口与试验人工",
+                "amount": 7350000,
+                "basis": "下管、接口、闭水闭气试验、检查井砌筑与井盖安装的作业班组人工，按分段流水工效估算"
+              },
+              {
+                "item": "施工措施与临时工程",
+                "amount": 6180000,
+                "basis": "交通疏解设施、临时钢板覆盖、围挡与行人通道、临时排水与降排水、临时用电及场地布置，按分段施工方案估算"
+              },
+              {
+                "item": "BIM深化、MEP接口协调与专业分包管理",
+                "amount": 3260000,
+                "basis": "内部深化团队与BIM碰撞检查、接口清单协调、交通疏解与公共通行协调的专业分包及外部技术支持，分包报价为内部估算，尚待正式询价确认"
+              },
+              {
+                "item": "现场管理、质量安全体系与文档管理",
+                "amount": 4130000,
+                "basis": "项目经理部、质量与安全主任、测量与文档人员，ISO 9001、ISO 14001、ISO 45001体系运行、内部审核与独立检查节点、竣工文档整编"
+              },
+              {
+                "item": "风险准备金与价格调整假设",
+                "amount": 2870000,
+                "basis": "覆盖地下管线与既有设施冲突、材料与人工价格指数上行、城市公众与交通协调延误；价格上行风险以本准备金及清单调价假设覆盖，不主张无上限调整"
+              },
+              {
+                "item": "企业管理费与利润",
+                "amount": 3720000,
+                "basis": "按我方总承包管理费率与目标利润率计取，含保险、保函与总部支持分摊"
+              }
+            ],
+            "submission_summary": "得寶國際-得寶建築合作經營以单一责任投标人身份，就A区东轴线排水及地下管线工程包（CASE-0006/construction-2）提交投标，不组织组合体，不依赖未具名合作方。\n\n报价基准：按统一工程量清单以MOP编制，分列主要材料、人工、施工措施及临时工程费用，材料与人工按当前价格指数（材料1.0545、人工1.0980）计入。\n\n报价构成（MOP）：\n- 排水管网与检查井主要材料费 15,860,000\n- 土方、支护与管沟开挖人工及机械 9,420,000\n- 管道安装、接口与试验人工 7,350,000\n- 施工措施与临时工程 6,180,000\n- BIM深化、MEP接口协调与专业分包管理 3,260,000\n- 现场管理、质量安全体系与文档管理 4,130,000\n- 风险准备金与价格调整假设 2,870,000\n- 企业管理费与利润 3,720,000\n合计报价：MOP 52,790,000，略高于包上限52,500,000，差额主要来自地下条件不确定性、城市交通与公众协调负担及价格指数上行的风险准备金；如业主就上限作进一步澄清，我方可在正式询价确认分包价格后复核。\n\n须说明：BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头管理，通过内部团队与常规专业分包落实，相关分包报价目前为内部估算，尚待正式询价确认，不作为已获报价陈述。质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。",
+            "unresolved_condition_ids": [
+              "condition_9dd8392d87eed552ad5e",
+              "condition_a491da1f06e5971e2226",
+              "condition_bcf7938443392f04388f",
+              "condition_f1cbdde05126a116afb1",
+              "condition_41f659284b5e377488ba",
+              "condition_50414e15f4dc924aa1b5",
+              "condition_eabce6c20922939d469d"
+            ],
+            "bid_assumptions": [
+              "按统一工程量清单以MOP报价，最终报价以内部价格基准核定为准。",
+              "主要材料、人工、施工措施及临时工程费用按当前价格指数编制，材料与人工价格上行风险通过风险准备金和调价假设覆盖。",
+              "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认。",
+              "地下管线与既有设施的冲突处理按现场核实与设计图纸深化结果调整，相关工程量按清单计量规则结算。",
+              "本包不含路面结构层、路基及交通机电系统，与相邻工程包的界面协调由业主统一安排，我方按接口计划配合。",
+              "质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0006/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "quotation": 48400000.0,
+            "quotation_breakdown": [
+              {
+                "item": "排水管道与检查井主要材料费",
+                "amount": 16850000,
+                "basis": "按统一工程量清单估算的雨水与污水管材、预制及现浇井筒、井盖、砂石回填与混凝土用量，计入材料价格指数1.0545的现行水平；未取得供应商正式报价部分为内部成本估算"
+              },
+              {
+                "item": "管沟支护、土方与地下管沟施工费",
+                "amount": 9450000,
+                "basis": "开槽与支护开挖、土方外运、管沟结构及受限段过渡工艺，按分区段工程量与机械台班估算"
+              },
+              {
+                "item": "人工与现场管理费",
+                "amount": 8720000,
+                "basis": "现场工程师、测量、质量与安全人员及作业班组人工，计入人工价格指数1.0980的上行影响，含项目部管理开支"
+              },
+              {
+                "item": "施工措施及临时工程费",
+                "amount": 5360000,
+                "basis": "临时交通疏解、围挡与行人通道、临时排水与雨季措施、施工用水用电、临时设施及监测，按分段施工组织估算"
+              },
+              {
+                "item": "BIM深化、MEP接口协调与专业分包管理费",
+                "amount": 3180000,
+                "basis": "BIM施工深化与碰撞检查、接口清单与移交会、常规专业分包与外部技术支持的管理与协调投入"
+              },
+              {
+                "item": "质量检测、试验与竣工文档费",
+                "amount": 2140000,
+                "basis": "闭水闭气试验、CCTV检测、第三方检测配合、竣工测量与资料整编，按ISO 9001文档管理要求配置"
+              },
+              {
+                "item": "风险余量与商业调整",
+                "amount": 2700000,
+                "basis": "针对材料与人工价格波动、地下管线冲突、雨季与公共通行协调的风险余量，以及公司管理费与合理利润的综合调整"
+              }
+            ],
+            "submission_summary": "得宝国际有限公司以单一责任投标人身份就A区东轴线排水及地下管线工程包提交投标，报价MOP 48,400,000，低于包上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与检查井主要材料费 16,850,000\n- 管沟支护、土方与地下管沟施工费 9,450,000\n- 人工与现场管理费 8,720,000\n- 施工措施及临时工程费 5,360,000\n- BIM深化、MEP接口协调与专业分包管理费 3,180,000\n- 质量检测、试验与竣工文档费 2,140,000\n- 风险余量与商业调整 2,700,000\n合计 48,400,000\n\n价格基准：按统一工程量清单以MOP计价，分列主要材料、人工、施工措施及临时工程费用；材料价格指数1.0545与人工价格指数1.0980的上行影响已计入，并保留风险余量。尚未取得供应商正式报价的部分以内部成本估算列示，属暂定假设，待正式询价后更新报价基准。\n\n交付安排：按项目整体24个月工期编排，分动员、先行段、主体流水、收尾移交四阶段；BIM深化、MEP接口、交通疏解与公共通行协调由公司统一组织，专业分包与外部技术支持按常规分包安排并在投标文件中明确，不改变单一投标主体与包级交付责任。质量、环境与安全管理依托ISO 9001、ISO 14001、ISO 45001体系落实。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "专业分包与外部技术支持按常规分包安排，在投标文件中作为明确假设列示，不改变单一投标主体身份",
+              "尚未取得供应商正式报价的部分以内部成本估算列示，待询价后更新报价基准",
+              "BIM施工深化与MEP接口协调由公司统一组织，必要时引入外部技术支持",
+              "材料与人工价格波动风险在报价中设置合理风险余量",
+              "进度视图按项目整体24个月工期编排，并与设计、造价等前置包接口衔接"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for A区东轴线排水及地下管线工程包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0006/construction-2",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_林嘉敏",
+          "OWNER-4048bdd520aa7f_03_黄伟强",
+          "OWNER-4048bdd520aa7f_04_苏丽华",
+          "OWNER-4048bdd520aa7f_05_何家豪",
+          "OWNER-4048bdd520aa7f_06_郑美玲"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0006/construction-2_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "施工方法成熟，分段流水与支护降排水安排合理，BIM深化与MEP接口协调有专职人员，团队角色计划完整。",
+            "cost_view": "报价MOP 47,508,000低于包预算上限，分项构成清晰，材料与人工已计入价格指数上浮，风险预备费覆盖主要不确定性，价格合理可信。",
+            "owner_control_view": "接受统一工程量清单计量支付，承诺提交深化图、材料报审、隐蔽验收记录与试验报告供审查，文档纪律与业主审查清晰度良好。",
+            "strengths": [
+              "施工组织与交通疏解方案具体，分段流水与预埋衔接安排合理",
+              "质量文档与安全期望跟踪纳入周检与月度评审，可追溯性强",
+              "报价构成透明，风险预备费覆盖地下管线与界面延误"
+            ],
+            "concerns": [
+              "专业分包管理依赖常规分包，需确保单一责任落实",
+              "地下管线探摸不确定性可能影响分段进度"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0006/construction-2_002",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "technical_view": "技术方案完整，开槽埋管与局部支护结合，BIM深化与接口协调由内部团队牵头，但分包报价尚待正式询价确认。",
+            "cost_view": "报价MOP 52,790,000略高于包预算上限，风险准备金较高，且分包报价为内部估算，价格合理性存疑。",
+            "owner_control_view": "接受业主计量支付与三体系审核，但多项分包报价未确认，业主审查清晰度受条件限制。",
+            "strengths": [
+              "三体系运行与内部审核节点设置明确",
+              "交通疏解与公共通行协调方案具体"
+            ],
+            "concerns": [
+              "报价超预算上限，且分包价格未锁定，存在调价风险",
+              "多项未解决条件可能影响交付信心"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0006/construction-2_003",
+            "bidder_id": "COMP-0025",
+            "bidder_name": "得宝国际有限公司",
+            "technical_view": "分区段流水施工与顶管过渡工艺结合，BIM深化与接口管理由公司统一组织，团队配置与资源可用性摘要清晰。",
+            "cost_view": "报价MOP 48,400,000低于包预算上限，分项构成合理，风险余量适中，但部分材料以内部估算列示，需询价后更新。",
+            "owner_control_view": "接受统一工程量清单计价与计量支付，三级检查与独立复核节点明确，文档纪律与业主审查清晰度良好。",
+            "strengths": [
+              "施工分区与先行段验证安排合理，进度视图与项目总工期衔接",
+              "质量检测与CCTV检测纳入报价，可维护性支持较好",
+              "资源可用性摘要显示团队配置现实"
+            ],
+            "concerns": [
+              "部分材料以内部成本估算列示，价格基准待询价确认",
+              "依赖设计与造价包前置成果，接口延迟可能影响进度"
+            ]
+          }
+        ],
+        "comparison_summary": "三家投标均具备排水管网施工能力，中交第一航务工程局报价MOP 47,508,000且方案完整，得宝国际报价MOP 48,400,000但部分材料估算待确认，得寶國際报价MOP 52,790,000超预算且分包未询价。综合能力匹配、价格合理性与风险控制，中交第一航务工程局交付信心较高。",
+        "recommended_winner": "COMP-0153",
+        "owner_review_notes": "中交第一航务工程局报价合理、方案具体、文档纪律好，建议接受但需关注分包管理；得宝国际可作为备选，需澄清材料估算；得寶國際报价超预算且条件未决，不建议接受。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0006",
+      "package_awards": [
+        {
+          "package_id": "CASE-0006/construction-2",
+          "selected_bidder_id": "COMP-0153",
+          "selected_bidder_name": "中交第一航务工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第一航务工程局报价MOP 47,508,000低于包预算上限，分项构成透明，风险预备费覆盖地下管线不确定性与界面延误，施工组织、交通疏解、BIM深化与MEP接口协调均有专职安排，团队角色计划完整，文档纪律与业主审查配合度良好。相比得宝国际部分材料估算待确认、得寶國際报价超预算且分包未询价，该投标在能力匹配、价格合理性和交付风险控制上更均衡，因此判给该投标人。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+            "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+            "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+            "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0153"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:36:23",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0006/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，本包属于我方 credible 承接范围内的市政排水及地下管线施工，施工能力、质量与成本管理参数均满足要求，当前资源占用为零、可用资源对包需求有充分余量，预算规模与工期在可承受区间。城市交通疏解、BIM深化和MEP接口属于可通过施工组织、专业分包和内部协调机制管理的常规风险，不构成必须由另一主体共享投标身份或包级交付责任的问责缺口。决定以单一责任投标人身份参与，按统一工程量清单报价，明确主要材料、人工、施工措施及临时工程费用构成，并在方案中落实角色计划、施工方法、质量保证、进度里程碑和风险应对。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+            "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+            "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+            "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:23",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0494",
+          "package_id": "CASE-0006/construction-2",
+          "decision": "bid",
+          "reason": "管理判断：本工程包属于排水及地下管线施工，范围明确排除路面结构层、路基与交通机电，与我方总承包及给排水、地下工程、土方地基的业务能力高度契合，且我方可用资源为2.0、当前无占用，具备独立承担并作为单一责任投标人的条件。BIM施工深化、MEP接口协调、交通疏解与公共通行协调属于总承包可通过内部团队、常规专业分包和外部技术支持管理的事项，不构成共享投标人身份或包级交付责任的必要，因此不选择组合体。商业上，5250万MOP的上限规模适中，可纳入我方在建组合而不挤压其他机会；风险上，主要不确定性来自地下条件、材料与人工价格指数上行以及城市施工的公众与交通协调，这些将通过统一工程量清单报价、明确主要材料人工与临时工程费用构成、设置风险准备金、编制进度视图与里程碑计划、以及分包界面与质量文档管理来消化。结论为独立投标，前提是按内部核定的价格基准和风险应对方案提交，不把未落实的分包报价当作已获报价。",
+          "unresolved_condition_ids": [
+            "condition_9dd8392d87eed552ad5e",
+            "condition_a491da1f06e5971e2226"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "按统一工程量清单以MOP报价，报价上限为52500000.0，最终报价以内部价格基准核定为准。",
+            "主要材料、人工、施工措施及临时工程费用按当前价格指数编制，材料与人工价格上行风险通过风险准备金和调价假设覆盖。",
+            "BIM施工深化、MEP接口协调、交通疏解及公共通行协调由我方牵头，通过内部团队与常规专业分包落实，相关分包报价为内部估算，尚待正式询价确认。",
+            "地下管线与既有设施的冲突处理按现场核实与设计图纸深化结果调整，相关工程量按清单计量规则结算。",
+            "本包不含路面结构层、路基及交通机电系统，与相邻工程包的界面协调由业主统一安排，我方按接口计划配合。",
+            "质量与安全按ISO 9001、ISO 14001、ISO 45001体系执行，设置内部审核与独立检查节点。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:36:23",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0025",
+          "package_id": "CASE-0006/construction-2",
+          "decision": "bid",
+          "reason": "本包为排水及地下管线施工，属于公司总承包与基础设施、给排水、地下工程业务的核心能力范围，且明确排除路面结构层、路基与交通机电，边界清楚、责任可控。授权情景显示公司可用资源2.0、占用0，本包需求0.7，团队可用性足以支撑独立投标与履约。5250万MOP的规模与24个月工期在可管理区间，材料与人工价格指数上行需在报价基准中留出合理风险余量。BIM深化、MEP接口、交通疏解与公共通行协调属于总承包可通过内部组织、常规分包和外部技术支持解决的事项，不改变单一投标主体身份与包级交付责任，因此不采用组合体。投标将以角色计划与团队可用性摘要、施工方法与交付方案、质量保证方案、价格基准与报价构成、进度视图与里程碑计划、风险应对方案六项内容组织，突出ISO 9001、ISO 14001、ISO 45001体系下的质量、环境与安全管理，并以统一工程量清单按MOP报价。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "专业分包与外部技术支持按常规分包安排，在投标文件中作为明确假设列示，不改变单一投标主体身份",
+            "尚未取得供应商正式报价的部分以内部成本估算列示，待询价后更新报价基准",
+            "BIM施工深化与MEP接口协调由公司统一组织，必要时引入外部技术支持",
+            "材料与人工价格波动风险在报价中设置合理风险余量",
+            "进度视图按项目整体24个月工期编排，并与设计、造价等前置包接口衔接"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:12",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:12",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "bidder_id": "COMP-0494"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:12",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "bidder_id": "COMP-0025"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:23",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:30",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "recommended_winner": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:37:33",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0006/construction-2",
+          "selected_bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "业主内部讨论后决定接受本轮草案（revision 0）的全部条款，理由如下：\n\n1. 价格与预算：报价 MOP 47,508,000 低于本包预算上限 MOP 52,500,000，属固定总价，风险预备费 MOP 2,360,000 已覆盖地下管线不确定性、材料与人工价格波动及界面延误，业主不再另行承担该等风险。\n2. 计量与支付基准（业主自身立场决定）：按统一工程量清单计量，按合同节点申报、经业主支付审核后计量支付；报价中的价格指数上浮已计入固定总价，业主不接受合同期内的指数调价，投标文件中若合同允许按指数调整则按约定执行的表述，以本条固定总价、不调价为准。\n3. 审查期限（业主自身立场决定）：施工深化图、材料报审、隐蔽验收记录与试验报告，业主审查期为收到完整资料后 14 个日历日；BIM 模型与深化成果按业主审查意见修改闭环；界面移交以双方签认单确认。\n4. 范围与资源：范围限于雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，不含路面结构层、路基及交通机电系统；成员 COMP-0153 单一责任，资源承诺 0.7、工作份额 1.0，与包要求一致。\n5. 工期：约 16 个月施工期在项目 24 个月框架内，里程碑（第 2、8、12、16 个月）可作为进度审核节点。\n6. 未来交付物按义务处理：本接受仅授权可执行的模拟义务，不表示工程交付物或法定审批已完成，均以审查与验收条件为准。\n\n以上第 2、3 条为业主自身立场的决定，请写入下一稿。"
+          },
+          "COMP-0153": {
+            "action": "accept",
+            "reason": "本包与本公司能力匹配：排水管网、检查井、地下管沟及道路衔接预埋施工属于我方施工与工程管理能力范围，情景资源占用0.7低于可用容量2.0，工期约16个月在项目24个月框架内可安排。报价MOP 47,508,000低于包预算上限52,500,000，固定总价与风险预备费覆盖地下管线不确定性、价格波动与界面延误，资源与工作份额均为单一责任承担，符合我方单一责任投标定位。已披露的投标假设（统一工程量清单计量、交通疏解与BIM深化通过施工组织落实、专业作业常规分包由我方统一管理、团队可用性摘要随投标提交）作为风险分配接受，不视为缺失证据。范围、货币、成员与资源承诺以规范字段为准，本阶段仅授权可执行的模拟义务，不主张未来工程交付或法定审批已完成。故接受本轮确切条款。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM61A2AE2A/CASE-0006/construction-2/round-1/contract",
+          "simulation_id": "SIM61A2AE2A",
+          "project_id": "CASE-0006",
+          "package_id": "CASE-0006/construction-2",
+          "session_id": "SIM61A2AE2A/CASE-0006/construction-2/round-1",
+          "snapshot_version": "e53ebf062b2512cd65eb4e232d461441868312b02e4c9af6a2ae43405264dd38",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0006/construction-2_001",
+          "bidder_id": "COMP-0153",
+          "lead_id": "COMP-0153",
+          "members": [
+            "COMP-0153"
+          ],
+          "price": 47508000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0153": 0.7
+          },
+          "work_shares": {
+            "COMP-0153": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "0950a83f82f67140ccca585e116d6e5657ff930bdda72d0e3a84c93a5c9af4be",
+          "terms": {
+            "schedule_commitment": "总工期按项目24个月框架内安排，本包施工期约16个月：第1至2个月施工准备、测量放线与交通疏解报批；第3至12个月分段进行管道、检查井与管沟主体施工；第10至14个月完成道路衔接预埋与界面移交；第14至16个月完成通水试验、分项验收与竣工资料移交。关键里程碑：开工后2个月完成首个作业段围蔽与开挖；第8个月完成雨污主干管过半；第12个月完成全部管道主体；第16个月完成验收移交。",
+            "risk_response": "一、地下既有管线不确定性：开工前探摸与物探复核，发现冲突即启动迁改协调并调整分段顺序，费用由风险预备费覆盖。\n二、材料与人工价格波动：报价已计入价格指数上浮，若合同允许按指数调整则按约定执行，否则以预备费吸收。\n三、交通疏解与公共通行压力：编制专项方案并设专职协调人，分段围蔽缩短占道时间，设置行人通道与告示。\n四、BIM深化与MEP接口风险：建立接口台账与周协调会，深化图报审前置，界面移交签认。\n五、雨季与基坑安全：降排水与支护监测同步，雨季施工预案与应急物资储备。\n六、专业分包管理风险：分包按常规供应商管理，纳入我方质量安全体系，由我方承担单一责任。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0006/construction-2_001",
+              "package_id": "CASE-0006/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0153",
+              "bidder_name": "中交第一航务工程局有限公司",
+              "technical_proposal": "本投标以单一责任投标人身份承接A区东轴线排水及地下管线工程包全部授权范围：雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，不含路面结构层、路基及交通机电系统。\n\n施工方法：排水管道按开槽埋管为主，采用钢板桩或槽钢加横撑支护、分层开挖、降排水后铺筑砂石垫层，HDPE/钢筋混凝土管按管径分段下管、承插接口、闭水或闭气试验合格后回填；检查井采用预制或现浇井身，井盖标高与道路衔接面统一放线控制。地下管沟采用分段明挖现浇，与道路衔接处管线预埋按道路专业提供的标高与平面控制点预留套管与包封。\n\n协调与深化：设专职BIM深化协调员，按设计模型进行管线综合与碰撞检查，形成施工深化图报审；MEP接口由项目技术负责人牵头与机电、道路标段进行接口台账管理，逐项签认移交界面。城市施工物流与交通疏解编制专项方案，分段围蔽、错峰出土、设置临时便道与行人通道，并与公共通行协调人对接。\n\n质量与文档：执行内部质量程序，材料进场复检、工序三检、隐蔽验收影像留档、独立检查抽查；质量文档按分项工程建立台账，竣工资料与试验报告同步归档。安全期望跟踪纳入周检与月度安全评审。\n\n团队：按角色计划配置项目总监、施工经理、技术负责人、质量安全主管、测量与试验人员、BIM协调员及作业班组，团队可用性摘要随投标文件提交；专业作业按常规分包安排，由我方统一管理并承担单一责任。",
+              "implementation_plan": "一、施工组织：按东轴线走向划分三个作业段流水施工，先深后浅、先污后雨，管沟与检查井同步跟进，道路衔接预埋段配合道路标段节点插入。\n二、主要工序：测量放线→管线探摸与迁改协调→支护与降排水→沟槽开挖→垫层与基础→管道安装与接口→检查井砌筑或安装→闭水/闭气试验→分层回填与压实检测→路面衔接预埋与界面移交。\n三、临时工程与措施：分段围蔽与临时便道、出土路线与洗车槽、临时排水与沉淀池、基坑监测点布设、夜间施工照明与噪声控制。\n四、资源投入：配置挖掘机、吊车、压实与降水设备及运输车辆，按段配置作业班组；主要材料按工程量清单分批采购进场，砂石、管材、井盖等设现场堆场并做标识与防护。\n五、协调机制：每周召开接口协调会，与道路、机电及公共通行相关方核对界面；BIM深化图经内部审核后报业主审查，变更按程序闭环。\n六、验收与移交：分项验收、隐蔽验收、系统通水试验与竣工资料移交分阶段完成，界面移交以签认单为准。",
+              "quotation": 47508000.0,
+              "schedule_commitment": "总工期按项目24个月框架内安排，本包施工期约16个月：第1至2个月施工准备、测量放线与交通疏解报批；第3至12个月分段进行管道、检查井与管沟主体施工；第10至14个月完成道路衔接预埋与界面移交；第14至16个月完成通水试验、分项验收与竣工资料移交。关键里程碑：开工后2个月完成首个作业段围蔽与开挖；第8个月完成雨污主干管过半；第12个月完成全部管道主体；第16个月完成验收移交。",
+              "compliance_statement": "接受业主按统一工程量清单计量支付与进度审核；按业主要求提交施工深化图、材料报审、隐蔽验收记录与试验报告供审查；BIM模型与深化成果按业主审查意见修改闭环；界面移交以双方签认单确认；质量文档按分项建立台账并接受抽查；安全期望跟踪以周检记录与月度评审报业主备查。付款按合同节点申报，经业主支付审核后计量。",
+              "risk_response": "一、地下既有管线不确定性：开工前探摸与物探复核，发现冲突即启动迁改协调并调整分段顺序，费用由风险预备费覆盖。\n二、材料与人工价格波动：报价已计入价格指数上浮，若合同允许按指数调整则按约定执行，否则以预备费吸收。\n三、交通疏解与公共通行压力：编制专项方案并设专职协调人，分段围蔽缩短占道时间，设置行人通道与告示。\n四、BIM深化与MEP接口风险：建立接口台账与周协调会，深化图报审前置，界面移交签认。\n五、雨季与基坑安全：降排水与支护监测同步，雨季施工预案与应急物资储备。\n六、专业分包管理风险：分包按常规供应商管理，纳入我方质量安全体系，由我方承担单一责任。",
+              "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交A区东轴线排水及地下管线工程包投标，报价MOP 47,508,000，低于包预算上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与管沟主体材料费 16,850,000\n- 检查井、管沟及衔接预埋施工人工与班组费 11,280,000\n- 施工措施与临时工程费 7,350,000\n- 交通疏解与公共通行协调费 3,180,000\n- BIM深化、MEP接口协调与专业分包管理费 2,860,000\n- 项目管理、质量安全与文档管理费 3,620,000\n- 风险预备费与商业调整 2,360,000\n- 报价取整调整 8,000\n合计 47,508,000\n\n价格基准：按统一工程量清单报价，材料与人工已计入当前价格指数上浮，措施与临时工程按分段流水施工组织估算；城市交通疏解、BIM深化与MEP接口通过施工组织与内部协调机制落实，专业作业按常规分包由我方统一管理。工期在项目24个月框架内安排约16个月施工期。本报价为固定总价，风险预备费覆盖地下管线不确定性与界面延误。",
+              "quotation_breakdown": [
+                {
+                  "item": "排水管道与管沟主体材料费",
+                  "amount": 16850000,
+                  "basis": "按统一工程量清单管径与延米估算的管材、砂石垫层、混凝土及井体材料，含材料价格指数上浮约5.5%的采购风险"
+                },
+                {
+                  "item": "检查井、管沟及衔接预埋施工人工与班组费",
+                  "amount": 11280000,
+                  "basis": "按分段流水作业班组工日估算，含管道安装、井体施工、预埋套管包封及回填压实人工，人工价格指数上浮约9.8%"
+                },
+                {
+                  "item": "施工措施与临时工程费",
+                  "amount": 7350000,
+                  "basis": "沟槽支护、降排水、分段围蔽、临时便道与洗车槽、出土运输路线、基坑监测及夜间施工措施"
+                },
+                {
+                  "item": "交通疏解与公共通行协调费",
+                  "amount": 3180000,
+                  "basis": "交通疏解专项方案实施、临时标志标线、行人通道维护及公共通行协调专职人员"
+                },
+                {
+                  "item": "BIM深化、MEP接口协调与专业分包管理费",
+                  "amount": 2860000,
+                  "basis": "BIM深化协调员与碰撞检查、接口台账管理、常规专业分包的管理与协调投入"
+                },
+                {
+                  "item": "项目管理、质量安全与文档管理费",
+                  "amount": 3620000,
+                  "basis": "项目总监、施工经理、技术负责人、质量安全与测量试验人员、文档台账与竣工资料编制"
+                },
+                {
+                  "item": "风险预备费与商业调整",
+                  "amount": 2360000,
+                  "basis": "地下管线探摸不确定性、材料与人工价格波动、界面移交延误及保修期响应的预备费"
+                },
+                {
+                  "item": "报价取整调整",
+                  "amount": 8000,
+                  "basis": "将分项估算合计取整至整千位MOP的尾差调整"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+                "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+                "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+                "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "0950a83f82f67140ccca585e116d6e5657ff930bdda72d0e3a84c93a5c9af4be"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0006/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+          "budget": 52500000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM61A2AE2A/CASE-0006/construction-2/round-1/contract",
+    "simulation_id": "SIM61A2AE2A",
+    "project_id": "CASE-0006",
+    "package_id": "CASE-0006/construction-2",
+    "session_id": "SIM61A2AE2A/CASE-0006/construction-2/round-1",
+    "snapshot_version": "e53ebf062b2512cd65eb4e232d461441868312b02e4c9af6a2ae43405264dd38",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0006/construction-2_001",
+    "bidder_id": "COMP-0153",
+    "lead_id": "COMP-0153",
+    "members": [
+      "COMP-0153"
+    ],
+    "price": 47508000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0153": 0.7
+    },
+    "work_shares": {
+      "COMP-0153": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0153": true
+    },
+    "signed_terms_hash": "0950a83f82f67140ccca585e116d6e5657ff930bdda72d0e3a84c93a5c9af4be",
+    "terms": {
+      "schedule_commitment": "总工期按项目24个月框架内安排，本包施工期约16个月：第1至2个月施工准备、测量放线与交通疏解报批；第3至12个月分段进行管道、检查井与管沟主体施工；第10至14个月完成道路衔接预埋与界面移交；第14至16个月完成通水试验、分项验收与竣工资料移交。关键里程碑：开工后2个月完成首个作业段围蔽与开挖；第8个月完成雨污主干管过半；第12个月完成全部管道主体；第16个月完成验收移交。",
+      "risk_response": "一、地下既有管线不确定性：开工前探摸与物探复核，发现冲突即启动迁改协调并调整分段顺序，费用由风险预备费覆盖。\n二、材料与人工价格波动：报价已计入价格指数上浮，若合同允许按指数调整则按约定执行，否则以预备费吸收。\n三、交通疏解与公共通行压力：编制专项方案并设专职协调人，分段围蔽缩短占道时间，设置行人通道与告示。\n四、BIM深化与MEP接口风险：建立接口台账与周协调会，深化图报审前置，界面移交签认。\n五、雨季与基坑安全：降排水与支护监测同步，雨季施工预案与应急物资储备。\n六、专业分包管理风险：分包按常规供应商管理，纳入我方质量安全体系，由我方承担单一责任。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0006/construction-2_001",
+        "package_id": "CASE-0006/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本投标以单一责任投标人身份承接A区东轴线排水及地下管线工程包全部授权范围：雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工，不含路面结构层、路基及交通机电系统。\n\n施工方法：排水管道按开槽埋管为主，采用钢板桩或槽钢加横撑支护、分层开挖、降排水后铺筑砂石垫层，HDPE/钢筋混凝土管按管径分段下管、承插接口、闭水或闭气试验合格后回填；检查井采用预制或现浇井身，井盖标高与道路衔接面统一放线控制。地下管沟采用分段明挖现浇，与道路衔接处管线预埋按道路专业提供的标高与平面控制点预留套管与包封。\n\n协调与深化：设专职BIM深化协调员，按设计模型进行管线综合与碰撞检查，形成施工深化图报审；MEP接口由项目技术负责人牵头与机电、道路标段进行接口台账管理，逐项签认移交界面。城市施工物流与交通疏解编制专项方案，分段围蔽、错峰出土、设置临时便道与行人通道，并与公共通行协调人对接。\n\n质量与文档：执行内部质量程序，材料进场复检、工序三检、隐蔽验收影像留档、独立检查抽查；质量文档按分项工程建立台账，竣工资料与试验报告同步归档。安全期望跟踪纳入周检与月度安全评审。\n\n团队：按角色计划配置项目总监、施工经理、技术负责人、质量安全主管、测量与试验人员、BIM协调员及作业班组，团队可用性摘要随投标文件提交；专业作业按常规分包安排，由我方统一管理并承担单一责任。",
+        "implementation_plan": "一、施工组织：按东轴线走向划分三个作业段流水施工，先深后浅、先污后雨，管沟与检查井同步跟进，道路衔接预埋段配合道路标段节点插入。\n二、主要工序：测量放线→管线探摸与迁改协调→支护与降排水→沟槽开挖→垫层与基础→管道安装与接口→检查井砌筑或安装→闭水/闭气试验→分层回填与压实检测→路面衔接预埋与界面移交。\n三、临时工程与措施：分段围蔽与临时便道、出土路线与洗车槽、临时排水与沉淀池、基坑监测点布设、夜间施工照明与噪声控制。\n四、资源投入：配置挖掘机、吊车、压实与降水设备及运输车辆，按段配置作业班组；主要材料按工程量清单分批采购进场，砂石、管材、井盖等设现场堆场并做标识与防护。\n五、协调机制：每周召开接口协调会，与道路、机电及公共通行相关方核对界面；BIM深化图经内部审核后报业主审查，变更按程序闭环。\n六、验收与移交：分项验收、隐蔽验收、系统通水试验与竣工资料移交分阶段完成，界面移交以签认单为准。",
+        "quotation": 47508000.0,
+        "schedule_commitment": "总工期按项目24个月框架内安排，本包施工期约16个月：第1至2个月施工准备、测量放线与交通疏解报批；第3至12个月分段进行管道、检查井与管沟主体施工；第10至14个月完成道路衔接预埋与界面移交；第14至16个月完成通水试验、分项验收与竣工资料移交。关键里程碑：开工后2个月完成首个作业段围蔽与开挖；第8个月完成雨污主干管过半；第12个月完成全部管道主体；第16个月完成验收移交。",
+        "compliance_statement": "接受业主按统一工程量清单计量支付与进度审核；按业主要求提交施工深化图、材料报审、隐蔽验收记录与试验报告供审查；BIM模型与深化成果按业主审查意见修改闭环；界面移交以双方签认单确认；质量文档按分项建立台账并接受抽查；安全期望跟踪以周检记录与月度评审报业主备查。付款按合同节点申报，经业主支付审核后计量。",
+        "risk_response": "一、地下既有管线不确定性：开工前探摸与物探复核，发现冲突即启动迁改协调并调整分段顺序，费用由风险预备费覆盖。\n二、材料与人工价格波动：报价已计入价格指数上浮，若合同允许按指数调整则按约定执行，否则以预备费吸收。\n三、交通疏解与公共通行压力：编制专项方案并设专职协调人，分段围蔽缩短占道时间，设置行人通道与告示。\n四、BIM深化与MEP接口风险：建立接口台账与周协调会，深化图报审前置，界面移交签认。\n五、雨季与基坑安全：降排水与支护监测同步，雨季施工预案与应急物资储备。\n六、专业分包管理风险：分包按常规供应商管理，纳入我方质量安全体系，由我方承担单一责任。",
+        "submission_summary": "中交第一航务工程局有限公司以单一责任投标人身份提交A区东轴线排水及地下管线工程包投标，报价MOP 47,508,000，低于包预算上限52,500,000。\n\n报价构成（MOP）：\n- 排水管道与管沟主体材料费 16,850,000\n- 检查井、管沟及衔接预埋施工人工与班组费 11,280,000\n- 施工措施与临时工程费 7,350,000\n- 交通疏解与公共通行协调费 3,180,000\n- BIM深化、MEP接口协调与专业分包管理费 2,860,000\n- 项目管理、质量安全与文档管理费 3,620,000\n- 风险预备费与商业调整 2,360,000\n- 报价取整调整 8,000\n合计 47,508,000\n\n价格基准：按统一工程量清单报价，材料与人工已计入当前价格指数上浮，措施与临时工程按分段流水施工组织估算；城市交通疏解、BIM深化与MEP接口通过施工组织与内部协调机制落实，专业作业按常规分包由我方统一管理。工期在项目24个月框架内安排约16个月施工期。本报价为固定总价，风险预备费覆盖地下管线不确定性与界面延误。",
+        "quotation_breakdown": [
+          {
+            "item": "排水管道与管沟主体材料费",
+            "amount": 16850000,
+            "basis": "按统一工程量清单管径与延米估算的管材、砂石垫层、混凝土及井体材料，含材料价格指数上浮约5.5%的采购风险"
+          },
+          {
+            "item": "检查井、管沟及衔接预埋施工人工与班组费",
+            "amount": 11280000,
+            "basis": "按分段流水作业班组工日估算，含管道安装、井体施工、预埋套管包封及回填压实人工，人工价格指数上浮约9.8%"
+          },
+          {
+            "item": "施工措施与临时工程费",
+            "amount": 7350000,
+            "basis": "沟槽支护、降排水、分段围蔽、临时便道与洗车槽、出土运输路线、基坑监测及夜间施工措施"
+          },
+          {
+            "item": "交通疏解与公共通行协调费",
+            "amount": 3180000,
+            "basis": "交通疏解专项方案实施、临时标志标线、行人通道维护及公共通行协调专职人员"
+          },
+          {
+            "item": "BIM深化、MEP接口协调与专业分包管理费",
+            "amount": 2860000,
+            "basis": "BIM深化协调员与碰撞检查、接口台账管理、常规专业分包的管理与协调投入"
+          },
+          {
+            "item": "项目管理、质量安全与文档管理费",
+            "amount": 3620000,
+            "basis": "项目总监、施工经理、技术负责人、质量安全与测量试验人员、文档台账与竣工资料编制"
+          },
+          {
+            "item": "风险预备费与商业调整",
+            "amount": 2360000,
+            "basis": "地下管线探摸不确定性、材料与人工价格波动、界面移交延误及保修期响应的预备费"
+          },
+          {
+            "item": "报价取整调整",
+            "amount": 8000,
+            "basis": "将分项估算合计取整至整千位MOP的尾差调整"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "按统一工程量清单报价，主要材料、人工、施工措施及临时工程费用构成在投标文件中说明，报价以MOP计",
+          "城市交通疏解、公共通行协调与BIM深化协调通过施工组织设计和内部协调机制落实，相关专业作业可按常规分包安排",
+          "施工团队按角色计划配置，具体人员可用性在投标文件中以团队可用性摘要呈现",
+          "质量文档管理与安全期望跟踪纳入质量保证方案和风险应对方案"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "范围内雨水与污水排水管网、检查井、地下管沟及与道路衔接的管线预埋施工；不含路面结构层、路基及交通机电系统。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

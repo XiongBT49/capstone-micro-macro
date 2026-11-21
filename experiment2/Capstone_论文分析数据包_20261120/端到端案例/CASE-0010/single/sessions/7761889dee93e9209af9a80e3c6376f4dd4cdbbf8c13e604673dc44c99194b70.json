@@ -1,0 +1,1543 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM2306B16D/CASE-0010/supply-1/round-1",
+  "snapshot": {
+    "simulation_id": "SIM2306B16D",
+    "project_id": "CASE-0010",
+    "package_id": "CASE-0010/supply-1",
+    "round_id": 1,
+    "tick": 15,
+    "public": {
+      "environment": {
+        "current_tick": 15,
+        "market_demand_index": 1.061811376099563,
+        "material_price_index": 1.1124378916329212,
+        "labor_price_index": 1.1722884529013,
+        "financing_condition_index": 0.9507764034575142,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 21420000.0,
+      "project": {
+        "project_id": "CASE-0010",
+        "name": "路氹城生态保护区二区优化工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；；路氹城生态保护区二区优化工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0010/supply-1",
+        "project_id": "CASE-0010",
+        "kind": "supply",
+        "buyer_id": "$construction_lead",
+        "name": "Package A - 生态保育区土建与景观工程材料采购",
+        "scope": "仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+        "budget": 21420000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [
+          "CASE-0010/construction-1"
+        ],
+        "cost_inclusion": "included_in_parent",
+        "parent_package_id": "CASE-0010/construction-1",
+        "candidate_ids": [
+          "COMP-0154",
+          "COMP-0167"
+        ]
+      }
+    },
+    "private": {
+      "COMP-0025": {
+        "entity_id": "COMP-0025",
+        "available_resource": 1.3,
+        "occupied_resource": 0.7,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0025",
+          "company_name": "得宝国际有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0025",
+          "name": "得宝国际有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8700000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.7,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000005",
+              "project_id": "CASE-0010",
+              "project_stage": "contract_award",
+              "role": "Contractor",
+              "status": "active",
+              "resource_allocation": 0.7,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 14,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIM2306B16D/CASE-0010/construction-1/round-1/contract",
+              "project_id": "CASE-0010",
+              "package_id": "CASE-0010/construction-1",
+              "kind": "construction",
+              "party_role": "member",
+              "signed_tick": 14,
+              "status": "committed",
+              "project_stage": "contract_award",
+              "price": 72900000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0.7,
+              "own_work_share": 1.0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIM2306B16D/EVT000173",
+            "event_type": "agent_engaged",
+            "tick": 14,
+            "project_id": "CASE-0010",
+            "role": "Contractor",
+            "available_resource": 1.3,
+            "occupied_resource": 0.7,
+            "committed": true
+          },
+          {
+            "event_id": "SIM2306B16D/EVT000174",
+            "event_type": "package_contract_committed",
+            "tick": 14,
+            "project_id": "CASE-0010",
+            "package_id": "CASE-0010/construction-1",
+            "contract_id": "SIM2306B16D/CASE-0010/construction-1/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0025"
+            ],
+            "price": 72900000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIM2306B16D/EVT000177",
+            "event_type": "project_state_updated",
+            "tick": 14,
+            "project_id": "CASE-0010",
+            "stage": "contract_award",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 3,
+          "selected_events": 3,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0154": {
+        "entity_id": "COMP-0154",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0154",
+          "company_name": "中交第二公路工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0154",
+          "name": "中交第二公路工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8600000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0167": {
+        "entity_id": "COMP-0167",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0167",
+          "company_name": "中国建筑第三工程局有限公司",
+          "company_role": "supplier",
+          "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0167",
+          "name": "中国建筑第三工程局有限公司",
+          "role": "Supplier",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8500000000000001,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 14,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "12a11093aec9fe70e42b3b9fa59b7dfe4b31324e8f64d59212de264c2c8ddadd"
+  },
+  "spec": {
+    "package_id": "CASE-0010/supply-1",
+    "project_id": "CASE-0010",
+    "kind": "supply",
+    "buyer_id": "$construction_lead",
+    "name": "Package A - 生态保育区土建与景观工程材料采购",
+    "scope": "仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+    "budget": 21420000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [
+      "CASE-0010/construction-1"
+    ],
+    "cost_inclusion": "included_in_parent",
+    "parent_package_id": "CASE-0010/construction-1",
+    "candidate_ids": [
+      "COMP-0154",
+      "COMP-0167"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0010",
+      "project_name": "路氹城生态保护区二区优化工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；；路氹城生态保护区二区优化工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0010",
+      "project_scope": "路氹城生态保护区二区优化工程为市政与公共基础设施项目，采用DBB交付模式，工期24个月，预算MOP 150,000,000。本包为施工包「Package A - 生态保育区土建与景观工程」的材料与构配件供应包，仅负责供货、运输到场、质量证明文件和质保期内更换，不含施工、安装、临时工程或措施费，不承担施工界面责任。材料费用已包含在施工包合同价内，由施工包承包商作为买方支付。",
+      "functional_requirements": [
+        "按施工包进度计划供应土方与地形重塑所需材料、生态护岸与步道基层材料、湿地植被种植材料、景观铺装材料、排水与小型水工构筑物材料及构配件。",
+        "确保材料与构配件符合设计规格、生态保育区环境要求及质量目标。",
+        "提供完整质量证明文件，包括材料来源、检验报告、合格证及环保合规文件。",
+        "在质保期内对缺陷材料进行更换，并配合承包商完成材料验收。",
+        "提供材料存储与保护建议，确保现场交付时品质完好。",
+        "配合承包商进行材料接口协调，提供必要的技术资料与样品。"
+      ],
+      "technical_requirements": [
+        "材料与构配件需满足设计图纸及技术规范要求，包括耐久性、生态兼容性及可持续性目标。",
+        "提供材料技术参数表、检测报告及环保认证文件，支持BIM协调与MEP接口信息。",
+        "运输与交付计划需与施工进度、现场物流及公共通道协调，减少对生态保护区运营影响。",
+        "材料包装与标识需清晰，便于现场验收与追溯。",
+        "提供质保期维护与更换方案，确保可维护性目标。",
+        "配合承包商完成材料样品报批与业主验收路径。"
+      ],
+      "budget_policy": "本包预算为MOP 21,420,000，已包含在施工包合同价内。投标报价需基于材料清单、规格及数量，考虑市场价格波动、运输成本及质保期服务费用。业主将定性比较报价合理性，并结合交付信心、质量目标契合度及风险控制综合判断。",
+      "schedule_policy": "供应计划需与施工包24个月工期匹配，考虑材料生产周期、运输时间及现场接收窗口。业主审查时间、包接口时间及公共通道协调时间应纳入供应计划。投标人需提交进度视图，说明关键材料交付里程碑及风险缓冲。",
+      "compliance_requirements": [
+        "业主审查节奏：定期审查材料供应进度与质量文件。",
+        "问题升级路径：明确材料质量或交付延误的升级机制。",
+        "文档纪律：确保所有质量证明、检验报告及交付记录完整可查。",
+        "接口签署：材料规格与施工接口需经承包商与业主确认。",
+        "公共通道协调：运输安排需配合生态保护区公共访问管理。",
+        "质量目标跟踪：监控材料质量指标与可持续性目标。",
+        "安全期望跟踪：确保运输与交付过程符合安全期望。",
+        "变更控制纪律：材料变更需经业主批准并记录。"
+      ],
+      "risk_priorities": [
+        "材料质量不符合生态保护区要求导致返工或环境风险。",
+        "供应延误影响施工关键路径。",
+        "运输过程对生态敏感区造成干扰。",
+        "质保期内更换响应不及时。",
+        "市场价格波动导致成本超支。",
+        "文件不完整影响验收与支付。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0010/supply-1",
+          "package_type": "supplier",
+          "package_name": "Package A - 生态保育区土建与景观工程材料采购",
+          "scope": "Authorized scope: 仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。\nBuyer refinement: 仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+          "required_company_role": "supplier",
+          "qualification_requirements": [
+            "生态保育区材料供应协调能力",
+            "符合环保与可持续性目标的材料选型能力",
+            "质量文档管理能力",
+            "运输物流与现场交付协调能力",
+            "质保期维护与更换支持能力",
+            "与承包商接口信息提供能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "交付方法说明",
+            "质量方法说明",
+            "价格基础（含材料清单单价与总价）",
+            "进度视图（关键材料交付里程碑）",
+            "风险应对方案"
+          ],
+          "pricing_requirements": "基于材料清单与规格的固定单价或总价报价，包含供货、运输、质量证明及质保期服务费用。报价需考虑市场价格指数与运输成本。\nBinding currency: MOP; package ceiling: 21420000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力契合度",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "文档纪律",
+            "质量目标契合度",
+            "可持续性目标支持",
+            "维护支持",
+            "接口协调"
+          ],
+          "owner_decision_policy": "业主将定性比较投标，综合判断能力契合度、价格合理性、风险控制与交付信心。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0010/supply-1",
+        "package_type": "supplier",
+        "package_name": "Package A - 生态保育区土建与景观工程材料采购",
+        "scope": "Authorized scope: 仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。\nBuyer refinement: 仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+        "required_company_role": "supplier",
+        "qualification_requirements": [
+          "生态保育区材料供应协调能力",
+          "符合环保与可持续性目标的材料选型能力",
+          "质量文档管理能力",
+          "运输物流与现场交付协调能力",
+          "质保期维护与更换支持能力",
+          "与承包商接口信息提供能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "交付方法说明",
+          "质量方法说明",
+          "价格基础（含材料清单单价与总价）",
+          "进度视图（关键材料交付里程碑）",
+          "风险应对方案"
+        ],
+        "pricing_requirements": "基于材料清单与规格的固定单价或总价报价，包含供货、运输、质量证明及质保期服务费用。报价需考虑市场价格指数与运输成本。\nBinding currency: MOP; package ceiling: 21420000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力契合度",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "文档纪律",
+          "质量目标契合度",
+          "可持续性目标支持",
+          "维护支持",
+          "接口协调"
+        ],
+        "owner_decision_policy": "业主将定性比较投标，综合判断能力契合度、价格合理性、风险控制与交付信心。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "COMP-0025",
+        "company_name": "得宝国际有限公司",
+        "company_role": "owner",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0154",
+        "company_name": "中交第二公路工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：一般项目：对外承包工程；土石方工程施工；体育场地设施工程施工；金属门窗工程施工；砼结构构件制造（仅限分支机构经营）；水泥制品制造（仅限分支机构经营）；建筑砌块制造（仅限分支机构经营）；金属结构制造（仅限分支机构经营）；园林绿化工程施工；普通机械设备安装服务；人力资源服务（不含职业中介活动、劳务派遣服务）；教育咨询服务（不含涉许可审批的教育培训活动）；砼结构构件销售；货物进出口；技术进出口；进出口代理；地质勘查技术服务；机械设备租赁；工程和技术研究和试验发展；信息技术咨询服务；物业管理；土地使用权租赁；非居住房地产租赁；工程管理服务；工程造价咨询业务；专业设计服务；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；公路水运工程试验检测服务；新材料技术推广服务；新材料技术研发；防洪除涝设施管理；水文服务；水土流失防治服务；规划设计管理；水利相关咨询服务；水污染治理；水环境污染防治服务；大气污染治理；大气环境污染防治服务；固体废物治理；土壤污染治理与修复服务；土壤环境污染防治服务；地质灾害治理服务；生态恢复及生态保护服务；环境应急治理服务；市政设施管理；城市绿化管理；城市公园管理；环境卫生公共设施安装服务；土地整治服务；土地调查评估服务；网络与信息安全软件开发；计算机系统服务；网络技术服务；软件开发；非金属矿物制品制造（仅限分支机构经营）；新型建筑材料制造（不含危险化学品）（仅限分支机构经营）；轻质建筑材料制造（仅限分支机构经营）；人工造林；森林固碳服务；建筑用石加工（仅限分支机构经营）；矿物洗选加工（仅限分支机构经营）；建筑砌块销售；建筑材料销售；仓储设备租赁服务；道路货物运输站经营；园区管理服务；机械设备研发。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：建设工程施工；建筑劳务分包；施工专业作业；文物保护工程施工；地质灾害治理工程施工；住宅室内装饰装修；公路管理与养护；建筑物拆除作业（爆破作业除外）；建筑智能化系统设计；测绘服务；安全生产检验检测；建设工程监理；公路工程监理；水利工程建设监理；建设工程勘察；地质灾害治理工程勘查；建设工程设计；建设工程质量检测；水利工程质量检测；预应力混凝土铁路桥梁简支梁产品生产（仅限分支机构经营）；电气安装服务；河道采砂；城市建筑垃圾处置（清运）；燃气燃烧器具安装、维修；输电、供电、受电电力设施的安装、维修和试验；非煤矿山矿产资源开采；特种设备安装改造修理；人防工程设计。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以审批结果为准）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0167",
+        "company_name": "中国建筑第三工程局有限公司",
+        "company_role": "supplier",
+        "profile": "本地企业资料：可承担各类型工业、能源、交通、民用等工程建设项目的施工总承包；各种类型的钢结构、网架工程的制作与安装；各类型的地基与基础工程施工；各类型建设项目中预应力专项工程的施工；各类建筑（包括车、船、飞机）的室内、室外装饰装修工程的施工、设计、科研、咨询；道路桥梁工程施工；线路、管道、设备、机电安装；房地产经营；工程监理与总包管理；混凝土预制构件及制品销售；金属结构制作与安装；建筑、装饰、金属、化工材料销售；建筑机械、料具修造与租赁（含分支机构经营范围）；从事货物及技术进出口业务（不含国家禁止或限制进出口的货物或技术）；承包与其实力、规模、业绩相适应的国外工程项目；对外派遣实施上述境外工程所需的劳务人员。（依法须经审批的项目，经相关部门审批后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "COMP-0025": [
+        {
+          "agent_id": "COMP-0025_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "项目统筹部",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与资源调配，习惯先确认关键路径与外部依赖。对风险容忍度中等，倾向于在早期锁定设计协调与成本控制接口，避免后期变更。讨论中常提出资源冲突与工期压缩的张力，要求团队在报价与进度之间取得平衡。",
+          "responsibilities": [
+            "统筹投标包整体策略与资源规划",
+            "协调设计、成本与施工团队接口",
+            "监控工期与关键节点风险",
+            "对接业主与监管服务要求"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接务实，以数据与节点说话，强调决策时效与责任归属。"
+        },
+        {
+          "agent_id": "COMP-0025_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "成本与合约部",
+          "position": "成本控制经理",
+          "personal_profile": "对数字敏感，先看报价基础与支付条款，习惯在早期识别成本超支风险。压力下倾向于保守估算，强调支付评审与现金流匹配。讨论中常带来成本与质量目标之间的张力，要求明确价格依据与风险准备金。",
+          "responsibilities": [
+            "编制报价基础与成本评审",
+            "审核支付评审与现金流计划",
+            "监控成本控制与变更管理",
+            "评估分包与采购价格合理性"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "细致严谨，用数字与条款沟通，偏好书面确认与留痕。"
+        },
+        {
+          "agent_id": "COMP-0025_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "工程管理部",
+          "position": "施工经理",
+          "personal_profile": "现场经验丰富，先关注施工可行性与资源到位情况，对土方、护岸与排水工序有直觉判断。压力下倾向于务实调整工序，强调团队可用性与设备调度。讨论中常提出理想方案与现场条件的张力，要求设计协调与施工计划对齐。",
+          "responsibilities": [
+            "制定施工方案与进度安排",
+            "管理现场资源与分包协调",
+            "监督土方、护岸与景观工程质量",
+            "落实安全与环境管理要求"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "简明扼要，以现场实例与操作步骤沟通，注重可执行性。"
+        },
+        {
+          "agent_id": "COMP-0025_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "质量与合规部",
+          "position": "质量经理",
+          "personal_profile": "对质量目标与合规要求高度敏感，先检查文档纪律与检验试验计划。压力下坚持独立检查与记录完整性，不愿为进度牺牲质量。讨论中常带来质量目标与工期压力的张力，要求明确验收标准与整改闭环。",
+          "responsibilities": [
+            "建立质量目标与检验计划",
+            "执行独立检查与质量评审",
+            "管理文档纪律与合规记录",
+            "跟踪整改与质量目标达成"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "条理清晰，以标准与证据沟通，强调闭环与可追溯。"
+        },
+        {
+          "agent_id": "COMP-0025_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0025",
+          "company_role": "contractor",
+          "department": "设计协调部",
+          "position": "设计协调主管",
+          "personal_profile": "擅长在设计意图与施工现实之间寻找平衡，先关注设计可施工性与生态目标落实。压力下倾向于通过技术优化解决问题，但会警惕过度设计带来的成本增加。讨论中常提出设计协调与成本控制的张力，要求早期澄清界面。",
+          "responsibilities": [
+            "协调设计与施工界面",
+            "审核设计可施工性与生态要求",
+            "管理设计变更与技术澄清",
+            "支持可持续发展目标落实"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "温和理性，以图纸与技术说明沟通，注重共识与界面清晰。"
+        }
+      ],
+      "COMP-0154": [
+        {
+          "agent_id": "COMP-0154_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先评估整体风险与资源匹配，习惯先看合同边界与支付条件，再考虑技术细节。他倾向于稳健决策，但会因工期紧迫而推动团队加快节奏，常在讨论中提出资源冲突与优先级问题。",
+          "responsibilities": [
+            "统筹公司整体投标策略与资源分配",
+            "审批最终报价与合同条款",
+            "协调跨部门资源与冲突",
+            "监控项目风险与合规性"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，注重结论与行动项，善于用简明语言总结复杂问题。"
+        },
+        {
+          "agent_id": "COMP-0154_02_李婉华",
+          "agent_name": "李婉华",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，注重成本构成与支付条款的合理性。在压力下会反复核对报价基础与现金流影响，倾向于保守报价但确保利润空间。她常提醒团队注意隐性成本与付款延迟风险。",
+          "responsibilities": [
+            "编制投标报价与成本分析",
+            "审核合同商务条款与支付条件",
+            "管理供应商与分包商报价",
+            "监控项目成本与现金流"
+          ],
+          "decision_authority": "high",
+          "communication_style": "细致严谨，喜欢用数据说话，表达清晰但有时过于关注细节。"
+        },
+        {
+          "agent_id": "COMP-0154_03_张建国",
+          "agent_name": "张建国",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "工程技术部",
+          "position": "技术总监",
+          "personal_profile": "技术导向，注重方案可行性与质量目标。在压力下会优先确保技术合规与质量证明文件齐全，对材料性能与检测标准尤为关注。他常提出技术替代方案以优化成本，但可能低估商务风险。",
+          "responsibilities": [
+            "评估材料技术规格与质量要求",
+            "制定质量保证与检验计划",
+            "协调设计对接与技术澄清",
+            "监督材料生产与供应质量"
+          ],
+          "decision_authority": "high",
+          "communication_style": "专业务实，喜欢用技术术语和图表说明问题，沟通中注重逻辑与证据。"
+        },
+        {
+          "agent_id": "COMP-0154_04_黄丽萍",
+          "agent_name": "黄丽萍",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "供应链管理部",
+          "position": "供应链经理",
+          "personal_profile": "注重资源可用性与交付可靠性，在压力下会优先确认库存与运输能力，对供应商的履约记录敏感。她倾向于建立备用供应渠道，但可能因过度谨慎而增加前期成本。",
+          "responsibilities": [
+            "评估材料供应能力与库存水平",
+            "规划运输与交付时间表",
+            "管理供应商关系与绩效",
+            "应对供应中断风险"
+          ],
+          "decision_authority": "medium",
+          "communication_style": "条理清晰，注重时间节点与责任分配，沟通中常使用清单和计划表。"
+        },
+        {
+          "agent_id": "COMP-0154_05_周文彬",
+          "agent_name": "周文彬",
+          "company_id": "COMP-0154",
+          "company_role": "supplier",
+          "department": "质量安全部",
+          "position": "质量经理",
+          "personal_profile": "对质量标准和文档纪律要求严格，在压力下会坚持独立检查与测试验证，对任何可能影响质量目标的妥协持谨慎态度。他常提醒团队注意质量证明文件的完整性与可追溯性。",
+          "responsibilities": [
+            "制定质量检验与测试计划",
+            "审核材料质量证明文件",
+            "执行独立质量检查",
+            "跟踪质量目标达成情况"
+          ],
+          "decision_authority": "medium",
+          "communication_style": "严谨规范，喜欢引用标准条款和检查记录，沟通中强调合规与证据。"
+        }
+      ],
+      "COMP-0167": [
+        {
+          "agent_id": "COMP-0167_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "公司管理层",
+          "position": "总经理",
+          "personal_profile": "在压力下优先判断风险与资源匹配，先看整体工期与资金链，再考虑细节。倾向于稳健决策，但会因过度谨慎而延迟行动。讨论中常提出最坏情况假设，带来风险控制与机会成本之间的张力。",
+          "responsibilities": [
+            "统筹公司整体投标策略与资源分配",
+            "审批最终报价与合同条件",
+            "协调跨部门资源与外部关系",
+            "监控项目风险与合规要求"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，善用结构化语言，强调底线与原则，偶尔以反问引导团队思考。"
+        },
+        {
+          "agent_id": "COMP-0167_02_林嘉怡",
+          "agent_name": "林嘉怡",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "采购与供应链管理部",
+          "position": "材料采购经理",
+          "personal_profile": "对材料价格波动和供应稳定性高度敏感，先看市场指数与供应商产能。在压力下倾向于锁定长期协议以降低不确定性，但可能忽视短期成本优化。讨论中常强调供应连续性与质量证明文件，带来成本与可靠性的张力。",
+          "responsibilities": [
+            "评估材料市场价格与供应风险",
+            "制定采购计划与供应商选择",
+            "审核材料质量证明与质保条款",
+            "协调运输到场与交付进度"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "细致务实，习惯用数据与清单说话，语气平和但坚持关键条款。"
+        },
+        {
+          "agent_id": "COMP-0167_03_黄伟强",
+          "agent_name": "黄伟强",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "成本与合约部",
+          "position": "成本控制经理",
+          "personal_profile": "对数字和合约条款极为敏锐，先看报价构成与支付条件。在压力下坚持成本底线，但可能因过度抠细节而影响协作效率。讨论中常质疑价格依据与变更风险，带来成本控制与灵活性的张力。",
+          "responsibilities": [
+            "编制与审核投标报价",
+            "分析成本构成与利润空间",
+            "评估付款条件与现金流影响",
+            "监控合约执行中的成本偏差"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "严谨精确，喜欢用对比数字和假设情景说明问题，语气坚定。"
+        },
+        {
+          "agent_id": "COMP-0167_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "质量与安全管理部",
+          "position": "质量保证经理",
+          "personal_profile": "对质量标准和文档纪律有执念，先看质量目标与检验流程。在压力下坚持独立检查与可追溯性，但可能因流程繁琐而拖慢进度。讨论中常强调质量证明与更换机制，带来质量与速度的张力。",
+          "responsibilities": [
+            "制定材料质量控制计划",
+            "审核质量证明文件与检测报告",
+            "监督质保期内更换流程",
+            "跟踪质量目标达成情况"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "条理清晰，注重证据与记录，语气温和但立场坚定。"
+        },
+        {
+          "agent_id": "COMP-0167_05_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "COMP-0167",
+          "company_role": "supplier",
+          "department": "项目交付部",
+          "position": "交付协调经理",
+          "personal_profile": "关注现场需求与交付节奏，先看施工进度与材料到场时间。在压力下优先保证不中断施工，但可能低估库存成本。讨论中常协调各方时间窗口，带来交付灵活性与计划性的张力。",
+          "responsibilities": [
+            "对接施工方材料需求与进度",
+            "协调运输与现场接收安排",
+            "处理交付异常与紧急补货",
+            "反馈现场质量与数量问题"
+          ],
+          "decision_authority": "shared",
+          "communication_style": "积极务实，善于用时间线和行动项推动讨论，语气亲和。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0154",
+        "company_role": "supplier",
+        "package_id": "CASE-0010/supply-1",
+        "agent_id": "COMP-0154_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "我们公司作为供应商，这次招标包只是为生态保育区土建与景观工程施工包供应材料与构配件，包括供货、运输到场、质量证明文件和质保期内的更换，不含施工、安装或界面责任。这完全落在我们的材料供应和物流能力范围内，不需要联合体。公司目前资源占用为零，可用资源2.0，而本包仅需0.25，资源充足。虽然公司简介中没有列出具体材料供应业绩，但我们的经营范围涵盖建筑材料销售、砼结构构件销售、水泥制品制造等，具备供应能力。价格方面，材料价格指数为1.112，运输成本需考虑，但包预算2142万MOP，有合理利润空间。风险主要是材料价格波动和运输协调，但可以通过固定单价报价和风险应对方案管理。因此，我决定以独立供应商身份投标，提交完整的角色计划、交付方法、质量方法、价格基础和进度视图。",
+        "content": "## 投标意向书\n\n**致：** 路氹城生态保护区二区优化工程招标委员会\n\n**关于：** Package A - 生态保育区土建与景观工程材料采购（招标包编号：CASE-0010/supply-1）\n\n中交第二公路工程局有限公司（以下简称“我方”）经认真研究招标文件，决定参与上述材料采购包的投标。我方充分理解本包范围为供应施工所需的材料与构配件，包括供货、运输到场、质量证明文件和质保期内的更换，不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。\n\n### 一、角色计划与团队可用性摘要\n我方将组建专门的材料供应团队，由一名项目经理统筹协调，配备采购、质量、物流和客户服务人员。团队核心成员均具有材料供应和质量管理经验，能够确保供货及时、质量合格、文档齐全。当前我方资源充足，可立即投入本包所需资源。\n\n### 二、交付方法说明\n我方将根据施工承包商的进度需求，制定详细的材料供应计划，包括材料清单确认、供应商选择、生产或采购、检验、运输和现场交付。我方将与承包商建立定期沟通机制，确保材料按时到场。运输方面，我方将选择可靠的物流合作伙伴，确保材料安全、准时送达。\n\n### 三、质量方法说明\n我方将严格执行质量管理制度，所有材料均需提供质量证明文件，包括出厂合格证、检测报告等。对于关键材料，我方将进行抽样检验，确保符合环保与可持续性目标。质保期内，我方将提供更换服务，确保材料质量问题及时解决。\n\n### 四、价格基础\n我方将基于材料清单和规格提供固定单价或总价报价，报价包含供货、运输、质量证明及质保期服务费用。报价已考虑当前市场价格指数和运输成本，并将在投标文件中详细列明单价和总价构成。\n\n### 五、进度视图\n我方将根据施工进度计划，制定关键材料交付里程碑，确保材料供应与施工进度匹配。主要里程碑包括：合同签订后X天内完成材料清单确认，X天内完成首批材料交付，后续按施工进度分批交付。\n\n### 六、风险应对方案\n针对材料价格波动风险，我方将在报价中考虑价格调整机制或固定单价风险准备金；针对运输风险，我方将选择备用物流路线和合作伙伴；针对质量风险，我方将加强检验和文档管理。\n\n我方确认，本投标为独立投标，不组成联合体。我方将作为单一责任供应商，承担本包范围内的全部供货、运输、质量证明和质保期更换责任。\n\n中交第二公路工程局有限公司\n\n日期：2026年X月X日",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:11:58",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0167",
+        "company_role": "supplier",
+        "package_id": "CASE-0010/supply-1",
+        "agent_id": "COMP-0167_01_陈志远",
+        "agent_name": "陈志远",
+        "department": "公司管理层",
+        "position": "总经理",
+        "message_type": "decision",
+        "thoughts": "这个包是纯材料供应，不含施工安装，责任边界清晰，正好落在我们作为供应商的可控范围内。我们公司资料里有混凝土预制构件、金属结构、建筑材料销售等经营范围，资源占用为零，可用资源2.0，承接这个包不会挤压其他业务。包预算2142万MOP，材料价格指数1.11，运输成本要计入，但固定单价报价可以锁定风险。买方是施工包承包商，付款路径明确，质保期更换也是常规义务。内部讨论没有提出需要联合体才能解决的技术或责任缺口，我们完全可以作为单一责任供应商投标。需要关注的是环保材料选型和质量文档，这些通过我们的质量方法和供应链管理可以覆盖，不需要引入联合体。因此决定独立投标。",
+        "content": "我方决定参与Package A - 生态保育区土建与景观工程材料采购的投标。角色计划与团队可用性摘要：由材料供应团队牵头，配置质量文档和物流协调人员，当前资源可用。交付方法说明：按材料清单组织供货，运输到场，提供质量证明文件，质保期内更换。质量方法说明：执行进场检验和文档管理，确保材料符合环保与可持续性目标。价格基础：基于材料清单固定单价报价，已考虑市场价格指数和运输成本，总价在包预算21420000 MOP以内。进度视图：按施工包关键材料需求设置交付里程碑。风险应对方案：针对价格波动和运输延误设置应对措施。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:11:55",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "COMP-0025",
+        "company_role": "owner",
+        "package_id": "CASE-0010/supply-1",
+        "agent_id": "COMP-0025_05_何家豪",
+        "agent_name": "何家豪",
+        "department": "设计协调部",
+        "position": "设计协调主管",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我需要为路氹城生态保护区二区优化工程的材料供应包作出判给决定。评标推荐中交第二公路工程局有限公司，其报价MOP 19,850,000低于包预算MOP 21,420,000，分项与供货范围对应，质量档案、批次追溯和本地更换响应安排具体，且明确接受业主与承包商抽查、提交质量证明与进度报告，监管配合态度积极。中国建筑第三工程局有限公司报价MOP 20,310,000，高出MOP 460,000，文档纪律和分线供货安排良好，但进度视图较笼统，价格竞争力稍弱。从业主问责和交付风险角度，中交第二公路工程局的低价可信、范围清晰、配合度高，虽然材料清单与规格需在合同签订后确认，价格指数调整和运输成本存在谈判空间，但这些属于预合同澄清事项，不影响判给决定。我决定维持评标推荐，将本包判给中交第二公路工程局有限公司，并在预合同澄清中聚焦材料清单与规格确认、固定单价与指数调整门槛、运输成本计价基础以及首批到场里程碑。",
+        "content": "经综合评标与业主复核，本材料供应包判给中交第二公路工程局有限公司，报价MOP 19,850,000。该投标在预算内且分项与供货范围对应，质量文档、批次追溯与本地更换响应安排具体，并明确接受业主与承包商抽查及提交质量证明与进度报告，符合纯材料供应包的责任边界与交付要求。预合同澄清聚焦材料清单与规格确认、固定单价与指数调整门槛、运输成本计价基础以及首批到场里程碑，以巩固价格可信度与交付确定性。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-20T01:12:20",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0154",
+        "package_id": "CASE-0010/supply-1",
+        "decision": "bid",
+        "reason": "本招标包为材料供应，不涉及施工或安装，与我公司供应商角色高度匹配。公司资源充足，可用资源2.0，本包仅需0.25，无资源冲突。我们具备材料供应、质量文档管理和物流协调能力，能够作为单一责任供应商完成供货、运输、质量证明和质保期更换。无需联合体，独立投标可保持商业简洁性和责任清晰。价格上，考虑材料价格指数和运输成本，在2142万MOP预算内具有竞争力。风险可控，通过固定单价报价和风险应对方案管理价格波动和交付风险。因此决定投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单和规格将在合同签订后由承包商提供并确认。",
+          "运输成本将根据实际距离和物流市场价格确定。",
+          "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+          "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0167",
+        "package_id": "CASE-0010/supply-1",
+        "decision": "bid",
+        "reason": "管理层认为该包为纯材料供应，责任边界限于供货、运输到场、质量证明文件和质保期更换，与我方供应商角色和经营范围匹配。公司当前可用资源2.0，无占用，具备承接条件。包预算2142万MOP，材料价格指数和运输成本已在报价基础中考虑，固定单价报价可控。买方为施工包承包商，付款路径清晰。无需联合体即可作为单一责任供应商提交，故决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单和规格在投标文件中明确，报价基于该清单固定单价。",
+          "买方为施工包承包商，按合同支付材料费用。",
+          "运输到场和质保期更换责任限于供应范围，不含施工安装。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0010/supply-1_001",
+        "package_id": "CASE-0010/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0154",
+        "bidder_name": "中交第二公路工程局有限公司",
+        "technical_proposal": "## 技术方案说明\n\n中交第二公路工程局有限公司作为单一责任供应商，针对路氹城生态保护区二区优化工程之 Package A 材料采购包，提供以下技术方案：\n\n**1. 材料选型与环保合规**\n- 依据施工承包商提供的材料清单与规格，优先选用符合生态保育区环保与可持续性目标的材料，包括再生骨料、低碱水泥制品、环保型护岸块体及本地认证的景观铺装材料。\n- 所有材料均附出厂合格证、检测报告及环保合规声明，确保满足项目可持续发展要求。\n\n**2. 质量文档管理**\n- 建立材料质量档案，按批次记录供货来源、检验结果、运输记录及交付签收单。\n- 关键材料（如生态护岸块体、排水管材）实施抽样复检，复检计划于合同签订后与承包商确认。\n\n**3. 运输与现场交付协调**\n- 与本地物流合作伙伴制定运输方案，考虑路氹城区域交通限制及生态保护区运输时段要求。\n- 交付前与承包商确认卸货点、临时堆放条件及进场路线，确保材料按时到场且不造成生态干扰。\n\n**4. 质保期维护与更换支持**\n- 质保期内，对材料本身质量问题提供更换服务，响应时间不超过48小时（本地库存材料）或7个工作日（需重新采购材料）。\n- 设立专用联络窗口，处理承包商反馈的质量问题。\n\n**5. 与承包商接口信息提供**\n- 提供材料技术参数表、使用说明及维护指南，协助承包商完成施工界面衔接。\n- 定期提交供货进度报告，确保信息透明。\n\n本方案不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。",
+        "implementation_plan": "## 实施计划\n\n**第一阶段：合同签订与材料清单确认（合同签订后14天内）**\n- 与承包商召开启动会议，确认材料清单、规格、交付批次及时间要求。\n- 提交材料供应总计划及首批材料交付里程碑。\n\n**第二阶段：供应商选择与采购（合同签订后15-45天）**\n- 根据材料清单，向合格供应商询价并确认供货能力。\n- 完成首批材料采购订单，安排生产或备货。\n\n**第三阶段：检验与运输（合同签订后30-60天起，按施工进度分批）**\n- 首批材料出厂检验，取得质量证明文件。\n- 安排运输至现场，与承包商协调卸货与签收。\n\n**第四阶段：持续供应与质保服务（贯穿施工期及质保期）**\n- 按施工进度分批交付后续材料，每批次交付前7天通知承包商。\n- 质保期内提供更换服务，定期回访了解材料使用情况。\n\n**关键里程碑：**\n- 合同签订后14天：材料清单确认完成\n- 合同签订后45天：首批材料交付到场\n- 施工期间：按承包商进度计划分批交付\n- 质保期：自最后一批材料交付验收起算，提供更换支持",
+        "quotation": 19850000.0,
+        "schedule_commitment": "我方承诺：合同签订后14天内完成材料清单确认；合同签订后45天内完成首批材料交付到场；后续材料按施工承包商进度计划分批交付，每批次交付前7天通知承包商。质保期自最后一批材料交付验收起算，为期24个月，质保期内提供材料质量问题更换服务。若因承包商进度调整导致交付计划变更，我方将在收到通知后7天内提交修订交付计划。",
+        "compliance_statement": "我方理解并接受业主对材料供应过程的监督与检查权利，包括：\n- 业主或承包商可随时进入我方材料存储场地进行质量抽查；\n- 我方将按业主要求提交材料质量证明文件及供货进度报告；\n- 业主对材料质量的任何合理质疑，我方将在3个工作日内提供补充证明或安排复检；\n- 质保期内更换服务完成后，我方将提交更换记录供业主备案。\n\n我方确认本包不涉及施工界面责任，材料费用已包含在施工包合同价内，由施工承包商作为买方支付。",
+        "risk_response": "## 风险应对方案\n\n**1. 材料价格波动风险**\n- 报价已参考当前材料价格指数1.112，并计提约5%的风险准备金。\n- 建议合同设置价格调整条款：当材料价格指数波动超过±5%时，超出部分按实调整。若业主不接受调整条款，我方将维持固定单价报价，但风险准备金已覆盖合理波动范围。\n\n**2. 运输与交付风险**\n- 与两家本地物流合作伙伴签订备用协议，确保运输能力冗余。\n- 针对生态保护区运输时段限制，提前与相关部门协调运输许可，并制定备用路线。\n- 交付前7天与承包商确认现场接收条件，避免卸货延误。\n\n**3. 质量风险**\n- 关键材料实施抽样复检，复检计划与承包商确认后执行。\n- 所有材料附质量证明文件，建立批次追溯档案。\n- 质保期内设立快速响应机制，48小时内响应本地库存材料更换需求。\n\n**4. 供应中断风险**\n- 对关键材料保持不低于15天用量的安全库存。\n- 主要材料供应商均需通过我方内部质量评审，并保持至少一家备用供应商。\n\n**5. 环保合规风险**\n- 材料选型优先选用环保认证产品，确保符合生态保育区可持续发展目标。\n- 运输过程采取防尘降噪措施，避免对生态保护区造成干扰。",
+        "submission_summary": "中交第二公路工程局有限公司作为单一责任供应商，提交 Package A 材料采购包投标。报价总额为 MOP 19,850,000，基于材料清单估算工程量及当前材料价格指数1.112，包含供货、运输到场、质量证明文件及质保期更换服务。\n\n**报价构成：**\n- 土方与地形重塑材料：MOP 3,850,000\n- 生态护岸与步道基层材料：MOP 5,620,000\n- 湿地植被与景观铺装材料：MOP 4,980,000\n- 排水与小型水工构筑物材料：MOP 2,470,000\n- 运输物流与现场交付协调费：MOP 1,280,000\n- 质量文档管理、质保期服务及风险准备金：MOP 1,650,000\n\n**合计：MOP 19,850,000**\n\n本报价为固定单价报价，已考虑材料价格指数波动及运输成本。我方建议合同设置价格调整条款，当材料价格指数波动超过±5%时按实调整；若业主不接受，风险准备金已覆盖合理波动。\n\n我方确认本包不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。材料费用由施工承包商作为买方支付。\n\n**投标假设：**\n- 材料清单和规格将在合同签订后由承包商提供并确认。\n- 运输成本将根据实际距离和物流市场价格确定。\n- 质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。\n- 报价基于当前材料价格指数，合同可能包含价格调整条款。\n\n**未解决条件：** 无。",
+        "quotation_breakdown": [
+          {
+            "item": "土方与地形重塑材料（回填土、砂石料等）",
+            "amount": 3850000,
+            "basis": "按材料清单估算工程量，参考当前材料价格指数1.112及本地运输成本，含出厂价、运输到场及质量证明文件"
+          },
+          {
+            "item": "生态护岸与步道基层材料（生态块体、碎石、土工布等）",
+            "amount": 5620000,
+            "basis": "生态护岸块体及步道基层材料，含环保认证溢价及专项运输措施，按材料清单单价乘以估算数量"
+          },
+          {
+            "item": "湿地植被与景观铺装材料（苗木、种植土、铺装石材等）",
+            "amount": 4980000,
+            "basis": "苗木按品种规格计价，种植土及铺装石材按立方或平方米计价，含成活率保证相关选苗成本"
+          },
+          {
+            "item": "排水与小型水工构筑物材料（管材、井盖、止水材料等）",
+            "amount": 2470000,
+            "basis": "排水管材、检查井组件及水工构筑物材料，按材料清单及规格书计价，含质量检测报告费用"
+          },
+          {
+            "item": "运输物流与现场交付协调费",
+            "amount": 1280000,
+            "basis": "本地运输车队及物流协调，考虑生态保护区运输时段限制及多点交付，按运输趟次及距离估算"
+          },
+          {
+            "item": "质量文档管理、质保期服务及风险准备金",
+            "amount": 1650000,
+            "basis": "质量档案管理、抽样复检、质保期更换服务预留，以及材料价格波动风险准备金（按材料价格指数波动上限约5%计提）"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单和规格将在合同签订后由承包商提供并确认。",
+          "运输成本将根据实际距离和物流市场价格确定。",
+          "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+          "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0010/supply-1_002",
+        "package_id": "CASE-0010/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0167",
+        "bidder_name": "中国建筑第三工程局有限公司",
+        "technical_proposal": "我方以单一责任供应商身份投标本材料供应包，供货范围严格限于施工包「Package A - 生态保育区土建与景观工程」所需的土建与景观材料及构配件：供货、运输到场、质量证明文件提交及质保期内更换，不含施工、安装、临时工程或措施费，不承担施工界面责任。\n\n材料选型与环保目标：按生态保育区环保与可持续性要求组织材料选型，优先选用具备环保认证或可追溯来源的土工材料、生态护岸块石与格宾网、步道基层骨料、湿地种植基质与景观铺装面材、排水管材及小型水工构配件；对每类材料提供规格书、产地与批次信息，供承包商核对设计规格。\n\n质量文档管理：建立材料清单台账与批次追溯编号，随货提交出厂合格证、检测报告、环保合规声明及装运清单；到货前提交质量证明文件包供承包商与监管方审阅，文档版本受控。\n\n物流与交付协调：按施工包关键材料需求设置交付里程碑，与承包商约定到场时间窗、卸货点与临时堆放交接方式；运输车辆与路线按路氹城区域通行条件安排，到场签收后界面责任移交承包商。\n\n质保期支持：质保期内对不符合规格或运输损伤的材料按批次更换，响应时限在供应合同中约定，更换不含安装作业。\n\n能力匹配说明：我方经营范围包含建筑材料、装饰材料、金属与化工材料销售及混凝土预制构件销售，具备组织多品类材料供应与文档管理的条件；本包为纯材料供应，责任边界清晰，无需联合体即可作为单一责任供应商履约。",
+        "implementation_plan": "1. 启动与清单确认（合同签订后即启动）：与承包商核对材料清单、规格、数量与交付批次，形成供货基线台账；对清单中规格不明确的品类提出澄清，澄清前按暂定规格报价，不视为已确认。\n2. 采购组织：按材料类别分设土工与护岸材料、骨料与基层材料、种植基质与景观铺装、排水与小型水工构配件四条供货线，分别向合格货源组织采购；货源以我方供应商管理程序筛选，进场前完成文件审核。\n3. 质量证明文件：每批次随货提交合格证、检测报告与环保合规文件；到货前提交文件包供承包商审阅，发现缺项在到场前补齐。\n4. 运输与到场：按施工包进度设置关键材料交付里程碑，提前与承包商确认到场时间窗与卸货条件；运输延误时启动备用车辆与替代路线。\n5. 质保期服务：建立批次追溯记录，质保期内接到更换通知后按合同约定时限安排更换，更换范围限于材料本身。\n6. 接口信息提供：向承包商提供材料规格、储存要求与使用注意事项说明，配合其施工组织安排，但不介入施工界面。",
+        "quotation": 20310000.0,
+        "schedule_commitment": "按施工包关键材料需求设置交付里程碑：合同签订后完成清单确认与货源组织；土工与护岸材料、基层骨料按承包商施工顺序分批到场；景观铺装与排水构配件按铺装与排水作业面进度交付；全部材料交付节点与施工包进度视图对齐，具体到场时间以承包商确认的时间窗为准。质保期自材料验收合格起按供应合同约定执行。",
+        "compliance_statement": "我方接受业主及承包商对材料质量证明文件的审阅要求，按批次提交合格证、检测报告与环保合规文件；配合承包商到场验收与数量核对；文件版本受控，变更以书面澄清为准。材料费用已包含在施工包合同价内，由承包商作为买方按供应合同支付，我方不向业主直接主张付款。",
+        "risk_response": "价格波动：报价按固定单价提交，已在报价中计入材料价格指数与运输成本上行的风险准备金；若合同约定调整机制，按承包商与业主商定的指数调整条款执行，不单方调价。\n运输延误：预设备用车辆与替代路线，关键材料提前到场；延误发生时书面通知承包商并调整交付顺序。\n质量不符：到货前文件审核与到场抽检配合，发现不符批次按质保条款更换。\n货源中断：按材料类别保留备选货源，备选货源在供货前完成文件审核。\n界面风险：我方责任限于供货、运输到场、质量证明与质保更换，不承担施工界面责任；到场签收后界面移交承包商。",
+        "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份提交本材料供应包报价，总价 MOP 20,310,000，在包预算 MOP 21,420,000 以内。\n\n报价构成：土工与生态护岸材料 MOP 6,180,000；步道基层骨料与种植基质 MOP 4,360,000；景观铺装与排水及小型水工构配件 MOP 5,240,000；运输到场与物流协调 MOP 1,980,000；质量文档管理与批次追溯 MOP 620,000；质保期更换与响应支持 MOP 780,000；价格波动与供应风险准备金 MOP 1,150,000。合计 MOP 20,310,000。\n\n价格基础：基于材料清单与规格的固定单价报价，含供货、运输到场、质量证明文件及质保期更换服务费用；已考虑当前材料价格指数与运输成本上行，并以风险准备金覆盖波动。材料数量以承包商最终清单为准，清单未明确部分按暂定规格估算，属暂定假设而非已确认货源报价。\n\n责任边界：不含施工、安装、临时工程或措施费，不承担施工界面责任；付款方为施工包承包商。\n\n团队与资源：由材料供应团队牵头，配置质量文档与物流协调人员，当前可用资源满足本包需求。",
+        "quotation_breakdown": [
+          {
+            "item": "土工与生态护岸材料（格宾网、土工布、块石及护岸构配件）",
+            "amount": 6180000,
+            "basis": "按材料清单暂定数量与规格估算，含出厂价与环保合规证明文件费用；数量以承包商最终清单为准，属暂定估算"
+          },
+          {
+            "item": "步道基层骨料与湿地种植基质材料",
+            "amount": 4360000,
+            "basis": "按基层与种植区暂定工程量估算骨料与基质供应，含来源追溯与检测报告费用"
+          },
+          {
+            "item": "景观铺装面材与排水管材及小型水工构配件",
+            "amount": 5240000,
+            "basis": "按铺装与排水系统暂定数量估算，含多品类小批量供货的组织成本"
+          },
+          {
+            "item": "运输到场与物流协调",
+            "amount": 1980000,
+            "basis": "按路氹城区域运输路线、分批到场次数与卸货协调估算，已计入运输成本指数上行影响"
+          },
+          {
+            "item": "质量文档管理与批次追溯",
+            "amount": 620000,
+            "basis": "按材料类别配置文档与质检协调人员，含检测报告整理与文件包提交"
+          },
+          {
+            "item": "质保期更换与响应支持",
+            "amount": 780000,
+            "basis": "按质保期内批次更换与响应安排计提，不含安装作业"
+          },
+          {
+            "item": "价格波动与供应风险准备金",
+            "amount": 1150000,
+            "basis": "针对材料价格指数与运输成本波动设置的风险准备金，报价按固定单价提交，该准备金已内含于报价"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单和规格在投标文件中明确，报价基于该清单固定单价。",
+          "买方为施工包承包商，按合同支付材料费用。",
+          "运输到场和质保期更换责任限于供应范围，不含施工安装。",
+          "材料数量以承包商最终清单为准，清单未明确部分按暂定规格估算。",
+          "货源以我方供应商管理程序筛选，供货前完成文件审核，未将任何货源描述为已确认。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0010/supply-1",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0010/supply-1_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "quotation": 19850000.0,
+            "quotation_breakdown": [
+              {
+                "item": "土方与地形重塑材料（回填土、砂石料等）",
+                "amount": 3850000,
+                "basis": "按材料清单估算工程量，参考当前材料价格指数1.112及本地运输成本，含出厂价、运输到场及质量证明文件"
+              },
+              {
+                "item": "生态护岸与步道基层材料（生态块体、碎石、土工布等）",
+                "amount": 5620000,
+                "basis": "生态护岸块体及步道基层材料，含环保认证溢价及专项运输措施，按材料清单单价乘以估算数量"
+              },
+              {
+                "item": "湿地植被与景观铺装材料（苗木、种植土、铺装石材等）",
+                "amount": 4980000,
+                "basis": "苗木按品种规格计价，种植土及铺装石材按立方或平方米计价，含成活率保证相关选苗成本"
+              },
+              {
+                "item": "排水与小型水工构筑物材料（管材、井盖、止水材料等）",
+                "amount": 2470000,
+                "basis": "排水管材、检查井组件及水工构筑物材料，按材料清单及规格书计价，含质量检测报告费用"
+              },
+              {
+                "item": "运输物流与现场交付协调费",
+                "amount": 1280000,
+                "basis": "本地运输车队及物流协调，考虑生态保护区运输时段限制及多点交付，按运输趟次及距离估算"
+              },
+              {
+                "item": "质量文档管理、质保期服务及风险准备金",
+                "amount": 1650000,
+                "basis": "质量档案管理、抽样复检、质保期更换服务预留，以及材料价格波动风险准备金（按材料价格指数波动上限约5%计提）"
+              }
+            ],
+            "submission_summary": "中交第二公路工程局有限公司作为单一责任供应商，提交 Package A 材料采购包投标。报价总额为 MOP 19,850,000，基于材料清单估算工程量及当前材料价格指数1.112，包含供货、运输到场、质量证明文件及质保期更换服务。\n\n**报价构成：**\n- 土方与地形重塑材料：MOP 3,850,000\n- 生态护岸与步道基层材料：MOP 5,620,000\n- 湿地植被与景观铺装材料：MOP 4,980,000\n- 排水与小型水工构筑物材料：MOP 2,470,000\n- 运输物流与现场交付协调费：MOP 1,280,000\n- 质量文档管理、质保期服务及风险准备金：MOP 1,650,000\n\n**合计：MOP 19,850,000**\n\n本报价为固定单价报价，已考虑材料价格指数波动及运输成本。我方建议合同设置价格调整条款，当材料价格指数波动超过±5%时按实调整；若业主不接受，风险准备金已覆盖合理波动。\n\n我方确认本包不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。材料费用由施工承包商作为买方支付。\n\n**投标假设：**\n- 材料清单和规格将在合同签订后由承包商提供并确认。\n- 运输成本将根据实际距离和物流市场价格确定。\n- 质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。\n- 报价基于当前材料价格指数，合同可能包含价格调整条款。\n\n**未解决条件：** 无。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "材料清单和规格将在合同签订后由承包商提供并确认。",
+              "运输成本将根据实际距离和物流市场价格确定。",
+              "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+              "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0010/supply-1_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "quotation": 20310000.0,
+            "quotation_breakdown": [
+              {
+                "item": "土工与生态护岸材料（格宾网、土工布、块石及护岸构配件）",
+                "amount": 6180000,
+                "basis": "按材料清单暂定数量与规格估算，含出厂价与环保合规证明文件费用；数量以承包商最终清单为准，属暂定估算"
+              },
+              {
+                "item": "步道基层骨料与湿地种植基质材料",
+                "amount": 4360000,
+                "basis": "按基层与种植区暂定工程量估算骨料与基质供应，含来源追溯与检测报告费用"
+              },
+              {
+                "item": "景观铺装面材与排水管材及小型水工构配件",
+                "amount": 5240000,
+                "basis": "按铺装与排水系统暂定数量估算，含多品类小批量供货的组织成本"
+              },
+              {
+                "item": "运输到场与物流协调",
+                "amount": 1980000,
+                "basis": "按路氹城区域运输路线、分批到场次数与卸货协调估算，已计入运输成本指数上行影响"
+              },
+              {
+                "item": "质量文档管理与批次追溯",
+                "amount": 620000,
+                "basis": "按材料类别配置文档与质检协调人员，含检测报告整理与文件包提交"
+              },
+              {
+                "item": "质保期更换与响应支持",
+                "amount": 780000,
+                "basis": "按质保期内批次更换与响应安排计提，不含安装作业"
+              },
+              {
+                "item": "价格波动与供应风险准备金",
+                "amount": 1150000,
+                "basis": "针对材料价格指数与运输成本波动设置的风险准备金，报价按固定单价提交，该准备金已内含于报价"
+              }
+            ],
+            "submission_summary": "中国建筑第三工程局有限公司以单一责任供应商身份提交本材料供应包报价，总价 MOP 20,310,000，在包预算 MOP 21,420,000 以内。\n\n报价构成：土工与生态护岸材料 MOP 6,180,000；步道基层骨料与种植基质 MOP 4,360,000；景观铺装与排水及小型水工构配件 MOP 5,240,000；运输到场与物流协调 MOP 1,980,000；质量文档管理与批次追溯 MOP 620,000；质保期更换与响应支持 MOP 780,000；价格波动与供应风险准备金 MOP 1,150,000。合计 MOP 20,310,000。\n\n价格基础：基于材料清单与规格的固定单价报价，含供货、运输到场、质量证明文件及质保期更换服务费用；已考虑当前材料价格指数与运输成本上行，并以风险准备金覆盖波动。材料数量以承包商最终清单为准，清单未明确部分按暂定规格估算，属暂定假设而非已确认货源报价。\n\n责任边界：不含施工、安装、临时工程或措施费，不承担施工界面责任；付款方为施工包承包商。\n\n团队与资源：由材料供应团队牵头，配置质量文档与物流协调人员，当前可用资源满足本包需求。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "材料清单和规格在投标文件中明确，报价基于该清单固定单价。",
+              "买方为施工包承包商，按合同支付材料费用。",
+              "运输到场和质保期更换责任限于供应范围，不含施工安装。",
+              "材料数量以承包商最终清单为准，清单未明确部分按暂定规格估算。",
+              "货源以我方供应商管理程序筛选，供货前完成文件审核，未将任何货源描述为已确认。"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for Package A - 生态保育区土建与景观工程材料采购.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0010/supply-1",
+        "evaluators": [
+          "COMP-0025_01_陈志强",
+          "COMP-0025_02_李美玲",
+          "COMP-0025_03_黄伟明",
+          "COMP-0025_04_张丽华",
+          "COMP-0025_05_何家豪"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0010/supply-1_001",
+            "bidder_id": "COMP-0154",
+            "bidder_name": "中交第二公路工程局有限公司",
+            "technical_view": "交付方法覆盖材料选型、质量档案、运输协调与质保更换，并明确不含施工与界面责任，与纯材料供应包的范围契合；但材料清单与规格留待合同签订后确认，首批到场承诺为45天，交付信心需以承包商清单为条件。",
+            "cost_view": "报价MOP 19,850,000低于包预算MOP 21,420,000，分项含运输协调费MOP 1,280,000与质量文档、质保及风险准备金MOP 1,650,000，价格基础与供货范围基本对应，属可信的低价而非缺项报价。",
+            "owner_control_view": "明确接受业主与承包商抽查存储场地、提交质量证明与进度报告、3个工作日内补充证明或复检，并确认不向业主直接主张付款，监管配合态度积极。",
+            "strengths": [
+              "报价在预算内且分项与材料清单对应，价格基础清晰",
+              "质量档案、批次追溯与48小时本地更换响应安排具体",
+              "接受业主抽查与复检要求，接口信息提供承诺明确"
+            ],
+            "concerns": [
+              "材料清单与规格须待合同签订后确认，报价与交付里程碑存在条件性",
+              "建议价格指数波动超±5%时按实调整，固定价承诺留有谈判空间",
+              "运输成本称将按实际距离与市场价格确定，存在后续调整可能"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0010/supply-1_002",
+            "bidder_id": "COMP-0167",
+            "bidder_name": "中国建筑第三工程局有限公司",
+            "technical_view": "按土工护岸、骨料基质、铺装排水、小水工构配件分四条供货线组织，文档版本受控并随货提交合格证与环保文件，交付方法完整；但数量按暂定清单估算，到场时间以承包商确认时间窗为准，进度视图较笼统。",
+            "cost_view": "报价MOP 20,310,000在包预算MOP 21,420,000以内，运输协调MOP 1,980,000与风险准备金MOP 1,150,000计提较充分，质量文档与质保分项偏保守，价格合理但高于另一投标。",
+            "owner_control_view": "接受业主与承包商按批次审阅质量证明文件、配合到场验收与数量核对，并明确不向业主直接主张付款，文件变更以书面澄清为准，文档纪律良好。",
+            "strengths": [
+              "按材料类别分线供货，多品类小批量组织能力说明具体",
+              "批次追溯与文件受控、到场前文件包审阅安排清晰",
+              "明确货源未视为已确认，假设披露诚实"
+            ],
+            "concerns": [
+              "报价高于另一投标MOP 460,000，价格竞争力稍弱",
+              "数量按暂定清单估算，清单未明确部分按暂定规格报价",
+              "交付里程碑未给出具体天数，进度承诺可核查性不足"
+            ]
+          }
+        ],
+        "comparison_summary": "两家均为单一责任供应商，能力契合度接近；中交第二公路工程局报价MOP 19,850,000较低且分项与范围对应，中国建筑第三工程局报价MOP 20,310,000较高但文档与货源管理披露更谨慎。综合价格合理性、风险控制与交付信心，前者略优，但须以承包商材料清单确认与固定价条款为条件。",
+        "recommended_winner": "COMP-0154",
+        "owner_review_notes": "建议优先与中交第二公路工程局谈判，将材料清单确认、固定单价与指数调整门槛写入合同以锁定低价可信度；中国建筑第三工程局可作备选，其文档纪律与分线供货安排可作为谈判参照。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0010",
+      "package_awards": [
+        {
+          "package_id": "CASE-0010/supply-1",
+          "selected_bidder_id": "COMP-0154",
+          "selected_bidder_name": "中交第二公路工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中交第二公路工程局有限公司报价MOP 19,850,000，低于包预算且分项与供货范围对应，价格基础清晰可信；其质量档案、批次追溯与48小时本地更换响应安排具体，并明确接受业主与承包商抽查、提交质量证明与进度报告，监管配合积极。相比中国建筑第三工程局有限公司报价MOP 20,310,000，中交第二公路工程局在价格合理性和交付信心上略优，且责任边界清晰，符合纯材料供应包要求。预合同澄清将聚焦材料清单与规格确认、固定单价与指数调整门槛、运输成本计价基础及首批到场里程碑，以锁定低价可信度并降低交付风险。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "材料清单和规格将在合同签订后由承包商提供并确认。",
+            "运输成本将根据实际距离和物流市场价格确定。",
+            "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+            "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0154"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-20T01:11:58",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0154",
+          "package_id": "CASE-0010/supply-1",
+          "decision": "bid",
+          "reason": "本招标包为材料供应，不涉及施工或安装，与我公司供应商角色高度匹配。公司资源充足，可用资源2.0，本包仅需0.25，无资源冲突。我们具备材料供应、质量文档管理和物流协调能力，能够作为单一责任供应商完成供货、运输、质量证明和质保期更换。无需联合体，独立投标可保持商业简洁性和责任清晰。价格上，考虑材料价格指数和运输成本，在2142万MOP预算内具有竞争力。风险可控，通过固定单价报价和风险应对方案管理价格波动和交付风险。因此决定投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "材料清单和规格将在合同签订后由承包商提供并确认。",
+            "运输成本将根据实际距离和物流市场价格确定。",
+            "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+            "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:11:58",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0167",
+          "package_id": "CASE-0010/supply-1",
+          "decision": "bid",
+          "reason": "管理层认为该包为纯材料供应，责任边界限于供货、运输到场、质量证明文件和质保期更换，与我方供应商角色和经营范围匹配。公司当前可用资源2.0，无占用，具备承接条件。包预算2142万MOP，材料价格指数和运输成本已在报价基础中考虑，固定单价报价可控。买方为施工包承包商，付款路径清晰。无需联合体即可作为单一责任供应商提交，故决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "材料清单和规格在投标文件中明确，报价基于该清单固定单价。",
+            "买方为施工包承包商，按合同支付材料费用。",
+            "运输到场和质保期更换责任限于供应范围，不含施工安装。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:11",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0010/supply-1",
+          "bidder_id": "COMP-0154"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:11",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0010/supply-1",
+          "bidder_id": "COMP-0167"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:11",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0010/supply-1",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:16",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0010/supply-1",
+          "recommended_winner": "COMP-0154"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:20",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0010/supply-1",
+          "selected_bidder_id": "COMP-0154"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "COMP-0025": {
+            "action": "accept",
+            "reason": "作为本材料采购包的买方（施工包 CASE-0010/construction-1 的承包商 COMP-0025），我方决定接受该合同草案，理由如下：\n\n1. 价格与预算：报价 MOP 19,850,000 在包预算 MOP 21,420,000 之内，且为固定单价报价，风险准备金已覆盖材料价格指数合理波动，符合我方成本控制要求。\n\n2. 范围清晰：供应商明确本包仅为供货、运输到场、质量证明文件及质保期更换，不含施工、安装、临时工程或措施费，也不承担施工界面责任，与我方施工包责任边界一致，无界面重叠风险。\n\n3. 进度承诺可执行：合同签订后14天完成材料清单确认、45天首批到场、后续按我方进度分批交付并提前7天通知，与我方施工进度计划衔接可行。\n\n4. 质量与质保：关键材料抽样复检、批次追溯档案、24个月质保及48小时本地库存更换响应，满足生态保育区质量要求。\n\n5. 关于价格调整条款：我方决定不设置材料价格指数联动调价条款，维持固定单价报价；供应商已确认风险准备金覆盖合理波动范围，该事项就此确定，无需再议。\n\n6. 关于投标假设：材料清单与规格由我方在合同签订后提供并确认、运输成本按实际距离与市场价格确定、质保更换仅限材料本身质量问题，均属合理风险分配，我方接受。\n\n7. 资源与成员：单一责任供应商 COMP-0154，资源承诺0.25、工作份额1.0，与我方已承诺的施工包资源占用不冲突。\n\n本接受仅授权可执行的模拟合同义务，不表示未来工程交付或法定审批已经完成；相关交付与验收仍按合同约定的审查与验收条件执行。"
+          },
+          "COMP-0154": {
+            "action": "accept",
+            "reason": "作为单一责任供应商，我方确认接受本草案的全部条款：报价 MOP 19,850,000（固定单价）、资源承诺 0.25、工作份额 1.0、范围仅限材料供货与运输到场、质量证明文件及质保期更换，不含施工、安装、临时工程或措施费，亦不承担施工界面责任；材料费用由施工承包商作为买方支付。关于我方自身立场，现明确如下，请写入下一稿：(1) 价格调整：我方接受以材料价格指数为基准的调整机制，当指数相对基准值1.112波动超过±5%时，仅对超出±5%的部分按实调整，基准值以合同签订日公布指数为准；(2) 交付计划变更：承包商进度调整通知后7天内提交修订交付计划，属我方义务，无需另行确认；(3) 质量质疑响应：业主或承包商合理质疑后3个工作日内提供补充证明或安排复检，属我方义务；(4) 质保期：自最后一批材料交付验收起算24个月，仅覆盖材料本身质量问题，不含施工或安装缺陷；(5) 材料清单与规格由承包商在合同签订后14天内提供并确认，作为首批交付里程碑的起算前提。上述均为我方自身可决定事项，已在本回复中作出决定，无需等待我方内部文件。本接受仅授权可执行的模拟义务，不表示未来工程交付或法定审批已经完成。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM2306B16D/CASE-0010/supply-1/round-1/contract",
+          "simulation_id": "SIM2306B16D",
+          "project_id": "CASE-0010",
+          "package_id": "CASE-0010/supply-1",
+          "session_id": "SIM2306B16D/CASE-0010/supply-1/round-1",
+          "snapshot_version": "ca9dcdac301a473bdd69f8662ec6963c806c874c0c5a78e3c9e6084bf6f24fd6",
+          "buyer_id": "COMP-0025",
+          "bid_id": "bid_CASE-0010/supply-1_001",
+          "bidder_id": "COMP-0154",
+          "lead_id": "COMP-0154",
+          "members": [
+            "COMP-0154"
+          ],
+          "price": 19850000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0154": 0.25
+          },
+          "work_shares": {
+            "COMP-0154": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "1077e058374944c80fc5d2fda691081c38c343afc236079712ad90fcace1ebc9",
+          "terms": {
+            "schedule_commitment": "我方承诺：合同签订后14天内完成材料清单确认；合同签订后45天内完成首批材料交付到场；后续材料按施工承包商进度计划分批交付，每批次交付前7天通知承包商。质保期自最后一批材料交付验收起算，为期24个月，质保期内提供材料质量问题更换服务。若因承包商进度调整导致交付计划变更，我方将在收到通知后7天内提交修订交付计划。",
+            "risk_response": "## 风险应对方案\n\n**1. 材料价格波动风险**\n- 报价已参考当前材料价格指数1.112，并计提约5%的风险准备金。\n- 建议合同设置价格调整条款：当材料价格指数波动超过±5%时，超出部分按实调整。若业主不接受调整条款，我方将维持固定单价报价，但风险准备金已覆盖合理波动范围。\n\n**2. 运输与交付风险**\n- 与两家本地物流合作伙伴签订备用协议，确保运输能力冗余。\n- 针对生态保护区运输时段限制，提前与相关部门协调运输许可，并制定备用路线。\n- 交付前7天与承包商确认现场接收条件，避免卸货延误。\n\n**3. 质量风险**\n- 关键材料实施抽样复检，复检计划与承包商确认后执行。\n- 所有材料附质量证明文件，建立批次追溯档案。\n- 质保期内设立快速响应机制，48小时内响应本地库存材料更换需求。\n\n**4. 供应中断风险**\n- 对关键材料保持不低于15天用量的安全库存。\n- 主要材料供应商均需通过我方内部质量评审，并保持至少一家备用供应商。\n\n**5. 环保合规风险**\n- 材料选型优先选用环保认证产品，确保符合生态保育区可持续发展目标。\n- 运输过程采取防尘降噪措施，避免对生态保护区造成干扰。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0010/supply-1_001",
+              "package_id": "CASE-0010/supply-1",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0154",
+              "bidder_name": "中交第二公路工程局有限公司",
+              "technical_proposal": "## 技术方案说明\n\n中交第二公路工程局有限公司作为单一责任供应商，针对路氹城生态保护区二区优化工程之 Package A 材料采购包，提供以下技术方案：\n\n**1. 材料选型与环保合规**\n- 依据施工承包商提供的材料清单与规格，优先选用符合生态保育区环保与可持续性目标的材料，包括再生骨料、低碱水泥制品、环保型护岸块体及本地认证的景观铺装材料。\n- 所有材料均附出厂合格证、检测报告及环保合规声明，确保满足项目可持续发展要求。\n\n**2. 质量文档管理**\n- 建立材料质量档案，按批次记录供货来源、检验结果、运输记录及交付签收单。\n- 关键材料（如生态护岸块体、排水管材）实施抽样复检，复检计划于合同签订后与承包商确认。\n\n**3. 运输与现场交付协调**\n- 与本地物流合作伙伴制定运输方案，考虑路氹城区域交通限制及生态保护区运输时段要求。\n- 交付前与承包商确认卸货点、临时堆放条件及进场路线，确保材料按时到场且不造成生态干扰。\n\n**4. 质保期维护与更换支持**\n- 质保期内，对材料本身质量问题提供更换服务，响应时间不超过48小时（本地库存材料）或7个工作日（需重新采购材料）。\n- 设立专用联络窗口，处理承包商反馈的质量问题。\n\n**5. 与承包商接口信息提供**\n- 提供材料技术参数表、使用说明及维护指南，协助承包商完成施工界面衔接。\n- 定期提交供货进度报告，确保信息透明。\n\n本方案不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。",
+              "implementation_plan": "## 实施计划\n\n**第一阶段：合同签订与材料清单确认（合同签订后14天内）**\n- 与承包商召开启动会议，确认材料清单、规格、交付批次及时间要求。\n- 提交材料供应总计划及首批材料交付里程碑。\n\n**第二阶段：供应商选择与采购（合同签订后15-45天）**\n- 根据材料清单，向合格供应商询价并确认供货能力。\n- 完成首批材料采购订单，安排生产或备货。\n\n**第三阶段：检验与运输（合同签订后30-60天起，按施工进度分批）**\n- 首批材料出厂检验，取得质量证明文件。\n- 安排运输至现场，与承包商协调卸货与签收。\n\n**第四阶段：持续供应与质保服务（贯穿施工期及质保期）**\n- 按施工进度分批交付后续材料，每批次交付前7天通知承包商。\n- 质保期内提供更换服务，定期回访了解材料使用情况。\n\n**关键里程碑：**\n- 合同签订后14天：材料清单确认完成\n- 合同签订后45天：首批材料交付到场\n- 施工期间：按承包商进度计划分批交付\n- 质保期：自最后一批材料交付验收起算，提供更换支持",
+              "quotation": 19850000.0,
+              "schedule_commitment": "我方承诺：合同签订后14天内完成材料清单确认；合同签订后45天内完成首批材料交付到场；后续材料按施工承包商进度计划分批交付，每批次交付前7天通知承包商。质保期自最后一批材料交付验收起算，为期24个月，质保期内提供材料质量问题更换服务。若因承包商进度调整导致交付计划变更，我方将在收到通知后7天内提交修订交付计划。",
+              "compliance_statement": "我方理解并接受业主对材料供应过程的监督与检查权利，包括：\n- 业主或承包商可随时进入我方材料存储场地进行质量抽查；\n- 我方将按业主要求提交材料质量证明文件及供货进度报告；\n- 业主对材料质量的任何合理质疑，我方将在3个工作日内提供补充证明或安排复检；\n- 质保期内更换服务完成后，我方将提交更换记录供业主备案。\n\n我方确认本包不涉及施工界面责任，材料费用已包含在施工包合同价内，由施工承包商作为买方支付。",
+              "risk_response": "## 风险应对方案\n\n**1. 材料价格波动风险**\n- 报价已参考当前材料价格指数1.112，并计提约5%的风险准备金。\n- 建议合同设置价格调整条款：当材料价格指数波动超过±5%时，超出部分按实调整。若业主不接受调整条款，我方将维持固定单价报价，但风险准备金已覆盖合理波动范围。\n\n**2. 运输与交付风险**\n- 与两家本地物流合作伙伴签订备用协议，确保运输能力冗余。\n- 针对生态保护区运输时段限制，提前与相关部门协调运输许可，并制定备用路线。\n- 交付前7天与承包商确认现场接收条件，避免卸货延误。\n\n**3. 质量风险**\n- 关键材料实施抽样复检，复检计划与承包商确认后执行。\n- 所有材料附质量证明文件，建立批次追溯档案。\n- 质保期内设立快速响应机制，48小时内响应本地库存材料更换需求。\n\n**4. 供应中断风险**\n- 对关键材料保持不低于15天用量的安全库存。\n- 主要材料供应商均需通过我方内部质量评审，并保持至少一家备用供应商。\n\n**5. 环保合规风险**\n- 材料选型优先选用环保认证产品，确保符合生态保育区可持续发展目标。\n- 运输过程采取防尘降噪措施，避免对生态保护区造成干扰。",
+              "submission_summary": "中交第二公路工程局有限公司作为单一责任供应商，提交 Package A 材料采购包投标。报价总额为 MOP 19,850,000，基于材料清单估算工程量及当前材料价格指数1.112，包含供货、运输到场、质量证明文件及质保期更换服务。\n\n**报价构成：**\n- 土方与地形重塑材料：MOP 3,850,000\n- 生态护岸与步道基层材料：MOP 5,620,000\n- 湿地植被与景观铺装材料：MOP 4,980,000\n- 排水与小型水工构筑物材料：MOP 2,470,000\n- 运输物流与现场交付协调费：MOP 1,280,000\n- 质量文档管理、质保期服务及风险准备金：MOP 1,650,000\n\n**合计：MOP 19,850,000**\n\n本报价为固定单价报价，已考虑材料价格指数波动及运输成本。我方建议合同设置价格调整条款，当材料价格指数波动超过±5%时按实调整；若业主不接受，风险准备金已覆盖合理波动。\n\n我方确认本包不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。材料费用由施工承包商作为买方支付。\n\n**投标假设：**\n- 材料清单和规格将在合同签订后由承包商提供并确认。\n- 运输成本将根据实际距离和物流市场价格确定。\n- 质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。\n- 报价基于当前材料价格指数，合同可能包含价格调整条款。\n\n**未解决条件：** 无。",
+              "quotation_breakdown": [
+                {
+                  "item": "土方与地形重塑材料（回填土、砂石料等）",
+                  "amount": 3850000,
+                  "basis": "按材料清单估算工程量，参考当前材料价格指数1.112及本地运输成本，含出厂价、运输到场及质量证明文件"
+                },
+                {
+                  "item": "生态护岸与步道基层材料（生态块体、碎石、土工布等）",
+                  "amount": 5620000,
+                  "basis": "生态护岸块体及步道基层材料，含环保认证溢价及专项运输措施，按材料清单单价乘以估算数量"
+                },
+                {
+                  "item": "湿地植被与景观铺装材料（苗木、种植土、铺装石材等）",
+                  "amount": 4980000,
+                  "basis": "苗木按品种规格计价，种植土及铺装石材按立方或平方米计价，含成活率保证相关选苗成本"
+                },
+                {
+                  "item": "排水与小型水工构筑物材料（管材、井盖、止水材料等）",
+                  "amount": 2470000,
+                  "basis": "排水管材、检查井组件及水工构筑物材料，按材料清单及规格书计价，含质量检测报告费用"
+                },
+                {
+                  "item": "运输物流与现场交付协调费",
+                  "amount": 1280000,
+                  "basis": "本地运输车队及物流协调，考虑生态保护区运输时段限制及多点交付，按运输趟次及距离估算"
+                },
+                {
+                  "item": "质量文档管理、质保期服务及风险准备金",
+                  "amount": 1650000,
+                  "basis": "质量档案管理、抽样复检、质保期更换服务预留，以及材料价格波动风险准备金（按材料价格指数波动上限约5%计提）"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "材料清单和规格将在合同签订后由承包商提供并确认。",
+                "运输成本将根据实际距离和物流市场价格确定。",
+                "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+                "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+            "cost_inclusion": "included_in_parent",
+            "parent_package_id": "CASE-0010/construction-1"
+          }
+        },
+        "terms_hash": "1077e058374944c80fc5d2fda691081c38c343afc236079712ad90fcace1ebc9"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0010/supply-1": {
+          "package_type": "supplier",
+          "required_company_role": "supplier",
+          "scope": "仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+          "budget": 21420000.0,
+          "currency": "MOP",
+          "buyer_id": "COMP-0025"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM2306B16D/CASE-0010/supply-1/round-1/contract",
+    "simulation_id": "SIM2306B16D",
+    "project_id": "CASE-0010",
+    "package_id": "CASE-0010/supply-1",
+    "session_id": "SIM2306B16D/CASE-0010/supply-1/round-1",
+    "snapshot_version": "ca9dcdac301a473bdd69f8662ec6963c806c874c0c5a78e3c9e6084bf6f24fd6",
+    "buyer_id": "COMP-0025",
+    "bid_id": "bid_CASE-0010/supply-1_001",
+    "bidder_id": "COMP-0154",
+    "lead_id": "COMP-0154",
+    "members": [
+      "COMP-0154"
+    ],
+    "price": 19850000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0154": 0.25
+    },
+    "work_shares": {
+      "COMP-0154": 1.0
+    },
+    "signatures": {
+      "COMP-0025": true,
+      "COMP-0154": true
+    },
+    "signed_terms_hash": "1077e058374944c80fc5d2fda691081c38c343afc236079712ad90fcace1ebc9",
+    "terms": {
+      "schedule_commitment": "我方承诺：合同签订后14天内完成材料清单确认；合同签订后45天内完成首批材料交付到场；后续材料按施工承包商进度计划分批交付，每批次交付前7天通知承包商。质保期自最后一批材料交付验收起算，为期24个月，质保期内提供材料质量问题更换服务。若因承包商进度调整导致交付计划变更，我方将在收到通知后7天内提交修订交付计划。",
+      "risk_response": "## 风险应对方案\n\n**1. 材料价格波动风险**\n- 报价已参考当前材料价格指数1.112，并计提约5%的风险准备金。\n- 建议合同设置价格调整条款：当材料价格指数波动超过±5%时，超出部分按实调整。若业主不接受调整条款，我方将维持固定单价报价，但风险准备金已覆盖合理波动范围。\n\n**2. 运输与交付风险**\n- 与两家本地物流合作伙伴签订备用协议，确保运输能力冗余。\n- 针对生态保护区运输时段限制，提前与相关部门协调运输许可，并制定备用路线。\n- 交付前7天与承包商确认现场接收条件，避免卸货延误。\n\n**3. 质量风险**\n- 关键材料实施抽样复检，复检计划与承包商确认后执行。\n- 所有材料附质量证明文件，建立批次追溯档案。\n- 质保期内设立快速响应机制，48小时内响应本地库存材料更换需求。\n\n**4. 供应中断风险**\n- 对关键材料保持不低于15天用量的安全库存。\n- 主要材料供应商均需通过我方内部质量评审，并保持至少一家备用供应商。\n\n**5. 环保合规风险**\n- 材料选型优先选用环保认证产品，确保符合生态保育区可持续发展目标。\n- 运输过程采取防尘降噪措施，避免对生态保护区造成干扰。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0010/supply-1_001",
+        "package_id": "CASE-0010/supply-1",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0154",
+        "bidder_name": "中交第二公路工程局有限公司",
+        "technical_proposal": "## 技术方案说明\n\n中交第二公路工程局有限公司作为单一责任供应商，针对路氹城生态保护区二区优化工程之 Package A 材料采购包，提供以下技术方案：\n\n**1. 材料选型与环保合规**\n- 依据施工承包商提供的材料清单与规格，优先选用符合生态保育区环保与可持续性目标的材料，包括再生骨料、低碱水泥制品、环保型护岸块体及本地认证的景观铺装材料。\n- 所有材料均附出厂合格证、检测报告及环保合规声明，确保满足项目可持续发展要求。\n\n**2. 质量文档管理**\n- 建立材料质量档案，按批次记录供货来源、检验结果、运输记录及交付签收单。\n- 关键材料（如生态护岸块体、排水管材）实施抽样复检，复检计划于合同签订后与承包商确认。\n\n**3. 运输与现场交付协调**\n- 与本地物流合作伙伴制定运输方案，考虑路氹城区域交通限制及生态保护区运输时段要求。\n- 交付前与承包商确认卸货点、临时堆放条件及进场路线，确保材料按时到场且不造成生态干扰。\n\n**4. 质保期维护与更换支持**\n- 质保期内，对材料本身质量问题提供更换服务，响应时间不超过48小时（本地库存材料）或7个工作日（需重新采购材料）。\n- 设立专用联络窗口，处理承包商反馈的质量问题。\n\n**5. 与承包商接口信息提供**\n- 提供材料技术参数表、使用说明及维护指南，协助承包商完成施工界面衔接。\n- 定期提交供货进度报告，确保信息透明。\n\n本方案不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。",
+        "implementation_plan": "## 实施计划\n\n**第一阶段：合同签订与材料清单确认（合同签订后14天内）**\n- 与承包商召开启动会议，确认材料清单、规格、交付批次及时间要求。\n- 提交材料供应总计划及首批材料交付里程碑。\n\n**第二阶段：供应商选择与采购（合同签订后15-45天）**\n- 根据材料清单，向合格供应商询价并确认供货能力。\n- 完成首批材料采购订单，安排生产或备货。\n\n**第三阶段：检验与运输（合同签订后30-60天起，按施工进度分批）**\n- 首批材料出厂检验，取得质量证明文件。\n- 安排运输至现场，与承包商协调卸货与签收。\n\n**第四阶段：持续供应与质保服务（贯穿施工期及质保期）**\n- 按施工进度分批交付后续材料，每批次交付前7天通知承包商。\n- 质保期内提供更换服务，定期回访了解材料使用情况。\n\n**关键里程碑：**\n- 合同签订后14天：材料清单确认完成\n- 合同签订后45天：首批材料交付到场\n- 施工期间：按承包商进度计划分批交付\n- 质保期：自最后一批材料交付验收起算，提供更换支持",
+        "quotation": 19850000.0,
+        "schedule_commitment": "我方承诺：合同签订后14天内完成材料清单确认；合同签订后45天内完成首批材料交付到场；后续材料按施工承包商进度计划分批交付，每批次交付前7天通知承包商。质保期自最后一批材料交付验收起算，为期24个月，质保期内提供材料质量问题更换服务。若因承包商进度调整导致交付计划变更，我方将在收到通知后7天内提交修订交付计划。",
+        "compliance_statement": "我方理解并接受业主对材料供应过程的监督与检查权利，包括：\n- 业主或承包商可随时进入我方材料存储场地进行质量抽查；\n- 我方将按业主要求提交材料质量证明文件及供货进度报告；\n- 业主对材料质量的任何合理质疑，我方将在3个工作日内提供补充证明或安排复检；\n- 质保期内更换服务完成后，我方将提交更换记录供业主备案。\n\n我方确认本包不涉及施工界面责任，材料费用已包含在施工包合同价内，由施工承包商作为买方支付。",
+        "risk_response": "## 风险应对方案\n\n**1. 材料价格波动风险**\n- 报价已参考当前材料价格指数1.112，并计提约5%的风险准备金。\n- 建议合同设置价格调整条款：当材料价格指数波动超过±5%时，超出部分按实调整。若业主不接受调整条款，我方将维持固定单价报价，但风险准备金已覆盖合理波动范围。\n\n**2. 运输与交付风险**\n- 与两家本地物流合作伙伴签订备用协议，确保运输能力冗余。\n- 针对生态保护区运输时段限制，提前与相关部门协调运输许可，并制定备用路线。\n- 交付前7天与承包商确认现场接收条件，避免卸货延误。\n\n**3. 质量风险**\n- 关键材料实施抽样复检，复检计划与承包商确认后执行。\n- 所有材料附质量证明文件，建立批次追溯档案。\n- 质保期内设立快速响应机制，48小时内响应本地库存材料更换需求。\n\n**4. 供应中断风险**\n- 对关键材料保持不低于15天用量的安全库存。\n- 主要材料供应商均需通过我方内部质量评审，并保持至少一家备用供应商。\n\n**5. 环保合规风险**\n- 材料选型优先选用环保认证产品，确保符合生态保育区可持续发展目标。\n- 运输过程采取防尘降噪措施，避免对生态保护区造成干扰。",
+        "submission_summary": "中交第二公路工程局有限公司作为单一责任供应商，提交 Package A 材料采购包投标。报价总额为 MOP 19,850,000，基于材料清单估算工程量及当前材料价格指数1.112，包含供货、运输到场、质量证明文件及质保期更换服务。\n\n**报价构成：**\n- 土方与地形重塑材料：MOP 3,850,000\n- 生态护岸与步道基层材料：MOP 5,620,000\n- 湿地植被与景观铺装材料：MOP 4,980,000\n- 排水与小型水工构筑物材料：MOP 2,470,000\n- 运输物流与现场交付协调费：MOP 1,280,000\n- 质量文档管理、质保期服务及风险准备金：MOP 1,650,000\n\n**合计：MOP 19,850,000**\n\n本报价为固定单价报价，已考虑材料价格指数波动及运输成本。我方建议合同设置价格调整条款，当材料价格指数波动超过±5%时按实调整；若业主不接受，风险准备金已覆盖合理波动。\n\n我方确认本包不包含任何施工、安装、临时工程或措施费，亦不承担施工界面责任。材料费用由施工承包商作为买方支付。\n\n**投标假设：**\n- 材料清单和规格将在合同签订后由承包商提供并确认。\n- 运输成本将根据实际距离和物流市场价格确定。\n- 质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。\n- 报价基于当前材料价格指数，合同可能包含价格调整条款。\n\n**未解决条件：** 无。",
+        "quotation_breakdown": [
+          {
+            "item": "土方与地形重塑材料（回填土、砂石料等）",
+            "amount": 3850000,
+            "basis": "按材料清单估算工程量，参考当前材料价格指数1.112及本地运输成本，含出厂价、运输到场及质量证明文件"
+          },
+          {
+            "item": "生态护岸与步道基层材料（生态块体、碎石、土工布等）",
+            "amount": 5620000,
+            "basis": "生态护岸块体及步道基层材料，含环保认证溢价及专项运输措施，按材料清单单价乘以估算数量"
+          },
+          {
+            "item": "湿地植被与景观铺装材料（苗木、种植土、铺装石材等）",
+            "amount": 4980000,
+            "basis": "苗木按品种规格计价，种植土及铺装石材按立方或平方米计价，含成活率保证相关选苗成本"
+          },
+          {
+            "item": "排水与小型水工构筑物材料（管材、井盖、止水材料等）",
+            "amount": 2470000,
+            "basis": "排水管材、检查井组件及水工构筑物材料，按材料清单及规格书计价，含质量检测报告费用"
+          },
+          {
+            "item": "运输物流与现场交付协调费",
+            "amount": 1280000,
+            "basis": "本地运输车队及物流协调，考虑生态保护区运输时段限制及多点交付，按运输趟次及距离估算"
+          },
+          {
+            "item": "质量文档管理、质保期服务及风险准备金",
+            "amount": 1650000,
+            "basis": "质量档案管理、抽样复检、质保期更换服务预留，以及材料价格波动风险准备金（按材料价格指数波动上限约5%计提）"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "材料清单和规格将在合同签订后由承包商提供并确认。",
+          "运输成本将根据实际距离和物流市场价格确定。",
+          "质保期内的更换服务仅限于材料本身质量问题，不涉及施工或安装缺陷。",
+          "报价将基于当前材料价格指数，合同可能包含价格调整条款。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "仅为施工包「Package A - 生态保育区土建与景观工程」供应其施工所需的材料与构配件：供货、运输到场、质量证明文件和质保期内的更换。不含任何施工、安装、临时工程或措施费，也不承担施工界面责任。材料费用已包含在该施工包的合同价内，由该施工包的承包商作为买方支付。该施工包的工作内容（仅用于判断所需材料，不属于本包工作）：路氹城生态保护区二区范围内的土方与地形重塑、生态护岸与步道基层、湿地植被种植与景观铺装、排水与小型水工构筑物；不含机电安装、智慧监测与标识系统。",
+      "cost_inclusion": "included_in_parent",
+      "parent_package_id": "CASE-0010/construction-1"
+    }
+  }
+}

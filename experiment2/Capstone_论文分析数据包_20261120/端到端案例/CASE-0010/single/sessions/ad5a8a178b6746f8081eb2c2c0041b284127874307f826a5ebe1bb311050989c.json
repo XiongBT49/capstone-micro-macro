@@ -1,0 +1,1572 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM2306B16D/CASE-0010/design/round-1",
+  "snapshot": {
+    "simulation_id": "SIM2306B16D",
+    "project_id": "CASE-0010",
+    "package_id": "CASE-0010/design",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 4500000.0,
+      "project": {
+        "project_id": "CASE-0010",
+        "name": "路氹城生态保护区二区优化工程",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "市政与公共基础设施；；路氹城生态保护区二区优化工程",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0010/design",
+        "project_id": "CASE-0010",
+        "kind": "design",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "总体及施工图设计与现场设计配合",
+        "scope": "总体及施工图设计与现场设计配合",
+        "budget": 4500000.0,
+        "currency": "MOP",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0169",
+          "COMP-0286"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0169": {
+        "entity_id": "COMP-0169",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0169",
+          "company_name": "中国建筑第五工程局有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0169",
+          "name": "中国建筑第五工程局有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0286": {
+        "entity_id": "COMP-0286",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0286",
+          "company_name": "招商局重庆交通科研设计院有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：一般项目：从事公路与城市市政道路、桥梁、隧道、交通工程、公路客车及专用车、汽车运用、环保与节能、计算机应用领域的科学研究、技术开发、技术转让、技术咨询服务。（以下经营范围凭相关资质证书执业）公路行业设计甲级，市政行业（道路工程、桥梁工程、城市隧道工程）设计甲级，市政行业（燃气、轨道交通除外）设计乙级，建筑行业（建筑工程）设计乙级，风景园林工程设计专项甲级，工程勘察综合类甲级，工程咨询：公路专业甲级，工程咨询：市政公用工程（市政交通）专业甲级，建设项目环境影响评价（甲级），水土保持方案编制（四星级），地质灾害治理工程施工（乙级），公路工程试验检测综合甲级，公路工程桥梁隧道工程专项试验检测。承包与其实力、规模、业绩相适应的国外工程项目，生产、销售建筑材料（不含危险化学品），仪器仪表、普通机械设备开发、生产、销售与安装（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0286",
+          "name": "招商局重庆交通科研设计院有限公司",
+          "role": "Architect",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "12a11093aec9fe70e42b3b9fa59b7dfe4b31324e8f64d59212de264c2c8ddadd"
+  },
+  "spec": {
+    "package_id": "CASE-0010/design",
+    "project_id": "CASE-0010",
+    "kind": "design",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "总体及施工图设计与现场设计配合",
+    "scope": "总体及施工图设计与现场设计配合",
+    "budget": 4500000.0,
+    "currency": "MOP",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0169",
+      "COMP-0286"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0010",
+      "project_name": "路氹城生态保护区二区优化工程",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "市政与公共基础设施；；路氹城生态保护区二区优化工程",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0010",
+      "project_scope": "路氹城生态保护区二区优化工程为市政与公共基础设施项目，采用DBB交付模式，工期24个月，总预算MOP 150,000,000。本次业主模拟包简报仅针对已授权的设计招标包（CASE-0010/design），范围包括总体设计、施工图设计及现场设计配合，设计包预算MOP 4,500,000。业主期望设计单位在生态保护区环境中实现设施优化、公共访问协调、交通接口与公用设施接口的合理布局，并满足可持续目标、质量目标与安全期望。",
+      "functional_requirements": [
+        "生态保护区二区总体布局与设施优化设计，满足市政公共基础设施功能要求",
+        "施工图设计深度满足招标与现场施工需要，包含细部节点与材料规格",
+        "现场设计配合服务，包括施工期间设计澄清、样品审核与接口观察",
+        "公共访问路线、行人流线与生态敏感区缓冲布局协调",
+        "交通接口与公用设施接口的平面与竖向协调设计",
+        "可持续目标融入设计，包括能源使用目标与生态保护措施",
+        "可维护性设计考虑，便于后续运营与保养"
+      ],
+      "technical_requirements": [
+        "BIM协调能力，支持多专业模型整合与冲突检查",
+        "MEP协调设计，满足市政设施机电系统接口要求",
+        "结构协调设计，确保构筑物安全与耐久性目标",
+        "交通接口布局设计，与周边道路及公共交通衔接",
+        "公共访问布局设计，满足无障碍与生态保护平衡",
+        "耐久性目标设定与材料选择建议",
+        "可维护性目标与运营保养接口设计",
+        "业主验收路径明确，包括设计审查节点与签收程序",
+        "能源使用目标与可持续设计策略"
+      ],
+      "budget_policy": "设计包预算为MOP 4,500,000，属业主额外成本。业主将按设计阶段里程碑支付，并保留支付审查权。报价应基于工作范围、人员投入与交付成果，业主将定性比较价格合理性，不单纯以最低价判给。范围与预算变更须经宏观审批。",
+      "schedule_policy": "总工期24个月，设计包须配合整体进度。业主关注里程碑现实性，包括总体设计、施工图设计及现场配合阶段的时间分配。业主审查时间、包接口时间与公共访问协调时间应纳入设计进度计划。设计单位须提交进度视图，说明关键节点与业主审查窗口。",
+      "compliance_requirements": [
+        "业主审查节奏：设定设计阶段审查会议与交付物审查周期",
+        "问题升级路径：明确设计问题向业主代表升级的渠道与时限",
+        "文档纪律：设计文件版本控制、提交记录与审查意见闭环",
+        "接口签收：交通接口、公用设施接口与业主利益相关方接口的签收程序",
+        "公共访问协调：施工期间公共访问安排的设计协调与业主沟通",
+        "质量目标跟踪：设计质量指标与审查发现跟踪",
+        "安全期望跟踪：设计安全审查与施工安全期望的衔接",
+        "变更控制纪律：范围与预算变更须经宏观审批，设计变更须走正式程序"
+      ],
+      "risk_priorities": [
+        "设计进度延误影响后续招标与施工",
+        "生态保护区环境敏感要求导致设计反复",
+        "公共访问与交通接口协调不足引发公众关注",
+        "设计深度不足导致施工阶段变更增加",
+        "现场配合资源不足影响施工连续性",
+        "可持续与能源目标未达业主期望",
+        "接口信息不完整造成承包商安装困难"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0010/design",
+          "package_type": "design",
+          "package_name": "总体及施工图设计与现场设计配合",
+          "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体设计、施工图设计及现场设计配合，包括生态保护区二区设施优化、公共访问布局、交通与公用设施接口协调、可持续与可维护性设计考虑，以及施工期间设计澄清与样品审核配合。",
+          "required_company_role": "designer",
+          "qualification_requirements": [
+            "生态敏感区设施设计协调能力",
+            "总体与施工图设计一体化能力",
+            "BIM协调与多专业模型整合能力",
+            "MEP协调设计能力",
+            "结构协调设计能力",
+            "交通接口与公共访问布局设计能力",
+            "可持续与能源目标设计能力",
+            "可维护性设计支持能力",
+            "现场设计配合与快速响应能力",
+            "质量文档与设计审查纪律"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "设计交付方法与阶段划分",
+            "质量方法与设计审查内部检查安排",
+            "价格基础与费用构成",
+            "进度视图与关键里程碑",
+            "风险应对与接口协调方案",
+            "现场配合人员安排与响应机制"
+          ],
+          "pricing_requirements": "报价以MOP计，基于设计工作范围、人员投入、交付成果与现场配合服务。业主将审查价格基础与费用构成的合理性，并结合能力匹配与交付信心进行定性比较。\nBinding currency: MOP; package ceiling: 4500000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "公共访问协调"
+          ],
+          "owner_decision_policy": "业主代理将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，并考虑人员配置现实性与业主审查清晰度，不单纯以最低价判给。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0010/design",
+        "package_type": "design",
+        "package_name": "总体及施工图设计与现场设计配合",
+        "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体设计、施工图设计及现场设计配合，包括生态保护区二区设施优化、公共访问布局、交通与公用设施接口协调、可持续与可维护性设计考虑，以及施工期间设计澄清与样品审核配合。",
+        "required_company_role": "designer",
+        "qualification_requirements": [
+          "生态敏感区设施设计协调能力",
+          "总体与施工图设计一体化能力",
+          "BIM协调与多专业模型整合能力",
+          "MEP协调设计能力",
+          "结构协调设计能力",
+          "交通接口与公共访问布局设计能力",
+          "可持续与能源目标设计能力",
+          "可维护性设计支持能力",
+          "现场设计配合与快速响应能力",
+          "质量文档与设计审查纪律"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "设计交付方法与阶段划分",
+          "质量方法与设计审查内部检查安排",
+          "价格基础与费用构成",
+          "进度视图与关键里程碑",
+          "风险应对与接口协调方案",
+          "现场配合人员安排与响应机制"
+        ],
+        "pricing_requirements": "报价以MOP计，基于设计工作范围、人员投入、交付成果与现场配合服务。业主将审查价格基础与费用构成的合理性，并结合能力匹配与交付信心进行定性比较。\nBinding currency: MOP; package ceiling: 4500000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "公共访问协调"
+        ],
+        "owner_decision_policy": "业主代理将定性比较投标，综合判断能力匹配、价格合理性、风险控制与交付信心，并考虑人员配置现实性与业主审查清晰度，不单纯以最低价判给。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0169",
+        "company_name": "中国建筑第五工程局有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0286",
+        "company_name": "招商局重庆交通科研设计院有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：一般项目：从事公路与城市市政道路、桥梁、隧道、交通工程、公路客车及专用车、汽车运用、环保与节能、计算机应用领域的科学研究、技术开发、技术转让、技术咨询服务。（以下经营范围凭相关资质证书执业）公路行业设计甲级，市政行业（道路工程、桥梁工程、城市隧道工程）设计甲级，市政行业（燃气、轨道交通除外）设计乙级，建筑行业（建筑工程）设计乙级，风景园林工程设计专项甲级，工程勘察综合类甲级，工程咨询：公路专业甲级，工程咨询：市政公用工程（市政交通）专业甲级，建设项目环境影响评价（甲级），水土保持方案编制（四星级），地质灾害治理工程施工（乙级），公路工程试验检测综合甲级，公路工程桥梁隧道工程专项试验检测。承包与其实力、规模、业绩相适应的国外工程项目，生产、销售建筑材料（不含危险化学品），仪器仪表、普通机械设备开发、生产、销售与安装（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志明",
+          "agent_name": "陈志明",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "采购规划组",
+          "position": "采购规划主管",
+          "personal_profile": "在压力下优先梳理招标包的边界与资格条件，最先注意到投标人能力与工期是否匹配。讨论中常把技术可行性与采购合规放在同一张表上权衡，容易与追求速度的同事产生张力。",
+          "responsibilities": [
+            "统筹招标包划分与采购策略",
+            "评估投标人能力与组合体安排",
+            "协调内部评审与判给建议",
+            "监控采购进度与风险应对"
+          ],
+          "decision_authority": "final",
+          "communication_style": "条理清晰，习惯用清单和对比表说明取舍，对模糊表述会追问具体依据。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_黄丽华",
+          "agent_name": "黄丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "成本控制组",
+          "position": "成本控制经理",
+          "personal_profile": "对报价结构和支付节点高度敏感，压力下先看预算上限与现金流影响。讨论中倾向要求更充分的计价依据，常与强调工期优先的成员形成张力。",
+          "responsibilities": [
+            "编制与审核项目预算",
+            "评审投标报价与价格基础",
+            "设计支付评审与成本控制机制",
+            "跟踪成本风险与变更影响"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "直接务实，喜欢用数字和区间说话，对超出预算的提议会要求分项解释。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_李国豪",
+          "agent_name": "李国豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "工程管理组",
+          "position": "工程管理经理",
+          "personal_profile": "从施工可行性和现场条件出发思考，最先关注工期安排与资源计划是否现实。讨论中常提醒现场限制和接口协调难度，与理想化进度安排产生张力。",
+          "responsibilities": [
+            "审核施工方案与工期安排",
+            "协调设计接口与现场条件",
+            "监督质量目标与安全措施",
+            "评估资源计划与风险应对"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "沉稳具体，习惯用现场案例说明问题，对不落地的计划会提出替代步骤。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_张美玲",
+          "agent_name": "张美玲",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "设计协调组",
+          "position": "设计协调主管",
+          "personal_profile": "以设计完整性和可施工性为优先，压力下先检查图纸与规范的一致性。讨论中容易坚持设计意图，与成本压缩或工期压缩的提议形成张力。",
+          "responsibilities": [
+            "协调设计文件与招标要求",
+            "审查技术规范与质量目标",
+            "管理设计变更与独立复核",
+            "支持评标中的技术评审"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "细致严谨，常用图纸和规范条款支撑观点，对简化设计的建议会要求补充论证。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+          "agent_name": "何家俊",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "合约与监管组",
+          "position": "合约监管经理",
+          "personal_profile": "关注合约条款的严谨性与监管可执行性，压力下先看责任边界和争议解决机制。讨论中常强调文档纪律和独立检查，与灵活变通的提议产生张力。",
+          "responsibilities": [
+            "起草与审核合约条款",
+            "设计监管服务与检查机制",
+            "管理文档纪律与记录归档",
+            "评估投标人合规与风险信号"
+          ],
+          "decision_authority": "joint",
+          "communication_style": "谨慎克制，喜欢引用条款和程序要求，对例外处理会要求书面依据。"
+        }
+      ],
+      "COMP-0169": [
+        {
+          "agent_id": "COMP-0169_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计总体协调组",
+          "position": "设计总负责人",
+          "personal_profile": "压力下先看总体工期与设计接口是否闭合，习惯把业主需求转成可核查的设计节点；讨论中会主动暴露资源冲突，倾向以书面确认锁定各方承诺，容易在进度与质量之间制造张力。",
+          "responsibilities": [
+            "统筹总体设计与施工图设计的进度与接口",
+            "对接业主与监管服务，组织设计评审",
+            "协调各专业设计交付与现场配合",
+            "跟踪设计质量目标与工期节点"
+          ],
+          "decision_authority": "final",
+          "communication_style": "先给结论再列依据，语气平稳，关键节点要求书面确认。"
+        },
+        {
+          "agent_id": "COMP-0169_02_黄敏仪",
+          "agent_name": "黄敏仪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计质量与合规组",
+          "position": "设计质量负责人",
+          "personal_profile": "对图纸一致性和规范符合性高度敏感，压力下会先抽查计算书与专业碰撞；讨论中常提出独立复核要求，倾向以质量目标压过赶工冲动，给团队带来审慎张力。",
+          "responsibilities": [
+            "组织设计质量审查与独立复核",
+            "检查施工图与总体设计的一致性",
+            "跟踪质量目标与整改闭环",
+            "维护设计文档纪律与版本控制"
+          ],
+          "decision_authority": "quality_veto",
+          "communication_style": "用检查清单说话，指出问题具体到图号与条款，语气直接但不情绪化。"
+        },
+        {
+          "agent_id": "COMP-0169_03_梁启峰",
+          "agent_name": "梁启峰",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "造价与商务组",
+          "position": "造价控制经理",
+          "personal_profile": "先看报价基础与费用边界，习惯把设计变更折算成金额影响；讨论中会坚持支付评审与成本复核分离，容易在限额设计与设计优化之间形成拉扯。",
+          "responsibilities": [
+            "编制设计报价基础与费用分解",
+            "开展成本复核与支付评审配合",
+            "评估设计变更对造价的影响",
+            "支持限额设计与价值工程分析"
+          ],
+          "decision_authority": "cost_review",
+          "communication_style": "以数字和假设条件开场，喜欢用对比表说明取舍。"
+        },
+        {
+          "agent_id": "COMP-0169_04_苏咏芝",
+          "agent_name": "苏咏芝",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "现场设计与业主接口组",
+          "position": "现场设计协调经理",
+          "personal_profile": "最先关注现场可施工性与业主使用需求，压力下倾向先稳住现场配合节奏；讨论中会替施工方和业主发声，容易与质量组在变更审批速度上产生张力。",
+          "responsibilities": [
+            "负责现场设计配合与工地报告",
+            "维护业主接口与利益相关方协调",
+            "收集现场问题并反馈设计调整",
+            "跟踪现场设计响应时效"
+          ],
+          "decision_authority": "site_coordination",
+          "communication_style": "口语化、重场景描述，习惯用现场实例推动决策。"
+        },
+        {
+          "agent_id": "COMP-0169_05_何俊豪",
+          "agent_name": "何俊豪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "技术方案与可持续发展组",
+          "position": "技术方案主管",
+          "personal_profile": "对技术可行性和可持续目标敏感，压力下会先找替代方案而非硬扛原方案；讨论中常提出多方案比较，容易在创新与保守之间带来选择张力。",
+          "responsibilities": [
+            "编制总体技术方案与专项设计",
+            "落实可持续发展目标与环保要求",
+            "组织技术风险识别与应对建议",
+            "支持设计评审中的技术论证"
+          ],
+          "decision_authority": "technical_recommendation",
+          "communication_style": "结构化列方案优缺点，喜欢用示意图和假设条件说明。"
+        }
+      ],
+      "COMP-0286": [
+        {
+          "agent_id": "COMP-0286_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0286",
+          "company_role": "designer",
+          "department": "设计总体协调部",
+          "position": "设计总负责人",
+          "personal_profile": "在压力下首先关注整体工期与设计接口的匹配，习惯从项目全局判断取舍。他倾向于在早期锁定关键设计参数，避免后期返工，但有时会因过度强调进度而低估细节深化所需时间，给团队带来节奏上的紧张感。",
+          "responsibilities": [
+            "总体设计协调与业主接口",
+            "设计进度与资源计划统筹",
+            "各专业设计质量目标跟踪",
+            "现场设计配合总体安排"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，善于用里程碑和关键路径说明问题，在争议中倾向于提出折中方案并推动决策。"
+        },
+        {
+          "agent_id": "COMP-0286_02_林敏仪",
+          "agent_name": "林敏仪",
+          "company_id": "COMP-0286",
+          "company_role": "designer",
+          "department": "设计质量与合规部",
+          "position": "质量与合规主管",
+          "personal_profile": "对规范符合性和文档完整性高度敏感，压力下会反复核对设计依据与审批记录。她最先注意到的是潜在合规缺口和验收风险，常因坚持独立复核而拖慢决策速度，但能有效降低后期整改成本。",
+          "responsibilities": [
+            "设计成果质量审查与独立复核",
+            "合规性与审批文件管理",
+            "质量目标跟踪与整改闭环",
+            "设计文档纪律维护"
+          ],
+          "decision_authority": "veto",
+          "communication_style": "严谨、引用规范条文，习惯用检查清单和风险等级表达意见，对模糊表述会要求澄清。"
+        },
+        {
+          "agent_id": "COMP-0286_03_周浩然",
+          "agent_name": "周浩然",
+          "company_id": "COMP-0286",
+          "company_role": "designer",
+          "department": "造价与合同管理部",
+          "position": "造价控制经理",
+          "personal_profile": "对成本构成和支付节点非常敏锐，压力下优先确保报价基础合理且可追溯。他最先关注的是设计变更对造价的影响，常因坚持成本控制而在设计优化讨论中显得保守，但能保障业主投资可控。",
+          "responsibilities": [
+            "设计阶段造价估算与成本控制",
+            "支付评审与支付评估配合",
+            "报价基础与费用分解审核",
+            "设计变更费用影响分析"
+          ],
+          "decision_authority": "consultative",
+          "communication_style": "数据驱动，喜欢用对比表和敏感性分析说话，对超支风险直言不讳。"
+        },
+        {
+          "agent_id": "COMP-0286_04_苏颖",
+          "agent_name": "苏颖",
+          "company_id": "COMP-0286",
+          "company_role": "designer",
+          "department": "现场设计与协调部",
+          "position": "现场设计协调负责人",
+          "personal_profile": "擅长在施工现场与设计团队之间建立快速反馈回路，压力下优先解决现场即时问题。她最先注意到的是施工可行性和现场条件变化，常因强调现场灵活性而挑战既定设计假设，带来设计意图与实施之间的张力。",
+          "responsibilities": [
+            "现场设计配合与问题处理",
+            "施工可行性审查与设计优化建议",
+            "现场报告与利益相关方协调",
+            "设计意图现场交底"
+          ],
+          "decision_authority": "consultative",
+          "communication_style": "务实、案例导向，常用现场照片和简短记录说明问题，推动快速决策。"
+        },
+        {
+          "agent_id": "COMP-0286_05_黄志强",
+          "agent_name": "黄志强",
+          "company_id": "COMP-0286",
+          "company_role": "designer",
+          "department": "技术研发与可持续设计部",
+          "position": "技术总监",
+          "personal_profile": "对技术创新和可持续目标有强烈追求，压力下仍坚持探索优化方案。他最先关注的是设计方案的长期性能和生态效益，常因提出新技术选项而增加前期论证负担，但能为项目带来额外价值。",
+          "responsibilities": [
+            "技术方案评审与创新建议",
+            "可持续目标与生态设计整合",
+            "设计标准与技术要求制定",
+            "技术风险识别与应对"
+          ],
+          "decision_authority": "consultative",
+          "communication_style": "启发式、善于用类比和趋势说明技术价值，对保守方案会提出替代思路。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0010/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调组",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "我们作为设计方，这个包是总体及施工图设计与现场设计配合，预算450万MOP，资源需求仅0.25，而我们可用资源2.0，完全有余量。公司资料显示具备建筑、市政、公路行业工程设计能力，以及工程管理、造价咨询、勘察等配套，技术、设计、管理能力参数均在0.8，属于能力匹配。包的核心需求是生态敏感区设施设计协调、总体与施工图一体化、BIM多专业整合、MEP与结构协调、交通接口、可持续与可维护性、现场配合与文档审查纪律。这些属于设计主导下的多专业协调，我们可以作为单一责任设计方牵头，通过内部专业团队和常规专业分包/顾问来补齐MEP、BIM等细分，而不需要共享投标人身份或让渡设计主导权。因此不构成真正的责任缺口，不需要组合体。风险在于生态保护区二区的敏感审批、跨专业接口和现场配合响应，但这些可以通过阶段划分、内部审查门、BIM模型整合规则、现场配合人员安排和风险应对方案来管理，属于正常投标风险。价格450万MOP对设计服务而言合理，业主审查价格基础与费用构成，我们可据人员投入和交付成果编制。当前无未解决条件，无前置提交障碍。作为管理层，我判断这是值得争取、且我们能独立承担责任的机会，选择独立投标。",
+        "content": "管理层决定：对路氹城生态保护区二区优化工程总体及施工图设计与现场设计配合包（CASE-0010/design）以中国建筑第五工程局有限公司名义独立投标，报价以MOP计，控制在450万MOP包上限内。投标文件将围绕业主关注点组织：角色计划与团队可用性摘要、设计交付方法与阶段划分、质量方法与设计审查内部检查安排、价格基础与费用构成、进度视图与关键里程碑、风险应对与接口协调方案、现场配合人员安排与响应机制。设计主导责任由我方承担，MEP、BIM、结构、交通、可持续等专业协调在统一设计管理与审查纪律下组织，明确接口责任与文档流转。生态保护区二区的敏感审批与现场配合响应作为重点风险，通过前置条件梳理、阶段审查门与快速响应机制管理。价格基础按工作范围、人员投入、交付成果与现场配合服务编制，供业主审查合理性。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:40:06",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0286",
+        "company_role": "designer",
+        "package_id": "CASE-0010/design",
+        "agent_id": "COMP-0286_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "这次招标包是路氹城生态保护区二区的总体及施工图设计与现场设计配合，预算450万MOP，属于设计类包，与我方设计院角色高度契合。我方在公路、市政道路、桥梁、隧道、交通工程、风景园林、勘察、环评、水保等方向都有甲级或相应资质，生态敏感区设施优化、公共访问布局、交通与公用设施接口协调这些需求正好落在我们的能力范围内。资源上我方可用资源2.0，本包仅需0.25，占用压力很小，完全有余力独立承担。内部讨论没有提出任何必须依赖外部伙伴才能成立的技术或责任缺口，BIM、MEP、结构、可持续这些属于设计院内可协调的多专业工作，可以通过内部专业组和常规外部专项支持解决，不需要共享投标人身份或让渡设计主导权。价格上限450万MOP对设计包而言有合理利润空间，业主审查价格基础与费用构成，我方可以按人员投入、交付成果和现场配合服务清晰列项。风险主要是生态敏感区审批和现场配合响应，但这些属于正常设计风险管理，可通过阶段审查、内部独立校核和现场驻场机制应对。综合判断，这是一个值得争取、且我方能够以单一责任主体 credible 提交的机会，选择独立投标。",
+        "content": "管理层决定：对路氹城生态保护区二区优化工程总体及施工图设计与现场设计配合包（CASE-0010/design）以独立投标人身份提交投标。理由如下：一、能力匹配，本包所需总体与施工图一体化设计、生态敏感区设施协调、公共访问与交通接口布局、可持续与可维护性设计、现场设计配合等，均属我院设计主业与资质覆盖范围，可由院内多专业团队统一组织。二、资源可行，当前可用资源2.0，本包需求0.25，具备充足余量，不构成容量瓶颈。三、责任清晰，我院将作为单一责任主体承担设计主导、模型与接口协调、质量审查与现场配合，BIM、MEP、结构等专业协调在院内统一管理，必要的专项外部支持以常规分包方式纳入我方责任体系，不改变投标人身份。四、商务合理，报价以MOP计，基于设计工作范围、人员投入、交付成果与现场配合服务编制价格基础与费用构成，接受业主对价格合理性的审查。五、风险可控，针对生态敏感区审批与现场响应，拟设置阶段设计审查节点、内部独立校核、驻场人员安排与快速响应机制，并在风险应对方案中明确接口协调责任。投标文件将重点呈现角色计划与团队可用性摘要、设计交付方法与阶段划分、质量方法与内部检查安排、价格基础与费用构成、进度视图与关键里程碑、风险应对与接口协调方案、现场配合人员安排与响应机制。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T13:40:08",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0286",
+        "company_role": "designer",
+        "package_id": "CASE-0010/design",
+        "agent_id": "COMP-0286_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计总体协调部",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系\n专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T13:40:20",
+        "verification_requests": [
+          {
+            "question": "专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系",
+            "required_before_submission": false
+          },
+          {
+            "question": "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0010/design",
+        "agent_id": "OWNER-4048bdd520aa7f_05_何家俊",
+        "agent_name": "何家俊",
+        "department": "合约与监管组",
+        "position": "合约监管经理",
+        "message_type": "decision",
+        "thoughts": "评标推荐招商局重庆交通科研设计院有限公司，我作为业主最终决策者需要判断这个推荐是否经得起问责。该院报价MOP 4,050,000，在包上限MOP 4,500,000以内，院内道路、桥梁、隧道、交通工程、风景园林、结构、MEP等专业组配置完整，驻场设计代表与后台联动机制具体，对生态保护区二区审批敏感性和交通接口协调有贴合经验，业主审查节点、闭合台账与独立校核安排清晰，交付信心较高。其提交了未解决条件，专项外部支持MOP 420,000为暂定估算，风险预备相对有限，这些是签约前必须澄清的重点，但不构成推翻评标推荐的业主侧理由。中国建筑第五工程局有限公司报价MOP 4,300,000较高，审查纪律与风险预备更稳健，可作为对照，但综合交付信心与业主审查清晰度，招商局重庆交通科研设计院有限公司更符合本包需要。我决定按评标推荐判给招商局重庆交通科研设计院有限公司，并把未解决条件、专项分包暂定费用与风险预备安排作为签约前澄清重点。",
+        "content": "经评标与业主审查，本设计包判给招商局重庆交通科研设计院有限公司，其以单一责任主体独立投标，院内多专业组配置完整，驻场设计代表与后台联动响应机制具体，报价MOP 4,050,000在包上限MOP 4,500,000以内，费用构成较细，对生态保护区二区审批敏感性与交通接口协调有贴合安排，业主审查节点、闭合台账与独立校核清晰。签约前澄清重点为未解决条件的范围确认、专项外部支持MOP 420,000暂定估算的正式报价落实以及风险预备对生态审批反复的缓冲安排，相关澄清与确认按业主审查门推进。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T13:40:40",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0169",
+        "package_id": "CASE-0010/design",
+        "decision": "bid",
+        "reason": "本包为总体及施工图设计与现场设计配合，预算450万MOP，资源需求0.25，我方可用资源2.0，容量充足。公司资料具备建筑、市政、公路行业工程设计及工程管理、造价咨询、勘察等配套能力，技术、设计、管理参数均处较高水平，能够作为单一责任设计方牵头总体设计与施工图设计一体化。生态敏感区协调、BIM多专业整合、MEP与结构协调、交通接口、可持续与可维护性、现场配合等需求，属于设计主导下的专业协调，可通过内部专业团队与常规专业顾问/分包在统一设计责任下完成，不构成需要共享投标人身份或让渡设计主导权的责任缺口，故不采用组合体。主要风险为生态保护区审批敏感性与跨专业接口，拟通过阶段划分、内部设计审查门、BIM模型整合规则、现场配合人员安排与响应机制、风险应对方案加以控制，并在报价中体现人员投入与交付成果。综合机会价值、能力匹配、容量与风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任设计方身份独立投标，不组建组合体",
+          "MEP、BIM、结构、交通、可持续等细分专业通过内部团队与常规专业顾问/分包在统一设计责任下完成",
+          "生态保护区二区审批要求与现场配合响应机制在投标方案中作为风险应对重点说明",
+          "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，不超过450万MOP包上限"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0286",
+        "package_id": "CASE-0010/design",
+        "decision": "bid",
+        "reason": "本包为总体及施工图设计与现场设计配合，属于设计院核心业务范围，我方在市政道路、桥梁、隧道、交通工程、风景园林、勘察、环评与水保等方向具备相应资质与能力基础，生态敏感区设施优化、公共访问布局、交通与公用设施接口协调、可持续与可维护性设计等需求与我院专业配置匹配。当前可用资源2.0，本包仅需0.25，资源压力可控，具备独立承担并作为单一责任主体的条件。内部讨论未发现必须由外部伙伴共享投标人身份或设计主导权的缺口，BIM、MEP、结构等属院内多专业协调与常规专项支持范畴，可由我方统一管理并落实责任传递。报价上限450万MOP，按人员投入、交付成果与现场配合服务编制价格基础，具备合理商业空间。主要风险为生态敏感区审批不确定性与施工期现场配合响应，拟通过阶段设计审查、内部独立校核、驻场人员安排与快速响应机制应对。综合战略价值、能力匹配与风险承受度，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+          "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+          "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+          "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+          "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0010/design_001",
+        "package_id": "CASE-0010/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0169",
+        "bidder_name": "中国建筑第五工程局有限公司",
+        "technical_proposal": "我方以中国建筑第五工程局有限公司单一责任设计方身份独立投标本设计包，不组建组合体，全部设计成果与现场配合由我方统一承担设计责任。\n\n一、设计主导与专业整合\n由设计总负责人统一牵头总体设计与施工图设计一体化推进，建筑、市政、结构、MEP、交通接口、可持续与可维护性各专业在统一设计管理与审查纪律下组织。MEP、BIM、结构、交通、可持续等细分专业以内部专业团队为主，辅以常规专业顾问与专项分包，全部纳入我方统一设计责任、统一模型规则与统一文档流转，不出现责任真空。\n\n二、生态保护区二区设施优化与公共访问布局\n针对生态敏感区审批敏感性，前置梳理审批条件与生态约束清单，将设施优化、公共访问动线、人流与车流分离、无障碍与安全疏散作为总体设计阶段的重点校核项，形成可审查的比选方案与说明文件，减少后期反复。\n\n三、交通与公用设施接口协调\n建立接口台账，逐项明确与交通、公用设施、周边道路及既有管线的接口责任、资料需求与确认时点，接口事项在阶段审查门集中确认，避免施工图阶段返工。\n\n四、可持续与可维护性\n将可持续与能源目标、材料与设备可维护性、后期运维便利性纳入设计评审要点，在施工图阶段落实为可核查的设计说明与技术参数。\n\n五、质量与设计审查纪律\n实行三级内部检查：专业自校、专业间会签、设计总负责人审查门；BIM模型按统一规则整合并做碰撞与一致性检查；设计变更与澄清统一编号、统一归档，保证文档可追溯。\n\n六、现场设计配合\n施工期间安排固定现场配合人员与后备响应人员，建立澄清与样品审核的响应机制，明确响应时限与升级路径，保证施工连续性。",
+        "implementation_plan": "阶段划分与里程碑：\n1. 启动与条件梳理阶段：组建团队、确认生态保护区二区审批条件与设计输入清单、建立BIM与文档规则、建立接口台账。\n2. 总体设计阶段：完成设施优化与公共访问布局比选、交通与公用设施接口方案、可持续与可维护性策略，提交总体设计成果并通过内部审查门与业主审查。\n3. 施工图设计阶段：分专业推进施工图，执行专业间会签与模型整合检查，完成MEP与结构协调、接口确认，提交施工图成果与审查意见闭环记录。\n4. 招标与施工配合阶段：提供设计澄清、样品与材料审核、现场问题响应，按响应机制处理施工期间设计问题。\n5. 竣工与收尾阶段：配合竣工资料、设计总结与文档归档。\n\n团队与可用性：我方情景资源可用量为2.0，本包需求为0.25，容量充足；按设计总负责人、专业负责人、BIM协调、现场配合人员的角色计划配置，人员投入在投标文件中以角色计划与团队可用性摘要呈现。\n\n接口管理：接口台账逐项登记责任方、资料需求、确认时点与状态，阶段审查门集中关闭接口事项。\n\n进度视图：以阶段里程碑与审查门为控制点，与项目24个月总体工期衔接，施工图成果按施工顺序分批交付。",
+        "quotation": 4300000.0,
+        "schedule_commitment": "按项目24个月总体工期组织设计工作：启动与条件梳理在合同生效后尽早完成；总体设计成果按业主审查节点提交；施工图成果按施工顺序分批交付，保证施工连续；施工期间提供现场设计配合与澄清响应直至竣工收尾。各阶段以内部审查门与业主审查节点为控制里程碑，具体日期在合同签订后的详细进度计划中确认。",
+        "compliance_statement": "我方接受业主对设计过程与成果的审查与进度审查安排：\n- 阶段成果提交前完成内部三级检查并提交检查记录，供业主审查。\n- 业主审查意见统一登记、逐条闭环并留存记录。\n- BIM模型按统一规则整合，模型与图纸一致性可核查。\n- 设计变更与澄清统一编号归档，文档可追溯。\n- 现场配合响应按约定时限处理并记录，重大事项按升级路径报告业主。\n- 付款按合同里程碑与成果交付挂钩，配合业主的付款审查。",
+        "risk_response": "主要风险与应对：\n1. 生态保护区二区审批敏感性：前置梳理审批条件与生态约束，总体设计阶段形成可审查比选方案，预留风险预备费用应对审批反复。\n2. 跨专业接口风险：建立接口台账与阶段审查门，MEP、结构、交通、公用设施接口逐项确认，减少施工图返工。\n3. 专业顾问与分包协调风险：外部专业支持纳入我方统一设计责任与统一文档流转，明确交付要求与审查节点；相关分包尚处暂估阶段，未取得正式报价。\n4. 现场配合响应风险：固定现场配合人员加后备响应覆盖，明确响应时限与升级路径。\n5. 进度风险：施工图分批交付与施工顺序衔接，关键节点提前预警。",
+        "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计方身份独立投标本设计包，不组建组合体，MEP、BIM、结构、交通、可持续等专业在统一设计责任下由内部团队与常规专业顾问、专项分包完成。\n\n报价基础（MOP）：\n- 设计总负责人及项目管理投入：620,000\n- 总体设计与施工图各专业设计人工：1,580,000\n- BIM协调与多专业模型整合：430,000\n- 专业顾问与专项分包支持（暂估，未取得正式报价）：560,000\n- 现场设计配合与响应服务：480,000\n- 质量文档、审查纪律与保险及管理费：350,000\n- 风险预备与生态审批不确定性缓冲：280,000\n合计报价：4,300,000 MOP，未超过450万MOP包上限。\n\n价格基础按设计工作范围、人员投入、交付成果与现场配合服务编制，其中专业顾问与专项分包为投标估算，属暂估假设，非已取得报价；生态审批敏感性与跨专业接口反复以风险预备方式体现。我方情景资源可用量2.0、本包需求0.25，容量充足，可按角色计划投入团队。付款按合同里程碑与成果交付挂钩，配合业主付款审查。",
+        "quotation_breakdown": [
+          {
+            "item": "设计总负责人及项目管理投入",
+            "amount": 620000,
+            "basis": "设计总负责人与项目管理团队按阶段投入的设计工时估算，含内部审查门组织与业主审查配合"
+          },
+          {
+            "item": "总体设计与施工图各专业设计人工",
+            "amount": 1580000,
+            "basis": "建筑、市政、结构、MEP、交通接口、可持续与可维护性各专业设计人员工时估算，按阶段工作量分配"
+          },
+          {
+            "item": "BIM协调与多专业模型整合",
+            "amount": 430000,
+            "basis": "BIM协调人员投入、模型规则建立、碰撞检查与模型一致性校核的工时与工具成本估算"
+          },
+          {
+            "item": "专业顾问与专项分包支持",
+            "amount": 560000,
+            "basis": "生态敏感区专项、交通接口与可持续专项等外部专业支持的暂估费用，属投标估算，尚未取得正式报价"
+          },
+          {
+            "item": "现场设计配合与响应服务",
+            "amount": 480000,
+            "basis": "施工期间现场配合人员安排、澄清与样品审核响应、后备响应覆盖的服务投入估算"
+          },
+          {
+            "item": "质量文档、审查纪律与保险及管理费",
+            "amount": 350000,
+            "basis": "文档控制、内部检查与审查记录、设计责任保险与管理费用的估算"
+          },
+          {
+            "item": "风险预备与生态审批不确定性缓冲",
+            "amount": 280000,
+            "basis": "针对生态保护区二区审批敏感性与跨专业接口反复的风险预备，按上述费用基础计提的缓冲"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任设计方身份独立投标，不组建组合体",
+          "MEP、BIM、结构、交通、可持续等细分专业通过内部团队与常规专业顾问/分包在统一设计责任下完成",
+          "生态保护区二区审批要求与现场配合响应机制在投标方案中作为风险应对重点说明",
+          "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，不超过450万MOP包上限",
+          "专业顾问与专项分包费用为投标估算，尚未取得正式报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0010/design_002",
+        "package_id": "CASE-0010/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0286",
+        "bidder_name": "招商局重庆交通科研设计院有限公司",
+        "technical_proposal": "本院以单一责任主体身份独立投标，不设联合体。技术方案围绕总体设计与施工图设计一体化展开：\n\n一、总体设计阶段：完成生态保护区二区设施优化总体布局、公共访问动线与出入口布置、交通接口与公用设施接口梳理，形成总体设计报告、接口清单与可持续及可维护性设计策略，并提交业主审查。\n\n二、施工图设计阶段：由院内道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组统一组织，按专业出图并完成多专业模型整合；BIM作为统一协调平台，用于碰撞检查、接口核对与图纸一致性校核。必要的专项外部支持以常规分包方式纳入我方责任体系，不改变投标人身份。\n\n三、现场设计配合：设置驻场设计代表与后台快速响应机制，承担施工期间设计澄清、样品审核、现场问题处理与设计变更技术支持。\n\n四、质量与审查：执行院内三级校审（设计人自校、专业校核、院级审定），关键节点设置独立校核与业主审查会，形成审查记录与闭合台账。\n\n五、可持续与可维护性：在材料选择、能源目标、生态敏感区施工扰动控制与后期维护便利性方面提出可落地设计措施，并在设计文件中明确维护要点。",
+        "implementation_plan": "阶段划分与里程碑：\n1. 启动与资料收集（第1月）：现场踏勘、既有资料复核、生态敏感区监管要求梳理、接口单位清单确认。\n2. 总体设计（第2至第5月）：总体布局、公共访问与交通接口方案、公用设施接口协调、可持续与可维护性策略，提交总体设计成果供业主审查。\n3. 施工图设计（第6至第13月）：分专业施工图设计、BIM模型整合与碰撞检查、内部三级校审、业主审查意见闭合，分批提交施工图。\n4. 招标与施工准备配合（第14至第15月）：设计澄清、技术规格支持、样品与材料审核准备。\n5. 施工期现场配合（第16月至项目竣工）：驻场设计代表与后台专业组联动，设计澄清、样品审核、变更技术支持与竣工验收配合。\n\n组织方式：设设计总负责人一名统筹全过程，各专业设专业负责人，BIM设专职协调人，文档控制设专人负责版本与审查记录管理。",
+        "quotation": 4050000.0,
+        "schedule_commitment": "总服务期覆盖项目24个月建设周期：总体设计成果于第5月提交审查，施工图分批于第13月前完成并闭合审查意见，第14至15月配合招标与施工准备，第16月起至竣工验收提供驻场与后台设计配合。关键里程碑以业主审查节点为准，我院承诺按节点提交并预留审查意见闭合时间。",
+        "compliance_statement": "我院接受业主对设计过程的审查与控制：\n1. 按业主审查节点提交阶段成果，审查意见形成闭合台账并逐条回复。\n2. 设计文件执行院内三级校审与独立校核，校审记录可供业主查阅。\n3. BIM模型与图纸版本由文档控制专人管理，确保提交版本可追溯。\n4. 现场配合设驻场设计代表，明确响应时限与升级路径，重要问题提交设计总负责人处理。\n5. 价格基础与费用构成按人员投入、交付成果与现场配合服务编制，接受业主合理性审查。",
+        "risk_response": "主要风险与应对：\n1. 生态敏感区审批不确定性：提前梳理监管要求，在设计文件中配合提供环评、水保所需技术资料，设置阶段审查节点降低返工风险。\n2. 多专业接口协调风险：以BIM为统一协调平台，建立接口清单与责任矩阵，定期接口协调会。\n3. 施工期现场响应风险：驻场设计代表加后台专业组联动，明确响应时限与升级机制。\n4. 专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系。\n5. 进度风险：关键节点预留审查意见闭合时间，人员投入按阶段峰值配置。",
+        "submission_summary": "招商局重庆交通科研设计院有限公司以单一责任主体独立投标本设计包，不设联合体。\n\n报价基础（MOP）：\n- 总体与施工图设计人员费用：1,980,000\n- BIM协调与模型整合：385,000\n- 专项外部技术支持（暂定分包估算）：420,000\n- 现场设计配合与驻场响应：560,000\n- 质量审查、文档控制与独立校核：235,000\n- 保险、差旅与项目管理间接费：268,000\n- 风险预备费与商业调整：202,000\n合计报价：4,050,000 MOP，在包上限4,500,000 MOP以内。\n\n价格由院内多专业设计人员工月、BIM协调工作量、暂定专项分包、施工期驻场配合、三级校审与文档管理、保险差旅及风险预备构成，专项分包尚未取得正式报价，按暂定估算计入。付款按阶段成果提交与业主审查闭合分期申请。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计与施工图设计人员费用（院内多专业）",
+            "amount": 1980000,
+            "basis": "按道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组投入的设计人员工月估算，含设计总负责人与各专业负责人较高费率及一般设计人员费率，属投标估算"
+          },
+          {
+            "item": "BIM协调与多专业模型整合费用",
+            "amount": 385000,
+            "basis": "BIM专职协调人与模型整合、碰撞检查、接口核对工作量估算，含模型审查轮次"
+          },
+          {
+            "item": "专项外部技术支持（常规分包，纳入我方责任体系）",
+            "amount": 420000,
+            "basis": "生态敏感区专项评估配合、特殊检测与专项技术咨询的暂估分包费用，尚未取得正式分包报价，属暂定估算"
+          },
+          {
+            "item": "现场设计配合与驻场响应费用",
+            "amount": 560000,
+            "basis": "施工期驻场设计代表、后台快速响应与样品审核、设计澄清工作量估算"
+          },
+          {
+            "item": "质量审查、文档控制与独立校核费用",
+            "amount": 235000,
+            "basis": "三级校审、独立校核、业主审查会组织与文档版本管理费用"
+          },
+          {
+            "item": "设计责任保险、差旅与项目管理间接费用",
+            "amount": 268000,
+            "basis": "职业责任保险、往返现场差旅、院内项目管理与行政支持分摊"
+          },
+          {
+            "item": "风险预备费与商业调整",
+            "amount": 202000,
+            "basis": "针对生态敏感区审批不确定性与施工期响应强度的风险预备，含报价取整调整"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_29533fe21871642f76e6",
+          "condition_e3372b3b99641b99dc27"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+          "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+          "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+          "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+          "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。",
+          "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0010/design",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0010/design_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "quotation": 4300000.0,
+            "quotation_breakdown": [
+              {
+                "item": "设计总负责人及项目管理投入",
+                "amount": 620000,
+                "basis": "设计总负责人与项目管理团队按阶段投入的设计工时估算，含内部审查门组织与业主审查配合"
+              },
+              {
+                "item": "总体设计与施工图各专业设计人工",
+                "amount": 1580000,
+                "basis": "建筑、市政、结构、MEP、交通接口、可持续与可维护性各专业设计人员工时估算，按阶段工作量分配"
+              },
+              {
+                "item": "BIM协调与多专业模型整合",
+                "amount": 430000,
+                "basis": "BIM协调人员投入、模型规则建立、碰撞检查与模型一致性校核的工时与工具成本估算"
+              },
+              {
+                "item": "专业顾问与专项分包支持",
+                "amount": 560000,
+                "basis": "生态敏感区专项、交通接口与可持续专项等外部专业支持的暂估费用，属投标估算，尚未取得正式报价"
+              },
+              {
+                "item": "现场设计配合与响应服务",
+                "amount": 480000,
+                "basis": "施工期间现场配合人员安排、澄清与样品审核响应、后备响应覆盖的服务投入估算"
+              },
+              {
+                "item": "质量文档、审查纪律与保险及管理费",
+                "amount": 350000,
+                "basis": "文档控制、内部检查与审查记录、设计责任保险与管理费用的估算"
+              },
+              {
+                "item": "风险预备与生态审批不确定性缓冲",
+                "amount": 280000,
+                "basis": "针对生态保护区二区审批敏感性与跨专业接口反复的风险预备，按上述费用基础计提的缓冲"
+              }
+            ],
+            "submission_summary": "我方以中国建筑第五工程局有限公司单一责任设计方身份独立投标本设计包，不组建组合体，MEP、BIM、结构、交通、可持续等专业在统一设计责任下由内部团队与常规专业顾问、专项分包完成。\n\n报价基础（MOP）：\n- 设计总负责人及项目管理投入：620,000\n- 总体设计与施工图各专业设计人工：1,580,000\n- BIM协调与多专业模型整合：430,000\n- 专业顾问与专项分包支持（暂估，未取得正式报价）：560,000\n- 现场设计配合与响应服务：480,000\n- 质量文档、审查纪律与保险及管理费：350,000\n- 风险预备与生态审批不确定性缓冲：280,000\n合计报价：4,300,000 MOP，未超过450万MOP包上限。\n\n价格基础按设计工作范围、人员投入、交付成果与现场配合服务编制，其中专业顾问与专项分包为投标估算，属暂估假设，非已取得报价；生态审批敏感性与跨专业接口反复以风险预备方式体现。我方情景资源可用量2.0、本包需求0.25，容量充足，可按角色计划投入团队。付款按合同里程碑与成果交付挂钩，配合业主付款审查。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "以单一责任设计方身份独立投标，不组建组合体",
+              "MEP、BIM、结构、交通、可持续等细分专业通过内部团队与常规专业顾问/分包在统一设计责任下完成",
+              "生态保护区二区审批要求与现场配合响应机制在投标方案中作为风险应对重点说明",
+              "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，不超过450万MOP包上限",
+              "专业顾问与专项分包费用为投标估算，尚未取得正式报价"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0010/design_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0286",
+            "bidder_name": "招商局重庆交通科研设计院有限公司",
+            "quotation": 4050000.0,
+            "quotation_breakdown": [
+              {
+                "item": "总体设计与施工图设计人员费用（院内多专业）",
+                "amount": 1980000,
+                "basis": "按道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组投入的设计人员工月估算，含设计总负责人与各专业负责人较高费率及一般设计人员费率，属投标估算"
+              },
+              {
+                "item": "BIM协调与多专业模型整合费用",
+                "amount": 385000,
+                "basis": "BIM专职协调人与模型整合、碰撞检查、接口核对工作量估算，含模型审查轮次"
+              },
+              {
+                "item": "专项外部技术支持（常规分包，纳入我方责任体系）",
+                "amount": 420000,
+                "basis": "生态敏感区专项评估配合、特殊检测与专项技术咨询的暂估分包费用，尚未取得正式分包报价，属暂定估算"
+              },
+              {
+                "item": "现场设计配合与驻场响应费用",
+                "amount": 560000,
+                "basis": "施工期驻场设计代表、后台快速响应与样品审核、设计澄清工作量估算"
+              },
+              {
+                "item": "质量审查、文档控制与独立校核费用",
+                "amount": 235000,
+                "basis": "三级校审、独立校核、业主审查会组织与文档版本管理费用"
+              },
+              {
+                "item": "设计责任保险、差旅与项目管理间接费用",
+                "amount": 268000,
+                "basis": "职业责任保险、往返现场差旅、院内项目管理与行政支持分摊"
+              },
+              {
+                "item": "风险预备费与商业调整",
+                "amount": 202000,
+                "basis": "针对生态敏感区审批不确定性与施工期响应强度的风险预备，含报价取整调整"
+              }
+            ],
+            "submission_summary": "招商局重庆交通科研设计院有限公司以单一责任主体独立投标本设计包，不设联合体。\n\n报价基础（MOP）：\n- 总体与施工图设计人员费用：1,980,000\n- BIM协调与模型整合：385,000\n- 专项外部技术支持（暂定分包估算）：420,000\n- 现场设计配合与驻场响应：560,000\n- 质量审查、文档控制与独立校核：235,000\n- 保险、差旅与项目管理间接费：268,000\n- 风险预备费与商业调整：202,000\n合计报价：4,050,000 MOP，在包上限4,500,000 MOP以内。\n\n价格由院内多专业设计人员工月、BIM协调工作量、暂定专项分包、施工期驻场配合、三级校审与文档管理、保险差旅及风险预备构成，专项分包尚未取得正式报价，按暂定估算计入。付款按阶段成果提交与业主审查闭合分期申请。",
+            "unresolved_condition_ids": [
+              "condition_29533fe21871642f76e6",
+              "condition_e3372b3b99641b99dc27"
+            ],
+            "bid_assumptions": [
+              "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+              "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+              "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+              "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+              "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。",
+              "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认。"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 总体及施工图设计与现场设计配合.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0010/design",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志明",
+          "OWNER-4048bdd520aa7f_02_黄丽华",
+          "OWNER-4048bdd520aa7f_03_李国豪",
+          "OWNER-4048bdd520aa7f_04_张美玲",
+          "OWNER-4048bdd520aa7f_05_何家俊"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0010/design_001",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "technical_view": "以单一责任设计方身份独立投标，总体设计与施工图一体化路径清晰，生态保护区二区设施优化、公共访问布局、接口台账与三级内部检查均有具体安排，能力匹配度较高。",
+            "cost_view": "报价MOP 4,300,000，低于包上限MOP 4,500,000，费用构成覆盖各专业人工、BIM、现场配合与风险预备，但专业顾问与专项分包MOP 560,000为未取得正式报价的暂估，价格可信度需在签约前核实。",
+            "owner_control_view": "明确接受业主阶段审查、意见闭环、BIM模型一致性核查与付款审查，文档编号归档与升级路径清晰，业主审查透明度较好。",
+            "strengths": [
+              "总体与施工图一体化及三级审查门安排具体",
+              "接口台账与现场配合响应机制明确",
+              "报价在包上限内且含生态审批风险预备"
+            ],
+            "concerns": [
+              "专项分包为暂估费用，尚未取得正式报价",
+              "生态敏感区审批反复可能压缩设计余量",
+              "现场配合人员配置仅以角色计划呈现，细化程度有限"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0010/design_002",
+            "bidder_id": "COMP-0286",
+            "bidder_name": "招商局重庆交通科研设计院有限公司",
+            "technical_view": "以单一责任主体独立投标，院内道路、桥梁、隧道、交通工程、风景园林、结构、MEP等专业组配置齐全，BIM作为统一协调平台，总体设计与施工图阶段划分与里程碑具体，能力匹配良好。",
+            "cost_view": "报价MOP 4,050,000，为两家中较低者，人员工月、BIM、驻场配合与独立校核费用构成较完整，但专项外部支持MOP 420,000为暂定估算，且存在未解决条件，价格可信度需通过澄清确认。",
+            "owner_control_view": "接受业主审查节点、闭合台账、独立校核与文档版本管理，驻场设计代表与升级路径明确，业主审查清晰度较高，但提交了未解决条件需在评标澄清中处理。",
+            "strengths": [
+              "院内多专业组配置完整，交通与生态专项经验贴合",
+              "驻场设计代表与后台联动响应机制具体",
+              "报价较低且费用构成较细"
+            ],
+            "concerns": [
+              "存在未解决条件，需澄清后方可确认范围",
+              "专项分包为暂定估算，签约前须完成确认",
+              "风险预备相对有限，生态审批反复的缓冲空间较小"
+            ]
+          }
+        ],
+        "comparison_summary": "两家均为单一责任主体，能力匹配接近；招商局重庆交通科研设计院有限公司报价MOP 4,050,000较低且专业组配置与驻场机制具体，但存在未解决条件；中国建筑第五工程局有限公司报价MOP 4,300,000较高，审查纪律与风险预备更充分。综合交付信心、风险控制与业主审查清晰度，前者略优但需澄清条件。",
+        "recommended_winner": "COMP-0286",
+        "owner_review_notes": "建议优先与招商局重庆交通科研设计院有限公司澄清未解决条件与专项分包暂定费用，再确认判给；中国建筑第五工程局有限公司可作为备选，其审查纪律与风险预备较稳健。两家专项分包均为暂估，签约前须落实正式报价。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0010",
+      "package_awards": [
+        {
+          "package_id": "CASE-0010/design",
+          "selected_bidder_id": "COMP-0286",
+          "selected_bidder_name": "招商局重庆交通科研设计院有限公司",
+          "bidder_type": "company",
+          "decision_reason": "招商局重庆交通科研设计院有限公司以单一责任主体独立投标，院内多专业组配置完整，驻场设计代表与后台联动响应机制具体，报价MOP 4,050,000低于中国建筑第五工程局有限公司的MOP 4,300,000且在包上限MOP 4,500,000以内，费用构成较细，对生态保护区二区审批敏感性与交通接口协调有贴合安排，业主审查节点、闭合台账与独立校核清晰，交付信心与业主审查透明度较高，因此判给该投标人。",
+          "unresolved_condition_ids": [
+            "condition_29533fe21871642f76e6",
+            "condition_e3372b3b99641b99dc27"
+          ],
+          "bid_assumptions": [
+            "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+            "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+            "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+            "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+            "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。",
+            "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认。"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0286"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T13:40:08",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0169",
+          "package_id": "CASE-0010/design",
+          "decision": "bid",
+          "reason": "本包为总体及施工图设计与现场设计配合，预算450万MOP，资源需求0.25，我方可用资源2.0，容量充足。公司资料具备建筑、市政、公路行业工程设计及工程管理、造价咨询、勘察等配套能力，技术、设计、管理参数均处较高水平，能够作为单一责任设计方牵头总体设计与施工图设计一体化。生态敏感区协调、BIM多专业整合、MEP与结构协调、交通接口、可持续与可维护性、现场配合等需求，属于设计主导下的专业协调，可通过内部专业团队与常规专业顾问/分包在统一设计责任下完成，不构成需要共享投标人身份或让渡设计主导权的责任缺口，故不采用组合体。主要风险为生态保护区审批敏感性与跨专业接口，拟通过阶段划分、内部设计审查门、BIM模型整合规则、现场配合人员安排与响应机制、风险应对方案加以控制，并在报价中体现人员投入与交付成果。综合机会价值、能力匹配、容量与风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一责任设计方身份独立投标，不组建组合体",
+            "MEP、BIM、结构、交通、可持续等细分专业通过内部团队与常规专业顾问/分包在统一设计责任下完成",
+            "生态保护区二区审批要求与现场配合响应机制在投标方案中作为风险应对重点说明",
+            "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，不超过450万MOP包上限"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:08",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0286",
+          "package_id": "CASE-0010/design",
+          "decision": "bid",
+          "reason": "本包为总体及施工图设计与现场设计配合，属于设计院核心业务范围，我方在市政道路、桥梁、隧道、交通工程、风景园林、勘察、环评与水保等方向具备相应资质与能力基础，生态敏感区设施优化、公共访问布局、交通与公用设施接口协调、可持续与可维护性设计等需求与我院专业配置匹配。当前可用资源2.0，本包仅需0.25，资源压力可控，具备独立承担并作为单一责任主体的条件。内部讨论未发现必须由外部伙伴共享投标人身份或设计主导权的缺口，BIM、MEP、结构等属院内多专业协调与常规专项支持范畴，可由我方统一管理并落实责任传递。报价上限450万MOP，按人员投入、交付成果与现场配合服务编制价格基础，具备合理商业空间。主要风险为生态敏感区审批不确定性与施工期现场配合响应，拟通过阶段设计审查、内部独立校核、驻场人员安排与快速响应机制应对。综合战略价值、能力匹配与风险承受度，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+            "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+            "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+            "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+            "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:30",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0010/design",
+          "bidder_id": "COMP-0169"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:30",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0010/design",
+          "bidder_id": "COMP-0286"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:30",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0010/design",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:36",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0010/design",
+          "recommended_winner": "COMP-0286"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T13:40:40",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0010/design",
+          "selected_bidder_id": "COMP-0286"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "业主内部讨论无异议，接受本轮修订稿0的全部条款。作为业主方，就自身立场明确以下决定，供下一稿写入：1) 报价4,050,000 MOP为固定总价，包含投标文件所列全部费用构成，其中专项外部技术支持420,000 MOP为暂定估算，签约前须完成分包确认，暂定金额的结算按实际发生并经业主审核后据实调整，超出部分由设计方承担，不另行追加；2) 计量与付款以阶段成果提交并经业主审查闭合为计量基础，按阶段分期申请支付；3) 业主审查期定为每阶段成果提交后15个工作日内出具审查意见，设计方须在收到意见后10个工作日内完成闭合回复；4) 接受投标披露的假设作为风险分配，包括单一责任主体、不设联合体、专项分包纳入设计方责任体系、生态敏感区审批按业主与监管程序推进；5) 本阶段仅授权可执行的模拟义务，不构成对未来工程交付或法定审批已完成的认定，各项交付物均以审查与验收条件为约束。"
+          },
+          "COMP-0286": {
+            "action": "accept",
+            "reason": "我方为单一责任主体独立承担本设计包，报价4,050,000 MOP在包上限4,500,000 MOP以内，资源承诺0.25与工作份额1.0均在授权情景能力范围内，且与我院设计资质与多专业能力匹配。已披露的投标假设（专项外部支持为暂定估算、签约前完成分包确认并纳入我方责任体系；生态敏感区审批按业主与监管程序推进）作为风险分配接受，不视为缺失证据。关于我方自身立场，明确如下并请写入下一稿：专项外部技术支持费用420,000 MOP为暂定估算，属固定总价内的暂定金额，凭实际分包合同与业主审查确认据实结算，超出部分需经业主书面批准；付款按阶段成果提交并经业主审查闭合后分期申请。合同仅授权可执行的模拟义务，未来交付物与法定审批作为带审查与验收条件的义务处理，不构成已完成事实。据此接受所提供的确切条款、资源与义务。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM2306B16D/CASE-0010/design/round-1/contract",
+          "simulation_id": "SIM2306B16D",
+          "project_id": "CASE-0010",
+          "package_id": "CASE-0010/design",
+          "session_id": "SIM2306B16D/CASE-0010/design/round-1",
+          "snapshot_version": "b38154995ae91c860576aa3be9f7b886e97312dc8dde2eac2571527026bb4269",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0010/design_002",
+          "bidder_id": "COMP-0286",
+          "lead_id": "COMP-0286",
+          "members": [
+            "COMP-0286"
+          ],
+          "price": 4050000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0286": 0.25
+          },
+          "work_shares": {
+            "COMP-0286": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "04ddd110cd49f5ef02804e8aae3d9f1b9ced68dbee43f52dbb17d87524714276",
+          "terms": {
+            "schedule_commitment": "总服务期覆盖项目24个月建设周期：总体设计成果于第5月提交审查，施工图分批于第13月前完成并闭合审查意见，第14至15月配合招标与施工准备，第16月起至竣工验收提供驻场与后台设计配合。关键里程碑以业主审查节点为准，我院承诺按节点提交并预留审查意见闭合时间。",
+            "risk_response": "主要风险与应对：\n1. 生态敏感区审批不确定性：提前梳理监管要求，在设计文件中配合提供环评、水保所需技术资料，设置阶段审查节点降低返工风险。\n2. 多专业接口协调风险：以BIM为统一协调平台，建立接口清单与责任矩阵，定期接口协调会。\n3. 施工期现场响应风险：驻场设计代表加后台专业组联动，明确响应时限与升级机制。\n4. 专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系。\n5. 进度风险：关键节点预留审查意见闭合时间，人员投入按阶段峰值配置。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0010/design_002",
+              "package_id": "CASE-0010/design",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0286",
+              "bidder_name": "招商局重庆交通科研设计院有限公司",
+              "technical_proposal": "本院以单一责任主体身份独立投标，不设联合体。技术方案围绕总体设计与施工图设计一体化展开：\n\n一、总体设计阶段：完成生态保护区二区设施优化总体布局、公共访问动线与出入口布置、交通接口与公用设施接口梳理，形成总体设计报告、接口清单与可持续及可维护性设计策略，并提交业主审查。\n\n二、施工图设计阶段：由院内道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组统一组织，按专业出图并完成多专业模型整合；BIM作为统一协调平台，用于碰撞检查、接口核对与图纸一致性校核。必要的专项外部支持以常规分包方式纳入我方责任体系，不改变投标人身份。\n\n三、现场设计配合：设置驻场设计代表与后台快速响应机制，承担施工期间设计澄清、样品审核、现场问题处理与设计变更技术支持。\n\n四、质量与审查：执行院内三级校审（设计人自校、专业校核、院级审定），关键节点设置独立校核与业主审查会，形成审查记录与闭合台账。\n\n五、可持续与可维护性：在材料选择、能源目标、生态敏感区施工扰动控制与后期维护便利性方面提出可落地设计措施，并在设计文件中明确维护要点。",
+              "implementation_plan": "阶段划分与里程碑：\n1. 启动与资料收集（第1月）：现场踏勘、既有资料复核、生态敏感区监管要求梳理、接口单位清单确认。\n2. 总体设计（第2至第5月）：总体布局、公共访问与交通接口方案、公用设施接口协调、可持续与可维护性策略，提交总体设计成果供业主审查。\n3. 施工图设计（第6至第13月）：分专业施工图设计、BIM模型整合与碰撞检查、内部三级校审、业主审查意见闭合，分批提交施工图。\n4. 招标与施工准备配合（第14至第15月）：设计澄清、技术规格支持、样品与材料审核准备。\n5. 施工期现场配合（第16月至项目竣工）：驻场设计代表与后台专业组联动，设计澄清、样品审核、变更技术支持与竣工验收配合。\n\n组织方式：设设计总负责人一名统筹全过程，各专业设专业负责人，BIM设专职协调人，文档控制设专人负责版本与审查记录管理。",
+              "quotation": 4050000.0,
+              "schedule_commitment": "总服务期覆盖项目24个月建设周期：总体设计成果于第5月提交审查，施工图分批于第13月前完成并闭合审查意见，第14至15月配合招标与施工准备，第16月起至竣工验收提供驻场与后台设计配合。关键里程碑以业主审查节点为准，我院承诺按节点提交并预留审查意见闭合时间。",
+              "compliance_statement": "我院接受业主对设计过程的审查与控制：\n1. 按业主审查节点提交阶段成果，审查意见形成闭合台账并逐条回复。\n2. 设计文件执行院内三级校审与独立校核，校审记录可供业主查阅。\n3. BIM模型与图纸版本由文档控制专人管理，确保提交版本可追溯。\n4. 现场配合设驻场设计代表，明确响应时限与升级路径，重要问题提交设计总负责人处理。\n5. 价格基础与费用构成按人员投入、交付成果与现场配合服务编制，接受业主合理性审查。",
+              "risk_response": "主要风险与应对：\n1. 生态敏感区审批不确定性：提前梳理监管要求，在设计文件中配合提供环评、水保所需技术资料，设置阶段审查节点降低返工风险。\n2. 多专业接口协调风险：以BIM为统一协调平台，建立接口清单与责任矩阵，定期接口协调会。\n3. 施工期现场响应风险：驻场设计代表加后台专业组联动，明确响应时限与升级机制。\n4. 专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系。\n5. 进度风险：关键节点预留审查意见闭合时间，人员投入按阶段峰值配置。",
+              "submission_summary": "招商局重庆交通科研设计院有限公司以单一责任主体独立投标本设计包，不设联合体。\n\n报价基础（MOP）：\n- 总体与施工图设计人员费用：1,980,000\n- BIM协调与模型整合：385,000\n- 专项外部技术支持（暂定分包估算）：420,000\n- 现场设计配合与驻场响应：560,000\n- 质量审查、文档控制与独立校核：235,000\n- 保险、差旅与项目管理间接费：268,000\n- 风险预备费与商业调整：202,000\n合计报价：4,050,000 MOP，在包上限4,500,000 MOP以内。\n\n价格由院内多专业设计人员工月、BIM协调工作量、暂定专项分包、施工期驻场配合、三级校审与文档管理、保险差旅及风险预备构成，专项分包尚未取得正式报价，按暂定估算计入。付款按阶段成果提交与业主审查闭合分期申请。",
+              "quotation_breakdown": [
+                {
+                  "item": "总体设计与施工图设计人员费用（院内多专业）",
+                  "amount": 1980000,
+                  "basis": "按道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组投入的设计人员工月估算，含设计总负责人与各专业负责人较高费率及一般设计人员费率，属投标估算"
+                },
+                {
+                  "item": "BIM协调与多专业模型整合费用",
+                  "amount": 385000,
+                  "basis": "BIM专职协调人与模型整合、碰撞检查、接口核对工作量估算，含模型审查轮次"
+                },
+                {
+                  "item": "专项外部技术支持（常规分包，纳入我方责任体系）",
+                  "amount": 420000,
+                  "basis": "生态敏感区专项评估配合、特殊检测与专项技术咨询的暂估分包费用，尚未取得正式分包报价，属暂定估算"
+                },
+                {
+                  "item": "现场设计配合与驻场响应费用",
+                  "amount": 560000,
+                  "basis": "施工期驻场设计代表、后台快速响应与样品审核、设计澄清工作量估算"
+                },
+                {
+                  "item": "质量审查、文档控制与独立校核费用",
+                  "amount": 235000,
+                  "basis": "三级校审、独立校核、业主审查会组织与文档版本管理费用"
+                },
+                {
+                  "item": "设计责任保险、差旅与项目管理间接费用",
+                  "amount": 268000,
+                  "basis": "职业责任保险、往返现场差旅、院内项目管理与行政支持分摊"
+                },
+                {
+                  "item": "风险预备费与商业调整",
+                  "amount": 202000,
+                  "basis": "针对生态敏感区审批不确定性与施工期响应强度的风险预备，含报价取整调整"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_29533fe21871642f76e6",
+                "condition_e3372b3b99641b99dc27"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+                "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+                "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+                "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+                "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。",
+                "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认。"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "总体及施工图设计与现场设计配合",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "04ddd110cd49f5ef02804e8aae3d9f1b9ced68dbee43f52dbb17d87524714276"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0010/design": {
+          "package_type": "design",
+          "required_company_role": "designer",
+          "scope": "总体及施工图设计与现场设计配合",
+          "budget": 4500000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM2306B16D/CASE-0010/design/round-1/contract",
+    "simulation_id": "SIM2306B16D",
+    "project_id": "CASE-0010",
+    "package_id": "CASE-0010/design",
+    "session_id": "SIM2306B16D/CASE-0010/design/round-1",
+    "snapshot_version": "b38154995ae91c860576aa3be9f7b886e97312dc8dde2eac2571527026bb4269",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0010/design_002",
+    "bidder_id": "COMP-0286",
+    "lead_id": "COMP-0286",
+    "members": [
+      "COMP-0286"
+    ],
+    "price": 4050000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0286": 0.25
+    },
+    "work_shares": {
+      "COMP-0286": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0286": true
+    },
+    "signed_terms_hash": "04ddd110cd49f5ef02804e8aae3d9f1b9ced68dbee43f52dbb17d87524714276",
+    "terms": {
+      "schedule_commitment": "总服务期覆盖项目24个月建设周期：总体设计成果于第5月提交审查，施工图分批于第13月前完成并闭合审查意见，第14至15月配合招标与施工准备，第16月起至竣工验收提供驻场与后台设计配合。关键里程碑以业主审查节点为准，我院承诺按节点提交并预留审查意见闭合时间。",
+      "risk_response": "主要风险与应对：\n1. 生态敏感区审批不确定性：提前梳理监管要求，在设计文件中配合提供环评、水保所需技术资料，设置阶段审查节点降低返工风险。\n2. 多专业接口协调风险：以BIM为统一协调平台，建立接口清单与责任矩阵，定期接口协调会。\n3. 施工期现场响应风险：驻场设计代表加后台专业组联动，明确响应时限与升级机制。\n4. 专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系。\n5. 进度风险：关键节点预留审查意见闭合时间，人员投入按阶段峰值配置。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0010/design_002",
+        "package_id": "CASE-0010/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0286",
+        "bidder_name": "招商局重庆交通科研设计院有限公司",
+        "technical_proposal": "本院以单一责任主体身份独立投标，不设联合体。技术方案围绕总体设计与施工图设计一体化展开：\n\n一、总体设计阶段：完成生态保护区二区设施优化总体布局、公共访问动线与出入口布置、交通接口与公用设施接口梳理，形成总体设计报告、接口清单与可持续及可维护性设计策略，并提交业主审查。\n\n二、施工图设计阶段：由院内道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组统一组织，按专业出图并完成多专业模型整合；BIM作为统一协调平台，用于碰撞检查、接口核对与图纸一致性校核。必要的专项外部支持以常规分包方式纳入我方责任体系，不改变投标人身份。\n\n三、现场设计配合：设置驻场设计代表与后台快速响应机制，承担施工期间设计澄清、样品审核、现场问题处理与设计变更技术支持。\n\n四、质量与审查：执行院内三级校审（设计人自校、专业校核、院级审定），关键节点设置独立校核与业主审查会，形成审查记录与闭合台账。\n\n五、可持续与可维护性：在材料选择、能源目标、生态敏感区施工扰动控制与后期维护便利性方面提出可落地设计措施，并在设计文件中明确维护要点。",
+        "implementation_plan": "阶段划分与里程碑：\n1. 启动与资料收集（第1月）：现场踏勘、既有资料复核、生态敏感区监管要求梳理、接口单位清单确认。\n2. 总体设计（第2至第5月）：总体布局、公共访问与交通接口方案、公用设施接口协调、可持续与可维护性策略，提交总体设计成果供业主审查。\n3. 施工图设计（第6至第13月）：分专业施工图设计、BIM模型整合与碰撞检查、内部三级校审、业主审查意见闭合，分批提交施工图。\n4. 招标与施工准备配合（第14至第15月）：设计澄清、技术规格支持、样品与材料审核准备。\n5. 施工期现场配合（第16月至项目竣工）：驻场设计代表与后台专业组联动，设计澄清、样品审核、变更技术支持与竣工验收配合。\n\n组织方式：设设计总负责人一名统筹全过程，各专业设专业负责人，BIM设专职协调人，文档控制设专人负责版本与审查记录管理。",
+        "quotation": 4050000.0,
+        "schedule_commitment": "总服务期覆盖项目24个月建设周期：总体设计成果于第5月提交审查，施工图分批于第13月前完成并闭合审查意见，第14至15月配合招标与施工准备，第16月起至竣工验收提供驻场与后台设计配合。关键里程碑以业主审查节点为准，我院承诺按节点提交并预留审查意见闭合时间。",
+        "compliance_statement": "我院接受业主对设计过程的审查与控制：\n1. 按业主审查节点提交阶段成果，审查意见形成闭合台账并逐条回复。\n2. 设计文件执行院内三级校审与独立校核，校审记录可供业主查阅。\n3. BIM模型与图纸版本由文档控制专人管理，确保提交版本可追溯。\n4. 现场配合设驻场设计代表，明确响应时限与升级路径，重要问题提交设计总负责人处理。\n5. 价格基础与费用构成按人员投入、交付成果与现场配合服务编制，接受业主合理性审查。",
+        "risk_response": "主要风险与应对：\n1. 生态敏感区审批不确定性：提前梳理监管要求，在设计文件中配合提供环评、水保所需技术资料，设置阶段审查节点降低返工风险。\n2. 多专业接口协调风险：以BIM为统一协调平台，建立接口清单与责任矩阵，定期接口协调会。\n3. 施工期现场响应风险：驻场设计代表加后台专业组联动，明确响应时限与升级机制。\n4. 专项外部支持到位风险：专项分包尚未取得正式报价，按暂定估算计入，签约前完成分包确认并纳入我方责任体系。\n5. 进度风险：关键节点预留审查意见闭合时间，人员投入按阶段峰值配置。",
+        "submission_summary": "招商局重庆交通科研设计院有限公司以单一责任主体独立投标本设计包，不设联合体。\n\n报价基础（MOP）：\n- 总体与施工图设计人员费用：1,980,000\n- BIM协调与模型整合：385,000\n- 专项外部技术支持（暂定分包估算）：420,000\n- 现场设计配合与驻场响应：560,000\n- 质量审查、文档控制与独立校核：235,000\n- 保险、差旅与项目管理间接费：268,000\n- 风险预备费与商业调整：202,000\n合计报价：4,050,000 MOP，在包上限4,500,000 MOP以内。\n\n价格由院内多专业设计人员工月、BIM协调工作量、暂定专项分包、施工期驻场配合、三级校审与文档管理、保险差旅及风险预备构成，专项分包尚未取得正式报价，按暂定估算计入。付款按阶段成果提交与业主审查闭合分期申请。",
+        "quotation_breakdown": [
+          {
+            "item": "总体设计与施工图设计人员费用（院内多专业）",
+            "amount": 1980000,
+            "basis": "按道路、桥梁、隧道、交通工程、风景园林、结构、MEP、环保节能等专业组投入的设计人员工月估算，含设计总负责人与各专业负责人较高费率及一般设计人员费率，属投标估算"
+          },
+          {
+            "item": "BIM协调与多专业模型整合费用",
+            "amount": 385000,
+            "basis": "BIM专职协调人与模型整合、碰撞检查、接口核对工作量估算，含模型审查轮次"
+          },
+          {
+            "item": "专项外部技术支持（常规分包，纳入我方责任体系）",
+            "amount": 420000,
+            "basis": "生态敏感区专项评估配合、特殊检测与专项技术咨询的暂估分包费用，尚未取得正式分包报价，属暂定估算"
+          },
+          {
+            "item": "现场设计配合与驻场响应费用",
+            "amount": 560000,
+            "basis": "施工期驻场设计代表、后台快速响应与样品审核、设计澄清工作量估算"
+          },
+          {
+            "item": "质量审查、文档控制与独立校核费用",
+            "amount": 235000,
+            "basis": "三级校审、独立校核、业主审查会组织与文档版本管理费用"
+          },
+          {
+            "item": "设计责任保险、差旅与项目管理间接费用",
+            "amount": 268000,
+            "basis": "职业责任保险、往返现场差旅、院内项目管理与行政支持分摊"
+          },
+          {
+            "item": "风险预备费与商业调整",
+            "amount": 202000,
+            "basis": "针对生态敏感区审批不确定性与施工期响应强度的风险预备，含报价取整调整"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_29533fe21871642f76e6",
+          "condition_e3372b3b99641b99dc27"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以我院现有资质与能力独立承担总体及施工图设计主导责任，不设联合体。",
+          "BIM、MEP、结构等专业协调由院内专业组统一管理，必要的专项外部支持以常规分包纳入我方责任体系。",
+          "现场设计配合按驻场与快速响应机制安排，具体人员配置在角色计划中明确。",
+          "报价基于设计工作范围、人员投入、交付成果与现场配合服务编制，最终以投标文件价格基础为准。",
+          "生态敏感区相关审批按业主与监管程序推进，我院在设计文件中配合提供所需技术资料。",
+          "专项外部技术支持费用为暂定估算，尚未取得正式分包报价，签约前完成分包确认。"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "总体及施工图设计与现场设计配合",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

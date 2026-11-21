@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0",
+  "simulation_id": "SIM7E977844",
+  "data_version": "13d4949dc327a86bc6f57c264c1ad033a063c715e6e0d2cfa5d5b6a234aaa0c5",
+  "procurement": {
+    "schema_version": "1.0",
+    "mode": "codedemo_micro",
+    "scope": "full_procurement",
+    "adapter_profile_id": "codedemo-local",
+    "failure_policy": "pause"
+  },
+  "supported_delivery_mode": "DBB",
+  "non_procurement": "gba_native",
+  "assumptions": {
+    "budget_origin": "scenario_assumption_not_observed_cost",
+    "candidate_selection": {
+      "COMP-0025": {
+        "role_evidence": [
+          "工程施工",
+          "建筑工程",
+          "土木",
+          "路桥"
+        ],
+        "scenario_role": "contractor",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0025",
+        "source_region": "澳门/香港"
+      },
+      "COMP-0153": {
+        "role_evidence": [
+          "工程施工",
+          "建筑工程",
+          "建设工程",
+          "土木",
+          "路桥"
+        ],
+        "scenario_role": "contractor",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0153",
+        "source_region": "天津市市辖区滨海新区"
+      },
+      "COMP-0154": {
+        "role_evidence": [
+          "混凝土",
+          "水泥",
+          "建筑材料"
+        ],
+        "scenario_role": "supplier",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0154",
+        "source_region": "陕西省西安市雁塔区"
+      },
+      "COMP-0169": {
+        "role_evidence": [
+          "工程设计"
+        ],
+        "scenario_role": "designer",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0169",
+        "source_region": "湖南省长沙市雨花区"
+      },
+      "COMP-0191": {
+        "role_evidence": [
+          "混凝土",
+          "水泥",
+          "建筑材料"
+        ],
+        "scenario_role": "supplier",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0191",
+        "source_region": "山东省济南市历下区"
+      },
+      "COMP-0208": {
+        "role_evidence": [
+          "造价",
+          "工程咨询",
+          "监理"
+        ],
+        "scenario_role": "supervisor",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0208",
+        "source_region": "湖北省武汉市蔡甸区"
+      },
+      "COMP-0286": {
+        "role_evidence": [
+          "工程咨询"
+        ],
+        "scenario_role": "supervisor",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0286",
+        "source_region": "重庆市市辖区南岸区"
+      },
+      "COMP-0295": {
+        "role_evidence": [
+          "工程设计"
+        ],
+        "scenario_role": "designer",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0295",
+        "source_region": "江苏省常州市武进区"
+      },
+      "COMP-0493": {
+        "role_evidence": [
+          "建筑工程",
+          "土木",
+          "建筑集团",
+          "路桥"
+        ],
+        "scenario_role": "contractor",
+        "selection": "input_fields_only_no_benchmark",
+        "source_id": "COMP-0493",
+        "source_region": "澳门/香港"
+      }
+    },
+    "catalog": {
+      "company_count": 904,
+      "company_fields": [
+        "company_id",
+        "company_name",
+        "office_location",
+        "business_scope",
+        "industry",
+        "certifications"
+      ],
+      "excluded": [
+        "hidden_benchmark",
+        "candidate_assignments",
+        "past_project_experience",
+        "partners_or_clients",
+        "investment_amount",
+        "reserve_price_hint",
+        "evaluation_criteria_hint"
+      ],
+      "input_version": "1c9b4773a95c3f7d108f306527ca499fb6f64fa28716aa50a822bd2da9abd044",
+      "project_count": 352,
+      "project_fields": [
+        "case_id",
+        "project_name",
+        "project_type",
+        "location",
+        "delivery_mode",
+        "owner_name",
+        "scale"
+      ],
+      "source": "D:\\newcapstone\\capstone-micro-macro\\data\\test_sources\\casebank_enterprise_matched",
+      "source_sha256": {
+        "simulation_input_enterprises.csv": "adda7da9a8c5a41face0ae80da6e42135fdf4c56c9790c5769d767041c74318c",
+        "simulation_input_projects.csv": "c582892343cbadaff2dac39106a974508bc9f596e0e7a5ef9a40b404fb7e551b"
+      }
+    },
+    "duration_origin": "scenario_assumption_not_observed_duration",
+    "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+    "enterprise_parameters": {
+      "COMP-0025": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0153": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0154": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0169": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0191": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0208": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0286": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0295": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "COMP-0493": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      },
+      "OWNER-4048bdd520aa7f": {
+        "construction_capability": 0.8,
+        "cost_estimation_capability": 0.8,
+        "design_capability": 0.8,
+        "financial_capacity": 0.8,
+        "management_capability": 0.8,
+        "material_quality": 0.8,
+        "policy_adaptability": 0.8,
+        "qualification_level": 0.85,
+        "quality_management_capability": 0.8,
+        "safety_management_capability": 0.8,
+        "supply_reliability": 0.8,
+        "technical_capability": 0.8,
+        "total_resource_capacity": 2.0
+      }
+    },
+    "enterprise_regions": {
+      "COMP-0025": "Macau",
+      "COMP-0153": "Macau",
+      "COMP-0154": "Macau",
+      "COMP-0169": "Macau",
+      "COMP-0191": "Macau",
+      "COMP-0208": "Macau",
+      "COMP-0286": "Macau",
+      "COMP-0295": "Macau",
+      "COMP-0493": "Macau",
+      "OWNER-4048bdd520aa7f": "Macau"
+    },
+    "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+    "support_agents": [
+      {
+        "agent_id": "REGULATOR-Macau",
+        "enterprise_type": "scenario_support",
+        "name": "Scenario regulator",
+        "policy_adaptability": 0.9,
+        "region": "Macau",
+        "role": "Government",
+        "total_resource_capacity": 3
+      }
+    ],
+    "units": {
+      "currency": "MOP",
+      "resource": "normalized_enterprise_capacity",
+      "time": "months"
+    },
+    "version": "shared-dbb-scenario-20260920-v2",
+    "procurement_plan": {
+      "source": "owner_organization_model_proposal",
+      "reason": "按总预算1.5亿MOP，设计3%（450万）与造价1.5%（225万）先行，施工总预算85%即1.275亿MOP，其余10.5%留作业主预备金。三个施工包份额合计为1.0（0.5加0.3加0.2），对应施工预算1.275亿MOP，各包后续自行采购材料。首轮并行包以三个为限：土建包承载关键路径（围堰、导流与永久结构交接），防渗包与机电包界面清晰、可分别采购且不重复计价。陈志强与黄家豪指出交接面责任须在招标文件中锁定，李婉华要求包划分与预算对应表，苏丽珍要求预备金动用规则，张伟明要求界面质量责任矩阵；这些作为各包招标文件的前置附件，由业主委托的设计与监管服务统一审核，避免界面空白或重复计价。若后续设计深化显示防渗与土建难以分离，可合并为两包，但当前三包方案在工期与接口数量之间更可控。",
+      "base_data_version": "ecbd11f43c3164d99da72c653fe825975323d8bb722ffd8963b0cc1d65d531bb",
+      "numeric_approval": "DBB structure and budget/dependency validation"
+    }
+  },
+  "decision_context_version": "enterprise-task-context.v1"
+}

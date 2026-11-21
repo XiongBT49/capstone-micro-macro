@@ -1,0 +1,1554 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIM45BEE469/CASE-0049/design/round-1",
+  "snapshot": {
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/design",
+    "round_id": 1,
+    "tick": 1,
+    "public": {
+      "environment": {
+        "current_tick": 1,
+        "market_demand_index": 1.008365607907473,
+        "material_price_index": 0.98150064531336,
+        "labor_price_index": 1.0010011727347647,
+        "financing_condition_index": 0.9811605369074411,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。 本实验统一假设 DBB 采购，原始交付模式仅供事后分组。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "currency": "CNY",
+          "resource": "normalized_enterprise_capacity",
+          "time": "months"
+        }
+      },
+      "currency": "CNY",
+      "package_budget": 4500000.0,
+      "project": {
+        "budget": 150000000,
+        "currency": "CNY",
+        "delivery_mode": "DBB",
+        "duration_months": 24,
+        "name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+        "owner_id": "OWNER-c328a5d9ef0c7d",
+        "project_id": "CASE-0049",
+        "project_type": "building",
+        "region": "Guangzhou",
+        "scope": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包"
+      },
+      "package": {
+        "package_id": "CASE-0049/design",
+        "project_id": "CASE-0049",
+        "kind": "design",
+        "buyer_id": "OWNER-c328a5d9ef0c7d",
+        "name": "总体及施工图设计与现场设计配合",
+        "scope": "总体及施工图设计与现场设计配合",
+        "budget": 4500000.0,
+        "currency": "CNY",
+        "resource_required": 0.25,
+        "depends_on": [],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0295",
+          "COMP-0169"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-c328a5d9ef0c7d": {
+        "entity_id": "OWNER-c328a5d9ef0c7d",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_name": "广州市黄埔区教育局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-c328a5d9ef0c7d",
+          "name": "广州市黄埔区教育局",
+          "role": "Owner",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0295": {
+        "entity_id": "COMP-0295",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0295",
+          "company_name": "江苏乾堪建设工程有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0295",
+          "name": "江苏乾堪建设工程有限公司",
+          "role": "Architect",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0169": {
+        "entity_id": "COMP-0169",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0169",
+          "company_name": "中国建筑第五工程局有限公司",
+          "company_role": "designer",
+          "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0169",
+          "name": "中国建筑第五工程局有限公司",
+          "role": "Architect",
+          "region": "Guangzhou",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 0,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "faf18b9fea1593777f16b2fa9c1b6c6f70a33600ec7a110632bf9c64ee6756e1"
+  },
+  "spec": {
+    "package_id": "CASE-0049/design",
+    "project_id": "CASE-0049",
+    "kind": "design",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "name": "总体及施工图设计与现场设计配合",
+    "scope": "总体及施工图设计与现场设计配合",
+    "budget": 4500000.0,
+    "currency": "CNY",
+    "resource_required": 0.25,
+    "depends_on": [],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0295",
+      "COMP-0169"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0049",
+      "project_name": "广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "project_type": "building",
+      "location": "Guangzhou",
+      "owner_intent": "居住建筑；11650平方米；广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "CNY 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0049",
+      "project_scope": "本项目为广东省教育研究院黄埔实验学校学生宿舍建设工程施工总承包，位于广州市黄埔区，建筑面积约11650平方米的居住建筑。业主为广州市黄埔区教育局，采用DBB交付模式，总预算CNY 150,000,000，工期24个月。本次招标包为总体及施工图设计与现场设计配合，预算CNY 4,500,000。业主期望设计单位提供从方案深化到施工图全过程设计服务，并在施工阶段提供现场设计配合，确保设计质量、进度与投资控制目标实现。",
+      "functional_requirements": [
+        "满足学生宿舍居住功能需求，合理布置宿舍单元、公共活动空间、辅助用房及管理用房",
+        "符合教育建筑及宿舍相关设计规范，保障学生居住安全与舒适",
+        "统筹考虑校园整体环境与交通流线，实现宿舍区与校园其他功能区的便捷联系",
+        "注重无障碍设计，满足师生及访客的无障碍通行需求",
+        "考虑节能与绿色建筑要求，降低建筑运行能耗",
+        "提供清晰的标识系统与公共信息指引",
+        "满足消防疏散与救援要求，合理设置安全出口与消防设施",
+        "考虑后期维护便利性，选用耐久易维护的材料与构造"
+      ],
+      "technical_requirements": [
+        "BIM协调：建立全专业BIM模型，进行碰撞检查与管线综合，确保设计协调一致",
+        "MEP协调：给排水、电气、暖通、智能化等专业协同设计，预留接口与空间",
+        "结构协调：结构选型安全经济，与建筑、机电专业密切配合",
+        "交通接口布局：合理组织校园内部道路与宿舍区出入口，考虑消防车道与人行流线",
+        "公共空间布局：优化公共门厅、活动室、洗衣房等公共空间布局，提升使用效率",
+        "耐久性目标：主要结构材料设计使用年限满足规范要求，外立面及公共部位材料耐久性不低于15年",
+        "可维护性目标：设备管线集中布置，设置检修口，便于后期维护更换",
+        "业主验收路径：设计成果分阶段提交业主审查，包括方案、初步设计、施工图，每阶段需业主书面确认",
+        "能耗使用目标：建筑能耗指标满足广东省节能设计标准，鼓励采用可再生能源"
+      ],
+      "budget_policy": "设计包预算为CNY 4,500,000，采用固定总价包干方式。业主将根据设计范围、设计深度、人员投入及服务周期进行价格合理性评审。报价应包含方案设计、初步设计、施工图设计、现场配合及后续服务全部费用。业主保留根据设计变更或范围调整进行费用协商的权利，重大变更需按业主变更控制程序审批。",
+      "schedule_policy": "设计周期需与24个月总工期匹配，关键里程碑包括：方案设计（2个月）、初步设计（3个月）、施工图设计（4个月），施工阶段现场配合贯穿施工全过程。业主审查时间应纳入计划，每阶段审查预留不少于10个工作日。设计单位需考虑与施工、供应商等接口协调时间，以及公共访问协调时间（如校园使用安排）。设计进度计划需经业主批准后执行。",
+      "compliance_requirements": [
+        "业主审查节奏：方案、初设、施工图各阶段成果需提交业主审查，业主在10个工作日内反馈意见",
+        "问题升级路径：设计问题应在项目周例会上讨论，重大技术经济问题升级至业主项目负责人决策",
+        "文档纪律：设计文件需按业主文档管理要求编号、归档，确保版本可控、可追溯",
+        "接口签署：设计与施工、供应商之间的接口需经业主组织的接口协调会确认并签署接口协议",
+        "公共访问协调：设计需考虑校园正常教学秩序，施工期间交通组织与噪音控制方案需业主确认",
+        "质量目标跟踪：业主将定期检查设计质量目标落实情况，包括规范符合性、错漏碰缺控制等",
+        "安全期望跟踪：设计需考虑施工安全与使用安全，业主将审查安全相关设计内容",
+        "变更控制纪律：任何设计变更需经业主书面批准，重大变更需按宏观审批程序执行"
+      ],
+      "risk_priorities": [
+        "设计进度滞后风险：设计单位需配备足够资源，确保按里程碑交付",
+        "设计质量风险：错漏碰缺可能导致施工返工，需加强内部审核与BIM协调",
+        "投资控制风险：设计需进行限额设计，确保不超概算",
+        "接口协调风险：与施工、供应商的接口需提前明确，避免现场冲突",
+        "报批报建风险：设计需符合当地规划、消防、人防等审批要求，业主将协助但设计单位需及时提供合规文件",
+        "现场配合风险：施工阶段设计人员需及时响应现场问题，避免延误工期"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0049/design",
+          "package_type": "design",
+          "package_name": "总体及施工图设计与现场设计配合",
+          "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合，包括方案深化、初步设计、施工图设计、BIM协调、现场设计配合及竣工验收配合。",
+          "required_company_role": "designer",
+          "qualification_requirements": [
+            "教育建筑宿舍设计协调能力",
+            "紧凑校园场地设计能力",
+            "BIM全过程协调能力",
+            "MEP综合设计能力",
+            "结构安全设计能力",
+            "绿色建筑与节能设计能力",
+            "造价控制与限额设计能力",
+            "现场设计配合与快速响应能力",
+            "质量文档管理能力"
+          ],
+          "proposal_requirements": [
+            "设计团队角色计划与人员配置",
+            "团队可用性摘要（含主要人员资历与投入时间）",
+            "设计交付方法（含BIM应用方案）",
+            "质量保证方法（含内部审核与校对流程）",
+            "报价基础（含各阶段费用分解）",
+            "设计进度视图（含里程碑与业主审查时间）",
+            "风险应对措施（含进度、质量、接口风险）"
+          ],
+          "pricing_requirements": "固定总价包干，报价应涵盖方案设计、初步设计、施工图设计、BIM服务、现场配合及后续服务全部费用。业主将评审报价合理性与费用构成。\nBinding currency: CNY; package ceiling: 4500000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置真实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "接口协调",
+            "可维护性支持",
+            "独立性保证",
+            "公共访问协调"
+          ],
+          "owner_decision_policy": "业主将定性比较投标方案，综合评判能力匹配、价格、风险与交付信心，优先选择设计团队配置真实、质量目标清晰、接口协调方案可行、业主审查流程明确的投标人。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0049/design",
+        "package_type": "design",
+        "package_name": "总体及施工图设计与现场设计配合",
+        "scope": "Authorized scope: 总体及施工图设计与现场设计配合\nBuyer refinement: 总体及施工图设计与现场设计配合，包括方案深化、初步设计、施工图设计、BIM协调、现场设计配合及竣工验收配合。",
+        "required_company_role": "designer",
+        "qualification_requirements": [
+          "教育建筑宿舍设计协调能力",
+          "紧凑校园场地设计能力",
+          "BIM全过程协调能力",
+          "MEP综合设计能力",
+          "结构安全设计能力",
+          "绿色建筑与节能设计能力",
+          "造价控制与限额设计能力",
+          "现场设计配合与快速响应能力",
+          "质量文档管理能力"
+        ],
+        "proposal_requirements": [
+          "设计团队角色计划与人员配置",
+          "团队可用性摘要（含主要人员资历与投入时间）",
+          "设计交付方法（含BIM应用方案）",
+          "质量保证方法（含内部审核与校对流程）",
+          "报价基础（含各阶段费用分解）",
+          "设计进度视图（含里程碑与业主审查时间）",
+          "风险应对措施（含进度、质量、接口风险）"
+        ],
+        "pricing_requirements": "固定总价包干，报价应涵盖方案设计、初步设计、施工图设计、BIM服务、现场配合及后续服务全部费用。业主将评审报价合理性与费用构成。\nBinding currency: CNY; package ceiling: 4500000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置真实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "接口协调",
+          "可维护性支持",
+          "独立性保证",
+          "公共访问协调"
+        ],
+        "owner_decision_policy": "业主将定性比较投标方案，综合评判能力匹配、价格、风险与交付信心，优先选择设计团队配置真实、质量目标清晰、接口协调方案可行、业主审查流程明确的投标人。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_name": "广州市黄埔区教育局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0295",
+        "company_name": "江苏乾堪建设工程有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：市政工程、园林建筑工程、绿化工程、仿古建筑工程、古典建筑工程、土石方工程、道路亮化工程、水利水电工程、建筑幕墙工程、公路工程、文物保护修缮工程、建筑装饰工程、房屋建筑工程、室内外装潢装饰工程设计及施工；花卉、苗木、盆景种植及销售；雕塑、喷泉设备销售、安装；五金产品、交通器材、电子产品、建筑材料（除危险品）、装潢材料（除危险品）、金属材料销售；园林设计；绿化养护。（依法须经批准的项目，经相关部门批准后方可开展经营活动。）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0169",
+        "company_name": "中国建筑第五工程局有限公司",
+        "company_role": "designer",
+        "profile": "本地企业资料：承接建筑工程、公路、铁路、市政公用、港口与航道、水利水电、机电安装各类别工程的施工总承包、工程总承包和项目管理业务；承担房屋建筑、机电安装、钢结构、道路桥梁、隧道、地基基础、起重设备安装、建筑装修装饰、环保工程、城市轨道交通工程、市政公用工程、高等级公路路基、公路路面的施工；建筑行业（建筑工程）、市政行业、公路行业工程设计；工程造价咨询业务；工程管理服务；规划设计管理；建设工程勘察；园林绿化工程施工；爆破作业；提供建设工程相关的技术服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-c328a5d9ef0c7d": [
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "局领导",
+          "position": "分管副局长",
+          "personal_profile": "在压力下优先考虑程序合规与公众问责，首先关注招标包是否满足教育设施交付的时限与质量目标，倾向于在讨论中强调风险控制与资源平衡，常把技术争议拉回到预算与工期约束。",
+          "responsibilities": [
+            "主持采购方案决策",
+            "审定招标包划分与发包策略",
+            "协调跨部门资源与业主需求",
+            "监督质量目标与工期目标"
+          ],
+          "decision_authority": "final",
+          "communication_style": "稳健直接，先听各方意见后归纳决策要点，用词正式且注重留痕。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "agent_name": "李敏华",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "基建科",
+          "position": "科长",
+          "personal_profile": "对施工可行性与现场条件高度敏感，首先核查投标单位的团队可用性与交付方法，在讨论中容易与成本控制视角产生张力，坚持质量审查与独立检查不能因赶工而妥协。",
+          "responsibilities": [
+            "编制工程需求与质量目标",
+            "审核投标人交付方案与进度安排",
+            "组织现场考察与答疑",
+            "监督施工过程质量与安全"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实细致，习惯用具体案例和数据说明问题，对模糊承诺会追问细节。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "agent_name": "黄家豪",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "计财科",
+          "position": "副科长",
+          "personal_profile": "以资金安全和支付合规为第一判断标准，首先审视报价基础与付款评审流程，在讨论中常提醒预算上限与现金流风险，对超出概算的变更持审慎态度。",
+          "responsibilities": [
+            "审核项目预算与报价基础",
+            "设计付款评审与成本控制机制",
+            "监控合同支付与变更",
+            "评估财务风险与资金安排"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "谨慎条理，偏好书面依据与量化分析，发言常带条件限定。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_04_周文静",
+          "agent_name": "周文静",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "设计管理组",
+          "position": "设计协调负责人",
+          "personal_profile": "关注设计意图在施工中的可实施性，首先检查图纸深度与专业接口，在讨论中容易与施工方就设计变更责任产生分歧，强调设计协调与文档纪律。",
+          "responsibilities": [
+            "协调设计单位与施工单位接口",
+            "审查施工图与设计变更",
+            "管理设计文档与版本控制",
+            "参与质量目标设定与验收"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "理性清晰，善用图纸与规范说话，对接口遗漏会直接指出。"
+        },
+        {
+          "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+          "agent_name": "吴国栋",
+          "company_id": "OWNER-c328a5d9ef0c7d",
+          "company_role": "owner",
+          "department": "教育装备与后勤",
+          "position": "后勤保障主任",
+          "personal_profile": "从最终使用者角度思考，首先关注宿舍功能布局与运维便利性，在讨论中常提出运营期成本与可持续性目标，容易与设计方就使用需求细节反复拉锯。",
+          "responsibilities": [
+            "提出使用需求与功能标准",
+            "参与设计评审与验收",
+            "协调学校运营衔接",
+            "跟踪可持续性目标落实"
+          ],
+          "decision_authority": "consult",
+          "communication_style": "亲和务实，习惯用使用场景描述需求，对影响师生体验的细节坚持己见。"
+        }
+      ],
+      "COMP-0295": [
+        {
+          "agent_id": "COMP-0295_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "设计管理",
+          "position": "设计总负责人",
+          "personal_profile": "长期从事房建与园林综合设计，压力下先抓总体方案与施工图之间的逻辑一致性，习惯把校审节点前置。他倾向以设计完整性换取工期确定性，容易在资源投入上与成本控制产生张力。",
+          "responsibilities": [
+            "统筹总体设计与施工图设计交付",
+            "组织内部质量评审与独立校核",
+            "对接业主设计需求与现场设计配合",
+            "协调各专业接口与出图节奏"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉稳直接，先讲结论再列依据，对关键校审点会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0295_02_周敏仪",
+          "agent_name": "周敏仪",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "造价与合同",
+          "position": "设计造价主管",
+          "personal_profile": "对数字敏感，压力下首先核对报价依据与设计变更的连带成本，善于把设计深度与费用挂钩。她常提醒设计团队不要用超配方案掩盖不确定性，容易与设计负责人在标准取舍上形成张力。",
+          "responsibilities": [
+            "编制设计报价与价格依据说明",
+            "开展设计阶段成本控制与支付评审",
+            "评估设计变更对造价的影响",
+            "维护合同与付款文件纪律"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "条理清晰，用数据说话，倾向以书面备忘确认口径。"
+        },
+        {
+          "agent_id": "COMP-0295_03_吴启帆",
+          "agent_name": "吴启帆",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "建筑与施工图",
+          "position": "建筑专业负责人",
+          "personal_profile": "施工图经验扎实，压力下最先关注规范符合性与节点可施工性，习惯把现场配合问题回溯到图纸表达。他倾向保守出图、留足余量，可能在进度压力下坚持补充深化，带来节奏张力。",
+          "responsibilities": [
+            "负责建筑施工图设计与深化",
+            "执行规范符合性自查与质量目标跟踪",
+            "配合现场设计交底与问题处理",
+            "整理设计文档与版本记录"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "务实细致，喜欢用图纸标注和清单沟通，对模糊指令会追问。"
+        },
+        {
+          "agent_id": "COMP-0295_04_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "业主接口与协调",
+          "position": "业主对接与包协调经理",
+          "personal_profile": "擅长多方沟通，压力下先厘清业主审批路径与各方期望，注意信息透明与响应时效。她倾向以协调换取共识，可能在设计坚持与业主诉求之间形成拉扯。",
+          "responsibilities": [
+            "维护业主接口与需求确认",
+            "协调设计包与后续施工包的衔接",
+            "跟踪审批与监管服务事项",
+            "汇总现场报告与会议纪要"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "亲和有条理，善于复述共识并明确下一步责任人与时限。"
+        },
+        {
+          "agent_id": "COMP-0295_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "COMP-0295",
+          "company_role": "designer",
+          "department": "技术与风险",
+          "position": "技术审核与风险主管",
+          "personal_profile": "独立审核视角强，压力下先找方案薄弱环节与合规风险，习惯以检查清单推动闭环。他倾向对未验证假设持保留态度，容易在风险判断上与进度导向形成张力。",
+          "responsibilities": [
+            "组织独立技术审核与质量复核",
+            "评估设计风险应对与合规要求",
+            "跟踪可持续目标与规范更新",
+            "核查交付文档完整性"
+          ],
+          "decision_authority": "advisory",
+          "communication_style": "冷静审慎，以风险清单和分级意见表达，不回避分歧。"
+        }
+      ],
+      "COMP-0169": [
+        {
+          "agent_id": "COMP-0169_01_陈立衡",
+          "agent_name": "陈立衡",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计管理部",
+          "position": "设计总负责人",
+          "personal_profile": "在压力下先看整体工期与设计接口风险，习惯把设计决策与施工可行性绑定。他最先注意到的是各专业之间的条件冲突和现场配合缺口，容易在讨论中把技术问题升级为进度与责任问题，带来紧张感。",
+          "responsibilities": [
+            "统筹总体设计与施工图设计的进度与质量目标",
+            "协调建筑、结构、机电等专业接口与设计评审",
+            "对接业主设计需求与现场设计配合安排",
+            "组织设计交付前的内部质量审查"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，对模糊表述会追问到底。"
+        },
+        {
+          "agent_id": "COMP-0169_02_黄敏仪",
+          "agent_name": "黄敏仪",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "设计管理部",
+          "position": "建筑专业负责人",
+          "personal_profile": "对空间使用与规范符合性高度敏感，压力下倾向于回到图纸和规范条文逐项核对。她最先注意到宿舍功能布局、消防疏散和无障碍细节，常把讨论拉回使用体验与合规底线，可能拖慢决策节奏。",
+          "responsibilities": [
+            "负责建筑专业方案深化与施工图设计",
+            "核对建筑规范与学校宿舍使用需求",
+            "参与设计评审并跟踪建筑专业修改闭环",
+            "配合现场设计问题处理与图纸交底"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "细致、耐心，喜欢用图纸标注和条文依据说话，对细节不轻易让步。"
+        },
+        {
+          "agent_id": "COMP-0169_03_周启帆",
+          "agent_name": "周启帆",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "结构设计部",
+          "position": "结构专业负责人",
+          "personal_profile": "以安全冗余和可施工性为第一判断标准，压力下会优先质疑荷载假定和节点做法。他最先注意到结构方案对造价和工期的影响，常提出保守但稳妥的替代方案，容易与追求经济性的意见产生张力。",
+          "responsibilities": [
+            "负责结构专业设计与计算复核",
+            "评估结构方案对施工可行性和成本的影响",
+            "参与设计评审并落实结构专业审查意见",
+            "配合现场结构问题处理与验收支持"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "稳健、审慎，习惯用计算依据和风险场景说明立场，不回避争议。"
+        },
+        {
+          "agent_id": "COMP-0169_04_林晓彤",
+          "agent_name": "林晓彤",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "机电设计部",
+          "position": "机电专业负责人",
+          "personal_profile": "关注系统集成与运维便利性，压力下会先梳理各机电系统的界面和预留条件。她最先注意到管线综合冲突和后期维护空间，常提醒设计要为运营留余地，可能在紧凑工期下坚持增加协调轮次。",
+          "responsibilities": [
+            "负责给排水、暖通、电气专业设计协调",
+            "组织管线综合与机电系统接口审查",
+            "核对机电设计对现场施工条件的要求",
+            "参与设计评审并跟踪机电专业修改"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "条理清晰、善于画界面图，讨论中喜欢用系统图和清单推进共识。"
+        },
+        {
+          "agent_id": "COMP-0169_05_何志远",
+          "agent_name": "何志远",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "造价与合同部",
+          "position": "设计造价控制经理",
+          "personal_profile": "对设计变更引起的费用波动非常警觉，压力下先看限额设计和支付评审节点。他最先注意到设计深度不足可能带来的后续索赔，常以成本控制为由要求压缩设计选项，容易与设计创意和品质目标发生冲突。",
+          "responsibilities": [
+            "编制设计阶段造价控制目标与限额设计指标",
+            "评审设计变更对投资的影响",
+            "配合业主进行设计费支付评审与成本说明",
+            "跟踪设计交付与合同约定的费用边界"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "务实、数字导向，习惯用对比表和费用影响说明问题，语气克制但坚持。"
+        },
+        {
+          "agent_id": "COMP-0169_06_苏婉清",
+          "agent_name": "苏婉清",
+          "company_id": "COMP-0169",
+          "company_role": "designer",
+          "department": "项目管理部",
+          "position": "设计协调与文档经理",
+          "personal_profile": "重视文档纪律和可追溯性，压力下会先检查版本控制和会议纪要是否闭环。她最先注意到设计输入输出记录缺失和业主指令未留痕，常要求补全流程记录，可能在赶工氛围中显得程序繁琐。",
+          "responsibilities": [
+            "维护设计文档版本与交付记录",
+            "组织设计协调会议并跟踪行动项闭环",
+            "管理业主指令与设计变更的文档流转",
+            "支持现场设计配合的函件与报告编制"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "严谨、温和但坚持程序，喜欢用清单和台账推动事项落地。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0049/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计管理",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "我们公司是设计方，主营市政、园林、仿古建筑、房屋建筑等设计与施工，教育建筑宿舍设计并非我们的核心强项，但房屋建筑与装饰设计经验可以支撑总体与施工图设计的基本盘。这个包要求方案深化、初步设计、施工图、BIM协调、现场配合与竣工验收配合，固定总价450万，工期24个月，资源需求0.25，我们可用资源2.0，占用为0，容量上完全能承接。真正的短板是教育建筑宿舍的专项设计协调、BIM全过程协调和MEP综合设计，这些可以通过分包或外部专业顾问解决，而不必让另一家公司共享投标人身份和设计责任。作为设计牵头方，我们可以控制分包范围、设定审核节点、管理模型与接口协调，并把责任流下写进方案。因此我倾向于独立投标，以我们作为单一责任主体，用普通专业分包补足MEP和BIM能力，而不是组建组合体。风险在于教育建筑经验不足可能影响评标印象，报价固定总价下限额设计和现场响应压力需要靠团队配置和风险应对来消化。综合判断，这个包值得投，且我们能作为可问责的投标人独立提交。",
+        "content": "管理层决定：对CASE-0049/design总体及施工图设计与现场设计配合包独立投标。我司作为设计牵头方与单一责任主体，承担方案深化、初步设计、施工图设计、BIM协调、现场设计配合及竣工验收配合的总体责任。针对教育建筑宿舍设计协调、MEP综合设计和BIM全过程协调的能力缺口，拟以普通专业分包和外部顾问方式补足，由我司统一设定审核节点、模型接口协调规则和文档管理标准，并在方案中明确责任流下与质量把关安排。报价采用固定总价包干，涵盖各阶段设计、BIM服务、现场配合及后续服务全部费用，并以限额设计和费用分解回应业主对报价合理性的评审。团队配置按角色计划与可用性摘要提交，进度视图列明里程碑与业主审查时间，风险应对覆盖进度、质量与接口风险。本决定基于情景试运行资料，不代表历史中标结果。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:19:40",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0169",
+        "company_role": "designer",
+        "package_id": "CASE-0049/design",
+        "agent_id": "COMP-0169_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计管理部",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "我们公司是以施工总承包为主业、同时具备建筑行业设计能力的综合企业，这个包是学校宿舍的总体及施工图设计与现场设计配合，预算450万，属于中小型设计包。从能力上看，我们有建筑工程设计资质和造价咨询、工程管理能力，教育建筑宿舍本身是常规居住建筑，技术难度不高，BIM、MEP、结构、绿建这些需求都在我们可覆盖的范围内，现场配合更是我们的强项，因为我们是施工出身。资源上，当前可用资源2.0，占用0，这个包只需要0.25，完全有余量。真正的顾虑是：设计包的固定总价包干，450万要覆盖方案深化到竣工验收全过程，还要BIM和现场配合，利润空间有限，而且我们作为施工企业做设计，业主可能会质疑设计主导能力。但这不是需要联合体才能解决的问题，我们可以作为单一责任投标人，用内部设计团队主导，把BIM、绿建专项等窄口径技术工作通过常规外部支持补足，责任和身份仍在我们。因此我倾向于独立投标，把设计团队角色计划、BIM方案、质量内审流程和限额设计作为投标重点，同时把报价基础做扎实，避免低价陷阱。",
+        "content": "管理层决定：对本包（总体及施工图设计与现场设计配合）以单一责任投标人身份独立投标。理由如下：一、能力匹配，我司具备建筑工程设计、造价咨询与工程管理能力，教育建筑宿舍为常规居住建筑，方案深化、初步设计、施工图设计、BIM协调及现场配合均在可控范围内；二、资源充足，当前可用资源2.0、占用0，本包仅需0.25，不存在产能冲突；三、战略价值，本项目有助于巩固广州教育建筑业绩与业主关系。投标文件将重点呈现：设计团队角色计划与主要人员资历及投入时间、含BIM应用方案的设计交付方法、含内部审核与校对流程的质量保证方法、含各阶段费用分解的报价基础、含里程碑与业主审查时间的设计进度视图，以及针对进度、质量、接口风险的风险应对措施。BIM、绿色建筑等窄口径专项技术工作拟通过常规外部技术支持补足，但投标人身份、技术审定与全部设计责任由我司承担，不设联合体。报价将按固定总价包干编制，严格控制在4500000.0元上限内，并以限额设计措施保证费用构成合理、可评审。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-19T14:19:40",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0295",
+        "company_role": "designer",
+        "package_id": "CASE-0049/design",
+        "agent_id": "COMP-0295_01_陈立衡",
+        "agent_name": "陈立衡",
+        "department": "设计管理",
+        "position": "设计总负责人",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "设计变更与现场配合请求按我司内部流程登记、评估与回复，重大技术问题提交设计总负责人审定",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-19T14:19:52",
+        "verification_requests": [
+          {
+            "question": "设计变更与现场配合请求按我司内部流程登记、评估与回复，重大技术问题提交设计总负责人审定",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-c328a5d9ef0c7d",
+        "company_role": "owner",
+        "package_id": "CASE-0049/design",
+        "agent_id": "OWNER-c328a5d9ef0c7d_05_吴国栋",
+        "agent_name": "吴国栋",
+        "department": "教育装备与后勤",
+        "position": "后勤保障主任",
+        "message_type": "decision",
+        "thoughts": "作为业主最终决策人，我要对宿舍设计包的交付结果负责。江苏乾堪报价较低，但其教育建筑宿舍专项、MEP综合设计与BIM全过程协调均依赖尚未取得正式承诺的分包与外部顾问，专项顾问费还是暂估，风险预留偏薄，固定总价下后续变更与索赔暴露较大，低价不足以抵消能力与交付信心的缺口。中国建筑第五工程局报价接近包上限，但以自有建筑、结构、MEP、BIM与造价团队为主，角色计划具体，三级审核、接口会签与BIM出图前置检查形成闭环，业主审查闭环与现场响应机制清晰可考核，价格基础更扎实。判给后者在问责与交付确定性上更可接受，绿建节能外部支持安排与主要人员投入承诺作为预合同澄清重点，纳入业主审查与批准流程。",
+        "content": "本包判给中国建筑第五工程局有限公司，报价人民币4480000元。该投标以单一责任主体配置建筑、结构、MEP、BIM与造价控制专职人员，质量三级审核、接口会签与BIM出图前置检查形成闭环，业主审查闭环与现场响应机制清晰可考核，价格基础扎实可信。预合同澄清聚焦绿建节能外部支持安排与主要人员投入承诺，并纳入业主审查与批准流程。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-19T14:20:03",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0295",
+        "package_id": "CASE-0049/design",
+        "decision": "bid",
+        "reason": "本包为设计服务包，预算450万，资源需求0.25，我司当前可用资源2.0且无占用，容量上可承接。我司具备房屋建筑、装饰、园林及市政设计施工背景，可作为设计牵头方承担总体与施工图设计及现场配合。教育建筑宿舍专项协调、BIM全过程协调和MEP综合设计存在能力缺口，但可通过普通专业分包与外部顾问补足，由我司保持单一投标人身份、统一设计责任与审核把关，不构成必须共享投标人身份的组合体情形。固定总价下需以限额设计、团队角色计划和风险应对措施控制报价与进度风险。综合商业价值、容量与可问责性，决定独立投标。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以我司作为单一投标人和设计责任主体，专业分包与外部顾问仅作为普通支持安排，不共享投标人身份",
+          "MEP综合设计与BIM全过程协调能力通过专业分包或外部顾问补足，具体分包安排在投标文件中作为计划说明，尚未取得正式承诺",
+          "固定总价450万涵盖方案、初步设计、施工图、BIM、现场配合及后续服务全部费用，以限额设计与费用分解控制报价风险",
+          "教育建筑宿舍设计经验有限，将以团队角色计划、质量审核流程和风险应对措施弥补评标印象",
+          "现场设计配合与快速响应按24个月工期和业主审查节点安排，人员投入以团队可用性摘要为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0169",
+        "package_id": "CASE-0049/design",
+        "decision": "bid",
+        "reason": "这个设计包与我们的业务方向契合：教育建筑宿舍属于常规居住建筑，我们的建筑工程设计能力、造价控制和现场配合能力都能直接对上，且当前资源占用为零、可用资源充足，不存在承接不了的硬约束。450万固定总价包干虽然利润不厚，但作为本地综合企业，拿下这个包能巩固我们在广州教育建筑领域的业绩和与业主的长期关系，战略价值大于单包利润。风险主要在报价合理性和设计主导能力的说服力，这可以通过清晰的团队角色计划、BIM全过程协调方案、内部审核校对流程和限额设计措施来回应，不需要引入联合体分担投标人身份或责任。因此决定以单一责任投标人身份独立投标，把BIM、绿建等窄口径专项作为常规外部技术支持安排，责任主体仍是我们自己。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任投标人身份独立投标，不组建联合体",
+          "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+          "报价按固定总价包干编制，总额不超过4500000.0元",
+          "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0049/design_001",
+        "package_id": "CASE-0049/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0295",
+        "bidder_name": "江苏乾堪建设工程有限公司",
+        "technical_proposal": "我司以单一投标人身份承担本包总体及施工图设计与现场设计配合的全部设计责任。设计团队按总体协调、建筑与宿舍专项、结构与MEP、BIM与绿色建筑、现场配合五条线组织，由设计总负责人统一设定审核节点、模型接口规则与文档管理标准。\n\n针对教育建筑宿舍设计协调、MEP综合设计与BIM全过程协调的能力缺口，我司以普通专业分包与外部顾问方式补足，分包与顾问仅作为受我司管理的支持资源，不共享投标人身份，全部成果经我司内部校对、审核与审定三级把关后提交。方案深化阶段重点解决紧凑校园场地下的宿舍单元标准化、日照通风、消防疏散与竖向交通；初步设计阶段锁定限额设计指标与MEP系统方案；施工图阶段完成全专业综合图与碰撞检查；现场配合阶段按24个月工期安排驻场与快速响应。\n\nBIM应用覆盖方案至竣工全过程，建立统一模型标准与接口协调规则，按业主审查节点提交模型与综合报告。绿色建筑与节能设计按教育建筑宿舍使用特征落实围护结构、自然通风与照明节能措施。质量文档管理执行统一编号、版本控制与提交台账。",
+        "implementation_plan": "阶段划分：方案深化（第1至3月）、初步设计（第4至7月）、施工图设计（第8至14月）、施工配合与竣工验收配合（第15至24月）。\n\n各阶段均设业主审查节点：方案深化成果审查、初步设计评审、施工图审查与消防等专项审查、施工阶段设计交底与变更处理、竣工验收配合。BIM模型随各阶段同步深化并提交协调报告。\n\n人员投入按团队可用性摘要执行：设计总负责人全程统筹，建筑与宿舍专项负责人主要投入前14个月，结构与MEP负责人按阶段峰值投入，BIM经理全过程投入，现场配合人员自施工阶段起驻场并按需增派。专业分包与外部顾问按我司设定的接口计划进场，成果由我司统一审核后对外提交。\n\n限额设计贯穿各阶段，初步设计后锁定造价控制指标，施工图阶段进行设计变更影响评估，确保不突破包干总价对应的设计深度要求。",
+        "quotation": 3900000.0,
+        "schedule_commitment": "总设计服务期24个月，与项目工期一致。方案深化3个月、初步设计4个月、施工图设计7个月、施工配合及竣工验收配合10个月，各阶段预留业主审查与修改时间。关键里程碑：方案深化成果提交、初步设计评审通过、施工图交付及专项审查通过、施工阶段设计交底、竣工验收配合完成。我司承诺按业主审查节点提交成果，现场配合自施工开始起驻场响应。",
+        "compliance_statement": "我司接受业主对设计成果的审查与确认权，按业主审查节点提交方案、初设、施工图及BIM模型，审查意见在约定时间内闭环回复。设计变更与现场配合请求按我司内部流程登记、评估与回复，重大技术问题提交设计总负责人审定。质量文档按统一编号与版本控制提交业主备案，配合业主开展设计质量检查与竣工验收。",
+        "risk_response": "进度风险：以里程碑计划与人员可用性摘要控制投入，关键节点前设置内部预警，分包与顾问成果提前介入审核。质量风险：执行校对、审核、审定三级把关，分包成果由我司复核后方可提交。接口风险：建立BIM模型标准与MEP接口协调规则，定期召开接口协调会。能力缺口风险：教育建筑宿舍专项、MEP综合设计与BIM全过程协调通过普通专业分包与外部顾问补足，我司保持单一责任主体并统一审核。固定总价风险：以限额设计与阶段费用分解控制，不可预见风险已在报价中预留。",
+        "submission_summary": "我司江苏乾堪建设工程有限公司以单一投标人身份提交本包固定总价报价人民币3900000元，涵盖方案深化、初步设计、施工图设计、BIM服务、现场设计配合及竣工验收配合全部费用。\n\n费用构成：方案与初步设计费780000元；施工图设计费1150000元；BIM全过程协调服务费520000元；MEP综合设计与教育建筑宿舍专项外部顾问费640000元（暂估，尚未取得正式报价）；现场设计配合与竣工验收配合费430000元；质量文档管理、内部审核与不可预见风险预留380000元。合计3900000元。\n\n报价基础为我司设计团队人员投入、普通专业分包与外部顾问的暂估成本及管理审核成本，并考虑固定总价下的进度与接口风险预留。教育建筑宿舍专项、MEP综合设计与BIM全过程协调能力通过受我司管理的分包与顾问补足，我司保持统一设计责任与审核把关。本报价为固定总价包干，不设材料或人工调价条款。",
+        "quotation_breakdown": [
+          {
+            "item": "方案深化与初步设计阶段设计费",
+            "amount": 780000,
+            "basis": "设计总负责人、建筑与宿舍专项、结构及MEP主要人员前7个月投入，含业主方案与初设两轮审查配合"
+          },
+          {
+            "item": "施工图设计阶段设计费",
+            "amount": 1150000,
+            "basis": "全专业施工图绘制、校对审核与专项审查配合，按14个月设计周期内施工图阶段人员投入估算"
+          },
+          {
+            "item": "BIM全过程协调服务费",
+            "amount": 520000,
+            "basis": "BIM经理与建模人员全过程投入，含模型标准建立、碰撞检查、综合报告与业主审查节点模型提交"
+          },
+          {
+            "item": "MEP综合设计与教育建筑宿舍专项外部顾问费",
+            "amount": 640000,
+            "basis": "MEP综合设计分包与宿舍专项外部顾问的暂估费用，含我司管理协调与成果审核成本，尚未取得正式报价，属暂估"
+          },
+          {
+            "item": "现场设计配合与竣工验收配合费",
+            "amount": 430000,
+            "basis": "施工阶段驻场与快速响应人员投入、设计交底、变更处理及竣工验收配合，按24个月工期后10个月安排"
+          },
+          {
+            "item": "质量文档管理、内部审核与不可预见风险预留",
+            "amount": 380000,
+            "basis": "三级校对审核、文档版本控制、分包成果复核及固定总价下的进度与接口风险预留"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_cce87fec73eb0ce9ae39"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以我司作为单一投标人和设计责任主体，专业分包与外部顾问仅作为普通支持安排，不共享投标人身份",
+          "MEP综合设计与BIM全过程协调能力通过专业分包或外部顾问补足，具体分包安排在投标文件中作为计划说明，尚未取得正式承诺",
+          "固定总价3900000元涵盖方案、初步设计、施工图、BIM、现场配合及后续服务全部费用，以限额设计与费用分解控制报价风险",
+          "教育建筑宿舍设计经验有限，将以团队角色计划、质量审核流程和风险应对措施弥补评标印象",
+          "现场设计配合与快速响应按24个月工期和业主审查节点安排，人员投入以团队可用性摘要为准"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0049/design_002",
+        "package_id": "CASE-0049/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0169",
+        "bidder_name": "中国建筑第五工程局有限公司",
+        "technical_proposal": "本投标以中国建筑第五工程局有限公司单一责任投标人身份提交，不组建联合体，全部设计责任、技术审定与签章由我司承担。\n\n一、设计团队角色计划与人员配置\n设计总负责人1名（陈立衡，统筹全过程并对业主单一接口）；建筑专业负责人1名、建筑设计师2名；结构专业负责人1名、结构设计师1名；MEP综合负责人1名（统筹给排水、电气、暖通及管线综合）；BIM协调经理1名、BIM建模工程师1名；绿建与节能专项由外部技术支持承担，由我司MEP负责人统一收口；造价与限额设计由我司造价咨询能力内部承担，设造价控制专员1名；现场设计配合由驻场设计代表1名加后台专业支持组成；文档控制专员1名负责图纸版本与审查记录。\n\n二、团队可用性摘要\n当前企业可用资源2.0、占用0，本包仅需0.25，不存在产能冲突。主要人员投入时间按阶段分配：方案深化与初步设计阶段建筑、结构、MEP负责人投入较高；施工图阶段各专业设计师与BIM工程师集中投入；施工阶段以驻场代表加后台响应为主。具体人员资历与投入时间以投标文件团队可用性摘要表为准，投标前完成内部确认。\n\n三、设计交付方法（含BIM应用方案）\n按方案深化、初步设计、施工图设计、施工配合、竣工验收五阶段推进。BIM采用全过程协调：方案阶段建立体量与场地模型，初步设计阶段完成专业模型与净高、管线综合检查，施工图阶段输出碰撞检查报告与综合管线图，施工阶段用于设计变更与现场核对。BIM建模与专项检查由我司BIM协调经理主导，窄口径专项技术工作通过常规外部技术支持补足，成果由我司审定。\n\n四、质量保证方法\n执行内部三级审核校对：设计人自校、专业负责人校对、设计总负责人审定；结构、MEP、建筑之间设接口会签；BIM模型与图纸一致性检查纳入出图前置条件；外部技术支持成果由对应专业负责人复核后方可出图。文档控制专员维护图纸版本、审查意见闭环记录与竣工资料归档。\n\n五、限额设计\n以批准的投资估算为上限分解至各专业与各阶段，初步设计阶段完成造价复核，施工图阶段对主要材料与构造做法进行比选，超限即启动优化，不以降低安全与绿建目标为代价。\n\n六、现场设计配合\n施工期间设驻场设计代表，常规问题当日响应，重大变更48小时内组织专业会商；参与隐蔽验收、样板确认与竣工验收配合。",
+        "implementation_plan": "阶段一 方案深化（约1.5个月）：场地与紧凑校园条件复核、宿舍单元平面深化、与业主确认功能与标准，提交深化方案供业主审查。\n阶段二 初步设计（约2个月）：建筑、结构、MEP同步推进，完成绿建与节能策略、造价复核与限额分解，提交初步设计文件及概算供业主审查。\n阶段三 施工图设计（约3个月）：各专业施工图、BIM碰撞检查与管线综合、内部三级审核校对、外部专项成果复核，分专业出图并配合施工图审查意见修改。\n阶段四 施工配合（贯穿施工期）：驻场设计代表常驻，设计交底、图纸会审、变更处理、材料与样板确认、隐蔽验收参与。\n阶段五 竣工验收配合：竣工图核对、验收资料配合、缺陷责任期内的设计响应。\n各阶段均设业主审查节点，审查意见由文档控制专员登记并跟踪闭环；阶段间以接口会签作为放行条件。",
+        "quotation": 4480000.0,
+        "schedule_commitment": "总设计周期按项目24个月建设期匹配：方案深化约1.5个月，初步设计约2个月，施工图设计约3个月，合计设计阶段约6.5个月；施工配合与竣工验收配合贯穿施工期至项目竣工。各阶段结束设业主审查节点，审查意见修改时间已计入阶段工期。若业主审查轮次超出约定，双方另行协商阶段顺延，但不改变固定总价。",
+        "compliance_statement": "接受业主对设计过程的审查与控制：各阶段成果提交业主审查，审查意见由文档控制专员登记、分派、跟踪至闭环；BIM模型与图纸版本同步提交备查；限额设计执行情况按阶段向业主报告造价复核结果；现场配合响应时效接受业主考核。设计变更须经我司内部技术审定后出具，确保单一责任主体可追溯。",
+        "risk_response": "进度风险：以阶段里程碑加内部预警机制管理，关键专业提前介入，业主审查意见集中处理，避免反复。质量风险：三级审核校对加专业接口会签，外部专项成果必须经我司专业负责人复核方可出图。接口风险：建筑、结构、MEP与BIM设固定会签节点，管线综合在施工图出图前完成碰撞闭环。现场风险：驻场代表加后台专业支持双通道响应，重大变更限时组织会商。报价风险：固定总价包干，已计入风险预备费，不以未确认的外部报价作为报价依据，专项外部支持按常规技术支持安排，最终以我司审定成果交付。",
+        "submission_summary": "中国建筑第五工程局有限公司以单一责任投标人身份独立投标本设计包，不组建联合体，全部设计责任与技术审定由我司承担。\n\n报价基础（固定总价包干，CNY）：\n- 方案深化与初步设计阶段设计费 780,000\n- 施工图设计阶段设计费 1,350,000\n- BIM全过程协调费 520,000\n- 绿建节能与专项外部技术支持费 330,000\n- 现场设计配合与竣工验收配合费 610,000\n- 造价控制、文档管理及项目管理费 285,000\n- 风险预备费与企业管理费及合理利润 605,000\n合计 4,480,000，未超过包上限4,500,000。\n\n费用构成说明：报价以我司自有建筑、结构、MEP、BIM与造价团队的人工投入为主，绿建节能等窄口径专项通过常规外部技术支持补足并计入管理加成，责任主体仍为我司；固定总价下预留风险预备费应对进度与接口不确定性。付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认。",
+        "quotation_breakdown": [
+          {
+            "item": "方案深化与初步设计阶段设计费",
+            "amount": 780000,
+            "basis": "建筑、结构、MEP负责人及设计师投入约5.5个月，含紧凑校园场地复核与业主审查修改轮次"
+          },
+          {
+            "item": "施工图设计阶段设计费",
+            "amount": 1350000,
+            "basis": "各专业施工图设计、内部三级审核校对、施工图审查意见修改，按专业设计师与负责人投入约3个月计"
+          },
+          {
+            "item": "BIM全过程协调费",
+            "amount": 520000,
+            "basis": "BIM协调经理与建模工程师投入、模型建立与维护、碰撞检查与管线综合报告、施工阶段模型核对"
+          },
+          {
+            "item": "绿建节能与专项外部技术支持费",
+            "amount": 330000,
+            "basis": "绿建与节能窄口径专项外部技术支持，由我司专业负责人复核收口，含管理加成"
+          },
+          {
+            "item": "现场设计配合与竣工验收配合费",
+            "amount": 610000,
+            "basis": "驻场设计代表常驻施工期、后台专业响应、设计交底与图纸会审、变更处理、验收配合"
+          },
+          {
+            "item": "造价控制与限额设计、文档管理及项目管理费",
+            "amount": 285000,
+            "basis": "造价控制专员限额设计与阶段造价复核、文档控制专员版本与审查闭环管理、项目协调与业主接口"
+          },
+          {
+            "item": "风险预备费与企业管理费及合理利润",
+            "amount": 605000,
+            "basis": "固定总价包干下的进度与接口风险预备、企业综合管理费分摊及合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任投标人身份独立投标，不组建联合体",
+          "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+          "报价按固定总价包干编制，总额不超过4500000.0元",
+          "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0049/design",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0049/design_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "quotation": 3900000.0,
+            "quotation_breakdown": [
+              {
+                "item": "方案深化与初步设计阶段设计费",
+                "amount": 780000,
+                "basis": "设计总负责人、建筑与宿舍专项、结构及MEP主要人员前7个月投入，含业主方案与初设两轮审查配合"
+              },
+              {
+                "item": "施工图设计阶段设计费",
+                "amount": 1150000,
+                "basis": "全专业施工图绘制、校对审核与专项审查配合，按14个月设计周期内施工图阶段人员投入估算"
+              },
+              {
+                "item": "BIM全过程协调服务费",
+                "amount": 520000,
+                "basis": "BIM经理与建模人员全过程投入，含模型标准建立、碰撞检查、综合报告与业主审查节点模型提交"
+              },
+              {
+                "item": "MEP综合设计与教育建筑宿舍专项外部顾问费",
+                "amount": 640000,
+                "basis": "MEP综合设计分包与宿舍专项外部顾问的暂估费用，含我司管理协调与成果审核成本，尚未取得正式报价，属暂估"
+              },
+              {
+                "item": "现场设计配合与竣工验收配合费",
+                "amount": 430000,
+                "basis": "施工阶段驻场与快速响应人员投入、设计交底、变更处理及竣工验收配合，按24个月工期后10个月安排"
+              },
+              {
+                "item": "质量文档管理、内部审核与不可预见风险预留",
+                "amount": 380000,
+                "basis": "三级校对审核、文档版本控制、分包成果复核及固定总价下的进度与接口风险预留"
+              }
+            ],
+            "submission_summary": "我司江苏乾堪建设工程有限公司以单一投标人身份提交本包固定总价报价人民币3900000元，涵盖方案深化、初步设计、施工图设计、BIM服务、现场设计配合及竣工验收配合全部费用。\n\n费用构成：方案与初步设计费780000元；施工图设计费1150000元；BIM全过程协调服务费520000元；MEP综合设计与教育建筑宿舍专项外部顾问费640000元（暂估，尚未取得正式报价）；现场设计配合与竣工验收配合费430000元；质量文档管理、内部审核与不可预见风险预留380000元。合计3900000元。\n\n报价基础为我司设计团队人员投入、普通专业分包与外部顾问的暂估成本及管理审核成本，并考虑固定总价下的进度与接口风险预留。教育建筑宿舍专项、MEP综合设计与BIM全过程协调能力通过受我司管理的分包与顾问补足，我司保持统一设计责任与审核把关。本报价为固定总价包干，不设材料或人工调价条款。",
+            "unresolved_condition_ids": [
+              "condition_cce87fec73eb0ce9ae39"
+            ],
+            "bid_assumptions": [
+              "以我司作为单一投标人和设计责任主体，专业分包与外部顾问仅作为普通支持安排，不共享投标人身份",
+              "MEP综合设计与BIM全过程协调能力通过专业分包或外部顾问补足，具体分包安排在投标文件中作为计划说明，尚未取得正式承诺",
+              "固定总价3900000元涵盖方案、初步设计、施工图、BIM、现场配合及后续服务全部费用，以限额设计与费用分解控制报价风险",
+              "教育建筑宿舍设计经验有限，将以团队角色计划、质量审核流程和风险应对措施弥补评标印象",
+              "现场设计配合与快速响应按24个月工期和业主审查节点安排，人员投入以团队可用性摘要为准"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0049/design_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "quotation": 4480000.0,
+            "quotation_breakdown": [
+              {
+                "item": "方案深化与初步设计阶段设计费",
+                "amount": 780000,
+                "basis": "建筑、结构、MEP负责人及设计师投入约5.5个月，含紧凑校园场地复核与业主审查修改轮次"
+              },
+              {
+                "item": "施工图设计阶段设计费",
+                "amount": 1350000,
+                "basis": "各专业施工图设计、内部三级审核校对、施工图审查意见修改，按专业设计师与负责人投入约3个月计"
+              },
+              {
+                "item": "BIM全过程协调费",
+                "amount": 520000,
+                "basis": "BIM协调经理与建模工程师投入、模型建立与维护、碰撞检查与管线综合报告、施工阶段模型核对"
+              },
+              {
+                "item": "绿建节能与专项外部技术支持费",
+                "amount": 330000,
+                "basis": "绿建与节能窄口径专项外部技术支持，由我司专业负责人复核收口，含管理加成"
+              },
+              {
+                "item": "现场设计配合与竣工验收配合费",
+                "amount": 610000,
+                "basis": "驻场设计代表常驻施工期、后台专业响应、设计交底与图纸会审、变更处理、验收配合"
+              },
+              {
+                "item": "造价控制与限额设计、文档管理及项目管理费",
+                "amount": 285000,
+                "basis": "造价控制专员限额设计与阶段造价复核、文档控制专员版本与审查闭环管理、项目协调与业主接口"
+              },
+              {
+                "item": "风险预备费与企业管理费及合理利润",
+                "amount": 605000,
+                "basis": "固定总价包干下的进度与接口风险预备、企业综合管理费分摊及合理利润"
+              }
+            ],
+            "submission_summary": "中国建筑第五工程局有限公司以单一责任投标人身份独立投标本设计包，不组建联合体，全部设计责任与技术审定由我司承担。\n\n报价基础（固定总价包干，CNY）：\n- 方案深化与初步设计阶段设计费 780,000\n- 施工图设计阶段设计费 1,350,000\n- BIM全过程协调费 520,000\n- 绿建节能与专项外部技术支持费 330,000\n- 现场设计配合与竣工验收配合费 610,000\n- 造价控制、文档管理及项目管理费 285,000\n- 风险预备费与企业管理费及合理利润 605,000\n合计 4,480,000，未超过包上限4,500,000。\n\n费用构成说明：报价以我司自有建筑、结构、MEP、BIM与造价团队的人工投入为主，绿建节能等窄口径专项通过常规外部技术支持补足并计入管理加成，责任主体仍为我司；固定总价下预留风险预备费应对进度与接口不确定性。付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "以单一责任投标人身份独立投标，不组建联合体",
+              "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+              "报价按固定总价包干编制，总额不超过4500000.0元",
+              "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "2 bids opened for 总体及施工图设计与现场设计配合.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0049/design",
+        "evaluators": [
+          "OWNER-c328a5d9ef0c7d_01_陈志远",
+          "OWNER-c328a5d9ef0c7d_02_李敏华",
+          "OWNER-c328a5d9ef0c7d_03_黄家豪",
+          "OWNER-c328a5d9ef0c7d_04_周文静",
+          "OWNER-c328a5d9ef0c7d_05_吴国栋"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0049/design_001",
+            "bidder_id": "COMP-0295",
+            "bidder_name": "江苏乾堪建设工程有限公司",
+            "technical_view": "方案覆盖方案深化至竣工验收全阶段，团队按五条线组织并设三级审核，但教育建筑宿舍专项、MEP综合设计与BIM全过程协调均依赖尚未取得正式承诺的分包与外部顾问，能力匹配存在实质缺口。",
+            "cost_view": "报价人民币3900000元为两家中较低者，但其中MEP与宿舍专项顾问费640000元属未取得正式报价的暂估，风险预留仅380000元，固定总价下的价格可信度偏弱。",
+            "owner_control_view": "接受业主审查与确认权，承诺按节点提交成果并闭环回复审查意见，文档编号与版本控制安排清晰，但分包成果的独立复核深度未充分说明。",
+            "strengths": [
+              "报价在包上限内且阶段费用分解较完整",
+              "业主审查节点与文档版本控制安排明确",
+              "承诺单一责任主体并统一审核分包成果"
+            ],
+            "concerns": [
+              "关键能力依赖未落实的分包与外部顾问，人员配置真实性存疑",
+              "专项顾问费为暂估且风险预留偏低，后续变更与索赔暴露较高",
+              "自述教育建筑宿舍设计经验有限，能力匹配信心不足"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0049/design_002",
+            "bidder_id": "COMP-0169",
+            "bidder_name": "中国建筑第五工程局有限公司",
+            "technical_view": "以单一责任投标人身份配置建筑、结构、MEP、BIM与造价控制专职人员，交付方法覆盖五阶段并明确接口会签与出图前置检查，对紧凑校园场地与宿舍设计协调的响应较完整。",
+            "cost_view": "报价人民币4480000元接近包上限4500000元，但费用以自有团队人工投入为主，专项外部支持按常规安排计价，并预留风险预备费，价格基础较扎实且可信。",
+            "owner_control_view": "明确接受业主过程审查，设文档控制专员登记与跟踪审查意见闭环，限额设计执行情况按阶段报告，业主审查流程与响应时效清晰可考核。",
+            "strengths": [
+              "团队角色计划与人员配置具体，主要专业负责人职责清晰",
+              "质量三级审核、接口会签与BIM出图前置检查形成闭环",
+              "业主审查闭环与现场快速响应机制明确，交付信心较高"
+            ],
+            "concerns": [
+              "报价接近包上限，价格竞争性有限",
+              "绿建节能专项仍依赖常规外部技术支持，需在合同阶段锁定",
+              "主要人员投入时间尚待投标前内部确认"
+            ]
+          }
+        ],
+        "comparison_summary": "中国建筑第五工程局有限公司在团队配置真实性、质量与接口闭环、业主审查清晰度上明显优于江苏乾堪建设工程有限公司，后者关键能力依赖未落实分包且专项费用为暂估。两家报价分别为人民币4480000元与人民币3900000元，较低报价的可信度不足以抵消其能力与风险缺口，业主优先选择交付信心更高的方案。",
+        "recommended_winner": "COMP-0169",
+        "owner_review_notes": "建议判给中国建筑第五工程局有限公司，并在合同谈判中要求锁定绿建节能外部支持安排及主要人员投入承诺。江苏乾堪建设工程有限公司的暂估顾问费与偏低风险预留需在澄清中重点核实，若后续重新招标可作为价格参照。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0049",
+      "package_awards": [
+        {
+          "package_id": "CASE-0049/design",
+          "selected_bidder_id": "COMP-0169",
+          "selected_bidder_name": "中国建筑第五工程局有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中国建筑第五工程局以单一责任投标人身份配置建筑、结构、MEP、BIM与造价控制专职人员，团队角色计划与职责清晰，质量三级审核、专业接口会签与BIM出图前置检查形成闭环，业主审查意见登记跟踪与现场快速响应机制明确可考核，报价以自有团队人工投入为主并预留风险预备费，价格基础可信。江苏乾堪报价虽较低，但关键能力依赖未落实的分包与外部顾问，专项顾问费为暂估且风险预留偏低，固定总价下变更与索赔暴露较高，交付信心不足。因此判给中国建筑第五工程局有限公司，预合同澄清聚焦绿建节能外部支持安排与主要人员投入承诺。",
+          "unresolved_condition_ids": [],
+          "bid_assumptions": [
+            "以单一责任投标人身份独立投标，不组建联合体",
+            "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+            "报价按固定总价包干编制，总额不超过4500000.0元",
+            "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0169"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-19T14:19:40",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0295",
+          "package_id": "CASE-0049/design",
+          "decision": "bid",
+          "reason": "本包为设计服务包，预算450万，资源需求0.25，我司当前可用资源2.0且无占用，容量上可承接。我司具备房屋建筑、装饰、园林及市政设计施工背景，可作为设计牵头方承担总体与施工图设计及现场配合。教育建筑宿舍专项协调、BIM全过程协调和MEP综合设计存在能力缺口，但可通过普通专业分包与外部顾问补足，由我司保持单一投标人身份、统一设计责任与审核把关，不构成必须共享投标人身份的组合体情形。固定总价下需以限额设计、团队角色计划和风险应对措施控制报价与进度风险。综合商业价值、容量与可问责性，决定独立投标。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以我司作为单一投标人和设计责任主体，专业分包与外部顾问仅作为普通支持安排，不共享投标人身份",
+            "MEP综合设计与BIM全过程协调能力通过专业分包或外部顾问补足，具体分包安排在投标文件中作为计划说明，尚未取得正式承诺",
+            "固定总价450万涵盖方案、初步设计、施工图、BIM、现场配合及后续服务全部费用，以限额设计与费用分解控制报价风险",
+            "教育建筑宿舍设计经验有限，将以团队角色计划、质量审核流程和风险应对措施弥补评标印象",
+            "现场设计配合与快速响应按24个月工期和业主审查节点安排，人员投入以团队可用性摘要为准"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:19:40",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0169",
+          "package_id": "CASE-0049/design",
+          "decision": "bid",
+          "reason": "这个设计包与我们的业务方向契合：教育建筑宿舍属于常规居住建筑，我们的建筑工程设计能力、造价控制和现场配合能力都能直接对上，且当前资源占用为零、可用资源充足，不存在承接不了的硬约束。450万固定总价包干虽然利润不厚，但作为本地综合企业，拿下这个包能巩固我们在广州教育建筑领域的业绩和与业主的长期关系，战略价值大于单包利润。风险主要在报价合理性和设计主导能力的说服力，这可以通过清晰的团队角色计划、BIM全过程协调方案、内部审核校对流程和限额设计措施来回应，不需要引入联合体分担投标人身份或责任。因此决定以单一责任投标人身份独立投标，把BIM、绿建等窄口径专项作为常规外部技术支持安排，责任主体仍是我们自己。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以单一责任投标人身份独立投标，不组建联合体",
+            "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+            "报价按固定总价包干编制，总额不超过4500000.0元",
+            "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:19:54",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/design",
+          "bidder_id": "COMP-0295"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:19:54",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0049/design",
+          "bidder_id": "COMP-0169"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:19:54",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0049/design",
+          "opened_bid_count": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:20:00",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0049/design",
+          "recommended_winner": "COMP-0169"
+        }
+      },
+      {
+        "timestamp": "2026-11-19T14:20:03",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0049/design",
+          "selected_bidder_id": "COMP-0169"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-c328a5d9ef0c7d": {
+            "action": "accept",
+            "reason": "本报价为固定总价包干 CNY 4,480,000，未超过本包预算上限 CNY 4,500,000，且由单一责任投标人 COMP-0169 独立承担全部设计责任、技术审定与签章，不组建联合体，责任主体清晰可追溯。资源承诺为 0.25 个归一化企业能力单位，工作份额 1.0，与包所需资源一致，不存在产能冲突。设计周期约 6.5 个月与 24 个月建设期匹配，施工配合与竣工验收配合贯穿施工期至竣工，各阶段设业主审查节点，审查意见修改时间已计入阶段工期；若业主审查轮次超出约定，双方另行协商阶段顺延但不改变固定总价，该安排对业主可控。质量保证采用三级审核校对加专业接口会签，BIM 模型与图纸一致性纳入出图前置条件，外部专项成果须经投标人专业负责人复核后方可出图，满足业主对设计过程审查与控制的要求。限额设计以批准投资估算为上限分解至各专业与各阶段，并按阶段向业主报告造价复核结果。投标文件披露的假设（单一责任投标人、窄口径专项通过常规外部技术支持补足且责任主体仍为投标人、固定总价包干、主要人员投入以团队可用性摘要为准并在投标前完成内部确认）属于已披露的风险分配，不构成缺失证据，业主方接受。付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认，业主方确认该付款基础以阶段成果提交并通过业主审查为计量依据，审查意见修改时间已含在阶段工期内。本阶段仅授权可执行的模拟义务，不主张未来工程交付或法定审批已经完成，未来交付按带审查与验收条件的义务评估。综上，按所给确切条款、资源与义务接受。"
+          },
+          "COMP-0169": {
+            "action": "accept",
+            "reason": "作为中国建筑第五工程局有限公司（COMP-0169）的授权决策，我方接受本设计包（CASE-0049/design）的合同条款。理由如下：\n\n- 能力匹配：本包要求资源0.25，我方当前可用资源2.0、占用0，不存在产能冲突；我方具备建筑行业（建筑工程）设计、造价咨询与工程管理能力，与总体及施工图设计、现场配合范围匹配。\n- 商务条件：固定总价4,480,000 CNY，未超过包预算4,500,000 CNY；报价构成与阶段划分清晰，风险预备费已计入，符合固定总价包干的风险分配。\n- 责任边界：以单一责任投标人身份独立投标，不组建联合体；绿建节能等窄口径专项通过常规外部技术支持补足，成果由我方专业负责人复核收口，责任主体仍为我方，该风险分配可接受。\n- 进度与审查：设计阶段约6.5个月，与24个月建设期匹配；各阶段设业主审查节点，审查意见修改时间已计入阶段工期；若业主审查轮次超出约定，双方另行协商阶段顺延但不改变固定总价，该安排可接受。\n- 付款与计量：付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认；我方确认该付款与计量基础以阶段成果审查通过为准，属我方自身立场，可在下一稿写入。\n- 未决事项：本包无未决条件（unresolved_condition_ids为空），无需要外部证据的缺口；本阶段仅授权可执行的模拟义务，不构成对未来工程交付或法定审批已完成的声明。\n\n综上，我方接受所供条款、资源承诺与义务，按固定总价4,480,000 CNY、资源承诺0.25、工作份额1.0执行。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+          "simulation_id": "SIM45BEE469",
+          "project_id": "CASE-0049",
+          "package_id": "CASE-0049/design",
+          "session_id": "SIM45BEE469/CASE-0049/design/round-1",
+          "snapshot_version": "8ecacad60072604338540dc0b049ecc02f3aff33c8cb9219daef447ca927dc2d",
+          "buyer_id": "OWNER-c328a5d9ef0c7d",
+          "bid_id": "bid_CASE-0049/design_002",
+          "bidder_id": "COMP-0169",
+          "lead_id": "COMP-0169",
+          "members": [
+            "COMP-0169"
+          ],
+          "price": 4480000.0,
+          "currency": "CNY",
+          "resource_commitments": {
+            "COMP-0169": 0.25
+          },
+          "work_shares": {
+            "COMP-0169": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "d29c98eeec6825ca25509fafc5203cdb380f23475becd455276cdb8435b49c28",
+          "terms": {
+            "schedule_commitment": "总设计周期按项目24个月建设期匹配：方案深化约1.5个月，初步设计约2个月，施工图设计约3个月，合计设计阶段约6.5个月；施工配合与竣工验收配合贯穿施工期至项目竣工。各阶段结束设业主审查节点，审查意见修改时间已计入阶段工期。若业主审查轮次超出约定，双方另行协商阶段顺延，但不改变固定总价。",
+            "risk_response": "进度风险：以阶段里程碑加内部预警机制管理，关键专业提前介入，业主审查意见集中处理，避免反复。质量风险：三级审核校对加专业接口会签，外部专项成果必须经我司专业负责人复核方可出图。接口风险：建筑、结构、MEP与BIM设固定会签节点，管线综合在施工图出图前完成碰撞闭环。现场风险：驻场代表加后台专业支持双通道响应，重大变更限时组织会商。报价风险：固定总价包干，已计入风险预备费，不以未确认的外部报价作为报价依据，专项外部支持按常规技术支持安排，最终以我司审定成果交付。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0049/design_002",
+              "package_id": "CASE-0049/design",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0169",
+              "bidder_name": "中国建筑第五工程局有限公司",
+              "technical_proposal": "本投标以中国建筑第五工程局有限公司单一责任投标人身份提交，不组建联合体，全部设计责任、技术审定与签章由我司承担。\n\n一、设计团队角色计划与人员配置\n设计总负责人1名（陈立衡，统筹全过程并对业主单一接口）；建筑专业负责人1名、建筑设计师2名；结构专业负责人1名、结构设计师1名；MEP综合负责人1名（统筹给排水、电气、暖通及管线综合）；BIM协调经理1名、BIM建模工程师1名；绿建与节能专项由外部技术支持承担，由我司MEP负责人统一收口；造价与限额设计由我司造价咨询能力内部承担，设造价控制专员1名；现场设计配合由驻场设计代表1名加后台专业支持组成；文档控制专员1名负责图纸版本与审查记录。\n\n二、团队可用性摘要\n当前企业可用资源2.0、占用0，本包仅需0.25，不存在产能冲突。主要人员投入时间按阶段分配：方案深化与初步设计阶段建筑、结构、MEP负责人投入较高；施工图阶段各专业设计师与BIM工程师集中投入；施工阶段以驻场代表加后台响应为主。具体人员资历与投入时间以投标文件团队可用性摘要表为准，投标前完成内部确认。\n\n三、设计交付方法（含BIM应用方案）\n按方案深化、初步设计、施工图设计、施工配合、竣工验收五阶段推进。BIM采用全过程协调：方案阶段建立体量与场地模型，初步设计阶段完成专业模型与净高、管线综合检查，施工图阶段输出碰撞检查报告与综合管线图，施工阶段用于设计变更与现场核对。BIM建模与专项检查由我司BIM协调经理主导，窄口径专项技术工作通过常规外部技术支持补足，成果由我司审定。\n\n四、质量保证方法\n执行内部三级审核校对：设计人自校、专业负责人校对、设计总负责人审定；结构、MEP、建筑之间设接口会签；BIM模型与图纸一致性检查纳入出图前置条件；外部技术支持成果由对应专业负责人复核后方可出图。文档控制专员维护图纸版本、审查意见闭环记录与竣工资料归档。\n\n五、限额设计\n以批准的投资估算为上限分解至各专业与各阶段，初步设计阶段完成造价复核，施工图阶段对主要材料与构造做法进行比选，超限即启动优化，不以降低安全与绿建目标为代价。\n\n六、现场设计配合\n施工期间设驻场设计代表，常规问题当日响应，重大变更48小时内组织专业会商；参与隐蔽验收、样板确认与竣工验收配合。",
+              "implementation_plan": "阶段一 方案深化（约1.5个月）：场地与紧凑校园条件复核、宿舍单元平面深化、与业主确认功能与标准，提交深化方案供业主审查。\n阶段二 初步设计（约2个月）：建筑、结构、MEP同步推进，完成绿建与节能策略、造价复核与限额分解，提交初步设计文件及概算供业主审查。\n阶段三 施工图设计（约3个月）：各专业施工图、BIM碰撞检查与管线综合、内部三级审核校对、外部专项成果复核，分专业出图并配合施工图审查意见修改。\n阶段四 施工配合（贯穿施工期）：驻场设计代表常驻，设计交底、图纸会审、变更处理、材料与样板确认、隐蔽验收参与。\n阶段五 竣工验收配合：竣工图核对、验收资料配合、缺陷责任期内的设计响应。\n各阶段均设业主审查节点，审查意见由文档控制专员登记并跟踪闭环；阶段间以接口会签作为放行条件。",
+              "quotation": 4480000.0,
+              "schedule_commitment": "总设计周期按项目24个月建设期匹配：方案深化约1.5个月，初步设计约2个月，施工图设计约3个月，合计设计阶段约6.5个月；施工配合与竣工验收配合贯穿施工期至项目竣工。各阶段结束设业主审查节点，审查意见修改时间已计入阶段工期。若业主审查轮次超出约定，双方另行协商阶段顺延，但不改变固定总价。",
+              "compliance_statement": "接受业主对设计过程的审查与控制：各阶段成果提交业主审查，审查意见由文档控制专员登记、分派、跟踪至闭环；BIM模型与图纸版本同步提交备查；限额设计执行情况按阶段向业主报告造价复核结果；现场配合响应时效接受业主考核。设计变更须经我司内部技术审定后出具，确保单一责任主体可追溯。",
+              "risk_response": "进度风险：以阶段里程碑加内部预警机制管理，关键专业提前介入，业主审查意见集中处理，避免反复。质量风险：三级审核校对加专业接口会签，外部专项成果必须经我司专业负责人复核方可出图。接口风险：建筑、结构、MEP与BIM设固定会签节点，管线综合在施工图出图前完成碰撞闭环。现场风险：驻场代表加后台专业支持双通道响应，重大变更限时组织会商。报价风险：固定总价包干，已计入风险预备费，不以未确认的外部报价作为报价依据，专项外部支持按常规技术支持安排，最终以我司审定成果交付。",
+              "submission_summary": "中国建筑第五工程局有限公司以单一责任投标人身份独立投标本设计包，不组建联合体，全部设计责任与技术审定由我司承担。\n\n报价基础（固定总价包干，CNY）：\n- 方案深化与初步设计阶段设计费 780,000\n- 施工图设计阶段设计费 1,350,000\n- BIM全过程协调费 520,000\n- 绿建节能与专项外部技术支持费 330,000\n- 现场设计配合与竣工验收配合费 610,000\n- 造价控制、文档管理及项目管理费 285,000\n- 风险预备费与企业管理费及合理利润 605,000\n合计 4,480,000，未超过包上限4,500,000。\n\n费用构成说明：报价以我司自有建筑、结构、MEP、BIM与造价团队的人工投入为主，绿建节能等窄口径专项通过常规外部技术支持补足并计入管理加成，责任主体仍为我司；固定总价下预留风险预备费应对进度与接口不确定性。付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认。",
+              "quotation_breakdown": [
+                {
+                  "item": "方案深化与初步设计阶段设计费",
+                  "amount": 780000,
+                  "basis": "建筑、结构、MEP负责人及设计师投入约5.5个月，含紧凑校园场地复核与业主审查修改轮次"
+                },
+                {
+                  "item": "施工图设计阶段设计费",
+                  "amount": 1350000,
+                  "basis": "各专业施工图设计、内部三级审核校对、施工图审查意见修改，按专业设计师与负责人投入约3个月计"
+                },
+                {
+                  "item": "BIM全过程协调费",
+                  "amount": 520000,
+                  "basis": "BIM协调经理与建模工程师投入、模型建立与维护、碰撞检查与管线综合报告、施工阶段模型核对"
+                },
+                {
+                  "item": "绿建节能与专项外部技术支持费",
+                  "amount": 330000,
+                  "basis": "绿建与节能窄口径专项外部技术支持，由我司专业负责人复核收口，含管理加成"
+                },
+                {
+                  "item": "现场设计配合与竣工验收配合费",
+                  "amount": 610000,
+                  "basis": "驻场设计代表常驻施工期、后台专业响应、设计交底与图纸会审、变更处理、验收配合"
+                },
+                {
+                  "item": "造价控制与限额设计、文档管理及项目管理费",
+                  "amount": 285000,
+                  "basis": "造价控制专员限额设计与阶段造价复核、文档控制专员版本与审查闭环管理、项目协调与业主接口"
+                },
+                {
+                  "item": "风险预备费与企业管理费及合理利润",
+                  "amount": 605000,
+                  "basis": "固定总价包干下的进度与接口风险预备、企业综合管理费分摊及合理利润"
+                }
+              ],
+              "unresolved_condition_ids": [],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "以单一责任投标人身份独立投标，不组建联合体",
+                "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+                "报价按固定总价包干编制，总额不超过4500000.0元",
+                "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "总体及施工图设计与现场设计配合",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "d29c98eeec6825ca25509fafc5203cdb380f23475becd455276cdb8435b49c28"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0049/design": {
+          "package_type": "design",
+          "required_company_role": "designer",
+          "scope": "总体及施工图设计与现场设计配合",
+          "budget": 4500000.0,
+          "currency": "CNY",
+          "buyer_id": "OWNER-c328a5d9ef0c7d"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIM45BEE469/CASE-0049/design/round-1/contract",
+    "simulation_id": "SIM45BEE469",
+    "project_id": "CASE-0049",
+    "package_id": "CASE-0049/design",
+    "session_id": "SIM45BEE469/CASE-0049/design/round-1",
+    "snapshot_version": "8ecacad60072604338540dc0b049ecc02f3aff33c8cb9219daef447ca927dc2d",
+    "buyer_id": "OWNER-c328a5d9ef0c7d",
+    "bid_id": "bid_CASE-0049/design_002",
+    "bidder_id": "COMP-0169",
+    "lead_id": "COMP-0169",
+    "members": [
+      "COMP-0169"
+    ],
+    "price": 4480000.0,
+    "currency": "CNY",
+    "resource_commitments": {
+      "COMP-0169": 0.25
+    },
+    "work_shares": {
+      "COMP-0169": 1.0
+    },
+    "signatures": {
+      "OWNER-c328a5d9ef0c7d": true,
+      "COMP-0169": true
+    },
+    "signed_terms_hash": "d29c98eeec6825ca25509fafc5203cdb380f23475becd455276cdb8435b49c28",
+    "terms": {
+      "schedule_commitment": "总设计周期按项目24个月建设期匹配：方案深化约1.5个月，初步设计约2个月，施工图设计约3个月，合计设计阶段约6.5个月；施工配合与竣工验收配合贯穿施工期至项目竣工。各阶段结束设业主审查节点，审查意见修改时间已计入阶段工期。若业主审查轮次超出约定，双方另行协商阶段顺延，但不改变固定总价。",
+      "risk_response": "进度风险：以阶段里程碑加内部预警机制管理，关键专业提前介入，业主审查意见集中处理，避免反复。质量风险：三级审核校对加专业接口会签，外部专项成果必须经我司专业负责人复核方可出图。接口风险：建筑、结构、MEP与BIM设固定会签节点，管线综合在施工图出图前完成碰撞闭环。现场风险：驻场代表加后台专业支持双通道响应，重大变更限时组织会商。报价风险：固定总价包干，已计入风险预备费，不以未确认的外部报价作为报价依据，专项外部支持按常规技术支持安排，最终以我司审定成果交付。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0049/design_002",
+        "package_id": "CASE-0049/design",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0169",
+        "bidder_name": "中国建筑第五工程局有限公司",
+        "technical_proposal": "本投标以中国建筑第五工程局有限公司单一责任投标人身份提交，不组建联合体，全部设计责任、技术审定与签章由我司承担。\n\n一、设计团队角色计划与人员配置\n设计总负责人1名（陈立衡，统筹全过程并对业主单一接口）；建筑专业负责人1名、建筑设计师2名；结构专业负责人1名、结构设计师1名；MEP综合负责人1名（统筹给排水、电气、暖通及管线综合）；BIM协调经理1名、BIM建模工程师1名；绿建与节能专项由外部技术支持承担，由我司MEP负责人统一收口；造价与限额设计由我司造价咨询能力内部承担，设造价控制专员1名；现场设计配合由驻场设计代表1名加后台专业支持组成；文档控制专员1名负责图纸版本与审查记录。\n\n二、团队可用性摘要\n当前企业可用资源2.0、占用0，本包仅需0.25，不存在产能冲突。主要人员投入时间按阶段分配：方案深化与初步设计阶段建筑、结构、MEP负责人投入较高；施工图阶段各专业设计师与BIM工程师集中投入；施工阶段以驻场代表加后台响应为主。具体人员资历与投入时间以投标文件团队可用性摘要表为准，投标前完成内部确认。\n\n三、设计交付方法（含BIM应用方案）\n按方案深化、初步设计、施工图设计、施工配合、竣工验收五阶段推进。BIM采用全过程协调：方案阶段建立体量与场地模型，初步设计阶段完成专业模型与净高、管线综合检查，施工图阶段输出碰撞检查报告与综合管线图，施工阶段用于设计变更与现场核对。BIM建模与专项检查由我司BIM协调经理主导，窄口径专项技术工作通过常规外部技术支持补足，成果由我司审定。\n\n四、质量保证方法\n执行内部三级审核校对：设计人自校、专业负责人校对、设计总负责人审定；结构、MEP、建筑之间设接口会签；BIM模型与图纸一致性检查纳入出图前置条件；外部技术支持成果由对应专业负责人复核后方可出图。文档控制专员维护图纸版本、审查意见闭环记录与竣工资料归档。\n\n五、限额设计\n以批准的投资估算为上限分解至各专业与各阶段，初步设计阶段完成造价复核，施工图阶段对主要材料与构造做法进行比选，超限即启动优化，不以降低安全与绿建目标为代价。\n\n六、现场设计配合\n施工期间设驻场设计代表，常规问题当日响应，重大变更48小时内组织专业会商；参与隐蔽验收、样板确认与竣工验收配合。",
+        "implementation_plan": "阶段一 方案深化（约1.5个月）：场地与紧凑校园条件复核、宿舍单元平面深化、与业主确认功能与标准，提交深化方案供业主审查。\n阶段二 初步设计（约2个月）：建筑、结构、MEP同步推进，完成绿建与节能策略、造价复核与限额分解，提交初步设计文件及概算供业主审查。\n阶段三 施工图设计（约3个月）：各专业施工图、BIM碰撞检查与管线综合、内部三级审核校对、外部专项成果复核，分专业出图并配合施工图审查意见修改。\n阶段四 施工配合（贯穿施工期）：驻场设计代表常驻，设计交底、图纸会审、变更处理、材料与样板确认、隐蔽验收参与。\n阶段五 竣工验收配合：竣工图核对、验收资料配合、缺陷责任期内的设计响应。\n各阶段均设业主审查节点，审查意见由文档控制专员登记并跟踪闭环；阶段间以接口会签作为放行条件。",
+        "quotation": 4480000.0,
+        "schedule_commitment": "总设计周期按项目24个月建设期匹配：方案深化约1.5个月，初步设计约2个月，施工图设计约3个月，合计设计阶段约6.5个月；施工配合与竣工验收配合贯穿施工期至项目竣工。各阶段结束设业主审查节点，审查意见修改时间已计入阶段工期。若业主审查轮次超出约定，双方另行协商阶段顺延，但不改变固定总价。",
+        "compliance_statement": "接受业主对设计过程的审查与控制：各阶段成果提交业主审查，审查意见由文档控制专员登记、分派、跟踪至闭环；BIM模型与图纸版本同步提交备查；限额设计执行情况按阶段向业主报告造价复核结果；现场配合响应时效接受业主考核。设计变更须经我司内部技术审定后出具，确保单一责任主体可追溯。",
+        "risk_response": "进度风险：以阶段里程碑加内部预警机制管理，关键专业提前介入，业主审查意见集中处理，避免反复。质量风险：三级审核校对加专业接口会签，外部专项成果必须经我司专业负责人复核方可出图。接口风险：建筑、结构、MEP与BIM设固定会签节点，管线综合在施工图出图前完成碰撞闭环。现场风险：驻场代表加后台专业支持双通道响应，重大变更限时组织会商。报价风险：固定总价包干，已计入风险预备费，不以未确认的外部报价作为报价依据，专项外部支持按常规技术支持安排，最终以我司审定成果交付。",
+        "submission_summary": "中国建筑第五工程局有限公司以单一责任投标人身份独立投标本设计包，不组建联合体，全部设计责任与技术审定由我司承担。\n\n报价基础（固定总价包干，CNY）：\n- 方案深化与初步设计阶段设计费 780,000\n- 施工图设计阶段设计费 1,350,000\n- BIM全过程协调费 520,000\n- 绿建节能与专项外部技术支持费 330,000\n- 现场设计配合与竣工验收配合费 610,000\n- 造价控制、文档管理及项目管理费 285,000\n- 风险预备费与企业管理费及合理利润 605,000\n合计 4,480,000，未超过包上限4,500,000。\n\n费用构成说明：报价以我司自有建筑、结构、MEP、BIM与造价团队的人工投入为主，绿建节能等窄口径专项通过常规外部技术支持补足并计入管理加成，责任主体仍为我司；固定总价下预留风险预备费应对进度与接口不确定性。付款按阶段成果提交与业主审查通过分期支付，具体节点在合同阶段确认。",
+        "quotation_breakdown": [
+          {
+            "item": "方案深化与初步设计阶段设计费",
+            "amount": 780000,
+            "basis": "建筑、结构、MEP负责人及设计师投入约5.5个月，含紧凑校园场地复核与业主审查修改轮次"
+          },
+          {
+            "item": "施工图设计阶段设计费",
+            "amount": 1350000,
+            "basis": "各专业施工图设计、内部三级审核校对、施工图审查意见修改，按专业设计师与负责人投入约3个月计"
+          },
+          {
+            "item": "BIM全过程协调费",
+            "amount": 520000,
+            "basis": "BIM协调经理与建模工程师投入、模型建立与维护、碰撞检查与管线综合报告、施工阶段模型核对"
+          },
+          {
+            "item": "绿建节能与专项外部技术支持费",
+            "amount": 330000,
+            "basis": "绿建与节能窄口径专项外部技术支持，由我司专业负责人复核收口，含管理加成"
+          },
+          {
+            "item": "现场设计配合与竣工验收配合费",
+            "amount": 610000,
+            "basis": "驻场设计代表常驻施工期、后台专业响应、设计交底与图纸会审、变更处理、验收配合"
+          },
+          {
+            "item": "造价控制与限额设计、文档管理及项目管理费",
+            "amount": 285000,
+            "basis": "造价控制专员限额设计与阶段造价复核、文档控制专员版本与审查闭环管理、项目协调与业主接口"
+          },
+          {
+            "item": "风险预备费与企业管理费及合理利润",
+            "amount": 605000,
+            "basis": "固定总价包干下的进度与接口风险预备、企业综合管理费分摊及合理利润"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以单一责任投标人身份独立投标，不组建联合体",
+          "BIM、绿色建筑等窄口径专项技术工作通过常规外部技术支持安排补足，责任主体仍为我司",
+          "报价按固定总价包干编制，总额不超过4500000.0元",
+          "设计团队主要人员投入时间以团队可用性摘要为准，投标前完成内部确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "总体及施工图设计与现场设计配合",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}

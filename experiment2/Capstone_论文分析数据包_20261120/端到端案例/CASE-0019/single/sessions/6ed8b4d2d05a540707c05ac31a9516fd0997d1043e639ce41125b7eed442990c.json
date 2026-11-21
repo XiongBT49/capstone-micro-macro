@@ -1,0 +1,2090 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SIME3B32373/CASE-0019/construction-2/round-1",
+  "snapshot": {
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/construction-2",
+    "round_id": 1,
+    "tick": 9,
+    "public": {
+      "environment": {
+        "current_tick": 9,
+        "market_demand_index": 1.0373538651639633,
+        "material_price_index": 1.0545465513028083,
+        "labor_price_index": 1.0979907754733798,
+        "financing_condition_index": 0.979858658294121,
+        "regulatory_pressure_index": 0.5,
+        "policy_stability_index": 0.5,
+        "regional_friction_matrix": {}
+      },
+      "policy": {
+        "policy_id": "POLICY_BASELINE",
+        "name": "GBA baseline policy",
+        "entry_waiting_time": 30.0,
+        "approval_success_prob": 0.7,
+        "procedural_uncertainty": 0.3,
+        "compliance_cost": 0.2,
+        "scope_breadth": 0.8,
+        "cross_region_qualification_recognition": 0.5,
+        "tax_or_subsidy_intensity": 0.0,
+        "regulatory_intensity": 0.5,
+        "information_transparency": 0.5
+      },
+      "scenario_assumptions": {
+        "version": "shared-dbb-scenario-20260920-v2",
+        "source_note": "真实项目/企业基本描述 + 明示情景预算、工期、角色资格和数值能力；不代表真实企业能力估计，也不是历史采购回放。",
+        "eligibility": "本次机制情景允许列出的候选以所分配角色独立投标或联合投标；不以缺失历史资质字段推断实际资格。企业仍可基于商业判断拒绝。",
+        "units": {
+          "resource": "normalized_enterprise_capacity",
+          "time": "months",
+          "currency": "MOP"
+        }
+      },
+      "currency": "MOP",
+      "package_budget": 44625000.0,
+      "project": {
+        "project_id": "CASE-0019",
+        "name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "owner_id": "OWNER-4048bdd520aa7f",
+        "region": "Macau",
+        "project_type": "infrastructure",
+        "scope": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+        "budget": 150000000,
+        "currency": "MOP",
+        "duration_months": 24,
+        "delivery_mode": "DBB"
+      },
+      "package": {
+        "package_id": "CASE-0019/construction-2",
+        "project_id": "CASE-0019",
+        "kind": "construction",
+        "buyer_id": "OWNER-4048bdd520aa7f",
+        "name": "隧道机电、消防及通风系统施工包",
+        "scope": "行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+        "budget": 44625000.0,
+        "currency": "MOP",
+        "resource_required": 0.7,
+        "depends_on": [
+          "CASE-0019/design",
+          "CASE-0019/cost"
+        ],
+        "cost_inclusion": "owner_additional",
+        "parent_package_id": null,
+        "candidate_ids": [
+          "COMP-0153",
+          "COMP-0191",
+          "COMP-0494"
+        ]
+      }
+    },
+    "private": {
+      "OWNER-4048bdd520aa7f": {
+        "entity_id": "OWNER-4048bdd520aa7f",
+        "available_resource": 1.75,
+        "occupied_resource": 0.25,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_name": "澳门特别行政区政府公共建设局",
+          "company_role": "owner",
+          "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "见情景参数",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "OWNER-4048bdd520aa7f",
+          "name": "澳门特别行政区政府公共建设局",
+          "role": "Owner",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.25,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [
+            {
+              "engagement_id": "ENG000003",
+              "project_id": "CASE-0019",
+              "project_stage": "tender_preparation",
+              "role": "Owner",
+              "status": "active",
+              "resource_allocation": 0.25,
+              "contractual_obligation": true,
+              "can_be_recalled": false,
+              "joined_at_tick": 2,
+              "released_at_tick": null
+            }
+          ],
+          "contracts": [
+            {
+              "contract_id": "SIME3B32373/CASE-0019/cost/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/cost",
+              "kind": "cost_consulting",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 2000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            },
+            {
+              "contract_id": "SIME3B32373/CASE-0019/design/round-1/contract",
+              "project_id": "CASE-0019",
+              "package_id": "CASE-0019/design",
+              "kind": "design",
+              "party_role": "buyer",
+              "signed_tick": 2,
+              "status": "committed",
+              "project_stage": "tender_preparation",
+              "price": 4000000.0,
+              "currency": "MOP",
+              "own_committed_resource": 0,
+              "own_work_share": 0,
+              "package_progress": null
+            }
+          ]
+        },
+        "memory": [
+          {
+            "event_id": "SIME3B32373/EVT000014",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/design",
+            "contract_id": "SIME3B32373/CASE-0019/design/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0286"
+            ],
+            "price": 4000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000016",
+            "event_type": "package_contract_committed",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "package_id": "CASE-0019/cost",
+            "contract_id": "SIME3B32373/CASE-0019/cost/round-1/contract",
+            "buyer_id": "OWNER-4048bdd520aa7f",
+            "members": [
+              "COMP-0169"
+            ],
+            "price": 2000000.0,
+            "currency": "MOP",
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000017",
+            "event_type": "agent_engaged",
+            "tick": 2,
+            "project_id": "CASE-0019",
+            "role": "Owner",
+            "available_resource": 1.75,
+            "occupied_resource": 0.25,
+            "committed": true
+          },
+          {
+            "event_id": "SIME3B32373/EVT000098",
+            "event_type": "project_state_updated",
+            "tick": 8,
+            "project_id": "CASE-0019",
+            "stage": "tender_preparation",
+            "actual_progress": 0.0,
+            "delay_days": 0,
+            "committed": true
+          }
+        ],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 11,
+          "selected_events": 4,
+          "omitted_events": 7,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0153": {
+        "entity_id": "COMP-0153",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0153",
+          "company_name": "中交第一航务工程局有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0153",
+          "name": "中交第一航务工程局有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8200000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0191": {
+        "entity_id": "COMP-0191",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0191",
+          "company_name": "中建八局第二建设有限公司",
+          "company_role": "contractor",
+          "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0191",
+          "name": "中建八局第二建设有限公司",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      },
+      "COMP-0494": {
+        "entity_id": "COMP-0494",
+        "available_resource": 2.0,
+        "occupied_resource": 0.0,
+        "total_resource_capacity": 2.0,
+        "company_profile": {
+          "company_id": "COMP-0494",
+          "company_name": "得寶國際-得寶建築合作經營",
+          "company_role": "contractor",
+          "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+          "strengths": [],
+          "weaknesses": [],
+          "qualifications": [
+            "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+          ],
+          "past_project_experience": [],
+          "capacity": "以授权情景资源为准",
+          "risk_signals": [],
+          "eligible_packages": []
+        },
+        "enterprise_parameters": {
+          "agent_id": "COMP-0494",
+          "name": "得寶國際-得寶建築合作經營",
+          "role": "Contractor",
+          "region": "Macau",
+          "enterprise_type": "scenario_entity",
+          "qualification_level": 0.85,
+          "financial_capacity": 0.8,
+          "technical_capability": 0.8,
+          "management_capability": 0.8,
+          "risk_preference": 0.5,
+          "collaboration_preference": 0.5,
+          "cross_region_experience": 0.5,
+          "policy_adaptability": 0.8,
+          "design_capability": 0.8,
+          "cost_estimation_capability": 0.8,
+          "construction_capability": 0.8400000000000001,
+          "safety_management_capability": 0.8,
+          "quality_management_capability": 0.8,
+          "supervision_capability": 0.5,
+          "supply_reliability": 0.8,
+          "material_quality": 0.8,
+          "payment_reliability": 0.5,
+          "decision_speed": 0.5,
+          "total_resource_capacity": 2.0,
+          "occupied_resource": 0.0,
+          "active_regions": [],
+          "preferred_partners": []
+        },
+        "resource_unit": "normalized_enterprise_capacity",
+        "task_state": {
+          "schema_version": "enterprise-task-context.v1",
+          "observed_tick": 8,
+          "source": "committed_macro_state",
+          "resource_accounting": "enterprise totals and project-role engagements are current; contract commitments are signed promises, not extra reservations; a buyer's purchase does not itself reserve the buyer's resources",
+          "engagements": [],
+          "contracts": []
+        },
+        "memory": [],
+        "memory_selection": {
+          "policy": "significant_then_relevant_then_recent.v1",
+          "limit": 12,
+          "total_events": 0,
+          "selected_events": 0,
+          "omitted_events": 0,
+          "note": "Historical events explain changes; task_state and current resource totals are authoritative. Full history is retained in the audit."
+        }
+      }
+    },
+    "data_version": "7ad2fbe691cb17091119da15585532355cc6047a4706098b6721551d5adbea14"
+  },
+  "spec": {
+    "package_id": "CASE-0019/construction-2",
+    "project_id": "CASE-0019",
+    "kind": "construction",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "name": "隧道机电、消防及通风系统施工包",
+    "scope": "行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+    "budget": 44625000.0,
+    "currency": "MOP",
+    "resource_required": 0.7,
+    "depends_on": [
+      "CASE-0019/design",
+      "CASE-0019/cost"
+    ],
+    "cost_inclusion": "owner_additional",
+    "parent_package_id": null,
+    "candidate_ids": [
+      "COMP-0153",
+      "COMP-0191",
+      "COMP-0494"
+    ]
+  },
+  "next_stage": 9,
+  "status": "committed",
+  "error": null,
+  "state": {
+    "project_idea": {
+      "project_id": "CASE-0019",
+      "project_name": "新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "project_type": "infrastructure",
+      "location": "Macau",
+      "owner_intent": "交通基础设施；；新城填海区A区至澳门半岛之间的连接通道-改善工程 (行人隧道)",
+      "scale_hint": "scenario-defined",
+      "budget_hint": "MOP 150000000",
+      "schedule_hint": "24 months",
+      "constraints": [
+        "DBB; scope and budget changes require macro approval"
+      ],
+      "source_mode": "shared_input"
+    },
+    "owner_requirements": {
+      "project_id": "CASE-0019",
+      "project_scope": "本项目为新城填海区A区至澳门半岛之间的连接通道改善工程（行人隧道），属交通基础设施。业主已就设计包（CASE-0019/design）及造价咨询包（CASE-0019/cost）完成判给并签订合同，现进入施工招标阶段。本次业主模拟包简报仅针对已授权的施工包 CASE-0019/construction-2（隧道机电、消防及通风系统施工包），其范围包括行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统，含系统调试与试运行；不含土建结构、建筑装修及外部道路接驳。业主以DBB模式推进，范围与预算变更须经宏观审批。",
+      "functional_requirements": [
+        "隧道供配电系统须满足行人隧道正常运营及应急工况下的双回路供电与切换要求。",
+        "照明系统须覆盖隧道全线及出入口过渡段，并具备应急照明与疏散指示功能。",
+        "通风系统须按行人隧道空气质量与火灾排烟工况进行设计安装，并完成联动调试。",
+        "消防报警与灭火系统须与隧道监控系统联动，满足消防验收与试运行要求。",
+        "监控系统须覆盖隧道关键部位，并预留与业主既有或规划监控平台的接口。",
+        "排水泵系统须满足隧道渗漏水及暴雨工况排水能力，并具备远程监控与报警功能。",
+        "接地防雷系统须覆盖隧道机电设备及金属构件，满足人身与设备安全要求。",
+        "系统调试与试运行须形成完整记录，作为业主验收与移交的依据。"
+      ],
+      "technical_requirements": [
+        "BIM协调：机电安装须与设计包BIM模型协调，完成管线综合与碰撞检查，并提交竣工BIM信息。",
+        "MEP协调：供配电、照明、通风、消防、监控、排水各系统之间须完成界面协调与联动逻辑确认。",
+        "结构协调：机电支吊架、预留孔洞及设备基础须与土建结构界面协调，不得影响结构安全。",
+        "交通接口布局：隧道机电设备布置须与行人隧道出入口、通风井及外部道路接驳界面协调。",
+        "公共通道布局：设备检修空间与行人通道须保持安全净距，并满足无障碍通行要求。",
+        "耐久性目标：机电设备与材料选型须适应澳门高湿高盐环境，满足业主耐久性目标。",
+        "可维护性目标：设备布置须预留检修通道与更换空间，并提交维护手册与备件清单。",
+        "业主验收路径：须按分项调试、系统联调、试运行、竣工验收的路径设置业主检查点与签认节点。",
+        "能耗目标：照明与通风系统须满足业主能耗控制目标，优先采用高效设备与智能控制策略。"
+      ],
+      "budget_policy": "本施工包预算为 MOP 44,625,000，属业主额外成本（owner_additional），已纳入项目总预算 MOP 150,000,000 之内。业主将以造价咨询包（CASE-0019/cost）提供的造价建议与审核意见为参考，采用工程量清单计价方式比较投标报价。评标时业主将定性比较报价合理性、价格构成完整性与风险应对，不以最低价作为唯一判据。范围与预算变更须经宏观审批，施工包合同须设置变更控制与支付审核机制。",
+      "schedule_policy": "项目总工期24个月，本施工包须在设计与造价包成果基础上安排机电安装、调试与试运行。业主关注里程碑现实性，要求投标人提交施工进度视图，明确与土建结构、建筑装修及外部道路接驳包的界面时间。业主将预留设计审查、造价审核、机电界面协调及公共通道协调时间，并要求施工包在投标文件中说明调试与试运行所需工期及业主验收时间。",
+      "compliance_requirements": [
+        "业主审查节奏：按月度进度会与关键节点审查会跟踪施工包进展，并保留专题审查机制。",
+        "问题升级路径：施工包须明确问题升级路径，重大技术与界面问题须提交业主审查。",
+        "文档纪律：施工包须按业主文档管理要求提交施工方案、调试记录、竣工资料与维护手册。",
+        "界面签认：机电各系统之间及与土建、装修、外部道路接驳的界面须经业主签认。",
+        "公共通道协调：施工期间须协调行人通道临时改道与安全防护，并提交公共通道协调方案。",
+        "质量目标跟踪：业主将按分项工程与系统调试设置质量目标检查点，并跟踪整改闭环。",
+        "安全期望跟踪：施工包须提交安全施工方案与应急预案，业主将跟踪安全期望落实情况。",
+        "变更控制纪律：范围与预算变更须经宏观审批，施工包不得擅自变更；变更须提交业主审查与造价审核。"
+      ],
+      "risk_priorities": [
+        "机电系统界面协调风险：多系统联动与土建界面复杂，须优先管理接口协调与签认。",
+        "调试与试运行风险：系统调试周期可能受土建与装修进度影响，须提前安排调试计划。",
+        "公共通道安全风险：施工期间行人通道改道与防护须优先安排，避免公众安全事件。",
+        "材料与设备供应风险：关键机电设备供货周期与质量须提前锁定，并提交备件计划。",
+        "造价控制风险：变更与索赔须经造价审核与宏观审批，防止预算突破。",
+        "耐久性与维护风险：高湿高盐环境下的设备选型与维护支持须在评标中重点比较。"
+      ],
+      "tender_package_plan": [
+        {
+          "package_id": "CASE-0019/construction-2",
+          "package_type": "contractor",
+          "package_name": "隧道机电、消防及通风系统施工包",
+          "scope": "Authorized scope: 行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。\nBuyer refinement: 行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+          "required_company_role": "contractor",
+          "qualification_requirements": [
+            "隧道机电安装协调能力",
+            "供配电与照明系统施工能力",
+            "通风与消防系统安装调试能力",
+            "监控与排水泵系统集成能力",
+            "接地防雷系统施工能力",
+            "系统调试与试运行组织能力",
+            "MEP协调能力",
+            "质量文档管理能力",
+            "安全施工管理能力",
+            "公共通道协调能力"
+          ],
+          "proposal_requirements": [
+            "角色计划与团队可用性摘要",
+            "机电安装施工方法与调试方案",
+            "质量方法与安全施工方案",
+            "价格基础与工程量清单报价",
+            "施工进度视图与里程碑安排",
+            "风险应对与界面协调方案",
+            "公共通道协调与临时改道方案",
+            "维护支持与备件计划"
+          ],
+          "pricing_requirements": "采用工程量清单计价，报价须包含机电设备、材料、安装、调试、试运行、备件及维护支持等全部费用。业主将参考造价咨询包意见，定性比较价格合理性与价格构成完整性。\nBinding currency: MOP; package ceiling: 44625000.0.",
+          "evaluation_criteria": [
+            "交付信心",
+            "能力匹配",
+            "价格合理性",
+            "风险控制",
+            "人员配置现实性",
+            "业主审查清晰度",
+            "文档纪律",
+            "质量目标匹配",
+            "安全期望跟踪",
+            "界面协调",
+            "维护支持",
+            "公共通道协调"
+          ],
+          "owner_decision_policy": "业主将定性比较各投标方案，综合判断能力匹配、价格合理性、风险控制与交付信心，不以最低价作为唯一判据；评标结果须经业主审查与宏观审批程序确认。"
+        }
+      ]
+    },
+    "tender_packages": [
+      {
+        "package_id": "CASE-0019/construction-2",
+        "package_type": "contractor",
+        "package_name": "隧道机电、消防及通风系统施工包",
+        "scope": "Authorized scope: 行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。\nBuyer refinement: 行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+        "required_company_role": "contractor",
+        "qualification_requirements": [
+          "隧道机电安装协调能力",
+          "供配电与照明系统施工能力",
+          "通风与消防系统安装调试能力",
+          "监控与排水泵系统集成能力",
+          "接地防雷系统施工能力",
+          "系统调试与试运行组织能力",
+          "MEP协调能力",
+          "质量文档管理能力",
+          "安全施工管理能力",
+          "公共通道协调能力"
+        ],
+        "proposal_requirements": [
+          "角色计划与团队可用性摘要",
+          "机电安装施工方法与调试方案",
+          "质量方法与安全施工方案",
+          "价格基础与工程量清单报价",
+          "施工进度视图与里程碑安排",
+          "风险应对与界面协调方案",
+          "公共通道协调与临时改道方案",
+          "维护支持与备件计划"
+        ],
+        "pricing_requirements": "采用工程量清单计价，报价须包含机电设备、材料、安装、调试、试运行、备件及维护支持等全部费用。业主将参考造价咨询包意见，定性比较价格合理性与价格构成完整性。\nBinding currency: MOP; package ceiling: 44625000.0.",
+        "evaluation_criteria": [
+          "交付信心",
+          "能力匹配",
+          "价格合理性",
+          "风险控制",
+          "人员配置现实性",
+          "业主审查清晰度",
+          "文档纪律",
+          "质量目标匹配",
+          "安全期望跟踪",
+          "界面协调",
+          "维护支持",
+          "公共通道协调"
+        ],
+        "owner_decision_policy": "业主将定性比较各投标方案，综合判断能力匹配、价格合理性、风险控制与交付信心，不以最低价作为唯一判据；评标结果须经业主审查与宏观审批程序确认。"
+      }
+    ],
+    "companies": [
+      {
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_name": "澳门特别行政区政府公共建设局",
+        "company_role": "owner",
+        "profile": "项目输入中的业主；具体采购行为由组织成员讨论。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0153",
+        "company_name": "中交第一航务工程局有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；建设工程设计；建设工程勘察；施工专业作业；预应力混凝土铁路桥梁简支梁产品生产；特种设备安装改造修理；国内船舶管理业务；船舶改装；船舶修理；船舶制造；输电、供电、受电电力设施的安装、维修和试验。第三类医疗器械经营；II、III类射线装置销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：对外承包工程；海洋环境服务；海洋服务；工程管理服务；渔港渔船泊位建设；海底管道运输服务；园林绿化工程施工；城市绿化管理；环境保护监测；水污染治理；污水处理及其再生利用；水环境污染防治服务；土地整治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；工程和技术研究和试验发展；基础地质勘查；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；技术进出口；货物进出口；进出口代理；土石方工程施工；建筑用石加工；交通设施维修；普通机械设备安装服务；电子、机械设备维护（不含特种设备）；砼结构构件制造；海上风电相关系统研发；风力发电技术服务；信息技术咨询服务；信息系统集成服务；咨询策划服务；船舶自动化、检测、监控系统制造；建筑用金属配件制造；金属结构制造；普通货物仓储服务（不含危险化学品等需许可审批的项目）；电气设备销售；机械电气设备销售；机械设备销售；建筑材料销售；非居住房地产租赁；住房租赁；金属材料销售；港口设施设备和机械租赁维修业务；运输设备租赁服务；建筑工程机械与设备租赁；机械设备租赁；第一类医疗器械销售；第二类医疗器械销售。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0191",
+        "company_name": "中建八局第二建设有限公司",
+        "company_role": "contractor",
+        "profile": "本地企业资料：许可项目：建设工程施工；施工专业作业；建设工程设计；住宅室内装饰装修；建设工程质量检测；建设工程勘察；建筑劳务分包；人防工程设计；特种设备安装改造修理；电气安装服务；预应力混凝土铁路桥梁简支梁产品生产；地质灾害治理工程施工；民用核安全设备设计；民用核安全设备安装；输电、供电、受电电力设施的安装、维修和试验；水利工程质量检测；文物保护工程施工；文物保护工程设计；文物保护工程勘察；建筑物拆除作业（爆破作业除外）；检验检测服务；认证服务；第三类医疗器械经营；医疗器械互联网信息服务；特种设备制造；特种设备设计；城市生活垃圾经营性服务；公路管理与养护；路基路面养护作业。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）一般项目：工程管理服务；规划设计管理；建筑工程机械与设备租赁；普通机械设备安装服务；安全技术防范系统设计施工服务；砼结构构件制造；砼结构构件销售；门窗制造加工；门窗销售；金属门窗工程施工；建筑砌块制造；建筑砌块销售；新型建筑材料制造（不含危险化学品）；水泥制品销售；工程技术服务（规划管理、勘察、设计、监理除外）；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；专业设计服务；工程造价咨询业务；园林绿化工程施工；对外承包工程；土石方工程施工；水污染治理；水环境污染防治服务；土壤污染治理与修复服务；土壤环境污染防治服务；生态恢复及生态保护服务；环保咨询服务；人工造林；机械设备研发；工业机器人销售；智能机器人的研发；金属制品研发；金属结构制造；金属结构销售；软件开发；软件销售；大数据服务；信息系统集成服务；互联网销售（除销售需要许可的商品）；人工智能应用软件开发；数据处理服务；数据处理和存储支持服务；云计算装备技术服务；物联网技术研发；物联网应用服务；物联网设备销售；5G通信技术服务；集成电路设计；电子产品销售；数字文化创意软件开发；数字文化创意内容应用服务；数字内容制作服务（不含出版发行）；会议及展览服务；建筑材料销售；公路水运工程试验检测服务；特种设备销售；建筑工程用机械销售；城市绿化管理；电气设备修理；新兴能源技术研发；科技中介服务；合同能源管理；计算机系统服务；运行效能评估服务；信息技术咨询服务；认证咨询；网络技术服务；第一类医疗器械销售；第二类医疗器械销售；实验分析仪器销售；仪器仪表修理；市政设施管理；城乡市容管理；交通设施维修；停车场服务；商业综合体管理服务；城市公园管理；园区管理服务；环境卫生公共设施安装服务。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      },
+      {
+        "company_id": "COMP-0494",
+        "company_name": "得寶國際-得寶建築合作經營",
+        "company_role": "contractor",
+        "profile": "本地企业资料：总承包、设计与建造、施工前咨询、项目及施工管理、房地产开发；涵盖建筑、综合体、商业、住宅、博彩酒店、公共机构、室内、休闲设施、基础设施/土木、轻轨、土方、地基、地下工程、道路桥梁、填海、海事、给排水和环保项目。本次为情景试运行，不复现历史中标结果。",
+        "strengths": [],
+        "weaknesses": [],
+        "qualifications": [
+          "ISO 9001质量管理体系、ISO 14001环境管理体系、ISO 45001职业健康安全管理体系认证"
+        ],
+        "past_project_experience": [],
+        "capacity": "Private; consult your authorized own_state",
+        "risk_signals": [],
+        "eligible_packages": []
+      }
+    ],
+    "company_agent_rosters": {
+      "OWNER-4048bdd520aa7f": [
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_01_陈志远",
+          "agent_name": "陈志远",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-项目管理处",
+          "position": "项目总管（业主代表）",
+          "personal_profile": "长期负责跨海及填海区交通基建，习惯先锁定工期与接口风险，再谈造价。压力下倾向把问题拆成可交付节点，最担心承建单位低估行人隧道与A区连接段的接口协调难度。讨论中会主动追问团队是否真的能在24个月内完成关键路径，并提醒不要把业主审批当成理所当然的缓冲。",
+          "responsibilities": [
+            "统筹CASE-0019整体交付目标与工期节点",
+            "主持招标包划分与采购策略讨论",
+            "协调设计、监管与承建单位之间的接口",
+            "向局方汇报重大风险与判给建议"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结构化，先讲结论再列依据，对模糊承诺会当场要求量化。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_02_黄嘉敏",
+          "agent_name": "黄嘉敏",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-设计协调组",
+          "position": "设计协调主管",
+          "personal_profile": "工程师出身，对图纸深度与现场可施工性之间的落差特别敏感。她先看设计说明是否覆盖行人隧道的防水、通风与逃生要求，再看投标组合体是否有能力把设计意图落地。压力下容易坚持设计完整性，可能与其他成员在造价压缩上产生张力。",
+          "responsibilities": [
+            "审查设计文件深度与设计协调安排",
+            "评估投标方对设计意图的理解与落实能力",
+            "跟踪设计变更对工期与造价的影响",
+            "组织设计审查与独立复核"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "细致、以图纸和条款为依据，喜欢用具体技术点反问，语气克制但立场坚定。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_03_李伟雄",
+          "agent_name": "李伟雄",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-成本控制组",
+          "position": "成本控制与支付评审主管",
+          "personal_profile": "做造价评审多年，习惯把报价拆到工项与风险准备金层面，对低价投标背后的资源缺口高度警觉。他先看价格基础是否完整、支付评审机制是否清晰，再判断报价是否可持续。讨论中常扮演刹车角色，担心为了赶工期而放松成本纪律。",
+          "responsibilities": [
+            "评审投标报价基础与成本合理性",
+            "设计支付评审与成本控制机制",
+            "评估风险准备金与价格调整条款",
+            "跟踪判给后的成本偏差"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "数字导向、追问细节，常用对比与区间说明问题，不轻易接受口头保证。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-质量与监管组",
+          "position": "质量监管与验收统筹",
+          "personal_profile": "长期从事工程质量监管，先看投标方的质量目标追踪与独立检查安排，而不是先看承诺口号。她认为行人隧道的隐蔽工程与防水质量决定后期维护成本，压力下会坚持保留独立检查节点。她的张力在于可能对赶工安排提出较多保留意见。",
+          "responsibilities": [
+            "制定质量目标与验收检查框架",
+            "评估投标方质量方法与独立检查能力",
+            "监督监管服务与现场质量记录",
+            "组织关键工序的质量复核"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "务实、以检查记录说话，倾向用清单式提问，对含糊的质量承诺会持续跟进。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_05_郑家豪",
+          "agent_name": "郑家豪",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-采购与合约组",
+          "position": "采购与合约协调主管",
+          "personal_profile": "熟悉澳门招标程序与组合体安排，先看投标结构、责任划分与文件纪律是否清晰。他认为采购阶段留下的模糊条款会在履约阶段放大成争议，压力下倾向把权责写死。讨论中会提醒其他成员注意程序合规与文件一致性，可能与追求速度的意见产生摩擦。",
+          "responsibilities": [
+            "组织招标包文件与评标程序",
+            "审查组合体结构与责任划分",
+            "维护采购文件与评标记录的一致性",
+            "协调判给后的合约交底"
+          ],
+          "decision_authority": "recommend",
+          "communication_style": "程序化、条理清晰，习惯引用条款与文件编号，对程序瑕疵零容忍。"
+        },
+        {
+          "agent_id": "OWNER-4048bdd520aa7f_06_何淑贞",
+          "agent_name": "何淑贞",
+          "company_id": "OWNER-4048bdd520aa7f",
+          "company_role": "owner",
+          "department": "公共建设局-对外协调组",
+          "position": "利益相关方与社区协调主管",
+          "personal_profile": "擅长处理居民、交通与跨部门沟通，先看施工期间对周边出行与社区的影响，再看技术方案。她认为行人隧道改善工程的成败很大程度取决于沟通节奏，压力下会优先争取缓冲与透明说明。她的张力在于可能要求为协调留出更多时间，与紧凑工期形成拉扯。",
+          "responsibilities": [
+            "统筹居民与跨部门利益相关方沟通",
+            "评估施工期交通与社区影响安排",
+            "协调业主对外说明与信息发布",
+            "跟踪投诉与社区反馈的处理"
+          ],
+          "decision_authority": "advise",
+          "communication_style": "亲和、善于倾听，先复述对方关切再提方案，对冲突场面能降温但立场明确。"
+        }
+      ],
+      "COMP-0153": [
+        {
+          "agent_id": "COMP-0153_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先判断合同边界与最终交付责任，习惯先确认业主验收标准与工期刚性，再决定资源投入。他倾向把风险集中到可控节点，对模糊授权容忍度低，常在讨论中追问谁对最终结果负责。",
+          "responsibilities": [
+            "统筹投标策略与最终报价审批",
+            "对接业主与监管方，确认验收与工期要求",
+            "裁决内部资源冲突与重大风险应对",
+            "监督质量目标与可持续发展目标的落实"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接、结论先行，偏好用责任矩阵和关键路径说话，对未闭环事项会反复确认。"
+        },
+        {
+          "agent_id": "COMP-0153_02_林嘉敏",
+          "agent_name": "林嘉敏",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "商务与成本组",
+          "position": "商务经理",
+          "personal_profile": "对数字敏感，先看报价构成与支付条件，再评估现金流与变更空间。她倾向在投标阶段锁定价格依据，对业主额外费用条款会逐项核对，讨论中常提醒不要用乐观假设掩盖成本缺口。",
+          "responsibilities": [
+            "编制报价与价格依据说明",
+            "开展成本控制与支付评审",
+            "管理分包与采购商务条款",
+            "跟踪付款评审与变更索赔"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "条理清晰，喜欢用表格和分项数字表达立场，对模糊表述会要求量化。"
+        },
+        {
+          "agent_id": "COMP-0153_03_黄伟杰",
+          "agent_name": "黄伟杰",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "工程技术组",
+          "position": "技术负责人",
+          "personal_profile": "面对技术争议时先回到设计意图与现场条件，重视可施工性与独立复核。他容易对未经验证的施工方案提出质疑，倾向用试验段和监测数据说话，讨论中常把设计协调与现场风险放在一起权衡。",
+          "responsibilities": [
+            "审核施工方案与临时支护设计",
+            "组织设计协调与技术交底",
+            "制定质量目标与独立检查计划",
+            "评估开挖与结构施工风险"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "严谨、偏技术化，习惯用条件句和验证步骤推进讨论，对跳过复核的提议会明确保留意见。"
+        },
+        {
+          "agent_id": "COMP-0153_04_苏丽华",
+          "agent_name": "苏丽华",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "现场执行组",
+          "position": "现场经理",
+          "personal_profile": "到现场先看工序衔接与交通疏解，关注班组可用性和每日产出。她对资源计划与工期承诺之间的落差非常敏感，讨论中常把抽象方案拉回到人机料是否到位，倾向用短周期滚动计划暴露问题。",
+          "responsibilities": [
+            "统筹现场施工组织与资源计划",
+            "编制并提交现场报告与进度记录",
+            "协调临时交通疏解与周边利益相关方",
+            "落实安全文明施工与工序验收"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实、节奏快，多用现场实例和短句，对不落地的计划会直接指出执行障碍。"
+        },
+        {
+          "agent_id": "COMP-0153_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0153",
+          "company_role": "contractor",
+          "department": "质量与风险组",
+          "position": "质量与风险经理",
+          "personal_profile": "先识别质量目标与监管要求的偏差，再评估风险应对是否可验证。他倾向对赶工方案保持审慎，强调文档纪律与独立检查记录，讨论中常提醒质量缺陷的返工成本会侵蚀报价空间。",
+          "responsibilities": [
+            "建立质量目标跟踪与检查台账",
+            "组织独立检查与质量评审",
+            "维护文档纪律与合规记录",
+            "评估风险应对措施的有效性"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "稳健、注重证据，习惯用检查清单和偏差记录表达观点，对压缩检查环节的提议会明确反对。"
+        }
+      ],
+      "COMP-0191": [
+        {
+          "agent_id": "COMP-0191_01_陈志强",
+          "agent_name": "陈志强",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "项目决策组",
+          "position": "项目总监",
+          "personal_profile": "在压力下优先关注整体工期与成本平衡，习惯先确认业主核心诉求再分配资源；对风险信号敏感，常提醒团队不要低估审批与协调时间；讨论中倾向于推动快速形成可执行方案，但可能对细节质量把控施加压力。",
+          "responsibilities": [
+            "统筹投标策略与最终报价审批",
+            "协调业主与内部关键决策",
+            "监控整体工期与成本控制目标",
+            "审批资源计划与风险应对方案"
+          ],
+          "decision_authority": "final",
+          "communication_style": "直接果断，善于用简明语言总结复杂问题，在会议中常以提问引导团队聚焦关键矛盾。"
+        },
+        {
+          "agent_id": "COMP-0191_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "商务合约部",
+          "position": "商务经理",
+          "personal_profile": "对数字和合同条款高度敏感，在压力下会反复核对报价基础与支付条件；首先注意到成本漏项和现金流风险；讨论中常带来保守的财务视角，提醒团队不要为中标牺牲合理利润。",
+          "responsibilities": [
+            "编制投标报价与价格基础",
+            "审核合同条款与支付条件",
+            "进行成本控制与支付评审",
+            "管理分包采购与商务谈判"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "细致严谨，习惯用数据支撑观点，表达清晰但有时显得过于谨慎。"
+        },
+        {
+          "agent_id": "COMP-0191_03_黄伟明",
+          "agent_name": "黄伟明",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "工程技术部",
+          "position": "技术负责人",
+          "personal_profile": "以技术可行性和施工安全为第一考量，在压力下会深入分析地质条件和施工方案；首先注意到设计协调问题与现场技术风险；讨论中常坚持技术标准，可能对工期压缩持保留态度。",
+          "responsibilities": [
+            "审核设计图纸与施工方案",
+            "协调设计变更与技术接口",
+            "监督现场施工质量与安全",
+            "组织技术交底与工艺试验"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "逻辑性强，喜欢用图纸和规范说话，表达准确但有时过于技术化。"
+        },
+        {
+          "agent_id": "COMP-0191_04_张丽华",
+          "agent_name": "张丽华",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "质量安全部",
+          "position": "质量安全经理",
+          "personal_profile": "将质量目标和安全合规视为不可妥协的底线，在压力下会坚持独立检查与文档记录；首先注意到质量目标偏差和监管要求；讨论中常带来合规视角，可能对赶工方案提出质疑。",
+          "responsibilities": [
+            "制定质量目标与检查计划",
+            "组织独立质量评审与验收",
+            "监督安全措施与合规文档",
+            "跟踪整改与质量缺陷处理"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "原则性强，沟通直接，善于用检查表和证据说明问题。"
+        },
+        {
+          "agent_id": "COMP-0191_05_周家豪",
+          "agent_name": "周家豪",
+          "company_id": "COMP-0191",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "施工经理",
+          "personal_profile": "注重现场可操作性和资源调度效率，在压力下会优先保证关键线路施工；首先注意到劳动力、机械和材料供应情况；讨论中常强调实际执行难度，可能对过于理想化的计划提出修正。",
+          "responsibilities": [
+            "编制施工进度与资源计划",
+            "协调现场分包与机械调度",
+            "管理临时交通疏解配合",
+            "跟踪每日施工进展与问题"
+          ],
+          "decision_authority": "delegated",
+          "communication_style": "务实直白，喜欢用现场实例说明问题，沟通节奏快。"
+        }
+      ],
+      "COMP-0494": [
+        {
+          "agent_id": "COMP-0494_01_陳志強",
+          "agent_name": "陳志強",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "項目管理部",
+          "position": "項目總監",
+          "personal_profile": "壓力下傾向先穩定團隊情緒再作決策，注重整體工期與資源調配；最先注意到合約風險與業主期望落差；討論中常帶入『能否按時交付』的張力，促使團隊正視現實限制。",
+          "responsibilities": [
+            "統籌行人隧道主體土建包的整體交付",
+            "協調設計與成本包介面",
+            "業主介面與匯報",
+            "資源規劃與調配",
+            "風險應對與決策把關"
+          ],
+          "decision_authority": "final",
+          "communication_style": "沉穩直接，善用簡報與會議紀要推進共識，必要時強勢拍板。"
+        },
+        {
+          "agent_id": "COMP-0494_02_李美玲",
+          "agent_name": "李美玲",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "成本控制部",
+          "position": "成本經理",
+          "personal_profile": "對數字高度敏感，壓力下更堅持逐項核對；最先注意到報價基礎與付款條款的缺口；討論中常質疑過度樂觀的估算，帶來成本紀律的張力。",
+          "responsibilities": [
+            "編制與審核投標報價基礎",
+            "成本控制與付款評審",
+            "分包商報價分析",
+            "變更與索賠成本評估",
+            "現金流與融資條件評估"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "條理分明，以數據說話，書面記錄嚴謹。"
+        },
+        {
+          "agent_id": "COMP-0494_03_黃偉雄",
+          "agent_name": "黃偉雄",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "工程技術部",
+          "position": "技術總監",
+          "personal_profile": "工程思維主導，壓力下傾向回歸技術本質；最先注意到施工可行性與地質風險；討論中常提出替代工法與安全冗餘，帶來技術嚴謹與工期取捨的張力。",
+          "responsibilities": [
+            "審核明挖與暗挖段施工方案",
+            "結構與防水設計協調",
+            "質量目標跟蹤與獨立檢查安排",
+            "安全與環境管理體系落實",
+            "技術風險應對"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "務實精準，喜歡用圖紙與計算說明，對模糊表述會追問到底。"
+        },
+        {
+          "agent_id": "COMP-0494_04_張淑儀",
+          "agent_name": "張淑儀",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "合約與採購部",
+          "position": "合約經理",
+          "personal_profile": "規則導向，壓力下更重視程序正義；最先注意到合約條款與監管要求的不一致；討論中常提醒法律與合規邊界，帶來程序約束的張力。",
+          "responsibilities": [
+            "投標文件與合約條款審查",
+            "分包採購與組合體安排",
+            "監管合規與許可申請協調",
+            "文件紀律與記錄管理",
+            "索賠與爭議處理支援"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "嚴謹細緻，用詞準確，偏好書面確認與清單管理。"
+        },
+        {
+          "agent_id": "COMP-0494_05_何家豪",
+          "agent_name": "何家豪",
+          "company_id": "COMP-0494",
+          "company_role": "contractor",
+          "department": "施工管理部",
+          "position": "現場經理",
+          "personal_profile": "行動導向，壓力下傾向快速解決現場問題；最先注意到勞動力與物料供應的即時缺口；討論中常催促決策以配合施工節奏，帶來執行速度與計劃周全的張力。",
+          "responsibilities": [
+            "現場施工組織與進度控制",
+            "勞動力與物料供應計劃",
+            "臨時交通疏解配合",
+            "工地安全與質量檢查",
+            "現場報告與問題上報"
+          ],
+          "decision_authority": "delegate",
+          "communication_style": "簡潔有力，習慣用現場照片與進度圖溝通，強調即時行動。"
+        }
+      ]
+    },
+    "agent_discussion_history": [
+      {
+        "message_id": "msg_000001",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0153",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-2",
+        "agent_id": "COMP-0153_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "我们作为承包商，在隧道机电、消防、通风这类机电安装包上，公司资料里确实有普通机械设备安装、电子机械设备维护、信息系统集成、电气设备销售等许可与经营范围，但缺少明确的隧道机电、消防报警与灭火系统、通风系统调试的专项业绩记录。这个包预算4462.5万MOP，占项目总预算近三成，工期24个月，资源需求0.7，我们当前可用资源2.0、占用0，资源上完全能承接。问题在于：这是一个综合性机电安装包，涉及供配电、照明、通风、消防、监控、排水泵、接地防雷和系统调试，需要MEP协调和公共通道协调能力。我们作为大型承包商，具备总承包管理和安全质量管理能力，可以通过分包方式组织专业机电队伍，自己作为单一责任主体承担投标、进度、安全、质量、付款协调和调试组织。这属于正常的专业分包安排，不是必须组成组合体。但我要诚实评估：公司资料里没有隧道机电专项业绩，若独立投标，技术标和调试方案的说服力会偏弱，评标时可能被质疑机电专业深度。不过，我们可以在投标中明确机电专业分包安排、调试组织方案、质量文档管理和风险应对，把责任链条讲清楚。价格上，工程量清单计价、含设备材料安装调试备件维护，我们有成本估算能力，可以合理组价。综合看，这个包在业务方向上与我们的基础设施施工主业契合，资源充足，风险可通过分包和调试计划控制，值得独立投标，而不是放弃或引入组合体削弱自身主导权。",
+        "content": "管理层决定：就新城填海区A区至澳门半岛之间的连接通道-改善工程（行人隧道）隧道机电、消防及通风系统施工包（CASE-0019/construction-2）以本公司名义独立投标。投标策略要点：一、以本公司为单一责任主体，明确项目负责人、机电协调负责人、安全与质量负责人及调试组织架构，提交角色计划与团队可用性摘要。二、施工方法按供配电、照明、通风、消防报警与灭火、监控、排水泵、接地防雷分系统编制安装与调试方案，明确系统调试与试运行的组织、见证与记录要求。三、质量与安全方案覆盖质量文档管理、隐蔽工程验收、调试记录与安全施工管理，并回应公共通道协调与临时改道安排。四、报价采用工程量清单计价，涵盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用，价格基础与构成完整呈现，接受业主对价格合理性的定性比较。五、进度视图按24个月工期编排里程碑，明确与设计包、造价包的界面依赖及机电各系统穿插顺序。六、风险应对聚焦机电专业分包管理、设备到货、调试周期与公共通道协调，专业分包与调试资源作为投标假设在文件中列明，未取得报价前以预算性成本估算列账。七、维护支持与备件计划按业主要求单列。本决定不构成对任何分包商资质、报价或承诺的既成事实陈述。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:12:40",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000002",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-2",
+        "agent_id": "COMP-0191_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "这是一个隧道机电、消防及通风系统施工包，预算约4463万MOP，属于我们作为承包商可承接的机电安装类工程。公司资料显示具备建设工程施工、电气安装服务、安全技术防范系统设计施工、普通机械设备安装、消防相关施工与调试等许可与一般经营能力，企业参数中施工能力、技术能力、管理能力均在0.8以上，资源占用为0，可用资源2.0，满足本包0.7的资源要求。内部讨论没有提出任何必须依赖外部主体共享投标身份或技术权威的硬性缺口；隧道机电、消防、通风、监控、排水泵、接地防雷等专业虽多，但都属于可通过自有团队加常规专业分包、设备供应商和调试服务商组织的范围，我们能够作为单一责任投标人牵头现场管理、安全、工期、质量记录和分包控制。价格方面采用工程量清单计价，需覆盖设备、材料、安装、调试、试运行、备件及维护支持，预算上限明确，报价基础可以按清单和造价咨询意见组织。风险主要是公共通道协调、临时改道、系统联调与工期衔接，这些属于正常投标风险，应在方案和风险应对中处理，而不是放弃或改为组合体。综合判断，公司有能力独立、可信地提交投标，且该包与我们的机电施工方向契合，值得争取。",
+        "content": "管理层决定：参与本包投标，以中建八局第二建设有限公司作为单一责任投标人提交。投标文件将围绕角色计划与团队可用性摘要、机电安装施工方法与调试方案、质量方法与安全施工方案、价格基础与工程量清单报价、施工进度视图与里程碑安排、风险应对与界面协调方案、公共通道协调与临时改道方案、维护支持与备件计划组织。报价按工程量清单计价，覆盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用，并参考造价咨询意见校核价格合理性与构成完整性。隧道机电、消防、通风、监控、排水泵及接地防雷等专业按自有团队牵头、常规专业分包与设备供应商配合的方式组织，由我方统一承担现场管理、安全、工期、质量记录和分包控制责任。公共通道协调、临时改道及系统联调作为重点风险，在方案中设置协调机制、调试节点和应急预案。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:12:39",
+        "verification_requests": [
+          {
+            "question": "公共通道协调与临时改道方案在投标阶段提出，具体安排待中标后与业主及相关方确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000003",
+        "stage": "bid_participation_decision",
+        "round": 3,
+        "round_type": "management_decision",
+        "company_id": "COMP-0494",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-2",
+        "agent_id": "COMP-0494_01_陳志強",
+        "agent_name": "陳志強",
+        "department": "項目管理部",
+        "position": "項目總監",
+        "message_type": "decision",
+        "thoughts": "这是一个行人隧道机电、消防及通风系统施工包，预算约4463万MOP，占项目总预算约三成，属于技术密集、界面密集的机电安装包。公司是本地总承包企业，具备总承包、设计与建造、施工管理能力，持有ISO三体系认证，企业参数显示技术、管理、施工、安全、质量能力均在0.8左右，资源容量2.0且当前占用为0，资源上完全有余量承接。包内要求供配电、照明、通风、消防报警与灭火、监控、排水泵、接地防雷及系统调试试运行，这些是机电专业安装内容，公司作为总承包可以以单一责任主体身份牵头，通过有经验的机电分包和调试单位落实专业作业，这属于正常的专业分包与外部支持，不构成必须共享投标人身份的组合体。真正的风险在于：公司档案没有列出具体隧道机电项目经验，也没有现成的机电专业团队名册和供应商报价，价格基础目前只是内部估算，工程量清单报价的完整性需要认真核对；同时公共通道协调、临时改道、系统调试组织需要明确的角色计划和里程碑安排。但这些都可以通过投标阶段的团队可用性摘要、施工方法与调试方案、质量与安全方案、风险应对与界面协调方案来回应，并在报价中留出合理的专业分包与调试费用。若判给，公司有能力作为唯一责任方管理安全、工期、质量记录和分包控制，维护支持与备件计划也可纳入承诺。因此我倾向以单一投标人身份投标，而不是组合体；组合体会稀释责任、增加协调成本，且本包并不要求共享设计或土建责任。前提是投标前完成机电专业分包意向、调试单位安排和工程量清单复核，这些作为投标假设管理，不作为阻止提交的前置条件。",
+        "content": "管理层决定：以得寶國際-得寶建築合作經營单一投标人身份参与CASE-0019/construction-2隧道机电、消防及通风系统施工包投标，不组建组合体。\n\n投标策略：由公司担任唯一责任承包方，统筹供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统的安装、调试与试运行；机电专业作业通过具经验的机电分包与调试单位落实，公司保留对安全、工期、质量记录、公共通道协调及临时改道的统一管理责任。\n\n回应重点：提交角色计划与团队可用性摘要、机电安装施工方法与调试方案、质量方法与安全施工方案、施工进度视图与里程碑安排、风险应对与界面协调方案、公共通道协调与临时改道方案、维护支持与备件计划，以及依据工程量清单编制的完整价格基础，涵盖设备、材料、安装、调试、试运行、备件及维护支持全部费用。\n\n投标假设：机电专业分包与调试单位意向将在投标期内落实并纳入报价；工程量清单与价格构成将按业主造价咨询意见复核；专业分包与调试费用在报价中预留合理额度。上述事项作为投标假设管理，不构成阻止提交的前置条件。",
+        "references": [
+          "owner_requirements",
+          "tender_package",
+          "company_profile",
+          "internal_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "bid",
+        "decision_impact": "final",
+        "final_decision": "bid",
+        "timestamp": "2026-11-20T01:12:39",
+        "verification_requests": []
+      },
+      {
+        "message_id": "msg_000004",
+        "stage": "bid_document_generation",
+        "round": 4,
+        "round_type": "final_draft_conditions",
+        "company_id": "COMP-0191",
+        "company_role": "contractor",
+        "package_id": "CASE-0019/construction-2",
+        "agent_id": "COMP-0191_01_陈志强",
+        "agent_name": "陈志强",
+        "department": "项目决策组",
+        "position": "项目总监",
+        "message_type": "decision",
+        "thoughts": "",
+        "content": "质量文档按业主文档管理要求编制并提交，关键工序设置停止点待监理确认后方可进入下道工序\n公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认\n公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+        "references": [
+          "final_bid_draft"
+        ],
+        "response_to": [],
+        "recommendation": "",
+        "decision_impact": "pending checks",
+        "final_decision": "",
+        "timestamp": "2026-11-20T01:12:55",
+        "verification_requests": [
+          {
+            "question": "质量文档按业主文档管理要求编制并提交，关键工序设置停止点待监理确认后方可进入下道工序",
+            "required_before_submission": false
+          },
+          {
+            "question": "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+            "required_before_submission": false
+          },
+          {
+            "question": "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+            "required_before_submission": false
+          }
+        ]
+      },
+      {
+        "message_id": "msg_000005",
+        "stage": "owner_award_decision",
+        "round": 3,
+        "round_type": "owner_decision",
+        "company_id": "OWNER-4048bdd520aa7f",
+        "company_role": "owner",
+        "package_id": "CASE-0019/construction-2",
+        "agent_id": "OWNER-4048bdd520aa7f_06_何淑贞",
+        "agent_name": "何淑贞",
+        "department": "公共建设局-对外协调组",
+        "position": "利益相关方与社区协调主管",
+        "message_type": "decision",
+        "thoughts": "作为业主方最终决策人，我需要为这个隧道机电包的交付结果负责。评标推荐中建八局第二建设有限公司，其报价MOP 39,000,000为三家最低，且以自有团队牵头关键系统调试，能力匹配度较高，业主审查回应也较清晰。但我不能只看价格：最低报价下现场管理与风险预备额度偏紧，存在后续索赔暴露；公共通道协调与临时改道方案尚未与相关方确认；投标人还提交了未解决条件，部分资源承诺仍待落实。这些不是否决理由，而是判给前必须聚焦澄清的事项。中交第一航务工程局有限公司价格居中、构成完整，但机电深化与消防通风调试依赖尚未取得正式报价的专业分包，自施深度有限；得寶國際-得寶建築合作經營体系稳健，但报价MOP 43,835,000接近包件上限，且机电施工主要依赖分包。综合能力匹配、价格合理性与风险控制，我接受评标建议，将中建八局第二建设有限公司作为最终判给对象，并把管理与风险预备覆盖、公共通道改道方案、未解决条件及调试资源落实作为判给前的澄清重点，同时对齐业主审查与宏观审批程序。",
+        "content": "经评标与业主审查，本包件最终判给中建八局第二建设有限公司（COMP-0191），其报价为MOP 39,000,000。该公司以自有管理与技术团队牵头七个机电系统安装与调试，关键调试由自有骨干主导，质量复核、停止点验收与安全专项方案具体，能力匹配与业主审查回应较清晰，报价为三家最低且覆盖设备、安装、调试与维护支持，在可负担性与交付风险之间取得较好平衡。判给前澄清重点为现场管理与风险预备是否足以覆盖全部协调与调试工作量、公共通道协调与临时改道方案、提交的未解决条件以及调试与试运行资源落实安排，相关澄清与审批对齐业主审查与宏观审批程序。",
+        "references": [
+          "evaluation_report",
+          "opening_record",
+          "bid_documents",
+          "owner_award_discussion"
+        ],
+        "response_to": [],
+        "recommendation": "award",
+        "decision_impact": "final",
+        "final_decision": "award",
+        "timestamp": "2026-11-20T01:13:30",
+        "verification_requests": []
+      }
+    ],
+    "participation_decisions": [
+      {
+        "company_id": "COMP-0153",
+        "package_id": "CASE-0019/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，隧道机电、消防及通风系统施工包属于本公司基础设施施工主业的合理延伸，预算4462.5万MOP在可承受范围，当前资源占用为零、可用资源2.0，满足包件0.7的资源需求，具备独立投标的资源条件。公司在机电安装、信息系统集成、电气设备销售与维护方面有相应经营许可与能力基础，可作为单一责任主体承担投标、施工组织、安全管理、质量文档、进度控制与系统调试组织。机电专业深化与消防、通风调试将通过明确的专业分包与调试计划落实，属于正常的分包与界面管理安排，不构成需要组合体共享投标身份的情形。投标将重点回应角色计划与团队可用性、机电安装施工方法与调试方案、质量与安全施工方案、工程量清单报价、进度视图、风险与界面协调、公共通道协调及维护备件计划。相关专业分包资源与调试安排作为投标假设在文件中明确，不作为已落实承诺陈述。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "机电专业分包与消防、通风调试资源拟通过专业分包安排落实，投标阶段以预算性成本估算列账，尚未取得正式报价",
+          "系统调试与试运行所需的专项调试队伍与仪器按计划配置，具体人员待中标后按角色计划到位",
+          "设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准",
+          "公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0191",
+        "package_id": "CASE-0019/construction-2",
+        "decision": "bid",
+        "reason": "经管理层审议，本包属于行人隧道机电、消防及通风系统施工，范围清晰、预算上限明确（44625000 MOP），与我方建设工程施工、电气安装、机械设备安装、安全技术防范及机电调试能力相符。当前公司资源占用为零、可用资源充足，具备作为单一责任投标人牵头组织现场管理、安全施工、进度控制、质量文档和分包协调的条件。隧道机电各专业可通过自有团队与常规专业分包、设备供应商及调试服务商组合实施，不构成必须共享投标身份或技术权威的组合体情形。主要风险集中在公共通道协调、临时改道、系统联调与工期衔接，应通过施工方法、调试方案、风险应对和界面协调方案在投标文件中正面回应，并在报价中计入调试、试运行、备件及维护支持费用。综合商业价值、能力匹配和风险承受度，决定以独立投标人身份参与投标。",
+        "unresolved_condition_ids": [
+          "condition_ac2c147f9c5d584dee0a"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+          "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+          "公共通道协调与临时改道方案在投标阶段提出，具体安排待中标后与业主及相关方确认",
+          "系统调试与试运行按进度视图设置节点，联调资源在开工前落实"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "company_id": "COMP-0494",
+        "package_id": "CASE-0019/construction-2",
+        "decision": "bid",
+        "reason": "本包为行人隧道机电、消防及通风系统施工，预算约4463万MOP，与公司总承包及施工管理定位相符，公司资源容量充足、当前无占用，三体系认证和机电协调能力可支撑单一责任主体投标。隧道机电专业作业可通过有经验的机电分包与调试单位落实，属于正常专业分包而非共享投标人身份的组合体，公司能够牵头安全、工期、质量记录、公共通道协调和分包控制。主要缺口是具体隧道机电经验与已落实的分包报价，将以团队可用性摘要、施工与调试方案、质量安全方案、风险与界面协调方案及完整工程量清单报价回应，并在报价中预留专业分包与调试费用。综合判断以单一投标人身份投标更符合公司商业利益与责任控制。",
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "机电专业分包与调试单位意向将在投标期内落实，并纳入工程量清单报价",
+          "工程量清单与价格构成将按业主造价咨询包意见复核，确保完整性",
+          "报价中预留专业分包、调试与试运行费用及合理风险额度",
+          "公共通道协调与临时改道方案按现场条件在施工组织中细化",
+          "维护支持与备件计划按系统设备清单编制并纳入报价"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "consortiums": [],
+    "bid_documents": [
+      {
+        "bid_id": "bid_CASE-0019/construction-2_001",
+        "package_id": "CASE-0019/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0153",
+        "bidder_name": "中交第一航务工程局有限公司",
+        "technical_proposal": "本公司以单一责任主体身份投标隧道机电、消防及通风系统施工包，按供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷七个分系统编制安装与调试方案。供配电系统按高低压柜、变压器、UPS及配电箱分区分段安装，先完成接地防雷与等电位联结，再送电调试；照明系统按基本照明、应急照明与疏散指示分回路施工，配合照度实测；通风系统完成风机、风阀、消声器及风管安装后进行风量平衡与联动测试；消防报警与灭火系统按探测器、手报、声光报警、消防泵及灭火设备分项安装，联动调试与消防验收同步组织；监控系统完成摄像机、控制箱、传输链路及监控中心集成；排水泵系统完成泵组、液位控制与双电源切换调试。系统调试与试运行按单机调试、分系统调试、联动调试、试运行四阶段组织，编制调试大纲、见证记录与试运行报告。机电专业深化、消防与通风专项调试拟通过专业分包落实，投标阶段以预算性成本估算列账，尚未取得正式报价，作为投标假设在文件中明确。质量文档管理执行内部质量程序与独立检查方法，隐蔽工程验收、材料报审、调试记录按分项归档。安全施工管理覆盖临时用电、动火作业、有限空间作业及公共通道作业面防护。",
+        "implementation_plan": "总工期按24个月编排。第1至3月：施工准备、深化设计与设备材料报审、公共通道协调与临时改道方案细化确认、临时设施与临时用电布置。第4至8月：接地防雷、预埋管线及桥架安装，配合土建界面移交。第9至14月：供配电、照明、排水泵系统安装。第12至17月：通风、消防报警与灭火系统安装。第15至19月：监控系统安装与集成。第18至21月：单机调试与分系统调试。第21至23月：联动调试、消防验收配合与试运行。第24月：竣工资料移交、备件移交与维护支持交接。与设计包、造价包的界面依赖在开工前以界面协调会明确，机电各系统穿插顺序按土建移交面分批展开。公共通道协调与临时改道按分段施工、错峰作业与临时围蔽组织，具体方案与业主及相关管理部门在施工前细化确认。",
+        "quotation": 41920000.0,
+        "schedule_commitment": "本公司承诺按24个月总工期完成本包施工、调试与试运行，里程碑如下：第3月完成施工准备与深化设计报审；第8月完成接地防雷与预埋管线；第14月完成供配电、照明及排水泵安装；第17月完成通风与消防系统安装；第19月完成监控系统集成；第21月完成分系统调试；第23月完成联动调试与试运行；第24月完成竣工资料、备件移交与维护支持交接。进度视图将与设计包、造价包界面依赖联动更新，公共通道协调与临时改道安排纳入月度进度评审。",
+        "compliance_statement": "本公司接受业主按工程量清单计价进行价格合理性与价格构成完整性的定性比较，报价涵盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用。质量文档管理执行内部质量程序与独立检查方法，隐蔽工程验收、材料报审、调试记录及试运行报告按分项提交业主审查。调试与试运行组织见证与记录，消防验收配合按业主及主管部门要求执行。公共通道协调与临时改道方案在施工前与业主及相关管理部门细化确认。维护支持与备件计划按业主要求单列并移交。",
+        "risk_response": "主要风险及应对：一、机电专业分包与消防通风调试资源尚未取得正式报价，以预算性成本估算列账并设风险预备费，中标后按角色计划落实分包与调试队伍；二、设备到货周期风险，按市场价格指数编制预算并设价格调整预备，关键设备提前询价与排产；三、调试周期风险，按四阶段调试组织并预留联动调试与验收配合时间；四、公共通道协调风险，分段施工、错峰作业并与业主及相关管理部门施工前细化确认临时改道方案；五、界面风险，与设计包、造价包在开工前以界面协调会明确依赖关系，机电各系统穿插顺序按土建移交面分批展开。",
+        "submission_summary": "本公司以单一责任主体身份提交隧道机电、消防及通风系统施工包投标，报价MOP 41,920,000，低于包件上限MOP 44,625,000。报价按工程量清单计价编制，构成如下：供配电、照明及接地防雷系统设备材料与安装MOP 11,280,000；通风、消防报警与灭火系统设备材料与安装MOP 10,450,000；监控、排水泵系统集成及安装MOP 6,350,000；系统调试、试运行及消防验收配合MOP 4,280,000；备件、维护支持及竣工资料MOP 2,160,000；项目管理、安全质量、公共通道协调及临时设施MOP 3,870,000；专业分包管理、风险预备费及价格调整预备MOP 3,530,000。机电专业深化与消防、通风调试拟通过专业分包落实，投标阶段以预算性成本估算列账，尚未取得正式报价；设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准；公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认。上述安排作为投标假设在文件中明确，不构成已落实承诺。",
+        "quotation_breakdown": [
+          {
+            "item": "供配电、照明及接地防雷系统设备材料与安装",
+            "amount": 11280000,
+            "basis": "按工程量清单分项估算，含高低压柜、变压器、UPS、配电箱、灯具、电缆桥架及接地材料，设备价格按当前市场价格指数编制，实际采购价以中标后询价为准"
+          },
+          {
+            "item": "通风、消防报警与灭火系统设备材料与安装",
+            "amount": 10450000,
+            "basis": "含风机、风阀、风管、探测器、报警控制器、消防泵及灭火设备，消防专项安装与调试拟由专业分包实施，按预算性成本估算列账"
+          },
+          {
+            "item": "监控、排水泵系统集成及安装",
+            "amount": 6350000,
+            "basis": "含摄像机、控制箱、传输链路、监控中心集成、排水泵组及液位控制，系统集成按本公司信息系统集成能力自施为主"
+          },
+          {
+            "item": "系统调试、试运行及消防验收配合",
+            "amount": 4280000,
+            "basis": "按单机、分系统、联动、试运行四阶段配置专项调试队伍与仪器，含调试大纲编制、见证记录、试运行报告及验收配合，调试资源待中标后按角色计划到位"
+          },
+          {
+            "item": "备件、维护支持及竣工资料",
+            "amount": 2160000,
+            "basis": "按业主要求单列备件计划与维护支持，含操作培训、维护手册及竣工文档编制"
+          },
+          {
+            "item": "项目管理、安全质量、公共通道协调及临时设施",
+            "amount": 3870000,
+            "basis": "含项目负责人、机电协调、安全与质量管理人员、临时用电、临时围蔽、公共通道协调及临时改道配合费用"
+          },
+          {
+            "item": "专业分包管理、风险预备费及价格调整预备",
+            "amount": 3530000,
+            "basis": "机电深化与消防通风调试分包管理费、设备到货与调试周期风险预备、材料价格指数波动预备，按预算性估算列账"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "机电专业分包与消防、通风调试资源拟通过专业分包安排落实，投标阶段以预算性成本估算列账，尚未取得正式报价",
+          "系统调试与试运行所需的专项调试队伍与仪器按计划配置，具体人员待中标后按角色计划到位",
+          "设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准",
+          "公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0019/construction-2_002",
+        "package_id": "CASE-0019/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以中建八局第二建设有限公司为单一责任投标人，承担行人隧道机电、消防及通风系统施工包的全部施工、调试与试运行责任。技术方案按供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷七个专业系统组织，由我方自有管理与技术团队牵头，常规专业分包与设备供应商在统一管理下配合实施。\n\n供配电系统：按设计图纸完成高低压配电柜、变压器、UPS、电缆桥架及隧道内配电箱安装，采用分段送电、逐级核相的调试程序，确保与既有供电接口安全衔接。\n\n照明系统：完成隧道基本照明、应急照明及疏散指示安装，按亮度分区与回路分组调试，配合监控系统实现调光与故障报警联动。\n\n通风系统：完成射流风机、轴流风机及风阀安装，进行风量平衡测试与联动控制调试，确保火灾工况排烟模式可切换。\n\n消防报警与灭火系统：完成火灾探测器、手动报警按钮、消防主机及灭火设备安装，按分区进行报警联动测试，并与通风排烟、照明应急及监控系统进行联合演练。\n\n监控系统：完成摄像机、交通检测器、控制主机及通信链路安装，进行图像质量、存储与远程控制功能调试。\n\n排水泵系统：完成泵组、液位控制及配电安装，进行自动启停与备用泵切换测试。\n\n接地防雷系统：完成接地网、等电位联结及防雷器安装，进行接地电阻测试并出具记录。\n\n系统调试与试运行：编制专项调试方案，按单机调试、系统联调、试运行三阶段推进，试运行期间安排值班团队记录运行参数并处理缺陷。\n\n质量与安全：执行内部质量检查程序与独立复核制度，关键工序设置停止点；安全施工按隧道有限空间作业、临时用电及公共通道改道要求编制专项方案。\n\n公共通道协调：投标阶段提出临时改道与行人导引初步方案，中标后与业主及相关方确认具体安排。\n\n维护支持与备件：提供竣工后维护支持方案及备件清单，备件按关键设备推荐清单配置。",
+        "implementation_plan": "施工组织按24个月项目工期中的机电安装窗口安排，分为四个阶段：\n\n第一阶段（第1至3月）：施工准备与深化设计。完成现场移交接收、临时设施布置、施工组织设计报审、设备材料采购下单及公共通道协调初步方案提交。\n\n第二阶段（第4至12月）：主体安装。按供配电、照明、通风、消防、监控、排水泵、接地防雷顺序分区推进，每个系统完成安装后进入单机调试。公共通道临时改道按分区滚动实施，确保行人通行不中断。\n\n第三阶段（第13至18月）：系统联调与试运行。完成各系统联动调试、消防联合演练及试运行，记录运行参数，处理缺陷。\n\n第四阶段（第19至24月）：竣工收尾与维护支持移交。完成竣工资料整理、备件移交及维护培训。\n\n资源安排：我方投入项目经理、机电总工、安全主任、质量工程师及各专业工程师组成现场管理团队，自有技术骨干牵头关键系统调试，常规安装作业由专业分包承担，设备供应商按合同提供安装指导与调试支持。\n\n里程碑：第3月完成施工组织设计审批；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交。",
+        "quotation": 39000000.0,
+        "schedule_commitment": "我方承诺按项目24个月总工期完成本包全部机电安装、调试与试运行工作，并服从业主总体进度安排。关键里程碑：第3月完成施工组织设计及深化设计报审；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交及维护支持交接。公共通道临时改道按分区滚动实施，确保行人通行不中断。若因业主移交延迟或公共通道协调未决导致工期影响，双方按合同约定处理。",
+        "compliance_statement": "我方接受业主及监理的全过程监管，包括施工方案审批、材料设备报验、隐蔽工程验收、调试记录审查及进度款支付审核。质量文档按业主文档管理要求编制并提交，关键工序设置停止点待监理确认后方可进入下道工序。系统调试与试运行方案报业主审批后实施，试运行记录及缺陷处理报告定期提交。我方内部执行质量检查与独立复核制度，配合业主委托的第三方检测。公共通道协调与临时改道方案在投标阶段提出初步安排，中标后与业主及相关方确认具体实施方案。",
+        "risk_response": "主要风险及应对：\n\n1. 公共通道协调与临时改道风险：投标阶段提出初步改道方案，中标后立即与业主及相关方建立协调机制，按分区滚动实施，设置行人导引与安全防护，预留应急绕行方案。\n\n2. 系统联调接口风险：各专业系统由我方统一管理，调试前完成接口核对清单，设置联调节点并组织联合演练，确保消防、通风、照明、监控联动可靠。\n\n3. 设备材料价格波动风险：报价按当前市场价格指数计入，设备采购尽早锁定价格，对主要设备签订供货合同明确价格调整机制。\n\n4. 工期衔接风险：与土建及装修包保持界面协调，提前确认移交条件，关键路径工序设置缓冲时间。\n\n5. 有限空间作业安全风险：编制专项安全方案，执行作业许可与气体检测制度，配备应急救援设备。\n\n6. 分包管理风险：专业分包纳入我方统一管理，执行分包资格审查与过程考核，关键调试由自有团队主导。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份提交本包投标，报价MOP 39,000,000，低于包预算上限44,625,000。报价按工程量清单计价，覆盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用。\n\n报价构成：供配电及照明系统MOP 9,850,000；通风、消防报警与灭火系统MOP 11,250,000；监控、排水泵及接地防雷系统MOP 7,350,000；系统调试、试运行及联合演练MOP 3,850,000；现场管理、安全施工及公共通道协调MOP 2,950,000；备件、维护支持及竣工资料MOP 1,650,000；质量文档管理、保险及风险预备费MOP 2,100,000。合计MOP 39,000,000。\n\n价格基础：设备材料按当前市场价格指数1.05及劳工价格指数1.10计入，消防及监控设备按供应商初步询价估算，调试与试运行按团队配置及工期安排估算，风险预备费按直接费约5%计提。报价为固定总价，已考虑公共通道协调、系统联调及工期衔接风险。\n\n支付安排建议按合同约定节点支付：预付款、按月进度款、调试完成款、试运行验收款及竣工结算款。\n\n本投标以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份。公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认。",
+        "quotation_breakdown": [
+          {
+            "item": "供配电及照明系统设备材料与安装",
+            "amount": 9850000,
+            "basis": "按工程量清单估算，含高低压配电柜、变压器、UPS、电缆桥架、隧道灯具及应急照明，设备按当前市场价格指数1.05调整，安装人工按劳工价格指数1.10计入"
+          },
+          {
+            "item": "通风、消防报警与灭火系统设备材料与安装",
+            "amount": 11250000,
+            "basis": "含射流风机、轴流风机、风阀、火灾探测器、消防主机及灭火设备，消防设备按供应商初步询价估算，安装与调试人工按现场作业条件计入"
+          },
+          {
+            "item": "监控、排水泵及接地防雷系统设备材料与安装",
+            "amount": 7350000,
+            "basis": "含摄像机、控制主机、通信链路、排水泵组、液位控制及接地防雷材料，监控系统集成按专业分包报价估算，接地测试按独立检测计入"
+          },
+          {
+            "item": "系统调试、试运行及联合演练",
+            "amount": 3850000,
+            "basis": "含单机调试、系统联调、消防联合演练及试运行值班，按调试团队6人×6个月及试运行3个月值班安排估算，含调试仪器租赁"
+          },
+          {
+            "item": "现场管理、安全施工及公共通道协调",
+            "amount": 2950000,
+            "basis": "含项目经理、机电总工、安全主任、质量工程师及专业工程师现场管理团队24个月薪酬分摊，临时改道设施、安全防护及公共通道协调费用"
+          },
+          {
+            "item": "备件、维护支持及竣工资料",
+            "amount": 1650000,
+            "basis": "按关键设备备件推荐清单估算，含竣工后12个月维护支持响应及竣工资料编制，备件价格为供应商初步报价估算"
+          },
+          {
+            "item": "质量文档管理、保险及风险预备费",
+            "amount": 2100000,
+            "basis": "含质量检查与独立复核、竣工文档管理、工程保险及不可预见风险预备费，按直接费约5%计提"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_ac2c147f9c5d584dee0a",
+          "condition_daf1c10859fe584358e2",
+          "condition_f8ed9b40bc18c61e33da"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+          "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+          "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+          "系统调试与试运行按进度视图设置节点，联调资源在开工前落实",
+          "设备材料价格按当前市场价格指数计入，主要设备采购尽早锁定价格"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      {
+        "bid_id": "bid_CASE-0019/construction-2_003",
+        "package_id": "CASE-0019/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0494",
+        "bidder_name": "得寶國際-得寶建築合作經營",
+        "technical_proposal": "得寶國際-得寶建築合作經營以單一責任承包方身份投標本隧道機電、消防及通風系統施工包。技術方案以公司總承包管理體系為核心，統籌供配電、照明、通風、消防報警與滅火、監控、排水泵及接地防雷系統的安裝、調試與試運行。機電專業作業由具經驗的機電分包與調試單位執行，公司保留對安全、工期、質量記錄、公共通道協調及臨時改道的統一管理責任。\n\n主要施工方法：\n- 供配電與照明：按系統圖與纜線清冊進行高低壓配電櫃、變壓器、UPS、照明燈具及應急照明安裝，執行絕緣測試、相位檢查及負載平衡調試。\n- 通風系統：安裝風機、風閥、消聲器及風管，進行風量測試與平衡調試，確保隧道通風工況達標。\n- 消防報警與滅火：安裝火災報警控制器、探測器、手動報警按鈕、消防栓及自動滅火系統，完成迴路測試與聯動調試。\n- 監控與排水泵：安裝CCTV、SCADA現場控制單元、液位計及排水泵，完成信號點對點測試與遠程監控集成。\n- 接地防雷：按規範敷設接地網、避雷帶及等電位聯結，實測接地電阻並提交記錄。\n- 系統調試與試運行：編制單機調試、系統聯調及試運行方案，分階段進行功能測試、性能驗證及連續運行考核，提交調試報告與試運行記錄。\n\n質量方法：依ISO 9001程序執行材料進場檢驗、隱蔽工程驗收、工序交接檢查及獨立檢查覆核；所有測試記錄、調試報告及竣工資料按文檔管理程序歸檔。\n\n安全施工：依ISO 45001建立安全管理計劃，實施風險評估、工作許可、密閉空間作業控制、臨時用電安全及應急演練；公共通道作業設置圍封、警示及臨時改道指示，確保行人安全。\n\n介面協調：與設計包、造價包及土建承包商協調機電預留、設備基礎及進場時序；建立介面協調會議機制，跟蹤圖紙澄清、設備到貨及調試條件。\n\n維護支持與備件：按設備清單編制備件計劃，提供竣工後維護支持方案及操作培訓。",
+        "implementation_plan": "本包施工期按項目總工期24個月中的機電安裝及調試階段安排，總體分為四個階段：\n\n第一階段（第1至3個月）：施工準備與深化設計。組建項目管理團隊，完成機電深化圖、設備選型及分包招標；編制施工組織設計、質量計劃、安全計劃及公共通道協調方案；辦理開工手續及臨時設施。\n\n第二階段（第4至12個月）：機電安裝。按區域流水施工，依次進行供配電、照明、通風、消防報警與滅火、監控、排水泵及接地防雷系統的管線敷設、設備安裝及單機調試；同步執行材料檢驗、隱蔽驗收及工序交接。\n\n第三階段（第13至18個月）：系統調試與試運行。完成各系統聯調、功能測試及性能驗證；組織消防系統專項驗收、通風風量平衡測試及監控系統集成測試；進行連續試運行考核，提交調試報告。\n\n第四階段（第19至24個月）：竣工驗收與移交。完成竣工資料整理、備件移交、操作培訓及維護支持交接；配合業主進行最終驗收及缺陷修復。\n\n里程碑安排：\n- 第3個月末：深化設計及施工準備完成。\n- 第12個月末：機電安裝完成，單機調試合格。\n- 第18個月末：系統聯調及試運行完成。\n- 第24個月末：竣工驗收及移交完成。\n\n資源配置：項目總監1名、項目經理1名、機電協調工程師2名、安全主任1名、質量工程師1名、文檔控制員1名；機電分包按工種配置安裝技工及調試技術員，高峰期現場作業人員約40至50人。",
+        "quotation": 43835000.0,
+        "schedule_commitment": "本包施工期按項目總工期24個月安排，機電安裝及調試階段自第1個月施工準備起至第24個月竣工驗收移交止。關鍵里程碑：第3個月末完成深化設計及施工準備；第12個月末完成機電安裝及單機調試；第18個月末完成系統聯調及試運行；第24個月末完成竣工驗收及移交。公司承諾按上述里程碑組織資源，確保機電分包與調試單位按時進場，並每週提交進度報告，每月進行進度評審及偏差糾正。",
+        "compliance_statement": "業主控制要求回應：\n- 角色計劃與團隊可用性摘要：已提交項目管理團隊角色計劃，項目總監、項目經理、機電協調工程師、安全主任、質量工程師及文檔控制員均為公司現有可用人員；機電分包與調試單位將在投標期內落實意向，並納入分包管理。\n- 質量方法：依ISO 9001程序執行材料檢驗、工序檢查、獨立覆核及文檔控制，所有測試及調試記錄可追溯。\n- 安全施工方案：依ISO 45001建立安全管理計劃，實施風險評估、工作許可、密閉空間作業控制及應急演練。\n- 價格基礎與工程量清單報價：按工程量清單計價，報價涵蓋機電設備、材料、安裝、調試、試運行、備件及維護支持全部費用，價格構成完整。\n- 施工進度視圖與里程碑：已提交24個月進度計劃及四個關鍵里程碑。\n- 風險應對與界面協調方案：已識別分包落實、調試週期及公共通道協調風險，並制定協調會議及跟蹤機制。\n- 公共通道協調與臨時改道方案：施工期間設置圍封、警示及臨時改道指示，確保行人安全，並與相關管理單位協調。\n- 維護支持與備件計劃：按設備清單編制备件計劃，提供12個月維護支持及操作培訓。",
+        "risk_response": "主要風險及應對：\n1. 機電分包與調試單位意向尚未正式落實：投標期內完成分包意向確認，並在合同中明確分包責任、進度及質量要求；公司保留統一管理責任。\n2. 調試週期不確定性：編制詳細調試計劃，預留緩衝時間，提前協調設備到貨及介面條件；必要時增加調試資源。\n3. 公共通道協調風險：施工前與相關管理單位協調臨時改道方案，設置清晰指示及圍封，定期巡查確保行人安全。\n4. 材料價格波動：報價已考慮當前材料價格指數，並在風險預備費中計提一定額度；合同採用固定總價，公司承擔價格波動風險。\n5. 介面協調風險：建立介面協調會議機制，跟蹤設計澄清、土建預留及設備基礎條件，及時解決介面問題。\n6. 安全風險：嚴格執行ISO 45001安全管理體系，實施密閉空間作業許可及應急演練，確保施工安全。",
+        "submission_summary": "得寶國際-得寶建築合作經營以單一責任承包方身份提交本隧道機電、消防及通風系統施工包投標。報價總額為MOP 43,835,000，按工程量清單計價，涵蓋機電設備與材料、安裝、調試、試運行、備件及維護支持全部費用。\n\n報價構成：\n- 機電設備與材料費：MOP 19,850,000\n- 機電安裝與分包工程費：MOP 11,200,000\n- 系統調試與試運行費：MOP 3,850,000\n- 備件與維護支持費：MOP 1,650,000\n- 項目管理與協調費：MOP 2,480,000\n- 安全、質量與環境管理費：MOP 980,000\n- 風險預備費與利潤：MOP 3,825,000\n合計：MOP 43,835,000\n\n價格基礎說明：機電專業分包與調試單位意向將在投標期內落實，報價已預留專業分包、調試及試運行費用；工程量清單與價格構成將按業主造價諮詢意見複核，確保完整性。公司具備ISO 9001、ISO 14001及ISO 45001認證，以總承包管理體系統籌安全、工期、質量記錄及公共通道協調。投標假設：機電分包與調試單位意向在投標期內落實並納入報價；工程量清單按造價諮詢意見複核；報價中預留合理風險額度；公共通道協調方案按現場條件細化；維護支持與備件計劃按設備清單編制。",
+        "quotation_breakdown": [
+          {
+            "item": "機電設備與材料費",
+            "amount": 19850000,
+            "basis": "按工程量清單及設備清冊估算，包括配電櫃、變壓器、照明燈具、風機、風閥、火災報警控制器、探測器、消防栓、滅火系統、CCTV、SCADA單元、排水泵、接地材料及電纜等，已考慮材料價格指數1.0545的影響。"
+          },
+          {
+            "item": "機電安裝與分包工程費",
+            "amount": 11200000,
+            "basis": "機電專業分包安裝費，涵蓋供配電、照明、通風、消防、監控、排水泵及接地防雷系統的安裝人工、機具及輔材；按分包意向報價估算，已考慮勞動力價格指數1.098的影響。"
+          },
+          {
+            "item": "系統調試與試運行費",
+            "amount": 3850000,
+            "basis": "調試單位費用，包括單機調試、系統聯調、功能測試、性能驗證、連續試運行考核及調試報告編制；按調試工作量及專業技術人員投入估算。"
+          },
+          {
+            "item": "備件與維護支持費",
+            "amount": 1650000,
+            "basis": "按設備清單編制备件計劃，包括易損件、專用工具及竣工後維護支持服務；維護支持期按12個月估算。"
+          },
+          {
+            "item": "項目管理與協調費",
+            "amount": 2480000,
+            "basis": "公司項目管理團隊人工成本，包括項目總監、項目經理、機電協調工程師、安全主任、質量工程師及文檔控制員；含公共通道協調、臨時改道方案實施及介面協調會議費用。"
+          },
+          {
+            "item": "安全、質量與環境管理費",
+            "amount": 980000,
+            "basis": "依ISO 9001、ISO 14001及ISO 45001體系執行安全施工、質量檢查、環境管理及文檔控制所需的專項費用，包括安全防護設施、檢測儀器、培訓及應急演練。"
+          },
+          {
+            "item": "風險預備費與利潤",
+            "amount": 3825000,
+            "basis": "考慮機電分包意向尚未正式落實、調試週期不確定性及公共通道協調風險，計提風險預備費；並包含公司合理利潤及總部管理費分攤。"
+          }
+        ],
+        "unresolved_condition_ids": [],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "機電專業分包與調試單位意向將在投標期內落實，並納入工程量清單報價",
+          "工程量清單與價格構成將按業主造價諮詢包意見複核，確保完整性",
+          "報價中預留專業分包、調試與試運行費用及合理風險額度",
+          "公共通道協調與臨時改道方案按現場條件在施工組織中細化",
+          "維護支持與備件計劃按系統設備清單編制並納入報價"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      }
+    ],
+    "opening_record": [
+      {
+        "package_id": "CASE-0019/construction-2",
+        "opened_bids": [
+          {
+            "bid_id": "bid_CASE-0019/construction-2_001",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "quotation": 41920000.0,
+            "quotation_breakdown": [
+              {
+                "item": "供配电、照明及接地防雷系统设备材料与安装",
+                "amount": 11280000,
+                "basis": "按工程量清单分项估算，含高低压柜、变压器、UPS、配电箱、灯具、电缆桥架及接地材料，设备价格按当前市场价格指数编制，实际采购价以中标后询价为准"
+              },
+              {
+                "item": "通风、消防报警与灭火系统设备材料与安装",
+                "amount": 10450000,
+                "basis": "含风机、风阀、风管、探测器、报警控制器、消防泵及灭火设备，消防专项安装与调试拟由专业分包实施，按预算性成本估算列账"
+              },
+              {
+                "item": "监控、排水泵系统集成及安装",
+                "amount": 6350000,
+                "basis": "含摄像机、控制箱、传输链路、监控中心集成、排水泵组及液位控制，系统集成按本公司信息系统集成能力自施为主"
+              },
+              {
+                "item": "系统调试、试运行及消防验收配合",
+                "amount": 4280000,
+                "basis": "按单机、分系统、联动、试运行四阶段配置专项调试队伍与仪器，含调试大纲编制、见证记录、试运行报告及验收配合，调试资源待中标后按角色计划到位"
+              },
+              {
+                "item": "备件、维护支持及竣工资料",
+                "amount": 2160000,
+                "basis": "按业主要求单列备件计划与维护支持，含操作培训、维护手册及竣工文档编制"
+              },
+              {
+                "item": "项目管理、安全质量、公共通道协调及临时设施",
+                "amount": 3870000,
+                "basis": "含项目负责人、机电协调、安全与质量管理人员、临时用电、临时围蔽、公共通道协调及临时改道配合费用"
+              },
+              {
+                "item": "专业分包管理、风险预备费及价格调整预备",
+                "amount": 3530000,
+                "basis": "机电深化与消防通风调试分包管理费、设备到货与调试周期风险预备、材料价格指数波动预备，按预算性估算列账"
+              }
+            ],
+            "submission_summary": "本公司以单一责任主体身份提交隧道机电、消防及通风系统施工包投标，报价MOP 41,920,000，低于包件上限MOP 44,625,000。报价按工程量清单计价编制，构成如下：供配电、照明及接地防雷系统设备材料与安装MOP 11,280,000；通风、消防报警与灭火系统设备材料与安装MOP 10,450,000；监控、排水泵系统集成及安装MOP 6,350,000；系统调试、试运行及消防验收配合MOP 4,280,000；备件、维护支持及竣工资料MOP 2,160,000；项目管理、安全质量、公共通道协调及临时设施MOP 3,870,000；专业分包管理、风险预备费及价格调整预备MOP 3,530,000。机电专业深化与消防、通风调试拟通过专业分包落实，投标阶段以预算性成本估算列账，尚未取得正式报价；设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准；公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认。上述安排作为投标假设在文件中明确，不构成已落实承诺。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "机电专业分包与消防、通风调试资源拟通过专业分包安排落实，投标阶段以预算性成本估算列账，尚未取得正式报价",
+              "系统调试与试运行所需的专项调试队伍与仪器按计划配置，具体人员待中标后按角色计划到位",
+              "设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准",
+              "公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-2_002",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "quotation": 39000000.0,
+            "quotation_breakdown": [
+              {
+                "item": "供配电及照明系统设备材料与安装",
+                "amount": 9850000,
+                "basis": "按工程量清单估算，含高低压配电柜、变压器、UPS、电缆桥架、隧道灯具及应急照明，设备按当前市场价格指数1.05调整，安装人工按劳工价格指数1.10计入"
+              },
+              {
+                "item": "通风、消防报警与灭火系统设备材料与安装",
+                "amount": 11250000,
+                "basis": "含射流风机、轴流风机、风阀、火灾探测器、消防主机及灭火设备，消防设备按供应商初步询价估算，安装与调试人工按现场作业条件计入"
+              },
+              {
+                "item": "监控、排水泵及接地防雷系统设备材料与安装",
+                "amount": 7350000,
+                "basis": "含摄像机、控制主机、通信链路、排水泵组、液位控制及接地防雷材料，监控系统集成按专业分包报价估算，接地测试按独立检测计入"
+              },
+              {
+                "item": "系统调试、试运行及联合演练",
+                "amount": 3850000,
+                "basis": "含单机调试、系统联调、消防联合演练及试运行值班，按调试团队6人×6个月及试运行3个月值班安排估算，含调试仪器租赁"
+              },
+              {
+                "item": "现场管理、安全施工及公共通道协调",
+                "amount": 2950000,
+                "basis": "含项目经理、机电总工、安全主任、质量工程师及专业工程师现场管理团队24个月薪酬分摊，临时改道设施、安全防护及公共通道协调费用"
+              },
+              {
+                "item": "备件、维护支持及竣工资料",
+                "amount": 1650000,
+                "basis": "按关键设备备件推荐清单估算，含竣工后12个月维护支持响应及竣工资料编制，备件价格为供应商初步报价估算"
+              },
+              {
+                "item": "质量文档管理、保险及风险预备费",
+                "amount": 2100000,
+                "basis": "含质量检查与独立复核、竣工文档管理、工程保险及不可预见风险预备费，按直接费约5%计提"
+              }
+            ],
+            "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份提交本包投标，报价MOP 39,000,000，低于包预算上限44,625,000。报价按工程量清单计价，覆盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用。\n\n报价构成：供配电及照明系统MOP 9,850,000；通风、消防报警与灭火系统MOP 11,250,000；监控、排水泵及接地防雷系统MOP 7,350,000；系统调试、试运行及联合演练MOP 3,850,000；现场管理、安全施工及公共通道协调MOP 2,950,000；备件、维护支持及竣工资料MOP 1,650,000；质量文档管理、保险及风险预备费MOP 2,100,000。合计MOP 39,000,000。\n\n价格基础：设备材料按当前市场价格指数1.05及劳工价格指数1.10计入，消防及监控设备按供应商初步询价估算，调试与试运行按团队配置及工期安排估算，风险预备费按直接费约5%计提。报价为固定总价，已考虑公共通道协调、系统联调及工期衔接风险。\n\n支付安排建议按合同约定节点支付：预付款、按月进度款、调试完成款、试运行验收款及竣工结算款。\n\n本投标以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份。公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认。",
+            "unresolved_condition_ids": [
+              "condition_ac2c147f9c5d584dee0a",
+              "condition_daf1c10859fe584358e2",
+              "condition_f8ed9b40bc18c61e33da"
+            ],
+            "bid_assumptions": [
+              "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+              "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+              "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+              "系统调试与试运行按进度视图设置节点，联调资源在开工前落实",
+              "设备材料价格按当前市场价格指数计入，主要设备采购尽早锁定价格"
+            ],
+            "successfully_submitted": true
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-2_003",
+            "bidder_type": "company",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "quotation": 43835000.0,
+            "quotation_breakdown": [
+              {
+                "item": "機電設備與材料費",
+                "amount": 19850000,
+                "basis": "按工程量清單及設備清冊估算，包括配電櫃、變壓器、照明燈具、風機、風閥、火災報警控制器、探測器、消防栓、滅火系統、CCTV、SCADA單元、排水泵、接地材料及電纜等，已考慮材料價格指數1.0545的影響。"
+              },
+              {
+                "item": "機電安裝與分包工程費",
+                "amount": 11200000,
+                "basis": "機電專業分包安裝費，涵蓋供配電、照明、通風、消防、監控、排水泵及接地防雷系統的安裝人工、機具及輔材；按分包意向報價估算，已考慮勞動力價格指數1.098的影響。"
+              },
+              {
+                "item": "系統調試與試運行費",
+                "amount": 3850000,
+                "basis": "調試單位費用，包括單機調試、系統聯調、功能測試、性能驗證、連續試運行考核及調試報告編制；按調試工作量及專業技術人員投入估算。"
+              },
+              {
+                "item": "備件與維護支持費",
+                "amount": 1650000,
+                "basis": "按設備清單編制备件計劃，包括易損件、專用工具及竣工後維護支持服務；維護支持期按12個月估算。"
+              },
+              {
+                "item": "項目管理與協調費",
+                "amount": 2480000,
+                "basis": "公司項目管理團隊人工成本，包括項目總監、項目經理、機電協調工程師、安全主任、質量工程師及文檔控制員；含公共通道協調、臨時改道方案實施及介面協調會議費用。"
+              },
+              {
+                "item": "安全、質量與環境管理費",
+                "amount": 980000,
+                "basis": "依ISO 9001、ISO 14001及ISO 45001體系執行安全施工、質量檢查、環境管理及文檔控制所需的專項費用，包括安全防護設施、檢測儀器、培訓及應急演練。"
+              },
+              {
+                "item": "風險預備費與利潤",
+                "amount": 3825000,
+                "basis": "考慮機電分包意向尚未正式落實、調試週期不確定性及公共通道協調風險，計提風險預備費；並包含公司合理利潤及總部管理費分攤。"
+              }
+            ],
+            "submission_summary": "得寶國際-得寶建築合作經營以單一責任承包方身份提交本隧道機電、消防及通風系統施工包投標。報價總額為MOP 43,835,000，按工程量清單計價，涵蓋機電設備與材料、安裝、調試、試運行、備件及維護支持全部費用。\n\n報價構成：\n- 機電設備與材料費：MOP 19,850,000\n- 機電安裝與分包工程費：MOP 11,200,000\n- 系統調試與試運行費：MOP 3,850,000\n- 備件與維護支持費：MOP 1,650,000\n- 項目管理與協調費：MOP 2,480,000\n- 安全、質量與環境管理費：MOP 980,000\n- 風險預備費與利潤：MOP 3,825,000\n合計：MOP 43,835,000\n\n價格基礎說明：機電專業分包與調試單位意向將在投標期內落實，報價已預留專業分包、調試及試運行費用；工程量清單與價格構成將按業主造價諮詢意見複核，確保完整性。公司具備ISO 9001、ISO 14001及ISO 45001認證，以總承包管理體系統籌安全、工期、質量記錄及公共通道協調。投標假設：機電分包與調試單位意向在投標期內落實並納入報價；工程量清單按造價諮詢意見複核；報價中預留合理風險額度；公共通道協調方案按現場條件細化；維護支持與備件計劃按設備清單編制。",
+            "unresolved_condition_ids": [],
+            "bid_assumptions": [
+              "機電專業分包與調試單位意向將在投標期內落實，並納入工程量清單報價",
+              "工程量清單與價格構成將按業主造價諮詢包意見複核，確保完整性",
+              "報價中預留專業分包、調試與試運行費用及合理風險額度",
+              "公共通道協調與臨時改道方案按現場條件在施工組織中細化",
+              "維護支持與備件計劃按系統設備清單編制並納入報價"
+            ],
+            "successfully_submitted": true
+          }
+        ],
+        "opening_summary": "3 bids opened for 隧道机电、消防及通风系统施工包.",
+        "disqualified_bids": []
+      }
+    ],
+    "evaluation_report": [
+      {
+        "package_id": "CASE-0019/construction-2",
+        "evaluators": [
+          "OWNER-4048bdd520aa7f_01_陈志远",
+          "OWNER-4048bdd520aa7f_02_黄嘉敏",
+          "OWNER-4048bdd520aa7f_03_李伟雄",
+          "OWNER-4048bdd520aa7f_04_苏丽华",
+          "OWNER-4048bdd520aa7f_05_郑家豪",
+          "OWNER-4048bdd520aa7f_06_何淑贞"
+        ],
+        "bid_evaluations": [
+          {
+            "bid_id": "bid_CASE-0019/construction-2_001",
+            "bidder_id": "COMP-0153",
+            "bidder_name": "中交第一航务工程局有限公司",
+            "technical_view": "按七个分系统编制安装与四阶段调试方案，方法与隧道机电包需求匹配，但机电深化及消防通风调试依赖尚未取得正式报价的专业分包，自施深度有限。",
+            "cost_view": "报价MOP 41,920,000低于包件上限，构成完整并设风险预备费，但分包与调试资源以预算性估算列账，价格可信度取决于中标后能否按估算落实资源。",
+            "owner_control_view": "回应了价格构成、质量文档、调试见证与公共通道协调要求，业主审查路径清晰，但多项关键安排仍为投标假设。",
+            "strengths": [
+              "单一责任主体身份明确，分系统施工与调试大纲完整",
+              "报价构成透明，单列备件、维护支持与风险预备费",
+              "对分包、设备到货、调试及界面风险均有对应措施"
+            ],
+            "concerns": [
+              "机电深化与消防通风调试分包尚未取得正式报价",
+              "调试队伍与仪器待中标后到位，人员配置现实性未证实",
+              "公共通道协调与临时改道方案仍待施工前细化"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-2_002",
+            "bidder_id": "COMP-0191",
+            "bidder_name": "中建八局第二建设有限公司",
+            "technical_view": "以自有管理与技术团队牵头七个系统安装与调试，关键调试由自有骨干主导，施工方法与联调安排贴合隧道机电包需求。",
+            "cost_view": "报价MOP 39,000,000为三家中最低，按工程量清单计价并计入价格指数与风险预备费，但现场管理与风险预备相对偏紧，需核实是否覆盖全部协调与调试工作量。",
+            "owner_control_view": "明确接受全过程监管、停止点验收与第三方检测，文档与支付审核安排清晰，但公共通道改道仅提出初步方案。",
+            "strengths": [
+              "自有团队牵头关键系统调试，能力匹配度较高",
+              "质量复核与安全专项方案具体，业主审查清晰",
+              "价格最低且构成覆盖设备、安装、调试与维护支持"
+            ],
+            "concerns": [
+              "最低报价下现场管理与风险预备额度偏紧，存在后续索赔暴露",
+              "公共通道协调与临时改道方案尚未与相关方确认",
+              "提交了未解决条件，部分资源承诺仍待落实"
+            ]
+          },
+          {
+            "bid_id": "bid_CASE-0019/construction-2_003",
+            "bidder_id": "COMP-0494",
+            "bidder_name": "得寶國際-得寶建築合作經營",
+            "technical_view": "以总承包管理体系统筹机电分包与调试单位，施工方法、质量与安全体系描述完整，但实际机电安装与调试执行主要依赖分包。",
+            "cost_view": "报价MOP 43,835,000接近包件上限，设备材料与风险预备计提较充分，价格基础相对稳健但业主可获得的性价比有限。",
+            "owner_control_view": "对角色计划、质量、安全、价格基础与维护支持逐项回应，文档纪律与体系认证表述清晰，分包意向仍待投标期内落实。",
+            "strengths": [
+              "总承包管理框架与ISO体系表述完整，文档纪律较好",
+              "风险预备与利润计提充分，价格波动承受能力较强",
+              "维护支持与备件计划按设备清单编制，交付安排清楚"
+            ],
+            "concerns": [
+              "机电分包与调试单位意向尚未正式落实",
+              "报价接近上限，价格竞争力较弱",
+              "自身机电施工深度有限，主要依赖分包执行"
+            ]
+          }
+        ],
+        "comparison_summary": "三家均具备承接隧道机电包的总体能力，中建八局第二建设有限公司以自有团队牵头调试、方案与业主审查回应较清晰，但最低报价的管理与风险额度偏紧；中交第一航务工程局有限公司价格居中且构成完整，得寶國際-得寶建築合作經營体系稳健但报价接近上限。综合能力匹配、价格合理性与风险控制，建议以中建八局第二建设有限公司为首选并在判给前就公共通道协调、未解决条件及风险预备进行澄清。",
+        "recommended_winner": "COMP-0191",
+        "owner_review_notes": "首选投标人价格最低且技术组织较强，但须在判给前澄清公共通道改道方案、未解决条件及管理与风险预备是否足以覆盖全部协调与调试工作。评标结果仍须经业主审查与宏观审批程序确认。"
+      }
+    ],
+    "simulated_award_result": {
+      "project_id": "CASE-0019",
+      "package_awards": [
+        {
+          "package_id": "CASE-0019/construction-2",
+          "selected_bidder_id": "COMP-0191",
+          "selected_bidder_name": "中建八局第二建设有限公司",
+          "bidder_type": "company",
+          "decision_reason": "中建八局第二建设有限公司以自有管理与技术团队牵头七个机电系统安装与调试，关键调试由自有骨干主导，施工方法与联调安排贴合隧道机电包需求，质量复核、停止点验收与安全专项方案具体，业主审查路径清晰；其报价MOP 39,000,000为三家最低，按工程量清单计价并覆盖设备、安装、调试与维护支持，低于包件上限MOP 44,625,000，在可负担性与能力匹配之间取得较好平衡。相比中交第一航务工程局有限公司依赖尚未取得正式报价的专业分包、自施深度有限，以及得寶國際-得寶建築合作經營报价接近上限且机电施工主要依赖分包，该公司更能以单一责任主体落实调试与试运行责任。判给前将聚焦澄清现场管理与风险预备是否足以覆盖全部协调与调试工作量、公共通道协调与临时改道方案、提交的未解决条件以及调试与试运行资源落实安排。",
+          "unresolved_condition_ids": [
+            "condition_ac2c147f9c5d584dee0a",
+            "condition_daf1c10859fe584358e2",
+            "condition_f8ed9b40bc18c61e33da"
+          ],
+          "bid_assumptions": [
+            "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+            "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+            "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+            "系统调试与试运行按进度视图设置节点，联调资源在开工前落实",
+            "设备材料价格按当前市场价格指数计入，主要设备采购尽早锁定价格"
+          ],
+          "pending_clarifications": []
+        }
+      ],
+      "overall_award_summary": "Owner completed independent package-level award decisions.",
+      "selected_companies": [
+        "COMP-0191"
+      ],
+      "selected_consortiums": [],
+      "handoff_to_project_execution": "project_execution_log.json"
+    },
+    "project_execution_log": {},
+    "tender_process_log": [
+      {
+        "timestamp": "2026-11-20T01:12:40",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0153",
+          "package_id": "CASE-0019/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，隧道机电、消防及通风系统施工包属于本公司基础设施施工主业的合理延伸，预算4462.5万MOP在可承受范围，当前资源占用为零、可用资源2.0，满足包件0.7的资源需求，具备独立投标的资源条件。公司在机电安装、信息系统集成、电气设备销售与维护方面有相应经营许可与能力基础，可作为单一责任主体承担投标、施工组织、安全管理、质量文档、进度控制与系统调试组织。机电专业深化与消防、通风调试将通过明确的专业分包与调试计划落实，属于正常的分包与界面管理安排，不构成需要组合体共享投标身份的情形。投标将重点回应角色计划与团队可用性、机电安装施工方法与调试方案、质量与安全施工方案、工程量清单报价、进度视图、风险与界面协调、公共通道协调及维护备件计划。相关专业分包资源与调试安排作为投标假设在文件中明确，不作为已落实承诺陈述。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "机电专业分包与消防、通风调试资源拟通过专业分包安排落实，投标阶段以预算性成本估算列账，尚未取得正式报价",
+            "系统调试与试运行所需的专项调试队伍与仪器按计划配置，具体人员待中标后按角色计划到位",
+            "设备与材料价格按当前市场价格指数编制，实际采购价以中标后询价为准",
+            "公共通道协调与临时改道方案将与业主及相关管理部门在施工前细化确认"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:40",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0191",
+          "package_id": "CASE-0019/construction-2",
+          "decision": "bid",
+          "reason": "经管理层审议，本包属于行人隧道机电、消防及通风系统施工，范围清晰、预算上限明确（44625000 MOP），与我方建设工程施工、电气安装、机械设备安装、安全技术防范及机电调试能力相符。当前公司资源占用为零、可用资源充足，具备作为单一责任投标人牵头组织现场管理、安全施工、进度控制、质量文档和分包协调的条件。隧道机电各专业可通过自有团队与常规专业分包、设备供应商及调试服务商组合实施，不构成必须共享投标身份或技术权威的组合体情形。主要风险集中在公共通道协调、临时改道、系统联调与工期衔接，应通过施工方法、调试方案、风险应对和界面协调方案在投标文件中正面回应，并在报价中计入调试、试运行、备件及维护支持费用。综合商业价值、能力匹配和风险承受度，决定以独立投标人身份参与投标。",
+          "unresolved_condition_ids": [
+            "condition_ac2c147f9c5d584dee0a"
+          ],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+            "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+            "公共通道协调与临时改道方案在投标阶段提出，具体安排待中标后与业主及相关方确认",
+            "系统调试与试运行按进度视图设置节点，联调资源在开工前落实"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:12:40",
+        "event_type": "bid_participation_decided",
+        "payload": {
+          "company_id": "COMP-0494",
+          "package_id": "CASE-0019/construction-2",
+          "decision": "bid",
+          "reason": "本包为行人隧道机电、消防及通风系统施工，预算约4463万MOP，与公司总承包及施工管理定位相符，公司资源容量充足、当前无占用，三体系认证和机电协调能力可支撑单一责任主体投标。隧道机电专业作业可通过有经验的机电分包与调试单位落实，属于正常专业分包而非共享投标人身份的组合体，公司能够牵头安全、工期、质量记录、公共通道协调和分包控制。主要缺口是具体隧道机电经验与已落实的分包报价，将以团队可用性摘要、施工与调试方案、质量安全方案、风险与界面协调方案及完整工程量清单报价回应，并在报价中预留专业分包与调试费用。综合判断以单一投标人身份投标更符合公司商业利益与责任控制。",
+          "unresolved_condition_ids": [],
+          "verified_condition_ids": [],
+          "bid_assumptions": [
+            "机电专业分包与调试单位意向将在投标期内落实，并纳入工程量清单报价",
+            "工程量清单与价格构成将按业主造价咨询包意见复核，确保完整性",
+            "报价中预留专业分包、调试与试运行费用及合理风险额度",
+            "公共通道协调与临时改道方案按现场条件在施工组织中细化",
+            "维护支持与备件计划按系统设备清单编制并纳入报价"
+          ],
+          "company_assessment": {},
+          "company_narrative_review": {},
+          "task_role": ""
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:09",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "bidder_id": "COMP-0153"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:09",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:09",
+        "event_type": "bid_document_submitted",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "bidder_id": "COMP-0494"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:19",
+        "event_type": "opening_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "opened_bid_count": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:25",
+        "event_type": "evaluation_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "recommended_winner": "COMP-0191"
+        }
+      },
+      {
+        "timestamp": "2026-11-20T01:13:30",
+        "event_type": "award_decision_completed",
+        "payload": {
+          "package_id": "CASE-0019/construction-2",
+          "selected_bidder_id": "COMP-0191"
+        }
+      },
+      {
+        "event_type": "contract_authorizations",
+        "decisions": {
+          "OWNER-4048bdd520aa7f": {
+            "action": "accept",
+            "reason": "作为业主方，本局内部讨论无异议，接受本修订版（revision 0）的合同条款。理由如下：\n\n1. 价格与预算：报价 MOP 39,000,000 低于本包预算上限 MOP 44,625,000，属固定总价，已覆盖设备、材料、安装、调试、试运行、备件及维护支持全部费用，价格基础（材料指数约1.05、劳工指数约1.10）与当前市场参数一致。\n\n2. 范围与资源：承包范围与本包范围（供配电、照明、通风、消防报警与灭火、监控、排水泵、接地防雷及系统调试试运行，不含土建结构、建筑装修及外部道路接驳）一致；单一责任投标人 COMP-0191，资源承诺0.7、工作份额1.0，符合本包资源要求。\n\n3. 工期：24个月总工期与项目工期一致，里程碑（第3月施工组织设计及深化设计报审、第12月主体安装、第18月系统联调与试运行、第24月竣工移交及维护支持交接）清晰可考核。\n\n4. 风险分配：投标假设中公共通道协调与临时改道方案为投标阶段初步安排、中标后与业主及相关方确认，属可接受的风险分配；业主移交延迟或公共通道协调未决导致的工期影响按合同约定处理，我方确认此为本合同项下的业主方义务，将在后续实施阶段按合同约定履行协调与移交责任。\n\n5. 监管与合规：承包方接受业主及监理全过程监管，关键工序设停止点、调试与试运行方案报批后实施，符合我方监管要求。\n\n6. 未来交付物：本接受仅授权可执行的模拟义务，不表示工程交付物或法定审批已完成；相关交付物作为带审查/验收条件的义务处理。\n\n本决定为我方自身立场：上述价格包含范围、计量与支付基础按合同约定节点（预付款、按月进度款、调试完成款、试运行验收款及竣工结算款）执行，业主审查与验收期限按合同约定办理，无需等待我方另行出具文件。"
+          },
+          "COMP-0191": {
+            "action": "accept",
+            "reason": "我方（COMP-0191）作为本包唯一投标人与单一责任方，确认接受所提供合同条款的全部内容：报价 MOP 39,000,000（低于包预算上限 MOP 44,625,000）、24 个月工期承诺、资源承诺 0.7、工作份额 1.0，以及供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷七个专业系统的施工、调试与试运行范围。\n\n关于我方自身立场，现作出如下决定，供写入下一稿：\n1. 报价为固定总价，已包含设备、材料、安装、调试、试运行、备件、12 个月维护支持、质量文档管理、保险及风险预备费；公共通道协调与临时改道费用已计入现场管理与安全施工项，不另行计价。\n2. 支付按合同约定节点执行：预付款、按月进度款、调试完成款、试运行验收款及竣工结算款；进度款以监理确认的已完成工程量为计量基础。\n3. 业主移交延迟或公共通道协调未决导致的工期影响，按合同约定顺延并处理相关费用，我方不承担由此产生的赶工费用。\n4. 设备材料价格按投标时市场价格指数计入，主要设备在开工前锁定价格；超出约定幅度的价格波动按合同价格调整机制处理。\n5. 公共通道临时改道方案在投标阶段为初步安排，中标后与业主及相关方确认具体实施方案，业主方负责协调相关方审批。\n6. 系统调试与试运行按单机调试、系统联调、试运行三阶段推进，联调资源在开工前落实，业主按约定节点提供调试条件与接口。\n\n上述条款与我方投标承诺一致，未改变价格、币种、范围、成员与资源等基准字段。本接受授权可执行的模拟义务，不构成对未来工程交付或法定审批已完成的声明。"
+          }
+        },
+        "revision": 0,
+        "terms": {
+          "proposal_id": "SIME3B32373/CASE-0019/construction-2/round-1/contract",
+          "simulation_id": "SIME3B32373",
+          "project_id": "CASE-0019",
+          "package_id": "CASE-0019/construction-2",
+          "session_id": "SIME3B32373/CASE-0019/construction-2/round-1",
+          "snapshot_version": "e3126e4a67a02c78e515eb82935e15d81f38ae655365caba73056fd6bb4be081",
+          "buyer_id": "OWNER-4048bdd520aa7f",
+          "bid_id": "bid_CASE-0019/construction-2_002",
+          "bidder_id": "COMP-0191",
+          "lead_id": "COMP-0191",
+          "members": [
+            "COMP-0191"
+          ],
+          "price": 39000000.0,
+          "currency": "MOP",
+          "resource_commitments": {
+            "COMP-0191": 0.7
+          },
+          "work_shares": {
+            "COMP-0191": 1.0
+          },
+          "signatures": {},
+          "signed_terms_hash": "e88b06f47b0d480b4b43607e5d9653aaa85b3f485f50b5f068e623ad399834e1",
+          "terms": {
+            "schedule_commitment": "我方承诺按项目24个月总工期完成本包全部机电安装、调试与试运行工作，并服从业主总体进度安排。关键里程碑：第3月完成施工组织设计及深化设计报审；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交及维护支持交接。公共通道临时改道按分区滚动实施，确保行人通行不中断。若因业主移交延迟或公共通道协调未决导致工期影响，双方按合同约定处理。",
+            "risk_response": "主要风险及应对：\n\n1. 公共通道协调与临时改道风险：投标阶段提出初步改道方案，中标后立即与业主及相关方建立协调机制，按分区滚动实施，设置行人导引与安全防护，预留应急绕行方案。\n\n2. 系统联调接口风险：各专业系统由我方统一管理，调试前完成接口核对清单，设置联调节点并组织联合演练，确保消防、通风、照明、监控联动可靠。\n\n3. 设备材料价格波动风险：报价按当前市场价格指数计入，设备采购尽早锁定价格，对主要设备签订供货合同明确价格调整机制。\n\n4. 工期衔接风险：与土建及装修包保持界面协调，提前确认移交条件，关键路径工序设置缓冲时间。\n\n5. 有限空间作业安全风险：编制专项安全方案，执行作业许可与气体检测制度，配备应急救援设备。\n\n6. 分包管理风险：专业分包纳入我方统一管理，执行分包资格审查与过程考核，关键调试由自有团队主导。",
+            "bid_document": {
+              "bid_id": "bid_CASE-0019/construction-2_002",
+              "package_id": "CASE-0019/construction-2",
+              "bidder_type": "company",
+              "bidder_id": "COMP-0191",
+              "bidder_name": "中建八局第二建设有限公司",
+              "technical_proposal": "本投标以中建八局第二建设有限公司为单一责任投标人，承担行人隧道机电、消防及通风系统施工包的全部施工、调试与试运行责任。技术方案按供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷七个专业系统组织，由我方自有管理与技术团队牵头，常规专业分包与设备供应商在统一管理下配合实施。\n\n供配电系统：按设计图纸完成高低压配电柜、变压器、UPS、电缆桥架及隧道内配电箱安装，采用分段送电、逐级核相的调试程序，确保与既有供电接口安全衔接。\n\n照明系统：完成隧道基本照明、应急照明及疏散指示安装，按亮度分区与回路分组调试，配合监控系统实现调光与故障报警联动。\n\n通风系统：完成射流风机、轴流风机及风阀安装，进行风量平衡测试与联动控制调试，确保火灾工况排烟模式可切换。\n\n消防报警与灭火系统：完成火灾探测器、手动报警按钮、消防主机及灭火设备安装，按分区进行报警联动测试，并与通风排烟、照明应急及监控系统进行联合演练。\n\n监控系统：完成摄像机、交通检测器、控制主机及通信链路安装，进行图像质量、存储与远程控制功能调试。\n\n排水泵系统：完成泵组、液位控制及配电安装，进行自动启停与备用泵切换测试。\n\n接地防雷系统：完成接地网、等电位联结及防雷器安装，进行接地电阻测试并出具记录。\n\n系统调试与试运行：编制专项调试方案，按单机调试、系统联调、试运行三阶段推进，试运行期间安排值班团队记录运行参数并处理缺陷。\n\n质量与安全：执行内部质量检查程序与独立复核制度，关键工序设置停止点；安全施工按隧道有限空间作业、临时用电及公共通道改道要求编制专项方案。\n\n公共通道协调：投标阶段提出临时改道与行人导引初步方案，中标后与业主及相关方确认具体安排。\n\n维护支持与备件：提供竣工后维护支持方案及备件清单，备件按关键设备推荐清单配置。",
+              "implementation_plan": "施工组织按24个月项目工期中的机电安装窗口安排，分为四个阶段：\n\n第一阶段（第1至3月）：施工准备与深化设计。完成现场移交接收、临时设施布置、施工组织设计报审、设备材料采购下单及公共通道协调初步方案提交。\n\n第二阶段（第4至12月）：主体安装。按供配电、照明、通风、消防、监控、排水泵、接地防雷顺序分区推进，每个系统完成安装后进入单机调试。公共通道临时改道按分区滚动实施，确保行人通行不中断。\n\n第三阶段（第13至18月）：系统联调与试运行。完成各系统联动调试、消防联合演练及试运行，记录运行参数，处理缺陷。\n\n第四阶段（第19至24月）：竣工收尾与维护支持移交。完成竣工资料整理、备件移交及维护培训。\n\n资源安排：我方投入项目经理、机电总工、安全主任、质量工程师及各专业工程师组成现场管理团队，自有技术骨干牵头关键系统调试，常规安装作业由专业分包承担，设备供应商按合同提供安装指导与调试支持。\n\n里程碑：第3月完成施工组织设计审批；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交。",
+              "quotation": 39000000.0,
+              "schedule_commitment": "我方承诺按项目24个月总工期完成本包全部机电安装、调试与试运行工作，并服从业主总体进度安排。关键里程碑：第3月完成施工组织设计及深化设计报审；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交及维护支持交接。公共通道临时改道按分区滚动实施，确保行人通行不中断。若因业主移交延迟或公共通道协调未决导致工期影响，双方按合同约定处理。",
+              "compliance_statement": "我方接受业主及监理的全过程监管，包括施工方案审批、材料设备报验、隐蔽工程验收、调试记录审查及进度款支付审核。质量文档按业主文档管理要求编制并提交，关键工序设置停止点待监理确认后方可进入下道工序。系统调试与试运行方案报业主审批后实施，试运行记录及缺陷处理报告定期提交。我方内部执行质量检查与独立复核制度，配合业主委托的第三方检测。公共通道协调与临时改道方案在投标阶段提出初步安排，中标后与业主及相关方确认具体实施方案。",
+              "risk_response": "主要风险及应对：\n\n1. 公共通道协调与临时改道风险：投标阶段提出初步改道方案，中标后立即与业主及相关方建立协调机制，按分区滚动实施，设置行人导引与安全防护，预留应急绕行方案。\n\n2. 系统联调接口风险：各专业系统由我方统一管理，调试前完成接口核对清单，设置联调节点并组织联合演练，确保消防、通风、照明、监控联动可靠。\n\n3. 设备材料价格波动风险：报价按当前市场价格指数计入，设备采购尽早锁定价格，对主要设备签订供货合同明确价格调整机制。\n\n4. 工期衔接风险：与土建及装修包保持界面协调，提前确认移交条件，关键路径工序设置缓冲时间。\n\n5. 有限空间作业安全风险：编制专项安全方案，执行作业许可与气体检测制度，配备应急救援设备。\n\n6. 分包管理风险：专业分包纳入我方统一管理，执行分包资格审查与过程考核，关键调试由自有团队主导。",
+              "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份提交本包投标，报价MOP 39,000,000，低于包预算上限44,625,000。报价按工程量清单计价，覆盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用。\n\n报价构成：供配电及照明系统MOP 9,850,000；通风、消防报警与灭火系统MOP 11,250,000；监控、排水泵及接地防雷系统MOP 7,350,000；系统调试、试运行及联合演练MOP 3,850,000；现场管理、安全施工及公共通道协调MOP 2,950,000；备件、维护支持及竣工资料MOP 1,650,000；质量文档管理、保险及风险预备费MOP 2,100,000。合计MOP 39,000,000。\n\n价格基础：设备材料按当前市场价格指数1.05及劳工价格指数1.10计入，消防及监控设备按供应商初步询价估算，调试与试运行按团队配置及工期安排估算，风险预备费按直接费约5%计提。报价为固定总价，已考虑公共通道协调、系统联调及工期衔接风险。\n\n支付安排建议按合同约定节点支付：预付款、按月进度款、调试完成款、试运行验收款及竣工结算款。\n\n本投标以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份。公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认。",
+              "quotation_breakdown": [
+                {
+                  "item": "供配电及照明系统设备材料与安装",
+                  "amount": 9850000,
+                  "basis": "按工程量清单估算，含高低压配电柜、变压器、UPS、电缆桥架、隧道灯具及应急照明，设备按当前市场价格指数1.05调整，安装人工按劳工价格指数1.10计入"
+                },
+                {
+                  "item": "通风、消防报警与灭火系统设备材料与安装",
+                  "amount": 11250000,
+                  "basis": "含射流风机、轴流风机、风阀、火灾探测器、消防主机及灭火设备，消防设备按供应商初步询价估算，安装与调试人工按现场作业条件计入"
+                },
+                {
+                  "item": "监控、排水泵及接地防雷系统设备材料与安装",
+                  "amount": 7350000,
+                  "basis": "含摄像机、控制主机、通信链路、排水泵组、液位控制及接地防雷材料，监控系统集成按专业分包报价估算，接地测试按独立检测计入"
+                },
+                {
+                  "item": "系统调试、试运行及联合演练",
+                  "amount": 3850000,
+                  "basis": "含单机调试、系统联调、消防联合演练及试运行值班，按调试团队6人×6个月及试运行3个月值班安排估算，含调试仪器租赁"
+                },
+                {
+                  "item": "现场管理、安全施工及公共通道协调",
+                  "amount": 2950000,
+                  "basis": "含项目经理、机电总工、安全主任、质量工程师及专业工程师现场管理团队24个月薪酬分摊，临时改道设施、安全防护及公共通道协调费用"
+                },
+                {
+                  "item": "备件、维护支持及竣工资料",
+                  "amount": 1650000,
+                  "basis": "按关键设备备件推荐清单估算，含竣工后12个月维护支持响应及竣工资料编制，备件价格为供应商初步报价估算"
+                },
+                {
+                  "item": "质量文档管理、保险及风险预备费",
+                  "amount": 2100000,
+                  "basis": "含质量检查与独立复核、竣工文档管理、工程保险及不可预见风险预备费，按直接费约5%计提"
+                }
+              ],
+              "unresolved_condition_ids": [
+                "condition_ac2c147f9c5d584dee0a",
+                "condition_daf1c10859fe584358e2",
+                "condition_f8ed9b40bc18c61e33da"
+              ],
+              "verified_condition_ids": [],
+              "bid_assumptions": [
+                "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+                "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+                "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+                "系统调试与试运行按进度视图设置节点，联调资源在开工前落实",
+                "设备材料价格按当前市场价格指数计入，主要设备采购尽早锁定价格"
+              ],
+              "company_assessment": {},
+              "company_narrative_review": {},
+              "task_role": ""
+            },
+            "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+            "scope": "行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+            "cost_inclusion": "owner_additional",
+            "parent_package_id": null
+          }
+        },
+        "terms_hash": "e88b06f47b0d480b4b43607e5d9653aaa85b3f485f50b5f068e623ad399834e1"
+      }
+    ],
+    "validation_context": {
+      "integration": true,
+      "authorized_packages": {
+        "CASE-0019/construction-2": {
+          "package_type": "contractor",
+          "required_company_role": "contractor",
+          "scope": "行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+          "budget": 44625000.0,
+          "currency": "MOP",
+          "buyer_id": "OWNER-4048bdd520aa7f"
+        }
+      },
+      "consortium_acceptance_schema": "legacy-journal.v1",
+      "contract_acceptance_schema": "legacy-journal.v1"
+    },
+    "verification_reviews": {}
+  },
+  "proposal": {
+    "proposal_id": "SIME3B32373/CASE-0019/construction-2/round-1/contract",
+    "simulation_id": "SIME3B32373",
+    "project_id": "CASE-0019",
+    "package_id": "CASE-0019/construction-2",
+    "session_id": "SIME3B32373/CASE-0019/construction-2/round-1",
+    "snapshot_version": "e3126e4a67a02c78e515eb82935e15d81f38ae655365caba73056fd6bb4be081",
+    "buyer_id": "OWNER-4048bdd520aa7f",
+    "bid_id": "bid_CASE-0019/construction-2_002",
+    "bidder_id": "COMP-0191",
+    "lead_id": "COMP-0191",
+    "members": [
+      "COMP-0191"
+    ],
+    "price": 39000000.0,
+    "currency": "MOP",
+    "resource_commitments": {
+      "COMP-0191": 0.7
+    },
+    "work_shares": {
+      "COMP-0191": 1.0
+    },
+    "signatures": {
+      "OWNER-4048bdd520aa7f": true,
+      "COMP-0191": true
+    },
+    "signed_terms_hash": "e88b06f47b0d480b4b43607e5d9653aaa85b3f485f50b5f068e623ad399834e1",
+    "terms": {
+      "schedule_commitment": "我方承诺按项目24个月总工期完成本包全部机电安装、调试与试运行工作，并服从业主总体进度安排。关键里程碑：第3月完成施工组织设计及深化设计报审；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交及维护支持交接。公共通道临时改道按分区滚动实施，确保行人通行不中断。若因业主移交延迟或公共通道协调未决导致工期影响，双方按合同约定处理。",
+      "risk_response": "主要风险及应对：\n\n1. 公共通道协调与临时改道风险：投标阶段提出初步改道方案，中标后立即与业主及相关方建立协调机制，按分区滚动实施，设置行人导引与安全防护，预留应急绕行方案。\n\n2. 系统联调接口风险：各专业系统由我方统一管理，调试前完成接口核对清单，设置联调节点并组织联合演练，确保消防、通风、照明、监控联动可靠。\n\n3. 设备材料价格波动风险：报价按当前市场价格指数计入，设备采购尽早锁定价格，对主要设备签订供货合同明确价格调整机制。\n\n4. 工期衔接风险：与土建及装修包保持界面协调，提前确认移交条件，关键路径工序设置缓冲时间。\n\n5. 有限空间作业安全风险：编制专项安全方案，执行作业许可与气体检测制度，配备应急救援设备。\n\n6. 分包管理风险：专业分包纳入我方统一管理，执行分包资格审查与过程考核，关键调试由自有团队主导。",
+      "bid_document": {
+        "bid_id": "bid_CASE-0019/construction-2_002",
+        "package_id": "CASE-0019/construction-2",
+        "bidder_type": "company",
+        "bidder_id": "COMP-0191",
+        "bidder_name": "中建八局第二建设有限公司",
+        "technical_proposal": "本投标以中建八局第二建设有限公司为单一责任投标人，承担行人隧道机电、消防及通风系统施工包的全部施工、调试与试运行责任。技术方案按供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷七个专业系统组织，由我方自有管理与技术团队牵头，常规专业分包与设备供应商在统一管理下配合实施。\n\n供配电系统：按设计图纸完成高低压配电柜、变压器、UPS、电缆桥架及隧道内配电箱安装，采用分段送电、逐级核相的调试程序，确保与既有供电接口安全衔接。\n\n照明系统：完成隧道基本照明、应急照明及疏散指示安装，按亮度分区与回路分组调试，配合监控系统实现调光与故障报警联动。\n\n通风系统：完成射流风机、轴流风机及风阀安装，进行风量平衡测试与联动控制调试，确保火灾工况排烟模式可切换。\n\n消防报警与灭火系统：完成火灾探测器、手动报警按钮、消防主机及灭火设备安装，按分区进行报警联动测试，并与通风排烟、照明应急及监控系统进行联合演练。\n\n监控系统：完成摄像机、交通检测器、控制主机及通信链路安装，进行图像质量、存储与远程控制功能调试。\n\n排水泵系统：完成泵组、液位控制及配电安装，进行自动启停与备用泵切换测试。\n\n接地防雷系统：完成接地网、等电位联结及防雷器安装，进行接地电阻测试并出具记录。\n\n系统调试与试运行：编制专项调试方案，按单机调试、系统联调、试运行三阶段推进，试运行期间安排值班团队记录运行参数并处理缺陷。\n\n质量与安全：执行内部质量检查程序与独立复核制度，关键工序设置停止点；安全施工按隧道有限空间作业、临时用电及公共通道改道要求编制专项方案。\n\n公共通道协调：投标阶段提出临时改道与行人导引初步方案，中标后与业主及相关方确认具体安排。\n\n维护支持与备件：提供竣工后维护支持方案及备件清单，备件按关键设备推荐清单配置。",
+        "implementation_plan": "施工组织按24个月项目工期中的机电安装窗口安排，分为四个阶段：\n\n第一阶段（第1至3月）：施工准备与深化设计。完成现场移交接收、临时设施布置、施工组织设计报审、设备材料采购下单及公共通道协调初步方案提交。\n\n第二阶段（第4至12月）：主体安装。按供配电、照明、通风、消防、监控、排水泵、接地防雷顺序分区推进，每个系统完成安装后进入单机调试。公共通道临时改道按分区滚动实施，确保行人通行不中断。\n\n第三阶段（第13至18月）：系统联调与试运行。完成各系统联动调试、消防联合演练及试运行，记录运行参数，处理缺陷。\n\n第四阶段（第19至24月）：竣工收尾与维护支持移交。完成竣工资料整理、备件移交及维护培训。\n\n资源安排：我方投入项目经理、机电总工、安全主任、质量工程师及各专业工程师组成现场管理团队，自有技术骨干牵头关键系统调试，常规安装作业由专业分包承担，设备供应商按合同提供安装指导与调试支持。\n\n里程碑：第3月完成施工组织设计审批；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交。",
+        "quotation": 39000000.0,
+        "schedule_commitment": "我方承诺按项目24个月总工期完成本包全部机电安装、调试与试运行工作，并服从业主总体进度安排。关键里程碑：第3月完成施工组织设计及深化设计报审；第12月完成主体安装；第18月完成系统联调与试运行；第24月完成竣工移交及维护支持交接。公共通道临时改道按分区滚动实施，确保行人通行不中断。若因业主移交延迟或公共通道协调未决导致工期影响，双方按合同约定处理。",
+        "compliance_statement": "我方接受业主及监理的全过程监管，包括施工方案审批、材料设备报验、隐蔽工程验收、调试记录审查及进度款支付审核。质量文档按业主文档管理要求编制并提交，关键工序设置停止点待监理确认后方可进入下道工序。系统调试与试运行方案报业主审批后实施，试运行记录及缺陷处理报告定期提交。我方内部执行质量检查与独立复核制度，配合业主委托的第三方检测。公共通道协调与临时改道方案在投标阶段提出初步安排，中标后与业主及相关方确认具体实施方案。",
+        "risk_response": "主要风险及应对：\n\n1. 公共通道协调与临时改道风险：投标阶段提出初步改道方案，中标后立即与业主及相关方建立协调机制，按分区滚动实施，设置行人导引与安全防护，预留应急绕行方案。\n\n2. 系统联调接口风险：各专业系统由我方统一管理，调试前完成接口核对清单，设置联调节点并组织联合演练，确保消防、通风、照明、监控联动可靠。\n\n3. 设备材料价格波动风险：报价按当前市场价格指数计入，设备采购尽早锁定价格，对主要设备签订供货合同明确价格调整机制。\n\n4. 工期衔接风险：与土建及装修包保持界面协调，提前确认移交条件，关键路径工序设置缓冲时间。\n\n5. 有限空间作业安全风险：编制专项安全方案，执行作业许可与气体检测制度，配备应急救援设备。\n\n6. 分包管理风险：专业分包纳入我方统一管理，执行分包资格审查与过程考核，关键调试由自有团队主导。",
+        "submission_summary": "中建八局第二建设有限公司以单一责任投标人身份提交本包投标，报价MOP 39,000,000，低于包预算上限44,625,000。报价按工程量清单计价，覆盖机电设备、材料、安装、调试、试运行、备件及维护支持全部费用。\n\n报价构成：供配电及照明系统MOP 9,850,000；通风、消防报警与灭火系统MOP 11,250,000；监控、排水泵及接地防雷系统MOP 7,350,000；系统调试、试运行及联合演练MOP 3,850,000；现场管理、安全施工及公共通道协调MOP 2,950,000；备件、维护支持及竣工资料MOP 1,650,000；质量文档管理、保险及风险预备费MOP 2,100,000。合计MOP 39,000,000。\n\n价格基础：设备材料按当前市场价格指数1.05及劳工价格指数1.10计入，消防及监控设备按供应商初步询价估算，调试与试运行按团队配置及工期安排估算，风险预备费按直接费约5%计提。报价为固定总价，已考虑公共通道协调、系统联调及工期衔接风险。\n\n支付安排建议按合同约定节点支付：预付款、按月进度款、调试完成款、试运行验收款及竣工结算款。\n\n本投标以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份。公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认。",
+        "quotation_breakdown": [
+          {
+            "item": "供配电及照明系统设备材料与安装",
+            "amount": 9850000,
+            "basis": "按工程量清单估算，含高低压配电柜、变压器、UPS、电缆桥架、隧道灯具及应急照明，设备按当前市场价格指数1.05调整，安装人工按劳工价格指数1.10计入"
+          },
+          {
+            "item": "通风、消防报警与灭火系统设备材料与安装",
+            "amount": 11250000,
+            "basis": "含射流风机、轴流风机、风阀、火灾探测器、消防主机及灭火设备，消防设备按供应商初步询价估算，安装与调试人工按现场作业条件计入"
+          },
+          {
+            "item": "监控、排水泵及接地防雷系统设备材料与安装",
+            "amount": 7350000,
+            "basis": "含摄像机、控制主机、通信链路、排水泵组、液位控制及接地防雷材料，监控系统集成按专业分包报价估算，接地测试按独立检测计入"
+          },
+          {
+            "item": "系统调试、试运行及联合演练",
+            "amount": 3850000,
+            "basis": "含单机调试、系统联调、消防联合演练及试运行值班，按调试团队6人×6个月及试运行3个月值班安排估算，含调试仪器租赁"
+          },
+          {
+            "item": "现场管理、安全施工及公共通道协调",
+            "amount": 2950000,
+            "basis": "含项目经理、机电总工、安全主任、质量工程师及专业工程师现场管理团队24个月薪酬分摊，临时改道设施、安全防护及公共通道协调费用"
+          },
+          {
+            "item": "备件、维护支持及竣工资料",
+            "amount": 1650000,
+            "basis": "按关键设备备件推荐清单估算，含竣工后12个月维护支持响应及竣工资料编制，备件价格为供应商初步报价估算"
+          },
+          {
+            "item": "质量文档管理、保险及风险预备费",
+            "amount": 2100000,
+            "basis": "含质量检查与独立复核、竣工文档管理、工程保险及不可预见风险预备费，按直接费约5%计提"
+          }
+        ],
+        "unresolved_condition_ids": [
+          "condition_ac2c147f9c5d584dee0a",
+          "condition_daf1c10859fe584358e2",
+          "condition_f8ed9b40bc18c61e33da"
+        ],
+        "verified_condition_ids": [],
+        "bid_assumptions": [
+          "以自有团队牵头机电安装与现场管理，专业分包及设备供应商按常规分包方式组织，不改变单一投标人身份",
+          "报价按工程量清单计价，包含设备、材料、安装、调试、试运行、备件及维护支持全部费用",
+          "公共通道协调与临时改道方案在投标阶段提出初步安排，具体安排待中标后与业主及相关方确认",
+          "系统调试与试运行按进度视图设置节点，联调资源在开工前落实",
+          "设备材料价格按当前市场价格指数计入，主要设备采购尽早锁定价格"
+        ],
+        "company_assessment": {},
+        "company_narrative_review": {},
+        "task_role": ""
+      },
+      "resource_unit": "normalized_enterprise_capacity; not a headcount or number of people",
+      "scope": "行人隧道机电安装：供配电、照明、通风、消防报警与灭火、监控、排水泵及接地防雷系统；含系统调试与试运行，不含土建结构、建筑装修及外部道路接驳。",
+      "cost_inclusion": "owner_additional",
+      "parent_package_id": null
+    }
+  }
+}
