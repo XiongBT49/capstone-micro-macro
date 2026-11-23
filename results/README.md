@@ -52,3 +52,4 @@
 - [微观采购评分独立扩样与九例汇总](experiments/micro-org-replication-20261119/比较结果.md)
 - [十二例微观采购评分对照](experiments/micro-org-extension12-20261119/十二例评分汇总_核定.md)
 - [352-case DBB 初始输入清单](experiments/full352-dbb-inputs-20261119/manifest.csv)
+- [外部基线对照（pymcdm 定标、投标文件清单、联合体合意）](experiments/external_baseline_comparison_20261123/SUMMARY.md)：对冻结的 28 例离线计算，0 次新模型调用，不改历史评分。三项结果分开报告。
